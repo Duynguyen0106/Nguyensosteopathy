@@ -370,6 +370,16 @@ export default function HomePage() {
               </li>
               <li>
                 <a
+                  href={site.websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-teal"
+                >
+                  {site.website}
+                </a>
+              </li>
+              <li>
+                <a
                   href={site.facebookUrl}
                   target="_blank"
                   rel="noopener noreferrer"

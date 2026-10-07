@@ -78,6 +78,16 @@ export function Footer() {
               </a>
             </li>
             <li>
+              <a
+                href={site.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                {site.website}
+              </a>
+            </li>
+            <li>
               {site.address.line1}, {site.address.line2}
             </li>
           </ul>

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "leaflet": "node scripts/generate-leaflet.mjs",
-    "promo": "node scripts/generate-promo-graphic.mjs"
+    "promo": "node scripts/generate-promo-graphic.mjs",
+    "poster": "node scripts/generate-poster.mjs"
   },
   "dependencies": {
     "next": "16.4.0",

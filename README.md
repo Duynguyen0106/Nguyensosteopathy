@@ -39,3 +39,10 @@ npm run build
 npm run start
 npm run lint
 ```
+
+## Deploy (Vercel)
+
+1. Import `Duynguyen0106/Nguyensosteopathy` in [Vercel](https://vercel.com/new).
+2. Framework preset: Next.js (defaults are fine).
+3. Set env vars from `.env.example` if you need a custom Treow booking slug.
+4. Deploy production from `main` after merging the PR.

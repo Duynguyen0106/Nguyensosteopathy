@@ -3,15 +3,16 @@
 :root {
   --navy: #0b2c45;
   --navy-deep: #071e30;
-  --teal: #2aa894;
-  --teal-dark: #1f8a79;
-  --teal-mist: #b7e4db;
-  --cream-mist: #f3f7f8;
-  --ink: #163247;
-  --muted: #5b7384;
-  --line: #d5e3e8;
-  --background: #f7fbfb;
-  --foreground: #163247;
+  --teal: #0d9488;
+  --teal-dark: #0f766e;
+  --teal-mist: #99f6e4;
+  --cream-mist: #f8fafc;
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: #e2e8f0;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
 }
 
 @theme inline {
@@ -26,6 +27,7 @@
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-line: var(--line);
+  --color-card: var(--card);
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
 }
@@ -51,9 +53,9 @@ body {
 
 .hero-wash {
   background:
-    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(42, 168, 148, 0.18), transparent 55%),
-    radial-gradient(ellipse 70% 50% at 85% 10%, rgba(11, 44, 69, 0.12), transparent 50%),
-    linear-gradient(160deg, #eef7f6 0%, #f7fbfb 42%, #e8f2f4 100%);
+    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(13, 148, 136, 0.14), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 10%, rgba(11, 44, 69, 0.08), transparent 50%),
+    linear-gradient(160deg, #f1f5f9 0%, #f8fafc 45%, #eef6f5 100%);
 }
 
 .section-fade {
@@ -104,18 +106,13 @@ body {
 }
 
 .service-tile {
-  transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    background-color 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: all 200ms ease;
 }
 
 .service-tile:hover {
-  transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--teal) 45%, var(--line));
-  background: white;
-  box-shadow: 0 18px 40px rgba(11, 44, 69, 0.08);
+  transform: translateY(-4px);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 .service-tile:hover .service-arrow {

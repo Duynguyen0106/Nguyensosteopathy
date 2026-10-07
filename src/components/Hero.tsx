@@ -26,13 +26,13 @@ export function Hero() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
-            <span className="inline-flex items-center gap-2 rounded-xl border border-teal/35 bg-white/80 px-3 py-1.5 text-xs font-medium text-navy backdrop-blur sm:text-sm">
+            <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-sm sm:text-sm">
               <span className="text-teal" aria-hidden>
                 ✓
               </span>
               GOsC Reg. No. {site.practitioner.regNo}
             </span>
-            <span className="inline-flex items-center gap-2 rounded-xl border border-teal/35 bg-white/80 px-3 py-1.5 text-xs font-medium text-navy backdrop-blur sm:text-sm">
+            <span className="inline-flex items-center gap-2 rounded-full border border-teal/25 bg-teal/10 px-3 py-1.5 text-xs font-semibold text-teal-dark shadow-sm sm:text-sm">
               <span className="text-teal" aria-hidden>
                 ✓
               </span>

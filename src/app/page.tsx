@@ -11,11 +11,11 @@ export default function HomePage() {
       <Hero />
 
       <section className="bg-navy text-white">
-        <div className="mx-auto grid max-w-6xl gap-3 px-5 py-5 sm:grid-cols-2 lg:grid-cols-4 md:px-8">
+        <div className="mx-auto grid max-w-6xl gap-3 px-5 py-5 sm:grid-cols-2 md:px-8 lg:grid-cols-4">
           {highlights.map((item) => (
             <p
               key={item}
-              className="flex items-start gap-2 text-sm text-white/90 md:text-[0.95rem]"
+              className="flex items-start gap-2 text-sm text-white/95 md:text-[0.95rem]"
             >
               <span className="mt-0.5 text-teal-mist" aria-hidden>
                 ✓
@@ -29,7 +29,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="px-5 py-16 md:px-8 md:py-20">
+      <section className="bg-slate-50 px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
@@ -41,14 +41,17 @@ export default function HomePage() {
           </div>
           <ol className="mt-10 grid gap-6 md:grid-cols-3">
             {visitSteps.map((item) => (
-              <li key={item.step} className="border-t border-teal/40 pt-5">
+              <li
+                key={item.step}
+                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
                 <p className="text-xs font-semibold tracking-[0.18em] text-teal">
                   {item.step}
                 </p>
                 <h3 className="mt-3 text-xl font-semibold text-navy">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
                   {item.detail}
                 </p>
               </li>
@@ -57,7 +60,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="about" className="scroll-mt-24 px-5 py-16 md:px-8 md:py-24">
+      <section
+        id="about"
+        className="scroll-mt-24 bg-white px-5 py-16 md:px-8 md:py-24"
+      >
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
           <div className="relative">
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 to-navy/10 blur-xl" />
@@ -77,22 +83,28 @@ export default function HomePage() {
             <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
               {site.practitioner.name}
             </h2>
-            <p className="mt-2 text-sm font-medium tracking-wide text-muted">
+            <p className="mt-2 text-sm font-semibold tracking-wide text-slate-600">
               {site.practitioner.title} · Reg No. {site.practitioner.regNo}
             </p>
-            <p className="mt-6 text-lg leading-relaxed text-ink/85">
+            <p className="mt-6 text-lg leading-relaxed text-slate-700">
               At {site.name}, we provide high-quality, drug-free healthcare
               focused on identifying and treating the root cause of your pain.
               Care is tailored, confidential, and aimed at restoring comfortable
               movement and optimal health.
             </p>
 
-            <div className="mt-8 inline-flex max-w-full items-center gap-3 rounded-xl border border-teal/40 bg-white px-4 py-3 text-sm text-navy sm:px-5">
+            <div className="mt-8 inline-flex max-w-full items-center gap-3 rounded-xl border border-teal/30 bg-teal/5 px-4 py-3 text-sm font-medium text-navy sm:px-5">
               <span
-                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal/10 text-teal"
+                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal/15 text-teal"
                 aria-hidden
               >
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   <path d="M12 3 5 6v5c0 4.5 3 7.8 7 9 4-1.2 7-4.5 7-9V6l-7-3Z" />
                   <path d="m9.5 12 1.8 1.8 3.4-3.6" />
                 </svg>
@@ -108,7 +120,7 @@ export default function HomePage() {
 
       <section
         id="services"
-        className="scroll-mt-24 border-y border-line bg-white px-5 py-16 md:px-8 md:py-24"
+        className="scroll-mt-24 border-y border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24"
       >
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -119,7 +131,7 @@ export default function HomePage() {
               <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
                 Treatments for how you move
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
                 From everyday back pain to specialist shockwave therapy — open
                 any service for who it helps, what to expect, and fees.
               </p>
@@ -134,25 +146,32 @@ export default function HomePage() {
               <li key={service.slug}>
                 <Link
                   href={`/services/${service.slug}`}
-                  className="service-tile group flex h-full gap-4 rounded-2xl border border-line bg-cream-mist/50 p-5"
+                  className="service-tile group flex h-full gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
                     <ServiceIcon name={service.icon} />
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="flex items-start justify-between gap-3">
-                      <span className="text-lg font-semibold text-navy">
-                        {service.title}
+                      <span className="min-w-0">
+                        <span className="block text-lg font-semibold text-navy">
+                          {service.title}
+                        </span>
+                        {service.badge ? (
+                          <span className="mt-1.5 inline-flex rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
+                            {service.badge}
+                          </span>
+                        ) : null}
                       </span>
-                      <span className="service-arrow text-navy/35" aria-hidden>
+                      <span className="service-arrow text-slate-400" aria-hidden>
                         →
                       </span>
                     </span>
-                    <span className="mt-1.5 block text-sm leading-relaxed text-muted">
+                    <span className="mt-2 block text-sm leading-relaxed text-slate-600">
                       {service.summary}
                     </span>
                     {service.relatedPricing ? (
-                      <span className="mt-3 block text-xs font-medium tracking-wide text-teal">
+                      <span className="mt-3 block text-xs font-semibold tracking-wide text-teal-dark">
                         {service.relatedPricing}
                       </span>
                     ) : null}
@@ -164,7 +183,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="pricing" className="scroll-mt-24 px-5 py-16 md:px-8 md:py-24">
+      <section
+        id="pricing"
+        className="scroll-mt-24 bg-white px-5 py-16 md:px-8 md:py-24"
+      >
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
@@ -173,13 +195,13 @@ export default function HomePage() {
             <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
               Treatments & fees
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
               Tailored clinical care designed around your specific recovery
               goals.
             </p>
           </div>
 
-          <div className="mt-10 overflow-hidden rounded-2xl border border-line bg-white">
+          <div className="mt-10 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
             <div className="hidden grid-cols-[1.6fr_0.8fr_0.5fr] bg-navy px-6 py-4 text-sm font-medium tracking-wide text-white md:grid">
               <span>Service & consultation</span>
               <span>Duration</span>
@@ -190,12 +212,14 @@ export default function HomePage() {
                 <li
                   key={row.service}
                   className={`grid gap-1 px-5 py-4 md:grid-cols-[1.6fr_0.8fr_0.5fr] md:items-center md:gap-4 md:px-6 ${
-                    index % 2 === 0 ? "bg-cream-mist/70" : "bg-white"
+                    index % 2 === 0 ? "bg-slate-50" : "bg-white"
                   }`}
                 >
                   <p className="font-medium text-navy">{row.service}</p>
-                  <p className="text-sm text-muted">{row.duration}</p>
-                  <p className="text-lg font-semibold text-teal md:text-right">
+                  <p className="text-sm font-medium text-slate-600">
+                    {row.duration}
+                  </p>
+                  <p className="text-lg font-bold text-teal-dark md:text-right">
                     {row.price}
                   </p>
                 </li>
@@ -203,7 +227,7 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <p className="mt-6 rounded-2xl border border-dashed border-teal/50 bg-teal/5 px-5 py-4 text-sm text-navy md:text-base">
+          <p className="mt-6 rounded-xl border border-dashed border-teal/40 bg-teal/5 px-5 py-4 text-sm font-medium text-navy md:text-base">
             {site.discount}
           </p>
         </div>
@@ -211,7 +235,7 @@ export default function HomePage() {
 
       <section
         id="location"
-        className="scroll-mt-24 border-t border-line bg-gradient-to-b from-teal/8 to-background px-5 py-16 md:px-8 md:py-24"
+        className="scroll-mt-24 border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24"
       >
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-end">
           <div>
@@ -221,12 +245,12 @@ export default function HomePage() {
             <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
               Conveniently located inside {site.address.venue}
             </h2>
-            <p className="mt-5 text-lg text-ink/85">
+            <p className="mt-5 text-lg font-medium text-slate-700">
               {site.address.line1}
               <br />
               {site.address.line2}
             </p>
-            <p className="mt-3 text-sm text-muted">
+            <p className="mt-3 text-sm font-medium text-slate-600">
               Providing NHS & Private Pharmacy Services on site.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -244,11 +268,11 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="rounded-[1.5rem] border border-teal/25 bg-white/80 p-6 backdrop-blur">
+          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
             <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
               Book your appointment
             </p>
-            <ul className="mt-5 space-y-3 text-sm text-ink/85">
+            <ul className="mt-5 space-y-3 text-sm font-medium text-slate-700">
               <li>
                 <a href={site.phoneHref} className="hover:text-teal">
                   {site.phone}
@@ -260,15 +284,28 @@ export default function HomePage() {
                 </a>
               </li>
               <li>
-                <Link href="/book" className="font-semibold text-teal hover:text-teal-dark">
+                <a
+                  href={site.facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-teal"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <Link
+                  href="/book"
+                  className="font-semibold text-teal hover:text-teal-dark"
+                >
                   Book online
                 </Link>
               </li>
             </ul>
-            <div className="mt-6 space-y-2 border-t border-line pt-5 text-sm text-muted">
+            <div className="mt-6 space-y-2 border-t border-slate-200 pt-5 text-sm font-medium text-slate-600">
               {site.hours.map((row) => (
                 <p key={row.days}>
-                  <span className="font-medium text-navy">{row.days}:</span>{" "}
+                  <span className="font-semibold text-navy">{row.days}:</span>{" "}
                   {row.time}
                 </p>
               ))}

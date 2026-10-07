@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function BookPage() {
   return (
-    <div className="bg-background pt-10 md:pt-14">
+    <div className="bg-slate-50 pt-10 md:pt-14">
       <div className="mx-auto max-w-4xl px-5 pb-8 md:px-8">
         <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
           Online booking

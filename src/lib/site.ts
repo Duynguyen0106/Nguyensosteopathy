@@ -11,6 +11,7 @@ export const site = {
   phoneHref: "tel:07882843513",
   email: "nguyensosteopathy@gmail.com",
   emailHref: "mailto:nguyensosteopathy@gmail.com",
+  facebookUrl: "https://www.facebook.com/Nguyensosteopathy",
   website: "www.nguyensosteopathy.co.uk",
   address: {
     line1: "52 Powis Street",
@@ -82,6 +83,7 @@ export type Service = {
   idealFor: string[];
   whatToExpect: string[];
   relatedPricing?: string;
+  badge?: string;
   icon: ServiceIconName;
 };
 
@@ -147,6 +149,7 @@ export const services: Service[] = [
       "Graduated loading advice alongside therapy",
     ],
     relatedPricing: "£90 per session",
+    badge: "Specialist Care",
     icon: "wave",
   },
   {
@@ -168,6 +171,7 @@ export const services: Service[] = [
       "Protocol-based sessions with follow-up guidance",
     ],
     relatedPricing: "Specialist protocol £110",
+    badge: "Specialist Care",
     icon: "shield",
   },
   {

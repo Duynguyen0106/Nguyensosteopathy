@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { site } from "@/lib/site";
 
-const MIN_HEIGHT = 920;
-const MOBILE_MIN_HEIGHT = 1100;
+const MIN_HEIGHT = 980;
+const MOBILE_MIN_HEIGHT = 1280;
 
 export function BookingEmbed() {
   const frameRef = useRef<HTMLIFrameElement>(null);

@@ -1,9 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
 import { ServiceIcon } from "@/components/ServiceIcon";
-import { highlights, pricing, services, site, visitSteps } from "@/lib/site";
+import {
+  faqs,
+  highlights,
+  pricing,
+  services,
+  site,
+  testimonials,
+  visitSteps,
+} from "@/lib/site";
 
 export default function HomePage() {
   return (
@@ -57,6 +66,61 @@ export default function HomePage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section
+        id="testimonials"
+        className="scroll-mt-24 border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24"
+      >
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Patient stories
+            </p>
+            <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
+              What Our Patients Say
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
+              Real feedback from people who came in for pain relief, specialist
+              care, and a clearer path back to comfortable movement.
+            </p>
+          </div>
+
+          <ul className="mt-10 grid gap-4 md:grid-cols-3">
+            {testimonials.map((review) => (
+              <li
+                key={review.name}
+                className="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:bg-white hover:shadow-md"
+              >
+                <p className="flex gap-0.5 text-teal" aria-label={`${review.rating} out of 5 stars`}>
+                  {Array.from({ length: review.rating }).map((_, star) => (
+                    <svg
+                      key={star}
+                      viewBox="0 0 20 20"
+                      className="h-4 w-4 fill-current"
+                      aria-hidden
+                    >
+                      <path d="M10 1.5 12.6 7l6 .5-4.5 4 1.4 5.8L10 14.8 4.5 17.3l1.4-5.8L1.4 7.5l6-.5L10 1.5Z" />
+                    </svg>
+                  ))}
+                </p>
+                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-slate-700 md:text-[0.95rem]">
+                  “{review.quote}”
+                </blockquote>
+                <footer className="mt-5 border-t border-slate-200 pt-4">
+                  <p className="font-semibold text-navy">{review.name}</p>
+                  <p className="mt-1 text-xs font-semibold tracking-wide text-teal-dark uppercase">
+                    {review.treatment}
+                  </p>
+                </footer>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-center text-sm font-semibold text-navy md:text-base">
+            Google 5.0 ★ Rated Osteopathy Clinic in Woolwich
+          </p>
         </div>
       </section>
 
@@ -234,8 +298,29 @@ export default function HomePage() {
       </section>
 
       <section
-        id="location"
+        id="faq"
         className="scroll-mt-24 border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24"
+      >
+        <div className="mx-auto max-w-3xl">
+          <div className="text-center">
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Common questions
+            </p>
+            <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
+              Frequently asked questions
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-slate-600 md:text-lg">
+              Quick answers before you book — from referrals and first visits to
+              finding us inside the pharmacy.
+            </p>
+          </div>
+          <FaqAccordion items={faqs} />
+        </div>
+      </section>
+
+      <section
+        id="location"
+        className="scroll-mt-24 border-t border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24"
       >
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-end">
           <div>

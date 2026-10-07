@@ -63,6 +63,53 @@ export const visitSteps = [
   },
 ] as const;
 
+export const testimonials = [
+  {
+    quote:
+      "After months of desk-related back pain, Austin found the cause quickly and I was moving freely again within a few sessions. Clear advice and genuine care.",
+    name: "Sarah M.",
+    treatment: "Back Pain Patient",
+    rating: 5,
+  },
+  {
+    quote:
+      "Shockwave therapy for my stubborn heel pain made a real difference when other approaches had stalled. The clinic felt professional and reassuring throughout.",
+    name: "James T.",
+    treatment: "Shockwave Therapy Patient",
+    rating: 5,
+  },
+  {
+    quote:
+      "I was nervous about my first osteopathy visit, but the consultation was thorough and the treatment plan was easy to follow. Highly recommend for Woolwich locals.",
+    name: "Priya K.",
+    treatment: "Neck & Shoulder Patient",
+    rating: 5,
+  },
+] as const;
+
+export const faqs = [
+  {
+    question: "Do I need a GP referral to book an appointment?",
+    answer:
+      "No. You can book directly online or by phone — a GP referral is not required. If you have relevant medical letters or imaging, bring them along so we can tailor your care.",
+  },
+  {
+    question: "What should I expect during my first osteopathy visit?",
+    answer:
+      "Your initial appointment lasts about 60 minutes. We take a full case history, assess posture and movement, explain our findings, and begin hands-on treatment where appropriate. Wear comfortable clothing that allows easy movement.",
+  },
+  {
+    question: "How many treatments will I need?",
+    answer:
+      "It depends on your condition, how long symptoms have been present, and your goals. Many patients notice improvement within a few sessions; we review progress regularly and only recommend further care when it is clinically useful.",
+  },
+  {
+    question: "Where is the clinic located inside St James Pharmacy?",
+    answer:
+      "We are based inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich, London SE18 6LQ. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy consultation room.",
+  },
+] as const;
+
 export type ServiceIconName =
   | "spine"
   | "spark"

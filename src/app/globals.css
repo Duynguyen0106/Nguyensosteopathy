@@ -124,6 +124,20 @@ body {
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
+.faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.28s ease;
+}
+
+.faq-panel-open {
+  grid-template-rows: 1fr;
+}
+
+.faq-panel-inner {
+  overflow: hidden;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -134,7 +148,8 @@ body {
   .float-soft,
   .reveal,
   .service-tile,
-  .service-arrow {
+  .service-arrow,
+  .faq-panel {
     animation: none !important;
     transition: none !important;
   }

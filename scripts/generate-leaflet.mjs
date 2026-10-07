@@ -30,8 +30,10 @@ mkdirSync(artifactDir, { recursive: true });
 
 const require = createRequire(import.meta.url);
 
-// Clean N + spine mark (square, padded) — never circular-crop the full logo artwork
+// Full brand lockup (N + name + tagline) for masthead; square mark for compact back header
+const logoLockupPath = join(root, "public/images/logo-lockup.png");
 const logoMarkPath = join(root, "public/images/logo-mark.png");
+const logoLockupDataUri = `data:image/png;base64,${readFileSync(logoLockupPath).toString("base64")}`;
 const logoDataUri = `data:image/png;base64,${readFileSync(logoMarkPath).toString("base64")}`;
 
 const qrPng = await QRCode.toBuffer(BOOK_URL, {
@@ -111,6 +113,17 @@ const html = `<!DOCTYPE html>
       display: flex;
       align-items: center;
       gap: 4mm;
+    }
+    .brand-lockup .logo-lockup {
+      height: 28mm;
+      width: auto;
+      max-width: 58mm;
+      background: #fff;
+      border-radius: 3mm;
+      padding: 2mm 2.5mm;
+      object-fit: contain;
+      display: block;
+      box-shadow: 0 1mm 3mm rgba(0,0,0,0.18);
     }
     .brand-lockup .logo-badge {
       width: 18mm;
@@ -554,13 +567,13 @@ const html = `<!DOCTYPE html>
   <section class="page">
     <header class="masthead">
       <div class="brand-lockup">
-        <div class="logo-badge">
-          <img src="${logoDataUri}" alt="Nguyen's Osteopathic Clinic logo" width="512" height="512" />
-        </div>
-        <div>
-          <p class="brand-name">Nguyen's</p>
-          <p class="brand-sub">Osteopathic Clinic</p>
-        </div>
+        <img
+          class="logo-lockup"
+          src="${logoLockupDataUri}"
+          alt="Nguyen's Osteopathic Clinic — Recover, Realign, and Restore Your Vitality"
+          width="1000"
+          height="696"
+        />
       </div>
       <div class="mast-cta">
         <p class="phone">${PHONE}</p>

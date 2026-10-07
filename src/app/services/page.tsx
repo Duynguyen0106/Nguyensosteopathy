@@ -5,9 +5,16 @@ import { ServiceIcon } from "@/components/ServiceIcon";
 import { services, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Osteopathy Services in Woolwich",
   description:
-    "Explore osteopathy, shockwave therapy, acupuncture, massage, pregnancy support, and paediatric care at Nguyen's Osteopathic Clinic.",
+    "Osteopathy for back & neck pain, focused shockwave, men’s health & ED, acupuncture, deep tissue massage, sports rehab, pregnancy support, and paediatric care in Woolwich.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Osteopathy Services in Woolwich",
+    description:
+      "Explore treatments at Nguyen's Osteopathic Clinic — drug-free care with Austin Duy Nguyen, GOsC-registered osteopath.",
+    url: "/services",
+  },
 };
 
 export default function ServicesPage() {

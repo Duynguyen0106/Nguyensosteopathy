@@ -40,15 +40,14 @@ export default function BookPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink
+            <a
               href={site.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              variant="secondary"
-              className="hidden sm:inline-flex"
+              className="hidden items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-navy shadow-sm transition-all duration-200 hover:border-teal hover:text-teal sm:inline-flex"
             >
               Open full booking page
-            </ButtonLink>
+            </a>
             <ButtonLink href="/services" variant="secondary">
               Browse services
             </ButtonLink>

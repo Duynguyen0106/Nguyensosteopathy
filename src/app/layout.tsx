@@ -30,6 +30,14 @@ export const metadata: Metadata = {
     description: site.tagline,
     type: "website",
     locale: "en_GB",
+    images: [
+      {
+        url: "/images/clinic-promo.jpg",
+        width: 1600,
+        height: 1200,
+        alt: "Nguyen's Osteopathic Clinic — Austin Duy Nguyen, Woolwich",
+      },
+    ],
   },
 };
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -28,6 +29,14 @@ export default function BookPage() {
           </a>
           .
         </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <ButtonLink href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
+            Open full booking page
+          </ButtonLink>
+          <ButtonLink href="/services" variant="secondary">
+            Browse services
+          </ButtonLink>
+        </div>
       </div>
 
       <div className="mx-auto max-w-4xl px-5 pb-20 md:px-8">
@@ -36,19 +45,10 @@ export default function BookPage() {
           title="Book an appointment with Nguyen's Osteopathic Clinic"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="min-h-[780px] w-full rounded-2xl border border-line bg-white"
+          className="min-h-[780px] w-full rounded-2xl border border-line bg-white shadow-[0_20px_50px_rgba(11,44,69,0.06)]"
         />
         <p className="mt-4 text-center text-sm text-muted">
-          Having trouble with the form?{" "}
-          <a
-            href={site.bookingUrl}
-            className="font-medium text-teal hover:text-teal-dark"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open the full booking page
-          </a>
-          .
+          Booking powered by Treow Clinic · {site.cancellation}
         </p>
       </div>
     </div>

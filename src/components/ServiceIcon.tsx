@@ -1,16 +1,12 @@
-type IconName =
-  | "spine"
-  | "spark"
-  | "wave"
-  | "shield"
-  | "needle"
-  | "hand"
-  | "bone"
-  | "pregnancy"
-  | "cranial"
-  | "child";
+import type { ServiceIconName } from "@/lib/site";
 
-export function ServiceIcon({ name }: { name: IconName }) {
+export function ServiceIcon({
+  name,
+  className = "h-6 w-6",
+}: {
+  name: ServiceIconName;
+  className?: string;
+}) {
   const common = {
     viewBox: "0 0 24 24",
     fill: "none",
@@ -19,7 +15,7 @@ export function ServiceIcon({ name }: { name: IconName }) {
     strokeLinecap: "round" as const,
     strokeLinejoin: "round" as const,
     "aria-hidden": true as const,
-    className: "h-6 w-6",
+    className,
   };
 
   switch (name) {

@@ -427,8 +427,7 @@ const html = `<!DOCTYPE html>
       <div class="panel">
         <p class="label">Opening hours</p>
         <p style="margin:0 0 12px;font-size:14px;line-height:1.5;">
-          <strong>Monday – Friday</strong><br/>9:00am – 6:00pm<br/><br/>
-          <strong>Saturday</strong><br/>9:00am – 5:30pm
+          <strong>Thursday – Friday</strong><br/>9:00am – 6:00pm
         </p>
         <p class="label">Book</p>
         <p style="margin:0;font-size:13.5px;line-height:1.45;">

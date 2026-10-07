@@ -22,8 +22,7 @@ export const site = {
       "https://www.google.com/maps/search/?api=1&query=52+Powis+Street+Woolwich+London+SE18+6LQ",
   },
   hours: [
-    { days: "Monday – Friday", time: "9:00am – 6:00pm" },
-    { days: "Saturday", time: "9:00am – 5:30pm" },
+    { days: "Thursday – Friday", time: "9:00am – 6:00pm" },
   ],
   cancellation: "24 hours' notice is required for cancellations.",
   discount:

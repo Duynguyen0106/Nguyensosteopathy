@@ -124,6 +124,17 @@ body {
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
+.booking-embed-shell {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .booking-embed-shell {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
 .faq-panel {
   display: grid;
   grid-template-rows: 0fr;

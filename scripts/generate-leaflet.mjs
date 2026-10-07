@@ -2,6 +2,8 @@
 /**
  * Generate Nguyen's Osteopathic Clinic A4 print leaflet (PDF)
  * with a QR code pointing at the live booking page.
+ *
+ * Print target: A4 (210×297mm), ~300dpi raster assets, vector text via Chromium PDF.
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -20,18 +22,34 @@ const SITE_URL = "https://www.nguyensosteopathy.com";
 mkdirSync(outDir, { recursive: true });
 mkdirSync(artifactDir, { recursive: true });
 
-const logoDataUri = `data:image/jpeg;base64,${readFileSync(
-  join(root, "public/images/logo.jpg"),
-).toString("base64")}`;
+const require = createRequire(import.meta.url);
+const sharp = require("sharp");
 
-const qrDataUri = await QRCode.toDataURL(BOOK_URL, {
-  errorCorrectionLevel: "M",
-  margin: 1,
-  width: 512,
+// Square headshot crop at 512px (~300dpi for ~18mm print, with headroom)
+const logoSrc = join(root, "public/images/logo.jpg");
+const logoPngPath = join(outDir, "logo-print.png");
+const logoMeta = await sharp(logoSrc).metadata();
+const side = Math.min(logoMeta.width ?? 1024, logoMeta.height ?? 1024);
+const left = Math.max(0, Math.floor(((logoMeta.width ?? side) - side) / 2));
+const top = Math.max(0, Math.floor(((logoMeta.height ?? side) - side) * 0.08));
+await sharp(logoSrc)
+  .extract({ left, top: Math.min(top, (logoMeta.height ?? side) - side), width: side, height: side })
+  .resize(512, 512, { kernel: "lanczos3" })
+  .png({ compressionLevel: 6 })
+  .toFile(logoPngPath);
+
+const logoDataUri = `data:image/png;base64,${readFileSync(logoPngPath).toString("base64")}`;
+
+// QR at 1200px ≈ 300dpi for ~40mm printed module (scannable + sharp on print)
+const qrPng = await QRCode.toBuffer(BOOK_URL, {
+  type: "png",
+  errorCorrectionLevel: "H",
+  margin: 2,
+  width: 1200,
   color: { dark: "#0b2c45", light: "#ffffff" },
 });
-
-writeFileSync(join(outDir, "booking-qr.png"), Buffer.from(qrDataUri.split(",")[1], "base64"));
+writeFileSync(join(outDir, "booking-qr.png"), qrPng);
+const qrDataUri = `data:image/png;base64,${qrPng.toString("base64")}`;
 
 const html = `<!DOCTYPE html>
 <html lang="en-GB">
@@ -61,12 +79,19 @@ const html = `<!DOCTYPE html>
       font-family: "Source Sans 3", system-ui, sans-serif;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+    }
+    @page {
+      size: A4;
+      margin: 0;
     }
     .page {
-      width: 794px;   /* A4 @ 96dpi */
-      height: 1123px;
-      padding: 52px 56px;
+      width: 210mm;
+      height: 297mm;
+      padding: 14mm 15mm;
       page-break-after: always;
+      break-after: page;
       position: relative;
       overflow: hidden;
       background:
@@ -74,28 +99,32 @@ const html = `<!DOCTYPE html>
         radial-gradient(ellipse 60% 40% at 100% 100%, rgba(11,44,69,0.08), transparent 50%),
         linear-gradient(165deg, #f1f5f9 0%, #ffffff 42%, #eef6f5 100%);
     }
-    .page:last-child { page-break-after: auto; }
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
     .footer-bar {
-      left: 56px !important;
-      right: 56px !important;
-      bottom: 40px !important;
+      left: 15mm !important;
+      right: 15mm !important;
+      bottom: 10mm !important;
     }
     .brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 3.5mm;
     }
     .brand img {
-      width: 64px;
-      height: 64px;
+      width: 18mm;
+      height: 18mm;
       border-radius: 999px;
       object-fit: cover;
       object-position: center 12%;
-      border: 1px solid rgba(11,44,69,0.12);
+      border: 0.3mm solid rgba(11,44,69,0.12);
+      image-rendering: auto;
     }
     .brand-name {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 28px;
+      font-size: 22pt;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       font-weight: 700;
@@ -103,8 +132,8 @@ const html = `<!DOCTYPE html>
       line-height: 1.05;
     }
     .brand-sub {
-      margin: 4px 0 0;
-      font-size: 12px;
+      margin: 1mm 0 0;
+      font-size: 8.5pt;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--teal);
@@ -112,49 +141,49 @@ const html = `<!DOCTYPE html>
     }
     h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 42px;
+      font-size: 32pt;
       line-height: 1.05;
-      margin: 18px 0 10px;
+      margin: 5mm 0 3mm;
       font-weight: 700;
       color: var(--navy);
     }
     .tagline {
-      font-size: 15px;
+      font-size: 11pt;
       color: var(--slate);
-      margin: 0 0 18px;
+      margin: 0 0 5mm;
       max-width: 42ch;
       line-height: 1.45;
     }
     .hero-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 18px;
+      gap: 5mm;
       align-items: stretch;
-      margin-top: 8px;
+      margin-top: 2mm;
     }
     .panel {
       background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 18px;
+      border: 0.3mm solid var(--line);
+      border-radius: 4.5mm;
+      padding: 5mm;
     }
     .panel h2 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 24px;
-      margin: 0 0 10px;
+      font-size: 18pt;
+      margin: 0 0 3mm;
     }
     .checks {
       list-style: none;
       margin: 0;
       padding: 0;
       display: grid;
-      gap: 8px;
+      gap: 2.2mm;
     }
     .checks li {
       display: flex;
-      gap: 8px;
+      gap: 2mm;
       align-items: flex-start;
-      font-size: 13.5px;
+      font-size: 10pt;
       line-height: 1.35;
       color: var(--navy);
     }
@@ -162,7 +191,7 @@ const html = `<!DOCTYPE html>
       content: "✓";
       color: var(--teal);
       font-weight: 700;
-      margin-top: 1px;
+      margin-top: 0.2mm;
     }
     .qr-panel {
       text-align: center;
@@ -173,146 +202,145 @@ const html = `<!DOCTYPE html>
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 2.5mm;
     }
     .qr-panel img {
-      width: 148px;
-      height: 148px;
+      width: 42mm;
+      height: 42mm;
       background: #fff;
-      border-radius: 14px;
-      padding: 10px;
+      border-radius: 3.5mm;
+      padding: 2.5mm;
     }
     .qr-panel .eyebrow {
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      font-size: 11px;
+      font-size: 8pt;
       font-weight: 700;
       color: #99f6e4;
       margin: 0;
     }
     .qr-panel strong {
-      font-size: 18px;
+      font-size: 14pt;
       font-family: "Cormorant Garamond", Georgia, serif;
     }
     .qr-panel .url {
-      font-size: 11.5px;
+      font-size: 8.5pt;
       opacity: 0.85;
       word-break: break-all;
       max-width: 26ch;
       line-height: 1.35;
     }
     .notice {
-      margin-top: 16px;
-      border: 1px solid rgba(13,148,136,0.35);
+      margin-top: 4.5mm;
+      border: 0.3mm solid rgba(13,148,136,0.35);
       background: rgba(13,148,136,0.08);
-      border-radius: 14px;
-      padding: 12px 14px;
-      font-size: 13px;
+      border-radius: 3.5mm;
+      padding: 3.5mm 4mm;
+      font-size: 10pt;
       line-height: 1.4;
     }
     .notice strong { color: var(--teal-dark); }
     .contact-row {
-      margin-top: 16px;
+      margin-top: 4.5mm;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 3.5mm;
     }
     .contact-row .panel {
-      padding: 14px 16px;
+      padding: 4mm 4.5mm;
     }
     .label {
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      font-size: 10.5px;
+      font-size: 7.5pt;
       font-weight: 700;
       color: var(--teal);
-      margin: 0 0 6px;
+      margin: 0 0 1.5mm;
     }
     .contact-row p {
       margin: 0;
-      font-size: 13.5px;
+      font-size: 10pt;
       line-height: 1.4;
     }
     .footer-bar {
       position: absolute;
       left: 15mm;
       right: 15mm;
-      bottom: 12mm;
+      bottom: 10mm;
       display: flex;
       justify-content: space-between;
-      gap: 12px;
-      font-size: 11px;
+      gap: 3mm;
+      font-size: 8pt;
       color: var(--slate);
-      border-top: 1px solid var(--line);
-      padding-top: 8px;
+      border-top: 0.3mm solid var(--line);
+      padding-top: 2.5mm;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 12.5px;
+      font-size: 9.5pt;
     }
     th, td {
       text-align: left;
-      padding: 8px 6px;
-      border-bottom: 1px solid var(--line);
+      padding: 2.2mm 1.5mm;
+      border-bottom: 0.3mm solid var(--line);
       vertical-align: top;
     }
     th {
-      font-size: 11px;
+      font-size: 8pt;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #fff;
       background: var(--navy);
     }
-    th:first-child { border-radius: 10px 0 0 0; padding-left: 12px; }
-    th:last-child { border-radius: 0 10px 0 0; text-align: right; padding-right: 12px; }
-    td:first-child { padding-left: 12px; font-weight: 600; }
+    th:first-child { border-radius: 2.5mm 0 0 0; padding-left: 3.5mm; }
+    th:last-child { border-radius: 0 2.5mm 0 0; text-align: right; padding-right: 3.5mm; }
+    td:first-child { padding-left: 3.5mm; font-weight: 600; }
     td:nth-child(2) { color: var(--slate); }
-    td:last-child { text-align: right; font-weight: 700; color: var(--teal-dark); padding-right: 12px; }
+    td:last-child { text-align: right; font-weight: 700; color: var(--teal-dark); padding-right: 3.5mm; }
     tr:nth-child(even) td { background: #f8fafc; }
     .two-col {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-top: 16px;
+      gap: 4mm;
+      margin-top: 4.5mm;
     }
     .services {
       columns: 2;
-      column-gap: 18px;
+      column-gap: 5mm;
       margin: 0;
       padding: 0;
       list-style: none;
     }
     .services li {
       break-inside: avoid;
-      margin: 0 0 8px;
-      padding: 8px 10px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
+      margin: 0 0 2.2mm;
+      padding: 2.2mm 2.8mm;
+      border: 0.3mm solid var(--line);
+      border-radius: 3mm;
       background: #fff;
-      font-size: 12.5px;
+      font-size: 9.5pt;
       font-weight: 600;
     }
     .badge {
       display: inline-block;
-      margin-left: 6px;
-      font-size: 9px;
+      margin-left: 1.5mm;
+      font-size: 6.5pt;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--teal-dark);
       background: rgba(13,148,136,0.12);
       border-radius: 999px;
-      padding: 2px 7px;
+      padding: 0.5mm 1.8mm;
       font-weight: 700;
     }
-    @page { size: A4; margin: 0; }
   </style>
 </head>
 <body>
   <!-- FRONT -->
   <section class="page">
     <header class="brand">
-      <img src="${logoDataUri}" alt="Nguyen's Osteopathic Clinic logo" />
+      <img src="${logoDataUri}" alt="Nguyen's Osteopathic Clinic logo" width="512" height="512" />
       <div>
         <p class="brand-name">Nguyen's</p>
         <p class="brand-sub">Osteopathic Clinic</p>
@@ -340,7 +368,7 @@ const html = `<!DOCTYPE html>
 
       <div class="panel qr-panel">
         <p class="eyebrow">Scan to book</p>
-        <img src="${qrDataUri}" alt="QR code to book online at nguyensosteopathy.com/book" />
+        <img src="${qrDataUri}" alt="QR code to book online at nguyensosteopathy.com/book" width="1200" height="1200" />
         <strong>Book online</strong>
         <p class="url">${BOOK_URL}</p>
       </div>
@@ -378,14 +406,14 @@ const html = `<!DOCTYPE html>
   <!-- BACK -->
   <section class="page">
     <header class="brand">
-      <img src="${logoDataUri}" alt="" />
+      <img src="${logoDataUri}" alt="" width="512" height="512" />
       <div>
         <p class="brand-name">Nguyen's</p>
         <p class="brand-sub">Treatments &amp; fees</p>
       </div>
     </header>
 
-    <h1 style="font-size:34px;margin-top:16px;">Clinical care tailored<br/>to how you move</h1>
+    <h1 style="font-size:26pt;margin-top:4mm;">Clinical care tailored<br/>to how you move</h1>
     <p class="tagline">Transparent pricing. Book online in minutes.</p>
 
     <div class="panel" style="padding:0; overflow:hidden;">
@@ -426,19 +454,19 @@ const html = `<!DOCTYPE html>
       </div>
       <div class="panel">
         <p class="label">Opening hours</p>
-        <p style="margin:0 0 12px;font-size:14px;line-height:1.5;">
+        <p style="margin:0 0 3.5mm;font-size:10.5pt;line-height:1.5;">
           <strong>Thursday – Friday</strong><br/>9:00am – 6:00pm
         </p>
         <p class="label">Book</p>
-        <p style="margin:0;font-size:13.5px;line-height:1.45;">
+        <p style="margin:0;font-size:10pt;line-height:1.45;">
           Scan the front QR code or visit<br/>
           <strong>${BOOK_URL}</strong><br/><br/>
           Call <strong>07882843513</strong><br/>
           24 hours’ notice for cancellations.
         </p>
-        <div style="margin-top:14px;text-align:center;">
-          <img src="${qrDataUri}" alt="Book online QR" style="width:110px;height:110px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;" />
-          <p style="margin:8px 0 0;font-size:11px;color:var(--slate);">Scan to book · ${SITE_URL.replace("https://","")}</p>
+        <div style="margin-top:4mm;text-align:center;">
+          <img src="${qrDataUri}" alt="Book online QR" width="1200" height="1200" style="width:32mm;height:32mm;background:#fff;border:0.3mm solid var(--line);border-radius:3mm;padding:2mm;" />
+          <p style="margin:2mm 0 0;font-size:8pt;color:var(--slate);">Scan to book · ${SITE_URL.replace("https://","")}</p>
         </div>
       </div>
     </div>
@@ -454,8 +482,6 @@ const html = `<!DOCTYPE html>
 const htmlPath = join(outDir, "leaflet.html");
 writeFileSync(htmlPath, html);
 
-// Prefer local playwright from /tmp if available, else try workspace
-const require = createRequire(import.meta.url);
 let chromium;
 try {
   ({ chromium } = await import("playwright"));
@@ -468,44 +494,47 @@ try {
 }
 
 const browser = await chromium.launch({ headless: true });
-const page = await browser.newPage({ viewport: { width: 820, height: 1200 } });
+const context = await browser.newContext({
+  viewport: { width: 1240, height: 1754 }, // A4 @ ~150 CSS px/inch preview
+  deviceScaleFactor: 2,
+});
+const page = await context.newPage();
+await page.emulateMedia({ media: "print" });
 await page.goto(`file://${htmlPath}`, { waitUntil: "networkidle" });
-await page.waitForTimeout(1000);
+await page.evaluate(async () => {
+  if (document.fonts?.ready) await document.fonts.ready;
+});
+await page.waitForTimeout(800);
 
 const pdfPath = join(outDir, "nguyens-osteopathy-leaflet.pdf");
 await page.pdf({
   path: pdfPath,
-  width: "210mm",
-  height: "297mm",
+  format: "A4",
   printBackground: true,
+  preferCSSPageSize: true,
   margin: { top: "0", right: "0", bottom: "0", left: "0" },
-  preferCSSPageSize: false,
+  scale: 1,
 });
 
-// Preview PNGs for walkthrough (one screenshot per A4 page)
+// High-res preview PNGs (~300dpi A4 ≈ 2480×3508)
 const pages = page.locator(".page");
 const pageCount = await pages.count();
 for (let i = 0; i < pageCount; i += 1) {
   const name = i === 0 ? "leaflet-front.png" : "leaflet-back.png";
-  const box = await pages.nth(i).boundingBox();
-  if (!box) throw new Error(`Missing bounds for page ${i}`);
-  await page.screenshot({
+  const el = pages.nth(i);
+  await el.screenshot({
     path: join(artifactDir, name),
     type: "png",
-    clip: {
-      x: Math.max(0, box.x),
-      y: Math.max(0, box.y),
-      width: box.width,
-      height: box.height,
-    },
+    scale: "device",
   });
 }
 
 await browser.close();
 
-// Copy PDF into artifacts too
 writeFileSync(join(artifactDir, "nguyens-osteopathy-leaflet.pdf"), readFileSync(pdfPath));
 
 console.log("QR:", BOOK_URL);
 console.log("PDF:", pdfPath);
+console.log("PDF bytes:", readFileSync(pdfPath).length);
+console.log("QR px:", 1200);
 console.log("Artifacts:", artifactDir);

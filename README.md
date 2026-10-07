@@ -18,14 +18,26 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## Live domain
+
+https://www.nguyensosteopathy.com
+
+Printable leaflet (with booking QR): `public/leaflet/nguyens-osteopathy-leaflet.pdf`
+
 ## Booking integration
 
 | Surface | Default URL |
 |---------|-------------|
-| Book button / links | `https://treow-clinic.vercel.app/book/nguyens-osteopathy` |
+| Book button / links | `https://www.nguyensosteopathy.com/book` |
 | `/book` embed iframe | `https://treow-clinic.vercel.app/embed/nguyens-osteopathy` |
 
-Override with `NEXT_PUBLIC_BOOKING_URL` and `NEXT_PUBLIC_BOOKING_EMBED_URL` once the clinic slug exists in Treow.
+Override with `NEXT_PUBLIC_BOOKING_URL` and `NEXT_PUBLIC_BOOKING_EMBED_URL` if needed.
+
+Regenerate the leaflet PDF:
+
+```bash
+npm run leaflet
+```
 
 ## Content
 

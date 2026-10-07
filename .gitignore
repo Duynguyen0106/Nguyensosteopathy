@@ -42,3 +42,6 @@ next-env.d.ts
 
 # local env overrides (keep .env.example tracked)
 !.env.example
+
+# regenerated leaflet source (PDF + QR are committed)
+/public/leaflet/leaflet.html

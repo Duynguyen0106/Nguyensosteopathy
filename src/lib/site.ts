@@ -12,7 +12,8 @@ export const site = {
   email: "nguyensosteopathy@gmail.com",
   emailHref: "mailto:nguyensosteopathy@gmail.com",
   facebookUrl: "https://www.facebook.com/Nguyensosteopathy",
-  website: "www.nguyensosteopathy.co.uk",
+  website: "www.nguyensosteopathy.com",
+  websiteUrl: "https://www.nguyensosteopathy.com",
   address: {
     line1: "52 Powis Street",
     line2: "Woolwich, London, SE18 6LQ",
@@ -29,7 +30,7 @@ export const site = {
     "10% Discount for NHS Staff & Students (Valid ID required at appointment)",
   bookingUrl:
     process.env.NEXT_PUBLIC_BOOKING_URL ??
-    "https://treow-clinic.vercel.app/book/nguyens-osteopathy",
+    "https://www.nguyensosteopathy.com/book",
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
     "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",

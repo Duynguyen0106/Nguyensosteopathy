@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   description:
     "Drug-free osteopathic care in Woolwich with Austin Duy Nguyen, GOsC-registered osteopath. Book online for back pain, shockwave therapy, sports rehab, and more.",
-  metadataBase: new URL("https://www.nguyensosteopathy.co.uk"),
+  metadataBase: new URL("https://www.nguyensosteopathy.com"),
   openGraph: {
     title: site.name,
     description: site.tagline,

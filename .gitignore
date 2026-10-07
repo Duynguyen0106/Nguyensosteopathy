@@ -46,3 +46,4 @@ next-env.d.ts
 # regenerated leaflet source (PDF + QR are committed)
 /public/leaflet/leaflet.html
 /public/leaflet/logo-print.png
+/public/leaflet/austin-print.png

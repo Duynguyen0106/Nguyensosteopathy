@@ -1,0 +1,304 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ServiceIcon } from "@/components/ServiceIcon";
+import { highlights, pricing, services, site } from "@/lib/site";
+
+export default function HomePage() {
+  return (
+    <>
+      <section className="relative min-h-[100svh] overflow-hidden hero-wash">
+        <div className="absolute inset-y-0 right-0 hidden w-[52%] md:block">
+          <Image
+            src="/images/austin-nguyen.jpg"
+            alt="Austin Duy Nguyen, osteopath at Nguyen's Osteopathic Clinic"
+            fill
+            priority
+            className="object-cover object-[center_18%]"
+            sizes="52vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[rgba(247,251,251,0.96)] via-[rgba(247,251,251,0.35)] to-transparent" />
+        </div>
+
+        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-5 pb-16 pt-28 md:px-8 md:pt-24">
+          <div className="max-w-xl section-fade">
+            <Image
+              src="/images/logo.jpg"
+              alt="Nguyen's Osteopathic Clinic logo"
+              width={120}
+              height={120}
+              className="mb-6 h-24 w-24 rounded-full object-cover object-top shadow-[0_12px_40px_rgba(11,44,69,0.12)] md:h-28 md:w-28"
+              priority
+            />
+
+            <p className="font-display text-[clamp(2.6rem,7vw,4.6rem)] leading-[0.95] font-semibold tracking-[0.04em] text-navy uppercase">
+              Nguyen&apos;s
+            </p>
+            <p className="mt-2 text-sm font-semibold tracking-[0.28em] text-teal uppercase md:text-base">
+              Osteopathic Clinic
+            </p>
+
+            <div className="mt-5 flex items-center gap-4">
+              <span className="brand-rule h-px w-10 bg-teal" />
+              <p className="text-base text-muted md:text-lg">{site.tagline}</p>
+              <span className="brand-rule h-px w-10 bg-teal" />
+            </div>
+
+            <p className="mt-6 max-w-md text-base leading-relaxed text-ink/80 md:text-[1.05rem]">
+              High-quality, drug-free care that finds the root cause of your pain
+              and helps you move with confidence again.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href={site.bookingUrl}
+                className="inline-flex rounded-full bg-teal px-6 py-3 text-sm font-semibold text-white transition hover:bg-teal-dark"
+              >
+                Book online
+              </a>
+              <a
+                href={site.phoneHref}
+                className="inline-flex rounded-full border border-navy/15 bg-white/70 px-6 py-3 text-sm font-semibold text-navy backdrop-blur transition hover:border-teal hover:text-teal"
+              >
+                Call {site.phone}
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-10 md:hidden">
+            <div className="relative mx-auto aspect-[4/5] max-w-sm overflow-hidden">
+              <Image
+                src="/images/austin-nguyen.jpg"
+                alt="Austin Duy Nguyen, osteopath at Nguyen's Osteopathic Clinic"
+                fill
+                className="object-cover object-[center_15%]"
+                sizes="90vw"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-navy text-white">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-5 md:px-8">
+          {highlights.map((item) => (
+            <p
+              key={item}
+              className="flex items-center gap-2 text-sm text-white/90 md:text-[0.95rem]"
+            >
+              <span className="text-teal-mist" aria-hidden>
+                ✓
+              </span>
+              {item}
+            </p>
+          ))}
+        </div>
+        <div className="border-t border-white/10 px-5 py-3 text-center text-sm text-teal-mist md:px-8">
+          Located inside {site.address.venue}, Woolwich
+        </div>
+      </section>
+
+      <section id="about" className="scroll-mt-24 px-5 py-20 md:px-8 md:py-24">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
+          <div className="relative">
+            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 to-navy/10 blur-xl" />
+            <Image
+              src="/images/austin-nguyen.jpg"
+              alt="Austin Duy Nguyen"
+              width={560}
+              height={700}
+              className="relative float-soft w-full rounded-[1.5rem] object-cover object-top shadow-[0_24px_60px_rgba(11,44,69,0.14)]"
+            />
+          </div>
+
+          <div>
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Meet your osteopath
+            </p>
+            <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
+              {site.practitioner.name}
+            </h2>
+            <p className="mt-2 text-sm font-medium tracking-wide text-muted">
+              {site.practitioner.title} · Reg No. {site.practitioner.regNo}
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-ink/85">
+              At {site.name}, we provide high-quality, drug-free healthcare
+              focused on identifying and treating the root cause of your pain.
+              Care is tailored, confidential, and aimed at restoring comfortable
+              movement and optimal health.
+            </p>
+
+            <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-teal/40 bg-white px-5 py-3 text-sm text-navy">
+              <span
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-teal/10 text-teal"
+                aria-hidden
+              >
+                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 3 5 6v5c0 4.5 3 7.8 7 9 4-1.2 7-4.5 7-9V6l-7-3Z" />
+                  <path d="m9.5 12 1.8 1.8 3.4-3.6" />
+                </svg>
+              </span>
+              General Osteopathic Council Registered · Reg No.{" "}
+              {site.practitioner.regNo}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="services"
+        className="scroll-mt-24 border-y border-line bg-white px-5 py-20 md:px-8 md:py-24"
+      >
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Clinical care
+            </p>
+            <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
+              Treatments for how you move
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
+              From everyday back pain to specialist shockwave therapy — care
+              shaped around your recovery goals.
+            </p>
+          </div>
+
+          <ul className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-2">
+            {services.map((service) => (
+              <li
+                key={service.title}
+                className="relative border-l-2 border-teal pl-5"
+              >
+                <div className="mb-3 text-teal">
+                  <ServiceIcon name={service.icon} />
+                </div>
+                <h3 className="text-lg font-semibold text-navy">
+                  {service.title}
+                </h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted md:text-[0.95rem]">
+                  {service.description}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section id="pricing" className="scroll-mt-24 px-5 py-20 md:px-8 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Transparent pricing
+            </p>
+            <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
+              Treatments & fees
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
+              Tailored clinical care designed around your specific recovery
+              goals.
+            </p>
+          </div>
+
+          <div className="mt-10 overflow-hidden rounded-2xl border border-line bg-white">
+            <div className="hidden grid-cols-[1.6fr_0.8fr_0.5fr] bg-navy px-6 py-4 text-sm font-medium tracking-wide text-white md:grid">
+              <span>Service & consultation</span>
+              <span>Duration</span>
+              <span className="text-right">Price</span>
+            </div>
+            <ul>
+              {pricing.map((row, index) => (
+                <li
+                  key={row.service}
+                  className={`grid gap-1 px-5 py-4 md:grid-cols-[1.6fr_0.8fr_0.5fr] md:items-center md:gap-4 md:px-6 ${
+                    index % 2 === 0 ? "bg-cream-mist/70" : "bg-white"
+                  }`}
+                >
+                  <p className="font-medium text-navy">{row.service}</p>
+                  <p className="text-sm text-muted">{row.duration}</p>
+                  <p className="text-lg font-semibold text-teal md:text-right">
+                    {row.price}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <p className="mt-6 rounded-2xl border border-dashed border-teal/50 bg-teal/5 px-5 py-4 text-sm text-navy md:text-base">
+            {site.discount}
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="location"
+        className="scroll-mt-24 border-t border-line bg-gradient-to-b from-teal/8 to-background px-5 py-20 md:px-8 md:py-24"
+      >
+        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-end">
+          <div>
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Find us
+            </p>
+            <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
+              Conveniently located inside {site.address.venue}
+            </h2>
+            <p className="mt-5 text-lg text-ink/85">
+              {site.address.line1}
+              <br />
+              {site.address.line2}
+            </p>
+            <p className="mt-3 text-sm text-muted">
+              Providing NHS & Private Pharmacy Services on site.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href={site.address.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex rounded-full bg-navy px-5 py-3 text-sm font-semibold text-white transition hover:bg-navy-deep"
+              >
+                Open in Maps
+              </a>
+              <Link
+                href="/book"
+                className="inline-flex rounded-full border border-navy/15 bg-white px-5 py-3 text-sm font-semibold text-navy transition hover:border-teal hover:text-teal"
+              >
+                Book an appointment
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-[1.5rem] border border-teal/25 bg-white/80 p-6 backdrop-blur">
+            <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+              Book your appointment
+            </p>
+            <ul className="mt-5 space-y-3 text-sm text-ink/85">
+              <li>
+                <a href={site.phoneHref} className="hover:text-teal">
+                  {site.phone}
+                </a>
+              </li>
+              <li>
+                <a href={site.emailHref} className="hover:text-teal">
+                  {site.email}
+                </a>
+              </li>
+              <li>
+                <a href={site.bookingUrl} className="font-semibold text-teal hover:text-teal-dark">
+                  Book online via Treow
+                </a>
+              </li>
+            </ul>
+            <div className="mt-6 space-y-2 border-t border-line pt-5 text-sm text-muted">
+              {site.hours.map((row) => (
+                <p key={row.days}>
+                  <span className="font-medium text-navy">{row.days}:</span>{" "}
+                  {row.time}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

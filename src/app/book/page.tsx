@@ -18,19 +18,40 @@ export default function BookPage() {
         <h1 className="mt-3 font-display text-4xl text-navy md:text-5xl">
           Book your appointment
         </h1>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
           Choose a time that works for you. Prefer to speak with us? Call{" "}
-          <a href={site.phoneHref} className="font-medium text-teal hover:text-teal-dark">
+          <a
+            href={site.phoneHref}
+            className="font-medium text-teal hover:text-teal-dark"
+          >
             {site.phone}
           </a>{" "}
           or email{" "}
-          <a href={site.emailHref} className="font-medium text-teal hover:text-teal-dark">
+          <a
+            href={site.emailHref}
+            className="font-medium text-teal hover:text-teal-dark"
+          >
             {site.email}
           </a>
           .
         </p>
+
+        <div className="mt-6 rounded-xl border border-teal/30 bg-teal/5 px-5 py-4 text-sm leading-relaxed text-navy md:text-base">
+          <p className="font-semibold">
+            Online appointments open from {site.bookingOpensLabel}
+          </p>
+          <p className="mt-1 text-slate-600">
+            The diary is closed before this date. You can book now for times on
+            or after {site.bookingOpensLabel}.
+          </p>
+        </div>
+
         <div className="mt-6 flex flex-wrap gap-3">
-          <ButtonLink href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
+          <ButtonLink
+            href={site.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Open full booking page
           </ButtonLink>
           <ButtonLink href="/services" variant="secondary">
@@ -45,10 +66,11 @@ export default function BookPage() {
           title="Book an appointment with Nguyen's Osteopathic Clinic"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="min-h-[780px] w-full rounded-2xl border border-line bg-white shadow-[0_20px_50px_rgba(11,44,69,0.06)]"
+          className="min-h-[780px] w-full rounded-2xl border border-slate-200 bg-white shadow-[0_20px_50px_rgba(11,44,69,0.06)]"
         />
-        <p className="mt-4 text-center text-sm text-muted">
-          Booking powered by Treow Clinic · {site.cancellation}
+        <p className="mt-4 text-center text-sm font-medium text-slate-600">
+          Booking powered by Treow Clinic · Earliest online date{" "}
+          {site.bookingOpensLabel} · {site.cancellation}
         </p>
       </div>
     </div>

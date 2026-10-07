@@ -33,6 +33,9 @@ export const site = {
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
     "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",
+  /** Earliest date patients can book online (ISO YYYY-MM-DD, Europe/London). */
+  bookingOpensOn: "2026-11-05",
+  bookingOpensLabel: "5 November 2026",
 } as const;
 
 export const highlights = [
@@ -47,7 +50,7 @@ export const visitSteps = [
     step: "01",
     title: "Book online or call",
     detail:
-      "Choose a time that suits you through Treow booking, or ring us directly — no GP referral needed.",
+      "Choose a time from 5 November 2026 onwards through online booking, or ring us directly — no GP referral needed.",
   },
   {
     step: "02",
@@ -91,7 +94,7 @@ export const faqs = [
   {
     question: "Do I need a GP referral to book an appointment?",
     answer:
-      "No. You can book directly online or by phone — a GP referral is not required. If you have relevant medical letters or imaging, bring them along so we can tailor your care.",
+      "No. You can book directly online or by phone — a GP referral is not required. Online appointments are available from 5 November 2026. If you have relevant medical letters or imaging, bring them along so we can tailor your care.",
   },
   {
     question: "What should I expect during my first osteopathy visit?",

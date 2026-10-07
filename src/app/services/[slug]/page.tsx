@@ -17,9 +17,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = getService(slug);
   if (!service) return { title: "Service" };
+  const title = `${service.title} in Woolwich`;
+  const description = `${service.summary} Book with Austin Duy Nguyen at Nguyen's Osteopathic Clinic, Woolwich.`;
   return {
-    title: service.title,
-    description: service.summary,
+    title,
+    description,
+    alternates: { canonical: `/services/${service.slug}` },
+    openGraph: {
+      title,
+      description,
+      url: `/services/${service.slug}`,
+    },
   };
 }
 

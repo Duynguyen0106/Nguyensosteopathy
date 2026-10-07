@@ -9,8 +9,8 @@ export const site = {
   },
   phone: "07882843513",
   phoneHref: "tel:+447882843513",
-  email: "info@nguyensosteopathy.co.uk",
-  emailHref: "mailto:info@nguyensosteopathy.co.uk",
+  email: "nguyensosteopathy@gmail.com",
+  emailHref: "mailto:nguyensosteopathy@gmail.com",
   website: "www.nguyensosteopathy.co.uk",
   address: {
     line1: "52 Powis Street",
@@ -104,7 +104,7 @@ export const services: Service[] = [
       "Hands-on soft-tissue and joint techniques",
       "Clear home advice to protect progress between visits",
     ],
-    relatedPricing: "Initial from £75 · Follow-up £60",
+    relatedPricing: "Initial £75 (60 mins) · Follow-up £60",
     icon: "spine",
   },
   {
@@ -125,7 +125,7 @@ export const services: Service[] = [
       "Targeted mobilisation and soft-tissue release",
       "Simple exercises to reduce recurrence",
     ],
-    relatedPricing: "Initial from £75 · Follow-up £60",
+    relatedPricing: "Initial £75 (60 mins) · Follow-up £60",
     icon: "spark",
   },
   {
@@ -188,7 +188,7 @@ export const services: Service[] = [
       "Precise needling with or without gentle microcurrent",
       "Integration with your broader treatment plan",
     ],
-    relatedPricing: "Add-on / standalone +£15 – £20",
+    relatedPricing: "Standalone £20 · also available as add-on",
     icon: "needle",
   },
   {
@@ -230,7 +230,7 @@ export const services: Service[] = [
       "Manual therapy plus progressive rehab advice",
       "Clear milestones for return to activity",
     ],
-    relatedPricing: "Initial from £75 · Follow-up £60",
+    relatedPricing: "Initial £75 (60 mins) · Follow-up £60",
     icon: "bone",
   },
   {
@@ -251,7 +251,7 @@ export const services: Service[] = [
       "Gentle mobilisation and soft-tissue care",
       "Practical advice for comfort day to day",
     ],
-    relatedPricing: "Initial from £75 · Follow-up £60",
+    relatedPricing: "Initial £75 (60 mins) · Follow-up £60",
     icon: "pregnancy",
   },
   {
@@ -272,7 +272,7 @@ export const services: Service[] = [
       "Subtle hands-on techniques with regular check-ins",
       "Advice on rest and hydration afterwards",
     ],
-    relatedPricing: "Initial from £75 · Follow-up £60",
+    relatedPricing: "Initial £75 (60 mins) · Follow-up £60",
     icon: "cranial",
   },
   {
@@ -293,7 +293,7 @@ export const services: Service[] = [
       "Very gentle assessment and treatment",
       "Practical guidance you can use at home",
     ],
-    relatedPricing: "Initial from £75 · Follow-up £60",
+    relatedPricing: "Initial £75 (60 mins) · Follow-up £60",
     icon: "child",
   },
 ];
@@ -305,7 +305,7 @@ export function getService(slug: string) {
 export const pricing = [
   {
     service: "Initial Consultation & Treatment",
-    duration: "45–60 mins",
+    duration: "60 mins",
     price: "£75",
   },
   {
@@ -315,18 +315,18 @@ export const pricing = [
   },
   {
     service: "Focused Shockwave Therapy (LI-ESWT)",
-    duration: "Per session",
+    duration: "30 mins",
     price: "£90",
   },
   {
     service: "Specialist ED Treatment & Pelvic Protocol",
-    duration: "Confidential",
+    duration: "45 mins",
     price: "£110",
   },
   {
     service: "Acupuncture / Electroacupuncture",
-    duration: "Add-on / Standalone",
-    price: "+£15 – £20",
+    duration: "30 mins / add-on",
+    price: "£20",
   },
   {
     service: "Deep Tissue Massage Therapy",
@@ -335,7 +335,7 @@ export const pricing = [
   },
   {
     service: "Cupping Therapy Add-on",
-    duration: "Add-on",
-    price: "+£10 – £15",
+    duration: "Add-on (in clinic)",
+    price: "£15",
   },
 ] as const;

@@ -31,7 +31,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   const others = services.filter((item) => item.slug !== service.slug).slice(0, 4);
 
   return (
-    <div className="bg-background pt-24">
+    <div className="bg-background pt-10 md:pt-14">
       <div className="mx-auto max-w-6xl px-5 pb-8 md:px-8">
         <Link
           href="/services"

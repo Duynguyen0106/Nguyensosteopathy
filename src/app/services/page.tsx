@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="bg-background pt-24">
+    <div className="bg-background pt-10 md:pt-14">
       <div className="mx-auto max-w-6xl px-5 pb-10 md:px-8">
         <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
           Clinical care
@@ -66,8 +66,11 @@ export default function ServicesPage() {
           <div className="min-w-0 flex-1">
             <p className="font-display text-2xl text-navy">Ready to start?</p>
             <p className="mt-1 text-sm text-muted">
-              Book online, or call {site.phone} for help choosing the right
-              appointment.
+              Book online, or call{" "}
+              <a href={site.phoneHref} className="font-medium text-teal hover:text-teal-dark">
+                {site.phone}
+              </a>{" "}
+              for help choosing the right appointment.
             </p>
           </div>
           <ButtonLink href="/book">Book an appointment</ButtonLink>

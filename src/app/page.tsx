@@ -1,76 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { Hero } from "@/components/Hero";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { highlights, pricing, services, site, visitSteps } from "@/lib/site";
 
 export default function HomePage() {
   return (
     <>
-      <section className="relative min-h-[100svh] overflow-hidden hero-wash">
-        <div className="absolute inset-y-0 right-0 hidden w-[54%] lg:block">
-          <Image
-            src="/images/austin-nguyen.jpg"
-            alt="Austin Duy Nguyen, osteopath at Nguyen's Osteopathic Clinic"
-            fill
-            priority
-            className="object-cover object-[center_18%]"
-            sizes="54vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[rgba(247,251,251,0.97)] via-[rgba(247,251,251,0.42)] to-transparent" />
-        </div>
-
-        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-5 pb-16 pt-28 md:px-8 md:pt-24">
-          <div className="max-w-xl section-fade">
-            <Image
-              src="/images/logo.jpg"
-              alt="Nguyen's Osteopathic Clinic logo"
-              width={112}
-              height={112}
-              className="mb-6 h-24 w-24 rounded-full object-cover object-top shadow-[0_12px_40px_rgba(11,44,69,0.12)] md:h-28 md:w-28"
-              priority
-            />
-
-            <p className="font-display text-[clamp(2.7rem,7vw,4.7rem)] leading-[0.94] font-semibold tracking-[0.04em] text-navy uppercase">
-              Nguyen&apos;s
-            </p>
-            <p className="mt-2 text-sm font-semibold tracking-[0.28em] text-teal uppercase md:text-base">
-              Osteopathic Clinic
-            </p>
-
-            <div className="mt-5 flex items-center gap-4">
-              <span className="brand-rule h-px w-10 bg-teal" />
-              <p className="text-base text-muted md:text-lg">{site.tagline}</p>
-              <span className="brand-rule h-px w-10 bg-teal" />
-            </div>
-
-            <p className="mt-6 max-w-md text-base leading-relaxed text-ink/80 md:text-[1.05rem]">
-              High-quality, drug-free care that finds the root cause of your pain
-              and helps you move with confidence again.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <ButtonLink href="/book">Book online</ButtonLink>
-              <ButtonLink href={site.phoneHref} variant="secondary">
-                Call {site.phone}
-              </ButtonLink>
-            </div>
-          </div>
-
-          <div className="mt-10 lg:hidden">
-            <div className="relative mx-auto aspect-[4/5] max-w-sm overflow-hidden rounded-2xl">
-              <Image
-                src="/images/austin-nguyen.jpg"
-                alt="Austin Duy Nguyen, osteopath at Nguyen's Osteopathic Clinic"
-                fill
-                className="object-cover object-[center_15%]"
-                sizes="90vw"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       <section className="bg-navy text-white">
         <div className="mx-auto grid max-w-6xl gap-3 px-5 py-5 sm:grid-cols-2 lg:grid-cols-4 md:px-8">

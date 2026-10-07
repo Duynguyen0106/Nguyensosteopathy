@@ -19,7 +19,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
+    const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -34,23 +34,27 @@ export function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition ${
+      className={`sticky top-0 z-50 transition ${
         scrolled || open
-          ? "border-b border-line/70 bg-white/92 shadow-[0_8px_30px_rgba(11,44,69,0.06)] backdrop-blur-md"
-          : "bg-transparent"
+          ? "border-b border-line/80 bg-white/95 shadow-[0_8px_30px_rgba(11,44,69,0.07)] backdrop-blur-md"
+          : "border-b border-transparent bg-white/70 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 md:px-8">
-        <Link href="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3 md:px-8">
+        <Link
+          href="/"
+          className="group flex min-w-0 items-center gap-2.5 sm:gap-3"
+          onClick={() => setOpen(false)}
+        >
           <Image
             src="/images/logo.jpg"
             alt=""
             width={44}
             height={44}
-            className="h-10 w-10 rounded-full object-cover object-[center_12%] ring-1 ring-navy/10"
+            className="h-9 w-9 shrink-0 rounded-full object-cover object-[center_12%] ring-1 ring-navy/10 sm:h-10 sm:w-10"
             priority
           />
-          <span className="font-display text-sm tracking-[0.14em] text-navy uppercase transition group-hover:text-teal md:text-[0.95rem]">
+          <span className="font-display truncate text-sm tracking-[0.14em] text-navy uppercase transition group-hover:text-teal md:text-[0.95rem]">
             Nguyen&apos;s
           </span>
         </Link>
@@ -70,12 +74,10 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <ButtonLink
-            href={site.bookingUrl}
-            className="hidden sm:inline-flex"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/book"
+            className="px-3.5 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
           >
             Book online
           </ButtonLink>
@@ -88,7 +90,13 @@ export function Header() {
             onClick={() => setOpen((value) => !value)}
           >
             <span className="sr-only">Menu</span>
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+            <svg
+              viewBox="0 0 24 24"
+              className="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            >
               {open ? (
                 <path d="M6 6l12 12M18 6 6 18" />
               ) : (
@@ -115,16 +123,14 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href={site.phoneHref}
+              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+              onClick={() => setOpen(false)}
+            >
+              Call {site.phone}
+            </a>
           </nav>
-          <ButtonLink
-            href={site.bookingUrl}
-            className="mt-4 w-full"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-          >
-            Book online
-          </ButtonLink>
         </div>
       ) : null}
     </header>

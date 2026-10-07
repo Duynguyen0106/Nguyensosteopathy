@@ -8,7 +8,7 @@ export const site = {
     regNo: "12332",
   },
   phone: "07882843513",
-  phoneHref: "tel:+447882843513",
+  phoneHref: "tel:07882843513",
   email: "nguyensosteopathy@gmail.com",
   emailHref: "mailto:nguyensosteopathy@gmail.com",
   website: "www.nguyensosteopathy.co.uk",

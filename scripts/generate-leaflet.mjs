@@ -29,54 +29,10 @@ mkdirSync(outDir, { recursive: true });
 mkdirSync(artifactDir, { recursive: true });
 
 const require = createRequire(import.meta.url);
-const sharp = require("sharp");
 
-async function toPrintPng(src, dest, size = 900) {
-  const meta = await sharp(src).metadata();
-  const side = Math.min(meta.width ?? size, meta.height ?? size);
-  const left = Math.max(0, Math.floor(((meta.width ?? side) - side) / 2));
-  const top = Math.max(0, Math.floor(((meta.height ?? side) - side) * 0.06));
-  await sharp(src)
-    .extract({
-      left,
-      top: Math.min(top, (meta.height ?? side) - side),
-      width: side,
-      height: side,
-    })
-    .resize(size, size, { kernel: "lanczos3" })
-    .png({ compressionLevel: 6 })
-    .toFile(dest);
-  return `data:image/png;base64,${readFileSync(dest).toString("base64")}`;
-}
-
-// Prefer clean N+spine mark when available (avoids cropping full logo artwork)
+// Clean N + spine mark (square, padded) — never circular-crop the full logo artwork
 const logoMarkPath = join(root, "public/images/logo-mark.png");
-const logoSource = (() => {
-  try {
-    readFileSync(logoMarkPath);
-    return logoMarkPath;
-  } catch {
-    return join(root, "public/images/logo.jpg");
-  }
-})();
-const logoDataUri = logoSource.endsWith("logo-mark.png")
-  ? `data:image/png;base64,${readFileSync(logoSource).toString("base64")}`
-  : await toPrintPng(logoSource, join(outDir, "logo-print.png"), 512);
-// Prefer the clinic portrait the owner supplied (cropped clean of baked-in overlays)
-const clinicPhotoPath = join(root, "public/images/austin-clinic.jpg");
-const photoSource = (() => {
-  try {
-    readFileSync(clinicPhotoPath);
-    return clinicPhotoPath;
-  } catch {
-    return join(root, "public/images/austin-nguyen.jpg");
-  }
-})();
-const photoDataUri = await toPrintPng(
-  photoSource,
-  join(outDir, "austin-print.png"),
-  900,
-);
+const logoDataUri = `data:image/png;base64,${readFileSync(logoMarkPath).toString("base64")}`;
 
 const qrPng = await QRCode.toBuffer(BOOK_URL, {
   type: "png",
@@ -154,14 +110,24 @@ const html = `<!DOCTYPE html>
     .brand-lockup {
       display: flex;
       align-items: center;
-      gap: 3.5mm;
+      gap: 4mm;
     }
-    .brand-lockup img {
-      width: 16mm;
-      height: 16mm;
-      border-radius: 999px;
-      object-fit: cover;
-      border: 0.35mm solid rgba(255,255,255,0.35);
+    .brand-lockup .logo-badge {
+      width: 18mm;
+      height: 18mm;
+      border-radius: 3.5mm;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      padding: 1.5mm;
+      box-shadow: 0 1mm 3mm rgba(0,0,0,0.18);
+      flex-shrink: 0;
+    }
+    .brand-lockup .logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
     .brand-name {
       font-family: "Cormorant Garamond", Georgia, serif;
@@ -229,30 +195,20 @@ const html = `<!DOCTYPE html>
     }
 
     .trust-row {
-      display: grid;
-      grid-template-columns: 40mm 1fr;
-      gap: 5mm;
-      align-items: center;
       margin-bottom: 5mm;
-      padding-bottom: 4.5mm;
-      border-bottom: 0.3mm solid var(--line);
-    }
-    .trust-photo {
-      width: 40mm;
-      height: 40mm;
+      padding: 4mm 4.5mm;
+      border: 0.3mm solid var(--line);
       border-radius: 3mm;
-      object-fit: cover;
-      object-position: center 18%;
-      box-shadow: 0 2mm 6mm rgba(11,44,69,0.12);
+      background: rgba(255,255,255,0.72);
     }
     .trust-copy h2 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 16pt;
-      margin: 0 0 1.5mm;
+      font-size: 15pt;
+      margin: 0 0 1mm;
       font-weight: 700;
     }
     .trust-copy .role {
-      margin: 0 0 3mm;
+      margin: 0 0 2mm;
       font-size: 9.5pt;
       color: var(--teal);
       font-weight: 700;
@@ -404,11 +360,22 @@ const html = `<!DOCTYPE html>
       align-items: center;
       gap: 3mm;
     }
-    .back-head img {
-      width: 12mm;
-      height: 12mm;
-      border-radius: 999px;
-      object-fit: cover;
+    .back-head .logo-badge {
+      width: 14mm;
+      height: 14mm;
+      border-radius: 2.5mm;
+      background: #fff;
+      border: 0.25mm solid var(--line);
+      display: grid;
+      place-items: center;
+      padding: 1.2mm;
+      flex-shrink: 0;
+    }
+    .back-head .logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
     .back-head .brand-name { font-size: 15pt; color: var(--navy); }
     .back-head .brand-sub { color: var(--teal); font-size: 7pt; }
@@ -587,7 +554,9 @@ const html = `<!DOCTYPE html>
   <section class="page">
     <header class="masthead">
       <div class="brand-lockup">
-        <img src="${logoDataUri}" alt="Nguyen's Osteopathic Clinic logo" width="512" height="512" />
+        <div class="logo-badge">
+          <img src="${logoDataUri}" alt="Nguyen's Osteopathic Clinic logo" width="512" height="512" />
+        </div>
         <div>
           <p class="brand-name">Nguyen's</p>
           <p class="brand-sub">Osteopathic Clinic</p>
@@ -608,7 +577,6 @@ const html = `<!DOCTYPE html>
       </p>
 
       <div class="trust-row">
-        <img class="trust-photo" src="${photoDataUri}" alt="Austin Duy Nguyen, osteopath" width="900" height="900" />
         <div class="trust-copy">
           <h2>Austin Duy Nguyen</h2>
           <p class="role">GOsC-Registered Osteopath · Reg. No. 12332</p>
@@ -673,7 +641,9 @@ const html = `<!DOCTYPE html>
   <section class="page">
     <header class="back-head">
       <div class="brand-mini">
-        <img src="${logoDataUri}" alt="" width="512" height="512" />
+        <div class="logo-badge">
+          <img src="${logoDataUri}" alt="" width="512" height="512" />
+        </div>
         <div>
           <p class="brand-name">Nguyen's</p>
           <p class="brand-sub">Treatments &amp; fees</p>

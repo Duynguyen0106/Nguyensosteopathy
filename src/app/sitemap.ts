@@ -37,5 +37,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.4,
     },
+    {
+      url: `${base}/poster/nguyens-osteopathy-poster-a3.pdf`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.3,
+    },
   ];
 }

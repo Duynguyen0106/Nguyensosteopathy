@@ -62,8 +62,18 @@ const logoSource = (() => {
 const logoDataUri = logoSource.endsWith("logo-mark.png")
   ? `data:image/png;base64,${readFileSync(logoSource).toString("base64")}`
   : await toPrintPng(logoSource, join(outDir, "logo-print.png"), 512);
+// Prefer the clinic portrait the owner supplied (cropped clean of baked-in overlays)
+const clinicPhotoPath = join(root, "public/images/austin-clinic.jpg");
+const photoSource = (() => {
+  try {
+    readFileSync(clinicPhotoPath);
+    return clinicPhotoPath;
+  } catch {
+    return join(root, "public/images/austin-nguyen.jpg");
+  }
+})();
 const photoDataUri = await toPrintPng(
-  join(root, "public/images/austin-nguyen.jpg"),
+  photoSource,
   join(outDir, "austin-print.png"),
   900,
 );
@@ -116,10 +126,18 @@ const html = `<!DOCTYPE html>
       height: 297mm;
       position: relative;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
       page-break-after: always;
       break-after: page;
       background:
         linear-gradient(180deg, #eef5f4 0%, #ffffff 38%, #f7fafb 100%);
+    }
+    .front-body, .back-body {
+      flex: 1 1 auto;
+    }
+    .page-foot {
+      flex: 0 0 auto;
     }
     .page:last-child { page-break-after: auto; break-after: auto; }
 
@@ -180,10 +198,13 @@ const html = `<!DOCTYPE html>
     }
 
     .front-body {
-      padding: 9mm 14mm 12mm;
+      padding: 7mm 14mm 0;
+    }
+    .back-body {
+      padding: 5mm 14mm 0;
     }
     .eyebrow {
-      margin: 0 0 2.5mm;
+      margin: 0 0 2mm;
       font-size: 8pt;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -192,33 +213,33 @@ const html = `<!DOCTYPE html>
     }
     h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 30pt;
+      font-size: 28pt;
       line-height: 1.02;
-      margin: 0 0 3.5mm;
+      margin: 0 0 2.5mm;
       font-weight: 700;
       color: var(--navy);
       max-width: 18ch;
     }
     .lede {
-      margin: 0 0 7mm;
-      font-size: 10.5pt;
-      line-height: 1.45;
+      margin: 0 0 5mm;
+      font-size: 10pt;
+      line-height: 1.4;
       color: var(--slate);
       max-width: 48ch;
     }
 
     .trust-row {
       display: grid;
-      grid-template-columns: 42mm 1fr;
-      gap: 6mm;
+      grid-template-columns: 40mm 1fr;
+      gap: 5mm;
       align-items: center;
-      margin-bottom: 7mm;
-      padding-bottom: 6mm;
+      margin-bottom: 5mm;
+      padding-bottom: 4.5mm;
       border-bottom: 0.3mm solid var(--line);
     }
     .trust-photo {
-      width: 42mm;
-      height: 42mm;
+      width: 40mm;
+      height: 40mm;
       border-radius: 3mm;
       object-fit: cover;
       object-position: center 18%;
@@ -325,11 +346,11 @@ const html = `<!DOCTYPE html>
     }
 
     .front-meta {
-      margin-top: 7mm;
+      margin-top: 5mm;
       display: grid;
       grid-template-columns: 1.2fr 1fr 1fr;
       gap: 4mm;
-      padding-top: 5mm;
+      padding-top: 4mm;
       border-top: 0.3mm solid var(--line);
     }
     .meta-item .label {
@@ -346,28 +367,28 @@ const html = `<!DOCTYPE html>
       line-height: 1.35;
     }
     .notice {
-      margin-top: 5mm;
+      margin-top: 3.5mm;
+      margin-bottom: 0;
       font-size: 8.5pt;
-      line-height: 1.4;
+      line-height: 1.35;
       color: var(--slate);
-      padding: 3mm 3.5mm;
+      padding: 2.5mm 3mm;
       background: rgba(15,118,110,0.07);
       border-left: 1mm solid var(--teal);
     }
     .notice strong { color: var(--navy); }
 
+    /* Keep footer in document flow so it never overlaps the notice / CTA */
     .page-foot {
-      position: absolute;
-      left: 14mm;
-      right: 14mm;
-      bottom: 8mm;
+      position: static;
+      margin: 3mm 14mm 7mm;
       display: flex;
       justify-content: space-between;
       gap: 3mm;
       font-size: 7.5pt;
       color: var(--muted);
       border-top: 0.25mm solid var(--line);
-      padding-top: 2.5mm;
+      padding-top: 2mm;
     }
 
     /* —— BACK —— */
@@ -406,9 +427,7 @@ const html = `<!DOCTYPE html>
       color: var(--slate);
     }
 
-    .back-body {
-      padding: 7mm 14mm 12mm;
-    }
+    /* back-body padding set with front-body above */
 
     .fees {
       width: 100%;

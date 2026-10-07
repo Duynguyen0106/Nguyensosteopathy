@@ -429,10 +429,10 @@ const html = `<!DOCTYPE html>
           <tr><td>Initial Consultation &amp; Treatment</td><td>60 mins</td><td>£75</td></tr>
           <tr><td>Follow-up Osteopathic Treatment</td><td>30 mins</td><td>£60</td></tr>
           <tr><td>Focused Shockwave Therapy (LI-ESWT)</td><td>30 mins</td><td>£90</td></tr>
-          <tr><td>Specialist ED Treatment &amp; Pelvic Protocol</td><td>45 mins</td><td>£110</td></tr>
-          <tr><td>Acupuncture / Electroacupuncture</td><td>30 mins / add-on</td><td>£20</td></tr>
+          <tr><td>Specialist ED Treatment &amp; Pelvic Protocol</td><td>30 mins</td><td>£110</td></tr>
+          <tr><td>Acupuncture / Electroacupuncture</td><td>30 mins / add-on</td><td>+£20</td></tr>
           <tr><td>Deep Tissue Massage Therapy</td><td>45 mins</td><td>£60</td></tr>
-          <tr><td>Cupping Therapy Add-on</td><td>In clinic</td><td>£15</td></tr>
+          <tr><td>Cupping Therapy Add-on</td><td>45 mins</td><td>+£15</td></tr>
         </tbody>
       </table>
     </div>

@@ -220,7 +220,7 @@ export const services: Service[] = [
       "Clear explanation of LI-ESWT and expected course",
       "Protocol-based sessions with follow-up guidance",
     ],
-    relatedPricing: "Specialist protocol £110",
+    relatedPricing: "Specialist protocol £110 (30 mins)",
     badge: "Specialist Care",
     icon: "shield",
   },
@@ -242,7 +242,7 @@ export const services: Service[] = [
       "Precise needling with or without gentle microcurrent",
       "Integration with your broader treatment plan",
     ],
-    relatedPricing: "Standalone £20 · also available as add-on",
+    relatedPricing: "Standalone or add-on +£20",
     icon: "needle",
   },
   {
@@ -374,13 +374,13 @@ export const pricing = [
   },
   {
     service: "Specialist ED Treatment & Pelvic Protocol",
-    duration: "45 mins",
+    duration: "30 mins",
     price: "£110",
   },
   {
     service: "Acupuncture / Electroacupuncture",
     duration: "30 mins / add-on",
-    price: "£20",
+    price: "+£20",
   },
   {
     service: "Deep Tissue Massage Therapy",
@@ -389,7 +389,7 @@ export const pricing = [
   },
   {
     service: "Cupping Therapy Add-on",
-    duration: "Add-on (in clinic)",
-    price: "£15",
+    duration: "45 mins",
+    price: "+£15",
   },
 ] as const;

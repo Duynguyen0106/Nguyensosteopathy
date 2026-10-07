@@ -47,11 +47,11 @@ export function Header() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/images/logo.jpg"
+            src="/images/logo-mark.png"
             alt=""
             width={44}
             height={44}
-            className="h-9 w-9 shrink-0 rounded-full object-cover object-[center_12%] ring-1 ring-navy/10 sm:h-10 sm:w-10"
+            className="h-9 w-9 shrink-0 rounded-full bg-white object-contain p-0.5 ring-1 ring-navy/10 sm:h-10 sm:w-10"
             priority
           />
           <span className="font-display truncate text-sm tracking-[0.14em] text-navy uppercase transition group-hover:text-teal md:text-[0.95rem]">

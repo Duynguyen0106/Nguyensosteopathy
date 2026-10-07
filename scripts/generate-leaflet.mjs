@@ -49,11 +49,19 @@ async function toPrintPng(src, dest, size = 900) {
   return `data:image/png;base64,${readFileSync(dest).toString("base64")}`;
 }
 
-const logoDataUri = await toPrintPng(
-  join(root, "public/images/logo.jpg"),
-  join(outDir, "logo-print.png"),
-  512,
-);
+// Prefer clean N+spine mark when available (avoids cropping full logo artwork)
+const logoMarkPath = join(root, "public/images/logo-mark.png");
+const logoSource = (() => {
+  try {
+    readFileSync(logoMarkPath);
+    return logoMarkPath;
+  } catch {
+    return join(root, "public/images/logo.jpg");
+  }
+})();
+const logoDataUri = logoSource.endsWith("logo-mark.png")
+  ? `data:image/png;base64,${readFileSync(logoSource).toString("base64")}`
+  : await toPrintPng(logoSource, join(outDir, "logo-print.png"), 512);
 const photoDataUri = await toPrintPng(
   join(root, "public/images/austin-nguyen.jpg"),
   join(outDir, "austin-print.png"),

@@ -43,5 +43,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.3,
     },
+    {
+      url: `${base}/business-card/nguyens-osteopathy-business-card.pdf`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.2,
+    },
   ];
 }

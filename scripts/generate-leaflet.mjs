@@ -638,8 +638,8 @@ const html = `<!DOCTYPE html>
       </div>
 
       <p class="notice">
-        <strong>Online booking opens 5 November 2026.</strong>
-        Scan the QR code now to reserve from that date, or call us to arrange care.
+        <strong>Scan to book online</strong> or call ${PHONE_RAW}.
+        Private consultations inside St James Pharmacy — no GP referral needed.
       </p>
     </div>
 
@@ -744,7 +744,7 @@ const html = `<!DOCTYPE html>
       <div class="back-cta">
         <div>
           <h2>Ready when you are</h2>
-          <p>Scan to book from 5 November 2026, or call now.<br/>Inside St James Pharmacy, Woolwich.</p>
+          <p>Scan to book online, or call now.<br/>Inside St James Pharmacy, Woolwich.</p>
           <p class="phone">${PHONE}</p>
         </div>
         <img src="${qrDataUri}" alt="Book online QR" width="1200" height="1200" />

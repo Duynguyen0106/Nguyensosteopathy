@@ -40,28 +40,28 @@ export function Header() {
           : "border-b border-transparent bg-white/70 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3 md:px-8">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3.5 md:px-8 md:py-4">
         <Link
           href="/"
-          className="group flex min-w-0 items-center gap-2.5 sm:gap-3"
+          className="group flex min-w-0 items-center gap-3 sm:gap-3.5"
           onClick={() => setOpen(false)}
         >
           <Image
             src="/images/logo-mark.png"
             alt=""
-            width={44}
-            height={44}
-            className="h-9 w-9 shrink-0 rounded-full bg-white object-contain p-0.5 ring-1 ring-navy/10 sm:h-10 sm:w-10"
+            width={64}
+            height={64}
+            className="h-12 w-12 shrink-0 rounded-full bg-white object-contain p-0.5 ring-1 ring-navy/10 sm:h-14 sm:w-14"
             priority
           />
-          <span className="font-display truncate text-sm tracking-[0.14em] text-navy uppercase transition group-hover:text-teal md:text-[0.95rem]">
+          <span className="font-display truncate text-lg tracking-[0.12em] text-navy uppercase transition group-hover:text-teal sm:text-xl md:text-[1.35rem]">
             Nguyen&apos;s
           </span>
         </Link>
 
         <nav
           aria-label="Primary"
-          className="hidden items-center gap-7 text-sm text-navy/75 md:flex"
+          className="hidden items-center gap-7 text-[0.95rem] text-navy/75 md:flex"
         >
           {links.map((link) => (
             <Link

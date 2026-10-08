@@ -33,9 +33,6 @@ export const site = {
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
     "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",
-  /** Earliest date patients can book online (ISO YYYY-MM-DD, Europe/London). */
-  bookingOpensOn: "2026-11-05",
-  bookingOpensLabel: "5 November 2026",
 } as const;
 
 export const highlights = [

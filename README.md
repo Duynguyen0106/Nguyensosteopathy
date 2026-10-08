@@ -22,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 https://www.nguyensosteopathy.com
 
-Printable leaflet (with booking QR): `public/leaflet/nguyens-osteopathy-leaflet.pdf`
+Printable A5 leaflet (148×210mm, letterbox-friendly, with booking QR): `public/leaflet/nguyens-osteopathy-leaflet.pdf`
 
 ## Booking integration
 

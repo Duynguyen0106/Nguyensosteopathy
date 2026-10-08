@@ -4,6 +4,7 @@ import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
 import { ServiceIcon } from "@/components/ServiceIcon";
+import { getAllPosts } from "@/lib/blog";
 import {
   faqs,
   highlights,
@@ -15,6 +16,8 @@ import {
 } from "@/lib/site";
 
 export default function HomePage() {
+  const latestPosts = getAllPosts().slice(0, 3);
+
   return (
     <>
       <Hero />
@@ -294,6 +297,48 @@ export default function HomePage() {
           <p className="mt-6 rounded-xl border border-dashed border-teal/40 bg-teal/5 px-5 py-4 text-sm font-medium text-navy md:text-base">
             {site.discount}
           </p>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+                From the blog
+              </p>
+              <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
+                Local osteopathy guides for Woolwich
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
+                Practical articles to help you understand symptoms, treatment
+                options, and what to expect before you book.
+              </p>
+            </div>
+            <ButtonLink href="/blog" variant="secondary">
+              View all articles
+            </ButtonLink>
+          </div>
+          <ul className="mt-10 grid gap-5 md:grid-cols-3">
+            {latestPosts.map((post) => (
+              <li key={post.slug}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 p-5 transition hover:border-teal hover:bg-white"
+                >
+                  <span className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                    {post.category}
+                  </span>
+                  <h3 className="mt-3 font-display text-xl text-navy">
+                    {post.title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
+                    {post.description}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

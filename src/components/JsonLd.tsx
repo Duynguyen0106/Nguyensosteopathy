@@ -1,4 +1,4 @@
-import { site, services, pricing } from "@/lib/site";
+import { site, services, pricing, faqs } from "@/lib/site";
 
 export function JsonLd() {
   const medicalBusiness = {
@@ -87,6 +87,19 @@ export function JsonLd() {
     },
   };
 
+  const faqPage = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <>
       <script
@@ -96,6 +109,10 @@ export function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
       />
     </>
   );

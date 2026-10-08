@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Book an Osteopathy Appointment in Woolwich",
   description:
-    "Book online with Nguyen's Osteopathic Clinic in Woolwich. Appointments open from 5 November 2026. Call 07882843513 or scan to reserve with Austin Duy Nguyen, GOsC osteopath.",
+    "Book online with Nguyen's Osteopathic Clinic in Woolwich. Call 07882843513 or reserve with Austin Duy Nguyen, GOsC osteopath.",
   alternates: { canonical: "/book" },
   openGraph: {
     title: "Book an Osteopathy Appointment in Woolwich",
@@ -61,23 +61,13 @@ export default function BookPage() {
           </div>
         </div>
 
-        <div className="mt-5 rounded-xl border border-teal/30 bg-teal/5 px-4 py-3 text-sm leading-relaxed text-navy md:px-5 md:py-4 md:text-base">
-          <p className="font-semibold">
-            Online appointments open from {site.bookingOpensLabel}
-          </p>
-          <p className="mt-1 text-slate-600">
-            The diary is closed before this date. You can book now for times on
-            or after {site.bookingOpensLabel}.
-          </p>
-        </div>
       </div>
 
       {/* Full-bleed on phones so the widget sits flush (no floating card). */}
       <div className="mx-auto max-w-6xl pb-16 md:px-8 md:pb-24">
         <BookingEmbed />
         <p className="mt-4 px-5 text-center text-sm font-medium text-slate-600 md:px-0">
-          Booking powered by Treow Clinic · Earliest online date{" "}
-          {site.bookingOpensLabel} · {site.cancellation}
+          Booking powered by Treow Clinic · {site.cancellation}
         </p>
         <div className="mt-4 flex justify-center px-5 sm:hidden">
           <ButtonLink

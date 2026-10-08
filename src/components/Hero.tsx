@@ -7,20 +7,20 @@ export function Hero() {
     <section className="hero-wash">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 md:px-8 md:py-20 lg:grid-cols-2 lg:gap-14 lg:py-24">
         <div className="section-fade">
-          <p className="font-display text-[clamp(2.6rem,6vw,4.4rem)] leading-[0.94] font-semibold tracking-[0.04em] text-navy uppercase">
+          <p className="font-display text-[clamp(3.2rem,7.5vw,5.6rem)] leading-[0.92] font-semibold tracking-[0.04em] text-navy uppercase">
             Nguyen&apos;s
           </p>
-          <p className="mt-2 text-sm font-semibold tracking-[0.28em] text-teal uppercase md:text-base">
+          <p className="mt-3 text-base font-semibold tracking-[0.28em] text-teal uppercase md:text-lg">
             Osteopathic Clinic
           </p>
 
-          <div className="mt-5 flex items-center gap-4">
+          <div className="mt-6 flex items-center gap-4">
             <span className="brand-rule h-px w-10 bg-teal" />
-            <p className="text-base text-muted md:text-lg">{site.tagline}</p>
+            <p className="text-lg text-muted md:text-xl">{site.tagline}</p>
             <span className="brand-rule h-px w-10 bg-teal" />
           </div>
 
-          <p className="mt-6 max-w-md text-base leading-relaxed text-ink/80 md:text-[1.05rem]">
+          <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/80 md:text-[1.15rem]">
             High-quality, drug-free care that finds the root cause of your pain
             and helps you move with confidence again.
           </p>

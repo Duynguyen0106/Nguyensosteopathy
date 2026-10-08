@@ -296,8 +296,8 @@ const html = `<!DOCTYPE html>
     </div>
 
     <p class="notice">
-      <strong>Online booking opens 5 November 2026.</strong>
-      Scan now to reserve from that date.
+      <strong>Scan to book online</strong> or call ${PHONE}.
+      No GP referral needed.
     </p>
     <div class="foot">
       <span>GOsC Reg. No. 12332</span>

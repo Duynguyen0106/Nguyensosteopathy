@@ -62,5 +62,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.2,
     },
+    {
+      url: `${base}/facebook/opening-day-50-off-facebook.png`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.3,
+    },
   ];
 }

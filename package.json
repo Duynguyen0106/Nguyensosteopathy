@@ -10,7 +10,8 @@
     "leaflet": "node scripts/generate-leaflet.mjs",
     "promo": "node scripts/generate-promo-graphic.mjs",
     "poster": "node scripts/generate-poster.mjs",
-    "business-card": "node scripts/generate-business-card.mjs"
+    "business-card": "node scripts/generate-business-card.mjs",
+    "facebook-poster": "node scripts/generate-facebook-poster.mjs"
   },
   "dependencies": {
     "next": "16.4.0",

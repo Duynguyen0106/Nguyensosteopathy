@@ -598,7 +598,7 @@ const html = `<!DOCTYPE html>
         </div>
         <div class="meta-item">
           <p class="label">Hours</p>
-          <p><strong>Thu – Fri</strong><br/>9:00am – 6:00pm</p>
+          <p><strong>Mon – Fri</strong> 9:00am – 6:00pm<br/><strong>Sat</strong> 9:00am – 5:30pm</p>
         </div>
         <div class="meta-item">
           <p class="label">Contact</p>

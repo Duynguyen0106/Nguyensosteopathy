@@ -3,7 +3,7 @@
  * Rebuild clinic promotional graphic:
  * - Clean studio photo (no cluttered clinic props overlapping text)
  * - Non-overlapping layout: photo left, info panels right/bottom
- * - Updated details (.com, Thu–Fri hours, current treatments)
+ * - Updated details (.com, Mon–Sat pharmacy hours, current treatments)
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -36,7 +36,8 @@ const photoPng = await sharp(photoPath)
 const logoTrimmed = await sharp(logoPath).trim().png().toBuffer();
 const logoMeta = await sharp(logoTrimmed).metadata();
 const markH = Math.round((logoMeta.height ?? 800) * 0.42);
-const logoMarkPath = join(outDir, "logo-mark.png");
+// Use a temp crop for the promo only — do not overwrite public/images/logo-mark.png
+const logoMarkTemp = join(artifactDir, "promo-logo-mark.png");
 await sharp(logoTrimmed)
   .extract({ left: 0, top: 0, width: logoMeta.width ?? 800, height: markH })
   .resize(400, 400, {
@@ -44,8 +45,8 @@ await sharp(logoTrimmed)
     background: { r: 255, g: 255, b: 255, alpha: 1 },
   })
   .png()
-  .toFile(logoMarkPath);
-const logoPng = readFileSync(logoMarkPath);
+  .toFile(logoMarkTemp);
+const logoPng = readFileSync(logoMarkTemp);
 
 const photoUri = `data:image/png;base64,${photoPng.toString("base64")}`;
 const logoUri = `data:image/png;base64,${logoPng.toString("base64")}`;
@@ -341,7 +342,7 @@ const html = `<!DOCTYPE html>
     <div class="meta">
       <div class="card">
         <p class="label">Hours</p>
-        <p>Thursday – Friday · 9:00am – 6:00pm</p>
+        <p>Mon – Fri 9:00am – 6:00pm · Sat 9:00am – 5:30pm</p>
       </div>
       <div class="card">
         <p class="label">Visit</p>

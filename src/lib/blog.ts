@@ -65,7 +65,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Where to find us",
         paragraphs: [
-          `The clinic is inside ${site.address.venue}, ${site.address.line1}, ${site.address.line2}. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Opening hours are Thursday and Friday, 9:00am–6:00pm.`,
+          `The clinic is inside ${site.address.venue}, ${site.address.line1}, ${site.address.line2}. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Opening hours follow the pharmacy: Monday–Friday 9:00am–6:00pm, Saturday 9:00am–5:30pm.`,
         ],
       },
     ],

@@ -287,7 +287,7 @@ const html = `<!DOCTYPE html>
       </div>
       <div>
         <p class="label">Hours</p>
-        <p>Mon – Fri 9:00am – 6:00pm<br/>Sat 9:00am – 5:30pm</p>
+        <p>Mon, Tue, Thu, Fri 9–6<br/>Sat 9–5:30 · Closed Wed &amp; Sun</p>
       </div>
       <div>
         <p class="label">Online</p>

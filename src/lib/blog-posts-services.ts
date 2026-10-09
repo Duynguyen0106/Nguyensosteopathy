@@ -1,4 +1,4 @@
-import type { BlogPost } from "@/lib/blog";
+import type { BlogCategory, BlogPost } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 const ctaBook =
@@ -6,9 +6,12 @@ const ctaBook =
 const clinic =
   `${site.name} inside ${site.address.venue}, ${site.address.line1}, Woolwich SE18 6LQ`;
 
-function post(
-  partial: Omit<BlogPost, "readingMinutes"> & { readingMinutes?: number },
-): BlogPost {
+type ServicePost = Omit<BlogPost, "image" | "readingMinutes"> & {
+  readingMinutes?: number;
+  category: BlogCategory;
+};
+
+function post(partial: ServicePost): ServicePost {
   return {
     readingMinutes: partial.readingMinutes ?? 5,
     ...partial,
@@ -16,7 +19,7 @@ function post(
 }
 
 /** Fifty service-aligned SEO articles (batch 2026-10-09). */
-export const serviceBlogPosts: BlogPost[] = [
+export const serviceBlogPosts: ServicePost[] = [
   // —— Back & neck ——
   post({
     slug: "lumbar-disc-pain-osteopath-woolwich",

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { BlogCategory, BlogPost } from "@/lib/blog";
@@ -19,22 +20,33 @@ function PostCard({ post }: { post: BlogPost }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="flex h-full flex-col border-b border-slate-200 pb-5 transition-colors hover:border-teal md:border md:border-slate-200 md:bg-white md:p-5 md:pb-5 md:hover:border-teal"
+      className="group flex h-full flex-col overflow-hidden border-b border-slate-200 pb-5 transition-colors hover:border-teal md:border md:border-slate-200 md:bg-white md:pb-0 md:hover:border-teal"
     >
-      <h3 className="font-display text-xl text-navy md:text-[1.35rem]">
-        {post.title}
-      </h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
-        {post.description}
-      </p>
-      <p className="mt-4 text-xs font-semibold tracking-wide text-slate-500 uppercase">
-        {post.readingMinutes} min read ·{" "}
-        {new Date(post.date).toLocaleDateString("en-GB", {
-          day: "numeric",
-          month: "short",
-          year: "numeric",
-        })}
-      </p>
+      <div className="relative aspect-[3/2] overflow-hidden bg-slate-100 md:aspect-[16/10]">
+        <Image
+          src={post.image.src}
+          alt={post.image.alt}
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+        />
+      </div>
+      <div className="flex flex-1 flex-col md:p-5">
+        <h3 className="mt-4 font-display text-xl text-navy md:mt-0 md:text-[1.35rem]">
+          {post.title}
+        </h3>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+          {post.description}
+        </p>
+        <p className="mt-4 text-xs font-semibold tracking-wide text-slate-500 uppercase">
+          {post.readingMinutes} min read ·{" "}
+          {new Date(post.date).toLocaleDateString("en-GB", {
+            day: "numeric",
+            month: "short",
+            year: "numeric",
+          })}
+        </p>
+      </div>
     </Link>
   );
 }

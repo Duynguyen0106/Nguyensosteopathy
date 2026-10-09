@@ -1,5 +1,9 @@
 import { serviceBlogPosts } from "@/lib/blog-posts-services";
+import blogImageManifest from "@/lib/blog-image-manifest.json";
 import { site } from "@/lib/site";
+
+type BlogImageManifest = Record<string, { src: string; alt: string }>;
+const imageManifest = blogImageManifest as BlogImageManifest;
 
 /** Canonical blog taxonomy aligned with clinic services. */
 export const BLOG_CATEGORIES = [
@@ -30,6 +34,11 @@ export type BlogPost = {
   keywords: string[];
   /** Short category label for cards */
   category: BlogCategory;
+  /** Topic-matched hero / card image */
+  image: {
+    src: string;
+    alt: string;
+  };
   /** Body paragraphs and simple sections for rendering */
   sections: Array<{
     heading?: string;
@@ -39,7 +48,24 @@ export type BlogPost = {
   cta?: string;
 };
 
-export const blogPosts: BlogPost[] = [
+type BlogPostInput = Omit<BlogPost, "image" | "readingMinutes"> & {
+  image?: BlogPost["image"];
+  readingMinutes?: number;
+};
+
+function withImage(post: BlogPostInput): BlogPost {
+  const image = post.image ?? imageManifest[post.slug];
+  if (!image) {
+    throw new Error(`Missing blog image for slug: ${post.slug}`);
+  }
+  return {
+    ...post,
+    readingMinutes: post.readingMinutes ?? 5,
+    image,
+  };
+}
+
+const blogPostInputs: BlogPostInput[] = [
   {
     slug: "osteopath-woolwich-what-to-expect",
     title: "Osteopath in Woolwich: what to expect at your first visit",
@@ -686,6 +712,8 @@ export const blogPosts: BlogPost[] = [
   },
   ...serviceBlogPosts,
 ];
+
+export const blogPosts: BlogPost[] = blogPostInputs.map(withImage);
 
 export function getPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
@@ -30,6 +31,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       modifiedTime: post.updated ?? post.date,
       authors: [site.practitioner.name],
+      images: [
+        {
+          url: post.image.src,
+          width: 1200,
+          height: 800,
+          alt: post.image.alt,
+        },
+      ],
     },
   };
 }
@@ -72,6 +81,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     mainEntityOfPage: `${site.websiteUrl}/blog/${post.slug}`,
     keywords: post.keywords.join(", "),
+    image: [`${site.websiteUrl}${post.image.src}`],
   };
 
   return (
@@ -110,6 +120,16 @@ export default async function BlogPostPage({ params }: Props) {
       </div>
 
       <div className="mx-auto max-w-3xl px-5 pb-12 md:px-8 md:pb-16">
+        <div className="relative mb-8 aspect-[16/10] overflow-hidden bg-slate-100">
+          <Image
+            src={post.image.src}
+            alt={post.image.alt}
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-cover"
+          />
+        </div>
         <div className="space-y-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-10">
           {post.sections.map((section, index) => (
             <section key={index}>
@@ -163,14 +183,25 @@ export default async function BlogPostPage({ params }: Props) {
                 <li key={item.slug}>
                   <Link
                     href={`/blog/${item.slug}`}
-                    className="block rounded-xl border border-slate-200 bg-white px-5 py-4 transition hover:border-teal"
+                    className="grid grid-cols-[5.5rem_1fr] gap-4 overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:border-teal md:grid-cols-[7rem_1fr]"
                   >
-                    <span className="text-xs font-semibold tracking-wide text-teal uppercase">
-                      {item.category}
-                    </span>
-                    <span className="mt-1 block font-display text-xl text-navy">
-                      {item.title}
-                    </span>
+                    <div className="relative aspect-square bg-slate-100">
+                      <Image
+                        src={item.image.src}
+                        alt={item.image.alt}
+                        fill
+                        sizes="112px"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="py-3 pr-4">
+                      <span className="text-xs font-semibold tracking-wide text-teal uppercase">
+                        {item.category}
+                      </span>
+                      <span className="mt-1 block font-display text-xl text-navy">
+                        {item.title}
+                      </span>
+                    </div>
                   </Link>
                 </li>
               ))}

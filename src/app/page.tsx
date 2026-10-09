@@ -324,17 +324,28 @@ export default function HomePage() {
               <li key={post.slug}>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 p-5 transition hover:border-teal hover:bg-white"
+                  className="flex h-full flex-col overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-teal hover:bg-white"
                 >
-                  <span className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                    {post.category}
-                  </span>
-                  <h3 className="mt-3 font-display text-xl text-navy">
-                    {post.title}
-                  </h3>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
-                    {post.description}
-                  </p>
+                  <div className="relative aspect-[16/10] bg-slate-100">
+                    <Image
+                      src={post.image.src}
+                      alt={post.image.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-5">
+                    <span className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                      {post.category}
+                    </span>
+                    <h3 className="mt-3 font-display text-xl text-navy">
+                      {post.title}
+                    </h3>
+                    <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
+                      {post.description}
+                    </p>
+                  </div>
                 </Link>
               </li>
             ))}

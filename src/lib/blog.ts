@@ -1,3 +1,4 @@
+import { serviceBlogPosts } from "@/lib/blog-posts-services";
 import { site } from "@/lib/site";
 
 export type BlogPost = {
@@ -664,6 +665,7 @@ export const blogPosts: BlogPost[] = [
     ],
     cta: "Book shoulder assessment at Nguyen's Osteopathic Clinic, Woolwich.",
   },
+  ...serviceBlogPosts,
 ];
 
 export function getPost(slug: string) {
@@ -672,4 +674,13 @@ export function getPost(slug: string) {
 
 export function getAllPosts() {
   return [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
+}
+
+/** Guard against accidental slug collisions across batches. */
+const seen = new Set<string>();
+for (const post of blogPosts) {
+  if (seen.has(post.slug)) {
+    throw new Error(`Duplicate blog slug: ${post.slug}`);
+  }
+  seen.add(post.slug);
 }

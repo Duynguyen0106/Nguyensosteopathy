@@ -77,6 +77,22 @@ body {
   }
 }
 
+.about-rise {
+  animation: rise 0.9s ease both;
+}
+
+.about-rise-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.about-rise-delay-2 {
+  animation-delay: 0.24s;
+}
+
+.about-rise-delay-3 {
+  animation-delay: 0.36s;
+}
+
 @keyframes draw-line {
   from {
     transform: scaleX(0);

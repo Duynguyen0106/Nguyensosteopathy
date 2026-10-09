@@ -6,6 +6,7 @@ export const site = {
     name: "Austin Duy Nguyen",
     title: "GOsC-Registered Osteopath",
     regNo: "12332",
+    credentials: "Master of Osteopathy, British College of Osteopathic Medicine",
   },
   phone: "07882843513",
   phoneHref: "tel:07882843513",

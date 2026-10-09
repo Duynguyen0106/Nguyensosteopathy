@@ -7,10 +7,10 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 const links = [
+  { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/blog", label: "Blog" },
   { href: "/#pricing", label: "Pricing" },
-  { href: "/#about", label: "About" },
   { href: "/#location", label: "Location" },
   { href: "/book", label: "Book" },
 ];

@@ -154,10 +154,11 @@ export default function HomePage() {
               {site.practitioner.title} · Reg No. {site.practitioner.regNo}
             </p>
             <p className="mt-6 text-lg leading-relaxed text-slate-700">
-              At {site.name}, we provide high-quality, drug-free healthcare
-              focused on identifying and treating the root cause of your pain.
-              Care is tailored, confidential, and aimed at restoring comfortable
-              movement and optimal health.
+              Master of Osteopathy graduate of the British College of
+              Osteopathic Medicine — and the only Vietnamese osteopath
+              practising in the UK. {site.name} exists so our community can find
+              drug-free care they recognise, in a clinic built around root-cause
+              treatment and dignity.
             </p>
 
             <div className="mt-8 inline-flex max-w-full items-center gap-3 rounded-xl border border-teal/30 bg-teal/5 px-4 py-3 text-sm font-medium text-navy sm:px-5">
@@ -180,6 +181,12 @@ export default function HomePage() {
                 General Osteopathic Council Registered · Reg No.{" "}
                 {site.practitioner.regNo}
               </span>
+            </div>
+
+            <div className="mt-6">
+              <ButtonLink href="/about" variant="secondary">
+                Read Austin&apos;s story
+              </ButtonLink>
             </div>
           </div>
         </div>

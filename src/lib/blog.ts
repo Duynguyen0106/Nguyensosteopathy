@@ -318,6 +318,352 @@ export const blogPosts: BlogPost[] = [
     ],
     cta: "Book online and mention NHS or student status when you arrive with ID.",
   },
+  {
+    slug: "sciatica-woolwich-osteopath",
+    title: "Sciatica in Woolwich: causes, symptoms, and when osteopathy helps",
+    description:
+      "Sharp or shooting leg pain from Woolwich commuting and desk work? Learn common sciatica triggers, red flags, and how osteopathy at St James Pharmacy can help.",
+    date: "2026-10-09",
+    readingMinutes: 7,
+    category: "Conditions",
+    keywords: [
+      "sciatica Woolwich",
+      "sciatica osteopath",
+      "leg pain SE18",
+      "piriformis syndrome Woolwich",
+      "osteopath for sciatica London",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "Sciatica is not a single diagnosis — it is a pattern of nerve-related pain that travels from the lower back or buttock into the leg. People in Woolwich often notice it after long sits on the Elizabeth line, lifting at work, or weekends of DIY and sport.",
+          `At ${site.name} we assess whether irritation is coming from the lumbar spine, the disc, the sacroiliac joint, or soft tissue around the nerve pathway — then treat the driver, not only the tingling calf.`,
+        ],
+      },
+      {
+        heading: "Common sciatica triggers locally",
+        paragraphs: [
+          "South-east London lifestyles stack load on the lower back: standing shifts in retail and healthcare, driving to the M25, and desk days with a wallet or phone in a back pocket.",
+        ],
+        bullets: [
+          "Prolonged sitting with a rounded lower back",
+          "Sudden bending or twisting while lifting",
+          "Tight hips and glutes after running or gym work",
+          "Recurring “disc flare” after a previous episode",
+        ],
+      },
+      {
+        heading: "How osteopathy approaches sciatica",
+        paragraphs: [
+          "Your first visit includes a case history, neurological screening where appropriate, and hands-on assessment of the spine, pelvis, and hips. Treatment may combine gentle mobilisation, soft-tissue work, and clear advice on positions that calm or aggravate symptoms.",
+          "Many people improve with conservative care. If findings suggest imaging, GP review, or urgent pathways (for example progressive weakness, saddle numbness, or bladder change), we will say so plainly and help you act quickly.",
+        ],
+      },
+      {
+        heading: "When to book sooner",
+        paragraphs: [
+          "Do not wait months if pain is stopping sleep, work, or walking. Early assessment often shortens recovery and reduces fear around movement.",
+        ],
+      },
+    ],
+    cta: "Book an initial osteopathy assessment in Woolwich online, or call 07882843513.",
+  },
+  {
+    slug: "tension-headaches-neck-osteopath-woolwich",
+    title: "Tension headaches and neck pain: help from a Woolwich osteopath",
+    description:
+      "Desk-related tension headaches, tight upper neck, and jaw strain are common in SE18. See how osteopathy can ease cervicogenic and tension-type headaches.",
+    date: "2026-10-09",
+    readingMinutes: 6,
+    category: "Conditions",
+    keywords: [
+      "tension headache osteopath",
+      "neck pain Woolwich",
+      "cervicogenic headache",
+      "osteopath for headaches SE18",
+      "jaw tension osteopath London",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "Not every headache is a migraine. Many Woolwich patients describe a band-like pressure, sore temples, or pain that starts at the base of the skull after screen time — classic tension-type or cervicogenic patterns linked to the neck and shoulders.",
+          "Osteopathy looks at how the upper cervical joints, jaw, and shoulder girdle share load. When those structures stiffen, the nervous system stays “on”, and headaches return each afternoon.",
+        ],
+      },
+      {
+        heading: "What we check in clinic",
+        bullets: [
+          "Neck range and joint irritability",
+          "Upper trapezius, levator, and suboccipital tone",
+          "Jaw (TMJ) contribution if you clench or grind",
+          "Desk and sleep positions that keep symptoms going",
+        ],
+        paragraphs: [
+          "Treatment is hands-on and paced to your comfort. You leave with simple mobility and load advice so progress continues between visits — not a one-off “crack and hope”.",
+        ],
+      },
+      {
+        heading: "Medical red flags",
+        paragraphs: [
+          "Sudden “worst ever” headache, neurological change, fever with neck stiffness, or headache after a head injury needs urgent medical care first. Osteopathy is for musculoskeletal drivers once serious causes are ruled out or unlikely.",
+        ],
+      },
+    ],
+    cta: "Book online for headache and neck assessment at St James Pharmacy, Woolwich.",
+  },
+  {
+    slug: "pregnancy-osteopathy-woolwich",
+    title: "Pregnancy osteopathy in Woolwich: pelvic pain, back ache, and posture",
+    description:
+      "Gentle osteopathic care in Woolwich for pregnancy-related pelvic girdle pain, rib strain, and back discomfort — adapted to your trimester.",
+    date: "2026-10-09",
+    readingMinutes: 6,
+    category: "Pregnancy",
+    keywords: [
+      "pregnancy osteopath Woolwich",
+      "pelvic girdle pain osteopath",
+      "osteopathy pregnancy SE18",
+      "SPD osteopath London",
+      "pregnancy back pain Woolwich",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "Pregnancy changes how your pelvis, ribs, and spine carry load. Hormonal laxity, a shifting centre of gravity, and broken sleep can leave the lower back, sacroiliac joints, and pubic symphysis irritable — especially in the second and third trimesters.",
+          `${site.practitioner.name} provides gentle, pregnancy-adapted osteopathy inside ${site.address.venue}. Techniques are soft, explained clearly, and always adjusted to your trimester and comfort.`,
+        ],
+      },
+      {
+        heading: "Problems we commonly help",
+        bullets: [
+          "Pelvic girdle pain and pubic symphysis discomfort",
+          "Lower back and buttock ache with walking or turning in bed",
+          "Rib and mid-back strain as the bump grows",
+          "Postural fatigue from standing or caring for other children",
+        ],
+        paragraphs: [
+          "We do not replace midwifery or obstetric care. If symptoms suggest something that needs medical review, we will signpost you promptly.",
+        ],
+      },
+      {
+        heading: "What a visit looks like",
+        paragraphs: [
+          "Expect a thorough history (including pregnancy stage and any guidance from your midwife or consultant), a comfortable assessment, and hands-on care with positions that work for you. Many patients leave with pacing tips for shopping, stairs, and sleep.",
+          "No GP referral is required to book privately. Bring any relevant letters if you have them.",
+        ],
+      },
+    ],
+    cta: "Book pregnancy-adapted osteopathy in Woolwich online or call 07882843513.",
+  },
+  {
+    slug: "osteopath-vs-physiotherapist-woolwich",
+    title: "Osteopath vs physiotherapist: which should I book in Woolwich?",
+    description:
+      "Confused between osteopathy and physiotherapy in SE18? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
+    date: "2026-10-09",
+    readingMinutes: 5,
+    category: "Guides",
+    keywords: [
+      "osteopath vs physiotherapist",
+      "osteopathy or physio Woolwich",
+      "difference osteopath physio",
+      "manual therapy SE18",
+      "who to see for back pain Woolwich",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "People searching for help in Woolwich often type both “osteopath near me” and “physio near me”. Both professions are regulated, both treat musculoskeletal problems, and both can be excellent — the difference is usually emphasis and style of care.",
+          "Osteopaths (GOsC-registered) typically spend more of the session on hands-on assessment and treatment of joints and soft tissues across related regions. Physiotherapists often emphasise graded exercise and rehab protocols, with manual therapy as one tool among many. In practice, good clinicians overlap.",
+        ],
+      },
+      {
+        heading: "When osteopathy is a strong fit",
+        bullets: [
+          "You want a thorough hands-on session with clear explanation of findings",
+          "Pain seems linked to posture, stiffness, or several areas at once",
+          "You prefer drug-free, private one-to-one care without a long gym circuit on day one",
+          "You also want access to adjunct options such as focused shockwave where suitable",
+        ],
+        paragraphs: [
+          `At ${site.name}, ${site.practitioner.name} combines osteopathic care with practical rehab advice so you leave with a plan — not just temporary relief.`,
+        ],
+      },
+      {
+        heading: "You do not need to choose perfectly",
+        paragraphs: [
+          "If you have already started physio and plateaued, or vice versa, a second opinion can still help. Book an assessment, ask questions, and decide based on how clearly the clinician explains your problem and next steps.",
+        ],
+      },
+    ],
+    cta: "Prefer to start with osteopathy? Book online at nguyensosteopathy.com/book.",
+  },
+  {
+    slug: "hip-knee-pain-osteopath-woolwich",
+    title: "Hip and knee pain in Woolwich: osteopathy for walkers, runners, and desk workers",
+    description:
+      "Hip stiffness, runner’s knee, and stair pain are common around Woolwich and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
+    date: "2026-10-09",
+    readingMinutes: 6,
+    category: "Conditions",
+    keywords: [
+      "hip pain osteopath Woolwich",
+      "knee pain osteopath SE18",
+      "runners knee Woolwich",
+      "osteoarthritis osteopath London",
+      "hip stiffness Greenwich",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "Hip and knee symptoms rarely live in isolation. A stiff hip can overload the knee on the Elizabeth line stairs; a flat desk day can leave the glutes quiet and the IT band complaining on a weekend run around Greenwich Park.",
+          "Osteopathy maps the whole lower limb and pelvis so treatment targets the structure that is driving pain — joint, tendon, or movement habit.",
+        ],
+      },
+      {
+        heading: "Problems we see often",
+        bullets: [
+          "Anterior knee pain after running or hill walking",
+          "Lateral hip ache when lying on one side",
+          "Morning stiffness that eases then returns with stairs",
+          "Post-injury irritability that never fully settled",
+        ],
+        paragraphs: [
+          "For some tendon problems that stay stubborn, focused shockwave (LI-ESWT) can be discussed as an adjunct after assessment — not as a first click for everyone.",
+        ],
+      },
+      {
+        heading: "What good care looks like",
+        paragraphs: [
+          "Expect movement testing, hands-on treatment where appropriate, and realistic loading advice. We will not promise to “cure arthritis”, but we can often improve comfort, confidence, and daily function while you stay active.",
+        ],
+      },
+    ],
+    cta: "Book a hip or knee assessment with our Woolwich osteopath online.",
+  },
+  {
+    slug: "osteopath-greenwich-charlton-thamesmead",
+    title: "Osteopath near Greenwich, Charlton, and Thamesmead",
+    description:
+      "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on Powis Street, Woolwich SE18 is easy to reach and open for online booking.",
+    date: "2026-10-09",
+    readingMinutes: 4,
+    category: "Local guide",
+    keywords: [
+      "osteopath Greenwich",
+      "osteopath Charlton",
+      "osteopath Thamesmead",
+      "osteopath SE18",
+      "osteopath near Greenwich Park",
+      "manual therapy Woolwich Arsenal",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "You do not have to travel into central London for registered osteopathic care. Nguyen's Osteopathic Clinic sits inside St James Pharmacy on Powis Street, Woolwich SE18 6LQ — practical for patients from Greenwich, Charlton, Thamesmead, Plumstead, and Abbey Wood.",
+          "The clinic is a short walk from Woolwich Arsenal station and local bus routes along Powis Street. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
+        ],
+      },
+      {
+        heading: "Why nearby patients choose us",
+        bullets: [
+          "GOsC-registered osteopath with clear, private appointments",
+          "Drug-free care for back, neck, sports, and specialist pathways",
+          "Online booking with no GP referral required",
+          "Pharmacy hours Mon–Fri 9–6 and Sat 9–5:30; bookable osteopathy days from 5 November 2026",
+        ],
+        paragraphs: [
+          "Whether you are dealing with desk neck from a Canary Wharf commute or weekend football niggles, local assessment beats hoping it will settle on its own.",
+        ],
+      },
+    ],
+    cta: "Book from Greenwich, Charlton, or Thamesmead at www.nguyensosteopathy.com/book.",
+  },
+  {
+    slug: "how-many-osteopathy-sessions",
+    title: "How many osteopathy sessions will I need?",
+    description:
+      "Honest guidance on osteopathy treatment frequency: what affects recovery time, typical plans for back and neck pain, and when to review progress.",
+    date: "2026-10-09",
+    readingMinutes: 5,
+    category: "Guides",
+    keywords: [
+      "how many osteopathy sessions",
+      "osteopath treatment plan",
+      "how often see osteopath",
+      "osteopathy course of treatment",
+      "osteopath Woolwich fees",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "There is no honest one-size answer. Session count depends on how long symptoms have been present, your work and sport load, sleep, and whether the problem is a simple flare or a layered pattern built over years.",
+          "At your first visit we explain findings in plain English and outline a provisional plan. Many people with recent back or neck flares notice meaningful change within a few sessions; longer-standing issues usually need a longer runway.",
+        ],
+      },
+      {
+        heading: "What we avoid",
+        bullets: [
+          "Open-ended weekly visits with no review of goals",
+          "Pressure to pre-pay large packages you do not understand",
+          "Treatment without a clear reason to continue",
+        ],
+        paragraphs: [
+          "We review progress regularly. If you are not moving toward your goals, we change the plan or discuss referral — not more of the same by default.",
+        ],
+      },
+      {
+        heading: "Fees and booking",
+        paragraphs: [
+          "Initial consultation and treatment is 60 minutes (£75). Follow-up osteopathic treatment is 30 minutes (£60). NHS staff and students receive 10% off with valid ID. Book online or call 07882843513.",
+        ],
+      },
+    ],
+    cta: "Ready to start with a clear plan? Book your first visit online.",
+  },
+  {
+    slug: "shoulder-pain-frozen-shoulder-woolwich",
+    title: "Shoulder pain and frozen shoulder: osteopathy in Woolwich",
+    description:
+      "Reach overhead without wincing. Learn how osteopathy helps shoulder stiffness, rotator cuff irritation, and frozen shoulder patterns in SE18.",
+    date: "2026-10-09",
+    readingMinutes: 6,
+    category: "Conditions",
+    keywords: [
+      "shoulder pain osteopath Woolwich",
+      "frozen shoulder osteopath",
+      "rotator cuff Woolwich",
+      "shoulder stiffness SE18",
+      "osteopath for shoulder pain London",
+    ],
+    sections: [
+      {
+        paragraphs: [
+          "Shoulder pain stops simple things: reaching a cupboard, fastening a seatbelt, or sleeping on your side. Causes range from irritable rotator cuff tendons to adhesive capsulitis (frozen shoulder), where the capsule stiffens and range shrinks in stages.",
+          "Osteopathy assesses the shoulder blade, neck, and thoracic spine as well as the joint itself — because stiff ribs and a forward desk posture often keep the shoulder working at a disadvantage.",
+        ],
+      },
+      {
+        heading: "What treatment may include",
+        paragraphs: [
+          "Hands-on work to improve joint glide and soft-tissue mobility, plus graded movement so you rebuild range without constant flare-ups. For some persistent tendon problems, focused shockwave can be considered after clinical screening.",
+        ],
+        bullets: [
+          "Painful arc when lifting the arm",
+          "Night pain that wakes you on one side",
+          "Stiffness after immobilisation or injury",
+          "Gradual freezing pattern over months",
+        ],
+      },
+      {
+        heading: "When imaging or medical review helps",
+        paragraphs: [
+          "Trauma with sudden loss of power, suspected dislocation, or red-flag neurological signs need medical assessment. Otherwise, a skilled clinical exam is often the right first step — and we will tell you if scans would change care.",
+        ],
+      },
+    ],
+    cta: "Book shoulder assessment at Nguyen's Osteopathic Clinic, Woolwich.",
+  },
 ];
 
 export function getPost(slug: string) {

@@ -36,7 +36,8 @@ const photoPng = await sharp(photoPath)
 const logoTrimmed = await sharp(logoPath).trim().png().toBuffer();
 const logoMeta = await sharp(logoTrimmed).metadata();
 const markH = Math.round((logoMeta.height ?? 800) * 0.42);
-const logoMarkPath = join(outDir, "logo-mark.png");
+// Use a temp crop for the promo only — do not overwrite public/images/logo-mark.png
+const logoMarkTemp = join(artifactDir, "promo-logo-mark.png");
 await sharp(logoTrimmed)
   .extract({ left: 0, top: 0, width: logoMeta.width ?? 800, height: markH })
   .resize(400, 400, {
@@ -44,8 +45,8 @@ await sharp(logoTrimmed)
     background: { r: 255, g: 255, b: 255, alpha: 1 },
   })
   .png()
-  .toFile(logoMarkPath);
-const logoPng = readFileSync(logoMarkPath);
+  .toFile(logoMarkTemp);
+const logoPng = readFileSync(logoMarkTemp);
 
 const photoUri = `data:image/png;base64,${photoPng.toString("base64")}`;
 const logoUri = `data:image/png;base64,${logoPng.toString("base64")}`;

@@ -62,8 +62,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/logo-lockup.png",
-        width: 1250,
-        height: 870,
+        width: 1298,
+        height: 926,
         alt: "Nguyen's Osteopathic Clinic logo — Recover, Realign, and Restore Your Vitality",
       },
       {

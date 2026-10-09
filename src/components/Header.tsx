@@ -41,23 +41,21 @@ export function Header() {
           : "border-b border-transparent bg-white/70 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3.5 md:px-8 md:py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-2.5 md:px-8 md:py-3">
         <Link
           href="/"
-          className="group flex min-w-0 items-center gap-3 sm:gap-3.5"
+          className="group min-w-0 shrink"
           onClick={() => setOpen(false)}
+          aria-label="Nguyen's Osteopathic Clinic — Home"
         >
           <Image
-            src="/images/logo-mark.png"
-            alt=""
-            width={64}
-            height={64}
-            className="h-12 w-12 shrink-0 rounded-full bg-white object-contain p-0.5 ring-1 ring-navy/10 sm:h-14 sm:w-14"
+            src="/images/logo-lockup.png"
+            alt="Nguyen's Osteopathic Clinic — Recover, Realign, and Restore Your Vitality"
+            width={1298}
+            height={926}
+            className="h-[4.25rem] w-auto object-contain transition group-hover:opacity-90 sm:h-[4.75rem] md:h-[5.25rem]"
             priority
           />
-          <span className="font-display truncate text-lg tracking-[0.12em] text-navy uppercase transition group-hover:text-teal sm:text-xl md:text-[1.35rem]">
-            Nguyen&apos;s
-          </span>
         </Link>
 
         <nav

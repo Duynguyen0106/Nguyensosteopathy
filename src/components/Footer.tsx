@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -7,10 +8,16 @@ export function Footer() {
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.5fr_1fr_1fr] md:px-8">
         <div>
-          <p className="font-display text-3xl tracking-wide md:text-4xl">
-            Nguyen&apos;s Osteopathic Clinic
-          </p>
-          <p className="mt-3 max-w-sm text-base leading-relaxed text-white/75 md:text-lg">
+          <div className="inline-block rounded-2xl bg-white px-4 py-3 shadow-lg shadow-black/10">
+            <Image
+              src="/images/logo-lockup.png"
+              alt="Nguyen's Osteopathic Clinic — Recover, Realign, and Restore Your Vitality"
+              width={1298}
+              height={926}
+              className="h-28 w-auto object-contain md:h-36"
+            />
+          </div>
+          <p className="mt-4 max-w-sm text-base leading-relaxed text-white/75 md:text-lg">
             {site.tagline}
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">

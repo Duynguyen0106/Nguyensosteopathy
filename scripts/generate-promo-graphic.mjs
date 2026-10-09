@@ -3,7 +3,7 @@
  * Rebuild clinic promotional graphic:
  * - Clean studio photo (no cluttered clinic props overlapping text)
  * - Non-overlapping layout: photo left, info panels right/bottom
- * - Updated details (.com, Mon–Sat pharmacy hours, current treatments)
+ * - Updated details (.com, hours Mon/Tue/Thu/Fri/Sat, closed Wed & Sun)
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -342,7 +342,7 @@ const html = `<!DOCTYPE html>
     <div class="meta">
       <div class="card">
         <p class="label">Hours</p>
-        <p>Mon – Fri 9:00am – 6:00pm · Sat 9:00am – 5:30pm</p>
+        <p>Mon, Tue, Thu, Fri 9–6 · Sat 9–5:30 · Closed Wed &amp; Sun</p>
       </div>
       <div class="card">
         <p class="label">Visit</p>

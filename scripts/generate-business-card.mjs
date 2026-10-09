@@ -229,7 +229,8 @@ const html = `<!DOCTYPE html>
       <p class="phone">${PHONE}</p>
       <p class="line"><strong>${EMAIL}</strong></p>
       <p class="line"><strong>${SITE}</strong></p>
-      <p class="line">Mon–Fri 9–6 · Sat 9–5:30</p>
+      <p class="line">Mon/Tue/Thu/Fri 9–6 · Sat 9–5:30</p>
+      <p class="line">Closed Wed &amp; Sun</p>
       <p class="line">52 Powis Street, Woolwich</p>
     </div>
     <aside class="qr-col">

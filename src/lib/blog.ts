@@ -1,6 +1,25 @@
 import { serviceBlogPosts } from "@/lib/blog-posts-services";
 import { site } from "@/lib/site";
 
+/** Canonical blog taxonomy aligned with clinic services. */
+export const BLOG_CATEGORIES = [
+  "Getting started",
+  "Back & neck",
+  "Headaches & joints",
+  "Focused shockwave",
+  "Men's health",
+  "Acupuncture & cupping",
+  "Deep tissue",
+  "Sports rehab",
+  "Pregnancy",
+  "Cranial",
+  "Paediatric",
+  "Clinic info",
+  "Local guides",
+] as const;
+
+export type BlogCategory = (typeof BLOG_CATEGORIES)[number];
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -10,7 +29,7 @@ export type BlogPost = {
   readingMinutes: number;
   keywords: string[];
   /** Short category label for cards */
-  category: string;
+  category: BlogCategory;
   /** Body paragraphs and simple sections for rendering */
   sections: Array<{
     heading?: string;
@@ -79,7 +98,7 @@ export const blogPosts: BlogPost[] = [
       "Practical guide to common back pain causes for Woolwich and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
     date: "2026-10-08",
     readingMinutes: 7,
-    category: "Back pain",
+    category: "Back & neck",
     keywords: [
       "back pain Woolwich",
       "osteopath for back pain London",
@@ -121,7 +140,7 @@ export const blogPosts: BlogPost[] = [
       "Why office and hybrid workers in Woolwich get neck and shoulder pain — and how osteopathy plus desk setup changes can help.",
     date: "2026-10-08",
     readingMinutes: 5,
-    category: "Neck & shoulders",
+    category: "Back & neck",
     keywords: [
       "neck pain Woolwich",
       "shoulder pain osteopath",
@@ -157,7 +176,7 @@ export const blogPosts: BlogPost[] = [
       "Learn how low-intensity focused shockwave (LI-ESWT) is used at Nguyen's Osteopathic Clinic for stubborn tendon and soft-tissue problems.",
     date: "2026-10-08",
     readingMinutes: 6,
-    category: "Shockwave",
+    category: "Focused shockwave",
     keywords: [
       "shockwave therapy Woolwich",
       "LI-ESWT Woolwich",
@@ -192,7 +211,7 @@ export const blogPosts: BlogPost[] = [
       "Short answer for Woolwich patients: no GP referral is required to book osteopathy privately. Here’s what to bring and when to speak to your GP first.",
     date: "2026-10-08",
     readingMinutes: 4,
-    category: "FAQs",
+    category: "Getting started",
     keywords: [
       "osteopath without GP referral",
       "private osteopath Woolwich",
@@ -226,7 +245,7 @@ export const blogPosts: BlogPost[] = [
       "How osteopathy supports runners, gym-goers, and weekend athletes in Woolwich with load management and hands-on sports injury care.",
     date: "2026-10-08",
     readingMinutes: 5,
-    category: "Sports",
+    category: "Sports rehab",
     keywords: [
       "sports injury Woolwich",
       "osteopath for runners London",
@@ -261,7 +280,7 @@ export const blogPosts: BlogPost[] = [
       "Confidential low-intensity focused shockwave protocols for vascular-related erectile difficulties at Nguyen's Osteopathic Clinic — drug-free and private.",
     date: "2026-10-08",
     readingMinutes: 5,
-    category: "Men’s health",
+    category: "Men's health",
     keywords: [
       "ED shockwave therapy London",
       "LI-ESWT Woolwich",
@@ -326,7 +345,7 @@ export const blogPosts: BlogPost[] = [
       "Sharp or shooting leg pain from Woolwich commuting and desk work? Learn common sciatica triggers, red flags, and how osteopathy at St James Pharmacy can help.",
     date: "2026-10-09",
     readingMinutes: 7,
-    category: "Conditions",
+    category: "Back & neck",
     keywords: [
       "sciatica Woolwich",
       "sciatica osteopath",
@@ -376,7 +395,7 @@ export const blogPosts: BlogPost[] = [
       "Desk-related tension headaches, tight upper neck, and jaw strain are common in SE18. See how osteopathy can ease cervicogenic and tension-type headaches.",
     date: "2026-10-09",
     readingMinutes: 6,
-    category: "Conditions",
+    category: "Headaches & joints",
     keywords: [
       "tension headache osteopath",
       "neck pain Woolwich",
@@ -463,7 +482,7 @@ export const blogPosts: BlogPost[] = [
       "Confused between osteopathy and physiotherapy in SE18? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
     date: "2026-10-09",
     readingMinutes: 5,
-    category: "Guides",
+    category: "Getting started",
     keywords: [
       "osteopath vs physiotherapist",
       "osteopathy or physio Woolwich",
@@ -506,7 +525,7 @@ export const blogPosts: BlogPost[] = [
       "Hip stiffness, runner’s knee, and stair pain are common around Woolwich and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
     date: "2026-10-09",
     readingMinutes: 6,
-    category: "Conditions",
+    category: "Headaches & joints",
     keywords: [
       "hip pain osteopath Woolwich",
       "knee pain osteopath SE18",
@@ -549,7 +568,7 @@ export const blogPosts: BlogPost[] = [
       "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on Powis Street, Woolwich SE18 is easy to reach and open for online booking.",
     date: "2026-10-09",
     readingMinutes: 4,
-    category: "Local guide",
+    category: "Local guides",
     keywords: [
       "osteopath Greenwich",
       "osteopath Charlton",
@@ -587,7 +606,7 @@ export const blogPosts: BlogPost[] = [
       "Honest guidance on osteopathy treatment frequency: what affects recovery time, typical plans for back and neck pain, and when to review progress.",
     date: "2026-10-09",
     readingMinutes: 5,
-    category: "Guides",
+    category: "Getting started",
     keywords: [
       "how many osteopathy sessions",
       "osteopath treatment plan",
@@ -629,7 +648,7 @@ export const blogPosts: BlogPost[] = [
       "Reach overhead without wincing. Learn how osteopathy helps shoulder stiffness, rotator cuff irritation, and frozen shoulder patterns in SE18.",
     date: "2026-10-09",
     readingMinutes: 6,
-    category: "Conditions",
+    category: "Headaches & joints",
     keywords: [
       "shoulder pain osteopath Woolwich",
       "frozen shoulder osteopath",
@@ -676,6 +695,23 @@ export function getAllPosts() {
   return [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
 }
 
+export function categoryToId(category: BlogCategory) {
+  return category
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+export function getPostsGroupedByCategory() {
+  const posts = getAllPosts();
+  return BLOG_CATEGORIES.map((category) => ({
+    category,
+    id: categoryToId(category),
+    posts: posts.filter((post) => post.category === category),
+  })).filter((group) => group.posts.length > 0);
+}
+
 /** Guard against accidental slug collisions across batches. */
 const seen = new Set<string>();
 for (const post of blogPosts) {
@@ -683,4 +719,7 @@ for (const post of blogPosts) {
     throw new Error(`Duplicate blog slug: ${post.slug}`);
   }
   seen.add(post.slug);
+  if (!BLOG_CATEGORIES.includes(post.category)) {
+    throw new Error(`Unknown blog category: ${post.category} (${post.slug})`);
+  }
 }

@@ -544,7 +544,7 @@ export const serviceBlogPosts: BlogPost[] = [
     description:
       "Western medical acupuncture as an adjunct for muscle pain and trigger-point irritability at Nguyen's Osteopathic Clinic.",
     date: "2026-10-09",
-    category: "Acupuncture",
+    category: "Acupuncture & cupping",
     keywords: [
       "medical acupuncture Woolwich",
       "osteopath acupuncture SE18",
@@ -566,7 +566,7 @@ export const serviceBlogPosts: BlogPost[] = [
     description:
       "When gentle microcurrent is added to medical acupuncture for persistent localised pain — what it feels like and who it suits.",
     date: "2026-10-09",
-    category: "Acupuncture",
+    category: "Acupuncture & cupping",
     keywords: [
       "electroacupuncture Woolwich",
       "electro acupuncture osteopath SE18",
@@ -588,7 +588,7 @@ export const serviceBlogPosts: BlogPost[] = [
     description:
       "Choosing between acupuncture as a +£20 add-on within osteopathy or a focused needling session at our Woolwich clinic.",
     date: "2026-10-09",
-    category: "Acupuncture",
+    category: "Acupuncture & cupping",
     keywords: [
       "acupuncture add-on osteopath",
       "acupuncture fees Woolwich",
@@ -610,7 +610,7 @@ export const serviceBlogPosts: BlogPost[] = [
     description:
       "Cupping as a +£15 soft-tissue adjunct for muscular tightness — what marks mean, when we use it, and fees.",
     date: "2026-10-09",
-    category: "Acupuncture",
+    category: "Acupuncture & cupping",
     keywords: [
       "cupping Woolwich",
       "cupping osteopath SE18",

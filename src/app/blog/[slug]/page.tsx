@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
-import { getAllPosts, getPost } from "@/lib/blog";
+import { categoryToId, getAllPosts, getPost } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 type Props = {
@@ -39,9 +39,16 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPost(slug);
   if (!post) notFound();
 
-  const others = getAllPosts()
-    .filter((item) => item.slug !== post.slug)
-    .slice(0, 3);
+  const sameCategory = getAllPosts().filter(
+    (item) => item.slug !== post.slug && item.category === post.category,
+  );
+  const others = [
+    ...sameCategory,
+    ...getAllPosts().filter(
+      (item) => item.slug !== post.slug && item.category !== post.category,
+    ),
+  ].slice(0, 3);
+  const categoryHref = `/blog#${categoryToId(post.category)}`;
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -75,12 +82,14 @@ export default async function BlogPostPage({ params }: Props) {
       />
 
       <div className="mx-auto max-w-3xl px-5 pb-8 md:px-8">
-        <Link
-          href="/blog"
-          className="text-sm font-medium text-teal hover:text-teal-dark"
-        >
-          ← All articles
-        </Link>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-medium">
+          <Link href="/blog" className="text-teal hover:text-teal-dark">
+            ← All articles
+          </Link>
+          <Link href={categoryHref} className="text-slate-500 hover:text-teal">
+            {post.category}
+          </Link>
+        </div>
         <p className="mt-6 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
           {post.category}
         </p>
@@ -144,7 +153,11 @@ export default async function BlogPostPage({ params }: Props) {
 
         {others.length ? (
           <div className="mt-12">
-            <h2 className="font-display text-2xl text-navy">Keep reading</h2>
+            <h2 className="font-display text-2xl text-navy">
+              {sameCategory.length
+                ? `More in ${post.category}`
+                : "Keep reading"}
+            </h2>
             <ul className="mt-5 grid gap-4">
               {others.map((item) => (
                 <li key={item.slug}>

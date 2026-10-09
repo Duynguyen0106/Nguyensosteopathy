@@ -37,7 +37,8 @@ export default function HomePage() {
           ))}
         </div>
         <div className="border-t border-white/10 px-5 py-3 text-center text-sm text-teal-mist md:px-8">
-          Located inside {site.address.venue}, Woolwich
+          Osteopathy · drug free pain relief · back pain treatment · neck pain
+          treatment · shockwave therapy · {site.address.venue}, Woolwich
         </div>
       </section>
 
@@ -123,6 +124,20 @@ export default function HomePage() {
 
           <p className="mt-8 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-center text-sm font-semibold text-navy md:text-base">
             GOsC-registered osteopathy in Woolwich · SE18 · No GP referral needed
+          </p>
+          <p className="mt-4 text-center text-sm text-slate-600">
+            <a
+              href={site.googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Read our Google reviews
+            </a>
+            {" · "}
+            <Link href="/book" className="font-semibold text-teal hover:text-teal-dark">
+              Book online with our booking widget
+            </Link>
           </p>
         </div>
       </section>

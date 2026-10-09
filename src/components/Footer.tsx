@@ -76,6 +76,21 @@ export function Footer() {
                 Facebook
               </a>
             </li>
+            <li>
+              <a
+                href={site.googleReviewsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                Google reviews
+              </a>
+            </li>
+            <li>
+              <Link href="/privacy" className="hover:text-white">
+                Privacy policy
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -126,7 +141,12 @@ export function Footer() {
           <p>
             © 2026 {site.name}. GOsC Reg. No. {site.practitioner.regNo}.
           </p>
-          <p>Located inside {site.address.venue}, Woolwich.</p>
+          <p>
+            Located inside {site.address.venue}, Woolwich.{" "}
+            <Link href="/privacy" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Privacy policy
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

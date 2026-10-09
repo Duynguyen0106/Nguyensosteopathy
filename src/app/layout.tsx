@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { CookieBanner } from "@/components/CookieBanner";
 import { Footer } from "@/components/Footer";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/lib/site";
@@ -20,19 +22,24 @@ const body = Source_Sans_3({
 });
 
 const description =
-  "Book drug-free osteopathy in Woolwich with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332). Back & neck pain, focused shockwave, men’s health & ED, sports rehab, and more — inside St James Pharmacy.";
+  "Osteopathy in Woolwich for drug free pain relief, back pain treatment, neck pain treatment, and shockwave therapy. Book with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332), inside St James Pharmacy, SE18.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.websiteUrl),
   title: {
-    default: `${site.name} | Osteopath in Woolwich, London`,
+    default: `Osteopathy in Woolwich | Back Pain, Neck Pain & Shockwave Therapy`,
     template: `%s | ${site.name}`,
   },
   description,
   applicationName: site.name,
   keywords: [
+    "osteopathy",
     "osteopath Woolwich",
     "osteopathy Woolwich",
+    "drug free pain relief",
+    "back pain treatment",
+    "neck pain treatment",
+    "shockwave therapy",
     "osteopath SE18",
     "osteopath Greenwich",
     "osteopath Plumstead",
@@ -61,7 +68,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: `${site.name} | Osteopath in Woolwich`,
+    title: `Osteopathy in Woolwich | ${site.name}`,
     description,
     type: "website",
     locale: "en_GB",
@@ -84,7 +91,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} | Osteopath in Woolwich`,
+    title: `Osteopathy in Woolwich | ${site.name}`,
     description,
     images: ["/images/logo-lockup.png"],
   },
@@ -122,6 +129,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieBanner />
+        <GoogleAnalytics />
         <Analytics />
       </body>
     </html>

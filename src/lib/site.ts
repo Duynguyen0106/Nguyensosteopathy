@@ -13,6 +13,8 @@ export const site = {
   email: "nguyensosteopathy@gmail.com",
   emailHref: "mailto:nguyensosteopathy@gmail.com",
   facebookUrl: "https://www.facebook.com/Nguyensosteopathy",
+  googleReviewsUrl:
+    "https://www.google.com/search?q=Nguyen%27s+Osteopathic+Clinic+Woolwich+reviews",
   website: "www.nguyensosteopathy.com",
   websiteUrl: "https://www.nguyensosteopathy.com",
   address: {
@@ -38,10 +40,10 @@ export const site = {
 } as const;
 
 export const highlights = [
-  "100% Drug-Free & Non-Invasive",
+  "100% Drug-Free and Non-Invasive",
   "No GP Referral Necessary",
-  "Private 1-on-1 Consultation",
-  "10% Student & NHS Discount",
+  "Private One-to-One Consultation",
+  "10% Student and NHS Discount",
 ] as const;
 
 export const visitSteps = [

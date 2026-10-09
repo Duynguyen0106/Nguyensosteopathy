@@ -15,7 +15,7 @@ export function Hero() {
               Osteopathic Clinic
             </span>
             <span className="mt-4 block text-sm font-semibold tracking-wide text-navy/70 md:text-base">
-              Osteopath in Woolwich, London SE18
+              Osteopathy in Woolwich, London SE18
             </span>
           </h1>
 
@@ -25,10 +25,11 @@ export function Hero() {
             <span className="brand-rule h-px w-10 bg-teal" />
           </div>
 
-          <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/80 md:text-[1.15rem]">
-            Drug-free osteopathy with Austin Duy Nguyen, GOsC-registered
-            osteopath — inside St James Pharmacy on Powis Street. We find the
-            root cause of your pain and help you move with confidence again.
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink/80 md:text-[1.15rem]">
+            Expert osteopathy for drug free pain relief, back pain treatment,
+            neck pain treatment, and shockwave therapy. Care with Austin Duy
+            Nguyen, GOsC-registered osteopath, inside St James Pharmacy on Powis
+            Street.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">

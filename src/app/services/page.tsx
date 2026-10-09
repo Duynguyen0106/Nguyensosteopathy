@@ -5,14 +5,14 @@ import { ServiceIcon } from "@/components/ServiceIcon";
 import { services, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Osteopathy Services in Woolwich",
+  title: "Osteopathy Services in Woolwich | Back Pain & Shockwave Therapy",
   description:
-    "Osteopathy for back & neck pain, focused shockwave, men’s health & ED, acupuncture, deep tissue massage, sports rehab, pregnancy support, and paediatric care in Woolwich.",
+    "Osteopathy services in Woolwich: back pain treatment, neck pain treatment, shockwave therapy, drug free pain relief, sports rehab, acupuncture, pregnancy support, and paediatric care.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Osteopathy Services in Woolwich",
+    title: "Osteopathy Services in Woolwich | Back Pain & Shockwave Therapy",
     description:
-      "Explore treatments at Nguyen's Osteopathic Clinic — drug-free care with Austin Duy Nguyen, GOsC-registered osteopath.",
+      "Explore osteopathy, back pain treatment, neck pain treatment, and shockwave therapy at Nguyen's Osteopathic Clinic with Austin Duy Nguyen, GOsC-registered osteopath.",
     url: "/services",
   },
 };
@@ -25,12 +25,12 @@ export default function ServicesPage() {
           Clinical care
         </p>
         <h1 className="mt-3 font-display text-4xl text-navy md:text-5xl">
-          Services & treatments
+          Osteopathy services and treatments
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
-          Every treatment plan starts with understanding why symptoms started —
-          then we match hands-on care, adjunct therapies, and clear advice to
-          your goals.
+          From back pain treatment and neck pain treatment to shockwave therapy
+          and drug free pain relief, every plan starts with why symptoms began —
+          then we match hands-on osteopathy and clear advice to your goals.
         </p>
       </div>
 

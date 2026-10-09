@@ -64,10 +64,19 @@ export default function BookPage() {
       </div>
 
       {/* Full-bleed on phones so the widget sits flush (no floating card). */}
-      <div className="mx-auto max-w-6xl pb-16 md:px-8 md:pb-24">
+      <div
+        id="online-booking"
+        data-booking-widget="treow"
+        itemScope
+        itemType="https://schema.org/ReserveAction"
+        className="mx-auto max-w-6xl pb-16 md:px-8 md:pb-24"
+      >
+        <meta itemProp="name" content="Book an osteopathy appointment online" />
+        <link itemProp="target" href={site.bookingUrl} />
+        <h2 className="sr-only">Online booking widget</h2>
         <BookingEmbed />
         <p className="mt-4 px-5 text-center text-sm font-medium text-slate-600 md:px-0">
-          Booking powered by Treow Clinic · {site.cancellation}
+          Online booking widget powered by Treow Clinic · {site.cancellation}
         </p>
         <div className="mt-4 flex justify-center px-5 sm:hidden">
           <ButtonLink

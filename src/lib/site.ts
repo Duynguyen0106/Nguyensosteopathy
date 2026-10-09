@@ -22,12 +22,9 @@ export const site = {
       "https://www.google.com/maps/search/?api=1&query=52+Powis+Street+Woolwich+London+SE18+6LQ",
   },
   hours: [
-    { days: "Monday, Tuesday, Thursday, Friday", time: "9:00am – 6:00pm" },
+    { days: "Monday – Friday", time: "9:00am – 6:00pm" },
     { days: "Saturday", time: "9:00am – 5:30pm" },
-    { days: "Wednesday & Sunday", time: "Closed" },
   ],
-  /** Clinic opens officially 5 November 2026; Wednesdays and Sundays remain closed thereafter. */
-  opensOn: "2026-11-05",
   cancellation: "24 hours' notice is required for cancellations.",
   discount:
     "10% Discount for NHS Staff & Students (Valid ID required at appointment)",
@@ -115,7 +112,7 @@ export const faqs = [
   {
     question: "What are your opening hours?",
     answer:
-      "From 5 November 2026 we are open Monday, Tuesday, Thursday and Friday 9:00am–6:00pm, and Saturday 9:00am–5:30pm. We are closed every Wednesday and Sunday.",
+      "We are based inside St James Pharmacy: Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking opens from 5 November 2026; bookable days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday).",
   },
 ] as const;
 

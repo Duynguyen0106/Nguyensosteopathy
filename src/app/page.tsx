@@ -122,7 +122,7 @@ export default function HomePage() {
           </ul>
 
           <p className="mt-8 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-center text-sm font-semibold text-navy md:text-base">
-            Google 5.0 ★ Rated Osteopathy Clinic in Woolwich
+            GOsC-registered osteopathy in Woolwich · SE18 · No GP referral needed
           </p>
         </div>
       </section>
@@ -391,15 +391,20 @@ export default function HomePage() {
               Find us
             </p>
             <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
-              Conveniently located inside {site.address.venue}
+              Osteopath in Woolwich — inside {site.address.venue}
             </h2>
             <p className="mt-5 text-lg font-medium text-slate-700">
+              {site.name}
+              <br />
               {site.address.line1}
               <br />
               {site.address.line2}
             </p>
-            <p className="mt-3 text-sm font-medium text-slate-600">
-              Providing NHS & Private Pharmacy Services on site.
+            <p className="mt-3 text-sm leading-relaxed text-slate-600">
+              Easy to reach from Greenwich, Charlton, Plumstead, Thamesmead, and
+              Abbey Wood. Ask at the pharmacy counter on arrival and they will
+              direct you to the osteopathy room. NHS & private pharmacy services
+              on site.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink

@@ -6,9 +6,13 @@ export function JsonLd() {
     "@type": ["MedicalBusiness", "LocalBusiness", "HealthAndBeautyBusiness"],
     "@id": `${site.websiteUrl}/#clinic`,
     name: site.name,
-    alternateName: "Nguyen's Osteopathy",
+    alternateName: [
+      "Nguyen's Osteopathy",
+      "Nguyens Osteopathic Clinic",
+      "Nguyen's Osteopath Woolwich",
+    ],
     description:
-      "Drug-free osteopathic care in Woolwich with Austin Duy Nguyen, GOsC-registered osteopath. Back pain, neck pain, focused shockwave, men’s health, sports rehab, and more.",
+      "Drug-free osteopathic care in Woolwich with Austin Duy Nguyen, GOsC-registered osteopath. Back pain, neck pain, focused shockwave, men’s health, sports rehab, and more — inside St James Pharmacy, SE18.",
     url: site.websiteUrl,
     image: [
       `${site.websiteUrl}/images/logo-lockup.png`,
@@ -20,6 +24,8 @@ export function JsonLd() {
     email: site.email,
     sameAs: [site.facebookUrl],
     priceRange: "£15–£110",
+    currenciesAccepted: "GBP",
+    paymentAccepted: "Cash, Credit Card, Debit Card",
     address: {
       "@type": "PostalAddress",
       streetAddress: `${site.address.venue}, ${site.address.line1}`,
@@ -51,22 +57,22 @@ export function JsonLd() {
     areaServed: [
       { "@type": "City", name: "Woolwich" },
       { "@type": "City", name: "Greenwich" },
+      { "@type": "City", name: "Charlton" },
+      { "@type": "City", name: "Plumstead" },
+      { "@type": "City", name: "Thamesmead" },
+      { "@type": "City", name: "Abbey Wood" },
       { "@type": "AdministrativeArea", name: "South East London" },
     ],
     medicalSpecialty: "Osteopathic",
+    knowsLanguage: ["en-GB", "vi"],
     availableService: services.map((service) => ({
       "@type": "MedicalProcedure",
       name: service.title,
       description: service.summary,
       url: `${site.websiteUrl}/services/${service.slug}`,
     })),
-    employee: {
-      "@type": "Person",
-      name: site.practitioner.name,
-      jobTitle: site.practitioner.title,
-      identifier: `GOsC ${site.practitioner.regNo}`,
-      worksFor: { "@id": `${site.websiteUrl}/#clinic` },
-    },
+    employee: { "@id": `${site.websiteUrl}/#practitioner` },
+    founder: { "@id": `${site.websiteUrl}/#practitioner` },
     makesOffer: pricing.map((item) => ({
       "@type": "Offer",
       name: item.service,
@@ -74,7 +80,43 @@ export function JsonLd() {
       price: item.price.replace(/[^0-9.]/g, ""),
       priceCurrency: "GBP",
       url: `${site.websiteUrl}/book`,
+      availability: "https://schema.org/InStock",
     })),
+  };
+
+  const practitioner = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "@id": `${site.websiteUrl}/#practitioner`,
+    name: site.practitioner.name,
+    jobTitle: site.practitioner.title,
+    description:
+      "GOsC-registered osteopath and Master of Osteopathy graduate of the British College of Osteopathic Medicine, practising at Nguyen's Osteopathic Clinic in Woolwich.",
+    url: `${site.websiteUrl}/about`,
+    image: `${site.websiteUrl}/images/austin-nguyen.jpg`,
+    telephone: site.phone,
+    email: site.email,
+    identifier: {
+      "@type": "PropertyValue",
+      name: "GOsC Registration Number",
+      value: site.practitioner.regNo,
+    },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "British College of Osteopathic Medicine",
+    },
+    hasCredential: site.practitioner.credentials,
+    knowsLanguage: ["en-GB", "vi"],
+    medicalSpecialty: "https://schema.org/Musculoskeletal",
+    worksFor: { "@id": `${site.websiteUrl}/#clinic` },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: `${site.address.venue}, ${site.address.line1}`,
+      addressLocality: "Woolwich",
+      addressRegion: "London",
+      postalCode: "SE18 6LQ",
+      addressCountry: "GB",
+    },
   };
 
   const website = {
@@ -106,6 +148,43 @@ export function JsonLd() {
     })),
   };
 
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: site.websiteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: `${site.websiteUrl}/services`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Book",
+        item: `${site.websiteUrl}/book`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "About",
+        item: `${site.websiteUrl}/about`,
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        name: "Blog",
+        item: `${site.websiteUrl}/blog`,
+      },
+    ],
+  };
+
   return (
     <>
       <script
@@ -114,11 +193,19 @@ export function JsonLd() {
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(practitioner) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
     </>
   );

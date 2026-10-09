@@ -7,12 +7,17 @@ export function Hero() {
     <section className="hero-wash">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 md:px-8 md:py-20 lg:grid-cols-2 lg:gap-14 lg:py-24">
         <div className="section-fade">
-          <p className="font-display text-[clamp(3.2rem,7.5vw,5.6rem)] leading-[0.92] font-semibold tracking-[0.04em] text-navy uppercase">
-            Nguyen&apos;s
-          </p>
-          <p className="mt-3 text-base font-semibold tracking-[0.28em] text-teal uppercase md:text-lg">
-            Osteopathic Clinic
-          </p>
+          <h1 className="max-w-xl">
+            <span className="font-display block text-[clamp(3.2rem,7.5vw,5.6rem)] leading-[0.92] font-semibold tracking-[0.04em] text-navy uppercase">
+              Nguyen&apos;s
+            </span>
+            <span className="mt-3 block text-base font-semibold tracking-[0.28em] text-teal uppercase md:text-lg">
+              Osteopathic Clinic
+            </span>
+            <span className="mt-4 block text-sm font-semibold tracking-wide text-navy/70 md:text-base">
+              Osteopath in Woolwich, London SE18
+            </span>
+          </h1>
 
           <div className="mt-6 flex items-center gap-4">
             <span className="brand-rule h-px w-10 bg-teal" />
@@ -21,8 +26,9 @@ export function Hero() {
           </div>
 
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/80 md:text-[1.15rem]">
-            High-quality, drug-free care that finds the root cause of your pain
-            and helps you move with confidence again.
+            Drug-free osteopathy with Austin Duy Nguyen, GOsC-registered
+            osteopath — inside St James Pharmacy on Powis Street. We find the
+            root cause of your pain and help you move with confidence again.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">

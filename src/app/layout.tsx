@@ -34,6 +34,8 @@ export const metadata: Metadata = {
     "osteopath Woolwich",
     "osteopathy Woolwich",
     "osteopath SE18",
+    "osteopath Greenwich",
+    "osteopath Plumstead",
     "back pain Woolwich",
     "neck pain osteopath London",
     "shockwave therapy Woolwich",
@@ -41,6 +43,8 @@ export const metadata: Metadata = {
     "men's health osteopath",
     "ED shockwave therapy London",
     "sports injury Woolwich",
+    "Vietnamese osteopath UK",
+    "Vietnamese osteopath London",
     "Nguyen's Osteopathic Clinic",
     "Austin Duy Nguyen osteopath",
     "St James Pharmacy osteopath",
@@ -50,6 +54,9 @@ export const metadata: Metadata = {
   creator: site.name,
   publisher: site.name,
   category: "healthcare",
+  verification: {
+    google: "Q1nYC_wKSmgSGo2IbHT52HWYknHeKbQ7O0hJCt_W05g",
+  },
   alternates: {
     canonical: "/",
   },

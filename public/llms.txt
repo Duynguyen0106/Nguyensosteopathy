@@ -1,16 +1,62 @@
 # Nguyen's Osteopathic Clinic
 
-> Drug-free osteopathy in Woolwich, London SE18 with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332).
+> Drug-free osteopathy in Woolwich, London SE18 with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332). Clinic inside St James Pharmacy & Travel Clinic, 52 Powis Street, Woolwich, London SE18 6LQ.
 
+## Core
 - Homepage: https://www.nguyensosteopathy.com/
 - About: https://www.nguyensosteopathy.com/about
-- Services: https://www.nguyensosteopathy.com/services
 - Book online: https://www.nguyensosteopathy.com/book
-- Blog: https://www.nguyensosteopathy.com/blog
+- Fees: https://www.nguyensosteopathy.com/fees
+- Insurance & receipts: https://www.nguyensosteopathy.com/insurance
+- Contact: https://www.nguyensosteopathy.com/contact
+- Blog RSS: https://www.nguyensosteopathy.com/feed.xml
+- Reviews: https://www.nguyensosteopathy.com/reviews
+- FAQ: https://www.nguyensosteopathy.com/faq
+- New patients: https://www.nguyensosteopathy.com/new-patients
+- Aftercare: https://www.nguyensosteopathy.com/aftercare
+- Patient resources: https://www.nguyensosteopathy.com/resources
+- Find us & parking: https://www.nguyensosteopathy.com/find-us
+- Opening offer: https://www.nguyensosteopathy.com/opening
+- NHS & student discount: https://www.nguyensosteopathy.com/nhs-discount
+- Vietnamese: https://www.nguyensosteopathy.com/vi
+- Site map: https://www.nguyensosteopathy.com/site-map
+- Leaflet PDF: https://www.nguyensosteopathy.com/leaflet/nguyens-osteopathy-leaflet.pdf
+
+## Treatments
+- Services index: https://www.nguyensosteopathy.com/services
+- What is osteopathy: https://www.nguyensosteopathy.com/osteopathy
+- Back & neck: https://www.nguyensosteopathy.com/back-neck
+- Desk & office pain: https://www.nguyensosteopathy.com/desk-pain
+- Headaches & joints: https://www.nguyensosteopathy.com/headaches
+- Focused shockwave: https://www.nguyensosteopathy.com/shockwave
+- Men's health & ED: https://www.nguyensosteopathy.com/mens-health
+- Sports injury: https://www.nguyensosteopathy.com/sports
+- Pregnancy: https://www.nguyensosteopathy.com/pregnancy
+- Paediatric: https://www.nguyensosteopathy.com/paediatric
+- Cranial: https://www.nguyensosteopathy.com/cranial
+- Acupuncture: https://www.nguyensosteopathy.com/acupuncture
+- Deep tissue massage: https://www.nguyensosteopathy.com/massage
+- Cupping add-on: https://www.nguyensosteopathy.com/cupping
+
+## Conditions & areas
+- Conditions index: https://www.nguyensosteopathy.com/conditions
+- Areas we serve: https://www.nguyensosteopathy.com/areas
+- Woolwich: https://www.nguyensosteopathy.com/areas/woolwich
+- Plumstead: https://www.nguyensosteopathy.com/areas/plumstead
+- Abbey Wood: https://www.nguyensosteopathy.com/areas/abbey-wood
+- Greenwich: https://www.nguyensosteopathy.com/areas/greenwich
+- Charlton: https://www.nguyensosteopathy.com/areas/charlton
+- Thamesmead: https://www.nguyensosteopathy.com/areas/thamesmead
+
+## Legal
 - Privacy: https://www.nguyensosteopathy.com/privacy
+- Cookies: https://www.nguyensosteopathy.com/cookies
+- Terms: https://www.nguyensosteopathy.com/terms
+- Complaints: https://www.nguyensosteopathy.com/complaints
+- Accessibility: https://www.nguyensosteopathy.com/accessibility
 
-Address: St James Pharmacy & Travel Clinic, 52 Powis Street, Woolwich, London SE18 6LQ
-Phone: 07882843513
-Email: nguyensosteopathy@gmail.com
-
-Primary services: osteopathy, back pain treatment, neck pain treatment, shockwave therapy, sports injury rehab, deep tissue massage, acupuncture, pregnancy support, paediatric care, men's health.
+## Contact
+- Phone: 07882843513
+- Email: nguyensosteopathy@gmail.com
+- Pharmacy hours: Mon–Fri 9:00am–6:00pm · Sat 9:00am–5:30pm
+- Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun, except opening day)

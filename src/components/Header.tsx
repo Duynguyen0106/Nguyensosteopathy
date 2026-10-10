@@ -10,9 +10,10 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/blog", label: "Blog" },
-  { href: "/#pricing", label: "Pricing" },
-  { href: "/#location", label: "Location" },
-  { href: "/book", label: "Book" },
+  { href: "/opening", label: "Opening offer" },
+  { href: "/fees", label: "Fees" },
+  { href: "/contact", label: "Contact" },
+  { href: "/vi", label: "Tiếng Việt" },
 ];
 
 export function Header() {

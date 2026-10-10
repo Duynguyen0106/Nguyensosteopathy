@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BlogDirectory } from "@/components/BlogDirectory";
 import { ButtonLink } from "@/components/Button";
 import {
@@ -95,7 +96,24 @@ export default function BlogIndexPage() {
             <ButtonLink href="/services" variant="secondary">
               View services
             </ButtonLink>
+            <ButtonLink href="/feed.xml" variant="secondary">
+              RSS feed
+            </ButtonLink>
           </div>
+          <p className="mt-5 text-sm text-slate-600">
+            Also explore:{" "}
+            <Link href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
+              Conditions
+            </Link>
+            {" · "}
+            <Link href="/shockwave" className="font-semibold text-teal hover:text-teal-dark">
+              Shockwave
+            </Link>
+            {" · "}
+            <Link href="/areas" className="font-semibold text-teal hover:text-teal-dark">
+              Areas we serve
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -108,7 +126,7 @@ export default function BlogIndexPage() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-slate-600">
             Book online or call {site.phone}. Inside St James Pharmacy, Woolwich
-            — Mon–Fri 9:00am–6:00pm, Sat 9:00am–5:30pm.
+            — {site.booking.shortNote}
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
 import { ServiceIcon } from "@/components/ServiceIcon";
-import { getService, services, site } from "@/lib/site";
+import { getService, getServiceHref, services, site } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -74,6 +74,11 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
           <div className="flex flex-wrap gap-3 md:pt-10">
             <ButtonLink href="/book">Book this treatment</ButtonLink>
+            {getServiceHref(service.slug) !== `/services/${service.slug}` ? (
+              <ButtonLink href={getServiceHref(service.slug)} variant="secondary">
+                Full guide
+              </ButtonLink>
+            ) : null}
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>

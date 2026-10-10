@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ServiceIcon } from "@/components/ServiceIcon";
-import { services, site } from "@/lib/site";
+import { getServiceHref, services, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Osteopathy Services in Woolwich | Back Pain & Shockwave Therapy",
@@ -32,6 +32,29 @@ export default function ServicesPage() {
           and drug free pain relief, every plan starts with why symptoms began —
           then we match hands-on osteopathy and clear advice to your goals.
         </p>
+        <p className="mt-4 text-sm text-slate-600">
+          New here?{" "}
+          <Link
+            href="/osteopathy"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            What is osteopathy?
+          </Link>
+          {" · "}
+          <Link
+            href="/desk-pain"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            Desk &amp; office pain
+          </Link>
+          {" · "}
+          <Link
+            href="/new-patients"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            New patient guide
+          </Link>
+        </p>
       </div>
 
       <div className="mx-auto max-w-6xl px-5 pb-20 md:px-8">
@@ -39,7 +62,7 @@ export default function ServicesPage() {
           {services.map((service) => (
             <li key={service.slug}>
               <Link
-                href={`/services/${service.slug}`}
+                href={getServiceHref(service.slug)}
                 className="service-tile flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
               >
                 <span className="flex items-start justify-between gap-3">

@@ -32,6 +32,60 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/services/back-neck-pain",
+        destination: "/back-neck",
+        permanent: true,
+      },
+      {
+        source: "/services/headaches-joints",
+        destination: "/headaches",
+        permanent: true,
+      },
+      {
+        source: "/services/focused-shockwave",
+        destination: "/shockwave",
+        permanent: true,
+      },
+      {
+        source: "/services/mens-health-ed",
+        destination: "/mens-health",
+        permanent: true,
+      },
+      {
+        source: "/services/pregnancy-support",
+        destination: "/pregnancy",
+        permanent: true,
+      },
+      {
+        source: "/services/sports-injury-rehab",
+        destination: "/sports",
+        permanent: true,
+      },
+      {
+        source: "/services/paediatric-care",
+        destination: "/paediatric",
+        permanent: true,
+      },
+      {
+        source: "/services/cranial-therapy",
+        destination: "/cranial",
+        permanent: true,
+      },
+      {
+        source: "/services/acupuncture-electro",
+        destination: "/acupuncture",
+        permanent: true,
+      },
+      {
+        source: "/services/deep-tissue-massage",
+        destination: "/massage",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

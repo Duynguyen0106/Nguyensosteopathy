@@ -57,8 +57,143 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/#pricing" className="hover:text-white">
-                Pricing
+              <Link href="/opening" className="hover:text-white">
+                Opening offer — 50% off
+              </Link>
+            </li>
+            <li>
+              <Link href="/vi" className="hover:text-white">
+                Tiếng Việt
+              </Link>
+            </li>
+            <li>
+              <Link href="/fees" className="hover:text-white">
+                Fees &amp; prices
+              </Link>
+            </li>
+            <li>
+              <Link href="/insurance" className="hover:text-white">
+                Insurance &amp; receipts
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-white">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link href="/faq" className="hover:text-white">
+                FAQ
+              </Link>
+            </li>
+            <li>
+              <Link href="/new-patients" className="hover:text-white">
+                New patients
+              </Link>
+            </li>
+            <li>
+              <Link href="/aftercare" className="hover:text-white">
+                Aftercare
+              </Link>
+            </li>
+            <li>
+              <Link href="/resources" className="hover:text-white">
+                Patient resources
+              </Link>
+            </li>
+            <li>
+              <Link href="/conditions" className="hover:text-white">
+                Conditions
+              </Link>
+            </li>
+            <li>
+              <Link href="/areas" className="hover:text-white">
+                Areas we serve
+              </Link>
+            </li>
+            <li>
+              <Link href="/osteopathy" className="hover:text-white">
+                What is osteopathy?
+              </Link>
+            </li>
+            <li>
+              <Link href="/back-neck" className="hover:text-white">
+                Back &amp; neck pain
+              </Link>
+            </li>
+            <li>
+              <Link href="/desk-pain" className="hover:text-white">
+                Desk &amp; office pain
+              </Link>
+            </li>
+            <li>
+              <Link href="/headaches" className="hover:text-white">
+                Headaches &amp; joints
+              </Link>
+            </li>
+            <li>
+              <Link href="/shockwave" className="hover:text-white">
+                Shockwave therapy
+              </Link>
+            </li>
+            <li>
+              <Link href="/mens-health" className="hover:text-white">
+                Men&apos;s health
+              </Link>
+            </li>
+            <li>
+              <Link href="/pregnancy" className="hover:text-white">
+                Pregnancy osteopathy
+              </Link>
+            </li>
+            <li>
+              <Link href="/sports" className="hover:text-white">
+                Sports injury
+              </Link>
+            </li>
+            <li>
+              <Link href="/paediatric" className="hover:text-white">
+                Paediatric care
+              </Link>
+            </li>
+            <li>
+              <Link href="/cranial" className="hover:text-white">
+                Cranial osteopathy
+              </Link>
+            </li>
+            <li>
+              <Link href="/acupuncture" className="hover:text-white">
+                Acupuncture
+              </Link>
+            </li>
+            <li>
+              <Link href="/massage" className="hover:text-white">
+                Deep tissue massage
+              </Link>
+            </li>
+            <li>
+              <Link href="/cupping" className="hover:text-white">
+                Cupping add-on
+              </Link>
+            </li>
+            <li>
+              <Link href="/site-map" className="hover:text-white">
+                Site map
+              </Link>
+            </li>
+            <li>
+              <Link href="/leaflet" className="hover:text-white">
+                Clinic leaflet
+              </Link>
+            </li>
+            <li>
+              <Link href="/nhs-discount" className="hover:text-white">
+                NHS &amp; student discount
+              </Link>
+            </li>
+            <li>
+              <Link href="/find-us" className="hover:text-white">
+                Find us &amp; parking
               </Link>
             </li>
             <li>
@@ -77,6 +212,11 @@ export function Footer() {
               </a>
             </li>
             <li>
+              <Link href="/reviews" className="hover:text-white">
+                Reviews
+              </Link>
+            </li>
+            <li>
               <a
                 href={site.googleReviewsUrl}
                 target="_blank"
@@ -89,6 +229,26 @@ export function Footer() {
             <li>
               <Link href="/privacy" className="hover:text-white">
                 Privacy policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/cookies" className="hover:text-white">
+                Cookie policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/accessibility" className="hover:text-white">
+                Accessibility
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms" className="hover:text-white">
+                Terms &amp; cancellation
+              </Link>
+            </li>
+            <li>
+              <Link href="/complaints" className="hover:text-white">
+                Complaints
               </Link>
             </li>
           </ul>
@@ -124,13 +284,28 @@ export function Footer() {
             </li>
           </ul>
           <div className="mt-4 space-y-1 text-sm font-medium text-white/80">
+            <p className="text-xs font-semibold tracking-[0.14em] text-teal-mist uppercase">
+              Pharmacy building
+            </p>
             {site.hours.map((row) => (
               <p key={row.days}>
                 <span className="text-white">{row.days}</span> · {row.time}
               </p>
             ))}
+            <p className="pt-2 text-xs font-semibold tracking-[0.14em] text-teal-mist uppercase">
+              Bookable osteopathy
+            </p>
+            {site.booking.hours.map((row) => (
+              <p key={`book-${row.days}`}>
+                <span className="text-white">{row.days}</span> · {row.time}
+              </p>
+            ))}
           </div>
-          <p className="mt-4 text-xs leading-relaxed text-white/60">
+          <p className="mt-3 text-xs leading-relaxed text-white/55">
+            Closed {site.booking.closedDaysLabel} (except opening day). Live
+            slots shown in online booking.
+          </p>
+          <p className="mt-3 text-xs leading-relaxed text-white/60">
             {site.cancellation}
           </p>
         </div>
@@ -144,7 +319,27 @@ export function Footer() {
           <p>
             Located inside {site.address.venue}, Woolwich.{" "}
             <Link href="/privacy" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
-              Privacy policy
+              Privacy
+            </Link>
+            {" · "}
+            <Link href="/cookies" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Cookies
+            </Link>
+            {" · "}
+            <Link href="/accessibility" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Accessibility
+            </Link>
+            {" · "}
+            <Link href="/terms" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Terms
+            </Link>
+            {" · "}
+            <Link href="/complaints" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Complaints
+            </Link>
+            {" · "}
+            <Link href="/feed.xml" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              RSS
             </Link>
           </p>
         </div>

@@ -10,11 +10,12 @@ export const site = {
   },
   phone: "07882843513",
   phoneHref: "tel:07882843513",
+  whatsappUrl: "https://wa.me/447882843513",
   email: "nguyensosteopathy@gmail.com",
   emailHref: "mailto:nguyensosteopathy@gmail.com",
   facebookUrl: "https://www.facebook.com/Nguyensosteopathy",
-  googleReviewsUrl:
-    "https://www.google.com/search?q=Nguyen%27s+Osteopathic+Clinic+Woolwich+reviews",
+  googleReviewsUrl: "https://maps.app.goo.gl/XgHpsXAy1FmZKibn9",
+  googleMapsCid: "13911505434361225558",
   website: "www.nguyensosteopathy.com",
   websiteUrl: "https://www.nguyensosteopathy.com",
   address: {
@@ -23,11 +24,35 @@ export const site = {
     venue: "St James Pharmacy & Travel Clinic",
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=52+Powis+Street+Woolwich+London+SE18+6LQ",
+    mapsEmbedUrl:
+      "https://maps.google.com/maps?q=52+Powis+Street+Woolwich+London+SE18+6LQ&z=16&output=embed",
   },
+  /** Pharmacy / venue opening pattern (building access). */
   hours: [
     { days: "Monday – Friday", time: "9:00am – 6:00pm" },
     { days: "Saturday", time: "9:00am – 5:30pm" },
   ],
+  /**
+   * Osteopathy booking pattern after opening.
+   * Note: opening day (Wed 5 Nov 2026) is a special one-day exception.
+   */
+  booking: {
+    opensFromLabel: "5 November 2026",
+    bookableDaysLabel:
+      "Monday, Tuesday, Thursday, Friday and Saturday",
+    closedDaysLabel: "Wednesday and Sunday",
+    /** Display rows for bookable osteopathy clinic times (not pharmacy access). */
+    hours: [
+      { days: "Mon, Tue, Thu, Fri", time: "9:00am – 6:00pm" },
+      { days: "Saturday", time: "9:00am – 5:30pm" },
+    ],
+    shortNote:
+      "Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun, except the opening-day offer).",
+    note: "Online booking opens from 5 November 2026. Regular bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday, except the opening-day offer). Live slots are always shown in the booking calendar.",
+    schemaWeekdays: ["Monday", "Tuesday", "Thursday", "Friday"] as const,
+    weekday: { opens: "09:00", closes: "18:00" },
+    saturday: { opens: "09:00", closes: "17:30" },
+  },
   cancellation: "24 hours' notice is required for cancellations.",
   discount:
     "10% Discount for NHS Staff & Students (Valid ID required at appointment)",
@@ -37,7 +62,32 @@ export const site = {
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
     "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",
+  openingOffer: {
+    dateLabel: "Wednesday 5 November 2026",
+    dateIso: "2026-11-05",
+    discountPercent: 50,
+    headline: "50% off all service fees",
+    summary:
+      "Celebrate our official opening day with half-price osteopathy and clinic services — one day only, inside St James Pharmacy, Woolwich.",
+    path: "/opening",
+  },
 } as const;
+
+/** Schema.org openingHoursSpecification for bookable osteopathy days. */
+export const bookingHoursSpecification = [
+  {
+    "@type": "OpeningHoursSpecification" as const,
+    dayOfWeek: [...site.booking.schemaWeekdays],
+    opens: site.booking.weekday.opens,
+    closes: site.booking.weekday.closes,
+  },
+  {
+    "@type": "OpeningHoursSpecification" as const,
+    dayOfWeek: "Saturday" as const,
+    opens: site.booking.saturday.opens,
+    closes: site.booking.saturday.closes,
+  },
+];
 
 export const highlights = [
   "100% Drug-Free and Non-Invasive",
@@ -93,6 +143,11 @@ export const testimonials = [
 
 export const faqs = [
   {
+    question: "What is osteopathy?",
+    answer:
+      "Osteopathy is a regulated, drug-free approach to musculoskeletal pain. We assess how your joints, muscles, and posture share load, use hands-on treatment to ease irritation, and give practical advice for work and daily life. See our what-is-osteopathy page for a fuller plain-English guide.",
+  },
+  {
     question: "Do I need a GP referral to book an appointment?",
     answer:
       "No. You can book directly online or by phone — a GP referral is not required. If you have relevant medical letters or imaging, bring them along so we can tailor your care.",
@@ -114,8 +169,37 @@ export const faqs = [
   },
   {
     question: "What are your opening hours?",
+    answer: `We are based inside St James Pharmacy: Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. ${site.booking.note}`,
+  },
+  {
+    question: "Can I speak Vietnamese at the clinic?",
     answer:
-      "We are based inside St James Pharmacy: Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking opens from 5 November 2026; bookable days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday).",
+      "Yes. Austin Duy Nguyen is a Vietnamese osteopath practising in the UK and can consult in Vietnamese or English — helpful if you prefer to describe symptoms without a language barrier.",
+  },
+  {
+    question: "Is there an NHS or student discount?",
+    answer:
+      "Yes. NHS staff and students receive 10% off with valid ID shown at the appointment. This does not stack with the opening-day 50% offer on 5 November 2026.",
+  },
+  {
+    question: "What should I do after treatment?",
+    answer:
+      "Keep moving gently, hydrate as usual, and follow any posture or exercise advice from your visit. Mild soreness for 24–48 hours can be normal. See our aftercare guide for more detail, and contact us if symptoms clearly worsen or you develop red-flag symptoms.",
+  },
+  {
+    question: "What is the cancellation policy?",
+    answer:
+      "24 hours' notice is required for cancellations. Please call or use your booking confirmation options as soon as you know you cannot attend so we can offer the slot to someone else.",
+  },
+  {
+    question: "Is parking available near Powis Street?",
+    answer:
+      "Powis Street and nearby Woolwich town-centre car parks serve the clinic. Allow a few extra minutes for parking on busy days. Public transport to Woolwich is also convenient.",
+  },
+  {
+    question: "Do you offer shockwave therapy?",
+    answer:
+      "Yes. Focused shockwave therapy (LI-ESWT) is available for suitable tendon and soft-tissue conditions after clinical screening. Fees are listed on our fees page; we confirm suitability before treatment.",
   },
 ] as const;
 
@@ -360,6 +444,34 @@ export const services: Service[] = [
 
 export function getService(slug: string) {
   return services.find((service) => service.slug === slug);
+}
+
+/** Prefer dedicated conversion hubs when they exist. */
+export function getServiceHref(slug: string) {
+  switch (slug) {
+    case "back-neck-pain":
+      return "/back-neck";
+    case "headaches-joints":
+      return "/headaches";
+    case "focused-shockwave":
+      return "/shockwave";
+    case "mens-health-ed":
+      return "/mens-health";
+    case "pregnancy-support":
+      return "/pregnancy";
+    case "sports-injury-rehab":
+      return "/sports";
+    case "paediatric-care":
+      return "/paediatric";
+    case "cranial-therapy":
+      return "/cranial";
+    case "acupuncture-electro":
+      return "/acupuncture";
+    case "deep-tissue-massage":
+      return "/massage";
+    default:
+      return `/services/${slug}`;
+  }
 }
 
 export const pricing = [

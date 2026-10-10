@@ -5,8 +5,10 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { getAllPosts } from "@/lib/blog";
+import { getFeaturedConditions } from "@/lib/conditions";
 import {
   faqs,
+  getServiceHref,
   highlights,
   pricing,
   services,
@@ -17,9 +19,26 @@ import {
 
 export default function HomePage() {
   const latestPosts = getAllPosts().slice(0, 3);
+  const featuredConditions = getFeaturedConditions();
+  const offer = site.openingOffer;
 
   return (
     <>
+      <div className="bg-teal text-white">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-5 py-3 text-sm sm:flex-row sm:items-center md:px-8">
+          <p className="font-medium leading-snug">
+            <span className="font-semibold">Opening {offer.dateLabel}</span>
+            {" — "}
+            {offer.headline} for patients seen that day.
+          </p>
+          <Link
+            href={offer.path}
+            className="shrink-0 font-semibold underline-offset-2 hover:underline"
+          >
+            View offer →
+          </Link>
+        </div>
+      </div>
       <Hero />
 
       <section className="bg-navy text-white">
@@ -122,23 +141,28 @@ export default function HomePage() {
             ))}
           </ul>
 
-          <p className="mt-8 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-center text-sm font-semibold text-navy md:text-base">
-            GOsC-registered osteopathy in Woolwich · SE18 · No GP referral needed
-          </p>
-          <p className="mt-4 text-center text-sm text-slate-600">
-            <a
-              href={site.googleReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
-              Read our Google reviews
-            </a>
-            {" · "}
-            <Link href="/book" className="font-semibold text-teal hover:text-teal-dark">
-              Book online with our booking widget
-            </Link>
-          </p>
+          <div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-2xl bg-navy px-5 py-6 text-white md:flex-row md:items-center md:px-8">
+            <div>
+              <p className="font-display text-2xl">Google reviews</p>
+              <p className="mt-1 text-sm text-white/75">
+                Read public feedback, or share your visit to help neighbours find
+                care in Woolwich.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <ButtonLink
+                href={site.googleReviewsUrl}
+                variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See Google reviews
+              </ButtonLink>
+              <ButtonLink href="/reviews" variant="secondary">
+                Patient stories
+              </ButtonLink>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -225,16 +249,21 @@ export default function HomePage() {
                 any service for who it helps, what to expect, and fees.
               </p>
             </div>
-            <ButtonLink href="/services" variant="secondary">
-              View all services
-            </ButtonLink>
+            <div className="flex flex-wrap gap-3">
+              <ButtonLink href="/shockwave" variant="secondary">
+                Shockwave guide
+              </ButtonLink>
+              <ButtonLink href="/services" variant="secondary">
+                View all services
+              </ButtonLink>
+            </div>
           </div>
 
           <ul className="mt-12 grid gap-4 sm:grid-cols-2">
             {services.map((service) => (
               <li key={service.slug}>
                 <Link
-                  href={`/services/${service.slug}`}
+                  href={getServiceHref(service.slug)}
                   className="service-tile group flex h-full gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
@@ -319,6 +348,16 @@ export default function HomePage() {
           <p className="mt-6 rounded-xl border border-dashed border-teal/40 bg-teal/5 px-5 py-4 text-sm font-medium text-navy md:text-base">
             {site.discount}
           </p>
+          <p className="mt-4 text-sm text-slate-600">
+            Full fee notes, discounts, and opening-day savings are on our{" "}
+            <Link
+              href="/fees"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              fees page
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -375,9 +414,75 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Explore
+            </p>
+            <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
+              Popular condition guides
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
+              Start with a common presentation, then book when you are ready for
+              assessment.
+            </p>
+          </div>
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredConditions.map((condition) => (
+              <li key={condition.slug}>
+                <Link
+                  href={`/conditions/${condition.slug}`}
+                  className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal/40 hover:bg-teal/5"
+                >
+                  <span className="text-xs font-semibold tracking-wide text-teal uppercase">
+                    {condition.region}
+                  </span>
+                  <span className="mt-2 font-semibold text-navy">
+                    {condition.shortTitle}
+                  </span>
+                  <span className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">
+                    {condition.summary}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 text-sm text-slate-600">
+            <Link
+              href="/conditions"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Full conditions index →
+            </Link>
+            {" · "}
+            <Link
+              href="/areas"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Areas we serve
+            </Link>
+            {" · "}
+            <Link
+              href="/find-us"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Find us &amp; parking
+            </Link>
+            {" · "}
+            <Link
+              href="/site-map"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Site map
+            </Link>
+          </p>
+        </div>
+      </section>
+
       <section
         id="faq"
-        className="scroll-mt-24 border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24"
+        className="scroll-mt-24 border-t border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24"
       >
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
@@ -392,7 +497,43 @@ export default function HomePage() {
               finding us inside the pharmacy.
             </p>
           </div>
-          <FaqAccordion items={faqs} />
+          <FaqAccordion items={faqs.slice(0, 5)} />
+          <p className="mt-6 text-center text-sm text-slate-600">
+            <Link
+              href="/faq"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              See all FAQs
+            </Link>
+            {" · "}
+            <Link
+              href="/new-patients"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              New patient guide
+            </Link>
+            {" · "}
+            <Link
+              href="/resources"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Patient resources
+            </Link>
+            {" · "}
+            <Link
+              href="/osteopathy"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              What is osteopathy?
+            </Link>
+            {" · "}
+            <Link
+              href="/conditions"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Conditions we treat
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -429,6 +570,12 @@ export default function HomePage() {
                 rel="noopener noreferrer"
               >
                 Open in Maps
+              </ButtonLink>
+              <ButtonLink href="/find-us" variant="secondary">
+                Find us &amp; parking
+              </ButtonLink>
+              <ButtonLink href="/areas" variant="secondary">
+                Areas we serve
               </ButtonLink>
               <ButtonLink href="/book" variant="secondary">
                 Book an appointment
@@ -481,12 +628,27 @@ export default function HomePage() {
               </li>
             </ul>
             <div className="mt-6 space-y-2 border-t border-slate-200 pt-5 text-sm font-medium text-slate-600">
+              <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                Pharmacy building
+              </p>
               {site.hours.map((row) => (
                 <p key={row.days}>
                   <span className="font-semibold text-navy">{row.days}:</span>{" "}
                   {row.time}
                 </p>
               ))}
+              <p className="pt-2 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                Bookable osteopathy
+              </p>
+              {site.booking.hours.map((row) => (
+                <p key={`book-${row.days}`}>
+                  <span className="font-semibold text-navy">{row.days}:</span>{" "}
+                  {row.time}
+                </p>
+              ))}
+              <p className="pt-1 text-xs leading-relaxed text-slate-500">
+                {site.booking.shortNote}
+              </p>
             </div>
           </div>
         </div>

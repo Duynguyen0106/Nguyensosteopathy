@@ -64,8 +64,16 @@ export const metadata: Metadata = {
   verification: {
     google: "Q1nYC_wKSmgSGo2IbHT52HWYknHeKbQ7O0hJCt_W05g",
   },
+  manifest: "/site.webmanifest",
   alternates: {
     canonical: "/",
+    languages: {
+      "en-GB": "/",
+      "vi-VN": "/vi",
+    },
+    types: {
+      "application/rss+xml": "/feed.xml",
+    },
   },
   openGraph: {
     title: `Osteopathy in Woolwich | ${site.name}`,

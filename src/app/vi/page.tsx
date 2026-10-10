@@ -249,6 +249,12 @@ export default function VietnamesePage() {
             </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/services">Xem dịch vụ (EN)</ButtonLink>
+              <ButtonLink href="/osteopathy" variant="secondary">
+                Osteopathy là gì?
+              </ButtonLink>
+              <ButtonLink href="/desk-pain" variant="secondary">
+                Đau do ngồi máy tính
+              </ButtonLink>
               <ButtonLink href="/back-neck" variant="secondary">
                 Đau lưng &amp; cổ
               </ButtonLink>

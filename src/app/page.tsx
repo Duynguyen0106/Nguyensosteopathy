@@ -521,6 +521,13 @@ export default function HomePage() {
             </Link>
             {" · "}
             <Link
+              href="/osteopathy"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              What is osteopathy?
+            </Link>
+            {" · "}
+            <Link
               href="/conditions"
               className="font-semibold text-teal hover:text-teal-dark"
             >

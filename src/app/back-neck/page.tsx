@@ -200,6 +200,13 @@ export default function BackNeckPage() {
           <p className="mt-8 text-sm text-slate-600">
             Related:{" "}
             <Link
+              href="/desk-pain"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Desk &amp; office pain
+            </Link>
+            {" · "}
+            <Link
               href="/blog/back-pain-woolwich-osteopathy"
               className="font-semibold text-teal hover:text-teal-dark"
             >
@@ -222,6 +229,9 @@ export default function BackNeckPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href="/desk-pain" variant="secondary">
+              Desk &amp; office pain
+            </ButtonLink>
             <ButtonLink href="/headaches" variant="secondary">
               Headaches &amp; joints
             </ButtonLink>

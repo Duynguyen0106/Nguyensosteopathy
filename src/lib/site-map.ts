@@ -21,7 +21,9 @@ export const siteMapGroups = [
     title: "Treatments",
     links: [
       { href: "/services", label: "All services" },
+      { href: "/osteopathy", label: "What is osteopathy?" },
       { href: "/back-neck", label: "Back & neck pain" },
+      { href: "/desk-pain", label: "Desk & office pain" },
       { href: "/headaches", label: "Headaches & joints" },
       { href: "/shockwave", label: "Focused shockwave" },
       { href: "/mens-health", label: "Men's health & ED" },

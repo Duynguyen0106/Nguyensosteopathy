@@ -32,6 +32,29 @@ export default function ServicesPage() {
           and drug free pain relief, every plan starts with why symptoms began —
           then we match hands-on osteopathy and clear advice to your goals.
         </p>
+        <p className="mt-4 text-sm text-slate-600">
+          New here?{" "}
+          <Link
+            href="/osteopathy"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            What is osteopathy?
+          </Link>
+          {" · "}
+          <Link
+            href="/desk-pain"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            Desk &amp; office pain
+          </Link>
+          {" · "}
+          <Link
+            href="/new-patients"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            New patient guide
+          </Link>
+        </p>
       </div>
 
       <div className="mx-auto max-w-6xl px-5 pb-20 md:px-8">

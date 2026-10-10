@@ -143,6 +143,11 @@ export const testimonials = [
 
 export const faqs = [
   {
+    question: "What is osteopathy?",
+    answer:
+      "Osteopathy is a regulated, drug-free approach to musculoskeletal pain. We assess how your joints, muscles, and posture share load, use hands-on treatment to ease irritation, and give practical advice for work and daily life. See our what-is-osteopathy page for a fuller plain-English guide.",
+  },
+  {
     question: "Do I need a GP referral to book an appointment?",
     answer:
       "No. You can book directly online or by phone — a GP referral is not required. If you have relevant medical letters or imaging, bring them along so we can tailor your care.",

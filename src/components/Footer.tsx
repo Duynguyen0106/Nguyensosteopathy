@@ -112,8 +112,18 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/osteopathy" className="hover:text-white">
+                What is osteopathy?
+              </Link>
+            </li>
+            <li>
               <Link href="/back-neck" className="hover:text-white">
                 Back &amp; neck pain
+              </Link>
+            </li>
+            <li>
+              <Link href="/desk-pain" className="hover:text-white">
+                Desk &amp; office pain
               </Link>
             </li>
             <li>

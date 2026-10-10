@@ -107,6 +107,11 @@ const groups = [
     intro: "Condition guides, local reading, and clinic downloads.",
     links: [
       {
+        href: "/osteopathy",
+        label: "What is osteopathy?",
+        detail: "Plain-English guide to regulated, drug-free MSK care.",
+      },
+      {
         href: "/conditions",
         label: "Conditions index",
         detail: "Musculoskeletal topics we commonly assess and treat.",
@@ -121,11 +126,6 @@ const groups = [
         label: "Clinic leaflet",
         detail: "Printable overview of services, fees, and how to book.",
       },
-      {
-        href: "/vi",
-        label: "Tiếng Việt",
-        detail: "Vietnamese overview of the clinic and booking path.",
-      },
     ],
   },
   {
@@ -138,9 +138,9 @@ const groups = [
         detail: "Osteopathy, shockwave, massage, acupuncture, and more.",
       },
       {
-        href: "/reviews",
-        label: "Reviews",
-        detail: "What local patients say about care at the clinic.",
+        href: "/desk-pain",
+        label: "Desk & office pain",
+        detail: "Laptop necks, mid-back ache, and RSI-type forearm load.",
       },
       {
         href: "/about",
@@ -148,9 +148,9 @@ const groups = [
         detail: "GOsC-registered osteopath practising in Woolwich SE18.",
       },
       {
-        href: "/site-map",
-        label: "Full site map",
-        detail: "Every main clinic page in one list.",
+        href: "/vi",
+        label: "Tiếng Việt",
+        detail: "Vietnamese overview of the clinic and booking path.",
       },
     ],
   },

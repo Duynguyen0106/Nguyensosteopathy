@@ -26,8 +26,16 @@ export default function NotFound() {
         </div>
         <p className="mt-8 text-sm text-slate-600">
           Popular:{" "}
+          <Link href="/osteopathy" className="font-semibold text-teal hover:text-teal-dark">
+            Osteopathy
+          </Link>
+          {" · "}
           <Link href="/back-neck" className="font-semibold text-teal hover:text-teal-dark">
             Back &amp; neck
+          </Link>
+          {" · "}
+          <Link href="/desk-pain" className="font-semibold text-teal hover:text-teal-dark">
+            Desk pain
           </Link>
           {" · "}
           <Link href="/shockwave" className="font-semibold text-teal hover:text-teal-dark">

@@ -13,6 +13,7 @@
 - Reviews: https://www.nguyensosteopathy.com/reviews
 - FAQ: https://www.nguyensosteopathy.com/faq
 - New patients: https://www.nguyensosteopathy.com/new-patients
+- Patient resources: https://www.nguyensosteopathy.com/resources
 - Find us & parking: https://www.nguyensosteopathy.com/find-us
 - Opening offer: https://www.nguyensosteopathy.com/opening
 - NHS & student discount: https://www.nguyensosteopathy.com/nhs-discount
@@ -52,4 +53,5 @@
 ## Contact
 - Phone: 07882843513
 - Email: nguyensosteopathy@gmail.com
-- Hours: Mon–Fri 9:00am–6:00pm · Sat 9:00am–5:30pm
+- Pharmacy hours: Mon–Fri 9:00am–6:00pm · Sat 9:00am–5:30pm
+- Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun, except opening day)

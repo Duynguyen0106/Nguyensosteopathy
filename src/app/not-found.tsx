@@ -38,6 +38,10 @@ export default function NotFound() {
             Find us
           </Link>
           {" · "}
+          <Link href="/resources" className="font-semibold text-teal hover:text-teal-dark">
+            Resources
+          </Link>
+          {" · "}
           <Link href="/contact" className="font-semibold text-teal hover:text-teal-dark">
             Contact
           </Link>

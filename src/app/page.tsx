@@ -514,6 +514,13 @@ export default function HomePage() {
             </Link>
             {" · "}
             <Link
+              href="/resources"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Patient resources
+            </Link>
+            {" · "}
+            <Link
               href="/conditions"
               className="font-semibold text-teal hover:text-teal-dark"
             >
@@ -614,12 +621,27 @@ export default function HomePage() {
               </li>
             </ul>
             <div className="mt-6 space-y-2 border-t border-slate-200 pt-5 text-sm font-medium text-slate-600">
+              <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                Pharmacy building
+              </p>
               {site.hours.map((row) => (
                 <p key={row.days}>
                   <span className="font-semibold text-navy">{row.days}:</span>{" "}
                   {row.time}
                 </p>
               ))}
+              <p className="pt-2 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                Bookable osteopathy
+              </p>
+              {site.booking.hours.map((row) => (
+                <p key={`book-${row.days}`}>
+                  <span className="font-semibold text-navy">{row.days}:</span>{" "}
+                  {row.time}
+                </p>
+              ))}
+              <p className="pt-1 text-xs leading-relaxed text-slate-500">
+                {site.booking.shortNote}
+              </p>
             </div>
           </div>
         </div>

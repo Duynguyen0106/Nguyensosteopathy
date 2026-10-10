@@ -105,7 +105,7 @@ export default function AreasPage() {
               },
               {
                 title: "Hours",
-                body: site.hours.map((h) => `${h.days}: ${h.time}`).join(" · "),
+                body: `Pharmacy: ${site.hours.map((h) => `${h.days} ${h.time}`).join("; ")}. ${site.booking.shortNote}`,
               },
             ].map((item) => (
               <li key={item.title}>

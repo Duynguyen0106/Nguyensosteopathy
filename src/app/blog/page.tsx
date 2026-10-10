@@ -126,7 +126,7 @@ export default function BlogIndexPage() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-slate-600">
             Book online or call {site.phone}. Inside St James Pharmacy, Woolwich
-            — Mon–Fri 9:00am–6:00pm, Sat 9:00am–5:30pm.
+            — {site.booking.shortNote}
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>

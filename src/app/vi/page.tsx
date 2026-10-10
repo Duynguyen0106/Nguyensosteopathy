@@ -327,11 +327,16 @@ export default function VietnamesePage() {
               {site.address.line2}
             </p>
             <p className="mt-4 text-sm text-slate-500">
+              Giờ nhà thuốc:{" "}
               {site.hours.map((row) => (
                 <span key={row.days} className="mr-4 inline-block">
                   {row.days}: {row.time}
                 </span>
               ))}
+            </p>
+            <p className="mt-2 text-sm text-slate-500">
+              Ngày đặt lịch osteopathy: {site.booking.bookableDaysLabel} (đóng{" "}
+              {site.booking.closedDaysLabel.toLowerCase()}, trừ ngày khai trương).
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

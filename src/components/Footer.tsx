@@ -92,6 +92,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/resources" className="hover:text-white">
+                Patient resources
+              </Link>
+            </li>
+            <li>
               <Link href="/conditions" className="hover:text-white">
                 Conditions
               </Link>
@@ -259,13 +264,28 @@ export function Footer() {
             </li>
           </ul>
           <div className="mt-4 space-y-1 text-sm font-medium text-white/80">
+            <p className="text-xs font-semibold tracking-[0.14em] text-teal-mist uppercase">
+              Pharmacy building
+            </p>
             {site.hours.map((row) => (
               <p key={row.days}>
                 <span className="text-white">{row.days}</span> · {row.time}
               </p>
             ))}
+            <p className="pt-2 text-xs font-semibold tracking-[0.14em] text-teal-mist uppercase">
+              Bookable osteopathy
+            </p>
+            {site.booking.hours.map((row) => (
+              <p key={`book-${row.days}`}>
+                <span className="text-white">{row.days}</span> · {row.time}
+              </p>
+            ))}
           </div>
-          <p className="mt-4 text-xs leading-relaxed text-white/60">
+          <p className="mt-3 text-xs leading-relaxed text-white/55">
+            Closed {site.booking.closedDaysLabel.toLowerCase()} (except opening
+            day). Live slots shown in online booking.
+          </p>
+          <p className="mt-3 text-xs leading-relaxed text-white/60">
             {site.cancellation}
           </p>
         </div>

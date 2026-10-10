@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
-import { site } from "@/lib/site";
+import { bookingHoursSpecification, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Osteopath in Woolwich | Call, WhatsApp & Map",
   description:
-    "Contact Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18. Call 07882843513, WhatsApp, email, or book online. Hours Mon–Fri 9–6, Sat 9–5:30.",
+    "Contact Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18. Call 07882843513, WhatsApp, email, or book online. Bookable osteopathy days Mon–Tue & Thu–Sat from 5 November 2026.",
   alternates: { canonical: "/contact" },
   keywords: [
     "contact osteopath Woolwich",
@@ -29,7 +29,7 @@ const channels = [
     label: "Phone",
     value: site.phone,
     href: site.phoneHref,
-    detail: "Mon–Sat during pharmacy hours",
+    detail: site.booking.shortNote,
   },
   {
     label: "WhatsApp",
@@ -70,26 +70,7 @@ export default function ContactPage() {
         latitude: 51.4905,
         longitude: 0.0675,
       },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-          ],
-          opens: "09:00",
-          closes: "18:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Saturday",
-          opens: "09:00",
-          closes: "17:30",
-        },
-      ],
+      openingHoursSpecification: bookingHoursSpecification,
     },
   };
 
@@ -168,13 +149,29 @@ export default function ContactPage() {
                 Ask at the pharmacy counter on arrival — they will direct you to
                 the osteopathy consultation room.
               </p>
-              <ul className="mt-4 space-y-1 text-sm font-medium text-slate-700">
+              <p className="mt-4 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                Pharmacy building
+              </p>
+              <ul className="mt-2 space-y-1 text-sm font-medium text-slate-700">
                 {site.hours.map((row) => (
                   <li key={row.days}>
                     <span className="text-navy">{row.days}</span> · {row.time}
                   </li>
                 ))}
               </ul>
+              <p className="mt-4 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                Bookable osteopathy
+              </p>
+              <ul className="mt-2 space-y-1 text-sm font-medium text-slate-700">
+                {site.booking.hours.map((row) => (
+                  <li key={`book-${row.days}`}>
+                    <span className="text-navy">{row.days}</span> · {row.time}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-xs leading-relaxed text-slate-500">
+                {site.booking.shortNote}
+              </p>
               <p className="mt-4 text-xs text-slate-500">{site.cancellation}</p>
             </div>
           </div>

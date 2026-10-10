@@ -133,13 +133,42 @@ export default function FindUsPage() {
               </li>
             ))}
           </ul>
-          <ul className="mt-10 space-y-2 text-sm font-medium text-slate-700">
-            {site.hours.map((row) => (
-              <li key={row.days}>
-                <span className="text-navy">{row.days}</span> · {row.time}
-              </li>
-            ))}
-          </ul>
+          <div className="mt-10 grid gap-8 sm:grid-cols-2">
+            <div>
+              <h3 className="text-sm font-semibold text-navy">
+                Pharmacy building hours
+              </h3>
+              <ul className="mt-3 space-y-2 text-sm font-medium text-slate-700">
+                {site.hours.map((row) => (
+                  <li key={row.days}>
+                    <span className="text-navy">{row.days}</span> · {row.time}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-navy">
+                Bookable osteopathy days
+              </h3>
+              <ul className="mt-3 space-y-2 text-sm font-medium text-slate-700">
+                {site.booking.hours.map((row) => (
+                  <li key={row.days}>
+                    <span className="text-navy">{row.days}</span> · {row.time}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-xs leading-relaxed text-slate-500">
+                Closed {site.booking.closedDaysLabel.toLowerCase()}, except the{" "}
+                <Link
+                  href="/opening"
+                  className="font-semibold text-teal hover:text-teal-dark"
+                >
+                  opening-day offer
+                </Link>
+                . {site.booking.shortNote}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

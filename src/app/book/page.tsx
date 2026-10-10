@@ -46,6 +46,10 @@ export default function BookPage() {
               </a>
               .
             </p>
+            <p className="mt-3 text-sm leading-relaxed text-slate-500">
+              {site.booking.shortNote} Live availability is always shown in the
+              calendar below.
+            </p>
           </div>
           <div className="flex flex-wrap gap-3">
             <a
@@ -65,6 +69,10 @@ export default function BookPage() {
           Before you book:{" "}
           <Link href="/new-patients" className="font-semibold text-teal hover:text-teal-dark">
             New patient guide
+          </Link>
+          {" · "}
+          <Link href="/resources" className="font-semibold text-teal hover:text-teal-dark">
+            Patient resources
           </Link>
           {" · "}
           <Link href="/fees" className="font-semibold text-teal hover:text-teal-dark">

@@ -27,10 +27,32 @@ export const site = {
     mapsEmbedUrl:
       "https://maps.google.com/maps?q=52+Powis+Street+Woolwich+London+SE18+6LQ&z=16&output=embed",
   },
+  /** Pharmacy / venue opening pattern (building access). */
   hours: [
     { days: "Monday – Friday", time: "9:00am – 6:00pm" },
     { days: "Saturday", time: "9:00am – 5:30pm" },
   ],
+  /**
+   * Osteopathy booking pattern after opening.
+   * Note: opening day (Wed 5 Nov 2026) is a special one-day exception.
+   */
+  booking: {
+    opensFromLabel: "5 November 2026",
+    bookableDaysLabel:
+      "Monday, Tuesday, Thursday, Friday and Saturday",
+    closedDaysLabel: "Wednesday and Sunday",
+    /** Display rows for bookable osteopathy clinic times (not pharmacy access). */
+    hours: [
+      { days: "Mon, Tue, Thu, Fri", time: "9:00am – 6:00pm" },
+      { days: "Saturday", time: "9:00am – 5:30pm" },
+    ],
+    shortNote:
+      "Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun, except the opening-day offer).",
+    note: "Online booking opens from 5 November 2026. Regular bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday, except the opening-day offer). Live slots are always shown in the booking calendar.",
+    schemaWeekdays: ["Monday", "Tuesday", "Thursday", "Friday"] as const,
+    weekday: { opens: "09:00", closes: "18:00" },
+    saturday: { opens: "09:00", closes: "17:30" },
+  },
   cancellation: "24 hours' notice is required for cancellations.",
   discount:
     "10% Discount for NHS Staff & Students (Valid ID required at appointment)",
@@ -50,6 +72,22 @@ export const site = {
     path: "/opening",
   },
 } as const;
+
+/** Schema.org openingHoursSpecification for bookable osteopathy days. */
+export const bookingHoursSpecification = [
+  {
+    "@type": "OpeningHoursSpecification" as const,
+    dayOfWeek: [...site.booking.schemaWeekdays],
+    opens: site.booking.weekday.opens,
+    closes: site.booking.weekday.closes,
+  },
+  {
+    "@type": "OpeningHoursSpecification" as const,
+    dayOfWeek: "Saturday" as const,
+    opens: site.booking.saturday.opens,
+    closes: site.booking.saturday.closes,
+  },
+];
 
 export const highlights = [
   "100% Drug-Free and Non-Invasive",
@@ -126,8 +164,7 @@ export const faqs = [
   },
   {
     question: "What are your opening hours?",
-    answer:
-      "We are based inside St James Pharmacy: Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking opens from 5 November 2026; bookable days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday).",
+    answer: `We are based inside St James Pharmacy: Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. ${site.booking.note}`,
   },
   {
     question: "Can I speak Vietnamese at the clinic?",

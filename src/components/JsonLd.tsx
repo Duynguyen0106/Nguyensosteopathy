@@ -1,4 +1,11 @@
-import { site, services, pricing, faqs } from "@/lib/site";
+import {
+  bookingHoursSpecification,
+  faqs,
+  getServiceHref,
+  pricing,
+  services,
+  site,
+} from "@/lib/site";
 
 export function JsonLd() {
   const medicalBusiness = {
@@ -40,20 +47,7 @@ export function JsonLd() {
       longitude: 0.0672,
     },
     hasMap: site.address.mapsUrl,
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "09:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "09:00",
-        closes: "17:30",
-      },
-    ],
+    openingHoursSpecification: bookingHoursSpecification,
     areaServed: [
       { "@type": "City", name: "Woolwich" },
       { "@type": "City", name: "Greenwich" },
@@ -69,7 +63,7 @@ export function JsonLd() {
       "@type": "MedicalProcedure",
       name: service.title,
       description: service.summary,
-      url: `${site.websiteUrl}/services/${service.slug}`,
+      url: `${site.websiteUrl}${getServiceHref(service.slug)}`,
     })),
     employee: { "@id": `${site.websiteUrl}/#practitioner` },
     founder: { "@id": `${site.websiteUrl}/#practitioner` },

@@ -130,13 +130,19 @@ export default async function AreaPage({ params }: Props) {
               {site.address.line2}. Ask at the pharmacy counter for the
               osteopathy room.
             </p>
-            <ul className="mt-4 space-y-1 text-sm font-medium text-slate-700">
+            <p className="mt-4 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+              Pharmacy building
+            </p>
+            <ul className="mt-2 space-y-1 text-sm font-medium text-slate-700">
               {site.hours.map((row) => (
                 <li key={row.days}>
                   <span className="text-navy">{row.days}</span> · {row.time}
                 </li>
               ))}
             </ul>
+            <p className="mt-3 text-xs leading-relaxed text-slate-500">
+              {site.booking.shortNote}
+            </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/find-us" variant="secondary">
                 Directions

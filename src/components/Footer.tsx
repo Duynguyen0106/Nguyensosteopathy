@@ -57,6 +57,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/opening" className="hover:text-white">
+                Opening offer — 50% off
+              </Link>
+            </li>
+            <li>
               <Link href="/#pricing" className="hover:text-white">
                 Pricing
               </Link>

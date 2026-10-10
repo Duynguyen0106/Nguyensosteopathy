@@ -37,6 +37,15 @@ export const site = {
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
     "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",
+  openingOffer: {
+    dateLabel: "Wednesday 5 November 2026",
+    dateIso: "2026-11-05",
+    discountPercent: 50,
+    headline: "50% off all service fees",
+    summary:
+      "Celebrate our official opening day with half-price osteopathy and clinic services — one day only, inside St James Pharmacy, Woolwich.",
+    path: "/opening",
+  },
 } as const;
 
 export const highlights = [

@@ -17,9 +17,25 @@ import {
 
 export default function HomePage() {
   const latestPosts = getAllPosts().slice(0, 3);
+  const offer = site.openingOffer;
 
   return (
     <>
+      <div className="bg-teal text-white">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-5 py-3 text-sm sm:flex-row sm:items-center md:px-8">
+          <p className="font-medium leading-snug">
+            <span className="font-semibold">Opening {offer.dateLabel}</span>
+            {" — "}
+            {offer.headline} for patients seen that day.
+          </p>
+          <Link
+            href={offer.path}
+            className="shrink-0 font-semibold underline-offset-2 hover:underline"
+          >
+            View offer →
+          </Link>
+        </div>
+      </div>
       <Hero />
 
       <section className="bg-navy text-white">

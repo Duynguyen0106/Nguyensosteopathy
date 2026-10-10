@@ -130,6 +130,13 @@ export default function AboutPage() {
             >
               Call {site.phone}
             </ButtonLink>
+            <ButtonLink
+              href="/vi"
+              variant="secondary"
+              className="border-white/30 bg-white/10 text-white hover:bg-white/20"
+            >
+              Đọc bằng tiếng Việt
+            </ButtonLink>
           </div>
         </div>
       </section>

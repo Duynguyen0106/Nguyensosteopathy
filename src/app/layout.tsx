@@ -66,6 +66,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/",
+    languages: {
+      "en-GB": "/",
+      "vi-VN": "/vi",
+    },
   },
   openGraph: {
     title: `Osteopathy in Woolwich | ${site.name}`,

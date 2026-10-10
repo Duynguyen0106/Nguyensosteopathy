@@ -93,6 +93,32 @@ body {
   animation-delay: 0.36s;
 }
 
+/* Hero copy stays readable during load (transform only — no opacity hide) */
+@keyframes opening-rise {
+  from {
+    transform: translateY(16px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.opening-hero-copy {
+  animation: opening-rise 0.75s ease both;
+}
+
+.opening-hero-delay-1 {
+  animation-delay: 0.08s;
+}
+
+.opening-hero-delay-2 {
+  animation-delay: 0.16s;
+}
+
+.opening-hero-delay-3 {
+  animation-delay: 0.24s;
+}
+
 @keyframes draw-line {
   from {
     transform: scaleX(0);

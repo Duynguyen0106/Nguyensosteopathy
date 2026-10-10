@@ -153,18 +153,18 @@ export default function OpeningPage() {
           aria-hidden
         />
 
-        <div className="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:px-8 md:pb-24">
-          <p className="about-rise text-xs font-semibold tracking-[0.28em] text-teal-mist uppercase">
+        <div className="relative mx-auto flex min-h-[min(88vh,920px)] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:px-8 md:pb-24">
+          <p className="opening-hero-copy text-xs font-semibold tracking-[0.28em] text-teal-mist uppercase">
             Nguyen&apos;s Osteopathic Clinic
           </p>
-          <h1 className="about-rise about-rise-delay-1 mt-4 max-w-3xl font-display text-5xl leading-[1.05] md:text-7xl">
+          <h1 className="opening-hero-copy opening-hero-delay-1 mt-4 max-w-3xl font-display text-5xl leading-[1.05] md:text-7xl">
             {offer.headline}
           </h1>
-          <p className="about-rise about-rise-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
+          <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
             Official opening {offer.dateLabel} — one day only, all clinic
             service fees halved.
           </p>
-          <div className="about-rise about-rise-delay-3 mt-8 flex flex-wrap items-center gap-3">
+          <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap items-center gap-3">
             <ButtonLink href="/book">Book opening day</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}

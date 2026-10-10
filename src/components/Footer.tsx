@@ -62,6 +62,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/vi" className="hover:text-white">
+                Tiếng Việt
+              </Link>
+            </li>
+            <li>
               <Link href="/#pricing" className="hover:text-white">
                 Pricing
               </Link>

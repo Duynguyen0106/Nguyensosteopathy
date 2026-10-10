@@ -127,6 +127,21 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/acupuncture" className="hover:text-white">
+                Acupuncture
+              </Link>
+            </li>
+            <li>
+              <Link href="/massage" className="hover:text-white">
+                Deep tissue massage
+              </Link>
+            </li>
+            <li>
+              <Link href="/nhs-discount" className="hover:text-white">
+                NHS &amp; student discount
+              </Link>
+            </li>
+            <li>
               <Link href="/find-us" className="hover:text-white">
                 Find us &amp; parking
               </Link>

@@ -80,8 +80,15 @@ export default function FaqPage() {
             . See{" "}
             <Link href="/fees" className="font-semibold text-teal hover:text-teal-dark">
               fees
-            </Link>{" "}
-            and the{" "}
+            </Link>
+            ,{" "}
+            <Link
+              href="/nhs-discount"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              NHS &amp; student discount
+            </Link>
+            , and the{" "}
             <Link href="/opening" className="font-semibold text-teal hover:text-teal-dark">
               opening-day offer
             </Link>

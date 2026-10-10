@@ -138,19 +138,26 @@ export default function FeesPage() {
           </div>
 
           <p className="mt-6 text-sm text-slate-600">
-            Curious about focused shockwave?{" "}
+            Guides:{" "}
             <Link
               href="/shockwave"
               className="font-semibold text-teal hover:text-teal-dark"
             >
-              Tendon LI-ESWT guide
+              Shockwave
             </Link>
             {" · "}
             <Link
               href="/mens-health"
               className="font-semibold text-teal hover:text-teal-dark"
             >
-              Men&apos;s health pathway →
+              Men&apos;s health
+            </Link>
+            {" · "}
+            <Link
+              href="/nhs-discount"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              NHS &amp; student discount →
             </Link>
           </p>
 

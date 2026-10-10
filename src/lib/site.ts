@@ -414,6 +414,10 @@ export function getServiceHref(slug: string) {
       return "/paediatric";
     case "cranial-therapy":
       return "/cranial";
+    case "acupuncture-electro":
+      return "/acupuncture";
+    case "deep-tissue-massage":
+      return "/massage";
     default:
       return `/services/${slug}`;
   }

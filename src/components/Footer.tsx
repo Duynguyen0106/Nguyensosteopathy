@@ -112,6 +112,21 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/sports" className="hover:text-white">
+                Sports injury
+              </Link>
+            </li>
+            <li>
+              <Link href="/paediatric" className="hover:text-white">
+                Paediatric care
+              </Link>
+            </li>
+            <li>
+              <Link href="/cranial" className="hover:text-white">
+                Cranial osteopathy
+              </Link>
+            </li>
+            <li>
               <Link href="/find-us" className="hover:text-white">
                 Find us &amp; parking
               </Link>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ServiceIcon } from "@/components/ServiceIcon";
-import { services, site } from "@/lib/site";
+import { getServiceHref, services, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Osteopathy Services in Woolwich | Back Pain & Shockwave Therapy",
@@ -39,15 +39,7 @@ export default function ServicesPage() {
           {services.map((service) => (
             <li key={service.slug}>
               <Link
-                href={
-                  service.slug === "focused-shockwave"
-                    ? "/shockwave"
-                    : service.slug === "mens-health-ed"
-                      ? "/mens-health"
-                      : service.slug === "pregnancy-support"
-                        ? "/pregnancy"
-                        : `/services/${service.slug}`
-                }
+                href={getServiceHref(service.slug)}
                 className="service-tile flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
               >
                 <span className="flex items-start justify-between gap-3">

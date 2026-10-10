@@ -7,6 +7,7 @@ import { ServiceIcon } from "@/components/ServiceIcon";
 import { getAllPosts } from "@/lib/blog";
 import {
   faqs,
+  getServiceHref,
   highlights,
   pricing,
   services,
@@ -260,15 +261,7 @@ export default function HomePage() {
             {services.map((service) => (
               <li key={service.slug}>
                 <Link
-                  href={
-                    service.slug === "focused-shockwave"
-                      ? "/shockwave"
-                      : service.slug === "mens-health-ed"
-                        ? "/mens-health"
-                        : service.slug === "pregnancy-support"
-                          ? "/pregnancy"
-                          : `/services/${service.slug}`
-                  }
+                  href={getServiceHref(service.slug)}
                   className="service-tile group flex h-full gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">

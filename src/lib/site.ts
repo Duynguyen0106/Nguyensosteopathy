@@ -399,6 +399,26 @@ export function getService(slug: string) {
   return services.find((service) => service.slug === slug);
 }
 
+/** Prefer dedicated conversion hubs when they exist. */
+export function getServiceHref(slug: string) {
+  switch (slug) {
+    case "focused-shockwave":
+      return "/shockwave";
+    case "mens-health-ed":
+      return "/mens-health";
+    case "pregnancy-support":
+      return "/pregnancy";
+    case "sports-injury-rehab":
+      return "/sports";
+    case "paediatric-care":
+      return "/paediatric";
+    case "cranial-therapy":
+      return "/cranial";
+    default:
+      return `/services/${slug}`;
+  }
+}
+
 export const pricing = [
   {
     service: "Initial Consultation & Treatment",

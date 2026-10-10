@@ -14,7 +14,6 @@ export type GooglePlaceSummary = {
   userRatingCount: number | null;
   mapsUri: string;
   reviews: GoogleReview[];
-  fetchedAt: string;
 };
 
 export type GoogleReviewsResult =
@@ -50,8 +49,12 @@ function apiKey() {
   return process.env.GOOGLE_PLACES_API_KEY?.trim() || "";
 }
 
+/** Public Place ID for Nguyen's Osteopathic Clinic (St James Pharmacy, Woolwich). */
+export const NGUYENS_PLACE_ID = "ChIJG4dhhJip2EcRVmEEenyYD8E";
+
 function configuredPlaceId() {
-  const raw = process.env.GOOGLE_PLACE_ID?.trim() || "";
+  const raw =
+    process.env.GOOGLE_PLACE_ID?.trim() || NGUYENS_PLACE_ID;
   return raw.replace(/^places\//, "");
 }
 
@@ -158,7 +161,6 @@ export async function getGooglePlaceReviews(): Promise<GoogleReviewsResult> {
           data.googleMapsUri ||
           "https://maps.app.goo.gl/XgHpsXAy1FmZKibn9",
         reviews,
-        fetchedAt: new Date().toISOString(),
       },
     };
   } catch (error) {

@@ -251,6 +251,10 @@ export function Footer() {
             <Link href="/privacy" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
               Privacy policy
             </Link>
+            {" · "}
+            <Link href="/accessibility" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Accessibility
+            </Link>
           </p>
         </div>
       </div>

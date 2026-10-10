@@ -3,9 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
 import {
-  conditions,
   getAllConditionSlugs,
   getCondition,
+  getConditionsByRegion,
 } from "@/lib/conditions";
 import { getService, site } from "@/lib/site";
 
@@ -39,7 +39,9 @@ export default async function ConditionPage({ params }: Props) {
   if (!condition) notFound();
 
   const service = getService(condition.relatedServiceSlug);
-  const others = conditions.filter((item) => item.slug !== condition.slug);
+  const others = getConditionsByRegion(condition.region).filter(
+    (item) => item.slug !== condition.slug,
+  );
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -74,6 +76,8 @@ export default async function ConditionPage({ params }: Props) {
             <Link href="/conditions" className="hover:text-teal-dark">
               Conditions
             </Link>
+            {" · "}
+            {condition.region}
             {" · "}
             Woolwich SE18
           </p>
@@ -156,23 +160,30 @@ export default async function ConditionPage({ params }: Props) {
             </ButtonLink>
           </div>
 
-          <div className="mt-14">
-            <h2 className="font-display text-2xl text-navy">
-              Other condition guides
-            </h2>
-            <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-teal">
-              {others.map((item) => (
-                <li key={item.slug}>
-                  <Link
-                    href={`/conditions/${item.slug}`}
-                    className="hover:text-teal-dark"
-                  >
-                    {item.shortTitle}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {others.length > 0 ? (
+            <div className="mt-14">
+              <h2 className="font-display text-2xl text-navy">
+                More in {condition.region}
+              </h2>
+              <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-teal">
+                {others.map((item) => (
+                  <li key={item.slug}>
+                    <Link
+                      href={`/conditions/${item.slug}`}
+                      className="hover:text-teal-dark"
+                    >
+                      {item.shortTitle}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm text-slate-500">
+                <Link href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
+                  View full conditions index →
+                </Link>
+              </p>
+            </div>
+          ) : null}
         </div>
       </section>
     </div>

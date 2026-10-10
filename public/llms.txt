@@ -7,7 +7,9 @@
 - About: https://www.nguyensosteopathy.com/about
 - Book online: https://www.nguyensosteopathy.com/book
 - Fees: https://www.nguyensosteopathy.com/fees
+- Insurance & receipts: https://www.nguyensosteopathy.com/insurance
 - Contact: https://www.nguyensosteopathy.com/contact
+- Blog RSS: https://www.nguyensosteopathy.com/feed.xml
 - Reviews: https://www.nguyensosteopathy.com/reviews
 - FAQ: https://www.nguyensosteopathy.com/faq
 - New patients: https://www.nguyensosteopathy.com/new-patients

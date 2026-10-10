@@ -164,7 +164,14 @@ export default function FeesPage() {
               href="/cupping"
               className="font-semibold text-teal hover:text-teal-dark"
             >
-              Cupping add-on →
+              Cupping add-on
+            </Link>
+            {" · "}
+            <Link
+              href="/insurance"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Insurance &amp; receipts →
             </Link>
           </p>
 

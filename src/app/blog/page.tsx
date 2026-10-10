@@ -95,7 +95,24 @@ export default function BlogIndexPage() {
             <ButtonLink href="/services" variant="secondary">
               View services
             </ButtonLink>
+            <ButtonLink href="/feed.xml" variant="secondary">
+              RSS feed
+            </ButtonLink>
           </div>
+          <p className="mt-5 text-sm text-slate-600">
+            Also explore:{" "}
+            <a href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
+              Conditions
+            </a>
+            {" · "}
+            <a href="/shockwave" className="font-semibold text-teal hover:text-teal-dark">
+              Shockwave
+            </a>
+            {" · "}
+            <a href="/areas" className="font-semibold text-teal hover:text-teal-dark">
+              Areas we serve
+            </a>
+          </p>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BookingEmbed } from "@/components/BookingEmbed";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -60,7 +61,28 @@ export default function BookPage() {
             </ButtonLink>
           </div>
         </div>
-
+        <p className="mt-5 text-sm text-slate-600">
+          Before you book:{" "}
+          <Link href="/new-patients" className="font-semibold text-teal hover:text-teal-dark">
+            New patient guide
+          </Link>
+          {" · "}
+          <Link href="/fees" className="font-semibold text-teal hover:text-teal-dark">
+            Fees
+          </Link>
+          {" · "}
+          <Link href="/find-us" className="font-semibold text-teal hover:text-teal-dark">
+            Find us
+          </Link>
+          {" · "}
+          <Link href="/insurance" className="font-semibold text-teal hover:text-teal-dark">
+            Insurance &amp; receipts
+          </Link>
+          {" · "}
+          <Link href="/terms" className="font-semibold text-teal hover:text-teal-dark">
+            Cancellation policy
+          </Link>
+        </p>
       </div>
 
       {/* Full-bleed on phones so the widget sits flush (no floating card). */}

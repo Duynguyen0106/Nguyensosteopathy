@@ -39,7 +39,11 @@ export default function ServicesPage() {
           {services.map((service) => (
             <li key={service.slug}>
               <Link
-                href={`/services/${service.slug}`}
+                href={
+                  service.slug === "focused-shockwave"
+                    ? "/shockwave"
+                    : `/services/${service.slug}`
+                }
                 className="service-tile flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
               >
                 <span className="flex items-start justify-between gap-3">

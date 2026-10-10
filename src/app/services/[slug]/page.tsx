@@ -74,6 +74,11 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
           <div className="flex flex-wrap gap-3 md:pt-10">
             <ButtonLink href="/book">Book this treatment</ButtonLink>
+            {service.slug === "focused-shockwave" ? (
+              <ButtonLink href="/shockwave" variant="secondary">
+                Full shockwave guide
+              </ButtonLink>
+            ) : null}
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>

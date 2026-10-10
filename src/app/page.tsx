@@ -246,16 +246,25 @@ export default function HomePage() {
                 any service for who it helps, what to expect, and fees.
               </p>
             </div>
-            <ButtonLink href="/services" variant="secondary">
-              View all services
-            </ButtonLink>
+            <div className="flex flex-wrap gap-3">
+              <ButtonLink href="/shockwave" variant="secondary">
+                Shockwave guide
+              </ButtonLink>
+              <ButtonLink href="/services" variant="secondary">
+                View all services
+              </ButtonLink>
+            </div>
           </div>
 
           <ul className="mt-12 grid gap-4 sm:grid-cols-2">
             {services.map((service) => (
               <li key={service.slug}>
                 <Link
-                  href={`/services/${service.slug}`}
+                  href={
+                    service.slug === "focused-shockwave"
+                      ? "/shockwave"
+                      : `/services/${service.slug}`
+                  }
                   className="service-tile group flex h-full gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">

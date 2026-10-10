@@ -137,6 +137,16 @@ export default function FeesPage() {
             </ul>
           </div>
 
+          <p className="mt-6 text-sm text-slate-600">
+            Curious about focused shockwave?{" "}
+            <Link
+              href="/shockwave"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Read the LI-ESWT guide →
+            </Link>
+          </p>
+
           <ul className="mt-10 grid gap-8 md:grid-cols-3">
             {feeNotes.map((note) => (
               <li key={note.title}>

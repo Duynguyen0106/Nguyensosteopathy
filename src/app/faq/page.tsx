@@ -91,6 +91,10 @@ export default function FaqPage() {
             >
               NHS &amp; student discount
             </Link>
+            , the{" "}
+            <Link href="/aftercare" className="font-semibold text-teal hover:text-teal-dark">
+              aftercare guide
+            </Link>
             , and the{" "}
             <Link href="/opening" className="font-semibold text-teal hover:text-teal-dark">
               opening-day offer

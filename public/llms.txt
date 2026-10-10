@@ -13,6 +13,7 @@
 - Reviews: https://www.nguyensosteopathy.com/reviews
 - FAQ: https://www.nguyensosteopathy.com/faq
 - New patients: https://www.nguyensosteopathy.com/new-patients
+- Aftercare: https://www.nguyensosteopathy.com/aftercare
 - Patient resources: https://www.nguyensosteopathy.com/resources
 - Find us & parking: https://www.nguyensosteopathy.com/find-us
 - Opening offer: https://www.nguyensosteopathy.com/opening
@@ -47,7 +48,9 @@
 
 ## Legal
 - Privacy: https://www.nguyensosteopathy.com/privacy
+- Cookies: https://www.nguyensosteopathy.com/cookies
 - Terms: https://www.nguyensosteopathy.com/terms
+- Complaints: https://www.nguyensosteopathy.com/complaints
 - Accessibility: https://www.nguyensosteopathy.com/accessibility
 
 ## Contact

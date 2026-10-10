@@ -92,6 +92,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/aftercare" className="hover:text-white">
+                Aftercare
+              </Link>
+            </li>
+            <li>
               <Link href="/resources" className="hover:text-white">
                 Patient resources
               </Link>
@@ -231,6 +236,11 @@ export function Footer() {
                 Terms &amp; cancellation
               </Link>
             </li>
+            <li>
+              <Link href="/complaints" className="hover:text-white">
+                Complaints
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -312,6 +322,10 @@ export function Footer() {
             {" · "}
             <Link href="/terms" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
               Terms
+            </Link>
+            {" · "}
+            <Link href="/complaints" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Complaints
             </Link>
             {" · "}
             <Link href="/feed.xml" className="text-white/70 underline-offset-2 hover:text-white hover:underline">

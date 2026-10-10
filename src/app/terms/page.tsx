@@ -150,6 +150,22 @@ export default function TermsPage() {
           </section>
 
           <section>
+            <h2 className="font-display text-2xl text-navy">
+              Concerns &amp; complaints
+            </h2>
+            <p className="mt-3">
+              If you have a concern about your care, please see our{" "}
+              <Link
+                href="/complaints"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                complaints procedure
+              </Link>
+              .
+            </p>
+          </section>
+
+          <section>
             <h2 className="font-display text-2xl text-navy">Contact</h2>
             <p className="mt-3">
               Questions about bookings or these terms:{" "}

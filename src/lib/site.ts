@@ -177,6 +177,11 @@ export const faqs = [
       "Yes. NHS staff and students receive 10% off with valid ID shown at the appointment. This does not stack with the opening-day 50% offer on 5 November 2026.",
   },
   {
+    question: "What should I do after treatment?",
+    answer:
+      "Keep moving gently, hydrate as usual, and follow any posture or exercise advice from your visit. Mild soreness for 24–48 hours can be normal. See our aftercare guide for more detail, and contact us if symptoms clearly worsen or you develop red-flag symptoms.",
+  },
+  {
     question: "What is the cancellation policy?",
     answer:
       "24 hours' notice is required for cancellations. Please call or use your booking confirmation options as soon as you know you cannot attend so we can offer the slot to someone else.",

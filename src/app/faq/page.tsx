@@ -61,6 +61,9 @@ export default function FaqPage() {
             <ButtonLink href="/new-patients" variant="secondary">
               New patient guide
             </ButtonLink>
+            <ButtonLink href="/aftercare" variant="secondary">
+              Aftercare
+            </ButtonLink>
           </div>
         </div>
       </section>

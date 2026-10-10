@@ -71,6 +71,10 @@ export default function BookPage() {
             New patient guide
           </Link>
           {" · "}
+          <Link href="/aftercare" className="font-semibold text-teal hover:text-teal-dark">
+            Aftercare
+          </Link>
+          {" · "}
           <Link href="/resources" className="font-semibold text-teal hover:text-teal-dark">
             Patient resources
           </Link>

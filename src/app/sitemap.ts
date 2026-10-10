@@ -89,6 +89,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${base}/aftercare`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${base}/complaints`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.35,
+    },
+    {
       url: `${base}/conditions`,
       lastModified: now,
       changeFrequency: "monthly",

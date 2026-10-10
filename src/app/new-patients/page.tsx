@@ -169,6 +169,9 @@ export default function NewPatientsPage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/book">Book online</ButtonLink>
+              <ButtonLink href="/aftercare" variant="secondary">
+                Aftercare guide
+              </ButtonLink>
               <ButtonLink href="/resources" variant="secondary">
                 Patient resources
               </ButtonLink>

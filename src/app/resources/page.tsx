@@ -51,6 +51,32 @@ const groups = [
     ],
   },
   {
+    title: "After your visit",
+    intro: "Settle well between appointments and know when to get in touch.",
+    links: [
+      {
+        href: "/aftercare",
+        label: "Aftercare guide",
+        detail: "Soreness, gentle movement, hydration, and follow-up pacing.",
+      },
+      {
+        href: "/book",
+        label: "Book a follow-up",
+        detail: site.booking.shortNote,
+      },
+      {
+        href: "/contact",
+        label: "Contact the clinic",
+        detail: `Call ${site.phone}, WhatsApp, or email if symptoms worry you.`,
+      },
+      {
+        href: "/complaints",
+        label: "Complaints procedure",
+        detail: "How to raise a concern about care, with GOsC details.",
+      },
+    ],
+  },
+  {
     title: "Fees & paperwork",
     intro: "Clear pricing and receipt options for self-pay patients.",
     links: [
@@ -112,19 +138,19 @@ const groups = [
         detail: "Osteopathy, shockwave, massage, acupuncture, and more.",
       },
       {
-        href: "/book",
-        label: "Book online",
-        detail: site.booking.shortNote,
-      },
-      {
-        href: "/contact",
-        label: "Contact",
-        detail: `Call ${site.phone}, WhatsApp, or email ${site.email}.`,
-      },
-      {
         href: "/reviews",
         label: "Reviews",
         detail: "What local patients say about care at the clinic.",
+      },
+      {
+        href: "/about",
+        label: "About Austin",
+        detail: "GOsC-registered osteopath practising in Woolwich SE18.",
+      },
+      {
+        href: "/site-map",
+        label: "Full site map",
+        detail: "Every main clinic page in one list.",
       },
     ],
   },

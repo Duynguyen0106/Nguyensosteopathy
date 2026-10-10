@@ -483,6 +483,9 @@ export default function HomePage() {
               >
                 Open in Maps
               </ButtonLink>
+              <ButtonLink href="/areas" variant="secondary">
+                Areas we serve
+              </ButtonLink>
               <ButtonLink href="/book" variant="secondary">
                 Book an appointment
               </ButtonLink>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
 import { site } from "@/lib/site";
@@ -197,7 +198,13 @@ export default function ContactPage() {
               <h2 className="font-display text-3xl text-navy">Find us on the map</h2>
               <p className="mt-2 text-sm text-slate-600">
                 52 Powis Street, Woolwich — easy from Greenwich, Plumstead, and
-                Abbey Wood.
+                Abbey Wood.{" "}
+                <Link
+                  href="/areas"
+                  className="font-semibold text-teal hover:text-teal-dark"
+                >
+                  Areas we serve →
+                </Link>
               </p>
             </div>
             <ButtonLink

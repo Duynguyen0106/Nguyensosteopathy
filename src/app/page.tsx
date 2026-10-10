@@ -5,6 +5,7 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { getAllPosts } from "@/lib/blog";
+import { getFeaturedConditions } from "@/lib/conditions";
 import {
   faqs,
   getServiceHref,
@@ -18,6 +19,7 @@ import {
 
 export default function HomePage() {
   const latestPosts = getAllPosts().slice(0, 3);
+  const featuredConditions = getFeaturedConditions();
   const offer = site.openingOffer;
 
   return (
@@ -412,9 +414,75 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Explore
+            </p>
+            <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
+              Popular condition guides
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
+              Start with a common presentation, then book when you are ready for
+              assessment.
+            </p>
+          </div>
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredConditions.map((condition) => (
+              <li key={condition.slug}>
+                <Link
+                  href={`/conditions/${condition.slug}`}
+                  className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal/40 hover:bg-teal/5"
+                >
+                  <span className="text-xs font-semibold tracking-wide text-teal uppercase">
+                    {condition.region}
+                  </span>
+                  <span className="mt-2 font-semibold text-navy">
+                    {condition.shortTitle}
+                  </span>
+                  <span className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">
+                    {condition.summary}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 text-sm text-slate-600">
+            <Link
+              href="/conditions"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Full conditions index →
+            </Link>
+            {" · "}
+            <Link
+              href="/areas"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Areas we serve
+            </Link>
+            {" · "}
+            <Link
+              href="/find-us"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Find us &amp; parking
+            </Link>
+            {" · "}
+            <Link
+              href="/site-map"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Site map
+            </Link>
+          </p>
+        </div>
+      </section>
+
       <section
         id="faq"
-        className="scroll-mt-24 border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24"
+        className="scroll-mt-24 border-t border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24"
       >
         <div className="mx-auto max-w-3xl">
           <div className="text-center">

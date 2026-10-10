@@ -29,7 +29,6 @@ export const siteMapGroups = [
       { href: "/acupuncture", label: "Medical acupuncture" },
       { href: "/massage", label: "Deep tissue massage" },
       { href: "/cupping", label: "Cupping add-on" },
-      { href: "/leaflet", label: "Clinic leaflet PDF" },
     ],
   },
   {
@@ -52,8 +51,11 @@ export const siteMapGroups = [
       { href: "/vi", label: "Tiếng Việt" },
       { href: "/blog", label: "Blog" },
       { href: "/privacy", label: "Privacy policy" },
+      { href: "/cookies", label: "Cookie policy" },
       { href: "/terms", label: "Terms & cancellation" },
       { href: "/accessibility", label: "Accessibility" },
+      { href: "/feed.xml", label: "Blog RSS feed" },
+      { href: "/leaflet", label: "Clinic leaflet PDF" },
     ],
   },
 ] as const;

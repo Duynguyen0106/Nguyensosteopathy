@@ -196,6 +196,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    {
+      url: `${base}/cookies`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${base}/feed.xml`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
     ...serviceAreas.map((area) => ({
       url: `${base}/areas/${area.slug}`,
       lastModified: now,

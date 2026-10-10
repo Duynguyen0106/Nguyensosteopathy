@@ -207,6 +207,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/cookies" className="hover:text-white">
+                Cookie policy
+              </Link>
+            </li>
+            <li>
               <Link href="/accessibility" className="hover:text-white">
                 Accessibility
               </Link>
@@ -269,7 +274,11 @@ export function Footer() {
           <p>
             Located inside {site.address.venue}, Woolwich.{" "}
             <Link href="/privacy" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
-              Privacy policy
+              Privacy
+            </Link>
+            {" · "}
+            <Link href="/cookies" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Cookies
             </Link>
             {" · "}
             <Link href="/accessibility" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
@@ -278,6 +287,10 @@ export function Footer() {
             {" · "}
             <Link href="/terms" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
               Terms
+            </Link>
+            {" · "}
+            <Link href="/feed.xml" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              RSS
             </Link>
           </p>
         </div>

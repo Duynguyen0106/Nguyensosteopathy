@@ -14,8 +14,8 @@ export const site = {
   email: "nguyensosteopathy@gmail.com",
   emailHref: "mailto:nguyensosteopathy@gmail.com",
   facebookUrl: "https://www.facebook.com/Nguyensosteopathy",
-  googleReviewsUrl:
-    "https://www.google.com/search?q=Nguyen%27s+Osteopathic+Clinic+Woolwich+reviews",
+  googleReviewsUrl: "https://maps.app.goo.gl/XgHpsXAy1FmZKibn9",
+  googleMapsCid: "13911505434361225558",
   website: "www.nguyensosteopathy.com",
   websiteUrl: "https://www.nguyensosteopathy.com",
   address: {

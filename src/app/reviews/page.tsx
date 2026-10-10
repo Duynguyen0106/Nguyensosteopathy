@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
 import { ButtonLink } from "@/components/Button";
+import {
+  GoogleReviewsFeed,
+  GoogleReviewsFeedFallback,
+} from "@/components/GoogleReviewsFeed";
 import { site, testimonials } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Patient Reviews | Osteopath Woolwich Google Feedback",
   description:
-    "Read patient stories from Nguyen's Osteopathic Clinic in Woolwich and find our Google reviews. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
+    "Read Google reviews and patient stories from Nguyen's Osteopathic Clinic in Woolwich. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
   alternates: { canonical: "/reviews" },
   keywords: [
     "osteopath Woolwich reviews",
@@ -17,12 +22,35 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Patient Reviews | Nguyen's Osteopathic Clinic",
     description:
-      "Patient stories and Google reviews for osteopathy in Woolwich SE18.",
+      "Google reviews and patient stories for osteopathy in Woolwich SE18.",
     url: "/reviews",
   },
 };
 
+function Stars({ rating }: { rating: number }) {
+  const rounded = Math.round(rating);
+  return (
+    <p
+      className="flex gap-0.5 text-teal"
+      aria-label={`${rating} out of 5 stars`}
+    >
+      {Array.from({ length: 5 }).map((_, star) => (
+        <svg
+          key={star}
+          viewBox="0 0 20 20"
+          className={`h-4 w-4 ${star < rounded ? "fill-current" : "fill-slate-200"}`}
+          aria-hidden
+        >
+          <path d="M10 1.5 12.6 7l6 .5-4.5 4 1.4 5.8L10 14.8 4.5 17.3l1.4-5.8L1.4 7.5l6-.5L10 1.5Z" />
+        </svg>
+      ))}
+    </p>
+  );
+}
+
 export default function ReviewsPage() {
+  const mapsUrl = site.googleReviewsUrl;
+
   const pageLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -56,11 +84,7 @@ export default function ReviewsPage() {
             invitation to leave your Google review after your visit.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
-            <ButtonLink
-              href={site.googleReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <ButtonLink href={mapsUrl} target="_blank" rel="noopener noreferrer">
               See Google reviews
             </ButtonLink>
             <ButtonLink href="/book" variant="secondary">
@@ -83,7 +107,7 @@ export default function ReviewsPage() {
             </p>
           </div>
           <ButtonLink
-            href={site.googleReviewsUrl}
+            href={mapsUrl}
             variant="secondary"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,6 +118,10 @@ export default function ReviewsPage() {
         </div>
       </section>
 
+      <Suspense fallback={<GoogleReviewsFeedFallback />}>
+        <GoogleReviewsFeed />
+      </Suspense>
+
       <section className="px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="font-display text-3xl text-navy md:text-4xl">
@@ -103,12 +131,12 @@ export default function ReviewsPage() {
             A sample of feedback shared with the clinic. For the latest public
             ratings, visit our{" "}
             <a
-              href={site.googleReviewsUrl}
+              href={mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-teal hover:text-teal-dark"
             >
-              Google reviews
+              Google listing
             </a>
             .
           </p>
@@ -116,21 +144,7 @@ export default function ReviewsPage() {
           <ul className="mt-10 grid gap-6 md:grid-cols-3">
             {testimonials.map((review) => (
               <li key={review.name} className="flex h-full flex-col">
-                <p
-                  className="flex gap-0.5 text-teal"
-                  aria-label={`${review.rating} out of 5 stars`}
-                >
-                  {Array.from({ length: review.rating }).map((_, star) => (
-                    <svg
-                      key={star}
-                      viewBox="0 0 20 20"
-                      className="h-4 w-4 fill-current"
-                      aria-hidden
-                    >
-                      <path d="M10 1.5 12.6 7l6 .5-4.5 4 1.4 5.8L10 14.8 4.5 17.3l1.4-5.8L1.4 7.5l6-.5L10 1.5Z" />
-                    </svg>
-                  ))}
-                </p>
+                <Stars rating={review.rating} />
                 <blockquote className="mt-4 flex-1 text-base leading-relaxed text-slate-700">
                   “{review.quote}”
                 </blockquote>
@@ -154,7 +168,10 @@ export default function ReviewsPage() {
             </h2>
             <p className="mt-3 text-base text-slate-600">
               Book online, or{" "}
-              <Link href="/contact" className="font-semibold text-teal hover:text-teal-dark">
+              <Link
+                href="/contact"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
                 contact us
               </Link>{" "}
               if you have a question before you reserve a time.

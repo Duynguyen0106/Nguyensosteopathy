@@ -402,6 +402,10 @@ export function getService(slug: string) {
 /** Prefer dedicated conversion hubs when they exist. */
 export function getServiceHref(slug: string) {
   switch (slug) {
+    case "back-neck-pain":
+      return "/back-neck";
+    case "headaches-joints":
+      return "/headaches";
     case "focused-shockwave":
       return "/shockwave";
     case "mens-health-ed":

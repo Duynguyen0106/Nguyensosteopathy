@@ -97,6 +97,16 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/back-neck" className="hover:text-white">
+                Back &amp; neck pain
+              </Link>
+            </li>
+            <li>
+              <Link href="/headaches" className="hover:text-white">
+                Headaches &amp; joints
+              </Link>
+            </li>
+            <li>
               <Link href="/shockwave" className="hover:text-white">
                 Shockwave therapy
               </Link>
@@ -179,6 +189,11 @@ export function Footer() {
             <li>
               <Link href="/privacy" className="hover:text-white">
                 Privacy policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/accessibility" className="hover:text-white">
+                Accessibility
               </Link>
             </li>
           </ul>

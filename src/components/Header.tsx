@@ -12,8 +12,8 @@ const links = [
   { href: "/blog", label: "Blog" },
   { href: "/opening", label: "Opening offer" },
   { href: "/fees", label: "Fees" },
+  { href: "/contact", label: "Contact" },
   { href: "/vi", label: "Tiếng Việt" },
-  { href: "/book", label: "Book" },
 ];
 
 export function Header() {

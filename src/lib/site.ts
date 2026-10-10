@@ -10,6 +10,7 @@ export const site = {
   },
   phone: "07882843513",
   phoneHref: "tel:07882843513",
+  whatsappUrl: "https://wa.me/447882843513",
   email: "nguyensosteopathy@gmail.com",
   emailHref: "mailto:nguyensosteopathy@gmail.com",
   facebookUrl: "https://www.facebook.com/Nguyensosteopathy",
@@ -23,6 +24,8 @@ export const site = {
     venue: "St James Pharmacy & Travel Clinic",
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=52+Powis+Street+Woolwich+London+SE18+6LQ",
+    mapsEmbedUrl:
+      "https://maps.google.com/maps?q=52+Powis+Street+Woolwich+London+SE18+6LQ&z=16&output=embed",
   },
   hours: [
     { days: "Monday – Friday", time: "9:00am – 6:00pm" },

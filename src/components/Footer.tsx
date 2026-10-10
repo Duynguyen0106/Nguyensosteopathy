@@ -72,6 +72,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/contact" className="hover:text-white">
+                Contact
+              </Link>
+            </li>
+            <li>
               <Link href="/book" className="hover:text-white">
                 Book appointment
               </Link>

@@ -202,6 +202,9 @@ export default function MassagePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href="/cupping" variant="secondary">
+              Cupping add-on
+            </ButtonLink>
             <ButtonLink href="/acupuncture" variant="secondary">
               Acupuncture
             </ButtonLink>

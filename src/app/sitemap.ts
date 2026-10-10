@@ -178,6 +178,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    {
+      url: `${base}/cupping`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${base}/site-map`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
     ...serviceAreas.map((area) => ({
       url: `${base}/areas/${area.slug}`,
       lastModified: now,

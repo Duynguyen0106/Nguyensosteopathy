@@ -147,6 +147,16 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/cupping" className="hover:text-white">
+                Cupping add-on
+              </Link>
+            </li>
+            <li>
+              <Link href="/site-map" className="hover:text-white">
+                Site map
+              </Link>
+            </li>
+            <li>
               <Link href="/nhs-discount" className="hover:text-white">
                 NHS &amp; student discount
               </Link>

@@ -157,7 +157,14 @@ export default function FeesPage() {
               href="/nhs-discount"
               className="font-semibold text-teal hover:text-teal-dark"
             >
-              NHS &amp; student discount →
+              NHS &amp; student discount
+            </Link>
+            {" · "}
+            <Link
+              href="/cupping"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Cupping add-on →
             </Link>
           </p>
 

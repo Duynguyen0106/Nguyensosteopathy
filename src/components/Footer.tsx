@@ -102,6 +102,16 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/mens-health" className="hover:text-white">
+                Men&apos;s health
+              </Link>
+            </li>
+            <li>
+              <Link href="/find-us" className="hover:text-white">
+                Find us &amp; parking
+              </Link>
+            </li>
+            <li>
               <Link href="/book" className="hover:text-white">
                 Book appointment
               </Link>

@@ -143,7 +143,14 @@ export default function FeesPage() {
               href="/shockwave"
               className="font-semibold text-teal hover:text-teal-dark"
             >
-              Read the LI-ESWT guide →
+              Tendon LI-ESWT guide
+            </Link>
+            {" · "}
+            <Link
+              href="/mens-health"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Men&apos;s health pathway →
             </Link>
           </p>
 

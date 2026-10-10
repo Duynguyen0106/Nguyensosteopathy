@@ -37,7 +37,7 @@ const prep = [
   },
   {
     title: "Arrive via the pharmacy",
-    body: `Find ${site.address.venue} at ${site.address.line1}. Ask at the counter — they will direct you to the osteopathy room.`,
+    body: `Find ${site.address.venue} at ${site.address.line1}. Ask at the counter — they will direct you to the osteopathy room. Parking and transport tips are on the find-us page.`,
   },
 ] as const;
 
@@ -79,6 +79,9 @@ export default function NewPatientsPage() {
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book your first visit</ButtonLink>
+            <ButtonLink href="/find-us" variant="secondary">
+              Find us &amp; parking
+            </ButtonLink>
             <ButtonLink href="/faq" variant="secondary">
               Read FAQs
             </ButtonLink>

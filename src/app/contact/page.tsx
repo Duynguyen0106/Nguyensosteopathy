@@ -200,10 +200,17 @@ export default function ContactPage() {
                 52 Powis Street, Woolwich — easy from Greenwich, Plumstead, and
                 Abbey Wood.{" "}
                 <Link
+                  href="/find-us"
+                  className="font-semibold text-teal hover:text-teal-dark"
+                >
+                  Find us &amp; parking →
+                </Link>
+                {" · "}
+                <Link
                   href="/areas"
                   className="font-semibold text-teal hover:text-teal-dark"
                 >
-                  Areas we serve →
+                  Areas we serve
                 </Link>
               </p>
             </div>

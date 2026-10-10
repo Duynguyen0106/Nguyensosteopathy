@@ -263,7 +263,9 @@ export default function HomePage() {
                   href={
                     service.slug === "focused-shockwave"
                       ? "/shockwave"
-                      : `/services/${service.slug}`
+                      : service.slug === "mens-health-ed"
+                        ? "/mens-health"
+                        : `/services/${service.slug}`
                   }
                   className="service-tile group flex h-full gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
@@ -491,6 +493,9 @@ export default function HomePage() {
                 rel="noopener noreferrer"
               >
                 Open in Maps
+              </ButtonLink>
+              <ButtonLink href="/find-us" variant="secondary">
+                Find us &amp; parking
               </ButtonLink>
               <ButtonLink href="/areas" variant="secondary">
                 Areas we serve

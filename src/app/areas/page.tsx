@@ -70,8 +70,11 @@ export default function AreasPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book an appointment</ButtonLink>
+            <ButtonLink href="/find-us" variant="secondary">
+              Find us &amp; parking
+            </ButtonLink>
             <ButtonLink href="/contact" variant="secondary">
-              Contact &amp; map
+              Contact
             </ButtonLink>
           </div>
         </div>
@@ -115,10 +118,17 @@ export default function AreasPage() {
           </ul>
           <p className="mt-6 text-sm text-slate-600">
             <Link
+              href="/find-us"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Find us &amp; parking →
+            </Link>
+            {" · "}
+            <Link
               href="/blog/parking-osteopath-woolwich-powis-street"
               className="font-semibold text-teal hover:text-teal-dark"
             >
-              Parking &amp; travel guide →
+              Longer travel article
             </Link>
           </p>
         </div>

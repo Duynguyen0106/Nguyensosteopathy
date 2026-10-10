@@ -42,7 +42,9 @@ export default function ServicesPage() {
                 href={
                   service.slug === "focused-shockwave"
                     ? "/shockwave"
-                    : `/services/${service.slug}`
+                    : service.slug === "mens-health-ed"
+                      ? "/mens-health"
+                      : `/services/${service.slug}`
                 }
                 className="service-tile flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
               >

@@ -263,10 +263,7 @@ export default function ShockwavePage() {
                 Full price list
               </ButtonLink>
               {mensHealth ? (
-                <ButtonLink
-                  href={`/services/${mensHealth.slug}`}
-                  variant="secondary"
-                >
+                <ButtonLink href="/mens-health" variant="secondary">
                   Men&apos;s health pathway
                 </ButtonLink>
               ) : null}

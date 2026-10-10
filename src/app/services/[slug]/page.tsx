@@ -79,6 +79,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                 Full shockwave guide
               </ButtonLink>
             ) : null}
+            {service.slug === "mens-health-ed" ? (
+              <ButtonLink href="/mens-health" variant="secondary">
+                Full men&apos;s health guide
+              </ButtonLink>
+            ) : null}
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>

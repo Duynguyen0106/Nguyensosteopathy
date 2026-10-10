@@ -163,8 +163,14 @@ export default function AreasPage() {
                   {area.travelNote}
                 </p>
                 <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-teal">
+                  <Link
+                    href={`/areas/${area.slug}`}
+                    className="hover:text-teal-dark"
+                  >
+                    {area.name} page →
+                  </Link>
                   <Link href="/book" className="hover:text-teal-dark">
-                    Book from {area.name} →
+                    Book
                   </Link>
                   {area.relatedBlogSlug ? (
                     <Link

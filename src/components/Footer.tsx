@@ -196,6 +196,11 @@ export function Footer() {
                 Accessibility
               </Link>
             </li>
+            <li>
+              <Link href="/terms" className="hover:text-white">
+                Terms &amp; cancellation
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -254,6 +259,10 @@ export function Footer() {
             {" · "}
             <Link href="/accessibility" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
               Accessibility
+            </Link>
+            {" · "}
+            <Link href="/terms" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Terms
             </Link>
           </p>
         </div>

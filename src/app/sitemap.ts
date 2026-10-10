@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { serviceAreas } from "@/lib/areas";
 import { getAllPosts } from "@/lib/blog";
 import { conditions } from "@/lib/conditions";
 import { services } from "@/lib/site";
@@ -171,6 +172,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    {
+      url: `${base}/terms`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    ...serviceAreas.map((area) => ({
+      url: `${base}/areas/${area.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     {
       url: `${base}/privacy`,
       lastModified: now,

@@ -282,8 +282,8 @@ export function Footer() {
             ))}
           </div>
           <p className="mt-3 text-xs leading-relaxed text-white/55">
-            Closed {site.booking.closedDaysLabel.toLowerCase()} (except opening
-            day). Live slots shown in online booking.
+            Closed {site.booking.closedDaysLabel} (except opening day). Live
+            slots shown in online booking.
           </p>
           <p className="mt-3 text-xs leading-relaxed text-white/60">
             {site.cancellation}

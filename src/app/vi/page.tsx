@@ -336,7 +336,7 @@ export default function VietnamesePage() {
             </p>
             <p className="mt-2 text-sm text-slate-500">
               Ngày đặt lịch osteopathy: {site.booking.bookableDaysLabel} (đóng{" "}
-              {site.booking.closedDaysLabel.toLowerCase()}, trừ ngày khai trương).
+              {site.booking.closedDaysLabel}, trừ ngày khai trương).
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

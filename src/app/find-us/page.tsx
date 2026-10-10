@@ -158,14 +158,14 @@ export default function FindUsPage() {
                 ))}
               </ul>
               <p className="mt-3 text-xs leading-relaxed text-slate-500">
-                Closed {site.booking.closedDaysLabel.toLowerCase()}, except the{" "}
+                Closed {site.booking.closedDaysLabel}, except the{" "}
                 <Link
                   href="/opening"
                   className="font-semibold text-teal hover:text-teal-dark"
                 >
                   opening-day offer
                 </Link>
-                . {site.booking.shortNote}
+                . Live slots are always shown in the booking calendar.
               </p>
             </div>
           </div>

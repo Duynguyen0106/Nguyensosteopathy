@@ -249,7 +249,7 @@ export default function VietnamesePage() {
             </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/services">Xem dịch vụ (EN)</ButtonLink>
-              <ButtonLink href="/#pricing" variant="secondary">
+              <ButtonLink href="/fees" variant="secondary">
                 Bảng giá
               </ButtonLink>
             </div>

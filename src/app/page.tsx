@@ -335,6 +335,16 @@ export default function HomePage() {
           <p className="mt-6 rounded-xl border border-dashed border-teal/40 bg-teal/5 px-5 py-4 text-sm font-medium text-navy md:text-base">
             {site.discount}
           </p>
+          <p className="mt-4 text-sm text-slate-600">
+            Full fee notes, discounts, and opening-day savings are on our{" "}
+            <Link
+              href="/fees"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              fees page
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

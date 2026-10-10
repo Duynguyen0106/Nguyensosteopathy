@@ -11,7 +11,7 @@ const links = [
   { href: "/services", label: "Services" },
   { href: "/blog", label: "Blog" },
   { href: "/opening", label: "Opening offer" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/fees", label: "Fees" },
   { href: "/vi", label: "Tiếng Việt" },
   { href: "/book", label: "Book" },
 ];

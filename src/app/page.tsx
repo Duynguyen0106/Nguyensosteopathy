@@ -138,23 +138,28 @@ export default function HomePage() {
             ))}
           </ul>
 
-          <p className="mt-8 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-center text-sm font-semibold text-navy md:text-base">
-            GOsC-registered osteopathy in Woolwich · SE18 · No GP referral needed
-          </p>
-          <p className="mt-4 text-center text-sm text-slate-600">
-            <a
-              href={site.googleReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
-              Read our Google reviews
-            </a>
-            {" · "}
-            <Link href="/book" className="font-semibold text-teal hover:text-teal-dark">
-              Book online with our booking widget
-            </Link>
-          </p>
+          <div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-2xl bg-navy px-5 py-6 text-white md:flex-row md:items-center md:px-8">
+            <div>
+              <p className="font-display text-2xl">Google reviews</p>
+              <p className="mt-1 text-sm text-white/75">
+                Read public feedback, or share your visit to help neighbours find
+                care in Woolwich.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <ButtonLink
+                href={site.googleReviewsUrl}
+                variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See Google reviews
+              </ButtonLink>
+              <ButtonLink href="/reviews" variant="secondary">
+                Patient stories
+              </ButtonLink>
+            </div>
+          </div>
         </div>
       </section>
 

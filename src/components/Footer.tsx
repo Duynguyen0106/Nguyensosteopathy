@@ -92,6 +92,11 @@ export function Footer() {
               </a>
             </li>
             <li>
+              <Link href="/reviews" className="hover:text-white">
+                Reviews
+              </Link>
+            </li>
+            <li>
               <a
                 href={site.googleReviewsUrl}
                 target="_blank"

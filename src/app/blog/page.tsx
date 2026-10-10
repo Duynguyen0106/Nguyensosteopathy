@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BlogDirectory } from "@/components/BlogDirectory";
 import { ButtonLink } from "@/components/Button";
 import {
@@ -101,17 +102,17 @@ export default function BlogIndexPage() {
           </div>
           <p className="mt-5 text-sm text-slate-600">
             Also explore:{" "}
-            <a href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
               Conditions
-            </a>
+            </Link>
             {" · "}
-            <a href="/shockwave" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/shockwave" className="font-semibold text-teal hover:text-teal-dark">
               Shockwave
-            </a>
+            </Link>
             {" · "}
-            <a href="/areas" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/areas" className="font-semibold text-teal hover:text-teal-dark">
               Areas we serve
-            </a>
+            </Link>
           </p>
         </div>
       </section>

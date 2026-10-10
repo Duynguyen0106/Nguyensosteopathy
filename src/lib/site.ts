@@ -129,6 +129,31 @@ export const faqs = [
     answer:
       "We are based inside St James Pharmacy: Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking opens from 5 November 2026; bookable days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday).",
   },
+  {
+    question: "Can I speak Vietnamese at the clinic?",
+    answer:
+      "Yes. Austin Duy Nguyen is a Vietnamese osteopath practising in the UK and can consult in Vietnamese or English — helpful if you prefer to describe symptoms without a language barrier.",
+  },
+  {
+    question: "Is there an NHS or student discount?",
+    answer:
+      "Yes. NHS staff and students receive 10% off with valid ID shown at the appointment. This does not stack with the opening-day 50% offer on 5 November 2026.",
+  },
+  {
+    question: "What is the cancellation policy?",
+    answer:
+      "24 hours' notice is required for cancellations. Please call or use your booking confirmation options as soon as you know you cannot attend so we can offer the slot to someone else.",
+  },
+  {
+    question: "Is parking available near Powis Street?",
+    answer:
+      "Powis Street and nearby Woolwich town-centre car parks serve the clinic. Allow a few extra minutes for parking on busy days. Public transport to Woolwich is also convenient.",
+  },
+  {
+    question: "Do you offer shockwave therapy?",
+    answer:
+      "Yes. Focused shockwave therapy (LI-ESWT) is available for suitable tendon and soft-tissue conditions after clinical screening. Fees are listed on our fees page; we confirm suitability before treatment.",
+  },
 ] as const;
 
 export type ServiceIconName =

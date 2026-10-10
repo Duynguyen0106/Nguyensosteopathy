@@ -423,7 +423,29 @@ export default function HomePage() {
               finding us inside the pharmacy.
             </p>
           </div>
-          <FaqAccordion items={faqs} />
+          <FaqAccordion items={faqs.slice(0, 5)} />
+          <p className="mt-6 text-center text-sm text-slate-600">
+            <Link
+              href="/faq"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              See all FAQs
+            </Link>
+            {" · "}
+            <Link
+              href="/new-patients"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              New patient guide
+            </Link>
+            {" · "}
+            <Link
+              href="/conditions"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Conditions we treat
+            </Link>
+          </p>
         </div>
       </section>
 

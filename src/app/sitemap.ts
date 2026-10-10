@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
+import { conditions } from "@/lib/conditions";
 import { services } from "@/lib/site";
 
 const base = "https://www.nguyensosteopathy.com";
@@ -69,6 +70,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     {
+      url: `${base}/faq`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/new-patients`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/conditions`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/privacy`,
       lastModified: now,
       changeFrequency: "yearly",
@@ -76,6 +95,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...services.map((service) => ({
       url: `${base}/services/${service.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...conditions.map((condition) => ({
+      url: `${base}/conditions/${condition.slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.8,

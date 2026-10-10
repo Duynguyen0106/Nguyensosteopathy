@@ -265,7 +265,9 @@ export default function HomePage() {
                       ? "/shockwave"
                       : service.slug === "mens-health-ed"
                         ? "/mens-health"
-                        : `/services/${service.slug}`
+                        : service.slug === "pregnancy-support"
+                          ? "/pregnancy"
+                          : `/services/${service.slug}`
                   }
                   className="service-tile group flex h-full gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >

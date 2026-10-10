@@ -107,6 +107,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/pregnancy" className="hover:text-white">
+                Pregnancy osteopathy
+              </Link>
+            </li>
+            <li>
               <Link href="/find-us" className="hover:text-white">
                 Find us &amp; parking
               </Link>

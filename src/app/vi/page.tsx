@@ -249,10 +249,34 @@ export default function VietnamesePage() {
             </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/services">Xem dịch vụ (EN)</ButtonLink>
+              <ButtonLink href="/back-neck" variant="secondary">
+                Đau lưng &amp; cổ
+              </ButtonLink>
+              <ButtonLink href="/shockwave" variant="secondary">
+                Shockwave
+              </ButtonLink>
               <ButtonLink href="/fees" variant="secondary">
                 Bảng giá
               </ButtonLink>
             </div>
+            <p className="mt-5 text-sm text-slate-600">
+              Thêm:{" "}
+              <Link href="/pregnancy" className="font-semibold text-teal hover:text-teal-dark">
+                Thai kỳ
+              </Link>
+              {" · "}
+              <Link href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
+                Tình trạng thường gặp
+              </Link>
+              {" · "}
+              <Link href="/find-us" className="font-semibold text-teal hover:text-teal-dark">
+                Đường đến phòng khám
+              </Link>
+              {" · "}
+              <Link href="/nhs-discount" className="font-semibold text-teal hover:text-teal-dark">
+                Giảm giá NHS / sinh viên
+              </Link>
+            </p>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden md:aspect-[5/4]">
             <Image
@@ -312,6 +336,9 @@ export default function VietnamesePage() {
           </div>
           <div className="flex flex-wrap gap-3">
             <ButtonLink href="/book">Đặt lịch online</ButtonLink>
+            <ButtonLink href="/find-us" variant="secondary">
+              Bản đồ &amp; gửi xe
+            </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Gọi {site.phone}
             </ButtonLink>

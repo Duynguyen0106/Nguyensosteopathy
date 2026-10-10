@@ -157,6 +157,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/leaflet" className="hover:text-white">
+                Clinic leaflet
+              </Link>
+            </li>
+            <li>
               <Link href="/nhs-discount" className="hover:text-white">
                 NHS &amp; student discount
               </Link>

@@ -29,6 +29,7 @@ export const siteMapGroups = [
       { href: "/acupuncture", label: "Medical acupuncture" },
       { href: "/massage", label: "Deep tissue massage" },
       { href: "/cupping", label: "Cupping add-on" },
+      { href: "/leaflet", label: "Clinic leaflet PDF" },
     ],
   },
   {

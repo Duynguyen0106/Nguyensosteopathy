@@ -190,6 +190,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.4,
     },
+    {
+      url: `${base}/leaflet`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
     ...serviceAreas.map((area) => ({
       url: `${base}/areas/${area.slug}`,
       lastModified: now,

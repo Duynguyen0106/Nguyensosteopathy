@@ -105,7 +105,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "cervical-radiculopathy",
-    title: "Cervical radiculopathy Osteopath in Woolwich",
+    title: "Cervical radiculopathy Treatment in Woolwich",
     shortTitle: "Cervical radiculopathy",
     region: "Cervical",
     summary:
@@ -132,7 +132,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "cervicogenic-headache",
-    title: "Cervicogenic headache Osteopath in Woolwich",
+    title: "Cervicogenic headache Treatment in Woolwich",
     shortTitle: "Cervicogenic headache",
     region: "Cervical",
     summary:
@@ -160,7 +160,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "whiplash",
-    title: "Whiplash-associated disorder Osteopath in Woolwich",
+    title: "Whiplash-associated disorder Treatment in Woolwich",
     shortTitle: "Whiplash-associated disorder",
     region: "Cervical",
     summary:
@@ -188,7 +188,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "thoracic-joint-dysfunction",
-    title: "Thoracic joint / postural pain Osteopath in Woolwich",
+    title: "Thoracic joint / postural pain Treatment in Woolwich",
     shortTitle: "Thoracic joint / postural pain",
     region: "Thoracic",
     summary:
@@ -216,7 +216,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "costochondritis",
-    title: "Costochondritis / costovertebral pain Osteopath in Woolwich",
+    title: "Costochondritis / costovertebral pain Treatment in Woolwich",
     shortTitle: "Costochondritis / costovertebral pain",
     region: "Thoracic",
     summary:
@@ -244,7 +244,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "scheuermanns",
-    title: "Scheuermann's / postural hyperkyphosis Osteopath in Woolwich",
+    title: "Scheuermann's / postural hyperkyphosis Treatment in Woolwich",
     shortTitle: "Scheuermann's / postural hyperkyphosis",
     region: "Thoracic",
     summary:
@@ -271,7 +271,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "non-specific-low-back-pain",
-    title: "Non-specific low back pain Osteopath in Woolwich",
+    title: "Non-specific low back pain Treatment in Woolwich",
     shortTitle: "Non-specific low back pain",
     region: "Lumbar",
     summary:
@@ -299,7 +299,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "lumbar-disc-radiculopathy",
-    title: "Lumbar disc / radiculopathy Osteopath in Woolwich",
+    title: "Lumbar disc / radiculopathy Treatment in Woolwich",
     shortTitle: "Lumbar disc / radiculopathy",
     region: "Lumbar",
     summary:
@@ -327,7 +327,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "lumbar-stenosis",
-    title: "Lumbar spinal stenosis Osteopath in Woolwich",
+    title: "Lumbar spinal stenosis Treatment in Woolwich",
     shortTitle: "Lumbar spinal stenosis",
     region: "Lumbar",
     summary:
@@ -354,7 +354,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "spondylolysis",
-    title: "Spondylolysis / spondylolisthesis Osteopath in Woolwich",
+    title: "Spondylolysis / spondylolisthesis Treatment in Woolwich",
     shortTitle: "Spondylolysis / spondylolisthesis",
     region: "Lumbar",
     summary:
@@ -381,7 +381,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "facet-syndrome",
-    title: "Facet joint / extension-pattern LBP Osteopath in Woolwich",
+    title: "Facet joint / extension-pattern LBP Treatment in Woolwich",
     shortTitle: "Facet joint / extension-pattern LBP",
     region: "Lumbar",
     summary:
@@ -408,7 +408,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "si-joint-dysfunction",
-    title: "Sacroiliac joint dysfunction Osteopath in Woolwich",
+    title: "Sacroiliac joint dysfunction Treatment in Woolwich",
     shortTitle: "Sacroiliac joint dysfunction",
     region: "Pelvis & Hip",
     summary:
@@ -436,7 +436,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "coccydynia",
-    title: "Coccydynia Osteopath in Woolwich",
+    title: "Coccydynia Treatment in Woolwich",
     shortTitle: "Coccydynia",
     region: "Lumbar",
     summary:
@@ -464,7 +464,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "hip-oa",
-    title: "Hip osteoarthritis Osteopath in Woolwich",
+    title: "Hip osteoarthritis Treatment in Woolwich",
     shortTitle: "Hip osteoarthritis",
     region: "Pelvis & Hip",
     summary:
@@ -492,7 +492,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "greater-trochanteric-pain",
-    title: "Greater trochanteric pain syndrome Osteopath in Woolwich",
+    title: "Greater trochanteric pain syndrome Treatment in Woolwich",
     shortTitle: "Greater trochanteric pain syndrome",
     region: "Pelvis & Hip",
     summary:
@@ -520,7 +520,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "femoroacetabular-impingement",
-    title: "Femoroacetabular impingement / labral pain Osteopath in Woolwich",
+    title: "Femoroacetabular impingement / labral pain Treatment in Woolwich",
     shortTitle: "Femoroacetabular impingement / labral pain",
     region: "Pelvis & Hip",
     summary:
@@ -547,7 +547,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "piriformis-syndrome",
-    title: "Deep gluteal / piriformis syndrome Osteopath in Woolwich",
+    title: "Deep gluteal / piriformis syndrome Treatment in Woolwich",
     shortTitle: "Deep gluteal / piriformis syndrome",
     region: "Pelvis & Hip",
     summary:
@@ -574,7 +574,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "hamstring-strain",
-    title: "Hamstring strain / proximal tendinopathy Osteopath in Woolwich",
+    title: "Hamstring strain / proximal tendinopathy Treatment in Woolwich",
     shortTitle: "Hamstring strain / proximal tendinopathy",
     region: "Pelvis & Hip",
     summary:
@@ -601,7 +601,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "groin-pain",
-    title: "Adductor-related groin pain Osteopath in Woolwich",
+    title: "Adductor-related groin pain Treatment in Woolwich",
     shortTitle: "Adductor-related groin pain",
     region: "Pelvis & Hip",
     summary:
@@ -628,7 +628,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "knee-oa",
-    title: "Knee osteoarthritis Osteopath in Woolwich",
+    title: "Knee osteoarthritis Treatment in Woolwich",
     shortTitle: "Knee osteoarthritis",
     region: "Knee",
     summary:
@@ -656,7 +656,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "patellofemoral-pain",
-    title: "Patellofemoral pain syndrome Osteopath in Woolwich",
+    title: "Patellofemoral pain syndrome Treatment in Woolwich",
     shortTitle: "Patellofemoral pain syndrome",
     region: "Knee",
     summary:
@@ -683,7 +683,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "patellar-tendinopathy",
-    title: "Patellar tendinopathy Osteopath in Woolwich",
+    title: "Patellar tendinopathy Treatment in Woolwich",
     shortTitle: "Patellar tendinopathy",
     region: "Knee",
     summary:
@@ -711,7 +711,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "acl-rehab",
-    title: "ACL injury / post-reconstruction Osteopath in Woolwich",
+    title: "ACL injury / post-reconstruction Treatment in Woolwich",
     shortTitle: "ACL injury / post-reconstruction",
     region: "Knee",
     summary:
@@ -738,7 +738,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "meniscal-injury",
-    title: "Meniscal injury Osteopath in Woolwich",
+    title: "Meniscal injury Treatment in Woolwich",
     shortTitle: "Meniscal injury",
     region: "Knee",
     summary:
@@ -765,7 +765,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "itb-syndrome",
-    title: "Iliotibial band syndrome Osteopath in Woolwich",
+    title: "Iliotibial band syndrome Treatment in Woolwich",
     shortTitle: "Iliotibial band syndrome",
     region: "Knee",
     summary:
@@ -792,7 +792,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "lateral-ankle-sprain",
-    title: "Lateral ankle sprain Osteopath in Woolwich",
+    title: "Lateral ankle sprain Treatment in Woolwich",
     shortTitle: "Lateral ankle sprain",
     region: "Ankle & Foot",
     summary:
@@ -820,7 +820,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "achilles-tendinopathy",
-    title: "Achilles tendinopathy Osteopath in Woolwich",
+    title: "Achilles tendinopathy Treatment in Woolwich",
     shortTitle: "Achilles tendinopathy",
     region: "Ankle & Foot",
     summary:
@@ -878,7 +878,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "shin-splints",
-    title: "Medial tibial stress syndrome Osteopath in Woolwich",
+    title: "Medial tibial stress syndrome Treatment in Woolwich",
     shortTitle: "Medial tibial stress syndrome",
     region: "Ankle & Foot",
     summary:
@@ -906,7 +906,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "hallux-rigidus",
-    title: "Hallux rigidus / 1st MTP OA Osteopath in Woolwich",
+    title: "Hallux rigidus / 1st MTP OA Treatment in Woolwich",
     shortTitle: "Hallux rigidus / 1st MTP OA",
     region: "Ankle & Foot",
     summary:
@@ -933,7 +933,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "morton-neuroma",
-    title: "Morton's neuroma Osteopath in Woolwich",
+    title: "Morton's neuroma Treatment in Woolwich",
     shortTitle: "Morton's neuroma",
     region: "Ankle & Foot",
     summary:
@@ -960,7 +960,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "subacromial-pain",
-    title: "Subacromial pain syndrome Osteopath in Woolwich",
+    title: "Subacromial pain syndrome Treatment in Woolwich",
     shortTitle: "Subacromial pain syndrome",
     region: "Shoulder",
     summary:
@@ -988,7 +988,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "rotator-cuff-tear",
-    title: "Rotator cuff tear Osteopath in Woolwich",
+    title: "Rotator cuff tear Treatment in Woolwich",
     shortTitle: "Rotator cuff tear",
     region: "Shoulder",
     summary:
@@ -1044,7 +1044,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "shoulder-instability",
-    title: "Shoulder instability Osteopath in Woolwich",
+    title: "Shoulder instability Treatment in Woolwich",
     shortTitle: "Shoulder instability",
     region: "Shoulder",
     summary:
@@ -1071,7 +1071,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "ac-joint-injury",
-    title: "AC joint sprain / OA Osteopath in Woolwich",
+    title: "AC joint sprain / OA Treatment in Woolwich",
     shortTitle: "AC joint sprain / OA",
     region: "Shoulder",
     summary:
@@ -1128,7 +1128,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "medial-epicondylalgia",
-    title: "Medial epicondylalgia Osteopath in Woolwich",
+    title: "Medial epicondylalgia Treatment in Woolwich",
     shortTitle: "Medial epicondylalgia",
     region: "Elbow & Wrist",
     summary:
@@ -1156,7 +1156,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "cubital-tunnel",
-    title: "Cubital tunnel syndrome Osteopath in Woolwich",
+    title: "Cubital tunnel syndrome Treatment in Woolwich",
     shortTitle: "Cubital tunnel syndrome",
     region: "Elbow & Wrist",
     summary:
@@ -1183,7 +1183,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "carpal-tunnel",
-    title: "Carpal tunnel syndrome Osteopath in Woolwich",
+    title: "Carpal tunnel syndrome Treatment in Woolwich",
     shortTitle: "Carpal tunnel syndrome",
     region: "Elbow & Wrist",
     summary:
@@ -1211,7 +1211,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "dequervains",
-    title: "De Quervain's tenosynovitis Osteopath in Woolwich",
+    title: "De Quervain's tenosynovitis Treatment in Woolwich",
     shortTitle: "De Quervain's tenosynovitis",
     region: "Elbow & Wrist",
     summary:
@@ -1238,7 +1238,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "cmc-oa",
-    title: "Thumb CMC osteoarthritis Osteopath in Woolwich",
+    title: "Thumb CMC osteoarthritis Treatment in Woolwich",
     shortTitle: "Thumb CMC osteoarthritis",
     region: "Elbow & Wrist",
     summary:
@@ -1265,7 +1265,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "fibromyalgia",
-    title: "Fibromyalgia / central sensitisation Osteopath in Woolwich",
+    title: "Fibromyalgia / central sensitisation Treatment in Woolwich",
     shortTitle: "Fibromyalgia / central sensitisation",
     region: "Whole body",
     summary:
@@ -1292,7 +1292,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "deconditioning",
-    title: "General deconditioning / sedentary lifestyle Osteopath in Woolwich",
+    title: "General deconditioning / sedentary lifestyle Treatment in Woolwich",
     shortTitle: "General deconditioning / sedentary lifestyle",
     region: "Whole body",
     summary:
@@ -1319,7 +1319,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "osteoporosis",
-    title: "Osteoporosis / low bone density Osteopath in Woolwich",
+    title: "Osteoporosis / low bone density Treatment in Woolwich",
     shortTitle: "Osteoporosis / low bone density",
     region: "Whole body",
     summary:
@@ -1346,7 +1346,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "post-surgical-general",
-    title: "Post-surgical rehab Osteopath in Woolwich",
+    title: "Post-surgical rehab Treatment in Woolwich",
     shortTitle: "Post-surgical rehab",
     region: "Whole body",
     summary:

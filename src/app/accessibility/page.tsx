@@ -4,12 +4,12 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Accessibility Statement | Nguyen's Osteopathic Clinic",
+  title: "Accessibility Statement",
   description:
     "Accessibility information for Nguyen's Osteopathic Clinic website and Woolwich clinic visits — how we aim to make digital and in-person access clearer.",
   alternates: { canonical: "/accessibility" },
   openGraph: {
-    title: "Accessibility Statement | Nguyen's Osteopathic Clinic",
+    title: "Accessibility Statement",
     description:
       "Website and clinic accessibility information for Woolwich SE18 patients.",
     url: "/accessibility",

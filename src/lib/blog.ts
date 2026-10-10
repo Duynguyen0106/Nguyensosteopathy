@@ -1,3 +1,4 @@
+import { batch3BlogPosts } from "@/lib/blog-posts-batch3";
 import { serviceBlogPosts } from "@/lib/blog-posts-services";
 import blogImageManifest from "@/lib/blog-image-manifest.json";
 import { site } from "@/lib/site";
@@ -711,6 +712,7 @@ const blogPostInputs: BlogPostInput[] = [
     cta: "Book shoulder assessment at Nguyen's Osteopathic Clinic, Woolwich.",
   },
   ...serviceBlogPosts,
+  ...batch3BlogPosts,
 ];
 
 export const blogPosts: BlogPost[] = blogPostInputs.map(withImage);

@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import {
   getAllConditionSlugs,
   getCondition,
+  getConditionFaqs,
   getConditionsByRegion,
 } from "@/lib/conditions";
 import { getService, site } from "@/lib/site";
@@ -42,6 +44,7 @@ export default async function ConditionPage({ params }: Props) {
   const others = getConditionsByRegion(condition.region).filter(
     (item) => item.slug !== condition.slug,
   );
+  const faqs = getConditionFaqs(condition);
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -63,11 +66,28 @@ export default async function ConditionPage({ params }: Props) {
     },
   };
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="bg-slate-50">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
@@ -135,6 +155,15 @@ export default async function ConditionPage({ params }: Props) {
         </div>
       </section>
 
+      <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-display text-3xl text-navy">
+            FAQs about {condition.shortTitle.toLowerCase()}
+          </h2>
+          <FaqAccordion items={faqs} />
+        </div>
+      </section>
+
       <section className="px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">
           <p className="max-w-3xl text-base leading-relaxed text-slate-600 md:text-lg">
@@ -142,6 +171,7 @@ export default async function ConditionPage({ params }: Props) {
             {site.practitioner.title}, inside {site.address.venue}.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
+            <ButtonLink href="/book">Book assessment</ButtonLink>
             {service ? (
               <ButtonLink href={`/services/${service.slug}`} variant="secondary">
                 Related: {service.title}
@@ -178,7 +208,10 @@ export default async function ConditionPage({ params }: Props) {
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-500">
-                <Link href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
+                <Link
+                  href="/conditions"
+                  className="font-semibold text-teal hover:text-teal-dark"
+                >
                   View full conditions index →
                 </Link>
               </p>

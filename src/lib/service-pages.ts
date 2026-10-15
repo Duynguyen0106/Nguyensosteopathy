@@ -59,9 +59,9 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Local care in Woolwich SE18",
         paragraphs: [
-          "The clinic sits inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich, London SE18 6LQ — convenient for Plumstead, Charlton, Abbey Wood, Thamesmead and Greenwich. Ask at the pharmacy counter on arrival and you will be directed to the osteopathy room. Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday from 5 November 2026 (closed Wednesday and Sunday, except the opening-day offer).",
+          "The clinic sits inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich, London SE18 6LQ — convenient for Plumstead, Charlton, Abbey Wood, Thamesmead and Greenwich. Ask at the pharmacy counter on arrival and you will be directed to the osteopathy room. Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday from 5 November 2026 (closed Wednesday and Sunday).",
           "If spinal pain is affecting your work or daily life, booking an assessment is a practical next step. You can also explore our condition guides on sciatica, neck pain and disc-related symptoms, or read about desk and office pain if screen work is the main driver.",
-          "NHS staff and students receive 10% off with valid ID. Opening-day offers and live booking slots are shown on our booking page. Prefer Vietnamese? Austin can consult in Vietnamese or English so you can describe symptoms without a language barrier.",
+          "NHS staff and students receive 10% off with valid ID. Live booking slots are shown on our booking page. Prefer Vietnamese? Austin can consult in Vietnamese or English so you can describe symptoms without a language barrier.",
         ],
       },
     ],

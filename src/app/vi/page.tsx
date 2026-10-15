@@ -67,8 +67,6 @@ const serviceLines = [
 ] as const;
 
 export default function VietnamesePage() {
-  const offer = site.openingOffer;
-
   const webPageLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -297,28 +295,6 @@ export default function VietnamesePage() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-slate-200 bg-navy px-5 py-16 text-white md:px-8 md:py-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs font-semibold tracking-[0.2em] text-teal-mist uppercase">
-            Khai trương
-          </p>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl">
-            {offer.headline} — {offer.dateLabel}
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
-            Ngày khai trương chính thức: giảm 50% mọi phí dịch vụ phòng khám
-            cho bệnh nhân khám trong ngày. Một ngày duy nhất tại{" "}
-            {site.address.venue}, Woolwich.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href={offer.path}>Chi tiết ưu đãi</ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
-              Đặt lịch ngay
-            </ButtonLink>
           </div>
         </div>
       </section>

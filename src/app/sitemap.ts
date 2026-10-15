@@ -41,12 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
-      url: `${base}/opening`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
       url: `${base}/vi`,
       lastModified: now,
       changeFrequency: "monthly",
@@ -291,12 +285,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.2,
-    },
-    {
-      url: `${base}/facebook/opening-day-50-off-facebook.png`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.3,
     },
   ];
 }

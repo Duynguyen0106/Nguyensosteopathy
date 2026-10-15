@@ -15,7 +15,6 @@ const patientLinks = [
   { href: "/faq", label: "FAQ" },
   { href: "/reviews", label: "Reviews" },
   { href: "/contact", label: "Contact" },
-  { href: "/opening", label: "Opening offer" },
 ] as const;
 
 const treatmentLinks = [

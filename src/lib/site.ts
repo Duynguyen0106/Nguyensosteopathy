@@ -39,10 +39,7 @@ export const site = {
     { days: "Monday – Friday", time: "9:00am – 6:00pm" },
     { days: "Saturday", time: "9:00am – 5:30pm" },
   ],
-  /**
-   * Osteopathy booking pattern after opening.
-   * Note: opening day (Wed 5 Nov 2026) is a special one-day exception.
-   */
+  /** Osteopathy booking pattern (pharmacy access hours may differ). */
   booking: {
     opensFromLabel: "5 November 2026",
     bookableDaysLabel:
@@ -54,8 +51,8 @@ export const site = {
       { days: "Saturday", time: "9:00am – 5:30pm" },
     ],
     shortNote:
-      "Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun, except the opening-day offer).",
-    note: "Online booking opens from 5 November 2026. Regular bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday, except the opening-day offer). Live slots are always shown in the booking calendar.",
+      "Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun).",
+    note: "Online booking opens from 5 November 2026. Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday). Live slots are always shown in the booking calendar.",
     schemaWeekdays: ["Monday", "Tuesday", "Thursday", "Friday"] as const,
     weekday: { opens: "09:00", closes: "18:00" },
     saturday: { opens: "09:00", closes: "17:30" },
@@ -69,15 +66,6 @@ export const site = {
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
     "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",
-  openingOffer: {
-    dateLabel: "Wednesday 5 November 2026",
-    dateIso: "2026-11-05",
-    discountPercent: 50,
-    headline: "50% off all service fees",
-    summary:
-      "Celebrate our official opening day with half-price osteopathy and clinic services — one day only, inside St James Pharmacy, Woolwich.",
-    path: "/opening",
-  },
 } as const;
 
 /** Schema.org openingHoursSpecification for bookable osteopathy days. */
@@ -186,7 +174,7 @@ export const faqs = [
   {
     question: "Is there an NHS or student discount?",
     answer:
-      "Yes. NHS staff and students receive 10% off with valid ID shown at the appointment. This does not stack with the opening-day 50% offer on 5 November 2026.",
+      "Yes. NHS staff and students receive 10% off with valid ID shown at the appointment.",
   },
   {
     question: "What should I do after treatment?",

@@ -6,7 +6,7 @@ import { pricing, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Osteopath Fees & Prices in Woolwich | Transparent Pricing",
   description:
-    "Clear osteopathy fees in Woolwich SE18: initial consultation £75, follow-up £60, focused shockwave £90, deep tissue massage £60. 10% NHS & student discount. Opening day 50% off on 5 November 2026.",
+    "Clear osteopathy fees in Woolwich SE18: initial consultation £75, follow-up £60, focused shockwave £90, deep tissue massage £60. 10% NHS & student discount with valid ID.",
   alternates: { canonical: "/fees" },
   keywords: [
     "osteopath Woolwich prices",
@@ -39,8 +39,6 @@ const feeNotes = [
 ] as const;
 
 export default function FeesPage() {
-  const offer = site.openingOffer;
-
   const offersLd = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
@@ -96,22 +94,6 @@ export default function FeesPage() {
               Call {site.phone}
             </ButtonLink>
           </div>
-        </div>
-      </section>
-
-      <section className="border-b border-teal/20 bg-teal px-4 py-4 text-white sm:px-5 md:px-8">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between">
-          <p className="min-w-0 font-medium leading-snug">
-            <span className="font-semibold">Opening {offer.dateLabel}</span>
-            {" — "}
-            {offer.headline} for patients seen that day.
-          </p>
-          <Link
-            href={offer.path}
-            className="inline-flex min-h-11 shrink-0 items-center font-semibold underline-offset-2 hover:underline"
-          >
-            View opening offer →
-          </Link>
         </div>
       </section>
 
@@ -213,8 +195,8 @@ export default function FeesPage() {
           </div>
           <div className="flex flex-wrap gap-3">
             <ButtonLink href="/book">Book an appointment</ButtonLink>
-            <ButtonLink href="/opening" variant="secondary">
-              Opening day offer
+            <ButtonLink href="/nhs-discount" variant="secondary">
+              NHS &amp; student discount
             </ButtonLink>
           </div>
         </div>

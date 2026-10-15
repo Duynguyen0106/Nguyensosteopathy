@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "NHS & Student Discount | Osteopath Woolwich",
   description:
-    "10% NHS staff and student discount at Nguyen's Osteopathic Clinic in Woolwich SE18. Valid ID required at appointment. See how it works with opening-day offers and booking.",
+    "10% NHS staff and student discount at Nguyen's Osteopathic Clinic in Woolwich SE18. Valid ID required at appointment. See how it works with booking.",
   alternates: { canonical: "/nhs-discount" },
   keywords: [
     "NHS discount osteopath Woolwich",
@@ -31,10 +31,6 @@ const points = [
   {
     title: "How much",
     body: "10% off eligible clinic fees listed on our fees page — confirmed when you attend.",
-  },
-  {
-    title: "Opening-day note",
-    body: `The ${site.openingOffer.discountPercent}% opening offer on ${site.openingOffer.dateLabel} does not stack with the NHS/student discount.`,
   },
   {
     title: "How to book",
@@ -83,9 +79,6 @@ export default function NhsDiscountPage() {
             <ButtonLink href="/book">Book online</ButtonLink>
             <ButtonLink href="/fees" variant="secondary">
               View fees
-            </ButtonLink>
-            <ButtonLink href="/opening" variant="secondary">
-              Opening offer
             </ButtonLink>
           </div>
         </div>

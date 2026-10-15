@@ -6,7 +6,6 @@ export const siteMapGroups = [
       { href: "/book", label: "Book online" },
       { href: "/fees", label: "Fees & prices" },
       { href: "/insurance", label: "Insurance & receipts" },
-      { href: "/opening", label: "Opening offer" },
       { href: "/nhs-discount", label: "NHS & student discount" },
       { href: "/new-patients", label: "New patient guide" },
       { href: "/aftercare", label: "Aftercare guide" },

@@ -163,8 +163,8 @@ export default function ReviewsPage() {
           </div>
           <div className="flex flex-wrap gap-3">
             <ButtonLink href="/book">Book an appointment</ButtonLink>
-            <ButtonLink href="/opening" variant="secondary">
-              Opening day offer
+            <ButtonLink href="/fees" variant="secondary">
+              View fees
             </ButtonLink>
           </div>
         </div>

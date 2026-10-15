@@ -56,7 +56,13 @@ const nextConfig: NextConfig = {
   async redirects() {
     // Hub URLs remain as secondary guides; canonical SEO pages are /services/[slug].
     // No permanent redirects away from /services/* so individual service pages resolve.
-    return [];
+    return [
+      {
+        source: "/opening",
+        destination: "/fees",
+        permanent: true,
+      },
+    ];
   },
 };
 

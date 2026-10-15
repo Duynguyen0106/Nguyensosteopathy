@@ -36,26 +36,10 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const latestPosts = getAllPosts().slice(0, 3);
   const featuredConditions = getFeaturedConditions();
-  const offer = site.openingOffer;
 
   return (
     <>
       <FaqJsonLd />
-      <div className="bg-teal text-white">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-2 px-4 py-3 text-sm sm:flex-row sm:items-center sm:gap-3 sm:px-5 md:px-8">
-          <p className="min-w-0 font-medium leading-snug">
-            <span className="font-semibold">Opening {offer.dateLabel}</span>
-            {" — "}
-            {offer.headline} for patients seen that day.
-          </p>
-          <Link
-            href={offer.path}
-            className="inline-flex min-h-11 shrink-0 items-center font-semibold underline-offset-2 hover:underline"
-          >
-            View offer →
-          </Link>
-        </div>
-      </div>
       <Hero />
 
       <section className="bg-navy text-white">
@@ -364,7 +348,7 @@ export default function HomePage() {
             {site.discount}
           </p>
           <p className="mt-4 text-sm text-slate-600">
-            Full fee notes, discounts, and opening-day savings are on our{" "}
+            Full fee notes and NHS/student discount details are on our{" "}
             <Link
               href="/fees"
               className="font-semibold text-teal hover:text-teal-dark"

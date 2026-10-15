@@ -44,9 +44,9 @@ const groups = [
         detail: "Referrals, hours, Vietnamese consultations, and cancellation.",
       },
       {
-        href: "/opening",
-        label: "Opening offer",
-        detail: `${site.openingOffer.dateLabel} — ${site.openingOffer.headline}.`,
+        href: "/nhs-discount",
+        label: "NHS & student discount",
+        detail: site.discount,
       },
     ],
   },

@@ -113,7 +113,7 @@ export const serviceAreas: ServiceArea[] = [
     whyVisit: [
       "Bus links toward Woolwich town centre",
       "Back, neck, and sports injury focus",
-      "Opening offer and transparent fees listed online",
+      "Transparent fees listed online",
       "Find-us guide for parking and arrival",
     ],
     relatedBlogSlug: "osteopath-greenwich-charlton-thamesmead",

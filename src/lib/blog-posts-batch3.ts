@@ -584,39 +584,10 @@ export const batch3BlogPosts: BatchPost[] = [
     ],
     cta: ctaBook,
   }),
-  post({
-    slug: "opening-day-osteopath-woolwich-5-november",
-    title: "Opening day at Nguyen's Osteopathic Clinic: 5 November 2026",
-    description:
-      "Official opening on 5 November 2026 inside St James Pharmacy, Woolwich — 50% off all service fees that day, plus how to book.",
-    date: "2026-10-10",
-    category: "Clinic info",
-    keywords: [
-      "osteopath Woolwich opening",
-      "Nguyen's Osteopathic Clinic opening day",
-      "50% off osteopath Woolwich",
-      "book osteopath 5 November",
-    ],
-    sections: [
-      {
-        paragraphs: [
-          "Our official opening day is Wednesday 5 November 2026. To celebrate, all clinic service fees are reduced by 50% for patients seen on that day.",
-          `Find us inside ${site.address.venue}, ${site.address.line1}, Woolwich. Online booking is available from 5 November (closed Wednesday and Sunday after opening for regular bookable days — check the booking calendar for live availability).`,
-        ],
-      },
-      {
-        heading: "After opening day",
-        paragraphs: [
-          "Regular pharmacy-based hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. 10% NHS and student discount continues with valid ID.",
-        ],
-      },
-    ],
-    cta: ctaBook,
-  }),
 ];
 
-if (batch3BlogPosts.length !== 24) {
+if (batch3BlogPosts.length !== 23) {
   throw new Error(
-    `Expected 24 batch3 blog posts, got ${batch3BlogPosts.length}`,
+    `Expected 23 batch3 blog posts, got ${batch3BlogPosts.length}`,
   );
 }

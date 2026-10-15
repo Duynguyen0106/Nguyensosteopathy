@@ -73,13 +73,9 @@ export default function FaqPage() {
             <Link href="/nhs-discount" className="prose-link">
               NHS &amp; student discount
             </Link>
-            , the{" "}
+            , and the{" "}
             <Link href="/aftercare" className="prose-link">
               aftercare guide
-            </Link>
-            , and the{" "}
-            <Link href="/opening" className="prose-link">
-              opening-day offer
             </Link>
             .
           </p>

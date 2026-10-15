@@ -87,7 +87,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -172,7 +172,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -257,7 +257,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -342,7 +342,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -427,7 +427,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -512,7 +512,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -597,7 +597,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -681,7 +681,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -766,7 +766,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -851,7 +851,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -935,7 +935,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1020,7 +1020,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1105,7 +1105,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1190,7 +1190,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1275,7 +1275,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1359,7 +1359,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1444,7 +1444,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1529,7 +1529,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1614,7 +1614,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1699,7 +1699,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1784,7 +1784,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1869,7 +1869,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -1954,7 +1954,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2039,7 +2039,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2124,7 +2124,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2209,7 +2209,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2294,7 +2294,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2380,7 +2380,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2466,7 +2466,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2552,7 +2552,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2638,7 +2638,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2723,7 +2723,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2809,7 +2809,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2894,7 +2894,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -2980,7 +2980,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3065,7 +3065,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3151,7 +3151,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3236,7 +3236,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3321,7 +3321,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3406,7 +3406,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3491,7 +3491,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3576,7 +3576,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3661,7 +3661,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3747,7 +3747,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3832,7 +3832,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -3918,7 +3918,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4004,7 +4004,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4090,7 +4090,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4176,7 +4176,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4262,7 +4262,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4348,7 +4348,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4434,7 +4434,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4519,7 +4519,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4605,7 +4605,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4690,7 +4690,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4776,7 +4776,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4862,7 +4862,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -4948,7 +4948,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5034,7 +5034,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5120,7 +5120,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5206,7 +5206,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5292,7 +5292,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5377,7 +5377,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5462,7 +5462,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5547,7 +5547,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5632,7 +5632,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5717,7 +5717,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5802,7 +5802,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5887,7 +5887,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -5972,7 +5972,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6057,7 +6057,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6142,7 +6142,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6227,7 +6227,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6312,7 +6312,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6396,7 +6396,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6481,7 +6481,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6566,7 +6566,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6651,7 +6651,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6736,7 +6736,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6821,7 +6821,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6906,7 +6906,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -6991,7 +6991,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -7077,7 +7077,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -7162,7 +7162,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -7212,8 +7212,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Treatment approach at Nguyen's Osteopathic Clinic",
         "image": {
-          "src": "/images/blog/opening-day-osteopath-woolwich-5-november.jpg",
-          "alt": "Clinic team celebrating a professional opening milestone"
+          "src": "/images/blog/osteopath-woolwich-what-to-expect.jpg",
+          "alt": "Osteopathy consultation setting at the Woolwich clinic"
         },
         "paragraphs": [
           "Care is matched to irritability and stage. Acute flares often need gentler mobilisation, soft-tissue work, and short-term activity tweaks. Longer-standing or load-driven problems usually need progressive capacity building alongside hands-on treatment — otherwise symptoms return when life gets busy again.",
@@ -7248,7 +7248,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -7333,7 +7333,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -7419,7 +7419,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
@@ -7504,97 +7504,12 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How to prepare if you decide to book",
         "paragraphs": [
           "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
+          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, "
         ]
       }
     ],
     "ctaHref": "/conditions/cervicogenic-headache",
     "ctaLabel": "Explore related care",
     "cta": "Want more detail before you book? Explore the related guide, then arrange an assessment when you are ready."
-  },
-  "opening-day-osteopath-woolwich-5-november": {
-    "updated": "2026-10-15",
-    "readingMinutes": 8,
-    "sections": [
-      {
-        "paragraphs": [
-          "Our official opening day is Wednesday 5 November 2026. To celebrate, all clinic service fees are reduced by 50% for patients seen on that day.",
-          "Find us inside St James Pharmacy & Travel Clinic, 52 Powis Street, Woolwich. Online booking is available from 5 November (closed Wednesday and Sunday after opening for regular bookable days — check the booking calendar for live availability)."
-        ]
-      },
-      {
-        "heading": "What this means for patients in Woolwich",
-        "paragraphs": [
-          "Opening day at Nguyen's Osteopathic Clinic sits in the wider picture of clinic info care at Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street. People travel from Plumstead, Abbey Wood, Thamesmead, Charlton, and Greenwich with the same question: what is driving my symptoms, and what should I do this week?",
-          "Local life loads the body in specific ways — Elizabeth line and DLR sits, standing retail or salon shifts, warehouse lifting, hybrid laptop days, and weekend sport after a sedentary week. A useful plan respects those realities instead of handing you a generic stretch sheet. Related reading that often sits beside this topic includes [our clinic services overview](/book) and [practical next steps on the site](/find-us).",
-          "Because every presentation is individual, we avoid one-size protocols. Two people with similar clinic info labels can need different pacing, different soft-tissue emphasis, and different return-to-work plans — that is why assessment comes before a long exercise list."
-        ]
-      },
-      {
-        "heading": "Common patterns and triggers",
-        "paragraphs": [
-          "Symptoms linked to “opening day at nguyen's osteopathic clinic” rarely appear from nowhere. They build when tissue capacity sits below the load you ask of it — sometimes suddenly after a lift or fall, sometimes slowly across months of posture and repetition."
-        ],
-        "bullets": [
-          "Pain or stiffness that changes with posture, work blocks, or training spikes",
-          "Morning irritability that eases once you move — or flares again after sitting",
-          "Guarding and compensatory patterns in neighbouring joints",
-          "Sleep disturbance when you cannot find a comfortable position",
-          "Worry after Dr Google or an old scan report that does not match how you feel today"
-        ]
-      },
-      {
-        "heading": "How we assess the problem",
-        "level": 3,
-        "paragraphs": [
-          "Assessment starts with your story: onset, aggravators, easing factors, work or sport demands, previous injuries, and what success looks like for you. We screen for red flags that need medical pathways rather than routine hands-on care.",
-          "Hands-on examination looks at joint mobility, soft-tissue tone, nerve irritability where relevant, and how the kinetic chain shares load. Findings are explained in plain English before treatment begins. You should leave clearer, not drowned in jargon."
-        ]
-      },
-      {
-        "heading": "Treatment approach at Nguyen's Osteopathic Clinic",
-        "image": {
-          "src": "/images/blog/shin-splints-osteopath-woolwich.jpg",
-          "alt": "Runner holding the shin after training load pain"
-        },
-        "paragraphs": [
-          "Care is matched to irritability and stage. Acute flares often need gentler mobilisation, soft-tissue work, and short-term activity tweaks. Longer-standing or load-driven problems usually need progressive capacity building alongside hands-on treatment — otherwise symptoms return when life gets busy again.",
-          "Where clinically appropriate we discuss adjuncts such as focused shockwave, acupuncture, or cupping, always with clear rationale and fees. You can review transparent pricing on our [fees page](/fees) before you book.",
-          "Internal guides that pair well with this article include [fees](/fees) and [a related clinical pathway](/book). Use them to prepare questions — not to self-diagnose in place of an examination."
-        ]
-      },
-      {
-        "heading": "What you can do between visits",
-        "paragraphs": [
-          "Complete rest is rarely the fastest route. Short relative rest of the worst aggravators, then graded return to walking, work tasks, or training, usually outperforms days of total shutdown. Heat, pacing, and sleep routine changes help many people more than aggressive end-range stretching.",
-          "We typically leave you with two or three actions you can actually keep on a Woolwich work week — not a twenty-exercise programme you will abandon by Thursday. If a movement produces red-flag neurological change, stop and seek urgent care rather than pushing through."
-        ]
-      },
-      {
-        "heading": "Recovery timelines and expectations",
-        "level": 3,
-        "paragraphs": [
-          "Many mechanical patterns improve over two to six weeks with sensible load and targeted care. Stubborn tendon, nerve, or chronic sensitivity pictures often need eight to twelve weeks of consistent rehab. Early wins are usually sleep and daily function; later wins are sport, shifts, or lifting confidence.",
-          "Progress is rarely a straight line. Mild flare days can still happen while capacity builds. We judge success by the activities you care about, then decide together whether to continue, space sessions, or involve your GP for imaging or medical review."
-        ]
-      },
-      {
-        "heading": "When to seek urgent or medical care first",
-        "paragraphs": [
-          "Osteopathy is not emergency care. Seek urgent help for rapidly worsening neurological deficit, saddle numbness, bladder or bowel change, unexplained weight loss, fever with severe spinal pain, chest pain of cardiac concern, or trauma with suspected fracture.",
-          "For persistent but non-emergency symptoms — sleep loss, work limitation, recurring flares — an osteopathic assessment is a sensible next step. You do not need a GP referral to book with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332)."
-        ]
-      },
-      {
-        "heading": "How to prepare if you decide to book",
-        "paragraphs": [
-          "Wear clothes you can move in. Bring a short timeline of symptoms, key medical history, and any recent letters or scans if you have them. Mention blood thinners, pregnancy, or recent surgery early so techniques stay appropriate.",
-          "Online booking is available at [our book page](/book). If you are unsure which appointment type fits, call the clinic and ask. A 10% NHS and student discount applies with valid ID, and opening-period offers are listed separately when active."
-        ]
-      }
-    ],
-    "ctaHref": "/blog/nhs-student-osteopathy-discount-woolwich",
-    "ctaLabel": "Read related article",
-    "cta": "Continue with a related article, or book online when you want hands-on assessment in Woolwich."
-  },
+  }
 };

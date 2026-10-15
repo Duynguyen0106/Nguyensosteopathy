@@ -266,13 +266,6 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-            <Link
-              href="/opening"
-              className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-              onClick={() => setOpen(false)}
-            >
-              Opening offer
-            </Link>
             <a
               href={site.phoneHref}
               className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"

@@ -19,7 +19,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
         heading: "Why salon work loads the neck and wrists",
         paragraphs: [
           "Filing, buffing, and detailed nail art keep the wrists in sustained extension or ulnar deviation while the thumb and finger flexors fire continuously. Looking down at a hand for 45–60 minutes per client lengthens the upper traps and shortens the deep neck flexors — a classic desk-like posture, but without a desk you can raise.",
-          "Standing all day on hard salon floors adds fatigue through the hips and lower back, so the shoulders creep forward even more by late afternoon. Many technicians also grip tools harder when the schedule runs late. That grip force travels straight into the forearms and can irritate pathways that feel like [carpal tunnel](/conditions/carpal-tunnel) or [neck-driven arm pain](/conditions/neck-pain).",
+          "Standing all day on hard salon floors adds fatigue through the hips and lower back, so the shoulders creep forward even more by late afternoon. Many technicians also grip tools harder when the schedule runs late. That grip force travels straight into the forearms and can irritate pathways that feel like [carpal tunnel](/conditions/carpal-tunnel), [tennis elbow](/conditions/tennis-elbow), or [neck-driven arm pain](/conditions/neck-pain).",
           "The goal is not to abandon your craft. It is to reduce peak load per client, give tissues short recovery windows, and restore mobility so the same shift feels less punishing by Friday.",
         ],
       },
@@ -110,7 +110,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
         heading: "Foot care and standing stamina",
         paragraphs: [
           "Hard kitchen floors punish feet and rebound into the knees and low back. Rotate into supportive shoes with a firmer midsole when your rota allows, and change socks mid-double if they are soaked. A small anti-fatigue mat at plating stations helps when the manager permits it.",
-          "If first-step heel pain is joining the back ache, read our [plantar fasciitis guide](/conditions/plantar-fasciitis) — standing trades often stack both problems.",
+          "If first-step heel pain is joining the back ache, read our [plantar fasciitis guide](/conditions/plantar-fasciitis) — standing trades often stack both problems. Quick pivots on wet tiles can also stir [knee pain from standing and pivoting](/conditions/knee-oa).",
         ],
       },
       {
@@ -157,8 +157,8 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "Why desk setups create neck pain",
         paragraphs: [
-          "Looking down at a laptop closes the upper cervical joints and asks the upper trapezius and levator scapulae to hold a static load for hours. Add phone-shoulder clenching on calls and the mid-back stiffens behind the shoulder blades.",
-          "Home-sofa laptop days and café working sessions are often worse than a decent office monitor. Our [neck pain condition page](/conditions/neck-pain) explains the clinical picture; below is what you can change before and between appointments.",
+          "Looking down at a laptop closes the upper cervical joints and asks the upper trapezius and levator scapulae to hold a static load for hours. Add phone-shoulder clenching on calls and the mid-back stiffens behind the shoulder blades — a common driver of [neck pain treatment in Woolwich](/conditions/neck-pain).",
+          "Long sits also load the lumbar discs and hip flexors, so [lower back pain from prolonged sitting](/conditions/non-specific-low-back-pain) often arrives with the neck ache. The mid-back is where [upper-back postural strain](/conditions/thoracic-joint-dysfunction) shows up when the thoracic spine stops rotating freely. Home-sofa laptop days and café sessions are often worse than a decent office monitor — below is what you can change before and between appointments.",
         ],
       },
       {

@@ -1,3 +1,4 @@
+import { withRelatedConditionLinks } from "@/lib/blog-condition-links";
 import { batch3BlogPosts } from "@/lib/blog-posts-batch3";
 import { serviceBlogPosts } from "@/lib/blog-posts-services";
 import { blogExpandedBodies } from "@/lib/blog-expanded-bodies";
@@ -805,7 +806,8 @@ const blogPostInputs: BlogPostInput[] = [
 
 export const blogPosts: BlogPost[] = blogPostInputs
   .map(withExpansion)
-  .map(withImage);
+  .map(withImage)
+  .map(withRelatedConditionLinks);
 
 export function getPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);

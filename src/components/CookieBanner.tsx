@@ -46,11 +46,11 @@ export function CookieBanner() {
         <p className="max-w-3xl text-sm leading-relaxed text-slate-700">
           We use essential cookies to run this site. With your permission, we
           also use analytics cookies to improve the website. See our{" "}
-          <Link href="/cookies" className="font-semibold text-teal hover:text-teal-dark">
+          <Link href="/cookies" className="prose-link">
             Cookie Policy
           </Link>
           {" · "}
-          <Link href="/privacy" className="font-semibold text-teal hover:text-teal-dark">
+          <Link href="/privacy" className="prose-link">
             Privacy
           </Link>
           .
@@ -59,14 +59,14 @@ export function CookieBanner() {
           <button
             type="button"
             onClick={() => choose("declined")}
-            className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+            className="min-h-11 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
           >
             Essential only
           </button>
           <button
             type="button"
             onClick={() => choose("accepted")}
-            className="rounded-xl bg-teal px-4 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+            className="min-h-11 rounded-xl bg-teal px-4 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
           >
             Accept analytics
           </button>

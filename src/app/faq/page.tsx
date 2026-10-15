@@ -55,33 +55,30 @@ export default function FaqPage() {
 
       <section className="px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-3xl">
-          <FaqAccordion items={faqs} />
+          <FaqAccordion items={faqs} headingLevel={2} />
           <p className="mt-8 text-sm text-slate-600">
             Still unsure?{" "}
-            <Link href="/contact" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/contact" className="prose-link">
               Contact us
             </Link>
             , WhatsApp, or call{" "}
-            <a href={site.phoneHref} className="font-semibold text-teal hover:text-teal-dark">
+            <a href={site.phoneHref} className="prose-link">
               {site.phone}
             </a>
             . See{" "}
-            <Link href="/fees" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/fees" className="prose-link">
               fees
             </Link>
             ,{" "}
-            <Link
-              href="/nhs-discount"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
+            <Link href="/nhs-discount" className="prose-link">
               NHS &amp; student discount
             </Link>
             , the{" "}
-            <Link href="/aftercare" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/aftercare" className="prose-link">
               aftercare guide
             </Link>
             , and the{" "}
-            <Link href="/opening" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/opening" className="prose-link">
               opening-day offer
             </Link>
             .

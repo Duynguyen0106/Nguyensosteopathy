@@ -52,7 +52,7 @@ export function ContactForm() {
           type="text"
           autoComplete="name"
           required
-          className="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
+          className="mt-1.5 min-h-11 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
         />
       </div>
       <div>
@@ -68,7 +68,7 @@ export function ContactForm() {
           type="email"
           autoComplete="email"
           required
-          className="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
+          className="mt-1.5 min-h-11 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
         />
       </div>
       <div>
@@ -83,7 +83,7 @@ export function ContactForm() {
           name="phone"
           type="tel"
           autoComplete="tel"
-          className="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
+          className="mt-1.5 min-h-11 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
         />
       </div>
       <div>
@@ -98,13 +98,13 @@ export function ContactForm() {
           name="message"
           rows={5}
           required
-          className="mt-1.5 w-full resize-y rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
+          className="mt-1.5 min-h-11 w-full resize-y rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
           placeholder="How can we help?"
         />
       </div>
       <button
         type="submit"
-        className="inline-flex items-center justify-center rounded-xl bg-teal px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-teal/25 ring-1 ring-teal/20 transition hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+        className="inline-flex min-h-11 items-center justify-center rounded-xl bg-teal px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-teal/25 ring-1 ring-teal/20 transition hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
       >
         Email your enquiry
       </button>
@@ -117,15 +117,12 @@ export function ContactForm() {
               href={site.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-teal hover:text-teal-dark"
+              className="prose-link"
             >
               WhatsApp us
             </a>
             {" · "}
-            <Link
-              href="/book"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
+            <Link href="/book" className="prose-link">
               Book online
             </Link>
             .
@@ -133,19 +130,15 @@ export function ContactForm() {
         ) : (
           <p className="text-xs text-slate-500">
             Opens your email app to message {site.email}. For bookings, use{" "}
-            <Link
-              href="/book"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
+            <Link href="/book" className="prose-link">
               online booking
-            </Link>
-            {" "}
+            </Link>{" "}
             or{" "}
             <a
               href={site.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-teal hover:text-teal-dark"
+              className="prose-link"
             >
               WhatsApp
             </a>

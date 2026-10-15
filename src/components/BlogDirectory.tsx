@@ -184,7 +184,7 @@ export function BlogDirectory({ groups, featured }: Props) {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Search articles…"
-              className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-navy outline-none ring-teal/30 placeholder:text-slate-400 focus:ring-2"
+              className="min-h-11 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-navy outline-none ring-teal/30 placeholder:text-slate-400 focus:ring-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
             />
           </label>
         </div>
@@ -192,7 +192,7 @@ export function BlogDirectory({ groups, featured }: Props) {
           <button
             type="button"
             onClick={() => selectCategory("all")}
-            className={`shrink-0 rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors ${
+            className={`min-h-11 shrink-0 rounded-lg px-3 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal ${
               active === "all"
                 ? "bg-navy text-white"
                 : "bg-white text-navy ring-1 ring-slate-200 hover:ring-teal"
@@ -205,7 +205,7 @@ export function BlogDirectory({ groups, featured }: Props) {
               key={group.id}
               type="button"
               onClick={() => selectCategory(group.category)}
-              className={`shrink-0 rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors ${
+              className={`min-h-11 shrink-0 rounded-lg px-3 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal ${
                 active === group.category
                   ? "bg-navy text-white"
                   : "bg-white text-navy ring-1 ring-slate-200 hover:ring-teal"

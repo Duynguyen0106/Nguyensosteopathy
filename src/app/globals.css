@@ -3,8 +3,9 @@
 :root {
   --navy: #0b2c45;
   --navy-deep: #071e30;
-  --teal: #0d9488;
-  --teal-dark: #0f766e;
+  /* Teal tuned for WCAG 2.2 AA (≥4.5:1) with white and on cream backgrounds */
+  --teal: #0f766e;
+  --teal-dark: #115e59;
   --teal-mist: #99f6e4;
   --cream-mist: #f8fafc;
   --ink: #0f172a;
@@ -69,7 +70,8 @@ body {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
-[role="button"]:focus-visible {
+[role="button"]:focus-visible,
+[role="menuitem"]:focus-visible {
   outline: 2px solid var(--teal);
   outline-offset: 2px;
 }
@@ -79,6 +81,19 @@ textarea:focus-visible,
 select:focus-visible {
   outline: 2px solid var(--teal);
   outline-offset: 2px;
+  border-color: var(--teal);
+}
+
+/* Inline links in body copy: distinguishable without colour alone */
+.prose-link {
+  color: var(--teal-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.prose-link:hover {
+  color: var(--navy);
 }
 
 ::selection {

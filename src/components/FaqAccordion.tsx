@@ -7,9 +7,17 @@ type FaqItem = {
   answer: string;
 };
 
-export function FaqAccordion({ items }: { items: readonly FaqItem[] }) {
+export function FaqAccordion({
+  items,
+  headingLevel = 3,
+}: {
+  items: readonly FaqItem[];
+  /** Use 2 when the accordion sits directly under the page H1. */
+  headingLevel?: 2 | 3;
+}) {
   const baseId = useId();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const HeadingTag = headingLevel === 2 ? "h2" : "h3";
 
   return (
     <div className="mt-10 divide-y divide-slate-200 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
@@ -20,13 +28,13 @@ export function FaqAccordion({ items }: { items: readonly FaqItem[] }) {
 
         return (
           <div key={item.question}>
-            <h3>
+            <HeadingTag>
               <button
                 id={buttonId}
                 type="button"
                 aria-expanded={isOpen}
                 aria-controls={panelId}
-                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-teal md:px-6 md:py-5"
+                className="flex min-h-11 w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-teal md:px-6 md:py-5"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
               >
                 <span className="text-base font-semibold text-navy md:text-lg">
@@ -49,7 +57,7 @@ export function FaqAccordion({ items }: { items: readonly FaqItem[] }) {
                   </svg>
                 </span>
               </button>
-            </h3>
+            </HeadingTag>
             <div
               id={panelId}
               role="region"

@@ -48,8 +48,19 @@ export function Hero() {
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink href={site.phoneHref} variant="secondary">
+            <ButtonLink
+              href="/book"
+              variant="navy"
+              aria-label="Book an osteopathy appointment"
+              className="min-h-11 min-w-[10rem] px-6 py-3 text-base font-bold tracking-wide text-white shadow-lg shadow-navy/30 ring-2 ring-navy/20"
+            >
+              Book Now
+            </ButtonLink>
+            <ButtonLink
+              href={site.phoneHref}
+              variant="secondary"
+              className="min-h-11"
+            >
               Call {site.phone}
             </ButtonLink>
           </div>

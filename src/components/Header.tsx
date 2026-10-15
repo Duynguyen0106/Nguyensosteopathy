@@ -126,14 +126,16 @@ export function Header() {
         <div className="flex shrink-0 items-center gap-2">
           <ButtonLink
             href="/book"
-            className="px-3.5 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
+            variant="navy"
+            aria-label="Book an osteopathy appointment"
+            className="min-h-11 min-w-[7.5rem] px-4 py-2.5 text-sm font-bold tracking-wide text-white shadow-lg shadow-navy/30 ring-2 ring-navy/20 sm:min-w-[8.5rem] sm:px-5 sm:text-base"
           >
-            Book online
+            Book Now
           </ButtonLink>
           <button
             ref={menuButtonRef}
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}

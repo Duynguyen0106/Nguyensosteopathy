@@ -24,14 +24,12 @@ const serviceNav = services.map((service) => ({
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const menuId = useId();
   const panelId = `${menuId}-panel`;
   const servicesMenuId = `${menuId}-services`;
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
-  const servicesWrapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -46,27 +44,6 @@ export function Header() {
       document.body.style.overflow = "";
     };
   }, [open]);
-
-  useEffect(() => {
-    if (!servicesOpen) return;
-    const onPointerDown = (event: MouseEvent) => {
-      if (
-        servicesWrapRef.current &&
-        !servicesWrapRef.current.contains(event.target as Node)
-      ) {
-        setServicesOpen(false);
-      }
-    };
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setServicesOpen(false);
-    };
-    document.addEventListener("mousedown", onPointerDown);
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("mousedown", onPointerDown);
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  }, [servicesOpen]);
 
   useEffect(() => {
     if (!open) return;
@@ -145,25 +122,17 @@ export function Header() {
             About
           </Link>
 
-          <div
-            ref={servicesWrapRef}
-            className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-          >
-            <button
-              type="button"
+          <div className="group relative">
+            <Link
+              href="/services"
               className="inline-flex items-center gap-1 transition hover:text-teal"
-              aria-expanded={servicesOpen}
               aria-haspopup="menu"
               aria-controls={servicesMenuId}
-              onClick={() => setServicesOpen((value) => !value)}
-              onFocus={() => setServicesOpen(true)}
             >
               Services
               <svg
                 viewBox="0 0 20 20"
-                className={`h-3.5 w-3.5 transition ${servicesOpen ? "rotate-180" : ""}`}
+                className="h-3.5 w-3.5 transition group-hover:rotate-180 group-focus-within:rotate-180"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.8"
@@ -171,20 +140,17 @@ export function Header() {
               >
                 <path d="M5 7.5 10 12.5 15 7.5" />
               </svg>
-            </button>
+            </Link>
             <div
               id={servicesMenuId}
               role="menu"
-              className={`absolute top-full left-0 z-[60] pt-2 ${
-                servicesOpen ? "visible opacity-100" : "invisible opacity-0"
-              }`}
+              className="invisible absolute top-full left-0 z-[60] pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
             >
               <div className="w-[22rem] rounded-xl border border-slate-200 bg-white p-3 shadow-lg">
                 <Link
                   href="/services"
                   role="menuitem"
                   className="block rounded-lg px-3 py-2 text-sm font-semibold text-navy hover:bg-slate-50 hover:text-teal"
-                  onClick={() => setServicesOpen(false)}
                 >
                   All services
                 </Link>
@@ -195,7 +161,6 @@ export function Header() {
                         href={item.href}
                         role="menuitem"
                         className="block rounded-lg px-3 py-2 text-sm text-navy/80 hover:bg-slate-50 hover:text-teal"
-                        onClick={() => setServicesOpen(false)}
                       >
                         {item.label}
                       </Link>

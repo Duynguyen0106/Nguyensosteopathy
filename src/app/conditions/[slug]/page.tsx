@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import {
   getAllConditionSlugs,
   getCondition,
-  getConditionsByRegion,
+  getRelatedConditions,
 } from "@/lib/conditions";
 import { getService, site } from "@/lib/site";
 
@@ -39,9 +40,14 @@ export default async function ConditionPage({ params }: Props) {
   if (!condition) notFound();
 
   const service = getService(condition.relatedServiceSlug);
-  const others = getConditionsByRegion(condition.region).filter(
-    (item) => item.slug !== condition.slug,
-  );
+  const related = getRelatedConditions(condition, 4);
+  const faqs = condition.faqs ?? [];
+  const expanded =
+    Boolean(condition.causes) ||
+    Boolean(condition.whoAffected) ||
+    Boolean(condition.whatToExpect) ||
+    Boolean(condition.recoveryTimeline) ||
+    faqs.length > 0;
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -61,7 +67,29 @@ export default async function ConditionPage({ params }: Props) {
         name: "Woolwich",
       },
     },
+    reviewedBy: {
+      "@type": "Person",
+      name: site.practitioner.name,
+      jobTitle: site.practitioner.title,
+      identifier: site.practitioner.regNo,
+    },
   };
+
+  const faqLd =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
 
   return (
     <div className="bg-slate-50">
@@ -69,6 +97,12 @@ export default async function ConditionPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
       />
+      {faqLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      ) : null}
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
@@ -135,13 +169,76 @@ export default async function ConditionPage({ params }: Props) {
         </div>
       </section>
 
+      {expanded ? (
+        <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+          <div className="mx-auto max-w-3xl space-y-12">
+            {condition.causes ? (
+              <div>
+                <h2 className="font-display text-3xl text-navy">
+                  What causes {condition.shortTitle.toLowerCase()}?
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-slate-700 md:text-lg">
+                  {condition.causes}
+                </p>
+              </div>
+            ) : null}
+            {condition.whoAffected ? (
+              <div>
+                <h2 className="font-display text-3xl text-navy">
+                  Who is most affected?
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-slate-700 md:text-lg">
+                  {condition.whoAffected}
+                </p>
+              </div>
+            ) : null}
+            {condition.whatToExpect ? (
+              <div>
+                <h2 className="font-display text-3xl text-navy">
+                  What to expect during treatment
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-slate-700 md:text-lg">
+                  {condition.whatToExpect}
+                </p>
+              </div>
+            ) : null}
+            {condition.recoveryTimeline ? (
+              <div>
+                <h2 className="font-display text-3xl text-navy">
+                  Recovery timeline
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-slate-700 md:text-lg">
+                  {condition.recoveryTimeline}
+                </p>
+              </div>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
+
+      {faqs.length > 0 ? (
+        <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="font-display text-3xl text-navy">
+              FAQs about {condition.shortTitle.toLowerCase()}
+            </h2>
+            <FaqAccordion items={faqs} />
+          </div>
+        </section>
+      ) : null}
+
       <section className="px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">
           <p className="max-w-3xl text-base leading-relaxed text-slate-600 md:text-lg">
             {condition.summary} Care is with {site.practitioner.name},{" "}
             {site.practitioner.title}, inside {site.address.venue}.
           </p>
+          <p className="mt-4 text-sm text-slate-500">
+            Reviewed by {site.practitioner.name}, GOsC-Registered Osteopath
+            (Reg. No. {site.practitioner.regNo})
+          </p>
           <div className="mt-8 flex flex-wrap gap-3">
+            <ButtonLink href="/book">Book assessment</ButtonLink>
             {service ? (
               <ButtonLink href={`/services/${service.slug}`} variant="secondary">
                 Related: {service.title}
@@ -160,13 +257,13 @@ export default async function ConditionPage({ params }: Props) {
             </ButtonLink>
           </div>
 
-          {others.length > 0 ? (
+          {related.length > 0 ? (
             <div className="mt-14">
               <h2 className="font-display text-2xl text-navy">
-                More in {condition.region}
+                Related conditions
               </h2>
               <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-teal">
-                {others.map((item) => (
+                {related.map((item) => (
                   <li key={item.slug}>
                     <Link
                       href={`/conditions/${item.slug}`}
@@ -178,7 +275,10 @@ export default async function ConditionPage({ params }: Props) {
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-500">
-                <Link href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
+                <Link
+                  href="/conditions"
+                  className="font-semibold text-teal hover:text-teal-dark"
+                >
                   View full conditions index →
                 </Link>
               </p>

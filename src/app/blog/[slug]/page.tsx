@@ -120,7 +120,14 @@ export default async function BlogPostPage({ params }: Props) {
           {post.title}
         </h1>
         <p className="mt-4 text-sm text-slate-500">
-          By {site.practitioner.name} · {post.readingMinutes} min read
+          By{" "}
+          <Link
+            href="/about"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            {site.practitioner.name}
+          </Link>{" "}
+          · {post.readingMinutes} min read
         </p>
         <p className="mt-1 text-sm text-slate-500">
           <span className="font-medium text-slate-600">Published</span>{" "}
@@ -210,7 +217,7 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           ) : null}
 
-          <aside className="flex flex-col gap-4 rounded-xl border border-slate-200 bg-slate-50 p-5 sm:flex-row sm:items-center sm:gap-5">
+          <aside className="flex flex-col gap-4 rounded-xl border border-slate-200 bg-slate-50 p-5 sm:flex-row sm:items-start sm:gap-5">
             <div className="relative mx-auto h-24 w-24 shrink-0 overflow-hidden rounded-full bg-slate-200 sm:mx-0">
               <Image
                 src="/images/austin-nguyen.jpg"
@@ -222,21 +229,29 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
             <div className="min-w-0 text-center sm:text-left">
               <p className="font-semibold text-navy">
-                {site.practitioner.name}, GOsC-Registered Osteopath (Reg. No.{" "}
-                {site.practitioner.regNo})
+                {site.practitioner.name}
               </p>
-              <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                Master of Osteopathy graduate providing drug-free pain relief
-                and hands-on care inside St James Pharmacy, Woolwich SE18.
-              </p>
-              <p className="mt-2">
-                <Link
-                  href="/about"
-                  className="text-sm font-semibold text-teal hover:text-teal-dark"
+              <p className="mt-0.5 text-sm text-slate-600">
+                {site.practitioner.title} (Reg. No.{" "}
+                <a
+                  href={site.practitioner.goscRegisterUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-teal hover:text-teal-dark"
                 >
-                  Read Austin&apos;s story →
-                </Link>
+                  {site.practitioner.regNo}
+                </a>
+                )
               </p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                {site.practitioner.bio}
+              </p>
+              <div className="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
+                <ButtonLink href="/book">Book an appointment</ButtonLink>
+                <ButtonLink href="/about" variant="secondary">
+                  About Austin
+                </ButtonLink>
+              </div>
             </div>
           </aside>
         </div>

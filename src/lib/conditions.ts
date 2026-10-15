@@ -18,6 +18,8 @@ export type Condition = {
   heroLine: string;
   symptoms: string[];
   howWeHelp: string[];
+  /** Clinically related condition slugs (3–4) for cross-links. */
+  relatedConditionSlugs?: string[];
   relatedServiceSlug: string;
   relatedBlogSlug?: string;
   keywords: string[];
@@ -64,6 +66,12 @@ export const conditions: Condition[] = [
       "Guide pacing, sitting, and return-to-movement advice",
       "Discuss imaging or GP referral only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "lumbar-disc-radiculopathy",
+      "piriformis-syndrome",
+      "non-specific-low-back-pain",
+      "si-joint-dysfunction",
+    ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "sciatica-woolwich-osteopath",
     keywords: [
@@ -94,6 +102,12 @@ export const conditions: Condition[] = [
       "Simple desk and sleep-position coaching",
       "Link care to your real work demands",
     ],
+    relatedConditionSlugs: [
+      "cervicogenic-headache",
+      "whiplash",
+      "cervical-radiculopathy",
+      "thoracic-joint-dysfunction",
+    ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "nail-technician-neck-wrist-pain-osteopath",
     keywords: [
@@ -123,6 +137,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "neck-pain",
+      "cervicogenic-headache",
+      "whiplash",
+      "cubital-tunnel",
+    ],
     relatedServiceSlug: "back-neck-pain",
     keywords: [
       "Cervical radiculopathy Woolwich",
@@ -149,6 +169,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
+    ],
+    relatedConditionSlugs: [
+      "neck-pain",
+      "cervical-radiculopathy",
+      "whiplash",
+      "thoracic-joint-dysfunction",
     ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "tension-headaches-neck-osteopath-woolwich",
@@ -178,6 +204,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "neck-pain",
+      "cervicogenic-headache",
+      "cervical-radiculopathy",
+      "thoracic-joint-dysfunction",
+    ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "whiplash-neck-pain-osteopath-se18",
     keywords: [
@@ -205,6 +237,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
+    ],
+    relatedConditionSlugs: [
+      "neck-pain",
+      "costochondritis",
+      "scheuermanns",
+      "non-specific-low-back-pain",
     ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "upper-back-pain-desk-workers-woolwich",
@@ -234,6 +272,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "thoracic-joint-dysfunction",
+      "scheuermanns",
+      "neck-pain",
+      "subacromial-pain",
+    ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "rib-pain-breathing-osteopath-woolwich",
     keywords: [
@@ -262,6 +306,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "thoracic-joint-dysfunction",
+      "costochondritis",
+      "non-specific-low-back-pain",
+      "neck-pain",
+    ],
     relatedServiceSlug: "back-neck-pain",
     keywords: [
       "Scheuermann's / postural hyperkyphosis Woolwich",
@@ -288,6 +338,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
+    ],
+    relatedConditionSlugs: [
+      "sciatica",
+      "facet-syndrome",
+      "si-joint-dysfunction",
+      "lumbar-disc-radiculopathy",
     ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "back-pain-woolwich-osteopathy",
@@ -317,6 +373,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "sciatica",
+      "non-specific-low-back-pain",
+      "lumbar-stenosis",
+      "piriformis-syndrome",
+    ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "lumbar-disc-pain-osteopath-woolwich",
     keywords: [
@@ -345,6 +407,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "sciatica",
+      "lumbar-disc-radiculopathy",
+      "facet-syndrome",
+      "non-specific-low-back-pain",
+    ],
     relatedServiceSlug: "back-neck-pain",
     keywords: [
       "Lumbar spinal stenosis Woolwich",
@@ -371,6 +439,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
+    ],
+    relatedConditionSlugs: [
+      "facet-syndrome",
+      "non-specific-low-back-pain",
+      "si-joint-dysfunction",
+      "hamstring-strain",
     ],
     relatedServiceSlug: "back-neck-pain",
     keywords: [
@@ -399,6 +473,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "non-specific-low-back-pain",
+      "spondylolysis",
+      "si-joint-dysfunction",
+      "sciatica",
+    ],
     relatedServiceSlug: "back-neck-pain",
     keywords: [
       "Facet joint / extension-pattern LBP Woolwich",
@@ -425,6 +505,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
+    ],
+    relatedConditionSlugs: [
+      "non-specific-low-back-pain",
+      "piriformis-syndrome",
+      "coccydynia",
+      "sciatica",
     ],
     relatedServiceSlug: "sports-injury-rehab",
     relatedBlogSlug: "sacroiliac-joint-pain-woolwich",
@@ -454,6 +540,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "si-joint-dysfunction",
+      "non-specific-low-back-pain",
+      "piriformis-syndrome",
+      "facet-syndrome",
+    ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "coccyx-tailbone-pain-osteopath-woolwich",
     keywords: [
@@ -481,6 +573,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
+    ],
+    relatedConditionSlugs: [
+      "greater-trochanteric-pain",
+      "femoroacetabular-impingement",
+      "si-joint-dysfunction",
+      "knee-oa",
     ],
     relatedServiceSlug: "sports-injury-rehab",
     relatedBlogSlug: "hip-knee-pain-osteopath-woolwich",
@@ -510,6 +608,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "hip-oa",
+      "piriformis-syndrome",
+      "itb-syndrome",
+      "femoroacetabular-impingement",
+    ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "hip-bursitis-osteopath-woolwich",
     keywords: [
@@ -538,6 +642,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "hip-oa",
+      "greater-trochanteric-pain",
+      "groin-pain",
+      "si-joint-dysfunction",
+    ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
       "Femoroacetabular impingement / labral pain Woolwich",
@@ -564,6 +674,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
+    ],
+    relatedConditionSlugs: [
+      "sciatica",
+      "si-joint-dysfunction",
+      "greater-trochanteric-pain",
+      "hamstring-strain",
     ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
@@ -592,6 +708,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "piriformis-syndrome",
+      "groin-pain",
+      "si-joint-dysfunction",
+      "patellofemoral-pain",
+    ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
       "Hamstring strain / proximal tendinopathy Woolwich",
@@ -619,6 +741,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Flag red flags and discuss GP or imaging pathways only when clinically needed",
     ],
+    relatedConditionSlugs: [
+      "femoroacetabular-impingement",
+      "hip-oa",
+      "hamstring-strain",
+      "si-joint-dysfunction",
+    ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
       "Adductor-related groin pain Woolwich",
@@ -645,6 +773,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "patellofemoral-pain",
+      "meniscal-injury",
+      "hip-oa",
+      "itb-syndrome",
     ],
     relatedServiceSlug: "sports-injury-rehab",
     relatedBlogSlug: "hip-knee-pain-osteopath-woolwich",
@@ -674,6 +808,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "patellar-tendinopathy",
+      "knee-oa",
+      "itb-syndrome",
+      "hip-oa",
+    ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
       "Patellofemoral pain syndrome Woolwich",
@@ -700,6 +840,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "patellofemoral-pain",
+      "itb-syndrome",
+      "knee-oa",
+      "achilles-tendinopathy",
     ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "patellar-tendinopathy-shockwave-woolwich",
@@ -729,6 +875,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "meniscal-injury",
+      "patellofemoral-pain",
+      "knee-oa",
+      "hamstring-strain",
+    ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
       "ACL injury / post-reconstruction Woolwich",
@@ -755,6 +907,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "knee-oa",
+      "acl-rehab",
+      "patellofemoral-pain",
+      "itb-syndrome",
     ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
@@ -783,6 +941,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "patellofemoral-pain",
+      "greater-trochanteric-pain",
+      "knee-oa",
+      "shin-splints",
+    ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
       "Iliotibial band syndrome Woolwich",
@@ -809,6 +973,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "achilles-tendinopathy",
+      "shin-splints",
+      "plantar-fasciitis",
+      "hallux-rigidus",
     ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "ankle-sprain-rehab-osteopath-woolwich",
@@ -837,6 +1007,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "plantar-fasciitis",
+      "shin-splints",
+      "lateral-ankle-sprain",
+      "patellar-tendinopathy",
     ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "achilles-tendinopathy-shockwave-woolwich",
@@ -867,6 +1043,12 @@ export const conditions: Condition[] = [
       "Footwear and load-management advice",
       "Consider focused shockwave for stubborn cases",
     ],
+    relatedConditionSlugs: [
+      "achilles-tendinopathy",
+      "shin-splints",
+      "morton-neuroma",
+      "hallux-rigidus",
+    ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "plantar-fasciitis-shockwave-woolwich",
     keywords: [
@@ -896,6 +1078,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "achilles-tendinopathy",
+      "plantar-fasciitis",
+      "lateral-ankle-sprain",
+      "itb-syndrome",
+    ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "shin-splints-osteopath-woolwich",
     keywords: [
@@ -924,6 +1112,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "plantar-fasciitis",
+      "morton-neuroma",
+      "achilles-tendinopathy",
+      "knee-oa",
+    ],
     relatedServiceSlug: "focused-shockwave",
     keywords: [
       "Hallux rigidus / 1st MTP OA Woolwich",
@@ -951,6 +1145,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "plantar-fasciitis",
+      "hallux-rigidus",
+      "achilles-tendinopathy",
+      "shin-splints",
+    ],
     relatedServiceSlug: "focused-shockwave",
     keywords: [
       "Morton's neuroma Woolwich",
@@ -977,6 +1177,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "rotator-cuff-tear",
+      "frozen-shoulder",
+      "ac-joint-injury",
+      "neck-pain",
     ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "shoulder-pain-frozen-shoulder-woolwich",
@@ -1006,6 +1212,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "subacromial-pain",
+      "frozen-shoulder",
+      "shoulder-instability",
+      "ac-joint-injury",
+    ],
     relatedServiceSlug: "headaches-joints",
     keywords: [
       "Rotator cuff tear Woolwich",
@@ -1033,6 +1245,12 @@ export const conditions: Condition[] = [
       "Gentle osteopathic techniques within a comfortable range",
       "Home mobility and pacing that respect irritability",
       "Discuss shockwave or referral pathways when appropriate",
+    ],
+    relatedConditionSlugs: [
+      "subacromial-pain",
+      "rotator-cuff-tear",
+      "tennis-elbow",
+      "shoulder-instability",
     ],
     relatedServiceSlug: "headaches-joints",
     keywords: [
@@ -1062,6 +1280,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "rotator-cuff-tear",
+      "subacromial-pain",
+      "ac-joint-injury",
+      "frozen-shoulder",
+    ],
     relatedServiceSlug: "headaches-joints",
     keywords: [
       "Shoulder instability Woolwich",
@@ -1088,6 +1312,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "subacromial-pain",
+      "rotator-cuff-tear",
+      "shoulder-instability",
+      "neck-pain",
     ],
     relatedServiceSlug: "headaches-joints",
     keywords: [
@@ -1116,6 +1346,12 @@ export const conditions: Condition[] = [
       "Reduce irritable tissue load with graded plans",
       "Hands-on treatment for forearm and related joints",
       "Discuss shockwave for persistent tendinopathy",
+    ],
+    relatedConditionSlugs: [
+      "medial-epicondylalgia",
+      "cubital-tunnel",
+      "carpal-tunnel",
+      "dequervains",
     ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "tennis-elbow-shockwave-osteopath-woolwich",
@@ -1146,6 +1382,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "tennis-elbow",
+      "cubital-tunnel",
+      "carpal-tunnel",
+      "dequervains",
+    ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "golfers-elbow-osteopath-woolwich",
     keywords: [
@@ -1174,6 +1416,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "tennis-elbow",
+      "carpal-tunnel",
+      "medial-epicondylalgia",
+      "cervical-radiculopathy",
+    ],
     relatedServiceSlug: "focused-shockwave",
     keywords: [
       "Cubital tunnel syndrome Woolwich",
@@ -1200,6 +1448,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "dequervains",
+      "cubital-tunnel",
+      "cmc-oa",
+      "neck-pain",
     ],
     relatedServiceSlug: "focused-shockwave",
     relatedBlogSlug: "rsi-wrist-forearm-office-osteopath",
@@ -1229,6 +1483,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
     ],
+    relatedConditionSlugs: [
+      "carpal-tunnel",
+      "cmc-oa",
+      "tennis-elbow",
+      "medial-epicondylalgia",
+    ],
     relatedServiceSlug: "focused-shockwave",
     keywords: [
       "De Quervain's tenosynovitis Woolwich",
@@ -1255,6 +1515,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Discuss focused shockwave or referral when conservative care alone is not enough",
+    ],
+    relatedConditionSlugs: [
+      "dequervains",
+      "carpal-tunnel",
+      "tennis-elbow",
+      "medial-epicondylalgia",
     ],
     relatedServiceSlug: "focused-shockwave",
     keywords: [
@@ -1283,6 +1549,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Coordinate pacing, graded activity, and GP/imaging pathways when needed",
     ],
+    relatedConditionSlugs: [
+      "deconditioning",
+      "non-specific-low-back-pain",
+      "neck-pain",
+      "osteoporosis",
+    ],
     relatedServiceSlug: "headaches-joints",
     keywords: [
       "Fibromyalgia / central sensitisation Woolwich",
@@ -1309,6 +1581,12 @@ export const conditions: Condition[] = [
       "Hands-on osteopathic treatment matched to irritability and stage",
       "Clear advice on pacing, load, and what you can do between visits",
       "Coordinate pacing, graded activity, and GP/imaging pathways when needed",
+    ],
+    relatedConditionSlugs: [
+      "fibromyalgia",
+      "osteoporosis",
+      "non-specific-low-back-pain",
+      "post-surgical-general",
     ],
     relatedServiceSlug: "headaches-joints",
     keywords: [
@@ -1337,6 +1615,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Coordinate pacing, graded activity, and GP/imaging pathways when needed",
     ],
+    relatedConditionSlugs: [
+      "deconditioning",
+      "non-specific-low-back-pain",
+      "hip-oa",
+      "post-surgical-general",
+    ],
     relatedServiceSlug: "headaches-joints",
     keywords: [
       "Osteoporosis / low bone density Woolwich",
@@ -1364,6 +1648,12 @@ export const conditions: Condition[] = [
       "Clear advice on pacing, load, and what you can do between visits",
       "Coordinate pacing, graded activity, and GP/imaging pathways when needed",
     ],
+    relatedConditionSlugs: [
+      "deconditioning",
+      "osteoporosis",
+      "knee-oa",
+      "hip-oa",
+    ],
     relatedServiceSlug: "sports-injury-rehab",
     keywords: [
       "Post-surgical rehab Woolwich",
@@ -1387,4 +1677,17 @@ export function getConditionsByRegion(region: ConditionRegion) {
 
 export function getFeaturedConditions() {
   return conditions.filter((condition) => condition.featured);
+}
+
+/** Clinically related conditions for cross-links (explicit map, else same region). */
+export function getRelatedConditions(condition: Condition, limit = 4) {
+  if (condition.relatedConditionSlugs?.length) {
+    return condition.relatedConditionSlugs
+      .map((slug) => getCondition(slug))
+      .filter((item): item is Condition => Boolean(item))
+      .slice(0, limit);
+  }
+  return getConditionsByRegion(condition.region)
+    .filter((item) => item.slug !== condition.slug)
+    .slice(0, limit);
 }

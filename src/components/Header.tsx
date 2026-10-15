@@ -145,13 +145,20 @@ export function Header() {
             About
           </Link>
 
-          <div ref={servicesWrapRef} className="relative">
+          <div
+            ref={servicesWrapRef}
+            className="relative"
+            onMouseEnter={() => setServicesOpen(true)}
+            onMouseLeave={() => setServicesOpen(false)}
+          >
             <button
               type="button"
               className="inline-flex items-center gap-1 transition hover:text-teal"
               aria-expanded={servicesOpen}
+              aria-haspopup="menu"
               aria-controls={servicesMenuId}
               onClick={() => setServicesOpen((value) => !value)}
+              onFocus={() => setServicesOpen(true)}
             >
               Services
               <svg
@@ -165,14 +172,18 @@ export function Header() {
                 <path d="M5 7.5 10 12.5 15 7.5" />
               </svg>
             </button>
-            {servicesOpen ? (
-              <div
-                id={servicesMenuId}
-                className="absolute top-full left-1/2 z-50 mt-3 w-[22rem] -translate-x-1/2 rounded-xl border border-slate-200 bg-white p-3 shadow-lg"
-              >
+            <div
+              id={servicesMenuId}
+              role="menu"
+              className={`absolute top-full left-0 z-[60] pt-2 ${
+                servicesOpen ? "visible opacity-100" : "invisible opacity-0"
+              }`}
+            >
+              <div className="w-[22rem] rounded-xl border border-slate-200 bg-white p-3 shadow-lg">
                 <Link
                   href="/services"
-                  className="block rounded-lg px-3 py-2 text-sm font-semibold text-navy hover:bg-cream-mist hover:text-teal"
+                  role="menuitem"
+                  className="block rounded-lg px-3 py-2 text-sm font-semibold text-navy hover:bg-slate-50 hover:text-teal"
                   onClick={() => setServicesOpen(false)}
                 >
                   All services
@@ -182,7 +193,8 @@ export function Header() {
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="block rounded-lg px-3 py-2 text-sm text-navy/80 hover:bg-cream-mist hover:text-teal"
+                        role="menuitem"
+                        className="block rounded-lg px-3 py-2 text-sm text-navy/80 hover:bg-slate-50 hover:text-teal"
                         onClick={() => setServicesOpen(false)}
                       >
                         {item.label}
@@ -191,7 +203,7 @@ export function Header() {
                   ))}
                 </ul>
               </div>
-            ) : null}
+            </div>
           </div>
 
           {links

@@ -24,7 +24,6 @@ const serviceNav = services.map((service) => ({
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const menuId = useId();
   const panelId = `${menuId}-panel`;
   const servicesMenuId = `${menuId}-services`;
@@ -235,36 +234,27 @@ export function Header() {
               About
             </Link>
 
-            <button
-              type="button"
-              className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-base text-navy hover:bg-cream-mist"
-              aria-expanded={mobileServicesOpen}
-              onClick={() => setMobileServicesOpen((value) => !value)}
-            >
+            <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
               Services
-              <span aria-hidden>{mobileServicesOpen ? "−" : "+"}</span>
-            </button>
-            {mobileServicesOpen ? (
-              <div className="mb-2 ml-2 border-l border-slate-200 pl-3">
-                <Link
-                  href="/services"
-                  className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
-                  onClick={() => setOpen(false)}
-                >
-                  All services
-                </Link>
-                {serviceNav.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="block rounded-xl px-3 py-2.5 text-sm text-navy/80 hover:bg-cream-mist"
-                    onClick={() => setOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            ) : null}
+            </p>
+            <Link
+              href="/services"
+              className="rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
+              onClick={() => setOpen(false)}
+            >
+              All services
+            </Link>
+            {serviceNav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-xl px-3 py-2.5 text-sm text-navy/80 hover:bg-cream-mist"
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+            <div className="my-2 border-t border-slate-100" />
 
             {links
               .filter((link) => link.href !== "/about")

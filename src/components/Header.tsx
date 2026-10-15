@@ -4,11 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import { ButtonLink } from "@/components/Button";
-import { site } from "@/lib/site";
+import { getServiceHref, services, site } from "@/lib/site";
 
 const links = [
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
   { href: "/blog", label: "Blog" },
   { href: "/fees", label: "Fees" },
   { href: "/reviews", label: "Reviews" },
@@ -17,11 +16,17 @@ const links = [
   { href: "/vi", label: "Tiếng Việt" },
 ];
 
+const serviceNav = services.map((service) => ({
+  href: getServiceHref(service.slug),
+  label: service.title,
+}));
+
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const panelId = `${menuId}-panel`;
+  const servicesMenuId = `${menuId}-services`;
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -112,15 +117,70 @@ export function Header() {
           aria-label="Primary"
           className="hidden items-center gap-5 text-[0.92rem] text-navy/75 lg:flex xl:gap-7"
         >
-          {links.map((link) => (
+          <Link href="/about" className="transition hover:text-teal">
+            About
+          </Link>
+
+          <div className="group relative">
             <Link
-              key={link.href}
-              href={link.href}
-              className="transition hover:text-teal"
+              href="/services"
+              className="inline-flex items-center gap-1 transition hover:text-teal"
+              aria-haspopup="menu"
+              aria-controls={servicesMenuId}
             >
-              {link.label}
+              Services
+              <svg
+                viewBox="0 0 20 20"
+                className="h-3.5 w-3.5 transition group-hover:rotate-180 group-focus-within:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                aria-hidden
+              >
+                <path d="M5 7.5 10 12.5 15 7.5" />
+              </svg>
             </Link>
-          ))}
+            <div
+              id={servicesMenuId}
+              role="menu"
+              className="invisible absolute top-full left-0 z-[60] pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+            >
+              <div className="w-[22rem] rounded-xl border border-slate-200 bg-white p-3 shadow-lg">
+                <Link
+                  href="/services"
+                  role="menuitem"
+                  className="block rounded-lg px-3 py-2 text-sm font-semibold text-navy hover:bg-slate-50 hover:text-teal"
+                >
+                  All services
+                </Link>
+                <ul className="mt-1 max-h-[70vh] overflow-y-auto">
+                  {serviceNav.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        role="menuitem"
+                        className="block rounded-lg px-3 py-2 text-sm text-navy/80 hover:bg-slate-50 hover:text-teal"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {links
+            .filter((link) => link.href !== "/about")
+            .map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition hover:text-teal"
+              >
+                {link.label}
+              </Link>
+            ))}
         </nav>
 
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
@@ -128,7 +188,7 @@ export function Header() {
             href="/book"
             className="min-h-11 px-3 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
           >
-            Book online
+            Book Now
           </ButtonLink>
           <button
             ref={menuButtonRef}
@@ -164,16 +224,48 @@ export function Header() {
           className="max-h-[min(70vh,28rem)] overflow-y-auto border-t border-line bg-white px-4 py-4 sm:px-5 sm:py-5 lg:hidden"
         >
           <nav aria-label="Mobile" className="flex flex-col gap-1">
-            {links.map((link) => (
+            <Link
+              href="/about"
+              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+              onClick={() => setOpen(false)}
+            >
+              About
+            </Link>
+
+            <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+              Services
+            </p>
+            <Link
+              href="/services"
+              className="rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
+              onClick={() => setOpen(false)}
+            >
+              All services
+            </Link>
+            {serviceNav.map((item) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
                 onClick={() => setOpen(false)}
               >
-                {link.label}
+                {item.label}
               </Link>
             ))}
+            <div className="my-2 border-t border-slate-100" />
+
+            {links
+              .filter((link) => link.href !== "/about")
+              .map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
             <Link
               href="/opening"
               className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"

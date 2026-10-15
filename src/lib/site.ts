@@ -451,32 +451,9 @@ export function getService(slug: string) {
   return services.find((service) => service.slug === slug);
 }
 
-/** Prefer dedicated conversion hubs when they exist. */
+/** Canonical individual service SEO pages. */
 export function getServiceHref(slug: string) {
-  switch (slug) {
-    case "back-neck-pain":
-      return "/back-neck";
-    case "headaches-joints":
-      return "/headaches";
-    case "focused-shockwave":
-      return "/shockwave";
-    case "mens-health-ed":
-      return "/mens-health";
-    case "pregnancy-support":
-      return "/pregnancy";
-    case "sports-injury-rehab":
-      return "/sports";
-    case "paediatric-care":
-      return "/paediatric";
-    case "cranial-therapy":
-      return "/cranial";
-    case "acupuncture-electro":
-      return "/acupuncture";
-    case "deep-tissue-massage":
-      return "/massage";
-    default:
-      return `/services/${slug}`;
-  }
+  return `/services/${slug}`;
 }
 
 export const pricing = [

@@ -244,8 +244,8 @@ export function Header() {
             </Link>
             {serviceNav.map((item) => (
               <Link
-                key={link.href}
-                href={link.href}
+                key={item.href}
+                href={item.href}
                 className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
                 onClick={() => setOpen(false)}
               >

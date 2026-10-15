@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
@@ -18,6 +19,19 @@ import {
   testimonials,
   visitSteps,
 } from "@/lib/site";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-GB": "/",
+      "vi-VN": "/vi",
+    },
+    types: {
+      "application/rss+xml": "/feed.xml",
+    },
+  },
+};
 
 export default function HomePage() {
   const latestPosts = getAllPosts().slice(0, 3);

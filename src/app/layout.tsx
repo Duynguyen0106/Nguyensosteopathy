@@ -70,11 +70,9 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   alternates: {
-    canonical: "/",
-    languages: {
-      "en-GB": "/",
-      "vi-VN": "/vi",
-    },
+    // Canonical is set per-page (homepage sets "/"). Do not default all
+    // routes to the homepage — that can confuse crawlers when a page
+    // forgets its own alternates.canonical.
     types: {
       "application/rss+xml": "/feed.xml",
     },

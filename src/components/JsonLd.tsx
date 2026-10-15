@@ -38,6 +38,7 @@ export function buildClinicJsonLd() {
     email: site.email,
     sameAs: [
       site.facebookUrl,
+      site.linkedinUrl,
       site.googleReviewsUrl,
       googleBusinessProfileUrl,
     ],

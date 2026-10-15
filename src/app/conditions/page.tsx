@@ -6,6 +6,7 @@ import {
   getConditionsByRegion,
   getFeaturedConditions,
 } from "@/lib/conditions";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Conditions We Treat | Osteopath Woolwich",
@@ -32,11 +33,82 @@ export default function ConditionsIndexPage() {
         <h1 className="mt-3 font-display text-4xl text-navy md:text-5xl">
           Conditions we help with
         </h1>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
-          A full musculoskeletal conditions index for Woolwich — grouped by
-          body region — then book online when you are ready for assessment and
-          treatment.
+
+        <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-slate-600 md:text-lg">
+          <p>
+            Looking for osteopathic treatment in Woolwich for pain that will not
+            settle? This index gathers the musculoskeletal conditions in SE18
+            that we assess and treat most often at {site.name}, inside{" "}
+            {site.address.venue} on {site.address.line1}. Care is provided by{" "}
+            {site.practitioner.name}, a GOsC-registered osteopath (Reg. No.{" "}
+            {site.practitioner.regNo}), with a focus on clear diagnosis of what
+            is driving your symptoms — and a practical plan you can keep on a
+            real week of work, commuting, or sport.
+          </p>
+          <p>
+            People travel from Woolwich, Plumstead, Abbey Wood, Thamesmead,
+            Charlton, and Greenwich with back pain, neck stiffness, sciatica,
+            shoulder restriction, heel pain, tennis elbow, and other mechanical
+            problems. Some arrive after a flare from desk work or lifting;
+            others have lived with on–off symptoms for months. You do not need a
+            GP referral to book. Our role is to examine joints, soft tissue, and
+            movement patterns, explain findings in plain English, and match
+            hands-on care to how irritable your presentation is today.
+          </p>
+          <p>
+            Use the guides below to understand common signs, what osteopathy may
+            involve, and when medical review should come first. Each condition
+            page links to related problems, FAQs, and booking. If your exact
+            label is not listed, start with the closest body region — many
+            presentations overlap — or book an assessment so we can place your
+            symptoms in clinical context rather than guessing from a search
+            result alone. Whether you are dealing with a fresh flare or a
+            long-standing ache, the aim is the same: reduce pain, restore
+            confident movement, and give you a clear next step.
+          </p>
+        </div>
+
+        <p className="mt-6 max-w-3xl text-base leading-relaxed text-slate-600 md:text-lg">
+          Conditions are grouped by body region — cervical, thoracic, lumbar,
+          pelvis and hip, knee, ankle and foot, shoulder, elbow and wrist, plus
+          whole-body presentations — so you can scan the area that matches where
+          you feel pain or restriction, then open the guide that fits best.
         </p>
+
+        <div className="mt-10 max-w-3xl">
+          <h2 className="font-display text-2xl text-navy">How we treat</h2>
+          <ul className="mt-4 space-y-3 text-base leading-relaxed text-slate-700">
+            <li className="flex items-start gap-2">
+              <span className="mt-1 text-teal" aria-hidden>
+                ✓
+              </span>
+              Thorough history and hands-on assessment of the joints, soft
+              tissue, and movement patterns involved — with red-flag screening
+              when needed.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 text-teal" aria-hidden>
+                ✓
+              </span>
+              Gentle osteopathic techniques matched to irritability and stage,
+              never forced into sharp pain.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 text-teal" aria-hidden>
+                ✓
+              </span>
+              Clear advice on pacing, workstation or shift tweaks, and what to
+              do between visits so progress sticks.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 text-teal" aria-hidden>
+                ✓
+              </span>
+              Honest next steps — including when GP review, imaging, or urgent
+              care is more appropriate than hands-on treatment alone.
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="mx-auto max-w-6xl px-5 pb-10 md:px-8">
@@ -99,11 +171,29 @@ export default function ConditionsIndexPage() {
           );
         })}
 
-        <div className="flex flex-wrap items-center gap-3 pt-4">
-          <ButtonLink href="/book">Book an appointment</ButtonLink>
-          <ButtonLink href="/services" variant="secondary">
-            View all services
-          </ButtonLink>
+        <div className="rounded-xl border border-teal/25 bg-teal/5 px-5 py-8 md:px-8">
+          <h2 className="font-display text-2xl text-navy md:text-3xl">
+            Ready for assessment?
+          </h2>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+            Book online with {site.practitioner.name} at {site.name} — no GP
+            referral needed. Prefer to talk first? Call {site.phone}.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <ButtonLink
+              href="/book"
+              variant="navy"
+              className="min-h-12 px-6 py-3 text-base font-bold tracking-wide"
+            >
+              Book Now
+            </ButtonLink>
+            <ButtonLink href={site.phoneHref} variant="secondary">
+              Call {site.phone}
+            </ButtonLink>
+            <ButtonLink href="/services" variant="secondary">
+              View all services
+            </ButtonLink>
+          </div>
         </div>
       </div>
     </div>

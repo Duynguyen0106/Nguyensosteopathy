@@ -110,7 +110,16 @@ export default function BookPage() {
         <h2 className="sr-only">Online booking widget</h2>
         <BookingEmbed />
         <p className="mt-4 px-5 text-center text-sm font-medium text-slate-600 md:px-0">
-          Online booking widget powered by Treow Clinic · {site.cancellation}
+          Online booking powered by{" "}
+          <a
+            href={site.products.treowClinic.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            {site.products.treowClinic.name}
+          </a>{" "}
+          · {site.cancellation}
         </p>
         <div className="mt-4 flex justify-center px-5 sm:hidden">
           <ButtonLink

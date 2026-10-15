@@ -46,6 +46,19 @@ const legalLinks = [
   { href: "/feed.xml", label: "Blog RSS" },
 ] as const;
 
+const productLinks = [
+  {
+    href: site.products.mskTutor.url,
+    label: site.products.mskTutor.name,
+    external: true,
+  },
+  {
+    href: site.products.treowClinic.url,
+    label: site.products.treowClinic.name,
+    external: true,
+  },
+] as const;
+
 export function Footer() {
   return (
     <footer className="bg-navy text-white">
@@ -193,6 +206,23 @@ export function Footer() {
                 Google reviews
               </a>
             </li>
+          </ul>
+          <p className="mt-6 text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
+            Built by Austin
+          </p>
+          <ul className="mt-3 space-y-2 text-sm text-white/85">
+            {productLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
           <p className="mt-4 text-xs leading-relaxed text-white/60">
             {site.cancellation}

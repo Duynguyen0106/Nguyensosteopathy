@@ -66,6 +66,29 @@ export const site = {
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
     "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",
+  /**
+   * Products Austin built — clinician/clinic tools (not patient booking embeds).
+   * MSK Tutor is for therapists/students; Treow powers this site’s /book widget.
+   */
+  products: {
+    mskTutor: {
+      name: "MSK Tutor",
+      shortLabel: "MSK Tutor",
+      url: "https://osteotutor-c0c151c1.vercel.app",
+      tagline: "Clinical reasoning tutor for manual therapists",
+      description:
+        "An AI virtual-patient app for physio, osteopathy, chiropractic, and MSK clinicians — SOCRATES intake, live red-flag spotting, ranked differentials, and exportable SOAP notes.",
+    },
+    treowClinic: {
+      name: "Treow Clinic",
+      shortLabel: "Treow",
+      url: "https://treow-clinic.vercel.app",
+      loginUrl: "https://treow-clinic.vercel.app/login",
+      tagline: "Clinic booking and practice management",
+      description:
+        "The booking and clinic app that powers online appointments for Nguyen's Osteopathic Clinic — staff login, services, hours, and the public /book embed.",
+    },
+  },
 } as const;
 
 /** Schema.org openingHoursSpecification for bookable osteopathy days. */

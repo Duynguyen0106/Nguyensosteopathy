@@ -79,8 +79,32 @@ export default function AboutPage() {
     email: site.email,
     url: `${site.websiteUrl}/about`,
     image: `${site.websiteUrl}/images/austin-nguyen.webp`,
+    sameAs: [
+      site.linkedinUrl,
+      site.facebookUrl,
+      site.products.mskTutor.url,
+      site.products.treowClinic.url,
+    ],
+    owns: [
+      {
+        "@type": "SoftwareApplication",
+        name: site.products.mskTutor.name,
+        url: site.products.mskTutor.url,
+        description: site.products.mskTutor.description,
+        applicationCategory: "EducationalApplication",
+        operatingSystem: "Web",
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: site.products.treowClinic.name,
+        url: site.products.treowClinic.url,
+        description: site.products.treowClinic.description,
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+      },
+    ],
     description:
-      "GOsC-registered osteopath, Master of Osteopathy graduate of the British College of Osteopathic Medicine, and the only Vietnamese osteopath practising in the UK.",
+      "GOsC-registered osteopath, Master of Osteopathy graduate of the British College of Osteopathic Medicine, and the only Vietnamese osteopath practising in the UK. Builder of MSK Tutor and Treow Clinic.",
   };
 
   return (
@@ -362,6 +386,82 @@ export default function AboutPage() {
             Recover. Realign. Restore your vitality — in a clinic that knows
             your name, your work, and your language of care.
           </p>
+        </div>
+      </section>
+
+      {/* Tools Austin built */}
+      <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Tools Austin built
+            </p>
+            <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
+              Beyond the treatment room — clinical software for therapists and
+              clinics
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-slate-700">
+              Alongside hands-on care in Woolwich, Austin builds digital tools
+              that help MSK clinicians reason safely and help clinics take
+              bookings without friction. Patients book here through Treow;
+              therapists can practise clinical reasoning with MSK Tutor.
+            </p>
+          </div>
+
+          <ul className="mt-12 grid gap-10 md:grid-cols-2">
+            <li className="border-t border-navy/15 pt-6">
+              <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                For clinicians &amp; students
+              </p>
+              <h3 className="mt-2 font-display text-3xl text-navy">
+                {site.products.mskTutor.name}
+              </h3>
+              <p className="mt-2 text-base font-medium text-slate-600">
+                {site.products.mskTutor.tagline}
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-slate-600">
+                {site.products.mskTutor.description}
+              </p>
+              <a
+                href={site.products.mskTutor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+              >
+                Open {site.products.mskTutor.name} →
+              </a>
+            </li>
+            <li className="border-t border-navy/15 pt-6">
+              <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                Powers this clinic&apos;s booking
+              </p>
+              <h3 className="mt-2 font-display text-3xl text-navy">
+                {site.products.treowClinic.name}
+              </h3>
+              <p className="mt-2 text-base font-medium text-slate-600">
+                {site.products.treowClinic.tagline}
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-slate-600">
+                {site.products.treowClinic.description}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-4">
+                <Link
+                  href="/book"
+                  className="inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+                >
+                  Book on this site →
+                </Link>
+                <a
+                  href={site.products.treowClinic.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+                >
+                  About Treow →
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 

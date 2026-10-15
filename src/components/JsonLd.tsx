@@ -99,11 +99,35 @@ export function buildPractitionerJsonLd() {
     name: site.practitioner.name,
     jobTitle: site.practitioner.title,
     description:
-      "GOsC-registered osteopath and Master of Osteopathy graduate of the British College of Osteopathic Medicine, practising at Nguyen's Osteopathic Clinic in Woolwich.",
+      "GOsC-registered osteopath and Master of Osteopathy graduate of the British College of Osteopathic Medicine, practising at Nguyen's Osteopathic Clinic in Woolwich. Builder of MSK Tutor and Treow Clinic.",
     url: `${site.websiteUrl}/about`,
     image: `${site.websiteUrl}/images/austin-nguyen.webp`,
     telephone: site.phoneE164,
     email: site.email,
+    sameAs: [
+      site.linkedinUrl,
+      site.facebookUrl,
+      site.products.mskTutor.url,
+      site.products.treowClinic.url,
+    ],
+    owns: [
+      {
+        "@type": "SoftwareApplication",
+        name: site.products.mskTutor.name,
+        url: site.products.mskTutor.url,
+        description: site.products.mskTutor.description,
+        applicationCategory: "EducationalApplication",
+        operatingSystem: "Web",
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: site.products.treowClinic.name,
+        url: site.products.treowClinic.url,
+        description: site.products.treowClinic.description,
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+      },
+    ],
     identifier: {
       "@type": "PropertyValue",
       name: "GOsC Registration Number",

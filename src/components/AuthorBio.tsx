@@ -41,7 +41,25 @@ export function AuthorBio({ className = "" }: AuthorBioProps) {
           )
         </p>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">
-          {site.practitioner.bio}
+          {site.practitioner.bio} He also built{" "}
+          <a
+            href={site.products.mskTutor.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            {site.products.mskTutor.name}
+          </a>{" "}
+          for clinicians and{" "}
+          <a
+            href={site.products.treowClinic.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            {site.products.treowClinic.name}
+          </a>
+          , which powers booking on this site.
         </p>
         <div className="mt-4 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
           <ButtonLink href="/book">Book an appointment</ButtonLink>

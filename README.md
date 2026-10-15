@@ -39,9 +39,36 @@ Regenerate the leaflet PDF:
 npm run leaflet
 ```
 
+## Products Austin built (profile credit)
+
+Product URLs live in `site.products` inside `src/lib/site.ts` and are linked from About, AuthorBio, Footer, and practitioner JSON-LD.
+
+| Product | Audience | Live URL |
+|---------|----------|----------|
+| **MSK Tutor** | Clinicians / students (not patients) | https://osteotutor-c0c151c1.vercel.app |
+| **Treow Clinic** | Clinic booking / staff app | https://treow-clinic.vercel.app |
+
+### LinkedIn checklist (manual)
+
+On [Austin’s LinkedIn](https://www.linkedin.com/in/austin-nguyen-do):
+
+1. **Featured** — pin clinic site (`https://www.nguyensosteopathy.com`), MSK Tutor, and Treow Clinic.
+2. **About / Experience** — mention GOsC osteopath at Nguyen’s Osteopathic Clinic (Woolwich), plus builder of MSK Tutor and Treow Clinic.
+3. **Website links** — add `nguyensosteopathy.com`, Osteotutor URL, and Treow URL (or a Linktree if you prefer one link).
+4. **Projects** — create LinkedIn Projects for MSK Tutor and Treow with short blurbs from `site.products.*.description`.
+
+### Treow staff profile checklist (manual)
+
+At [Treow login](https://treow-clinic.vercel.app/login), for clinic slug `nguyens-osteopathy`:
+
+1. Confirm practitioner name, photo, GOsC Reg. No. **12332**, and bio match the marketing site.
+2. Align services, prices, and bookable hours with `src/lib/site.ts`.
+3. Add a short “Also built” line or link to MSK Tutor in the practitioner bio if Treow supports external links.
+4. Verify the public embed still loads at `/book` on the clinic site.
+
 ## Content
 
-Clinic copy, pricing, services, hours, and contact details live in `src/lib/site.ts`. Brand assets are in `public/images/`.
+Clinic copy, pricing, services, hours, contact details, and product URLs live in `src/lib/site.ts`. Brand assets are in `public/images/`.
 
 ## Scripts
 

@@ -105,7 +105,8 @@ export const conditionRegions: ConditionRegion[] = [
 ];
 
 /**
- * Conditions index sourced from the MSK Tutor (Osteotutor) catalogue,
+ * Conditions index sourced from the MSK Tutor (Osteotutor) catalogue
+ * (https://osteotutor-c0c151c1.vercel.app — see site.products.mskTutor),
  * rewritten for patient-facing Woolwich clinic pages. Featured landers
  * keep richer SEO copy; remaining entries share a consistent template.
  */

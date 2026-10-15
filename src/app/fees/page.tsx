@@ -72,7 +72,7 @@ export default function FeesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(offersLd) }}
       />
 
-      <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
+      <section className="hero-wash border-b border-slate-200 px-4 pt-12 pb-14 sm:px-5 sm:pt-14 sm:pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="opening-hero-copy text-xs font-semibold tracking-[0.2em] text-teal uppercase">
             Nguyen&apos;s Osteopathic Clinic
@@ -84,52 +84,60 @@ export default function FeesPage() {
             Clear prices for osteopathy and clinic services in Woolwich SE18 —
             so you can book with confidence.
           </p>
-          <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink href={site.phoneHref} variant="secondary">
+          <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <ButtonLink href="/book" className="w-full sm:w-auto">
+              Book online
+            </ButtonLink>
+            <ButtonLink
+              href={site.phoneHref}
+              variant="secondary"
+              className="w-full sm:w-auto"
+            >
               Call {site.phone}
             </ButtonLink>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-teal/20 bg-teal px-5 py-4 text-white md:px-8">
+      <section className="border-b border-teal/20 bg-teal px-4 py-4 text-white sm:px-5 md:px-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-medium">
+          <p className="min-w-0 font-medium leading-snug">
             <span className="font-semibold">Opening {offer.dateLabel}</span>
             {" — "}
             {offer.headline} for patients seen that day.
           </p>
           <Link
             href={offer.path}
-            className="shrink-0 font-semibold underline-offset-2 hover:underline"
+            className="inline-flex min-h-11 shrink-0 items-center font-semibold underline-offset-2 hover:underline"
           >
             View opening offer →
           </Link>
         </div>
       </section>
 
-      <section className="px-5 py-16 md:px-8 md:py-20">
+      <section className="px-4 py-14 sm:px-5 sm:py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <div className="hidden grid-cols-[1.6fr_0.8fr_0.5fr] bg-navy px-6 py-4 text-sm font-medium tracking-wide text-white md:grid">
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <div className="hidden min-w-[36rem] grid-cols-[1.6fr_0.8fr_0.5fr] bg-navy px-6 py-4 text-sm font-medium tracking-wide text-white md:grid">
               <span>Service &amp; consultation</span>
               <span>Duration</span>
               <span className="text-right">Price</span>
             </div>
-            <ul>
+            <ul className="md:min-w-[36rem]">
               {pricing.map((row, index) => (
                 <li
                   key={row.service}
-                  className={`grid gap-1 px-5 py-4 md:grid-cols-[1.6fr_0.8fr_0.5fr] md:items-center md:gap-4 md:px-6 ${
+                  className={`grid grid-cols-[1fr_auto] items-baseline gap-x-3 gap-y-1 px-4 py-4 sm:px-5 md:grid-cols-[1.6fr_0.8fr_0.5fr] md:items-center md:gap-4 md:px-6 ${
                     index % 2 === 0 ? "bg-slate-50" : "bg-white"
                   }`}
                 >
-                  <p className="font-medium text-navy">{row.service}</p>
+                  <p className="col-span-2 min-w-0 font-medium text-navy md:col-span-1">
+                    {row.service}
+                  </p>
                   <p className="text-sm font-medium text-slate-600">
                     {row.duration}
                   </p>
-                  <p className="text-lg font-bold text-teal-dark md:text-right">
+                  <p className="text-right text-lg font-bold text-teal-dark">
                     {row.price}
                   </p>
                 </li>

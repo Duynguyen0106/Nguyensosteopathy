@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AuthorBio } from "@/components/AuthorBio";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import {
@@ -140,6 +141,9 @@ export default async function ConditionPage({ params }: Props) {
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>
+          </div>
+          <div className="mt-10 max-w-3xl">
+            <AuthorBio />
           </div>
         </div>
       </section>

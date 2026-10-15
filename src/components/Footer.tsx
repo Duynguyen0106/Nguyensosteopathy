@@ -81,6 +81,17 @@ export function Footer() {
                 <path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.3-1.5 1.6-1.5H16.7V4.6c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.4H8v3.1h2.5V22h3Z" />
               </svg>
             </a>
+            <a
+              href={site.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 text-white transition hover:border-teal-mist hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-mist"
+              aria-label="Austin Duy Nguyen on LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden>
+                <path d="M6.94 8.5H4.06V20h2.88V8.5ZM5.5 7.17a1.67 1.67 0 1 0 0-3.34 1.67 1.67 0 0 0 0 3.34ZM20 20h-2.88v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95V20H10.2V8.5h2.76v1.57h.04c.38-.73 1.32-1.5 2.72-1.5 2.91 0 3.45 1.91 3.45 4.4V20Z" />
+              </svg>
+            </a>
           </div>
           <ul className="mt-6 space-y-2 text-sm text-white/85">
             <li>

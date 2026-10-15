@@ -132,11 +132,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en-GB"
       className={`${display.variable} ${body.variable} h-full antialiased`}
     >
+      <head>
+        {/* Sitewide MedicalClinic / LocalBusiness (+ practitioner & website) JSON-LD */}
+        <JsonLd />
+      </head>
       <body className="min-h-full flex flex-col bg-background text-ink">
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
-        <JsonLd />
         <Header />
         <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
           {children}

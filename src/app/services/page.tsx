@@ -34,24 +34,15 @@ export default function ServicesPage() {
         </p>
         <p className="mt-4 text-sm text-slate-600">
           New here?{" "}
-          <Link
-            href="/osteopathy"
-            className="font-semibold text-teal hover:text-teal-dark"
-          >
+          <Link href="/osteopathy" className="prose-link">
             What is osteopathy?
           </Link>
           {" · "}
-          <Link
-            href="/desk-pain"
-            className="font-semibold text-teal hover:text-teal-dark"
-          >
+          <Link href="/desk-pain" className="prose-link">
             Desk &amp; office pain
           </Link>
           {" · "}
-          <Link
-            href="/new-patients"
-            className="font-semibold text-teal hover:text-teal-dark"
-          >
+          <Link href="/new-patients" className="prose-link">
             New patient guide
           </Link>
         </p>
@@ -76,9 +67,9 @@ export default function ServicesPage() {
                   ) : null}
                 </span>
                 <span className="mt-5 flex items-start justify-between gap-3">
-                  <span className="text-xl font-semibold text-navy">
+                  <h2 className="text-xl font-semibold text-navy">
                     {service.title}
-                  </span>
+                  </h2>
                   <span className="service-arrow text-slate-400" aria-hidden>
                     →
                   </span>
@@ -104,10 +95,7 @@ export default function ServicesPage() {
             <p className="font-display text-2xl text-navy">Ready to start?</p>
             <p className="mt-1 text-sm font-medium text-slate-600">
               Book online, or call{" "}
-              <a
-                href={site.phoneHref}
-                className="font-semibold text-teal hover:text-teal-dark"
-              >
+              <a href={site.phoneHref} className="prose-link">
                 {site.phone}
               </a>{" "}
               for help choosing the right appointment.

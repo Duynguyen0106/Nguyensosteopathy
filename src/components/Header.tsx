@@ -116,7 +116,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="transition hover:text-teal"
+              className="inline-flex min-h-11 items-center px-1 transition hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
             >
               {link.label}
             </Link>
@@ -126,14 +126,14 @@ export function Header() {
         <div className="flex shrink-0 items-center gap-2">
           <ButtonLink
             href="/book"
-            className="px-3.5 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
+            className="min-h-11 px-3.5 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
           >
             Book online
           </ButtonLink>
           <button
             ref={menuButtonRef}
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal lg:hidden"
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -168,7 +168,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
@@ -176,14 +176,14 @@ export function Header() {
             ))}
             <Link
               href="/opening"
-              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+              className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
               onClick={() => setOpen(false)}
             >
               Opening offer
             </Link>
             <a
               href={site.phoneHref}
-              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+              className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
               onClick={() => setOpen(false)}
             >
               Call {site.phone}

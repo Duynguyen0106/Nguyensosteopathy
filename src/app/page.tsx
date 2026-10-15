@@ -5,6 +5,7 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { ServiceIcon } from "@/components/ServiceIcon";
+import { StarRating } from "@/components/StarRating";
 import { getAllPosts } from "@/lib/blog";
 import { getFeaturedConditions } from "@/lib/conditions";
 import {
@@ -118,18 +119,7 @@ export default function HomePage() {
                 key={review.name}
                 className="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:bg-white hover:shadow-md"
               >
-                <p className="flex gap-0.5 text-teal" aria-label={`${review.rating} out of 5 stars`}>
-                  {Array.from({ length: review.rating }).map((_, star) => (
-                    <svg
-                      key={star}
-                      viewBox="0 0 20 20"
-                      className="h-4 w-4 fill-current"
-                      aria-hidden
-                    >
-                      <path d="M10 1.5 12.6 7l6 .5-4.5 4 1.4 5.8L10 14.8 4.5 17.3l1.4-5.8L1.4 7.5l6-.5L10 1.5Z" />
-                    </svg>
-                  ))}
-                </p>
+                <StarRating rating={review.rating} />
                 <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-slate-700 md:text-[0.95rem]">
                   “{review.quote}”
                 </blockquote>

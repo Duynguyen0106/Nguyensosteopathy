@@ -70,7 +70,7 @@ export function Footer() {
               href={site.facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 text-white transition hover:border-teal-mist hover:bg-white/10"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 text-white transition hover:border-teal-mist hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-mist"
               aria-label="Nguyen's Osteopathic Clinic on Facebook"
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden>
@@ -193,19 +193,31 @@ export function Footer() {
           </p>
           <p>
             Located inside {site.address.venue}, Woolwich.{" "}
-            <Link href="/privacy" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+            <Link
+              href="/privacy"
+              className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
+            >
               Privacy
             </Link>
             {" · "}
-            <Link href="/accessibility" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+            <Link
+              href="/accessibility"
+              className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
+            >
               Accessibility
             </Link>
             {" · "}
-            <Link href="/complaints" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+            <Link
+              href="/complaints"
+              className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
+            >
               Complaints
             </Link>
             {" · "}
-            <Link href="/site-map" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+            <Link
+              href="/site-map"
+              className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
+            >
               Site map
             </Link>
           </p>

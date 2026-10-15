@@ -110,6 +110,25 @@ export default async function ConditionPage({ params }: Props) {
             {" · "}
             Woolwich SE18
           </p>
+          <p className="mt-4 text-sm leading-relaxed text-slate-600">
+            Reviewed by{" "}
+            <Link
+              href="/about"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              {site.practitioner.name}
+            </Link>
+            , {site.practitioner.title} (Reg. No.{" "}
+            <a
+              href={site.practitioner.goscRegisterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              {site.practitioner.regNo}
+            </a>
+            )
+          </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             {condition.title}
           </h1>
@@ -163,6 +182,44 @@ export default async function ConditionPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {related.length > 0 ? (
+        <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="font-display text-3xl text-navy">
+              Related conditions
+            </h2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+              Presentations that often overlap with{" "}
+              {condition.shortTitle.toLowerCase()} — useful if your symptoms sit
+              across more than one pattern.
+            </p>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {related.map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    href={`/conditions/${item.slug}`}
+                    className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal/40 hover:bg-teal/5"
+                  >
+                    <span className="text-xs font-semibold tracking-wide text-teal uppercase">
+                      {item.region}
+                    </span>
+                    <span className="mt-2 font-semibold text-navy">
+                      {item.shortTitle}
+                    </span>
+                    <span className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">
+                      {item.summary}
+                    </span>
+                    <span className="mt-4 text-sm font-semibold text-teal">
+                      Read guide →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       {expanded ? (
         <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
@@ -226,10 +283,6 @@ export default async function ConditionPage({ params }: Props) {
             {condition.summary} Care is with {site.practitioner.name},{" "}
             {site.practitioner.title}, inside {site.address.venue}.
           </p>
-          <p className="mt-4 text-sm text-slate-500">
-            Reviewed by {site.practitioner.name}, GOsC-Registered Osteopath
-            (Reg. No. {site.practitioner.regNo})
-          </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book assessment</ButtonLink>
             {service ? (
@@ -248,35 +301,10 @@ export default async function ConditionPage({ params }: Props) {
             <ButtonLink href="/fees" variant="secondary">
               Fees
             </ButtonLink>
+            <ButtonLink href="/conditions" variant="secondary">
+              All conditions
+            </ButtonLink>
           </div>
-
-          {related.length > 0 ? (
-            <div className="mt-14">
-              <h2 className="font-display text-2xl text-navy">
-                Related conditions
-              </h2>
-              <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-teal">
-                {related.map((item) => (
-                  <li key={item.slug}>
-                    <Link
-                      href={`/conditions/${item.slug}`}
-                      className="hover:text-teal-dark"
-                    >
-                      {item.shortTitle}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-sm text-slate-500">
-                <Link
-                  href="/conditions"
-                  className="font-semibold text-teal hover:text-teal-dark"
-                >
-                  View full conditions index →
-                </Link>
-              </p>
-            </div>
-          ) : null}
         </div>
       </section>
     </div>

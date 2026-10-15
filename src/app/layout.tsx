@@ -13,12 +13,16 @@ const display = Cormorant_Garamond({
   variable: "--font-display",
   subsets: ["latin"],
   weight: ["600", "700"],
+  display: "swap",
+  preload: true,
 });
 
 const body = Source_Sans_3({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
 });
 
 const description =
@@ -84,13 +88,13 @@ export const metadata: Metadata = {
     siteName: site.name,
     images: [
       {
-        url: "/images/logo-lockup.png",
+        url: "/images/logo-lockup.webp",
         width: 1298,
         height: 926,
         alt: "Nguyen's Osteopathic Clinic logo — Recover, Realign, and Restore Your Vitality",
       },
       {
-        url: "/images/clinic-promo.jpg",
+        url: "/images/clinic-promo.webp",
         width: 1600,
         height: 1200,
         alt: "Austin Duy Nguyen, GOsC-registered osteopath in Woolwich",
@@ -101,7 +105,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Osteopathy in Woolwich | ${site.name}`,
     description,
-    images: ["/images/logo-lockup.png"],
+    images: ["/images/logo-lockup.webp"],
   },
   robots: {
     index: true,

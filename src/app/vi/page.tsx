@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: "vi_VN",
     images: [
       {
-        url: "/images/austin-nguyen.jpg",
+        url: "/images/austin-nguyen.webp",
         width: 1200,
         height: 1500,
         alt: "Austin Duy Nguyen — osteopath đăng ký GOsC",
@@ -105,10 +105,12 @@ export default function VietnamesePage() {
 
       <section className="relative min-h-[min(88vh,920px)] overflow-hidden text-white">
         <Image
-          src="/images/austin-nguyen.jpg"
+          src="/images/austin-nguyen.webp"
           alt="Austin Duy Nguyen, osteopath đăng ký GOsC"
           fill
           priority
+          fetchPriority="high"
+          quality={75}
           sizes="100vw"
           className="object-cover object-[center_18%]"
         />
@@ -286,9 +288,12 @@ export default function VietnamesePage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden md:aspect-[5/4]">
             <Image
-              src="/images/clinic-promo.jpg"
+              src="/images/clinic-promo.webp"
               alt="Không gian phòng khám Nguyen's Osteopathic Clinic"
               fill
+              loading="lazy"
+              decoding="async"
+              quality={70}
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

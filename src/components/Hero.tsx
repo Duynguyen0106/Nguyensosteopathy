@@ -2,6 +2,8 @@ import Image from "next/image";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
+const HERO_IMAGE = "/images/austin-nguyen.webp";
+
 export function Hero() {
   return (
     <section className="hero-wash">
@@ -58,11 +60,18 @@ export function Hero() {
         <div className="relative mx-auto w-full max-w-md lg:max-w-none">
           <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/25 to-navy/10 blur-2xl" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_60px_rgba(11,44,69,0.16)] ring-1 ring-navy/5">
+            {/*
+              priority + fetchPriority="high" makes Next inject the correct
+              `/_next/image` preload for the LCP hero (avoid double-fetching
+              a separate static preload of the same asset).
+            */}
             <Image
-              src="/images/austin-nguyen.jpg"
+              src={HERO_IMAGE}
               alt="Austin Duy Nguyen, osteopath at Nguyen's Osteopathic Clinic"
               fill
               priority
+              fetchPriority="high"
+              quality={75}
               className="object-cover object-[center_15%]"
               sizes="(max-width: 1024px) 90vw, 42vw"
             />

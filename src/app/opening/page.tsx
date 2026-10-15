@@ -137,10 +137,12 @@ export default function OpeningPage() {
 
       <section className="relative min-h-[88vh] overflow-hidden text-white">
         <Image
-          src="/images/austin-clinic.jpg"
+          src="/images/austin-clinic.webp"
           alt="Nguyen's Osteopathic Clinic inside St James Pharmacy, Woolwich"
           fill
           priority
+          fetchPriority="high"
+          quality={75}
           sizes="100vw"
           className="object-cover object-center"
         />

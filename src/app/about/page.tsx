@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "/about",
     images: [
       {
-        url: "/images/austin-nguyen.jpg",
+        url: "/images/austin-nguyen.webp",
         width: 1200,
         height: 1500,
         alt: "Austin Duy Nguyen, GOsC-registered osteopath",
@@ -78,7 +78,7 @@ export default function AboutPage() {
     telephone: site.phoneE164,
     email: site.email,
     url: `${site.websiteUrl}/about`,
-    image: `${site.websiteUrl}/images/austin-nguyen.jpg`,
+    image: `${site.websiteUrl}/images/austin-nguyen.webp`,
     description:
       "GOsC-registered osteopath, Master of Osteopathy graduate of the British College of Osteopathic Medicine, and the only Vietnamese osteopath practising in the UK.",
   };
@@ -93,10 +93,12 @@ export default function AboutPage() {
       {/* Hero — brand + story in one composition */}
       <section className="relative min-h-[88vh] overflow-hidden text-white">
         <Image
-          src="/images/austin-nguyen.jpg"
+          src="/images/austin-nguyen.webp"
           alt="Austin Duy Nguyen, GOsC-registered osteopath"
           fill
           priority
+          fetchPriority="high"
+          quality={75}
           sizes="100vw"
           className="object-cover object-[center_18%]"
         />
@@ -207,10 +209,13 @@ export default function AboutPage() {
               aria-hidden
             />
             <Image
-              src="/images/clinic-promo.jpg"
+              src="/images/clinic-promo.webp"
               alt="Austin Duy Nguyen in clinic"
               width={900}
               height={700}
+              loading="lazy"
+              decoding="async"
+              quality={70}
               className="relative w-full object-cover shadow-[0_24px_60px_rgba(11,44,69,0.12)]"
             />
           </div>

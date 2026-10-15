@@ -98,13 +98,15 @@ export function Header() {
           aria-label="Nguyen's Osteopathic Clinic — Home"
         >
           <Image
-            src="/images/logo-lockup.png"
+            src="/images/logo-lockup.webp"
             alt="Nguyen's Osteopathic Clinic — Recover, Realign, and Restore Your Vitality"
             width={1298}
             height={926}
             className="h-[4.25rem] w-auto object-contain transition group-hover:opacity-90 sm:h-[4.75rem] md:h-[5.25rem]"
             sizes="(max-width: 640px) 170px, (max-width: 768px) 190px, 210px"
-            priority
+            loading="eager"
+            decoding="async"
+            quality={75}
           />
         </Link>
 

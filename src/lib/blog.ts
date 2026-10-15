@@ -1,5 +1,7 @@
 import { batch3BlogPosts } from "@/lib/blog-posts-batch3";
 import { serviceBlogPosts } from "@/lib/blog-posts-services";
+import { blogExpandedBodies } from "@/lib/blog-expanded-bodies";
+import { blogExpandedPriority } from "@/lib/blog-expanded-priority";
 import blogImageManifest from "@/lib/blog-image-manifest.json";
 import { site } from "@/lib/site";
 
@@ -68,6 +70,16 @@ type BlogPostInput = Omit<BlogPost, "image" | "readingMinutes"> & {
   image?: BlogPost["image"];
   readingMinutes?: number;
 };
+
+function withExpansion(post: BlogPostInput): BlogPostInput {
+  const expansion =
+    blogExpandedPriority[post.slug] ?? blogExpandedBodies[post.slug];
+  if (!expansion) return post;
+  return {
+    ...post,
+    ...expansion,
+  };
+}
 
 function withImage(post: BlogPostInput): BlogPost {
   const image = post.image ?? imageManifest[post.slug];
@@ -791,7 +803,9 @@ const blogPostInputs: BlogPostInput[] = [
   ...batch3BlogPosts,
 ];
 
-export const blogPosts: BlogPost[] = blogPostInputs.map(withImage);
+export const blogPosts: BlogPost[] = blogPostInputs
+  .map(withExpansion)
+  .map(withImage);
 
 export function getPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);

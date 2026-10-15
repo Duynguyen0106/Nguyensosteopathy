@@ -4,11 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import { ButtonLink } from "@/components/Button";
-import { site } from "@/lib/site";
+import { getServiceHref, services, site } from "@/lib/site";
 
 const links = [
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
   { href: "/blog", label: "Blog" },
   { href: "/fees", label: "Fees" },
   { href: "/reviews", label: "Reviews" },
@@ -17,13 +16,22 @@ const links = [
   { href: "/vi", label: "Tiếng Việt" },
 ];
 
+const serviceNav = services.map((service) => ({
+  href: getServiceHref(service.slug),
+  label: service.title,
+}));
+
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const menuId = useId();
   const panelId = `${menuId}-panel`;
+  const servicesMenuId = `${menuId}-services`;
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const servicesWrapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -38,6 +46,27 @@ export function Header() {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  useEffect(() => {
+    if (!servicesOpen) return;
+    const onPointerDown = (event: MouseEvent) => {
+      if (
+        servicesWrapRef.current &&
+        !servicesWrapRef.current.contains(event.target as Node)
+      ) {
+        setServicesOpen(false);
+      }
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setServicesOpen(false);
+    };
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [servicesOpen]);
 
   useEffect(() => {
     if (!open) return;
@@ -112,28 +141,85 @@ export function Header() {
           aria-label="Primary"
           className="hidden items-center gap-5 text-[0.92rem] text-navy/75 lg:flex xl:gap-7"
         >
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="transition hover:text-teal"
+          <Link href="/about" className="transition hover:text-teal">
+            About
+          </Link>
+
+          <div ref={servicesWrapRef} className="relative">
+            <button
+              type="button"
+              className="inline-flex items-center gap-1 transition hover:text-teal"
+              aria-expanded={servicesOpen}
+              aria-controls={servicesMenuId}
+              onClick={() => setServicesOpen((value) => !value)}
             >
-              {link.label}
-            </Link>
-          ))}
+              Services
+              <svg
+                viewBox="0 0 20 20"
+                className={`h-3.5 w-3.5 transition ${servicesOpen ? "rotate-180" : ""}`}
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                aria-hidden
+              >
+                <path d="M5 7.5 10 12.5 15 7.5" />
+              </svg>
+            </button>
+            {servicesOpen ? (
+              <div
+                id={servicesMenuId}
+                className="absolute top-full left-1/2 z-50 mt-3 w-[22rem] -translate-x-1/2 rounded-xl border border-slate-200 bg-white p-3 shadow-lg"
+              >
+                <Link
+                  href="/services"
+                  className="block rounded-lg px-3 py-2 text-sm font-semibold text-navy hover:bg-cream-mist hover:text-teal"
+                  onClick={() => setServicesOpen(false)}
+                >
+                  All services
+                </Link>
+                <ul className="mt-1 max-h-[70vh] overflow-y-auto">
+                  {serviceNav.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="block rounded-lg px-3 py-2 text-sm text-navy/80 hover:bg-cream-mist hover:text-teal"
+                        onClick={() => setServicesOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </div>
+
+          {links
+            .filter((link) => link.href !== "/about")
+            .map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition hover:text-teal"
+              >
+                {link.label}
+              </Link>
+            ))}
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
           <ButtonLink
             href="/book"
-            className="px-3.5 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
+            variant="navy"
+            aria-label="Book an osteopathy appointment"
+            className="min-h-11 min-w-[7.5rem] px-4 py-2.5 text-sm font-bold tracking-wide text-white shadow-lg shadow-navy/30 ring-2 ring-navy/20 sm:min-w-[8.5rem] sm:px-5 sm:text-base"
           >
-            Book online
+            Book Now
           </ButtonLink>
           <button
             ref={menuButtonRef}
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -164,16 +250,57 @@ export function Header() {
           className="border-t border-line bg-white px-5 py-5 lg:hidden"
         >
           <nav aria-label="Mobile" className="flex flex-col gap-1">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+            <Link
+              href="/about"
+              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+              onClick={() => setOpen(false)}
+            >
+              About
+            </Link>
+
+            <button
+              type="button"
+              className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-base text-navy hover:bg-cream-mist"
+              aria-expanded={mobileServicesOpen}
+              onClick={() => setMobileServicesOpen((value) => !value)}
+            >
+              Services
+              <span aria-hidden>{mobileServicesOpen ? "−" : "+"}</span>
+            </button>
+            {mobileServicesOpen ? (
+              <div className="mb-2 ml-2 border-l border-slate-200 pl-3">
+                <Link
+                  href="/services"
+                  className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
+                  onClick={() => setOpen(false)}
+                >
+                  All services
+                </Link>
+                {serviceNav.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block rounded-xl px-3 py-2.5 text-sm text-navy/80 hover:bg-cream-mist"
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+
+            {links
+              .filter((link) => link.href !== "/about")
+              .map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
             <Link
               href="/opening"
               className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"

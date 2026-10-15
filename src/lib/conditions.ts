@@ -167,10 +167,10 @@ export const conditions: Condition[] = [
       },
     ],
     relatedConditionSlugs: [
-      "non-specific-low-back-pain",
       "lumbar-disc-radiculopathy",
-      "si-joint-dysfunction",
       "piriformis-syndrome",
+      "non-specific-low-back-pain",
+      "si-joint-dysfunction",
     ],
     relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "sciatica-woolwich-osteopath",
@@ -233,12 +233,12 @@ export const conditions: Condition[] = [
       }
     ],
     relatedConditionSlugs: [
-      "cervical-radiculopathy",
       "cervicogenic-headache",
       "whiplash",
+      "cervical-radiculopathy",
       "thoracic-joint-dysfunction",
     ],
-relatedServiceSlug: "back-neck-pain",
+    relatedServiceSlug: "back-neck-pain",
     relatedBlogSlug: "nail-technician-neck-wrist-pain-osteopath",
     keywords: [
       "neck pain Woolwich",
@@ -2554,10 +2554,10 @@ relatedServiceSlug: "headaches-joints",
     relatedConditionSlugs: [
       "subacromial-pain",
       "rotator-cuff-tear",
+      "tennis-elbow",
       "shoulder-instability",
-      "neck-pain",
     ],
-relatedServiceSlug: "headaches-joints",
+    relatedServiceSlug: "headaches-joints",
     keywords: [
       "frozen shoulder Woolwich",
       "stiff shoulder osteopath SE18",

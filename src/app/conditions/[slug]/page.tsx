@@ -183,44 +183,6 @@ export default async function ConditionPage({ params }: Props) {
         </div>
       </section>
 
-      {related.length > 0 ? (
-        <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
-          <div className="mx-auto max-w-6xl">
-            <h2 className="font-display text-3xl text-navy">
-              Related conditions
-            </h2>
-            <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-              Presentations that often overlap with{" "}
-              {condition.shortTitle.toLowerCase()} — useful if your symptoms sit
-              across more than one pattern.
-            </p>
-            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {related.map((item) => (
-                <li key={item.slug}>
-                  <Link
-                    href={`/conditions/${item.slug}`}
-                    className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal/40 hover:bg-teal/5"
-                  >
-                    <span className="text-xs font-semibold tracking-wide text-teal uppercase">
-                      {item.region}
-                    </span>
-                    <span className="mt-2 font-semibold text-navy">
-                      {item.shortTitle}
-                    </span>
-                    <span className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">
-                      {item.summary}
-                    </span>
-                    <span className="mt-4 text-sm font-semibold text-teal">
-                      Read guide →
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      ) : null}
-
       {expanded ? (
         <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
           <div className="mx-auto max-w-3xl space-y-12">
@@ -276,6 +238,44 @@ export default async function ConditionPage({ params }: Props) {
           <FaqAccordion items={faqs} />
         </div>
       </section>
+
+      {related.length > 0 ? (
+        <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="font-display text-3xl text-navy">
+              Related conditions
+            </h2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+              Presentations that often overlap with{" "}
+              {condition.shortTitle.toLowerCase()} — useful if your symptoms sit
+              across more than one pattern.
+            </p>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {related.map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    href={`/conditions/${item.slug}`}
+                    className="service-tile flex h-full flex-col rounded-xl border border-teal/30 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                  >
+                    <span className="text-xs font-semibold tracking-wide text-teal uppercase">
+                      {item.region}
+                    </span>
+                    <span className="mt-2 font-semibold text-navy">
+                      {item.shortTitle}
+                    </span>
+                    <span className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">
+                      {item.summary}
+                    </span>
+                    <span className="mt-4 text-sm font-semibold text-teal">
+                      Read guide →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       <section className="px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">

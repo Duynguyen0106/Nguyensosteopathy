@@ -675,4 +675,75 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
     ctaHref: "/book",
     ctaLabel: "Book your first visit",
   },
+
+  "upper-back-pain-desk-workers-woolwich": {
+    updated: "2026-10-15",
+    readingMinutes: 8,
+    sections: [
+      {
+        paragraphs: [
+          "Thoracic (mid-back) pain often sits between the shoulder blades after hours at a laptop — especially with a low screen, a soft sofa “office,” or arms reaching forward to a trackpad all afternoon around Woolwich and Greenwich.",
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess rib and thoracic mobility, shoulder girdle load, and neck contribution, then give desk resets you can repeat between meetings. You do not need a GP referral to book.",
+        ],
+      },
+      {
+        heading: "Why desk days lock the mid-back",
+        paragraphs: [
+          "Looking down at a laptop closes the upper back and asks the muscles between the shoulder blades to hold a long static load. Soft sofas and café tables make it worse: hips sink, the chest collapses, and the mid-back never gets the extension it needs through the day.",
+          "Phone-shoulder clenching on calls and a secondary monitor off to one side add a constant twist. By evening many people feel a dull band between the blades, a catch on deep breath, or stiffness turning to check a blind spot in traffic after a hybrid SE18 commute.",
+          "The fix is rarely “sit up straighter” alone. Tissues that have been compressed all day need mobility, load variety, and a setup that does not recreate the same fold every time you open the laptop.",
+        ],
+      },
+      {
+        heading: "Desk and screen setup for mid-back relief",
+        paragraphs: [
+          "Raise the screen so the top sits near eye level — a laptop stand plus separate keyboard and mouse beats craning into a trackpad. Keep elbows close to your sides; if the mouse sits too far forward, the shoulder blade muscles stay “on” all day.",
+          "Place the monitor you use most straight ahead so you are not living in a constant rotation. Soft sofa working from home is a common Woolwich flare: move to a firm chair and table for deep-work blocks, even if you keep the sofa for lighter reading.",
+        ],
+        bullets: [
+          "Screen top near eye level",
+          "Keyboard and mouse within easy reach — no outstretched arms",
+          "Feet flat; avoid perched tiptoe sitting",
+          "Stand or walk 1–2 minutes each half hour when meetings allow",
+          "Secondary screen straight ahead, not permanently twisted",
+        ],
+      },
+      {
+        heading: "Two exercises for upper-back desk pain",
+        level: 3,
+        paragraphs: [
+          "Seated open-book rotation: sit tall, hands across the chest, gently rotate the mid-back left and right within a comfortable range — think “turn from the breastbone,” not yanking the neck. 8–10 slow turns each side, twice on long desk days. Stop if you get sharp rib or arm pain.",
+          "Doorway chest opener: forearm on the doorframe at roughly shoulder height, step the same-side foot through until you feel a mild stretch across the front of the chest and shoulder — not a pinch in the joint. Hold 20–30 seconds each side. This undoes the laptop fold that keeps the mid-back compressed.",
+        ],
+      },
+      {
+        heading: "Movement snacks between meetings",
+        paragraphs: [
+          "You do not need a gym session every hour. After each call block: stand, roll the shoulders open, and look at something far away for 20 seconds. Two slow shoulder-blade squeezes (down and slightly together, without puffing the chest) often ease the “stuck” band between the blades more than aggressive stretching.",
+          "If pain spikes with deep breaths, overhead reaching, or night pain lying on one side, mention that at assessment — it can shift the plan toward rib or shoulder drivers rather than posture coaching alone.",
+        ],
+      },
+      {
+        heading: "How osteopathy helps desk-related upper back pain",
+        image: {
+          src: "/images/blog/upper-back-pain-desk-workers-woolwich.jpg",
+          alt: "Desk worker at a laptop with rounded upper-back posture",
+        },
+        paragraphs: [
+          "Assessment covers thoracic and rib mobility, cervical contribution, and shoulder blade control. Treatment may include gentle mobilisation and soft-tissue work through the mid-back and between the blades — never forced into sharp pain.",
+          "We pair hands-on care with the setup and movement snacks above so symptoms are less likely to rebound the next hybrid week. Related reading: [neck pain](/conditions/neck-pain) and [upper-back postural strain](/conditions/thoracic-joint-dysfunction) when more than one area is irritable.",
+        ],
+      },
+      {
+        heading: "When to book",
+        paragraphs: [
+          "Book if the band between your blades returns every Sunday evening, if desk days end with headache, or if twisting to reverse the car is limited. Progressive arm weakness, trauma, or unremitting night pain need medical review first.",
+          "Wear clothes you can move in. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately.",
+        ],
+      },
+    ],
+    cta: "If mid-back stiffness is limiting your workday, read the thoracic guide — or book an assessment when you want hands-on care.",
+    ctaHref: "/conditions/thoracic-joint-dysfunction",
+    ctaLabel: "View thoracic / upper-back guide",
+  },
 };

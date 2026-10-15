@@ -59,14 +59,14 @@ export function CookieBanner() {
           <button
             type="button"
             onClick={() => choose("declined")}
-            className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+            className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
           >
             Essential only
           </button>
           <button
             type="button"
             onClick={() => choose("accepted")}
-            className="rounded-xl bg-teal px-4 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark"
+            className="rounded-xl bg-teal px-4 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
           >
             Accept analytics
           </button>

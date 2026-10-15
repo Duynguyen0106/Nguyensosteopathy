@@ -3,10 +3,53 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
+const patientLinks = [
+  { href: "/book", label: "Book online" },
+  { href: "/new-patients", label: "New patients" },
+  { href: "/aftercare", label: "Aftercare" },
+  { href: "/resources", label: "Patient resources" },
+  { href: "/fees", label: "Fees & prices" },
+  { href: "/insurance", label: "Insurance & receipts" },
+  { href: "/nhs-discount", label: "NHS & student discount" },
+  { href: "/find-us", label: "Find us & parking" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/reviews", label: "Reviews" },
+  { href: "/contact", label: "Contact" },
+  { href: "/opening", label: "Opening offer" },
+] as const;
+
+const treatmentLinks = [
+  { href: "/osteopathy", label: "What is osteopathy?" },
+  { href: "/services", label: "All services" },
+  { href: "/back-neck", label: "Back & neck pain" },
+  { href: "/desk-pain", label: "Desk & office pain" },
+  { href: "/headaches", label: "Headaches & joints" },
+  { href: "/shockwave", label: "Shockwave therapy" },
+  { href: "/mens-health", label: "Men's health" },
+  { href: "/sports", label: "Sports injury" },
+  { href: "/pregnancy", label: "Pregnancy" },
+  { href: "/conditions", label: "Conditions" },
+  { href: "/areas", label: "Areas we serve" },
+  { href: "/blog", label: "Blog" },
+] as const;
+
+const legalLinks = [
+  { href: "/about", label: "About Austin" },
+  { href: "/vi", label: "Tiếng Việt" },
+  { href: "/leaflet", label: "Clinic leaflet" },
+  { href: "/privacy", label: "Privacy policy" },
+  { href: "/cookies", label: "Cookie policy" },
+  { href: "/accessibility", label: "Accessibility" },
+  { href: "/terms", label: "Terms & cancellation" },
+  { href: "/complaints", label: "Complaints" },
+  { href: "/site-map", label: "Site map" },
+  { href: "/feed.xml", label: "Blog RSS" },
+] as const;
+
 export function Footer() {
   return (
     <footer className="bg-navy text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.5fr_1fr_1fr] md:px-8">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-4 md:px-8">
         <div>
           <div className="inline-block rounded-2xl bg-white px-4 py-3 shadow-lg shadow-black/10">
             <Image
@@ -15,6 +58,7 @@ export function Footer() {
               width={1298}
               height={926}
               className="h-28 w-auto object-contain md:h-36"
+              sizes="220px"
             />
           </div>
           <p className="mt-4 max-w-sm text-base leading-relaxed text-white/75 md:text-lg">
@@ -34,231 +78,7 @@ export function Footer() {
               </svg>
             </a>
           </div>
-        </div>
-
-        <div>
-          <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
-            Explore
-          </p>
-          <ul className="mt-4 space-y-2 text-sm text-white/85">
-            <li>
-              <Link href="/about" className="hover:text-white">
-                About Austin
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="hover:text-white">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="hover:text-white">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/opening" className="hover:text-white">
-                Opening offer — 50% off
-              </Link>
-            </li>
-            <li>
-              <Link href="/vi" className="hover:text-white">
-                Tiếng Việt
-              </Link>
-            </li>
-            <li>
-              <Link href="/fees" className="hover:text-white">
-                Fees &amp; prices
-              </Link>
-            </li>
-            <li>
-              <Link href="/insurance" className="hover:text-white">
-                Insurance &amp; receipts
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-white">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="/faq" className="hover:text-white">
-                FAQ
-              </Link>
-            </li>
-            <li>
-              <Link href="/new-patients" className="hover:text-white">
-                New patients
-              </Link>
-            </li>
-            <li>
-              <Link href="/aftercare" className="hover:text-white">
-                Aftercare
-              </Link>
-            </li>
-            <li>
-              <Link href="/resources" className="hover:text-white">
-                Patient resources
-              </Link>
-            </li>
-            <li>
-              <Link href="/conditions" className="hover:text-white">
-                Conditions
-              </Link>
-            </li>
-            <li>
-              <Link href="/areas" className="hover:text-white">
-                Areas we serve
-              </Link>
-            </li>
-            <li>
-              <Link href="/osteopathy" className="hover:text-white">
-                What is osteopathy?
-              </Link>
-            </li>
-            <li>
-              <Link href="/back-neck" className="hover:text-white">
-                Back &amp; neck pain
-              </Link>
-            </li>
-            <li>
-              <Link href="/desk-pain" className="hover:text-white">
-                Desk &amp; office pain
-              </Link>
-            </li>
-            <li>
-              <Link href="/headaches" className="hover:text-white">
-                Headaches &amp; joints
-              </Link>
-            </li>
-            <li>
-              <Link href="/shockwave" className="hover:text-white">
-                Shockwave therapy
-              </Link>
-            </li>
-            <li>
-              <Link href="/mens-health" className="hover:text-white">
-                Men&apos;s health
-              </Link>
-            </li>
-            <li>
-              <Link href="/pregnancy" className="hover:text-white">
-                Pregnancy osteopathy
-              </Link>
-            </li>
-            <li>
-              <Link href="/sports" className="hover:text-white">
-                Sports injury
-              </Link>
-            </li>
-            <li>
-              <Link href="/paediatric" className="hover:text-white">
-                Paediatric care
-              </Link>
-            </li>
-            <li>
-              <Link href="/cranial" className="hover:text-white">
-                Cranial osteopathy
-              </Link>
-            </li>
-            <li>
-              <Link href="/acupuncture" className="hover:text-white">
-                Acupuncture
-              </Link>
-            </li>
-            <li>
-              <Link href="/massage" className="hover:text-white">
-                Deep tissue massage
-              </Link>
-            </li>
-            <li>
-              <Link href="/cupping" className="hover:text-white">
-                Cupping add-on
-              </Link>
-            </li>
-            <li>
-              <Link href="/site-map" className="hover:text-white">
-                Site map
-              </Link>
-            </li>
-            <li>
-              <Link href="/leaflet" className="hover:text-white">
-                Clinic leaflet
-              </Link>
-            </li>
-            <li>
-              <Link href="/nhs-discount" className="hover:text-white">
-                NHS &amp; student discount
-              </Link>
-            </li>
-            <li>
-              <Link href="/find-us" className="hover:text-white">
-                Find us &amp; parking
-              </Link>
-            </li>
-            <li>
-              <Link href="/book" className="hover:text-white">
-                Book appointment
-              </Link>
-            </li>
-            <li>
-              <a
-                href={site.facebookUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white"
-              >
-                Facebook
-              </a>
-            </li>
-            <li>
-              <Link href="/reviews" className="hover:text-white">
-                Reviews
-              </Link>
-            </li>
-            <li>
-              <a
-                href={site.googleReviewsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white"
-              >
-                Google reviews
-              </a>
-            </li>
-            <li>
-              <Link href="/privacy" className="hover:text-white">
-                Privacy policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/cookies" className="hover:text-white">
-                Cookie policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/accessibility" className="hover:text-white">
-                Accessibility
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms" className="hover:text-white">
-                Terms &amp; cancellation
-              </Link>
-            </li>
-            <li>
-              <Link href="/complaints" className="hover:text-white">
-                Complaints
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
-            Visit
-          </p>
-          <ul className="mt-4 space-y-2 text-sm text-white/85">
+          <ul className="mt-6 space-y-2 text-sm text-white/85">
             <li>
               <a href={site.phoneHref} className="hover:text-white">
                 {site.phone}
@@ -267,16 +87,6 @@ export function Footer() {
             <li>
               <a href={site.emailHref} className="hover:text-white">
                 {site.email}
-              </a>
-            </li>
-            <li>
-              <a
-                href={site.websiteUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white"
-              >
-                {site.website}
               </a>
             </li>
             <li>
@@ -305,7 +115,72 @@ export function Footer() {
             Closed {site.booking.closedDaysLabel} (except opening day). Live
             slots shown in online booking.
           </p>
-          <p className="mt-3 text-xs leading-relaxed text-white/60">
+        </div>
+
+        <div>
+          <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
+            Patients
+          </p>
+          <ul className="mt-4 space-y-2 text-sm text-white/85">
+            {patientLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-white">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
+            Treatments
+          </p>
+          <ul className="mt-4 space-y-2 text-sm text-white/85">
+            {treatmentLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-white">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/massage" className="hover:text-white">
+                Deep tissue massage
+              </Link>
+            </li>
+            <li>
+              <Link href="/acupuncture" className="hover:text-white">
+                Acupuncture
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
+            Legal &amp; about
+          </p>
+          <ul className="mt-4 space-y-2 text-sm text-white/85">
+            {legalLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-white">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <a
+                href={site.googleReviewsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                Google reviews
+              </a>
+            </li>
+          </ul>
+          <p className="mt-4 text-xs leading-relaxed text-white/60">
             {site.cancellation}
           </p>
         </div>
@@ -322,24 +197,16 @@ export function Footer() {
               Privacy
             </Link>
             {" · "}
-            <Link href="/cookies" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
-              Cookies
-            </Link>
-            {" · "}
             <Link href="/accessibility" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
               Accessibility
-            </Link>
-            {" · "}
-            <Link href="/terms" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
-              Terms
             </Link>
             {" · "}
             <Link href="/complaints" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
               Complaints
             </Link>
             {" · "}
-            <Link href="/feed.xml" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
-              RSS
+            <Link href="/site-map" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Site map
             </Link>
           </p>
         </div>

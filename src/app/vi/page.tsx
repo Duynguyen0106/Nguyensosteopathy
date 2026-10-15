@@ -84,7 +84,7 @@ export default function VietnamesePage() {
       "@type": "MedicalBusiness",
       name: site.name,
       url: site.websiteUrl,
-      telephone: site.phone,
+      telephone: site.phoneE164,
       address: {
         "@type": "PostalAddress",
         streetAddress: site.address.line1,

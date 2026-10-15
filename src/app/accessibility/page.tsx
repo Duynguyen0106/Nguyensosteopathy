@@ -34,9 +34,10 @@ export default function AccessibilityPage() {
           <section>
             <h2 className="font-display text-2xl text-navy">Our commitment</h2>
             <p className="mt-3">
-              {site.name} aims to make this website and clinic visits as usable
-              as possible. We continue to improve digital clarity, booking paths,
-              and practical arrival information for patients in Woolwich SE18.
+              {site.name} is working toward WCAG 2.2 AA for this website and aims
+              to make clinic visits as usable as possible. We continue to improve
+              digital clarity, booking paths, and practical arrival information
+              for patients in Woolwich SE18.
             </p>
           </section>
 
@@ -44,6 +45,7 @@ export default function AccessibilityPage() {
             <h2 className="font-display text-2xl text-navy">Website</h2>
             <ul className="mt-3 list-disc space-y-2 pl-5">
               <li>Semantic headings and descriptive page titles</li>
+              <li>Skip link to main content and visible keyboard focus styles</li>
               <li>Text alternatives for key brand imagery where practical</li>
               <li>Keyboard-reachable primary navigation and booking CTAs</li>
               <li>
@@ -54,9 +56,10 @@ export default function AccessibilityPage() {
               </li>
             </ul>
             <p className="mt-3">
-              Some third-party embeds (for example maps or booking widgets) are
-              outside our full control. If an embed blocks you, contact us and we
-              will help another way.
+              Some third-party embeds (for example Google Maps or the Treow
+              booking widget) are outside our full control and may not meet the
+              same accessibility standard. If an embed blocks you, contact us and
+              we will help book or share information another way.
             </p>
           </section>
 

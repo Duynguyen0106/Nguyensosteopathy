@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { FaqJsonLd } from "@/components/JsonLd";
 import { faqs, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -24,25 +25,9 @@ export const metadata: Metadata = {
 };
 
 export default function FaqPage() {
-  const faqLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
-
   return (
     <div className="bg-slate-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
-      />
+      <FaqJsonLd />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">

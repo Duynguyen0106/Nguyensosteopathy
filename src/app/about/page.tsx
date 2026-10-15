@@ -75,7 +75,7 @@ export default function AboutPage() {
       postalCode: "SE18 6LQ",
       addressCountry: "GB",
     },
-    telephone: site.phone,
+    telephone: site.phoneE164,
     email: site.email,
     url: `${site.websiteUrl}/about`,
     image: `${site.websiteUrl}/images/austin-nguyen.jpg`,

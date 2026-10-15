@@ -46,7 +46,7 @@ export default function FeesPage() {
     "@type": "MedicalBusiness",
     name: site.name,
     url: `${site.websiteUrl}/fees`,
-    telephone: site.phone,
+    telephone: site.phoneE164,
     priceRange: "£15–£110",
     address: {
       "@type": "PostalAddress",

@@ -48,7 +48,7 @@ export default async function AreaPage({ params }: Props) {
     "@type": "MedicalBusiness",
     name: site.name,
     url: `${site.websiteUrl}/areas/${area.slug}`,
-    telephone: site.phone,
+    telephone: site.phoneE164,
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.line1,

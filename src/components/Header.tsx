@@ -90,7 +90,7 @@ export function Header() {
           : "border-b border-transparent bg-white/70 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-2.5 md:px-8 md:py-3">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2 sm:gap-3 sm:px-5 sm:py-2.5 md:px-8 md:py-3">
         <Link
           href="/"
           className="group min-w-0 shrink"
@@ -102,8 +102,8 @@ export function Header() {
             alt="Nguyen's Osteopathic Clinic — Recover, Realign, and Restore Your Vitality"
             width={1298}
             height={926}
-            className="h-[4.25rem] w-auto object-contain transition group-hover:opacity-90 sm:h-[4.75rem] md:h-[5.25rem]"
-            sizes="(max-width: 640px) 170px, (max-width: 768px) 190px, 210px"
+            className="h-12 w-auto max-w-[9.5rem] object-contain object-left transition group-hover:opacity-90 sm:h-14 sm:max-w-[11rem] md:h-[5.25rem] md:max-w-none"
+            sizes="(max-width: 640px) 152px, (max-width: 768px) 176px, 210px"
             priority
           />
         </Link>
@@ -123,17 +123,17 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex shrink-0 items-center gap-2">
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           <ButtonLink
             href="/book"
-            className="px-3.5 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
+            className="min-h-11 px-3 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
           >
             Book online
           </ButtonLink>
           <button
             ref={menuButtonRef}
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -161,14 +161,14 @@ export function Header() {
         <div
           id={panelId}
           ref={panelRef}
-          className="border-t border-line bg-white px-5 py-5 lg:hidden"
+          className="max-h-[min(70vh,28rem)] overflow-y-auto border-t border-line bg-white px-4 py-4 sm:px-5 sm:py-5 lg:hidden"
         >
           <nav aria-label="Mobile" className="flex flex-col gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
@@ -176,14 +176,14 @@ export function Header() {
             ))}
             <Link
               href="/opening"
-              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+              className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
               onClick={() => setOpen(false)}
             >
               Opening offer
             </Link>
             <a
               href={site.phoneHref}
-              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+              className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
               onClick={() => setOpen(false)}
             >
               Call {site.phone}

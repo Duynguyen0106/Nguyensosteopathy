@@ -252,13 +252,17 @@ export default function OpeningPage() {
             </p>
           </div>
 
-          <div className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <table className="w-full text-left text-sm">
+          <div className="mt-10 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm [-webkit-overflow-scrolling:touch]">
+            <table className="w-full min-w-[28rem] text-left text-sm">
               <thead className="bg-slate-50 text-xs tracking-wide text-slate-500 uppercase">
                 <tr>
-                  <th className="px-4 py-3 font-semibold md:px-6">Service</th>
-                  <th className="px-4 py-3 font-semibold md:px-6">Usual</th>
-                  <th className="px-4 py-3 font-semibold text-teal-dark md:px-6">
+                  <th className="px-3 py-3 font-semibold sm:px-4 md:px-6">
+                    Service
+                  </th>
+                  <th className="px-3 py-3 font-semibold sm:px-4 md:px-6">
+                    Usual
+                  </th>
+                  <th className="px-3 py-3 font-semibold text-teal-dark sm:px-4 md:px-6">
                     5 Nov
                   </th>
                 </tr>
@@ -269,16 +273,16 @@ export default function OpeningPage() {
                     key={row.service}
                     className="border-t border-slate-100 text-navy"
                   >
-                    <td className="px-4 py-3.5 md:px-6">
+                    <td className="px-3 py-3.5 sm:px-4 md:px-6">
                       <span className="font-medium">{row.service}</span>
                       <span className="mt-0.5 block text-xs text-slate-500">
                         {row.duration}
                       </span>
                     </td>
-                    <td className="px-4 py-3.5 text-slate-500 line-through md:px-6">
+                    <td className="whitespace-nowrap px-3 py-3.5 text-slate-500 line-through sm:px-4 md:px-6">
                       {row.price}
                     </td>
-                    <td className="px-4 py-3.5 font-semibold text-teal-dark md:px-6">
+                    <td className="whitespace-nowrap px-3 py-3.5 font-semibold text-teal-dark sm:px-4 md:px-6">
                       {halfPrice(row.price)}
                     </td>
                   </tr>

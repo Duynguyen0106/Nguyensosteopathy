@@ -58,28 +58,31 @@ export default function ServicesPage() {
       </div>
 
       <div className="mx-auto max-w-6xl px-5 pb-20 md:px-8">
-        <ul className="grid gap-4 md:grid-cols-2">
+        <ul className="grid gap-3 sm:gap-4 md:grid-cols-2">
           {services.map((service) => (
-            <li key={service.slug}>
+            <li key={service.slug} className="min-w-0">
               <Link
                 href={getServiceHref(service.slug)}
-                className="service-tile flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                className="service-tile flex h-full flex-col rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md sm:p-6"
               >
                 <span className="flex items-start justify-between gap-3">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
                     <ServiceIcon name={service.icon} />
                   </span>
                   {service.badge ? (
-                    <span className="inline-flex rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
+                    <span className="inline-flex max-w-[60%] rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
                       {service.badge}
                     </span>
                   ) : null}
                 </span>
                 <span className="mt-5 flex items-start justify-between gap-3">
-                  <span className="text-xl font-semibold text-navy">
+                  <span className="min-w-0 text-lg font-semibold text-navy sm:text-xl">
                     {service.title}
                   </span>
-                  <span className="service-arrow text-slate-400" aria-hidden>
+                  <span
+                    className="service-arrow shrink-0 text-slate-400"
+                    aria-hidden
+                  >
                     →
                   </span>
                 </span>

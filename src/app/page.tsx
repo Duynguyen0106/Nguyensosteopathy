@@ -27,15 +27,15 @@ export default function HomePage() {
     <>
       <FaqJsonLd />
       <div className="bg-teal text-white">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-5 py-3 text-sm sm:flex-row sm:items-center md:px-8">
-          <p className="font-medium leading-snug">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-2 px-4 py-3 text-sm sm:flex-row sm:items-center sm:gap-3 sm:px-5 md:px-8">
+          <p className="min-w-0 font-medium leading-snug">
             <span className="font-semibold">Opening {offer.dateLabel}</span>
             {" — "}
             {offer.headline} for patients seen that day.
           </p>
           <Link
             href={offer.path}
-            className="shrink-0 font-semibold underline-offset-2 hover:underline"
+            className="inline-flex min-h-11 shrink-0 items-center font-semibold underline-offset-2 hover:underline"
           >
             View offer →
           </Link>
@@ -173,7 +173,7 @@ export default function HomePage() {
         className="scroll-mt-24 bg-white px-5 py-16 md:px-8 md:py-24"
       >
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
-          <div className="relative">
+          <div className="relative overflow-hidden">
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 to-navy/10 blur-xl" />
             <Image
               src="/images/austin-nguyen.jpg"
@@ -262,29 +262,32 @@ export default function HomePage() {
             </div>
           </div>
 
-          <ul className="mt-12 grid gap-4 sm:grid-cols-2">
+          <ul className="mt-10 grid gap-3 sm:mt-12 sm:gap-4 sm:grid-cols-2">
             {services.map((service) => (
-              <li key={service.slug}>
+              <li key={service.slug} className="min-w-0">
                 <Link
                   href={getServiceHref(service.slug)}
-                  className="service-tile group flex h-full gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                  className="service-tile group flex h-full gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md sm:gap-4 sm:p-5"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
                     <ServiceIcon name={service.icon} />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="flex items-start justify-between gap-3">
+                    <span className="flex items-start justify-between gap-2 sm:gap-3">
                       <span className="min-w-0">
-                        <span className="block text-lg font-semibold text-navy">
+                        <span className="block text-base font-semibold text-navy sm:text-lg">
                           {service.title}
                         </span>
                         {service.badge ? (
-                          <span className="mt-1.5 inline-flex rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
+                          <span className="mt-1.5 inline-flex max-w-full rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
                             {service.badge}
                           </span>
                         ) : null}
                       </span>
-                      <span className="service-arrow text-slate-400" aria-hidden>
+                      <span
+                        className="service-arrow shrink-0 text-slate-400"
+                        aria-hidden
+                      >
                         →
                       </span>
                     </span>
@@ -322,25 +325,27 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-10 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
-            <div className="hidden grid-cols-[1.6fr_0.8fr_0.5fr] bg-navy px-6 py-4 text-sm font-medium tracking-wide text-white md:grid">
+          <div className="mt-10 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+            <div className="hidden min-w-[36rem] grid-cols-[1.6fr_0.8fr_0.5fr] bg-navy px-6 py-4 text-sm font-medium tracking-wide text-white md:grid">
               <span>Service & consultation</span>
               <span>Duration</span>
               <span className="text-right">Price</span>
             </div>
-            <ul>
+            <ul className="md:min-w-[36rem]">
               {pricing.map((row, index) => (
                 <li
                   key={row.service}
-                  className={`grid gap-1 px-5 py-4 md:grid-cols-[1.6fr_0.8fr_0.5fr] md:items-center md:gap-4 md:px-6 ${
+                  className={`grid grid-cols-[1fr_auto] items-baseline gap-x-3 gap-y-1 px-4 py-4 sm:px-5 md:grid-cols-[1.6fr_0.8fr_0.5fr] md:items-center md:gap-4 md:px-6 ${
                     index % 2 === 0 ? "bg-slate-50" : "bg-white"
                   }`}
                 >
-                  <p className="font-medium text-navy">{row.service}</p>
+                  <p className="col-span-2 min-w-0 font-medium text-navy md:col-span-1">
+                    {row.service}
+                  </p>
                   <p className="text-sm font-medium text-slate-600">
                     {row.duration}
                   </p>
-                  <p className="text-lg font-bold text-teal-dark md:text-right">
+                  <p className="text-right text-lg font-bold text-teal-dark">
                     {row.price}
                   </p>
                 </li>

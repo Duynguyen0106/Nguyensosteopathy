@@ -63,7 +63,7 @@ export default function FindUsPage() {
     "@type": "MedicalBusiness",
     name: site.name,
     url: `${site.websiteUrl}/find-us`,
-    telephone: site.phone,
+    telephone: site.phoneE164,
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.line1,

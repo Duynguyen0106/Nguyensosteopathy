@@ -27,9 +27,9 @@ export function JsonLd() {
       `${site.websiteUrl}/images/austin-nguyen.jpg`,
     ],
     logo: `${site.websiteUrl}/images/logo-mark.png`,
-    telephone: site.phone,
+    telephone: site.phoneE164,
     email: site.email,
-    sameAs: [site.facebookUrl],
+    sameAs: [site.facebookUrl, site.googleReviewsUrl],
     priceRange: "£15–£110",
     currenciesAccepted: "GBP",
     paymentAccepted: "Cash, Credit Card, Debit Card",
@@ -88,7 +88,7 @@ export function JsonLd() {
       "GOsC-registered osteopath and Master of Osteopathy graduate of the British College of Osteopathic Medicine, practising at Nguyen's Osteopathic Clinic in Woolwich.",
     url: `${site.websiteUrl}/about`,
     image: `${site.websiteUrl}/images/austin-nguyen.jpg`,
-    telephone: site.phone,
+    telephone: site.phoneE164,
     email: site.email,
     identifier: {
       "@type": "PropertyValue",
@@ -129,56 +129,6 @@ export function JsonLd() {
     },
   };
 
-  const faqPage = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
-
-  const breadcrumb = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: site.websiteUrl,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Services",
-        item: `${site.websiteUrl}/services`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Book",
-        item: `${site.websiteUrl}/book`,
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "About",
-        item: `${site.websiteUrl}/about`,
-      },
-      {
-        "@type": "ListItem",
-        position: 5,
-        name: "Blog",
-        item: `${site.websiteUrl}/blog`,
-      },
-    ],
-  };
-
   return (
     <>
       <script
@@ -193,14 +143,29 @@ export function JsonLd() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
-      />
     </>
+  );
+}
+
+/** FAQPage schema — use only on /faq (and optionally home), not sitewide. */
+export function FaqJsonLd() {
+  const faqPage = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
+    />
   );
 }

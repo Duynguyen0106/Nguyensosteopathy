@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
+import { FaqJsonLd } from "@/components/JsonLd";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { getAllPosts } from "@/lib/blog";
 import { getFeaturedConditions } from "@/lib/conditions";
@@ -24,6 +25,7 @@ export default function HomePage() {
 
   return (
     <>
+      <FaqJsonLd />
       <div className="bg-teal text-white">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-5 py-3 text-sm sm:flex-row sm:items-center md:px-8">
           <p className="font-medium leading-snug">
@@ -175,9 +177,10 @@ export default function HomePage() {
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 to-navy/10 blur-xl" />
             <Image
               src="/images/austin-nguyen.jpg"
-              alt="Austin Duy Nguyen"
+              alt="Austin Duy Nguyen, GOsC-registered osteopath at Nguyen's Osteopathic Clinic in Woolwich"
               width={560}
               height={700}
+              sizes="(max-width: 768px) 90vw, 40vw"
               className="relative float-soft w-full rounded-[1.5rem] object-cover object-top shadow-[0_24px_60px_rgba(11,44,69,0.14)]"
             />
           </div>

@@ -26,7 +26,7 @@ export function FaqAccordion({ items }: { items: readonly FaqItem[] }) {
                 type="button"
                 aria-expanded={isOpen}
                 aria-controls={panelId}
-                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-slate-50 md:px-6 md:py-5"
+                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-teal md:px-6 md:py-5"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
               >
                 <span className="text-base font-semibold text-navy md:text-lg">

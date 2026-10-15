@@ -8,8 +8,10 @@ export const site = {
     regNo: "12332",
     credentials: "Master of Osteopathy, British College of Osteopathic Medicine",
   },
-  phone: "07882843513",
-  phoneHref: "tel:07882843513",
+  phone: "07882 843513",
+  /** E.164 for schema.org and reliable click-to-call. */
+  phoneE164: "+447882843513",
+  phoneHref: "tel:+447882843513",
   whatsappUrl: "https://wa.me/447882843513",
   email: "nguyensosteopathy@gmail.com",
   emailHref: "mailto:nguyensosteopathy@gmail.com",

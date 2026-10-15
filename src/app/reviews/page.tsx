@@ -60,7 +60,7 @@ export default function ReviewsPage() {
       "@type": "MedicalBusiness",
       name: site.name,
       url: site.websiteUrl,
-      telephone: site.phone,
+      telephone: site.phoneE164,
     },
   };
 

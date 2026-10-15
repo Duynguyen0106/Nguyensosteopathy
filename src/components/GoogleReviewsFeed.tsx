@@ -28,17 +28,32 @@ export async function GoogleReviewsFeed() {
   const mapsUrl = google.ok ? google.place.mapsUri : site.googleReviewsUrl;
 
   if (!google.ok) {
-    if (process.env.NODE_ENV !== "development") return null;
     return (
-      <section className="border-b border-slate-200 px-5 py-10 md:px-8">
-        <div className="mx-auto max-w-6xl rounded-2xl border border-amber-200 bg-amber-50 px-5 py-5 text-sm text-amber-950">
-          <p className="font-semibold">Google reviews feed not live yet</p>
-          <p className="mt-2 leading-relaxed">
-            API key is saved, but Google is rejecting Places requests. Enable{" "}
-            <strong>Places API (New)</strong>, turn on billing, and restrict
-            this server key by <strong>API only</strong> (not HTTP referrers).
+      <section className="border-b border-slate-200 px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+            From Google
           </p>
-          <p className="mt-2 text-xs text-amber-900/80">{google.reason}</p>
+          <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
+            Read us on Google
+          </h2>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+            Live review cards are temporarily unavailable. You can still open
+            our Google listing to read patient feedback and leave a review after
+            your visit.
+          </p>
+          {process.env.NODE_ENV === "development" ? (
+            <p className="mt-3 text-xs text-slate-500">{google.reason}</p>
+          ) : null}
+          <div className="mt-8">
+            <ButtonLink
+              href={mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Google reviews
+            </ButtonLink>
+          </div>
         </div>
       </section>
     );

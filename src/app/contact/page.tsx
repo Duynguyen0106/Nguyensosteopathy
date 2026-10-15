@@ -54,7 +54,7 @@ export default function ContactPage() {
     mainEntity: {
       "@type": "MedicalBusiness",
       name: site.name,
-      telephone: site.phone,
+      telephone: site.phoneE164,
       email: site.email,
       url: site.websiteUrl,
       address: {

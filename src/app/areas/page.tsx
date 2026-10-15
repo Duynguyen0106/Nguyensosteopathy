@@ -33,7 +33,7 @@ export default function AreasPage() {
     "@type": "MedicalBusiness",
     name: site.name,
     url: `${site.websiteUrl}/areas`,
-    telephone: site.phone,
+    telephone: site.phoneE164,
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.line1,

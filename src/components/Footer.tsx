@@ -53,12 +53,15 @@ export function Footer() {
         <div>
           <div className="inline-block rounded-2xl bg-white px-4 py-3 shadow-lg shadow-black/10">
             <Image
-              src="/images/logo-lockup.png"
+              src="/images/logo-lockup.webp"
               alt="Nguyen's Osteopathic Clinic — Recover, Realign, and Restore Your Vitality"
               width={1298}
               height={926}
               className="h-28 w-auto object-contain md:h-36"
               sizes="220px"
+              loading="lazy"
+              decoding="async"
+              quality={70}
             />
           </div>
           <p className="mt-4 max-w-sm text-base leading-relaxed text-white/75 md:text-lg">

@@ -29,6 +29,9 @@ function PostCard({ post }: { post: BlogPost }) {
           alt={post.image.alt}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
+          loading="lazy"
+          decoding="async"
+          quality={60}
           className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
         />
       </div>
@@ -67,7 +70,9 @@ function FeaturedCard({ post }: { post: BlogPost }) {
           alt={post.image.alt}
           fill
           priority
+          fetchPriority="high"
           sizes="(max-width: 768px) 100vw, 55vw"
+          quality={70}
           className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
         />
       </div>

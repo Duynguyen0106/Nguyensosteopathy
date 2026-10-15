@@ -98,7 +98,7 @@ export function Header() {
           aria-label="Nguyen's Osteopathic Clinic — Home"
         >
           <Image
-            src="/images/logo-lockup.png"
+            src="/images/logo-lockup.webp"
             alt="Nguyen's Osteopathic Clinic — Recover, Realign, and Restore Your Vitality"
             width={1298}
             height={926}

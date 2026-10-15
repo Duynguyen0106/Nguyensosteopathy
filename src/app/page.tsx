@@ -176,11 +176,14 @@ export default function HomePage() {
           <div className="relative overflow-hidden">
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 to-navy/10 blur-xl" />
             <Image
-              src="/images/austin-nguyen.jpg"
+              src="/images/austin-nguyen.webp"
               alt="Austin Duy Nguyen, GOsC-registered osteopath at Nguyen's Osteopathic Clinic in Woolwich"
               width={560}
               height={700}
               sizes="(max-width: 768px) 90vw, 40vw"
+              loading="lazy"
+              decoding="async"
+              quality={70}
               className="relative float-soft w-full rounded-[1.5rem] object-cover object-top shadow-[0_24px_60px_rgba(11,44,69,0.14)]"
             />
           </div>

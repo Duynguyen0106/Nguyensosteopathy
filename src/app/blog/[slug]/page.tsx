@@ -89,7 +89,7 @@ export default async function BlogPostPage({ params }: Props) {
       name: site.name,
       logo: {
         "@type": "ImageObject",
-        url: `${site.websiteUrl}/images/logo-mark.png`,
+        url: `${site.websiteUrl}/images/logo-mark.webp`,
       },
     },
     mainEntityOfPage: `${site.websiteUrl}/blog/${post.slug}`,
@@ -148,6 +148,8 @@ export default async function BlogPostPage({ params }: Props) {
             alt={post.image.alt}
             fill
             priority
+            fetchPriority="high"
+            quality={70}
             sizes="(max-width: 768px) 100vw, 768px"
             className="object-cover"
           />
@@ -276,6 +278,9 @@ export default async function BlogPostPage({ params }: Props) {
                         alt={item.image.alt}
                         fill
                         sizes="112px"
+                        loading="lazy"
+                        decoding="async"
+                        quality={60}
                         className="object-cover"
                       />
                     </div>

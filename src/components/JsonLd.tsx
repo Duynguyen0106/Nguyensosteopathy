@@ -29,11 +29,11 @@ export function buildClinicJsonLd() {
       "Drug-free osteopathic care in Woolwich with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332). Back pain, neck pain, focused shockwave, men’s health, sports rehab, and more — inside St James Pharmacy, SE18.",
     url: site.websiteUrl,
     image: [
-      `${site.websiteUrl}/images/logo-lockup.png`,
-      `${site.websiteUrl}/images/clinic-promo.jpg`,
-      `${site.websiteUrl}/images/austin-nguyen.jpg`,
+      `${site.websiteUrl}/images/logo-lockup.webp`,
+      `${site.websiteUrl}/images/clinic-promo.webp`,
+      `${site.websiteUrl}/images/austin-nguyen.webp`,
     ],
-    logo: `${site.websiteUrl}/images/logo-mark.png`,
+    logo: `${site.websiteUrl}/images/logo-mark.webp`,
     telephone: site.phoneE164,
     email: site.email,
     sameAs: [
@@ -100,7 +100,7 @@ export function buildPractitionerJsonLd() {
     description:
       "GOsC-registered osteopath and Master of Osteopathy graduate of the British College of Osteopathic Medicine, practising at Nguyen's Osteopathic Clinic in Woolwich.",
     url: `${site.websiteUrl}/about`,
-    image: `${site.websiteUrl}/images/austin-nguyen.jpg`,
+    image: `${site.websiteUrl}/images/austin-nguyen.webp`,
     telephone: site.phoneE164,
     email: site.email,
     identifier: {

@@ -101,10 +101,6 @@ select:focus-visible {
   animation: rise 0.9s ease both;
 }
 
-.reveal {
-  animation: rise 0.8s ease both;
-}
-
 @keyframes rise {
   from {
     opacity: 0;
@@ -238,7 +234,6 @@ select:focus-visible {
   .section-fade,
   .brand-rule,
   .float-soft,
-  .reveal,
   .service-tile,
   .service-arrow,
   .faq-panel,

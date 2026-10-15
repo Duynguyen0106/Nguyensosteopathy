@@ -100,8 +100,9 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Why desk setups create neck pain",
         "paragraphs": [
-          "Looking down at a laptop closes the upper cervical joints and asks the upper trapezius and levator scapulae to hold a static load for hours. Add phone shoulder-clenching on calls and the mid-back stiffens behind the shoulder blades.",
-          "Nail technicians, drivers, and hybrid workers in SE18 share versions of the same pattern. Our [neck pain condition page](/conditions/neck-pain) explains the clinical picture; this article focuses on what you can change at the desk and what hands-on care adds."
+          "Looking down at a laptop closes the upper cervical joints and asks the upper trapezius and levator scapulae to hold a static load for hours. Add phone shoulder-clenching on calls and the mid-back stiffens behind the shoulder blades — a common driver of [neck pain treatment in Woolwich](/conditions/neck-pain).",
+          "Long sits also load the lumbar discs and hip flexors, so [lower back pain from prolonged sitting](/conditions/non-specific-low-back-pain) often arrives with the neck ache rather than instead of it. The mid-back behind the shoulder blades is where [upper-back postural strain](/conditions/thoracic-joint-dysfunction) shows up when the thoracic spine stops rotating freely.",
+          "Nail technicians, drivers, and hybrid workers in SE18 share versions of the same pattern. This article focuses on what you can change at the desk and what hands-on care adds."
         ]
       },
       {
@@ -125,7 +126,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment covers cervical and thoracic mobility, shoulder contribution, and nerve irritability when arm symptoms are present. Treatment may include gentle mobilisation and soft-tissue work, never forced into sharp pain.",
-          "If headaches are part of your picture, see also [tension headaches and neck pain](/blog/tension-headaches-neck-osteopath-woolwich) and [cervicogenic headache](/conditions/cervicogenic-headache). Arm pins and needles may overlap with [cervical radiculopathy](/conditions/cervical-radiculopathy) — we screen rather than assume it is only tight muscles."
+          "If headaches are part of your picture, see also [tension headaches and neck pain](/blog/tension-headaches-neck-osteopath-woolwich). Arm pins and needles need screening rather than assuming it is only tight muscles."
         ]
       },
       {
@@ -790,5 +791,123 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
     "cta": "Read the lumbar disc condition guide, or book online for a hands-on assessment.",
     "ctaHref": "/conditions/lumbar-disc-radiculopathy",
     "ctaLabel": "View lumbar disc guide"
-  }
+  },
+
+  "nail-technician-neck-wrist-pain-osteopath": {
+    updated: "2026-10-15",
+    readingMinutes: 8,
+    sections: [
+      {
+        paragraphs: [
+          "Nail technicians often work with eyes down, shoulders rolled forward, and wrists locked in fine movements for hours. Over months, the neck, upper back, thumbs, and forearms pay the price — especially on busy Woolwich and SE London salon days with back-to-back clients and little recovery between appointments.",
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess posture, soft tissue, and joint mobility, then treat what is irritable while giving practical salon setup and break advice you can actually use between clients. You do not need a GP referral to book.",
+        ],
+      },
+      {
+        heading: "Why salon work loads the neck and wrists",
+        paragraphs: [
+          "Filing, buffing, and detailed nail art keep the wrists in sustained extension or ulnar deviation while the thumb and finger flexors fire continuously. Looking down at a hand for 45–60 minutes per client is a common driver of [neck pain treatment in Woolwich](/conditions/neck-pain) presentations — the upper traps lengthen under load while the deep neck flexors switch off.",
+          "Standing all day on hard salon floors adds fatigue through the hips and lower back, so the shoulders creep forward even more by late afternoon. Grip force travels into the forearms and can irritate [wrist and hand pathways such as carpal tunnel](/conditions/carpal-tunnel). Aggressive filing or lifting heavy kits can also load the outer elbow in a pattern similar to [tennis elbow](/conditions/tennis-elbow).",
+          "The goal is not to abandon your craft. It is to reduce peak load per client, give tissues short recovery windows, and restore mobility so the same shift feels less punishing by Friday.",
+        ],
+      },
+      {
+        heading: "Salon workstation setup that actually helps",
+        paragraphs: [
+          "Raise the client’s hand toward you instead of folding yourself down to the table. A small cushion or adjustable armrest under their forearm often cuts neck flexion more than any stretch. Keep tools within an easy reach zone so you are not reaching across the table with a rounded upper back.",
+          "Chair height matters: hips roughly level with or slightly above the knees, feet flat, and the table close enough that elbows stay near your sides. If you share a station, mark your preferred chair and lamp height with tape — resetting from a colleague’s setup is a common flare trigger on Monday mornings.",
+        ],
+        bullets: [
+          "Client hand supported; your elbows close to your ribs",
+          "Lamp aimed at the nail, not forcing you to lean into shadow",
+          "Alternate which side of the table you sit on across the day when the station allows",
+          "Swap grip-heavy tools for lighter files when detailing allows",
+        ],
+      },
+      {
+        heading: "Micro-breaks and two station drills",
+        level: 3,
+        paragraphs: [
+          "Every two to three clients: stand tall, look at eye-level across the room for 20 seconds, open and close the fists 10 times, then gently shake the hands out. That reset reduces the locked forearm feeling many technicians notice by mid-shift.",
+          "Wrist extensor stretch: elbow straight, palm down, gently draw the hand toward you for 20–30 seconds each side. Chin-nod neck reset: tiny “yes” nods that lengthen the back of the neck without tipping the head back — useful when [neck pain](/conditions/neck-pain) starts referring into the shoulder blade.",
+        ],
+      },
+      {
+        heading: "How osteopathy helps salon workers",
+        image: {
+          src: "/images/blog/rsi-wrist-forearm-office-osteopath.jpg",
+          alt: "Forearm and wrist strain from repetitive fine motor work",
+        },
+        paragraphs: [
+          "Assessment covers the cervical spine, thoracic posture, shoulder girdle, elbows, and wrists — plus how your grip and standing stamina fit the week’s bookings. Treatment may include gentle joint mobilisation, soft-tissue work to the forearm flexors/extensors and upper trapezius, and clear pacing advice for double-booked days.",
+          "If symptoms suggest true nerve entrapment or need medical review, we say so plainly. Many technicians improve when we combine hands-on care with workstation tweaks rather than rest alone.",
+        ],
+      },
+      {
+        heading: "When to book rather than push through",
+        paragraphs: [
+          "Book sooner if night pain, thumb weakness, or pins and needles into the fingers are waking you, or if neck pain is spreading into headaches after every shift. Early assessment often shortens recovery and protects your livelihood.",
+          "Wear clothes you can move in, and bring a short note of which services flare you most (acrylics, gel removal, long sets). Online booking is on our [book page](/book).",
+        ],
+      },
+    ],
+    cta: "Compare your symptoms with our neck pain guide, then book if salon days are still ending in ache or numbness.",
+    ctaHref: "/conditions/neck-pain",
+    ctaLabel: "Read the neck pain guide",
+  },
+
+  "restaurant-kitchen-back-pain-osteopath-woolwich": {
+    updated: "2026-10-15",
+    readingMinutes: 8,
+    sections: [
+      {
+        paragraphs: [
+          "Hospitality work combines hard floors, heavy lifts, heat, and hurry. Hips, knees, shoulders, and the lower back often carry the shift home — especially on Woolwich and SE London service nights when breaks get skipped.",
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess how you move under load, treat what is irritable, and give rota-friendly advice you can keep between doubles. You do not need a GP referral to book.",
+        ],
+      },
+      {
+        heading: "Why kitchen shifts load the back, feet, and knees",
+        paragraphs: [
+          "Repeated bends to low fridges, twisting with pans, and lifting stock crates stack compressive and shear load through the lumbar spine. That pattern is a frequent driver of [lower back pain treatment in Woolwich](/conditions/non-specific-low-back-pain) presentations in hospitality workers.",
+          "Hours on hard kitchen floors in worn shoes irritate the plantar fascia and calf — many chefs finish a week with [plantar fasciitis and heel pain](/conditions/plantar-fasciitis) that is worse on the first steps after a break. Quick pivots on wet tiles and deep knee bends to low shelves also load the joint surfaces, which can show up as [knee pain from standing and pivoting](/conditions/knee-oa).",
+          "The goal is not to leave hospitality. It is to reduce peak load per service, protect recovery between doubles, and restore mobility so the same rota feels less punishing by Sunday.",
+        ],
+      },
+      {
+        heading: "Shift habits that reduce flare-ups",
+        paragraphs: [
+          "Bring stock up to waist height when you can, and ask for help on crates that force a rounded lift from the floor. Alternate which hip you load when standing at the pass, and change shoes or insoles before the midsole is completely flat.",
+          "If a short break is possible, sit with feet up for two minutes rather than scrolling on your phone while still standing — that small unload often settles heel and low-back irritability more than another stretch you will not finish.",
+        ],
+        bullets: [
+          "Lift with hips and legs; keep the load close to your body",
+          "Supportive kitchen shoes with cushioning you actually replace",
+          "Micro-unload: sit or lean briefly between tickets when service allows",
+          "Warm calves and open the hips before a double if mornings feel locked",
+        ],
+      },
+      {
+        heading: "How osteopathy helps kitchen workers",
+        image: {
+          src: "/images/blog/restaurant-kitchen-back-pain-osteopath-woolwich.jpg",
+          alt: "Kitchen and hospitality work loading the lower back and legs",
+        },
+        paragraphs: [
+          "Assessment covers the lumbar spine, hips, knees, and feet — plus how your rota, footwear, and lifting habits fit the week. Treatment may include gentle joint mobilisation, soft-tissue work to the hips and calves, and clear pacing advice for service peaks.",
+          "If symptoms suggest nerve involvement, fracture risk after a fall, or need medical review, we say so plainly. Many kitchen staff improve when hands-on care is paired with practical load changes rather than rest alone.",
+        ],
+      },
+      {
+        heading: "When to book rather than push through",
+        paragraphs: [
+          "Book sooner if night pain, morning heel stabbing that lasts beyond the first few steps, or knee swelling after every service is limiting your work. Early assessment often shortens recovery and protects your livelihood.",
+          "Wear clothes you can move in, and bring a short note of which tasks flare you most (stock lift, pass standing, deep fryer bends). Online booking is on our [book page](/book).",
+        ],
+      },
+    ],
+    cta: "Compare your symptoms with our lower back pain guide, then book if kitchen shifts are still ending in ache or heel pain.",
+    ctaHref: "/conditions/non-specific-low-back-pain",
+    ctaLabel: "Read the lower back pain guide",
+  },
 };

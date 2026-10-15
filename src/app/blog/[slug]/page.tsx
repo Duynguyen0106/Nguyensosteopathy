@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BlogRichText } from "@/components/BlogRichText";
 import { ButtonLink } from "@/components/Button";
 import { categoryToId, getAllPosts, getPost } from "@/lib/blog";
 import { site } from "@/lib/site";
@@ -9,6 +10,14 @@ import { site } from "@/lib/site";
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -58,6 +67,9 @@ export default async function BlogPostPage({ params }: Props) {
     ),
   ].slice(0, 3);
   const categoryHref = `/blog#${categoryToId(post.category)}`;
+  const updated = post.updated ?? post.date;
+  const ctaHref = post.ctaHref ?? "/book";
+  const ctaLabel = post.ctaLabel ?? "Book online";
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -65,11 +77,12 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.updated ?? post.date,
+    dateModified: updated,
     author: {
       "@type": "Person",
       name: site.practitioner.name,
       jobTitle: site.practitioner.title,
+      url: `${site.websiteUrl}/about`,
     },
     publisher: {
       "@type": "Organization",
@@ -107,12 +120,14 @@ export default async function BlogPostPage({ params }: Props) {
           {post.title}
         </h1>
         <p className="mt-4 text-sm text-slate-500">
-          By {site.practitioner.name} · {post.readingMinutes} min read ·{" "}
-          {new Date(post.date).toLocaleDateString("en-GB", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })}
+          By {site.practitioner.name} · {post.readingMinutes} min read
+        </p>
+        <p className="mt-1 text-sm text-slate-500">
+          <span className="font-medium text-slate-600">Published</span>{" "}
+          {formatDate(post.date)}
+          {" · "}
+          <span className="font-medium text-slate-600">Last updated</span>{" "}
+          {formatDate(updated)}
         </p>
         <p className="mt-6 text-lg leading-relaxed text-slate-600">
           {post.description}
@@ -131,44 +146,99 @@ export default async function BlogPostPage({ params }: Props) {
           />
         </div>
         <div className="space-y-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-10">
-          {post.sections.map((section, index) => (
-            <section key={index}>
-              {section.heading ? (
-                <h2 className="font-display text-2xl text-navy md:text-3xl">
-                  {section.heading}
-                </h2>
-              ) : null}
-              {section.paragraphs.map((paragraph) => (
-                <p
-                  key={paragraph.slice(0, 48)}
-                  className={`text-base leading-relaxed text-slate-700 md:text-[1.05rem] ${
-                    section.heading ? "mt-3" : index === 0 ? "" : "mt-3"
-                  }`}
-                >
-                  {paragraph}
-                </p>
-              ))}
-              {section.bullets ? (
-                <ul className="mt-4 list-disc space-y-2 pl-5 text-base text-slate-700">
-                  {section.bullets.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              ) : null}
-            </section>
-          ))}
+          {post.sections.map((section, index) => {
+            const HeadingTag = section.level === 3 ? "h3" : "h2";
+            const headingClass =
+              section.level === 3
+                ? "font-display text-xl text-navy md:text-2xl"
+                : "font-display text-2xl text-navy md:text-3xl";
+
+            return (
+              <section key={index}>
+                {section.heading ? (
+                  <HeadingTag className={headingClass}>
+                    {section.heading}
+                  </HeadingTag>
+                ) : null}
+                {section.image ? (
+                  <div className="relative mt-4 aspect-[16/10] overflow-hidden rounded-xl bg-slate-100">
+                    <Image
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 700px"
+                      className="object-cover"
+                    />
+                  </div>
+                ) : null}
+                {section.paragraphs.map((paragraph) => (
+                  <p
+                    key={paragraph.slice(0, 48)}
+                    className={`text-base leading-relaxed text-slate-700 md:text-[1.05rem] ${
+                      section.heading || section.image
+                        ? "mt-3"
+                        : index === 0
+                          ? ""
+                          : "mt-3"
+                    }`}
+                  >
+                    <BlogRichText text={paragraph} />
+                  </p>
+                ))}
+                {section.bullets ? (
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-base text-slate-700">
+                    {section.bullets.map((item) => (
+                      <li key={item}>
+                        <BlogRichText text={item} />
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </section>
+            );
+          })}
 
           {post.cta ? (
             <div className="rounded-xl border border-teal/25 bg-teal/5 px-5 py-5">
               <p className="font-semibold text-navy">{post.cta}</p>
               <div className="mt-4 flex flex-wrap gap-3">
-                <ButtonLink href="/book">Book online</ButtonLink>
+                <ButtonLink href={ctaHref}>{ctaLabel}</ButtonLink>
                 <ButtonLink href={site.phoneHref} variant="secondary">
                   Call {site.phone}
                 </ButtonLink>
               </div>
             </div>
           ) : null}
+
+          <aside className="flex flex-col gap-4 rounded-xl border border-slate-200 bg-slate-50 p-5 sm:flex-row sm:items-center sm:gap-5">
+            <div className="relative mx-auto h-24 w-24 shrink-0 overflow-hidden rounded-full bg-slate-200 sm:mx-0">
+              <Image
+                src="/images/austin-nguyen.jpg"
+                alt={`${site.practitioner.name}, GOsC-registered osteopath`}
+                fill
+                sizes="96px"
+                className="object-cover object-[center_20%]"
+              />
+            </div>
+            <div className="min-w-0 text-center sm:text-left">
+              <p className="font-semibold text-navy">
+                {site.practitioner.name}, GOsC-Registered Osteopath (Reg. No.{" "}
+                {site.practitioner.regNo})
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                Master of Osteopathy graduate providing drug-free pain relief
+                and hands-on care inside St James Pharmacy, Woolwich SE18.
+              </p>
+              <p className="mt-2">
+                <Link
+                  href="/about"
+                  className="text-sm font-semibold text-teal hover:text-teal-dark"
+                >
+                  Read Austin&apos;s story →
+                </Link>
+              </p>
+            </div>
+          </aside>
         </div>
 
         {others.length ? (

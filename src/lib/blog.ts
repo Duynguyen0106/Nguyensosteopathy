@@ -1,5 +1,7 @@
 import { batch3BlogPosts } from "@/lib/blog-posts-batch3";
 import { serviceBlogPosts } from "@/lib/blog-posts-services";
+import { blogExpandedBodies } from "@/lib/blog-expanded-bodies";
+import { blogExpandedPriority } from "@/lib/blog-expanded-priority";
 import blogImageManifest from "@/lib/blog-image-manifest.json";
 import { site } from "@/lib/site";
 
@@ -25,6 +27,20 @@ export const BLOG_CATEGORIES = [
 
 export type BlogCategory = (typeof BLOG_CATEGORIES)[number];
 
+export type BlogPostSection = {
+  /** Section title — rendered as H2 by default, or H3 when level is 3 */
+  heading?: string;
+  level?: 2 | 3;
+  /** Plain text; use markdown-style [label](/path) for internal links */
+  paragraphs: string[];
+  bullets?: string[];
+  /** Optional mid-article image with descriptive alt text */
+  image?: {
+    src: string;
+    alt: string;
+  };
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -41,18 +57,29 @@ export type BlogPost = {
     alt: string;
   };
   /** Body paragraphs and simple sections for rendering */
-  sections: Array<{
-    heading?: string;
-    paragraphs: string[];
-    bullets?: string[];
-  }>;
+  sections: BlogPostSection[];
+  /** Closing call-to-action copy */
   cta?: string;
+  /** Where the CTA button goes — defaults to /book */
+  ctaHref?: string;
+  /** CTA button label — defaults to "Book online" */
+  ctaLabel?: string;
 };
 
 type BlogPostInput = Omit<BlogPost, "image" | "readingMinutes"> & {
   image?: BlogPost["image"];
   readingMinutes?: number;
 };
+
+function withExpansion(post: BlogPostInput): BlogPostInput {
+  const expansion =
+    blogExpandedPriority[post.slug] ?? blogExpandedBodies[post.slug];
+  if (!expansion) return post;
+  return {
+    ...post,
+    ...expansion,
+  };
+}
 
 function withImage(post: BlogPostInput): BlogPost {
   const image = post.image ?? imageManifest[post.slug];
@@ -124,7 +151,8 @@ const blogPostInputs: BlogPostInput[] = [
     description:
       "Practical guide to common back pain causes for Woolwich and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
     date: "2026-10-08",
-    readingMinutes: 7,
+    updated: "2026-10-15",
+    readingMinutes: 9,
     category: "Back & neck",
     keywords: [
       "back pain Woolwich",
@@ -140,25 +168,85 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
       {
-        heading: "Common patterns we see",
-        bullets: [
-          "Lower back stiffness after long sitting",
-          "Pain when bending or getting out of a chair",
-          "One-sided buttock or thigh referral that eases with movement",
-          "Neck-related upper back tension from screens",
-        ],
+        heading: "Why back pain is so common in SE18",
         paragraphs: [
-          "Many of these patterns respond well to hands-on care plus simple load and posture changes. We review progress regularly and only recommend further sessions when they are clinically useful.",
+          "Woolwich and the wider Greenwich borough mix standing retail shifts, warehouse and trades work, long Elizabeth line or DLR sits, and hybrid desk days. That variety is good for a town — and hard on a lumbar spine that never gets the same load twice in one week.",
+          "Most back pain is [non-specific mechanical pain](/conditions/non-specific-low-back-pain): sensitive joints, discs, and soft tissue reacting to sudden load, deconditioning, poor sleep, or stress. A scan is not required for every flare. What you do need is a clear plan so fear of movement does not become the second injury.",
+        ],
+      },
+      {
+        heading: "Common patterns we see",
+        paragraphs: [
+          "In clinic, the same stories return with different postcodes. Naming the pattern helps you recognise when self-care is enough — and when hands-on assessment will save weeks of guessing.",
+        ],
+        bullets: [
+          "Lower back stiffness after long sitting that eases once you walk",
+          "Pain when bending or getting out of a chair, especially first thing",
+          "One-sided buttock or thigh referral that eases with movement",
+          "Neck-related upper back tension from screens and phone posture",
+          "Weekend DIY or gym spikes after a sedentary week",
+        ],
+      },
+      {
+        heading: "Desk, commute, and lifting triggers",
+        level: 3,
+        paragraphs: [
+          "Laptop height, soft sofas, and wallets in back pockets quietly round the lumbar spine for hours. Add a crowded commute without room to change position and tissues stay irritable overnight. Lifting a toddler, a delivery crate, or a leftover DIY bag with a twist on top of that sitting load is a classic Monday-morning presentation.",
+          "We do not expect perfect posture all day. We do expect small resets: standing meetings, a short walk after the train, and hip hinge technique for floor picks. Those details sit alongside treatment so relief lasts longer than the appointment.",
+        ],
+      },
+      {
+        heading: "How osteopathy approaches back pain",
+        image: {
+          src: "/images/blog/morning-back-stiffness-osteopath.jpg",
+          alt: "Person standing and stretching their lower back after morning stiffness",
+        },
+        paragraphs: [
+          "Your first visit is usually about 60 minutes. We take a focused history, screen for neurological and medical red flags, and examine how your lumbar spine, pelvis, hips, and mid-back share load. Findings are explained in plain English before any hands-on care starts.",
+          "Treatment is matched to irritability. An acute flare may need gentle mobilisation and soft-tissue work with short-term activity tweaks. A recurrent desk pattern often needs more emphasis on thoracic mobility, hip strength, and graded return to lifting or running. Related guides such as [sciatica in Woolwich](/blog/sciatica-woolwich-osteopath) and our [back and neck service page](/back-neck) sit beside this article if leg symptoms or neck drivers are part of your picture.",
+          "We review progress honestly. Further sessions are recommended when they are clinically useful — not as a default package.",
+        ],
+      },
+      {
+        heading: "What recovery usually looks like",
+        level: 3,
+        paragraphs: [
+          "Many mechanical flares settle over two to six weeks with sensible load and targeted care. Sleep often improves before perfect bending feels natural again. Stubborn or recurrent pain may need six to twelve weeks of rehab-focused work, especially if you are rebuilding after months of guarding.",
+          "Disc-related or nerve-leaning patterns can take longer for the leg symptoms to quieten even when the back feels better. We measure walking tolerance, sitting minutes, and work capacity — not fear based on an old MRI report.",
+        ],
+      },
+      {
+        heading: "Self-care that actually helps between visits",
+        paragraphs: [
+          "Complete bed rest rarely speeds recovery. Short relative rest, then graded walking, usually outperforms days on the sofa. Heat can ease muscle guarding; ice is optional if it feels soothing after a spike.",
+          "Avoid heroic end-range stretches that recreate sharp pain. Prefer comfortable movement: easy walking, supported sit-to-stands, and gentle pelvic tilts if they calm rather than provoke. If a movement repeatedly produces leg weakness, saddle numbness, or bladder change, stop and seek urgent care instead of “pushing through.”",
         ],
       },
       {
         heading: "When to seek urgent medical care",
         paragraphs: [
           "Osteopathy is not a substitute for emergency care. Seek urgent help if you have new bladder or bowel changes, numbness in the saddle area, rapidly worsening leg weakness, unexplained weight loss, fever with back pain, or pain after significant trauma.",
+          "For persistent but non-emergency pain — sleep disruption, work limitation, or recurring flares — an osteopathic assessment is a sensible next step. You do not need a GP referral to book at Nguyen's Osteopathic Clinic inside St James Pharmacy.",
+        ],
+      },
+      {
+        heading: "Related conditions worth knowing",
+        paragraphs: [
+          "If pain travels below the knee with pins and needles, read our notes on [sciatica](/conditions/sciatica) and [lumbar disc / radiculopathy](/conditions/lumbar-disc-radiculopathy). Extension-biased local pain may fit a [facet pattern](/conditions/facet-syndrome). One-sided buttock pain after pregnancy or asymmetric sport often overlaps with [sacroiliac joint irritation](/conditions/si-joint-dysfunction).",
+          "Matching the label is less important than matching the plan — but the right page can help you prepare better questions for your assessment.",
+        ],
+      },
+      {
+        heading: "What to bring to your first back-pain visit",
+        paragraphs: [
+          "Wear clothes you can move in. Bring a short timeline of when pain started, what eases it, and what you need to get back to — work shifts, childcare, gym, or sleep. Scan reports help when you have them, but they are not required. If you take blood thinners or have had recent surgery, mention that early so techniques stay appropriate.",
+          "Fees for an [initial consultation](/fees) are listed transparently, and a 10% NHS and student discount applies with valid ID. Online booking is available; you can also call if you are unsure whether osteopathy or a GP review should come first.",
         ],
       },
     ],
-    cta: "If back pain is limiting work or sleep, book an osteopathy assessment in Woolwich online.",
+    cta: "If back pain is limiting work or sleep, start with a clear assessment — or explore our condition guides if you want to understand the pattern first.",
+    ctaHref: "/conditions/non-specific-low-back-pain",
+    ctaLabel: "View back pain condition guide",
   },
   {
     slug: "desk-neck-and-shoulder-pain",
@@ -715,7 +803,9 @@ const blogPostInputs: BlogPostInput[] = [
   ...batch3BlogPosts,
 ];
 
-export const blogPosts: BlogPost[] = blogPostInputs.map(withImage);
+export const blogPosts: BlogPost[] = blogPostInputs
+  .map(withExpansion)
+  .map(withImage);
 
 export function getPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);

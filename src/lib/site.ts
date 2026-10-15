@@ -7,6 +7,9 @@ export const site = {
     title: "GOsC-Registered Osteopath",
     regNo: "12332",
     credentials: "Master of Osteopathy, British College of Osteopathic Medicine",
+    /** Official GOsC public Register search (verify by registration number). */
+    goscRegisterUrl: "https://www.osteopathy.org.uk/register-search/",
+    bio: "Master of Osteopathy graduate of the British College of Osteopathic Medicine and a GOsC-registered osteopath. Austin provides drug-free pain relief and hands-on MSK care at Nguyen's Osteopathic Clinic inside St James Pharmacy, Woolwich SE18. He is the only Vietnamese osteopath practising in the UK.",
   },
   phone: "07882 843513",
   /** E.164 for schema.org and reliable click-to-call. */

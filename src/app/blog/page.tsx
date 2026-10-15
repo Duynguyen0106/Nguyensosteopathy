@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   title: "Osteopathy Blog | Woolwich Advice & Guides",
   description:
     "Osteopathy blog for Woolwich and SE18: back pain treatment, neck pain treatment, shockwave therapy, sports rehab, pregnancy, men’s health, and clinic guides from Nguyen's Osteopathic Clinic.",
-  alternates: { canonical: "/blog" },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: { canonical: `${site.websiteUrl}/blog` },
   keywords: [
     "osteopathy blog Woolwich",
     "back pain treatment Woolwich",
@@ -25,7 +29,7 @@ export const metadata: Metadata = {
     title: "Osteopathy Blog | Woolwich Advice & Guides",
     description:
       "Local osteopathy articles organised by topic — practical guides for pain, treatment options, and booking at Nguyen's Osteopathic Clinic.",
-    url: "/blog",
+    url: `${site.websiteUrl}/blog`,
   },
 };
 
@@ -61,7 +65,7 @@ export default function BlogIndexPage() {
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: total,
-      itemListElement: allPosts.slice(0, 20).map((post, index) => ({
+      itemListElement: allPosts.map((post, index) => ({
         "@type": "ListItem",
         position: index + 1,
         url: `${site.websiteUrl}/blog/${post.slug}`,
@@ -119,6 +123,52 @@ export default function BlogIndexPage() {
 
       <div className="mx-auto max-w-6xl px-5 py-12 md:px-8 md:py-16">
         <BlogDirectory groups={groups} featured={featured} />
+
+        {/* Server-rendered plain index — always in HTML for crawlers, independent of client filters */}
+        <nav
+          aria-label="Complete blog article index"
+          className="mt-16 border-t border-slate-200 pt-12"
+        >
+          <h2 className="font-display text-3xl text-navy">All articles</h2>
+          <p className="mt-2 max-w-2xl text-base leading-relaxed text-slate-600">
+            Full index of every guide on this blog — grouped by topic for easy
+            browsing and discovery.
+          </p>
+          <div className="mt-8 space-y-10">
+            {groups.map((group) => (
+              <section key={group.id} id={`index-${group.id}`}>
+                <h3 className="text-sm font-semibold tracking-[0.16em] text-teal uppercase">
+                  {group.category}
+                </h3>
+                <ul className="mt-3 columns-1 gap-x-8 sm:columns-2">
+                  {group.posts.map((post) => (
+                    <li key={post.slug} className="break-inside-avoid py-1.5">
+                      <Link
+                        href={`/blog/${post.slug}`}
+                        className="text-base font-medium text-navy underline-offset-2 hover:text-teal hover:underline"
+                      >
+                        {post.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
+        </nav>
+
+        <noscript>
+          <nav aria-label="Blog articles without JavaScript">
+            <h2>All blog articles</h2>
+            <ul>
+              {allPosts.map((post) => (
+                <li key={`noscript-${post.slug}`}>
+                  <a href={`/blog/${post.slug}`}>{post.title}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </noscript>
 
         <div className="mt-14 border border-teal/25 bg-teal/5 px-6 py-8 text-center md:px-10">
           <h2 className="font-display text-3xl text-navy">

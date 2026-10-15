@@ -28,16 +28,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return { title: "Article" };
+  const canonicalPath = `/blog/${post.slug}`;
+  const canonicalUrl = `${site.websiteUrl}${canonicalPath}`;
   return {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
-    alternates: { canonical: `/blog/${post.slug}` },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    alternates: { canonical: canonicalUrl },
     openGraph: {
       title: post.title,
       description: post.description,
       type: "article",
-      url: `/blog/${post.slug}`,
+      url: canonicalUrl,
       publishedTime: post.date,
       modifiedTime: post.updated ?? post.date,
       authors: [site.practitioner.name],
@@ -72,11 +84,13 @@ export default async function BlogPostPage({ params }: Props) {
   const ctaHref = post.ctaHref ?? "/book";
   const ctaLabel = post.ctaLabel ?? "Book online";
 
+  const postUrl = `${site.websiteUrl}/blog/${post.slug}`;
   const articleLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
+    url: postUrl,
     datePublished: post.date,
     dateModified: updated,
     author: {
@@ -93,7 +107,10 @@ export default async function BlogPostPage({ params }: Props) {
         url: `${site.websiteUrl}/images/logo-mark.webp`,
       },
     },
-    mainEntityOfPage: `${site.websiteUrl}/blog/${post.slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": postUrl,
+    },
     keywords: post.keywords.join(", "),
     image: [`${site.websiteUrl}${post.image.src}`],
   };

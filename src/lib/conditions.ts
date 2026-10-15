@@ -28,6 +28,7 @@ export type Condition = {
   whoAffected?: string;
   whatToExpect?: string;
   recoveryTimeline?: string;
+  /** Optional overrides; otherwise generated via getConditionFaqs(). */
   faqs?: ConditionFaq[];
   /** Prefer these over same-region fallbacks for “Related conditions”. */
   relatedConditionSlugs?: string[];
@@ -36,6 +37,59 @@ export type Condition = {
   keywords: string[];
   featured?: boolean;
 };
+
+/**
+ * Patient FAQs for condition landers. Prefer explicit `condition.faqs`;
+ * otherwise build 4–5 answers from summary, signs, and how-we-help so the
+ * visible accordion and FAQPage JSON-LD stay identical.
+ */
+export function getConditionFaqs(condition: Condition): ConditionFaq[] {
+  if (condition.faqs && condition.faqs.length > 0) {
+    return condition.faqs;
+  }
+
+  const name = condition.shortTitle;
+  const nameLower = name.toLowerCase();
+  const help = condition.howWeHelp.filter(Boolean);
+  const signs = condition.symptoms.filter(Boolean);
+  const helpSentence =
+    help.length > 0
+      ? help
+          .slice(0, 3)
+          .map((item) => item.replace(/\.$/, ""))
+          .join("; ") + "."
+      : "We assess the joints, soft tissue, and movement patterns involved, then match hands-on care and advice to your stage.";
+  const signsSentence =
+    signs.length > 0
+      ? `Common signs include ${signs
+          .slice(0, 3)
+          .map((item) => item.replace(/\.$/, "").toLowerCase())
+          .join("; ")}.`
+      : `Symptoms often change with posture, load, or activity.`;
+
+  return [
+    {
+      question: `Can osteopathy help with ${nameLower}?`,
+      answer: `Yes — for many people with ${nameLower}, osteopathy is a suitable conservative option. ${condition.summary} At Nguyen's Osteopathic Clinic in Woolwich we ${helpSentence.charAt(0).toLowerCase()}${helpSentence.slice(1)}`,
+    },
+    {
+      question: `How many sessions will I need for ${nameLower}?`,
+      answer: `It depends on how irritable symptoms are, how long you have had them, and what you need to return to. Many mechanical patterns improve over a short course of care with clear review points; longer-standing or complex cases may need more graded rehab. We explain likely timeframes after your first assessment rather than selling a fixed package.`,
+    },
+    {
+      question: `Is osteopathy safe for ${nameLower}?`,
+      answer: `Osteopathy is generally safe when techniques are matched to your assessment, medical history, and symptom irritability. We screen for red flags that need GP or urgent pathways first, explain findings in plain English, and adapt or avoid techniques that are not appropriate for your presentation of ${nameLower}.`,
+    },
+    {
+      question: `What should I do before my appointment for ${nameLower}?`,
+      answer: `Wear clothes you can move in, and bring a short timeline of what aggravates or eases symptoms. ${signsSentence} Recent scan letters help when you have them but are not required, and you do not need a GP referral to book. Mention pregnancy, blood thinners, recent surgery, or neurological change early so care stays appropriate.`,
+    },
+    {
+      question: `When should I seek urgent care instead of osteopathy for ${nameLower}?`,
+      answer: `Seek urgent medical care for rapidly worsening weakness, saddle numbness, bladder or bowel change, unexplained weight loss, fever with severe spinal pain, chest pain of cardiac concern, or trauma with suspected fracture. For persistent but non-emergency ${nameLower}, an osteopathic assessment at our Woolwich clinic is a sensible next step.`,
+    },
+  ];
+}
 
 /** Region order aligned with the MSK Tutor conditions catalogue. */
 export const conditionRegions: ConditionRegion[] = [

@@ -6,6 +6,7 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import {
   getAllConditionSlugs,
   getCondition,
+  getConditionFaqs,
   getRelatedConditions,
 } from "@/lib/conditions";
 import { getService, site } from "@/lib/site";
@@ -41,13 +42,12 @@ export default async function ConditionPage({ params }: Props) {
 
   const service = getService(condition.relatedServiceSlug);
   const related = getRelatedConditions(condition, 4);
-  const faqs = condition.faqs ?? [];
+  const faqs = getConditionFaqs(condition);
   const expanded =
     Boolean(condition.causes) ||
     Boolean(condition.whoAffected) ||
     Boolean(condition.whatToExpect) ||
-    Boolean(condition.recoveryTimeline) ||
-    faqs.length > 0;
+    Boolean(condition.recoveryTimeline);
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -75,21 +75,18 @@ export default async function ConditionPage({ params }: Props) {
     },
   };
 
-  const faqLd =
-    faqs.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqs.map((item) => ({
-            "@type": "Question",
-            name: item.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: item.answer,
-            },
-          })),
-        }
-      : null;
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
     <div className="bg-slate-50">
@@ -97,12 +94,10 @@ export default async function ConditionPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
       />
-      {faqLd ? (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
-        />
-      ) : null}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
@@ -216,16 +211,14 @@ export default async function ConditionPage({ params }: Props) {
         </section>
       ) : null}
 
-      {faqs.length > 0 ? (
-        <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="font-display text-3xl text-navy">
-              FAQs about {condition.shortTitle.toLowerCase()}
-            </h2>
-            <FaqAccordion items={faqs} />
-          </div>
-        </section>
-      ) : null}
+      <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-display text-3xl text-navy">
+            FAQs about {condition.shortTitle.toLowerCase()}
+          </h2>
+          <FaqAccordion items={faqs} />
+        </div>
+      </section>
 
       <section className="px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">

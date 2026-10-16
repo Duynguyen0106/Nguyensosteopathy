@@ -6,8 +6,7 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { ServiceIcon } from "@/components/ServiceIcon";
-import { StarRating } from "@/components/StarRating";
-import { getAllPosts } from "@/lib/blog";
+import { getLatestPostCards } from "@/lib/blog";
 import { getFeaturedConditions } from "@/lib/conditions";
 import {
   faqs,
@@ -16,7 +15,6 @@ import {
   pricing,
   services,
   site,
-  testimonials,
   visitSteps,
 } from "@/lib/site";
 
@@ -34,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const latestPosts = getAllPosts().slice(0, 3);
+  const latestPosts = getLatestPostCards(3);
   const featuredConditions = getFeaturedConditions();
 
   return (
@@ -100,42 +98,24 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-              Patient stories
+              Reviews
             </p>
             <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
-              What Our Patients Say
+              Google reviews
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
-              Real feedback from people who came in for pain relief, specialist
-              care, and a clearer path back to comfortable movement.
+              Public feedback will appear on our Google listing as patients
+              visit after we open on {site.booking.opensFromLabel}. Until then,
+              you can follow the clinic page or leave a review after your
+              appointment.
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-3">
-            {testimonials.map((review) => (
-              <li
-                key={review.name}
-                className="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:bg-white hover:shadow-md"
-              >
-                <StarRating rating={review.rating} />
-                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-slate-700 md:text-[0.95rem]">
-                  “{review.quote}”
-                </blockquote>
-                <footer className="mt-5 border-t border-slate-200 pt-4">
-                  <p className="font-semibold text-navy">{review.name}</p>
-                  <p className="mt-1 text-xs font-semibold tracking-wide text-teal-dark uppercase">
-                    {review.treatment}
-                  </p>
-                </footer>
-              </li>
-            ))}
-          </ul>
-
           <div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-2xl bg-navy px-5 py-6 text-white md:flex-row md:items-center md:px-8">
             <div>
-              <p className="font-display text-2xl">Google reviews</p>
+              <p className="font-display text-2xl">Find us on Google</p>
               <p className="mt-1 text-sm text-white/75">
-                Read public feedback, or share your visit to help neighbours find
+                Read public ratings, or share your visit to help neighbours find
                 care in Woolwich.
               </p>
             </div>
@@ -149,7 +129,7 @@ export default function HomePage() {
                 See Google reviews
               </ButtonLink>
               <ButtonLink href="/reviews" variant="secondary">
-                Patient stories
+                Reviews page
               </ButtonLink>
             </div>
           </div>
@@ -188,10 +168,10 @@ export default function HomePage() {
             </p>
             <p className="mt-6 text-lg leading-relaxed text-slate-700">
               Master of Osteopathy graduate of the British College of
-              Osteopathic Medicine — and the only Vietnamese osteopath
-              practising in the UK. {site.name} exists so our community can find
-              drug-free care they recognise, in a clinic built around root-cause
-              treatment and dignity.
+              Osteopathic Medicine, and a Vietnamese-speaking GOsC osteopath
+              practising in Woolwich. {site.name} exists so our community can
+              find drug-free care they recognise, in a clinic built around
+              root-cause treatment and dignity.
             </p>
 
             <div className="mt-8 inline-flex max-w-full items-center gap-3 rounded-xl border border-teal/30 bg-teal/5 px-4 py-3 text-sm font-medium text-navy sm:px-5">
@@ -244,7 +224,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <ButtonLink href="/shockwave" variant="secondary">
+              <ButtonLink href="/services/focused-shockwave" variant="secondary">
                 Shockwave guide
               </ButtonLink>
               <ButtonLink href="/services" variant="secondary">

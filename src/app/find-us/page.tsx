@@ -74,8 +74,8 @@ export default function FindUsPage() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 51.4905,
-      longitude: 0.0675,
+      latitude: site.address.geo.latitude,
+      longitude: site.address.geo.longitude,
     },
     hasMap: site.address.mapsUrl,
   };
@@ -158,8 +158,9 @@ export default function FindUsPage() {
                 ))}
               </ul>
               <p className="mt-3 text-xs leading-relaxed text-slate-500">
-                Closed {site.booking.closedDaysLabel}. Live slots are always
-                shown in the booking calendar.
+                Online booking from {site.booking.opensFromLabel}. Closed{" "}
+                {site.booking.closedDaysLabel}. Live slots are always shown in
+                the booking calendar.
               </p>
             </div>
           </div>

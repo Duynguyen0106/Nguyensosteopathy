@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
     description:
-      "Osteopath người Việt duy nhất hành nghề tại Anh — chăm sóc cơ xương khớp cho cộng đồng Việt tại Woolwich, London SE18.",
+      "Osteopath người Việt nói tiếng Việt tại Woolwich — chăm sóc cơ xương khớp cho cộng đồng Việt tại London SE18.",
     url: "/vi",
     locale: "vi_VN",
     images: [
@@ -255,10 +255,10 @@ export default function VietnamesePage() {
               <ButtonLink href="/desk-pain" variant="secondary">
                 Đau do ngồi máy tính
               </ButtonLink>
-              <ButtonLink href="/back-neck" variant="secondary">
+              <ButtonLink href="/services/back-neck-pain" variant="secondary">
                 Đau lưng &amp; cổ
               </ButtonLink>
-              <ButtonLink href="/shockwave" variant="secondary">
+              <ButtonLink href="/services/focused-shockwave" variant="secondary">
                 Shockwave
               </ButtonLink>
               <ButtonLink href="/fees" variant="secondary">
@@ -267,7 +267,7 @@ export default function VietnamesePage() {
             </div>
             <p className="mt-5 text-sm text-slate-600">
               Thêm:{" "}
-              <Link href="/pregnancy" className="font-semibold text-teal hover:text-teal-dark">
+              <Link href="/services/pregnancy-support" className="font-semibold text-teal hover:text-teal-dark">
                 Thai kỳ
               </Link>
               {" · "}
@@ -314,7 +314,7 @@ export default function VietnamesePage() {
               {site.address.line2}
             </p>
             <p className="mt-4 text-sm text-slate-500">
-              Giờ nhà thuốc:{" "}
+              Giờ nhà thuốc (ra vào tòa nhà):{" "}
               {site.hours.map((row) => (
                 <span key={row.days} className="mr-4 inline-block">
                   {row.days}: {row.time}
@@ -322,8 +322,17 @@ export default function VietnamesePage() {
               ))}
             </p>
             <p className="mt-2 text-sm text-slate-500">
-              Ngày đặt lịch osteopathy: {site.booking.bookableDaysLabel} (đóng{" "}
-              {site.booking.closedDaysLabel}, trừ ngày khai trương).
+              Đặt lịch osteopathy từ {site.booking.opensFromLabel}:{" "}
+              {site.booking.bookableDaysLabel} (đóng {site.booking.closedDaysLabel}
+              ).
+            </p>
+            <p className="mt-2 text-sm text-slate-500">
+              Phí khám ban đầu £75 (60 phút) · Tái khám £60 · Giảm 10% cho NHS
+              và sinh viên (xuất trình thẻ). Chi tiết:{" "}
+              <Link href="/fees" className="font-semibold text-teal hover:text-teal-dark">
+                bảng giá
+              </Link>
+              .
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

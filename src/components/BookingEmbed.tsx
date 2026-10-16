@@ -1,15 +1,28 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { site } from "@/lib/site";
 
 const MIN_HEIGHT = 980;
 const MOBILE_MIN_HEIGHT = 1280;
 
+function embedOrigin(url: string) {
+  try {
+    return new URL(url).origin;
+  } catch {
+    return "https://treow-clinic.vercel.app";
+  }
+}
+
 export function BookingEmbed() {
   const frameRef = useRef<HTMLIFrameElement>(null);
   const [height, setHeight] = useState(MIN_HEIGHT);
   const [loaded, setLoaded] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const allowedOrigin = useMemo(
+    () => embedOrigin(site.bookingEmbedUrl),
+    [],
+  );
 
   useEffect(() => {
     const syncHeight = () => {
@@ -25,7 +38,7 @@ export function BookingEmbed() {
 
   useEffect(() => {
     const onMessage = (event: MessageEvent) => {
-      if (event.origin !== "https://treow-clinic.vercel.app") return;
+      if (event.origin !== allowedOrigin) return;
       const data = event.data;
       if (!data || typeof data !== "object") return;
       const next =
@@ -40,7 +53,42 @@ export function BookingEmbed() {
     };
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
-  }, []);
+  }, [allowedOrigin]);
+
+  useEffect(() => {
+    if (loaded || failed) return;
+    const timer = window.setTimeout(() => {
+      if (!loaded) setFailed(true);
+    }, 12000);
+    return () => window.clearTimeout(timer);
+  }, [loaded, failed]);
+
+  if (failed && !loaded) {
+    return (
+      <div className="booking-embed-shell flex min-h-[320px] flex-col items-center justify-center gap-4 bg-slate-50 px-6 py-12 text-center md:rounded-2xl md:border md:border-slate-200">
+        <p className="max-w-md text-base text-slate-700">
+          The booking calendar could not load. Open the full Treow booking page,
+          or call us on {site.phone}.
+        </p>
+        <div className="flex flex-wrap justify-center gap-3">
+          <a
+            href={site.bookingExternalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 items-center justify-center rounded-xl bg-teal px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark"
+          >
+            Open full booking page
+          </a>
+          <a
+            href={site.phoneHref}
+            className="inline-flex min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+          >
+            Call {site.phone}
+          </a>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -65,12 +113,15 @@ export function BookingEmbed() {
         ref={frameRef}
         src={site.bookingEmbedUrl}
         title="Book an appointment with Nguyen's Osteopathic Clinic"
-        loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
         className="relative z-20 block w-full border-0 bg-white"
         style={{ height: `${height}px`, minHeight: `${height}px` }}
-        onLoad={() => setLoaded(true)}
+        onLoad={() => {
+          setLoaded(true);
+          setFailed(false);
+        }}
+        onError={() => setFailed(true)}
       />
     </div>
   );

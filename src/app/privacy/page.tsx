@@ -94,16 +94,20 @@ export default function PrivacyPage() {
               Cookies and analytics
             </h2>
             <p className="mt-3">
-              Our site uses essential cookies needed for security and basic
-              operation. With your consent, we may also use analytics cookies
-              (for example Google Analytics) to understand site performance. You
-              can accept or decline analytics cookies via the cookie banner, and
-              change your mind by clearing site data in your browser.
+              We store your cookie preference in this browser using local
+              storage (not a tracking cookie). With your consent, we may also
+              load analytics tools (for example Google Analytics) to understand
+              site performance. You can accept or decline analytics via the
+              cookie banner, and change your mind by clearing site data for{" "}
+              {site.website} in your browser.
             </p>
             <p className="mt-3">
-              Website hosting is provided by Vercel. Online booking is powered by
-              Treow Clinic; booking data you enter there is processed so we can
-              schedule your visit.
+              Website hosting is provided by Vercel (data processor for site
+              delivery). Online booking is powered by Treow Clinic, which
+              processes the appointment details you enter so we can schedule
+              your visit. Nguyen&apos;s Osteopathic Clinic remains the data
+              controller for clinic enquiries and clinical records created when
+              you attend.
             </p>
           </section>
 

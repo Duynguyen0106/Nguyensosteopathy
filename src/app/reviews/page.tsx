@@ -6,13 +6,12 @@ import {
   GoogleReviewsFeed,
   GoogleReviewsFeedFallback,
 } from "@/components/GoogleReviewsFeed";
-import { StarRating } from "@/components/StarRating";
-import { site, testimonials } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Patient Reviews | Osteopath Woolwich Google Feedback",
   description:
-    "Read Google reviews and patient stories from Nguyen's Osteopathic Clinic in Woolwich. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
+    "Read Google reviews for Nguyen's Osteopathic Clinic in Woolwich. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
   alternates: { canonical: "/reviews" },
   keywords: [
     "osteopath Woolwich reviews",
@@ -23,14 +22,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Patient Reviews | Nguyen's Osteopathic Clinic",
     description:
-      "Google reviews and patient stories for osteopathy in Woolwich SE18.",
+      "Google reviews for osteopathy in Woolwich SE18.",
     url: "/reviews",
   },
 };
-
-function Stars({ rating }: { rating: number }) {
-  return <StarRating rating={rating} />;
-}
 
 export default function ReviewsPage() {
   const mapsUrl = site.googleReviewsUrl;
@@ -64,8 +59,8 @@ export default function ReviewsPage() {
             Patient reviews
           </h1>
           <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Stories from people who sought clearer movement — and a warm
-            invitation to leave your Google review after your visit.
+            Public Google feedback for the clinic — and a warm invitation to
+            leave your review after your visit from {site.booking.opensFromLabel}.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href={mapsUrl} target="_blank" rel="noopener noreferrer">
@@ -105,44 +100,6 @@ export default function ReviewsPage() {
       <Suspense fallback={<GoogleReviewsFeedFallback />}>
         <GoogleReviewsFeed />
       </Suspense>
-
-      <section className="px-5 py-16 md:px-8 md:py-20">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="font-display text-3xl text-navy md:text-4xl">
-            What patients say
-          </h2>
-          <p className="mt-3 max-w-2xl text-base text-slate-600">
-            A sample of feedback shared with the clinic. For the latest public
-            ratings, visit our{" "}
-            <a
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
-              Google listing
-            </a>
-            .
-          </p>
-
-          <ul className="mt-10 grid gap-6 md:grid-cols-3">
-            {testimonials.map((review) => (
-              <li key={review.name} className="flex h-full flex-col">
-                <Stars rating={review.rating} />
-                <blockquote className="mt-4 flex-1 text-base leading-relaxed text-slate-700">
-                  “{review.quote}”
-                </blockquote>
-                <footer className="mt-5 border-t border-slate-200 pt-4">
-                  <p className="font-semibold text-navy">{review.name}</p>
-                  <p className="mt-1 text-xs font-semibold tracking-wide text-teal-dark uppercase">
-                    {review.treatment}
-                  </p>
-                </footer>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
 
       <section className="border-t border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:items-center md:justify-between">

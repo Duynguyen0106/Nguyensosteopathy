@@ -167,17 +167,17 @@ export default async function AreaPage({ params }: Props) {
           </h2>
           <ul className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-teal">
             <li>
-              <Link href="/back-neck" className="hover:text-teal-dark">
+              <Link href="/services/back-neck-pain" className="hover:text-teal-dark">
                 Back &amp; neck
               </Link>
             </li>
             <li>
-              <Link href="/sports" className="hover:text-teal-dark">
+              <Link href="/services/sports-injury-rehab" className="hover:text-teal-dark">
                 Sports injury
               </Link>
             </li>
             <li>
-              <Link href="/shockwave" className="hover:text-teal-dark">
+              <Link href="/services/focused-shockwave" className="hover:text-teal-dark">
                 Shockwave
               </Link>
             </li>

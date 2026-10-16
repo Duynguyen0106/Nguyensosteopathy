@@ -54,7 +54,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "How osteopathy helps salon workers",
         image: {
-          src: "/images/blog/rsi-wrist-forearm-office-osteopath.jpg",
+          src: "/images/blog/rsi-wrist-forearm-office-osteopath.webp",
           alt: "Forearm and wrist strain from repetitive fine motor work",
         },
         paragraphs: [
@@ -124,7 +124,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "Shift recovery that fits hospitality life",
         image: {
-          src: "/images/blog/back-pain-woolwich-osteopathy.jpg",
+          src: "/images/blog/back-pain-woolwich-osteopathy.webp",
           alt: "Lower back pain after physical work and lifting",
         },
         paragraphs: [
@@ -193,7 +193,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "How osteopathy helps",
         image: {
-          src: "/images/blog/tension-headaches-neck-osteopath-woolwich.jpg",
+          src: "/images/blog/tension-headaches-neck-osteopath-woolwich.webp",
           alt: "Person experiencing neck tension related to desk work and headaches",
         },
         paragraphs: [
@@ -246,7 +246,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "How osteopathy approaches sciatica",
         image: {
-          src: "/images/blog/lumbar-disc-pain-osteopath-woolwich.jpg",
+          src: "/images/blog/lumbar-disc-pain-osteopath-woolwich.webp",
           alt: "Person holding the lower back with disc-related lumbar pain",
         },
         paragraphs: [
@@ -296,7 +296,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "What a session involves",
         image: {
-          src: "/images/blog/plantar-fasciitis-shockwave-woolwich.jpg",
+          src: "/images/blog/plantar-fasciitis-shockwave-woolwich.webp",
           alt: "Clinical focused shockwave therapy context for heel and tendon pain",
         },
         paragraphs: [
@@ -370,7 +370,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "How osteopathy and shockwave help",
         image: {
-          src: "/images/blog/achilles-tendinopathy-shockwave-woolwich.jpg",
+          src: "/images/blog/achilles-tendinopathy-shockwave-woolwich.webp",
           alt: "Lower leg and foot region relevant to heel and Achilles load issues",
         },
         paragraphs: [
@@ -424,7 +424,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "Treatment options we discuss",
         image: {
-          src: "/images/blog/golfers-elbow-osteopath-woolwich.jpg",
+          src: "/images/blog/golfers-elbow-osteopath-woolwich.webp",
           alt: "Elbow and forearm strain relevant to gripping and tendon overload",
         },
         paragraphs: [
@@ -479,7 +479,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "What we do in clinic",
         image: {
-          src: "/images/blog/gym-shoulder-injury-osteopath-woolwich.jpg",
+          src: "/images/blog/gym-shoulder-injury-osteopath-woolwich.webp",
           alt: "Shoulder mobility and gym-related shoulder strain context",
         },
         paragraphs: [
@@ -537,7 +537,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "What conservative care looks like",
         image: {
-          src: "/images/blog/sciatica-woolwich-osteopath.jpg",
+          src: "/images/blog/sciatica-woolwich-osteopath.webp",
           alt: "Sciatic-type leg pain related to lumbar nerve irritation",
         },
         paragraphs: [
@@ -585,7 +585,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "Your first appointment (about 60 minutes)",
         image: {
-          src: "/images/blog/first-osteopathy-visit-checklist-woolwich.jpg",
+          src: "/images/blog/first-osteopathy-visit-checklist-woolwich.webp",
           alt: "Checklist-style preparation for a first osteopathy appointment",
         },
         paragraphs: [
@@ -656,7 +656,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "What happens in the room",
         image: {
-          src: "/images/blog/osteopath-woolwich-what-to-expect.jpg",
+          src: "/images/blog/osteopath-woolwich-what-to-expect.webp",
           alt: "Osteopathy consultation setting for a first visit in Woolwich",
         },
         paragraphs: [
@@ -726,7 +726,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "How osteopathy helps desk-related upper back pain",
         image: {
-          src: "/images/blog/upper-back-pain-desk-workers-woolwich.jpg",
+          src: "/images/blog/upper-back-pain-desk-workers-woolwich.webp",
           alt: "Desk worker at a laptop with rounded upper-back posture",
         },
         paragraphs: [

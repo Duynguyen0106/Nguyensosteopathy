@@ -33,9 +33,13 @@ export default function CookiesPage() {
             <h2 className="font-display text-2xl text-navy">What we use</h2>
             <ul className="mt-3 list-disc space-y-2 pl-5">
               <li>
-                <span className="font-semibold text-navy">Essential cookies</span>{" "}
-                — needed for security, basic site operation, and remembering your
-                cookie choice.
+                <span className="font-semibold text-navy">Essential storage</span>{" "}
+                — we remember your cookie choice in browser local storage
+                (key{" "}
+                <code className="rounded bg-slate-100 px-1.5 py-0.5 text-sm">
+                  nguyens-cookie-consent
+                </code>
+                ). This is not used for advertising.
               </li>
               <li>
                 <span className="font-semibold text-navy">Analytics cookies</span>{" "}

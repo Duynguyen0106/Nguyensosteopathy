@@ -9,12 +9,7 @@ import {
   relatedServices,
   servicePages,
 } from "@/lib/service-pages";
-import {
-  bookingHoursSpecification,
-  getServiceHref,
-  services,
-  site,
-} from "@/lib/site";
+import { getServiceHref, services, site } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -58,42 +53,23 @@ export default async function ServiceDetailPage({ params }: Props) {
     )
     .slice(0, 3);
 
-  const clinicLd = {
+  /** Service-focused MedicalWebPage — clinic identity lives sitewide at /#clinic. */
+  const serviceLd = {
     "@context": "https://schema.org",
-    "@type": ["MedicalClinic", "LocalBusiness", "MedicalBusiness"],
-    "@id": `${site.websiteUrl}/services/${service.slug}#clinic`,
-    name: site.name,
+    "@type": "MedicalWebPage",
+    "@id": `${site.websiteUrl}/services/${service.slug}#webpage`,
     url: `${site.websiteUrl}/services/${service.slug}`,
+    name: page.seoTitle,
     description: page.metaDescription,
-    telephone: site.phoneE164,
-    email: site.email,
-    image: `${site.websiteUrl}/images/clinic-promo.jpg`,
-    priceRange: "£15–£110",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: `${site.address.venue}, ${site.address.line1}`,
-      addressLocality: "Woolwich",
-      addressRegion: "London",
-      postalCode: "SE18 6LQ",
-      addressCountry: "GB",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 51.4912,
-      longitude: 0.0672,
-    },
-    openingHoursSpecification: bookingHoursSpecification,
-    medicalSpecialty: "Osteopathic",
-    areaServed: {
-      "@type": "City",
-      name: "Woolwich",
-    },
-    availableService: {
+    isPartOf: { "@id": `${site.websiteUrl}/#website` },
+    about: {
       "@type": "MedicalProcedure",
       name: service.title,
       description: service.summary,
       url: `${site.websiteUrl}/services/${service.slug}`,
     },
+    provider: { "@id": `${site.websiteUrl}/#clinic` },
+    mainEntity: { "@id": `${site.websiteUrl}/#clinic` },
   };
 
   const faqLd = {
@@ -113,7 +89,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     <div className="bg-slate-50">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }}
       />
       <script
         type="application/ld+json"

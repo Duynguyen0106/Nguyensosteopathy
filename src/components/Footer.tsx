@@ -139,8 +139,8 @@ export function Footer() {
             ))}
           </div>
           <p className="mt-3 text-xs leading-relaxed text-white/55">
-            Closed {site.booking.closedDaysLabel} (except opening day). Live
-            slots shown in online booking.
+            Closed {site.booking.closedDaysLabel}. Online booking from{" "}
+            {site.booking.opensFromLabel} — live slots shown in the calendar.
           </p>
         </div>
 
@@ -172,12 +172,18 @@ export function Footer() {
               </li>
             ))}
             <li>
-              <Link href="/massage" className="hover:text-white">
+              <Link
+                href="/services/deep-tissue-massage"
+                className="hover:text-white"
+              >
                 Deep tissue massage
               </Link>
             </li>
             <li>
-              <Link href="/acupuncture" className="hover:text-white">
+              <Link
+                href="/services/acupuncture-electro"
+                className="hover:text-white"
+              >
                 Acupuncture
               </Link>
             </li>

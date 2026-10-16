@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Austin Duy Nguyen | Vietnamese Osteopath in the UK",
   description:
-    "Meet Austin Duy Nguyen — Master of Osteopathy graduate of the British College of Osteopathic Medicine, GOsC-registered, and the only Vietnamese osteopath practising in the UK. His mission: spine and bone health for children in Vietnam, and clear MSK care for the Vietnamese community across Britain.",
+    "Meet Austin Duy Nguyen — Master of Osteopathy graduate of the British College of Osteopathic Medicine, GOsC-registered Vietnamese-speaking osteopath in Woolwich. His mission: spine and bone health for children in Vietnam, and clear MSK care for the Vietnamese community across Britain.",
   alternates: { canonical: "/about" },
   keywords: [
     "Vietnamese osteopath UK",
@@ -104,7 +104,7 @@ export default function AboutPage() {
       },
     ],
     description:
-      "GOsC-registered osteopath, Master of Osteopathy graduate of the British College of Osteopathic Medicine, and the only Vietnamese osteopath practising in the UK. Builder of MSK Tutor and Treow Clinic.",
+      "GOsC-registered osteopath, Master of Osteopathy graduate of the British College of Osteopathic Medicine, and a Vietnamese-speaking osteopath practising in Woolwich. Builder of MSK Tutor and Treow Clinic.",
   };
 
   return (
@@ -143,9 +143,8 @@ export default function AboutPage() {
             {site.practitioner.name}
           </h1>
           <p className="about-rise about-rise-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
-            Master of Osteopathy. The only Vietnamese osteopath practising in
-            the UK. A name chosen so our community can find care — and feel
-            understood.
+            Master of Osteopathy. A Vietnamese-speaking osteopath in Woolwich.
+            A name chosen so our community can find care — and feel understood.
           </p>
           <div className="about-rise about-rise-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book with Austin</ButtonLink>
@@ -297,14 +296,15 @@ export default function AboutPage() {
             For our community in Britain
           </p>
           <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
-            The only Vietnamese osteopath practising in the UK — so you can be
-            heard in your own language of life
+            A Vietnamese-speaking osteopath in Britain — so you can be heard in
+            your own language of life
           </h2>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-slate-700">
             <p>
-              I am proud to be{" "}
+              I am proud to practise as a{" "}
               <strong className="font-semibold text-navy">
-                the only Vietnamese osteopath practising in the United Kingdom
+                Vietnamese-speaking GOsC-registered osteopath in the United
+                Kingdom
               </strong>
               . That is not a trophy. It is a responsibility.
             </p>

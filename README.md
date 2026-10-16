@@ -28,20 +28,25 @@ Printable A5 leaflet (148×210mm, letterbox-friendly, with booking QR): `public/
 
 | Surface | Default URL |
 |---------|-------------|
-| Book button / links | `https://www.nguyensosteopathy.com/book` |
+| Site `/book` page | `https://www.nguyensosteopathy.com/book` |
 | `/book` embed iframe | `https://treow-clinic.vercel.app/embed/nguyens-osteopathy` |
+| “Open full booking page” | `https://treow-clinic.vercel.app/book/nguyens-osteopathy` |
 
-Override with `NEXT_PUBLIC_BOOKING_URL` and `NEXT_PUBLIC_BOOKING_EMBED_URL` if needed.
+Override with `NEXT_PUBLIC_BOOKING_URL`, `NEXT_PUBLIC_BOOKING_EMBED_URL`, and `NEXT_PUBLIC_BOOKING_EXTERNAL_URL` if needed.
 
-Regenerate the leaflet PDF:
+Canonical service URLs are `/services/[slug]`. Legacy hubs (`/shockwave`, `/back-neck`, …) permanently redirect there.
+
+Regenerate print PDFs:
 
 ```bash
 npm run leaflet
+npm run poster        # if present
+npm run business-card # if present
 ```
 
 ## Products Austin built (profile credit)
 
-Product URLs live in `site.products` inside `src/lib/site.ts` and are linked from About, AuthorBio, Footer, and practitioner JSON-LD.
+Product URLs live in `site.products` inside `src/lib/site.ts` and are linked from About, Footer, and practitioner JSON-LD (not patient AuthorBio).
 
 | Product | Audience | Live URL |
 |---------|----------|----------|
@@ -54,7 +59,7 @@ On [Austin’s LinkedIn](https://www.linkedin.com/in/austin-nguyen-do):
 
 1. **Featured** — pin clinic site (`https://www.nguyensosteopathy.com`), MSK Tutor, and Treow Clinic.
 2. **About / Experience** — mention GOsC osteopath at Nguyen’s Osteopathic Clinic (Woolwich), plus builder of MSK Tutor and Treow Clinic.
-3. **Website links** — add `nguyensosteopathy.com`, Osteotutor URL, and Treow URL (or a Linktree if you prefer one link).
+3. **Website links** — add `nguyensosteopathy.com`, Osteotutor URL, and Treow URL.
 4. **Projects** — create LinkedIn Projects for MSK Tutor and Treow with short blurbs from `site.products.*.description`.
 
 ### Treow staff profile checklist (manual)
@@ -63,12 +68,20 @@ At [Treow login](https://treow-clinic.vercel.app/login), for clinic slug `nguyen
 
 1. Confirm practitioner name, photo, GOsC Reg. No. **12332**, and bio match the marketing site.
 2. Align services, prices, and bookable hours with `src/lib/site.ts`.
-3. Add a short “Also built” line or link to MSK Tutor in the practitioner bio if Treow supports external links.
+3. Optional: MSK Tutor link in the practitioner bio if Treow supports external links.
 4. Verify the public embed still loads at `/book` on the clinic site.
 
 ## Content
 
-Clinic copy, pricing, services, hours, contact details, and product URLs live in `src/lib/site.ts`. Brand assets are in `public/images/`.
+Clinic copy, pricing, services, hours, contact details, geo coordinates, and product URLs live in `src/lib/site.ts`. Brand assets are in `public/images/`.
+
+## Environment
+
+See [`.env.example`](.env.example) for:
+
+- Treow booking URLs
+- Optional `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_GTM_ID` (consent-gated)
+- Server-only `GOOGLE_PLACES_API_KEY` for live Google reviews on `/reviews`
 
 ## Scripts
 
@@ -77,11 +90,12 @@ npm run dev
 npm run build
 npm run start
 npm run lint
+npm run leaflet
 ```
 
 ## Deploy (Vercel)
 
 1. Import `Duynguyen0106/Nguyensosteopathy` in [Vercel](https://vercel.com/new).
 2. Framework preset: Next.js (defaults are fine).
-3. Set env vars from `.env.example` if you need a custom Treow booking slug.
+3. Set env vars from `.env.example` (Places API for reviews; GA/GTM optional).
 4. Deploy production from `main` after merging the PR.

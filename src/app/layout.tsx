@@ -123,8 +123,8 @@ export const metadata: Metadata = {
   other: {
     "geo.region": "GB-LND",
     "geo.placename": "Woolwich",
-    "geo.position": "51.4912;0.0672",
-    ICBM: "51.4912, 0.0672",
+    "geo.position": `${site.address.geo.latitude};${site.address.geo.longitude}`,
+    ICBM: `${site.address.geo.latitude}, ${site.address.geo.longitude}`,
   },
 };
 

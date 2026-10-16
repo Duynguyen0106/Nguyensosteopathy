@@ -33,6 +33,11 @@ export const site = {
       "https://www.google.com/maps/search/?api=1&query=52+Powis+Street+Woolwich+London+SE18+6LQ",
     mapsEmbedUrl:
       "https://maps.google.com/maps?q=52+Powis+Street+Woolwich+London+SE18+6LQ&z=16&output=embed",
+    /** WGS84 for schema.org / meta geo tags (single source of truth). */
+    geo: {
+      latitude: 51.4912,
+      longitude: 0.0672,
+    },
   },
   /** Pharmacy / venue opening pattern (building access). */
   hours: [
@@ -42,6 +47,8 @@ export const site = {
   /** Osteopathy booking pattern (pharmacy access hours may differ). */
   booking: {
     opensFromLabel: "5 November 2026",
+    /** ISO date for schema.org validFrom (clinic not yet open to patients). */
+    opensFromIso: "2026-11-05",
     bookableDaysLabel:
       "Monday, Tuesday, Thursday, Friday and Saturday",
     closedDaysLabel: "Wednesday and Sunday",
@@ -60,9 +67,14 @@ export const site = {
   cancellation: "24 hours' notice is required for cancellations.",
   discount:
     "10% Discount for NHS Staff & Students (Valid ID required at appointment)",
+  /** Site /book page (embed host). */
   bookingUrl:
     process.env.NEXT_PUBLIC_BOOKING_URL ??
     "https://www.nguyensosteopathy.com/book",
+  /** Treow non-embed public booking (fallback / “open full page”). */
+  bookingExternalUrl:
+    process.env.NEXT_PUBLIC_BOOKING_EXTERNAL_URL ??
+    "https://treow-clinic.vercel.app/book/nguyens-osteopathy",
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
     "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",
@@ -98,12 +110,14 @@ export const bookingHoursSpecification = [
     dayOfWeek: [...site.booking.schemaWeekdays],
     opens: site.booking.weekday.opens,
     closes: site.booking.weekday.closes,
+    validFrom: site.booking.opensFromIso,
   },
   {
     "@type": "OpeningHoursSpecification" as const,
     dayOfWeek: "Saturday" as const,
     opens: site.booking.saturday.opens,
     closes: site.booking.saturday.closes,
+    validFrom: site.booking.opensFromIso,
   },
 ];
 
@@ -135,29 +149,11 @@ export const visitSteps = [
   },
 ] as const;
 
-export const testimonials = [
-  {
-    quote:
-      "After months of desk-related back pain, Austin found the cause quickly and I was moving freely again within a few sessions. Clear advice and genuine care.",
-    name: "Sarah M.",
-    treatment: "Back Pain Patient",
-    rating: 5,
-  },
-  {
-    quote:
-      "Shockwave therapy for my stubborn heel pain made a real difference when other approaches had stalled. The clinic felt professional and reassuring throughout.",
-    name: "James T.",
-    treatment: "Shockwave Therapy Patient",
-    rating: 5,
-  },
-  {
-    quote:
-      "I was nervous about my first osteopathy visit, but the consultation was thorough and the treatment plan was easy to follow. Highly recommend for Woolwich locals.",
-    name: "Priya K.",
-    treatment: "Neck & Shoulder Patient",
-    rating: 5,
-  },
-] as const;
+/**
+ * Editorial sample quotes removed until real patient feedback exists.
+ * Prefer GoogleReviewsFeed / site.googleReviewsUrl for public reviews.
+ */
+export const testimonials = [] as const;
 
 export const faqs = [
   {
@@ -502,7 +498,12 @@ export const pricing = [
   },
   {
     service: "Cupping Therapy Add-on",
-    duration: "45 mins",
+    duration: "Add-on",
     price: "+£15",
   },
 ] as const;
+
+/** Standalone session prices for schema Offer markup (excludes +£ add-ons). */
+export const schemaOffers = pricing.filter(
+  (item) => !item.price.trimStart().startsWith("+"),
+);

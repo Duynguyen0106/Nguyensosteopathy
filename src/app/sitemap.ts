@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 import { serviceAreas } from "@/lib/areas";
 import { getAllPosts } from "@/lib/blog";
 import { conditions } from "@/lib/conditions";
-import { services } from "@/lib/site";
+import { services, site } from "@/lib/site";
 
-const base = "https://www.nguyensosteopathy.com";
+const base = site.websiteUrl;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -107,55 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${base}/shockwave`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
       url: `${base}/find-us`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/mens-health`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/pregnancy`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/sports`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/paediatric`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/cranial`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/acupuncture`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/massage`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
@@ -167,12 +119,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     {
-      url: `${base}/back-neck`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
       url: `${base}/osteopathy`,
       lastModified: now,
       changeFrequency: "monthly",
@@ -180,12 +126,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/desk-pain`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/headaches`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.85,

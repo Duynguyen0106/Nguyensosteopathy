@@ -2,22 +2,23 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
-import type { BlogCategory, BlogPost } from "@/lib/blog";
-import { categoryToId } from "@/lib/blog";
+import { useMemo, useState, useSyncExternalStore } from "react";
+import type { BlogCategory } from "@/lib/blog";
+import type { BlogCard } from "@/lib/blog-card";
+import { categoryToId } from "@/lib/blog-card";
 
 type Group = {
   category: BlogCategory;
   id: string;
-  posts: BlogPost[];
+  posts: BlogCard[];
 };
 
 type Props = {
   groups: Group[];
-  featured: BlogPost[];
+  featured: BlogCard[];
 };
 
-function PostCard({ post }: { post: BlogPost }) {
+function PostCard({ post }: { post: BlogCard }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
@@ -58,7 +59,7 @@ function PostCard({ post }: { post: BlogPost }) {
   );
 }
 
-function FeaturedCard({ post }: { post: BlogPost }) {
+function FeaturedCard({ post }: { post: BlogCard }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
@@ -94,25 +95,41 @@ function FeaturedCard({ post }: { post: BlogPost }) {
   );
 }
 
+function subscribeHash(onStoreChange: () => void) {
+  window.addEventListener("hashchange", onStoreChange);
+  return () => window.removeEventListener("hashchange", onStoreChange);
+}
+
+function getHashSnapshot() {
+  return window.location.hash.replace(/^#/, "");
+}
+
+function getServerHashSnapshot() {
+  return "";
+}
+
 export function BlogDirectory({ groups, featured }: Props) {
-  const [active, setActive] = useState<"all" | BlogCategory>("all");
+  const hash = useSyncExternalStore(
+    subscribeHash,
+    getHashSnapshot,
+    getServerHashSnapshot,
+  );
+  const hashCategory =
+    groups.find((group) => group.id === hash)?.category ?? null;
+
+  const [activeOverride, setActiveOverride] = useState<
+    "all" | BlogCategory | null
+  >(null);
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    const hash = window.location.hash.replace(/^#/, "");
-    if (!hash) return;
-    const match = groups.find((group) => group.id === hash);
-    if (!match) return;
-    setActive(match.category);
-    requestAnimationFrame(() => {
-      document.getElementById(match.id)?.scrollIntoView({ behavior: "smooth" });
-    });
-  }, [groups]);
+  const active: "all" | BlogCategory =
+    activeOverride ?? hashCategory ?? "all";
 
   const normalizedQuery = query.trim().toLowerCase();
 
   const filteredGroups = useMemo(() => {
-    const base = active === "all" ? groups : groups.filter((g) => g.category === active);
+    const base =
+      active === "all" ? groups : groups.filter((g) => g.category === active);
     if (!normalizedQuery) return base;
 
     return base
@@ -140,7 +157,7 @@ export function BlogDirectory({ groups, featured }: Props) {
   );
 
   const selectCategory = (category: "all" | BlogCategory) => {
-    setActive(category);
+    setActiveOverride(category);
     if (category === "all") {
       window.history.replaceState(null, "", "/blog");
       return;

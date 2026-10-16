@@ -131,10 +131,10 @@ export default function DeskPainPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book assessment</ButtonLink>
-            <ButtonLink href="/back-neck" variant="secondary">
+            <ButtonLink href="/services/back-neck-pain" variant="secondary">
               Back &amp; neck hub
             </ButtonLink>
-            <ButtonLink href="/massage" variant="secondary">
+            <ButtonLink href="/services/deep-tissue-massage" variant="secondary">
               Deep tissue massage
             </ButtonLink>
           </div>

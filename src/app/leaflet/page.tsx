@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
@@ -70,13 +71,13 @@ export default function LeafletPage() {
           </ul>
           <p className="mt-8 text-sm text-slate-600">
             Prefer the interactive site? Browse{" "}
-            <a href="/site-map" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/site-map" className="font-semibold text-teal hover:text-teal-dark">
               the site map
-            </a>{" "}
+            </Link>{" "}
             or{" "}
-            <a href="/services" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/services" className="font-semibold text-teal hover:text-teal-dark">
               services
-            </a>
+            </Link>
             .
           </p>
           <div className="mt-8 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">

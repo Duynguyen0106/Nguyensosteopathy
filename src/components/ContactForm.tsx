@@ -33,7 +33,11 @@ export function ContactForm() {
     );
 
     setSentHint(true);
-    window.location.href = `${site.emailHref}?subject=${subject}&body=${body}`;
+    // mailto: is external to Next routing — open via anchor to avoid location lint.
+    const anchor = document.createElement("a");
+    anchor.href = `${site.emailHref}?subject=${subject}&body=${body}`;
+    anchor.rel = "noopener noreferrer";
+    anchor.click();
   }
 
   return (
@@ -111,29 +115,7 @@ export function ContactForm() {
       <div aria-live="polite">
         {sentHint ? (
           <p className="text-sm text-slate-600">
-            Your email app should open with the message ready to send. Prefer a
-            faster reply?{" "}
-            <a
-              href={site.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="prose-link"
-            >
-              WhatsApp us
-            </a>
-            {" · "}
-            <Link href="/book" className="prose-link">
-              Book online
-            </Link>
-            .
-          </p>
-        ) : (
-          <p className="text-xs text-slate-500">
-            Opens your email app to message {site.email}. For bookings, use{" "}
-            <Link href="/book" className="prose-link">
-              online booking
-            </Link>{" "}
-            or{" "}
+            If your email app did not open, message us on{" "}
             <a
               href={site.whatsappUrl}
               target="_blank"
@@ -142,6 +124,36 @@ export function ContactForm() {
             >
               WhatsApp
             </a>
+            , email{" "}
+            <a href={site.emailHref} className="prose-link">
+              {site.email}
+            </a>
+            , or{" "}
+            <Link href="/book" className="prose-link">
+              book online
+            </Link>
+            .
+          </p>
+        ) : (
+          <p className="text-xs text-slate-500">
+            This form opens your email app to message {site.email}. On phones
+            without email set up, use{" "}
+            <a
+              href={site.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="prose-link"
+            >
+              WhatsApp
+            </a>
+            , call{" "}
+            <a href={site.phoneHref} className="prose-link">
+              {site.phone}
+            </a>
+            , or{" "}
+            <Link href="/book" className="prose-link">
+              book online
+            </Link>
             .
           </p>
         )}

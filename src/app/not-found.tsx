@@ -30,7 +30,7 @@ export default function NotFound() {
             Osteopathy
           </Link>
           {" · "}
-          <Link href="/back-neck" className="font-semibold text-teal hover:text-teal-dark">
+          <Link href="/services/back-neck-pain" className="font-semibold text-teal hover:text-teal-dark">
             Back &amp; neck
           </Link>
           {" · "}
@@ -38,7 +38,7 @@ export default function NotFound() {
             Desk pain
           </Link>
           {" · "}
-          <Link href="/shockwave" className="font-semibold text-teal hover:text-teal-dark">
+          <Link href="/services/focused-shockwave" className="font-semibold text-teal hover:text-teal-dark">
             Shockwave
           </Link>
           {" · "}

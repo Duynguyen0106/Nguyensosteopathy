@@ -80,7 +80,7 @@ export default function CuppingPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink href="/massage" variant="secondary">
+            <ButtonLink href="/services/deep-tissue-massage" variant="secondary">
               Deep tissue massage
             </ButtonLink>
             <ButtonLink href="/fees" variant="secondary">
@@ -135,7 +135,7 @@ export default function CuppingPage() {
             </Link>
             {" · "}
             <Link
-              href="/acupuncture"
+              href="/services/acupuncture-electro"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Acupuncture
@@ -143,7 +143,7 @@ export default function CuppingPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink href="/back-neck" variant="secondary">
+            <ButtonLink href="/services/back-neck-pain" variant="secondary">
               Back &amp; neck
             </ButtonLink>
             <ButtonLink href="/find-us" variant="secondary">

@@ -54,12 +54,62 @@ const nextConfig: NextConfig = {
     ];
   },
   async redirects() {
-    // Hub URLs remain as secondary guides; canonical SEO pages are /services/[slug].
-    // No permanent redirects away from /services/* so individual service pages resolve.
+    // Canonical SEO pages are /services/[slug]. Legacy hubs 301 here.
+    // Keep /osteopathy, /desk-pain, /cupping as standalone guides (not in services[]).
     return [
       {
         source: "/opening",
         destination: "/fees",
+        permanent: true,
+      },
+      {
+        source: "/back-neck",
+        destination: "/services/back-neck-pain",
+        permanent: true,
+      },
+      {
+        source: "/headaches",
+        destination: "/services/headaches-joints",
+        permanent: true,
+      },
+      {
+        source: "/shockwave",
+        destination: "/services/focused-shockwave",
+        permanent: true,
+      },
+      {
+        source: "/mens-health",
+        destination: "/services/mens-health-ed",
+        permanent: true,
+      },
+      {
+        source: "/acupuncture",
+        destination: "/services/acupuncture-electro",
+        permanent: true,
+      },
+      {
+        source: "/massage",
+        destination: "/services/deep-tissue-massage",
+        permanent: true,
+      },
+      {
+        source: "/sports",
+        destination: "/services/sports-injury-rehab",
+        permanent: true,
+      },
+      {
+        source: "/pregnancy",
+        destination: "/services/pregnancy-support",
+        permanent: true,
+      },
+      {
+        source: "/cranial",
+        destination: "/services/cranial-therapy",
+        permanent: true,
+      },
+      {
+        source: "/paediatric",
+        destination: "/services/paediatric-care",
         permanent: true,
       },
     ];

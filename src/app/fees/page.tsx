@@ -45,7 +45,7 @@ export default function FeesPage() {
     name: site.name,
     url: `${site.websiteUrl}/fees`,
     telephone: site.phoneE164,
-    priceRange: "£15–£110",
+    priceRange: "£60–£110",
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.line1,
@@ -54,13 +54,18 @@ export default function FeesPage() {
       postalCode: "SE18 6LQ",
       addressCountry: "GB",
     },
-    makesOffer: pricing.map((item) => ({
-      "@type": "Offer",
-      name: item.service,
-      description: `${item.service} (${item.duration})`,
-      price: item.price.replace(/^\+?£/, ""),
-      priceCurrency: "GBP",
-    })),
+    makesOffer: pricing
+      .filter((item) => !item.price.trimStart().startsWith("+"))
+      .map((item) => ({
+        "@type": "Offer",
+        name: item.service,
+        description: `${item.service} (${item.duration})`,
+        price: item.price.replace(/[^0-9.]/g, ""),
+        priceCurrency: "GBP",
+        availability: "https://schema.org/PreOrder",
+        availabilityStarts: site.booking.opensFromIso,
+        validFrom: site.booking.opensFromIso,
+      })),
   };
 
   return (
@@ -130,14 +135,14 @@ export default function FeesPage() {
           <p className="mt-6 text-sm text-slate-600">
             Guides:{" "}
             <Link
-              href="/shockwave"
+              href="/services/focused-shockwave"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Shockwave
             </Link>
             {" · "}
             <Link
-              href="/mens-health"
+              href="/services/mens-health-ed"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Men&apos;s health

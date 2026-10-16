@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BlogDirectory } from "@/components/BlogDirectory";
 import { ButtonLink } from "@/components/Button";
 import {
-  getAllPosts,
+  getAllPostCards,
   getPostsGroupedByCategory,
 } from "@/lib/blog";
 import { site } from "@/lib/site";
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function BlogIndexPage() {
   const groups = getPostsGroupedByCategory();
-  const allPosts = getAllPosts();
+  const allPosts = getAllPostCards();
   const featured = allPosts.slice(0, 4);
   const total = allPosts.length;
 
@@ -110,7 +110,7 @@ export default function BlogIndexPage() {
               Conditions
             </Link>
             {" · "}
-            <Link href="/shockwave" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href="/services/focused-shockwave" className="font-semibold text-teal hover:text-teal-dark">
               Shockwave
             </Link>
             {" · "}

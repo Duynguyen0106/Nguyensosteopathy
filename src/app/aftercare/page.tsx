@@ -184,21 +184,21 @@ export default function AftercarePage() {
             <p className="mt-4 text-sm leading-relaxed text-slate-600">
               Related reading:{" "}
               <Link
-                href="/shockwave"
+                href="/services/focused-shockwave"
                 className="font-semibold text-teal hover:text-teal-dark"
               >
                 Shockwave
               </Link>
               {" · "}
               <Link
-                href="/mens-health"
+                href="/services/mens-health-ed"
                 className="font-semibold text-teal hover:text-teal-dark"
               >
                 Men&apos;s health
               </Link>
               {" · "}
               <Link
-                href="/pregnancy"
+                href="/services/pregnancy-support"
                 className="font-semibold text-teal hover:text-teal-dark"
               >
                 Pregnancy

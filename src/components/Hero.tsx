@@ -63,6 +63,9 @@ export function Hero() {
               Call {site.phone}
             </ButtonLink>
           </div>
+          <p className="mt-4 max-w-lg text-sm leading-relaxed text-slate-600">
+            {site.booking.shortNote}
+          </p>
         </div>
 
         <div className="relative mx-auto w-full max-w-md overflow-hidden lg:max-w-none">

@@ -2,7 +2,7 @@ import {
   bookingHoursSpecification,
   faqs,
   getServiceHref,
-  pricing,
+  schemaOffers,
   services,
   site,
 } from "@/lib/site";
@@ -42,7 +42,7 @@ export function buildClinicJsonLd() {
       site.googleReviewsUrl,
       googleBusinessProfileUrl,
     ],
-    priceRange: "£15–£110",
+    priceRange: "£60–£110",
     currenciesAccepted: "GBP",
     paymentAccepted: "Cash, Credit Card, Debit Card",
     address: {
@@ -55,8 +55,8 @@ export function buildClinicJsonLd() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 51.4912,
-      longitude: 0.0672,
+      latitude: site.address.geo.latitude,
+      longitude: site.address.geo.longitude,
     },
     hasMap: site.address.mapsUrl,
     openingHoursSpecification: bookingHoursSpecification,
@@ -79,14 +79,16 @@ export function buildClinicJsonLd() {
     })),
     employee: { "@id": `${site.websiteUrl}/#practitioner` },
     founder: { "@id": `${site.websiteUrl}/#practitioner` },
-    makesOffer: pricing.map((item) => ({
+    makesOffer: schemaOffers.map((item) => ({
       "@type": "Offer",
       name: item.service,
       description: item.duration,
       price: item.price.replace(/[^0-9.]/g, ""),
       priceCurrency: "GBP",
       url: `${site.websiteUrl}/book`,
-      availability: "https://schema.org/InStock",
+      availability: "https://schema.org/PreOrder",
+      availabilityStarts: site.booking.opensFromIso,
+      validFrom: site.booking.opensFromIso,
     })),
   };
 }
@@ -94,7 +96,7 @@ export function buildClinicJsonLd() {
 export function buildPractitionerJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "Physician",
+    "@type": "Person",
     "@id": `${site.websiteUrl}/#practitioner`,
     name: site.practitioner.name,
     jobTitle: site.practitioner.title,

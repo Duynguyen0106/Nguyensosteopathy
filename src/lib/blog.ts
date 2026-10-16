@@ -817,21 +817,27 @@ export function getAllPosts() {
   return [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
 }
 
-export function categoryToId(category: BlogCategory) {
-  return category
-    .toLowerCase()
-    .replace(/&/g, "and")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
+export { categoryToId, toBlogCard } from "@/lib/blog-card";
+export type { BlogCard } from "@/lib/blog-card";
+
+import { categoryToId, toBlogCard } from "@/lib/blog-card";
 
 export function getPostsGroupedByCategory() {
-  const posts = getAllPosts();
+  const cards = getAllPosts().map(toBlogCard);
   return BLOG_CATEGORIES.map((category) => ({
     category,
     id: categoryToId(category),
-    posts: posts.filter((post) => post.category === category),
+    posts: cards.filter((post) => post.category === category),
   })).filter((group) => group.posts.length > 0);
+}
+
+/** Homepage / listings — cards only, no section bodies. */
+export function getLatestPostCards(limit = 3) {
+  return getAllPosts().slice(0, limit).map(toBlogCard);
+}
+
+export function getAllPostCards() {
+  return getAllPosts().map(toBlogCard);
 }
 
 /** Guard against accidental slug collisions across batches. */

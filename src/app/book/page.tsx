@@ -53,7 +53,7 @@ export default function BookPage() {
           </div>
           <div className="flex flex-wrap gap-3">
             <a
-              href={site.bookingUrl}
+              href={site.bookingExternalUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-navy shadow-sm transition-all duration-200 hover:border-teal hover:text-teal sm:inline-flex"
@@ -123,7 +123,7 @@ export default function BookPage() {
         </p>
         <div className="mt-4 flex justify-center px-5 sm:hidden">
           <ButtonLink
-            href={site.bookingUrl}
+            href={site.bookingExternalUrl}
             target="_blank"
             rel="noopener noreferrer"
             variant="secondary"

@@ -63,6 +63,61 @@ const EXPLICIT: Record<string, ConditionLink[]> = {
     { slug: "neck-pain", anchor: "neck pain treatment in Woolwich" },
     { slug: "thoracic-joint-dysfunction", anchor: "upper-back joint stiffness" },
   ],
+  "morning-back-stiffness-osteopath": [
+    { slug: "non-specific-low-back-pain", anchor: "morning lower back stiffness" },
+    { slug: "lumbar-stenosis", anchor: "walking-related lumbar stenosis patterns" },
+    { slug: "facet-syndrome", anchor: "facet-related back stiffness" },
+  ],
+  "sports-injury-osteopath-woolwich": [
+    { slug: "hamstring-strain", anchor: "hamstring strain rehab" },
+    { slug: "spondylolysis", anchor: "stress-related lumbar spondylolysis pathways" },
+    { slug: "acl-rehab", anchor: "ACL rehab guidance" },
+  ],
+  "hip-knee-pain-osteopath-woolwich": [
+    { slug: "hip-oa", anchor: "hip osteoarthritis care in Woolwich" },
+    { slug: "meniscal-injury", anchor: "meniscal knee injury patterns" },
+    { slug: "femoroacetabular-impingement", anchor: "hip impingement / FAI-type pain" },
+  ],
+  "hip-bursitis-osteopath-woolwich": [
+    { slug: "greater-trochanteric-pain", anchor: "greater trochanteric pain syndrome" },
+    { slug: "groin-pain", anchor: "groin and adductor-related pain" },
+    { slug: "hip-oa", anchor: "hip joint osteoarthritis" },
+  ],
+  "gym-shoulder-injury-osteopath-woolwich": [
+    { slug: "subacromial-pain", anchor: "subacromial shoulder pain" },
+    { slug: "shoulder-instability", anchor: "shoulder instability and apprehension" },
+    { slug: "ac-joint-injury", anchor: "AC joint sprain or OA" },
+  ],
+  "wrist-hand-pain-osteopath-se18": [
+    { slug: "carpal-tunnel", anchor: "carpal tunnel symptoms" },
+    { slug: "dequervains", anchor: "De Quervain's thumb-side wrist pain" },
+    { slug: "cmc-oa", anchor: "base-of-thumb CMC osteoarthritis" },
+  ],
+  "osteoarthritis-joints-osteopath-woolwich": [
+    { slug: "knee-oa", anchor: "knee osteoarthritis" },
+    { slug: "hallux-rigidus", anchor: "stiff big-toe / hallux rigidus" },
+    { slug: "osteoporosis", anchor: "bone health considerations in osteoporosis" },
+  ],
+  "ankle-sprain-rehab-osteopath-woolwich": [
+    { slug: "lateral-ankle-sprain", anchor: "lateral ankle sprain rehab" },
+    { slug: "morton-neuroma", anchor: "forefoot neuroma-type pain" },
+    { slug: "achilles-tendinopathy", anchor: "Achilles tendon load pain" },
+  ],
+  "overuse-injuries-gym-running-woolwich": [
+    { slug: "shin-splints", anchor: "shin splints from impact loading" },
+    { slug: "deconditioning", anchor: "deconditioning after time off training" },
+    { slug: "itb-syndrome", anchor: "IT band–related lateral knee pain" },
+  ],
+  "return-to-sport-after-sprain-woolwich": [
+    { slug: "lateral-ankle-sprain", anchor: "ankle sprain return-to-sport" },
+    { slug: "acl-rehab", anchor: "ACL and knee rehab milestones" },
+    { slug: "post-surgical-general", anchor: "post-surgical return-to-activity guidance" },
+  ],
+  "football-muscle-strain-osteopath-se18": [
+    { slug: "hamstring-strain", anchor: "hamstring muscle strain" },
+    { slug: "groin-pain", anchor: "football-related groin pain" },
+    { slug: "meniscal-injury", anchor: "twist-related meniscal irritation" },
+  ],
 };
 
 const CATEGORY_DEFAULTS: Partial<Record<BlogCategory, ConditionLink[]>> = {

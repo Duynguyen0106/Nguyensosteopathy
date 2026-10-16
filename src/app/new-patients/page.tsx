@@ -137,6 +137,27 @@ export default function NewPatientsPage() {
       </section>
 
       <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+            Consent &amp; shared decisions
+          </p>
+          <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
+            Informed care, explained plainly
+          </h2>
+          <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate-600 md:text-lg">
+            Before hands-on treatment we explain the likely working diagnosis,
+            what we propose to do, and sensible alternatives — including when
+            rest, GP review, or imaging is the better next step. You can ask
+            questions, decline any technique, or pause at any time. Assessment
+            findings and a short plan are discussed in plain English so consent
+            is ongoing, not a one-off signature. If something feels unclear,
+            say so — shared decisions are part of safe osteopathic care at
+            Nguyen&apos;s.
+          </p>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2">
           <div>
             <h2 className="font-display text-3xl text-navy">Fees &amp; policies</h2>

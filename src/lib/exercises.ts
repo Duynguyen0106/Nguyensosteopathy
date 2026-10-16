@@ -865,6 +865,7 @@ export const programmes: Programme[] = [
       "thoracic-joint-dysfunction",
       "cervical-radiculopathy",
       "costochondritis",
+      "whiplash",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
@@ -947,11 +948,13 @@ export const programmes: Programme[] = [
       "achilles-tendinopathy",
       "hallux-rigidus",
       "morton-neuroma",
+      "shin-splints",
     ],
     relatedServiceSlug: "focused-shockwave",
     precautions: [
       "Sudden calf swelling or inability to push off may need urgent medical review (e.g. suspected tear or DVT pathway).",
       "Shockwave or hands-on care can sit alongside this — it does not replace assessment when pain is severe.",
+      "Shin pain with focal bone tenderness after mileage spikes needs clinical review before pushing impact drills.",
     ],
   },
   {

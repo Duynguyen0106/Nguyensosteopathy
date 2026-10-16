@@ -2,6 +2,7 @@ import {
   bookingHoursSpecification,
   faqs,
   getServiceHref,
+  schemaOfferId,
   schemaOffers,
   services,
   site,
@@ -81,6 +82,7 @@ export function buildClinicJsonLd() {
     founder: { "@id": `${site.websiteUrl}/#practitioner` },
     makesOffer: schemaOffers.map((item) => ({
       "@type": "Offer",
+      "@id": schemaOfferId(item.service),
       name: item.service,
       description: item.duration,
       price: item.price.replace(/[^0-9.]/g, ""),

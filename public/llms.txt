@@ -22,7 +22,9 @@
 - Vietnamese: https://www.nguyensosteopathy.com/vi
 - Site map: https://www.nguyensosteopathy.com/site-map
 - Sitemap XML: https://www.nguyensosteopathy.com/sitemap.xml
+- Leaflet page: https://www.nguyensosteopathy.com/leaflet
 - Leaflet PDF: https://www.nguyensosteopathy.com/leaflet/nguyens-osteopathy-leaflet.pdf
+- Pavement poster page: https://www.nguyensosteopathy.com/poster
 
 ## Treatments
 - Services index: https://www.nguyensosteopathy.com/services

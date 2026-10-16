@@ -835,12 +835,14 @@ export const programmes: Programme[] = [
       "coccydynia",
       "si-joint-dysfunction",
       "lumbar-stenosis",
+      "spondylolysis",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
       "Stop and seek urgent care for new bladder/bowel change, saddle numbness, progressive leg weakness, fever with back pain, or trauma.",
       "If leg pain dominates over back pain, prefer the sciatica programme and get assessed.",
       "Keep sessions short; more frequency beats one long grind.",
+      "Known spondylolysis or listhesis: avoid repeated end-range extension drills that recreate sharp lumbar pain.",
     ],
   },
   {
@@ -866,11 +868,13 @@ export const programmes: Programme[] = [
       "cervical-radiculopathy",
       "costochondritis",
       "whiplash",
+      "scheuermanns",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
       "Dizziness, arm numbness, or headache after trauma needs clinical assessment first.",
       "Spread drills through the day rather than one long block at 6pm.",
+      "Scheuermann-type kyphosis: keep extensions gentle and stop if mid-back pain sharpens.",
     ],
   },
   {
@@ -922,11 +926,13 @@ export const programmes: Programme[] = [
       "knee-oa",
       "meniscal-injury",
       "hamstring-strain",
+      "acl-rehab",
     ],
     relatedServiceSlug: "sports-injury-rehab",
     precautions: [
       "True locking, marked swelling after injury, or giving-way episodes need assessment before progressing step-downs.",
       "Keep step height low until control is easy.",
+      "Post-ACL: stay inside surgeon range and swelling rules — this programme supports quad/hip control, not graft clearance.",
     ],
   },
   {
@@ -1028,11 +1034,14 @@ export const programmes: Programme[] = [
       "neck-pain",
       "deconditioning",
       "fibromyalgia",
+      "osteoporosis",
+      "post-surgical-general",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
       "Follow any personal plan given in clinic if it differs from this page.",
       "Worsening symptoms after 48 hours, or red-flag neurological change, means contact us or urgent care — not more exercise.",
+      "Osteoporosis or recent surgery: keep ranges gentle and honour fracture or wound precautions from your clinician.",
     ],
   },
   {

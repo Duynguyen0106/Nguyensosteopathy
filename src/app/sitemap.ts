@@ -90,26 +90,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/insurance", priority: 0.7 },
     { path: "/feed.xml", changeFrequency: "weekly", priority: 0.5 },
     { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
-    {
-      path: "/leaflet/nguyens-osteopathy-leaflet.pdf",
-      priority: 0.4,
-    },
-    {
-      path: "/poster/nguyens-osteopathy-poster-a1.pdf",
-      priority: 0.3,
-    },
-    {
-      path: "/poster/nguyens-osteopathy-poster-a2.pdf",
-      priority: 0.3,
-    },
-    {
-      path: "/poster/nguyens-osteopathy-poster-a3.pdf",
-      priority: 0.3,
-    },
-    {
-      path: "/business-card/nguyens-osteopathy-business-card.pdf",
-      priority: 0.2,
-    },
   ];
 
   return [

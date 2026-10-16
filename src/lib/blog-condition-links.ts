@@ -292,12 +292,19 @@ function cloneSections(post: BlogPost) {
   }));
 }
 
+function conditionSlugsInText(text: string): Set<string> {
+  return new Set(
+    [...text.matchAll(/\]\(\/conditions\/([a-z0-9-]+)\)/g)].map(
+      (match) => match[1],
+    ),
+  );
+}
+
 /**
- * Ensures each post has 2–3 descriptive mid-body condition links.
- * Replaces boilerplate “Local life…” / “Internal guides…” paragraphs when
- * present; otherwise inserts a natural mid-body sentence. Always rewrites
- * weak auto-anchors. Skips new inserts when the post already has enough
- * condition URLs.
+ * Ensures each post surfaces its EXPLICIT/category condition targets (up to 3).
+ * Rewrites weak auto-anchors first. If wanted slugs are still missing — even
+ * when the post already has ≥2 condition URLs — replace boilerplate or an
+ * existing condition-link paragraph, otherwise insert a mid-body sentence.
  */
 export function withRelatedConditionLinks(post: BlogPost): BlogPost {
   const wanted = getBlogConditionLinks(post.slug, post.category);
@@ -313,7 +320,9 @@ export function withRelatedConditionLinks(post: BlogPost): BlogPost {
   const fullText = sections
     .flatMap((section) => section.paragraphs ?? [])
     .join("\n");
-  if (countConditionLinks(fullText) >= 2) {
+  const present = conditionSlugsInText(fullText);
+  const missing = wanted.filter((item) => !present.has(item.slug));
+  if (missing.length === 0 && countConditionLinks(fullText) >= 2) {
     return { ...post, sections };
   }
 
@@ -337,6 +346,21 @@ export function withRelatedConditionLinks(post: BlogPost): BlogPost {
     if (guidesIdx >= 0) {
       section.paragraphs[guidesIdx] = sentence;
       return { ...post, sections };
+    }
+  }
+
+  // If the body already has condition links but misses EXPLICIT targets,
+  // replace the first paragraph that contains a /conditions/ URL so we stay
+  // at ≤3 links without stacking another sentence.
+  if (missing.length > 0 && countConditionLinks(fullText) >= 2) {
+    for (const section of sections) {
+      const linkIdx = section.paragraphs.findIndex((paragraph) =>
+        /\]\(\/conditions\/[a-z0-9-]+\)/.test(paragraph),
+      );
+      if (linkIdx >= 0) {
+        section.paragraphs[linkIdx] = sentence;
+        return { ...post, sections };
+      }
     }
   }
 

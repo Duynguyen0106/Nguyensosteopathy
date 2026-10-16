@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
-import { pricing, schemaOffers, site } from "@/lib/site";
+import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Osteopath Fees & Prices in Woolwich | Transparent Pricing",
@@ -47,20 +47,11 @@ export default function FeesPage() {
     name: `${site.name} fees`,
     url: `${site.websiteUrl}/fees`,
     provider: { "@id": `${site.websiteUrl}/#clinic` },
+    // Reference canonical Offer objects on #clinic — do not duplicate price nodes.
     itemListElement: schemaOffers.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      item: {
-        "@type": "Offer",
-        name: item.service,
-        description: `${item.service} (${item.duration})`,
-        price: item.price.replace(/[^0-9.]/g, ""),
-        priceCurrency: "GBP",
-        availability: "https://schema.org/PreOrder",
-        availabilityStarts: site.booking.opensFromIso,
-        validFrom: site.booking.opensFromIso,
-        url: `${site.websiteUrl}/book`,
-      },
+      item: { "@id": schemaOfferId(item.service) },
     })),
   };
 

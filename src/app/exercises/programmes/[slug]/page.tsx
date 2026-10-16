@@ -106,7 +106,7 @@ export default async function ProgrammeDetailPage({ params }: Props) {
             {programme.audience}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="#exercises">See exercises</ButtonLink>
+            <ButtonLink href="#programme-exercises">See exercises</ButtonLink>
             <ButtonLink href="/book" variant="secondary">
               Book assessment
             </ButtonLink>
@@ -145,7 +145,7 @@ export default async function ProgrammeDetailPage({ params }: Props) {
       </section>
 
       <section
-        id="exercises"
+        id="programme-exercises"
         className="border-b border-slate-200 px-5 py-16 md:px-8 md:py-20"
       >
         <div className="mx-auto max-w-6xl">

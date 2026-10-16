@@ -73,25 +73,8 @@ export default function VietnamesePage() {
     name: "Phòng khám Xương khớp Nguyễn — Trang tiếng Việt",
     inLanguage: "vi",
     url: `${site.websiteUrl}/vi`,
-    isPartOf: {
-      "@type": "WebSite",
-      name: site.name,
-      url: site.websiteUrl,
-    },
-    about: {
-      "@type": "MedicalBusiness",
-      name: site.name,
-      url: site.websiteUrl,
-      telephone: site.phoneE164,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: site.address.line1,
-        addressLocality: "Woolwich",
-        addressRegion: "London",
-        postalCode: "SE18 6LQ",
-        addressCountry: "GB",
-      },
-    },
+    isPartOf: { "@id": `${site.websiteUrl}/#website` },
+    about: { "@id": `${site.websiteUrl}/#clinic` },
   };
 
   return (

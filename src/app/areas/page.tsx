@@ -30,21 +30,15 @@ export const metadata: Metadata = {
 export default function AreasPage() {
   const pageLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    name: site.name,
+    "@type": "CollectionPage",
+    name: `Areas we serve — ${site.name}`,
     url: `${site.websiteUrl}/areas`,
-    telephone: site.phoneE164,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: site.address.line1,
-      addressLocality: "Woolwich",
-      addressRegion: "London",
-      postalCode: "SE18 6LQ",
-      addressCountry: "GB",
-    },
-    areaServed: serviceAreas.map((area) => ({
-      "@type": "City",
-      name: area.name,
+    isPartOf: { "@id": `${site.websiteUrl}/#website` },
+    about: { "@id": `${site.websiteUrl}/#clinic` },
+    hasPart: serviceAreas.map((area) => ({
+      "@type": "WebPage",
+      name: `Osteopath near ${area.name}`,
+      url: `${site.websiteUrl}/areas/${area.slug}`,
     })),
   };
 

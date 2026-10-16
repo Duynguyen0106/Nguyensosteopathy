@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
-import { buildPractitionerJsonLd } from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -54,16 +53,9 @@ const communityJobs = [
 ] as const;
 
 export default function AboutPage() {
-  /** Canonical Person lives at /#practitioner — reuse so About does not split the entity. */
-  const personLd = buildPractitionerJsonLd();
-
+  // Person JSON-LD is sitewide at /#practitioner (layout JsonLd) — do not re-emit here.
   return (
     <div className="bg-slate-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
-      />
-
       {/* Hero — brand + story in one composition */}
       <section className="relative min-h-[88vh] overflow-hidden text-white">
         <Image

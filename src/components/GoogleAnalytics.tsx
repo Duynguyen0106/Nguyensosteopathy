@@ -50,7 +50,12 @@ export function GoogleAnalytics() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('consent', 'update', { analytics_storage: 'granted' });
+            gtag('consent', 'update', {
+              analytics_storage: 'granted',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied'
+            });
             gtag('config', '${GA_ID}', { anonymize_ip: true });
           `}</Script>
         </>

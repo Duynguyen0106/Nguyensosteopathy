@@ -105,17 +105,9 @@ export const metadata: Metadata = {
     description,
     images: ["/images/logo-lockup.webp"],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
+  // Do not set robots: index here — it conflicts with Next’s automatic
+  // noindex on not-found pages (both meta tags then appear). Defaults index
+  // normal routes; /blog pages set googleBot extras explicitly where needed.
   icons: {
     icon: [{ url: "/images/favicon-32.png", sizes: "32x32", type: "image/png" }],
     apple: [{ url: "/images/apple-touch-icon.png", sizes: "180x180" }],
@@ -135,6 +127,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${display.variable} ${body.variable} h-full antialiased`}
     >
       <head>
+        {/* Consent Mode v2 defaults before any analytics tags load */}
+        <script
+          id="gtag-consent-default"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','wait_for_update':500});`,
+          }}
+        />
         {/* Sitewide MedicalClinic / LocalBusiness (+ practitioner & website) JSON-LD */}
         <JsonLd />
       </head>

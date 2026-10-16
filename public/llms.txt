@@ -9,33 +9,35 @@
 - Fees: https://www.nguyensosteopathy.com/fees
 - Insurance & receipts: https://www.nguyensosteopathy.com/insurance
 - Contact: https://www.nguyensosteopathy.com/contact
+- Blog: https://www.nguyensosteopathy.com/blog
 - Blog RSS: https://www.nguyensosteopathy.com/feed.xml
 - Reviews: https://www.nguyensosteopathy.com/reviews
 - FAQ: https://www.nguyensosteopathy.com/faq
 - New patients: https://www.nguyensosteopathy.com/new-patients
 - Aftercare: https://www.nguyensosteopathy.com/aftercare
+- Home exercises & rehab: https://www.nguyensosteopathy.com/exercises
 - Patient resources: https://www.nguyensosteopathy.com/resources
 - Find us & parking: https://www.nguyensosteopathy.com/find-us
-- Opening offer: https://www.nguyensosteopathy.com/opening
 - NHS & student discount: https://www.nguyensosteopathy.com/nhs-discount
 - Vietnamese: https://www.nguyensosteopathy.com/vi
 - Site map: https://www.nguyensosteopathy.com/site-map
+- Sitemap XML: https://www.nguyensosteopathy.com/sitemap.xml
 - Leaflet PDF: https://www.nguyensosteopathy.com/leaflet/nguyens-osteopathy-leaflet.pdf
 
 ## Treatments
 - Services index: https://www.nguyensosteopathy.com/services
 - What is osteopathy: https://www.nguyensosteopathy.com/osteopathy
-- Back & neck: https://www.nguyensosteopathy.com/back-neck
+- Back & neck: https://www.nguyensosteopathy.com/services/back-neck-pain
 - Desk & office pain: https://www.nguyensosteopathy.com/desk-pain
-- Headaches & joints: https://www.nguyensosteopathy.com/headaches
-- Focused shockwave: https://www.nguyensosteopathy.com/shockwave
-- Men's health & ED: https://www.nguyensosteopathy.com/mens-health
-- Sports injury: https://www.nguyensosteopathy.com/sports
-- Pregnancy: https://www.nguyensosteopathy.com/pregnancy
-- Paediatric: https://www.nguyensosteopathy.com/paediatric
-- Cranial: https://www.nguyensosteopathy.com/cranial
-- Acupuncture: https://www.nguyensosteopathy.com/acupuncture
-- Deep tissue massage: https://www.nguyensosteopathy.com/massage
+- Headaches & joints: https://www.nguyensosteopathy.com/services/headaches-joints
+- Focused shockwave: https://www.nguyensosteopathy.com/services/focused-shockwave
+- Men's health & ED: https://www.nguyensosteopathy.com/services/mens-health-ed
+- Sports injury: https://www.nguyensosteopathy.com/services/sports-injury-rehab
+- Pregnancy: https://www.nguyensosteopathy.com/services/pregnancy-support
+- Paediatric: https://www.nguyensosteopathy.com/services/paediatric-care
+- Cranial: https://www.nguyensosteopathy.com/services/cranial-therapy
+- Acupuncture: https://www.nguyensosteopathy.com/services/acupuncture-electro
+- Deep tissue massage: https://www.nguyensosteopathy.com/services/deep-tissue-massage
 - Cupping add-on: https://www.nguyensosteopathy.com/cupping
 
 ## Conditions & areas
@@ -56,7 +58,7 @@
 - Accessibility: https://www.nguyensosteopathy.com/accessibility
 
 ## Contact
-- Phone: 07882843513
+- Phone: 07882 843513
 - Email: nguyensosteopathy@gmail.com
 - Pharmacy hours: Mon–Fri 9:00am–6:00pm · Sat 9:00am–5:30pm
-- Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun, except opening day)
+- Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun)

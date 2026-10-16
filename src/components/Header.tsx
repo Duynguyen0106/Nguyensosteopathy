@@ -8,6 +8,8 @@ import { getServiceHref, services, site } from "@/lib/site";
 
 const links = [
   { href: "/about", label: "About" },
+  { href: "/conditions", label: "Conditions" },
+  { href: "/exercises", label: "Exercises" },
   { href: "/blog", label: "Blog" },
   { href: "/fees", label: "Fees" },
   { href: "/reviews", label: "Reviews" },

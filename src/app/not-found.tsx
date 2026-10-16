@@ -1,5 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+
+/** Overrides root layout index/follow so 404s are not soft-indexed. */
+export const metadata: Metadata = {
+  title: "Page not found",
+  description:
+    "That page is missing or out of date. Book online, browse services, or open the site map at Nguyen's Osteopathic Clinic.",
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+    },
+  },
+  openGraph: {
+    title: "Page not found | Nguyen's Osteopathic Clinic",
+    description:
+      "That link may be out of date. Try booking or browsing services at our Woolwich clinic.",
+    url: "/404",
+  },
+};
 
 export default function NotFound() {
   return (
@@ -40,6 +62,10 @@ export default function NotFound() {
           {" · "}
           <Link href="/services/focused-shockwave" className="font-semibold text-teal hover:text-teal-dark">
             Shockwave
+          </Link>
+          {" · "}
+          <Link href="/exercises" className="font-semibold text-teal hover:text-teal-dark">
+            Exercises
           </Link>
           {" · "}
           <Link href="/find-us" className="font-semibold text-teal hover:text-teal-dark">

@@ -50,10 +50,7 @@ export default function NhsDiscountPage() {
       "@type": "Offer",
       name: "NHS staff & student discount",
       description: site.discount,
-      seller: {
-        "@type": "MedicalBusiness",
-        name: site.name,
-      },
+      seller: { "@id": `${site.websiteUrl}/#clinic` },
     },
   };
 

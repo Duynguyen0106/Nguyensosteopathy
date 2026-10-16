@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
-import { bookingHoursSpecification, site } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Osteopath in Woolwich | Call, WhatsApp & Map",
@@ -51,27 +51,7 @@ export default function ContactPage() {
     "@type": "ContactPage",
     name: `Contact ${site.name}`,
     url: `${site.websiteUrl}/contact`,
-    mainEntity: {
-      "@type": "MedicalBusiness",
-      name: site.name,
-      telephone: site.phoneE164,
-      email: site.email,
-      url: site.websiteUrl,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: site.address.line1,
-        addressLocality: "Woolwich",
-        addressRegion: "London",
-        postalCode: "SE18 6LQ",
-        addressCountry: "GB",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: site.address.geo.latitude,
-        longitude: site.address.geo.longitude,
-      },
-      openingHoursSpecification: bookingHoursSpecification,
-    },
+    mainEntity: { "@id": `${site.websiteUrl}/#clinic` },
   };
 
   return (

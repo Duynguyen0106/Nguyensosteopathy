@@ -241,7 +241,7 @@ export function ExerciseIllustration({
               d="M175 55 H195"
               stroke={teal}
               strokeWidth="3"
-              markerEnd="url(#arrow)"
+              markerEnd={`url(#ex-arrow-${name})`}
             />
           ) : null}
           {name === "ankle-alphabet" ? (
@@ -255,7 +255,7 @@ export function ExerciseIllustration({
           ) : null}
           <defs>
             <marker
-              id="arrow"
+              id={`ex-arrow-${name}`}
               markerWidth="6"
               markerHeight="6"
               refX="5"

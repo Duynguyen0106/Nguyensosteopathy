@@ -15,6 +15,12 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   alternates: { canonical: `${site.websiteUrl}/blog` },
   keywords: [
@@ -46,22 +52,8 @@ export default function BlogIndexPage() {
     description:
       "Practical osteopathy guides for Woolwich and South East London, organised by clinic service topics.",
     url: `${site.websiteUrl}/blog`,
-    isPartOf: {
-      "@type": "WebSite",
-      name: site.name,
-      url: site.websiteUrl,
-    },
-    about: {
-      "@type": "MedicalBusiness",
-      name: site.name,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: `${site.address.venue}, ${site.address.line1}`,
-        addressLocality: "Woolwich",
-        postalCode: "SE18 6LQ",
-        addressCountry: "GB",
-      },
-    },
+    isPartOf: { "@id": `${site.websiteUrl}/#website` },
+    about: { "@id": `${site.websiteUrl}/#clinic` },
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: total,

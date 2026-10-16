@@ -35,12 +35,7 @@ export default function ReviewsPage() {
     "@type": "CollectionPage",
     name: `Patient reviews — ${site.name}`,
     url: `${site.websiteUrl}/reviews`,
-    about: {
-      "@type": "MedicalBusiness",
-      name: site.name,
-      url: site.websiteUrl,
-      telephone: site.phoneE164,
-    },
+    about: { "@id": `${site.websiteUrl}/#clinic` },
   };
 
   return (

@@ -11,7 +11,8 @@ function escapeXml(value: string) {
 }
 
 export async function GET() {
-  const posts = getAllPosts().slice(0, 40);
+  // Include the full public catalogue so RSS mirrors sitemap blog coverage.
+  const posts = getAllPosts();
   const items = posts
     .map((post) => {
       const url = `${site.websiteUrl}/blog/${post.slug}`;

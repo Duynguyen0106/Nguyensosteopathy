@@ -45,19 +45,14 @@ export default async function AreaPage({ params }: Props) {
 
   const pageLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    name: site.name,
+    "@type": "WebPage",
+    name: `Osteopath near ${area.name}`,
     url: `${site.websiteUrl}/areas/${area.slug}`,
-    telephone: site.phoneE164,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: site.address.line1,
-      addressLocality: "Woolwich",
-      addressRegion: "London",
-      postalCode: "SE18 6LQ",
-      addressCountry: "GB",
-    },
-    areaServed: {
+    description: area.summary,
+    isPartOf: { "@id": `${site.websiteUrl}/#website` },
+    about: { "@id": `${site.websiteUrl}/#clinic` },
+    provider: { "@id": `${site.websiteUrl}/#clinic` },
+    spatialCoverage: {
       "@type": "City",
       name: area.name,
     },
@@ -105,6 +100,9 @@ export default async function AreaPage({ params }: Props) {
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600">
               {area.summary}
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
+              {area.detail}
             </p>
             <ul className="mt-6 space-y-3">
               {area.whyVisit.map((item) => (

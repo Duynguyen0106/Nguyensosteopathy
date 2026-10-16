@@ -60,24 +60,12 @@ const arrival = [
 export default function FindUsPage() {
   const pageLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    name: site.name,
+    "@type": "WebPage",
+    name: `Find us — ${site.name}`,
     url: `${site.websiteUrl}/find-us`,
-    telephone: site.phoneE164,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: site.address.line1,
-      addressLocality: "Woolwich",
-      addressRegion: "London",
-      postalCode: "SE18 6LQ",
-      addressCountry: "GB",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: site.address.geo.latitude,
-      longitude: site.address.geo.longitude,
-    },
-    hasMap: site.address.mapsUrl,
+    isPartOf: { "@id": `${site.websiteUrl}/#website` },
+    about: { "@id": `${site.websiteUrl}/#clinic` },
+    mainEntity: { "@id": `${site.websiteUrl}/#clinic` },
   };
 
   return (

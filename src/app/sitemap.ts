@@ -85,6 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/cupping", priority: 0.7 },
     { path: "/site-map", priority: 0.4 },
     { path: "/leaflet", priority: 0.5 },
+    { path: "/poster", priority: 0.5 },
     { path: "/cookies", changeFrequency: "yearly", priority: 0.3 },
     { path: "/insurance", priority: 0.7 },
     { path: "/feed.xml", changeFrequency: "weekly", priority: 0.5 },
@@ -92,6 +93,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       path: "/leaflet/nguyens-osteopathy-leaflet.pdf",
       priority: 0.4,
+    },
+    {
+      path: "/poster/nguyens-osteopathy-poster-a1.pdf",
+      priority: 0.3,
+    },
+    {
+      path: "/poster/nguyens-osteopathy-poster-a2.pdf",
+      priority: 0.3,
     },
     {
       path: "/poster/nguyens-osteopathy-poster-a3.pdf",

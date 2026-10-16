@@ -38,6 +38,7 @@ const legalLinks = [
   { href: "/about", label: "About Austin" },
   { href: "/vi", label: "Tiếng Việt" },
   { href: "/leaflet", label: "Clinic leaflet" },
+  { href: "/poster", label: "Print posters" },
   { href: "/privacy", label: "Privacy policy" },
   { href: "/cookies", label: "Cookie policy" },
   { href: "/accessibility", label: "Accessibility" },

@@ -832,6 +832,9 @@ export const programmes: Programme[] = [
       "non-specific-low-back-pain",
       "facet-syndrome",
       "lumbar-disc-radiculopathy",
+      "coccydynia",
+      "si-joint-dysfunction",
+      "lumbar-stenosis",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
@@ -860,6 +863,8 @@ export const programmes: Programme[] = [
       "neck-pain",
       "cervicogenic-headache",
       "thoracic-joint-dysfunction",
+      "cervical-radiculopathy",
+      "costochondritis",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
@@ -913,6 +918,9 @@ export const programmes: Programme[] = [
       "patellofemoral-pain",
       "itb-syndrome",
       "patellar-tendinopathy",
+      "knee-oa",
+      "meniscal-injury",
+      "hamstring-strain",
     ],
     relatedServiceSlug: "sports-injury-rehab",
     precautions: [
@@ -934,7 +942,12 @@ export const programmes: Programme[] = [
       "isometric-heel-raise",
       "single-leg-balance",
     ],
-    relatedConditionSlugs: ["plantar-fasciitis", "achilles-tendinopathy"],
+    relatedConditionSlugs: [
+      "plantar-fasciitis",
+      "achilles-tendinopathy",
+      "hallux-rigidus",
+      "morton-neuroma",
+    ],
     relatedServiceSlug: "focused-shockwave",
     precautions: [
       "Sudden calf swelling or inability to push off may need urgent medical review (e.g. suspected tear or DVT pathway).",
@@ -960,11 +973,14 @@ export const programmes: Programme[] = [
       "subacromial-pain",
       "frozen-shoulder",
       "rotator-cuff-tear",
+      "ac-joint-injury",
+      "shoulder-instability",
     ],
     relatedServiceSlug: "headaches-joints",
     precautions: [
       "Post-dislocation, suspected fracture, or night pain with fever needs medical review first.",
       "Stay below the height that pinches; range returns faster when irritability drops.",
+      "For instability, prioritise control over stretching into end-range apprehension.",
     ],
   },
   {
@@ -1008,11 +1024,70 @@ export const programmes: Programme[] = [
       "non-specific-low-back-pain",
       "neck-pain",
       "deconditioning",
+      "fibromyalgia",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
       "Follow any personal plan given in clinic if it differs from this page.",
       "Worsening symptoms after 48 hours, or red-flag neurological change, means contact us or urgent care — not more exercise.",
+    ],
+  },
+  {
+    slug: "lateral-hip-settle",
+    title: "Lateral hip settle",
+    summary:
+      "Glute and hip control for outer-hip, groin, and early hip-joint irritability — stairs and side-sleep first.",
+    audience:
+      "Adults with lateral hip or groin discomfort that settles with load management, without acute fracture or unexplained night fever.",
+    phase: "rebuild",
+    exerciseSlugs: [
+      "side-lying-hip-abduction",
+      "glute-bridge",
+      "piriformis-figure-four",
+      "hip-hinge-practice",
+      "single-leg-balance",
+      "bird-dog",
+    ],
+    relatedConditionSlugs: [
+      "greater-trochanteric-pain",
+      "hip-oa",
+      "femoroacetabular-impingement",
+      "groin-pain",
+    ],
+    relatedServiceSlug: "focused-shockwave",
+    precautions: [
+      "True locking, giving-way, or unexplained night pain with fever needs assessment before progressing single-leg work.",
+      "Avoid forcing into the groin pinch of deep flexion — shorten the range instead.",
+    ],
+  },
+  {
+    slug: "upper-limb-desk-calm",
+    title: "Upper-limb desk calm",
+    summary:
+      "Neck, scapular, and gentle mobility micro-breaks when wrist, thumb, or elbow load from desk and tools is flaring.",
+    audience:
+      "Desk, salon, and tool users with wrist, thumb, or elbow irritability without progressive hand wasting or constant numbness.",
+    phase: "settle",
+    exerciseSlugs: [
+      "chin-tuck",
+      "seated-scapular-set",
+      "open-book-rotation",
+      "wall-angels",
+      "band-external-rotation",
+      "diaphragmatic-breathing",
+    ],
+    relatedConditionSlugs: [
+      "carpal-tunnel",
+      "dequervains",
+      "cmc-oa",
+      "cubital-tunnel",
+      "medial-epicondylalgia",
+      "tennis-elbow",
+    ],
+    relatedServiceSlug: "focused-shockwave",
+    precautions: [
+      "Constant numbness, thenar wasting, or progressive hand weakness needs medical or nerve-study pathways — not this programme alone.",
+      "Keep wrists in mid-range; stop any drill that sparks lingering neural tingling.",
     ],
   },
 ];

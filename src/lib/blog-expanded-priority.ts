@@ -6,7 +6,6 @@ import type { ExpandedBlogBody } from "@/lib/blog-expanded-bodies";
  */
 export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   "nail-technician-neck-wrist-pain-osteopath": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {
@@ -76,7 +75,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "restaurant-kitchen-back-pain-osteopath-woolwich": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {
@@ -145,7 +143,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "desk-neck-and-shoulder-pain": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {
@@ -214,7 +211,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "sciatica-woolwich-osteopath": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {
@@ -277,7 +273,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "focused-shockwave-therapy-woolwich": {
-    updated: "2026-10-15",
     readingMinutes: 7,
     sections: [
       {
@@ -332,7 +327,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "plantar-fasciitis-shockwave-woolwich": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {
@@ -392,7 +386,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "tennis-elbow-shockwave-osteopath-woolwich": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {
@@ -445,7 +438,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "shoulder-pain-frozen-shoulder-woolwich": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {
@@ -500,7 +492,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "lumbar-disc-pain-osteopath-woolwich": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {
@@ -559,7 +550,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "osteopath-woolwich-what-to-expect": {
-    updated: "2026-10-15",
     readingMinutes: 7,
     sections: [
       {
@@ -623,7 +613,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
 
   // Keep checklist cleaned (related companion to what-to-expect; not one of the top-10 list but was in this file)
   "first-osteopathy-visit-checklist-woolwich": {
-    updated: "2026-10-15",
     readingMinutes: 6,
     sections: [
       {
@@ -677,7 +666,6 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
   },
 
   "upper-back-pain-desk-workers-woolwich": {
-    updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
       {

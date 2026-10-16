@@ -152,7 +152,6 @@ const blogPostInputs: BlogPostInput[] = [
     description:
       "Practical guide to common back pain causes for Woolwich and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
     date: "2026-10-08",
-    updated: "2026-10-15",
     readingMinutes: 9,
     category: "Back & neck",
     keywords: [

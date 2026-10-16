@@ -94,18 +94,10 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.date,
     dateModified: updated,
     author: {
-      "@type": "Person",
-      name: site.practitioner.name,
-      jobTitle: site.practitioner.title,
-      url: `${site.websiteUrl}/about`,
+      "@id": `${site.websiteUrl}/#practitioner`,
     },
     publisher: {
-      "@type": "Organization",
-      name: site.name,
-      logo: {
-        "@type": "ImageObject",
-        url: `${site.websiteUrl}/images/logo-mark.webp`,
-      },
+      "@id": `${site.websiteUrl}/#clinic`,
     },
     mainEntityOfPage: {
       "@type": "WebPage",

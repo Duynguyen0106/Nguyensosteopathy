@@ -40,8 +40,9 @@ Regenerate print PDFs:
 
 ```bash
 npm run leaflet
-npm run poster        # if present
-npm run business-card # if present
+npm run poster            # A3 pharmacy-window poster
+npm run pavement-poster   # A1 + A2 pavement A-board posters
+npm run business-card     # if present
 ```
 
 ## Products Austin built (profile credit)

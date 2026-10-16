@@ -1,7 +1,8 @@
 import type { BlogPostSection } from "@/lib/blog";
 
 export type ExpandedBlogBody = {
-  updated: string;
+  /** Only set when the body was revised after publish. */
+  updated?: string;
   readingMinutes: number;
   sections: BlogPostSection[];
   cta?: string;
@@ -14,7 +15,6 @@ export type ExpandedBlogBody = {
  */
 export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
   "back-pain-woolwich-osteopathy": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -70,7 +70,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "do-i-need-gp-referral-osteopath": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -126,7 +125,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "sports-injury-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -182,7 +180,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "mens-health-shockwave-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -238,7 +235,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "nhs-student-osteopathy-discount-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -294,7 +290,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "tension-headaches-neck-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -350,7 +345,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "pregnancy-osteopathy-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -406,7 +400,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "osteopath-vs-physiotherapist-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -462,7 +455,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "hip-knee-pain-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -518,7 +510,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "osteopath-greenwich-charlton-thamesmead": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -574,7 +565,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "how-many-osteopathy-sessions": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -630,7 +620,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "sacroiliac-joint-pain-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -686,7 +675,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "whiplash-neck-pain-osteopath-se18": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -742,7 +730,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "morning-back-stiffness-osteopath": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -798,7 +785,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "text-neck-smartphone-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -854,7 +840,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "tmj-jaw-pain-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -910,7 +895,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "migraine-vs-tension-headache-osteopath": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -966,7 +950,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "ankle-sprain-rehab-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1022,7 +1005,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "wrist-hand-pain-osteopath-se18": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1078,7 +1060,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "osteoarthritis-joints-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1134,7 +1115,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "achilles-tendinopathy-shockwave-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1190,7 +1170,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "golfers-elbow-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1246,7 +1225,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "patellar-tendinopathy-shockwave-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1302,7 +1280,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "what-to-expect-focused-shockwave-session": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1358,7 +1335,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "shockwave-vs-osteopathy-when-to-combine": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1414,7 +1390,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "li-eswt-erectile-dysfunction-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1470,7 +1445,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "mens-pelvic-health-osteopathy-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1526,7 +1500,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "how-many-shockwave-sessions-ed": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1582,7 +1555,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "drug-free-ed-options-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1638,7 +1610,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "medical-acupuncture-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1694,7 +1665,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "electroacupuncture-pain-relief-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1750,7 +1720,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "acupuncture-add-on-vs-standalone": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1806,7 +1775,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "cupping-therapy-add-on-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1862,7 +1830,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "deep-tissue-massage-woolwich-osteopath": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1918,7 +1885,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "deep-tissue-vs-osteopathy-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -1974,7 +1940,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "post-gym-muscle-soreness-massage-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2030,7 +1995,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "stress-shoulder-tension-massage-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2086,7 +2050,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "running-injuries-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2142,7 +2105,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "gym-shoulder-injury-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2198,7 +2160,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "football-muscle-strain-osteopath-se18": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2254,7 +2215,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "return-to-sport-after-sprain-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2310,7 +2270,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "overuse-injuries-gym-running-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2366,7 +2325,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "pelvic-girdle-pain-pregnancy-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2422,7 +2380,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "pregnancy-rib-pain-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2478,7 +2435,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "postpartum-back-pain-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2534,7 +2490,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "pregnancy-osteopathy-safety-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2590,7 +2545,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "cranial-osteopathy-woolwich-what-is-it": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2646,7 +2600,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "cranial-osteopathy-for-stress-tension": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2702,7 +2655,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "cranial-vs-structural-osteopathy-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2758,7 +2710,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "paediatric-osteopathy-woolwich-parents-guide": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2814,7 +2765,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "growing-pains-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2870,7 +2820,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "child-posture-backpack-osteopath-se18": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2926,7 +2875,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "infant-osteopathy-what-parents-ask-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -2982,7 +2930,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "book-osteopath-online-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3038,7 +2985,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "osteopathy-fees-woolwich-price-list": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3094,7 +3040,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "osteopath-inside-st-james-pharmacy-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3150,7 +3095,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "what-to-wear-osteopathy-appointment": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3206,7 +3150,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "vietnamese-osteopath-woolwich-uk": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3262,7 +3205,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "osteopath-plumstead-abbey-wood-se18": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3318,7 +3260,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "parking-osteopath-woolwich-powis-street": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3374,7 +3315,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "chronic-pain-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3430,7 +3370,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "osteopathy-for-older-adults-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3486,7 +3425,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "coccyx-tailbone-pain-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3542,7 +3480,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "lifting-back-pain-warehouse-trades-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3598,7 +3535,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "rib-pain-breathing-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3654,7 +3590,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "hip-bursitis-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3710,7 +3645,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "rsi-wrist-forearm-office-osteopath": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3766,7 +3700,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "calcific-tendonitis-shoulder-shockwave-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3822,7 +3755,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "shockwave-therapy-cost-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3878,7 +3810,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "shin-splints-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3934,7 +3865,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "cycling-lower-back-pain-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -3990,7 +3920,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "yoga-pilates-injury-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -4046,7 +3975,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "massage-for-desk-workers-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -4102,7 +4030,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "cupping-vs-massage-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -4158,7 +4085,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "pregnancy-sciatica-osteopath-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -4214,7 +4140,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "baby-preferential-head-turn-osteopath": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {
@@ -4270,7 +4195,6 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaLabel": "Book online"
   },
   "cranial-osteopathy-headaches-woolwich": {
-    "updated": "2026-10-15",
     "readingMinutes": 8,
     "sections": [
       {

@@ -6,16 +6,17 @@ import { useEffect, useId, useRef, useState } from "react";
 import { ButtonLink } from "@/components/Button";
 import { getServiceHref, services, site } from "@/lib/site";
 
+/** Primary lg row — keep lean; Reviews / Find us / Tiếng Việt stay in mobile + footer. */
 const links = [
-  { href: "/about", label: "About" },
-  { href: "/conditions", label: "Conditions" },
-  { href: "/exercises", label: "Exercises" },
-  { href: "/blog", label: "Blog" },
-  { href: "/fees", label: "Fees" },
-  { href: "/reviews", label: "Reviews" },
-  { href: "/find-us", label: "Find us" },
-  { href: "/contact", label: "Contact" },
-  { href: "/vi", label: "Tiếng Việt" },
+  { href: "/about", label: "About", desktop: true },
+  { href: "/conditions", label: "Conditions", desktop: true },
+  { href: "/exercises", label: "Exercises", desktop: true },
+  { href: "/blog", label: "Blog", desktop: true },
+  { href: "/fees", label: "Fees", desktop: true },
+  { href: "/reviews", label: "Reviews", desktop: false },
+  { href: "/find-us", label: "Find us", desktop: false },
+  { href: "/contact", label: "Contact", desktop: true },
+  { href: "/vi", label: "Tiếng Việt", desktop: false },
 ];
 
 const serviceNav = services.map((service) => ({
@@ -202,7 +203,7 @@ export function Header() {
           </div>
 
           {links
-            .filter((link) => link.href !== "/about")
+            .filter((link) => link.href !== "/about" && link.desktop)
             .map((link) => (
               <Link
                 key={link.href}

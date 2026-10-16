@@ -71,7 +71,7 @@ export const serviceAreas: ServiceArea[] = [
     travelNote:
       "Elizabeth line to Woolwich, then a short walk or bus to Powis Street and St James Pharmacy.",
     detail:
-      "Abbey Wood residents can reach the clinic via the Elizabeth line to Woolwich, then a short walk or bus to St James Pharmacy on Powis Street. That makes private osteopathy realistic when back, neck, or running pain is interrupting work or sleep and you do not want a long wait for routine MSK triage. We screen red flags carefully, treat mechanical drivers with hands-on care, and add focused shockwave for selected stubborn tendons after clinical screening. NHS staff and students receive 10% off with valid ID. Use the Find us guide for arrival and live booking for current appointment slots.",
+      "Abbey Wood residents can reach the clinic via the Elizabeth line to Woolwich, then a short walk or bus to St James Pharmacy on Powis Street — often faster door-to-door than a central London MSK wait when back, neck, or running pain is interrupting work or sleep. Crossrail-era commuting, Harrow Manor Way links, and Lesnes Abbey weekend walks are common contexts we hear alongside desk strain and park-run spikes. We screen red flags carefully, treat mechanical drivers with hands-on care, and add focused shockwave for selected stubborn tendons after clinical screening. NHS staff and students receive 10% off with valid ID. Parents juggling school runs toward Thamesmead and shift workers who need clear evening planning are regular visitors. Use the Find us guide for arrival and live booking for current appointment slots.",
     whyVisit: [
       "Elizabeth line link into Woolwich",
       "Useful for back, neck, and running injuries",
@@ -121,7 +121,7 @@ export const serviceAreas: ServiceArea[] = [
     travelNote:
       "Buses toward Woolwich town centre; parking nearby if you drive — allow a few minutes on busy days.",
     detail:
-      "Charlton locals dealing with gym strain, pitch-side knocks, or desk-related neck pain can reach Nguyen's Osteopathic Clinic via buses into Woolwich town centre, with nearby parking if you drive. We assess the region that hurts and the kinetic chain that loads it — hips for knee pain, thoracic mobility for shoulder irritation — then match hands-on care and home drills to how irritable tissues are today. Sports injury rehab and shockwave sit alongside standard osteopathy when clinically useful. Fees and cancellation policy are published up front. Regular bookable days follow the clinic hours on Find us (closed Wednesday and Sunday).",
+      "Charlton locals dealing with gym strain, pitch-side knocks at The Valley, or desk-related neck pain can reach Nguyen's Osteopathic Clinic via buses into Woolwich town centre, with nearby parking if you drive. Charlton Park runners, riverside walkers toward Greenwich Peninsula, and hybrid workers on the SE7–SE10 corridor are common visitors. We assess the region that hurts and the kinetic chain that loads it — hips for knee pain, thoracic mobility for shoulder irritation — then match hands-on care and home drills to how irritable tissues are today. Sports injury rehab and shockwave sit alongside standard osteopathy when clinically useful. Fees and cancellation policy are published up front. Regular bookable days follow the clinic hours on Find us (closed Wednesday and Sunday).",
     whyVisit: [
       "Bus links toward Woolwich town centre",
       "Back, neck, and sports injury focus",
@@ -142,7 +142,7 @@ export const serviceAreas: ServiceArea[] = [
     travelNote:
       "Bus routes into Woolwich; ask at St James Pharmacy for the osteopathy room on arrival.",
     detail:
-      "Thamesmead patients with work strain, sports injuries, or persistent joint pain can reach Powis Street by bus into Woolwich and ask at St James Pharmacy for the osteopathy room. Care is drug-free and explanation-led: we screen for problems that need medical input first, then treat mechanical drivers with osteopathy and practical load advice. Standing occupations, warehouse lifting, and weekend sport are common stories we hear. NHS and student discounts apply with valid ID. Use Find us for arrival tips and the booking page for live slots.",
+      "Thamesmead patients with work strain, sports injuries, or persistent joint pain can reach Powis Street by bus into Woolwich and ask at St James Pharmacy for the osteopathy room — a practical alternative to a long central triage wait. Lakeside and Thames Path walks, warehouse and logistics shifts, and weekend five-a-side are common load stories we hear from SE28. Care is drug-free and explanation-led: we screen for problems that need medical input first, then treat mechanical drivers with osteopathy and practical load advice. Standing occupations and sudden training spikes after quiet weeks often share the same presentation. NHS and student discounts apply with valid ID. Use Find us for arrival tips and the booking page for live slots.",
     whyVisit: [
       "Bus routes into Woolwich from Thamesmead",
       "Work-related and sports pathways",

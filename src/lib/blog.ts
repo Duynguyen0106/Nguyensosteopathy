@@ -82,6 +82,23 @@ function withExpansion(post: BlogPostInput): BlogPostInput {
   };
 }
 
+/** Estimate reading time from body copy at ~200 wpm (min 2, max 20). */
+function readingMinutesFromSections(
+  sections: BlogPostInput["sections"],
+): number {
+  const chunks: string[] = [];
+  for (const section of sections) {
+    if (section.heading) chunks.push(section.heading);
+    chunks.push(...section.paragraphs);
+    if (section.bullets) chunks.push(...section.bullets);
+  }
+  const words = chunks
+    .join(" ")
+    .split(/\s+/)
+    .filter(Boolean).length;
+  return Math.min(20, Math.max(2, Math.round(words / 200)));
+}
+
 function withImage(post: BlogPostInput): BlogPost {
   const image = post.image ?? imageManifest[post.slug];
   if (!image) {
@@ -89,7 +106,7 @@ function withImage(post: BlogPostInput): BlogPost {
   }
   return {
     ...post,
-    readingMinutes: post.readingMinutes ?? 5,
+    readingMinutes: readingMinutesFromSections(post.sections),
     image,
   };
 }

@@ -7,243 +7,141 @@ import { services, site } from "@/lib/site";
 
 const base = site.websiteUrl;
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+/** Parse YYYY-MM-DD (or full ISO) into a stable UTC Date for sitemap lastmod. */
+function toLastmod(iso: string): Date {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(iso)) {
+    return new Date(`${iso}T00:00:00.000Z`);
+  }
+  const parsed = new Date(iso);
+  if (Number.isNaN(parsed.getTime())) {
+    return toLastmod(site.sitemapDefaultLastmod);
+  }
+  return parsed;
+}
 
-  return [
+const catalogLastmod = toLastmod(site.sitemapDefaultLastmod);
+
+type Entry = {
+  path: string;
+  lastModified?: Date;
+  changeFrequency?: MetadataRoute.Sitemap[number]["changeFrequency"];
+  priority?: number;
+};
+
+function entry({
+  path,
+  lastModified = catalogLastmod,
+  changeFrequency = "monthly",
+  priority = 0.7,
+}: Entry): MetadataRoute.Sitemap[number] {
+  return {
+    url: path.startsWith("http") ? path : `${base}${path}`,
+    lastModified,
+    changeFrequency,
+    priority,
+  };
+}
+
+/**
+ * Cached by default in Next.js unless request-time APIs are used.
+ * Keep lastModified values deterministic (no `new Date()` at request time).
+ */
+export default function sitemap(): MetadataRoute.Sitemap {
+  const posts = getAllPosts();
+  const latestPostLastmod = posts.reduce((latest, post) => {
+    const stamp = toLastmod(post.updated ?? post.date);
+    return stamp > latest ? stamp : latest;
+  }, toLastmod("1970-01-01"));
+
+  const staticPages: Entry[] = [
+    { path: "", changeFrequency: "weekly", priority: 1 },
+    { path: "/about", priority: 0.9 },
+    { path: "/services", changeFrequency: "weekly", priority: 0.9 },
     {
-      url: base,
-      lastModified: now,
+      path: "/blog",
+      lastModified: latestPostLastmod,
       changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${base}/about`,
-      lastModified: now,
-      changeFrequency: "monthly",
       priority: 0.9,
     },
+    { path: "/book", changeFrequency: "weekly", priority: 0.95 },
+    { path: "/vi", priority: 0.9 },
+    { path: "/fees", priority: 0.85 },
+    { path: "/contact", priority: 0.85 },
+    { path: "/reviews", priority: 0.75 },
+    { path: "/faq", priority: 0.8 },
+    { path: "/new-patients", priority: 0.8 },
+    { path: "/resources", priority: 0.8 },
+    { path: "/aftercare", priority: 0.75 },
+    { path: "/exercises", priority: 0.85 },
+    { path: "/complaints", changeFrequency: "yearly", priority: 0.35 },
+    { path: "/conditions", priority: 0.85 },
+    { path: "/areas", priority: 0.85 },
+    { path: "/find-us", priority: 0.8 },
+    { path: "/nhs-discount", priority: 0.75 },
+    { path: "/osteopathy", priority: 0.9 },
+    { path: "/desk-pain", priority: 0.85 },
+    { path: "/accessibility", changeFrequency: "yearly", priority: 0.3 },
+    { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
+    { path: "/cupping", priority: 0.7 },
+    { path: "/site-map", priority: 0.4 },
+    { path: "/leaflet", priority: 0.5 },
+    { path: "/cookies", changeFrequency: "yearly", priority: 0.3 },
+    { path: "/insurance", priority: 0.7 },
+    { path: "/feed.xml", changeFrequency: "weekly", priority: 0.5 },
+    { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
     {
-      url: `${base}/services`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${base}/blog`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${base}/book`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${base}/vi`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${base}/fees`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/contact`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/reviews`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.75,
-    },
-    {
-      url: `${base}/faq`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/new-patients`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/resources`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/aftercare`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.75,
-    },
-    {
-      url: `${base}/exercises`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    ...programmes.map((programme) => ({
-      url: `${base}/exercises/programmes/${programme.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-    ...exercises.map((exercise) => ({
-      url: `${base}/exercises/${exercise.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.65,
-    })),
-    {
-      url: `${base}/complaints`,
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.35,
-    },
-    {
-      url: `${base}/conditions`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/areas`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/find-us`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/nhs-discount`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.75,
-    },
-    {
-      url: `${base}/osteopathy`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${base}/desk-pain`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/accessibility`,
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${base}/terms`,
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${base}/cupping`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${base}/site-map`,
-      lastModified: now,
-      changeFrequency: "monthly",
+      path: "/leaflet/nguyens-osteopathy-leaflet.pdf",
       priority: 0.4,
     },
     {
-      url: `${base}/leaflet`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: `${base}/cookies`,
-      lastModified: now,
-      changeFrequency: "yearly",
+      path: "/poster/nguyens-osteopathy-poster-a3.pdf",
       priority: 0.3,
     },
     {
-      url: `${base}/insurance`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${base}/feed.xml`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.5,
-    },
-    ...serviceAreas.map((area) => ({
-      url: `${base}/areas/${area.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
-    {
-      url: `${base}/privacy`,
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    ...services.map((service) => ({
-      url: `${base}/services/${service.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
-    ...conditions.map((condition) => ({
-      url: `${base}/conditions/${condition.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
-    ...getAllPosts().map((post) => ({
-      url: `${base}/blog/${post.slug}`,
-      lastModified: new Date(post.updated ?? post.date),
-      changeFrequency: "monthly" as const,
-      priority: 0.75,
-    })),
-    {
-      url: `${base}/leaflet/nguyens-osteopathy-leaflet.pdf`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.4,
-    },
-    {
-      url: `${base}/poster/nguyens-osteopathy-poster-a3.pdf`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.3,
-    },
-    {
-      url: `${base}/business-card/nguyens-osteopathy-business-card.pdf`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
+      path: "/business-card/nguyens-osteopathy-business-card.pdf",
       priority: 0.2,
     },
+  ];
+
+  return [
+    ...staticPages.map(entry),
+    ...programmes.map((programme) =>
+      entry({
+        path: `/exercises/programmes/${programme.slug}`,
+        priority: 0.7,
+      }),
+    ),
+    ...exercises.map((exercise) =>
+      entry({
+        path: `/exercises/${exercise.slug}`,
+        priority: 0.65,
+      }),
+    ),
+    ...serviceAreas.map((area) =>
+      entry({
+        path: `/areas/${area.slug}`,
+        priority: 0.8,
+      }),
+    ),
+    ...services.map((service) =>
+      entry({
+        path: `/services/${service.slug}`,
+        priority: 0.8,
+      }),
+    ),
+    ...conditions.map((condition) =>
+      entry({
+        path: `/conditions/${condition.slug}`,
+        priority: 0.8,
+      }),
+    ),
+    // Per-post lastmod from content dates (updated, else publish date).
+    ...posts.map((post) =>
+      entry({
+        path: `/blog/${post.slug}`,
+        lastModified: toLastmod(post.updated ?? post.date),
+        priority: 0.75,
+      }),
+    ),
   ];
 }

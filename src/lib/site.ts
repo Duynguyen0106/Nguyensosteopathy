@@ -109,6 +109,12 @@ export const site = {
   googleMapsCid: "13911505434361225558",
   website: "www.nguyensosteopathy.com",
   websiteUrl: "https://www.nguyensosteopathy.com",
+  /**
+   * Stable sitemap lastmod (YYYY-MM-DD) for evergreen pages without their own
+   * content dates. Bump when major site copy/structure ships — do not use
+   * request-time `new Date()` in sitemap.ts (forces a dynamic route).
+   */
+  sitemapDefaultLastmod: "2026-10-16",
   address: {
     line1: "52 Powis Street",
     line2: "Woolwich, London, SE18 6LQ",

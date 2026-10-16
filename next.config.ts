@@ -58,6 +58,18 @@ const nextConfig: NextConfig = {
     // Keep /osteopathy, /desk-pain, /cupping as standalone guides (not in services[]).
     return [
       {
+        // Crawlers sometimes request /sitemap without the .xml extension.
+        source: "/sitemap",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
+      {
+        // Removed opening-day article still indexed by Google — send to blog index.
+        source: "/blog/opening-day-osteopath-woolwich-5-november",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
         source: "/opening",
         destination: "/fees",
         permanent: true,

@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Book an Osteopathy Appointment in Woolwich",
   description:
-    "Book online with Nguyen's Osteopathic Clinic in Woolwich. Call 07882843513 or reserve with Austin Duy Nguyen, GOsC osteopath.",
+    `Book online with Nguyen's Osteopathic Clinic in Woolwich. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath.`,
   alternates: { canonical: "/book" },
   openGraph: {
     title: "Book an Osteopathy Appointment in Woolwich",

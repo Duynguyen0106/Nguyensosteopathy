@@ -7,7 +7,7 @@ import { bookingHoursSpecification, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Osteopath in Woolwich | Call, WhatsApp & Map",
   description:
-    "Contact Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18. Call 07882843513, WhatsApp, email, or book online. Bookable osteopathy days Mon–Tue & Thu–Sat from 5 November 2026.",
+    `Contact Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18. Call ${site.phone}, WhatsApp, email, or book online. Bookable osteopathy days Mon–Tue & Thu–Sat from ${site.booking.opensFromLabel}.`,
   alternates: { canonical: "/contact" },
   keywords: [
     "contact osteopath Woolwich",

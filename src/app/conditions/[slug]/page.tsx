@@ -60,7 +60,7 @@ export default async function ConditionPage({ params }: Props) {
       "@type": "MedicalCondition",
       name: condition.shortTitle,
     },
-    specialty: "Osteopathic",
+    specialty: "https://schema.org/Musculoskeletal",
     audience: {
       "@type": "PeopleAudience",
       geographicArea: {
@@ -68,12 +68,9 @@ export default async function ConditionPage({ params }: Props) {
         name: "Woolwich",
       },
     },
-    reviewedBy: {
-      "@type": "Person",
-      name: site.practitioner.name,
-      jobTitle: site.practitioner.title,
-      identifier: site.practitioner.regNo,
-    },
+    reviewedBy: { "@id": `${site.websiteUrl}/#practitioner` },
+    provider: { "@id": `${site.websiteUrl}/#clinic` },
+    isPartOf: { "@id": `${site.websiteUrl}/#website` },
   };
 
   const faqLd = {

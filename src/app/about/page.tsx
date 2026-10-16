@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { buildPractitionerJsonLd } from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -53,59 +54,8 @@ const communityJobs = [
 ] as const;
 
 export default function AboutPage() {
-  const personLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: site.practitioner.name,
-    jobTitle: site.practitioner.title,
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: "British College of Osteopathic Medicine",
-    },
-    worksFor: {
-      "@type": "MedicalBusiness",
-      name: site.name,
-      url: site.websiteUrl,
-    },
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: site.address.line1,
-      addressLocality: "Woolwich",
-      addressRegion: "London",
-      postalCode: "SE18 6LQ",
-      addressCountry: "GB",
-    },
-    telephone: site.phoneE164,
-    email: site.email,
-    url: `${site.websiteUrl}/about`,
-    image: `${site.websiteUrl}/images/austin-nguyen.webp`,
-    sameAs: [
-      site.linkedinUrl,
-      site.facebookUrl,
-      site.products.mskTutor.url,
-      site.products.treowClinic.url,
-    ],
-    owns: [
-      {
-        "@type": "SoftwareApplication",
-        name: site.products.mskTutor.name,
-        url: site.products.mskTutor.url,
-        description: site.products.mskTutor.description,
-        applicationCategory: "EducationalApplication",
-        operatingSystem: "Web",
-      },
-      {
-        "@type": "SoftwareApplication",
-        name: site.products.treowClinic.name,
-        url: site.products.treowClinic.url,
-        description: site.products.treowClinic.description,
-        applicationCategory: "BusinessApplication",
-        operatingSystem: "Web",
-      },
-    ],
-    description:
-      "GOsC-registered osteopath, Master of Osteopathy graduate of the British College of Osteopathic Medicine, and a Vietnamese-speaking osteopath practising in Woolwich. Builder of MSK Tutor and Treow Clinic.",
-  };
+  /** Canonical Person lives at /#practitioner — reuse so About does not split the entity. */
+  const personLd = buildPractitionerJsonLd();
 
   return (
     <div className="bg-slate-50">
@@ -289,7 +239,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Only Vietnamese osteopath + community */}
+      {/* Vietnamese-speaking care + community */}
       <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">

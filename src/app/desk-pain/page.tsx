@@ -103,7 +103,7 @@ export default function DeskPainPage() {
       "@type": "MedicalCondition",
       name: "Work-related musculoskeletal pain",
     },
-    specialty: "Osteopathic",
+    specialty: "https://schema.org/Musculoskeletal",
   };
 
   return (
@@ -132,7 +132,7 @@ export default function DeskPainPage() {
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book assessment</ButtonLink>
             <ButtonLink href="/services/back-neck-pain" variant="secondary">
-              Back &amp; neck hub
+              Back &amp; neck care
             </ButtonLink>
             <ButtonLink href="/services/deep-tissue-massage" variant="secondary">
               Deep tissue massage

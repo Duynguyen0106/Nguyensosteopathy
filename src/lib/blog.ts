@@ -140,11 +140,11 @@ const blogPostInputs: BlogPostInput[] = [
       {
         heading: "Where to find us",
         paragraphs: [
-          `The clinic is inside ${site.address.venue}, ${site.address.line1}, ${site.address.line2}. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Pharmacy hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking is available from 5 November 2026 (closed Wednesday and Sunday).`,
+          `The clinic is inside ${site.address.venue}, ${site.address.line1}, ${site.address.line2}. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Pharmacy hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking is available from ${site.booking.opensFromLabel} (closed Wednesday and Sunday).`,
         ],
       },
     ],
-    cta: "Book online or call 07882843513 to arrange your first visit.",
+    cta: `Book online or call ${site.phone} to arrange your first visit.`,
   },
   {
     slug: "back-pain-woolwich-osteopathy",
@@ -352,7 +352,7 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Ready to book? Use online booking or call 07882843513.",
+    cta: `Ready to book? Use online booking or call ${site.phone}.`,
   },
   {
     slug: "sports-injury-osteopath-woolwich",
@@ -448,7 +448,7 @@ const blogPostInputs: BlogPostInput[] = [
           "Discount is applied against eligible clinic fees",
         ],
         paragraphs: [
-          "Questions about what is covered? Call 07882843513 before you book and we will clarify.",
+          `Questions about what is covered? Call ${site.phone} before you book and we will clarify.`,
         ],
       },
     ],
@@ -502,7 +502,7 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Book an initial osteopathy assessment in Woolwich online, or call 07882843513.",
+    cta: `Book an initial osteopathy assessment in Woolwich online, or call ${site.phone}.`,
   },
   {
     slug: "tension-headaches-neck-osteopath-woolwich",
@@ -589,7 +589,7 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Book pregnancy-adapted osteopathy in Woolwich online or call 07882843513.",
+    cta: `Book pregnancy-adapted osteopathy in Woolwich online or call ${site.phone}.`,
   },
   {
     slug: "osteopath-vs-physiotherapist-woolwich",
@@ -706,14 +706,14 @@ const blogPostInputs: BlogPostInput[] = [
           "GOsC-registered osteopath with clear, private appointments",
           "Drug-free care for back, neck, sports, and specialist pathways",
           "Online booking with no GP referral required",
-          "Pharmacy hours Mon–Fri 9–6 and Sat 9–5:30; bookable osteopathy days from 5 November 2026",
+          `Pharmacy hours Mon–Fri 9–6 and Sat 9–5:30; bookable osteopathy days from ${site.booking.opensFromLabel}`,
         ],
         paragraphs: [
           "Whether you are dealing with desk neck from a Canary Wharf commute or weekend football niggles, local assessment beats hoping it will settle on its own.",
         ],
       },
     ],
-    cta: "Book from Greenwich, Charlton, or Thamesmead at www.nguyensosteopathy.com/book.",
+    cta: `Book from Greenwich, Charlton, or Thamesmead at ${site.websiteUrl}/book.`,
   },
   {
     slug: "how-many-osteopathy-sessions",
@@ -751,7 +751,7 @@ const blogPostInputs: BlogPostInput[] = [
       {
         heading: "Fees and booking",
         paragraphs: [
-          "Initial consultation and treatment is 60 minutes (£75). Follow-up osteopathic treatment is 30 minutes (£60). NHS staff and students receive 10% off with valid ID. Book online or call 07882843513.",
+          `Initial consultation and treatment is 60 minutes (£75). Follow-up osteopathic treatment is 30 minutes (£60). NHS staff and students receive 10% off with valid ID. Book online or call ${site.phone}.`,
         ],
       },
     ],

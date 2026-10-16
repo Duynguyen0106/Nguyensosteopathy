@@ -254,7 +254,7 @@ export const conditions: Condition[] = [
     shortTitle: "Cervical radiculopathy",
     region: "Cervical",
     summary:
-      "Osteopathic assessment and care in Woolwich for cervical radiculopathy (cervical). Nerve-root irritation producing arm pain, paraesthesia with or without weakness. Most settle with conservative care over 6–12 weeks.",
+      "Arm pain, pins and needles, or hand weakness from an irritated neck nerve root — assessed and calmed with osteopathy in Woolwich before you chase every scan.",
     heroLine:
       "Arm pain from an irritated neck nerve root needs a clear plan — assessment, calm hands-on care, and desk advice that fits SE18 life.",
     symptoms: [
@@ -305,6 +305,7 @@ export const conditions: Condition[] = [
       "cubital-tunnel",
     ],
     relatedServiceSlug: "back-neck-pain",
+    relatedBlogSlug: "desk-neck-and-shoulder-pain",
     keywords: [
       "Cervical radiculopathy Woolwich",
       "Cervical radiculopathy osteopath SE18",
@@ -317,7 +318,7 @@ export const conditions: Condition[] = [
     shortTitle: "Cervicogenic headache",
     region: "Cervical",
     summary:
-      "Osteopathic assessment and care in Woolwich for cervicogenic headache (cervical). Unilateral headache driven by upper cervical dysfunction (C0–C3). Reproduced by neck movement/sustained posture.",
+      "One-sided headaches that start in the neck, not another vague tension label — upper-cervical osteopathy and desk advice for Woolwich and SE18.",
     heroLine:
       "When headache starts in the neck, we treat the upper cervical drivers — not another vague tension-type label.",
     symptoms: [
@@ -381,7 +382,7 @@ export const conditions: Condition[] = [
     shortTitle: "Whiplash-associated disorder",
     region: "Cervical",
     summary:
-      "Osteopathic assessment and care in Woolwich for whiplash-associated disorder (cervical). Post-road traffic collision neck pain with or without headache, no neurology or fracture. Early gentle active care is superior to collars/rest.",
+      "Neck pain, stiffness, and guarded turning after a collision or sudden jolt — paced osteopathic care that rebuilds confidence without forcing range.",
     heroLine:
       "A structured look at whiplash-associated disorder for SE18 patients — history, examination, and a plan you can follow.",
     symptoms: [
@@ -445,7 +446,7 @@ export const conditions: Condition[] = [
     shortTitle: "Thoracic joint / postural pain",
     region: "Thoracic",
     summary:
-      "Osteopathic assessment and care in Woolwich for thoracic joint / postural pain (thoracic). Interscapular ache, often desk-related. Driven by stiffness and poor postural endurance.",
+      "Mid-back ache and stuck segments between the shoulder blades from desk posture — thoracic mobilisation and endurance advice in Woolwich.",
     heroLine:
       "Thoracic joint / postural pain care at Nguyen's: find the pattern, ease irritation, and rebuild confident movement. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
@@ -514,7 +515,7 @@ export const conditions: Condition[] = [
     shortTitle: "Costochondritis / costovertebral pain",
     region: "Thoracic",
     summary:
-      "Osteopathic assessment and care in Woolwich for costochondritis / costovertebral pain (thoracic). Sharp localised anterior or posterior rib pain, reproduced by palpation/deep breath. Self-limiting.",
+      "Chest-wall tenderness you can point to, worse with breath or reach — rib and thoracic care once cardiac red flags are cleared.",
     heroLine:
       "Practical assessment and a clear plan for costochondritis / costovertebral pain — so you understand the driver and the next steps.",
     symptoms: [
@@ -583,7 +584,7 @@ export const conditions: Condition[] = [
     shortTitle: "Scheuermann's / postural hyperkyphosis",
     region: "Thoracic",
     summary:
-      "Osteopathic assessment and care in Woolwich for scheuermann's / postural hyperkyphosis (thoracic). Structural or postural increase in thoracic kyphosis. Focus on extension mobility and posterior chain strength.",
+      "Rounded mid-back posture and end-of-day ache from Scheuermann’s or postural kyphosis — realistic mobility and strength, not forced straightening.",
     heroLine:
       "A structured look at scheuermann's / postural hyperkyphosis for SE18 patients — history, examination, and a plan you can follow. Local commuting, standing retail shifts, and desk hours in SE18 often shape how symptoms show up day to day.",
     symptoms: [
@@ -639,6 +640,7 @@ export const conditions: Condition[] = [
       "neck-pain",
     ],
     relatedServiceSlug: "back-neck-pain",
+    relatedBlogSlug: "upper-back-pain-desk-workers-woolwich",
     keywords: [
       "Scheuermann's / postural hyperkyphosis Woolwich",
       "Scheuermann's / postural hyperkyphosis osteopath SE18",
@@ -651,7 +653,7 @@ export const conditions: Condition[] = [
     shortTitle: "Non-specific low back pain",
     region: "Lumbar",
     summary:
-      "Osteopathic assessment and care in Woolwich for non-specific low back pain (lumbar). Most common low back pain presentation. No radicular features. Stay active, graded loading.",
+      "Common low-back ache without clear leg neurology — assessment-first osteopathy, load advice, and calm language for Woolwich patients.",
     heroLine:
       "Support for non-specific low back pain with osteopathy in Woolwich: assessment first, then tailored hands-on care.",
     symptoms: [
@@ -720,7 +722,7 @@ export const conditions: Condition[] = [
     shortTitle: "Lumbar disc / radiculopathy",
     region: "Lumbar",
     summary:
-      "Osteopathic assessment and care in Woolwich for lumbar disc / radiculopathy (lumbar). Disc-related back with or without leg pain in a dermatomal pattern. Most resolve conservatively over 6–12 weeks.",
+      "Disc-related back and leg pain with pins and needles or nerve tension — nerve-friendly osteopathy and clear escalation when strength fades.",
     heroLine:
       "Support for lumbar disc / radiculopathy with osteopathy in Woolwich: assessment first, then tailored hands-on care. NHS staff and students are welcome — say if you need appointment times that fit shift patterns.",
     symptoms: [
@@ -789,7 +791,7 @@ export const conditions: Condition[] = [
     shortTitle: "Lumbar spinal stenosis",
     region: "Lumbar",
     summary:
-      "Osteopathic assessment and care in Woolwich for lumbar spinal stenosis (lumbar). Neurogenic claudication — leg pain with walking/standing, relieved by flexion/sitting. Common >60.",
+      "Leg heaviness that builds on walking or standing and eases when you sit or lean forward — stenosis-aware pacing and mobilisation in SE18.",
     heroLine:
       "A structured look at lumbar spinal stenosis for SE18 patients — history, examination, and a plan you can follow.",
     symptoms: [
@@ -845,6 +847,7 @@ export const conditions: Condition[] = [
       "non-specific-low-back-pain",
     ],
     relatedServiceSlug: "back-neck-pain",
+    relatedBlogSlug: "back-pain-woolwich-osteopathy",
     keywords: [
       "Lumbar spinal stenosis Woolwich",
       "Lumbar spinal stenosis osteopath SE18",
@@ -857,7 +860,7 @@ export const conditions: Condition[] = [
     shortTitle: "Spondylolysis / spondylolisthesis",
     region: "Lumbar",
     summary:
-      "Osteopathic assessment and care in Woolwich for spondylolysis / spondylolisthesis (lumbar). Pars stress lesion with or without slip. Pain worsened by extension/rotation. Avoid extension load early.",
+      "Extension-biased lumbar pain in sport or heavy work — protected loading and staged return when stress-fracture risk is on the table.",
     heroLine:
       "Practical assessment and a clear plan for spondylolysis / spondylolisthesis — so you understand the driver and the next steps. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
@@ -913,6 +916,7 @@ export const conditions: Condition[] = [
       "hamstring-strain",
     ],
     relatedServiceSlug: "back-neck-pain",
+    relatedBlogSlug: "sports-injury-osteopath-woolwich",
     keywords: [
       "Spondylolysis / spondylolisthesis Woolwich",
       "Spondylolysis / spondylolisthesis osteopath SE18",
@@ -925,7 +929,7 @@ export const conditions: Condition[] = [
     shortTitle: "Facet joint / extension-pattern LBP",
     region: "Lumbar",
     summary:
-      "Osteopathic assessment and care in Woolwich for facet joint / extension-pattern lbp (lumbar). Pain on extension and rotation, eased by flexion. Often unilateral, well-localised.",
+      "Sharp low-back catches with bending backwards or twisting — facet-friendly mobilisation and morning-lock strategies in Woolwich.",
     heroLine:
       "Extension catches and morning lock in the low back deserve targeted facet-friendly care, not generic rest advice.",
     symptoms: [
@@ -981,6 +985,7 @@ export const conditions: Condition[] = [
       "sciatica",
     ],
     relatedServiceSlug: "back-neck-pain",
+    relatedBlogSlug: "morning-back-stiffness-osteopath",
     keywords: [
       "Facet joint / extension-pattern LBP Woolwich",
       "Facet joint / extension-pattern LBP osteopath SE18",
@@ -993,7 +998,7 @@ export const conditions: Condition[] = [
     shortTitle: "Sacroiliac joint dysfunction",
     region: "Pelvis & Hip",
     summary:
-      "Osteopathic assessment and care in Woolwich for sacroiliac joint dysfunction (pelvis & hip). Localised sacroiliac joint pain, often peripartum or after asymmetric load. Force-closure deficit common.",
+      "One-sided pelvic or buttock pain on stairs, cars, or single-leg stance — careful SI assessment so sciatica labels are not assumed.",
     heroLine:
       "One-sided pelvic pain on stairs or getting out of the car — we assess load transfer before chasing a sciatica label.",
     symptoms: [
@@ -1062,7 +1067,7 @@ export const conditions: Condition[] = [
     shortTitle: "Coccydynia",
     region: "Lumbar",
     summary:
-      "Osteopathic assessment and care in Woolwich for coccydynia (lumbar). Tailbone pain worse with sitting. Often post-trauma or post-partum.",
+      "Tailbone pain that shortens sitting and meetings — cushion strategies and gentle pelvic care at our Woolwich clinic.",
     heroLine:
       "Coccydynia care at Nguyen's: find the pattern, ease irritation, and rebuild confident movement.",
     symptoms: [
@@ -1077,13 +1082,13 @@ export const conditions: Condition[] = [
       "Flag trauma, infection, or unexplained weight-loss pathways promptly",
     ],
     causes:
-      "Coccydynia is tailbone pain worsened by sitting, often after a fall, childbirth, or prolonged hard seating. Local soft tissue and pelvic floor tension can maintain sensitivity. Rarely, other pelvic pathology mimics it — we take history seriously and refer when atypical. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Coccydynia is tailbone pain worsened by sitting, often after a fall, childbirth, or prolonged hard seating. Local soft tissue and pelvic floor tension can maintain sensitivity. Rarely, other pelvic pathology mimics it — we take history seriously and refer when atypical.",
     whoAffected:
       "Post-partum patients, cyclists, and people after slips onto ice or stairs present frequently. Desk workers on hard chairs notice end-of-day spikes. Unexplained weight loss, fever, or bowel change needs medical review.",
     whatToExpect:
-      "Assessment includes sitting tolerance, pelvic and lumbar contribution, and gentle hands-on care away from aggressive direct trauma to the coccyx unless specifically indicated. Cushion strategies, sit-stand mixing, and graded sitting rebuild tolerance. We discuss GP pathways for persistent post-trauma cases. Sitting minutes and cushion strategies are reviewed each session until desks feel possible again. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "Assessment includes sitting tolerance, pelvic and lumbar contribution, and gentle hands-on care away from aggressive direct trauma to the coccyx unless specifically indicated. Cushion strategies, sit-stand mixing, and graded sitting rebuild tolerance. We discuss GP pathways for persistent post-trauma cases. Sitting minutes and cushion strategies are reviewed each session until desks feel possible again.",
     recoveryTimeline:
-      "Many cases ease over 4–12 weeks. Post-partum recovery may track pelvic healing. Chronic sitting pain needs habit change as much as treatment sessions. Sitting minutes climb before long meetings feel easy; trauma red flags skip routine pacing. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Many cases ease over 4–12 weeks. Post-partum recovery may track pelvic healing. Chronic sitting pain needs habit change as much as treatment sessions. Sitting minutes climb before long meetings feel easy; trauma red flags skip routine pacing.",
     faqs: [
       {
         question: "Do I need a doughnut cushion?",
@@ -1131,7 +1136,7 @@ export const conditions: Condition[] = [
     shortTitle: "Hip osteoarthritis",
     region: "Pelvis & Hip",
     summary:
-      "Osteopathic assessment and care in Woolwich for hip osteoarthritis (pelvis & hip). Groin pain, morning stiffness <30 min, limited inward rotation. Exercise is first-line care.",
+      "Groin or deep hip ache with hills, socks, and morning stiffness — osteopathy and load advice that keep SE18 walks possible.",
     heroLine:
       "Support for hip osteoarthritis with osteopathy in Woolwich: assessment first, then tailored hands-on care. We connect clinic findings to your real week so advice fits Woolwich life, not a generic leaflet.",
     symptoms: [
@@ -1200,7 +1205,7 @@ export const conditions: Condition[] = [
     shortTitle: "Greater trochanteric pain syndrome",
     region: "Pelvis & Hip",
     summary:
-      "Osteopathic assessment and care in Woolwich for greater trochanteric pain syndrome (pelvis & hip). Lateral hip pain on side-lying and single-leg load. Compressive positions aggravate.",
+      "Outer-hip pain on side-sleep and stairs — gluteal tendon load management, not hip-arthritis by default.",
     heroLine:
       "Side-sleep and stair pain on the outer hip often means tendon load, not hip arthritis by default.",
     symptoms: [
@@ -1215,13 +1220,13 @@ export const conditions: Condition[] = [
       "Escalate if night pain or weakness suggests tear or other pathology",
     ],
     causes:
-      "Greater trochanteric pain syndrome involves the gluteal tendons and bursal tissues on the outside of the hip. Side-lying sleep, sudden walking volume, and weak hip control commonly aggravate it. It is often mislabelled as \"hip bursitis\" alone; tendon load capacity is usually the bigger story. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Greater trochanteric pain syndrome involves the gluteal tendons and bursal tissues on the outside of the hip. Side-lying sleep, sudden walking volume, and weak hip control commonly aggravate it. It is often mislabelled as \"hip bursitis\" alone; tendon load capacity is usually the bigger story.",
     whoAffected:
       "Runners, walkers increasing distance, and middle-aged adults — especially women — present frequently. Side sleepers notice night pain. Lumbar referral can mimic lateral hip pain, so we screen both.",
     whatToExpect:
-      "Assessment tests tendon irritability and kinetic-chain contributors. Treatment combines hands-on soft-tissue care with progressive glute loading — not endless rest or only massage. Sleep position and training load are adjusted in parallel. Side-sleep and stair count tell us if tendon load is landing right. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "Assessment tests tendon irritability and kinetic-chain contributors. Treatment combines hands-on soft-tissue care with progressive glute loading — not endless rest or only massage. Sleep position and training load are adjusted in parallel. Side-sleep and stair count tell us if tendon load is landing right.",
     recoveryTimeline:
-      "Tendon-focused plans often need 8–12 weeks. Night pain usually settles before high-speed walking or hills feel easy. Shockwave can be discussed for stubborn cases. Side-sleep wins often arrive before long hills feel free — tendon timelines are respected. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Tendon-focused plans often need 8–12 weeks. Night pain usually settles before high-speed walking or hills feel easy. Shockwave can be discussed for stubborn cases. Side-sleep wins often arrive before long hills feel free — tendon timelines are respected.",
     faqs: [
       {
         question: "Should I stop walking completely?",
@@ -1269,7 +1274,7 @@ export const conditions: Condition[] = [
     shortTitle: "Femoroacetabular impingement / labral pain",
     region: "Pelvis & Hip",
     summary:
-      "Osteopathic assessment and care in Woolwich for femoroacetabular impingement / labral pain (pelvis & hip). Anterior groin pain on deep flexion/inward rotation. Common in young athletes. C-sign positive.",
+      "Groin pinch with deep squat, sit, or twist — FAI-aware mobility that never stretches into the catch.",
     heroLine:
       "A structured look at femoroacetabular impingement / labral pain for SE18 patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
@@ -1325,6 +1330,7 @@ export const conditions: Condition[] = [
       "si-joint-dysfunction",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "hip-knee-pain-osteopath-woolwich",
     keywords: [
       "Femoroacetabular impingement / labral pain Woolwich",
       "Femoroacetabular impingement / labral pain osteopath SE18",
@@ -1337,7 +1343,7 @@ export const conditions: Condition[] = [
     shortTitle: "Deep gluteal / piriformis syndrome",
     region: "Pelvis & Hip",
     summary:
-      "Osteopathic assessment and care in Woolwich for deep gluteal / piriformis syndrome (pelvis & hip). Buttock pain with or without sciatic-type referral, reproduced by sustained sitting and resisted outward rotation/abduction.",
+      "Deep buttock ache that mimics sciatica — lumbar screen first, then deep-gluteal soft-tissue and sitting tweaks.",
     heroLine:
       "A structured look at deep gluteal / piriformis syndrome for SE18 patients — history, examination, and a plan you can follow.",
     symptoms: [
@@ -1352,13 +1358,13 @@ export const conditions: Condition[] = [
       "Neurological screen so nerve-root drivers are not missed",
     ],
     causes:
-      "Piriformis-related buttock pain involves deep gluteal soft tissue that can irritate or mimic sciatic nerve symptoms. Prolonged sitting, sudden sprinting, and pelvic asymmetry are common contributors. True isolated piriformis syndrome is less common than advertised — we still assess lumbar nerve roots so we do not miss radiculopathy. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Piriformis-related buttock pain involves deep gluteal soft tissue that can irritate or mimic sciatic nerve symptoms. Prolonged sitting, sudden sprinting, and pelvic asymmetry are common contributors. True isolated piriformis syndrome is less common than advertised — we still assess lumbar nerve roots so we do not miss radiculopathy.",
     whoAffected:
       "Drivers, desk workers, and runners present frequently. People diagnosed online with \"piriformis\" after googling buttock pain often need a broader lumbar-pelvic screen. Progressive neurological deficit is treated as possible nerve root disease until proven otherwise.",
     whatToExpect:
-      "Assessment differentiates local buttock drivers from lumbar referral. Treatment may include soft-tissue work, pelvic and hip mobility, and graded loading rather than aggressive nerve stretches that flare symptoms. Sitting and wallet/phone pocket habits are addressed practically. Drive time and buttock flare length are tracked so deep gluteal work stays honest. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "Assessment differentiates local buttock drivers from lumbar referral. Treatment may include soft-tissue work, pelvic and hip mobility, and graded loading rather than aggressive nerve stretches that flare symptoms. Sitting and wallet/phone pocket habits are addressed practically. Drive time and buttock flare length are tracked so deep gluteal work stays honest.",
     recoveryTimeline:
-      "Many mechanical buttock patterns improve over 3–8 weeks. If leg neurology dominates, timelines follow radiculopathy care and possible medical review. Drive flares can rebound; true neurological change is never blamed on tight piriformis alone. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Many mechanical buttock patterns improve over 3–8 weeks. If leg neurology dominates, timelines follow radiculopathy care and possible medical review. Drive flares can rebound; true neurological change is never blamed on tight piriformis alone.",
     faqs: [
       {
         question: "Is piriformis syndrome the same as sciatica?",
@@ -1393,6 +1399,7 @@ export const conditions: Condition[] = [
       "hamstring-strain",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "sciatica-woolwich-osteopath",
     keywords: [
       "Deep gluteal / piriformis syndrome Woolwich",
       "Deep gluteal / piriformis syndrome osteopath SE18",
@@ -1405,7 +1412,7 @@ export const conditions: Condition[] = [
     shortTitle: "Hamstring strain / proximal tendinopathy",
     region: "Pelvis & Hip",
     summary:
-      "Osteopathic assessment and care in Woolwich for hamstring strain / proximal tendinopathy (pelvis & hip). Posterior thigh pain on lengthening/sprinting. Tendinopathy involves sit-bone pain on sitting/hill running.",
+      "Sudden pulls or nagging proximal hamstring tendon pain — staged loading so runners and gym-goers return without re-tearing.",
     heroLine:
       "From sudden pulls to nagging proximal tendon pain — we stage loading so SE18 runners and gym-goers return without re-tearing.",
     symptoms: [
@@ -1420,13 +1427,13 @@ export const conditions: Condition[] = [
       "Refer if suspected avulsion or stalled healing beyond expected timelines",
     ],
     causes:
-      "Hamstring strains occur when fibres are overloaded in high-speed running, kicking, or sudden stretch under fatigue. Previous strain is the biggest risk factor. Proximal tendon pain behaves more like tendinopathy and needs different loading than a mid-belly muscle tear. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Hamstring strains occur when fibres are overloaded in high-speed running, kicking, or sudden stretch under fatigue. Previous strain is the biggest risk factor. Proximal tendon pain behaves more like tendinopathy and needs different loading than a mid-belly muscle tear.",
     whoAffected:
       "Footballers, sprinters, and weekend athletes in Woolwich present often. Older athletes returning too fast after rest are vulnerable. Complete tears with major bruising and weakness need medical imaging pathways.",
     whatToExpect:
-      "We stage healing: protect early irritability, then progressive strength and speed exposure. Hands-on care helps secondary spasm; rehab quality decides return-to-play. Lumbar and pelvic contributors are checked so recurrence risk drops. Sprint and hinge milestones decide clearance; reinjury risk beats bravado. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We stage healing: protect early irritability, then progressive strength and speed exposure. Hands-on care helps secondary spasm; rehab quality decides return-to-play. Lumbar and pelvic contributors are checked so recurrence risk drops. Sprint and hinge milestones decide clearance; reinjury risk beats bravado.",
     recoveryTimeline:
-      "Mild strains may return in 2–4 weeks; moderate tears often need 6–12 weeks. Proximal tendon pain can take longer. Re-injury risk rises if speed is rushed. Reinjury risk peaks when speed returns early — we clear milestones, not wishful dates. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Mild strains may return in 2–4 weeks; moderate tears often need 6–12 weeks. Proximal tendon pain can take longer. Re-injury risk rises if speed is rushed. Reinjury risk peaks when speed returns early — we clear milestones, not wishful dates.",
     faqs: [
       {
         question: "When can I sprint again?",
@@ -1461,6 +1468,7 @@ export const conditions: Condition[] = [
       "patellofemoral-pain",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "football-muscle-strain-osteopath-se18",
     keywords: [
       "Hamstring strain / proximal tendinopathy Woolwich",
       "Hamstring strain / proximal tendinopathy osteopath SE18",
@@ -1473,7 +1481,7 @@ export const conditions: Condition[] = [
     shortTitle: "Adductor-related groin pain",
     region: "Pelvis & Hip",
     summary:
-      "Osteopathic assessment and care in Woolwich for adductor-related groin pain (pelvis & hip). Groin pain on resisted adduction or change of direction. Common in football, hockey.",
+      "Adductor pain with kicking, cutting, or squeeze tests — sport-aware osteopathy and clear hernia escalation when needed.",
     heroLine:
       "Adductor-related groin pain care at Nguyen's: find the pattern, ease irritation, and rebuild confident movement.",
     symptoms: [
@@ -1488,13 +1496,13 @@ export const conditions: Condition[] = [
       "Escalate hernia or acute avulsion concerns to medical review",
     ],
     causes:
-      "Groin pain in sport can involve adductors, hip joint, pubic symphysis, or referred lumbar-pelvic sources. Sudden change of direction, kicking, and spikes in training load are typical triggers. \"Osteitis pubis\" labels are overused — precise assessment guides loading. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Groin pain in sport can involve adductors, hip joint, pubic symphysis, or referred lumbar-pelvic sources. Sudden change of direction, kicking, and spikes in training load are typical triggers. \"Osteitis pubis\" labels are overused — precise assessment guides loading.",
     whoAffected:
       "Football and racket-sport athletes, plus people with FAI-type hips, present often. Desk workers can have adductor irritability from sitting and then weekend sport. Systemic inflammatory disease is considered when pain is migratory or accompanied by morning stiffness elsewhere.",
     whatToExpect:
-      "We differentiate hip joint versus soft-tissue drivers, then combine hands-on care with progressive adductor and trunk loading. Running and kicking volume are reshaped rather than stopped forever. Imaging is discussed when progress stalls or joint pathology is suspected. Kick and cut drills return only when adductor load is quiet on everyday walking. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We differentiate hip joint versus soft-tissue drivers, then combine hands-on care with progressive adductor and trunk loading. Running and kicking volume are reshaped rather than stopped forever. Imaging is discussed when progress stalls or joint pathology is suspected. Kick and cut drills return only when adductor load is quiet on everyday walking.",
     recoveryTimeline:
-      "Adductor-dominant patterns often need 6–12 weeks. Hip-joint driven groin pain follows joint irritability timelines and may need longer modification of deep flexion. Adductor capacity rebuilds with stutter steps; hernia concerns leave the osteopathy-only lane. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Adductor-dominant patterns often need 6–12 weeks. Hip-joint driven groin pain follows joint irritability timelines and may need longer modification of deep flexion. Adductor capacity rebuilds with stutter steps; hernia concerns leave the osteopathy-only lane.",
     faqs: [
       {
         question: "Can I play through groin pain?",
@@ -1529,6 +1537,7 @@ export const conditions: Condition[] = [
       "si-joint-dysfunction",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "sports-injury-osteopath-woolwich",
     keywords: [
       "Adductor-related groin pain Woolwich",
       "Adductor-related groin pain osteopath SE18",
@@ -1541,7 +1550,7 @@ export const conditions: Condition[] = [
     shortTitle: "Knee osteoarthritis",
     region: "Knee",
     summary:
-      "Osteopathic assessment and care in Woolwich for knee osteoarthritis (knee). Activity-related knee pain, morning stiffness <30 min, crepitus. Exercise is first-line.",
+      "Knee ache, stiffness, and crepitus with stairs and hills — quad-friendly care and honest talk about injections when plateaus hit.",
     heroLine:
       "A structured look at knee osteoarthritis for SE18 patients — history, examination, and a plan you can follow. We connect clinic findings to your real week so advice fits Woolwich life, not a generic leaflet.",
     symptoms: [
@@ -1556,13 +1565,13 @@ export const conditions: Condition[] = [
       "Coordinate with GP for imaging, injection, or surgical timing when needed",
     ],
     causes:
-      "Knee osteoarthritis brings activity-related joint pain, stiffness, and reduced confidence on stairs or uneven ground. Cartilage change, previous injury, and higher body load contribute, but quadriceps strength and daily walking habit strongly influence symptoms. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Knee osteoarthritis brings activity-related joint pain, stiffness, and reduced confidence on stairs or uneven ground. Cartilage change, previous injury, and higher body load contribute, but quadriceps strength and daily walking habit strongly influence symptoms.",
     whoAffected:
       "Adults over 50, previous meniscal or ligament injury patients, and people with physically demanding jobs present often. Night pain with swelling and systemic features needs medical review.",
     whatToExpect:
-      "We assess alignment, strength, and aggravators, then use hands-on care for secondary soft tissue while progressing joint-friendly strengthening and walking. Advice covers stair tactics and flare management. Injection or surgical discussions happen with your GP when function stays poor. Stair and hill tolerance set session spacing; we talk injection or GP routes when plateaus hit. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We assess alignment, strength, and aggravators, then use hands-on care for secondary soft tissue while progressing joint-friendly strengthening and walking. Advice covers stair tactics and flare management. Injection or surgical discussions happen with your GP when function stays poor. Stair and hill tolerance set session spacing; we talk injection or GP routes when plateaus hit.",
     recoveryTimeline:
-      "Comfort and capacity often improve over 6–12 weeks of consistent rehab. OA is long-term; the aim is fewer flares and better daily function, not a perfect X-ray. Weather and hills still provoke some days; we space care when stairs and sleep hold steady. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Comfort and capacity often improve over 6–12 weeks of consistent rehab. OA is long-term; the aim is fewer flares and better daily function, not a perfect X-ray. Weather and hills still provoke some days; we space care when stairs and sleep hold steady.",
     faqs: [
       {
         question: "Does walking grind the joint away?",
@@ -1610,7 +1619,7 @@ export const conditions: Condition[] = [
     shortTitle: "Patellofemoral pain syndrome",
     region: "Knee",
     summary:
-      "Osteopathic assessment and care in Woolwich for patellofemoral pain syndrome (knee). Anterior knee pain on stairs, squatting, prolonged sitting. Common in runners/young women.",
+      "Front-of-knee pain with stairs, squats, or movie-theatre sitting — tracking and load advice before pain becomes the coach.",
     heroLine:
       "Support for patellofemoral pain syndrome with osteopathy in Woolwich: assessment first, then tailored hands-on care.",
     symptoms: [
@@ -1625,13 +1634,13 @@ export const conditions: Condition[] = [
       "Rule out inflammatory or acute traumatic knee red flags",
     ],
     causes:
-      "Patellofemoral pain is ache around or behind the kneecap related to how the patella is loaded in squatting, stairs, and running. Hip weakness, sudden training spikes, and prolonged sitting (\"movie-goer's knee\") commonly contribute. Cartilage \"damage\" language is often unhelpful — load tolerance is the target. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Patellofemoral pain is ache around or behind the kneecap related to how the patella is loaded in squatting, stairs, and running. Hip weakness, sudden training spikes, and prolonged sitting (\"movie-goer's knee\") commonly contribute. Cartilage \"damage\" language is often unhelpful — load tolerance is the target.",
     whoAffected:
       "Runners, gym newcomers, and adolescents in growth spurts present frequently. Desk workers who then weekend-run are classic. Locking or true instability needs meniscal/ligament reassessment.",
     whatToExpect:
-      "We analyse stairs, squat, and running load, then combine soft-tissue care with progressive quad and hip strength. Temporary reductions in deep squat volume are paired with cross-training so fitness stays. Footwear and surface changes are considered practically. Squat depth and run volume are adjusted before pain becomes the coach. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We analyse stairs, squat, and running load, then combine soft-tissue care with progressive quad and hip strength. Temporary reductions in deep squat volume are paired with cross-training so fitness stays. Footwear and surface changes are considered practically. Squat depth and run volume are adjusted before pain becomes the coach.",
     recoveryTimeline:
-      "Many patterns improve over 6–10 weeks with consistent loading. Returning to hills or speed too early is the usual setback — we stage those exposures. Squat confidence returns before perfect hills; we refuse pain-as-the-only-coach training. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Many patterns improve over 6–10 weeks with consistent loading. Returning to hills or speed too early is the usual setback — we stage those exposures. Squat confidence returns before perfect hills; we refuse pain-as-the-only-coach training.",
     faqs: [
       {
         question: "Should I stop running completely?",
@@ -1666,6 +1675,7 @@ export const conditions: Condition[] = [
       "hip-oa",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "running-injuries-osteopath-woolwich",
     keywords: [
       "Patellofemoral pain syndrome Woolwich",
       "Patellofemoral pain syndrome osteopath SE18",
@@ -1678,7 +1688,7 @@ export const conditions: Condition[] = [
     shortTitle: "Patellar tendinopathy",
     region: "Knee",
     summary:
-      "Osteopathic assessment and care in Woolwich for patellar tendinopathy (knee). Inferior pole patella pain on jumping/squatting. Common in volleyball/basketball.",
+      "Pain at the base of the kneecap with jumping or deceleration — heavy-slow tendon loading timed to your training week.",
     heroLine:
       "Patellar tendinopathy care at Nguyen's: find the pattern, ease irritation, and rebuild confident movement. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
@@ -1693,13 +1703,13 @@ export const conditions: Condition[] = [
       "Discuss shockwave or imaging only when rehab plateaus",
     ],
     causes:
-      "Patellar tendinopathy is load-related pain at the tendon below the kneecap, common in jumping sports. Energy-storage loading (jumping, sudden change of direction) exceeds tendon capacity. Rest alone often fails because tendons need progressive loading to adapt. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Patellar tendinopathy is load-related pain at the tendon below the kneecap, common in jumping sports. Energy-storage loading (jumping, sudden change of direction) exceeds tendon capacity. Rest alone often fails because tendons need progressive loading to adapt.",
     whoAffected:
       "Basketball, volleyball, and football athletes, plus gym athletes doing heavy plyometrics, present often. Adolescents can have related traction issues that need age-appropriate plans. Morning stiffness after hard sessions is common.",
     whatToExpect:
-      "We confirm tendon versus fat-pad or PF joint drivers, then start progressive tendon loading — isometric then heavier strength — while adjusting jump volume. Hands-on care addresses secondary soft tissue; shockwave may be discussed for stubborn cases at our Woolwich clinic. Tendon load sessions are planned around your training week, not random rest days. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We confirm tendon versus fat-pad or PF joint drivers, then start progressive tendon loading — isometric then heavier strength — while adjusting jump volume. Hands-on care addresses secondary soft tissue; shockwave may be discussed for stubborn cases at our Woolwich clinic. Tendon load sessions are planned around your training week, not random rest days.",
     recoveryTimeline:
-      "Tendon rehab commonly needs 8–12+ weeks. Pain during loading within agreed limits can be acceptable; sharp after-response guides dosing. Tendons hate boom-bust weeks — consistent load beats heroic rest-then-spike cycles. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Tendon rehab commonly needs 8–12+ weeks. Pain during loading within agreed limits can be acceptable; sharp after-response guides dosing. Tendons hate boom-bust weeks — consistent load beats heroic rest-then-spike cycles.",
     faqs: [
       {
         question: "Is pain during exercises bad?",
@@ -1747,7 +1757,7 @@ export const conditions: Condition[] = [
     shortTitle: "ACL injury / post-reconstruction",
     region: "Knee",
     summary:
-      "Osteopathic assessment and care in Woolwich for acl injury / post-reconstruction (knee). Phased rehab over 9–12 months. Criteria-based progression, not time-based.",
+      "Instability or post-reconstruction stiffness after ACL injury — criteria-based rehab aligned with surgeon protocols.",
     heroLine:
       "Acl injury / post-reconstruction care at Nguyen's: find the pattern, ease irritation, and rebuild confident movement.",
     symptoms: [
@@ -1762,13 +1772,13 @@ export const conditions: Condition[] = [
       "Flag instability episodes or effusion spikes for clinical review",
     ],
     causes:
-      "ACL injuries occur with cutting, landing, or collision mechanisms that stress the ligament. Post-injury or post-reconstruction rehab rebuilds strength, hop capacity, and confidence. Residual stiffness, quad lag, and fear of pivoting are common barriers. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "ACL injuries occur with cutting, landing, or collision mechanisms that stress the ligament. Post-injury or post-reconstruction rehab rebuilds strength, hop capacity, and confidence. Residual stiffness, quad lag, and fear of pivoting are common barriers.",
     whoAffected:
       "Footballers, skiers, and court-sport athletes present across SE London. Desk workers after ACL surgery need graded return to commuting and gym. Red-flag infection or DVT signs after surgery need urgent medical care.",
     whatToExpect:
-      "We coordinate with surgical protocols when present, focusing on range, strength, gait, and later plyometric progressions. Hands-on care helps soft-tissue restrictions; gym programming is specific, not generic. Return-to-sport testing is criteria-based. Criteria-based return beats date-based clearance — swelling and quad lag decide. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We coordinate with surgical protocols when present, focusing on range, strength, gait, and later plyometric progressions. Hands-on care helps soft-tissue restrictions; gym programming is specific, not generic. Return-to-sport testing is criteria-based. Criteria-based return beats date-based clearance — swelling and quad lag decide.",
     recoveryTimeline:
-      "Post-op ACL timelines often span 9–12+ months for pivoting sport. Non-operative management still needs months of strength and neuromuscular work. Rushing cutting drills raises re-injury risk. Swelling and quad lag veto calendar clearance every time. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Post-op ACL timelines often span 9–12+ months for pivoting sport. Non-operative management still needs months of strength and neuromuscular work. Rushing cutting drills raises re-injury risk. Swelling and quad lag veto calendar clearance every time.",
     faqs: [
       {
         question: "Do I always need ACL surgery?",
@@ -1803,6 +1813,7 @@ export const conditions: Condition[] = [
       "hamstring-strain",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "return-to-sport-after-sprain-woolwich",
     keywords: [
       "ACL injury / post-reconstruction Woolwich",
       "ACL injury / post-reconstruction osteopath SE18",
@@ -1815,7 +1826,7 @@ export const conditions: Condition[] = [
     shortTitle: "Meniscal injury",
     region: "Knee",
     summary:
-      "Osteopathic assessment and care in Woolwich for meniscal injury (knee). Joint-line pain with twisting/squatting. Most degenerative tears respond to exercise as well as surgery.",
+      "Joint-line pain, catching, or effusion after a twist — calm the knee and know when true locking needs imaging.",
     heroLine:
       "Twist pain, catching, or effusion after an awkward turn — we calm the knee and know when locking needs imaging.",
     symptoms: [
@@ -1830,13 +1841,13 @@ export const conditions: Condition[] = [
       "Discuss MRI or ortho pathways when true locking persists",
     ],
     causes:
-      "Meniscal injuries involve the knee's cartilage shock absorbers, from traumatic twist or degenerative change. Pain along the joint line, swelling after load, and sometimes locking can occur. Not every meniscal tear on MRI needs surgery — many degenerative tears settle with rehab. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Meniscal injuries involve the knee's cartilage shock absorbers, from traumatic twist or degenerative change. Pain along the joint line, swelling after load, and sometimes locking can occur. Not every meniscal tear on MRI needs surgery — many degenerative tears settle with rehab.",
     whoAffected:
       "Twisting-sport athletes and middle-aged adults with degenerative menisci present often. True locked knee with loss of extension needs timely medical assessment.",
     whatToExpect:
-      "We assess swelling, range, and strength, then progress joint-friendly loading while calming irritable soft tissue. Advice covers squat depth and impact volume. Orthopaedic review is discussed for persistent locking or failed conservative care. Locking and twist confidence guide whether we stay conservative or refer. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We assess swelling, range, and strength, then progress joint-friendly loading while calming irritable soft tissue. Advice covers squat depth and impact volume. Orthopaedic review is discussed for persistent locking or failed conservative care. Locking and twist confidence guide whether we stay conservative or refer.",
     recoveryTimeline:
-      "Traumatic tears vary widely; degenerative patterns often improve over 6–12 weeks of rehab. Surgery decisions follow function, not MRI alone. Twist confidence is the decider; true locking gets a faster specialist path. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Traumatic tears vary widely; degenerative patterns often improve over 6–12 weeks of rehab. Surgery decisions follow function, not MRI alone. Twist confidence is the decider; true locking gets a faster specialist path.",
     faqs: [
       {
         question: "Does a meniscal tear always need keyhole surgery?",
@@ -1871,6 +1882,7 @@ export const conditions: Condition[] = [
       "itb-syndrome",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "hip-knee-pain-osteopath-woolwich",
     keywords: [
       "Meniscal injury Woolwich",
       "Meniscal injury osteopath SE18",
@@ -1883,7 +1895,7 @@ export const conditions: Condition[] = [
     shortTitle: "Iliotibial band syndrome",
     region: "Knee",
     summary:
-      "Osteopathic assessment and care in Woolwich for iliotibial band syndrome (knee). Lateral knee pain in runners/cyclists. Compression over lateral femoral epicondyle.",
+      "Lateral knee pain that builds a few kilometres into a run — cadence and hill changes plus hip-knee control work.",
     heroLine:
       "Support for iliotibial band syndrome with osteopathy in Woolwich: assessment first, then tailored hands-on care.",
     symptoms: [
@@ -1898,13 +1910,13 @@ export const conditions: Condition[] = [
       "Screen for lateral meniscus or LCL mimics when history is atypical",
     ],
     causes:
-      "Iliotibial band related pain is typically lateral knee discomfort in runners linked to load, cadence, and hip control rather than the band being \"too tight\" alone. Sudden mileage jumps, cambered roads, and weak hip abductors commonly contribute. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Iliotibial band related pain is typically lateral knee discomfort in runners linked to load, cadence, and hip control rather than the band being \"too tight\" alone. Sudden mileage jumps, cambered roads, and weak hip abductors commonly contribute.",
     whoAffected:
       "Runners and walkers increasing volume present most often. Cyclists can see related lateral knee irritation. Sharp swelling or true joint locking suggests another diagnosis.",
     whatToExpect:
-      "We analyse training load and hip/knee control, then combine soft-tissue care with progressive strength and run-modification (cadence, hills, volume). Endless aggressive ITB rolling is de-emphasised in favour of capacity building. Cadence and hill volume changes are reviewed before adding more soft-tissue only. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We analyse training load and hip/knee control, then combine soft-tissue care with progressive strength and run-modification (cadence, hills, volume). Endless aggressive ITB rolling is de-emphasised in favour of capacity building. Cadence and hill volume changes are reviewed before adding more soft-tissue only.",
     recoveryTimeline:
-      "Many runners improve over 4–8 weeks with smart load changes. Returning to long descents too early is a common setback. Cadence changes often matter more than endless ITB rubbing — we review both. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Many runners improve over 4–8 weeks with smart load changes. Returning to long descents too early is a common setback. Cadence changes often matter more than endless ITB rubbing — we review both.",
     faqs: [
       {
         question: "Should I foam-roll the ITB hard every day?",
@@ -1939,6 +1951,7 @@ export const conditions: Condition[] = [
       "shin-splints",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "running-injuries-osteopath-woolwich",
     keywords: [
       "Iliotibial band syndrome Woolwich",
       "Iliotibial band syndrome osteopath SE18",
@@ -1951,7 +1964,7 @@ export const conditions: Condition[] = [
     shortTitle: "Lateral ankle sprain",
     region: "Ankle & Foot",
     summary:
-      "Osteopathic assessment and care in Woolwich for lateral ankle sprain (ankle & foot). outer ankle ligament with or without calcaneofibular ligament injury. Early loading + proprioception reduce recurrence.",
+      "Outer-ankle pain and swelling after a roll — early protected mobility, then hop tests that clear sport honestly.",
     heroLine:
       "A structured look at lateral ankle sprain for SE18 patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
@@ -1966,13 +1979,13 @@ export const conditions: Condition[] = [
       "Refer for imaging if weight-bearing remains impossible or Ottawa rules positive",
     ],
     causes:
-      "Lateral ankle sprains stretch or tear the outer ankle ligaments after inversion on uneven ground or in sport. Swelling and bruising vary with grade. Incomplete rehab — not the initial twist alone — predicts chronic instability. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Lateral ankle sprains stretch or tear the outer ankle ligaments after inversion on uneven ground or in sport. Swelling and bruising vary with grade. Incomplete rehab — not the initial twist alone — predicts chronic instability.",
     whoAffected:
       "Footballers, netball players, and people who miss a kerb in Woolwich present often. Recurrent rollers need balance and strength work, not only rest and a tubigrip.",
     whatToExpect:
-      "Early care manages swelling and protected mobility, then progressive strength, balance, and return-to-run or sport drills. Hands-on treatment helps residual stiffness. We screen for fracture risk when Ottawa rules suggest imaging. Single-leg balance and hop tests clear sport — not a hopeful ankle strap alone. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "Early care manages swelling and protected mobility, then progressive strength, balance, and return-to-run or sport drills. Hands-on treatment helps residual stiffness. We screen for fracture risk when Ottawa rules suggest imaging. Single-leg balance and hop tests clear sport — not a hopeful ankle strap alone.",
     recoveryTimeline:
-      "Mild sprains may settle in 1–3 weeks; moderate injuries often need 4–8 weeks for sport. Chronic instability rehab can take longer but responds well to neuromuscular training. Proprioception lags swelling; hop tests clear sport more honestly than it-feels-okay-walking alone. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Mild sprains may settle in 1–3 weeks; moderate injuries often need 4–8 weeks for sport. Chronic instability rehab can take longer but responds well to neuromuscular training. Proprioception lags swelling; hop tests clear sport more honestly than it-feels-okay-walking alone.",
     faqs: [
       {
         question: "Should I wrap it tightly for weeks?",
@@ -2020,7 +2033,7 @@ export const conditions: Condition[] = [
     shortTitle: "Achilles tendinopathy",
     region: "Ankle & Foot",
     summary:
-      "Osteopathic assessment and care in Woolwich for achilles tendinopathy (ankle & foot). Posterior heel pain 2–6 cm above insertion. Morning stiffness, eases with warmth then worsens with load.",
+      "Morning Achilles stiffness and start-up pain on walks or runs — progressive calf loading for mid-portion or insertional flares.",
     heroLine:
       "Practical assessment and a clear plan for achilles tendinopathy — so you understand the driver and the next steps.",
     symptoms: [
@@ -2035,13 +2048,13 @@ export const conditions: Condition[] = [
       "Escalate rupture suspicion or insertional flares that worsen with stretch",
     ],
     causes:
-      "Achilles tendinopathy is load-related tendon pain from walking, running, or sudden calf demand. Compression from uphill walking and training spikes are common. Morning stiffness that eases then returns with load is typical. Tendons adapt to progressive loading better than to prolonged rest. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Achilles tendinopathy is load-related tendon pain from walking, running, or sudden calf demand. Compression from uphill walking and training spikes are common. Morning stiffness that eases then returns with load is typical. Tendons adapt to progressive loading better than to prolonged rest.",
     whoAffected:
       "Runners, walkers, and racquet-sport players present often; desk workers who suddenly start couch-to-5k plans flare frequently. Mid-portion and insertional patterns need slightly different load tweaks.",
     whatToExpect:
-      "We confirm tendon diagnosis, start progressive calf loading, and adjust training surfaces and hills. Hands-on care addresses secondary calf tightness; focused shockwave may be considered for stubborn mid-portion cases after screening. Morning stiffness minutes and calf-raise capacity are the weekly scoreboard. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We confirm tendon diagnosis, start progressive calf loading, and adjust training surfaces and hills. Hands-on care addresses secondary calf tightness; focused shockwave may be considered for stubborn mid-portion cases after screening. Morning stiffness minutes and calf-raise capacity are the weekly scoreboard.",
     recoveryTimeline:
-      "Expect 8–12+ weeks for meaningful tendon adaptation. Pain monitoring guides load, not total pain avoidance. Morning stiffness minutes fall before speed work feels free — we honour that lag. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Expect 8–12+ weeks for meaningful tendon adaptation. Pain monitoring guides load, not total pain avoidance. Morning stiffness minutes fall before speed work feels free — we honour that lag.",
     faqs: [
       {
         question: "Should I stretch my Achilles hard?",
@@ -2105,13 +2118,13 @@ export const conditions: Condition[] = [
       "Consider focused shockwave for stubborn cases",
     ],
     causes:
-      "Plantar fasciitis (plantar heel pain) involves overload of the plantar fascia, often with first-step morning pain. Sudden walking volume, hard floors, unsupportive footwear, and tight calves contribute. Body load and standing occupations in SE18 retail and hospitality are frequent drivers. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Plantar fasciitis (plantar heel pain) involves overload of the plantar fascia, often with first-step morning pain. Sudden walking volume, hard floors, unsupportive footwear, and tight calves contribute. Body load and standing occupations in SE18 retail and hospitality are frequent drivers.",
     whoAffected:
       "Teachers, retail staff, runners, and people who switch to flat shoes abruptly present often. Night pain with swelling of the whole foot needs broader medical thought.",
     whatToExpect:
-      "We assess foot, calf, and kinetic-chain load, then combine soft-tissue care, footwear advice, and progressive loading. Focused shockwave is considered for stubborn cases after clinical screening at Nguyen's Osteopathic Clinic. First-step pain is our progress marker — we adjust load before you chase another gadget. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We assess foot, calf, and kinetic-chain load, then combine soft-tissue care, footwear advice, and progressive loading. Focused shockwave is considered for stubborn cases after clinical screening at Nguyen's Osteopathic Clinic. First-step pain is our progress marker — we adjust load before you chase another gadget.",
     recoveryTimeline:
-      "Many improve over 6–12 weeks; chronic cases can take longer. First-step pain usually improves before long standing shifts feel easy. First-step pain often improves before long walks feel normal — we keep loading honest through that lag. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Many improve over 6–12 weeks; chronic cases can take longer. First-step pain usually improves before long standing shifts feel easy. First-step pain often improves before long walks feel normal — we keep loading honest through that lag.",
     faqs: [
       {
         question: "Do I need expensive orthotics?",
@@ -2160,7 +2173,7 @@ export const conditions: Condition[] = [
     shortTitle: "Medial tibial stress syndrome",
     region: "Ankle & Foot",
     summary:
-      "Osteopathic assessment and care in Woolwich for medial tibial stress syndrome (ankle & foot). Diffuse medial tibial pain with running. Differentiate from stress fracture (focal pain).",
+      "Medial shin ache that climbs with running volume — load and surface changes, with urgent rest when hop pain suggests bone stress.",
     heroLine:
       "Medial tibial stress syndrome care at Nguyen's: find the pattern, ease irritation, and rebuild confident movement.",
     symptoms: [
@@ -2175,13 +2188,13 @@ export const conditions: Condition[] = [
       "Urgent rest and imaging advice when focal hop pain suggests fracture",
     ],
     causes:
-      "Medial tibial stress syndrome (\"shin splints\") is load-related pain along the shin from running or marching volume that outpaces bone and soft-tissue adaptation. Hard surfaces, sudden mileage jumps, and calf endurance deficits contribute. True stress fracture must be considered when pain becomes focal and progressive. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Medial tibial stress syndrome (\"shin splints\") is load-related pain along the shin from running or marching volume that outpaces bone and soft-tissue adaptation. Hard surfaces, sudden mileage jumps, and calf endurance deficits contribute. True stress fracture must be considered when pain becomes focal and progressive.",
     whoAffected:
       "New runners, military-style training, and athletes changing surfaces present often. Adolescents in growth spurts need careful dosing. Night pain and single-point bone tenderness raise stress-fracture suspicion.",
     whatToExpect:
-      "We differentiate soft-tissue overload from bone stress risk, adjust running load, and build calf/foot capacity. Hands-on care eases secondary tightness. Imaging referral happens when bone stress is likely. Hop pain and run volume decide rest versus reload; bone stress always outranks pace goals. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We differentiate soft-tissue overload from bone stress risk, adjust running load, and build calf/foot capacity. Hands-on care eases secondary tightness. Imaging referral happens when bone stress is likely. Hop pain and run volume decide rest versus reload; bone stress always outranks pace goals.",
     recoveryTimeline:
-      "Shin splints often settle in 3–8 weeks with load reshaping. Suspected stress fractures need longer relative rest and medical guidance. Bone stress rules out stubborn mileage goals; hop pain ends the negotiation. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Shin splints often settle in 3–8 weeks with load reshaping. Suspected stress fractures need longer relative rest and medical guidance. Bone stress rules out stubborn mileage goals; hop pain ends the negotiation.",
     faqs: [
       {
         question: "Can I run through shin splints?",
@@ -2229,7 +2242,7 @@ export const conditions: Condition[] = [
     shortTitle: "Hallux rigidus / 1st MTP OA",
     region: "Ankle & Foot",
     summary:
-      "Osteopathic assessment and care in Woolwich for hallux rigidus / 1st mtp oa (ankle & foot). Stiff painful 1st toe joint, especially on push-off. Limits great-toe extension.",
+      "Stiff, painful big-toe push-off in city shoes — 1st MTP mobilisation and footwear tweaks for longer Woolwich walks.",
     heroLine:
       "Practical assessment and a clear plan for hallux rigidus / 1st mtp oa — so you understand the driver and the next steps. We connect clinic findings to your real week so advice fits Woolwich life, not a generic leaflet.",
     symptoms: [
@@ -2244,13 +2257,13 @@ export const conditions: Condition[] = [
       "Discuss ortho opinion when end-stage stiffness limits daily life",
     ],
     causes:
-      "Hallux rigidus is stiffness and osteoarthritis of the big-toe joint that limits push-off. Trauma, repetitive forefoot load, and age-related change contribute. People compensate with outward foot roll, which can irritate the knee or hip. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Hallux rigidus is stiffness and osteoarthritis of the big-toe joint that limits push-off. Trauma, repetitive forefoot load, and age-related change contribute. People compensate with outward foot roll, which can irritate the knee or hip.",
     whoAffected:
       "Adults with forefoot pain on walking, especially uphill or in flexible shoes, present often. Dancers and court athletes may notice earlier. Red, hot joints suggest inflammatory disease needing medical care.",
     whatToExpect:
-      "We improve available motion gently, address calf and foot mechanics, and advise on stiffer-soled footwear that reduces painful toe bend. Strength and gait cues limit upstream compensation. Surgical opinion is discussed for advanced cases with failed conservative care. Push-off comfort in your usual shoes drives footwear and mobilisation choices. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We improve available motion gently, address calf and foot mechanics, and advise on stiffer-soled footwear that reduces painful toe bend. Strength and gait cues limit upstream compensation. Surgical opinion is discussed for advanced cases with failed conservative care. Push-off comfort in your usual shoes drives footwear and mobilisation choices.",
     recoveryTimeline:
-      "Comfort gains often appear over 4–10 weeks. Structural stiffness may remain; function and pain with walking are the targets. Push-off comfort improves in shoes you actually wear, not clinic-only barefoot tests. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Comfort gains often appear over 4–10 weeks. Structural stiffness may remain; function and pain with walking are the targets. Push-off comfort improves in shoes you actually wear, not clinic-only barefoot tests.",
     faqs: [
       {
         question: "Do I need surgery for a stiff big toe?",
@@ -2285,6 +2298,7 @@ export const conditions: Condition[] = [
       "knee-oa",
     ],
     relatedServiceSlug: "focused-shockwave",
+    relatedBlogSlug: "osteoarthritis-joints-osteopath-woolwich",
     keywords: [
       "Hallux rigidus / 1st MTP OA Woolwich",
       "Hallux rigidus / 1st MTP OA osteopath SE18",
@@ -2297,7 +2311,7 @@ export const conditions: Condition[] = [
     shortTitle: "Morton's neuroma",
     region: "Ankle & Foot",
     summary:
-      "Osteopathic assessment and care in Woolwich for morton's neuroma (ankle & foot). Burning forefoot pain between 3rd–4th metatarsals. Mulder's click positive.",
+      "Burning forefoot pain or a pebble-in-shoe feeling — width and cushion advice, with podiatry talk when nights burn.",
     heroLine:
       "A structured look at morton's neuroma for SE18 patients — history, examination, and a plan you can follow.",
     symptoms: [
@@ -2312,13 +2326,13 @@ export const conditions: Condition[] = [
       "Coordinate with podiatry or imaging when night burning persists",
     ],
     causes:
-      "Morton's neuroma-type pain is forefoot neural irritation, often between the third and fourth toes, with burning or pebble-in-shoe sensations. Tight footwear, high forefoot load, and plantar plate stress contribute. Not every interdigital pain is a neuroma — we assess broadly. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Morton's neuroma-type pain is forefoot neural irritation, often between the third and fourth toes, with burning or pebble-in-shoe sensations. Tight footwear, high forefoot load, and plantar plate stress contribute. Not every interdigital pain is a neuroma — we assess broadly.",
     whoAffected:
       "Adults in narrow fashion shoes, runners, and court athletes present often. Progressive numbness with back pain may suggest higher nerve sources.",
     whatToExpect:
-      "We review footwear width and load, treat related foot mechanics, and guide activity modifications. Metatarsal padding strategies may help short term. Medical pathways are discussed for persistent neural pain. Walking distance in city shoes is the test; burning nights trigger podiatry talk. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We review footwear width and load, treat related foot mechanics, and guide activity modifications. Metatarsal padding strategies may help short term. Medical pathways are discussed for persistent neural pain. Walking distance in city shoes is the test; burning nights trigger podiatry talk.",
     recoveryTimeline:
-      "Footwear and load changes can help within weeks; stubborn neural pain may need longer and possible specialist input. City-walk distance is the scoreboard; escalating night burning gets podiatry or imaging sooner. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Footwear and load changes can help within weeks; stubborn neural pain may need longer and possible specialist input. City-walk distance is the scoreboard; escalating night burning gets podiatry or imaging sooner.",
     faqs: [
       {
         question: "Do I need an injection or surgery?",
@@ -2353,6 +2367,7 @@ export const conditions: Condition[] = [
       "shin-splints",
     ],
     relatedServiceSlug: "focused-shockwave",
+    relatedBlogSlug: "plantar-fasciitis-shockwave-woolwich",
     keywords: [
       "Morton's neuroma Woolwich",
       "Morton's neuroma osteopath SE18",
@@ -2365,7 +2380,7 @@ export const conditions: Condition[] = [
     shortTitle: "Subacromial pain syndrome",
     region: "Shoulder",
     summary:
-      "Osteopathic assessment and care in Woolwich for subacromial pain syndrome (shoulder). Lateral shoulder pain on elevation/reaching. Most respond to graded loading.",
+      "Painful arc lifting the arm, worse at night on that side — cuff-friendly mobilisation and overhead load advice.",
     heroLine:
       "Support for subacromial pain syndrome with osteopathy in Woolwich: assessment first, then tailored hands-on care. Local commuting, standing retail shifts, and desk hours in SE18 often shape how symptoms show up day to day.",
     symptoms: [
@@ -2380,13 +2395,13 @@ export const conditions: Condition[] = [
       "Flag traumatic weakness or night pain that may need imaging",
     ],
     causes:
-      "Subacromial pain involves sensitive tendons and bursal tissues under the acromion, aggravated by overhead reach and loaded elevation. Sudden DIY, swimming volume spikes, or desk-plus-gym combinations commonly flare it. \"Impingement\" is a description of symptoms, not a single anatomy fault. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Subacromial pain involves sensitive tendons and bursal tissues under the acromion, aggravated by overhead reach and loaded elevation. Sudden DIY, swimming volume spikes, or desk-plus-gym combinations commonly flare it. \"Impingement\" is a description of symptoms, not a single anatomy fault.",
     whoAffected:
       "Adults doing overhead work, racket sports, or gym pressing present often. Night pain lying on the shoulder is common. Neck referral can mimic shoulder pain — we screen both.",
     whatToExpect:
-      "Assessment tests tendon irritability and scapular control. Hands-on care reduces secondary spasm while progressive loading rebuilds capacity. Temporary overhead volume cuts are paired with trunk and rotator-cuff strength. Shockwave may be considered for stubborn tendinopathy after screening. Painful-arc degrees and sleep positions show whether cuff load is settling. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "Assessment tests tendon irritability and scapular control. Hands-on care reduces secondary spasm while progressive loading rebuilds capacity. Temporary overhead volume cuts are paired with trunk and rotator-cuff strength. Shockwave may be considered for stubborn tendinopathy after screening. Painful-arc degrees and sleep positions show whether cuff load is settling.",
     recoveryTimeline:
-      "Many improve over 6–12 weeks. Early wins are sleep and daily reach; later wins are pressing and swimming endurance. Arc pain and sleep shuffle; traumatic weakness skips the gentle-wait plan. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Many improve over 6–12 weeks. Early wins are sleep and daily reach; later wins are pressing and swimming endurance. Arc pain and sleep shuffle; traumatic weakness skips the gentle-wait plan.",
     faqs: [
       {
         question: "Should I stop all arm use?",
@@ -2434,7 +2449,7 @@ export const conditions: Condition[] = [
     shortTitle: "Rotator cuff tear",
     region: "Shoulder",
     summary:
-      "Osteopathic assessment and care in Woolwich for rotator cuff tear (shoulder). Most degenerative tears respond to exercise as well as surgery. Acute traumatic tears in young patients often surgical.",
+      "Weakness or night pain lifting the arm after trauma or wear — protected range, graded strength, and imaging timing when function collapses.",
     heroLine:
       "Rotator cuff tear care at Nguyen's: find the pattern, ease irritation, and rebuild confident movement.",
     symptoms: [
@@ -2449,13 +2464,13 @@ export const conditions: Condition[] = [
       "Discuss ultrasound/MRI and ortho timing when function collapses",
     ],
     causes:
-      "Rotator cuff tears range from small partial tears to larger full-thickness tears after trauma or gradual attrition. Pain with elevation, night pain, and weakness on resisted tests are common. Many degenerative tears are still managed well with rehab; acute traumatic weakness needs timely orthopaedic advice. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Rotator cuff tears range from small partial tears to larger full-thickness tears after trauma or gradual attrition. Pain with elevation, night pain, and weakness on resisted tests are common. Many degenerative tears are still managed well with rehab; acute traumatic weakness needs timely orthopaedic advice.",
     whoAffected:
       "Adults over 50 with degenerative cuff change, and younger people after falls or heavy pulls, present often. Progressive true weakness after injury is a priority pathway.",
     whatToExpect:
-      "We assess tear impact on function, calm irritability, and build deltoid and remaining cuff capacity. Hands-on care addresses stiffness. We coordinate imaging/ortho when strength loss or traumatic onset warrants it. Strength and night pain trends decide conservative care versus imaging timing. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We assess tear impact on function, calm irritability, and build deltoid and remaining cuff capacity. Hands-on care addresses stiffness. We coordinate imaging/ortho when strength loss or traumatic onset warrants it. Strength and night pain trends decide conservative care versus imaging timing.",
     recoveryTimeline:
-      "Rehab timelines often span 3–6 months for meaningful strength. Post-op protocols are surgeon-led when surgery occurs. Night pain and strength trends decide conservative patience versus surgical clocks. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Rehab timelines often span 3–6 months for meaningful strength. Post-op protocols are surgeon-led when surgery occurs. Night pain and strength trends decide conservative patience versus surgical clocks.",
     faqs: [
       {
         question: "Does every cuff tear need surgery?",
@@ -2490,6 +2505,7 @@ export const conditions: Condition[] = [
       "ac-joint-injury",
     ],
     relatedServiceSlug: "headaches-joints",
+    relatedBlogSlug: "gym-shoulder-injury-osteopath-woolwich",
     keywords: [
       "Rotator cuff tear Woolwich",
       "Rotator cuff tear osteopath SE18",
@@ -2518,13 +2534,13 @@ export const conditions: Condition[] = [
       "Discuss shockwave or referral pathways when appropriate",
     ],
     causes:
-      "Frozen shoulder (adhesive capsulitis) involves capsule contracture with pain then progressive stiffness through elevation and rotation. It may follow minor trauma, surgery, or appear idiopathic — diabetes and thyroid disease raise risk. Stages move from freezing (painful) to frozen (stiff) to thawing. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Frozen shoulder (adhesive capsulitis) involves capsule contracture with pain then progressive stiffness through elevation and rotation. It may follow minor trauma, surgery, or appear idiopathic — diabetes and thyroid disease raise risk. Stages move from freezing (painful) to frozen (stiff) to thawing.",
     whoAffected:
       "Adults 40–65, especially women and people with diabetes, present commonly. Attempting aggressive stretching in high-pain phases often backfires. Neck pathology can coexist and needs screening.",
     whatToExpect:
-      "We identify stage, keep mobility work within tolerable ranges, and support sleep and daily function. Hands-on care is gentle; home exercises respect irritability. Shockwave or medical pathways are discussed when appropriate. Expectations emphasise months, not days. We track external rotation and sleep week by week so you can see real frozen-shoulder change, not just hope. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We identify stage, keep mobility work within tolerable ranges, and support sleep and daily function. Hands-on care is gentle; home exercises respect irritability. Shockwave or medical pathways are discussed when appropriate. Expectations emphasise months, not days. We track external rotation and sleep week by week so you can see real frozen-shoulder change, not just hope.",
     recoveryTimeline:
-      "Natural history can span 12–36 months; good care improves comfort and function along the way. Early-phase pain control matters more than forcing range. Frozen-shoulder phases move slowly; we celebrate range and sleep wins, not forced stretch milestones. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Natural history can span 12–36 months; good care improves comfort and function along the way. Early-phase pain control matters more than forcing range. Frozen-shoulder phases move slowly; we celebrate range and sleep wins, not forced stretch milestones.",
     faqs: [
       {
         question: "Can you manipulate a frozen shoulder free?",
@@ -2559,6 +2575,7 @@ export const conditions: Condition[] = [
       "shoulder-instability",
     ],
     relatedServiceSlug: "headaches-joints",
+    relatedBlogSlug: "shoulder-pain-frozen-shoulder-woolwich",
     keywords: [
       "frozen shoulder Woolwich",
       "stiff shoulder osteopath SE18",
@@ -2572,7 +2589,7 @@ export const conditions: Condition[] = [
     shortTitle: "Shoulder instability",
     region: "Shoulder",
     summary:
-      "Osteopathic assessment and care in Woolwich for shoulder instability (shoulder). Hypermobile shoulder with apprehension and dead-arm episodes. Rockwood protocol: progressive cuff + scapular work.",
+      "Apprehension or giving-way in overhead or contact positions — stabilising rehab that clears sport with drills, not calendar weeks.",
     heroLine:
       "Support for shoulder instability with osteopathy in Woolwich: assessment first, then tailored hands-on care.",
     symptoms: [
@@ -2587,13 +2604,13 @@ export const conditions: Condition[] = [
       "Refer recurrent traumatic dislocations for specialist opinion",
     ],
     causes:
-      "Shoulder instability follows ligament/labral injury or inherent laxity, causing apprehension, subluxation, or dislocation with certain positions. Traumatic dislocations need appropriate acute care; ongoing rehab restores control. Overheads and contact sports raise recurrence risk without neuromuscular work. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Shoulder instability follows ligament/labral injury or inherent laxity, causing apprehension, subluxation, or dislocation with certain positions. Traumatic dislocations need appropriate acute care; ongoing rehab restores control. Overheads and contact sports raise recurrence risk without neuromuscular work.",
     whoAffected:
       "Young contact and overhead athletes present most. Hypermobile patients may have atraumatic instability. Neurological deficit after dislocation needs urgent pathways.",
     whatToExpect:
-      "After acute medical management when required, we rebuild rotator cuff and scapular control, progressing into sport-specific positions carefully. Hands-on care treats secondary stiffness without stretching into unsafe ranges. Surgical opinion is discussed for recurrent traumatic dislocations. Apprehension and sport drills — not calendar weeks — clear return. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "After acute medical management when required, we rebuild rotator cuff and scapular control, progressing into sport-specific positions carefully. Hands-on care treats secondary stiffness without stretching into unsafe ranges. Surgical opinion is discussed for recurrent traumatic dislocations. Apprehension and sport drills — not calendar weeks — clear return.",
     recoveryTimeline:
-      "First-time dislocations often need months of rehab before return to contact. Recurrent traumatic instability may need earlier surgical consideration. Apprehension drills clear return — not a quiet week on the sofa. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "First-time dislocations often need months of rehab before return to contact. Recurrent traumatic instability may need earlier surgical consideration. Apprehension drills clear return — not a quiet week on the sofa.",
     faqs: [
       {
         question: "Do I need surgery after one dislocation?",
@@ -2628,6 +2645,7 @@ export const conditions: Condition[] = [
       "frozen-shoulder",
     ],
     relatedServiceSlug: "headaches-joints",
+    relatedBlogSlug: "gym-shoulder-injury-osteopath-woolwich",
     keywords: [
       "Shoulder instability Woolwich",
       "Shoulder instability osteopath SE18",
@@ -2640,7 +2658,7 @@ export const conditions: Condition[] = [
     shortTitle: "AC joint sprain / OA",
     region: "Shoulder",
     summary:
-      "Osteopathic assessment and care in Woolwich for ac joint sprain / oa (shoulder). Pain on top of shoulder, worse with cross-body adduction and heavy bench. Grade I–II respond to load.",
+      "Pain on top of the shoulder after a fall or with cross-body reach — AC-aware early loading and deformity escalation.",
     heroLine:
       "Practical assessment and a clear plan for ac joint sprain / oa — so you understand the driver and the next steps. Local commuting, standing retail shifts, and desk hours in SE18 often shape how symptoms show up day to day.",
     symptoms: [
@@ -2655,13 +2673,13 @@ export const conditions: Condition[] = [
       "Escalate high-grade separation or persistent deformity concerns",
     ],
     causes:
-      "Acromioclavicular joint injuries occur from falls onto the shoulder tip or heavy pressing. Pain is local to the AC joint with cross-body movement and pressing. Grades vary from sprain to separation; most lower-grade injuries are managed conservatively. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Acromioclavicular joint injuries occur from falls onto the shoulder tip or heavy pressing. Pain is local to the AC joint with cross-body movement and pressing. Grades vary from sprain to separation; most lower-grade injuries are managed conservatively.",
     whoAffected:
       "Cyclists after falls, contact athletes, and gym athletes with pressing pain present often. Deformity with severe trauma needs medical assessment for higher-grade injury.",
     whatToExpect:
-      "We protect early irritability, restore scapular and cuff control, and gradually reintroduce pressing and reaching. Hands-on care addresses surrounding soft tissue. Higher-grade separations may need orthopaedic pathways. Press and carry tolerance lead the early plan; deformity concerns go to imaging. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We protect early irritability, restore scapular and cuff control, and gradually reintroduce pressing and reaching. Hands-on care addresses surrounding soft tissue. Higher-grade separations may need orthopaedic pathways. Press and carry tolerance lead the early plan; deformity concerns go to imaging.",
     recoveryTimeline:
-      "Mild sprains often improve in 2–6 weeks; higher grades take longer. Return to pressing is staged to avoid flare. Press progress is stepwise; deformity or high-grade injury leaves DIY rehab alone. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Mild sprains often improve in 2–6 weeks; higher grades take longer. Return to pressing is staged to avoid flare. Press progress is stepwise; deformity or high-grade injury leaves DIY rehab alone.",
     faqs: [
       {
         question: "Is the bump permanent after AC injury?",
@@ -2696,6 +2714,7 @@ export const conditions: Condition[] = [
       "neck-pain",
     ],
     relatedServiceSlug: "headaches-joints",
+    relatedBlogSlug: "gym-shoulder-injury-osteopath-woolwich",
     keywords: [
       "AC joint sprain / OA Woolwich",
       "AC joint sprain / OA osteopath SE18",
@@ -2724,13 +2743,13 @@ export const conditions: Condition[] = [
       "Discuss shockwave for persistent tendinopathy",
     ],
     causes:
-      "Tennis elbow (lateral elbow tendinopathy) is load-related tendon pain from gripping, lifting, and repetitive wrist extension — tools, mouse use, and racket sports included. Sudden DIY or new gym gripping often triggers it. The tendon needs progressive loading, not endless rest. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Tennis elbow (lateral elbow tendinopathy) is load-related tendon pain from gripping, lifting, and repetitive wrist extension — tools, mouse use, and racket sports included. Sudden DIY or new gym gripping often triggers it. The tendon needs progressive loading, not endless rest.",
     whoAffected:
       "Tradespeople, desk workers, and racket athletes in Woolwich present frequently. Neck referral can mimic elbow pain — we screen. Constant night pain with swelling may need medical review.",
     whatToExpect:
-      "We assess elbow, wrist, and shoulder contributors, then start progressive tendon loading while adjusting aggravating grips. Hands-on care eases forearm soft tissue; focused shockwave can be considered for persistent cases after screening. Grip tasks and fees are scoped honestly — no endless courses without a review point. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We assess elbow, wrist, and shoulder contributors, then start progressive tendon loading while adjusting aggravating grips. Hands-on care eases forearm soft tissue; focused shockwave can be considered for persistent cases after screening. Grip tasks and fees are scoped honestly — no endless courses without a review point.",
     recoveryTimeline:
-      "Expect 8–12 weeks for tendon adaptation. Early gains are daily grip comfort; later gains are tools and sport endurance. Grip strength returns in steps. We continue, space, or refer based on work tasks you still cannot do. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Expect 8–12 weeks for tendon adaptation. Early gains are daily grip comfort; later gains are tools and sport endurance. Grip strength returns in steps. We continue, space, or refer based on work tasks you still cannot do.",
     faqs: [
       {
         question: "Should I wear a brace all day?",
@@ -2779,7 +2798,7 @@ export const conditions: Condition[] = [
     shortTitle: "Medial epicondylalgia",
     region: "Elbow & Wrist",
     summary:
-      "Osteopathic assessment and care in Woolwich for medial epicondylalgia (elbow & wrist). Common flexor-pronator tendinopathy. Pain on resisted wrist flexion/pronation.",
+      "Inner-elbow pain with gripping, tools, or wrist flexion load — flexor-origin care and technique changes that cut peak strain.",
     heroLine:
       "A structured look at medial epicondylalgia for SE18 patients — history, examination, and a plan you can follow. Local commuting, standing retail shifts, and desk hours in SE18 often shape how symptoms show up day to day.",
     symptoms: [
@@ -2794,13 +2813,13 @@ export const conditions: Condition[] = [
       "Discuss imaging if medial instability or acute tear is suspected",
     ],
     causes:
-      "Golfer's elbow (medial elbow tendinopathy) involves the common flexor tendon from gripping, throwing, or repetitive wrist flexion. Tool use and climbing can overload it. As with lateral elbow pain, capacity and load dosing decide recovery. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Golfer's elbow (medial elbow tendinopathy) involves the common flexor tendon from gripping, throwing, or repetitive wrist flexion. Tool use and climbing can overload it. As with lateral elbow pain, capacity and load dosing decide recovery.",
     whoAffected:
       "Trades, climbers, throwers, and desk workers with aggressive gripping present often. Ulnar nerve symptoms need differentiation from pure tendon pain.",
     whatToExpect:
-      "Assessment separates tendon from nerve contributions, then progressive loading and task modification follow. Hands-on forearm and shoulder care supports the plan. Shockwave may be discussed for persistent tendon pain. Grip and tool tasks set the load ladder; we review rather than grind endlessly. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "Assessment separates tendon from nerve contributions, then progressive loading and task modification follow. Hands-on forearm and shoulder care supports the plan. Shockwave may be discussed for persistent tendon pain. Grip and tool tasks set the load ladder; we review rather than grind endlessly.",
     recoveryTimeline:
-      "Most improve over 8–12 weeks with consistent loading. Recurrence drops when work grips and training spikes are managed. Grip tasks stutter; we review rather than add passive care forever. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Most improve over 8–12 weeks with consistent loading. Recurrence drops when work grips and training spikes are managed. Grip tasks stutter; we review rather than add passive care forever.",
     faqs: [
       {
         question: "Is this the same as tennis elbow?",
@@ -2848,7 +2867,7 @@ export const conditions: Condition[] = [
     shortTitle: "Cubital tunnel syndrome",
     region: "Elbow & Wrist",
     summary:
-      "Osteopathic assessment and care in Woolwich for cubital tunnel syndrome (elbow & wrist). Ulnar nerve entrapment at elbow. Numbness ring/little finger, weak grip in chronic cases.",
+      "Ring-and-little-finger tingling from sustained elbow flexion — cubital tunnel ease, night strategies, and hand-strength watch.",
     heroLine:
       "Ring-and-little-finger tingling from the elbow — we ease the cubital tunnel and fix the phone-and-desk flexion habits that feed it.",
     symptoms: [
@@ -2863,13 +2882,13 @@ export const conditions: Condition[] = [
       "Escalate progressive hand weakness or wasting promptly",
     ],
     causes:
-      "Cubital tunnel syndrome irritates the ulnar nerve at the elbow, causing tingling in the ring and little fingers, especially with prolonged elbow flexion (phone use, sleeping curled). Direct pressure on the funny-bone groove aggravates it. Neck nerve roots can mimic symptoms — dual screening matters. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Cubital tunnel syndrome irritates the ulnar nerve at the elbow, causing tingling in the ring and little fingers, especially with prolonged elbow flexion (phone use, sleeping curled). Direct pressure on the funny-bone groove aggravates it. Neck nerve roots can mimic symptoms — dual screening matters.",
     whoAffected:
       "Desk workers on phones, drivers, and people who lean on elbows present often. Progressive hand wasting needs timely medical/nerve pathways.",
     whatToExpect:
-      "We reduce sustained flexion and pressure, treat related soft tissue, and screen cervical contributors. Night positioning advice is practical. Referral for nerve studies occurs when weakness progresses or conservative care fails. Night numbness and hand strength decide splint duration and referral timing. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We reduce sustained flexion and pressure, treat related soft tissue, and screen cervical contributors. Night positioning advice is practical. Referral for nerve studies occurs when weakness progresses or conservative care fails. Night numbness and hand strength decide splint duration and referral timing.",
     recoveryTimeline:
-      "Mild sensory cases often improve over weeks with habit change. Motor weakness timelines depend on severity and may need specialist care. Numbness maps and hand strength decide splint time versus nerve studies. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Mild sensory cases often improve over weeks with habit change. Motor weakness timelines depend on severity and may need specialist care. Numbness maps and hand strength decide splint time versus nerve studies.",
     faqs: [
       {
         question: "Should I wrap my elbow at night?",
@@ -2904,6 +2923,7 @@ export const conditions: Condition[] = [
       "cervical-radiculopathy",
     ],
     relatedServiceSlug: "focused-shockwave",
+    relatedBlogSlug: "wrist-hand-pain-osteopath-se18",
     keywords: [
       "Cubital tunnel syndrome Woolwich",
       "Cubital tunnel syndrome osteopath SE18",
@@ -2916,7 +2936,7 @@ export const conditions: Condition[] = [
     shortTitle: "Carpal tunnel syndrome",
     region: "Elbow & Wrist",
     summary:
-      "Osteopathic assessment and care in Woolwich for carpal tunnel syndrome (elbow & wrist). Median nerve entrapment at wrist. Nocturnal paraesthesia thumb-index-middle, eased by shaking.",
+      "Night tingling in thumb, index, and middle fingers — wrist and desk strategies, with nerve-study talk when numbness is constant.",
     heroLine:
       "Carpal tunnel syndrome care at Nguyen's: find the pattern, ease irritation, and rebuild confident movement. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
@@ -2931,13 +2951,13 @@ export const conditions: Condition[] = [
       "Refer for nerve studies or injection when numbness is constant",
     ],
     causes:
-      "Carpal tunnel syndrome compresses the median nerve at the wrist, causing night tingling in thumb, index, and middle fingers, often eased by shaking the hand. Fluid retention, repetitive wrist load, and pregnancy can contribute. Neck referral and pronator syndrome are differentials. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Carpal tunnel syndrome compresses the median nerve at the wrist, causing night tingling in thumb, index, and middle fingers, often eased by shaking the hand. Fluid retention, repetitive wrist load, and pregnancy can contribute. Neck referral and pronator syndrome are differentials.",
     whoAffected:
       "Desk workers, trades with vibrating tools, and pregnant patients present frequently. Thenar wasting or constant numbness needs timely medical review.",
     whatToExpect:
-      "We advise night positioning, task modification, and treat related forearm/neck contributors. Splints may help nights. Escalation for nerve studies or injection/surgical opinion follows severity. Night symptoms and keyboard endurance guide splints versus nerve-study talk. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We advise night positioning, task modification, and treat related forearm/neck contributors. Splints may help nights. Escalation for nerve studies or injection/surgical opinion follows severity. Night symptoms and keyboard endurance guide splints versus nerve-study talk.",
     recoveryTimeline:
-      "Mild intermittent cases often improve over weeks with load and night care. Progressive neurological loss is not a \"wait and see\" osteopathy-only pathway. Night symptoms lead; constant numbness earns referral talk without delay. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Mild intermittent cases often improve over weeks with load and night care. Progressive neurological loss is not a \"wait and see\" osteopathy-only pathway. Night symptoms lead; constant numbness earns referral talk without delay.",
     faqs: [
       {
         question: "Do I need surgery?",
@@ -2985,7 +3005,7 @@ export const conditions: Condition[] = [
     shortTitle: "De Quervain's tenosynovitis",
     region: "Elbow & Wrist",
     summary:
-      "Osteopathic assessment and care in Woolwich for de quervain's tenosynovitis (elbow & wrist). Pain over radial styloid, positive Finkelstein. Common in new parents (baby-lifting).",
+      "Thumb-side wrist pain from lifting, phones, or new-parent handling — calm the first compartment, then rebuild grip carefully.",
     heroLine:
       "Thumb-side wrist pain from lifting, phones, or new-parent handling — calm the tendon, then rebuild grip without reinflaming it.",
     symptoms: [
@@ -3000,13 +3020,13 @@ export const conditions: Condition[] = [
       "Discuss injection or imaging if swelling and pain stall",
     ],
     causes:
-      "De Quervain's tenosynovitis irritates the thumb tendons at the wrist from repetitive lifting, phone use, or new parent thumb postures (\"mummy thumb\"). Swelling and pain with hitchhiker's hitch motions are typical. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "De Quervain's tenosynovitis irritates the thumb tendons at the wrist from repetitive lifting, phone use, or new parent thumb postures (\"mummy thumb\"). Swelling and pain with hitchhiker's hitch motions are typical.",
     whoAffected:
       "New parents, desk workers, and trades using pinch grips present often. Inflammatory arthritis can mimic — atypical systemic signs need medical care.",
     whatToExpect:
-      "We modify aggravating lifts, use relative rest strategies, and progressively reload the tendons. Hands-on care addresses forearm contributors. Splinting may help short term. Thumb lift and phone habits are adjusted until Finkelstein load calms. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We modify aggravating lifts, use relative rest strategies, and progressively reload the tendons. Hands-on care addresses forearm contributors. Splinting may help short term. Thumb lift and phone habits are adjusted until Finkelstein load calms.",
     recoveryTimeline:
-      "Many improve over 4–8 weeks with consistent modification and reload. Recurrence drops when lift mechanics change. New-parent lifting weeks vary; we adjust load before chasing injections by default. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Many improve over 4–8 weeks with consistent modification and reload. Recurrence drops when lift mechanics change. New-parent lifting weeks vary; we adjust load before chasing injections by default.",
     faqs: [
       {
         question: "Do I need a steroid injection?",
@@ -3041,6 +3061,7 @@ export const conditions: Condition[] = [
       "medial-epicondylalgia",
     ],
     relatedServiceSlug: "focused-shockwave",
+    relatedBlogSlug: "wrist-hand-pain-osteopath-se18",
     keywords: [
       "De Quervain's tenosynovitis Woolwich",
       "De Quervain's tenosynovitis osteopath SE18",
@@ -3053,7 +3074,7 @@ export const conditions: Condition[] = [
     shortTitle: "Thumb CMC osteoarthritis",
     region: "Elbow & Wrist",
     summary:
-      "Osteopathic assessment and care in Woolwich for thumb cmc osteoarthritis (elbow & wrist). Base-of-thumb pain on pinch/grip. Common in postmenopausal women.",
+      "Base-of-thumb pain with jars, keys, and pinch — CMC mobilisation and splint advice for daily tasks in SE18.",
     heroLine:
       "A structured look at thumb cmc osteoarthritis for SE18 patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
@@ -3068,13 +3089,13 @@ export const conditions: Condition[] = [
       "Coordinate with GP for injection or surgical timing when grip fails",
     ],
     causes:
-      "Base-of-thumb osteoarthritis (CMC OA) causes pain opening jars, pinching, and daily gripping as the carpometacarpal joint changes. Joint geometry and lifetime load contribute; secondary soft-tissue tension adds to irritability. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Base-of-thumb osteoarthritis (CMC OA) causes pain opening jars, pinching, and daily gripping as the carpometacarpal joint changes. Joint geometry and lifetime load contribute; secondary soft-tissue tension adds to irritability.",
     whoAffected:
       "Adults over 50, especially women, present often. Craft workers and trades notice day-long ache. Hot, swollen multiple joints suggest inflammatory disease needing medical care.",
     whatToExpect:
-      "We teach joint-protection strategies, build supporting muscle endurance, and ease secondary soft tissue. Aids for jars and pacing advice are practical. Medical options (splints, injection, surgery) are discussed when function stays limited. Jar and key-turn tasks define success more than how the joint looks on X-ray. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We teach joint-protection strategies, build supporting muscle endurance, and ease secondary soft tissue. Aids for jars and pacing advice are practical. Medical options (splints, injection, surgery) are discussed when function stays limited. Jar and key-turn tasks define success more than how the joint looks on X-ray.",
     recoveryTimeline:
-      "Comfort and task ease often improve over 4–10 weeks. Structural OA remains; skill and strength change daily disability. Key-turn and jar tasks define success more than chasing zero ache. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Comfort and task ease often improve over 4–10 weeks. Structural OA remains; skill and strength change daily disability. Key-turn and jar tasks define success more than chasing zero ache.",
     faqs: [
       {
         question: "Will my thumb joint disappear on X-ray?",
@@ -3109,6 +3130,7 @@ export const conditions: Condition[] = [
       "medial-epicondylalgia",
     ],
     relatedServiceSlug: "focused-shockwave",
+    relatedBlogSlug: "wrist-hand-pain-osteopath-se18",
     keywords: [
       "Thumb CMC osteoarthritis Woolwich",
       "Thumb CMC osteoarthritis osteopath SE18",
@@ -3121,7 +3143,7 @@ export const conditions: Condition[] = [
     shortTitle: "Fibromyalgia / central sensitisation",
     region: "Whole body",
     summary:
-      "Osteopathic assessment and care in Woolwich for fibromyalgia / central sensitisation (whole body). Widespread pain with fatigue, poor sleep, cognitive symptoms. Aerobic exercise and pacing are first-line.",
+      "Widespread aching, fatigue, and non-refreshing sleep — gentle osteopathy focused on pacing and calm, alongside GP pathways.",
     heroLine:
       "A structured look at fibromyalgia / central sensitisation for SE18 patients — history, examination, and a plan you can follow.",
     symptoms: [
@@ -3136,13 +3158,13 @@ export const conditions: Condition[] = [
       "Work with GP/rheumatology pathways for diagnosis and medication review",
     ],
     causes:
-      "Fibromyalgia involves amplified pain processing with widespread tenderness, fatigue, and sleep disturbance — not joint destruction. Flare triggers include stress, poor sleep, and sudden activity spikes. It coexists with other MSK issues; local osteopathy still helps irritable regions within a whole-person plan. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Fibromyalgia involves amplified pain processing with widespread tenderness, fatigue, and sleep disturbance — not joint destruction. Flare triggers include stress, poor sleep, and sudden activity spikes. It coexists with other MSK issues; local osteopathy still helps irritable regions within a whole-person plan.",
     whoAffected:
       "Adults with long-standing widespread pain, often women, present for local flares layered on systemic sensitivity. Red-flag neurological or inflammatory signs still need medical exclusion.",
     whatToExpect:
-      "Sessions are gentler and shorter when sensitivity is high. We combine calming hands-on care with graded activity, sleep routine advice, and pacing — never pushing into major flares. GP and pain-service coordination remains important. Flare plans and sleep quality matter more than chasing every tender spot. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "Sessions are gentler and shorter when sensitivity is high. We combine calming hands-on care with graded activity, sleep routine advice, and pacing — never pushing into major flares. GP and pain-service coordination remains important. Flare plans and sleep quality matter more than chasing every tender spot.",
     recoveryTimeline:
-      "Improvement is measured in months of pacing and sleep gains, with fewer severe flares. Local MSK episodes may settle faster within that broader arc. Flare weeks still happen; pacing and sleep win over aggressive stretch courses. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Improvement is measured in months of pacing and sleep gains, with fewer severe flares. Local MSK episodes may settle faster within that broader arc. Flare weeks still happen; pacing and sleep win over aggressive stretch courses.",
     faqs: [
       {
         question: "Is fibromyalgia \"all in my head\"?",
@@ -3177,6 +3199,7 @@ export const conditions: Condition[] = [
       "osteoporosis",
     ],
     relatedServiceSlug: "headaches-joints",
+    relatedBlogSlug: "chronic-pain-osteopath-woolwich",
     keywords: [
       "Fibromyalgia / central sensitisation Woolwich",
       "Fibromyalgia / central sensitisation osteopath SE18",
@@ -3189,7 +3212,7 @@ export const conditions: Condition[] = [
     shortTitle: "General deconditioning / sedentary lifestyle",
     region: "Whole body",
     summary:
-      "Osteopathic assessment and care in Woolwich for general deconditioning / sedentary lifestyle (whole body). Reduced cardiovascular and musculoskeletal capacity from inactivity. Common after long illness, retirement, or sedentary work.",
+      "Breathlessness and global stiffness after long sedentary stretches — tiny sustainable activity ladders, not bootcamp shock.",
     heroLine:
       "After months of sitting, restarting movement should feel doable — tiny ladders, not bootcamp shock.",
     symptoms: [
@@ -3204,13 +3227,13 @@ export const conditions: Condition[] = [
       "Screen medical barriers before pushing ambitious training loads",
     ],
     causes:
-      "Deconditioning is reduced fitness, strength, and confidence after illness, pain flares, or long inactivity. Everyday tasks then feel harder, feeding a cycle of avoidance. It is reversible with graded exposure and strength — not a fixed identity. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Deconditioning is reduced fitness, strength, and confidence after illness, pain flares, or long inactivity. Everyday tasks then feel harder, feeding a cycle of avoidance. It is reversible with graded exposure and strength — not a fixed identity.",
     whoAffected:
       "People after surgery, long COVID-type fatigue patterns, or chronic pain flare cycles present often. Jumping back into intense gym work too fast commonly rebounds.",
     whatToExpect:
-      "We set a baseline you can repeat, then progress walking, strength, and joint mobility without heroic spikes. Hands-on care eases secondary stiffness. Plans respect medical advice from your GP when fatigue syndromes are complex. Sit-to-stand and walk minutes are the wins; we build capacity without bootcamp shock. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We set a baseline you can repeat, then progress walking, strength, and joint mobility without heroic spikes. Hands-on care eases secondary stiffness. Plans respect medical advice from your GP when fatigue syndromes are complex. Sit-to-stand and walk minutes are the wins; we build capacity without bootcamp shock.",
     recoveryTimeline:
-      "Noticeable capacity gains often appear over 6–12 weeks of consistency. Setbacks are expected; the skill is returning to the plan without all-or-nothing thinking. Capacity rises in small steps — bootcamp spikes are how people quit. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Noticeable capacity gains often appear over 6–12 weeks of consistency. Setbacks are expected; the skill is returning to the plan without all-or-nothing thinking. Capacity rises in small steps — bootcamp spikes are how people quit.",
     faqs: [
       {
         question: "Is pain during rebuilding dangerous?",
@@ -3245,6 +3268,7 @@ export const conditions: Condition[] = [
       "post-surgical-general",
     ],
     relatedServiceSlug: "headaches-joints",
+    relatedBlogSlug: "osteopathy-for-older-adults-woolwich",
     keywords: [
       "General deconditioning / sedentary lifestyle Woolwich",
       "General deconditioning / sedentary lifestyle osteopath SE18",
@@ -3257,7 +3281,7 @@ export const conditions: Condition[] = [
     shortTitle: "Osteoporosis / low bone density",
     region: "Whole body",
     summary:
-      "Osteopathic assessment and care in Woolwich for osteoporosis / low bone density (whole body). Reduced bone mineral density with fracture risk. Weight-bearing + resistance training are protective.",
+      "Low bone density, posture change, or fall fear — safe loading and balance work that respects fracture precautions.",
     heroLine:
       "Practical assessment and a clear plan for osteoporosis / low bone density — so you understand the driver and the next steps.",
     symptoms: [
@@ -3272,13 +3296,13 @@ export const conditions: Condition[] = [
       "Coordinate with GP on DEXA, meds, and when impact exercise is appropriate",
     ],
     causes:
-      "Osteoporosis reduces bone density and raises fracture risk. Pain presenting to osteopathy is often from secondary muscle tension, posture change, or fracture aftermath — not \"soft bones hurting\" constantly. Falls risk and spinal fracture history shape how vigorously we mobilise. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "Osteoporosis reduces bone density and raises fracture risk. Pain presenting to osteopathy is often from secondary muscle tension, posture change, or fracture aftermath — not \"soft bones hurting\" constantly. Falls risk and spinal fracture history shape how vigorously we mobilise.",
     whoAffected:
       "Post-menopausal adults, people on long-term steroids, and older patients after low-trauma fractures present often. Sudden severe spinal pain after a simple bend needs fracture assessment.",
     whatToExpect:
-      "We use fracture-safe techniques, improve comfort and posture-related soft tissue, and encourage medically appropriate strength and balance work. We do not replace DEXA monitoring or GP/endocrinology care. Exercise advice aligns with bone-health guidance. Fall confidence and safe loading rules sit beside any hands-on care. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We use fracture-safe techniques, improve comfort and posture-related soft tissue, and encourage medically appropriate strength and balance work. We do not replace DEXA monitoring or GP/endocrinology care. Exercise advice aligns with bone-health guidance. Fall confidence and safe loading rules sit beside any hands-on care.",
     recoveryTimeline:
-      "Comfort and confidence often improve over weeks; bone density changes over months to years with medical care. Fall-prevention habits are ongoing. Safe load and fall confidence outrank heroic impact goals. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Comfort and confidence often improve over weeks; bone density changes over months to years with medical care. Fall-prevention habits are ongoing. Safe load and fall confidence outrank heroic impact goals.",
     faqs: [
       {
         question: "Is osteopathic manipulation safe with osteoporosis?",
@@ -3313,6 +3337,7 @@ export const conditions: Condition[] = [
       "post-surgical-general",
     ],
     relatedServiceSlug: "headaches-joints",
+    relatedBlogSlug: "osteopathy-for-older-adults-woolwich",
     keywords: [
       "Osteoporosis / low bone density Woolwich",
       "Osteoporosis / low bone density osteopath SE18",
@@ -3325,7 +3350,7 @@ export const conditions: Condition[] = [
     shortTitle: "Post-surgical rehab",
     region: "Whole body",
     summary:
-      "Osteopathic assessment and care in Woolwich for post-surgical rehab (whole body). Follow surgeon protocol. General principles: protect repair → range of movement → strength → function.",
+      "Stiffness and guarded movement after an operation — rehab aligned with surgeon protocols and wound status first.",
     heroLine:
       "Support for post-surgical rehab with osteopathy in Woolwich: assessment first, then tailored hands-on care. We connect clinic findings to your real week so advice fits Woolwich life, not a generic leaflet.",
     symptoms: [
@@ -3340,13 +3365,13 @@ export const conditions: Condition[] = [
       "Escalate infection, DVT, or unexpected neurological change immediately",
     ],
     causes:
-      "After surgery, stiffness, protective muscle guarding, scar sensitivity, and deconditioning commonly limit function even when the operation succeeded. Swelling and fear of \"undoing\" the surgery slow movement. Osteopathy supports recovery alongside your surgical protocol — it does not replace consultant advice. Local follow-through matters: we connect clinic findings to your commute, workstation, training plan, and sleep so the same flare does not quietly rebuild between visits. Small weekly adjustments usually beat heroic one-off stretches.",
+      "After surgery, stiffness, protective muscle guarding, scar sensitivity, and deconditioning commonly limit function even when the operation succeeded. Swelling and fear of \"undoing\" the surgery slow movement. Osteopathy supports recovery alongside your surgical protocol — it does not replace consultant advice.",
     whoAffected:
       "Patients after orthopaedic, abdominal, or other operations who feel stuck with stiffness or compensatory pain present often. Signs of infection, DVT, or wound problems need urgent medical care first.",
     whatToExpect:
-      "We review your stage and precautions, then restore comfortable mobility and neighbouring joint function while respecting surgical limits. Soft-tissue care and graded strength sit inside your surgeon/physio timeline. Communication is clear about what we will and will not do. Surgeon timelines and wound status always outrank our local preferences. A typical follow-up reviews what changed since last time, retreats what is still irritable, and progresses exercises only when tissue tolerance allows. You should leave clearer, not confused by jargon or an endless list of drills.",
+      "We review your stage and precautions, then restore comfortable mobility and neighbouring joint function while respecting surgical limits. Soft-tissue care and graded strength sit inside your surgeon/physio timeline. Communication is clear about what we will and will not do. Surgeon timelines and wound status always outrank our local preferences.",
     recoveryTimeline:
-      "Depends entirely on the procedure — weeks to months. We measure task gains (walking, stairs, sleep) against your protocol milestones. Protocol stages and wound status always override local preference. If you plateau, we say so early and discuss imaging, GP review, or adjunct options such as focused shockwave where clinically suitable, rather than booking endless identical appointments. Your time and budget deserve that honesty.",
+      "Depends entirely on the procedure — weeks to months. We measure task gains (walking, stairs, sleep) against your protocol milestones. Protocol stages and wound status always override local preference.",
     faqs: [
       {
         question: "When is it safe to see an osteopath after surgery?",
@@ -3381,6 +3406,7 @@ export const conditions: Condition[] = [
       "hip-oa",
     ],
     relatedServiceSlug: "sports-injury-rehab",
+    relatedBlogSlug: "sports-injury-osteopath-woolwich",
     keywords: [
       "Post-surgical rehab Woolwich",
       "Post-surgical rehab osteopath SE18",
@@ -3403,6 +3429,13 @@ export function getConditionsByRegion(region: ConditionRegion) {
 
 export function getFeaturedConditions() {
   return conditions.filter((condition) => condition.featured);
+}
+
+/** Conditions that point at a given service slug — for service-page internal links. */
+export function getConditionsForService(serviceSlug: string, limit = 6) {
+  return conditions
+    .filter((condition) => condition.relatedServiceSlug === serviceSlug)
+    .slice(0, limit);
 }
 
 export function getRelatedConditions(condition: Condition, limit = 4) {

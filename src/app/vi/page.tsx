@@ -327,8 +327,8 @@ export default function VietnamesePage() {
               ).
             </p>
             <p className="mt-2 text-sm text-slate-500">
-              Phí khám ban đầu £75 (60 phút) · Tái khám £60 · Giảm 10% cho NHS
-              và sinh viên (xuất trình thẻ). Chi tiết:{" "}
+              Phí khám ban đầu £75 (60 phút) · Tái khám £60 (30 phút) · Giảm
+              10% cho NHS và sinh viên (xuất trình thẻ). Chi tiết:{" "}
               <Link href="/fees" className="font-semibold text-teal hover:text-teal-dark">
                 bảng giá
               </Link>

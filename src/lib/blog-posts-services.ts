@@ -2,7 +2,7 @@ import type { BlogCategory, BlogPost } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 const ctaBook =
-  "Book online at www.nguyensosteopathy.com/book or call 07882843513.";
+  `Book online at ${site.websiteUrl}/book or call ${site.phone}.`;
 const clinic =
   `${site.name} inside ${site.address.venue}, ${site.address.line1}, Woolwich SE18 6LQ`;
 
@@ -493,7 +493,7 @@ export const serviceBlogPosts: ServicePost[] = [
         ],
       },
     ],
-    cta: "Call 07882843513 for a confidential enquiry, or book online.",
+    cta: `Call ${site.phone} for a confidential enquiry, or book online.`,
   }),
   post({
     slug: "how-many-shockwave-sessions-ed",
@@ -537,7 +537,7 @@ export const serviceBlogPosts: ServicePost[] = [
         ],
       },
     ],
-    cta: "Enquire confidentially — 07882843513.",
+    cta: `Enquire confidentially — ${site.phone}.`,
   }),
 
   // —— Acupuncture / electro ——
@@ -1085,7 +1085,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "book-osteopath-online-woolwich",
     title: "How to book an osteopath online in Woolwich",
     description:
-      "Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, opening from 5 November 2026, and phone backup.",
+      `Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, opening from ${site.booking.opensFromLabel}, and phone backup.`,
     date: "2026-10-09",
     category: "Clinic info",
     keywords: [
@@ -1096,8 +1096,8 @@ export const serviceBlogPosts: ServicePost[] = [
     sections: [
       {
         paragraphs: [
-          "Use www.nguyensosteopathy.com/book to choose a service and time. Online booking opens from 5 November 2026, with Wednesday and Sunday unavailable for appointments.",
-          "Prefer to talk it through? Call 07882843513. No GP referral needed.",
+          `Use ${site.websiteUrl}/book to choose a service and time. Online booking opens from ${site.booking.opensFromLabel}, with Wednesday and Sunday unavailable for appointments.`,
+          `Prefer to talk it through? Call ${site.phone}. No GP referral needed.`,
         ],
       },
     ],

@@ -107,7 +107,7 @@ export default function OsteopathyPage() {
       "@type": "MedicalTherapy",
       name: "Osteopathy",
     },
-    specialty: "Osteopathic",
+    specialty: "https://schema.org/Musculoskeletal",
   };
 
   return (

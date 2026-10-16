@@ -233,6 +233,11 @@ select:focus-visible {
   transition: grid-template-rows 0.28s ease;
 }
 
+/* Prefer the hidden attribute over grid display when the panel is closed. */
+.faq-panel[hidden] {
+  display: none !important;
+}
+
 .faq-panel-open {
   grid-template-rows: 1fr;
 }

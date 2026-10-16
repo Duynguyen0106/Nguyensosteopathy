@@ -26,7 +26,7 @@ export function buildClinicJsonLd() {
       "Nguyen's Osteopath Woolwich",
     ],
     description:
-      "Drug-free osteopathic care in Woolwich with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332). Back pain, neck pain, focused shockwave, men’s health, sports rehab, and more — inside St James Pharmacy, SE18.",
+      `Drug-free osteopathic care in Woolwich with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. ${site.practitioner.regNo}). Back pain, neck pain, focused shockwave, men’s health, sports rehab, and more — inside St James Pharmacy, SE18.`,
     url: site.websiteUrl,
     image: [
       `${site.websiteUrl}/images/logo-lockup.webp`,
@@ -69,7 +69,7 @@ export function buildClinicJsonLd() {
       { "@type": "City", name: "Abbey Wood" },
       { "@type": "AdministrativeArea", name: "South East London" },
     ],
-    medicalSpecialty: "Osteopathic",
+    medicalSpecialty: "https://schema.org/Musculoskeletal",
     knowsLanguage: ["en-GB", "vi"],
     availableService: services.map((service) => ({
       "@type": "MedicalProcedure",

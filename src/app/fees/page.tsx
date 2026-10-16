@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
-import { pricing, site } from "@/lib/site";
+import { pricing, schemaOffers, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Osteopath Fees & Prices in Woolwich | Transparent Pricing",
@@ -47,11 +47,11 @@ export default function FeesPage() {
     name: `${site.name} fees`,
     url: `${site.websiteUrl}/fees`,
     provider: { "@id": `${site.websiteUrl}/#clinic` },
-    itemListElement: pricing
-      .filter((item) => !item.price.trimStart().startsWith("+"))
-      .map((item, index) => ({
+    itemListElement: schemaOffers.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
         "@type": "Offer",
-        position: index + 1,
         name: item.service,
         description: `${item.service} (${item.duration})`,
         price: item.price.replace(/[^0-9.]/g, ""),
@@ -60,7 +60,8 @@ export default function FeesPage() {
         availabilityStarts: site.booking.opensFromIso,
         validFrom: site.booking.opensFromIso,
         url: `${site.websiteUrl}/book`,
-      })),
+      },
+    })),
   };
 
   return (

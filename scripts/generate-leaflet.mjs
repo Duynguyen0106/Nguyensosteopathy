@@ -8,7 +8,7 @@
  *
  * Layout:
  * front = brand + problem/benefit hook + practitioner trust + conditions + book CTA
- * back  = fees + first visit + testimonials + contact
+ * back  = fees + first visit + Google reviews CTA + contact
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";

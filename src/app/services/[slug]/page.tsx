@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { ServiceIcon } from "@/components/ServiceIcon";
+import { getConditionsForService } from "@/lib/conditions";
 import {
   getServiceWithPage,
   relatedServices,
@@ -45,6 +46,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   const { service, page } = data;
   const related = relatedServices(page.relatedSlugs);
+  const relatedConditions = getConditionsForService(service.slug, 6);
   const moreServices = services
     .filter(
       (item) =>
@@ -240,6 +242,35 @@ export default async function ServiceDetailPage({ params }: Props) {
               {site.discount}
             </p>
           </div>
+
+          {relatedConditions.length > 0 ? (
+            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                Related conditions
+              </p>
+              <ul className="mt-4 space-y-3">
+                {relatedConditions.map((item) => (
+                  <li key={item.slug}>
+                    <Link
+                      href={`/conditions/${item.slug}`}
+                      className="group flex items-center justify-between gap-3 text-sm font-medium text-navy hover:text-teal"
+                    >
+                      <span>{item.shortTitle}</span>
+                      <span className="text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-teal">
+                        →
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/conditions"
+                className="mt-5 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+              >
+                View all conditions →
+              </Link>
+            </div>
+          ) : null}
 
           <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
             <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">

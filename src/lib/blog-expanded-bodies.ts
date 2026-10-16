@@ -28,7 +28,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around back pain often appear when the load of daily life outpaces recovery. For Woolwich residents dealing with recurring or new back pain, that often means commuting sits, work demands, and weekend DIY or sport spikes.",
           "Useful change starts with early assessment, sensible pacing, and graded return to activity. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [lower back pain treatment in Woolwich](/conditions/non-specific-low-back-pain) and [sciatica](/conditions/sciatica)."
+          "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [lumbar disc radiculopathy](/conditions/lumbar-disc-radiculopathy)."
         ]
       },
       {
@@ -84,7 +84,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "You do not need a GP referral to book osteopathy privately. Bring any letters or imaging you already have; they help context without delaying care. For people planning a first visit in Woolwich, that often means clarifying fees, arrival, and what happens in the first session.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -140,7 +140,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for sports injury rehab with an osteopath usually start by mapping aggravators — work, commute, sleep, and training. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [Achilles tendinopathy](/conditions/achilles-tendinopathy)."
+          "Related reading: [hamstring strain](/conditions/hamstring-strain) and [lateral ankle sprain](/conditions/lateral-ankle-sprain)."
         ]
       },
       {
@@ -252,7 +252,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "The 10% NHS and student discount applies with valid ID shown at the appointment. It does not change the clinical assessment — we still take a full history and examine carefully before recommending care. For people planning a first or follow-up visit in Woolwich, clear fees and arrival guidance matter as much as the discount itself.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -308,7 +308,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe tension headaches and neck pain, we look at tissue capacity versus the demands of the week. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [cervicogenic headaches](/conditions/cervicogenic-headache) and [neck pain treatment in Woolwich](/conditions/neck-pain)."
+          "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -364,7 +364,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for pregnancy osteopathy usually start by mapping aggravators — work, commute, sleep, and training. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [pelvic / SI joint pain](/conditions/si-joint-dysfunction) and [pregnancy-related back pain patterns](/conditions/non-specific-low-back-pain)."
+          "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
       },
       {
@@ -420,7 +420,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Osteopaths and physiotherapists both treat musculoskeletal problems, with overlapping skills and different training routes. Choice often comes down to the practitioner’s assessment style and your goals. For people comparing options in Woolwich, a clear first-visit plan matters more than the job title alone.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -476,7 +476,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat hip and knee pain as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [greater trochanteric pain](/conditions/greater-trochanteric-pain)."
         ]
       },
       {
@@ -588,7 +588,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Session numbers depend on how long symptoms have been present, what aggravates them, and your goals. Many people notice change within a few visits; we review progress rather than selling packages. For people planning care in Woolwich, honest timelines beat fixed “courses”.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -644,7 +644,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around sacroiliac joint pain often appear when the load of daily life outpaces recovery. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [pelvic / SI joint pain](/conditions/si-joint-dysfunction) and [pregnancy-related back pain patterns](/conditions/non-specific-low-back-pain)."
+          "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
       },
       {
@@ -700,7 +700,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Whiplash and neck pain after a road accident rarely has a single cause; capacity and load usually drift apart first. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [whiplash](/conditions/whiplash) and [cervicogenic headache](/conditions/cervicogenic-headache)."
         ]
       },
       {
@@ -756,7 +756,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Morning back stiffness rarely has a single cause; capacity and load usually drift apart first. For people who wake stiff and take 20–40 minutes to loosen, that often means overnight stillness, mattress/pillow setup, and first movements of the day.",
           "Useful change starts with a gentle morning sequence before commuting or lifting. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [lower back pain treatment in Woolwich](/conditions/non-specific-low-back-pain) and [facet-related back pain](/conditions/facet-syndrome)."
+          "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [lumbar disc radiculopathy](/conditions/lumbar-disc-radiculopathy)."
         ]
       },
       {
@@ -812,7 +812,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around text neck from smartphones often appear when the load of daily life outpaces recovery. For people who scroll and message for hours on phones and tablets, that often means sustained phone flexion and one-thumb typing.",
           "Useful change starts with eye-level phone holds, voice notes, and micro-breaks from the lock screen. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck pain treatment in Woolwich](/conditions/neck-pain) and [cervicogenic headaches](/conditions/cervicogenic-headache)."
+          "Related reading: [neck pain](/conditions/neck-pain) and [cervicogenic headache](/conditions/cervicogenic-headache)."
         ]
       },
       {
@@ -868,7 +868,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for TMJ and jaw pain usually start by mapping aggravators — work, commute, sleep, and training. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [cervicogenic headaches](/conditions/cervicogenic-headache) and [neck pain treatment in Woolwich](/conditions/neck-pain)."
+          "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -924,7 +924,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Migraine vs tension headache rarely has a single cause; capacity and load usually drift apart first. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [cervicogenic headaches](/conditions/cervicogenic-headache) and [neck pain treatment in Woolwich](/conditions/neck-pain)."
+          "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [whiplash](/conditions/whiplash)."
         ]
       },
       {
@@ -1036,7 +1036,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for wrist and hand pain from desk work usually start by mapping aggravators — work, commute, sleep, and training. For desk and hybrid workers around Woolwich, that often means laptop posture, mouse reach, and long sits on the Elizabeth line or DLR.",
           "Useful change starts with screen height, keyboard position, and movement snacks between calls. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck pain treatment in Woolwich](/conditions/neck-pain) and [upper-back postural strain](/conditions/thoracic-joint-dysfunction)."
+          "Related reading: [carpal tunnel](/conditions/carpal-tunnel) and [De Quervains](/conditions/dequervains)."
         ]
       },
       {
@@ -1092,7 +1092,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat osteoarthritis and stiff joints as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [knee osteoarthritis](/conditions/knee-oa)."
         ]
       },
       {
@@ -1260,7 +1260,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for patellar tendinopathy (jumper’s knee) usually start by mapping aggravators — work, commute, sleep, and training. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [patellar tendinopathy](/conditions/patellar-tendinopathy) and [patellofemoral pain](/conditions/patellofemoral-pain)."
         ]
       },
       {
@@ -1316,7 +1316,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for what to expect in a focused shockwave session usually start by mapping aggravators — work, commute, sleep, and training. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [tennis elbow](/conditions/tennis-elbow)."
         ]
       },
       {
@@ -1372,7 +1372,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Shockwave vs osteopathy rarely has a single cause; capacity and load usually drift apart first. For people with stubborn tendon or soft-tissue pain, that often means grip, impact, or repetitive strain that has not settled with rest alone.",
           "Useful change starts with load management plus progressive strengthening alongside any adjunct care. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [tennis elbow](/conditions/tennis-elbow) and [plantar fasciitis](/conditions/plantar-fasciitis)."
+          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [tennis elbow](/conditions/tennis-elbow)."
         ]
       },
       {
@@ -1540,7 +1540,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for how many LI-ESWT sessions for ED protocols? usually start by mapping aggravators — work, commute, sleep, and training. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [tennis elbow](/conditions/tennis-elbow)."
         ]
       },
       {
@@ -1652,7 +1652,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Medical acupuncture with your rarely has a single cause; capacity and load usually drift apart first. For patients considering hands-on adjuncts or soft-tissue care, that often means muscle guarding, desk tension, and post-training tightness.",
           "Useful change starts with matching technique intensity to irritability — not “the deeper the better”. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [lower back muscle tension](/conditions/non-specific-low-back-pain)."
+          "Related reading: [tennis elbow](/conditions/tennis-elbow) and [fibromyalgia](/conditions/fibromyalgia)."
         ]
       },
       {
@@ -1708,7 +1708,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for electroacupuncture for stubborn muscle pain usually start by mapping aggravators — work, commute, sleep, and training. For patients considering hands-on adjuncts or soft-tissue care, that often means muscle guarding, desk tension, and post-training tightness.",
           "Useful change starts with matching technique intensity to irritability — not “the deeper the better”. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [lower back muscle tension](/conditions/non-specific-low-back-pain)."
+          "Related reading: [tennis elbow](/conditions/tennis-elbow) and [fibromyalgia](/conditions/fibromyalgia)."
         ]
       },
       {
@@ -1764,7 +1764,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat acupuncture add-on vs standalone session as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [tennis elbow](/conditions/tennis-elbow) and [fibromyalgia](/conditions/fibromyalgia)."
         ]
       },
       {
@@ -1820,7 +1820,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe cupping therapy add-on, we look at tissue capacity versus the demands of the week. For patients considering hands-on adjuncts or soft-tissue care, that often means muscle guarding, desk tension, and post-training tightness.",
           "Useful change starts with matching technique intensity to irritability — not “the deeper the better”. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [lower back muscle tension](/conditions/non-specific-low-back-pain)."
+          "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [thoracic joint dysfunction](/conditions/thoracic-joint-dysfunction)."
         ]
       },
       {
@@ -1876,7 +1876,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for deep tissue massage usually start by mapping aggravators — work, commute, sleep, and training. For patients considering hands-on adjuncts or soft-tissue care, that often means muscle guarding, desk tension, and post-training tightness.",
           "Useful change starts with matching technique intensity to irritability — not “the deeper the better”. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [lower back muscle tension](/conditions/non-specific-low-back-pain)."
+          "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -1932,7 +1932,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe deep tissue massage vs osteopathy, we look at tissue capacity versus the demands of the week. For patients considering hands-on adjuncts or soft-tissue care, that often means muscle guarding, desk tension, and post-training tightness.",
           "Useful change starts with matching technique intensity to irritability — not “the deeper the better”. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [lower back muscle tension](/conditions/non-specific-low-back-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -1988,7 +1988,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe post-gym soreness and knots, we look at tissue capacity versus the demands of the week. For patients considering hands-on adjuncts or soft-tissue care, that often means muscle guarding, desk tension, and post-training tightness.",
           "Useful change starts with matching technique intensity to irritability — not “the deeper the better”. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [lower back muscle tension](/conditions/non-specific-low-back-pain)."
+          "Related reading: [subacromial pain](/conditions/subacromial-pain) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
       },
       {
@@ -2044,7 +2044,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat stress, shoulders, and deep tissue release as a pattern in how you move and recover, not just a label. For patients considering hands-on adjuncts or soft-tissue care, that often means muscle guarding, desk tension, and post-training tightness.",
           "Useful change starts with matching technique intensity to irritability — not “the deeper the better”. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [lower back muscle tension](/conditions/non-specific-low-back-pain)."
+          "Related reading: [subacromial pain](/conditions/subacromial-pain) and [frozen shoulder](/conditions/frozen-shoulder)."
         ]
       },
       {
@@ -2100,7 +2100,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe running injuries, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [patellofemoral pain](/conditions/patellofemoral-pain) and [ITB syndrome](/conditions/itb-syndrome)."
         ]
       },
       {
@@ -2156,7 +2156,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat gym shoulder injuries as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [subacromial pain](/conditions/subacromial-pain) and [frozen shoulder](/conditions/frozen-shoulder)."
         ]
       },
       {
@@ -2212,7 +2212,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for football muscle strains usually start by mapping aggravators — work, commute, sleep, and training. For people in physically demanding roles across SE London, that often means repeated lifts, twists, and hard-floor standing.",
           "Useful change starts with hip-hinge lifting, footwear, and recovery between shifts. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [lower back pain treatment in Woolwich](/conditions/non-specific-low-back-pain) and [sciatica](/conditions/sciatica)."
+          "Related reading: [hamstring strain](/conditions/hamstring-strain) and [lateral ankle sprain](/conditions/lateral-ankle-sprain)."
         ]
       },
       {
@@ -2268,7 +2268,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Return to sport after a sprain rarely has a single cause; capacity and load usually drift apart first. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [Achilles tendinopathy](/conditions/achilles-tendinopathy)."
+          "Related reading: [hamstring strain](/conditions/hamstring-strain) and [lateral ankle sprain](/conditions/lateral-ankle-sprain)."
         ]
       },
       {
@@ -2324,7 +2324,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe overuse injuries from gym and running, we look at tissue capacity versus the demands of the week. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [Achilles tendinopathy](/conditions/achilles-tendinopathy)."
+          "Related reading: [patellofemoral pain](/conditions/patellofemoral-pain) and [ITB syndrome](/conditions/itb-syndrome)."
         ]
       },
       {
@@ -2380,7 +2380,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe pelvic girdle pain in pregnancy, we look at tissue capacity versus the demands of the week. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [pelvic / SI joint pain](/conditions/si-joint-dysfunction) and [pregnancy-related back pain patterns](/conditions/non-specific-low-back-pain)."
+          "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
       },
       {
@@ -2436,7 +2436,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe rib pain in pregnancy, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
       },
       {
@@ -2548,7 +2548,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat is osteopathy safe in pregnancy? as a pattern in how you move and recover, not just a label. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [pelvic / SI joint pain](/conditions/si-joint-dysfunction) and [pregnancy-related back pain patterns](/conditions/non-specific-low-back-pain)."
+          "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
       },
       {
@@ -2604,7 +2604,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat what is cranial osteopathy? A as a pattern in how you move and recover, not just a label. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [cervicogenic headaches](/conditions/cervicogenic-headache) and [neck pain treatment in Woolwich](/conditions/neck-pain)."
+          "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -2660,7 +2660,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Cranial osteopathy for stress-held tension rarely has a single cause; capacity and load usually drift apart first. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [cervicogenic headaches](/conditions/cervicogenic-headache) and [neck pain treatment in Woolwich](/conditions/neck-pain)."
+          "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -2716,7 +2716,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around cranial vs structural osteopathy often appear when the load of daily life outpaces recovery. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [cervicogenic headaches](/conditions/cervicogenic-headache) and [neck pain treatment in Woolwich](/conditions/neck-pain)."
+          "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -2884,7 +2884,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe school backpacks and child posture, we look at tissue capacity versus the demands of the week. For parents seeking gentle musculoskeletal care for children in Woolwich, that often means growth, posture habits, backpacks, and preferred head or limb positions.",
           "Useful change starts with simple home positioning advice and when to seek assessment. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck comfort and posture](/conditions/neck-pain) and [growing musculoskeletal aches](/conditions/non-specific-low-back-pain)."
+          "Related reading: [scheuermanns](/conditions/scheuermanns) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
       },
       {
@@ -2940,7 +2940,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Infant osteopathy rarely has a single cause; capacity and load usually drift apart first. For parents seeking gentle musculoskeletal care for children in Woolwich, that often means growth, posture habits, backpacks, and preferred head or limb positions.",
           "Useful change starts with simple home positioning advice and when to seek assessment. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck comfort and posture](/conditions/neck-pain) and [growing musculoskeletal aches](/conditions/non-specific-low-back-pain)."
+          "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -2987,7 +2987,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, opening from 5 November 2026, and phone backup.",
+          "Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, current opening date, and phone backup.",
           "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
         ]
       },
@@ -2996,7 +2996,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around how to book an osteopath online often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -3052,7 +3052,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around osteopathy fees often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -3108,7 +3108,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Osteopath inside St James Pharmacy, Powis Street rarely has a single cause; capacity and load usually drift apart first. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -3164,7 +3164,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat what to wear to your osteopathy appointment as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -3216,11 +3216,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         ]
       },
       {
-        "heading": "What drives vietnamese osteopath?",
+        "heading": "Why language and culture matter in MSK care",
         "paragraphs": [
-          "When people describe vietnamese osteopath, we look at tissue capacity versus the demands of the week. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "Many Vietnamese patients delay MSK care because of language, cost uncertainty, or not knowing whether a GP referral is required. At Nguyen's we consult in Vietnamese or English, explain fees plainly, and make the first visit feel clear - not rushed or opaque.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [neck pain](/conditions/neck-pain) and [carpal tunnel](/conditions/carpal-tunnel)."
         ]
       },
       {
@@ -3276,7 +3276,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around osteopath near Plumstead and Abbey Wood often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -3332,7 +3332,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat parking and getting to our as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -3388,7 +3388,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around chronic pain and osteopathy often appear when the load of daily life outpaces recovery. For desk and hybrid workers around Woolwich, that often means laptop posture, mouse reach, and long sits on the Elizabeth line or DLR.",
           "Useful change starts with screen height, keyboard position, and movement snacks between calls. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck pain treatment in Woolwich](/conditions/neck-pain) and [upper-back postural strain](/conditions/thoracic-joint-dysfunction)."
+          "Related reading: [fibromyalgia](/conditions/fibromyalgia) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
       },
       {
@@ -3500,7 +3500,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe coccyx (tailbone) pain, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [coccydynia](/conditions/coccydynia) and [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction)."
         ]
       },
       {
@@ -3556,7 +3556,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around lifting and back pain for warehouse and trades workers often appear when the load of daily life outpaces recovery. For warehouse, delivery, and trades workers across SE18, that often means floor-to-waist lifts, awkward reaches, and long shifts on concrete.",
           "Useful change starts with team lifts, hip-hinge habit, and footwear that still has cushioning. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [lower back pain treatment in Woolwich](/conditions/non-specific-low-back-pain) and [sciatica](/conditions/sciatica)."
+          "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [lumbar disc radiculopathy](/conditions/lumbar-disc-radiculopathy)."
         ]
       },
       {
@@ -3612,7 +3612,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat rib pain and stiff breathing as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [costochondritis](/conditions/costochondritis) and [thoracic joint dysfunction](/conditions/thoracic-joint-dysfunction)."
         ]
       },
       {
@@ -3668,7 +3668,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat outer hip pain and bursitis as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [kneecap / anterior knee pain](/conditions/patellofemoral-pain)."
+          "Related reading: [greater trochanteric pain](/conditions/greater-trochanteric-pain) and [hip osteoarthritis](/conditions/hip-oa)."
         ]
       },
       {
@@ -3724,7 +3724,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "When people describe RSI wrist and forearm pain for office and creative workers, we look at tissue capacity versus the demands of the week. For office workers and creatives with grip-heavy mouse or tablet days, that often means sustained wrist extension, pinch grip, and forearm fatigue.",
           "Useful change starts with mouse height, shortcut use, and forearm support. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [wrist and hand pain such as carpal tunnel](/conditions/carpal-tunnel) and [tennis elbow](/conditions/tennis-elbow)."
+          "Related reading: [carpal tunnel](/conditions/carpal-tunnel) and [cubital tunnel](/conditions/cubital-tunnel)."
         ]
       },
       {
@@ -3836,7 +3836,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around shockwave therapy cost often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [common lower back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
+          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [tennis elbow](/conditions/tennis-elbow)."
         ]
       },
       {
@@ -3948,7 +3948,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Cycling lower back pain rarely has a single cause; capacity and load usually drift apart first. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [Achilles tendinopathy](/conditions/achilles-tendinopathy)."
+          "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [patellofemoral pain](/conditions/patellofemoral-pain)."
         ]
       },
       {
@@ -4004,7 +4004,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Clinic visits for yoga and Pilates injuries usually start by mapping aggravators — work, commute, sleep, and training. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [Achilles tendinopathy](/conditions/achilles-tendinopathy)."
+          "Related reading: [hamstring strain](/conditions/hamstring-strain) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
       },
       {
@@ -4060,7 +4060,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around deep tissue massage for desk workers often appear when the load of daily life outpaces recovery. For desk workers who want soft-tissue relief between osteopathy sessions, that often means upper trap guarding and forearm tightness from mouse and keyboard work.",
           "Useful change starts with matching massage intensity to how irritable you are that week. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [upper-back postural strain](/conditions/thoracic-joint-dysfunction)."
+          "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {
@@ -4116,7 +4116,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat cupping vs massage as a pattern in how you move and recover, not just a label. For patients considering hands-on adjuncts or soft-tissue care, that often means muscle guarding, desk tension, and post-training tightness.",
           "Useful change starts with matching technique intensity to irritability — not “the deeper the better”. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [neck and shoulder tightness](/conditions/neck-pain) and [lower back muscle tension](/conditions/non-specific-low-back-pain)."
+          "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [thoracic joint dysfunction](/conditions/thoracic-joint-dysfunction)."
         ]
       },
       {
@@ -4172,7 +4172,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "Symptoms around pregnancy sciatica and leg pain often appear when the load of daily life outpaces recovery. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [pelvic / SI joint pain](/conditions/si-joint-dysfunction) and [pregnancy-related back pain patterns](/conditions/non-specific-low-back-pain)."
+          "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
       },
       {
@@ -4284,7 +4284,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "paragraphs": [
           "We treat cranial osteopathy for headaches and held tension as a pattern in how you move and recover, not just a label. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
-          "Related reading: [cervicogenic headaches](/conditions/cervicogenic-headache) and [neck pain treatment in Woolwich](/conditions/neck-pain)."
+          "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
       },
       {

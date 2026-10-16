@@ -120,47 +120,54 @@ export function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div
-      ref={dialogRef}
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby={titleId}
-      className="fixed inset-x-0 bottom-0 z-[60] border-t border-navy/10 bg-white/95 p-4 shadow-[0_-12px_40px_rgba(11,44,69,0.12)] backdrop-blur-md md:p-5"
-    >
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <p
-          id={titleId}
-          className="max-w-3xl text-sm leading-relaxed text-slate-700"
-        >
-          We store your cookie choice in this browser (local storage). With your
-          permission, we also use analytics to improve the website. See our{" "}
-          <Link href="/cookies" className="prose-link">
-            Cookie Policy
-          </Link>
-          {" · "}
-          <Link href="/privacy" className="prose-link">
-            Privacy
-          </Link>
-          .
-        </p>
-        <div className="flex shrink-0 flex-wrap gap-2">
-          <button
-            ref={firstButtonRef}
-            type="button"
-            onClick={() => choose("declined")}
-            className="min-h-11 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+    <>
+      <div
+        className="fixed inset-0 z-[59] bg-navy/25"
+        aria-hidden
+        onClick={() => choose("declined")}
+      />
+      <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        className="fixed inset-x-0 bottom-0 z-[60] border-t border-navy/10 bg-white/95 p-4 shadow-[0_-12px_40px_rgba(11,44,69,0.12)] backdrop-blur-md md:p-5"
+      >
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <p
+            id={titleId}
+            className="max-w-3xl text-sm leading-relaxed text-slate-700"
           >
-            Essential only
-          </button>
-          <button
-            type="button"
-            onClick={() => choose("accepted")}
-            className="min-h-11 rounded-xl bg-teal px-4 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
-          >
-            Accept analytics
-          </button>
+            We store your cookie choice in this browser (local storage). With your
+            permission, we also use analytics to improve the website. See our{" "}
+            <Link href="/cookies" className="prose-link">
+              Cookie Policy
+            </Link>
+            {" · "}
+            <Link href="/privacy" className="prose-link">
+              Privacy
+            </Link>
+            . Escape or Essential only keeps analytics off.
+          </p>
+          <div className="flex shrink-0 flex-wrap gap-2">
+            <button
+              ref={firstButtonRef}
+              type="button"
+              onClick={() => choose("declined")}
+              className="min-h-11 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+            >
+              Essential only
+            </button>
+            <button
+              type="button"
+              onClick={() => choose("accepted")}
+              className="min-h-11 rounded-xl bg-teal px-4 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+            >
+              Accept analytics
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

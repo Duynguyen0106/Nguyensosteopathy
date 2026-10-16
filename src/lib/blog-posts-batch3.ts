@@ -2,7 +2,7 @@ import type { BlogCategory, BlogPost } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 const ctaBook =
-  "Book online at www.nguyensosteopathy.com/book or call 07882843513.";
+  `Book online at ${site.websiteUrl}/book or call ${site.phone}.`;
 const clinic =
   `${site.name} inside ${site.address.venue}, ${site.address.line1}, Woolwich SE18 6LQ`;
 
@@ -129,7 +129,7 @@ export const batch3BlogPosts: BatchPost[] = [
       {
         paragraphs: [
           `Patients from Plumstead, Abbey Wood, and Woolwich Common regularly visit ${clinic}. Bus and DLR links make Powis Street practical without travelling into central London.`,
-          "Ask at the St James Pharmacy counter on arrival and staff will direct you to the osteopathy room. Online booking opens from 5 November 2026.",
+          `Ask at the St James Pharmacy counter on arrival and staff will direct you to the osteopathy room. Online booking opens from ${site.booking.opensFromLabel}.`,
         ],
       },
     ],

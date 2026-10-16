@@ -9,6 +9,7 @@ export const siteMapGroups = [
       { href: "/nhs-discount", label: "NHS & student discount" },
       { href: "/new-patients", label: "New patient guide" },
       { href: "/aftercare", label: "Aftercare guide" },
+      { href: "/exercises", label: "Home exercises & rehab" },
       { href: "/resources", label: "Patient resources" },
       { href: "/find-us", label: "Find us & parking" },
       { href: "/contact", label: "Contact" },

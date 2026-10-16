@@ -4,12 +4,14 @@ import { notFound } from "next/navigation";
 import { AuthorBio } from "@/components/AuthorBio";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { ProgrammeCard } from "@/components/exercises/ProgrammeCard";
 import {
   getAllConditionSlugs,
   getCondition,
   getConditionFaqs,
   getRelatedConditions,
 } from "@/lib/conditions";
+import { getProgrammesForCondition } from "@/lib/exercises";
 import { getService, site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -43,6 +45,7 @@ export default async function ConditionPage({ params }: Props) {
 
   const service = getService(condition.relatedServiceSlug);
   const related = getRelatedConditions(condition, 4);
+  const relatedProgrammes = getProgrammesForCondition(condition.slug);
   const faqs = getConditionFaqs(condition);
   const expanded =
     Boolean(condition.causes) ||
@@ -239,6 +242,34 @@ export default async function ConditionPage({ params }: Props) {
           <FaqAccordion items={faqs} />
         </div>
       </section>
+
+      {relatedProgrammes.length > 0 ? (
+        <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="font-display text-3xl text-navy">
+              Home exercise programmes
+            </h2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+              Educational sequences that often pair with{" "}
+              {condition.shortTitle.toLowerCase()} care. They are general guides
+              — your clinic plan always comes first.
+            </p>
+            <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedProgrammes.map((programme) => (
+                <li key={programme.slug}>
+                  <ProgrammeCard programme={programme} />
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/exercises"
+              className="mt-8 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+            >
+              Browse the full exercise library →
+            </Link>
+          </div>
+        </section>
+      ) : null}
 
       {related.length > 0 ? (
         <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">

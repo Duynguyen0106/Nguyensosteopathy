@@ -143,6 +143,11 @@ export default async function ServiceDetailPage({ params }: Props) {
             <ButtonLink href="/fees" variant="secondary">
               Fees
             </ButtonLink>
+            {service.slug === "sports-injury-rehab" ? (
+              <ButtonLink href="/exercises" variant="secondary">
+                Home exercise library
+              </ButtonLink>
+            ) : null}
           </div>
         </div>
       </section>
@@ -242,6 +247,21 @@ export default async function ServiceDetailPage({ params }: Props) {
               {site.discount}
             </p>
           </div>
+
+          {service.slug === "sports-injury-rehab" ? (
+            <div className="rounded-xl border border-teal/25 bg-teal/5 p-6 shadow-sm">
+              <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                Between sessions
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-slate-700">
+                Browse illustrated rehab programmes for knee, ankle, shoulder and
+                more — then refine the plan in clinic around your sport.
+              </p>
+              <ButtonLink href="/exercises" className="mt-5 w-full">
+                Open exercise library
+              </ButtonLink>
+            </div>
+          ) : null}
 
           {relatedConditions.length > 0 ? (
             <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">

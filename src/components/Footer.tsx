@@ -7,6 +7,7 @@ const patientLinks = [
   { href: "/book", label: "Book online" },
   { href: "/new-patients", label: "New patients" },
   { href: "/aftercare", label: "Aftercare" },
+  { href: "/exercises", label: "Home exercises" },
   { href: "/resources", label: "Patient resources" },
   { href: "/fees", label: "Fees & prices" },
   { href: "/insurance", label: "Insurance & receipts" },

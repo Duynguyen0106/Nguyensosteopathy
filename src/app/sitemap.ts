@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { serviceAreas } from "@/lib/areas";
 import { getAllPosts } from "@/lib/blog";
 import { conditions } from "@/lib/conditions";
+import { exercises, programmes } from "@/lib/exercises";
 import { services, site } from "@/lib/site";
 
 const base = site.websiteUrl;
@@ -88,6 +89,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.75,
     },
+    {
+      url: `${base}/exercises`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    ...programmes.map((programme) => ({
+      url: `${base}/exercises/programmes/${programme.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...exercises.map((exercise) => ({
+      url: `${base}/exercises/${exercise.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
+    })),
     {
       url: `${base}/complaints`,
       lastModified: now,

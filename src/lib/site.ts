@@ -276,7 +276,12 @@ export const faqs = [
   {
     question: "What should I do after treatment?",
     answer:
-      "Keep moving gently, hydrate as usual, and follow any posture or exercise advice from your visit. Mild soreness for 24–48 hours can be normal. See our aftercare guide for more detail, and contact us if symptoms clearly worsen or you develop red-flag symptoms.",
+      "Keep moving gently, hydrate as usual, and follow any posture or exercise advice from your visit. Mild soreness for 24–48 hours can be normal. See our aftercare guide and the post-visit gentle-move programme in our exercise library for more detail, and contact us if symptoms clearly worsen or you develop red-flag symptoms.",
+  },
+  {
+    question: "Do you give home exercises?",
+    answer:
+      "Yes. Most plans include a short home programme matched to your presentation. You can also browse our public exercise library for illustrated drills and programmes (low back, desk neck, sciatica, knee, heel, shoulder, ankle). Those pages are educational guides — not a personal prescription — so clinic advice for your case always comes first.",
   },
   {
     question: "What is the cancellation policy?",

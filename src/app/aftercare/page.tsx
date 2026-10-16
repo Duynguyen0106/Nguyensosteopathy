@@ -86,8 +86,14 @@ export default function AftercarePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book a follow-up</ButtonLink>
-            <ButtonLink href="/new-patients" variant="secondary">
-              New patient guide
+            <ButtonLink
+              href="/exercises/programmes/post-visit-gentle-move"
+              variant="secondary"
+            >
+              Post-visit gentle moves
+            </ButtonLink>
+            <ButtonLink href="/exercises" variant="secondary">
+              Exercise library
             </ButtonLink>
             <ButtonLink href="/contact" variant="secondary">
               Contact the clinic
@@ -213,6 +219,9 @@ export default function AftercarePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/book">Book online</ButtonLink>
+              <ButtonLink href="/exercises" variant="secondary">
+                Home exercises
+              </ButtonLink>
               <ButtonLink href={site.whatsappUrl} variant="secondary">
                 WhatsApp
               </ButtonLink>

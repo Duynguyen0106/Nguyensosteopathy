@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Patient Resources | Guides, Fees & Practical Help",
   description:
-    "Patient resources for Nguyen's Osteopathic Clinic in Woolwich: new-patient guide, fees, insurance receipts, find us, FAQ, conditions index, blog, leaflet, and booking help.",
+    "Patient resources for Nguyen's Osteopathic Clinic in Woolwich: new-patient guide, aftercare, home exercises, fees, insurance receipts, find us, FAQ, conditions index, blog, leaflet, and booking help.",
   alternates: { canonical: "/resources" },
   keywords: [
     "osteopath Woolwich patient guide",
@@ -58,6 +58,12 @@ const groups = [
         href: "/aftercare",
         label: "Aftercare guide",
         detail: "Soreness, gentle movement, hydration, and follow-up pacing.",
+      },
+      {
+        href: "/exercises",
+        label: "Home exercises & rehab",
+        detail:
+          "Illustrated programmes for low back, desk neck, sciatica, knee, heel, shoulder and ankle.",
       },
       {
         href: "/book",

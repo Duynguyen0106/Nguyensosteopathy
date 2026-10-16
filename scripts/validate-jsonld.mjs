@@ -74,7 +74,11 @@ for (const raw of [
   if (types.includes("MedicalClinic") || types.includes("LocalBusiness")) {
     clinic = data;
   }
-  if (types.includes("Physician")) {
+  if (
+    types.includes("Person") ||
+    types.includes("Physician") ||
+    data["@id"]?.includes("#practitioner")
+  ) {
     practitioner = data;
   }
 }
@@ -142,8 +146,14 @@ for (const key of requiredClinicFields) {
 }
 
 if (!practitioner) {
-  fail("Practitioner Physician JSON-LD (GOsC) missing");
+  fail("Practitioner Person JSON-LD (GOsC) missing");
 } else {
+  const pTypes = Array.isArray(practitioner["@type"])
+    ? practitioner["@type"]
+    : [practitioner["@type"]];
+  if (!pTypes.includes("Person") && !pTypes.includes("Physician")) {
+    fail(`Unexpected practitioner @type: ${pTypes.join(", ")}`);
+  } else ok(`practitioner @type: ${pTypes.join(", ")}`);
   const reg = practitioner.identifier?.value;
   const member = practitioner.memberOf?.name;
   if (reg !== "12332") fail(`GOsC reg expected 12332, got ${reg}`);

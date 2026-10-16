@@ -4,7 +4,6 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
-import { FaqJsonLd } from "@/components/JsonLd";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { getLatestPostCards } from "@/lib/blog";
 import { getFeaturedConditions } from "@/lib/conditions";
@@ -37,7 +36,6 @@ export default function HomePage() {
 
   return (
     <>
-      <FaqJsonLd />
       <Hero />
 
       <section className="bg-navy text-white">
@@ -92,7 +90,7 @@ export default function HomePage() {
       </section>
 
       <section
-        id="testimonials"
+        id="reviews"
         className="scroll-mt-24 border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24"
       >
         <div className="mx-auto max-w-6xl">

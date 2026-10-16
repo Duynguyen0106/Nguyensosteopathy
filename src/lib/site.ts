@@ -122,7 +122,7 @@ export const bookingHoursSpecification = [
 ];
 
 export const highlights = [
-  "100% Drug-Free and Non-Invasive",
+  "Drug-free, hands-on osteopathic care",
   "No GP Referral Necessary",
   "Private One-to-One Consultation",
   "10% Student and NHS Discount",
@@ -148,12 +148,6 @@ export const visitSteps = [
       "Hands-on osteopathy and adjunct therapies are planned around your goals, then reviewed as you recover.",
   },
 ] as const;
-
-/**
- * Editorial sample quotes removed until real patient feedback exists.
- * Prefer GoogleReviewsFeed / site.googleReviewsUrl for public reviews.
- */
-export const testimonials = [] as const;
 
 export const faqs = [
   {
@@ -183,7 +177,7 @@ export const faqs = [
   },
   {
     question: "What are your opening hours?",
-    answer: `We are based inside St James Pharmacy: Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. ${site.booking.note}`,
+    answer: `The pharmacy building (access) is open Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Osteopathy appointments are separate: bookable Mon, Tue, Thu, Fri & Sat from ${site.booking.opensFromLabel} — closed Wednesday and Sunday. Live slots are always shown in the online booking calendar.`,
   },
   {
     question: "Can I speak Vietnamese at the clinic?",

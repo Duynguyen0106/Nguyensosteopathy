@@ -290,7 +290,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
         heading: "Who focused shockwave is for",
         paragraphs: [
           "It is commonly considered for stubborn plantar heel pain, Achilles tendinopathy, patellar tendon pain, tennis elbow, and selected calcific or chronic tendon presentations after clinical screening.",
-          "Explore related guides on [plantar fasciitis](/conditions/plantar-fasciitis), [tennis elbow](/conditions/tennis-elbow), and [Achilles tendinopathy](/conditions/achilles-tendinopathy) if those match your symptoms. Men's health protocols using LI-ESWT are discussed separately on our [men's health page](/mens-health).",
+          "Explore related guides on [plantar fasciitis](/conditions/plantar-fasciitis), [tennis elbow](/conditions/tennis-elbow), and [Achilles tendinopathy](/conditions/achilles-tendinopathy) if those match your symptoms. Men's health protocols using LI-ESWT are discussed separately on our [men's health page](/services/mens-health-ed).",
         ],
       },
       {
@@ -375,7 +375,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
         },
         paragraphs: [
           "Assessment covers foot, calf, and kinetic-chain loading from hip to toes. Hands-on treatment addresses soft tissue and joint contributors. Progressive loading rebuilds tolerance.",
-          "For persistent cases, [focused shockwave](/shockwave) may be appropriate after screening. It is not automatic for every heel — suitability and fees are discussed first. Related reading: [Achilles tendinopathy](/conditions/achilles-tendinopathy) when morning stiffness sits higher in the tendon.",
+          "For persistent cases, [focused shockwave](/services/focused-shockwave) may be appropriate after screening. It is not automatic for every heel — suitability and fees are discussed first. Related reading: [Achilles tendinopathy](/conditions/achilles-tendinopathy) when morning stiffness sits higher in the tendon.",
         ],
       },
       {
@@ -428,7 +428,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
           alt: "Elbow and forearm strain relevant to gripping and tendon overload",
         },
         paragraphs: [
-          "Hands-on care calms irritable soft tissue and related joints. Progressive loading rebuilds capacity. [Focused shockwave](/shockwave) is considered for persistent tendinopathy when appropriate — see also [medial elbow / golfer's elbow](/conditions/medial-epicondylalgia) if your pain is on the inner side.",
+          "Hands-on care calms irritable soft tissue and related joints. Progressive loading rebuilds capacity. [Focused shockwave](/services/focused-shockwave) is considered for persistent tendinopathy when appropriate — see also [medial elbow / golfer's elbow](/conditions/medial-epicondylalgia) if your pain is on the inner side.",
           "Fees for shockwave and osteopathy are listed on [/fees](/fees). We will not start a course without explaining expected session numbers and review points.",
         ],
       },
@@ -440,7 +440,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       },
     ],
     cta: "Curious whether shockwave fits stubborn tennis elbow? Read the shockwave guide, then book if gripping pain is limiting work.",
-    ctaHref: "/shockwave",
+    ctaHref: "/services/focused-shockwave",
     ctaLabel: "View shockwave therapy",
   },
 

@@ -62,6 +62,7 @@ export function FaqAccordion({
               id={panelId}
               role="region"
               aria-labelledby={buttonId}
+              hidden={!isOpen}
               className={`faq-panel ${isOpen ? "faq-panel-open" : ""}`}
             >
               <div className="faq-panel-inner">

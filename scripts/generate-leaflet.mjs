@@ -687,14 +687,14 @@ const html = `<!DOCTYPE html>
           </ol>
         </div>
         <div>
-          <p class="section-label">Patients say</p>
+          <p class="section-label">Find us online</p>
           <blockquote class="quote">
-            <p>“Austin found the cause quickly and I was moving freely again within a few sessions.”</p>
-            <cite>Sarah M. · Back pain</cite>
+            <p>Book online from 5 November 2026. Public Google reviews will appear as patients visit — scan the QR or search Nguyen’s Osteopathic Clinic, Woolwich.</p>
+            <cite>nguyensosteopathy.com · Google reviews</cite>
           </blockquote>
           <blockquote class="quote">
-            <p>“Shockwave for my stubborn heel pain made a real difference when other approaches had stalled.”</p>
-            <cite>James T. · Shockwave</cite>
+            <p>Inside St James Pharmacy &amp; Travel Clinic, 52 Powis Street, Woolwich SE18 6LQ. No GP referral needed.</p>
+            <cite>GOsC Reg. No. 12332</cite>
           </blockquote>
         </div>
       </div>

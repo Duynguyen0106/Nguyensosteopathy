@@ -39,25 +39,19 @@ const feeNotes = [
 ] as const;
 
 export default function FeesPage() {
+  /** Offer catalog only — clinic identity lives sitewide at /#clinic. */
   const offersLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    name: site.name,
+    "@type": "OfferCatalog",
+    "@id": `${site.websiteUrl}/fees#offers`,
+    name: `${site.name} fees`,
     url: `${site.websiteUrl}/fees`,
-    telephone: site.phoneE164,
-    priceRange: "£60–£110",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: site.address.line1,
-      addressLocality: "Woolwich",
-      addressRegion: "London",
-      postalCode: "SE18 6LQ",
-      addressCountry: "GB",
-    },
-    makesOffer: pricing
+    provider: { "@id": `${site.websiteUrl}/#clinic` },
+    itemListElement: pricing
       .filter((item) => !item.price.trimStart().startsWith("+"))
-      .map((item) => ({
+      .map((item, index) => ({
         "@type": "Offer",
+        position: index + 1,
         name: item.service,
         description: `${item.service} (${item.duration})`,
         price: item.price.replace(/[^0-9.]/g, ""),
@@ -65,6 +59,7 @@ export default function FeesPage() {
         availability: "https://schema.org/PreOrder",
         availabilityStarts: site.booking.opensFromIso,
         validFrom: site.booking.opensFromIso,
+        url: `${site.websiteUrl}/book`,
       })),
   };
 

@@ -106,12 +106,7 @@ export function buildPractitionerJsonLd() {
     image: `${site.websiteUrl}/images/austin-nguyen.webp`,
     telephone: site.phoneE164,
     email: site.email,
-    sameAs: [
-      site.linkedinUrl,
-      site.facebookUrl,
-      site.products.mskTutor.url,
-      site.products.treowClinic.url,
-    ],
+    sameAs: [site.linkedinUrl, site.facebookUrl],
     owns: [
       {
         "@type": "SoftwareApplication",
@@ -222,7 +217,7 @@ export function JsonLd() {
   );
 }
 
-/** FAQPage schema — use only on /faq (and optionally home), not sitewide. */
+/** FAQPage schema — use only on /faq, not homepage or sitewide. */
 export function FaqJsonLd() {
   const faqPage = {
     "@context": "https://schema.org",

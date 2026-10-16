@@ -204,7 +204,7 @@ const blogPostInputs: BlogPostInput[] = [
         },
         paragraphs: [
           "Your first visit is usually about 60 minutes. We take a focused history, screen for neurological and medical red flags, and examine how your lumbar spine, pelvis, hips, and mid-back share load. Findings are explained in plain English before any hands-on care starts.",
-          "Treatment is matched to irritability. An acute flare may need gentle mobilisation and soft-tissue work with short-term activity tweaks. A recurrent desk pattern often needs more emphasis on thoracic mobility, hip strength, and graded return to lifting or running. Related guides such as [sciatica in Woolwich](/blog/sciatica-woolwich-osteopath) and our [back and neck service page](/back-neck) sit beside this article if leg symptoms or neck drivers are part of your picture.",
+          "Treatment is matched to irritability. An acute flare may need gentle mobilisation and soft-tissue work with short-term activity tweaks. A recurrent desk pattern often needs more emphasis on thoracic mobility, hip strength, and graded return to lifting or running. Related guides such as [sciatica in Woolwich](/blog/sciatica-woolwich-osteopath) and our [back and neck service page](/services/back-neck-pain) sit beside this article if leg symptoms or neck drivers are part of your picture.",
           "We review progress honestly. Further sessions are recommended when they are clinically useful — not as a default package.",
         ],
       },

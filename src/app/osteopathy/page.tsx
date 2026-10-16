@@ -46,22 +46,22 @@ const pillars = [
 const suitable = [
   {
     title: "Back, neck & sciatica",
-    href: "/back-neck",
+    href: "/services/back-neck-pain",
     detail: "Spinal stiffness, desk strain, and nerve-type leg symptoms.",
   },
   {
     title: "Headaches & joints",
-    href: "/headaches",
+    href: "/services/headaches-joints",
     detail: "Tension headaches and stiff shoulders, hips, knees, or ankles.",
   },
   {
     title: "Sports & overuse",
-    href: "/sports",
+    href: "/services/sports-injury-rehab",
     detail: "Strains, sprains, and return-to-training plans.",
   },
   {
     title: "Pregnancy support",
-    href: "/pregnancy",
+    href: "/services/pregnancy-support",
     detail: "Gentle care for pelvic and postural change.",
   },
   {
@@ -71,7 +71,7 @@ const suitable = [
   },
   {
     title: "Focused shockwave",
-    href: "/shockwave",
+    href: "/services/focused-shockwave",
     detail: "Adjunct LI-ESWT for stubborn tendon problems when suitable.",
   },
 ] as const;

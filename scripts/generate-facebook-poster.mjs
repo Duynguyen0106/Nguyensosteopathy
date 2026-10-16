@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Facebook feed poster (1080×1080) — opening day 50% off offer (5 November).
+ * Facebook feed poster (1080×1080) — clinic opening announcement (5 November).
+ * No discount claim — opening-day % offers were removed sitewide.
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -27,7 +28,7 @@ const html = `<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8" />
-  <title>Opening day offer — Facebook poster</title>
+  <title>Opening day — Facebook poster</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -171,21 +172,22 @@ const html = `<!DOCTYPE html>
       <img src="${logoUri}" alt="Nguyen's Osteopathic Clinic" width="1250" height="870" />
     </div>
 
-    <p class="eyebrow">Official opening day</p>
-    <h1>Half-price care for every patient</h1>
+    <p class="eyebrow">Now booking</p>
+    <h1>Osteopathy opens in Woolwich</h1>
 
     <div class="offer">
-      <span class="pct">50%</span>
-      <span class="copy">OFF<br/>all service fees</span>
+      <span class="pct" style="font-size:72px;letter-spacing:0.04em">OPEN</span>
+      <span class="copy">From<br/>5 Nov 2026</span>
     </div>
 
     <div class="date-block">
-      <p class="label">One day only</p>
-      <p class="date">Wednesday 5 November 2026</p>
+      <p class="label">Online booking opens</p>
+      <p class="date">Thursday 5 November 2026</p>
     </div>
     <p class="details">
-      Celebrate our official opening at St James Pharmacy, Woolwich.
-      All clinic service fees reduced by 50% for every patient on this day.
+      Book with Austin Duy Nguyen, GOsC-registered osteopath, inside St James
+      Pharmacy on Powis Street. No GP referral needed. NHS &amp; student 10%
+      discount with valid ID.
     </p>
 
     <div class="foot">
@@ -223,8 +225,8 @@ await page.evaluate(async () => {
 });
 await page.waitForTimeout(500);
 
-const pngPath = join(outDir, "opening-day-50-off-facebook.png");
-const pdfPath = join(outDir, "opening-day-50-off-facebook.pdf");
+const pngPath = join(outDir, "opening-day-facebook.png");
+const pdfPath = join(outDir, "opening-day-facebook.pdf");
 
 await page.locator(".frame").screenshot({ path: pngPath, type: "png" });
 

@@ -69,7 +69,12 @@ export default async function ServiceDetailPage({ params }: Props) {
       url: `${site.websiteUrl}/services/${service.slug}`,
     },
     provider: { "@id": `${site.websiteUrl}/#clinic` },
-    mainEntity: { "@id": `${site.websiteUrl}/#clinic` },
+    mainEntity: {
+      "@type": "MedicalProcedure",
+      name: service.title,
+      description: service.summary,
+      url: `${site.websiteUrl}/services/${service.slug}`,
+    },
   };
 
   const faqLd = {

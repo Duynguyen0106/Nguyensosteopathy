@@ -9,7 +9,7 @@ export const site = {
     title: "GOsC-Registered Osteopath",
     regNo: "12332",
     credentials:
-      "Master of Osteopathy (BCOM); CertHE Medical Sciences with Distinction (University of Westminster); Dip.Acu; Shockwave CPD",
+      "Master of Osteopathy (BCOM); CertHE Medical Sciences with Distinction (University of Westminster); Dip.Acu; Shockwave CPD; NASM Personal Fitness Trainer",
     /** Official GOsC public Register search (verify by registration number). */
     goscRegisterUrl: "https://www.osteopathy.org.uk/register-search/",
     goscValidFrom: "16 October 2026",
@@ -80,6 +80,18 @@ export const site = {
         dateLabel: "10 October 2026",
         href: undefined as string | undefined,
         certificateHref: "/credentials/shockwave-therapy-clinical-practice.pdf",
+      },
+      {
+        id: "nasm-pft",
+        kind: "certificate" as const,
+        title: "Personal Fitness Trainer",
+        shortTitle: "NASM Personal Fitness Trainer",
+        issuer: "National Academy of Sports Medicine (NASM)",
+        detail:
+          "Certificate No. 1261726997 — exercise programming and trainer competency (NASM 1.9 | AFAA 1.5 CEUs).",
+        dateLabel: "7 March 2026",
+        href: undefined as string | undefined,
+        certificateHref: "/credentials/nasm-personal-fitness-trainer.pdf",
       },
     ],
   },

@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Austin Duy Nguyen | Vietnamese Osteopath in the UK",
   description:
-    "Meet Austin Duy Nguyen — GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (Westminster), Dip.Acu and shockwave-trained. Vietnamese-speaking care in Woolwich.",
+    "Meet Austin Duy Nguyen — GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (Westminster), Dip.Acu, shockwave CPD, and NASM Personal Fitness Trainer. Vietnamese-speaking care in Woolwich.",
   alternates: { canonical: "/about" },
   keywords: [
     "Vietnamese osteopath UK",
@@ -182,13 +182,17 @@ export default function AboutPage() {
                 Ongoing clinical CPD includes a{" "}
                 <strong className="font-semibold text-navy">
                   Diploma in Acupuncture (Western Approach)
-                </strong>{" "}
-                and certified{" "}
+                </strong>
+                , certified{" "}
                 <strong className="font-semibold text-navy">
                   shockwave therapy
                 </strong>{" "}
-                training — so adjunct care at the clinic stays within a clear,
-                evidence-informed scope.
+                training, and an{" "}
+                <strong className="font-semibold text-navy">
+                  NASM Personal Fitness Trainer
+                </strong>{" "}
+                certificate — so exercise advice and adjunct care stay within a
+                clear, evidence-informed scope.
               </p>
             </div>
             <div className="relative">
@@ -222,7 +226,9 @@ export default function AboutPage() {
                       ? "Degree"
                       : item.kind === "diploma"
                         ? "Diploma"
-                        : "CPD"}
+                        : item.kind === "certificate"
+                          ? "Certificate"
+                          : "CPD"}
                 </p>
                 <h3 className="mt-2 font-display text-xl text-navy">
                   {item.shortTitle}

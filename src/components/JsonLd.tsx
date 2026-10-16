@@ -101,7 +101,7 @@ export function buildPractitionerJsonLd() {
     name: site.practitioner.name,
     jobTitle: site.practitioner.title,
     description:
-      "GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (University of Westminster), Dip.Acu and shockwave-trained — practising at Nguyen's Osteopathic Clinic in Woolwich. Builder of MSK Tutor and Treow Clinic.",
+      "GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (University of Westminster), Dip.Acu, shockwave-trained, and NASM Personal Fitness Trainer — practising at Nguyen's Osteopathic Clinic in Woolwich. Builder of MSK Tutor and Treow Clinic.",
     url: `${site.websiteUrl}/about`,
     image: `${site.websiteUrl}/images/austin-nguyen.webp`,
     telephone: site.phoneE164,

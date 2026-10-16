@@ -4,12 +4,84 @@ export const site = {
   tagline: "Recover, Realign, and Restore Your Vitality",
   practitioner: {
     name: "Austin Duy Nguyen",
+    /** Legal name as on GOsC / university records (Ba Duy Nguyen). */
+    legalName: "Ba Duy Nguyen",
     title: "GOsC-Registered Osteopath",
     regNo: "12332",
-    credentials: "Master of Osteopathy, British College of Osteopathic Medicine",
+    credentials:
+      "Master of Osteopathy (BCOM); CertHE Medical Sciences with Distinction (University of Westminster); Dip.Acu; Shockwave CPD",
     /** Official GOsC public Register search (verify by registration number). */
     goscRegisterUrl: "https://www.osteopathy.org.uk/register-search/",
+    goscValidFrom: "16 October 2026",
+    goscValidTo: "15 October 2027",
     bio: "Austin is a GOsC-registered osteopath and founder of Nguyen's Osteopathic Clinic in Woolwich. He specialises in back pain, neck pain, and sports injuries, and speaks English and Vietnamese.",
+    /**
+     * Public qualifications — PDFs only where privacy-safe.
+     * University transcript is not published (contains personal data).
+     */
+    qualifications: [
+      {
+        id: "gosc",
+        kind: "licence" as const,
+        title: "General Osteopathic Council registration",
+        shortTitle: "GOsC-registered osteopath",
+        issuer: "General Osteopathic Council",
+        detail:
+          "Registration No. 12332 — permitted to practise as an osteopath in the UK.",
+        dateLabel: "Valid 16 Oct 2026 – 15 Oct 2027",
+        href: "https://www.osteopathy.org.uk/register-search/",
+        certificateHref: "/credentials/gosc-registration-12332.pdf",
+      },
+      {
+        id: "mOst",
+        kind: "degree" as const,
+        title: "Master of Osteopathy",
+        shortTitle: "M.Ost",
+        issuer: "British College of Osteopathic Medicine (BCOM)",
+        detail:
+          "UK osteopathy degree covering clinical assessment, hands-on treatment, and professional standards.",
+        dateLabel: "Graduated",
+        href: undefined as string | undefined,
+        certificateHref: undefined as string | undefined,
+      },
+      {
+        id: "certhe-medsci",
+        kind: "degree" as const,
+        title: "Certificate of Higher Education in Medical Sciences",
+        shortTitle: "CertHE Medical Sciences",
+        issuer: "University of Westminster",
+        detail:
+          "Awarded with Distinction — biomedical foundation including anatomy, physiology, and research methods.",
+        dateLabel: "21 June 2023",
+        href: undefined as string | undefined,
+        certificateHref: undefined as string | undefined,
+      },
+      {
+        id: "dipacu",
+        kind: "diploma" as const,
+        title:
+          "Diploma in Acupuncture — Clinical Acupuncture (Western Approach)",
+        shortTitle: "Dip.Acu",
+        issuer: "BSOMM Education / OMT Training",
+        detail:
+          "300-hour programme covering Western acupuncture, safe needling, infection control, red flags, and clinical application.",
+        dateLabel: "10 October 2026",
+        href: undefined as string | undefined,
+        certificateHref: "/credentials/diploma-acupuncture-western-approach.pdf",
+      },
+      {
+        id: "shockwave-cpd",
+        kind: "cpd" as const,
+        title: "Shockwave Therapy for Clinical Practice",
+        shortTitle: "Shockwave CPD",
+        issuer: "OMT Training",
+        detail:
+          "8-hour CPD in radial extracorporeal shockwave therapy (rESWT): indications, contraindications, safety, and MSK integration.",
+        dateLabel: "10 October 2026",
+        href: undefined as string | undefined,
+        certificateHref: "/credentials/shockwave-therapy-clinical-practice.pdf",
+      },
+    ],
   },
   phone: "07882 843513",
   /** E.164 for schema.org and reliable click-to-call. */

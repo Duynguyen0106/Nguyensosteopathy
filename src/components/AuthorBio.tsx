@@ -42,6 +42,10 @@ export function AuthorBio({ className = "" }: AuthorBioProps) {
           </a>
           )
         </p>
+        <p className="mt-1 text-xs leading-relaxed text-slate-500">
+          M.Ost (BCOM) · CertHE Medical Sciences (Distinction) · Dip.Acu ·
+          Shockwave CPD
+        </p>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">
           {site.practitioner.bio}
         </p>

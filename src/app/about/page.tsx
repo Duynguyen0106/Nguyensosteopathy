@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Austin Duy Nguyen | Vietnamese Osteopath in the UK",
   description:
-    "Meet Austin Duy Nguyen — Master of Osteopathy graduate of the British College of Osteopathic Medicine, GOsC-registered Vietnamese-speaking osteopath in Woolwich. His mission: spine and bone health for children in Vietnam, and clear MSK care for the Vietnamese community across Britain.",
+    "Meet Austin Duy Nguyen — GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (Westminster), Dip.Acu and shockwave-trained. Vietnamese-speaking care in Woolwich.",
   alternates: { canonical: "/about" },
   keywords: [
     "Vietnamese osteopath UK",
@@ -147,51 +147,120 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Education */}
+      {/* Education + qualifications */}
       <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-24">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
-          <div>
-            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-              Training
-            </p>
-            <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
-              British College of Osteopathic Medicine
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-slate-700">
-              I graduated from the{" "}
-              <strong className="font-semibold text-navy">
-                British College of Osteopathic Medicine (BCOM)
-              </strong>{" "}
-              in the UK with a{" "}
-              <strong className="font-semibold text-navy">
-                Master of Osteopathy
-              </strong>
-              . That education gave me the science, the clinical discipline, and
-              the professional standards to practise as a{" "}
-              {site.practitioner.title} (Reg. No. {site.practitioner.regNo}).
-            </p>
-            <p className="mt-5 text-lg leading-relaxed text-slate-700">
-              But the degree was never the destination. It was the bridge —
-              between what I could learn in Britain and what I owed to the
-              communities that shaped me in Vietnam and here in the UK.
-            </p>
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-start gap-12 md:grid-cols-2">
+            <div>
+              <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+                Training &amp; registration
+              </p>
+              <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
+                Qualifications you can verify
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-slate-700">
+                I graduated from the{" "}
+                <strong className="font-semibold text-navy">
+                  British College of Osteopathic Medicine (BCOM)
+                </strong>{" "}
+                with a{" "}
+                <strong className="font-semibold text-navy">
+                  Master of Osteopathy
+                </strong>
+                , and I am registered with the{" "}
+                <strong className="font-semibold text-navy">
+                  General Osteopathic Council
+                </strong>{" "}
+                (Reg. No. {site.practitioner.regNo}). Before osteopathy training
+                I completed a{" "}
+                <strong className="font-semibold text-navy">
+                  CertHE in Medical Sciences with Distinction
+                </strong>{" "}
+                at the University of Westminster.
+              </p>
+              <p className="mt-5 text-lg leading-relaxed text-slate-700">
+                Ongoing clinical CPD includes a{" "}
+                <strong className="font-semibold text-navy">
+                  Diploma in Acupuncture (Western Approach)
+                </strong>{" "}
+                and certified{" "}
+                <strong className="font-semibold text-navy">
+                  shockwave therapy
+                </strong>{" "}
+                training — so adjunct care at the clinic stays within a clear,
+                evidence-informed scope.
+              </p>
+            </div>
+            <div className="relative">
+              <div
+                className="absolute -inset-4 bg-gradient-to-br from-teal/15 to-navy/10 blur-2xl"
+                aria-hidden
+              />
+              <Image
+                src="/images/clinic-promo.webp"
+                alt="Austin Duy Nguyen in clinic"
+                width={900}
+                height={700}
+                loading="lazy"
+                decoding="async"
+                quality={70}
+                className="relative w-full object-cover shadow-[0_24px_60px_rgba(11,44,69,0.12)]"
+              />
+            </div>
           </div>
-          <div className="relative">
-            <div
-              className="absolute -inset-4 bg-gradient-to-br from-teal/15 to-navy/10 blur-2xl"
-              aria-hidden
-            />
-            <Image
-              src="/images/clinic-promo.webp"
-              alt="Austin Duy Nguyen in clinic"
-              width={900}
-              height={700}
-              loading="lazy"
-              decoding="async"
-              quality={70}
-              className="relative w-full object-cover shadow-[0_24px_60px_rgba(11,44,69,0.12)]"
-            />
-          </div>
+
+          <ul className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {site.practitioner.qualifications.map((item) => (
+              <li
+                key={item.id}
+                className="flex flex-col border border-slate-200 bg-white p-5 shadow-sm"
+              >
+                <p className="text-[11px] font-semibold tracking-[0.16em] text-teal uppercase">
+                  {item.kind === "licence"
+                    ? "Registration"
+                    : item.kind === "degree"
+                      ? "Degree"
+                      : item.kind === "diploma"
+                        ? "Diploma"
+                        : "CPD"}
+                </p>
+                <h3 className="mt-2 font-display text-xl text-navy">
+                  {item.shortTitle}
+                </h3>
+                <p className="mt-1 text-sm font-medium text-slate-800">
+                  {item.issuer}
+                </p>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
+                  {item.detail}
+                </p>
+                <p className="mt-3 text-xs font-semibold tracking-wide text-slate-500 uppercase">
+                  {item.dateLabel}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-teal hover:text-teal-dark"
+                    >
+                      Verify on GOsC →
+                    </a>
+                  ) : null}
+                  {item.certificateHref ? (
+                    <a
+                      href={item.certificateHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-teal hover:text-teal-dark"
+                    >
+                      View certificate (PDF)
+                    </a>
+                  ) : null}
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

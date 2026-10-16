@@ -101,7 +101,7 @@ export function buildPractitionerJsonLd() {
     name: site.practitioner.name,
     jobTitle: site.practitioner.title,
     description:
-      "GOsC-registered osteopath and Master of Osteopathy graduate of the British College of Osteopathic Medicine, practising at Nguyen's Osteopathic Clinic in Woolwich. Builder of MSK Tutor and Treow Clinic.",
+      "GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (University of Westminster), Dip.Acu and shockwave-trained — practising at Nguyen's Osteopathic Clinic in Woolwich. Builder of MSK Tutor and Treow Clinic.",
     url: `${site.websiteUrl}/about`,
     image: `${site.websiteUrl}/images/austin-nguyen.webp`,
     telephone: site.phoneE164,
@@ -131,28 +131,44 @@ export function buildPractitionerJsonLd() {
       value: site.practitioner.regNo,
       propertyID: "GOsC",
     },
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: "British College of Osteopathic Medicine",
-    },
-    hasCredential: [
+    alumniOf: [
       {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "Professional licence",
-        name: "General Osteopathic Council (GOsC) registration",
-        recognizedBy: {
-          "@type": "Organization",
-          name: "General Osteopathic Council",
-          url: "https://www.osteopathy.org.uk/",
-        },
-        identifier: site.practitioner.regNo,
+        "@type": "CollegeOrUniversity",
+        name: "British College of Osteopathic Medicine",
       },
       {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "degree",
-        name: site.practitioner.credentials,
+        "@type": "CollegeOrUniversity",
+        name: "University of Westminster",
       },
     ],
+    hasCredential: site.practitioner.qualifications.map((item) => ({
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory:
+        item.kind === "licence"
+          ? "Professional licence"
+          : item.kind === "degree"
+            ? "degree"
+            : item.kind === "diploma"
+              ? "diploma"
+              : "certificate",
+      name: item.title,
+      description: `${item.detail} (${item.dateLabel})`,
+      recognizedBy: {
+        "@type": "Organization",
+        name: item.issuer,
+        ...(item.id === "gosc"
+          ? { url: "https://www.osteopathy.org.uk/" }
+          : {}),
+      },
+      ...(item.id === "gosc"
+        ? { identifier: site.practitioner.regNo }
+        : {}),
+      ...(item.certificateHref
+        ? { url: `${site.websiteUrl}${item.certificateHref}` }
+        : item.href
+          ? { url: item.href }
+          : {}),
+    })),
     memberOf: {
       "@type": "Organization",
       name: "General Osteopathic Council",

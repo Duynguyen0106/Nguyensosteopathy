@@ -256,7 +256,7 @@ export const conditions: Condition[] = [
     summary:
       "Osteopathic assessment and care in Woolwich for cervical radiculopathy (cervical). Nerve-root irritation producing arm pain, paraesthesia with or without weakness. Most settle with conservative care over 6–12 weeks.",
     heroLine:
-      "Arm pain from a irritated neck nerve root needs a clear plan — assessment, calm hands-on care, and desk advice that fits SE18 life.",
+      "Arm pain from an irritated neck nerve root needs a clear plan — assessment, calm hands-on care, and desk advice that fits SE18 life.",
     symptoms: [
       "Arm pain, pins and needles, or numbness in a finger pattern",
       "Neck positions that light up the arm — looking up, or long desk flexion",

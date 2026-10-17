@@ -142,9 +142,13 @@ export default async function BlogPostPage({ params }: Props) {
         <p className="mt-1 text-sm text-slate-500">
           <span className="font-medium text-slate-600">Published</span>{" "}
           {formatDate(post.date)}
-          {" · "}
-          <span className="font-medium text-slate-600">Last updated</span>{" "}
-          {formatDate(updated)}
+          {updated !== post.date ? (
+            <>
+              {" · "}
+              <span className="font-medium text-slate-600">Last updated</span>{" "}
+              {formatDate(updated)}
+            </>
+          ) : null}
         </p>
         <p className="mt-6 text-lg leading-relaxed text-slate-600">
           {post.description}

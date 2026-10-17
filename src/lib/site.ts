@@ -596,3 +596,12 @@ export const pricing = [
 export const schemaOffers = pricing.filter(
   (item) => !item.price.trimStart().startsWith("+"),
 );
+
+/** Stable @id for clinic makesOffer entries — fees OfferCatalog references these. */
+export function schemaOfferId(serviceName: string) {
+  const slug = serviceName
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  return `${site.websiteUrl}/#offer-${slug}`;
+}

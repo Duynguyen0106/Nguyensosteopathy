@@ -82,12 +82,13 @@ function withExpansion(post: BlogPostInput): BlogPostInput {
   };
 }
 
-/** Estimate reading time from body copy at ~200 wpm (min 2, max 20). */
-function readingMinutesFromSections(
-  sections: BlogPostInput["sections"],
-): number {
-  const chunks: string[] = [];
-  for (const section of sections) {
+/**
+ * Estimate reading time from title, description, and body copy at ~200 wpm.
+ * Uses ceil so ~400+ word articles do not floor to a dishonest 2-minute label.
+ */
+function readingMinutesFromPost(post: BlogPostInput): number {
+  const chunks: string[] = [post.title, post.description];
+  for (const section of post.sections) {
     if (section.heading) chunks.push(section.heading);
     chunks.push(...section.paragraphs);
     if (section.bullets) chunks.push(...section.bullets);
@@ -96,7 +97,7 @@ function readingMinutesFromSections(
     .join(" ")
     .split(/\s+/)
     .filter(Boolean).length;
-  return Math.min(20, Math.max(2, Math.round(words / 200)));
+  return Math.min(20, Math.max(2, Math.ceil(words / 200)));
 }
 
 function withImage(post: BlogPostInput): BlogPost {
@@ -106,7 +107,7 @@ function withImage(post: BlogPostInput): BlogPost {
   }
   return {
     ...post,
-    readingMinutes: readingMinutesFromSections(post.sections),
+    readingMinutes: readingMinutesFromPost(post),
     image,
   };
 }

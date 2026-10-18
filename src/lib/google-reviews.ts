@@ -49,18 +49,34 @@ function apiKey() {
   return process.env.GOOGLE_PLACES_API_KEY?.trim() || "";
 }
 
-/** Decode common HTML entities Google sometimes returns in review text. */
+/**
+ * Decode HTML entities in Google review text.
+ * Ampersand entities first so double-encoded forms like `&amp;quot;` become `"`.
+ * Multi-pass until stable for nested encoding.
+ */
 function decodeHtmlEntities(value: string) {
-  return value
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&apos;/g, "'")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&#(\d+);/g, (_, code) =>
-      String.fromCharCode(Number.parseInt(code, 10)),
-    );
+  let previous = "";
+  let current = value;
+  for (let i = 0; i < 3 && current !== previous; i += 1) {
+    previous = current;
+    current = current
+      .replace(/&amp;/g, "&")
+      .replace(/&quot;/g, '"')
+      .replace(/&#0*34;/g, '"')
+      .replace(/&#x0*22;/gi, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&#0*39;/g, "'")
+      .replace(/&apos;/g, "'")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&#(\d+);/g, (_, code) =>
+        String.fromCharCode(Number.parseInt(code, 10)),
+      )
+      .replace(/&#x([0-9a-f]+);/gi, (_, code) =>
+        String.fromCharCode(Number.parseInt(code, 16)),
+      );
+  }
+  return current;
 }
 
 /** Public Place ID for Nguyen's Osteopathic Clinic (St James Pharmacy, Woolwich). */

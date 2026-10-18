@@ -30,41 +30,48 @@ export default function BookPage() {
               Book your appointment
             </h1>
             <p className="mt-3 text-base leading-relaxed text-slate-600 md:text-lg">
-              Choose a time that works for you. Prefer to speak with us? Call{" "}
-              <a
-                href={site.phoneHref}
-                className="font-medium text-teal hover:text-teal-dark"
-              >
-                {site.phone}
-              </a>{" "}
-              or email{" "}
-              <a
-                href={site.emailHref}
-                className="font-medium text-teal hover:text-teal-dark"
-              >
-                {site.email}
-              </a>
-              .
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-slate-500">
-              {site.booking.shortNote} Live availability is always shown in the
-              calendar below.
+              Reserve a slot that works for you. Prefer to speak first? Call or
+              WhatsApp — we will help you choose the right appointment type.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a
-              href={site.bookingExternalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-navy shadow-sm transition-all duration-200 hover:border-teal hover:text-teal sm:inline-flex"
-            >
-              Open full booking page
-            </a>
             <ButtonLink href="/services" variant="secondary">
               Browse services
             </ButtonLink>
           </div>
         </div>
+
+        <div className="mt-6 rounded-xl border border-teal/30 bg-teal/5 px-5 py-5 md:px-6">
+          <p className="text-sm font-semibold tracking-wide text-teal-dark uppercase">
+            Accepting bookings from {site.booking.opensFromLabel}
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
+            {site.booking.shortNote} Live availability is always shown in the
+            calendar below — reserve now for opening week.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <ButtonLink href={site.phoneHref} variant="navy">
+              Call {site.phone}
+            </ButtonLink>
+            <ButtonLink
+              href={site.whatsappUrl}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </ButtonLink>
+            <ButtonLink
+              href={site.bookingExternalUrl}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open full calendar
+            </ButtonLink>
+          </div>
+        </div>
+
         <p className="mt-5 text-sm text-slate-600">
           Before you book:{" "}
           <Link href="/new-patients" className="font-semibold text-teal hover:text-teal-dark">

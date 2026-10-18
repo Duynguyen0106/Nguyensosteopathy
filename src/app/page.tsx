@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { Hero } from "@/components/Hero";
+import {
+  HomeReviewsTeaser,
+  HomeReviewsTeaserFallback,
+} from "@/components/HomeReviewsTeaser";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { getLatestPostCards } from "@/lib/blog";
 import { getFeaturedConditions } from "@/lib/conditions";
@@ -37,6 +42,29 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between md:px-8">
+          <div className="flex flex-wrap gap-2">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy">
+              <span className="text-teal" aria-hidden>
+                ✓
+              </span>
+              GOsC Reg. No. {site.practitioner.regNo}
+            </span>
+            <span className="hidden text-slate-300 sm:inline" aria-hidden>
+              ·
+            </span>
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy">
+              <span className="text-teal" aria-hidden>
+                ✓
+              </span>
+              10% NHS &amp; Student Discount
+            </span>
+          </div>
+          <p className="text-sm text-slate-600">{site.booking.shortNote}</p>
+        </div>
+      </section>
 
       <section className="bg-navy text-white">
         <div className="mx-auto grid max-w-6xl gap-3 px-5 py-5 sm:grid-cols-2 md:px-8 lg:grid-cols-4">
@@ -99,38 +127,18 @@ export default function HomePage() {
               Reviews
             </p>
             <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
-              Google reviews
+              What patients say on Google
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
-              Public feedback will appear on our Google listing as patients
-              visit after we open on {site.booking.opensFromLabel}. Until then,
-              you can follow the clinic page or leave a review after your
-              appointment.
+              Real feedback from our Google listing — and a warm invitation to
+              leave your own review after your visit from{" "}
+              {site.booking.opensFromLabel}.
             </p>
           </div>
 
-          <div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-2xl bg-navy px-5 py-6 text-white md:flex-row md:items-center md:px-8">
-            <div>
-              <p className="font-display text-2xl">Find us on Google</p>
-              <p className="mt-1 text-sm text-white/75">
-                Read public ratings, or share your visit to help neighbours find
-                care in Woolwich.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-3">
-              <ButtonLink
-                href={site.googleReviewsUrl}
-                variant="secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                See Google reviews
-              </ButtonLink>
-              <ButtonLink href="/reviews" variant="secondary">
-                Reviews page
-              </ButtonLink>
-            </div>
-          </div>
+          <Suspense fallback={<HomeReviewsTeaserFallback />}>
+            <HomeReviewsTeaser />
+          </Suspense>
         </div>
       </section>
 

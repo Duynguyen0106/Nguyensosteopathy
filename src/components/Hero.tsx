@@ -30,26 +30,9 @@ export function Hero() {
           </div>
 
           <p className="mt-6 max-w-lg text-base leading-relaxed text-ink/80 sm:text-lg md:text-[1.15rem]">
-            Expert osteopathy for drug free pain relief, back pain treatment,
-            neck pain treatment, and shockwave therapy. Care with Austin Duy
-            Nguyen, GOsC-registered osteopath, inside St James Pharmacy on Powis
-            Street.
+            Hands-on osteopathy and shockwave therapy with Austin Duy Nguyen,
+            GOsC-registered osteopath, inside St James Pharmacy on Powis Street.
           </p>
-
-          <div className="mt-6 flex flex-wrap gap-2">
-            <span className="inline-flex max-w-full items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-sm sm:text-sm">
-              <span className="text-teal" aria-hidden>
-                ✓
-              </span>
-              GOsC Reg. No. {site.practitioner.regNo}
-            </span>
-            <span className="inline-flex max-w-full items-center gap-2 rounded-full border border-teal/25 bg-teal/10 px-3 py-1.5 text-xs font-semibold text-teal-dark shadow-sm sm:text-sm">
-              <span className="text-teal" aria-hidden>
-                ✓
-              </span>
-              10% NHS & Student Discount
-            </span>
-          </div>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <ButtonLink href="/book" className="w-full sm:w-auto">
@@ -63,9 +46,6 @@ export function Hero() {
               Call {site.phone}
             </ButtonLink>
           </div>
-          <p className="mt-4 max-w-lg text-sm leading-relaxed text-slate-600">
-            {site.booking.shortNote}
-          </p>
         </div>
 
         <div className="relative mx-auto w-full max-w-md overflow-hidden lg:max-w-none">

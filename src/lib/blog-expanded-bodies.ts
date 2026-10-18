@@ -89,7 +89,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -109,18 +109,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on practical booking and visit prep so the first hour is useful. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -144,7 +144,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on graded return to load, footwear checks, and session spacing. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on graded return to load, footwear checks, and session spacing. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -164,18 +164,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on graded return to load, footwear checks, and session spacing. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on graded return to load, footwear checks, and session spacing. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -199,7 +199,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -219,18 +219,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on clear screening, realistic session planning, and privacy at every step. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -254,7 +254,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -274,18 +274,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on practical booking and visit prep so the first hour is useful. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -309,7 +309,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, jaw relaxation, and short neck resets. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on screen height, jaw relaxation, and short neck resets. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -329,18 +329,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, jaw relaxation, and short neck resets. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on screen height, jaw relaxation, and short neck resets. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -364,7 +364,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on side-lying support, pacing around feeds, and safe mobility. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on side-lying support, pacing around feeds, and safe mobility. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -384,18 +384,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on side-lying support, pacing around feeds, and safe mobility. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering side-lying support, pacing around feeds, and safe mobility. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -419,7 +419,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -439,18 +439,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on practical booking and visit prep so the first hour is useful. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -529,7 +529,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on small changes to how you sit, stand, and recover. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on small changes to how you sit, stand, and recover. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -549,18 +549,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people in Woolwich and SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on small changes to how you sit, stand, and recover. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on small changes to how you sit, stand, and recover. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -584,7 +584,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -604,18 +604,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on practical booking and visit prep so the first hour is useful. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -639,7 +639,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on side-lying support, pacing around feeds, and safe mobility. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on side-lying support, pacing around feeds, and safe mobility. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -659,18 +659,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on side-lying support, pacing around feeds, and safe mobility. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on side-lying support, pacing around feeds, and safe mobility. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -694,7 +694,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -714,18 +714,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on activity pacing and joint-friendly movement rather than forced end-range stretching. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -749,7 +749,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on a gentle morning sequence before commuting or lifting. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on a gentle morning sequence before commuting or lifting. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -769,18 +769,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people who wake stiff and take 20–40 minutes to loosen covers joint mobility, soft-tissue tone, and how neighbouring regions share load under overnight stillness, mattress/pillow setup, and first movements of the day. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on a gentle morning sequence before commuting or lifting. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on a gentle morning sequence before commuting or lifting. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -804,7 +804,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on eye-level phone holds, voice notes, and micro-breaks from the lock screen. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on eye-level phone holds, voice notes, and micro-breaks from the lock screen. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -824,18 +824,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people who scroll and message for hours on phones and tablets covers joint mobility, soft-tissue tone, and how neighbouring regions share load under sustained phone flexion and one-thumb typing. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on eye-level phone holds, voice notes, and micro-breaks from the lock screen. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering eye-level phone holds, voice notes, and micro-breaks from the lock screen. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -859,7 +859,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, jaw relaxation, and short neck resets. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on screen height, jaw relaxation, and short neck resets. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -879,18 +879,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, jaw relaxation, and short neck resets. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on screen height, jaw relaxation, and short neck resets. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -969,7 +969,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -989,18 +989,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on clear screening, realistic session planning, and privacy at every step. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1024,7 +1024,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, keyboard position, and movement snacks between calls. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on screen height, keyboard position, and movement snacks between calls. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1044,18 +1044,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for desk and hybrid workers around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under laptop posture, mouse reach, and long sits on the Elizabeth line or DLR. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, keyboard position, and movement snacks between calls. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on screen height, keyboard position, and movement snacks between calls. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1079,7 +1079,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1099,18 +1099,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on activity pacing and joint-friendly movement rather than forced end-range stretching. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1134,7 +1134,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1154,18 +1154,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on clear screening, realistic session planning, and privacy at every step. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1189,7 +1189,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1209,18 +1209,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on clear screening, realistic session planning, and privacy at every step. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1244,7 +1244,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1264,18 +1264,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering activity pacing and joint-friendly movement rather than forced end-range stretching. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1299,7 +1299,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1319,18 +1319,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on practical booking and visit prep so the first hour is useful. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1409,7 +1409,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1429,18 +1429,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on clear screening, realistic session planning, and privacy at every step. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1464,7 +1464,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1484,18 +1484,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on clear screening, realistic session planning, and privacy at every step. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1519,7 +1519,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1539,18 +1539,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on practical booking and visit prep so the first hour is useful. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1574,7 +1574,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1594,18 +1594,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on clear screening, realistic session planning, and privacy at every step. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1629,7 +1629,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on matching technique intensity to irritability — not “the deeper the better”. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on matching technique intensity to irritability — not “the deeper the better”. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1649,18 +1649,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for patients considering hands-on adjuncts or soft-tissue care covers joint mobility, soft-tissue tone, and how neighbouring regions share load under muscle guarding, desk tension, and post-training tightness. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on matching technique intensity to irritability — not “the deeper the better”. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on matching technique intensity to irritability — not “the deeper the better”. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1684,7 +1684,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on matching technique intensity to irritability — not “the deeper the better”. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on matching technique intensity to irritability — not “the deeper the better”. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1704,18 +1704,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for patients considering hands-on adjuncts or soft-tissue care covers joint mobility, soft-tissue tone, and how neighbouring regions share load under muscle guarding, desk tension, and post-training tightness. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on matching technique intensity to irritability — not “the deeper the better”. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering matching technique intensity to irritability — not “the deeper the better”. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1739,7 +1739,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1759,18 +1759,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on practical booking and visit prep so the first hour is useful. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1849,7 +1849,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on matching technique intensity to irritability — not “the deeper the better”. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on matching technique intensity to irritability — not “the deeper the better”. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1869,18 +1869,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for patients considering hands-on adjuncts or soft-tissue care covers joint mobility, soft-tissue tone, and how neighbouring regions share load under muscle guarding, desk tension, and post-training tightness. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on matching technique intensity to irritability — not “the deeper the better”. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on matching technique intensity to irritability — not “the deeper the better”. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1904,7 +1904,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on matching technique intensity to irritability — not “the deeper the better”. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on matching technique intensity to irritability — not “the deeper the better”. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1924,18 +1924,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for patients considering hands-on adjuncts or soft-tissue care covers joint mobility, soft-tissue tone, and how neighbouring regions share load under muscle guarding, desk tension, and post-training tightness. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on matching technique intensity to irritability — not “the deeper the better”. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on matching technique intensity to irritability — not “the deeper the better”. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -1959,7 +1959,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on matching technique intensity to irritability — not “the deeper the better”. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on matching technique intensity to irritability — not “the deeper the better”. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1979,18 +1979,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for patients considering hands-on adjuncts or soft-tissue care covers joint mobility, soft-tissue tone, and how neighbouring regions share load under muscle guarding, desk tension, and post-training tightness. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on matching technique intensity to irritability — not “the deeper the better”. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on matching technique intensity to irritability — not “the deeper the better”. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2014,7 +2014,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on matching technique intensity to irritability — not “the deeper the better”. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on matching technique intensity to irritability — not “the deeper the better”. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2034,18 +2034,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for patients considering hands-on adjuncts or soft-tissue care covers joint mobility, soft-tissue tone, and how neighbouring regions share load under muscle guarding, desk tension, and post-training tightness. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on matching technique intensity to irritability — not “the deeper the better”. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on matching technique intensity to irritability — not “the deeper the better”. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2069,7 +2069,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2089,18 +2089,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on activity pacing and joint-friendly movement rather than forced end-range stretching. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2124,7 +2124,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2144,18 +2144,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering activity pacing and joint-friendly movement rather than forced end-range stretching. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2179,7 +2179,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on hip-hinge lifting, footwear, and recovery between shifts. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on hip-hinge lifting, footwear, and recovery between shifts. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2199,18 +2199,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people in physically demanding roles across SE London covers joint mobility, soft-tissue tone, and how neighbouring regions share load under repeated lifts, twists, and hard-floor standing. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on hip-hinge lifting, footwear, and recovery between shifts. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on hip-hinge lifting, footwear, and recovery between shifts. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2289,7 +2289,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on graded return to load, footwear checks, and session spacing. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on graded return to load, footwear checks, and session spacing. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2309,18 +2309,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on graded return to load, footwear checks, and session spacing. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on graded return to load, footwear checks, and session spacing. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2344,7 +2344,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on side-lying support, pacing around feeds, and safe mobility. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on side-lying support, pacing around feeds, and safe mobility. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2364,18 +2364,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on side-lying support, pacing around feeds, and safe mobility. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on side-lying support, pacing around feeds, and safe mobility. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2399,7 +2399,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2419,18 +2419,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on activity pacing and joint-friendly movement rather than forced end-range stretching. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2454,7 +2454,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2474,18 +2474,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on clear screening, realistic session planning, and privacy at every step. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2509,7 +2509,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on side-lying support, pacing around feeds, and safe mobility. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on side-lying support, pacing around feeds, and safe mobility. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2529,18 +2529,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on side-lying support, pacing around feeds, and safe mobility. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on side-lying support, pacing around feeds, and safe mobility. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2564,7 +2564,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, jaw relaxation, and short neck resets. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on screen height, jaw relaxation, and short neck resets. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2584,18 +2584,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, jaw relaxation, and short neck resets. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering screen height, jaw relaxation, and short neck resets. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2619,7 +2619,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, jaw relaxation, and short neck resets. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on screen height, jaw relaxation, and short neck resets. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2639,18 +2639,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, jaw relaxation, and short neck resets. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on screen height, jaw relaxation, and short neck resets. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2729,7 +2729,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2749,18 +2749,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on clear screening, realistic session planning, and privacy at every step. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2784,7 +2784,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2804,18 +2804,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on clear screening, realistic session planning, and privacy at every step. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2839,7 +2839,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on simple home positioning advice and when to seek assessment. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on simple home positioning advice and when to seek assessment. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2859,18 +2859,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for parents seeking gentle musculoskeletal care for children in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under growth, posture habits, backpacks, and preferred head or limb positions. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on simple home positioning advice and when to seek assessment. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on simple home positioning advice and when to seek assessment. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2894,7 +2894,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on simple home positioning advice and when to seek assessment. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on simple home positioning advice and when to seek assessment. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2914,18 +2914,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for parents seeking gentle musculoskeletal care for children in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under growth, posture habits, backpacks, and preferred head or limb positions. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on simple home positioning advice and when to seek assessment. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on simple home positioning advice and when to seek assessment. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -2949,7 +2949,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2969,18 +2969,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on practical booking and visit prep so the first hour is useful. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3004,7 +3004,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3024,18 +3024,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering practical booking and visit prep so the first hour is useful. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3059,7 +3059,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3079,18 +3079,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on practical booking and visit prep so the first hour is useful. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3169,7 +3169,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3189,18 +3189,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on practical booking and visit prep so the first hour is useful. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3224,7 +3224,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3244,18 +3244,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on practical booking and visit prep so the first hour is useful. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3279,7 +3279,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3299,18 +3299,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on practical booking and visit prep so the first hour is useful. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3334,7 +3334,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, keyboard position, and movement snacks between calls. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on screen height, keyboard position, and movement snacks between calls. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3354,18 +3354,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for desk and hybrid workers around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under laptop posture, mouse reach, and long sits on the Elizabeth line or DLR. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, keyboard position, and movement snacks between calls. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on screen height, keyboard position, and movement snacks between calls. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3389,7 +3389,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on small changes to how you sit, stand, and recover. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on small changes to how you sit, stand, and recover. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3409,18 +3409,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people in Woolwich and SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on small changes to how you sit, stand, and recover. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on small changes to how you sit, stand, and recover. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3444,7 +3444,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3464,18 +3464,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering activity pacing and joint-friendly movement rather than forced end-range stretching. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3499,7 +3499,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on team lifts, hip-hinge habit, and footwear that still has cushioning. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on team lifts, hip-hinge habit, and footwear that still has cushioning. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3519,18 +3519,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for warehouse, delivery, and trades workers across SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under floor-to-waist lifts, awkward reaches, and long shifts on concrete. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on team lifts, hip-hinge habit, and footwear that still has cushioning. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on team lifts, hip-hinge habit, and footwear that still has cushioning. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3609,7 +3609,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3629,18 +3629,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on activity pacing and joint-friendly movement rather than forced end-range stretching. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3664,7 +3664,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on mouse height, shortcut use, and forearm support. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on mouse height, shortcut use, and forearm support. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3684,18 +3684,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for office workers and creatives with grip-heavy mouse or tablet days covers joint mobility, soft-tissue tone, and how neighbouring regions share load under sustained wrist extension, pinch grip, and forearm fatigue. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on mouse height, shortcut use, and forearm support. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on mouse height, shortcut use, and forearm support. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3719,7 +3719,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3739,18 +3739,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on clear screening, realistic session planning, and privacy at every step. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3774,7 +3774,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on practical booking and visit prep so the first hour is useful. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3794,18 +3794,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on practical booking and visit prep so the first hour is useful. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3829,7 +3829,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Useful habits stick when they fit the commute, shift, or school run you already have.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3849,18 +3849,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Osteopathy here blends assessment-led hands-on care with simple guidance on clear screening, realistic session planning, and privacy at every step. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Take the next step with an online booking, or skim the linked condition pages when you want more detail first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3884,7 +3884,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on graded return to load, footwear checks, and session spacing. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on graded return to load, footwear checks, and session spacing. Progress comes from the boring middle — not from a one-off perfect session.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3904,18 +3904,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on graded return to load, footwear checks, and session spacing. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Expect calm, irritability-matched manual care plus a short plan covering graded return to load, footwear checks, and session spacing. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "An assessment clarifies what is mechanical and what needs medical eyes — book when ready, or keep reading the related guides.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -3939,7 +3939,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on graded return to load, footwear checks, and session spacing. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on graded return to load, footwear checks, and session spacing. Keep the ask small enough that a tired Tuesday still counts as a win.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3959,18 +3959,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on graded return to load, footwear checks, and session spacing. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on graded return to load, footwear checks, and session spacing. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Prefer to talk it through in clinic? Book a slot. Prefer more reading first? The linked condition guides stay open.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -4049,7 +4049,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on matching technique intensity to irritability — not “the deeper the better”. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on matching technique intensity to irritability — not “the deeper the better”. Tiny daily adjustments beat heroic weekend fixes that you cannot sustain.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -4069,18 +4069,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for patients considering hands-on adjuncts or soft-tissue care covers joint mobility, soft-tissue tone, and how neighbouring regions share load under muscle guarding, desk tension, and post-training tightness. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on matching technique intensity to irritability — not “the deeper the better”. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on matching technique intensity to irritability — not “the deeper the better”. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Ready for a clear plan? Book an assessment, or browse the condition guides if you want more background first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -4104,7 +4104,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on side-lying support, pacing around feeds, and safe mobility. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on side-lying support, pacing around feeds, and safe mobility. Consistency over intensity usually wins when life is already full.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -4124,18 +4124,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on side-lying support, pacing around feeds, and safe mobility. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on side-lying support, pacing around feeds, and safe mobility. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "When symptoms keep interrupting work or sleep, an assessment is the practical next step — condition pages are there if you want depth first.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -4159,7 +4159,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. A plan you can keep on a busy week matters more than a perfect protocol.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -4179,18 +4179,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on clear screening, realistic session planning, and privacy at every step. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "Sessions typically combine mobilisation or soft-tissue techniques with coaching on clear screening, realistic session planning, and privacy at every step. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "Book online when you are ready, or read a related condition guide if you still want more clinical context.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
@@ -4214,7 +4214,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, jaw relaxation, and short neck resets. Small, repeatable changes beat a perfect plan you abandon by Thursday.",
+          "Focus on screen height, jaw relaxation, and short neck resets. Steady two-percent changes compound faster than all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -4234,18 +4234,18 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         },
         "paragraphs": [
           "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
-          "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, jaw relaxation, and short neck resets. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
+          "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on screen height, jaw relaxation, and short neck resets. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
       {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
     ],
-    "cta": "If this sounds familiar, book an assessment — or explore related condition guides first if you want more clinical detail.",
+    "cta": "If pacing alone is not enough, reserve an assessment. Related guides remain available if you prefer to read before you book.",
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   }

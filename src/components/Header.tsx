@@ -6,16 +6,18 @@ import { useEffect, useId, useRef, useState } from "react";
 import { ButtonLink } from "@/components/Button";
 import { getServiceHref, services, site } from "@/lib/site";
 
-/** Primary lg row — trust/local CTAs first; Blog/Exercises/VI in mobile + footer. */
+/** Primary lg row — trust/local + discount/insurance; Blog/Exercises/Contact/VI in mobile + footer. */
 const links = [
   { href: "/about", label: "About", desktop: true },
   { href: "/conditions", label: "Conditions", desktop: true },
   { href: "/exercises", label: "Exercises", desktop: false },
   { href: "/blog", label: "Blog", desktop: false },
   { href: "/fees", label: "Fees", desktop: true },
+  { href: "/nhs-discount", label: "NHS 10%", desktop: true },
+  { href: "/insurance", label: "Insurance", desktop: true },
   { href: "/reviews", label: "Reviews", desktop: true },
   { href: "/find-us", label: "Find us", desktop: true },
-  { href: "/contact", label: "Contact", desktop: true },
+  { href: "/contact", label: "Contact", desktop: false },
   { href: "/vi", label: "Tiếng Việt", desktop: false },
 ];
 
@@ -227,7 +229,7 @@ export function Header() {
             href={site.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-navy shadow-sm transition hover:border-teal hover:text-teal sm:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-navy shadow-sm transition hover:border-teal hover:text-teal"
             aria-label="WhatsApp the clinic"
           >
             <svg

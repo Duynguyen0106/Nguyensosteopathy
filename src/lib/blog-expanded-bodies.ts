@@ -115,7 +115,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -170,7 +170,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -225,7 +225,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -280,7 +280,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -335,7 +335,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -390,7 +390,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -445,7 +445,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -555,7 +555,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -610,7 +610,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -665,7 +665,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -720,7 +720,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -775,7 +775,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -830,7 +830,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -885,7 +885,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -995,7 +995,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -1050,7 +1050,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -1105,7 +1105,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -1160,7 +1160,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -1215,7 +1215,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -1270,7 +1270,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -1325,7 +1325,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -1435,7 +1435,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -1490,7 +1490,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -1545,7 +1545,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -1600,7 +1600,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -1655,7 +1655,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -1710,7 +1710,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -1765,7 +1765,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -1875,7 +1875,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -1930,7 +1930,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -1985,7 +1985,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -2040,7 +2040,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -2095,7 +2095,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -2150,7 +2150,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -2205,7 +2205,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -2315,7 +2315,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -2370,7 +2370,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -2425,7 +2425,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -2480,7 +2480,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -2535,7 +2535,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -2590,7 +2590,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -2645,7 +2645,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -2755,7 +2755,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -2810,7 +2810,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -2865,7 +2865,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -2920,7 +2920,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -2975,7 +2975,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -3030,7 +3030,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -3085,7 +3085,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -3195,7 +3195,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -3250,7 +3250,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -3305,7 +3305,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -3360,7 +3360,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -3415,7 +3415,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -3470,7 +3470,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -3525,7 +3525,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -3635,7 +3635,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -3690,7 +3690,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -3745,7 +3745,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -3800,7 +3800,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }
@@ -3855,7 +3855,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "When symptoms repeatedly interrupt sleep or work despite pacing, booking beats waiting for another identical week.",
           "Wear what you would for light exercise. Recent GP letters or scans are useful but not required. Use our [book page](/book) for live slots; cancellation and discount rules are listed with fees."
         ]
       }
@@ -3910,7 +3910,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If the pattern is stuck — same flare, same limits — schedule an assessment rather than hoping next week is different.",
           "Soft trousers or shorts and a loose top are ideal. Note sleep, work, and sport limits before you arrive. Online booking lives on [/book](/book); NHS/student discounts are detailed separately."
         ]
       }
@@ -3965,7 +3965,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book promptly when function drops, sleep suffers, or weekly flares refuse to settle with pacing alone.",
           "Come ready to move. A short symptom list and any existing imaging help context. Book through our [book page](/book) — fees, discounts, and cancellation notice are published up front."
         ]
       }
@@ -4075,7 +4075,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Come in earlier when symptoms start limiting sleep, work, or walking — or when the same flare returns every week despite pacing.",
           "Comfortable clothes help assessment. A brief note of onset, aggravators, and goals speeds the first visit. Book online via our [book page](/book) — fees and NHS/student discounts are listed separately."
         ]
       }
@@ -4130,7 +4130,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
           "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
         ]
       }
@@ -4185,7 +4185,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Book when daily function is clearly restricted, or when you keep restarting the same flare cycle despite sensible load changes.",
           "Dress so we can see and move the region that hurts. Jot when symptoms started and what you need to return to. Online booking is on the [book page](/book); NHS and student discounts need valid ID at the appointment."
         ]
       }
@@ -4240,7 +4240,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
+          "Seek assessment sooner if nights, desk days, or walking tolerance keep shrinking, or if flares rebound every week.",
           "Moveable clothing beats formal wear for assessment. Bring a one-page timeline if symptoms have been complex. Book at [/book](/book); pricing and discounts are published on the fees page."
         ]
       }

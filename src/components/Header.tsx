@@ -216,14 +216,13 @@ export function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
-          <ButtonLink
+          <a
             href={site.phoneHref}
-            variant="secondary"
-            className="hidden min-h-11 px-3 py-2 text-xs sm:inline-flex sm:px-4 sm:py-2.5 sm:text-sm"
+            className="hidden min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-navy shadow-sm transition hover:border-teal hover:text-teal sm:inline-flex sm:px-4 sm:py-2.5 sm:text-sm"
             aria-label={`Call ${site.phone}`}
           >
             Call
-          </ButtonLink>
+          </a>
           <a
             href={site.whatsappUrl}
             target="_blank"
@@ -281,6 +280,31 @@ export function Header() {
           className="max-h-[min(70vh,28rem)] overflow-y-auto border-t border-line bg-white px-4 py-4 sm:px-5 sm:py-5 lg:hidden"
         >
           <nav aria-label="Mobile" className="flex flex-col gap-1">
+            <div className="mb-2 grid grid-cols-2 gap-2">
+              <a
+                href={site.phoneHref}
+                className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
+                onClick={() => setOpen(false)}
+              >
+                Call
+              </a>
+              <a
+                href={site.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
+                onClick={() => setOpen(false)}
+              >
+                WhatsApp
+              </a>
+            </div>
+            <Link
+              href="/book"
+              className="mb-3 min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
+              onClick={() => setOpen(false)}
+            >
+              Book Now
+            </Link>
             <Link
               href="/about"
               className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
@@ -323,29 +347,6 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-            <a
-              href={site.phoneHref}
-              className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-              onClick={() => setOpen(false)}
-            >
-              Call {site.phone}
-            </a>
-            <a
-              href={site.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-              onClick={() => setOpen(false)}
-            >
-              WhatsApp
-            </a>
-            <Link
-              href="/book"
-              className="mt-2 min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
-              onClick={() => setOpen(false)}
-            >
-              Book Now
-            </Link>
           </nav>
         </div>
       ) : null}

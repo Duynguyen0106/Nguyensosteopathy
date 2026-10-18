@@ -13,10 +13,10 @@ export function Hero() {
             <span className="font-display block text-[clamp(2.6rem,11vw,5.6rem)] leading-[0.92] font-semibold tracking-[0.04em] text-navy uppercase">
               Nguyen&apos;s
             </span>
-            <span className="mt-3 block text-sm font-semibold tracking-[0.18em] text-teal uppercase sm:text-base sm:tracking-[0.28em] md:text-lg">
+            <span className="mt-3 block text-base font-semibold tracking-[0.18em] text-teal uppercase sm:tracking-[0.28em] md:text-lg">
               Osteopathic Clinic
             </span>
-            <span className="mt-4 block text-sm font-semibold tracking-wide text-navy/70 md:text-base">
+            <span className="mt-4 block text-base font-semibold tracking-wide text-navy/70">
               Osteopathy in Woolwich, London SE18
             </span>
           </h1>

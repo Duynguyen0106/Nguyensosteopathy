@@ -220,7 +220,7 @@ export function Header() {
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           <a
             href={site.phoneHref}
-            className="hidden min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-navy shadow-sm transition hover:border-teal hover:text-teal sm:inline-flex sm:px-4 sm:py-2.5 sm:text-sm"
+            className="hidden min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-navy shadow-sm transition hover:border-teal hover:text-teal sm:inline-flex sm:px-4 sm:py-2.5"
             aria-label={`Call ${site.phone}`}
           >
             Call
@@ -244,7 +244,7 @@ export function Header() {
           </a>
           <ButtonLink
             href="/book"
-            className="min-h-11 px-3 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm"
+            className="min-h-11 px-3 py-2 sm:px-5 sm:py-2.5"
           >
             Book Now
           </ButtonLink>

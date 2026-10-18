@@ -17,7 +17,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Home Exercises & Rehab Library | Osteopath Woolwich",
   description:
-    "Public rehab exercise library from Nguyen's Osteopathic Clinic in Woolwich: programmes and step-by-step drills for low back, neck, knee, heel, shoulder and ankle — with simple illustrations.",
+    "Public rehab exercise library from Nguyen's Osteopathic Clinic in Woolwich: programmes and step-by-step drills for low back, neck, knee, heel, shoulder and ankle — with photos and clear cues.",
   alternates: { canonical: "/exercises" },
   keywords: [
     "osteopath exercises Woolwich",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Home Exercises & Rehab | Nguyen's Osteopathic Clinic",
     description:
-      "Browse programmes and illustrated home exercises from our Woolwich osteopathy clinic.",
+      "Browse programmes and photo-guided home exercises from our Woolwich osteopathy clinic.",
     url: "/exercises",
   },
 };
@@ -159,7 +159,7 @@ export default function ExercisesHubPage({ searchParams }: Props) {
             Home exercises &amp; rehab library
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Short programmes and illustrated drills you can use between visits —
+            Short programmes and photo-guided drills you can use between visits —
             built with osteopathic care and NASM personal-training exercise
             programming in mind at {site.name}.
           </p>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
-import { ExerciseIllustration } from "@/components/exercises/ExerciseIllustration";
+import { ExercisePhoto } from "@/components/exercises/ExercisePhoto";
 import { ExerciseSafetyBanner } from "@/components/exercises/ExerciseSafetyBanner";
 import { ExerciseSteps } from "@/components/exercises/ExerciseSteps";
 import { ProgrammeCard } from "@/components/exercises/ProgrammeCard";
@@ -126,7 +126,13 @@ export default async function ExerciseDetailPage({ params }: Props) {
       <section className="border-b border-slate-200 bg-white px-5 py-12 md:px-8 md:py-16">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <ExerciseIllustration name={exercise.illustration} />
+            <ExercisePhoto
+              slug={exercise.slug}
+              illustration={exercise.illustration}
+              title={exercise.title}
+              size="detail"
+              priority
+            />
             <div className="mt-6">
               <ExerciseSafetyBanner compact />
             </div>

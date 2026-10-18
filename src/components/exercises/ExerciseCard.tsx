@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ExerciseIllustration } from "@/components/exercises/ExerciseIllustration";
+import { ExercisePhoto } from "@/components/exercises/ExercisePhoto";
 import { levelLabels, type Exercise } from "@/lib/exercises";
 
 export function ExerciseCard({ exercise }: { exercise: Exercise }) {
@@ -8,8 +8,13 @@ export function ExerciseCard({ exercise }: { exercise: Exercise }) {
       href={`/exercises/${exercise.slug}`}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-teal/40 hover:shadow-md"
     >
-      <div className="border-b border-slate-100 bg-slate-50 p-3">
-        <ExerciseIllustration name={exercise.illustration} />
+      <div className="border-b border-slate-100 bg-slate-50">
+        <ExercisePhoto
+          slug={exercise.slug}
+          illustration={exercise.illustration}
+          title={exercise.title}
+          className="rounded-none border-0"
+        />
       </div>
       <div className="flex flex-1 flex-col p-5">
         <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">

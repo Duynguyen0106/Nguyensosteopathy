@@ -204,7 +204,7 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`;
 
-const htmlPath = join(outDir, "opening-offer.html");
+const htmlPath = join(outDir, "opening-day.html");
 writeFileSync(htmlPath, html);
 
 let chromium;
@@ -241,13 +241,13 @@ await page.pdf({
 
 await browser.close();
 
-const preview = join(artifactDir, "opening-day-50-off-facebook.png");
-const previewRoot = join("/opt/cursor/artifacts", "opening-day-50-off-facebook.png");
+const preview = join(artifactDir, "opening-day-facebook.png");
+const previewRoot = join("/opt/cursor/artifacts", "opening-day-facebook.png");
 writeFileSync(preview, readFileSync(pngPath));
 writeFileSync(previewRoot, readFileSync(pngPath));
-writeFileSync(join(artifactDir, "opening-day-50-off-facebook.pdf"), readFileSync(pdfPath));
+writeFileSync(join(artifactDir, "opening-day-facebook.pdf"), readFileSync(pdfPath));
 writeFileSync(
-  join("/opt/cursor/artifacts", "opening-day-50-off-facebook.pdf"),
+  join("/opt/cursor/artifacts", "opening-day-facebook.pdf"),
   readFileSync(pdfPath),
 );
 

@@ -49,6 +49,20 @@ function apiKey() {
   return process.env.GOOGLE_PLACES_API_KEY?.trim() || "";
 }
 
+/** Decode common HTML entities Google sometimes returns in review text. */
+function decodeHtmlEntities(value: string) {
+  return value
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#(\d+);/g, (_, code) =>
+      String.fromCharCode(Number.parseInt(code, 10)),
+    );
+}
+
 /** Public Place ID for Nguyen's Osteopathic Clinic (St James Pharmacy, Woolwich). */
 export const NGUYENS_PLACE_ID = "ChIJG4dhhJip2EcRVmEEenyYD8E";
 
@@ -141,7 +155,7 @@ export async function getGooglePlaceReviews(): Promise<GoogleReviewsResult> {
       .map((review) => ({
         authorName: review.authorAttribution?.displayName || "Google user",
         rating: review.rating ?? 0,
-        text: (review.text?.text || "").trim(),
+        text: decodeHtmlEntities((review.text?.text || "").trim()),
         relativeTime: review.relativePublishTimeDescription || "",
         profilePhotoUri: review.authorAttribution?.photoUri,
         publishTime: review.publishTime,

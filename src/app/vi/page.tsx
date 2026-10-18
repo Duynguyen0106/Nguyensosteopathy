@@ -124,6 +124,15 @@ export default function VietnamesePage() {
             >
               Gọi {site.phone}
             </ButtonLink>
+            <ButtonLink
+              href={site.whatsappUrl}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-white/30 bg-white/10 text-white hover:bg-white/20"
+            >
+              WhatsApp
+            </ButtonLink>
             <Link
               href="/"
               className="text-sm font-semibold text-teal-mist underline-offset-2 hover:underline"
@@ -282,6 +291,96 @@ export default function VietnamesePage() {
         </div>
       </section>
 
+      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Phí &amp; giờ khám
+            </p>
+            <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
+              Thông tin đặt lịch bằng tiếng Việt
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
+              Không cần giấy giới thiệu GP cho hầu hết các vấn đề cơ xương khớp.
+              Lịch trực tuyến mở từ{" "}
+              <strong className="font-semibold text-navy">
+                5 tháng 11 năm 2026
+              </strong>
+              .
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-8 lg:grid-cols-2">
+            <div>
+              <h3 className="text-lg font-semibold text-navy">Bảng phí chính</h3>
+              <ul className="mt-4 space-y-3 text-sm text-slate-700 md:text-base">
+                <li className="flex justify-between gap-4 border-b border-slate-100 pb-2">
+                  <span>Khám ban đầu (60 phút)</span>
+                  <span className="font-semibold text-navy">£75</span>
+                </li>
+                <li className="flex justify-between gap-4 border-b border-slate-100 pb-2">
+                  <span>Tái khám (30 phút)</span>
+                  <span className="font-semibold text-navy">£60</span>
+                </li>
+                <li className="flex justify-between gap-4 border-b border-slate-100 pb-2">
+                  <span>Shockwave / chuyên khoa (xem bảng đầy đủ)</span>
+                  <span className="font-semibold text-navy">£90–£110</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-sm text-slate-600">
+                Giảm <strong className="font-semibold text-navy">10%</strong> cho
+                nhân viên NHS và sinh viên (xuất trình thẻ hợp lệ khi đến khám).
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-navy">Giờ mở cửa</h3>
+              <div className="mt-4 space-y-3 text-sm text-slate-700 md:text-base">
+                <p>
+                  <span className="font-semibold text-navy">
+                    Nhà thuốc (ra vào tòa nhà):
+                  </span>{" "}
+                  Thứ Hai–Thứ Sáu 9:00–18:00 · Thứ Bảy 9:00–17:30
+                </p>
+                <p>
+                  <span className="font-semibold text-navy">
+                    Osteopathy (đặt lịch):
+                  </span>{" "}
+                  Thứ Hai, Thứ Ba, Thứ Năm, Thứ Sáu &amp; Thứ Bảy từ 5 tháng 11
+                  năm 2026 —{" "}
+                  <strong className="font-semibold text-navy">
+                    đóng Thứ Tư và Chủ Nhật
+                  </strong>
+                  .
+                </p>
+              </div>
+
+              <h3 className="mt-8 text-lg font-semibold text-navy">
+                Khi đến nơi
+              </h3>
+              <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-slate-700 md:text-base">
+                <li>
+                  Vào{" "}
+                  <strong className="font-semibold text-navy">
+                    St James Pharmacy &amp; Travel Clinic
+                  </strong>{" "}
+                  tại 52 Powis Street, Woolwich SE18 6LQ.
+                </li>
+                <li>
+                  Hỏi quầy nhà thuốc — họ sẽ chỉ phòng osteopathy.
+                </li>
+                <li>
+                  Đến sớm 5–10 phút; mặc đồ dễ cử động để khám.
+                </li>
+                <li>
+                  Có thể gọi hoặc WhatsApp nếu cần hỗ trợ tìm đường.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">
@@ -297,37 +396,39 @@ export default function VietnamesePage() {
               {site.address.line2}
             </p>
             <p className="mt-4 text-sm text-slate-500">
-              Giờ nhà thuốc (ra vào tòa nhà):{" "}
-              {site.hours.map((row) => (
-                <span key={row.days} className="mr-4 inline-block">
-                  {row.days}: {row.time}
-                </span>
-              ))}
-            </p>
-            <p className="mt-2 text-sm text-slate-500">
-              Đặt lịch osteopathy từ {site.booking.opensFromLabel}:{" "}
-              {site.booking.bookableDaysLabel} (đóng {site.booking.closedDaysLabel}
-              ).
-            </p>
-            <p className="mt-2 text-sm text-slate-500">
-              Phí khám ban đầu £75 (60 phút) · Tái khám £60 (30 phút) · Giảm
-              10% cho NHS và sinh viên (xuất trình thẻ). Chi tiết:{" "}
-              <Link href="/fees" className="font-semibold text-teal hover:text-teal-dark">
-                bảng giá
+              Chi tiết bảng giá tiếng Anh (nếu cần):{" "}
+              <Link
+                href="/fees"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                /fees
+              </Link>
+              {" · "}
+              Bản đồ &amp; gửi xe:{" "}
+              <Link
+                href="/find-us"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                /find-us
               </Link>
               .
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
             <ButtonLink href="/book">Đặt lịch online</ButtonLink>
-            <ButtonLink href="/find-us" variant="secondary">
-              Bản đồ &amp; gửi xe
+            <ButtonLink
+              href={site.whatsappUrl}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
             </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Gọi {site.phone}
             </ButtonLink>
-            <ButtonLink href={site.emailHref} variant="secondary">
-              Email
+            <ButtonLink href="/find-us" variant="secondary">
+              Bản đồ &amp; gửi xe
             </ButtonLink>
           </div>
         </div>

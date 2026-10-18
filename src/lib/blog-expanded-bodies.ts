@@ -20,7 +20,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Practical guide to common back pain causes for Woolwich and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess Woolwich residents dealing with recurring or new back pain with a focus on commuting sits, work demands, and weekend DIY or sport spikes, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess Woolwich residents dealing with recurring or new back pain with a focus on commuting sits, work demands, and weekend DIY or sport spikes, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -75,7 +75,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Short answer for Woolwich patients: no GP referral is required to book osteopathy privately. Here’s what to bring and when to speak to your GP first.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -130,7 +130,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "How osteopathy supports runners, gym-goers, and weekend athletes in Woolwich with load management and hands-on sports injury care.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -185,7 +185,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Confidential low-intensity focused shockwave protocols for vascular-related erectile difficulties at Nguyen's Osteopathic Clinic — drug-free and private.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -240,7 +240,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "How the 10% NHS staff and student discount works at Nguyen's Osteopathic Clinic — eligibility, valid ID, and how to book.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -295,7 +295,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Desk-related tension headaches, tight upper neck, and jaw strain are common in SE18. See how osteopathy can ease cervicogenic and tension-type headaches.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -350,7 +350,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle osteopathic care in Woolwich for pregnancy-related pelvic girdle pain, rib strain, and back discomfort — adapted to your trimester.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -405,7 +405,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Confused between osteopathy and physiotherapy in SE18? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -460,7 +460,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Hip stiffness, runner’s knee, and stair pain are common around Woolwich and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -515,7 +515,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on Powis Street, Woolwich SE18 is easy to reach and open for online booking.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in Woolwich and SE18 with a focus on daily work and commuting load, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in Woolwich and SE18 with a focus on daily work and commuting load, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -570,7 +570,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Honest guidance on osteopathy treatment frequency: what affects recovery time, typical plans for back and neck pain, and when to review progress.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -625,7 +625,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "One-sided buttock or pelvic ache after walking or turning in bed? How SI joint irritation presents and how Woolwich osteopathy helps.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -680,7 +680,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Stiff, sore neck after a collision or sudden jolt? What to expect from osteopathic assessment in Woolwich and when imaging matters.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -735,7 +735,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Waking stiff then loosening after a shower is common. Causes, sleep positions, and osteopathy for morning lower back stiffness in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people who wake stiff and take 20–40 minutes to loosen with a focus on overnight stillness, mattress/pillow setup, and first movements of the day, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people who wake stiff and take 20–40 minutes to loosen with a focus on overnight stillness, mattress/pillow setup, and first movements of the day, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -790,7 +790,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Phone scroll posture loads the neck. Practical osteopathy tips for text neck, forward head posture, and SE18 desk-and-device strain.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people who scroll and message for hours on phones and tablets with a focus on sustained phone flexion and one-thumb typing, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people who scroll and message for hours on phones and tablets with a focus on sustained phone flexion and one-thumb typing, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -845,7 +845,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Jaw click, temple ache, or morning tightness from clenching? How osteopathy addresses TMJ-related pain in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -900,7 +900,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Not sure if your headache is migraine or tension-type? Clear differences and when Woolwich osteopathy is a sensible next step.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -955,7 +955,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Rolled your ankle on the pavement or pitch? Osteopathy for sprain recovery, swelling timelines, and return to walking or sport in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -1010,7 +1010,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Keyboard and mouse strain, wrist ache, and forearm tightness — how osteopathy helps desk-related upper limb pain in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -1065,7 +1065,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Osteopathy will not reverse osteoarthritis, but it can improve comfort and movement. Practical joint care for Woolwich patients.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -1120,7 +1120,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Stiff, sore Achilles when running or walking? Focused shockwave and progressive loading for Achilles tendinopathy near Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -1175,7 +1175,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pain on the inner elbow from lifting or golf swings? Osteopathy for medial epicondylalgia and when shockwave is considered.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -1230,7 +1230,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Front-of-knee tendon pain from jumping or stairs? Osteopathy, load management, and shockwave options in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -1285,7 +1285,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "A plain-English guide to LI-ESWT at Nguyen's Osteopathic Clinic: suitability, sensations, aftercare, and fees.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -1340,7 +1340,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Hands-on osteopathy and focused shockwave solve different parts of stubborn tendon pain. How we choose at our Woolwich clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with stubborn tendon or soft-tissue pain with a focus on grip, impact, or repetitive strain that has not settled with rest alone, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with stubborn tendon or soft-tissue pain with a focus on grip, impact, or repetitive strain that has not settled with rest alone, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -1395,7 +1395,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Low-intensity focused shockwave as a non-drug, non-surgical option for vascular-related ED — private appointments in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -1450,7 +1450,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pelvic discomfort, post-activity ache, or vascular recovery goals — how discreet men’s health appointments work in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -1505,7 +1505,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Typical course thinking for men’s health shockwave protocols — why plans are individual and what review looks like in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -1560,7 +1560,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Considering non-tablet approaches for erectile difficulties? Questions to ask about LI-ESWT, privacy, and medical screening.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -1615,7 +1615,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Western medical acupuncture as an adjunct for muscle pain and trigger-point irritability at Nguyen's Osteopathic Clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -1670,7 +1670,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "When gentle microcurrent is added to medical acupuncture for persistent localised pain — what it feels like and who it suits.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -1725,7 +1725,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Choosing between acupuncture as a +£20 add-on within osteopathy or a focused needling session at our Woolwich clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -1780,7 +1780,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Cupping as a +£15 soft-tissue adjunct for muscular tightness — what marks mean, when we use it, and fees.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -1835,7 +1835,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "45-minute deep tissue massage (£60) for knotted, training-heavy or desk-tight muscles at St James Pharmacy, Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -1890,7 +1890,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Muscle-only tightness versus joint and movement problems — how to choose between massage and osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -1945,7 +1945,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "DOMS versus true injury, and when deep tissue massage helps training-related muscle load in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -2000,7 +2000,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Stress-held upper traps and neck tightness respond well to paced deep tissue work and simple breathing resets.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -2055,7 +2055,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "IT band, shin, Achilles, and knee niggles from Thames Path and park runs — assessment and rehab planning in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -2110,7 +2110,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pain with bench, overhead press, or pull-ups? How osteopathy helps gym-related shoulder irritability in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -2165,7 +2165,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Hamstring, calf, and groin strains from five-a-side and Sunday league — timelines and return-to-play support in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in physically demanding roles across SE London with a focus on repeated lifts, twists, and hard-floor standing, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in physically demanding roles across SE London with a focus on repeated lifts, twists, and hard-floor standing, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -2220,7 +2220,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Clear milestones before you return to running, gym, or team sport after ligament sprain — reduce re-injury risk.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -2275,7 +2275,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Niggles that warm up then return next session are early overuse warnings. When to book osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -2330,7 +2330,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "SPD and pelvic girdle pain with walking or turning in bed — gentle, trimester-aware osteopathy in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -2385,7 +2385,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Side and rib-cage discomfort as the bump grows — how pregnancy-adapted osteopathy can help in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -2440,7 +2440,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Feeding postures, carrying, and healing tissues — postpartum back and pelvic support with a Woolwich osteopath.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -2495,7 +2495,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "How pregnancy osteopathy is adapted for safety and comfort at Nguyen's Osteopathic Clinic, Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -2550,7 +2550,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle cranial osteopathy explained — who it suits, what a session feels like, and how it differs from firmer manual therapy.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -2605,7 +2605,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "When stress sits in the head, jaw, and upper neck, cranial-style osteopathy offers a calmer treatment option in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -2660,7 +2660,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Firner joint-focused work versus gentler cranial styles — matching technique to your preferences at our SE18 clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -2715,7 +2715,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle, age-adapted osteopathy for infants and children — what parents can expect at Nguyen's Osteopathic Clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -2770,7 +2770,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Night-time limb aches in children are common. When reassurance is enough, and when osteopathic assessment in Woolwich helps.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -2825,7 +2825,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Heavy bags and device time affect young spines. Practical posture advice and when to book paediatric osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess parents seeking gentle musculoskeletal care for children in Woolwich with a focus on growth, posture habits, backpacks, and preferred head or limb positions, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess parents seeking gentle musculoskeletal care for children in Woolwich with a focus on growth, posture habits, backpacks, and preferred head or limb positions, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -2880,7 +2880,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle infant musculoskeletal care explained — consent, what sessions look like, and realistic expectations.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess parents seeking gentle musculoskeletal care for children in Woolwich with a focus on growth, posture habits, backpacks, and preferred head or limb positions, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess parents seeking gentle musculoskeletal care for children in Woolwich with a focus on growth, posture habits, backpacks, and preferred head or limb positions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -2935,7 +2935,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, current opening date, and phone backup.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -2990,7 +2990,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Initial £75, follow-up £60, shockwave £90, specialist ED protocol £110, massage £60, add-ons explained — transparent fees at SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -3045,7 +3045,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Find Nguyen's Osteopathic Clinic inside St James Pharmacy & Travel Clinic — directions, arrival tips, and parking pointers.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -3100,7 +3100,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Comfortable clothing tips for assessment and treatment at our Woolwich clinic — shorts, stretch fabrics, and privacy.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -3155,7 +3155,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Looking for a Vietnamese osteopath in the UK? How Nguyen's Osteopathic Clinic in Woolwich supports clear MSK care for the Vietnamese community.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -3210,7 +3210,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic on Powis Street, Woolwich is a short hop for SE18 patients.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -3265,7 +3265,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "How to reach Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street — parking tips, buses, and DLR for SE18 patients.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -3320,7 +3320,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Living with pain for months? How osteopathy approaches persistent back, neck, and joint pain — and when medical review comes first.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -3375,7 +3375,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle osteopathy for older adults with stiffness, joint wear, and balance confidence — what to expect at our SE18 clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in Woolwich and SE18 with a focus on daily work and commuting load, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in Woolwich and SE18 with a focus on daily work and commuting load, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -3430,7 +3430,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pain sitting on hard seats or after a fall onto the tailbone? How coccyx pain presents and how Woolwich osteopathy approaches it.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -3485,7 +3485,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Repetitive lifting, twisting, and bending at work? Osteopathy for warehouse, construction, and trade-related back strain in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess warehouse, delivery, and trades workers across SE18 with a focus on floor-to-waist lifts, awkward reaches, and long shifts on concrete, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess warehouse, delivery, and trades workers across SE18 with a focus on floor-to-waist lifts, awkward reaches, and long shifts on concrete, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -3540,7 +3540,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Sharp rib or side pain when breathing, twisting, or coughing? How thoracic and rib irritation is assessed at our Woolwich clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -3595,7 +3595,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pain on the outside of the hip when lying on that side or climbing stairs? How trochanteric irritation is managed with osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -3650,7 +3650,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Woolwich SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess office workers and creatives with grip-heavy mouse or tablet days with a focus on sustained wrist extension, pinch grip, and forearm fatigue, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess office workers and creatives with grip-heavy mouse or tablet days with a focus on sustained wrist extension, pinch grip, and forearm fatigue, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -3705,7 +3705,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Stubborn shoulder calcium deposits and night pain? When focused shockwave and osteopathy are considered for calcific tendon irritation.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -3760,7 +3760,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "What influences focused shockwave fees at Nguyen's Osteopathic Clinic — session type, course length, and how to book in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -3815,7 +3815,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pain along the shin when running or after increasing mileage? How osteopathy helps shin splints and when to rest or image.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -3870,7 +3870,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Aching lumbar spine after long rides? How bike setup and osteopathy help cyclists with lower back pain in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -3925,7 +3925,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Overstretched joints or flare-ups after class? How osteopathy helps yoga and Pilates-related strains in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -3980,7 +3980,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Tight traps, stiff mid-back, and screen fatigue — how deep tissue massage supports desk workers at Nguyen's Osteopathic Clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk workers who want soft-tissue relief between osteopathy sessions with a focus on upper trap guarding and forearm tightness from mouse and keyboard work, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk workers who want soft-tissue relief between osteopathy sessions with a focus on upper trap guarding and forearm tightness from mouse and keyboard work, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -4035,7 +4035,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Not sure whether cupping or deep tissue massage is right for you? A plain-English guide for Woolwich patients.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -4090,7 +4090,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Buttock or leg pain in pregnancy? How we assess pregnancy-related sciatic-type symptoms safely in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
         ]
       },
       {
@@ -4145,7 +4145,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Noticing your baby prefers one side? What parents ask about positional preference and gentle paediatric osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -4200,7 +4200,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Prefer a quieter treatment style for headaches and stress-held tension? How cranial osteopathy is used at our Woolwich clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {

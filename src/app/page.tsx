@@ -46,12 +46,17 @@ export default function HomePage() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between md:px-8">
           <div className="flex flex-wrap gap-2">
-            <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy">
+            <a
+              href={site.practitioner.goscRegisterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-teal"
+            >
               <span className="text-teal" aria-hidden>
                 ✓
               </span>
               GOsC Reg. No. {site.practitioner.regNo}
-            </span>
+            </a>
             <span className="hidden text-slate-300 sm:inline" aria-hidden>
               ·
             </span>
@@ -170,7 +175,15 @@ export default function HomePage() {
               {site.practitioner.name}
             </h2>
             <p className="mt-2 text-sm font-semibold tracking-wide text-slate-600">
-              {site.practitioner.title} · Reg No. {site.practitioner.regNo}
+              {site.practitioner.title} · Reg No.{" "}
+              <a
+                href={site.practitioner.goscRegisterUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal hover:text-teal-dark"
+              >
+                {site.practitioner.regNo}
+              </a>
             </p>
             <p className="mt-6 text-lg leading-relaxed text-slate-700">
               Master of Osteopathy graduate of the British College of
@@ -180,7 +193,12 @@ export default function HomePage() {
               root-cause treatment and dignity.
             </p>
 
-            <div className="mt-8 inline-flex max-w-full items-center gap-3 rounded-xl border border-teal/30 bg-teal/5 px-4 py-3 text-sm font-medium text-navy sm:px-5">
+            <a
+              href={site.practitioner.goscRegisterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex max-w-full items-center gap-3 rounded-xl border border-teal/30 bg-teal/5 px-4 py-3 text-sm font-medium text-navy transition hover:border-teal hover:bg-teal/10 sm:px-5"
+            >
               <span
                 className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal/15 text-teal"
                 aria-hidden
@@ -200,7 +218,7 @@ export default function HomePage() {
                 General Osteopathic Council Registered · Reg No.{" "}
                 {site.practitioner.regNo}
               </span>
-            </div>
+            </a>
 
             <div className="mt-6">
               <ButtonLink href="/about" variant="secondary">

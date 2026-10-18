@@ -116,7 +116,24 @@ export default function ComplaintsPage() {
               </a>
               , which regulates osteopaths in the UK. You can also check
               registration details for {site.practitioner.name} (Reg. No.{" "}
-              {site.practitioner.regNo}) on the GOsC register.
+              <a
+                href={site.practitioner.goscRegisterUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                {site.practitioner.regNo}
+              </a>
+              ) on the{" "}
+              <a
+                href={site.practitioner.goscRegisterUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                GOsC register
+              </a>
+              .
             </p>
             <p className="mt-3">
               For website privacy concerns, see our{" "}

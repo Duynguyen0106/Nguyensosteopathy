@@ -4,14 +4,18 @@ export const site = {
   tagline: "Recover, Realign, and Restore Your Vitality",
   practitioner: {
     name: "Austin Duy Nguyen",
-    /** Legal name as on GOsC / university records (Ba Duy Nguyen). */
-    legalName: "Ba Duy Nguyen",
+    /** Legal name as on the GOsC public Register (Mr Ba-duy Nguyen). */
+    legalName: "Ba-duy Nguyen",
     title: "GOsC-Registered Osteopath",
     regNo: "12332",
     credentials:
       "Master of Osteopathy (BCOM); CertHE Medical Sciences with Distinction (University of Westminster); Dip.Acu; Shockwave CPD; NASM Personal Fitness Trainer",
-    /** Official GOsC public Register search (verify by registration number). */
-    goscRegisterUrl: "https://www.osteopathy.org.uk/register-search/",
+    /**
+     * Direct GOsC public Register profile (Reg. No. 12332 — Fully Registered).
+     * Search fallback: https://www.osteopathy.org.uk/register-search/?search=1&registration=12332
+     */
+    goscRegisterUrl:
+      "https://www.osteopathy.org.uk/register-search/registrants/003WT00000T8U4XYAV/",
     goscValidFrom: "16 October 2026",
     goscValidTo: "15 October 2027",
     bio: "Austin is a GOsC-registered osteopath and founder of Nguyen's Osteopathic Clinic in Woolwich. He specialises in back pain, neck pain, and sports injuries, and speaks English and Vietnamese.",
@@ -27,9 +31,9 @@ export const site = {
         shortTitle: "GOsC-registered osteopath",
         issuer: "General Osteopathic Council",
         detail:
-          "Registration No. 12332 — permitted to practise as an osteopath in the UK.",
-        dateLabel: "Valid 16 Oct 2026 – 15 Oct 2027",
-        href: "https://www.osteopathy.org.uk/register-search/",
+          "Registration No. 12332 — Fully Registered; permitted to practise as an osteopath in the UK.",
+        dateLabel: "Registered 16 Oct 2026 · Valid to 15 Oct 2027",
+        href: "https://www.osteopathy.org.uk/register-search/registrants/003WT00000T8U4XYAV/",
         certificateHref: "/credentials/gosc-registration-12332.pdf",
       },
       {

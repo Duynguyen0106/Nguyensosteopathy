@@ -108,7 +108,11 @@ export function buildPractitionerJsonLd() {
     image: `${site.websiteUrl}/images/austin-nguyen.webp`,
     telephone: site.phoneE164,
     email: site.email,
-    sameAs: [site.linkedinUrl, site.facebookUrl],
+    sameAs: [
+      site.practitioner.goscRegisterUrl,
+      site.linkedinUrl,
+      site.facebookUrl,
+    ],
     owns: [
       {
         "@type": "SoftwareApplication",
@@ -132,6 +136,7 @@ export function buildPractitionerJsonLd() {
       name: "GOsC Registration Number",
       value: site.practitioner.regNo,
       propertyID: "GOsC",
+      url: site.practitioner.goscRegisterUrl,
     },
     alumniOf: [
       {
@@ -163,13 +168,15 @@ export function buildPractitionerJsonLd() {
           : {}),
       },
       ...(item.id === "gosc"
-        ? { identifier: site.practitioner.regNo }
-        : {}),
-      ...(item.certificateHref
-        ? { url: `${site.websiteUrl}${item.certificateHref}` }
-        : item.href
-          ? { url: item.href }
-          : {}),
+        ? {
+            identifier: site.practitioner.regNo,
+            url: site.practitioner.goscRegisterUrl,
+          }
+        : item.certificateHref
+          ? { url: `${site.websiteUrl}${item.certificateHref}` }
+          : item.href
+            ? { url: item.href }
+            : {}),
     })),
     memberOf: {
       "@type": "Organization",

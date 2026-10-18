@@ -241,7 +241,16 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-white/55 md:flex-row md:items-center md:justify-between md:px-8">
           <p>
-            © 2026 {site.name}. GOsC Reg. No. {site.practitioner.regNo}.
+            © 2026 {site.name}. GOsC Reg. No.{" "}
+            <a
+              href={site.practitioner.goscRegisterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
+            >
+              {site.practitioner.regNo}
+            </a>
+            .
           </p>
           <p>
             Located inside {site.address.venue}, Woolwich.{" "}

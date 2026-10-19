@@ -9,10 +9,14 @@ import {
   exerciseRegions,
   exercises,
   getExercisesByRegion,
+  levelLabels,
   programmes,
+  type ExerciseLevel,
   type ExerciseRegion,
 } from "@/lib/exercises";
 import { site } from "@/lib/site";
+
+const levelFilters: ExerciseLevel[] = ["early", "build", "return"];
 
 export const metadata: Metadata = {
   title: "Home Exercises & Rehab Library | Osteopath Woolwich",
@@ -35,51 +39,99 @@ export const metadata: Metadata = {
 };
 
 type Props = {
-  searchParams: Promise<{ region?: string }>;
+  searchParams: Promise<{ region?: string; level?: string }>;
 };
 
 function isRegion(value: string | undefined): value is ExerciseRegion {
   return Boolean(value && exerciseRegions.includes(value as ExerciseRegion));
 }
 
+function isLevel(value: string | undefined): value is ExerciseLevel {
+  return Boolean(value && levelFilters.includes(value as ExerciseLevel));
+}
+
+function filterHref(opts: { region?: ExerciseRegion; level?: ExerciseLevel }) {
+  const params = new URLSearchParams();
+  if (opts.region) params.set("region", opts.region);
+  if (opts.level) params.set("level", opts.level);
+  const qs = params.toString();
+  return qs ? `/exercises?${qs}#exercises` : "/exercises#exercises";
+}
+
 async function ExerciseGrid({
   searchParams,
 }: {
-  searchParams: Promise<{ region?: string }>;
+  searchParams: Promise<{ region?: string; level?: string }>;
 }) {
   const params = await searchParams;
   const region = isRegion(params.region) ? params.region : undefined;
-  const filtered = getExercisesByRegion(region);
+  const level = isLevel(params.level) ? params.level : undefined;
+  const filtered = getExercisesByRegion(region).filter((item) =>
+    level ? item.level === level : true,
+  );
 
   return (
     <>
-      <div className="mt-8 flex flex-wrap gap-2">
-        <Link
-          href="/exercises#exercises"
-          className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
-            !region
-              ? "bg-navy text-white"
-              : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
-          }`}
-        >
-          All regions
-        </Link>
-        {exerciseRegions.map((item) => (
+      <div className="mt-8 space-y-4">
+        <div className="flex flex-wrap gap-2">
           <Link
-            key={item}
-            href={`/exercises?region=${encodeURIComponent(item)}#exercises`}
+            href={filterHref({ level })}
             className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
-              region === item
+              !region
                 ? "bg-navy text-white"
                 : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
             }`}
           >
-            {item}
+            All regions
           </Link>
-        ))}
+          {exerciseRegions.map((item) => (
+            <Link
+              key={item}
+              href={filterHref({ region: item, level })}
+              className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
+                region === item
+                  ? "bg-navy text-white"
+                  : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
+              }`}
+            >
+              {item}
+            </Link>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <Link
+            href={filterHref({ region })}
+            className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
+              !level
+                ? "bg-teal text-white"
+                : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
+            }`}
+          >
+            All levels
+          </Link>
+          {levelFilters.map((item) => (
+            <Link
+              key={item}
+              href={filterHref({ region, level: item })}
+              className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
+                level === item
+                  ? "bg-teal text-white"
+                  : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
+              }`}
+            >
+              {levelLabels[item]}
+            </Link>
+          ))}
+        </div>
       </div>
 
-      <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <p className="mt-6 text-sm text-slate-500">
+        Showing {filtered.length} of {exercises.length} exercises
+        {region ? ` in ${region}` : ""}
+        {level ? ` · ${levelLabels[level]}` : ""}
+      </p>
+
+      <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((exercise) => (
           <li key={exercise.slug}>
             <ExerciseCard exercise={exercise} />
@@ -88,9 +140,9 @@ async function ExerciseGrid({
       </ul>
       {filtered.length === 0 ? (
         <p className="mt-8 text-base text-slate-600">
-          No exercises in this region yet.{" "}
+          No exercises match this filter.{" "}
           <Link href="/exercises#exercises" className="font-semibold text-teal">
-            Clear filter
+            Clear filters
           </Link>
         </p>
       ) : null}
@@ -101,20 +153,38 @@ async function ExerciseGrid({
 function ExerciseGridFallback() {
   return (
     <>
-      <div className="mt-8 flex flex-wrap gap-2">
-        <span className="rounded-xl bg-navy px-3 py-2 text-sm font-semibold text-white">
-          All regions
-        </span>
-        {exerciseRegions.map((item) => (
-          <span
-            key={item}
-            className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-navy"
-          >
-            {item}
+      <div className="mt-8 space-y-4">
+        <div className="flex flex-wrap gap-2">
+          <span className="rounded-xl bg-navy px-3 py-2 text-sm font-semibold text-white">
+            All regions
           </span>
-        ))}
+          {exerciseRegions.map((item) => (
+            <span
+              key={item}
+              className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-navy"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <span className="rounded-xl bg-teal px-3 py-2 text-sm font-semibold text-white">
+            All levels
+          </span>
+          {levelFilters.map((item) => (
+            <span
+              key={item}
+              className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-navy"
+            >
+              {levelLabels[item]}
+            </span>
+          ))}
+        </div>
       </div>
-      <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <p className="mt-6 text-sm text-slate-500">
+        Showing {exercises.length} of {exercises.length} exercises
+      </p>
+      <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {exercises.map((exercise) => (
           <li key={exercise.slug}>
             <ExerciseCard exercise={exercise} />
@@ -230,8 +300,8 @@ export default function ExercisesHubPage({ searchParams }: Props) {
             All exercises
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
-            Filter by region, or open any drill for dosage, steps, cues, and
-            what to avoid.
+            Filter by body region or level, then open any drill for dosage,
+            steps, cues, and what to avoid.
           </p>
 
           <Suspense fallback={<ExerciseGridFallback />}>

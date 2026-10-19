@@ -26,7 +26,10 @@ export function ExerciseCard({ exercise }: { exercise: Exercise }) {
         <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">
           {exercise.summary}
         </p>
-        <span className="mt-4 text-sm font-semibold text-teal">
+        <p className="mt-3 text-xs font-medium text-slate-500">
+          {exercise.dosage}
+        </p>
+        <span className="mt-3 text-sm font-semibold text-teal">
           View steps →
         </span>
       </div>

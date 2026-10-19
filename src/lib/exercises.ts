@@ -506,13 +506,13 @@ export const exercises: Exercise[] = [
     slug: "plantar-fascia-roll",
     title: "Plantar fascia roll",
     summary:
-      "Gentle sole massage with a ball to ease morning heel stiffness.",
+      "Gentle sole massage with a ball or foam roller to ease morning heel stiffness.",
     region: "Ankle & Foot",
     level: "early",
-    equipment: "Firm ball (tennis or similar)",
+    equipment: "Firm ball or foam roller",
     illustration: "standing-calf",
     steps: [
-      "Sit or stand and place a firm ball under the arch of the foot.",
+      "Sit or stand and place a firm ball or foam roller under the arch of the foot.",
       "Roll slowly from heel toward the ball of the foot for 1–2 minutes.",
       "Pause on tender spots with light pressure — ease, do not crush.",
     ],
@@ -522,7 +522,7 @@ export const exercises: Exercise[] = [
     ],
     avoid: [
       "Aggressive rolling on a swollen or acutely inflamed heel.",
-      "Balancing on the ball if you feel unsteady.",
+      "Balancing on the roller if you feel unsteady.",
     ],
     dosage: "1–2 minutes, 1–2 times daily (especially after first steps)",
     relatedConditionSlugs: ["plantar-fasciitis", "achilles-tendinopathy"],
@@ -1145,4 +1145,32 @@ export function getProgrammesForExercise(exercise: Exercise): Programme[] {
   return programmes.filter((programme) =>
     programme.exerciseSlugs.includes(exercise.slug),
   );
+}
+
+export function getExercisesByLevel(level?: ExerciseLevel): Exercise[] {
+  if (!level) return exercises;
+  return exercises.filter((item) => item.level === level);
+}
+
+/** Same region first, then shared programmes / conditions — excludes self. */
+export function getRelatedExercises(exercise: Exercise, limit = 3): Exercise[] {
+  const scored = exercises
+    .filter((item) => item.slug !== exercise.slug)
+    .map((item) => {
+      let score = 0;
+      if (item.region === exercise.region) score += 3;
+      if (item.level === exercise.level) score += 1;
+      const sharedConditions = item.relatedConditionSlugs.filter((slug) =>
+        exercise.relatedConditionSlugs.includes(slug),
+      ).length;
+      score += sharedConditions;
+      const sharedProgrammes = (item.relatedProgrammeSlugs ?? []).filter(
+        (slug) => (exercise.relatedProgrammeSlugs ?? []).includes(slug),
+      ).length;
+      score += sharedProgrammes * 2;
+      return { item, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score);
+  return scored.slice(0, limit).map(({ item }) => item);
 }

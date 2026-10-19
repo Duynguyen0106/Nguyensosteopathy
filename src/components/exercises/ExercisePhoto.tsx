@@ -29,14 +29,11 @@ export function ExercisePhoto({
     );
   }
 
-  const aspect =
-    size === "detail" ? "aspect-[16/10]" : "aspect-[16/10]";
-
   return (
     <figure
       className={`overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 ${className}`}
     >
-      <div className={`relative ${aspect} w-full`}>
+      <div className="relative aspect-[16/10] w-full">
         <Image
           src={image.src}
           alt={image.alt || title}
@@ -48,6 +45,11 @@ export function ExercisePhoto({
               : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           }
           className="object-cover"
+          style={
+            image.objectPosition
+              ? { objectPosition: image.objectPosition }
+              : undefined
+          }
           quality={70}
         />
       </div>

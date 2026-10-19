@@ -7,10 +7,12 @@ import { ExerciseSafetyBanner } from "@/components/exercises/ExerciseSafetyBanne
 import { ExerciseSteps } from "@/components/exercises/ExerciseSteps";
 import { ProgrammeCard } from "@/components/exercises/ProgrammeCard";
 import { getCondition } from "@/lib/conditions";
+import { ExerciseCard } from "@/components/exercises/ExerciseCard";
 import {
   getAllExerciseSlugs,
   getExercise,
   getProgrammesForExercise,
+  getRelatedExercises,
   levelLabels,
 } from "@/lib/exercises";
 import { site } from "@/lib/site";
@@ -44,6 +46,7 @@ export default async function ExerciseDetailPage({ params }: Props) {
   if (!exercise) notFound();
 
   const relatedProgrammes = getProgrammesForExercise(exercise);
+  const relatedExercises = getRelatedExercises(exercise, 3);
   const relatedConditions = exercise.relatedConditionSlugs
     .map((conditionSlug) => getCondition(conditionSlug))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
@@ -144,6 +147,24 @@ export default async function ExerciseDetailPage({ params }: Props) {
           />
         </div>
       </section>
+
+      {relatedExercises.length > 0 ? (
+        <section className="border-b border-slate-200 px-5 py-16 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="font-display text-3xl text-navy">Related exercises</h2>
+            <p className="mt-3 max-w-2xl text-base text-slate-600">
+              Other drills in a similar region or programme stage.
+            </p>
+            <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedExercises.map((item) => (
+                <li key={item.slug}>
+                  <ExerciseCard exercise={item} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       {relatedProgrammes.length > 0 ? (
         <section className="border-b border-slate-200 px-5 py-16 md:px-8 md:py-20">

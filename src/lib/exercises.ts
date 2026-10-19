@@ -36,7 +36,8 @@ export type IllustrationKey =
   | "heel-raise"
   | "bridge"
   | "chin-tuck"
-  | "open-book";
+  | "open-book"
+  | "figure-four";
 
 export type Exercise = {
   slug: string;
@@ -191,10 +192,7 @@ export const exercises: Exercise[] = [
       "deconditioning",
       "post-surgical-general",
     ],
-    relatedProgrammeSlugs: [
-      "acute-low-back-settle",
-      "post-visit-gentle-move",
-    ],
+    relatedProgrammeSlugs: ["acute-low-back-settle"],
   },
   {
     slug: "glute-bridge",
@@ -389,7 +387,7 @@ export const exercises: Exercise[] = [
     region: "Hip",
     level: "early",
     equipment: "Mat",
-    illustration: "supine-knees-bent",
+    illustration: "figure-four",
     steps: [
       "Lie on your back and cross the ankle of the symptomatic side over the opposite thigh (figure-four).",
       "If comfortable, draw the uncrossed thigh toward you until you feel a mild outer-hip stretch.",
@@ -1138,13 +1136,17 @@ export function getExercisesForProgramme(programme: Programme): Exercise[] {
 }
 
 export function getProgrammesForExercise(exercise: Exercise): Programme[] {
-  const fromField = (exercise.relatedProgrammeSlugs ?? [])
-    .map((slug) => getProgramme(slug))
-    .filter((item): item is Programme => Boolean(item));
-  if (fromField.length > 0) return fromField;
-  return programmes.filter((programme) =>
+  const byMembership = programmes.filter((programme) =>
     programme.exerciseSlugs.includes(exercise.slug),
   );
+  const byField = (exercise.relatedProgrammeSlugs ?? [])
+    .map((slug) => getProgramme(slug))
+    .filter((item): item is Programme => Boolean(item));
+  const merged = new Map<string, Programme>();
+  for (const programme of [...byMembership, ...byField]) {
+    merged.set(programme.slug, programme);
+  }
+  return [...merged.values()];
 }
 
 export function getExercisesByLevel(level?: ExerciseLevel): Exercise[] {
@@ -1164,8 +1166,10 @@ export function getRelatedExercises(exercise: Exercise, limit = 3): Exercise[] {
         exercise.relatedConditionSlugs.includes(slug),
       ).length;
       score += sharedConditions;
-      const sharedProgrammes = (item.relatedProgrammeSlugs ?? []).filter(
-        (slug) => (exercise.relatedProgrammeSlugs ?? []).includes(slug),
+      const sharedProgrammes = programmes.filter(
+        (programme) =>
+          programme.exerciseSlugs.includes(item.slug) &&
+          programme.exerciseSlugs.includes(exercise.slug),
       ).length;
       score += sharedProgrammes * 2;
       return { item, score };

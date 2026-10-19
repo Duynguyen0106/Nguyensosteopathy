@@ -47,9 +47,9 @@ const IMAGES = {
   },
   "knee-rolls": {
     kind: "pexels",
-    id: 7592443,
-    alt: "Person lying on a yoga mat with knees bent — position used for gentle knee rolls",
-    credit: "Photo via Pexels (#7592443)",
+    id: 6111612,
+    alt: "Person lying on their back with knees rolled to one side for gentle lumbar mobility",
+    credit: "Photo via Pexels (#6111612)",
   },
   "supine-marching": {
     kind: "pexels",
@@ -63,42 +63,9 @@ const IMAGES = {
     alt: "Person performing a glute bridge on a yoga mat with hips lifted",
     credit: "Photo via Pexels (#4534632)",
   },
-  "hip-hinge-practice": {
-    kind: "pexels",
-    id: 841130,
-    alt: "Person in a hip-hinge / deadlift set-up gripping a barbell",
-    credit: "Photo via Pexels (#841130)",
-  },
-  "chin-tuck": {
-    kind: "pexels",
-    id: 7900670,
-    alt: "Person performing a gentle neck mobility stretch with hand support at the jaw",
-    credit: "Photo via Pexels (#7900670)",
-  },
-  "seated-scapular-set": {
-    kind: "pexels",
-    id: 8244383,
-    alt: "Person seated upright with arms reaching overhead — tall posture and scapular set cue",
-    credit: "Photo via Pexels (#8244383)",
-  },
-  "open-book-rotation": {
-    kind: "pexels",
-    id: 4534584,
-    alt: "Person in a lunging twist, rotating the torso for thoracic mobility",
-    credit: "Photo via Pexels (#4534584)",
-  },
-  "sciatic-nerve-glide": {
-    kind: "pexels",
-    id: 373891,
-    alt: "Seated person reaching toward the feet in a hamstring / nerve-mobility stretch",
-    credit: "Photo via Pexels (#373891)",
-  },
-  "piriformis-figure-four": {
-    kind: "pexels",
-    id: 6453906,
-    alt: "Person in a half-pigeon / hip stretch on the floor for outer-hip mobility",
-    credit: "Photo via Pexels (#6453906)",
-  },
+  // SVG-only (stock pose mismatch): chin-tuck, seated-scapular-set,
+  // open-book-rotation, sciatic-nerve-glide, piriformis-figure-four,
+  // hip-hinge-practice, wall-angels, band-external-rotation, single-leg-balance
   "quad-set-short-arc": {
     kind: "wikimedia",
     file: "Quad setting exercise.png",
@@ -145,29 +112,11 @@ const IMAGES = {
     alt: "Illustration of a shoulder pendulum: leaning forward with the arm hanging to swing gently",
     credit: "Illustration via Wikimedia Commons (CC licensed)",
   },
-  "wall-angels": {
-    kind: "pexels",
-    id: 7593045,
-    alt: "Person standing with arms reaching overhead against a plain wall — wall-angel style reach",
-    credit: "Photo via Pexels (#7593045)",
-  },
-  "band-external-rotation": {
-    kind: "pexels",
-    id: 8846512,
-    alt: "Person using a resistance band for shoulder and upper-back activation",
-    credit: "Photo via Pexels (#8846512)",
-  },
   "ankle-alphabet": {
     kind: "wikimedia",
     file: "Exercise Ankle Rotation.png",
     alt: "Instructional illustration of seated ankle rotation / alphabet mobility",
     credit: "Illustration via Wikimedia Commons (BruceBlaus, CC BY-SA 4.0)",
-  },
-  "single-leg-balance": {
-    kind: "wikimedia",
-    file: "Balance with one leg.JPG",
-    alt: "Person balancing on one leg on a balance disc for stability training",
-    credit: "Photo via Wikimedia Commons (CC licensed)",
   },
   "bird-dog": {
     kind: "wikimedia",

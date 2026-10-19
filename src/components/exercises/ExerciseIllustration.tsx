@@ -11,7 +11,7 @@ const titles: Record<IllustrationKey, string> = {
   "side-lying": "Person lying on their side",
   quadruped: "Person on hands and knees",
   "wall-slide": "Person performing wall arm slides",
-  "band-row": "Person using a light resistance band",
+  "band-row": "Person rotating the forearm against a light band",
   "step-down": "Person stepping down from a low step",
   "ankle-alphabet": "Seated person moving the ankle",
   "nerve-glide": "Seated person performing a gentle nerve glide",
@@ -20,6 +20,7 @@ const titles: Record<IllustrationKey, string> = {
   bridge: "Person performing a glute bridge",
   "chin-tuck": "Person performing a chin tuck",
   "open-book": "Person in side-lying open-book rotation",
+  "figure-four": "Person lying on back in a figure-four hip stretch",
 };
 
 function Frame({
@@ -355,17 +356,33 @@ export function ExerciseIllustration({
       );
       break;
     case "band-row":
+      // Elbow-at-side external rotation (cuff), not a standing row.
       body = (
         <>
           {figureStanding()}
           <path
-            d="M125 105 C100 105, 80 110, 55 110"
+            d="M145 100 L175 100 L175 130"
+            fill="none"
+            stroke={navy}
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M175 130 Q200 145 185 160"
             fill="none"
             stroke={teal}
             strokeWidth="4"
+            strokeDasharray="4 3"
+          />
+          <circle cx="40" cy="110" r="6" fill={teal} />
+          <path
+            d="M46 110 C90 110, 130 115, 170 128"
+            fill="none"
+            stroke={teal}
+            strokeWidth="3"
             strokeDasharray="4 4"
           />
-          <circle cx="55" cy="110" r="6" fill={teal} />
         </>
       );
       break;
@@ -412,6 +429,41 @@ export function ExerciseIllustration({
             strokeWidth="3"
             strokeDasharray="4 3"
           />
+        </>
+      );
+      break;
+    case "figure-four":
+      body = (
+        <>
+          <ellipse cx="160" cy="175" rx="95" ry="10" fill="#e2e8f0" />
+          {/* torso */}
+          <path
+            d="M70 155 C95 115, 125 100, 160 100 C195 100, 225 115, 250 155"
+            fill="none"
+            stroke={navy}
+            strokeWidth="8"
+            strokeLinecap="round"
+          />
+          <circle cx="78" cy="130" r="13" fill={navy} />
+          {/* base thigh (uncrossed) */}
+          <path
+            d="M155 115 L155 145 L120 175"
+            fill="none"
+            stroke={navy}
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          {/* crossed ankle over thigh (figure-four) */}
+          <path
+            d="M155 145 L200 130 L215 155"
+            fill="none"
+            stroke={teal}
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <circle cx="215" cy="155" r="5" fill={teal} />
         </>
       );
       break;

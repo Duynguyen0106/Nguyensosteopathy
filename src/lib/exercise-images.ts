@@ -28,28 +28,6 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Person performing a glute bridge on a yoga mat with hips lifted",
     credit: "Photo via Pexels (#4534632)",
   },
-  "chin-tuck": {
-    src: "/images/exercises/chin-tuck.webp",
-    alt: "Person performing gentle neck mobility with light hand support at the jaw",
-    credit: "Photo via Pexels (#7900670)",
-    objectPosition: "center 30%",
-  },
-  "seated-scapular-set": {
-    src: "/images/exercises/seated-scapular-set.webp",
-    alt: "Person seated at a desk reaching the arms overhead to reset upper-back posture",
-    credit: "Photo via Pexels (#7888730)",
-    objectPosition: "center 25%",
-  },
-  "sciatic-nerve-glide": {
-    src: "/images/exercises/sciatic-nerve-glide.webp",
-    alt: "Seated person reaching toward the feet in a hamstring / nerve-mobility stretch",
-    credit: "Photo via Pexels (#373891)",
-  },
-  "piriformis-figure-four": {
-    src: "/images/exercises/piriformis-figure-four.webp",
-    alt: "Person in a pigeon-style hip stretch on a yoga mat for outer-hip mobility",
-    credit: "Photo via Pexels (#4534662)",
-  },
   "quad-set-short-arc": {
     src: "/images/exercises/quad-set-short-arc.webp",
     alt: "Instructional illustration of a quad set / short-arc knee extension",
@@ -94,11 +72,6 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     src: "/images/exercises/ankle-alphabet.webp",
     alt: "Instructional illustration of seated ankle rotation / alphabet mobility",
     credit: "Illustration via Wikimedia Commons (BruceBlaus, CC BY-SA 4.0)",
-  },
-  "single-leg-balance": {
-    src: "/images/exercises/single-leg-balance.webp",
-    alt: "Person balancing on one leg on a balance disc for stability training",
-    credit: "Photo via Wikimedia Commons (CC licensed)",
   },
   "bird-dog": {
     src: "/images/exercises/bird-dog.webp",

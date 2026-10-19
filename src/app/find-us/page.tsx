@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -102,6 +103,53 @@ export default function FindUsPage() {
             <ButtonLink href="/areas" variant="secondary">
               Areas we serve
             </ButtonLink>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white px-5 py-12 md:px-8 md:py-16">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="font-display text-3xl text-navy md:text-4xl">
+            Inside the clinic
+          </h2>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+            Private consultation and treatment space inside the pharmacy — the
+            room staff will direct you to after you check in at the counter.
+          </p>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <Image
+              src="/images/clinic-room.webp"
+              alt="Overview of the osteopathy consultation and treatment room"
+              width={800}
+              height={600}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              loading="lazy"
+              decoding="async"
+              quality={75}
+              className="h-56 w-full object-cover md:h-64"
+            />
+            <Image
+              src="/images/clinic-treatment.webp"
+              alt="Treatment table by the window with clinical certificates"
+              width={800}
+              height={1000}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              loading="lazy"
+              decoding="async"
+              quality={75}
+              className="h-56 w-full object-cover md:h-64"
+            />
+            <Image
+              src="/images/clinic-desk.webp"
+              alt="Consultation desk and anatomical charts in the clinic"
+              width={800}
+              height={1000}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              loading="lazy"
+              decoding="async"
+              quality={75}
+              className="h-56 w-full object-cover md:h-64"
+            />
           </div>
         </div>
       </section>

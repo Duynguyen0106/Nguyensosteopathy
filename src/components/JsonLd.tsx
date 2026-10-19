@@ -31,7 +31,9 @@ export function buildClinicJsonLd() {
     url: site.websiteUrl,
     image: [
       `${site.websiteUrl}/images/logo-lockup.webp`,
-      `${site.websiteUrl}/images/clinic-promo.webp`,
+      `${site.websiteUrl}/images/clinic-room.webp`,
+      `${site.websiteUrl}/images/clinic-treatment.webp`,
+      `${site.websiteUrl}/images/clinic-desk.webp`,
       `${site.websiteUrl}/images/austin-nguyen.webp`,
     ],
     logo: `${site.websiteUrl}/images/logo-mark.webp`,

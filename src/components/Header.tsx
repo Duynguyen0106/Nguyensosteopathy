@@ -34,6 +34,7 @@ export function Header() {
   const panelId = `${menuId}-panel`;
   const servicesMenuId = `${menuId}-services`;
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -46,8 +47,25 @@ export function Header() {
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    const main = document.getElementById("main-content");
+    const footer = document.querySelector("footer");
+    if (open) {
+      main?.setAttribute("inert", "");
+      main?.setAttribute("aria-hidden", "true");
+      footer?.setAttribute("inert", "");
+      footer?.setAttribute("aria-hidden", "true");
+    } else {
+      main?.removeAttribute("inert");
+      main?.removeAttribute("aria-hidden");
+      footer?.removeAttribute("inert");
+      footer?.removeAttribute("aria-hidden");
+    }
     return () => {
       document.body.style.overflow = "";
+      main?.removeAttribute("inert");
+      main?.removeAttribute("aria-hidden");
+      footer?.removeAttribute("inert");
+      footer?.removeAttribute("aria-hidden");
     };
   }, [open]);
 
@@ -67,11 +85,7 @@ export function Header() {
   useEffect(() => {
     if (!open) return;
 
-    const panel = panelRef.current;
-    const firstLink = panel?.querySelector<HTMLElement>(
-      "a[href], button:not([disabled])",
-    );
-    firstLink?.focus();
+    closeButtonRef.current?.focus();
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -81,10 +95,10 @@ export function Header() {
         return;
       }
 
-      if (event.key !== "Tab" || !panel) return;
+      if (event.key !== "Tab" || !panelRef.current) return;
 
       const focusable = [
-        ...panel.querySelectorAll<HTMLElement>(
+        ...panelRef.current.querySelectorAll<HTMLElement>(
           'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
         ),
       ].filter((el) => !el.hasAttribute("disabled"));
@@ -106,6 +120,11 @@ export function Header() {
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
+
+  function closeMenu() {
+    setOpen(false);
+    menuButtonRef.current?.focus();
+  }
 
   return (
     <header
@@ -172,9 +191,7 @@ export function Header() {
               role="menu"
               hidden={!servicesOpen}
               className={`absolute top-full left-0 z-[60] pt-2 transition ${
-                servicesOpen
-                  ? "visible opacity-100"
-                  : "invisible opacity-0"
+                servicesOpen ? "visible opacity-100" : "invisible opacity-0"
               }`}
             >
               <div className="w-[22rem] rounded-xl border border-slate-200 bg-white p-3 shadow-lg">
@@ -254,6 +271,7 @@ export function Header() {
             className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
             aria-expanded={open}
             aria-controls={panelId}
+            aria-haspopup="dialog"
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((value) => !value)}
           >
@@ -276,81 +294,116 @@ export function Header() {
       </div>
 
       {open ? (
-        <div
-          id={panelId}
-          ref={panelRef}
-          className="max-h-[min(70vh,28rem)] overflow-y-auto border-t border-line bg-white px-4 py-4 sm:px-5 sm:py-5 lg:hidden"
-        >
-          <nav aria-label="Mobile" className="flex flex-col gap-1">
-            <div className="mb-2 grid grid-cols-2 gap-2">
-              <a
-                href={site.phoneHref}
-                className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
-                onClick={() => setOpen(false)}
+        <>
+          <button
+            type="button"
+            className="fixed inset-0 z-[55] bg-navy/40 lg:hidden"
+            aria-label="Close menu"
+            onClick={closeMenu}
+          />
+          <div
+            id={panelId}
+            ref={panelRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site menu"
+            className="fixed inset-x-0 bottom-0 top-[4.25rem] z-[60] flex max-h-[calc(100dvh-4.25rem)] flex-col border-t border-line bg-white shadow-2xl sm:top-[4.75rem] sm:max-h-[calc(100dvh-4.75rem)] lg:hidden"
+          >
+            <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3 sm:px-5">
+              <p className="text-sm font-semibold text-navy">Menu</p>
+              <button
+                ref={closeButtonRef}
+                type="button"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy"
+                aria-label="Close menu"
+                onClick={closeMenu}
               >
-                Call
-              </a>
-              <a
-                href={site.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
-                onClick={() => setOpen(false)}
-              >
-                WhatsApp
-              </a>
-            </div>
-            <Link
-              href="/book"
-              className="mb-3 min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
-              onClick={() => setOpen(false)}
-            >
-              Book Now
-            </Link>
-            <Link
-              href="/about"
-              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-              onClick={() => setOpen(false)}
-            >
-              About
-            </Link>
-
-            <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-              Services
-            </p>
-            <Link
-              href="/services"
-              className="rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
-              onClick={() => setOpen(false)}
-            >
-              All services
-            </Link>
-            {serviceNav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
-            <div className="my-2 border-t border-slate-100" />
-
-            {links
-              .filter((link) => link.href !== "/about")
-              .map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                  onClick={() => setOpen(false)}
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  aria-hidden
                 >
-                  {link.label}
+                  <path d="M6 6l12 12M18 6 6 18" />
+                </svg>
+              </button>
+            </div>
+            <nav
+              aria-label="Mobile"
+              className="flex-1 overflow-y-auto px-4 py-4 sm:px-5 sm:py-5"
+            >
+              <div className="mb-2 grid grid-cols-2 gap-2">
+                <a
+                  href={site.phoneHref}
+                  className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
+                  onClick={closeMenu}
+                >
+                  Call
+                </a>
+                <a
+                  href={site.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
+                  onClick={closeMenu}
+                >
+                  WhatsApp
+                </a>
+              </div>
+              <Link
+                href="/book"
+                className="mb-3 block min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
+                onClick={closeMenu}
+              >
+                Book Now
+              </Link>
+              <Link
+                href="/about"
+                className="block rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                onClick={closeMenu}
+              >
+                About
+              </Link>
+
+              <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                Services
+              </p>
+              <Link
+                href="/services"
+                className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
+                onClick={closeMenu}
+              >
+                All services
+              </Link>
+              {serviceNav.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="block min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                  onClick={closeMenu}
+                >
+                  {item.label}
                 </Link>
               ))}
-          </nav>
-        </div>
+              <div className="my-2 border-t border-slate-100" />
+
+              {links
+                .filter((link) => link.href !== "/about")
+                .map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                    onClick={closeMenu}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+            </nav>
+          </div>
+        </>
       ) : null}
     </header>
   );

@@ -43,54 +43,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between md:px-8">
-          <div className="flex flex-wrap gap-2">
-            <a
-              href={site.practitioner.goscRegisterUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-teal"
-            >
-              <span className="text-teal" aria-hidden>
-                ✓
-              </span>
-              GOsC Reg. No. {site.practitioner.regNo}
-            </a>
-            <span className="hidden text-slate-300 sm:inline" aria-hidden>
-              ·
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy">
-              <span className="text-teal" aria-hidden>
-                ✓
-              </span>
-              10% NHS &amp; Student Discount
-            </span>
-          </div>
-          <p className="text-sm text-slate-600">{site.booking.shortNote}</p>
-        </div>
-      </section>
-
-      <section className="bg-navy text-white">
-        <div className="mx-auto grid max-w-6xl gap-3 px-5 py-5 sm:grid-cols-2 md:px-8 lg:grid-cols-4">
-          {highlights.map((item) => (
-            <p
-              key={item}
-              className="flex items-start gap-2 text-sm text-white/95 md:text-[0.95rem]"
-            >
-              <span className="mt-0.5 text-teal-mist" aria-hidden>
-                ✓
-              </span>
-              {item}
-            </p>
-          ))}
-        </div>
-        <div className="border-t border-white/10 px-5 py-3 text-center text-sm text-teal-mist md:px-8">
-          Osteopathy · drug free pain relief · back pain treatment · neck pain
-          treatment · shockwave therapy · {site.address.venue}, Woolwich
-        </div>
-      </section>
-
+      {/* First section after hero — one job: how a visit works */}
       <section className="bg-slate-50 px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
@@ -100,25 +53,52 @@ export default function HomePage() {
             <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
               Simple from first contact to recovery
             </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
+              {site.booking.shortNote}
+            </p>
           </div>
-          <ol className="mt-10 grid gap-6 md:grid-cols-3">
+          <ol className="mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
             {visitSteps.map((item) => (
-              <li
-                key={item.step}
-                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
-              >
+              <li key={item.step}>
                 <p className="text-xs font-semibold tracking-[0.18em] text-teal">
                   {item.step}
                 </p>
                 <h3 className="mt-3 text-xl font-semibold text-navy">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <p className="mt-2 text-sm leading-relaxed text-slate-600 md:text-base">
                   {item.detail}
                 </p>
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Deferred trust signals — not in the first viewport */}
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-6 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between md:px-8">
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            <a
+              href={site.practitioner.goscRegisterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold text-navy hover:text-teal"
+            >
+              GOsC Reg. No. {site.practitioner.regNo}
+            </a>
+            <Link
+              href="/nhs-discount"
+              className="text-sm font-semibold text-navy hover:text-teal"
+            >
+              10% NHS &amp; student discount
+            </Link>
+          </div>
+          <ul className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-slate-600">
+            {highlights.slice(0, 3).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </section>
 

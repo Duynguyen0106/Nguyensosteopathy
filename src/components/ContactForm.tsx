@@ -1,39 +1,56 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { FormEvent, MouseEvent, useState } from "react";
 import { site } from "@/lib/site";
 
+function buildEnquiryText(data: FormData) {
+  const name = String(data.get("name") ?? "").trim();
+  const email = String(data.get("email") ?? "").trim();
+  const phone = String(data.get("phone") ?? "").trim();
+  const message = String(data.get("message") ?? "").trim();
+
+  return [
+    name ? `Hi, I'm ${name}.` : "Hi,",
+    "",
+    message || "I'd like to enquire about an appointment.",
+    "",
+    email ? `Email: ${email}` : null,
+    phone ? `Phone: ${phone}` : null,
+  ]
+    .filter((line) => line !== null)
+    .join("\n");
+}
+
 export function ContactForm() {
-  const [sentHint, setSentHint] = useState(false);
+  const [hint, setHint] = useState<"idle" | "whatsapp" | "email">("idle");
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  function openWhatsApp(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const name = String(data.get("name") ?? "").trim();
-    const email = String(data.get("email") ?? "").trim();
-    const phone = String(data.get("phone") ?? "").trim();
-    const message = String(data.get("message") ?? "").trim();
+    const text = encodeURIComponent(buildEnquiryText(new FormData(event.currentTarget)));
+    setHint("whatsapp");
+    const anchor = document.createElement("a");
+    anchor.href = `${site.whatsappUrl}?text=${text}`;
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+    anchor.click();
+  }
 
+  function openEmail(event: MouseEvent<HTMLButtonElement>) {
+    event.preventDefault();
+    const form = event.currentTarget.form;
+    if (!form) return;
+    if (!form.reportValidity()) return;
+
+    const data = new FormData(form);
+    const name = String(data.get("name") ?? "").trim();
     const subject = encodeURIComponent(
       `Enquiry from ${name || "website visitor"} — ${site.name}`,
     );
     const body = encodeURIComponent(
-      [
-        name ? `Name: ${name}` : null,
-        email ? `Email: ${email}` : null,
-        phone ? `Phone: ${phone}` : null,
-        "",
-        message || "(No message provided)",
-        "",
-        `— Sent from ${site.websiteUrl}/contact`,
-      ]
-        .filter((line) => line !== null)
-        .join("\n"),
+      `${buildEnquiryText(data)}\n\n— Sent from ${site.websiteUrl}/contact`,
     );
-
-    setSentHint(true);
-    // mailto: is external to Next routing — open via anchor to avoid location lint.
+    setHint("email");
     const anchor = document.createElement("a");
     anchor.href = `${site.emailHref}?subject=${subject}&body=${body}`;
     anchor.rel = "noopener noreferrer";
@@ -42,7 +59,7 @@ export function ContactForm() {
 
   return (
     <form
-      onSubmit={onSubmit}
+      onSubmit={openWhatsApp}
       className="space-y-4"
       aria-label="Send an enquiry"
     >
@@ -71,7 +88,6 @@ export function ContactForm() {
           name="email"
           type="email"
           autoComplete="email"
-          required
           className="mt-1.5 min-h-11 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-navy outline-none ring-teal/30 transition focus:border-teal focus:ring-2"
         />
       </div>
@@ -106,14 +122,41 @@ export function ContactForm() {
           placeholder="How can we help?"
         />
       </div>
-      <button
-        type="submit"
-        className="inline-flex min-h-11 items-center justify-center rounded-xl bg-teal px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-teal/25 ring-1 ring-teal/20 transition hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
-      >
-        Email your enquiry
-      </button>
+
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <button
+          type="submit"
+          className="inline-flex min-h-11 items-center justify-center rounded-xl bg-teal px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-teal/25 ring-1 ring-teal/20 transition hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+        >
+          Send on WhatsApp
+        </button>
+        <button
+          type="button"
+          onClick={openEmail}
+          className="inline-flex min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-navy shadow-sm transition hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+        >
+          Or email instead
+        </button>
+      </div>
+
       <div aria-live="polite">
-        {sentHint ? (
+        {hint === "whatsapp" ? (
+          <p className="text-sm text-slate-600">
+            WhatsApp should open with your message. Prefer email? Use{" "}
+            <a href={site.emailHref} className="prose-link">
+              {site.email}
+            </a>
+            , call{" "}
+            <a href={site.phoneHref} className="prose-link">
+              {site.phone}
+            </a>
+            , or{" "}
+            <Link href="/book" className="prose-link">
+              book online
+            </Link>
+            .
+          </p>
+        ) : hint === "email" ? (
           <p className="text-sm text-slate-600">
             If your email app did not open, message us on{" "}
             <a
@@ -124,10 +167,6 @@ export function ContactForm() {
             >
               WhatsApp
             </a>
-            , email{" "}
-            <a href={site.emailHref} className="prose-link">
-              {site.email}
-            </a>
             , or{" "}
             <Link href="/book" className="prose-link">
               book online
@@ -136,21 +175,8 @@ export function ContactForm() {
           </p>
         ) : (
           <p className="text-xs text-slate-500">
-            This form opens your email app to message {site.email}. On phones
-            without email set up, use{" "}
-            <a
-              href={site.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="prose-link"
-            >
-              WhatsApp
-            </a>
-            , call{" "}
-            <a href={site.phoneHref} className="prose-link">
-              {site.phone}
-            </a>
-            , or{" "}
+            WhatsApp is the quickest way to reach us on a phone. Email opens your
+            mail app as a backup — or{" "}
             <Link href="/book" className="prose-link">
               book online
             </Link>

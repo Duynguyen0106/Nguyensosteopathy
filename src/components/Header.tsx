@@ -7,16 +7,16 @@ import { createPortal } from "react-dom";
 import { ButtonLink } from "@/components/Button";
 import { getServiceHref, services, site } from "@/lib/site";
 
-/** Primary lg row — trust/local + discount/insurance; Blog/Exercises/Contact/VI in mobile + footer. */
+/** Primary lg row — care paths first; NHS/Insurance/Reviews/Contact/VI in mobile + footer. */
 const links = [
   { href: "/about", label: "About", desktop: true },
   { href: "/conditions", label: "Conditions", desktop: true },
-  { href: "/exercises", label: "Exercises", desktop: false },
-  { href: "/blog", label: "Blog", desktop: false },
+  { href: "/exercises", label: "Exercises", desktop: true },
+  { href: "/blog", label: "Blog", desktop: true },
   { href: "/fees", label: "Fees", desktop: true },
-  { href: "/nhs-discount", label: "NHS 10%", desktop: true },
-  { href: "/insurance", label: "Insurance", desktop: true },
-  { href: "/reviews", label: "Reviews", desktop: true },
+  { href: "/nhs-discount", label: "NHS 10%", desktop: false },
+  { href: "/insurance", label: "Insurance", desktop: false },
+  { href: "/reviews", label: "Reviews", desktop: false },
   { href: "/find-us", label: "Find us", desktop: true },
   { href: "/contact", label: "Contact", desktop: false },
   { href: "/vi", label: "Tiếng Việt", desktop: false },
@@ -38,6 +38,7 @@ export function Header() {
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
+  const servicesWrapRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -76,16 +77,28 @@ export function Header() {
   }, [open]);
 
   useEffect(() => {
+    if (!servicesOpen) return;
+
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key !== "Escape") return;
-      if (servicesOpen) {
-        event.preventDefault();
-        setServicesOpen(false);
-        servicesButtonRef.current?.focus();
-      }
+      event.preventDefault();
+      setServicesOpen(false);
+      servicesButtonRef.current?.focus();
     };
+
+    const onPointerDown = (event: MouseEvent | PointerEvent) => {
+      const target = event.target as Node | null;
+      if (!target) return;
+      if (servicesWrapRef.current?.contains(target)) return;
+      setServicesOpen(false);
+    };
+
     document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+    };
   }, [servicesOpen]);
 
   useEffect(() => {
@@ -167,6 +180,7 @@ export function Header() {
           </Link>
 
           <div
+            ref={servicesWrapRef}
             className="relative"
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
@@ -179,6 +193,12 @@ export function Header() {
               aria-expanded={servicesOpen}
               aria-controls={servicesMenuId}
               onClick={() => setServicesOpen((value) => !value)}
+              onKeyDown={(event) => {
+                if (event.key === "ArrowDown" && !servicesOpen) {
+                  event.preventDefault();
+                  setServicesOpen(true);
+                }
+              }}
             >
               Services
               <svg

@@ -77,62 +77,28 @@ export function CookieBanner() {
 
   useEffect(() => {
     if (!visible) return;
-    const dialog = dialogRef.current;
-    firstButtonRef.current?.focus();
-
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();
         choose("declined");
-        return;
-      }
-      if (event.key !== "Tab" || !dialog) return;
-
-      const focusable = [
-        ...dialog.querySelectorAll<HTMLElement>(
-          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
-        ),
-      ];
-      if (focusable.length === 0) return;
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      const active = document.activeElement as HTMLElement | null;
-
-      if (event.shiftKey && active === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && active === last) {
-        event.preventDefault();
-        first.focus();
       }
     };
 
     document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      document.removeEventListener("keydown", onKeyDown);
-    };
+    return () => document.removeEventListener("keydown", onKeyDown);
   }, [visible, choose]);
 
   if (!visible) return null;
 
   return (
-    <>
-      <div
-        className="fixed inset-0 z-[59] bg-navy/25"
-        aria-hidden
-        onClick={() => choose("declined")}
-      />
-      <div
-        ref={dialogRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby={titleId}
-        className="fixed inset-x-0 bottom-0 z-[60] border-t border-navy/10 bg-white/95 p-4 shadow-[0_-12px_40px_rgba(11,44,69,0.12)] backdrop-blur-md md:p-5"
-      >
+    <div
+      ref={dialogRef}
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby={titleId}
+      className="fixed inset-x-0 bottom-0 z-[60] border-t border-navy/10 bg-white/95 p-4 shadow-[0_-12px_40px_rgba(11,44,69,0.12)] backdrop-blur-md md:p-5"
+    >
         <div className="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p
             id={titleId}
@@ -167,7 +133,6 @@ export function CookieBanner() {
             </button>
           </div>
         </div>
-      </div>
-    </>
+    </div>
   );
 }

@@ -237,12 +237,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          <ul className="mt-10 grid gap-3 sm:mt-12 sm:gap-4 sm:grid-cols-2">
+          <ul className="mt-10 divide-y divide-slate-200 border-y border-slate-200 sm:mt-12">
             {services.map((service) => (
               <li key={service.slug} className="min-w-0">
                 <Link
                   href={getServiceHref(service.slug)}
-                  className="service-tile group flex h-full gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md sm:gap-4 sm:p-5"
+                  className="group flex gap-3 py-4 transition-colors hover:bg-white/60 sm:gap-4 sm:py-5"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
                     <ServiceIcon name={service.icon} />
@@ -250,27 +250,27 @@ export default function HomePage() {
                   <span className="min-w-0 flex-1">
                     <span className="flex items-start justify-between gap-2 sm:gap-3">
                       <span className="min-w-0">
-                        <span className="block text-base font-semibold text-navy sm:text-lg">
+                        <span className="block text-base font-semibold text-navy group-hover:text-teal sm:text-lg">
                           {service.title}
                         </span>
                         {service.badge ? (
-                          <span className="mt-1.5 inline-flex max-w-full rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
+                          <span className="mt-1.5 inline-flex max-w-full text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
                             {service.badge}
                           </span>
                         ) : null}
                       </span>
                       <span
-                        className="service-arrow shrink-0 text-slate-400"
+                        className="shrink-0 text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-teal"
                         aria-hidden
                       >
                         →
                       </span>
                     </span>
-                    <span className="mt-2 block text-sm leading-relaxed text-slate-600">
+                    <span className="mt-1.5 block text-sm leading-relaxed text-slate-600">
                       {service.summary}
                     </span>
                     {service.relatedPricing ? (
-                      <span className="mt-3 block text-xs font-semibold tracking-wide text-teal-dark">
+                      <span className="mt-2 block text-xs font-semibold tracking-wide text-teal-dark">
                         {service.relatedPricing}
                       </span>
                     ) : null}
@@ -411,21 +411,21 @@ export default function HomePage() {
               assessment.
             </p>
           </div>
-          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-10 columns-1 gap-x-10 sm:columns-2 lg:columns-3">
             {featuredConditions.map((condition) => (
-              <li key={condition.slug}>
+              <li key={condition.slug} className="mb-3 break-inside-avoid">
                 <Link
                   href={`/conditions/${condition.slug}`}
-                  className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal/40 hover:bg-teal/5"
+                  className="group inline-flex flex-col py-1"
                 >
                   <span className="text-xs font-semibold tracking-wide text-teal uppercase">
                     {condition.region}
                   </span>
-                  <span className="mt-2 font-semibold text-navy">
+                  <span className="mt-0.5 font-semibold text-navy group-hover:text-teal">
                     {condition.shortTitle}
-                  </span>
-                  <span className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">
-                    {condition.summary}
+                    <span aria-hidden className="ml-1 text-slate-400">
+                      →
+                    </span>
                   </span>
                 </Link>
               </li>

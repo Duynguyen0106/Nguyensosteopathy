@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { ButtonLink } from "@/components/Button";
 import { getServiceHref, services, site } from "@/lib/site";
 
@@ -30,6 +31,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [portalReady, setPortalReady] = useState(false);
   const menuId = useId();
   const panelId = `${menuId}-panel`;
   const servicesMenuId = `${menuId}-services`;
@@ -37,6 +39,10 @@ export function Header() {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setPortalReady(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -293,118 +299,123 @@ export function Header() {
         </div>
       </div>
 
-      {open ? (
-        <>
-          <button
-            type="button"
-            className="fixed inset-0 z-[55] bg-navy/40 lg:hidden"
-            aria-label="Close menu"
-            onClick={closeMenu}
-          />
-          <div
-            id={panelId}
-            ref={panelRef}
-            role="dialog"
-            aria-modal="true"
-            aria-label="Site menu"
-            className="fixed inset-x-0 bottom-0 top-[4.25rem] z-[60] flex max-h-[calc(100dvh-4.25rem)] flex-col border-t border-line bg-white shadow-2xl sm:top-[4.75rem] sm:max-h-[calc(100dvh-4.75rem)] lg:hidden"
-          >
-            <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3 sm:px-5">
-              <p className="text-sm font-semibold text-navy">Menu</p>
+      {/* Portal outside header: backdrop-blur creates a containing block that
+          collapses position:fixed descendants to the sticky header height. */}
+      {portalReady && open
+        ? createPortal(
+            <div className="lg:hidden">
               <button
-                ref={closeButtonRef}
                 type="button"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy"
+                className="fixed inset-0 z-[70] bg-navy/40"
                 aria-label="Close menu"
                 onClick={closeMenu}
+              />
+              <div
+                id={panelId}
+                ref={panelRef}
+                role="dialog"
+                aria-modal="true"
+                aria-label="Site menu"
+                className="fixed inset-x-0 bottom-0 top-[4.25rem] z-[80] flex h-[calc(100dvh-4.25rem)] flex-col border-t border-line bg-white shadow-2xl sm:top-[4.75rem] sm:h-[calc(100dvh-4.75rem)]"
               >
-                <svg
-                  viewBox="0 0 24 24"
-                  className="h-5 w-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  aria-hidden
+                <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3 sm:px-5">
+                  <p className="text-sm font-semibold text-navy">Menu</p>
+                  <button
+                    ref={closeButtonRef}
+                    type="button"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy"
+                    aria-label="Close menu"
+                    onClick={closeMenu}
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      aria-hidden
+                    >
+                      <path d="M6 6l12 12M18 6 6 18" />
+                    </svg>
+                  </button>
+                </div>
+                <nav
+                  aria-label="Mobile"
+                  className="flex-1 overflow-y-auto px-4 py-4 sm:px-5 sm:py-5"
                 >
-                  <path d="M6 6l12 12M18 6 6 18" />
-                </svg>
-              </button>
-            </div>
-            <nav
-              aria-label="Mobile"
-              className="flex-1 overflow-y-auto px-4 py-4 sm:px-5 sm:py-5"
-            >
-              <div className="mb-2 grid grid-cols-2 gap-2">
-                <a
-                  href={site.phoneHref}
-                  className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
-                  onClick={closeMenu}
-                >
-                  Call
-                </a>
-                <a
-                  href={site.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
-                  onClick={closeMenu}
-                >
-                  WhatsApp
-                </a>
-              </div>
-              <Link
-                href="/book"
-                className="mb-3 block min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
-                onClick={closeMenu}
-              >
-                Book Now
-              </Link>
-              <Link
-                href="/about"
-                className="block rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                onClick={closeMenu}
-              >
-                About
-              </Link>
-
-              <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-                Services
-              </p>
-              <Link
-                href="/services"
-                className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
-                onClick={closeMenu}
-              >
-                All services
-              </Link>
-              {serviceNav.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="block min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                  onClick={closeMenu}
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <div className="my-2 border-t border-slate-100" />
-
-              {links
-                .filter((link) => link.href !== "/about")
-                .map((link) => (
+                  <div className="mb-2 grid grid-cols-2 gap-2">
+                    <a
+                      href={site.phoneHref}
+                      className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
+                      onClick={closeMenu}
+                    >
+                      Call
+                    </a>
+                    <a
+                      href={site.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
+                      onClick={closeMenu}
+                    >
+                      WhatsApp
+                    </a>
+                  </div>
                   <Link
-                    key={link.href}
-                    href={link.href}
+                    href="/book"
+                    className="mb-3 block min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
+                    onClick={closeMenu}
+                  >
+                    Book Now
+                  </Link>
+                  <Link
+                    href="/about"
                     className="block rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
                     onClick={closeMenu}
                   >
-                    {link.label}
+                    About
                   </Link>
-                ))}
-            </nav>
-          </div>
-        </>
-      ) : null}
+
+                  <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                    Services
+                  </p>
+                  <Link
+                    href="/services"
+                    className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
+                    onClick={closeMenu}
+                  >
+                    All services
+                  </Link>
+                  {serviceNav.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                      onClick={closeMenu}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                  <div className="my-2 border-t border-slate-100" />
+
+                  {links
+                    .filter((link) => link.href !== "/about")
+                    .map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="block rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                        onClick={closeMenu}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                </nav>
+              </div>
+            </div>,
+            document.body,
+          )
+        : null}
     </header>
   );
 }

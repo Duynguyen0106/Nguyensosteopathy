@@ -1,7 +1,15 @@
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "navy" | "ghost";
+type Variant =
+  | "primary"
+  | "secondary"
+  | "navy"
+  | "ghost"
+  /** Solid light button for navy / dark bands — avoids white-on-white from class overrides. */
+  | "onDark"
+  /** Outlined light button for navy / dark bands. */
+  | "onDarkOutline";
 
 const styles: Record<Variant, string> = {
   primary:
@@ -10,6 +18,10 @@ const styles: Record<Variant, string> = {
     "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal shadow-sm",
   navy: "bg-navy text-white hover:bg-navy-deep shadow-md shadow-navy/20",
   ghost: "text-teal hover:text-teal-dark",
+  onDark:
+    "border border-white/20 bg-white text-navy shadow-md shadow-black/15 hover:bg-cream-mist",
+  onDarkOutline:
+    "border border-white/45 bg-transparent text-white hover:border-white hover:bg-white/10",
 };
 
 const base =

@@ -129,11 +129,7 @@ export default function VietnamesePage() {
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
             <ButtonLink href="/book">Đặt lịch khám</ButtonLink>
-            <ButtonLink
-              href={site.phoneHref}
-              variant="secondary"
-              className="border-white/30 bg-white/10 text-white hover:bg-white/20"
-            >
+            <ButtonLink href={site.phoneHref} variant="onDarkOutline">
               Gọi {site.phone}
             </ButtonLink>
           </div>

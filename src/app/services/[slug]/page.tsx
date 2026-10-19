@@ -375,16 +375,14 @@ export default async function ServiceDetailPage({ params }: Props) {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink
-              href="/book"
-              className="bg-white text-navy shadow-md hover:bg-cream-mist"
-            >
+            <ButtonLink href="/book" variant="onDark">
               Book online
             </ButtonLink>
             <ButtonLink
               href={site.whatsappUrl}
-              variant="secondary"
-              className="border-white/30 bg-transparent text-white hover:bg-white/10"
+              variant="onDarkOutline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               WhatsApp
             </ButtonLink>

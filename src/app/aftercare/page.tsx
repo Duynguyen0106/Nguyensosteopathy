@@ -4,9 +4,9 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Aftercare | What to Do After Osteopathy Treatment",
+  title: "Aftercare",
   description:
-    "Aftercare advice following osteopathy at Nguyen's Osteopathic Clinic in Woolwich: soreness, rest, movement, hydration, when to contact us, and how follow-up visits work.",
+    "Aftercare advice following osteopathy at Nguyen's Osteopathic Clinic in Woolwich: soreness, rest, movement, hydration, when to contact us, and how follow-up…",
   alternates: { canonical: "/aftercare" },
   keywords: [
     "osteopathy aftercare Woolwich",

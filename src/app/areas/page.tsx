@@ -5,9 +5,9 @@ import { serviceAreas } from "@/lib/areas";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Areas We Serve | Osteopath Woolwich, Plumstead & SE London",
+  title: "Areas We Serve",
   description:
-    "Osteopath serving Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from St James Pharmacy, 52 Powis Street, SE18. Book online — no GP referral needed.",
+    "Osteopath serving Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from St James Pharmacy, 52 Powis Street, SE18. Book online — no GP…",
   alternates: { canonical: "/areas" },
   keywords: [
     "osteopath Woolwich",

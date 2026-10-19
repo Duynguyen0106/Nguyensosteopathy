@@ -5,9 +5,9 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Austin Duy Nguyen | Vietnamese Osteopath in the UK",
+  title: "About Austin Duy Nguyen",
   description:
-    "Meet Austin Duy Nguyen — GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (Westminster), Dip.Acu, shockwave CPD, and NASM Personal Fitness Trainer. Vietnamese-speaking care in Woolwich.",
+    "Meet Austin Duy Nguyen — GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (Westminster)…",
   alternates: { canonical: "/about" },
   keywords: [
     "Vietnamese osteopath UK",

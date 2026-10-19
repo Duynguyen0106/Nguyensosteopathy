@@ -27,8 +27,8 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "back-neck-pain",
     h1: "Back & Neck Pain Treatment in Woolwich",
-    seoTitle: "Back & Neck Pain Treatment in Woolwich | Osteopath SE18",
-    metaDescription: "Osteopathy for back and neck pain in Woolwich SE18 — sciatica, desk strain, disc-related stiffness and morning ache. Book with Austin Duy Nguyen at Nguyen's Osteopathic Clinic.",
+    seoTitle: "Back & Neck Pain Treatment in Woolwich",
+    metaDescription: "Osteopathy for back and neck pain in Woolwich SE18 — sciatica, desk strain, disc-related stiffness and morning ache. Book with Austin Duy Nguyen at Nguyen's…",
     heroLine: "Assessment-led osteopathy for sciatica, postural strain, disc-related stiffness and everyday spinal ache — inside St James Pharmacy on Powis Street.",
     eyebrow: "Spine care · Woolwich SE18",
     sections: [
@@ -93,8 +93,8 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "headaches-joints",
     h1: "Headache & Joint Treatment in Woolwich",
-    seoTitle: "Headache & Joint Treatment in Woolwich | Osteopath SE18",
-    metaDescription: "Osteopathy for tension headaches, cervicogenic headache and joint stiffness in Woolwich SE18. Shoulder, hip, knee and ankle support at Nguyen's Osteopathic Clinic.",
+    seoTitle: "Headache & Joint Treatment in Woolwich",
+    metaDescription: "Osteopathy for tension headaches, cervicogenic headache and joint stiffness in Woolwich SE18. Shoulder, hip, knee and ankle support at Nguyen's Osteopathic…",
     heroLine: "Calm irritable neck-driven headaches and rebuild comfortable movement in stiff or post-injury joints — drug-free care in Woolwich.",
     eyebrow: "Headaches & joints · Woolwich SE18",
     sections: [
@@ -159,8 +159,8 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "focused-shockwave",
     h1: "Focused Shockwave Therapy in Woolwich",
-    seoTitle: "Focused Shockwave Therapy in Woolwich | LI-ESWT SE18",
-    metaDescription: "Focused shockwave therapy (LI-ESWT) in Woolwich for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. £90 per session after screening at Nguyen's Osteopathic Clinic.",
+    seoTitle: "Focused Shockwave Therapy in Woolwich",
+    metaDescription: "Focused shockwave therapy (LI-ESWT) in Woolwich for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. £90 per session after screening at…",
     heroLine: "Drug-free LI-ESWT for stubborn heel, elbow, Achilles and tendon pain — clinically screened, then delivered with a clear loading plan.",
     eyebrow: "Specialist care · Woolwich SE18",
     sections: [
@@ -226,8 +226,8 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "mens-health-ed",
     h1: "Men's Health & ED Treatment in Woolwich",
-    seoTitle: "Men's Health & ED Treatment in Woolwich | LI-ESWT SE18",
-    metaDescription: "Confidential men's health and ED care in Woolwich using low-intensity focused shockwave (LI-ESWT). Private, drug-free protocol at Nguyen's Osteopathic Clinic, SE18.",
+    seoTitle: "Men's Health & ED Treatment in Woolwich",
+    metaDescription: "Confidential men's health and ED care in Woolwich using low-intensity focused shockwave (LI-ESWT). Private, drug-free protocol at Nguyen's Osteopathic…",
     heroLine: "Discreet, non-invasive LI-ESWT for vascular-related erectile difficulties and pelvic recovery goals — private one-to-one care in Woolwich.",
     eyebrow: "Confidential care · Woolwich SE18",
     sections: [
@@ -295,8 +295,8 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "acupuncture-electro",
     h1: "Medical Acupuncture in Woolwich",
-    seoTitle: "Medical Acupuncture & Electroacupuncture in Woolwich | SE18",
-    metaDescription: "Western medical acupuncture and electroacupuncture in Woolwich SE18 for muscle trigger points and localised pain. Available standalone or as a +£20 add-on at Nguyen's Osteopathic Clinic.",
+    seoTitle: "Medical Acupuncture & Electroacupuncture in Woolwich",
+    metaDescription: "Western medical acupuncture and electroacupuncture in Woolwich SE18 for muscle trigger points and localised pain. Available standalone or as a +£20 add-on…",
     heroLine: "Targeted needling and gentle microcurrent to calm irritable muscles and support pain relief — integrated with osteopathic care when useful.",
     eyebrow: "Acupuncture · Woolwich SE18",
     sections: [
@@ -364,8 +364,8 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "deep-tissue-massage",
     h1: "Deep Tissue Massage in Woolwich",
-    seoTitle: "Deep Tissue Massage in Woolwich | Osteopath Clinic SE18",
-    metaDescription: "Deep tissue massage in Woolwich SE18 for chronic muscle tension, desk strain and training load. 45-minute sessions at Nguyen's Osteopathic Clinic inside St James Pharmacy.",
+    seoTitle: "Deep Tissue Massage in Woolwich",
+    metaDescription: "Deep tissue massage in Woolwich SE18 for chronic muscle tension, desk strain and training load. 45-minute sessions at Nguyen's Osteopathic Clinic inside St…",
     heroLine: "Progressive, feedback-led soft-tissue work for knotted, heavy or restricted muscles after desk days, training or stress.",
     eyebrow: "Soft-tissue care · Woolwich SE18",
     sections: [
@@ -433,7 +433,7 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "sports-injury-rehab",
     h1: "Sports Injury & Rehab in Woolwich",
-    seoTitle: "Sports Injury & Rehab in Woolwich | Osteopath SE18",
+    seoTitle: "Sports Injury & Rehab in Woolwich",
     metaDescription: "Sports injury assessment and rehab in Woolwich SE18 for strains, sprains and overuse. Return-to-sport planning with osteopathy at Nguyen's Osteopathic Clinic.",
     heroLine: "Assessment, hands-on care and progressive loading so you return to training with better mechanics — not guesswork.",
     eyebrow: "Sport & rehab · Woolwich SE18",
@@ -502,7 +502,7 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "pregnancy-support",
     h1: "Pregnancy Osteopathy in Woolwich",
-    seoTitle: "Pregnancy Osteopathy in Woolwich | Pelvic & Back Care SE18",
+    seoTitle: "Pregnancy Osteopathy in Woolwich",
     metaDescription: "Gentle pregnancy osteopathy in Woolwich SE18 for pelvic girdle discomfort, lower-back and rib strain. Trimester-aware care at Nguyen's Osteopathic Clinic.",
     heroLine: "Trimester-aware, gentle osteopathic care for pelvic pressure, postural change and pregnancy-related backache.",
     eyebrow: "Pregnancy care · Woolwich SE18",
@@ -571,8 +571,8 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "cranial-therapy",
     h1: "Cranial Osteopathy in Woolwich",
-    seoTitle: "Cranial Osteopathy in Woolwich | Gentle Treatment SE18",
-    metaDescription: "Gentle cranial osteopathy in Woolwich SE18 for head, jaw and upper-neck tension patterns. Calm, precise care at Nguyen's Osteopathic Clinic inside St James Pharmacy.",
+    seoTitle: "Cranial Osteopathy in Woolwich",
+    metaDescription: "Gentle cranial osteopathy in Woolwich SE18 for head, jaw and upper-neck tension patterns. Calm, precise care at Nguyen's Osteopathic Clinic inside St James…",
     heroLine: "Subtle, precise hands-on care for people who prefer a quieter therapeutic approach — including sensitive nervous systems and upper-neck tension patterns.",
     eyebrow: "Gentle care · Woolwich SE18",
     sections: [
@@ -640,7 +640,7 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "paediatric-care",
     h1: "Paediatric Osteopathy in Woolwich",
-    seoTitle: "Paediatric Osteopathy in Woolwich | Infants & Children SE18",
+    seoTitle: "Paediatric Osteopathy in Woolwich",
     metaDescription: "Gentle paediatric osteopathy in Woolwich SE18 for infants and children. Calm, parent-led appointments at Nguyen's Osteopathic Clinic inside St James Pharmacy.",
     heroLine: "Soft, measured osteopathic care tailored to your child's age and comfort — with clear explanations for parents throughout.",
     eyebrow: "Paediatric care · Woolwich SE18",

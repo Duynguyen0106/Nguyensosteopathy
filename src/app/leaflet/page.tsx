@@ -4,10 +4,11 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Clinic Leaflet | Download Print PDF",
+  title: "Clinic Leaflet",
   description:
     "Download the Nguyen's Osteopathic Clinic leaflet PDF — services, fees overview, and Woolwich contact details for print or sharing.",
   alternates: { canonical: "/leaflet" },
+  robots: { index: false, follow: true },
   openGraph: {
     title: "Clinic Leaflet | Nguyen's Osteopathic Clinic",
     description: "Print-ready clinic leaflet PDF for Woolwich SE18.",

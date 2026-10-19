@@ -4,9 +4,9 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Find Us & Parking | Osteopath Woolwich Powis Street",
+  title: "Find Us & Parking",
   description:
-    "How to find Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18 — parking, Elizabeth line, DLR, buses, and what to do on arrival.",
+    "How to find Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18 — parking, Elizabeth line, DLR, buses, and what to do on…",
   alternates: { canonical: "/find-us" },
   keywords: [
     "osteopath Woolwich parking",

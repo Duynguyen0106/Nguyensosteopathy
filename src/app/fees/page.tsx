@@ -4,9 +4,9 @@ import { ButtonLink } from "@/components/Button";
 import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Osteopath Fees & Prices in Woolwich | Transparent Pricing",
+  title: "Osteopath Fees & Prices in Woolwich",
   description:
-    "Clear osteopathy fees in Woolwich SE18: initial consultation £75, follow-up £60, focused shockwave £90, deep tissue massage £60. 10% NHS & student discount with valid ID.",
+    "Clear osteopathy fees in Woolwich SE18: initial consultation £75, follow-up £60, focused shockwave £90, deep tissue massage £60. 10% NHS & student discount…",
   alternates: { canonical: "/fees" },
   keywords: [
     "osteopath Woolwich prices",

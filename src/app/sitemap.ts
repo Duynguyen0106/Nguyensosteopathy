@@ -84,11 +84,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
     { path: "/cupping", priority: 0.7 },
     { path: "/site-map", priority: 0.4 },
-    { path: "/leaflet", priority: 0.5 },
-    { path: "/poster", priority: 0.5 },
+    // Print utilities (/leaflet, /poster) are noindex — omit from sitemap.
     { path: "/cookies", changeFrequency: "yearly", priority: 0.3 },
     { path: "/insurance", priority: 0.7 },
-    { path: "/feed.xml", changeFrequency: "weekly", priority: 0.5 },
+    // RSS is linked via <link rel="alternate"> — not a page URL for sitemap.
     { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
   ];
 

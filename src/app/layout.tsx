@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
+import { defaultOgImage } from "@/lib/seo";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -26,12 +27,12 @@ const body = Source_Sans_3({
 });
 
 const description =
-  "Osteopathy in Woolwich for drug free pain relief, back pain treatment, neck pain treatment, and shockwave therapy. Book with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332), inside St James Pharmacy, SE18.";
+  "Osteopathy in Woolwich for drug-free back pain, neck pain and shockwave therapy. Book Austin Duy Nguyen, GOsC osteopath at St James Pharmacy, SE18.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.websiteUrl),
   title: {
-    default: `Osteopathy in Woolwich | Back Pain, Neck Pain & Shockwave Therapy`,
+    default: "Osteopathy in Woolwich | Back Pain, Neck Pain & Shockwave",
     template: `%s | ${site.name}`,
   },
   description,
@@ -85,16 +86,11 @@ export const metadata: Metadata = {
     url: site.websiteUrl,
     siteName: site.name,
     images: [
-      {
-        url: "/images/logo-lockup.webp",
-        width: 1298,
-        height: 926,
-        alt: "Nguyen's Osteopathic Clinic logo — Recover, Realign, and Restore Your Vitality",
-      },
+      defaultOgImage,
       {
         url: "/images/clinic-promo.webp",
-        width: 1600,
-        height: 1200,
+        width: 1400,
+        height: 1050,
         alt: "Austin Duy Nguyen, GOsC-registered osteopath in Woolwich",
       },
     ],
@@ -103,7 +99,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Osteopathy in Woolwich | ${site.name}`,
     description,
-    images: ["/images/logo-lockup.webp"],
+    images: [defaultOgImage.url],
   },
   // Do not set robots: index here — it conflicts with Next’s automatic
   // noindex on not-found pages (both meta tags then appear). Defaults index

@@ -9,9 +9,9 @@ import {
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Osteopathy Blog | Woolwich Advice & Guides",
+  title: "Osteopathy Blog",
   description:
-    "Osteopathy blog for Woolwich and SE18: back pain treatment, neck pain treatment, shockwave therapy, sports rehab, pregnancy, men’s health, and clinic guides from Nguyen's Osteopathic Clinic.",
+    "Osteopathy blog for Woolwich and SE18: back pain treatment, neck pain treatment, shockwave therapy, sports rehab, pregnancy, men’s health, and clinic guides…",
   robots: {
     index: true,
     follow: true,

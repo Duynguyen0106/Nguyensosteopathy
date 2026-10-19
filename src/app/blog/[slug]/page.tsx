@@ -6,6 +6,7 @@ import { AuthorBio } from "@/components/AuthorBio";
 import { BlogRichText } from "@/components/BlogRichText";
 import { ButtonLink } from "@/components/Button";
 import { categoryToId, getAllPosts, getPost } from "@/lib/blog";
+import { breadcrumbJsonLd, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = {
@@ -30,9 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return { title: "Article" };
   const canonicalPath = `/blog/${post.slug}`;
   const canonicalUrl = `${site.websiteUrl}${canonicalPath}`;
+  const description = trimDescription(post.description);
   return {
     title: post.title,
-    description: post.description,
+    description,
     keywords: post.keywords,
     robots: {
       index: true,
@@ -47,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: canonicalUrl },
     openGraph: {
       title: post.title,
-      description: post.description,
+      description,
       type: "article",
       url: canonicalUrl,
       publishedTime: post.date,
@@ -107,11 +109,21 @@ export default async function BlogPostPage({ params }: Props) {
     image: [`${site.websiteUrl}${post.image.src}`],
   };
 
+  const crumbsLd = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ]);
+
   return (
     <article className="bg-slate-50 pt-10 md:pt-14">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
       />
 
       <div className="mx-auto max-w-3xl px-5 pb-8 md:px-8">

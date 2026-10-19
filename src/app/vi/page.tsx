@@ -5,9 +5,12 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
+  // Absolute — avoid doubling with the English clinic-name title template.
+  title: {
+    absolute: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
+  },
   description:
-    "Nguyen's Osteopathic Clinic — phòng khám osteopathy của Austin Duy Nguyen, osteopath người Việt đăng ký GOsC tại Woolwich, London. Hỗ trợ cộng đồng Việt với chăm sóc cơ xương khớp bằng tiếng Việt và tiếng Anh.",
+    "Osteopath người Việt đăng ký GOsC tại Woolwich — Austin Duy Nguyen hỗ trợ cộng đồng Việt bằng tiếng Việt và tiếng Anh.",
   alternates: {
     canonical: "/vi",
     languages: {
@@ -23,6 +26,9 @@ export const metadata: Metadata = {
     "đau lưng thợ nails",
     "osteopath SE18",
   ],
+  other: {
+    "content-language": "vi",
+  },
   openGraph: {
     title: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
     description:

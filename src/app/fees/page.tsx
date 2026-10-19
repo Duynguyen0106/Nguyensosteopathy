@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     languages: {
       "en-GB": "/fees",
       "vi-VN": "/vi/fees",
+      "x-default": "/fees",
     },
   },
   keywords: [
@@ -81,6 +82,15 @@ export default function FeesPage() {
           <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Clear prices for osteopathy and clinic services in Woolwich SE18 —
             so you can book with confidence.
+          </p>
+          <p className="opening-hero-copy opening-hero-delay-2 mt-3 text-sm text-slate-500">
+            <Link
+              href="/vi/fees"
+              className="font-semibold text-teal hover:text-teal-dark"
+              hrefLang="vi-VN"
+            >
+              Tiếng Việt
+            </Link>
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/book" className="w-full sm:w-auto">

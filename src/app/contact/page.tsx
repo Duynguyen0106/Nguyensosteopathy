@@ -77,7 +77,12 @@ export default function ContactPage() {
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink href={site.whatsappUrl} variant="secondary">
+            <ButtonLink
+              href={site.whatsappUrl}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               WhatsApp
             </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">

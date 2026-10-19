@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       "vi-VN": "/vi/find-us",
       "en-GB": "/find-us",
+      "x-default": "/find-us",
     },
   },
   openGraph: pageOpenGraph({
@@ -59,6 +60,15 @@ export default function VietnameseFindUsPage() {
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Trong {site.address.venue}, {site.address.line1}, {site.address.line2}{" "}
             — đi Elizabeth line, DLR, xe buýt, hoặc gửi xe ngắn hạn ở trung tâm.
+          </p>
+          <p className="mt-3 text-sm text-slate-500">
+            <Link
+              href="/find-us"
+              className="font-semibold text-teal hover:text-teal-dark"
+              hrefLang="en-GB"
+            >
+              English
+            </Link>
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink

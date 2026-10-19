@@ -216,7 +216,7 @@ const blogPostInputs: BlogPostInput[] = [
       {
         heading: "How osteopathy approaches back pain",
         image: {
-          src: "/images/blog/morning-back-stiffness-osteopath.jpg",
+          src: "/images/blog/morning-back-stiffness-osteopath.webp",
           alt: "Person standing and stretching their lower back after morning stiffness",
         },
         paragraphs: [

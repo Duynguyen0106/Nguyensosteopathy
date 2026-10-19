@@ -48,16 +48,19 @@ export function Header() {
   const servicesActive =
     pathMatches(pathname, "/services") ||
     pathMatches(pathname, "/osteopathy") ||
-    pathMatches(pathname, "/massage") ||
     pathMatches(pathname, "/desk-pain");
   const menuId = useId();
   const panelId = `${menuId}-panel`;
   const servicesMenuId = `${menuId}-services`;
+  const headerRef = useRef<HTMLElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
   const servicesWrapRef = useRef<HTMLDivElement>(null);
+  const servicesMenuRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const servicesFocusOnOpenRef = useRef(false);
+  const [headerOffset, setHeaderOffset] = useState(68);
 
   useEffect(() => {
     setPortalReady(true);
@@ -69,6 +72,22 @@ export function Header() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const measure = () => {
+      setHeaderOffset(Math.ceil(el.getBoundingClientRect().height));
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    window.addEventListener("resize", measure);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [scrolled, open]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -97,14 +116,48 @@ export function Header() {
   useEffect(() => {
     if (!servicesOpen) return;
 
+    const menuItems = () =>
+      [
+        ...(servicesMenuRef.current?.querySelectorAll<HTMLElement>(
+          '[role="menuitem"]',
+        ) ?? []),
+      ];
+
+    if (servicesFocusOnOpenRef.current) {
+      servicesFocusOnOpenRef.current = false;
+      requestAnimationFrame(() => menuItems()[0]?.focus());
+    }
+
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key !== "Escape") return;
-      event.preventDefault();
-      setServicesOpen(false);
-      servicesButtonRef.current?.focus();
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setServicesOpen(false);
+        servicesButtonRef.current?.focus();
+        return;
+      }
+
+      const items = menuItems();
+      if (items.length === 0) return;
+      const index = items.indexOf(document.activeElement as HTMLElement);
+
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        const next = index < 0 ? 0 : (index + 1) % items.length;
+        items[next]?.focus();
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        const next = index < 0 ? items.length - 1 : (index - 1 + items.length) % items.length;
+        items[next]?.focus();
+      } else if (event.key === "Home") {
+        event.preventDefault();
+        items[0]?.focus();
+      } else if (event.key === "End") {
+        event.preventDefault();
+        items[items.length - 1]?.focus();
+      }
     };
 
-    const onPointerDown = (event: MouseEvent | PointerEvent) => {
+    const onPointerDown = (event: PointerEvent) => {
       const target = event.target as Node | null;
       if (!target) return;
       if (servicesWrapRef.current?.contains(target)) return;
@@ -165,6 +218,7 @@ export function Header() {
 
   return (
     <header
+      ref={headerRef}
       className={`sticky top-0 z-50 transition ${
         scrolled || open
           ? "border-b border-line/80 bg-white/95 shadow-[0_8px_30px_rgba(11,44,69,0.07)] backdrop-blur-md"
@@ -204,7 +258,10 @@ export function Header() {
           <div
             ref={servicesWrapRef}
             className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
+            onMouseEnter={() => {
+              servicesFocusOnOpenRef.current = false;
+              setServicesOpen(true);
+            }}
             onMouseLeave={() => setServicesOpen(false)}
           >
             <button
@@ -215,10 +272,19 @@ export function Header() {
               aria-expanded={servicesOpen}
               aria-controls={servicesMenuId}
               aria-current={servicesActive ? "true" : undefined}
-              onClick={() => setServicesOpen((value) => !value)}
+              onClick={() => {
+                servicesFocusOnOpenRef.current = !servicesOpen;
+                setServicesOpen((value) => !value);
+              }}
               onKeyDown={(event) => {
-                if (event.key === "ArrowDown" && !servicesOpen) {
+                if (
+                  (event.key === "ArrowDown" ||
+                    event.key === "Enter" ||
+                    event.key === " ") &&
+                  !servicesOpen
+                ) {
                   event.preventDefault();
+                  servicesFocusOnOpenRef.current = true;
                   setServicesOpen(true);
                 }
               }}
@@ -237,6 +303,7 @@ export function Header() {
             </button>
             <div
               id={servicesMenuId}
+              ref={servicesMenuRef}
               role="menu"
               hidden={!servicesOpen}
               className={`absolute top-full left-0 z-[60] pt-2 transition ${
@@ -247,7 +314,8 @@ export function Header() {
                 <Link
                   href="/services"
                   role="menuitem"
-                  className="block rounded-lg px-3 py-2 text-sm font-semibold text-navy hover:bg-slate-50 hover:text-teal"
+                  tabIndex={-1}
+                  className="flex min-h-11 items-center rounded-lg px-3 text-sm font-semibold text-navy hover:bg-slate-50 hover:text-teal focus-visible:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
                   onClick={() => setServicesOpen(false)}
                   aria-current={
                     pathname === "/services" ? "page" : undefined
@@ -261,7 +329,8 @@ export function Header() {
                       <Link
                         href={item.href}
                         role="menuitem"
-                        className="block rounded-lg px-3 py-2 text-sm text-navy/80 hover:bg-slate-50 hover:text-teal"
+                        tabIndex={-1}
+                        className="flex min-h-11 items-center rounded-lg px-3 text-sm text-navy/80 hover:bg-slate-50 hover:text-teal focus-visible:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
                         onClick={() => setServicesOpen(false)}
                         aria-current={
                           pathMatches(pathname, item.href) ? "page" : undefined
@@ -379,7 +448,11 @@ export function Header() {
                 role="dialog"
                 aria-modal="true"
                 aria-label="Site menu"
-                className="fixed inset-x-0 bottom-0 top-[4.25rem] z-[80] flex h-[calc(100dvh-4.25rem)] flex-col border-t border-line bg-white shadow-2xl sm:top-[4.75rem] sm:h-[calc(100dvh-4.75rem)]"
+                className="fixed inset-x-0 bottom-0 z-[80] flex flex-col border-t border-line bg-white shadow-2xl"
+                style={{
+                  top: headerOffset,
+                  height: `calc(100dvh - ${headerOffset}px)`,
+                }}
               >
                 <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3 sm:px-5">
                   <p className="text-sm font-semibold text-navy">Menu</p>
@@ -451,21 +524,34 @@ export function Header() {
                   </p>
                   <Link
                     href="/services"
-                    className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
+                    className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold hover:bg-cream-mist ${
+                      pathname === "/services"
+                        ? "bg-cream-mist text-navy"
+                        : "text-navy"
+                    }`}
                     onClick={closeMenu}
+                    aria-current={pathname === "/services" ? "page" : undefined}
                   >
                     All services
                   </Link>
-                  {serviceNav.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="block min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                      onClick={closeMenu}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  {serviceNav.map((item) => {
+                    const active = pathMatches(pathname, item.href);
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className={`flex min-h-11 items-center rounded-xl px-3 text-base hover:bg-cream-mist ${
+                          active
+                            ? "bg-cream-mist font-semibold text-navy"
+                            : "text-navy"
+                        }`}
+                        onClick={closeMenu}
+                        aria-current={active ? "page" : undefined}
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
                   <div className="my-2 border-t border-slate-100" />
 
                   {links

@@ -49,52 +49,51 @@ export default function ServicesPage() {
       </div>
 
       <div className="mx-auto max-w-6xl px-5 pb-20 md:px-8">
-        <ul className="grid gap-3 sm:gap-4 md:grid-cols-2">
+        <ul className="divide-y divide-slate-200 border-y border-slate-200">
           {services.map((service) => (
             <li key={service.slug} className="min-w-0">
               <Link
                 href={getServiceHref(service.slug)}
-                className="service-tile flex h-full flex-col rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md sm:p-6"
+                className="group flex gap-3 py-5 transition-colors hover:bg-white/70 sm:gap-4 sm:py-6"
               >
-                <span className="flex items-start justify-between gap-3">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
-                    <ServiceIcon name={service.icon} />
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                  <ServiceIcon name={service.icon} />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="flex items-start justify-between gap-3">
+                    <span className="min-w-0">
+                      <span className="block text-lg font-semibold text-navy group-hover:text-teal sm:text-xl">
+                        {service.title}
+                      </span>
+                      {service.badge ? (
+                        <span className="mt-1 inline-flex text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
+                          {service.badge}
+                        </span>
+                      ) : null}
+                    </span>
+                    <span
+                      className="shrink-0 text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-teal"
+                      aria-hidden
+                    >
+                      →
+                    </span>
                   </span>
-                  {service.badge ? (
-                    <span className="inline-flex max-w-[60%] rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
-                      {service.badge}
+                  <span className="mt-1.5 block text-sm leading-relaxed text-slate-600">
+                    {service.summary}
+                  </span>
+                  {service.relatedPricing ? (
+                    <span className="mt-2 block text-xs font-semibold tracking-wide text-teal-dark">
+                      {service.relatedPricing}
                     </span>
                   ) : null}
                 </span>
-                <span className="mt-5 flex items-start justify-between gap-3">
-                  <span className="min-w-0 text-lg font-semibold text-navy sm:text-xl">
-                    {service.title}
-                  </span>
-                  <span
-                    className="service-arrow shrink-0 text-slate-400"
-                    aria-hidden
-                  >
-                    →
-                  </span>
-                </span>
-                <span className="mt-2 text-sm leading-relaxed text-slate-600">
-                  {service.summary}
-                </span>
-                <span className="mt-4 line-clamp-3 text-sm text-slate-700">
-                  {service.description}
-                </span>
-                {service.relatedPricing ? (
-                  <span className="mt-5 text-xs font-semibold tracking-wide text-teal-dark">
-                    {service.relatedPricing}
-                  </span>
-                ) : null}
               </Link>
             </li>
           ))}
         </ul>
 
-        <div className="mt-12 flex flex-wrap items-center gap-3 rounded-xl border border-slate-200 bg-white px-5 py-6 shadow-sm">
-          <div className="min-w-0 flex-1">
+        <div className="mt-12 flex flex-col gap-4 border-t border-slate-200 pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <div className="min-w-0 max-w-xl">
             <p className="font-display text-2xl text-navy">Ready to start?</p>
             <p className="mt-1 text-sm font-medium text-slate-600">
               Book online, or call{" "}

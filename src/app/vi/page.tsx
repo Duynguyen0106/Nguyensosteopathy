@@ -121,7 +121,7 @@ export default function VietnamesePage() {
             Chăm sóc cơ xương khớp bằng tiếng Việt và tiếng Anh — để cộng đồng
             mình được hiểu, không chỉ được điều trị.
           </p>
-          <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap items-center gap-3">
+          <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
             <ButtonLink href="/book">Đặt lịch khám</ButtonLink>
             <ButtonLink
               href={site.phoneHref}
@@ -130,22 +130,23 @@ export default function VietnamesePage() {
             >
               Gọi {site.phone}
             </ButtonLink>
-            <ButtonLink
+          </div>
+          <p className="opening-hero-copy opening-hero-delay-3 mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-white/80">
+            <a
               href={site.whatsappUrl}
-              variant="secondary"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-white/30 bg-white/10 text-white hover:bg-white/20"
+              className="font-semibold text-teal-mist underline-offset-4 hover:underline"
             >
               WhatsApp
-            </ButtonLink>
+            </a>
             <Link
               href="/"
-              className="text-sm font-semibold text-teal-mist underline-offset-2 hover:underline"
+              className="font-semibold text-teal-mist underline-offset-4 hover:underline"
             >
               English →
             </Link>
-          </div>
+          </p>
         </div>
       </section>
 

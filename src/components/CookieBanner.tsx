@@ -78,6 +78,8 @@ export function CookieBanner() {
   useEffect(() => {
     if (!visible) return;
 
+    firstButtonRef.current?.focus();
+
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();

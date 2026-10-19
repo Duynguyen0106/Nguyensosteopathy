@@ -75,10 +75,10 @@ export function BookingEmbed() {
     >
       {!loaded && !failed ? (
         <div className="absolute inset-0 z-10 flex flex-col gap-4 bg-slate-50 p-6">
-          <div className="h-8 w-48 animate-pulse rounded-lg bg-slate-200" aria-hidden />
-          <div className="h-12 w-full animate-pulse rounded-xl bg-slate-200" aria-hidden />
-          <div className="h-12 w-full animate-pulse rounded-xl bg-slate-200" aria-hidden />
-          <div className="mt-4 h-40 w-full animate-pulse rounded-xl bg-slate-200" aria-hidden />
+          <div className="h-8 w-48 rounded-lg bg-slate-200 motion-safe:animate-pulse" aria-hidden />
+          <div className="h-12 w-full rounded-xl bg-slate-200 motion-safe:animate-pulse" aria-hidden />
+          <div className="h-12 w-full rounded-xl bg-slate-200 motion-safe:animate-pulse" aria-hidden />
+          <div className="mt-4 h-40 w-full rounded-xl bg-slate-200 motion-safe:animate-pulse" aria-hidden />
           <p className="text-sm font-medium text-slate-500" role="status">
             Loading booking calendar…
           </p>

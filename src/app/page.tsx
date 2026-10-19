@@ -363,33 +363,28 @@ export default function HomePage() {
               View all articles
             </ButtonLink>
           </div>
-          <ul className="mt-10 grid gap-5 md:grid-cols-3">
+          <ul className="mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
             {latestPosts.map((post) => (
               <li key={post.slug}>
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="flex h-full flex-col overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-teal hover:bg-white"
-                >
-                  <div className="relative aspect-[16/10] bg-slate-100">
+                <Link href={`/blog/${post.slug}`} className="group block">
+                  <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
                     <Image
                       src={post.image.src}
                       alt={post.image.alt}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover"
+                      className="object-cover transition duration-500 group-hover:scale-[1.02]"
                     />
                   </div>
-                  <div className="flex flex-1 flex-col p-5">
-                    <span className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                      {post.category}
-                    </span>
-                    <h3 className="mt-3 font-display text-xl text-navy">
-                      {post.title}
-                    </h3>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
-                      {post.description}
-                    </p>
-                  </div>
+                  <span className="mt-4 block text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                    {post.category}
+                  </span>
+                  <h3 className="mt-2 font-display text-xl text-navy group-hover:text-teal">
+                    {post.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                    {post.description}
+                  </p>
                 </Link>
               </li>
             ))}
@@ -524,115 +519,35 @@ export default function HomePage() {
         id="location"
         className="scroll-mt-24 border-t border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24"
       >
-        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-end">
-          <div>
-            <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-              Find us
-            </p>
-            <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
-              Osteopath in Woolwich — inside {site.address.venue}
-            </h2>
-            <p className="mt-5 text-lg font-medium text-slate-700">
-              {site.name}
-              <br />
-              {site.address.line1}
-              <br />
-              {site.address.line2}
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-slate-600">
-              Easy to reach from Greenwich, Charlton, Plumstead, Thamesmead, and
-              Abbey Wood. Ask at the pharmacy counter on arrival and they will
-              direct you to the osteopathy room. NHS & private pharmacy services
-              on site.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink
-                href={site.address.mapsUrl}
-                variant="navy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Open in Maps
-              </ButtonLink>
-              <ButtonLink href="/find-us" variant="secondary">
-                Find us &amp; parking
-              </ButtonLink>
-              <ButtonLink href="/areas" variant="secondary">
-                Areas we serve
-              </ButtonLink>
-              <ButtonLink href="/book" variant="secondary">
-                Book an appointment
-              </ButtonLink>
-            </div>
-          </div>
-
-          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-            <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-              Book your appointment
-            </p>
-            <ul className="mt-5 space-y-3 text-sm font-medium text-slate-700">
-              <li>
-                <a href={site.phoneHref} className="hover:text-teal">
-                  {site.phone}
-                </a>
-              </li>
-              <li>
-                <a href={site.emailHref} className="hover:text-teal">
-                  {site.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={site.websiteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-teal"
-                >
-                  {site.website}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={site.facebookUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-teal"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <Link
-                  href="/book"
-                  className="font-semibold text-teal hover:text-teal-dark"
-                >
-                  Book online
-                </Link>
-              </li>
-            </ul>
-            <div className="mt-6 space-y-2 border-t border-slate-200 pt-5 text-sm font-medium text-slate-600">
-              <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                Pharmacy building
-              </p>
-              {site.hours.map((row) => (
-                <p key={row.days}>
-                  <span className="font-semibold text-navy">{row.days}:</span>{" "}
-                  {row.time}
-                </p>
-              ))}
-              <p className="pt-2 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                Bookable osteopathy
-              </p>
-              {site.booking.hours.map((row) => (
-                <p key={`book-${row.days}`}>
-                  <span className="font-semibold text-navy">{row.days}:</span>{" "}
-                  {row.time}
-                </p>
-              ))}
-              <p className="pt-1 text-xs leading-relaxed text-slate-500">
-                {site.booking.shortNote}
-              </p>
-            </div>
+        <div className="mx-auto max-w-3xl">
+          <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+            Find us
+          </p>
+          <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
+            Osteopath in Woolwich — inside {site.address.venue}
+          </h2>
+          <p className="mt-5 text-lg font-medium text-slate-700">
+            {site.address.line1}
+            <br />
+            {site.address.line2}
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-slate-600 md:text-lg">
+            Easy to reach from Greenwich, Charlton, Plumstead, Thamesmead, and
+            Abbey Wood. Ask at the pharmacy counter on arrival — they will
+            direct you to the osteopathy room.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <ButtonLink
+              href={site.address.mapsUrl}
+              variant="navy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open in Maps
+            </ButtonLink>
+            <ButtonLink href="/find-us" variant="secondary">
+              Parking, hours &amp; travel
+            </ButtonLink>
           </div>
         </div>
       </section>

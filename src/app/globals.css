@@ -261,7 +261,8 @@ select:focus-visible {
   .opening-hero-copy,
   .opening-hero-delay-1,
   .opening-hero-delay-2,
-  .opening-hero-delay-3 {
+  .opening-hero-delay-3,
+  .animate-pulse {
     animation: none !important;
     transition: none !important;
   }

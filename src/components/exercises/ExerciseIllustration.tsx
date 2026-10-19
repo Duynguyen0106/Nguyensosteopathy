@@ -21,6 +21,8 @@ const titles: Record<IllustrationKey, string> = {
   "chin-tuck": "Person performing a chin tuck",
   "open-book": "Person in side-lying open-book rotation",
   "figure-four": "Person lying on back in a figure-four hip stretch",
+  "single-leg-balance": "Person balancing on one leg on a stable floor",
+  "seated-scapular": "Person seated with shoulder blades drawn back and down",
 };
 
 function Frame({
@@ -199,6 +201,7 @@ export function ExerciseIllustration({
       );
       break;
     case "seated-desk":
+    case "seated-scapular":
     case "chin-tuck":
     case "nerve-glide":
     case "ankle-alphabet":
@@ -230,7 +233,11 @@ export function ExerciseIllustration({
           />
           <circle cx="160" cy="58" r="13" fill={navy} />
           <path
-            d="M160 72 L160 120 M160 88 L125 115 M160 88 L210 100 M160 120 L140 120 M160 120 L180 120"
+            d={
+              name === "nerve-glide"
+                ? "M160 72 L160 120 M160 88 L125 115 M160 88 L200 100 M200 100 L235 145 M160 120 L140 120 M160 120 L180 120"
+                : "M160 72 L160 120 M160 88 L125 115 M160 88 L195 115 M160 120 L140 120 M160 120 L180 120"
+            }
             fill="none"
             stroke={navy}
             strokeWidth="7"
@@ -245,7 +252,16 @@ export function ExerciseIllustration({
               markerEnd={`url(#ex-arrow-${name})`}
             />
           ) : null}
-          {name === "ankle-alphabet" ? (
+          {name === "seated-scapular" ? (
+            <path
+              d="M125 90 C145 78, 175 78, 195 90"
+              fill="none"
+              stroke={teal}
+              strokeWidth="3"
+              strokeDasharray="4 3"
+            />
+          ) : null}
+          {name === "ankle-alphabet" || name === "nerve-glide" ? (
             <path
               d="M210 100 Q230 90 235 115 Q240 140 220 145"
               fill="none"
@@ -266,6 +282,37 @@ export function ExerciseIllustration({
               <path d="M0,0 L6,3 L0,6 Z" fill={teal} />
             </marker>
           </defs>
+        </>
+      );
+      break;
+    case "single-leg-balance":
+      body = (
+        <>
+          <line
+            x1="40"
+            y1="190"
+            x2="280"
+            y2="190"
+            stroke="#cbd5e1"
+            strokeWidth="4"
+          />
+          <circle cx="160" cy="45" r="13" fill={navy} />
+          <path
+            d="M160 58 L160 120 M160 78 L130 100 M160 78 L190 100 M160 120 L160 185"
+            fill="none"
+            stroke={navy}
+            strokeWidth="8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M160 120 L205 145 L225 125"
+            fill="none"
+            stroke={teal}
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </>
       );
       break;

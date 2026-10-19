@@ -55,8 +55,9 @@ export function ExercisePhoto({
       </div>
       {image.credit && size === "detail" ? (
         <figcaption className="border-t border-slate-100 bg-white px-3 py-2 text-[11px] text-slate-500">
-          {image.credit}. Free stock for educational illustration — not a
-          clinic photo.
+          {image.credit.startsWith("Free educational")
+            ? `${image.credit} — not a clinic photo.`
+            : `${image.credit}. Free stock for educational use — not a clinic photo.`}
         </figcaption>
       ) : null}
     </figure>

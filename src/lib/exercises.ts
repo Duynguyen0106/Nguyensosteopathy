@@ -37,7 +37,9 @@ export type IllustrationKey =
   | "bridge"
   | "chin-tuck"
   | "open-book"
-  | "figure-four";
+  | "figure-four"
+  | "single-leg-balance"
+  | "seated-scapular";
 
 export type Exercise = {
   slug: string;
@@ -297,7 +299,7 @@ export const exercises: Exercise[] = [
     region: "Thoracic",
     level: "early",
     equipment: "Chair",
-    illustration: "seated-desk",
+    illustration: "seated-scapular",
     steps: [
       "Sit tall with feet flat and arms relaxed by your sides.",
       "Draw the shoulder blades slightly down and together — think “put the blades in back pockets”.",
@@ -713,7 +715,7 @@ export const exercises: Exercise[] = [
     region: "Ankle & Foot",
     level: "build",
     equipment: "Stable floor (near a wall)",
-    illustration: "standing-calf",
+    illustration: "single-leg-balance",
     steps: [
       "Stand near a wall or chair. Shift onto one foot and lift the other slightly.",
       "Hold a steady posture with soft knee and quiet hips.",

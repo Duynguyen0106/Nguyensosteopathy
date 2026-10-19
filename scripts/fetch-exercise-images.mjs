@@ -77,9 +77,9 @@ const IMAGES = {
   },
   "seated-scapular-set": {
     kind: "pexels",
-    id: 6516182,
-    alt: "Person seated upright performing an upper-body / shoulder mobility stretch",
-    credit: "Photo via Pexels (#6516182)",
+    id: 8244383,
+    alt: "Person seated upright with arms reaching overhead — tall posture and scapular set cue",
+    credit: "Photo via Pexels (#8244383)",
   },
   "open-book-rotation": {
     kind: "pexels",
@@ -96,6 +96,7 @@ const IMAGES = {
   "piriformis-figure-four": {
     kind: "pexels",
     id: 6453897,
+    position: "south",
     alt: "Person in a 90/90 hip stretch on the floor — hip / figure-four style mobility",
     credit: "Photo via Pexels (#6453897)",
   },
@@ -116,7 +117,6 @@ const IMAGES = {
   "step-down-control": {
     kind: "wikimedia",
     file: "Step exercise.JPG",
-    fit: "contain",
     alt: "Person standing on a step box practicing controlled step-down knee control",
     credit: "Photo via Wikimedia Commons (CC licensed)",
   },
@@ -223,7 +223,7 @@ async function processOne(slug, meta) {
   await pipeline
     .resize(1200, 800, {
       fit,
-      position: "centre",
+      position: meta.position || "centre",
       background: { r: 248, g: 250, b: 252 },
     })
     .jpeg({ quality: 82, mozjpeg: true })

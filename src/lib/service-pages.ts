@@ -1,4 +1,4 @@
-import { services, site, type Service } from "@/lib/site";
+import { services, type Service } from "@/lib/site";
 
 export type ServiceFaq = {
   question: string;

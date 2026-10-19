@@ -19,15 +19,17 @@ export function LazyMapsEmbed({
     const host = hostRef.current;
     if (!host || active) return;
 
+    const activate = () => setActive(true);
+
     if (typeof IntersectionObserver === "undefined") {
-      setActive(true);
-      return;
+      const id = window.setTimeout(activate, 0);
+      return () => window.clearTimeout(id);
     }
 
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries.some((entry) => entry.isIntersecting)) {
-          setActive(true);
+          activate();
           observer.disconnect();
         }
       },

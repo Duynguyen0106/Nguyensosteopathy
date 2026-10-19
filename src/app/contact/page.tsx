@@ -3,6 +3,7 @@ import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
+import { LazyMapsEmbed } from "@/components/LazyMapsEmbed";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -202,14 +203,10 @@ export default function ContactPage() {
               Open in Google Maps
             </ButtonLink>
           </div>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
-            <iframe
+          <div className="mt-8">
+            <LazyMapsEmbed
               title="Map to Nguyen's Osteopathic Clinic, 52 Powis Street Woolwich"
               src={site.address.mapsEmbedUrl}
-              className="h-[320px] w-full border-0 md:h-[420px]"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
             />
           </div>
         </div>

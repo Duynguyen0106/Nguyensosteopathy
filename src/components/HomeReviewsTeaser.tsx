@@ -19,6 +19,7 @@ export async function HomeReviewsTeaser() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
+          <ButtonLink href="/book">Book online</ButtonLink>
           <ButtonLink
             href={mapsUrl}
             variant="secondary"
@@ -97,7 +98,25 @@ export async function HomeReviewsTeaser() {
             </li>
           ))}
         </ul>
-      ) : null}
+      ) : (
+        <div className="mt-8 flex flex-col gap-4 border-l-2 border-teal/40 pl-5 sm:flex-row sm:items-center sm:justify-between">
+          <p className="max-w-xl text-base leading-relaxed text-slate-600">
+            No public Google quotes to show yet. Book a visit, then leave a
+            review to help neighbours find care in Woolwich.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink
+              href={mapsUrl}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Leave a Google review
+            </ButtonLink>
+          </div>
+        </div>
+      )}
 
       <p className="mt-6 text-xs text-slate-500">
         Reviews from Google.{" "}

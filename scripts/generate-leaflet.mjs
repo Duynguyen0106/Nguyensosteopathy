@@ -689,7 +689,7 @@ const html = `<!DOCTYPE html>
         <div>
           <p class="section-label">Find us online</p>
           <blockquote class="quote">
-            <p>Book online from 5 November 2026. Public Google reviews will appear as patients visit — scan the QR or search Nguyen’s Osteopathic Clinic, Woolwich.</p>
+            <p>Book online for live appointment slots. Public Google reviews appear as patients visit — scan the QR or search Nguyen’s Osteopathic Clinic, Woolwich.</p>
             <cite>nguyensosteopathy.com · Google reviews</cite>
           </blockquote>
           <blockquote class="quote">

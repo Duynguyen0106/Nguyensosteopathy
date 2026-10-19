@@ -22,7 +22,9 @@ function floorHeight(next: number) {
 }
 
 export function BookingEmbed() {
+  const shellRef = useRef<HTMLDivElement>(null);
   const frameRef = useRef<HTMLIFrameElement>(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
   const [height, setHeight] = useState(MIN_HEIGHT);
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -39,6 +41,30 @@ export function BookingEmbed() {
     window.addEventListener("resize", syncHeight);
     return () => window.removeEventListener("resize", syncHeight);
   }, []);
+
+  useEffect(() => {
+    const shell = shellRef.current;
+    if (!shell || shouldLoad) return;
+
+    const activate = () => setShouldLoad(true);
+
+    if (typeof IntersectionObserver === "undefined") {
+      const id = window.setTimeout(activate, 0);
+      return () => window.clearTimeout(id);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          activate();
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "240px 0px" },
+    );
+    observer.observe(shell);
+    return () => observer.disconnect();
+  }, [shouldLoad]);
 
   useEffect(() => {
     const onMessage = (event: MessageEvent) => {
@@ -60,29 +86,30 @@ export function BookingEmbed() {
   }, [allowedOrigin]);
 
   useEffect(() => {
-    if (loaded || failed) return;
+    if (!shouldLoad || loaded || failed) return;
     const timer = window.setTimeout(() => {
       setFailed(true);
     }, LOAD_TIMEOUT_MS);
     return () => window.clearTimeout(timer);
-  }, [loaded, failed]);
+  }, [shouldLoad, loaded, failed]);
 
   const showFailure = failed && !loaded;
 
   return (
     <div
+      ref={shellRef}
       className="booking-embed-shell relative overflow-hidden bg-white md:rounded-2xl md:border md:border-slate-200 md:shadow-[0_20px_50px_rgba(11,44,69,0.06)]"
       style={{ minHeight: `${height}px` }}
-      aria-busy={!loaded && !failed}
+      aria-busy={shouldLoad && !loaded && !failed}
     >
-      {!loaded && !failed ? (
+      {(!shouldLoad || (!loaded && !failed)) && !showFailure ? (
         <div className="absolute inset-0 z-10 flex flex-col gap-4 bg-slate-50 p-6">
           <div className="h-8 w-48 rounded-lg bg-slate-200 motion-safe:animate-pulse" aria-hidden />
           <div className="h-12 w-full rounded-xl bg-slate-200 motion-safe:animate-pulse" aria-hidden />
           <div className="h-12 w-full rounded-xl bg-slate-200 motion-safe:animate-pulse" aria-hidden />
           <div className="mt-4 h-40 w-full rounded-xl bg-slate-200 motion-safe:animate-pulse" aria-hidden />
           <p className="text-sm font-medium text-slate-500" role="status">
-            Loading booking calendar…
+            {shouldLoad ? "Loading booking calendar…" : "Preparing booking calendar…"}
           </p>
         </div>
       ) : null}
@@ -120,26 +147,28 @@ export function BookingEmbed() {
         </div>
       ) : null}
 
-      <iframe
-        ref={frameRef}
-        src={site.bookingEmbedUrl}
-        title="Book an appointment with Nguyen's Osteopathic Clinic"
-        referrerPolicy="no-referrer-when-downgrade"
-        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-modals"
-        className={`relative block w-full border-0 bg-white ${
-          showFailure
-            ? "pointer-events-none z-0 opacity-0"
-            : "z-20"
-        }`}
-        style={{ height: `${height}px`, minHeight: `${height}px` }}
-        aria-hidden={showFailure}
-        tabIndex={showFailure ? -1 : undefined}
-        onLoad={() => {
-          setLoaded(true);
-          setFailed(false);
-        }}
-        onError={() => setFailed(true)}
-      />
+      {shouldLoad ? (
+        <iframe
+          ref={frameRef}
+          src={site.bookingEmbedUrl}
+          title="Book an appointment with Nguyen's Osteopathic Clinic"
+          referrerPolicy="no-referrer-when-downgrade"
+          sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-modals"
+          className={`relative block w-full border-0 bg-white ${
+            showFailure
+              ? "pointer-events-none z-0 opacity-0"
+              : "z-20"
+          }`}
+          style={{ height: `${height}px`, minHeight: `${height}px` }}
+          aria-hidden={showFailure}
+          tabIndex={showFailure ? -1 : undefined}
+          onLoad={() => {
+            setLoaded(true);
+            setFailed(false);
+          }}
+          onError={() => setFailed(true)}
+        />
+      ) : null}
     </div>
   );
 }

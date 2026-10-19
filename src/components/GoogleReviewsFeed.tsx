@@ -23,19 +23,22 @@ export async function GoogleReviewsFeed() {
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
             Live review cards are temporarily unavailable. You can still open
-            our Google listing to read patient feedback and leave a review after
-            your visit.
+            our Google listing to read patient feedback, leave a review after
+            your visit, or book online first.
           </p>
           {process.env.NODE_ENV === "development" ? (
             <p className="mt-3 text-xs text-slate-500">{google.reason}</p>
           ) : null}
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink
               href={mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
               Open Google reviews
+            </ButtonLink>
+            <ButtonLink href="/book" variant="secondary">
+              Book online
             </ButtonLink>
           </div>
         </div>
@@ -102,19 +105,25 @@ export async function GoogleReviewsFeed() {
             ))}
           </ul>
         ) : (
-          <p className="mt-8 rounded-xl border border-dashed border-slate-200 bg-white px-5 py-6 text-sm text-slate-600">
-            Your Google listing is connected, but there are no public review
-            texts to show yet.{" "}
-            <a
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
-              Open the listing on Google
-            </a>{" "}
-            once patients start leaving feedback.
-          </p>
+          <div className="mt-8 border-l-2 border-teal/40 bg-white px-5 py-6">
+            <p className="text-sm leading-relaxed text-slate-600 md:text-base">
+              Your Google listing is connected, but there are no public review
+              texts to show yet. After your visit, a short Google review helps
+              neighbours choose care in Woolwich.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <ButtonLink
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Leave a Google review
+              </ButtonLink>
+              <ButtonLink href="/book" variant="secondary">
+                Book online
+              </ButtonLink>
+            </div>
+          </div>
         )}
 
         <p className="mt-8 text-xs text-slate-500">

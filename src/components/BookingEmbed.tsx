@@ -3,8 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { site } from "@/lib/site";
 
-const MIN_HEIGHT = 980;
-const MOBILE_MIN_HEIGHT = 1280;
+const MIN_HEIGHT = 900;
+const MOBILE_MIN_HEIGHT = 960;
 const LOAD_TIMEOUT_MS = 20000;
 
 function embedOrigin(url: string) {

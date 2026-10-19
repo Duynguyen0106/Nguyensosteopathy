@@ -3,61 +3,44 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
+/** Lean footer — full catalogue remains on /site-map. */
 const patientLinks = [
   { href: "/book", label: "Book online" },
   { href: "/new-patients", label: "New patients" },
-  { href: "/aftercare", label: "Aftercare" },
-  { href: "/exercises", label: "Home exercises" },
-  { href: "/resources", label: "Patient resources" },
   { href: "/fees", label: "Fees & prices" },
-  { href: "/insurance", label: "Insurance & receipts" },
-  { href: "/nhs-discount", label: "NHS & student discount" },
-  { href: "/find-us", label: "Find us & parking" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/reviews", label: "Reviews" },
+  { href: "/exercises", label: "Home exercises" },
+  { href: "/find-us", label: "Find us" },
   { href: "/contact", label: "Contact" },
+  { href: "/faq", label: "FAQ" },
 ] as const;
 
 const treatmentLinks = [
   { href: "/osteopathy", label: "What is osteopathy?" },
   { href: "/services", label: "All services" },
-  { href: "/services/back-neck-pain", label: "Back & neck pain" },
-  { href: "/services/headaches-joints", label: "Headaches & joints" },
-  { href: "/services/focused-shockwave", label: "Shockwave therapy" },
-  { href: "/services/mens-health-ed", label: "Men's health" },
-  { href: "/services/sports-injury-rehab", label: "Sports injury" },
-  { href: "/services/pregnancy-support", label: "Pregnancy" },
-  { href: "/services/paediatric-care", label: "Paediatric care" },
-  { href: "/desk-pain", label: "Desk & office pain" },
   { href: "/conditions", label: "Conditions" },
+  { href: "/services/focused-shockwave", label: "Shockwave therapy" },
   { href: "/areas", label: "Areas we serve" },
   { href: "/blog", label: "Blog" },
 ] as const;
 
-const legalLinks = [
+const aboutLinks = [
   { href: "/about", label: "About Austin" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/vi", label: "Tiếng Việt" },
-  { href: "/leaflet", label: "Clinic leaflet" },
-  { href: "/poster", label: "Print posters" },
-  { href: "/privacy", label: "Privacy policy" },
-  { href: "/cookies", label: "Cookie policy" },
+  { href: "/nhs-discount", label: "NHS & student discount" },
+  { href: "/insurance", label: "Insurance" },
+  { href: "/privacy", label: "Privacy" },
   { href: "/accessibility", label: "Accessibility" },
-  { href: "/terms", label: "Terms & cancellation" },
-  { href: "/complaints", label: "Complaints" },
-  { href: "/site-map", label: "Site map" },
-  { href: "/feed.xml", label: "Blog RSS" },
 ] as const;
 
 const productLinks = [
   {
     href: site.products.mskTutor.url,
     label: site.products.mskTutor.name,
-    external: true,
   },
   {
     href: site.products.treowClinic.url,
     label: site.products.treowClinic.name,
-    external: true,
   },
 ] as const;
 
@@ -124,14 +107,6 @@ export function Footer() {
           </ul>
           <div className="mt-4 space-y-1 text-sm font-medium text-white/80">
             <p className="text-xs font-semibold tracking-[0.14em] text-teal-mist uppercase">
-              Pharmacy building
-            </p>
-            {site.hours.map((row) => (
-              <p key={row.days}>
-                <span className="text-white">{row.days}</span> · {row.time}
-              </p>
-            ))}
-            <p className="pt-2 text-xs font-semibold tracking-[0.14em] text-teal-mist uppercase">
               Bookable osteopathy
             </p>
             {site.booking.hours.map((row) => (
@@ -142,7 +117,7 @@ export function Footer() {
           </div>
           <p className="mt-3 text-xs leading-relaxed text-white/55">
             Closed {site.booking.closedDaysLabel}. Online booking from{" "}
-            {site.booking.opensFromLabel} — live slots shown in the calendar.
+            {site.booking.opensFromLabel}.
           </p>
         </div>
 
@@ -173,31 +148,15 @@ export function Footer() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href="/services/deep-tissue-massage"
-                className="hover:text-white"
-              >
-                Deep tissue massage
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/services/acupuncture-electro"
-                className="hover:text-white"
-              >
-                Acupuncture
-              </Link>
-            </li>
           </ul>
         </div>
 
         <div>
           <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
-            Legal &amp; about
+            About
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/85">
-            {legalLinks.map((link) => (
+            {aboutLinks.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="hover:text-white">
                   {link.label}
@@ -205,14 +164,9 @@ export function Footer() {
               </li>
             ))}
             <li>
-              <a
-                href={site.googleReviewsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white"
-              >
-                Google reviews
-              </a>
+              <Link href="/site-map" className="hover:text-white">
+                Full site map
+              </Link>
             </li>
           </ul>
           <p className="mt-6 text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
@@ -262,10 +216,17 @@ export function Footer() {
             </Link>
             {" · "}
             <Link
-              href="/accessibility"
+              href="/cookies"
               className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
             >
-              Accessibility
+              Cookies
+            </Link>
+            {" · "}
+            <Link
+              href="/terms"
+              className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
+            >
+              Terms
             </Link>
             {" · "}
             <Link
@@ -273,13 +234,6 @@ export function Footer() {
               className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
             >
               Complaints
-            </Link>
-            {" · "}
-            <Link
-              href="/site-map"
-              className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"
-            >
-              Site map
             </Link>
           </p>
         </div>

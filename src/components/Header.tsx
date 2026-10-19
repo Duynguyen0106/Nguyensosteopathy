@@ -2,20 +2,33 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { ButtonLink } from "@/components/Button";
 import { getServiceHref, services, site } from "@/lib/site";
 
-/** Primary lg row — trust/local + discount/insurance; Blog/Exercises/Contact/VI in mobile + footer. */
+function pathMatches(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+function navLinkClass(active: boolean) {
+  return active
+    ? "font-semibold text-navy"
+    : "text-navy/75 transition hover:text-teal";
+}
+
+/** Primary lg row — care paths first; NHS/Insurance/Reviews/Contact/VI in mobile + footer. */
 const links = [
   { href: "/about", label: "About", desktop: true },
   { href: "/conditions", label: "Conditions", desktop: true },
-  { href: "/exercises", label: "Exercises", desktop: false },
-  { href: "/blog", label: "Blog", desktop: false },
+  { href: "/exercises", label: "Exercises", desktop: true },
+  { href: "/blog", label: "Blog", desktop: true },
   { href: "/fees", label: "Fees", desktop: true },
-  { href: "/nhs-discount", label: "NHS 10%", desktop: true },
-  { href: "/insurance", label: "Insurance", desktop: true },
-  { href: "/reviews", label: "Reviews", desktop: true },
+  { href: "/nhs-discount", label: "NHS 10%", desktop: false },
+  { href: "/insurance", label: "Insurance", desktop: false },
+  { href: "/reviews", label: "Reviews", desktop: false },
   { href: "/find-us", label: "Find us", desktop: true },
   { href: "/contact", label: "Contact", desktop: false },
   { href: "/vi", label: "Tiếng Việt", desktop: false },
@@ -27,15 +40,28 @@ const serviceNav = services.map((service) => ({
 }));
 
 export function Header() {
+  const pathname = usePathname() || "/";
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [portalReady, setPortalReady] = useState(false);
+  const servicesActive =
+    pathMatches(pathname, "/services") ||
+    pathMatches(pathname, "/osteopathy") ||
+    pathMatches(pathname, "/massage") ||
+    pathMatches(pathname, "/desk-pain");
   const menuId = useId();
   const panelId = `${menuId}-panel`;
   const servicesMenuId = `${menuId}-services`;
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
+  const servicesWrapRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setPortalReady(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -46,32 +72,57 @@ export function Header() {
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    const main = document.getElementById("main-content");
+    const footer = document.querySelector("footer");
+    if (open) {
+      main?.setAttribute("inert", "");
+      main?.setAttribute("aria-hidden", "true");
+      footer?.setAttribute("inert", "");
+      footer?.setAttribute("aria-hidden", "true");
+    } else {
+      main?.removeAttribute("inert");
+      main?.removeAttribute("aria-hidden");
+      footer?.removeAttribute("inert");
+      footer?.removeAttribute("aria-hidden");
+    }
     return () => {
       document.body.style.overflow = "";
+      main?.removeAttribute("inert");
+      main?.removeAttribute("aria-hidden");
+      footer?.removeAttribute("inert");
+      footer?.removeAttribute("aria-hidden");
     };
   }, [open]);
 
   useEffect(() => {
+    if (!servicesOpen) return;
+
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key !== "Escape") return;
-      if (servicesOpen) {
-        event.preventDefault();
-        setServicesOpen(false);
-        servicesButtonRef.current?.focus();
-      }
+      event.preventDefault();
+      setServicesOpen(false);
+      servicesButtonRef.current?.focus();
     };
+
+    const onPointerDown = (event: MouseEvent | PointerEvent) => {
+      const target = event.target as Node | null;
+      if (!target) return;
+      if (servicesWrapRef.current?.contains(target)) return;
+      setServicesOpen(false);
+    };
+
     document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+    };
   }, [servicesOpen]);
 
   useEffect(() => {
     if (!open) return;
 
-    const panel = panelRef.current;
-    const firstLink = panel?.querySelector<HTMLElement>(
-      "a[href], button:not([disabled])",
-    );
-    firstLink?.focus();
+    closeButtonRef.current?.focus();
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -81,10 +132,10 @@ export function Header() {
         return;
       }
 
-      if (event.key !== "Tab" || !panel) return;
+      if (event.key !== "Tab" || !panelRef.current) return;
 
       const focusable = [
-        ...panel.querySelectorAll<HTMLElement>(
+        ...panelRef.current.querySelectorAll<HTMLElement>(
           'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
         ),
       ].filter((el) => !el.hasAttribute("disabled"));
@@ -106,6 +157,11 @@ export function Header() {
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
+
+  function closeMenu() {
+    setOpen(false);
+    menuButtonRef.current?.focus();
+  }
 
   return (
     <header
@@ -135,13 +191,18 @@ export function Header() {
 
         <nav
           aria-label="Primary"
-          className="hidden items-center gap-5 text-[0.92rem] text-navy/75 lg:flex xl:gap-7"
+          className="hidden items-center gap-5 text-[0.92rem] lg:flex xl:gap-7"
         >
-          <Link href="/about" className="transition hover:text-teal">
+          <Link
+            href="/about"
+            className={navLinkClass(pathMatches(pathname, "/about"))}
+            aria-current={pathMatches(pathname, "/about") ? "page" : undefined}
+          >
             About
           </Link>
 
           <div
+            ref={servicesWrapRef}
             className="relative"
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
@@ -149,11 +210,18 @@ export function Header() {
             <button
               ref={servicesButtonRef}
               type="button"
-              className="inline-flex items-center gap-1 transition hover:text-teal"
+              className={`inline-flex items-center gap-1 ${navLinkClass(servicesActive)}`}
               aria-haspopup="menu"
               aria-expanded={servicesOpen}
               aria-controls={servicesMenuId}
+              aria-current={servicesActive ? "true" : undefined}
               onClick={() => setServicesOpen((value) => !value)}
+              onKeyDown={(event) => {
+                if (event.key === "ArrowDown" && !servicesOpen) {
+                  event.preventDefault();
+                  setServicesOpen(true);
+                }
+              }}
             >
               Services
               <svg
@@ -172,9 +240,7 @@ export function Header() {
               role="menu"
               hidden={!servicesOpen}
               className={`absolute top-full left-0 z-[60] pt-2 transition ${
-                servicesOpen
-                  ? "visible opacity-100"
-                  : "invisible opacity-0"
+                servicesOpen ? "visible opacity-100" : "invisible opacity-0"
               }`}
             >
               <div className="w-[22rem] rounded-xl border border-slate-200 bg-white p-3 shadow-lg">
@@ -183,6 +249,9 @@ export function Header() {
                   role="menuitem"
                   className="block rounded-lg px-3 py-2 text-sm font-semibold text-navy hover:bg-slate-50 hover:text-teal"
                   onClick={() => setServicesOpen(false)}
+                  aria-current={
+                    pathname === "/services" ? "page" : undefined
+                  }
                 >
                   All services
                 </Link>
@@ -194,6 +263,9 @@ export function Header() {
                         role="menuitem"
                         className="block rounded-lg px-3 py-2 text-sm text-navy/80 hover:bg-slate-50 hover:text-teal"
                         onClick={() => setServicesOpen(false)}
+                        aria-current={
+                          pathMatches(pathname, item.href) ? "page" : undefined
+                        }
                       >
                         {item.label}
                       </Link>
@@ -206,24 +278,38 @@ export function Header() {
 
           {links
             .filter((link) => link.href !== "/about" && link.desktop)
-            .map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="transition hover:text-teal"
-              >
-                {link.label}
-              </Link>
-            ))}
+            .map((link) => {
+              const active = pathMatches(pathname, link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={navLinkClass(active)}
+                  aria-current={active ? "page" : undefined}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
         </nav>
 
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           <a
             href={site.phoneHref}
-            className="hidden min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-navy shadow-sm transition hover:border-teal hover:text-teal sm:inline-flex sm:px-4 sm:py-2.5"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-navy shadow-sm transition hover:border-teal hover:text-teal sm:w-auto sm:px-4 sm:py-2.5"
             aria-label={`Call ${site.phone}`}
           >
-            Call
+            <svg
+              viewBox="0 0 24 24"
+              className="h-5 w-5 sm:hidden"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              aria-hidden
+            >
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z" />
+            </svg>
+            <span className="hidden text-sm font-semibold sm:inline">Call</span>
           </a>
           <a
             href={site.whatsappUrl}
@@ -254,6 +340,7 @@ export function Header() {
             className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy lg:hidden"
             aria-expanded={open}
             aria-controls={panelId}
+            aria-haspopup="dialog"
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((value) => !value)}
           >
@@ -275,83 +362,138 @@ export function Header() {
         </div>
       </div>
 
-      {open ? (
-        <div
-          id={panelId}
-          ref={panelRef}
-          className="max-h-[min(70vh,28rem)] overflow-y-auto border-t border-line bg-white px-4 py-4 sm:px-5 sm:py-5 lg:hidden"
-        >
-          <nav aria-label="Mobile" className="flex flex-col gap-1">
-            <div className="mb-2 grid grid-cols-2 gap-2">
-              <a
-                href={site.phoneHref}
-                className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
-                onClick={() => setOpen(false)}
+      {/* Portal outside header: backdrop-blur creates a containing block that
+          collapses position:fixed descendants to the sticky header height. */}
+      {portalReady && open
+        ? createPortal(
+            <div className="lg:hidden">
+              <button
+                type="button"
+                className="fixed inset-0 z-[70] bg-navy/40"
+                aria-label="Close menu"
+                onClick={closeMenu}
+              />
+              <div
+                id={panelId}
+                ref={panelRef}
+                role="dialog"
+                aria-modal="true"
+                aria-label="Site menu"
+                className="fixed inset-x-0 bottom-0 top-[4.25rem] z-[80] flex h-[calc(100dvh-4.25rem)] flex-col border-t border-line bg-white shadow-2xl sm:top-[4.75rem] sm:h-[calc(100dvh-4.75rem)]"
               >
-                Call
-              </a>
-              <a
-                href={site.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
-                onClick={() => setOpen(false)}
-              >
-                WhatsApp
-              </a>
-            </div>
-            <Link
-              href="/book"
-              className="mb-3 min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
-              onClick={() => setOpen(false)}
-            >
-              Book Now
-            </Link>
-            <Link
-              href="/about"
-              className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-              onClick={() => setOpen(false)}
-            >
-              About
-            </Link>
-
-            <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-              Services
-            </p>
-            <Link
-              href="/services"
-              className="rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
-              onClick={() => setOpen(false)}
-            >
-              All services
-            </Link>
-            {serviceNav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
-            <div className="my-2 border-t border-slate-100" />
-
-            {links
-              .filter((link) => link.href !== "/about")
-              .map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                  onClick={() => setOpen(false)}
+                <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3 sm:px-5">
+                  <p className="text-sm font-semibold text-navy">Menu</p>
+                  <button
+                    ref={closeButtonRef}
+                    type="button"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy/10 text-navy"
+                    aria-label="Close menu"
+                    onClick={closeMenu}
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      aria-hidden
+                    >
+                      <path d="M6 6l12 12M18 6 6 18" />
+                    </svg>
+                  </button>
+                </div>
+                <nav
+                  aria-label="Mobile"
+                  className="flex-1 overflow-y-auto px-4 py-4 sm:px-5 sm:py-5"
                 >
-                  {link.label}
-                </Link>
-              ))}
-          </nav>
-        </div>
-      ) : null}
+                  <div className="mb-2 grid grid-cols-2 gap-2">
+                    <a
+                      href={site.phoneHref}
+                      className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
+                      onClick={closeMenu}
+                    >
+                      Call
+                    </a>
+                    <a
+                      href={site.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
+                      onClick={closeMenu}
+                    >
+                      WhatsApp
+                    </a>
+                  </div>
+                  <Link
+                    href="/book"
+                    className="mb-3 block min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
+                    onClick={closeMenu}
+                  >
+                    Book Now
+                  </Link>
+                  <Link
+                    href="/about"
+                    className={`block rounded-xl px-3 py-3 text-base hover:bg-cream-mist ${
+                      pathMatches(pathname, "/about")
+                        ? "bg-cream-mist font-semibold text-navy"
+                        : "text-navy"
+                    }`}
+                    onClick={closeMenu}
+                    aria-current={
+                      pathMatches(pathname, "/about") ? "page" : undefined
+                    }
+                  >
+                    About
+                  </Link>
+
+                  <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                    Services
+                  </p>
+                  <Link
+                    href="/services"
+                    className="block rounded-xl px-3 py-2.5 text-sm font-semibold text-navy hover:bg-cream-mist"
+                    onClick={closeMenu}
+                  >
+                    All services
+                  </Link>
+                  {serviceNav.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block min-h-11 rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                      onClick={closeMenu}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                  <div className="my-2 border-t border-slate-100" />
+
+                  {links
+                    .filter((link) => link.href !== "/about")
+                    .map((link) => {
+                      const active = pathMatches(pathname, link.href);
+                      return (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className={`block rounded-xl px-3 py-3 text-base hover:bg-cream-mist ${
+                            active
+                              ? "bg-cream-mist font-semibold text-navy"
+                              : "text-navy"
+                          }`}
+                          onClick={closeMenu}
+                          aria-current={active ? "page" : undefined}
+                        >
+                          {link.label}
+                        </Link>
+                      );
+                    })}
+                </nav>
+              </div>
+            </div>,
+            document.body,
+          )
+        : null}
     </header>
   );
 }

@@ -43,54 +43,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between md:px-8">
-          <div className="flex flex-wrap gap-2">
-            <a
-              href={site.practitioner.goscRegisterUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-teal"
-            >
-              <span className="text-teal" aria-hidden>
-                ✓
-              </span>
-              GOsC Reg. No. {site.practitioner.regNo}
-            </a>
-            <span className="hidden text-slate-300 sm:inline" aria-hidden>
-              ·
-            </span>
-            <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy">
-              <span className="text-teal" aria-hidden>
-                ✓
-              </span>
-              10% NHS &amp; Student Discount
-            </span>
-          </div>
-          <p className="text-sm text-slate-600">{site.booking.shortNote}</p>
-        </div>
-      </section>
-
-      <section className="bg-navy text-white">
-        <div className="mx-auto grid max-w-6xl gap-3 px-5 py-5 sm:grid-cols-2 md:px-8 lg:grid-cols-4">
-          {highlights.map((item) => (
-            <p
-              key={item}
-              className="flex items-start gap-2 text-sm text-white/95 md:text-[0.95rem]"
-            >
-              <span className="mt-0.5 text-teal-mist" aria-hidden>
-                ✓
-              </span>
-              {item}
-            </p>
-          ))}
-        </div>
-        <div className="border-t border-white/10 px-5 py-3 text-center text-sm text-teal-mist md:px-8">
-          Osteopathy · drug free pain relief · back pain treatment · neck pain
-          treatment · shockwave therapy · {site.address.venue}, Woolwich
-        </div>
-      </section>
-
+      {/* First section after hero — one job: how a visit works */}
       <section className="bg-slate-50 px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
@@ -100,25 +53,52 @@ export default function HomePage() {
             <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
               Simple from first contact to recovery
             </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
+              {site.booking.shortNote}
+            </p>
           </div>
-          <ol className="mt-10 grid gap-6 md:grid-cols-3">
+          <ol className="mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
             {visitSteps.map((item) => (
-              <li
-                key={item.step}
-                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
-              >
+              <li key={item.step}>
                 <p className="text-xs font-semibold tracking-[0.18em] text-teal">
                   {item.step}
                 </p>
                 <h3 className="mt-3 text-xl font-semibold text-navy">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <p className="mt-2 text-sm leading-relaxed text-slate-600 md:text-base">
                   {item.detail}
                 </p>
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Deferred trust signals — not in the first viewport */}
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-6 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between md:px-8">
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            <a
+              href={site.practitioner.goscRegisterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold text-navy hover:text-teal"
+            >
+              GOsC Reg. No. {site.practitioner.regNo}
+            </a>
+            <Link
+              href="/nhs-discount"
+              className="text-sm font-semibold text-navy hover:text-teal"
+            >
+              10% NHS &amp; student discount
+            </Link>
+          </div>
+          <ul className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-slate-600">
+            {highlights.slice(0, 3).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -155,15 +135,15 @@ export default function HomePage() {
           <div className="relative overflow-hidden">
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 to-navy/10 blur-xl" />
             <Image
-              src="/images/austin-nguyen.webp"
-              alt="Austin Duy Nguyen, GOsC-registered osteopath at Nguyen's Osteopathic Clinic in Woolwich"
+              src="/images/austin-clinic.webp"
+              alt="Treatment room at Nguyen's Osteopathic Clinic inside St James Pharmacy, Woolwich"
               width={560}
               height={700}
               sizes="(max-width: 768px) 90vw, 40vw"
               loading="lazy"
               decoding="async"
               quality={70}
-              className="relative float-soft w-full rounded-[1.5rem] object-cover object-top shadow-[0_24px_60px_rgba(11,44,69,0.14)]"
+              className="relative float-soft w-full rounded-[1.5rem] object-cover object-center shadow-[0_24px_60px_rgba(11,44,69,0.14)]"
             />
           </div>
 
@@ -257,12 +237,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          <ul className="mt-10 grid gap-3 sm:mt-12 sm:gap-4 sm:grid-cols-2">
+          <ul className="mt-10 divide-y divide-slate-200 border-y border-slate-200 sm:mt-12">
             {services.map((service) => (
               <li key={service.slug} className="min-w-0">
                 <Link
                   href={getServiceHref(service.slug)}
-                  className="service-tile group flex h-full gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md sm:gap-4 sm:p-5"
+                  className="group flex gap-3 py-4 transition-colors hover:bg-white/60 sm:gap-4 sm:py-5"
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
                     <ServiceIcon name={service.icon} />
@@ -270,27 +250,27 @@ export default function HomePage() {
                   <span className="min-w-0 flex-1">
                     <span className="flex items-start justify-between gap-2 sm:gap-3">
                       <span className="min-w-0">
-                        <span className="block text-base font-semibold text-navy sm:text-lg">
+                        <span className="block text-base font-semibold text-navy group-hover:text-teal sm:text-lg">
                           {service.title}
                         </span>
                         {service.badge ? (
-                          <span className="mt-1.5 inline-flex max-w-full rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
+                          <span className="mt-1.5 inline-flex max-w-full text-[11px] font-semibold tracking-wide text-teal-dark uppercase">
                             {service.badge}
                           </span>
                         ) : null}
                       </span>
                       <span
-                        className="service-arrow shrink-0 text-slate-400"
+                        className="shrink-0 text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-teal"
                         aria-hidden
                       >
                         →
                       </span>
                     </span>
-                    <span className="mt-2 block text-sm leading-relaxed text-slate-600">
+                    <span className="mt-1.5 block text-sm leading-relaxed text-slate-600">
                       {service.summary}
                     </span>
                     {service.relatedPricing ? (
-                      <span className="mt-3 block text-xs font-semibold tracking-wide text-teal-dark">
+                      <span className="mt-2 block text-xs font-semibold tracking-wide text-teal-dark">
                         {service.relatedPricing}
                       </span>
                     ) : null}
@@ -431,21 +411,21 @@ export default function HomePage() {
               assessment.
             </p>
           </div>
-          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-10 columns-1 gap-x-10 sm:columns-2 lg:columns-3">
             {featuredConditions.map((condition) => (
-              <li key={condition.slug}>
+              <li key={condition.slug} className="mb-3 break-inside-avoid">
                 <Link
                   href={`/conditions/${condition.slug}`}
-                  className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-teal/40 hover:bg-teal/5"
+                  className="group inline-flex flex-col py-1"
                 >
                   <span className="text-xs font-semibold tracking-wide text-teal uppercase">
                     {condition.region}
                   </span>
-                  <span className="mt-2 font-semibold text-navy">
+                  <span className="mt-0.5 font-semibold text-navy group-hover:text-teal">
                     {condition.shortTitle}
-                  </span>
-                  <span className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">
-                    {condition.summary}
+                    <span aria-hidden className="ml-1 text-slate-400">
+                      →
+                    </span>
                   </span>
                 </Link>
               </li>

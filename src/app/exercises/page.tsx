@@ -76,7 +76,7 @@ async function ExerciseGrid({
         <div className="flex flex-wrap gap-2">
           <Link
             href={filterHref({ level })}
-            className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
+            className={`inline-flex min-h-11 items-center rounded-xl px-3.5 py-2.5 text-sm font-semibold transition ${
               !region
                 ? "bg-navy text-white"
                 : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
@@ -88,7 +88,7 @@ async function ExerciseGrid({
             <Link
               key={item}
               href={filterHref({ region: item, level })}
-              className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
+              className={`inline-flex min-h-11 items-center rounded-xl px-3.5 py-2.5 text-sm font-semibold transition ${
                 region === item
                   ? "bg-navy text-white"
                   : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
@@ -101,7 +101,7 @@ async function ExerciseGrid({
         <div className="flex flex-wrap gap-2">
           <Link
             href={filterHref({ region })}
-            className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
+            className={`inline-flex min-h-11 items-center rounded-xl px-3.5 py-2.5 text-sm font-semibold transition ${
               !level
                 ? "bg-teal text-white"
                 : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
@@ -113,7 +113,7 @@ async function ExerciseGrid({
             <Link
               key={item}
               href={filterHref({ region, level: item })}
-              className={`rounded-xl px-3 py-2 text-sm font-semibold transition ${
+              className={`inline-flex min-h-11 items-center rounded-xl px-3.5 py-2.5 text-sm font-semibold transition ${
                 level === item
                   ? "bg-teal text-white"
                   : "border border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
@@ -155,26 +155,26 @@ function ExerciseGridFallback() {
     <>
       <div className="mt-8 space-y-4">
         <div className="flex flex-wrap gap-2">
-          <span className="rounded-xl bg-navy px-3 py-2 text-sm font-semibold text-white">
+          <span className="inline-flex min-h-11 items-center rounded-xl bg-navy px-3.5 py-2.5 text-sm font-semibold text-white">
             All regions
           </span>
           {exerciseRegions.map((item) => (
             <span
               key={item}
-              className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-navy"
+              className="inline-flex min-h-11 items-center rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm font-semibold text-navy"
             >
               {item}
             </span>
           ))}
         </div>
         <div className="flex flex-wrap gap-2">
-          <span className="rounded-xl bg-teal px-3 py-2 text-sm font-semibold text-white">
+          <span className="inline-flex min-h-11 items-center rounded-xl bg-teal px-3.5 py-2.5 text-sm font-semibold text-white">
             All levels
           </span>
           {levelFilters.map((item) => (
             <span
               key={item}
-              className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-navy"
+              className="inline-flex min-h-11 items-center rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm font-semibold text-navy"
             >
               {levelLabels[item]}
             </span>

@@ -6,8 +6,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Osteopath in Woolwich",
-  description:
-    "Contact Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18. Call ${site.phone}, WhatsApp, email, or book online. Bookable…",
+  description: `Contact Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18. Call ${site.phone}, WhatsApp, email, or book online.`,
   alternates: { canonical: "/contact" },
   keywords: [
     "contact osteopath Woolwich",

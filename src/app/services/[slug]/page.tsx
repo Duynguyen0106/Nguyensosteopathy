@@ -166,12 +166,9 @@ export default async function ServiceDetailPage({ params }: Props) {
       </section>
 
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-[1.4fr_0.8fr] md:px-8 md:py-20">
-        <div className="space-y-8">
+        <div className="space-y-10 md:space-y-12">
           {page.sections.map((section) => (
-            <section
-              key={section.heading}
-              className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-8"
-            >
+            <section key={section.heading}>
               <h2 className="font-display text-2xl text-navy md:text-3xl">
                 {section.heading}
               </h2>
@@ -188,7 +185,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             </section>
           ))}
 
-          <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <section className="border-t border-slate-200 pt-10">
             <h2 className="font-display text-2xl text-navy md:text-3xl">
               Ideal for
             </h2>
@@ -207,7 +204,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             </ul>
           </section>
 
-          <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <section className="border-t border-slate-200 pt-10">
             <h2 className="font-display text-2xl text-navy md:text-3xl">
               What to expect
             </h2>
@@ -225,7 +222,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             </ol>
           </section>
 
-          <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <section className="border-t border-slate-200 pt-10">
             <h2 className="font-display text-2xl text-navy md:text-3xl">
               Frequently asked questions
             </h2>
@@ -379,7 +376,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className="flex flex-wrap gap-3">
             <ButtonLink
               href="/book"
-              className="bg-white text-navy shadow-md hover:bg-cream"
+              className="bg-white text-navy shadow-md hover:bg-cream-mist"
             >
               Book online
             </ButtonLink>

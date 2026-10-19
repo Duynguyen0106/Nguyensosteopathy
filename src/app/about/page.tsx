@@ -88,7 +88,7 @@ export default function AboutPage() {
             Master of Osteopathy. A Vietnamese-speaking osteopath in Woolwich.
             A name chosen so our community can find care — and feel understood.
           </p>
-          <div className="about-rise about-rise-delay-3 mt-8 flex flex-wrap gap-3">
+          <div className="about-rise about-rise-delay-3 mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
             <ButtonLink href="/book">Book with Austin</ButtonLink>
             <ButtonLink
               href={site.phoneHref}
@@ -97,14 +97,15 @@ export default function AboutPage() {
             >
               Call {site.phone}
             </ButtonLink>
-            <ButtonLink
+          </div>
+          <p className="about-rise about-rise-delay-3 mt-4 text-sm text-white/80">
+            <Link
               href="/vi"
-              variant="secondary"
-              className="border-white/30 bg-white/10 text-white hover:bg-white/20"
+              className="font-semibold text-teal-mist underline-offset-4 hover:underline"
             >
               Đọc bằng tiếng Việt
-            </ButtonLink>
-          </div>
+            </Link>
+          </p>
         </div>
       </section>
 

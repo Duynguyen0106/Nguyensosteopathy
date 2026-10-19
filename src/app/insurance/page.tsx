@@ -4,9 +4,9 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Insurance, Receipts & Self-Pay | Osteopath Woolwich",
+  title: "Insurance, Receipts & Self-Pay",
   description:
-    "How payment works at Nguyen's Osteopathic Clinic in Woolwich: self-pay fees, receipts for insurance claims, and what to bring if your policy may reimburse private osteopathy.",
+    "How payment works at Nguyen's Osteopathic Clinic in Woolwich: self-pay fees, receipts for insurance claims, and what to bring if your policy may reimburse…",
   alternates: { canonical: "/insurance" },
   keywords: [
     "osteopath insurance Woolwich",

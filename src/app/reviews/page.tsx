@@ -9,7 +9,7 @@ import {
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Patient Reviews | Osteopath Woolwich Google Feedback",
+  title: "Patient Reviews",
   description:
     "Read Google reviews for Nguyen's Osteopathic Clinic in Woolwich. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
   alternates: { canonical: "/reviews" },

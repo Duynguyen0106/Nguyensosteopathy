@@ -7,6 +7,7 @@ import {
   getServiceArea,
   serviceAreas,
 } from "@/lib/areas";
+import { breadcrumbJsonLd, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -20,8 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = getServiceArea(slug);
   if (!area) return {};
 
-  const title = `Osteopath near ${area.name} | Woolwich SE18 Clinic`;
-  const description = `${area.summary} Book Nguyen's Osteopathic Clinic inside St James Pharmacy, Powis Street.`;
+  const title = `Osteopath near ${area.name}`;
+  const description = trimDescription(
+    `${area.summary} Book ${site.name} inside St James Pharmacy, Powis Street.`,
+  );
 
   return {
     title,
@@ -29,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: `/areas/${area.slug}` },
     keywords: area.keywords,
     openGraph: {
-      title,
+      title: `${title} | ${site.name}`,
       description,
       url: `/areas/${area.slug}`,
     },
@@ -58,11 +61,21 @@ export default async function AreaPage({ params }: Props) {
     },
   };
 
+  const crumbsLd = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Areas", path: "/areas" },
+    { name: area.name, path: `/areas/${area.slug}` },
+  ]);
+
   return (
     <div className="bg-slate-50">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">

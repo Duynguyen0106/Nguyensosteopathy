@@ -4,9 +4,9 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "What Is Osteopathy? | Drug-Free Care in Woolwich SE18",
+  title: "What Is Osteopathy?",
   description:
-    "What osteopathy is, how a GOsC-registered osteopath works, and what to expect at Nguyen's Osteopathic Clinic in Woolwich — hands-on assessment, no GP referral needed.",
+    "What osteopathy is, how a GOsC-registered osteopath works, and what to expect at Nguyen's Osteopathic Clinic in Woolwich — hands-on assessment, no GP…",
   alternates: { canonical: "/osteopathy" },
   keywords: [
     "what is osteopathy",

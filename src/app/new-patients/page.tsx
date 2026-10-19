@@ -4,9 +4,9 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "New Patients | What to Expect at Your First Osteopathy Visit",
+  title: "New Patients",
   description:
-    "Preparing for your first visit to Nguyen's Osteopathic Clinic in Woolwich: what to wear, what to bring, arrival at St James Pharmacy, appointment length, and cancellation policy.",
+    "Preparing for your first visit to Nguyen's Osteopathic Clinic in Woolwich: what to wear, what to bring, arrival at St James Pharmacy, appointment length…",
   alternates: { canonical: "/new-patients" },
   keywords: [
     "first osteopathy appointment Woolwich",

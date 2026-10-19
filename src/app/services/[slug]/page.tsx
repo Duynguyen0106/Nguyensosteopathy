@@ -10,6 +10,7 @@ import {
   relatedServices,
   servicePages,
 } from "@/lib/service-pages";
+import { breadcrumbJsonLd, segmentTitle, trimDescription } from "@/lib/seo";
 import { getServiceHref, services, site } from "@/lib/site";
 
 type Props = {
@@ -26,14 +27,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!data) return { title: "Service" };
 
   const { page } = data;
+  const title = segmentTitle(page.seoTitle);
+  const description = trimDescription(page.metaDescription);
   return {
-    title: page.seoTitle,
-    description: page.metaDescription,
+    title,
+    description,
     alternates: { canonical: `/services/${page.slug}` },
     keywords: page.keywords,
     openGraph: {
-      title: page.seoTitle,
-      description: page.metaDescription,
+      title: `${title} | ${site.name}`,
+      description,
       url: `/services/${page.slug}`,
     },
   };
@@ -92,6 +95,12 @@ export default async function ServiceDetailPage({ params }: Props) {
     })),
   };
 
+  const crumbsLd = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: service.title, path: `/services/${service.slug}` },
+  ]);
+
   return (
     <div className="bg-slate-50">
       <script
@@ -101,6 +110,10 @@ export default async function ServiceDetailPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">

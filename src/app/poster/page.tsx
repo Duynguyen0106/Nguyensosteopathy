@@ -4,10 +4,11 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Pavement & Window Posters | Print PDFs",
+  title: "Pavement & Window Posters",
   description:
     "Download print-ready A1 and A2 pavement A-board posters, plus the A3 pharmacy-window poster, for Nguyen's Osteopathic Clinic in Woolwich.",
   alternates: { canonical: "/poster" },
+  robots: { index: false, follow: true },
   openGraph: {
     title: "Print posters | Nguyen's Osteopathic Clinic",
     description:

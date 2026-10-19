@@ -12,6 +12,7 @@ import {
   getRelatedConditions,
 } from "@/lib/conditions";
 import { getProgrammesForCondition } from "@/lib/exercises";
+import { breadcrumbJsonLd, segmentTitle, trimDescription } from "@/lib/seo";
 import { getService, site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -25,14 +26,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const condition = getCondition(slug);
   if (!condition) return {};
 
+  const title = segmentTitle(condition.title);
+  const description = trimDescription(condition.summary);
   return {
-    title: condition.title,
-    description: condition.summary,
+    title,
+    description,
     alternates: { canonical: `/conditions/${condition.slug}` },
     keywords: condition.keywords,
     openGraph: {
-      title: condition.title,
-      description: condition.summary,
+      title: `${title} | ${site.name}`,
+      description,
       url: `/conditions/${condition.slug}`,
     },
   };
@@ -89,6 +92,12 @@ export default async function ConditionPage({ params }: Props) {
     })),
   };
 
+  const crumbsLd = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Conditions", path: "/conditions" },
+    { name: condition.shortTitle, path: `/conditions/${condition.slug}` },
+  ]);
+
   return (
     <div className="bg-slate-50">
       <script
@@ -98,6 +107,10 @@ export default async function ConditionPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">

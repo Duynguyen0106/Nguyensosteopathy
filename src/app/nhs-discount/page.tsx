@@ -4,7 +4,7 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "NHS & Student Discount | Osteopath Woolwich",
+  title: "NHS & Student Discount",
   description:
     "10% NHS staff and student discount at Nguyen's Osteopathic Clinic in Woolwich SE18. Valid ID required at appointment. See how it works with booking.",
   alternates: { canonical: "/nhs-discount" },

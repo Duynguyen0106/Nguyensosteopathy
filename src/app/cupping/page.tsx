@@ -4,9 +4,9 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Cupping Therapy Add-on in Woolwich | Soft-Tissue Care",
+  title: "Cupping Therapy Add-on in Woolwich",
   description:
-    "Cupping therapy add-on (+£15) in Woolwich SE18 for muscular tightness — used when clinically useful alongside osteopathy or deep tissue massage at Nguyen's Osteopathic Clinic.",
+    "Cupping therapy add-on (+£15) in Woolwich SE18 for muscular tightness — used when clinically useful alongside osteopathy or deep tissue massage at Nguyen's…",
   alternates: { canonical: "/cupping" },
   keywords: [
     "cupping Woolwich",

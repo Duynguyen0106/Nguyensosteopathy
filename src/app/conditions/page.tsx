@@ -9,9 +9,9 @@ import {
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Conditions We Treat | Osteopath Woolwich",
+  title: "Conditions We Treat",
   description:
-    "Musculoskeletal conditions we help with at Nguyen's Osteopathic Clinic in Woolwich — neck, back, hip, knee, shoulder, elbow, wrist, and foot — with clear next steps to book.",
+    "Musculoskeletal conditions we help with at Nguyen's Osteopathic Clinic in Woolwich — neck, back, hip, knee, shoulder, elbow, wrist, and foot — with clear…",
   alternates: { canonical: "/conditions" },
   openGraph: {
     title: "Conditions We Treat | Nguyen's Osteopathic Clinic",

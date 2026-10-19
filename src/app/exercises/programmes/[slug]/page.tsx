@@ -11,6 +11,7 @@ import {
   getProgramme,
   phaseLabels,
 } from "@/lib/exercises";
+import { breadcrumbJsonLd, trimDescription } from "@/lib/seo";
 import { getService, site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -25,12 +26,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!programme) return {};
 
   return {
-    title: `${programme.title} | Rehab Programme`,
-    description: programme.summary,
+    title: programme.title,
+    description: trimDescription(programme.summary),
     alternates: { canonical: `/exercises/programmes/${programme.slug}` },
     openGraph: {
-      title: `${programme.title} | Nguyen's Osteopathic Clinic`,
-      description: programme.summary,
+      title: `${programme.title} | ${site.name}`,
+      description: trimDescription(programme.summary),
       url: `/exercises/programmes/${programme.slug}`,
     },
   };
@@ -75,6 +76,15 @@ export default async function ProgrammeDetailPage({ params }: Props) {
     })),
   };
 
+  const crumbsLd = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Exercises", path: "/exercises" },
+    {
+      name: programme.title,
+      path: `/exercises/programmes/${programme.slug}`,
+    },
+  ]);
+
   return (
     <div className="bg-slate-50">
       <script
@@ -84,6 +94,10 @@ export default async function ProgrammeDetailPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">

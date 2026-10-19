@@ -15,6 +15,7 @@ import {
   getRelatedExercises,
   levelLabels,
 } from "@/lib/exercises";
+import { breadcrumbJsonLd, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -29,12 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!exercise) return {};
 
   return {
-    title: `${exercise.title} | Home Exercise`,
-    description: exercise.summary,
+    title: exercise.title,
+    description: trimDescription(exercise.summary),
     alternates: { canonical: `/exercises/${exercise.slug}` },
     openGraph: {
-      title: `${exercise.title} | Nguyen's Osteopathic Clinic`,
-      description: exercise.summary,
+      title: `${exercise.title} | ${site.name}`,
+      description: trimDescription(exercise.summary),
       url: `/exercises/${exercise.slug}`,
     },
   };
@@ -68,7 +69,6 @@ export default async function ExerciseDetailPage({ params }: Props) {
     "@type": "HowTo",
     name: exercise.title,
     description: exercise.summary,
-    totalTime: "PT5M",
     tool: exercise.equipment,
     step: exercise.steps.map((text, index) => ({
       "@type": "HowToStep",
@@ -76,6 +76,12 @@ export default async function ExerciseDetailPage({ params }: Props) {
       text,
     })),
   };
+
+  const crumbsLd = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Exercises", path: "/exercises" },
+    { name: exercise.title, path: `/exercises/${exercise.slug}` },
+  ]);
 
   return (
     <div className="bg-slate-50">
@@ -86,6 +92,10 @@ export default async function ExerciseDetailPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">

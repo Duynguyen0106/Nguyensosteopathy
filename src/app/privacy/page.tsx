@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description: `Privacy policy for ${site.name} — how we collect, use, and protect your personal data under UK GDPR.`,
   alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: `Privacy Policy | ${site.name}`,
+    description: `How ${site.name} collects, uses, and protects personal data under UK GDPR.`,
+    url: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {

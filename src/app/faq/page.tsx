@@ -9,7 +9,7 @@ import { faqs, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Osteopath FAQ Woolwich",
   description:
-    "Frequently asked questions about Nguyen's Osteopathic Clinic in Woolwich: GP referrals, first visits, hours inside St James Pharmacy, Vietnamese…",
+    "FAQ for Nguyen's Osteopathic Clinic in Woolwich: GP referrals, first visits, fees, hours inside St James Pharmacy, and Vietnamese-speaking care.",
   alternates: { canonical: "/faq" },
   keywords: [
     "osteopath Woolwich FAQ",

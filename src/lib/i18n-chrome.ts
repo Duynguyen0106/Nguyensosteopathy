@@ -17,6 +17,20 @@ export const viNavLabels: Record<string, string> = {
   "/desk-pain": "Đau do ngồi máy",
 };
 
+/** Service dropdown titles on /vi/* (English titles remain on EN routes). */
+export const viServiceLabels: Record<string, string> = {
+  "back-neck-pain": "Đau lưng & cổ",
+  "headaches-joints": "Đau đầu & khớp",
+  "focused-shockwave": "Shockwave tập trung",
+  "mens-health-ed": "Sức khỏe nam / ED",
+  "acupuncture-electro": "Châm cứu / điện châm",
+  "deep-tissue-massage": "Massage mô sâu",
+  "sports-injury-rehab": "Chấn thương thể thao",
+  "pregnancy-support": "Hỗ trợ thai kỳ",
+  "cranial-therapy": "Liệu pháp sọ",
+  "paediatric-care": "Nhi khoa",
+};
+
 export const viFooterLabels: Record<string, string> = {
   "/book": "Đặt lịch online",
   "/new-patients": "Bệnh nhân mới",

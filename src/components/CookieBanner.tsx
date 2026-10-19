@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   useCallback,
   useEffect,
@@ -8,47 +9,20 @@ import {
   useRef,
   useSyncExternalStore,
 } from "react";
-
-const STORAGE_KEY = "nguyens-cookie-consent";
-
-type Consent = "accepted" | "declined";
-
-let consentVersion = 0;
-const listeners = new Set<() => void>();
-
-function emitConsentChange() {
-  consentVersion += 1;
-  listeners.forEach((listener) => listener());
-}
-
-function subscribeConsent(onStoreChange: () => void) {
-  listeners.add(onStoreChange);
-  return () => listeners.delete(onStoreChange);
-}
-
-function readConsent(): Consent | null {
-  try {
-    const saved = window.localStorage.getItem(STORAGE_KEY);
-    if (saved === "accepted" || saved === "declined") return saved;
-    return null;
-  } catch {
-    return null;
-  }
-}
-
-function getConsentSnapshot() {
-  void consentVersion;
-  return readConsent();
-}
-
-function getServerConsentSnapshot(): Consent | null {
-  return "declined";
-}
+import {
+  getConsentSnapshot,
+  getServerConsentSnapshot,
+  subscribeConsent,
+  writeConsent,
+  type Consent,
+} from "@/lib/cookie-consent";
 
 export function CookieBanner() {
   const titleId = useId();
   const dialogRef = useRef<HTMLDivElement>(null);
   const firstButtonRef = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname() || "/";
+  const isVi = pathname.startsWith("/vi");
   const consent = useSyncExternalStore(
     subscribeConsent,
     getConsentSnapshot,
@@ -56,15 +30,10 @@ export function CookieBanner() {
   );
 
   const choose = useCallback((value: Consent) => {
-    try {
-      window.localStorage.setItem(STORAGE_KEY, value);
-    } catch {
-      /* ignore */
-    }
+    writeConsent(value);
     if (value === "accepted") {
       window.dispatchEvent(new Event("nguyens:analytics-consent"));
     }
-    emitConsentChange();
   }, []);
 
   useEffect(() => {
@@ -96,6 +65,19 @@ export function CookieBanner() {
 
     firstButtonRef.current?.focus();
 
+    const main = document.getElementById("main-content");
+    const header = document.querySelector("header");
+    const footer = document.querySelector("footer");
+    const mobileBook = document.getElementById("mobile-book-bar");
+    const inertTargets = [main, header, footer, mobileBook].filter(
+      Boolean,
+    ) as HTMLElement[];
+
+    for (const el of inertTargets) {
+      el.setAttribute("inert", "");
+      el.setAttribute("aria-hidden", "true");
+    }
+
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();
@@ -104,7 +86,7 @@ export function CookieBanner() {
       }
       if (event.key !== "Tab" || !dialog) return;
       const focusable = dialog.querySelectorAll<HTMLElement>(
-        'a[href], button:not([disabled])',
+        "a[href], button:not([disabled])",
       );
       if (focusable.length === 0) return;
       const first = focusable[0];
@@ -125,6 +107,10 @@ export function CookieBanner() {
       window.removeEventListener("resize", measure);
       ro?.disconnect();
       document.body.style.removeProperty("--cookie-banner-pad");
+      for (const el of inertTargets) {
+        el.removeAttribute("inert");
+        el.removeAttribute("aria-hidden");
+      }
     };
   }, [visible, choose]);
 
@@ -143,22 +129,46 @@ export function CookieBanner() {
           id={titleId}
           className="max-w-3xl text-sm leading-relaxed text-slate-700"
         >
-          We store your cookie choice in this browser (local storage). With your
-          permission, we also use analytics to improve the website. See our{" "}
-          <Link
-            href="/cookies"
-            className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
-          >
-            Cookie Policy
-          </Link>
-          {" · "}
-          <Link
-            href="/privacy"
-            className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
-          >
-            Privacy
-          </Link>
-          . Escape or Essential only keeps analytics off.
+          {isVi ? (
+            <>
+              Chúng tôi lưu lựa chọn cookie trên trình duyệt này (local storage).
+              Nếu bạn đồng ý, chúng tôi dùng analytics để cải thiện website. Xem{" "}
+              <Link
+                href="/cookies"
+                className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
+              >
+                Chính sách cookie
+              </Link>
+              {" · "}
+              <Link
+                href="/privacy"
+                className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
+              >
+                Quyền riêng tư
+              </Link>
+              . Escape hoặc “Chỉ thiết yếu” tắt analytics.
+            </>
+          ) : (
+            <>
+              We store your cookie choice in this browser (local storage). With
+              your permission, we also use analytics to improve the website. See
+              our{" "}
+              <Link
+                href="/cookies"
+                className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
+              >
+                Cookie Policy
+              </Link>
+              {" · "}
+              <Link
+                href="/privacy"
+                className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
+              >
+                Privacy
+              </Link>
+              . Escape or Essential only keeps analytics off.
+            </>
+          )}
         </p>
         <div className="flex shrink-0 flex-wrap gap-2">
           <button
@@ -167,14 +177,14 @@ export function CookieBanner() {
             onClick={() => choose("declined")}
             className="min-h-11 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
           >
-            Essential only
+            {isVi ? "Chỉ thiết yếu" : "Essential only"}
           </button>
           <button
             type="button"
             onClick={() => choose("accepted")}
             className="min-h-11 rounded-xl bg-teal px-4 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
           >
-            Accept analytics
+            {isVi ? "Chấp nhận analytics" : "Accept analytics"}
           </button>
         </div>
       </div>

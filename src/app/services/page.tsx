@@ -34,6 +34,14 @@ export default function ServicesPage() {
           and drug free pain relief, every plan starts with why symptoms began —
           then we match hands-on osteopathy and clear advice to your goals.
         </p>
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
+          Most people come for a clear diagnosis of load, posture, or soft-tissue
+          irritation — not a one-size-fits-all package. Initial visits are usually
+          60 minutes so we can examine how your spine, hips, and shoulders share
+          work; follow-ups are shorter and focused on the findings that matter.
+          You can book without a GP referral, and we explain options (including
+          when not to treat) in plain English — or Vietnamese when that helps.
+        </p>
         <p className="mt-4 text-sm text-slate-600">
           New here?{" "}
           <Link href="/osteopathy" className="prose-link">
@@ -44,14 +52,57 @@ export default function ServicesPage() {
             Desk &amp; office pain
           </Link>
           {" · "}
+          <Link href="/fees" className="prose-link">
+            Fees
+          </Link>
+          {" · "}
           <Link href="/new-patients" className="prose-link">
             New patient guide
           </Link>
         </p>
       </div>
 
-      <div className="mx-auto max-w-6xl px-5 pb-20 md:px-8">
-        <ul className="divide-y divide-slate-200 border-y border-slate-200">
+      <section className="border-y border-slate-200 bg-white px-5 py-12 md:px-8 md:py-14">
+        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+          <div>
+            <h2 className="text-lg font-semibold text-navy">How we choose care</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              Assessment first. Hands-on osteopathy is the core; acupuncture,
+              cupping, or focused shockwave are added only when they fit the
+              tissue problem and you agree the fee.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-lg font-semibold text-navy">Who we see</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              Desk workers, trades, runners, peri-natal patients, and people
+              managing recurrent flare-ups. Red-flag symptoms are screened; we
+              refer on when imaging or medical review is the safer next step.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-lg font-semibold text-navy">Where you are seen</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              Inside {site.address.venue} on Powis Street, Woolwich SE18 — private
+              room, pharmacy reception on arrival.{" "}
+              <Link href="/find-us" className="prose-link">
+                Parking &amp; travel
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-6xl px-5 pb-20 pt-10 md:px-8">
+        <h2 className="font-display text-2xl text-navy md:text-3xl">
+          All treatments
+        </h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
+          Open any service for who it helps, what to expect, and how it sits
+          beside related fees.
+        </p>
+        <ul className="mt-8 divide-y divide-slate-200 border-y border-slate-200">
           {services.map((service) => (
             <li key={service.slug} className="min-w-0">
               <Link

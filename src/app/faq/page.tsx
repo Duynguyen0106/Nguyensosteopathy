@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FAQ | Nguyen's Osteopathic Clinic",
     description:
-      "Quick answers before you book osteopathy in Woolwich SE18.",
+      "FAQ for Nguyen's Osteopathic Clinic: GP referrals, first visits, fees, hours inside St James Pharmacy, and Vietnamese-speaking care in Woolwich SE18.",
     url: "/faq",
     images: [defaultOgImage],
   },

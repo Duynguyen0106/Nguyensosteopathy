@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       "Hướng dẫn đến phòng khám osteopathy trong nhà thuốc St James, Woolwich SE18.",
     url: "/vi/find-us",
     images: [defaultOgImage],
+    locale: "vi_VN",
   }),
 };
 

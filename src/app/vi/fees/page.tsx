@@ -22,6 +22,7 @@ export const metadata: Metadata = {
       "Giá rõ ràng cho osteopathy và các dịch vụ tại Nguyen's Osteopathic Clinic, Woolwich.",
     url: "/vi/fees",
     images: [defaultOgImage],
+    locale: "vi_VN",
   }),
 };
 

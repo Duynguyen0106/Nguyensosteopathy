@@ -51,8 +51,8 @@ export function Hero() {
             </ButtonLink>
             <ButtonLink
               href={site.phoneHref}
-              variant="secondary"
-              className="w-full border-white/25 bg-white/10 text-white shadow-none hover:border-teal-mist hover:bg-white/15 hover:text-white sm:w-auto"
+              variant="onDarkOutline"
+              className="w-full sm:w-auto"
             >
               Call {site.phone}
             </ButtonLink>

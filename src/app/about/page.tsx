@@ -90,11 +90,7 @@ export default function AboutPage() {
           </p>
           <div className="about-rise about-rise-delay-3 mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
             <ButtonLink href="/book">Book with Austin</ButtonLink>
-            <ButtonLink
-              href={site.phoneHref}
-              variant="secondary"
-              className="border-white/30 bg-white/10 text-white hover:bg-white/20"
-            >
+            <ButtonLink href={site.phoneHref} variant="onDarkOutline">
               Call {site.phone}
             </ButtonLink>
           </div>
@@ -518,11 +514,7 @@ export default function AboutPage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink
-              href={site.phoneHref}
-              variant="secondary"
-              className="border-white/30 bg-white/10 text-white hover:bg-white/20"
-            >
+            <ButtonLink href={site.phoneHref} variant="onDarkOutline">
               Call {site.phone}
             </ButtonLink>
             <Link

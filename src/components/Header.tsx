@@ -6,6 +6,11 @@ import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { ButtonLink } from "@/components/Button";
+import {
+  chromeLabel,
+  resolveViHref,
+  viNavLabels,
+} from "@/lib/i18n-chrome";
 import { getServiceHref, services, site } from "@/lib/site";
 
 function pathMatches(pathname: string, href: string) {
@@ -19,12 +24,12 @@ function navLinkClass(active: boolean) {
     : "inline-flex min-h-11 items-center text-navy/75 transition hover:text-teal";
 }
 
-/** Primary lg row — care paths first; NHS/Insurance/Reviews/Contact/VI in mobile + footer. */
+/** Primary lg row — Blog stays mobile-only to ease crowding with VI/EN switch. */
 const links = [
   { href: "/about", label: "About", desktop: true },
   { href: "/conditions", label: "Conditions", desktop: true },
   { href: "/exercises", label: "Exercises", desktop: true },
-  { href: "/blog", label: "Blog", desktop: true },
+  { href: "/blog", label: "Blog", desktop: false },
   { href: "/fees", label: "Fees", desktop: true },
   { href: "/nhs-discount", label: "NHS 10%", desktop: false },
   { href: "/insurance", label: "Insurance", desktop: false },
@@ -39,16 +44,14 @@ const serviceNav = services.map((service) => ({
   label: service.title,
 }));
 
-/** On /vi/* routes, point Fees / Find us at the Vietnamese pages. */
 function resolveNavHref(pathname: string, href: string) {
   if (!pathname.startsWith("/vi")) return href;
-  if (href === "/fees") return "/vi/fees";
-  if (href === "/find-us") return "/vi/find-us";
-  return href;
+  return resolveViHref(href);
 }
 
 export function Header() {
   const pathname = usePathname() || "/";
+  const isVi = pathname.startsWith("/vi");
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -260,7 +263,7 @@ export function Header() {
             className={navLinkClass(pathMatches(pathname, "/about"))}
             aria-current={pathMatches(pathname, "/about") ? "page" : undefined}
           >
-            About
+            {chromeLabel("/about", "About", isVi, viNavLabels)}
           </Link>
 
           <div
@@ -297,7 +300,7 @@ export function Header() {
                 }
               }}
             >
-              Services
+              {chromeLabel("/services", "Services", isVi, viNavLabels)}
               <svg
                 viewBox="0 0 20 20"
                 className={`h-3.5 w-3.5 transition ${servicesOpen ? "rotate-180" : ""}`}
@@ -329,7 +332,7 @@ export function Header() {
                     pathname === "/services" ? "page" : undefined
                   }
                 >
-                  All services
+                  {isVi ? "Tất cả dịch vụ" : "All services"}
                 </Link>
                 <ul className="mt-1 max-h-[70vh] overflow-y-auto">
                   {serviceNav.map((item) => (
@@ -365,7 +368,7 @@ export function Header() {
                   className={navLinkClass(active)}
                   aria-current={active ? "page" : undefined}
                 >
-                  {link.label}
+                  {chromeLabel(link.href, link.label, isVi, viNavLabels)}
                 </Link>
               );
             })}
@@ -410,7 +413,7 @@ export function Header() {
             href="/book"
             className="min-h-11 px-3 py-2 sm:px-5 sm:py-2.5"
           >
-            Book Now
+            {isVi ? "Đặt lịch" : "Book Now"}
           </ButtonLink>
           <button
             ref={menuButtonRef}
@@ -511,7 +514,7 @@ export function Header() {
                     className="mb-3 block min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
                     onClick={closeMenu}
                   >
-                    Book Now
+                    {isVi ? "Đặt lịch" : "Book Now"}
                   </Link>
                   <Link
                     href="/about"
@@ -525,11 +528,11 @@ export function Header() {
                       pathMatches(pathname, "/about") ? "page" : undefined
                     }
                   >
-                    About
+                    {chromeLabel("/about", "About", isVi, viNavLabels)}
                   </Link>
 
                   <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-                    Services
+                    {chromeLabel("/services", "Services", isVi, viNavLabels)}
                   </p>
                   <Link
                     href="/services"
@@ -541,7 +544,7 @@ export function Header() {
                     onClick={closeMenu}
                     aria-current={pathname === "/services" ? "page" : undefined}
                   >
-                    All services
+                    {isVi ? "Tất cả dịch vụ" : "All services"}
                   </Link>
                   {serviceNav.map((item) => {
                     const active = pathMatches(pathname, item.href);
@@ -580,7 +583,7 @@ export function Header() {
                           onClick={closeMenu}
                           aria-current={active ? "page" : undefined}
                         >
-                          {link.label}
+                          {chromeLabel(link.href, link.label, isVi, viNavLabels)}
                         </Link>
                       );
                     })}

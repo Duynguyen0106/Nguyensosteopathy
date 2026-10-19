@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/cookies" },
   openGraph: {
     title: "Cookie Policy",
-    description: "Cookie choices for Nguyen's Osteopathic Clinic website.",
+    description:
+      "How Nguyen's Osteopathic Clinic uses essential and analytics cookies, and how to change your consent choice on the Woolwich clinic website.",
     url: "/cookies",
     images: [defaultOgImage],
   },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ServiceIcon } from "@/components/ServiceIcon";
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
     description:
       "Explore osteopathy, back pain treatment, neck pain treatment, and shockwave therapy at Nguyen's Osteopathic Clinic with Austin Duy Nguyen, GOsC-registered osteopath.",
     url: "/services",
+    images: [defaultOgImage],
   },
 };
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { BookingEmbed } from "@/components/BookingEmbed";
 import { ButtonLink } from "@/components/Button";
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
     description:
       "Online booking for osteopathy, shockwave therapy, and specialist care at Nguyen's Osteopathic Clinic.",
     url: "/book",
+    images: [defaultOgImage],
   },
 };
 
@@ -43,11 +45,11 @@ export default function BookPage() {
 
         <div className="mt-6 rounded-xl border border-teal/30 bg-teal/5 px-5 py-5 md:px-6">
           <p className="text-sm font-semibold tracking-wide text-teal-dark uppercase">
-            Accepting bookings from {site.booking.opensFromLabel}
+            Bookable days
           </p>
           <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
             {site.booking.shortNote} Live availability is always shown in the
-            calendar below — reserve now for opening week.
+            calendar below.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <ButtonLink href={site.phoneHref} variant="navy">

@@ -1085,7 +1085,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "book-osteopath-online-woolwich",
     title: "How to book an osteopath online in Woolwich",
     description:
-      `Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, opening from ${site.booking.opensFromLabel}, and phone backup.`,
+      `Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, live calendar slots, and phone backup.`,
     date: "2026-10-09",
     category: "Clinic info",
     keywords: [
@@ -1096,7 +1096,7 @@ export const serviceBlogPosts: ServicePost[] = [
     sections: [
       {
         paragraphs: [
-          `Use ${site.websiteUrl}/book to choose a service and time. Online booking opens from ${site.booking.opensFromLabel}, with Wednesday and Sunday unavailable for appointments.`,
+          `Use ${site.websiteUrl}/book to choose a service and time. Wednesday and Sunday are unavailable for appointments.`,
           `Prefer to talk it through? Call ${site.phone}. No GP referral needed.`,
         ],
       },

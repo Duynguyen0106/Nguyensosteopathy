@@ -10,7 +10,7 @@ import {
   relatedServices,
   servicePages,
 } from "@/lib/service-pages";
-import { breadcrumbJsonLd, segmentTitle, trimDescription } from "@/lib/seo";
+import { breadcrumbJsonLd, segmentTitle, trimDescription, defaultOgImage } from "@/lib/seo";
 import { getServiceHref, services, site } from "@/lib/site";
 
 type Props = {
@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${title} | ${site.name}`,
       description,
       url: `/services/${page.slug}`,
+      images: [defaultOgImage],
     },
   };
 }
@@ -234,8 +235,8 @@ export default async function ServiceDetailPage({ params }: Props) {
           </section>
         </div>
 
-        <aside className="space-y-6 md:sticky md:top-28 md:self-start">
-          <div className="rounded-xl border border-teal/25 bg-teal/5 p-6 shadow-sm">
+        <aside className="space-y-8 border-t border-slate-200 pt-8 md:sticky md:top-28 md:self-start md:border-t-0 md:border-l md:pt-0 md:pl-8">
+          <div>
             <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
               Book with confidence
             </p>
@@ -259,7 +260,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
 
           {service.slug === "sports-injury-rehab" ? (
-            <div className="rounded-xl border border-teal/25 bg-teal/5 p-6 shadow-sm">
+            <div>
               <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
                 Between sessions
               </p>
@@ -274,19 +275,19 @@ export default async function ServiceDetailPage({ params }: Props) {
           ) : null}
 
           {relatedConditions.length > 0 ? (
-            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div>
               <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
                 Related conditions
               </p>
-              <ul className="mt-4 space-y-3">
+              <ul className="mt-4 space-y-1">
                 {relatedConditions.map((item) => (
                   <li key={item.slug}>
                     <Link
                       href={`/conditions/${item.slug}`}
-                      className="group flex items-center justify-between gap-3 text-sm font-medium text-navy hover:text-teal"
+                      className="group flex min-h-11 items-center justify-between gap-3 text-sm font-medium text-navy hover:text-teal"
                     >
                       <span>{item.shortTitle}</span>
-                      <span className="text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-teal">
+                      <span className="text-slate-400 motion-safe:transition group-hover:translate-x-0.5 group-hover:text-teal">
                         →
                       </span>
                     </Link>
@@ -295,26 +296,26 @@ export default async function ServiceDetailPage({ params }: Props) {
               </ul>
               <Link
                 href="/conditions"
-                className="mt-5 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+                className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-teal hover:text-teal-dark"
               >
                 View all conditions →
               </Link>
             </div>
           ) : null}
 
-          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div>
             <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
               Related services
             </p>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-1">
               {related.map((item) => (
                 <li key={item.slug}>
                   <Link
                     href={item.href}
-                    className="group flex items-center justify-between gap-3 text-sm font-medium text-navy hover:text-teal"
+                    className="group flex min-h-11 items-center justify-between gap-3 text-sm font-medium text-navy hover:text-teal"
                   >
                     <span>{item.title}</span>
-                    <span className="text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-teal">
+                    <span className="text-slate-400 motion-safe:transition group-hover:translate-x-0.5 group-hover:text-teal">
                       →
                     </span>
                   </Link>
@@ -322,12 +323,12 @@ export default async function ServiceDetailPage({ params }: Props) {
               ))}
             </ul>
             {moreServices.length > 0 ? (
-              <ul className="mt-4 space-y-3 border-t border-slate-100 pt-4">
+              <ul className="mt-2 space-y-1 border-t border-slate-100 pt-2">
                 {moreServices.map((item) => (
                   <li key={item.slug}>
                     <Link
                       href={getServiceHref(item.slug)}
-                      className="text-sm font-medium text-slate-600 hover:text-teal"
+                      className="flex min-h-11 items-center text-sm font-medium text-slate-600 hover:text-teal"
                     >
                       {item.title}
                     </Link>
@@ -337,13 +338,13 @@ export default async function ServiceDetailPage({ params }: Props) {
             ) : null}
             <Link
               href="/services"
-              className="mt-5 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+              className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-teal hover:text-teal-dark"
             >
               View all services →
             </Link>
           </div>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div>
             <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
               Visit us
             </p>

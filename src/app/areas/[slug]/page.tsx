@@ -7,7 +7,7 @@ import {
   getServiceArea,
   serviceAreas,
 } from "@/lib/areas";
-import { breadcrumbJsonLd, trimDescription } from "@/lib/seo";
+import { breadcrumbJsonLd, trimDescription, defaultOgImage } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${title} | ${site.name}`,
       description,
       url: `/areas/${area.slug}`,
+      images: [defaultOgImage],
     },
   };
 }

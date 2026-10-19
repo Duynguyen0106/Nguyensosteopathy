@@ -67,6 +67,17 @@ export function Footer() {
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={site.phoneHref} variant="secondary">
+              Call {site.phone}
+            </ButtonLink>
+            <ButtonLink
+              href={site.whatsappUrl}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </ButtonLink>
             <a
               href={site.facebookUrl}
               target="_blank"
@@ -90,18 +101,24 @@ export function Footer() {
               </svg>
             </a>
           </div>
-          <ul className="mt-6 space-y-2 text-sm text-white/85">
+          <ul className="mt-6 space-y-1 text-sm text-white/85">
             <li>
-              <a href={site.phoneHref} className="hover:text-white">
+              <a
+                href={site.phoneHref}
+                className="inline-flex min-h-11 items-center hover:text-white"
+              >
                 {site.phone}
               </a>
             </li>
             <li>
-              <a href={site.emailHref} className="hover:text-white">
+              <a
+                href={site.emailHref}
+                className="inline-flex min-h-11 items-center hover:text-white"
+              >
                 {site.email}
               </a>
             </li>
-            <li>
+            <li className="pt-1">
               {site.address.line1}, {site.address.line2}
             </li>
           </ul>
@@ -116,8 +133,8 @@ export function Footer() {
             ))}
           </div>
           <p className="mt-3 text-xs leading-relaxed text-white/55">
-            Closed {site.booking.closedDaysLabel}. Online booking from{" "}
-            {site.booking.opensFromLabel}.
+            Closed {site.booking.closedDaysLabel}. Live slots are shown in
+            online booking.
           </p>
         </div>
 
@@ -125,10 +142,13 @@ export function Footer() {
           <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
             Patients
           </p>
-          <ul className="mt-4 space-y-2 text-sm text-white/85">
+          <ul className="mt-4 space-y-1 text-sm text-white/85">
             {patientLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:text-white">
+                <Link
+                  href={link.href}
+                  className="inline-flex min-h-11 items-center hover:text-white"
+                >
                   {link.label}
                 </Link>
               </li>
@@ -140,10 +160,13 @@ export function Footer() {
           <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
             Treatments
           </p>
-          <ul className="mt-4 space-y-2 text-sm text-white/85">
+          <ul className="mt-4 space-y-1 text-sm text-white/85">
             {treatmentLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:text-white">
+                <Link
+                  href={link.href}
+                  className="inline-flex min-h-11 items-center hover:text-white"
+                >
                   {link.label}
                 </Link>
               </li>
@@ -155,16 +178,22 @@ export function Footer() {
           <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
             About
           </p>
-          <ul className="mt-4 space-y-2 text-sm text-white/85">
+          <ul className="mt-4 space-y-1 text-sm text-white/85">
             {aboutLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:text-white">
+                <Link
+                  href={link.href}
+                  className="inline-flex min-h-11 items-center hover:text-white"
+                >
                   {link.label}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href="/site-map" className="hover:text-white">
+              <Link
+                href="/site-map"
+                className="inline-flex min-h-11 items-center hover:text-white"
+              >
                 Full site map
               </Link>
             </li>
@@ -172,14 +201,14 @@ export function Footer() {
           <p className="mt-6 text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
             Built by Austin
           </p>
-          <ul className="mt-3 space-y-2 text-sm text-white/85">
+          <ul className="mt-3 space-y-1 text-sm text-white/85">
             {productLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white"
+                  className="inline-flex min-h-11 items-center hover:text-white"
                 >
                   {link.label}
                 </a>

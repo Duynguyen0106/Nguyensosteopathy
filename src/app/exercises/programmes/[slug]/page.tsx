@@ -11,7 +11,7 @@ import {
   getProgramme,
   phaseLabels,
 } from "@/lib/exercises";
-import { breadcrumbJsonLd, trimDescription } from "@/lib/seo";
+import { breadcrumbJsonLd, trimDescription, defaultOgImage } from "@/lib/seo";
 import { getService, site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${programme.title} | ${site.name}`,
       description: trimDescription(programme.summary),
       url: `/exercises/programmes/${programme.slug}`,
+      images: [defaultOgImage],
     },
   };
 }

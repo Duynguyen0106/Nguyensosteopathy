@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import {
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     description:
       "Explore the MSK conditions catalogue we treat in Woolwich SE18, organised by body region.",
     url: "/conditions",
+    images: [defaultOgImage],
   },
 };
 

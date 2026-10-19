@@ -15,7 +15,7 @@ import {
   getRelatedExercises,
   levelLabels,
 } from "@/lib/exercises";
-import { breadcrumbJsonLd, trimDescription } from "@/lib/seo";
+import { breadcrumbJsonLd, trimDescription, defaultOgImage } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -37,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${exercise.title} | ${site.name}`,
       description: trimDescription(exercise.summary),
       url: `/exercises/${exercise.slug}`,
+      images: [defaultOgImage],
     },
   };
 }

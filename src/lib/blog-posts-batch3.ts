@@ -129,7 +129,7 @@ export const batch3BlogPosts: BatchPost[] = [
       {
         paragraphs: [
           `Patients from Plumstead, Abbey Wood, and Woolwich Common regularly visit ${clinic}. Bus and DLR links make Powis Street practical without travelling into central London.`,
-          `Ask at the St James Pharmacy counter on arrival and staff will direct you to the osteopathy room. Online booking opens from ${site.booking.opensFromLabel}.`,
+          `Ask at the St James Pharmacy counter on arrival and staff will direct you to the osteopathy room. Book online or call if you need help choosing a slot.`,
         ],
       },
     ],

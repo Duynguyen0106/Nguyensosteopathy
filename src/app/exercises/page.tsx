@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { Suspense } from "react";
 import { ButtonLink } from "@/components/Button";
@@ -35,6 +36,7 @@ export const metadata: Metadata = {
     description:
       "Browse programmes and step-by-step home exercises from our Woolwich osteopathy clinic.",
     url: "/exercises",
+    images: [defaultOgImage],
   },
 };
 

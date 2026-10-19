@@ -67,6 +67,8 @@ export function BookingEmbed() {
     return () => window.clearTimeout(timer);
   }, [loaded, failed]);
 
+  const showFailure = failed && !loaded;
+
   return (
     <div
       className="booking-embed-shell relative overflow-hidden bg-white md:rounded-2xl md:border md:border-slate-200 md:shadow-[0_20px_50px_rgba(11,44,69,0.06)]"
@@ -85,11 +87,11 @@ export function BookingEmbed() {
         </div>
       ) : null}
 
-      {failed && !loaded ? (
-        <div className="absolute inset-x-0 top-0 z-30 flex flex-col items-center justify-center gap-4 bg-slate-50/95 px-6 py-10 text-center backdrop-blur-sm md:rounded-t-2xl">
+      {showFailure ? (
+        <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-4 bg-slate-50 px-6 py-10 text-center md:rounded-2xl">
           <p className="max-w-md text-base text-slate-700">
-            The booking calendar could not load. Open the full Treow booking page,
-            or call us on {site.phone}.
+            The booking calendar could not load. Open the full booking page,
+            message us on WhatsApp, or call {site.phone}.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <a
@@ -99,6 +101,14 @@ export function BookingEmbed() {
               className="inline-flex min-h-11 items-center justify-center rounded-xl bg-teal px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark"
             >
               Open full booking page
+            </a>
+            <a
+              href={site.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+            >
+              WhatsApp
             </a>
             <a
               href={site.phoneHref}
@@ -116,8 +126,14 @@ export function BookingEmbed() {
         title="Book an appointment with Nguyen's Osteopathic Clinic"
         referrerPolicy="no-referrer-when-downgrade"
         sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-modals"
-        className="relative z-20 block w-full border-0 bg-white"
+        className={`relative block w-full border-0 bg-white ${
+          showFailure
+            ? "pointer-events-none z-0 opacity-0"
+            : "z-20"
+        }`}
         style={{ height: `${height}px`, minHeight: `${height}px` }}
+        aria-hidden={showFailure}
+        tabIndex={showFailure ? -1 : undefined}
         onLoad={() => {
           setLoaded(true);
           setFailed(false);

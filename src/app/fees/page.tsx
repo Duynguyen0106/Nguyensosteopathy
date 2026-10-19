@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     description:
       "Transparent treatment fees at Nguyen's Osteopathic Clinic inside St James Pharmacy, Woolwich.",
     url: "/fees",
+    images: [defaultOgImage],
   },
 };
 

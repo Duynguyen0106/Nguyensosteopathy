@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "Quick answers before you book osteopathy in Woolwich SE18.",
     url: "/faq",
+    images: [defaultOgImage],
   },
 };
 

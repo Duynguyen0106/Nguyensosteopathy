@@ -116,8 +116,7 @@ export default function HomePage() {
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
               Real feedback from our Google listing — and a warm invitation to
-              leave your own review after your visit from{" "}
-              {site.booking.opensFromLabel}.
+              leave your own review after your visit.
             </p>
           </div>
 

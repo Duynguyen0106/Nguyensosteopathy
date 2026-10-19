@@ -41,8 +41,8 @@ export function FaqAccordion({
                   {item.question}
                 </span>
                 <span
-                  className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-teal transition-transform duration-200 ${
-                    isOpen ? "rotate-45 bg-teal/10 border-teal/30" : ""
+                  className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-teal motion-safe:transition-transform motion-safe:duration-200 ${
+                    isOpen ? "motion-safe:rotate-45 bg-teal/10 border-teal/30" : ""
                   }`}
                   aria-hidden
                 >

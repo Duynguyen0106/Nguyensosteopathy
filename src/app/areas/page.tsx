@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { serviceAreas } from "@/lib/areas";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     description:
       "Local osteopathy for Woolwich and nearby SE London neighbourhoods.",
     url: "/areas",
+    images: [defaultOgImage],
   },
 };
 

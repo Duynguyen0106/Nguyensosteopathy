@@ -15,8 +15,8 @@ function pathMatches(pathname: string, href: string) {
 
 function navLinkClass(active: boolean) {
   return active
-    ? "font-semibold text-navy"
-    : "text-navy/75 transition hover:text-teal";
+    ? "inline-flex min-h-11 items-center font-semibold text-navy"
+    : "inline-flex min-h-11 items-center text-navy/75 transition hover:text-teal";
 }
 
 /** Primary lg row — care paths first; NHS/Insurance/Reviews/Contact/VI in mobile + footer. */
@@ -267,7 +267,7 @@ export function Header() {
             <button
               ref={servicesButtonRef}
               type="button"
-              className={`inline-flex items-center gap-1 ${navLinkClass(servicesActive)}`}
+              className={`inline-flex min-h-11 items-center gap-1 ${navLinkClass(servicesActive)}`}
               aria-haspopup="menu"
               aria-expanded={servicesOpen}
               aria-controls={servicesMenuId}

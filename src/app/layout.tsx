@@ -88,10 +88,10 @@ export const metadata: Metadata = {
     images: [
       defaultOgImage,
       {
-        url: "/images/clinic-promo.webp",
-        width: 1400,
-        height: 1050,
-        alt: "Austin Duy Nguyen, GOsC-registered osteopath in Woolwich",
+        url: "/images/clinic-room.webp",
+        width: 1600,
+        height: 1200,
+        alt: "Treatment room at Nguyen's Osteopathic Clinic in Woolwich",
       },
     ],
   },

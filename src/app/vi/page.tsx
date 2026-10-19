@@ -285,13 +285,13 @@ export default function VietnamesePage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden md:aspect-[5/4]">
             <Image
-              src="/images/clinic-promo.webp"
-              alt="Không gian phòng khám Nguyen's Osteopathic Clinic"
+              src="/images/clinic-room.webp"
+              alt="Không gian phòng khám Nguyen's Osteopathic Clinic tại Woolwich"
               fill
               loading="lazy"
               decoding="async"
-              quality={70}
-              className="object-cover"
+              quality={75}
+              className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

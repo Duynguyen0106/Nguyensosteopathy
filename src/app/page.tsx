@@ -135,14 +135,14 @@ export default function HomePage() {
           <div className="relative overflow-hidden">
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 to-navy/10 blur-xl" />
             <Image
-              src="/images/austin-clinic.webp"
-              alt="Treatment room at Nguyen's Osteopathic Clinic inside St James Pharmacy, Woolwich"
-              width={560}
-              height={700}
+              src="/images/clinic-room.webp"
+              alt="Treatment and consultation room at Nguyen's Osteopathic Clinic inside St James Pharmacy, Woolwich"
+              width={800}
+              height={600}
               sizes="(max-width: 768px) 90vw, 40vw"
               loading="lazy"
               decoding="async"
-              quality={70}
+              quality={75}
               className="relative float-soft w-full rounded-[1.5rem] object-cover object-center shadow-[0_24px_60px_rgba(11,44,69,0.14)]"
             />
           </div>

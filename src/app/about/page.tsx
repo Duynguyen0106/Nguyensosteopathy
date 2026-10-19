@@ -194,16 +194,39 @@ export default function AboutPage() {
                 aria-hidden
               />
               <Image
-                src="/images/clinic-promo.webp"
-                alt="Austin Duy Nguyen in clinic"
+                src="/images/clinic-treatment.webp"
+                alt="Treatment table and clinical certificates in the Woolwich osteopathy room"
                 width={900}
-                height={700}
+                height={1200}
                 loading="lazy"
                 decoding="async"
-                quality={70}
+                quality={75}
                 className="relative w-full object-cover shadow-[0_24px_60px_rgba(11,44,69,0.12)]"
               />
             </div>
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            <Image
+              src="/images/clinic-desk.webp"
+              alt="Consultation desk at Nguyen's Osteopathic Clinic"
+              width={800}
+              height={1000}
+              loading="lazy"
+              decoding="async"
+              quality={75}
+              className="h-full w-full object-cover shadow-[0_16px_40px_rgba(11,44,69,0.1)]"
+            />
+            <Image
+              src="/images/clinic-room.webp"
+              alt="Full view of the osteopathy consultation and treatment room in Woolwich"
+              width={800}
+              height={600}
+              loading="lazy"
+              decoding="async"
+              quality={75}
+              className="h-full w-full object-cover shadow-[0_16px_40px_rgba(11,44,69,0.1)]"
+            />
           </div>
 
           <ul className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

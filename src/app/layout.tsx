@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { headers } from "next/headers";
 import { ConsentAnalytics } from "@/components/ConsentAnalytics";
 import { CookieBanner } from "@/components/CookieBanner";
 import { Footer } from "@/components/Footer";
@@ -7,6 +8,7 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { MobileBookBar } from "@/components/MobileBookBar";
+import { SkipLink } from "@/components/SkipLink";
 import { defaultOgImage } from "@/lib/seo";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -118,10 +120,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const pathname = (await headers()).get("x-pathname") || "/";
+  const lang = pathname.startsWith("/vi") ? "vi" : "en-GB";
+
   return (
     <html
-      lang="en-GB"
+      lang={lang}
       className={`${display.variable} ${body.variable} h-full antialiased`}
     >
       <head>
@@ -136,9 +141,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <JsonLd />
       </head>
       <body className="min-h-full flex flex-col bg-background text-ink">
-        <a href="#main-content" className="skip-link">
-          Skip to content
-        </a>
+        <SkipLink />
         <Header />
         <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
           {children}

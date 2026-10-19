@@ -10,6 +10,7 @@ import {
   chromeLabel,
   resolveViHref,
   viNavLabels,
+  viServiceLabels,
 } from "@/lib/i18n-chrome";
 import { getServiceHref, services, site } from "@/lib/site";
 
@@ -39,10 +40,14 @@ const links = [
   { href: "/vi", label: "Tiếng Việt", desktop: true },
 ];
 
-const serviceNav = services.map((service) => ({
-  href: getServiceHref(service.slug),
-  label: service.title,
-}));
+function buildServiceNav(isVi: boolean) {
+  return services.map((service) => ({
+    href: getServiceHref(service.slug),
+    label: isVi
+      ? (viServiceLabels[service.slug] ?? service.title)
+      : service.title,
+  }));
+}
 
 function resolveNavHref(pathname: string, href: string) {
   if (!pathname.startsWith("/vi")) return href;
@@ -52,6 +57,7 @@ function resolveNavHref(pathname: string, href: string) {
 export function Header() {
   const pathname = usePathname() || "/";
   const isVi = pathname.startsWith("/vi");
+  const serviceNav = buildServiceNav(isVi);
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -378,7 +384,7 @@ export function Header() {
           <a
             href={site.phoneHref}
             className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-navy shadow-sm transition hover:border-teal hover:text-teal sm:w-auto sm:px-4 sm:py-2.5"
-            aria-label={`Call ${site.phone}`}
+            aria-label={isVi ? `Gọi ${site.phone}` : `Call ${site.phone}`}
           >
             <svg
               viewBox="0 0 24 24"
@@ -390,14 +396,18 @@ export function Header() {
             >
               <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z" />
             </svg>
-            <span className="hidden text-sm font-semibold sm:inline">Call</span>
+            <span className="hidden text-sm font-semibold sm:inline">
+              {isVi ? "Gọi" : "Call"}
+            </span>
           </a>
           <a
             href={site.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-navy shadow-sm transition hover:border-teal hover:text-teal"
-            aria-label="WhatsApp the clinic"
+            aria-label={
+              isVi ? "WhatsApp phòng khám" : "WhatsApp the clinic"
+            }
           >
             <svg
               viewBox="0 0 24 24"
@@ -422,7 +432,15 @@ export function Header() {
             aria-expanded={open}
             aria-controls={panelId}
             aria-haspopup="dialog"
-            aria-label={open ? "Close menu" : "Open menu"}
+            aria-label={
+              open
+                ? isVi
+                  ? "Đóng menu"
+                  : "Close menu"
+                : isVi
+                  ? "Mở menu"
+                  : "Open menu"
+            }
             onClick={() => setOpen((value) => !value)}
           >
             <svg

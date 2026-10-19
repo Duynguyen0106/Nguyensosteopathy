@@ -3,11 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useSyncExternalStore } from "react";
-import {
-  getConsentSnapshot,
-  getServerConsentSnapshot,
-  subscribeConsent,
-} from "@/lib/cookie-consent";
+import { getConsentSnapshot, subscribeConsent } from "@/lib/cookie-consent";
 import { site } from "@/lib/site";
 
 const MOBILE_BOOK_PAD = "4.25rem";

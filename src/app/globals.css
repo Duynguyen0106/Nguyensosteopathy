@@ -274,7 +274,9 @@ select:focus-visible {
   }
 }
 
-/* Reserve space so the cookie bar does not cover footer CTAs */
+/* Reserve space so cookie + mobile Book chip do not cover footer CTAs */
 body {
-  padding-bottom: var(--cookie-banner-pad, 0px);
+  padding-bottom: calc(
+    var(--cookie-banner-pad, 0px) + var(--mobile-book-pad, 0px)
+  );
 }

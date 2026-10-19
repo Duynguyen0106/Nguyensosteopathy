@@ -28,7 +28,7 @@ const html = `<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8" />
-  <title>Opening day — Facebook poster</title>
+  <title>Booking promo — Facebook poster</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -204,7 +204,7 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`;
 
-const htmlPath = join(outDir, "opening-day.html");
+const htmlPath = join(outDir, "booking-promo.html");
 writeFileSync(htmlPath, html);
 
 let chromium;
@@ -225,8 +225,8 @@ await page.evaluate(async () => {
 });
 await page.waitForTimeout(500);
 
-const pngPath = join(outDir, "opening-day-facebook.png");
-const pdfPath = join(outDir, "opening-day-facebook.pdf");
+const pngPath = join(outDir, "booking-promo-facebook.png");
+const pdfPath = join(outDir, "booking-promo-facebook.pdf");
 
 await page.locator(".frame").screenshot({ path: pngPath, type: "png" });
 
@@ -241,13 +241,13 @@ await page.pdf({
 
 await browser.close();
 
-const preview = join(artifactDir, "opening-day-facebook.png");
-const previewRoot = join("/opt/cursor/artifacts", "opening-day-facebook.png");
+const preview = join(artifactDir, "booking-promo-facebook.png");
+const previewRoot = join("/opt/cursor/artifacts", "booking-promo-facebook.png");
 writeFileSync(preview, readFileSync(pngPath));
 writeFileSync(previewRoot, readFileSync(pngPath));
-writeFileSync(join(artifactDir, "opening-day-facebook.pdf"), readFileSync(pdfPath));
+writeFileSync(join(artifactDir, "booking-promo-facebook.pdf"), readFileSync(pdfPath));
 writeFileSync(
-  join("/opt/cursor/artifacts", "opening-day-facebook.pdf"),
+  join("/opt/cursor/artifacts", "booking-promo-facebook.pdf"),
   readFileSync(pdfPath),
 );
 

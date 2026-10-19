@@ -398,22 +398,28 @@ export default function VietnamesePage() {
               {site.address.line2}
             </p>
             <p className="mt-4 text-sm text-slate-500">
-              Chi tiết bảng giá tiếng Anh (nếu cần):{" "}
+              Một số trang chi tiết đang bằng tiếng Anh — đặt lịch{" "}
+              <Link
+                href="/book"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                /book
+              </Link>
+              , bảng giá{" "}
               <Link
                 href="/fees"
                 className="font-semibold text-teal hover:text-teal-dark"
               >
                 /fees
               </Link>
-              {" · "}
-              Bản đồ &amp; gửi xe:{" "}
+              , bản đồ &amp; gửi xe{" "}
               <Link
                 href="/find-us"
                 className="font-semibold text-teal hover:text-teal-dark"
               >
                 /find-us
               </Link>
-              .
+              . Cần hỗ trợ tiếng Việt? Gọi hoặc WhatsApp trước khi đến.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

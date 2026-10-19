@@ -309,11 +309,7 @@ export default function VietnamesePage() {
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600">
               Không cần giấy giới thiệu GP cho hầu hết các vấn đề cơ xương khớp.
-              Lịch trực tuyến mở từ{" "}
-              <strong className="font-semibold text-navy">
-                5 tháng 11 năm 2026
-              </strong>
-              .
+              Đặt lịch trực tuyến để xem các khung giờ còn trống.
             </p>
           </div>
 
@@ -353,12 +349,11 @@ export default function VietnamesePage() {
                   <span className="font-semibold text-navy">
                     Osteopathy (đặt lịch):
                   </span>{" "}
-                  Thứ Hai, Thứ Ba, Thứ Năm, Thứ Sáu &amp; Thứ Bảy từ 5 tháng 11
-                  năm 2026 —{" "}
+                  Thứ Hai, Thứ Ba, Thứ Năm, Thứ Sáu &amp; Thứ Bảy —{" "}
                   <strong className="font-semibold text-navy">
                     đóng Thứ Tư và Chủ Nhật
                   </strong>
-                  .
+                  . Lịch trực tuyến luôn hiển thị các khung giờ còn trống.
                 </p>
               </div>
 

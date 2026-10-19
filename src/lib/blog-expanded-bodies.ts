@@ -61,7 +61,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable moveable clothing helps the assessment. Bring a short symptom timeline plus any letters or scans you already have. [Book online](/book), or check fees and the NHS/student discount first."
         ]
       }
     ],
@@ -170,8 +170,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "When rest and pacing stop helping — or flares keep returning each week — a structured assessment is usually the useful next step.",
+          "Loose layers help with assessment. Bring letters or imaging if you have them. [Book online](/book); fees and the NHS/student discount are listed separately."
         ]
       }
     ],
@@ -254,7 +254,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on practical booking and visit prep so the first hour is useful. Small sustainable changes usually beat all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -501,7 +501,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers make movement testing easier. Note when symptoms started and bring imaging letters if you have them. Reserve on the [book page](/book); pricing sits on fees."
         ]
       }
     ],
@@ -610,8 +610,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "If weekly flares keep looping despite rest, book an assessment rather than waiting for another bad week.",
+          "Clothes you can move in are enough. Optional letters/scans add context. Choose a time on the [book page](/book), then review fees if you need them."
         ]
       }
     ],
@@ -694,7 +694,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on activity pacing and joint-friendly movement rather than forced end-range stretching. Steady, modest progress tends to stick better than drastic resets.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -941,7 +941,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you can bend and walk in. A brief symptom diary helps; letters or scans are optional but useful. [Book a slot](/book) when you are ready — fee notes are separate."
         ]
       }
     ],
@@ -1050,8 +1050,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "Persistent or cycling flares after sensible pacing usually warrant a hands-on assessment, not more guesswork.",
+          "Easy-movement clothing is ideal. Bring paperwork only if you already have it. [Reserve online](/book) — pricing and discounts live on the fees page."
         ]
       }
     ],
@@ -1134,7 +1134,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Incremental load changes usually outperform boom-and-bust efforts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1381,7 +1381,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable moveable clothing helps the assessment. Bring a short symptom timeline plus any letters or scans you already have. [Book online](/book), or check fees and the NHS/student discount first."
         ]
       }
     ],
@@ -1490,8 +1490,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "When rest and pacing stop helping — or flares keep returning each week — a structured assessment is usually the useful next step.",
+          "Loose layers help with assessment. Bring letters or imaging if you have them. [Book online](/book); fees and the NHS/student discount are listed separately."
         ]
       }
     ],
@@ -1574,7 +1574,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Small sustainable changes usually beat all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -1821,7 +1821,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers make movement testing easier. Note when symptoms started and bring imaging letters if you have them. Reserve on the [book page](/book); pricing sits on fees."
         ]
       }
     ],
@@ -1930,8 +1930,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "If weekly flares keep looping despite rest, book an assessment rather than waiting for another bad week.",
+          "Clothes you can move in are enough. Optional letters/scans add context. Choose a time on the [book page](/book), then review fees if you need them."
         ]
       }
     ],
@@ -2014,7 +2014,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on matching technique intensity to irritability — not “the deeper the better”. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on matching technique intensity to irritability — not “the deeper the better”. Steady, modest progress tends to stick better than drastic resets.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2261,7 +2261,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you can bend and walk in. A brief symptom diary helps; letters or scans are optional but useful. [Book a slot](/book) when you are ready — fee notes are separate."
         ]
       }
     ],
@@ -2370,8 +2370,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "Persistent or cycling flares after sensible pacing usually warrant a hands-on assessment, not more guesswork.",
+          "Easy-movement clothing is ideal. Bring paperwork only if you already have it. [Reserve online](/book) — pricing and discounts live on the fees page."
         ]
       }
     ],
@@ -2454,7 +2454,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on clear screening, realistic session planning, and privacy at every step. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on clear screening, realistic session planning, and privacy at every step. Incremental load changes usually outperform boom-and-bust efforts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -2701,7 +2701,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable moveable clothing helps the assessment. Bring a short symptom timeline plus any letters or scans you already have. [Book online](/book), or check fees and the NHS/student discount first."
         ]
       }
     ],
@@ -2810,8 +2810,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "When rest and pacing stop helping — or flares keep returning each week — a structured assessment is usually the useful next step.",
+          "Loose layers help with assessment. Bring letters or imaging if you have them. [Book online](/book); fees and the NHS/student discount are listed separately."
         ]
       }
     ],
@@ -2894,7 +2894,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on simple home positioning advice and when to seek assessment. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on simple home positioning advice and when to seek assessment. Small sustainable changes usually beat all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3141,7 +3141,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Loose layers make movement testing easier. Note when symptoms started and bring imaging letters if you have them. Reserve on the [book page](/book); pricing sits on fees."
         ]
       }
     ],
@@ -3250,8 +3250,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "If weekly flares keep looping despite rest, book an assessment rather than waiting for another bad week.",
+          "Clothes you can move in are enough. Optional letters/scans add context. Choose a time on the [book page](/book), then review fees if you need them."
         ]
       }
     ],
@@ -3334,7 +3334,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, keyboard position, and movement snacks between calls. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on screen height, keyboard position, and movement snacks between calls. Steady, modest progress tends to stick better than drastic resets.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -3581,7 +3581,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Wear what you can bend and walk in. A brief symptom diary helps; letters or scans are optional but useful. [Book a slot](/book) when you are ready — fee notes are separate."
         ]
       }
     ],
@@ -3690,8 +3690,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "Persistent or cycling flares after sensible pacing usually warrant a hands-on assessment, not more guesswork.",
+          "Easy-movement clothing is ideal. Bring paperwork only if you already have it. [Reserve online](/book) — pricing and discounts live on the fees page."
         ]
       }
     ],
@@ -3774,7 +3774,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on practical booking and visit prep so the first hour is useful. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on practical booking and visit prep so the first hour is useful. Incremental load changes usually outperform boom-and-bust efforts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },
@@ -4021,7 +4021,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "When to book",
         "paragraphs": [
           "Book sooner if sleep, work, or walking is clearly limited, or if the same flare keeps returning every week despite sensible pacing.",
-          "Wear clothes you can move in. Bring a short symptom timeline and any recent letters or scans if you have them. Online booking is on our [book page](/book); fees and NHS/student discount details are listed separately."
+          "Comfortable moveable clothing helps the assessment. Bring a short symptom timeline plus any letters or scans you already have. [Book online](/book), or check fees and the NHS/student discount first."
         ]
       }
     ],
@@ -4130,8 +4130,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "When to book",
         "paragraphs": [
-          "If rest and pacing are not settling things, or flares keep looping weekly, an assessment is usually the useful next step.",
-          "Loose layers work best. Bring any recent letters or imaging if you have them. Reserve a slot on our [book page](/book); fee notes and the NHS/student discount sit on the fees page."
+          "When rest and pacing stop helping — or flares keep returning each week — a structured assessment is usually the useful next step.",
+          "Loose layers help with assessment. Bring letters or imaging if you have them. [Book online](/book); fees and the NHS/student discount are listed separately."
         ]
       }
     ],
@@ -4214,7 +4214,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "Practical changes that fit real life",
         "paragraphs": [
-          "Focus on screen height, jaw relaxation, and short neck resets. Steady two-percent changes compound faster than all-or-nothing restarts.",
+          "Focus on screen height, jaw relaxation, and short neck resets. Small sustainable changes usually beat all-or-nothing restarts.",
           "Track two simple markers for a week — morning stiffness minutes, sitting tolerance, walking distance, or grip tasks — so you know whether the plan is working."
         ]
       },

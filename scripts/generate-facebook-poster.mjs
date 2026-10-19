@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Facebook feed poster (1080×1080) — clinic opening announcement (5 November).
+ * Facebook feed poster (1080×1080) — clinic booking promo for Woolwich.
  * No discount claim — opening-day % offers were removed sitewide.
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
@@ -173,16 +173,16 @@ const html = `<!DOCTYPE html>
     </div>
 
     <p class="eyebrow">Now booking</p>
-    <h1>Osteopathy opens in Woolwich</h1>
+    <h1>Osteopathy in Woolwich</h1>
 
     <div class="offer">
-      <span class="pct" style="font-size:72px;letter-spacing:0.04em">OPEN</span>
-      <span class="copy">From<br/>5 Nov 2026</span>
+      <span class="pct" style="font-size:72px;letter-spacing:0.04em">BOOK</span>
+      <span class="copy">Online<br/>or call</span>
     </div>
 
     <div class="date-block">
-      <p class="label">Online booking opens</p>
-      <p class="date">Thursday 5 November 2026</p>
+      <p class="label">Bookable days</p>
+      <p class="date">Mon, Tue, Thu, Fri &amp; Sat</p>
     </div>
     <p class="details">
       Book with Austin Duy Nguyen, GOsC-registered osteopath, inside St James

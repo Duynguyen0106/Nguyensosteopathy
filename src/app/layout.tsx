@@ -12,15 +12,16 @@ import "./globals.css";
 
 const display = Cormorant_Garamond({
   variable: "--font-display",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext", "vietnamese"],
   weight: ["600", "700"],
   display: "swap",
-  preload: true,
+  // Body text is the LCP-critical face; skip display preload to cut contention.
+  preload: false,
 });
 
 const body = Source_Sans_3({
   variable: "--font-body",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext", "vietnamese"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
   preload: true,

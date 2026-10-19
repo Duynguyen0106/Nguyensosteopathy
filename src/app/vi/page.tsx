@@ -398,26 +398,28 @@ export default function VietnamesePage() {
               {site.address.line2}
             </p>
             <p className="mt-4 text-sm text-slate-500">
-              Một số trang chi tiết đang bằng tiếng Anh — đặt lịch{" "}
+              Bảng giá tiếng Việt:{" "}
+              <Link
+                href="/vi/fees"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                /vi/fees
+              </Link>
+              {" · "}
+              Địa chỉ &amp; gửi xe:{" "}
+              <Link
+                href="/vi/find-us"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                /vi/find-us
+              </Link>
+              {" · "}
+              Đặt lịch (lịch Anh):{" "}
               <Link
                 href="/book"
                 className="font-semibold text-teal hover:text-teal-dark"
               >
                 /book
-              </Link>
-              , bảng giá{" "}
-              <Link
-                href="/fees"
-                className="font-semibold text-teal hover:text-teal-dark"
-              >
-                /fees
-              </Link>
-              , bản đồ &amp; gửi xe{" "}
-              <Link
-                href="/find-us"
-                className="font-semibold text-teal hover:text-teal-dark"
-              >
-                /find-us
               </Link>
               . Cần hỗ trợ tiếng Việt? Gọi hoặc WhatsApp trước khi đến.
             </p>
@@ -435,8 +437,11 @@ export default function VietnamesePage() {
             <ButtonLink href={site.phoneHref} variant="secondary">
               Gọi {site.phone}
             </ButtonLink>
-            <ButtonLink href="/find-us" variant="secondary">
+            <ButtonLink href="/vi/find-us" variant="secondary">
               Bản đồ &amp; gửi xe
+            </ButtonLink>
+            <ButtonLink href="/vi/fees" variant="secondary">
+              Bảng giá
             </ButtonLink>
           </div>
         </div>

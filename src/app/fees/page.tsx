@@ -8,7 +8,13 @@ export const metadata: Metadata = {
   title: "Osteopath Fees & Prices in Woolwich",
   description:
     "Clear osteopathy fees in Woolwich SE18: initial consultation £75, follow-up £60, focused shockwave £90, deep tissue massage £60. 10% NHS & student discount…",
-  alternates: { canonical: "/fees" },
+  alternates: {
+    canonical: "/fees",
+    languages: {
+      "en-GB": "/fees",
+      "vi-VN": "/vi/fees",
+    },
+  },
   keywords: [
     "osteopath Woolwich prices",
     "osteopath Woolwich fees",

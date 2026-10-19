@@ -51,7 +51,18 @@ export default function BookPage() {
             {site.booking.shortNote} Live availability is always shown in the
             calendar below.
           </p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">
+            If the embedded calendar is slow or blank, use the full booking page,
+            WhatsApp, or call — you will not lose your place in the queue.
+          </p>
           <div className="mt-4 flex flex-wrap gap-3">
+            <ButtonLink
+              href={site.bookingExternalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open full calendar
+            </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="navy">
               Call {site.phone}
             </ButtonLink>
@@ -62,14 +73,6 @@ export default function BookPage() {
               rel="noopener noreferrer"
             >
               WhatsApp
-            </ButtonLink>
-            <ButtonLink
-              href={site.bookingExternalUrl}
-              variant="secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open full calendar
             </ButtonLink>
           </div>
         </div>

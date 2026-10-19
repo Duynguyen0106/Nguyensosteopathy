@@ -220,15 +220,20 @@ export default function AftercarePage() {
               </Link>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink href="/book">Book online</ButtonLink>
+              <ButtonLink href="/book">Book follow-up</ButtonLink>
+              <ButtonLink
+                href={site.googleReviewsUrl}
+                variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Leave a Google review
+              </ButtonLink>
               <ButtonLink href="/exercises" variant="secondary">
                 Home exercises
               </ButtonLink>
               <ButtonLink href={site.whatsappUrl} variant="secondary">
                 WhatsApp
-              </ButtonLink>
-              <ButtonLink href="/faq" variant="secondary">
-                FAQ
               </ButtonLink>
             </div>
           </div>

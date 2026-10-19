@@ -2,10 +2,22 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { ButtonLink } from "@/components/Button";
 import { getServiceHref, services, site } from "@/lib/site";
+
+function pathMatches(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+function navLinkClass(active: boolean) {
+  return active
+    ? "font-semibold text-navy"
+    : "text-navy/75 transition hover:text-teal";
+}
 
 /** Primary lg row — care paths first; NHS/Insurance/Reviews/Contact/VI in mobile + footer. */
 const links = [
@@ -28,10 +40,16 @@ const serviceNav = services.map((service) => ({
 }));
 
 export function Header() {
+  const pathname = usePathname() || "/";
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [portalReady, setPortalReady] = useState(false);
+  const servicesActive =
+    pathMatches(pathname, "/services") ||
+    pathMatches(pathname, "/osteopathy") ||
+    pathMatches(pathname, "/massage") ||
+    pathMatches(pathname, "/desk-pain");
   const menuId = useId();
   const panelId = `${menuId}-panel`;
   const servicesMenuId = `${menuId}-services`;
@@ -173,9 +191,13 @@ export function Header() {
 
         <nav
           aria-label="Primary"
-          className="hidden items-center gap-5 text-[0.92rem] text-navy/75 lg:flex xl:gap-7"
+          className="hidden items-center gap-5 text-[0.92rem] lg:flex xl:gap-7"
         >
-          <Link href="/about" className="transition hover:text-teal">
+          <Link
+            href="/about"
+            className={navLinkClass(pathMatches(pathname, "/about"))}
+            aria-current={pathMatches(pathname, "/about") ? "page" : undefined}
+          >
             About
           </Link>
 
@@ -188,10 +210,11 @@ export function Header() {
             <button
               ref={servicesButtonRef}
               type="button"
-              className="inline-flex items-center gap-1 transition hover:text-teal"
+              className={`inline-flex items-center gap-1 ${navLinkClass(servicesActive)}`}
               aria-haspopup="menu"
               aria-expanded={servicesOpen}
               aria-controls={servicesMenuId}
+              aria-current={servicesActive ? "true" : undefined}
               onClick={() => setServicesOpen((value) => !value)}
               onKeyDown={(event) => {
                 if (event.key === "ArrowDown" && !servicesOpen) {
@@ -226,6 +249,9 @@ export function Header() {
                   role="menuitem"
                   className="block rounded-lg px-3 py-2 text-sm font-semibold text-navy hover:bg-slate-50 hover:text-teal"
                   onClick={() => setServicesOpen(false)}
+                  aria-current={
+                    pathname === "/services" ? "page" : undefined
+                  }
                 >
                   All services
                 </Link>
@@ -237,6 +263,9 @@ export function Header() {
                         role="menuitem"
                         className="block rounded-lg px-3 py-2 text-sm text-navy/80 hover:bg-slate-50 hover:text-teal"
                         onClick={() => setServicesOpen(false)}
+                        aria-current={
+                          pathMatches(pathname, item.href) ? "page" : undefined
+                        }
                       >
                         {item.label}
                       </Link>
@@ -249,24 +278,38 @@ export function Header() {
 
           {links
             .filter((link) => link.href !== "/about" && link.desktop)
-            .map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="transition hover:text-teal"
-              >
-                {link.label}
-              </Link>
-            ))}
+            .map((link) => {
+              const active = pathMatches(pathname, link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={navLinkClass(active)}
+                  aria-current={active ? "page" : undefined}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
         </nav>
 
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           <a
             href={site.phoneHref}
-            className="hidden min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-navy shadow-sm transition hover:border-teal hover:text-teal sm:inline-flex sm:px-4 sm:py-2.5"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-navy shadow-sm transition hover:border-teal hover:text-teal sm:w-auto sm:px-4 sm:py-2.5"
             aria-label={`Call ${site.phone}`}
           >
-            Call
+            <svg
+              viewBox="0 0 24 24"
+              className="h-5 w-5 sm:hidden"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              aria-hidden
+            >
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z" />
+            </svg>
+            <span className="hidden text-sm font-semibold sm:inline">Call</span>
           </a>
           <a
             href={site.whatsappUrl}
@@ -390,8 +433,15 @@ export function Header() {
                   </Link>
                   <Link
                     href="/about"
-                    className="block rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                    className={`block rounded-xl px-3 py-3 text-base hover:bg-cream-mist ${
+                      pathMatches(pathname, "/about")
+                        ? "bg-cream-mist font-semibold text-navy"
+                        : "text-navy"
+                    }`}
                     onClick={closeMenu}
+                    aria-current={
+                      pathMatches(pathname, "/about") ? "page" : undefined
+                    }
                   >
                     About
                   </Link>
@@ -420,16 +470,24 @@ export function Header() {
 
                   {links
                     .filter((link) => link.href !== "/about")
-                    .map((link) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        className="block rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
-                        onClick={closeMenu}
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
+                    .map((link) => {
+                      const active = pathMatches(pathname, link.href);
+                      return (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className={`block rounded-xl px-3 py-3 text-base hover:bg-cream-mist ${
+                            active
+                              ? "bg-cream-mist font-semibold text-navy"
+                              : "text-navy"
+                          }`}
+                          onClick={closeMenu}
+                          aria-current={active ? "page" : undefined}
+                        >
+                          {link.label}
+                        </Link>
+                      );
+                    })}
                 </nav>
               </div>
             </div>,

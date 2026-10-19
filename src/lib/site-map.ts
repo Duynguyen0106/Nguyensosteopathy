@@ -54,6 +54,8 @@ export const siteMapGroups = [
     links: [
       { href: "/about", label: "About Austin" },
       { href: "/vi", label: "Tiếng Việt" },
+      { href: "/vi/fees", label: "Bảng giá (VI)" },
+      { href: "/vi/find-us", label: "Địa chỉ & gửi xe (VI)" },
       { href: "/blog", label: "Blog" },
       { href: "/privacy", label: "Privacy policy" },
       { href: "/cookies", label: "Cookie policy" },

@@ -72,7 +72,7 @@ export function buildClinicJsonLd() {
       { "@type": "City", name: "Abbey Wood" },
       { "@type": "AdministrativeArea", name: "South East London" },
     ],
-    medicalSpecialty: "https://schema.org/Musculoskeletal",
+    medicalSpecialty: "Osteopathic",
     knowsLanguage: ["en-GB", "vi"],
     availableService: services.map((service) => ({
       "@type": "MedicalProcedure",
@@ -101,6 +101,7 @@ export function buildPractitionerJsonLd() {
     "@type": "Person",
     "@id": `${site.websiteUrl}/#practitioner`,
     name: site.practitioner.name,
+    legalName: site.practitioner.legalName,
     jobTitle: site.practitioner.title,
     description:
       "GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (University of Westminster), Dip.Acu, shockwave-trained, and NASM Personal Fitness Trainer — practising at Nguyen's Osteopathic Clinic in Woolwich. Builder of MSK Tutor and Treow Clinic.",
@@ -184,7 +185,7 @@ export function buildPractitionerJsonLd() {
       url: "https://www.osteopathy.org.uk/",
     },
     knowsLanguage: ["en-GB", "vi"],
-    medicalSpecialty: "https://schema.org/Musculoskeletal",
+    medicalSpecialty: "Osteopathic",
     worksFor: { "@id": `${site.websiteUrl}/#clinic` },
     address: {
       "@type": "PostalAddress",
@@ -206,7 +207,7 @@ export function buildWebsiteJsonLd() {
     name: site.name,
     description: site.tagline,
     publisher: { "@id": `${site.websiteUrl}/#clinic` },
-    inLanguage: "en-GB",
+    inLanguage: ["en-GB", "vi"],
     potentialAction: {
       "@type": "ReserveAction",
       target: `${site.websiteUrl}/book`,

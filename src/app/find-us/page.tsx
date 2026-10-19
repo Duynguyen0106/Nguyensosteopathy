@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       "en-GB": "/find-us",
       "vi-VN": "/vi/find-us",
+      "x-default": "/find-us",
     },
   },
   keywords: [
@@ -97,6 +98,15 @@ export default function FindUsPage() {
             Inside {site.address.venue} at {site.address.line1},{" "}
             {site.address.line2} — easy by Elizabeth line, DLR, bus, or short-stay
             town-centre parking.
+          </p>
+          <p className="mt-3 text-sm text-slate-500">
+            <Link
+              href="/vi/find-us"
+              className="font-semibold text-teal hover:text-teal-dark"
+              hrefLang="vi-VN"
+            >
+              Tiếng Việt
+            </Link>
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink

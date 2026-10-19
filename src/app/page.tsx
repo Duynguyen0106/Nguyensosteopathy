@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     languages: {
       "en-GB": "/",
       "vi-VN": "/vi",
+      "x-default": "/",
     },
     types: {
       "application/rss+xml": "/feed.xml",
@@ -330,16 +331,15 @@ export default function HomePage() {
           <p className="mt-6 rounded-xl border border-dashed border-teal/40 bg-teal/5 px-5 py-4 text-sm font-medium text-navy md:text-base">
             {site.discount}
           </p>
-          <p className="mt-4 text-sm text-slate-600">
-            Full fee notes and NHS/student discount details are on our{" "}
-            <Link
-              href="/fees"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
-              fees page
-            </Link>
-            .
-          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={site.phoneHref} variant="secondary">
+              Call {site.phone}
+            </ButtonLink>
+            <ButtonLink href="/fees" variant="secondary">
+              Full fees page
+            </ButtonLink>
+          </div>
         </div>
       </section>
 
@@ -536,6 +536,10 @@ export default function HomePage() {
             direct you to the osteopathy room.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
+            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={site.phoneHref} variant="secondary">
+              Call {site.phone}
+            </ButtonLink>
             <ButtonLink
               href={site.address.mapsUrl}
               variant="navy"

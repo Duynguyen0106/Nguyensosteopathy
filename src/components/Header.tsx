@@ -31,13 +31,21 @@ const links = [
   { href: "/reviews", label: "Reviews", desktop: false },
   { href: "/find-us", label: "Find us", desktop: true },
   { href: "/contact", label: "Contact", desktop: false },
-  { href: "/vi", label: "Tiếng Việt", desktop: false },
+  { href: "/vi", label: "Tiếng Việt", desktop: true },
 ];
 
 const serviceNav = services.map((service) => ({
   href: getServiceHref(service.slug),
   label: service.title,
 }));
+
+/** On /vi/* routes, point Fees / Find us at the Vietnamese pages. */
+function resolveNavHref(pathname: string, href: string) {
+  if (!pathname.startsWith("/vi")) return href;
+  if (href === "/fees") return "/vi/fees";
+  if (href === "/find-us") return "/vi/find-us";
+  return href;
+}
 
 export function Header() {
   const pathname = usePathname() || "/";
@@ -348,11 +356,12 @@ export function Header() {
           {links
             .filter((link) => link.href !== "/about" && link.desktop)
             .map((link) => {
-              const active = pathMatches(pathname, link.href);
+              const href = resolveNavHref(pathname, link.href);
+              const active = pathMatches(pathname, href);
               return (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={href}
                   className={navLinkClass(active)}
                   aria-current={active ? "page" : undefined}
                 >
@@ -557,11 +566,12 @@ export function Header() {
                   {links
                     .filter((link) => link.href !== "/about")
                     .map((link) => {
-                      const active = pathMatches(pathname, link.href);
+                      const href = resolveNavHref(pathname, link.href);
+                      const active = pathMatches(pathname, href);
                       return (
                         <Link
                           key={link.href}
-                          href={link.href}
+                          href={href}
                           className={`block rounded-xl px-3 py-3 text-base hover:bg-cream-mist ${
                             active
                               ? "bg-cream-mist font-semibold text-navy"

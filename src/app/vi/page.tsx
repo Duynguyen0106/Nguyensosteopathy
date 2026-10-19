@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     languages: {
       "vi-VN": "/vi",
       "en-GB": "/",
+      "x-default": "/",
     },
   },
   keywords: [
@@ -111,13 +112,18 @@ export default function VietnamesePage() {
         />
 
         <div className="relative mx-auto flex min-h-[min(88vh,920px)] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:px-8 md:pb-24">
-          <p className="opening-hero-copy text-xs font-semibold tracking-[0.28em] text-teal-mist uppercase">
-            Nguyen&apos;s Osteopathic Clinic
-          </p>
-          <h1 className="opening-hero-copy opening-hero-delay-1 mt-4 max-w-3xl font-display text-5xl leading-[1.05] md:text-7xl">
-            Osteopath người Việt tại Anh
+          <h1 className="opening-hero-copy">
+            <span className="font-display block text-[clamp(2.75rem,10vw,5.25rem)] leading-[0.92] font-semibold tracking-[0.04em] text-white uppercase">
+              Nguyen&apos;s
+            </span>
+            <span className="mt-3 block text-base font-semibold tracking-[0.2em] text-teal-mist uppercase sm:text-lg sm:tracking-[0.28em]">
+              Osteopathic Clinic
+            </span>
           </h1>
-          <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
+          <p className="opening-hero-copy opening-hero-delay-1 mt-6 max-w-xl font-display text-2xl leading-snug text-white md:text-3xl">
+            Osteopath người Việt tại Anh
+          </p>
+          <p className="opening-hero-copy opening-hero-delay-2 mt-4 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
             Chăm sóc cơ xương khớp bằng tiếng Việt và tiếng Anh — để cộng đồng
             mình được hiểu, không chỉ được điều trị.
           </p>
@@ -260,7 +266,7 @@ export default function VietnamesePage() {
               <ButtonLink href="/services/focused-shockwave" variant="secondary">
                 Shockwave
               </ButtonLink>
-              <ButtonLink href="/fees" variant="secondary">
+              <ButtonLink href="/vi/fees" variant="secondary">
                 Bảng giá
               </ButtonLink>
             </div>
@@ -274,7 +280,7 @@ export default function VietnamesePage() {
                 Tình trạng thường gặp
               </Link>
               {" · "}
-              <Link href="/find-us" className="font-semibold text-teal hover:text-teal-dark">
+              <Link href="/vi/find-us" className="font-semibold text-teal hover:text-teal-dark">
                 Đường đến phòng khám
               </Link>
               {" · "}

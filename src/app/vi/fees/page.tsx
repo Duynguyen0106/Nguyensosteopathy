@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     languages: {
       "vi-VN": "/vi/fees",
       "en-GB": "/fees",
+      "x-default": "/fees",
     },
   },
   openGraph: pageOpenGraph({
@@ -49,6 +50,15 @@ export default function VietnameseFeesPage() {
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Giá được xác nhận trước khi bắt đầu điều trị. Có thể hỏi bằng tiếng
             Việt qua điện thoại hoặc WhatsApp.
+          </p>
+          <p className="mt-3 text-sm text-slate-500">
+            <Link
+              href="/fees"
+              className="font-semibold text-teal hover:text-teal-dark"
+              hrefLang="en-GB"
+            >
+              English
+            </Link>
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Đặt lịch online</ButtonLink>

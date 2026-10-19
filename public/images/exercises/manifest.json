@@ -68,5 +68,50 @@
     "src": "/images/exercises/bird-dog.webp",
     "alt": "Person on hands and knees extending opposite arm and leg (bird-dog)",
     "credit": "Photo via Wikimedia Commons (PTPioneer, CC BY 2.0)"
+  },
+  "hip-hinge-practice": {
+    "src": "/images/exercises/hip-hinge-practice.webp",
+    "alt": "Educational illustration of a hip hinge: torso tips forward with a long spine",
+    "credit": "Free educational illustration"
+  },
+  "chin-tuck": {
+    "src": "/images/exercises/chin-tuck.webp",
+    "alt": "Educational illustration of a seated chin tuck (gentle cervical retraction)",
+    "credit": "Free educational illustration"
+  },
+  "seated-scapular-set": {
+    "src": "/images/exercises/seated-scapular-set.webp",
+    "alt": "Educational illustration of a seated scapular set: upright posture, arms by sides, shoulder blades drawn back",
+    "credit": "Free educational illustration"
+  },
+  "open-book-rotation": {
+    "src": "/images/exercises/open-book-rotation.webp",
+    "alt": "Educational illustration of a side-lying open-book thoracic rotation",
+    "credit": "Free educational illustration"
+  },
+  "sciatic-nerve-glide": {
+    "src": "/images/exercises/sciatic-nerve-glide.webp",
+    "alt": "Educational illustration of a seated sciatic nerve glide / slider",
+    "credit": "Free educational illustration"
+  },
+  "piriformis-figure-four": {
+    "src": "/images/exercises/piriformis-figure-four.webp",
+    "alt": "Educational illustration of a supine figure-four hip stretch",
+    "credit": "Free educational illustration"
+  },
+  "wall-angels": {
+    "src": "/images/exercises/wall-angels.webp",
+    "alt": "Educational illustration of wall angels: back to wall, arms sliding overhead",
+    "credit": "Free educational illustration"
+  },
+  "band-external-rotation": {
+    "src": "/images/exercises/band-external-rotation.webp",
+    "alt": "Educational illustration of band external rotation: elbow at side, forearm rotating out",
+    "credit": "Free educational illustration"
+  },
+  "single-leg-balance": {
+    "src": "/images/exercises/single-leg-balance.webp",
+    "alt": "Educational illustration of single-leg balance on a stable floor",
+    "credit": "Free educational illustration"
   }
 }

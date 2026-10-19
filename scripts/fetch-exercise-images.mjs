@@ -95,10 +95,9 @@ const IMAGES = {
   },
   "piriformis-figure-four": {
     kind: "pexels",
-    id: 6453897,
-    position: "south",
-    alt: "Person in a 90/90 hip stretch on the floor — hip / figure-four style mobility",
-    credit: "Photo via Pexels (#6453897)",
+    id: 6453906,
+    alt: "Person in a half-pigeon / hip stretch on the floor for outer-hip mobility",
+    credit: "Photo via Pexels (#6453906)",
   },
   "quad-set-short-arc": {
     kind: "wikimedia",
@@ -117,6 +116,8 @@ const IMAGES = {
   "step-down-control": {
     kind: "wikimedia",
     file: "Step exercise.JPG",
+    // Portrait source — keep the wooden step in frame
+    cropRel: { left: 0, top: 0.4, width: 1, height: 0.5 },
     alt: "Person standing on a step box practicing controlled step-down knee control",
     credit: "Photo via Wikimedia Commons (CC licensed)",
   },

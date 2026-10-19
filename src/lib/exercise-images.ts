@@ -49,8 +49,8 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   },
   "piriformis-figure-four": {
     src: "/images/exercises/piriformis-figure-four.webp",
-    alt: "Person in a 90/90 hip stretch on the floor — hip / figure-four style mobility",
-    credit: "Photo via Pexels (#6453897)",
+    alt: "Person in a half-pigeon / hip stretch on the floor for outer-hip mobility",
+    credit: "Photo via Pexels (#6453906)",
   },
   "quad-set-short-arc": {
     src: "/images/exercises/quad-set-short-arc.webp",

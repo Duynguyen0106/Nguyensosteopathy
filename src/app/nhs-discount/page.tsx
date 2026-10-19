@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NHS & Student Discount | Nguyen's Osteopathic Clinic",
     description:
-      "10% off for NHS staff and students with valid ID in Woolwich SE18.",
+      "10% off eligible osteopathy fees for NHS staff and students at Nguyen's Osteopathic Clinic in Woolwich SE18 — show valid ID at your appointment.",
     url: "/nhs-discount",
     images: [defaultOgImage],
   },
@@ -101,6 +101,27 @@ export default function NhsDiscountPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-display text-3xl text-navy md:text-4xl">
+            What to bring
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            Bring photo ID that shows your NHS role or student status — for
+            example an NHS staff card, university ID, or letter confirming
+            enrolment. We apply the 10% reduction when we confirm ID at
+            reception inside the pharmacy. The discount covers eligible clinic
+            fees listed on the fees page; optional add-ons are confirmed before
+            treatment starts.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            Online booking uses standard listed prices. Mention NHS or student
+            status when you arrive so the fee is adjusted before you pay — you
+            do not need a separate promo code.
+          </p>
         </div>
       </section>
 

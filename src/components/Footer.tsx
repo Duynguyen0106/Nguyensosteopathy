@@ -1,6 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
+import {
+  chromeLabel,
+  resolveViHref,
+  viFooterLabels,
+} from "@/lib/i18n-chrome";
 import { site } from "@/lib/site";
 
 /** Lean footer — full catalogue remains on /site-map. */
@@ -45,6 +53,12 @@ const productLinks = [
 ] as const;
 
 export function Footer() {
+  const pathname = usePathname() || "/";
+  const isVi = pathname.startsWith("/vi");
+  const hrefFor = (href: string) => (isVi ? resolveViHref(href) : href);
+  const labelFor = (href: string, english: string) =>
+    chromeLabel(href, english, isVi, viFooterLabels);
+
   return (
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-4 md:px-8">
@@ -63,12 +77,16 @@ export function Footer() {
             />
           </div>
           <p className="mt-4 max-w-sm text-base leading-relaxed text-white/75 md:text-lg">
-            {site.tagline}
+            {isVi
+              ? "Chăm sóc cơ xương khớp bằng tiếng Việt và tiếng Anh tại Woolwich SE18."
+              : site.tagline}
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href="/book">
+              {isVi ? "Đặt lịch online" : "Book online"}
+            </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
-              Call {site.phone}
+              {isVi ? `Gọi ${site.phone}` : `Call ${site.phone}`}
             </ButtonLink>
             <ButtonLink
               href={site.whatsappUrl}
@@ -124,7 +142,7 @@ export function Footer() {
           </ul>
           <div className="mt-4 space-y-1 text-sm font-medium text-white/80">
             <p className="text-xs font-semibold tracking-[0.14em] text-teal-mist uppercase">
-              Bookable osteopathy
+              {isVi ? "Giờ đặt khám" : "Bookable osteopathy"}
             </p>
             {site.booking.hours.map((row) => (
               <p key={`book-${row.days}`}>
@@ -132,24 +150,25 @@ export function Footer() {
               </p>
             ))}
           </div>
-          <p className="mt-3 text-xs leading-relaxed text-white/55">
-            Closed {site.booking.closedDaysLabel}. Live slots are shown in
-            online booking.
+          <p className="mt-3 text-xs leading-relaxed text-white/70">
+            {isVi
+              ? `Đóng cửa ${site.booking.closedDaysLabel}. Lịch trống hiện trên đặt online.`
+              : `Closed ${site.booking.closedDaysLabel}. Live slots are shown in online booking.`}
           </p>
         </div>
 
         <div>
           <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
-            Patients
+            {isVi ? "Bệnh nhân" : "Patients"}
           </p>
           <ul className="mt-4 space-y-1 text-sm text-white/85">
             {patientLinks.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={hrefFor(link.href)}
                   className="inline-flex min-h-11 items-center hover:text-white"
                 >
-                  {link.label}
+                  {labelFor(link.href, link.label)}
                 </Link>
               </li>
             ))}
@@ -158,16 +177,16 @@ export function Footer() {
 
         <div>
           <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
-            Treatments
+            {isVi ? "Điều trị" : "Treatments"}
           </p>
           <ul className="mt-4 space-y-1 text-sm text-white/85">
             {treatmentLinks.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={hrefFor(link.href)}
                   className="inline-flex min-h-11 items-center hover:text-white"
                 >
-                  {link.label}
+                  {labelFor(link.href, link.label)}
                 </Link>
               </li>
             ))}
@@ -176,16 +195,16 @@ export function Footer() {
 
         <div>
           <p className="text-xs font-semibold tracking-[0.16em] text-teal-mist uppercase">
-            About
+            {isVi ? "Giới thiệu" : "About"}
           </p>
           <ul className="mt-4 space-y-1 text-sm text-white/85">
             {aboutLinks.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={hrefFor(link.href)}
                   className="inline-flex min-h-11 items-center hover:text-white"
                 >
-                  {link.label}
+                  {labelFor(link.href, link.label)}
                 </Link>
               </li>
             ))}
@@ -194,7 +213,7 @@ export function Footer() {
                 href="/site-map"
                 className="inline-flex min-h-11 items-center hover:text-white"
               >
-                Full site map
+                {labelFor("/site-map", "Full site map")}
               </Link>
             </li>
           </ul>
@@ -215,14 +234,14 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-xs leading-relaxed text-white/60">
+          <p className="mt-4 text-xs leading-relaxed text-white/70">
             {site.cancellation}
           </p>
         </div>
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-white/55 md:flex-row md:items-center md:justify-between md:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-white/70 md:flex-row md:items-center md:justify-between md:px-8">
           <p>
             © 2026 {site.name}. GOsC Reg. No.{" "}
             <a

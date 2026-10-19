@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Insurance & Self-Pay | Nguyen's Osteopathic Clinic",
     description:
-      "Self-pay fees and receipt guidance for private osteopathy in Woolwich.",
+      "Self-pay osteopathy fees in Woolwich SE18, itemised receipts for private insurance or cash-plan claims, and what to check with your insurer before booking.",
     url: "/insurance",
     images: [defaultOgImage],
   },
@@ -89,6 +89,48 @@ export default function InsurancePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-display text-3xl text-navy md:text-4xl">
+            Common insurance questions
+          </h2>
+          <dl className="mt-8 space-y-6">
+            <div>
+              <dt className="text-lg font-semibold text-navy">
+                Do you bill Bupa, AXA, Aviva, or Vitality directly?
+              </dt>
+              <dd className="mt-2 text-base leading-relaxed text-slate-600">
+                Not as a default panel clinic. Most patients pay at the visit,
+                then claim reimbursement with their insurer using our itemised
+                receipt. Always confirm cover, excess, and any referral rules
+                with your provider first.
+              </dd>
+            </div>
+            <div>
+              <dt className="text-lg font-semibold text-navy">
+                What appears on the receipt?
+              </dt>
+              <dd className="mt-2 text-base leading-relaxed text-slate-600">
+                Practitioner name, GOsC registration, clinic address, date of
+                treatment, service type, and fee paid. Tell us before you leave
+                if your claim form needs a specific wording or diagnosis code
+                field.
+              </dd>
+            </div>
+            <div>
+              <dt className="text-lg font-semibold text-navy">
+                Is osteopathy covered without a GP letter?
+              </dt>
+              <dd className="mt-2 text-base leading-relaxed text-slate-600">
+                The clinic does not require a GP referral. Some insurers still
+                do — that is a policy rule, not ours. Check before you claim so
+                you are not left with an unexpected shortfall.
+              </dd>
+            </div>
+          </dl>
         </div>
       </section>
 

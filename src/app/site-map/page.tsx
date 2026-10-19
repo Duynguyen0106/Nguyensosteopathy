@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/site-map" },
   openGraph: {
     title: "Site Map",
-    description: "Browse all main pages on Nguyen's Osteopathic Clinic website.",
+    description:
+      "HTML site map for Nguyen's Osteopathic Clinic — booking, treatments, conditions, areas, Vietnamese pages, and clinic information for Woolwich SE18.",
     url: "/site-map",
     images: [defaultOgImage],
   },

@@ -54,6 +54,7 @@ export function pageOpenGraph({
   description,
   url,
   images,
+  locale = "en_GB",
 }: {
   title: string;
   description: string;
@@ -63,13 +64,14 @@ export function pageOpenGraph({
       ? I
       : never
     : never;
+  locale?: "en_GB" | "vi_VN";
 }): NonNullable<Metadata["openGraph"]> {
   return {
     title,
     description,
     url,
     siteName: site.name,
-    locale: "en_GB",
+    locale,
     type: "website",
     images: images ?? [defaultOgImage],
   };

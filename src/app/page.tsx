@@ -200,7 +200,8 @@ export default function HomePage() {
               </span>
             </a>
 
-            <div className="mt-6">
+            <div className="mt-6 flex flex-wrap gap-3">
+              <ButtonLink href="/book">Book online</ButtonLink>
               <ButtonLink href="/about" variant="secondary">
                 Read Austin&apos;s story
               </ButtonLink>
@@ -228,6 +229,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
+              <ButtonLink href="/book">Book online</ButtonLink>
               <ButtonLink href="/services/focused-shockwave" variant="secondary">
                 Shockwave guide
               </ButtonLink>

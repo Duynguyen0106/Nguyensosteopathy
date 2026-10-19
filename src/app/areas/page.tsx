@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Areas We Serve | Nguyen's Osteopathic Clinic",
     description:
-      "Local osteopathy for Woolwich and nearby SE London neighbourhoods.",
+      "Osteopathy for Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from St James Pharmacy, SE18 — book online without a GP referral.",
     url: "/areas",
     images: [defaultOgImage],
   },

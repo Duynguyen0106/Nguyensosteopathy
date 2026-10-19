@@ -72,7 +72,12 @@ export function buildClinicJsonLd() {
       { "@type": "City", name: "Abbey Wood" },
       { "@type": "AdministrativeArea", name: "South East London" },
     ],
-    medicalSpecialty: "Osteopathic",
+    medicalSpecialty: {
+      "@type": "DefinedTerm",
+      name: "Osteopathic / musculoskeletal care",
+      description:
+        "Drug-free osteopathic assessment and treatment for back, neck, joint, and soft-tissue presentations.",
+    },
     knowsLanguage: ["en-GB", "vi"],
     availableService: services.map((service) => ({
       "@type": "MedicalProcedure",
@@ -185,7 +190,12 @@ export function buildPractitionerJsonLd() {
       url: "https://www.osteopathy.org.uk/",
     },
     knowsLanguage: ["en-GB", "vi"],
-    medicalSpecialty: "Osteopathic",
+    medicalSpecialty: {
+      "@type": "DefinedTerm",
+      name: "Osteopathic / musculoskeletal care",
+      description:
+        "GOsC-registered osteopathic care for musculoskeletal pain and related presentations.",
+    },
     worksFor: { "@id": `${site.websiteUrl}/#clinic` },
     address: {
       "@type": "PostalAddress",

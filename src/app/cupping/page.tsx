@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cupping Therapy Add-on | Nguyen's Osteopathic Clinic",
     description:
-      "Optional cupping for muscular tightness in Woolwich SE18.",
+      "Optional cupping add-on (+£15) for muscular tightness in Woolwich SE18 — used only when clinically useful alongside osteopathy or deep tissue massage.",
     url: "/cupping",
     images: [defaultOgImage],
   },
@@ -110,6 +110,28 @@ export default function CuppingPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-display text-3xl text-navy md:text-4xl">
+            What to expect on the day
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            After history and examination, Austin explains whether cupping is
+            likely to help the tissues you present with. Cups are placed for a
+            short period; you may feel a pulling sensation rather than sharp
+            pain. Temporary circular marks are common and usually fade over a
+            few days — we check clothing and work plans first if marks would be
+            a problem.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            Cupping is never billed as a surprise. If we agree to add it, the
+            +£15 fee is confirmed before treatment continues. Prefer hands-on
+            osteopathy or massage alone? That is always fine — cupping is an
+            option, not a package requirement.
+          </p>
         </div>
       </section>
 

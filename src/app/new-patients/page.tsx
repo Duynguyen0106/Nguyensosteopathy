@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "New patient guide | Nguyen's Osteopathic Clinic",
     description:
-      "How to prepare for your first osteopathy visit in Woolwich SE18.",
+      "First-visit guide for Nguyen's Osteopathic Clinic: what to wear, what to bring, arrival at St James Pharmacy, and how long appointments last in Woolwich SE18.",
     url: "/new-patients",
     images: [defaultOgImage],
   },

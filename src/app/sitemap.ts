@@ -65,6 +65,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { path: "/book", changeFrequency: "weekly", priority: 0.95 },
     { path: "/vi", priority: 0.9 },
+    { path: "/vi/fees", priority: 0.85 },
+    { path: "/vi/find-us", priority: 0.8 },
     { path: "/fees", priority: 0.85 },
     { path: "/contact", priority: 0.85 },
     { path: "/reviews", priority: 0.75 },

@@ -82,7 +82,8 @@ See [`.env.example`](.env.example) for:
 
 - Treow booking URLs
 - Optional `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_GTM_ID` (consent-gated)
-- Server-only `GOOGLE_PLACES_API_KEY` for live Google reviews on `/reviews`
+- Server-only `GOOGLE_PLACES_API_KEY` for live Google reviews on `/` and `/reviews`
+  (Places API **New** + billing; restrict the key to that API; set on Vercel Production)
 
 ## Scripts
 

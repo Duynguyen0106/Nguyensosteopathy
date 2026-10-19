@@ -10,7 +10,13 @@ export const metadata: Metadata = {
   title: "Find Us & Parking",
   description:
     "How to find Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18 — parking, Elizabeth line, DLR, buses, and what to do on…",
-  alternates: { canonical: "/find-us" },
+  alternates: {
+    canonical: "/find-us",
+    languages: {
+      "en-GB": "/find-us",
+      "vi-VN": "/vi/find-us",
+    },
+  },
   keywords: [
     "osteopath Woolwich parking",
     "Powis Street osteopath directions",

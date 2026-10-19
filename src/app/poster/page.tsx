@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
     description:
       "A1 and A2 pavement signs plus A3 window poster PDFs for Woolwich SE18.",
     url: "/poster",
+    images: [defaultOgImage],
   },
 };
 

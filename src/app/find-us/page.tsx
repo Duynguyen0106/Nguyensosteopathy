@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "Directions, parking tips, and arrival guide for our Woolwich SE18 clinic.",
     url: "/find-us",
+    images: [defaultOgImage],
   },
 };
 
@@ -126,7 +128,7 @@ export default function FindUsPage() {
               loading="lazy"
               decoding="async"
               quality={75}
-              className="h-56 w-full object-cover md:h-64"
+              className="aspect-[4/3] w-full object-cover object-center"
             />
             <Image
               src="/images/clinic-treatment.webp"
@@ -137,7 +139,7 @@ export default function FindUsPage() {
               loading="lazy"
               decoding="async"
               quality={75}
-              className="h-56 w-full object-cover md:h-64"
+              className="aspect-[4/3] w-full object-cover object-[center_20%]"
             />
             <Image
               src="/images/clinic-desk.webp"
@@ -148,7 +150,7 @@ export default function FindUsPage() {
               loading="lazy"
               decoding="async"
               quality={75}
-              className="h-56 w-full object-cover md:h-64"
+              className="aspect-[4/3] w-full object-cover object-[center_25%]"
             />
           </div>
         </div>
@@ -194,9 +196,8 @@ export default function FindUsPage() {
                 ))}
               </ul>
               <p className="mt-3 text-xs leading-relaxed text-slate-500">
-                Online booking from {site.booking.opensFromLabel}. Closed{" "}
-                {site.booking.closedDaysLabel}. Live slots are always shown in
-                the booking calendar.
+                Closed {site.booking.closedDaysLabel}. Live slots are always
+                shown in the booking calendar.
               </p>
             </div>
           </div>

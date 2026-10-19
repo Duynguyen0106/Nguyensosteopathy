@@ -12,7 +12,7 @@ import {
   getRelatedConditions,
 } from "@/lib/conditions";
 import { getProgrammesForCondition } from "@/lib/exercises";
-import { breadcrumbJsonLd, segmentTitle, trimDescription } from "@/lib/seo";
+import { breadcrumbJsonLd, segmentTitle, trimDescription, defaultOgImage } from "@/lib/seo";
 import { getService, site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -37,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${title} | ${site.name}`,
       description,
       url: `/conditions/${condition.slug}`,
+      images: [defaultOgImage],
     },
   };
 }

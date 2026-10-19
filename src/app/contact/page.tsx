@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     description:
       "Call, WhatsApp, email, or visit us inside St James Pharmacy on Powis Street.",
     url: "/contact",
+    images: [defaultOgImage],
   },
 };
 
@@ -158,7 +160,8 @@ export default function ContactPage() {
           <div>
             <h2 className="font-display text-3xl text-navy">Send a message</h2>
             <p className="mt-2 text-sm text-slate-600">
-              Prefer to write first? Leave a short note and we will follow up.
+              Prefer to write first? Draft a note here — it opens WhatsApp (or
+              your email app) so you can send it straight to the clinic.
             </p>
             <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
               <ContactForm />

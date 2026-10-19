@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { BlogDirectory } from "@/components/BlogDirectory";
 import { ButtonLink } from "@/components/Button";
@@ -36,6 +37,7 @@ export const metadata: Metadata = {
     description:
       "Local osteopathy articles organised by topic — practical guides for pain, treatment options, and booking at Nguyen's Osteopathic Clinic.",
     url: `${site.websiteUrl}/blog`,
+    images: [defaultOgImage],
   },
 };
 

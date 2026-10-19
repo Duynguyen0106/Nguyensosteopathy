@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     title: `Privacy Policy | ${site.name}`,
     description: `How ${site.name} collects, uses, and protects personal data under UK GDPR.`,
     url: "/privacy",
+    images: [defaultOgImage],
   },
 };
 

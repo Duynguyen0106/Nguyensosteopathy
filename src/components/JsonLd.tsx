@@ -90,9 +90,7 @@ export function buildClinicJsonLd() {
       price: item.price.replace(/[^0-9.]/g, ""),
       priceCurrency: "GBP",
       url: `${site.websiteUrl}/book`,
-      availability: "https://schema.org/PreOrder",
-      availabilityStarts: site.booking.opensFromIso,
-      validFrom: site.booking.opensFromIso,
+      availability: "https://schema.org/InStock",
     })),
   };
 }

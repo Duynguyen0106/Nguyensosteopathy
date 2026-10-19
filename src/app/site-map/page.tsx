@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { siteMapGroups } from "@/lib/site-map";
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     title: "Site Map",
     description: "Browse all main pages on Nguyen's Osteopathic Clinic website.",
     url: "/site-map",
+    images: [defaultOgImage],
   },
 };
 

@@ -140,9 +140,6 @@ export const site = {
   ],
   /** Osteopathy booking pattern (pharmacy access hours may differ). */
   booking: {
-    opensFromLabel: "5 November 2026",
-    /** ISO date for schema.org validFrom (clinic not yet open to patients). */
-    opensFromIso: "2026-11-05",
     bookableDaysLabel:
       "Monday, Tuesday, Thursday, Friday and Saturday",
     closedDaysLabel: "Wednesday and Sunday",
@@ -152,8 +149,8 @@ export const site = {
       { days: "Saturday", time: "9:00am – 5:30pm" },
     ],
     shortNote:
-      "Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat from 5 November 2026 (closed Wed & Sun).",
-    note: "Online booking opens from 5 November 2026. Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday). Live slots are always shown in the booking calendar.",
+      "Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat (closed Wed & Sun).",
+    note: "Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday). Live slots are always shown in the booking calendar.",
     schemaWeekdays: ["Monday", "Tuesday", "Thursday", "Friday"] as const,
     weekday: { opens: "09:00", closes: "18:00" },
     saturday: { opens: "09:00", closes: "17:30" },
@@ -204,14 +201,12 @@ export const bookingHoursSpecification = [
     dayOfWeek: [...site.booking.schemaWeekdays],
     opens: site.booking.weekday.opens,
     closes: site.booking.weekday.closes,
-    validFrom: site.booking.opensFromIso,
   },
   {
     "@type": "OpeningHoursSpecification" as const,
     dayOfWeek: "Saturday" as const,
     opens: site.booking.saturday.opens,
     closes: site.booking.saturday.closes,
-    validFrom: site.booking.opensFromIso,
   },
 ];
 
@@ -271,7 +266,8 @@ export const faqs = [
   },
   {
     question: "What are your opening hours?",
-    answer: `The pharmacy building (access) is open Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Osteopathy appointments are separate: bookable Mon, Tue, Thu, Fri & Sat from ${site.booking.opensFromLabel} — closed Wednesday and Sunday. Live slots are always shown in the online booking calendar.`,
+    answer:
+      "The pharmacy building (access) is open Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Osteopathy appointments are separate: bookable Mon, Tue, Thu, Fri & Sat — closed Wednesday and Sunday. Live slots are always shown in the online booking calendar.",
   },
   {
     question: "Can I speak Vietnamese at the clinic?",

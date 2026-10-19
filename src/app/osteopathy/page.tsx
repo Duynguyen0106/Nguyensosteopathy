@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "Plain-English guide to osteopathy and how care works at our Woolwich clinic.",
     url: "/osteopathy",
+    images: [defaultOgImage],
   },
 };
 
@@ -247,7 +249,7 @@ export default function OsteopathyPage() {
             Ready to be assessed in Woolwich?
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-            Book online from {site.booking.opensFromLabel}, or call{" "}
+            Book online, or call{" "}
             {site.phone}. {site.booking.shortNote}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

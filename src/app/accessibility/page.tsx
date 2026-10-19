@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     description:
       "Website and clinic accessibility information for Woolwich SE18 patients.",
     url: "/accessibility",
+    images: [defaultOgImage],
   },
 };
 

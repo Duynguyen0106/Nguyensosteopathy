@@ -267,7 +267,14 @@ select:focus-visible {
     transition: none !important;
   }
 
-  .service-tile:hover {
-    transform: none;
+  .service-tile:hover,
+  .group:hover .group-hover\:scale-\[1\.02\],
+  .group:hover .group-hover\:translate-x-0\.5 {
+    transform: none !important;
   }
+}
+
+/* Reserve space so the cookie bar does not cover footer CTAs */
+body {
+  padding-bottom: var(--cookie-banner-pad, 0px);
 }

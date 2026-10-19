@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     description:
       "Optional cupping for muscular tightness in Woolwich SE18.",
     url: "/cupping",
+    images: [defaultOgImage],
   },
 };
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { Suspense } from "react";
 import { ButtonLink } from "@/components/Button";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     description:
       "Google reviews for osteopathy in Woolwich SE18.",
     url: "/reviews",
+    images: [defaultOgImage],
   },
 };
 
@@ -55,7 +57,7 @@ export default function ReviewsPage() {
           </h1>
           <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Public Google feedback for the clinic — and a warm invitation to
-            leave your review after your visit from {site.booking.opensFromLabel}.
+            leave your review after your visit.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href={mapsUrl} target="_blank" rel="noopener noreferrer">

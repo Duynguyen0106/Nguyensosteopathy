@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     description:
       "Booking terms and cancellation policy for Nguyen's Osteopathic Clinic.",
     url: "/terms",
+    images: [defaultOgImage],
   },
 };
 
@@ -102,7 +104,7 @@ export default function TermsPage() {
                 .
               </li>
               <li>
-                Opening-day and promotional offers apply only as described on
+                Promotional offers apply only as described on
                 their pages and do not automatically stack with other discounts.
               </li>
               <li>Payment is due at the appointment unless otherwise agreed.</li>

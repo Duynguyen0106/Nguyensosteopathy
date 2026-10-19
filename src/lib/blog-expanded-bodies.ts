@@ -2934,7 +2934,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, current opening date, and phone backup.",
+          "Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, live calendar slots, and phone backup.",
           "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },

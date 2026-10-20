@@ -6,7 +6,17 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/leaflet", "/leaflet/", "/poster", "/poster/"],
+      disallow: [
+        // Print / marketing utilities — keep crawl budget on clinical pages.
+        "/leaflet",
+        "/leaflet/",
+        "/poster",
+        "/poster/",
+        "/facebook",
+        "/facebook/",
+        "/business-card",
+        "/business-card/",
+      ],
     },
     sitemap: `${site.websiteUrl}/sitemap.xml`,
     host: site.websiteUrl,

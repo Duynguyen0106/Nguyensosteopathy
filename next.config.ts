@@ -51,6 +51,23 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Static print/promo assets under public/ — reinforce robots.txt with headers.
+      {
+        source: "/facebook/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+      {
+        source: "/business-card/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+      {
+        source: "/leaflet/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+      {
+        source: "/poster/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
     ];
   },
   async redirects() {
@@ -67,6 +84,12 @@ const nextConfig: NextConfig = {
         // Removed opening-day article still indexed by Google — send to blog index.
         source: "/blog/opening-day-osteopath-woolwich-5-november",
         destination: "/blog",
+        permanent: true,
+      },
+      {
+        // Deleted Facebook promo asset still requested from old GSC discoveries.
+        source: "/facebook/opening-day-50-off-facebook.png",
+        destination: "/book",
         permanent: true,
       },
       {

@@ -304,6 +304,11 @@ export const faqs = [
     answer:
       "Yes. Focused shockwave therapy (LI-ESWT) is available for suitable tendon and soft-tissue conditions after clinical screening. Fees are listed on our fees page; we confirm suitability before treatment.",
   },
+  {
+    question: "Do you offer home visits?",
+    answer:
+      "Yes. Home-visit osteopathy is available when travel to the clinic is difficult. Initial home consultation and treatment is £120 for 60 minutes; follow-up home treatment is £100 for 30 minutes. Coverage is local to Woolwich and nearby SE London — contact us to confirm your address before booking.",
+  },
 ] as const;
 
 export type ServiceIconName =
@@ -316,7 +321,8 @@ export type ServiceIconName =
   | "bone"
   | "pregnancy"
   | "cranial"
-  | "child";
+  | "child"
+  | "home";
 
 export type Service = {
   slug: string;
@@ -543,6 +549,28 @@ export const services: Service[] = [
     relatedPricing: "Initial £75 (60 mins) · Follow-up £60",
     icon: "child",
   },
+  {
+    slug: "home-visits",
+    title: "Home Visits",
+    summary:
+      "Osteopathy at your home when travel to the clinic is difficult.",
+    description:
+      "Home-visit osteopathy brings assessment and hands-on treatment to your address when getting to the clinic is hard — after injury, with limited mobility, or when staying home simply works better. Sessions follow the same clinical standards as clinic care, with clear fees for initial and follow-up visits.",
+    idealFor: [
+      "Limited mobility or post-injury travel difficulty",
+      "Busy carers who cannot easily leave home",
+      "Recovery periods when clinic trips are a barrier",
+      "Patients who prefer treatment in a familiar space",
+    ],
+    whatToExpect: [
+      "Confirmation of address, access, and parking or entry notes",
+      "Full history and hands-on assessment in your home",
+      "Clear plan for follow-up visits or clinic care if preferred",
+    ],
+    relatedPricing: "Home initial £120 (60 mins) · Follow-up £100 (30 mins)",
+    badge: "Home visit",
+    icon: "home",
+  },
 ];
 
 export function getService(slug: string) {
@@ -589,6 +617,16 @@ export const pricing = [
     service: "Cupping Therapy Add-on",
     duration: "Add-on",
     price: "+£15",
+  },
+  {
+    service: "Home Visit — Initial Consultation & Treatment",
+    duration: "60 mins",
+    price: "£120",
+  },
+  {
+    service: "Home Visit — Follow-up Treatment",
+    duration: "30 mins",
+    price: "£100",
   },
 ] as const;
 

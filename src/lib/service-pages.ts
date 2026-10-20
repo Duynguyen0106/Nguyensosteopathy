@@ -706,7 +706,85 @@ export const servicePages: ServicePageContent[] = [
     keywords: [
       "paediatric osteopath Woolwich", "baby osteopath SE18", "child osteopath Woolwich", "gentle osteopathy children London",
     ],
-  }
+  },
+  {
+    slug: "home-visits",
+    h1: "Home Visit Osteopathy in Woolwich & SE London",
+    seoTitle: "Home Visit Osteopathy Woolwich & SE London",
+    metaDescription:
+      "Osteopathy at your home near Woolwich SE18. Initial home visit £120 for 60 minutes; follow-up £100 for 30 minutes. Book with Austin Duy Nguyen when clinic travel is difficult.",
+    heroLine:
+      "Assessment and hands-on treatment at your address when getting to the clinic is hard — same clinical standards, clear home-visit fees.",
+    eyebrow: "Home visits · Woolwich & nearby SE London",
+    sections: [
+      {
+        heading: "When home-visit osteopathy helps",
+        paragraphs: [
+          "Home-visit osteopathy is for people who need musculoskeletal care but find travel to the clinic difficult — after injury, with limited mobility, during recovery, or when remaining at home simply works better for you or the person you care for. Treatment still follows the same GOsC-registered clinical standards as appointments inside St James Pharmacy on Powis Street.",
+          "Austin Duy Nguyen brings assessment and hands-on treatment to suitable addresses local to Woolwich and nearby SE London. Coverage is confirmed before you book so travel time, access, and parking or entry notes are clear. If your address sits outside the practical visiting area, we will say so honestly and help you plan a clinic visit instead.",
+          "Carers, older adults, and people recovering from flare-ups often choose home care because a clinic trip would cancel out the benefit of attending. Others prefer a familiar space when anxiety, fatigue, or childcare make leaving home impractical. The goal is the same either way: a thorough assessment and a treatment plan you can continue safely between visits.",
+        ],
+      },
+      {
+        heading: "Fees and what each visit includes",
+        paragraphs: [
+          "Initial home consultation and treatment is £120 for 60 minutes. That first visit includes history, examination, hands-on treatment where appropriate, and a clear explanation of findings and next steps. Follow-up home treatment is £100 for 30 minutes, focused on reviewing change, continuing care, and refining home advice.",
+          "These fees reflect travel and the time required to set up a safe treatment space in your home. Optional clinic add-ons such as acupuncture or cupping are arranged only when clinically useful and agreed with you; availability may differ from in-clinic sessions. NHS staff and student discounts are discussed when you enquire so expectations stay clear before booking.",
+          "Payment and cancellation follow the same clinic policy as other appointments. If you need to change a home visit, give as much notice as you can so the travel slot can be reused. We confirm the fee for your appointment type before treatment starts — no surprise extras.",
+        ],
+      },
+      {
+        heading: "How a home visit works",
+        paragraphs: [
+          "Before the day, we confirm your address, access notes, and any stairs, parking, or entry details that help arrival run smoothly. Please clear a flat space large enough for comfortable movement assessment and treatment — a firm bed, sturdy table arrangement we discuss in advance, or suitable floor space with padding as agreed. Wear comfortable clothing that allows easy movement.",
+          "The clinical process mirrors a clinic appointment: detailed history, posture and movement testing, treatment selected for your presentation, and practical guidance you can use between sessions. Some people continue with further home visits; others return to the Woolwich clinic once travel becomes easier. We only recommend follow-up when it is clinically useful.",
+          "If symptoms include red-flag features such as progressive weakness, unexplained weight loss, fever, or bladder or bowel changes, seek urgent medical care before or instead of routine musculoskeletal treatment. Home visits are for appropriate mechanical problems after serious causes have been considered.",
+        ],
+      },
+      {
+        heading: "Book a home visit near Woolwich SE18",
+        paragraphs: [
+          "Contact the clinic to confirm your address and arrange a home-visit slot. Online booking is geared toward clinic appointments inside St James Pharmacy; home visits are coordinated by phone, WhatsApp, or enquiry so travel logistics can be checked first. Vietnamese or English consultation is available.",
+          "Related clinic services include back and neck pain care, sports injury rehab, and paediatric osteopathy if a family member needs gentle in-clinic support instead. Explore the fees page for the full price list, or book a standard clinic appointment if you can travel to Powis Street.",
+          "Home care does not replace your GP or emergency services. It extends osteopathic access when the barrier is getting through the door — so assessment and treatment can still start without waiting until travel is easy again.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much is a home visit?",
+        answer:
+          "Initial home consultation and treatment is £120 for 60 minutes. Follow-up home treatment is £100 for 30 minutes. We confirm suitability and address coverage before booking.",
+      },
+      {
+        question: "Which areas do you cover?",
+        answer:
+          "Home visits are local to Woolwich and nearby SE London. Contact us with your address so we can confirm whether a visit is practical before you book.",
+      },
+      {
+        question: "Can I book a home visit online?",
+        answer:
+          "Home visits are arranged by phone, WhatsApp, or enquiry so we can check address, access, and travel time. Clinic appointments at St James Pharmacy can still be booked online.",
+      },
+      {
+        question: "What should I prepare at home?",
+        answer:
+          "Clear a flat, comfortable space for assessment and treatment, wear easy-movement clothing, and share parking or entry notes in advance. We will confirm any setup needs when we schedule the visit.",
+      },
+    ],
+    relatedSlugs: [
+      "back-neck-pain",
+      "sports-injury-rehab",
+      "paediatric-care",
+      "cranial-therapy",
+    ],
+    keywords: [
+      "home visit osteopath Woolwich",
+      "osteopath home visit SE18",
+      "domiciliary osteopathy London",
+      "mobile osteopath Woolwich",
+    ],
+  },
 ];
 
 export function getServicePage(slug: string) {

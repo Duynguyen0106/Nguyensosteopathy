@@ -68,6 +68,7 @@ export default async function ConditionPage({ params }: Props) {
   const pageLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
+    "@id": `${site.websiteUrl}/conditions/${condition.slug}#webpage`,
     name: condition.title,
     url: `${site.websiteUrl}/conditions/${condition.slug}`,
     description: condition.summary,

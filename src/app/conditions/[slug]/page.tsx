@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { AuthorBio } from "@/components/AuthorBio";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { ProgrammeCard } from "@/components/exercises/ProgrammeCard";
 import {
   getAllConditionSlugs,
@@ -18,6 +19,7 @@ import {
   enrichDescription,
   fitSerpTitle,
 } from "@/lib/seo";
+import { bookHref, spineConditionSlugs } from "@/lib/seo-strategy";
 import { getService, site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -160,7 +162,7 @@ export default async function ConditionPage({ params }: Props) {
             {condition.heroLine}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book assessment</ButtonLink>
+            <ButtonLink href={bookHref("conditions")}>Book assessment</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>
@@ -339,7 +341,7 @@ export default async function ConditionPage({ params }: Props) {
             {site.practitioner.title}, inside {site.address.venue}.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book assessment</ButtonLink>
+            <ButtonLink href={bookHref("conditions")}>Book assessment</ButtonLink>
             {service ? (
               <ButtonLink href={`/services/${service.slug}`} variant="secondary">
                 Related: {service.title}
@@ -362,6 +364,10 @@ export default async function ConditionPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {spineConditionSlugs.has(condition.slug) ? (
+        <TopicClusterNav clusterId="spine" />
+      ) : null}
     </div>
   );
 }

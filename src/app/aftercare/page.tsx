@@ -221,12 +221,7 @@ export default function AftercarePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/book">Book follow-up</ButtonLink>
-              <ButtonLink
-                href={site.googleReviewsUrl}
-                variant="secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ButtonLink href="/reviews" variant="secondary">
                 Leave a Google review
               </ButtonLink>
               <ButtonLink href="/exercises" variant="secondary">

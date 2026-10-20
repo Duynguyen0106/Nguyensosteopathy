@@ -2,6 +2,7 @@
 
 export const viNavLabels: Record<string, string> = {
   "/about": "Giới thiệu",
+  "/book": "Đặt lịch",
   "/conditions": "Tình trạng",
   "/exercises": "Bài tập",
   "/blog": "Blog",
@@ -13,6 +14,8 @@ export const viNavLabels: Record<string, string> = {
   "/contact": "Liên hệ",
   "/vi": "English",
   "/services": "Dịch vụ",
+  "/services/back-neck-pain": "Đau lưng & cổ",
+  "/services/home-visits": "Khám tại nhà",
   "/osteopathy": "Osteopathy là gì?",
   "/desk-pain": "Đau do ngồi máy",
 };
@@ -60,6 +63,10 @@ export const viFooterLabels: Record<string, string> = {
 export function resolveViHref(href: string): string {
   if (href === "/fees") return "/vi/fees";
   if (href === "/find-us") return "/vi/find-us";
+  if (href === "/book") return "/vi/book";
+  if (href === "/about") return "/vi/about";
+  if (href === "/services/back-neck-pain") return "/vi/services/back-neck-pain";
+  if (href === "/services/home-visits") return "/vi/services/home-visits";
   if (href === "/vi") return "/";
   return href;
 }

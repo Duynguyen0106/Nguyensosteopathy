@@ -14,7 +14,10 @@
     "business-card": "node scripts/generate-business-card.mjs",
     "facebook-poster": "node scripts/generate-facebook-poster.mjs",
     "blog-images": "node scripts/fetch-blog-images.mjs && node scripts/fetch-blog-images-missing.mjs",
-    "images:webp": "node scripts/convert-images-webp.mjs"
+    "images:webp": "node scripts/convert-images-webp.mjs",
+    "seo:gsc": "node scripts/seo-gsc-checklist.mjs",
+    "seo:monthly": "node scripts/seo-gsc-checklist.mjs",
+    "seo:jsonld": "node scripts/validate-jsonld.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

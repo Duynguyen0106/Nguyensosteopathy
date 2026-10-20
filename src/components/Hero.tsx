@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ButtonLink } from "@/components/Button";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const HERO_IMAGE = "/images/austin-nguyen.webp";
@@ -46,7 +47,7 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <ButtonLink href="/book" className="w-full sm:w-auto">
+            <ButtonLink href={bookHref("home")} className="w-full sm:w-auto">
               Book online
             </ButtonLink>
             <ButtonLink

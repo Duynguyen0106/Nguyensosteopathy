@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { ServiceIcon } from "@/components/ServiceIcon";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { getConditionsForService } from "@/lib/conditions";
 import {
   getServiceWithPage,
@@ -11,6 +12,12 @@ import {
   servicePages,
 } from "@/lib/service-pages";
 import { breadcrumbJsonLd, segmentTitle, trimDescription, defaultOgImage } from "@/lib/seo";
+import {
+  serviceBookCampaign,
+  serviceClusterId,
+  viServiceTwins,
+  bookHref,
+} from "@/lib/seo-strategy";
 import { getServiceHref, services, site } from "@/lib/site";
 
 type Props = {
@@ -29,15 +36,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { page } = data;
   const title = segmentTitle(page.seoTitle);
   const description = trimDescription(page.metaDescription);
+  const path = `/services/${page.slug}`;
+  const hasViTwin = viServiceTwins.has(page.slug);
   return {
     title,
     description,
-    alternates: { canonical: `/services/${page.slug}` },
+    alternates: {
+      canonical: path,
+      ...(hasViTwin
+        ? {
+            languages: {
+              "en-GB": path,
+              "vi-VN": `/vi/services/${page.slug}`,
+              "x-default": path,
+            },
+          }
+        : {}),
+    },
     keywords: page.keywords,
     openGraph: {
       title: `${title} | ${site.name}`,
       description,
-      url: `/services/${page.slug}`,
+      url: path,
       images: [defaultOgImage],
     },
   };
@@ -58,6 +78,9 @@ export default async function ServiceDetailPage({ params }: Props) {
         !page.relatedSlugs.includes(item.slug),
     )
     .slice(0, 3);
+  const bookUrl = bookHref(serviceBookCampaign(service.slug));
+  const clusterId = serviceClusterId(service.slug);
+  const hasViTwin = viServiceTwins.has(service.slug);
 
   /** Service-focused MedicalWebPage — clinic identity lives sitewide at /#clinic. */
   const serviceLd = {
@@ -149,8 +172,19 @@ export default async function ServiceDetailPage({ params }: Props) {
               {service.relatedPricing} · No GP referral needed
             </p>
           ) : null}
+          {hasViTwin ? (
+            <p className="mt-3 text-sm text-slate-500">
+              <Link
+                href={`/vi/services/${service.slug}`}
+                className="font-semibold text-teal hover:text-teal-dark"
+                hrefLang="vi-VN"
+              >
+                Tiếng Việt →
+              </Link>
+            </p>
+          ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book this treatment</ButtonLink>
+            <ButtonLink href={bookUrl}>Book this treatment</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>
@@ -244,7 +278,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               No GP referral needed. Private one-to-one care with{" "}
               {site.practitioner.name}, GOsC Reg. No. {site.practitioner.regNo}.
             </p>
-            <ButtonLink href="/book" className="mt-5 w-full">
+            <ButtonLink href={bookUrl} className="mt-5 w-full">
               Book online
             </ButtonLink>
             <ButtonLink
@@ -375,7 +409,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href="/book" variant="onDark">
+            <ButtonLink href={bookUrl} variant="onDark">
               Book online
             </ButtonLink>
             <ButtonLink
@@ -389,6 +423,8 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {clusterId ? <TopicClusterNav clusterId={clusterId} /> : null}
     </div>
   );
 }

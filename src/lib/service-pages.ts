@@ -83,6 +83,16 @@ export const servicePages: ServicePageContent[] = [
         question: "What should I wear?",
         answer: "Comfortable clothing that allows you to move and for us to assess your spine and related areas. You can change on site if needed.",
       },
+      {
+        question: "Where is the osteopath for back pain on Powis Street?",
+        answer:
+          "Nguyen's Osteopathic Clinic is inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich SE18 6LQ. Ask at the pharmacy counter and staff will direct you to the treatment room.",
+      },
+      {
+        question: "Can I speak Vietnamese about my back or neck pain?",
+        answer:
+          "Yes. Austin Duy Nguyen can consult in Vietnamese or English so you can describe symptoms without a language barrier.",
+      },
     ],
     relatedSlugs: [
       "headaches-joints", "deep-tissue-massage", "sports-injury-rehab", "focused-shockwave",
@@ -159,11 +169,13 @@ export const servicePages: ServicePageContent[] = [
   },
   {
     slug: "focused-shockwave",
-    h1: "Focused Shockwave Therapy in Woolwich",
-    seoTitle: "Focused Shockwave Therapy in Woolwich",
-    metaDescription: "Focused shockwave therapy (LI-ESWT) in Woolwich for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. £90 per session after screening at…",
-    heroLine: "Drug-free LI-ESWT for stubborn heel, elbow, Achilles and tendon pain — clinically screened, then delivered with a clear loading plan.",
-    eyebrow: "Specialist care · Woolwich SE18",
+    h1: "Shockwave Therapy in Woolwich",
+    seoTitle: "Shockwave Therapy Woolwich | Focused LI-ESWT",
+    metaDescription:
+      "Shockwave therapy in Woolwich SE18 for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. Focused LI-ESWT £90 after screening at Nguyen's on Powis Street.",
+    heroLine:
+      "Focused LI-ESWT for stubborn heel, elbow, Achilles and tendon pain at 52 Powis Street, Woolwich SE18 — clinically screened, then delivered with a clear loading plan.",
+    eyebrow: "Shockwave Woolwich · SE18",
     sections: [
       {
         heading: "When tendons stop settling with rest",
@@ -205,6 +217,11 @@ export const servicePages: ServicePageContent[] = [
         answer: "No. Focused LI-ESWT is a medical device pathway delivering controlled acoustic energy after clinical screening — not a wellness gadget.",
       },
       {
+        question: "How much is shockwave therapy in Woolwich?",
+        answer:
+          "Focused shockwave is £90 per session after clinical screening. Fees are confirmed before you commit to a course. See our fees page for the full list.",
+      },
+      {
         question: "How many sessions will I need?",
         answer: "It depends on the condition and how long symptoms have been present. Many tendon pathways use a short course; we review progress and only continue when useful.",
       },
@@ -216,21 +233,32 @@ export const servicePages: ServicePageContent[] = [
         question: "Is men's health ED shockwave included?",
         answer: "Vascular LI-ESWT for men's health is a separate confidential pathway with its own protocol and fee. See our Men's Health & ED service page.",
       },
+      {
+        question: "Do I need a GP referral for shockwave in SE18?",
+        answer:
+          "No. You can book screening directly at Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street. We refer on if medical review is the safer next step.",
+      },
     ],
     relatedSlugs: [
       "mens-health-ed", "sports-injury-rehab", "back-neck-pain", "deep-tissue-massage",
     ],
     keywords: [
-      "shockwave therapy Woolwich", "LI-ESWT SE18", "shockwave plantar fasciitis Woolwich", "focused shockwave London",
+      "shockwave woolwich",
+      "shockwave therapy Woolwich",
+      "LI-ESWT SE18",
+      "shockwave plantar fasciitis Woolwich",
+      "focused shockwave London",
     ],
   },
   {
     slug: "mens-health-ed",
-    h1: "Men's Health & ED Treatment in Woolwich",
-    seoTitle: "Men's Health & ED Treatment in Woolwich",
-    metaDescription: "Confidential men's health and ED care in Woolwich using low-intensity focused shockwave (LI-ESWT). Private, drug-free protocol at Nguyen's Osteopathic…",
-    heroLine: "Discreet, non-invasive LI-ESWT for vascular-related erectile difficulties and pelvic recovery goals — private one-to-one care in Woolwich.",
-    eyebrow: "Confidential care · Woolwich SE18",
+    h1: "Men's Health & ED Shockwave in Woolwich",
+    seoTitle: "Men's Health Shockwave Woolwich | ED LI-ESWT",
+    metaDescription:
+      "Confidential men's health and ED shockwave in Woolwich SE18 using low-intensity focused LI-ESWT. Private, drug-free protocol at Nguyen's on Powis Street — £110 / 30 min.",
+    heroLine:
+      "Discreet, non-invasive LI-ESWT for vascular-related erectile difficulties — private one-to-one care inside St James Pharmacy, Woolwich SE18.",
+    eyebrow: "Men's health Woolwich · confidential",
     sections: [
       {
         heading: "A private pathway for men's health",
@@ -278,6 +306,11 @@ export const servicePages: ServicePageContent[] = [
         answer: "No GP referral is required to book. We may still recommend medical review if screening suggests it is the safer pathway.",
       },
       {
+        question: "How much is men's health shockwave in Woolwich?",
+        answer:
+          "The specialist ED / pelvic protocol is £110 for 30 minutes. Fees are explained before treatment starts — see our fees page for the full list.",
+      },
+      {
         question: "How is this different from tendon shockwave?",
         answer: "Men's health uses a specific vascular LI-ESWT protocol and fee. Tendon shockwave for heel, elbow or Achilles is a separate service.",
       },
@@ -285,12 +318,21 @@ export const servicePages: ServicePageContent[] = [
         question: "Will you pressure me into a long package?",
         answer: "No. We explain the typical course, review progress, and only continue when it remains clinically appropriate.",
       },
+      {
+        question: "Can I discuss this in Vietnamese?",
+        answer:
+          "Yes. Austin can consult in Vietnamese or English so you can describe symptoms without a language barrier. Arrival via the pharmacy counter stays discreet either way.",
+      },
     ],
     relatedSlugs: [
       "focused-shockwave", "sports-injury-rehab", "acupuncture-electro", "back-neck-pain",
     ],
     keywords: [
-      "men's health shockwave Woolwich", "ED treatment Woolwich", "LI-ESWT ED SE18", "discreet shockwave London",
+      "mens health shockwave woolwich",
+      "men's health shockwave Woolwich",
+      "ED treatment Woolwich",
+      "LI-ESWT ED SE18",
+      "discreet shockwave London",
     ],
   },
   {
@@ -709,13 +751,13 @@ export const servicePages: ServicePageContent[] = [
   },
   {
     slug: "home-visits",
-    h1: "Home Visit Osteopathy in Woolwich & SE London",
-    seoTitle: "Home Visit Osteopathy Woolwich & SE London",
+    h1: "Home Visit Osteopath in Woolwich & SE London",
+    seoTitle: "Home Visit Osteopath Woolwich | £120 Initial",
     metaDescription:
-      "Osteopathy at your home near Woolwich SE18. Initial home visit £120 for 60 minutes; follow-up £100 for 30 minutes. Book with Austin Duy Nguyen when clinic travel is difficult.",
+      "Home visit osteopath near Woolwich SE18. Initial visit £120 for 60 minutes; follow-up £100 for 30 minutes. Austin Duy Nguyen — when clinic travel is difficult.",
     heroLine:
-      "Assessment and hands-on treatment at your address when getting to the clinic is hard — same clinical standards, clear home-visit fees.",
-    eyebrow: "Home visits · Woolwich & nearby SE London",
+      "Osteopathy at your address near Woolwich and nearby SE London when getting to Powis Street is hard — same GOsC standards, clear £120 / £100 home-visit fees.",
+    eyebrow: "Home visit osteopath · Woolwich SE18",
     sections: [
       {
         heading: "When home-visit osteopathy helps",
@@ -752,14 +794,14 @@ export const servicePages: ServicePageContent[] = [
     ],
     faqs: [
       {
-        question: "How much is a home visit?",
+        question: "How much is a home visit osteopath in Woolwich?",
         answer:
           "Initial home consultation and treatment is £120 for 60 minutes. Follow-up home treatment is £100 for 30 minutes. We confirm suitability and address coverage before booking.",
       },
       {
         question: "Which areas do you cover?",
         answer:
-          "Home visits are local to Woolwich and nearby SE London. Contact us with your address so we can confirm whether a visit is practical before you book.",
+          "Home visits are local to Woolwich and nearby SE London — including Plumstead, Abbey Wood, Charlton and Greenwich where travel is practical. Contact us with your address first.",
       },
       {
         question: "Can I book a home visit online?",
@@ -771,6 +813,11 @@ export const servicePages: ServicePageContent[] = [
         answer:
           "Clear a flat, comfortable space for assessment and treatment, wear easy-movement clothing, and share parking or entry notes in advance. We will confirm any setup needs when we schedule the visit.",
       },
+      {
+        question: "Can home visits be in Vietnamese?",
+        answer:
+          "Yes. Austin can consult in Vietnamese or English at your home so you can describe symptoms without a language barrier.",
+      },
     ],
     relatedSlugs: [
       "back-neck-pain",
@@ -779,6 +826,7 @@ export const servicePages: ServicePageContent[] = [
       "cranial-therapy",
     ],
     keywords: [
+      "osteopath home visit woolwich",
       "home visit osteopath Woolwich",
       "osteopath home visit SE18",
       "domiciliary osteopathy London",

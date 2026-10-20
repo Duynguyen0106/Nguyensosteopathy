@@ -72,7 +72,7 @@ export default function VietnameseFeesPage() {
             </Link>
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Đặt lịch online</ButtonLink>
+            <ButtonLink href="/vi/book">Đặt lịch online</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Gọi {site.phone}
             </ButtonLink>

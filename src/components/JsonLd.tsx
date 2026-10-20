@@ -45,7 +45,7 @@ export function buildClinicJsonLd() {
       site.googleReviewsUrl,
       googleBusinessProfileUrl,
     ],
-    priceRange: "£60–£110",
+    priceRange: clinicPriceRange(),
     currenciesAccepted: "GBP",
     paymentAccepted: "Cash, Credit Card, Debit Card",
     address: {
@@ -94,10 +94,31 @@ export function buildClinicJsonLd() {
       description: item.duration,
       price: item.price.replace(/[^0-9.]/g, ""),
       priceCurrency: "GBP",
-      url: `${site.websiteUrl}/book`,
+      url: schemaOfferUrl(item.service),
       availability: "https://schema.org/LimitedAvailability",
     })),
+    // Full OfferCatalog node lives on /fees — reference by @id only.
+    hasOfferCatalog: { "@id": `${site.websiteUrl}/fees#offers` },
   };
+}
+
+/** GBP priceRange from standalone schema offers (excludes +£ add-ons). */
+function clinicPriceRange() {
+  const amounts = schemaOffers
+    .map((item) => Number(item.price.replace(/[^0-9.]/g, "")))
+    .filter((n) => Number.isFinite(n) && n > 0);
+  if (amounts.length === 0) return "£";
+  const min = Math.min(...amounts);
+  const max = Math.max(...amounts);
+  return min === max ? `£${min}` : `£${min}–£${max}`;
+}
+
+/** Home visits are arranged by enquiry — point Offers at the service page. */
+function schemaOfferUrl(serviceName: string) {
+  if (serviceName.startsWith("Home Visit")) {
+    return `${site.websiteUrl}/services/home-visits`;
+  }
+  return `${site.websiteUrl}/book`;
 }
 
 export function buildPractitionerJsonLd() {

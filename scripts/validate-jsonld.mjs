@@ -128,6 +128,53 @@ if (!Array.isArray(clinic.availableService) || clinic.availableService.length < 
 } else {
   ok(`availableService: ${clinic.availableService.length} services`);
   console.log(clinic.availableService.map((s) => s.name).join(", "));
+  const hasHome = clinic.availableService.some((s) =>
+    String(s.name || "").toLowerCase().includes("home"),
+  );
+  if (!hasHome) fail("availableService missing Home Visits");
+  else ok("availableService includes Home Visits");
+}
+
+const offers = clinic.makesOffer ?? [];
+if (!Array.isArray(offers) || offers.length < 5) {
+  fail("makesOffer incomplete");
+} else {
+  ok(`makesOffer: ${offers.length} offers`);
+  const amounts = offers
+    .map((o) => Number(o.price))
+    .filter((n) => Number.isFinite(n) && n > 0);
+  const max = Math.max(...amounts);
+  const min = Math.min(...amounts);
+  if (max < 120) fail(`expected home-visit £120 in offers; max was £${max}`);
+  else ok(`offer price span £${min}–£${max}`);
+  const homeOffers = offers.filter((o) =>
+    String(o.name || "").startsWith("Home Visit"),
+  );
+  if (homeOffers.length < 2) fail("expected two Home Visit offers");
+  else ok(`Home Visit offers: ${homeOffers.length}`);
+  for (const o of homeOffers) {
+    if (!String(o.url || "").includes("/services/home-visits")) {
+      fail(`Home Visit offer URL should point at service page: ${o.url}`);
+    }
+  }
+}
+
+const range = String(clinic.priceRange || "");
+if (!/^£\d+(?:–£\d+)?$/.test(range)) {
+  fail(`priceRange format unexpected: ${range}`);
+} else if (!range.includes("120") && maxOffer(clinic) >= 120) {
+  fail(`priceRange stale (missing £120 upper bound): ${range}`);
+} else {
+  ok(`priceRange: ${range}`);
+}
+
+function maxOffer(node) {
+  return Math.max(
+    0,
+    ...(node.makesOffer || [])
+      .map((o) => Number(o.price))
+      .filter((n) => Number.isFinite(n)),
+  );
 }
 
 const sameAs = clinic.sameAs ?? [];

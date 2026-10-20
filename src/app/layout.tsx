@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
-import { headers } from "next/headers";
 import { ConsentAnalytics } from "@/components/ConsentAnalytics";
 import { CookieBanner } from "@/components/CookieBanner";
 import { Footer } from "@/components/Footer";
@@ -120,13 +119,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({ children }: LayoutProps<"/">) {
-  const pathname = (await headers()).get("x-pathname") || "/";
-  const lang = pathname.startsWith("/vi") ? "vi" : "en-GB";
-
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  // Keep <html lang> static for prerender (Cache Components). Vietnamese
+  // routes set documentElement.lang via DocumentLang in src/app/vi/layout.tsx.
   return (
     <html
-      lang={lang}
+      lang="en-GB"
       className={`${display.variable} ${body.variable} h-full antialiased`}
     >
       <head>

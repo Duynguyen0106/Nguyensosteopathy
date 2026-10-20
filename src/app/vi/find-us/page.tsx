@@ -3,7 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { LazyMapsEmbed } from "@/components/LazyMapsEmbed";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { defaultOgImage, pageOpenGraph } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -86,7 +88,7 @@ export default function VietnameseFindUsPage() {
             >
               Mở Google Maps
             </ButtonLink>
-            <ButtonLink href="/vi/book" variant="secondary">
+            <ButtonLink href={bookHref("vi")} variant="secondary">
               Đặt lịch
             </ButtonLink>
             <ButtonLink href="/vi" variant="secondary">
@@ -219,6 +221,11 @@ export default function VietnameseFindUsPage() {
           </p>
         </div>
       </section>
+
+      <TopicClusterNav
+        clusterId="vietnamese"
+        intro="Các trang tiếng Việt liên quan — đặt lịch, bảng giá và dịch vụ."
+      />
     </div>
   );
 }

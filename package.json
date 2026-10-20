@@ -16,7 +16,10 @@
     "blog-images": "node scripts/fetch-blog-images.mjs && node scripts/fetch-blog-images-missing.mjs",
     "images:webp": "node scripts/convert-images-webp.mjs",
     "seo:gsc": "node scripts/seo-gsc-checklist.mjs",
-    "seo:monthly": "node scripts/seo-gsc-checklist.mjs",
+    "seo:live": "node scripts/seo-live-index-check.mjs",
+    "seo:gbp": "node scripts/seo-gbp-ops.mjs",
+    "seo:citations": "node scripts/seo-citation-audit.mjs",
+    "seo:monthly": "node scripts/seo-monthly-compound.mjs",
     "seo:jsonld": "node scripts/validate-jsonld.mjs"
   },
   "dependencies": {

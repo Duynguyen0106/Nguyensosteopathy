@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
   },
   description:
-    "Osteopath người Việt đăng ký GOsC tại Woolwich — Austin Duy Nguyen hỗ trợ cộng đồng Việt bằng tiếng Việt và tiếng Anh.",
+    "Osteopath người Việt đăng ký GOsC tại Woolwich SE18 — Austin Duy Nguyen hỗ trợ cộng đồng Việt bằng tiếng Việt và tiếng Anh. Đặt lịch không cần GP referral.",
   alternates: {
     canonical: "/vi",
     languages: {
@@ -44,6 +44,13 @@ export const metadata: Metadata = {
         alt: "Austin Duy Nguyen — osteopath đăng ký GOsC",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
+    description:
+      "Osteopath người Việt nói tiếng Việt tại Woolwich — chăm sóc cơ xương khớp cho cộng đồng Việt tại London SE18.",
+    images: ["/images/austin-nguyen.webp"],
   },
 };
 

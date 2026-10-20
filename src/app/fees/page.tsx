@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Osteopath Fees & Prices in Woolwich",
     description:
-      "Transparent treatment fees at Nguyen's Osteopathic Clinic inside St James Pharmacy, Woolwich.",
+      "Clear osteopathy fees in Woolwich SE18: initial £75, follow-up £60, focused shockwave £90, deep tissue £60. 10% NHS & student discount.",
     url: "/fees",
     images: [defaultOgImage],
   },

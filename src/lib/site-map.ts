@@ -63,8 +63,6 @@ export const siteMapGroups = [
       { href: "/complaints", label: "Complaints procedure" },
       { href: "/accessibility", label: "Accessibility" },
       { href: "/feed.xml", label: "Blog RSS feed" },
-      { href: "/leaflet", label: "Clinic leaflet PDF" },
-      { href: "/poster", label: "Pavement & window posters" },
     ],
   },
 ] as const;

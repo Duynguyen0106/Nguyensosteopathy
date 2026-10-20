@@ -7,7 +7,11 @@ import {
   getServiceArea,
   serviceAreas,
 } from "@/lib/areas";
-import { breadcrumbJsonLd, trimDescription, defaultOgImage } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  defaultOgImage,
+  enrichDescription,
+} from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -22,8 +26,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!area) return {};
 
   const title = `Osteopath near ${area.name}`;
-  const description = trimDescription(
-    `${area.summary} Book ${site.name} inside St James Pharmacy, Powis Street.`,
+  const description = enrichDescription(
+    `Private osteopathy near ${area.name} at St James Pharmacy, Powis Street, Woolwich SE18. ${area.summary}`,
+    `Book online with ${site.name} — no GP referral needed.`,
   );
 
   return {

@@ -5,15 +5,15 @@ import { BookingEmbed } from "@/components/BookingEmbed";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
+const bookDescription = `Book online with Nguyen's Osteopathic Clinic in Woolwich SE18. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath — no GP referral needed.`;
+
 export const metadata: Metadata = {
   title: "Book an Osteopathy Appointment in Woolwich",
-  description:
-    `Book online with Nguyen's Osteopathic Clinic in Woolwich. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath.`,
+  description: bookDescription,
   alternates: { canonical: "/book" },
   openGraph: {
     title: "Book an Osteopathy Appointment in Woolwich",
-    description:
-      "Online booking for osteopathy, shockwave therapy, and specialist care at Nguyen's Osteopathic Clinic.",
+    description: bookDescription,
     url: "/book",
     images: [defaultOgImage],
   },

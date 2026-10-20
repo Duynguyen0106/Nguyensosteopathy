@@ -21,11 +21,18 @@ export const metadata: Metadata = {
   openGraph: pageOpenGraph({
     title: "Địa chỉ & gửi xe — Osteopath Woolwich",
     description:
-      "Hướng dẫn đến phòng khám osteopathy trong nhà thuốc St James, Woolwich SE18.",
+      "Tìm phòng khám osteopathy trong St James Pharmacy, 52 Powis Street, Woolwich SE18 — gửi xe, Elizabeth line, DLR.",
     url: "/vi/find-us",
     images: [defaultOgImage],
     locale: "vi_VN",
   }),
+  twitter: {
+    card: "summary_large_image",
+    title: "Địa chỉ & gửi xe — Osteopath Woolwich",
+    description:
+      "Tìm phòng khám osteopathy trong St James Pharmacy, 52 Powis Street, Woolwich SE18 — gửi xe, Elizabeth line, DLR.",
+    images: [defaultOgImage.url],
+  },
 };
 
 const travel = [

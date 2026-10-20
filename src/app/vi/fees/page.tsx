@@ -19,11 +19,18 @@ export const metadata: Metadata = {
   openGraph: pageOpenGraph({
     title: "Bảng giá osteopathy Woolwich",
     description:
-      "Giá rõ ràng cho osteopathy và các dịch vụ tại Nguyen's Osteopathic Clinic, Woolwich.",
+      "Bảng giá osteopathy tại Woolwich SE18: khám ban đầu £75, tái khám £60, shockwave £90. Giảm 10% NHS & sinh viên.",
     url: "/vi/fees",
     images: [defaultOgImage],
     locale: "vi_VN",
   }),
+  twitter: {
+    card: "summary_large_image",
+    title: "Bảng giá osteopathy Woolwich",
+    description:
+      "Bảng giá osteopathy tại Woolwich SE18: khám ban đầu £75, tái khám £60, shockwave £90. Giảm 10% NHS & sinh viên.",
+    images: [defaultOgImage.url],
+  },
 };
 
 const viLabels: Record<string, string> = {

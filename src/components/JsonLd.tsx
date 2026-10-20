@@ -95,7 +95,7 @@ export function buildClinicJsonLd() {
       price: item.price.replace(/[^0-9.]/g, ""),
       priceCurrency: "GBP",
       url: `${site.websiteUrl}/book`,
-      availability: "https://schema.org/InStock",
+      availability: "https://schema.org/LimitedAvailability",
     })),
   };
 }
@@ -220,8 +220,19 @@ export function buildWebsiteJsonLd() {
     inLanguage: ["en-GB", "vi"],
     potentialAction: {
       "@type": "ReserveAction",
-      target: `${site.websiteUrl}/book`,
       name: "Book an osteopathy appointment",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${site.websiteUrl}/book`,
+        actionPlatform: [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform",
+        ],
+      },
+      result: {
+        "@type": "Reservation",
+        name: "Osteopathy appointment",
+      },
     },
   };
 }

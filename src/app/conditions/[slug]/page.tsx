@@ -12,7 +12,12 @@ import {
   getRelatedConditions,
 } from "@/lib/conditions";
 import { getProgrammesForCondition } from "@/lib/exercises";
-import { breadcrumbJsonLd, segmentTitle, trimDescription, defaultOgImage } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  defaultOgImage,
+  enrichDescription,
+  fitSerpTitle,
+} from "@/lib/seo";
 import { getService, site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -26,8 +31,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const condition = getCondition(slug);
   if (!condition) return {};
 
-  const title = segmentTitle(condition.title);
-  const description = trimDescription(condition.summary);
+  const title = fitSerpTitle(`${condition.shortTitle} Woolwich`);
+  const description = enrichDescription(
+    condition.summary,
+    `Osteopathic care in Woolwich SE18 at ${site.name} — book without a GP referral.`,
+  );
   return {
     title,
     description,

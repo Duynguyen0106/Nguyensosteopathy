@@ -6,7 +6,7 @@ import { AuthorBio } from "@/components/AuthorBio";
 import { BlogRichText } from "@/components/BlogRichText";
 import { ButtonLink } from "@/components/Button";
 import { categoryToId, getAllPosts, getPost } from "@/lib/blog";
-import { breadcrumbJsonLd, trimDescription } from "@/lib/seo";
+import { breadcrumbJsonLd, fitSerpTitle, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = {
@@ -32,8 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonicalPath = `/blog/${post.slug}`;
   const canonicalUrl = `${site.websiteUrl}${canonicalPath}`;
   const description = trimDescription(post.description);
+  const title = fitSerpTitle(post.title);
   return {
-    title: post.title,
+    title,
     description,
     keywords: post.keywords,
     robots: {
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: { canonical: canonicalUrl },
     openGraph: {
-      title: post.title,
+      title,
       description,
       type: "article",
       url: canonicalUrl,

@@ -7,7 +7,7 @@ import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Osteopath Fees & Prices in Woolwich",
   description:
-    "Clear osteopathy fees in Woolwich SE18: initial consultation £75, follow-up £60, focused shockwave £90, deep tissue massage £60. 10% NHS & student discount…",
+    "Clear osteopathy fees in Woolwich SE18: initial £75, follow-up £60, home visits £120 / £100, shockwave £90, deep tissue £60. 10% NHS & student discount.",
   alternates: {
     canonical: "/fees",
     languages: {
@@ -20,13 +20,14 @@ export const metadata: Metadata = {
     "osteopath Woolwich prices",
     "osteopath Woolwich fees",
     "osteopathy cost SE18",
+    "home visit osteopath price Woolwich",
     "shockwave therapy price Woolwich",
     "Nguyen's Osteopathic Clinic pricing",
   ],
   openGraph: {
     title: "Osteopath Fees & Prices in Woolwich",
     description:
-      "Clear osteopathy fees in Woolwich SE18: initial £75, follow-up £60, focused shockwave £90, deep tissue £60. 10% NHS & student discount.",
+      "Clear osteopathy fees in Woolwich SE18: initial £75, follow-up £60, home visits £120 / £100, shockwave £90. 10% NHS & student discount.",
     url: "/fees",
     images: [defaultOgImage],
   },
@@ -139,6 +140,13 @@ export default function FeesPage() {
 
           <p className="mt-6 text-sm text-slate-600">
             Guides:{" "}
+            <Link
+              href="/services/home-visits"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Home visits
+            </Link>
+            {" · "}
             <Link
               href="/services/focused-shockwave"
               className="font-semibold text-teal hover:text-teal-dark"

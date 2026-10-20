@@ -29,6 +29,7 @@ export const viServiceLabels: Record<string, string> = {
   "pregnancy-support": "Hỗ trợ thai kỳ",
   "cranial-therapy": "Liệu pháp sọ",
   "paediatric-care": "Nhi khoa",
+  "home-visits": "Khám tại nhà",
 };
 
 export const viFooterLabels: Record<string, string> = {

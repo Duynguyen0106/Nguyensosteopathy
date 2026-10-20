@@ -32,6 +32,7 @@ export const siteMapGroups = [
       { href: "/services/cranial-therapy", label: "Cranial osteopathy" },
       { href: "/services/acupuncture-electro", label: "Medical acupuncture" },
       { href: "/services/deep-tissue-massage", label: "Deep tissue massage" },
+      { href: "/services/home-visits", label: "Home visits" },
       { href: "/desk-pain", label: "Desk & office pain" },
       { href: "/cupping", label: "Cupping add-on" },
     ],

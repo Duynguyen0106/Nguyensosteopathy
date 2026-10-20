@@ -95,5 +95,13 @@ export function ServiceIcon({
           <path d="M8.5 15.5 6.5 14M15.5 15.5l2-1.5" />
         </svg>
       );
+    case "home":
+      return (
+        <svg {...common}>
+          <path d="M4 11.5 12 4l8 7.5" />
+          <path d="M6.5 10.5V20h11V10.5" />
+          <path d="M10 20v-5.5h4V20" />
+        </svg>
+      );
   }
 }

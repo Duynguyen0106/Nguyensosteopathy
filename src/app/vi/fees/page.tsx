@@ -7,7 +7,7 @@ import { pricing, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Bảng giá osteopathy Woolwich",
   description:
-    "Bảng giá osteopathy tại Woolwich SE18: khám ban đầu £75, tái khám £60, shockwave £90. Giảm 10% NHS & sinh viên. Đặt lịch bằng tiếng Việt hoặc Anh.",
+    "Bảng giá osteopathy tại Woolwich SE18: khám ban đầu £75, tái khám £60, khám tại nhà £120 / £100, shockwave £90. Giảm 10% NHS & sinh viên. Đặt lịch tiếng Việt hoặc Anh.",
   alternates: {
     canonical: "/vi/fees",
     languages: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: pageOpenGraph({
     title: "Bảng giá osteopathy Woolwich",
     description:
-      "Bảng giá osteopathy tại Woolwich SE18: khám ban đầu £75, tái khám £60, shockwave £90. Giảm 10% NHS & sinh viên.",
+      "Bảng giá osteopathy Woolwich SE18: khám ban đầu £75, tái khám £60, khám tại nhà £120 / £100, shockwave £90. Giảm 10% NHS & sinh viên.",
     url: "/vi/fees",
     images: [defaultOgImage],
     locale: "vi_VN",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bảng giá osteopathy Woolwich",
     description:
-      "Bảng giá osteopathy tại Woolwich SE18: khám ban đầu £75, tái khám £60, shockwave £90. Giảm 10% NHS & sinh viên.",
+      "Bảng giá osteopathy Woolwich SE18: khám ban đầu £75, tái khám £60, khám tại nhà £120 / £100, shockwave £90. Giảm 10% NHS & sinh viên.",
     images: [defaultOgImage.url],
   },
 };
@@ -42,6 +42,9 @@ const viLabels: Record<string, string> = {
   "Acupuncture / Electroacupuncture": "Châm cứu / điện châm (add-on)",
   "Deep Tissue Massage Therapy": "Massage mô sâu",
   "Cupping Therapy Add-on": "Giác hơi (add-on)",
+  "Home Visit — Initial Consultation & Treatment":
+    "Khám tại nhà — ban đầu & điều trị",
+  "Home Visit — Follow-up Treatment": "Khám tại nhà — tái khám",
 };
 
 export default function VietnameseFeesPage() {

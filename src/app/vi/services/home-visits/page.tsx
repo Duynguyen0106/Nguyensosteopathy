@@ -175,6 +175,14 @@ export default function VietnameseHomeVisitsPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={site.phoneHref}>Gọi ngay</ButtonLink>
+            <ButtonLink
+              href={site.whatsappUrl}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </ButtonLink>
             <ButtonLink href="/vi/fees" variant="secondary">
               Bảng giá
             </ButtonLink>

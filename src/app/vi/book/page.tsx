@@ -74,7 +74,9 @@ export default function VietnameseBookPage() {
             Ngày nhận lịch
           </p>
           <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-            {site.booking.note}
+            Ngày nhận lịch osteopathy: Thứ Hai, Thứ Ba, Thứ Năm, Thứ Sáu và Thứ
+            Bảy (đóng Thứ Tư và Chủ Nhật). Lịch trực tuyến luôn hiển thị khung
+            giờ còn trống.
           </p>
           <p className="mt-3 text-sm text-slate-600">
             Khám tại nhà?{" "}

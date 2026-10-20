@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
-import { bookHref } from "@/lib/seo-strategy";
+import { bookHref, moneyPageFaqs } from "@/lib/seo-strategy";
 import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -67,11 +68,28 @@ export default function FeesPage() {
     })),
   };
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: moneyPageFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="bg-slate-50">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(offersLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-4 pt-12 pb-14 sm:px-5 sm:pt-14 sm:pb-16 md:px-8 md:pt-20 md:pb-20">
@@ -195,6 +213,19 @@ export default function FeesPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="font-display text-2xl text-navy md:text-3xl">
+            Booking questions
+          </h2>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+            Fees are confirmed before treatment. These answers help you choose
+            the right appointment type for Woolwich SE18.
+          </p>
+          <FaqAccordion items={moneyPageFaqs} />
         </div>
       </section>
 

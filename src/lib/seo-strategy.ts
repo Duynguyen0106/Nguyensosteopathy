@@ -223,6 +223,28 @@ export const monthlyReviewChecklist = [
   "Treow/analytics: bookings with utm_medium=seo",
   "Citation spot-check: Yell/Apple/Bing hours match site.ts",
   "Do not mass-produce thin condition/blog pages",
+  "Only after winners identified: competitor-gap blog topics",
+  "Optional: short GBP walk-in video from Powis Street pharmacy entrance",
+] as const;
+
+/** Four weekly GBP post drafts — rotate; always include a booking CTA. */
+export const gbpWeeklyPostDrafts = [
+  {
+    theme: "Book online",
+    body: `Looking for an osteopath in Woolwich SE18? Book online with Austin Duy Nguyen (GOsC) inside St James Pharmacy, 52 Powis Street — no GP referral needed.\n\nBook: ${site.websiteUrl}/book`,
+  },
+  {
+    theme: "Home visits",
+    body: `Home-visit osteopathy near Woolwich when clinic travel is hard. Initial visit £120 (60 min); follow-up £100 (30 min). Message us to confirm your address.\n\nDetails: ${site.websiteUrl}/services/home-visits`,
+  },
+  {
+    theme: "Vietnamese care",
+    body: `Cần osteopath nói tiếng Việt tại Woolwich? Austin Duy Nguyen khám bằng tiếng Việt hoặc tiếng Anh — trong St James Pharmacy, Powis Street SE18.\n\nĐặt lịch: ${site.websiteUrl}/vi/book`,
+  },
+  {
+    theme: "Shockwave",
+    body: `Stubborn heel, elbow or Achilles pain in Woolwich? Focused shockwave (LI-ESWT) is available after clinical screening — £90 per session.\n\nLearn more: ${site.websiteUrl}/services/focused-shockwave`,
+  },
 ] as const;
 
 /** GBP Q&A seeds — also used as FAQPage on /reviews and /find-us. */
@@ -266,4 +288,14 @@ export const localPackFaqs = [
     question: "How do I leave a Google review?",
     answer: `After your visit, open our Google reviews link and share honest feedback — it helps Woolwich neighbours choose care: ${site.googleReviewsUrl}`,
   },
+] as const;
+
+/**
+ * Short FAQ set for /book and /fees (Days 61–90) — subset of localPackFaqs
+ * so money pages answer conversion questions without duplicating the full pack.
+ */
+export const moneyPageFaqs = [
+  localPackFaqs[0], // GP referral
+  localPackFaqs[2], // bookable days
+  localPackFaqs[5], // home visits
 ] as const;

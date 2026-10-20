@@ -3,6 +3,9 @@ import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { BookingEmbed } from "@/components/BookingEmbed";
 import { ButtonLink } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
+import { moneyPageFaqs } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const bookDescription = `Book online with Nguyen's Osteopathic Clinic in Woolwich SE18. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath — no GP referral needed.`;
@@ -27,8 +30,25 @@ export const metadata: Metadata = {
 };
 
 export default function BookPage() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: moneyPageFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="bg-slate-50 pt-8 md:pt-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       <div className="mx-auto max-w-6xl px-5 pb-6 md:px-8 md:pb-8">
         <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
           Online booking
@@ -41,6 +61,15 @@ export default function BookPage() {
             <p className="mt-3 text-base leading-relaxed text-slate-600 md:text-lg">
               Reserve a slot that works for you. Prefer to speak first? Call or
               WhatsApp — we will help you choose the right appointment type.
+            </p>
+            <p className="mt-3 text-sm text-slate-500">
+              <Link
+                href="/vi/book"
+                className="font-semibold text-teal hover:text-teal-dark"
+                hrefLang="vi-VN"
+              >
+                Tiếng Việt →
+              </Link>
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
@@ -122,7 +151,7 @@ export default function BookPage() {
         data-booking-widget="treow"
         itemScope
         itemType="https://schema.org/ReserveAction"
-        className="mx-auto max-w-6xl pb-16 md:px-8 md:pb-24"
+        className="mx-auto max-w-6xl pb-10 md:px-8 md:pb-14"
       >
         <meta itemProp="name" content="Book an osteopathy appointment online" />
         <link itemProp="target" href={site.bookingUrl} />
@@ -152,6 +181,19 @@ export default function BookPage() {
           </ButtonLink>
         </div>
       </div>
+
+      <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-20">
+        <h2 className="font-display text-2xl text-navy md:text-3xl">
+          Before you book — quick answers
+        </h2>
+        <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+          Common questions from Woolwich patients booking osteopathy at 52 Powis
+          Street.
+        </p>
+        <FaqAccordion items={moneyPageFaqs} />
+      </section>
+
+      <TopicClusterNav clusterId="access" />
     </div>
   );
 }

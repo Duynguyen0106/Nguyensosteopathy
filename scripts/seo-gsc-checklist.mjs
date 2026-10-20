@@ -47,19 +47,15 @@ for (const [priority, path] of moneyPages) {
 console.log("\n3. Track queries monthly:");
 for (const q of queries) console.log(`   - ${q}`);
 console.log(`
-4. GBP (manual):
-   - Categories, photos, weekly post, Q&A from /reviews + /find-us FAQs
-   - Hours = bookable osteopathy (Mon/Tue/Thu/Fri/Sat)
-   - Review ask after visits (WhatsApp + Google reviews link)
+4. GBP (manual) — full copy pack:
+   npm run seo:gbp
 
-5. Citations:
-   - Yell / Apple Maps / Bing Places NAP + hours match site.ts
-   - Fix any Wednesday-open mismatches
+5. Citations — NAP checklist + fetch smoke:
+   npm run seo:citations
 
-6. Monthly measure (iterate winners, do not mass-produce pages):
-   - GBP calls / directions / website clicks vs prior month
-   - Organic bookings with utm_medium=seo (Treow/analytics)
-   - Review velocity + reply within 48h
-   - Money-page CTR for tracked queries; refresh rising URLs first
-   - Ignore homepage redirect trio; watch discovered-not-indexed promo noise
+6. Live readiness after deploy:
+   npm run seo:live
+
+7. Monthly compound (Days 61–90):
+   npm run seo:monthly
 `);

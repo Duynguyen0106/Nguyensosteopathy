@@ -118,7 +118,7 @@ export const site = {
    * content dates. Bump when major site copy/structure ships — do not use
    * request-time `new Date()` in sitemap.ts (forces a dynamic route).
    */
-  sitemapDefaultLastmod: "2026-10-21",
+  sitemapDefaultLastmod: "2026-10-22",
   address: {
     line1: "52 Powis Street",
     line2: "Woolwich, London, SE18 6LQ",

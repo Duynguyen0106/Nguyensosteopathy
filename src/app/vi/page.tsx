@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -135,7 +137,7 @@ export default function VietnamesePage() {
             mình được hiểu, không chỉ được điều trị.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
-            <ButtonLink href="/book">Đặt lịch khám</ButtonLink>
+            <ButtonLink href={bookHref("vi")}>Đặt lịch khám</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="onDarkOutline">
               Gọi {site.phone}
             </ButtonLink>
@@ -194,12 +196,19 @@ export default function VietnamesePage() {
               khăn.
             </p>
           </div>
-          <p className="mt-6">
+          <p className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
+            <Link
+              href="/vi/about"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Về Austin (tiếng Việt) →
+            </Link>
             <Link
               href="/about"
               className="font-semibold text-teal hover:text-teal-dark"
+              hrefLang="en-GB"
             >
-              Đọc thêm câu chuyện (tiếng Anh) →
+              English story →
             </Link>
           </p>
         </div>
@@ -256,38 +265,49 @@ export default function VietnamesePage() {
               ))}
             </ul>
             <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink href="/services">Xem dịch vụ (EN)</ButtonLink>
-              <ButtonLink href="/osteopathy" variant="secondary">
-                Osteopathy là gì?
-              </ButtonLink>
-              <ButtonLink href="/desk-pain" variant="secondary">
-                Đau do ngồi máy tính
-              </ButtonLink>
-              <ButtonLink href="/services/back-neck-pain" variant="secondary">
+              <ButtonLink href="/vi/services/back-neck-pain">
                 Đau lưng &amp; cổ
               </ButtonLink>
-              <ButtonLink href="/services/focused-shockwave" variant="secondary">
-                Shockwave
+              <ButtonLink href="/vi/services/home-visits" variant="secondary">
+                Khám tại nhà
               </ButtonLink>
               <ButtonLink href="/vi/fees" variant="secondary">
                 Bảng giá
               </ButtonLink>
+              <ButtonLink href="/services/focused-shockwave" variant="secondary">
+                Shockwave (EN)
+              </ButtonLink>
+              <ButtonLink href="/services" variant="secondary">
+                Tất cả dịch vụ (EN)
+              </ButtonLink>
             </div>
             <p className="mt-5 text-sm text-slate-600">
               Thêm:{" "}
-              <Link href="/services/pregnancy-support" className="font-semibold text-teal hover:text-teal-dark">
-                Thai kỳ
+              <Link
+                href="/vi/about"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Về Austin
               </Link>
               {" · "}
-              <Link href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
-                Tình trạng thường gặp
-              </Link>
-              {" · "}
-              <Link href="/vi/find-us" className="font-semibold text-teal hover:text-teal-dark">
+              <Link
+                href="/vi/find-us"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
                 Đường đến phòng khám
               </Link>
               {" · "}
-              <Link href="/nhs-discount" className="font-semibold text-teal hover:text-teal-dark">
+              <Link
+                href="/conditions"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Tình trạng thường gặp
+              </Link>
+              {" · "}
+              <Link
+                href="/nhs-discount"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
                 Giảm giá NHS / sinh viên
               </Link>
             </p>
@@ -407,7 +427,7 @@ export default function VietnamesePage() {
               {site.address.line2}
             </p>
             <p className="mt-4 text-sm text-slate-500">
-              Bảng giá tiếng Việt:{" "}
+              Bảng giá:{" "}
               <Link
                 href="/vi/fees"
                 className="font-semibold text-teal hover:text-teal-dark"
@@ -423,18 +443,18 @@ export default function VietnamesePage() {
                 /vi/find-us
               </Link>
               {" · "}
-              Đặt lịch (lịch Anh):{" "}
+              Đặt lịch:{" "}
               <Link
-                href="/book"
+                href="/vi/book"
                 className="font-semibold text-teal hover:text-teal-dark"
               >
-                /book
+                /vi/book
               </Link>
               . Cần hỗ trợ tiếng Việt? Gọi hoặc WhatsApp trước khi đến.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href="/book">Đặt lịch online</ButtonLink>
+            <ButtonLink href={bookHref("vi")}>Đặt lịch online</ButtonLink>
             <ButtonLink
               href={site.whatsappUrl}
               variant="secondary"
@@ -455,6 +475,11 @@ export default function VietnamesePage() {
           </div>
         </div>
       </section>
+
+      <TopicClusterNav
+        clusterId="vietnamese"
+        intro="Các trang tiếng Việt — đặt lịch, dịch vụ, bảng giá và địa chỉ."
+      />
     </div>
   );
 }

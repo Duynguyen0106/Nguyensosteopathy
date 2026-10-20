@@ -10,7 +10,14 @@ const bookDescription = `Book online with Nguyen's Osteopathic Clinic in Woolwic
 export const metadata: Metadata = {
   title: "Book an Osteopathy Appointment in Woolwich",
   description: bookDescription,
-  alternates: { canonical: "/book" },
+  alternates: {
+    canonical: "/book",
+    languages: {
+      "en-GB": "/book",
+      "vi-VN": "/vi/book",
+      "x-default": "/book",
+    },
+  },
   openGraph: {
     title: "Book an Osteopathy Appointment in Woolwich",
     description: bookDescription,

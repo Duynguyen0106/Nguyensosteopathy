@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { LazyMapsEmbed } from "@/components/LazyMapsEmbed";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
+import { bookHref, localPackFaqs } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -79,11 +81,28 @@ export default function FindUsPage() {
     mainEntity: { "@id": `${site.websiteUrl}/#clinic` },
   };
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: localPackFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="bg-slate-50">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
@@ -116,7 +135,7 @@ export default function FindUsPage() {
             >
               Open in Maps
             </ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
+            <ButtonLink href={bookHref("find-us")} variant="secondary">
               Book an appointment
             </ButtonLink>
             <ButtonLink href="/areas" variant="secondary">
@@ -286,7 +305,7 @@ export default function FindUsPage() {
             />
           </div>
           <div className="mt-10 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("find-us")}>Book online</ButtonLink>
             <ButtonLink href="/contact" variant="secondary">
               Contact
             </ButtonLink>
@@ -296,6 +315,32 @@ export default function FindUsPage() {
           </div>
         </div>
       </section>
+
+      <section className="border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="font-display text-3xl text-navy md:text-4xl">
+            Local visit questions
+          </h2>
+          <p className="mt-3 max-w-2xl text-base text-slate-600">
+            Clear answers for Woolwich locals — also useful as Google Business
+            Profile Q&amp;A seeds.
+          </p>
+          <ul className="mt-10 grid gap-8 md:grid-cols-2">
+            {localPackFaqs.map((item) => (
+              <li key={item.question}>
+                <h3 className="text-lg font-semibold text-navy">
+                  {item.question}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600 md:text-base">
+                  {item.answer}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <TopicClusterNav clusterId="access" />
     </div>
   );
 }

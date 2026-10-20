@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
+import { bookHref } from "@/lib/seo-strategy";
 import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -94,7 +96,7 @@ export default function FeesPage() {
             </Link>
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <ButtonLink href="/book" className="w-full sm:w-auto">
+            <ButtonLink href={bookHref("fees")} className="w-full sm:w-auto">
               Book online
             </ButtonLink>
             <ButtonLink
@@ -212,13 +214,15 @@ export default function FeesPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book an appointment</ButtonLink>
+            <ButtonLink href={bookHref("fees")}>Book an appointment</ButtonLink>
             <ButtonLink href="/nhs-discount" variant="secondary">
               NHS &amp; student discount
             </ButtonLink>
           </div>
         </div>
       </section>
+
+      <TopicClusterNav clusterId="specialty" />
     </div>
   );
 }

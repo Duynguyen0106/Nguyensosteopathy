@@ -2,13 +2,22 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Austin Duy Nguyen",
   description:
     "Meet Austin Duy Nguyen — GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (Westminster)…",
-  alternates: { canonical: "/about" },
+  alternates: {
+    canonical: "/about",
+    languages: {
+      "en-GB": "/about",
+      "vi-VN": "/vi/about",
+      "x-default": "/about",
+    },
+  },
   keywords: [
     "Vietnamese osteopath UK",
     "Austin Duy Nguyen",
@@ -89,15 +98,16 @@ export default function AboutPage() {
             A name chosen so our community can find care — and feel understood.
           </p>
           <div className="about-rise about-rise-delay-3 mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
-            <ButtonLink href="/book">Book with Austin</ButtonLink>
+            <ButtonLink href={bookHref("about")}>Book with Austin</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="onDarkOutline">
               Call {site.phone}
             </ButtonLink>
           </div>
           <p className="about-rise about-rise-delay-3 mt-4 text-sm text-white/80">
             <Link
-              href="/vi"
+              href="/vi/about"
               className="font-semibold text-teal-mist underline-offset-4 hover:underline"
+              hrefLang="vi-VN"
             >
               Đọc bằng tiếng Việt
             </Link>
@@ -483,7 +493,7 @@ export default function AboutPage() {
               </p>
               <div className="mt-5 flex flex-wrap gap-4">
                 <Link
-                  href="/book"
+                  href={bookHref("about")}
                   className="inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
                 >
                   Book on this site →
@@ -513,7 +523,7 @@ export default function AboutPage() {
             online or call — no GP referral needed.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("about")}>Book online</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="onDarkOutline">
               Call {site.phone}
             </ButtonLink>
@@ -526,6 +536,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <TopicClusterNav clusterId="vietnamese" />
     </div>
   );
 }

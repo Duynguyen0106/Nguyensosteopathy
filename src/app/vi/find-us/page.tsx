@@ -86,7 +86,7 @@ export default function VietnameseFindUsPage() {
             >
               Mở Google Maps
             </ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
+            <ButtonLink href="/vi/book" variant="secondary">
               Đặt lịch
             </ButtonLink>
             <ButtonLink href="/vi" variant="secondary">

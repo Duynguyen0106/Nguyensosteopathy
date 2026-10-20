@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
 import {
   getAllServiceAreaSlugs,
   getServiceArea,
@@ -12,6 +13,7 @@ import {
   defaultOgImage,
   enrichDescription,
 } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -100,9 +102,14 @@ export default async function AreaPage({ params }: Props) {
             {area.heroLine}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book from {area.name}</ButtonLink>
+            <ButtonLink href={bookHref("areas")}>
+              Book from {area.name}
+            </ButtonLink>
             <ButtonLink href="/find-us" variant="secondary">
               Find us &amp; parking
+            </ButtonLink>
+            <ButtonLink href="/services/home-visits" variant="secondary">
+              Home visits
             </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
@@ -247,6 +254,8 @@ export default async function AreaPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <TopicClusterNav clusterId="access" />
     </div>
   );
 }

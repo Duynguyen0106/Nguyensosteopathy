@@ -470,8 +470,7 @@ const html = `<!DOCTYPE html>
         <p class="contact">
           <strong>${PHONE}</strong>
           ${EMAIL}<br />
-          ${SITE}<br />
-          Mon, Tue, Thu, Fri 9–6 · Sat 9–5:30
+          ${SITE}
         </p>
       </div>
     </aside>

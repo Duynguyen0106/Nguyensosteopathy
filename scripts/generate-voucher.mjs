@@ -272,6 +272,13 @@ const html = `<!DOCTYPE html>
       border-bottom: 0.3mm solid var(--navy);
       min-height: 4.2mm;
     }
+    .field .filled {
+      border-bottom: 0.3mm solid var(--navy);
+      min-height: 4.2mm;
+      font-weight: 700;
+      color: var(--navy);
+      padding-bottom: 0.4mm;
+    }
     .sessions {
       margin-top: 3.5mm;
     }
@@ -431,7 +438,7 @@ const html = `<!DOCTYPE html>
         <div class="field"><span class="label">To</span><span class="line"></span></div>
         <div class="field"><span class="label">From</span><span class="line"></span></div>
         <div class="field"><span class="label">Code</span><span class="line"></span></div>
-        <div class="field"><span class="label">Issued</span><span class="line"></span></div>
+        <div class="field"><span class="label">Issued</span><span class="filled">7th November 2026</span></div>
       </div>
       <div class="sessions">
         <p class="label">Session tracker</p>

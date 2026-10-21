@@ -134,6 +134,12 @@ const groups = [
         label: "Clinic leaflet",
         detail: "Printable overview of services, fees, and how to book.",
       },
+      {
+        href: "/voucher",
+        label: "4-session care voucher",
+        detail:
+          "Printable gift voucher for four consultation & treatment visits.",
+      },
     ],
   },
   {

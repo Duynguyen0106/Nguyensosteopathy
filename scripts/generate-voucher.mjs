@@ -3,9 +3,8 @@
  * Double-sided gift voucher (148 × 105 mm, A6 landscape) for
  * Nguyen's Osteopathic Clinic — 4-session care package.
  *
- * Includes consultation & treatment; modality (osteopathy / acupuncture /
- * focused shockwave) chosen clinically for the patient's condition.
- * No fixed price printed — fill in or leave blank at issue.
+ * Includes consultation & treatment covering osteopathy, acupuncture, and
+ * focused shockwave. Total value £500.
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -151,6 +150,24 @@ const html = `<!DOCTYPE html>
       text-transform: uppercase;
       color: var(--teal-bright);
       margin-top: 1.5mm;
+    }
+    .badge .value {
+      margin-top: 2.2mm;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 16pt;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--white);
+    }
+    .badge .value small {
+      display: block;
+      margin-top: 0.8mm;
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
     }
     .front-main {
       position: relative;
@@ -379,16 +396,16 @@ const html = `<!DOCTYPE html>
       <div class="badge">
         <p class="eyebrow">Gift voucher</p>
         <p class="count">4<span>Sessions</span></p>
+        <p class="value">£500<small>Total value</small></p>
       </div>
     </div>
     <div class="front-main">
       <h1>Care package for recovery</h1>
       <p class="lead">
-        Four clinic visits including consultation and treatment.
-        Your clinician chooses osteopathy, acupuncture, or focused shockwave
-        according to your condition — not a one-size plan.
+        Four clinic visits including consultation and treatment —
+        osteopathy, acupuncture, and focused shockwave.
       </p>
-      <div class="modalities" aria-label="Modalities included as clinically appropriate">
+      <div class="modalities" aria-label="Treatments included">
         <span>Osteopathy</span>
         <span>Acupuncture</span>
         <span>Shockwave</span>
@@ -396,8 +413,8 @@ const html = `<!DOCTYPE html>
     </div>
     <div class="front-foot">
       <p class="note">
-        Redeemable at Nguyen&apos;s Osteopathic Clinic · GOsC-registered care ·
-        No GP referral needed
+        Total value £500 · Redeemable at Nguyen&apos;s Osteopathic Clinic ·
+        GOsC-registered care · No GP referral needed
       </p>
       <p class="place">Woolwich SE18</p>
     </div>
@@ -426,9 +443,9 @@ const html = `<!DOCTYPE html>
         </div>
       </div>
       <p class="terms">
-        <strong>Includes:</strong> 4× consultation &amp; treatment visits.
-        Modality (osteopathy, acupuncture, and/or focused shockwave) is selected
-        clinically for the patient&apos;s presentation — not all three every visit.
+        <strong>Includes:</strong> 4× consultation &amp; treatment visits
+        (osteopathy, acupuncture, focused shockwave).
+        <strong>Total value £500.</strong>
         Non-transferable once treatment has started · Valid 12 months from issue
         unless marked otherwise · 24 hours&apos; notice for cancellations · Subject to
         practitioner availability at ${ADDRESS}.
@@ -438,11 +455,11 @@ const html = `<!DOCTYPE html>
       <div class="includes">
         <h3>What&apos;s included</h3>
         <ul>
-          <li>Initial assessment &amp; plan</li>
-          <li>Hands-on osteopathy as needed</li>
-          <li>Acupuncture when indicated</li>
-          <li>Focused shockwave when suitable</li>
-          <li>Home advice between visits</li>
+          <li>Total value £500</li>
+          <li>4 consultation &amp; treatment visits</li>
+          <li>Osteopathy</li>
+          <li>Acupuncture</li>
+          <li>Focused shockwave</li>
         </ul>
       </div>
       <div>

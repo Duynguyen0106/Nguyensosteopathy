@@ -7,13 +7,13 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "4-Session Care Voucher",
   description:
-    "Download the Nguyen's Osteopathic Clinic 4-session gift voucher PDF — consultation and treatment with osteopathy, acupuncture, or focused shockwave as clinically appropriate.",
+    "Download the Nguyen's Osteopathic Clinic 4-session gift voucher PDF (£500 total value) — consultation and treatment including osteopathy, acupuncture, and focused shockwave.",
   alternates: { canonical: "/voucher" },
   robots: { index: false, follow: true },
   openGraph: {
     title: "4-Session Care Voucher | Nguyen's Osteopathic Clinic",
     description:
-      "Print-ready gift voucher: four clinic visits including consultation and treatment in Woolwich SE18.",
+      "Print-ready gift voucher: four clinic visits, £500 total value — Woolwich SE18.",
     url: "/voucher",
     images: [defaultOgImage],
   },
@@ -34,9 +34,8 @@ export default function VoucherPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             A print-ready gift voucher for four clinic visits — consultation and
-            treatment included. Osteopathy, acupuncture, or focused shockwave is
-            chosen for the patient&apos;s condition, not as a fixed menu every
-            session.
+            treatment included (osteopathy, acupuncture, and focused shockwave).
+            Total value £500.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={pdfHref} target="_blank" rel="noopener noreferrer">
@@ -60,14 +59,13 @@ export default function VoucherPage() {
               <span className="text-teal" aria-hidden>
                 ✓
               </span>
-              Four visits with consultation and treatment
+              Four visits with consultation and treatment — total value £500
             </li>
             <li className="flex gap-2">
               <span className="text-teal" aria-hidden>
                 ✓
               </span>
-              Osteopathy, acupuncture, and/or focused shockwave when clinically
-              suitable
+              Osteopathy, acupuncture, and focused shockwave
             </li>
             <li className="flex gap-2">
               <span className="text-teal" aria-hidden>

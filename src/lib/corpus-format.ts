@@ -267,6 +267,36 @@ export function formatCorpusSection(
       .filter(Boolean),
   );
 
+  // Promote ALL-CAPS sublabels (INCOMPATIBILITIES, etc.) into split groups.
+  const sublabelIdx = merged.findIndex((l) =>
+    /^(INCOMPATIBILITIES|HERB\/DRUG INTERACTIONS|NOTES|CAUTIONS)$/i.test(l),
+  );
+  if (sublabelIdx > 0) {
+    const groups: { title: string; items: string[] }[] = [
+      { title: "Notes", items: merged.slice(0, sublabelIdx) },
+    ];
+    let current = merged[sublabelIdx];
+    let bucket: string[] = [];
+    for (const line of merged.slice(sublabelIdx + 1)) {
+      if (/^(INCOMPATIBILITIES|HERB\/DRUG INTERACTIONS|NOTES|CAUTIONS)$/i.test(line)) {
+        if (bucket.length) {
+          groups.push({
+            title: formatCorpusHeading(current),
+            items: bucket,
+          });
+        }
+        current = line;
+        bucket = [];
+      } else {
+        bucket.push(line);
+      }
+    }
+    if (bucket.length) {
+      groups.push({ title: formatCorpusHeading(current), items: bucket });
+    }
+    return { kind: "split", groups: groups.filter((g) => g.items.length) };
+  }
+
   // Short label-like lines → list; longer prose → paragraphs
   const short = merged.filter((l) => l.length < 80 && !/[.]/.test(l));
   if (merged.length >= 4 && short.length >= merged.length * 0.7) {

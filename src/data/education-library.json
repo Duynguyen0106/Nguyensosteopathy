@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T16:43:14.167Z",
+  "generatedAt": "2026-10-25T16:49:09.591Z",
   "source": "private-paraphrase-from-adobe-qrg-corpus",
   "note": "Original clinic-voice articles. OCR prose is not included.",
   "count": 230,
@@ -6665,19 +6665,20 @@
       ]
     },
     {
-      "slug": "p130-calcium",
+      "slug": "p130-krill-oil",
       "sourcePage": 130,
       "section": "products-a-z",
-      "category": "minerals",
-      "topicKey": "calcium",
-      "topicTitle": "Calcium",
+      "category": "fatty-acids",
+      "topicKey": "krill-oil",
+      "topicTitle": "Krill Oil",
       "variantLabel": "Sheet 130",
       "needsReview": false,
-      "title": "Calcium",
-      "summary": "Clinic education notes on Calcium (also touching Calcium, Energy) — for patients and practitioners, not a product recommendation.",
+      "title": "Krill Oil",
+      "summary": "Clinic education notes on Krill Oil (also touching Krill Oil, Calcium, Energy) — for patients and practitioners, not a product recommendation.",
       "status": "published",
       "topics": [
         "Cholesterol",
+        "Krill Oil",
         "Calcium",
         "Energy"
       ],
@@ -6685,19 +6686,19 @@
       "sections": [
         {
           "heading": "In plain English",
-          "body": "Calcium often appears in conversations about diet quality, recovery, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements only as optional adjuncts after understanding load, sleep, and medical context — never as a stand-alone fix for back, neck, or joint pain."
+          "body": "Krill Oil often appears in conversations about diet quality, recovery, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements only as optional adjuncts after understanding load, sleep, and medical context — never as a stand-alone fix for back, neck, or joint pain."
         },
         {
           "heading": "Why it comes up in clinic",
-          "body": "People may ask about Calcium because of marketing claims, pharmacy advice, or something a friend suggested. Useful questions include: What problem are you hoping to change? Have bloods or a GP already reviewed diet? Are you on medicines that interact with concentrates?"
+          "body": "People may ask about Krill Oil because of marketing claims, pharmacy advice, or something a friend suggested. Useful questions include: What problem are you hoping to change? Have bloods or a GP already reviewed diet? Are you on medicines that interact with concentrates?"
         },
         {
           "heading": "Patient takeaway",
-          "body": "If you are curious about Calcium, bring the product label or a photo to your appointment or speak with a pharmacist. Food-first approaches and rehab loading usually matter more for musculoskeletal recovery than any single capsule."
+          "body": "If you are curious about Krill Oil, bring the product label or a photo to your appointment or speak with a pharmacist. Food-first approaches and rehab loading usually matter more for musculoskeletal recovery than any single capsule."
         },
         {
           "heading": "Practitioner note",
-          "body": "Use this entry as a discussion scaffold around Cholesterol, Calcium, Energy. Confirm medical history, allergy, pregnancy/breastfeeding, and concurrent medicines before any patient self-supplements. Document advice boundaries clearly — osteopaths do not prescribe medicines."
+          "body": "Use this entry as a discussion scaffold around Cholesterol, Krill Oil, Calcium, Energy. Confirm medical history, allergy, pregnancy/breastfeeding, and concurrent medicines before any patient self-supplements. Document advice boundaries clearly — osteopaths do not prescribe medicines."
         }
       ],
       "caveats": [
@@ -8564,38 +8565,39 @@
       ]
     },
     {
-      "slug": "p167-calcium",
+      "slug": "p167-vitamin-d",
       "sourcePage": 167,
       "section": "products-a-z",
-      "category": "minerals",
-      "topicKey": "calcium",
-      "topicTitle": "Calcium",
+      "category": "vitamins",
+      "topicKey": "vitamin-d",
+      "topicTitle": "Vitamin D",
       "variantLabel": "Sheet 167",
       "needsReview": false,
-      "title": "Calcium",
-      "summary": "Clinic education notes on Calcium (also touching Calcium) — for patients and practitioners, not a product recommendation.",
+      "title": "Vitamin D",
+      "summary": "Clinic education notes on Vitamin D (also touching Vitamin D, Calcium) — for patients and practitioners, not a product recommendation.",
       "status": "published",
       "topics": [
         "Blood Pressure",
+        "Vitamin D",
         "Calcium"
       ],
       "mskRelevant": true,
       "sections": [
         {
           "heading": "In plain English",
-          "body": "Calcium often appears in conversations about diet quality, recovery, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements only as optional adjuncts after understanding load, sleep, and medical context — never as a stand-alone fix for back, neck, or joint pain."
+          "body": "Vitamin D often appears in conversations about diet quality, recovery, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements only as optional adjuncts after understanding load, sleep, and medical context — never as a stand-alone fix for back, neck, or joint pain."
         },
         {
           "heading": "Why it comes up in clinic",
-          "body": "People may ask about Calcium because of marketing claims, pharmacy advice, or something a friend suggested. Useful questions include: What problem are you hoping to change? Have bloods or a GP already reviewed diet? Are you on medicines that interact with concentrates?"
+          "body": "People may ask about Vitamin D because of marketing claims, pharmacy advice, or something a friend suggested. Useful questions include: What problem are you hoping to change? Have bloods or a GP already reviewed diet? Are you on medicines that interact with concentrates?"
         },
         {
           "heading": "Patient takeaway",
-          "body": "If you are curious about Calcium, bring the product label or a photo to your appointment or speak with a pharmacist. Food-first approaches and rehab loading usually matter more for musculoskeletal recovery than any single capsule."
+          "body": "If you are curious about Vitamin D, bring the product label or a photo to your appointment or speak with a pharmacist. Food-first approaches and rehab loading usually matter more for musculoskeletal recovery than any single capsule."
         },
         {
           "heading": "Practitioner note",
-          "body": "Use this entry as a discussion scaffold around Blood Pressure, Calcium. Confirm medical history, allergy, pregnancy/breastfeeding, and concurrent medicines before any patient self-supplements. Document advice boundaries clearly — osteopaths do not prescribe medicines."
+          "body": "Use this entry as a discussion scaffold around Blood Pressure, Vitamin D, Calcium. Confirm medical history, allergy, pregnancy/breastfeeding, and concurrent medicines before any patient self-supplements. Document advice boundaries clearly — osteopaths do not prescribe medicines."
         }
       ],
       "caveats": [
@@ -11415,8 +11417,8 @@
       "sourcePage": 223,
       "section": "reference",
       "category": "reference-forms",
-      "topicKey": "glutamine",
-      "topicTitle": "Glutamine",
+      "topicKey": "reference-glutamine",
+      "topicTitle": "Glutamine (label notes)",
       "variantLabel": "Sheet 223",
       "needsReview": false,
       "title": "Glutamine",
@@ -11511,8 +11513,8 @@
       "sourcePage": 225,
       "section": "reference",
       "category": "reference-forms",
-      "topicKey": "energy",
-      "topicTitle": "Energy",
+      "topicKey": "reference-energy",
+      "topicTitle": "Energy (label notes)",
       "variantLabel": "Sheet 225",
       "needsReview": false,
       "title": "Energy",
@@ -11604,8 +11606,8 @@
       "sourcePage": 227,
       "section": "reference",
       "category": "reference-forms",
-      "topicKey": "vitamin-a",
-      "topicTitle": "Vitamin A",
+      "topicKey": "reference-vitamin-a",
+      "topicTitle": "Vitamin A (label notes)",
       "variantLabel": "Sheet 227",
       "needsReview": false,
       "title": "Vitamin A",
@@ -11653,8 +11655,8 @@
       "sourcePage": 228,
       "section": "reference",
       "category": "reference-forms",
-      "topicKey": "inflammation",
-      "topicTitle": "Inflammation",
+      "topicKey": "reference-inflammation",
+      "topicTitle": "Inflammation (label notes)",
       "variantLabel": "Sheet 228",
       "needsReview": false,
       "title": "Inflammation",
@@ -11751,8 +11753,8 @@
       "sourcePage": 230,
       "section": "forms",
       "category": "reference-forms",
-      "topicKey": "amino-acid",
-      "topicTitle": "Amino Acid",
+      "topicKey": "reference-amino-acid",
+      "topicTitle": "Amino Acid (label notes)",
       "variantLabel": "Sheet 230",
       "needsReview": false,
       "title": "Amino Acid",

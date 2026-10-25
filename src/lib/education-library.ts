@@ -127,10 +127,11 @@ export const libraryTopicNutritionMap: Record<string, string> = {
   "krill-oil": "omega-3-inflammation",
   collagen: "collagen-tendons-joints",
   turmeric: "turmeric-curcumin-caveats",
-  sleep: "sleep-recovery-nutrients",
+  // sleep key rarely wins OCR primary; stress/insomnia cover the patient guide
   stress: "sleep-recovery-nutrients",
   insomnia: "sleep-recovery-nutrients",
-  electrolyte: "hydration-electrolytes-active",
+  // hydration guide: no electrolyte sheets in corpus — use sports-adjacent athlete theme
+  athlete: "hydration-electrolytes-active",
   glucosamine: "glucosamine-chondroitin-joints",
   chondroitin: "glucosamine-chondroitin-joints",
   protein: "protein-rehab-recovery",
@@ -192,6 +193,17 @@ export function getLibraryTopic(topicKey: string): LibraryTopic | undefined {
 export function getAllLibraryTopicKeys(): string[] {
   const keys = new Set(libraryArticles.map((article) => article.topicKey));
   return [...keys].sort((a, b) => a.localeCompare(b));
+}
+
+/**
+ * Topic hubs worth indexing: exclude needsReview stubs and single-sheet
+ * topics (those already surface as the sheet URL from the library index).
+ */
+export function getSitemapLibraryTopicKeys(): string[] {
+  return getAllLibraryTopicKeys().filter((key) => {
+    const topic = getLibraryTopic(key);
+    return Boolean(topic && !topic.needsReview && topic.sheetCount > 1);
+  });
 }
 
 export function getLibraryTopicsByCategory(): {

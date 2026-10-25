@@ -132,12 +132,18 @@ const KNOWN_TOPICS = [
   "vitamin b12",
   "vitamin b6",
   "vitamin c",
+  "vitamin d3",
+  "vitamin d2",
   "vitamin d",
+  "vit d3",
+  "vit d",
   "vitamin e",
   "vitamin k",
   "whey protein",
   "zinc",
   "zma",
+  "krill oil",
+  "krilloil",
   // ailments / themes
   "acid reflux",
   "anxiety",
@@ -221,8 +227,15 @@ const TOPIC_KEY_ALIASES = {
   "folic acid": "folic-acid",
   curcumin: "turmeric",
   turmeric: "turmeric",
-  "glucosamine": "glucosamine",
-  "chondroitin": "chondroitin",
+  glucosamine: "glucosamine",
+  chondroitin: "chondroitin",
+  "vitamin d3": "vitamin-d",
+  "vitamin d2": "vitamin-d",
+  "vitamin d": "vitamin-d",
+  "vit d3": "vitamin-d",
+  "vit d": "vitamin-d",
+  "krill oil": "krill-oil",
+  krilloil: "krill-oil",
 };
 
 /** Browse category for a canonical topic key. */
@@ -448,10 +461,16 @@ function titleCaseTopic(label) {
     "vitamin b6": "Vitamin B6",
     "vitamin b1": "Vitamin B1",
     "vitamin d": "Vitamin D",
+    "vitamin d3": "Vitamin D",
+    "vitamin d2": "Vitamin D",
+    "vit d": "Vitamin D",
+    "vit d3": "Vitamin D",
     "vitamin c": "Vitamin C",
     "vitamin e": "Vitamin E",
     "vitamin k": "Vitamin K",
     "vitamin a": "Vitamin A",
+    "krill oil": "Krill Oil",
+    krilloil: "Krill Oil",
   };
   const key = label.toLowerCase();
   if (special[key]) return special[key];
@@ -465,10 +484,13 @@ function extractTopics(page) {
   const hay = `${(page.headings || []).join(" ")} ${page.text || ""}`.toLowerCase();
   const found = [];
   for (const topic of KNOWN_TOPICS) {
-    const re = new RegExp(
-      `(^|[^a-z0-9])${topic.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^a-z0-9]|$)`,
-      "i",
-    );
+    const escaped = topic.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    // Vitamin D OCR often glues the next token ("vitamin dsis", "vitamin d5ug").
+    const trailing =
+      topic === "vitamin d" || topic === "vit d"
+        ? "(?:[^a-z0-9]|$|[a-z0-9])"
+        : "([^a-z0-9]|$)";
+    const re = new RegExp(`(^|[^a-z0-9])${escaped}${trailing}`, "i");
     if (re.test(hay)) found.push(topic);
     if (found.length >= 5) break;
   }
@@ -690,10 +712,14 @@ function buildArticle(page) {
     topicTitle = primary;
     category = "start-here";
   } else if (kind === "reference") {
-    topicKey = primaryTopic
+    // Namespace so reference/forms sheets do not collide with ingredient hubs.
+    const baseKey = primaryTopic
       ? canonicalTopicKey(primaryTopic)
       : `sheet-${String(pageNo).padStart(3, "0")}`;
-    topicTitle = primaryTopic || primary;
+    topicKey = `reference-${baseKey}`;
+    topicTitle = primaryTopic
+      ? `${primaryTopic} (label notes)`
+      : primary;
     category = "reference-forms";
   } else if (primaryTopic) {
     topicKey = canonicalTopicKey(primaryTopic);

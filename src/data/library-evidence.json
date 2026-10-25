@@ -1,0 +1,1480 @@
+{
+  "generatedAt": "2026-10-25T17:08:21.183Z",
+  "note": "Topic-level scientific evidence dossiers. Hand-curated; OCR/QRG prose is not included.",
+  "topics": [
+    {
+      "topicKey": "alpha-lipoic-acid",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "amino-acid",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "Amino-acid products range from single amino acids to blends. For rehab, whole-protein foods usually cover everyday needs.",
+      "claims": [
+        {
+          "id": "aa-food-first",
+          "statement": "Most rehab patients meet amino-acid needs through varied dietary protein rather than isolated amino-acid stacks.",
+          "audience": "both",
+          "grade": "moderate",
+          "summary": "Isolated amino acids have niche research uses; marketing stacks are a poor substitute for progressive loading and total nutrition quality.",
+          "referenceIds": [
+            "ref-ods-aa"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-ods-aa",
+          "title": "Dietary Supplements for Exercise and Athletic Performance",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "anxiety",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "arthritis",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "ashwagandha",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "astragalus",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "athlete",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "For most training and desk days, water and normal meals beat fancy electrolyte tubs. Salts matter more in long hot sessions or medically advised fluid plans.",
+      "claims": [
+        {
+          "id": "ath-hydration",
+          "statement": "Everyday MSK recovery rarely requires commercial electrolyte products.",
+          "audience": "both",
+          "grade": "moderate",
+          "summary": "Drink to thirst and habitual needs unless a clinician gave a specific plan. Long hot sessions, heavy sweating, or illness change the picture.",
+          "referenceIds": [
+            "ref-nhs-water",
+            "ref-ods-athlete-hyd"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nhs-water",
+          "title": "Water, drinks and your health",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-athlete-hyd",
+          "title": "Dietary Supplements for Exercise and Athletic Performance",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "b-complex",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "bcaa",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "beta-alanine",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "black-cohosh",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "bloating",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "blood-pressure",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "boswellia",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "Boswellia extracts appear in some joint-comfort products. Evidence is limited compared with core osteoarthritis care.",
+      "claims": [
+        {
+          "id": "bos-limited",
+          "statement": "Evidence for boswellia in osteoarthritis is limited and not a substitute for NICE-recommended core treatments.",
+          "audience": "both",
+          "grade": "low",
+          "summary": "Exercise, education, and supported self-management remain first-line. Discuss herbals with a pharmacist for interactions before self-experimenting.",
+          "referenceIds": [
+            "ref-nice-oa-bos"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-oa-bos",
+          "title": "Osteoarthritis in over 16s: diagnosis and management (NG226)",
+          "publisher": "NICE",
+          "year": 2022,
+          "url": "https://www.nice.org.uk/guidance/ng226",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "bromelain",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "calcium",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Calcium is essential for bone health. Food sources are preferred; supplements are considered when diet or medical advice indicates a gap.",
+      "claims": [
+        {
+          "id": "ca-bone",
+          "statement": "Adequate calcium intake supports bone health, ideally from dietary sources first.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "NHS nutrient advice and osteoporosis pathways emphasise calcium plus vitamin D context, falls prevention, and strength — not calcium tablets as a stand-alone MSK cure.",
+          "referenceIds": [
+            "ref-nhs-calcium",
+            "ref-ros-calcium"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nhs-calcium",
+          "title": "Calcium",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/calcium/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ros-calcium",
+          "title": "Calcium",
+          "publisher": "Royal Osteoporosis Society",
+          "url": "https://theros.org.uk/information-and-support/bone-health/nutrition-for-bones/calcium/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "cbd",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "cholesterol",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "chondroitin",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Chondroitin is often paired with glucosamine in joint complexes. Expectation management matters more than product price.",
+      "claims": [
+        {
+          "id": "cho-mixed",
+          "statement": "Chondroitin has mixed evidence for osteoarthritis symptoms and is not a NICE-recommended core treatment.",
+          "audience": "both",
+          "grade": "mixed",
+          "summary": "As with glucosamine, NG226 focuses on education, exercise, and supported self-management. Supplements are optional adjuncts with uncertain benefit.",
+          "referenceIds": [
+            "ref-nice-oa-cho"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-oa-cho",
+          "title": "Osteoarthritis in over 16s: diagnosis and management (NG226)",
+          "publisher": "NICE",
+          "year": 2022,
+          "url": "https://www.nice.org.uk/guidance/ng226",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "chromium",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "cla",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "cod-liver-oil",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "Cod liver oil supplies omega-3s plus vitamins A and D. Total vitamin A intake matters — more is not always safer.",
+      "claims": [
+        {
+          "id": "clo-vitamins",
+          "statement": "Cod liver oil can contribute meaningful vitamin A and D alongside omega-3s; avoid stacking multiple high-A products without advice.",
+          "audience": "both",
+          "grade": "moderate",
+          "summary": "Check combined intakes from multivitamins and cod liver oil. Pregnancy and some medical conditions need individual advice on vitamin A.",
+          "referenceIds": [
+            "ref-nhs-vita",
+            "ref-ods-clo"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nhs-vita",
+          "title": "Vitamin A",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-a/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-clo",
+          "title": "Omega-3 Fatty Acids — Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "colds",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "collagen",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Collagen supplements are popular for tendons and joints. Any trial should sit alongside progressive loading — not instead of it.",
+      "claims": [
+        {
+          "id": "col-rehab-first",
+          "statement": "Tendon and joint capacity are primarily rebuilt with well-timed progressive loading.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "MSK rehab evidence consistently prioritises graded exercise for tendinopathy and many osteoarthritis programmes. Collagen powder without that stimulus is unlikely to remodel tissue on its own.",
+          "referenceIds": [
+            "ref-nice-oa",
+            "ref-bps-tendinopathy"
+          ]
+        },
+        {
+          "id": "col-supplement-signal",
+          "statement": "Evidence that collagen supplements improve tendon or joint outcomes is emerging but mixed.",
+          "audience": "practitioners",
+          "grade": "mixed",
+          "summary": "Some small trials explore collagen (sometimes with vitamin C) around training. Products and protocols differ; treat marketing claims cautiously and keep protein intake from food in view.",
+          "referenceIds": [
+            "ref-ods-protein"
+          ],
+          "caveats": [
+            "People with kidney disease need individualised protein advice."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-oa",
+          "title": "Osteoarthritis in over 16s: diagnosis and management (NG226)",
+          "publisher": "NICE",
+          "year": 2022,
+          "url": "https://www.nice.org.uk/guidance/ng226",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-bps-tendinopathy",
+          "title": "Tendinopathy — patient information context via NHS musculoskeletal guides",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/conditions/tendonitis/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-protein",
+          "title": "Dietary Supplements for Exercise and Athletic Performance",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "constipation",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "contents-map",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "coq10",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "cordyceps",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "cranberry",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "dandelion",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "devils-claw",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "Devil’s claw is a traditional herbal sometimes marketed for joint or back discomfort. Evidence quality is limited; safety and interactions still matter.",
+      "claims": [
+        {
+          "id": "dc-limited",
+          "statement": "Evidence that devil’s claw meaningfully improves back or joint pain is limited.",
+          "audience": "both",
+          "grade": "low",
+          "summary": "Do not delay assessment of red-flag back pain. Prefer guideline-based MSK care and ask a pharmacist before herbal concentrates.",
+          "referenceIds": [
+            "ref-nice-lbp-dc",
+            "ref-mhra-herbal"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-lbp-dc",
+          "title": "Low back pain and sciatica in over 16s (NG59)",
+          "publisher": "NICE",
+          "year": 2016,
+          "url": "https://www.nice.org.uk/guidance/ng59",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-mhra-herbal",
+          "title": "Herbal medicines guidance",
+          "publisher": "MHRA / GOV.UK",
+          "url": "https://www.gov.uk/government/collections/herbal-medicines-guidance-documents",
+          "type": "other",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "diabetes",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "eczema",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "elderberry",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "energy",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "evening-primrose",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "fatigue",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "fish-oil",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Fish-oil capsules are a concentrated source of EPA/DHA. Quality, dose, and medicine interactions matter more than brand marketing.",
+      "claims": [
+        {
+          "id": "fo-overlap-o3",
+          "statement": "Fish-oil supplements supply long-chain omega-3s; food sources remain the preferred starting point for most people.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "See also the omega-3 topic notes. Label EPA/DHA content clearly and avoid rancid products.",
+          "referenceIds": [
+            "ref-ods-omega3-fo",
+            "ref-nhs-fish-fo"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-ods-omega3-fo",
+          "title": "Omega-3 Fatty Acids — Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-nhs-fish-fo",
+          "title": "Fish and shellfish",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-types/fish-and-shellfish-nutrition/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "flu",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "folic-acid",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "garlic",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "ginger",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "ginseng",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "glucosamine",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Glucosamine is a long-standing joint supplement with inconsistent trial results. Strength, pacing, and weight management (where relevant) change function more reliably.",
+      "claims": [
+        {
+          "id": "glu-mixed",
+          "statement": "Evidence that glucosamine improves osteoarthritis pain or structure is inconsistent.",
+          "audience": "both",
+          "grade": "mixed",
+          "summary": "NICE does not recommend glucosamine for osteoarthritis management in NG226. Some people report small comfort changes; others notice nothing. Define a trial period and keep rehab central.",
+          "referenceIds": [
+            "ref-nice-oa-glu",
+            "ref-cochrane-glu"
+          ],
+          "caveats": [
+            "Shellfish-derived products and anticoagulant therapy need product-specific checks."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-oa-glu",
+          "title": "Osteoarthritis in over 16s: diagnosis and management (NG226)",
+          "publisher": "NICE",
+          "year": 2022,
+          "url": "https://www.nice.org.uk/guidance/ng226",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-cochrane-glu",
+          "title": "Glucosamine for osteoarthritis (Cochrane summary context via NICE evidence landscape)",
+          "publisher": "NICE / evidence reviews cited in NG226",
+          "year": 2022,
+          "url": "https://www.nice.org.uk/guidance/ng226/evidence",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "glutamine",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "gotu-kola",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "green-tea",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "guarana",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "how-to-use",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "hyaluronic-acid",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "immunity",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "indigestion",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "inflammation",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "‘Anti-inflammatory’ supplement claims are often broader than the evidence. Distinguish systemic inflammatory disease from everyday MSK tissue irritability.",
+      "claims": [
+        {
+          "id": "inf-load",
+          "statement": "Most activity-related musculoskeletal pain is managed with load modification and rehab, not anti-inflammatory capsules alone.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "Clinical pathways for non-specific back pain, tendinopathy, and osteoarthritis prioritise assessment, movement, and supported self-management. Supplements are optional adjuncts at best.",
+          "referenceIds": [
+            "ref-nice-lbp",
+            "ref-nice-oa-inf"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-lbp",
+          "title": "Low back pain and sciatica in over 16s (NG59)",
+          "publisher": "NICE",
+          "year": 2016,
+          "url": "https://www.nice.org.uk/guidance/ng59",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-nice-oa-inf",
+          "title": "Osteoarthritis in over 16s: diagnosis and management (NG226)",
+          "publisher": "NICE",
+          "year": 2022,
+          "url": "https://www.nice.org.uk/guidance/ng226",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "insomnia",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Insomnia with MSK pain needs careful triage. Sedating herbals are not first-line; persistent insomnia deserves medical pathways.",
+      "claims": [
+        {
+          "id": "insomnia-cbt",
+          "statement": "Cognitive behavioural approaches and sleep hygiene are preferred over unregulated supplement stacks for chronic insomnia.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "NICE guidance on insomnia emphasises assessment and non-medicine options first where appropriate. In the UK, melatonin is generally prescription-only for specific uses.",
+          "referenceIds": [
+            "ref-nice-insomnia",
+            "ref-nhs-insomnia"
+          ],
+          "caveats": [
+            "New snoring, breath pauses, or morning headaches deserve medical review."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-insomnia",
+          "title": "Insomnia",
+          "publisher": "NICE Clinical Knowledge Summaries",
+          "url": "https://cks.nice.org.uk/topics/insomnia/",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-nhs-insomnia",
+          "title": "Insomnia",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/conditions/insomnia/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "iron",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "krill-oil",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "Krill oil is another marine source of long-chain omega-3s. Evaluate EPA/DHA dose and allergies rather than marketing.",
+      "claims": [
+        {
+          "id": "krill-o3",
+          "statement": "Krill oil provides omega-3 fats; claims beyond dose-equivalent EPA/DHA should be treated cautiously.",
+          "audience": "both",
+          "grade": "moderate",
+          "summary": "Shellfish allergy is relevant for some krill products. See omega-3 topic notes for broader framing.",
+          "referenceIds": [
+            "ref-ods-krill"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-ods-krill",
+          "title": "Omega-3 Fatty Acids — Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "lecithin",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "lions-mane",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "lutein",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "magnesium",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Magnesium is an essential mineral involved in muscle and nerve function. Food sources cover needs for many adults; supplements are most relevant when intake is low or a clinician has identified a gap — not as a stand-alone fix for back spasm.",
+      "claims": [
+        {
+          "id": "mg-role",
+          "statement": "Magnesium contributes to normal muscle function and is obtained mainly from food.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "UK and international nutrient references recognise magnesium’s role in muscle and nervous-system physiology. Leafy greens, nuts, seeds, and whole grains are primary food sources.",
+          "referenceIds": [
+            "ref-nhs-magnesium",
+            "ref-ods-magnesium"
+          ]
+        },
+        {
+          "id": "mg-cramps",
+          "statement": "Evidence that magnesium supplements reliably prevent idiopathic muscle cramps in the general population is limited.",
+          "audience": "both",
+          "grade": "mixed",
+          "summary": "Cochrane review work on magnesium for cramps has not shown clear benefit for most people with idiopathic cramps. Persistent or severe cramps still deserve medical review; rehab and load management remain central in MSK care.",
+          "referenceIds": [
+            "ref-cochrane-mg-cramps"
+          ],
+          "caveats": [
+            "Kidney disease and some medicines change magnesium advice — check with a pharmacist or GP."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nhs-magnesium",
+          "title": "Vitamins and minerals — others (includes magnesium)",
+          "publisher": "NHS",
+          "year": 2020,
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/others/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-magnesium",
+          "title": "Magnesium — Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-cochrane-mg-cramps",
+          "title": "Magnesium for skeletal muscle cramps",
+          "authors": "Garrison SR et al.",
+          "publisher": "Cochrane Database of Systematic Reviews",
+          "year": 2020,
+          "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009402.pub3/full",
+          "type": "systematic-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "manuka-honey",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "melatonin",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "menopause",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "multivitamin",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "muscle",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "omega-3",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Long-chain omega-3 fats (EPA/DHA) from oily fish support general health. Concentrated supplements are sometimes discussed for inflammatory joint symptoms, but they do not replace graded loading or medical care.",
+      "claims": [
+        {
+          "id": "o3-food-first",
+          "statement": "Eating oily fish regularly is a sensible default for long-chain omega-3 intake.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "NHS dietary advice includes oily fish as part of a balanced diet. Food-first approaches avoid many dosing and quality issues of concentrates.",
+          "referenceIds": [
+            "ref-nhs-fish",
+            "ref-ods-omega3"
+          ]
+        },
+        {
+          "id": "o3-joint-adjunct",
+          "statement": "Evidence that omega-3 supplements meaningfully change osteoarthritis or tendon outcomes is mixed and usually modest.",
+          "audience": "both",
+          "grade": "mixed",
+          "summary": "Some inflammatory pathways are biologically plausible targets, but rehab loading, sleep, and activity modification remain the main MSK levers. High doses can affect bleeding risk with anticoagulants.",
+          "referenceIds": [
+            "ref-ods-omega3"
+          ],
+          "caveats": [
+            "Check with a pharmacist before high-dose oils if you bruise easily or take anticoagulants."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nhs-fish",
+          "title": "Fish and shellfish",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-types/fish-and-shellfish-nutrition/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-omega3",
+          "title": "Omega-3 Fatty Acids — Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "osteoporosis",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "peppermint",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "potassium",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "pregnancy",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "probiotic",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "protein",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Enough daily protein supports muscle repair while rebuilding strength after injury or deconditioning. Food first; powders second.",
+      "claims": [
+        {
+          "id": "pro-rehab",
+          "statement": "Adequate dietary protein supports muscle adaptation when combined with progressive resistance or rehab loading.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "Sports nutrition and ageing-muscle literature consistently couple protein intake with training stimulus. Older adults often under-eat protein without noticing.",
+          "referenceIds": [
+            "ref-bda-protein",
+            "ref-ods-athlete-pro"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-bda-protein",
+          "title": "Protein — Food Fact Sheet",
+          "publisher": "British Dietetic Association",
+          "url": "https://www.bda.uk.com/resource/protein.html",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-athlete-pro",
+          "title": "Dietary Supplements for Exercise and Athletic Performance",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "psyllium",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "quercetin",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "reference-amino-acid",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "reference-energy",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "reference-glutamine",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "reference-inflammation",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "reference-vitamin-a",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "resveratrol",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "rhodiola",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "riboflavin",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "rosehip",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "saw-palmetto",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "selenium",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-062",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-063",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-066",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-067",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-093",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-094",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-095",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-101",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-106",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-107",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-108",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-114",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-124",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-133",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-134",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-137",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-138",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-143",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-161",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-169",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-173",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-182",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-183",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-199",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "sheet-222",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "slippery-elm",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "spirulina",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "stress",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Stress and pain amplify each other. Sleep, caffeine timing, and load balance usually matter more than a stack of ‘calm’ capsules.",
+      "claims": [
+        {
+          "id": "stress-sleep-pain",
+          "statement": "Poor sleep and high stress can increase pain sensitivity and reduce rehab adherence.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "Pain science and clinical guidelines for persistent MSK pain emphasise sleep, mood, and activity pacing alongside tissue-focused care.",
+          "referenceIds": [
+            "ref-nice-chronic-pain",
+            "ref-nhs-stress"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-chronic-pain",
+          "title": "Chronic pain (primary and secondary) in over 16s (NG193)",
+          "publisher": "NICE",
+          "year": 2021,
+          "url": "https://www.nice.org.uk/guidance/ng193",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-nhs-stress",
+          "title": "Feelings and symptoms — stress",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "taurine",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "tissue-salt",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "turmeric",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Curcumin extracts are sometimes tried for joint comfort. Kitchen turmeric is not the same as a high-dose extract; interactions and absorption additives matter.",
+      "claims": [
+        {
+          "id": "tur-oa-modest",
+          "statement": "Curcumin may offer modest symptom relief for some people with osteoarthritis; effects are usually small and not a substitute for exercise-based care.",
+          "audience": "both",
+          "grade": "mixed",
+          "summary": "Reviews of curcumin for knee osteoarthritis report variable, often modest benefits. NICE OA care still centres on information, exercise, weight management where relevant, and appropriate analgesia — not herbals as first-line disease modifiers.",
+          "referenceIds": [
+            "ref-nice-oa-tur",
+            "ref-ods-turmeric"
+          ],
+          "caveats": [
+            "Piperine-enhanced products can alter medicine metabolism — ask a pharmacist.",
+            "Gallbladder disease, surgery plans, and anticoagulants need review before concentrates."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nice-oa-tur",
+          "title": "Osteoarthritis in over 16s: diagnosis and management (NG226)",
+          "publisher": "NICE",
+          "year": 2022,
+          "url": "https://www.nice.org.uk/guidance/ng226",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-turmeric",
+          "title": "Turmeric — Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/Turmeric-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "valerian",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "vitamin-a",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "vitamin-b12",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "vitamin-c",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "Vitamin C supports normal collagen formation and immune function. Deficiency is uncommon on varied diets in the UK; megadoses are not a tendon shortcut.",
+      "claims": [
+        {
+          "id": "vc-collagen",
+          "statement": "Vitamin C contributes to normal collagen formation; food sources are usually sufficient.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "NHS nutrient pages describe vitamin C roles and food sources. Pair any collagen discussion with loading rehab rather than relying on a single vitamin.",
+          "referenceIds": [
+            "ref-nhs-vitc"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nhs-vitc",
+          "title": "Vitamin C",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-c/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "vitamin-d",
+      "status": "reviewed",
+      "lastReviewed": "2026-10-25",
+      "overview": "Vitamin D supports bone and muscle health. UK guidance commonly recommends a maintenance dose through darker months; deficiency treatment belongs under medical supervision with blood results where indicated.",
+      "claims": [
+        {
+          "id": "vd-uk-maintenance",
+          "statement": "UK public health advice commonly includes considering a daily vitamin D supplement in autumn and winter.",
+          "audience": "both",
+          "grade": "high",
+          "summary": "NHS and SACN-linked advice reflects limited winter UV in the UK. Standard maintenance doses differ from high-dose treatment of confirmed deficiency.",
+          "referenceIds": [
+            "ref-nhs-vitamin-d",
+            "ref-sacn-vitamin-d"
+          ]
+        },
+        {
+          "id": "vd-msk-not-cure-all",
+          "statement": "Low vitamin D does not explain every episode of back, neck, or joint pain.",
+          "audience": "both",
+          "grade": "moderate",
+          "summary": "Vitamin D status can matter for bone health and some generalised aches, but MSK presentations still need load, sleep, and red-flag assessment. Guessing megadoses from symptoms alone is unsafe.",
+          "referenceIds": [
+            "ref-nhs-vitamin-d",
+            "ref-ods-vitamin-d"
+          ],
+          "caveats": [
+            "Excess vitamin D can raise calcium to unsafe levels.",
+            "Some medical conditions need individual advice before supplementing."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nhs-vitamin-d",
+          "title": "Vitamin D",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-sacn-vitamin-d",
+          "title": "Vitamin D and Health",
+          "publisher": "Scientific Advisory Committee on Nutrition (SACN)",
+          "year": 2016,
+          "url": "https://www.gov.uk/government/publications/sacn-vitamin-d-and-health-report",
+          "type": "guideline",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-vitamin-d",
+          "title": "Vitamin D — Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "vitamin-k",
+      "status": "empty",
+      "claims": [],
+      "references": []
+    },
+    {
+      "topicKey": "whey-protein",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "Whey is a convenient complete protein powder. It is a tool for hitting daily protein targets — not a requirement after every osteopathy visit.",
+      "claims": [
+        {
+          "id": "whey-convenience",
+          "statement": "Whey protein can help people meet daily protein targets when appetite or time is limited.",
+          "audience": "both",
+          "grade": "moderate",
+          "summary": "Evidence for athletic performance supplements emphasises total daily protein and training quality. Lactose intolerance and kidney disease need individual advice.",
+          "referenceIds": [
+            "ref-ods-whey"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-ods-whey",
+          "title": "Dietary Supplements for Exercise and Athletic Performance",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "topicKey": "zinc",
+      "status": "draft",
+      "lastReviewed": "2026-10-25",
+      "overview": "Zinc supports normal immune and tissue function. Deficiency is a medical nutrition issue; megadosing is not an MSK shortcut.",
+      "claims": [
+        {
+          "id": "zn-role",
+          "statement": "Zinc is an essential micronutrient; routine high-dose zinc for musculoskeletal pain lacks strong support.",
+          "audience": "both",
+          "grade": "moderate",
+          "summary": "Meet needs through diet where possible. Long-term high doses can cause copper imbalance and other harms — pharmacist advice matters.",
+          "referenceIds": [
+            "ref-nhs-zinc",
+            "ref-ods-zinc"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "ref-nhs-zinc",
+          "title": "Vitamins and minerals — others (includes zinc)",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/others/",
+          "type": "patient-info",
+          "accessed": "2026-10-25"
+        },
+        {
+          "id": "ref-ods-zinc",
+          "title": "Zinc — Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+          "type": "narrative-review",
+          "accessed": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

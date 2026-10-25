@@ -3,11 +3,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
+import { LibraryEvidencePanel } from "@/components/education/LibraryEvidencePanel";
 import {
   getAllLibraryTopicKeys,
   getLibraryCategoryLabel,
   getLibraryTopic,
 } from "@/lib/education-library";
+import {
+  getTopicEvidence,
+  hasTopicEvidence,
+} from "@/lib/library-evidence";
 import {
   breadcrumbJsonLd,
   defaultOgImage,
@@ -60,6 +65,15 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
   const path = `/education/library/topic/${topic.topicKey}`;
   const categoryLabel = getLibraryCategoryLabel(topic.category);
   const categoryHref = `/education/library#${topic.category}`;
+  const evidence =
+    getTopicEvidence(topic.topicKey) ??
+    ({
+      topicKey: topic.topicKey,
+      status: "empty" as const,
+      claims: [],
+      references: [],
+    });
+  const evidenceReady = hasTopicEvidence(topic.topicKey);
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -121,6 +135,11 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/education/library">All topics</ButtonLink>
+            {evidenceReady ? (
+              <ButtonLink href="#evidence" variant="secondary">
+                Scientific notes &amp; references
+              </ButtonLink>
+            ) : null}
             {topic.relatedBlog ? (
               <ButtonLink
                 href={`/blog/${topic.relatedBlog.slug}`}
@@ -165,6 +184,8 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
           </div>
         </section>
       ) : null}
+
+      <LibraryEvidencePanel evidence={evidence} topicTitle={topic.title} />
 
       <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
         <h2 className="font-display text-3xl text-navy">Library sheets</h2>

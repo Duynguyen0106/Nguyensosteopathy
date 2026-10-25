@@ -253,7 +253,7 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "mens-health-ed",
     h1: "Men's Health & ED Shockwave in Woolwich",
-    seoTitle: "Men's health shockwave Woolwich",
+    seoTitle: "Men's shockwave Woolwich",
     metaDescription:
       "Confidential men's health and ED shockwave in Woolwich SE18 using low-intensity focused LI-ESWT. Private, drug-free protocol at Nguyen's on Powis Street — £110 / 30 min.",
     heroLine:

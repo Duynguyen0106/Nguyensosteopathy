@@ -4,7 +4,13 @@
  */
 
 import libraryData from "@/data/education-library.json";
-import { getSupplement, type SupplementTopic } from "@/lib/supplements";
+import { getNutritionBlogMeta } from "@/lib/blog-posts-nutrition";
+
+export type LibraryRelatedBlog = {
+  slug: string;
+  title: string;
+  summary: string;
+};
 
 export type LibrarySection = {
   heading: string;
@@ -55,7 +61,7 @@ export type LibraryTopic = {
   sheetCount: number;
   needsReview: boolean;
   articles: LibraryArticle[];
-  nutritionGuide?: SupplementTopic;
+  relatedBlog?: LibraryRelatedBlog;
 };
 
 export const libraryDisclaimer =
@@ -115,10 +121,10 @@ export const libraryCategoryOrder: {
 ];
 
 /**
- * Map library topicKey → curated /education/nutrition guide slug.
- * Only topics with a clear patient-guide counterpart are listed.
+ * Map library topicKey → nutrition blog post slug (former patient guides).
+ * Only topics with a clear patient-article counterpart are listed.
  */
-export const libraryTopicNutritionMap: Record<string, string> = {
+export const libraryTopicBlogMap: Record<string, string> = {
   magnesium: "magnesium-muscle-tension",
   "vitamin-d": "vitamin-d-msk-health",
   "omega-3": "omega-3-inflammation",
@@ -127,10 +133,8 @@ export const libraryTopicNutritionMap: Record<string, string> = {
   "krill-oil": "omega-3-inflammation",
   collagen: "collagen-tendons-joints",
   turmeric: "turmeric-curcumin-caveats",
-  // sleep key rarely wins OCR primary; stress/insomnia cover the patient guide
   stress: "sleep-recovery-nutrients",
   insomnia: "sleep-recovery-nutrients",
-  // hydration guide: no electrolyte sheets in corpus — use sports-adjacent athlete theme
   athlete: "hydration-electrolytes-active",
   glucosamine: "glucosamine-chondroitin-joints",
   chondroitin: "glucosamine-chondroitin-joints",
@@ -160,11 +164,11 @@ export function getLibraryCategoryLabel(categoryId: string): string {
   );
 }
 
-export function getNutritionGuideForTopic(
+export function getRelatedBlogForTopic(
   topicKey: string,
-): SupplementTopic | undefined {
-  const slug = libraryTopicNutritionMap[topicKey];
-  return slug ? getSupplement(slug) : undefined;
+): LibraryRelatedBlog | undefined {
+  const slug = libraryTopicBlogMap[topicKey];
+  return slug ? getNutritionBlogMeta(slug) : undefined;
 }
 
 export function getLibraryArticlesByTopic(topicKey: string): LibraryArticle[] {
@@ -186,7 +190,7 @@ export function getLibraryTopic(topicKey: string): LibraryTopic | undefined {
     sheetCount: articles.length,
     needsReview: articles.every((article) => article.needsReview),
     articles,
-    nutritionGuide: getNutritionGuideForTopic(topicKey),
+    relatedBlog: getRelatedBlogForTopic(topicKey),
   };
 }
 

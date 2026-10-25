@@ -101,14 +101,24 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        // Supplements hub moved under Education → Nutrition.
+        // Former supplements / nutrition guides → blog (Nutrition & recovery).
         source: "/supplements",
-        destination: "/education/nutrition",
+        destination: "/blog",
         permanent: true,
       },
       {
         source: "/supplements/:slug",
-        destination: "/education/nutrition/:slug",
+        destination: "/blog/:slug",
+        permanent: true,
+      },
+      {
+        source: "/education/nutrition",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/education/nutrition/:slug",
+        destination: "/blog/:slug",
         permanent: true,
       },
       {

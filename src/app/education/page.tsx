@@ -6,13 +6,12 @@ import {
   educationTracks,
   getArticlesForTrack,
   getEducationTrackCount,
-  getNutritionTopicCount,
 } from "@/lib/education";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 const description = trimDescription(
-  "Education hub at Nguyen's Osteopathic Clinic in Woolwich: nutrition guides, a 230-sheet dual-audience supplement library, acupuncture notes, and practitioner CPD.",
+  "Education hub at Nguyen's Osteopathic Clinic in Woolwich: a 230-sheet dual-audience supplement library, acupuncture notes, and practitioner CPD. Patient nutrition articles are on the blog.",
 );
 
 export const metadata: Metadata = {
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/education" },
   keywords: [
     "osteopath education Woolwich",
-    "supplements patient guide SE18",
+    "supplement education library SE18",
     "acupuncture education London",
     "osteopathy CPD notes",
   ],
@@ -37,10 +36,6 @@ function countLabelFor(trackId: (typeof educationTracks)[number]["id"]) {
   if (trackId === "library") {
     const n = getEducationTrackCount("library");
     return `${n} dual-audience sheets`;
-  }
-  if (trackId === "nutrition") {
-    const n = getNutritionTopicCount();
-    return `${n} patient guide${n === 1 ? "" : "s"}`;
   }
   const articles = getArticlesForTrack(trackId);
   const live = articles.filter((a) => a.status === "published").length;
@@ -84,14 +79,18 @@ export default function EducationHubPage() {
             Education hub
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Patient nutrition guides, a full dual-audience supplement library,
-            acupuncture notes, and CPD labelled for practitioners — hosted by{" "}
-            {site.name}.
+            A full dual-audience supplement library, acupuncture notes, and CPD
+            for practitioners — hosted by {site.name}. Shorter patient nutrition
+            articles live on the{" "}
+            <Link href="/blog" className="font-semibold text-teal hover:text-teal-dark">
+              blog
+            </Link>
+            .
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/education/library">Supplement library</ButtonLink>
-            <ButtonLink href="/education/nutrition" variant="secondary">
-              Nutrition guides
+            <ButtonLink href="/blog" variant="secondary">
+              Nutrition blog articles
             </ButtonLink>
             <ButtonLink href="/book" variant="secondary">
               Book online

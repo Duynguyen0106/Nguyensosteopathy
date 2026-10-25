@@ -11,7 +11,6 @@ export const siteMapGroups = [
       { href: "/aftercare", label: "Aftercare guide" },
       { href: "/exercises", label: "Home exercises & rehab" },
       { href: "/education", label: "Education hub" },
-      { href: "/education/nutrition", label: "Nutrition & supplements" },
       { href: "/education/library", label: "Supplement education library" },
       { href: "/education/acupuncture", label: "Acupuncture education" },
       { href: "/education/cpd", label: "CPD for practitioners" },

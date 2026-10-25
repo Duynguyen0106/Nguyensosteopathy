@@ -1,5 +1,6 @@
 import { withRelatedConditionLinks } from "@/lib/blog-condition-links";
 import { batch3BlogPosts } from "@/lib/blog-posts-batch3";
+import { nutritionBlogPosts } from "@/lib/blog-posts-nutrition";
 import { serviceBlogPosts } from "@/lib/blog-posts-services";
 import { blogExpandedBodies } from "@/lib/blog-expanded-bodies";
 import { blogExpandedPriority } from "@/lib/blog-expanded-priority";
@@ -22,6 +23,7 @@ export const BLOG_CATEGORIES = [
   "Pregnancy",
   "Cranial",
   "Paediatric",
+  "Nutrition & recovery",
   "Clinic info",
   "Local guides",
 ] as const;
@@ -819,6 +821,7 @@ const blogPostInputs: BlogPostInput[] = [
   },
   ...serviceBlogPosts,
   ...batch3BlogPosts,
+  ...nutritionBlogPosts,
 ];
 
 export const blogPosts: BlogPost[] = blogPostInputs

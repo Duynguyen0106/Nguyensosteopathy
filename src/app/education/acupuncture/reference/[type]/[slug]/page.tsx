@@ -3,12 +3,17 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
 import {
+  CorpusSectionBody,
+  slugifyHeading,
+} from "@/components/CorpusSectionBody";
+import {
   getAcupunctureCorpusAttribution,
   getAcupunctureCorpusRecord,
   getAcupunctureCorpusTypeLabel,
   getAllAcupunctureCorpusParams,
   isAcupunctureCorpusType,
 } from "@/lib/acupuncture-corpus";
+import { formatCorpusHeading } from "@/lib/corpus-format";
 import {
   breadcrumbJsonLd,
   defaultOgImage,
@@ -48,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: { canonical: path },
     openGraph: {
-      title: `${record.title} | ${site.name}`,
+      title: `${display} | ${site.name}`,
       description,
       url: path,
       images: [defaultOgImage],
@@ -66,13 +71,27 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
   const attribution =
     record.attribution || getAcupunctureCorpusAttribution();
   const path = `/education/acupuncture/reference/${type}/${slug}`;
+  const display = record.displayTitle || record.title;
+
   const sectionEntries = Object.entries(record.sections || {}).filter(
-    ([key, body]) =>
-      key !== "INTRO" &&
-      key !== "NAME" &&
-      typeof body === "string" &&
-      body.trim().length > 0,
+    ([key, body]) => {
+      if (key === "INTRO" || key === "NAME") return false;
+      // Avoid repeating category already shown in the hero subtitle.
+      if (key === "CATEGORY" && record.category) return false;
+      return typeof body === "string" && body.trim().length > 0;
+    },
   );
+
+  const showToc = type === "conditions" && sectionEntries.length >= 4;
+  const metaBits = [
+    record.latin,
+    record.category,
+    record.pointCode && record.channel && record.pointCode !== "EXTRA"
+      ? `${record.channel} channel`
+      : record.channel === "EXTRA"
+        ? "Extra point"
+        : record.channel,
+  ].filter(Boolean);
 
   const crumbsLd = breadcrumbJsonLd([
     { name: "Home", path: "/" },
@@ -80,7 +99,7 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
     { name: "Acupuncture", path: "/education/acupuncture" },
     { name: "Reference", path: "/education/acupuncture/reference" },
     { name: typeLabel, path: `/education/acupuncture/reference/${type}` },
-    { name: record.title, path },
+    { name: display, path },
   ]);
 
   return (
@@ -108,25 +127,14 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
             </Link>
           </p>
           <h1 className="mt-3 max-w-4xl font-display text-4xl text-navy md:text-5xl">
-            {record.displayTitle || record.title}
+            {display}
           </h1>
-          {(record.latin ||
-            record.category ||
-            record.pointCode ||
-            record.channel) && (
+          {metaBits.length > 0 && (
             <p className="mt-3 max-w-2xl text-base text-slate-600">
-              {[
-                record.latin,
-                record.category,
-                record.pointCode && record.channel
-                  ? `${record.channel} channel`
-                  : record.channel,
-              ]
-                .filter(Boolean)
-                .join(" · ")}
+              {metaBits.join(" · ")}
             </p>
           )}
-          <p className="mt-4 max-w-2xl text-base text-slate-600">
+          <p className="mt-4 max-w-2xl text-sm text-slate-600">
             Source:{" "}
             <a
               href={record.sourceUrl}
@@ -136,7 +144,7 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
             >
               {attribution.sourceName}
             </a>{" "}
-            — {attribution.author}
+            — {attribution.author}. Education use only.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={`/education/acupuncture/reference/${type}`}>
@@ -146,55 +154,51 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
               href="/education/acupuncture/reference"
               variant="secondary"
             >
-              Corpus hub
-            </ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
-              Book online
+              All categories
             </ButtonLink>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-5 py-10 md:px-8">
-        <aside
-          className="rounded-2xl border border-navy/25 bg-navy/[0.04] px-5 py-4 text-sm text-slate-700"
-          role="note"
-        >
-          <p className="font-semibold text-navy">Education use only</p>
-          <p className="mt-2">
-            Published on this clinic site with permission from the American
-            Dragon owner/estate for education. Not personal medical advice, not
-            a UK prescribing protocol, and not a substitute for osteopathic or
-            medical assessment.
-          </p>
-        </aside>
-      </section>
+      <section className="mx-auto max-w-3xl px-5 py-10 md:px-8 md:pb-24">
+        {showToc ? (
+          <nav
+            aria-label="On this page"
+            className="mb-10 border border-slate-200 bg-white px-5 py-4"
+          >
+            <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+              On this page
+            </p>
+            <ul className="mt-3 columns-1 gap-x-8 sm:columns-2">
+              {sectionEntries.map(([heading]) => (
+                <li key={heading} className="mb-1.5 break-inside-avoid">
+                  <a
+                    href={`#${slugifyHeading(heading)}`}
+                    className="text-sm font-medium text-teal hover:text-teal-dark"
+                  >
+                    {formatCorpusHeading(heading)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ) : null}
 
-      <section className="mx-auto max-w-3xl px-5 pb-16 md:px-8 md:pb-24">
         <div className="space-y-10">
           {sectionEntries.map(([heading, body]) => (
-            <article key={heading}>
-              <h2 className="font-display text-2xl text-navy md:text-3xl">
-                {heading.replace(/_/g, " ")}
-              </h2>
-              <div className="mt-3 space-y-3 text-base leading-relaxed text-slate-700 md:text-lg">
-                {body.split(/\n+/).map((para) => (
-                  <p key={para.slice(0, 48)}>{para}</p>
-                ))}
-              </div>
-            </article>
+            <CorpusSectionBody key={heading} heading={heading} body={body} />
           ))}
         </div>
 
         <p className="mt-12 text-sm text-slate-500">
-          Original page:{" "}
+          Original American Dragon page:{" "}
           <a
             href={record.sourceUrl}
             className="font-semibold text-teal hover:text-teal-dark"
             rel="noopener noreferrer"
             target="_blank"
           >
-            {record.sourceUrl}
+            view source
           </a>
         </p>
       </section>

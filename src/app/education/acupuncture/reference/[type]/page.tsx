@@ -88,17 +88,8 @@ export default async function AcupunctureCorpusTypePage({ params }: Props) {
               Patient guides
             </ButtonLink>
           </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-5 py-10 md:px-8">
-        <aside
-          className="rounded-2xl border border-navy/25 bg-navy/[0.04] px-5 py-4 text-sm text-slate-700 md:px-6"
-          role="note"
-        >
-          <p className="font-semibold text-navy">Source attribution</p>
-          <p className="mt-2">
-            Material adapted from{" "}
+          <p className="mt-5 max-w-2xl text-sm text-slate-600">
+            Adapted from{" "}
             <a
               href={attribution.sourceUrl}
               className="font-semibold text-teal hover:text-teal-dark"
@@ -107,16 +98,16 @@ export default async function AcupunctureCorpusTypePage({ params }: Props) {
             >
               {attribution.sourceName}
             </a>{" "}
-            by {attribution.author}, with permission for clinic education use.
-            Not a UK diagnosis or prescribing tool.
+            by {attribution.author}. Education use only — not a UK diagnosis or
+            prescribing tool.
           </p>
-        </aside>
+        </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+      <section className="mx-auto max-w-6xl px-5 py-10 pb-16 md:px-8 md:pb-24">
         {entries.length === 0 ? (
           <p className="text-base text-slate-600">
-            Corpus is still ingesting. Refresh after publish completes.
+            No entries published for this category yet.
           </p>
         ) : (
           <CorpusDirectory type={type} entries={entries} />

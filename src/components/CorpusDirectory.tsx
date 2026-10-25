@@ -5,6 +5,7 @@ import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import type { AcupunctureCorpusEntry } from "@/lib/acupuncture-corpus";
 import {
   corpusSearchPlaceholder,
+  formatCorpusTitle,
   letterKey,
 } from "@/lib/corpus-format";
 
@@ -202,7 +203,9 @@ export function CorpusDirectory({ type, entries }: Props) {
                 className="group flex flex-wrap items-baseline gap-x-3 gap-y-1"
               >
                 <span className="text-base font-semibold text-teal group-hover:text-teal-dark">
-                  {entry.title || entry.label || entry.slug}
+                  {formatCorpusTitle(
+                    entry.title || entry.label || entry.slug,
+                  )}
                 </span>
                 {(entry.latin || entry.pointCode || entry.category) && (
                   <span className="text-sm text-slate-500">

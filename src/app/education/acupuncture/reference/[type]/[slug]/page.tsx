@@ -13,7 +13,10 @@ import {
   getAllAcupunctureCorpusParams,
   isAcupunctureCorpusType,
 } from "@/lib/acupuncture-corpus";
-import { formatCorpusHeading } from "@/lib/corpus-format";
+import {
+  formatCorpusHeading,
+  formatCorpusTitle,
+} from "@/lib/corpus-format";
 import {
   breadcrumbJsonLd,
   defaultOgImage,
@@ -37,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const record = getAcupunctureCorpusRecord(type, slug);
   if (!record) return {};
   const typeLabel = getAcupunctureCorpusTypeLabel(type);
-  const display = record.displayTitle || record.title;
+  const display = formatCorpusTitle(record.displayTitle || record.title);
   const title = fitSerpTitle(`${display} | ${typeLabel}`);
   const description = trimDescription(
     record.latin ||
@@ -71,7 +74,7 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
   const attribution =
     record.attribution || getAcupunctureCorpusAttribution();
   const path = `/education/acupuncture/reference/${type}/${slug}`;
-  const display = record.displayTitle || record.title;
+  const display = formatCorpusTitle(record.displayTitle || record.title);
 
   const sectionEntries = Object.entries(record.sections || {}).filter(
     ([key, body]) => {

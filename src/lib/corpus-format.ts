@@ -62,6 +62,63 @@ export function formatCorpusHeading(heading: string): string {
     .replace(/\bFor\b/g, "for");
 }
 
+const SMALL_TITLE_WORDS = new Set([
+  "a",
+  "an",
+  "and",
+  "as",
+  "at",
+  "but",
+  "by",
+  "for",
+  "in",
+  "of",
+  "on",
+  "or",
+  "the",
+  "to",
+  "with",
+  "vs",
+]);
+
+/** Readable display titles: "DANG GUI" → "Dang Gui", keep LI-4 / N-HN-54. */
+export function formatCorpusTitle(title: string): string {
+  const raw = String(title || "").replace(/\s+/g, " ").trim();
+  if (!raw) return "";
+
+  // Mask point codes so hyphen splitting does not break LI-4 / N-HN-54.
+  const codes: string[] = [];
+  const masked = raw.replace(
+    /\b((?:[MN]-[A-Z]+-\d+)|(?:(?:REN|DU|UB|SJ|PC|HT|LU|LI|ST|SP|KI|LIV|GB|SI|BL|TB|CV|GV|[A-Z]{1,3})-?\d+[A-Z]?))\b/gi,
+    (match) => {
+      codes.push(match.toUpperCase().replace(/\s+/g, ""));
+      return `__CODE${codes.length - 1}__`;
+    },
+  );
+
+  const titled = masked
+    .split(/(\s+|[-–—/(),#])/)
+    .map((token, index, arr) => {
+      if (!token || /^(\s+|[-–—/(),#])$/.test(token)) return token;
+      if (/^__CODE\d+__$/.test(token)) return token;
+      if (/^EXTRA$/i.test(token)) return "Extra";
+      if (/^\d+[A-Z]?$/i.test(token)) return token;
+      if (/[\u4e00-\u9fff]/.test(token)) return token;
+
+      const lower = token.toLowerCase();
+      const prev = arr[index - 1];
+      // Capitalize the first word and words after ( or /; keep small words
+      // lowercase mid-title (after spaces/hyphens).
+      const forceCap =
+        index === 0 || prev === "(" || prev === "/";
+      if (!forceCap && SMALL_TITLE_WORDS.has(lower)) return lower;
+      return lower.replace(/^[a-z]/, (c) => c.toUpperCase());
+    })
+    .join("");
+
+  return titled.replace(/__CODE(\d+)__/g, (_, i) => codes[Number(i)] || "");
+}
+
 /** Merge soft-wrapped lines where a continuation starts lowercase or mid-clause. */
 export function mergeSoftWrappedLines(lines: string[]): string[] {
   const out: string[] = [];

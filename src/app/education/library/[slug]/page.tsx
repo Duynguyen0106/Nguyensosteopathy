@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { AuthorBio } from "@/components/AuthorBio";
 import { ButtonLink } from "@/components/Button";
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
 import {
+  articleRedirectsToTopic,
   getAllLibrarySlugs,
   getLibraryArticle,
   getLibraryArticlesByTopic,
@@ -32,6 +33,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getLibraryArticle(slug);
   if (!article) return {};
 
+  if (articleRedirectsToTopic(article)) {
+    const topicPath = `/education/library/topic/${article.topicKey}`;
+    return {
+      title: fitSerpTitle(`${article.topicTitle || article.title} theme`),
+      description: trimDescription(article.summary),
+      alternates: { canonical: topicPath },
+      robots: { index: false, follow: true },
+    };
+  }
+
   const title = fitSerpTitle(`${article.title} education`);
   const description = trimDescription(article.summary);
   const path = `/education/library/${article.slug}`;
@@ -44,6 +55,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: path },
+    robots: article.needsReview
+      ? { index: false, follow: false }
+      : undefined,
     openGraph: {
       title: ogTitle,
       description,
@@ -57,6 +71,10 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
   const { slug } = await params;
   const article = getLibraryArticle(slug);
   if (!article) notFound();
+
+  if (articleRedirectsToTopic(article)) {
+    permanentRedirect(`/education/library/topic/${article.topicKey}`);
+  }
 
   const path = `/education/library/${article.slug}`;
   const categoryLabel = getLibraryCategoryLabel(article.category);

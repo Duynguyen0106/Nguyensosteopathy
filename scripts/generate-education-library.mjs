@@ -9,8 +9,11 @@
 import fs from "fs";
 import path from "path";
 import {
+  buildAngledSheetContent,
+  buildCombinedThemeContent,
   buildLongFormContent,
   countContentWords,
+  getThemeAngle,
 } from "./library-sheet-bodies.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -607,6 +610,7 @@ function buildArticle(page) {
     slug,
     sourcePage: pageNo,
     section: page.section,
+    kind,
     category,
     topicKey,
     topicTitle,
@@ -643,20 +647,90 @@ for (const article of articles) {
   seen.add(slug);
 }
 
+/** Group by topicKey, combine multi-sheet themes, angle-differentiate variants. */
+const byTopic = new Map();
+for (const article of articles) {
+  const list = byTopic.get(article.topicKey) ?? [];
+  list.push(article);
+  byTopic.set(article.topicKey, list);
+}
+
+const themes = [];
+for (const [topicKey, group] of byTopic) {
+  group.sort((a, b) => a.sourcePage - b.sourcePage);
+  const multi = group.length > 1;
+  const lead = group.find((a) => !a.needsReview) ?? group[0];
+  const angles = group.map((article) => {
+    const angle = getThemeAngle(article.sourcePage);
+    return {
+      ...angle,
+      sourcePage: article.sourcePage,
+      slug: article.slug,
+    };
+  });
+
+  for (let i = 0; i < group.length; i++) {
+    const article = group[i];
+    const angle = angles[i];
+    article.themeRole = angle.label;
+    article.themeAngleId = angle.id;
+    article.isCanonical = !multi;
+    article.redirectsToTopic = multi;
+
+    if (multi && !article.needsReview) {
+      const angled = buildAngledSheetContent({
+        kind: article.kind || sectionKind(article.section),
+        primary: article.title,
+        topics: article.topics,
+        pageNo: article.sourcePage,
+        mskRelevant: article.mskRelevant,
+        angle,
+      });
+      article.summary = angled.summary;
+      article.sections = angled.sections;
+      article.caveats = angled.caveats;
+      article.faqs = angled.faqs;
+      article.wordCount = countContentWords(angled);
+      article.variantLabel = `${angle.label} · sheet ${article.sourcePage}`;
+    }
+  }
+
+  if (multi) {
+    const theme = buildCombinedThemeContent({
+      topicKey,
+      title: lead.topicTitle || lead.title,
+      kind: lead.kind || sectionKind(lead.section),
+      primary: lead.topicTitle || lead.title,
+      topics: [...new Set(group.flatMap((a) => a.topics))],
+      mskRelevant: group.some((a) => a.mskRelevant),
+      sheetCount: group.length,
+      sheetSlugs: group.map((a) => a.slug),
+      angles,
+    });
+    themes.push(theme);
+  }
+}
+
+themes.sort((a, b) => a.topicKey.localeCompare(b.topicKey));
+
 const payload = {
   generatedAt: new Date().toISOString(),
   source: "private-paraphrase-from-adobe-qrg-corpus",
-  note: "Original clinic-voice articles. OCR prose is not included.",
+  note: "Original clinic-voice articles. Multi-sheet topics expose a combined theme; variant sheet URLs redirect to the topic hub. OCR prose is not included.",
   count: articles.length,
+  themeCount: themes.length,
+  themes,
   articles,
 };
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(payload, null, 2));
-console.log(`Wrote ${articles.length} articles → ${OUT}`);
+console.log(`Wrote ${articles.length} articles + ${themes.length} themes → ${OUT}`);
 const withTopics = articles.filter((a) => a.topics.length).length;
 const needsReview = articles.filter((a) => a.needsReview).length;
+const redirected = articles.filter((a) => a.redirectsToTopic).length;
 const underMin = articles.filter((a) => (a.wordCount || 0) < MIN_WORDS);
+const themeUnder = themes.filter((t) => (t.wordCount || 0) < MIN_WORDS);
 const byCat = {};
 for (const a of articles) {
   byCat[a.category] = (byCat[a.category] || 0) + 1;
@@ -665,12 +739,15 @@ const topicKeys = new Set(articles.map((a) => a.topicKey));
 const words = articles.map((a) => a.wordCount || 0).sort((a, b) => a - b);
 console.log(`With detected topics: ${withTopics}/${articles.length}`);
 console.log(`Needs review: ${needsReview}`);
+console.log(`Redirected multi-sheet variants: ${redirected}`);
+console.log(`Combined themes: ${themes.length}`);
 console.log(`Unique topicKeys: ${topicKeys.size}`);
 console.log("Categories:", byCat);
 console.log(
   `Word counts — min ${words[0]}, median ${words[Math.floor(words.length / 2)]}, max ${words[words.length - 1]}`,
 );
-console.log(`Under ${MIN_WORDS} words: ${underMin.length}`);
+console.log(`Under ${MIN_WORDS} words (sheets): ${underMin.length}`);
+console.log(`Under ${MIN_WORDS} words (themes): ${themeUnder.length}`);
 if (underMin.length) {
   console.log(
     "Short samples:",
@@ -688,4 +765,4 @@ console.log(
     .map((a) => `${a.sourcePage}:${a.category}/${a.topicKey}:${a.wordCount}w`)
     .join(" | "),
 );
-if (underMin.length) process.exitCode = 1;
+if (underMin.length || themeUnder.length) process.exitCode = 1;

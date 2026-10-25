@@ -37,6 +37,7 @@ export type LibraryArticle = {
   slug: string;
   sourcePage: number;
   section: string;
+  kind?: string;
   category: LibraryCategoryId | string;
   topicKey: string;
   topicTitle: string;
@@ -49,9 +50,37 @@ export type LibraryArticle = {
   mskRelevant: boolean;
   /** Approximate education word count from generator (summary + sections + caveats + FAQs). */
   wordCount?: number;
+  /** Teaching angle label when this sheet is part of a multi-sheet theme. */
+  themeRole?: string;
+  themeAngleId?: string;
+  /** True when this sheet URL permanently redirects to the topic hub. */
+  redirectsToTopic?: boolean;
+  /** False for multi-sheet variants (hub is canonical). */
+  isCanonical?: boolean;
   sections: LibrarySection[];
   caveats: string[];
   faqs: LibraryFaq[];
+};
+
+export type LibraryThemeAngle = {
+  id: string;
+  label: string;
+  sourcePage: number;
+  slug: string;
+};
+
+/** Combined hub content for multi-sheet topics. */
+export type LibraryTheme = {
+  topicKey: string;
+  title: string;
+  summary: string;
+  sections: LibrarySection[];
+  caveats: string[];
+  faqs: LibraryFaq[];
+  wordCount: number;
+  sheetCount: number;
+  sheetSlugs: string[];
+  angles: LibraryThemeAngle[];
 };
 
 export type LibraryTopic = {
@@ -63,6 +92,7 @@ export type LibraryTopic = {
   sheetCount: number;
   needsReview: boolean;
   articles: LibraryArticle[];
+  theme?: LibraryTheme;
   relatedBlog?: LibraryRelatedBlog;
 };
 
@@ -147,8 +177,15 @@ export const libraryTopicBlogMap: Record<string, string> = {
 
 export const libraryArticles = libraryData.articles as LibraryArticle[];
 
+export const libraryThemes = ((libraryData as { themes?: LibraryTheme[] })
+  .themes ?? []) as LibraryTheme[];
+
 export function getLibraryArticle(slug: string): LibraryArticle | undefined {
   return libraryArticles.find((article) => article.slug === slug);
+}
+
+export function getLibraryTheme(topicKey: string): LibraryTheme | undefined {
+  return libraryThemes.find((theme) => theme.topicKey === topicKey);
 }
 
 export function getAllLibrarySlugs(): string[] {
@@ -157,6 +194,13 @@ export function getAllLibrarySlugs(): string[] {
 
 export function getLibraryArticleCount(): number {
   return libraryArticles.length;
+}
+
+/** Sheet URLs that should stay in the sitemap (single-sheet, indexable). */
+export function getSitemapLibraryArticleSlugs(): string[] {
+  return libraryArticles
+    .filter((article) => !article.redirectsToTopic && !article.needsReview)
+    .map((article) => article.slug);
 }
 
 export function getLibraryCategoryLabel(categoryId: string): string {
@@ -179,19 +223,27 @@ export function getLibraryArticlesByTopic(topicKey: string): LibraryArticle[] {
     .sort((a, b) => a.sourcePage - b.sourcePage);
 }
 
+export function articleRedirectsToTopic(article: LibraryArticle): boolean {
+  if (article.redirectsToTopic) return true;
+  return getLibraryArticlesByTopic(article.topicKey).length > 1;
+}
+
 export function getLibraryTopic(topicKey: string): LibraryTopic | undefined {
   const articles = getLibraryArticlesByTopic(topicKey);
   if (articles.length === 0) return undefined;
   const lead = articles.find((article) => !article.needsReview) ?? articles[0];
+  const theme = getLibraryTheme(topicKey);
+  const publicArticles = articles.filter((article) => !article.needsReview);
   return {
     topicKey,
     title: lead.topicTitle || lead.title,
     category: lead.category,
-    summary: lead.summary,
+    summary: theme?.summary ?? lead.summary,
     mskRelevant: articles.some((article) => article.mskRelevant),
     sheetCount: articles.length,
     needsReview: articles.every((article) => article.needsReview),
-    articles,
+    articles: publicArticles.length > 0 ? publicArticles : articles,
+    theme,
     relatedBlog: getRelatedBlogForTopic(topicKey),
   };
 }

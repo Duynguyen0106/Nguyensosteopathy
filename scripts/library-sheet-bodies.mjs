@@ -327,3 +327,256 @@ export function countContentWords(content) {
     content.faqs,
   );
 }
+
+/** Distinct teaching angles for multi-sheet topic variants. */
+export const THEME_ANGLES = [
+  {
+    id: "clinic-overview",
+    label: "Clinic overview",
+    focus:
+      "plain-English framing, why the theme appears beside MSK care, and how to prepare questions",
+  },
+  {
+    id: "food-first",
+    label: "Food-first approach",
+    focus:
+      "dietary pattern, meal regularity, and when food already covers everyday needs",
+  },
+  {
+    id: "safety-interactions",
+    label: "Safety & interactions",
+    focus:
+      "medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks",
+  },
+  {
+    id: "evidence-humility",
+    label: "Evidence humility",
+    focus:
+      "claim strength, marketing language, and what graded evidence notes can and cannot prove",
+  },
+  {
+    id: "rehab-fit",
+    label: "Rehab fit",
+    focus:
+      "loading plans, sleep, pacing, and keeping supplements from displacing hands-on care",
+  },
+  {
+    id: "athlete-recovery",
+    label: "Athlete & recovery",
+    focus:
+      "training load, return-to-play markers, hydration, and sport-rule awareness",
+  },
+  {
+    id: "label-literacy",
+    label: "Label literacy",
+    focus:
+      "dose totals, duplicate actives, proprietary blends, and a calm pack-reading method",
+  },
+  {
+    id: "patient-questions",
+    label: "Patient questions",
+    focus:
+      "goal setting, stop rules, diaries, and what to bring to clinic or pharmacy",
+  },
+  {
+    id: "practitioner-teaching",
+    label: "Practitioner teaching",
+    focus:
+      "consent language, scope boundaries, documentation, and CPD-style discussion prompts",
+  },
+  {
+    id: "misconceptions",
+    label: "Misconceptions",
+    focus:
+      "detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks",
+  },
+  {
+    id: "time-limited-trial",
+    label: "Time-limited trial",
+    focus:
+      "duration, functional success markers, reassessment dates, and when to stop",
+  },
+  {
+    id: "special-populations",
+    label: "Special populations",
+    focus:
+      "older adults, polypharmacy, pregnancy planning, and when GP bloods matter first",
+  },
+  {
+    id: "sleep-stress",
+    label: "Sleep & stress context",
+    focus:
+      "caffeine timing, stress load, evening routines, and recovery basics that outrank products",
+  },
+  {
+    id: "when-to-escalate",
+    label: "When to escalate",
+    focus:
+      "red-flag symptoms, urgent care thresholds, and not delaying medical assessment",
+  },
+];
+
+export function angleIndex(sourcePage) {
+  return ((sourcePage % THEME_ANGLES.length) + THEME_ANGLES.length) %
+    THEME_ANGLES.length;
+}
+
+export function getThemeAngle(sourcePage) {
+  return THEME_ANGLES[angleIndex(sourcePage)];
+}
+
+/**
+ * Per-variant body so multi-sheet topics are not near-identical templates.
+ * Used when a sheet remains readable; redirected variants still keep unique JSON.
+ */
+export function buildAngledSheetContent({
+  kind,
+  primary,
+  topics,
+  pageNo,
+  mskRelevant,
+  angle,
+}) {
+  const base = buildLongFormContent({
+    kind,
+    primary,
+    topics,
+    pageNo,
+    mskRelevant,
+  });
+  const focus = angle?.focus || "clinic education boundaries";
+  const label = angle?.label || "Clinic angle";
+  const topicList = joinTopics(topics);
+  const msk = mskBridge(primary, mskRelevant);
+
+  const angledSection = {
+    heading: `${label}: ${primary}`,
+    body: `This sheet emphasises the “${label.toLowerCase()}” angle for ${primary}. Focus: ${focus}. In clinic we still keep the same spine — food first where possible, pharmacist review for interactions, clear functional goals, and MSK rehab that is not displaced by shopping. ${msk} Related labels on this topic may include ${topicList}. Use the topic hub for the combined theme; this variant exists so patients and practitioners can jump to one teaching emphasis without re-reading every overlapping sheet.`,
+  };
+
+  const sections = [angledSection, ...base.sections.filter((s) => !/^Clinic teaching point/.test(s.heading))];
+  const summary = `${base.summary} This variant emphasises ${label.toLowerCase()}.`;
+  const caveats = base.caveats;
+  const faqs = base.faqs;
+  return {
+    summary,
+    sections: padIfNeeded(sections, primary, pageNo, 520, summary, caveats, faqs),
+    caveats,
+    faqs,
+  };
+}
+
+/**
+ * Combined ≥500-word theme for a topic hub that merges multi-sheet angles.
+ */
+export function buildCombinedThemeContent({
+  topicKey,
+  title,
+  kind,
+  primary,
+  topics,
+  mskRelevant,
+  sheetCount,
+  sheetSlugs,
+  angles,
+}) {
+  const topicList = joinTopics(topics.length ? topics : [primary]);
+  const msk = mskBridge(primary, mskRelevant);
+  const angleList =
+    angles && angles.length
+      ? angles.map((a) => a.label).join(", ")
+      : THEME_ANGLES.slice(0, Math.min(sheetCount, 6))
+          .map((a) => a.label)
+          .join(", ");
+  const kindNote =
+    kind === "ailment"
+      ? "wellness-theme"
+      : kind === "sports"
+        ? "sports and recovery"
+        : kind === "reference"
+          ? "label-reading"
+          : "ingredient";
+
+  const summary = `Combined clinic theme on ${title} (${sheetCount} library sheet${
+    sheetCount === 1 ? "" : "s"
+  } merged). Dual-audience education for patients and practitioners at Nguyen's Osteopathic Clinic — not a dosing protocol or product endorsement.`;
+
+  let sections = [
+    {
+      heading: `What this ${title} theme covers`,
+      body: `This hub gathers every library sheet tagged ${topicKey} into one ${kindNote} theme on ${primary}. The underlying source material repeated overlapping angles across ${sheetCount} pages; rather than ask readers to open near-duplicate sheets, we combine the teaching here. Angles represented include ${angleList}. ${msk} Browse scientific notes and references on this same page when available, and use the clinic blog for shorter patient articles when a related nutrition post exists.`,
+    },
+    {
+      heading: "In plain English",
+      body: `${primary} often appears in conversations about diet quality, recovery, sleep, energy, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements and wellness themes only as optional adjuncts after understanding load, sleep, mood, and medical context — never as a stand-alone fix for back, neck, or joint pain. Think of this theme as a shared briefing for patients preparing questions and practitioners scaffolding consent conversations. Related labels that may appear beside this topic include ${topicList}.`,
+    },
+    {
+      heading: "Food first, then products",
+      body: `Before adding concentrates linked to ${primary}, look at the dietary pattern that already surrounds the week. Irregular meals, low protein intake, low fruit and vegetable variety, high alcohol intake, and chronic sleep debt often matter more for recovery than any single capsule. If a product still seems relevant after that honesty check, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements already taken. A pharmacist can help read the label against a medicine list.`,
+    },
+    {
+      heading: "Safety, interactions, and special situations",
+      body: `Concentrates are not automatically gentle because they are sold as food supplements. Gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product and the person. Check pregnancy, breastfeeding, kidney or liver disease, bleeding risk, and upcoming surgery with a pharmacist or GP before using concentrates related to ${primary}. Stop and seek advice if concerning symptoms appear after starting a product. Do not combine multiple products that duplicate the same active without checking the combined total.`,
+    },
+    {
+      heading: "How this fits an osteopathy plan",
+      body: `Osteopathy assesses joints, soft tissue, and load patterns. Nutrition and wellness questions can support recovery planning, yet they do not replace hands-on care, graded exercise, or medical treatment when those are indicated. A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether ${primary} is even worth a time-limited trial. If a trial happens, define success in function — walking tolerance, sleep continuity, training sessions completed — not only a subjective “feel” after two doses.`,
+    },
+    {
+      heading: "Evidence humility and marketing noise",
+      body: `Marketing language around ${primary} often implies rapid tissue repair, detox, or anti-inflammatory miracles. Those claims rarely match the strength of evidence available for everyday MSK presentations. Another misconception is that “natural” means risk-free. A third is that more is better. Where this hub includes graded evidence notes, treat them as educational syntheses with links to primary sources — not as a formal systematic review or a green light to self-prescribe. Prefer guidelines and high-quality reviews linked in the references panel.`,
+    },
+    {
+      heading: "Patient takeaways",
+      body: `If you are curious about ${primary}, bring the product label or a photo to your appointment. Ask whether rehab loading, pacing, sleep, or onward referral should come before experimenting. Write down a four-to-six-week functional goal and a stop rule. Keep doing the movement plan you were given unless you have been told otherwise. Education should reduce anxiety and marketing noise — not delay necessary medical care.`,
+    },
+    {
+      heading: "Practitioner teaching points",
+      body: `Use this combined theme as a discussion scaffold around ${topicList}. Confirm medical history, allergy, pregnancy or breastfeeding, renal or hepatic disease, and concurrent medicines before any patient self-supplements. Prefer evidence-humble language. Signpost pharmacy or GP for interactions and pathology. Keep MSK rehab goals explicit so ${primary} does not become a distraction from loading plans. Document that advice was educational and non-prescribing. Sheet variants that used to live as separate URLs now redirect here so teaching stays on one canonical hub.`,
+    },
+    {
+      heading: "When to escalate instead of supplement-shop",
+      body: `Persistent, severe, or unexplained symptoms belong with a GP or urgent care — not a bottle from the shelf. Seek urgent care for fever, unexplained weight loss, progressive weakness, saddle anaesthesia, bladder or bowel change, chest pain, or night pain that is truly relentless. If neurological signs are new or worsening, pause self-experimentation and escalate. This theme exists to slow the leap from “I have a symptom” to “I need ${primary} tonight.”`,
+    },
+  ];
+
+  const caveats = [
+    ...sharedCaveats(primary),
+    `${sheetCount} source sheets on this topic are consolidated into this hub; old sheet URLs redirect here.`,
+  ];
+  const faqs = [
+    {
+      question: `Why did separate ${title} sheets redirect here?`,
+      answer: `Multiple library pages repeated overlapping teaching on ${primary}. This hub is the canonical combined theme so patients and practitioners read one coherent note instead of near-duplicate variants.`,
+    },
+    ...sharedFaqs(primary),
+  ];
+
+  sections = padIfNeeded(
+    sections,
+    primary,
+    sheetSlugs?.length || 1,
+    520,
+    summary,
+    caveats,
+    faqs,
+  );
+
+  return {
+    topicKey,
+    title,
+    summary,
+    sections,
+    caveats,
+    faqs,
+    wordCount: wordCount(sections, summary, caveats, faqs),
+    sheetCount,
+    sheetSlugs: sheetSlugs || [],
+    angles: (angles || []).map((a) => ({
+      id: a.id,
+      label: a.label,
+      sourcePage: a.sourcePage,
+      slug: a.slug,
+    })),
+  };
+}

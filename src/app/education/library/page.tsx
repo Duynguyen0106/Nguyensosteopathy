@@ -122,8 +122,10 @@ export default function EducationLibraryIndexPage() {
               <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {group.topics.map((topic) => {
                   const evidenceNotes = hasTopicEvidence(topic.topicKey);
-                  const href =
-                    evidenceNotes || topic.sheetCount > 1
+                  const combined = Boolean(topic.theme) || topic.sheetCount > 1;
+                  const href = combined
+                    ? `/education/library/topic/${topic.topicKey}`
+                    : evidenceNotes
                       ? `/education/library/topic/${topic.topicKey}`
                       : `/education/library/${topic.articles[0].slug}`;
                   return (
@@ -133,8 +135,9 @@ export default function EducationLibraryIndexPage() {
                         className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal hover:shadow-sm md:p-5"
                       >
                         <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                          {topic.sheetCount} sheet
-                          {topic.sheetCount === 1 ? "" : "s"}
+                          {combined
+                            ? `Combined theme · ${topic.sheetCount} sheets`
+                            : "1 sheet"}
                           {topic.mskRelevant ? " · MSK-relevant" : ""}
                           {topic.relatedBlog ? " · Blog article" : ""}
                           {evidenceNotes ? " · Evidence notes" : ""}
@@ -146,9 +149,11 @@ export default function EducationLibraryIndexPage() {
                           {topic.summary}
                         </p>
                         <span className="mt-3 text-sm font-semibold text-teal">
-                          {evidenceNotes || topic.sheetCount > 1
-                            ? "View topic →"
-                            : "Read sheet →"}
+                          {combined
+                            ? "Read combined theme →"
+                            : evidenceNotes
+                              ? "View topic →"
+                              : "Read sheet →"}
                         </span>
                       </Link>
                     </li>
@@ -167,20 +172,26 @@ export default function EducationLibraryIndexPage() {
             Browse all {count} sheets
           </summary>
           <p className="mt-2 text-sm text-slate-600">
-            Full sheet list by source page number, including entries still marked
-            for light review.
+            Full sheet list by source page number. Multi-sheet topics open the
+            combined theme hub; entries marked for light review stay noindex.
           </p>
           <ul className="mt-6 columns-1 gap-x-8 sm:columns-2 lg:columns-3">
-            {allSheets.map((article) => (
-              <li key={article.slug} className="mb-2 break-inside-avoid">
-                <Link
-                  href={`/education/library/${article.slug}`}
-                  className="text-sm font-medium text-teal hover:text-teal-dark"
-                >
-                  {article.variantLabel}: {article.title}
-                </Link>
-              </li>
-            ))}
+            {allSheets.map((article) => {
+              const href = article.redirectsToTopic
+                ? `/education/library/topic/${article.topicKey}`
+                : `/education/library/${article.slug}`;
+              return (
+                <li key={article.slug} className="mb-2 break-inside-avoid">
+                  <Link
+                    href={href}
+                    className="text-sm font-medium text-teal hover:text-teal-dark"
+                  >
+                    {article.variantLabel}: {article.title}
+                    {article.redirectsToTopic ? " (theme hub)" : ""}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </details>
       </section>

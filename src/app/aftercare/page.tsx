@@ -218,6 +218,13 @@ export default function AftercarePage() {
               >
                 Patient resources
               </Link>
+              {" · "}
+              <Link
+                href="/supplements"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Supplements & recovery
+              </Link>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/book">Book follow-up</ButtonLink>

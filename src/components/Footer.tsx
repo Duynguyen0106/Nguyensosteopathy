@@ -17,6 +17,7 @@ const patientLinks = [
   { href: "/new-patients", label: "New patients" },
   { href: "/fees", label: "Fees & prices" },
   { href: "/exercises", label: "Home exercises" },
+  { href: "/supplements", label: "Supplements & recovery" },
   { href: "/find-us", label: "Find us" },
   { href: "/contact", label: "Contact" },
   { href: "/faq", label: "FAQ" },

@@ -5,13 +5,12 @@ import { EducationTrackCard } from "@/components/education/EducationTrackCard";
 import {
   educationTracks,
   getArticlesForTrack,
-  getEducationTrackCount,
 } from "@/lib/education";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 const description = trimDescription(
-  "Education hub at Nguyen's Osteopathic Clinic in Woolwich: a 230-sheet dual-audience supplement library, acupuncture notes, and practitioner CPD. Patient nutrition articles are on the blog.",
+  "Education hub at Nguyen's Osteopathic Clinic in Woolwich: a dual-audience supplement library organised by topic, acupuncture notes, and practitioner CPD. Patient nutrition articles are on the blog.",
 );
 
 export const metadata: Metadata = {
@@ -34,8 +33,7 @@ export const metadata: Metadata = {
 
 function countLabelFor(trackId: (typeof educationTracks)[number]["id"]) {
   if (trackId === "library") {
-    const n = getEducationTrackCount("library");
-    return `${n} dual-audience sheets`;
+    return "Topic themes for patients & practitioners";
   }
   const articles = getArticlesForTrack(trackId);
   const live = articles.filter((a) => a.status === "published").length;

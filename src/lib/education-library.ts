@@ -65,8 +65,9 @@ export type LibraryArticle = {
 export type LibraryThemeAngle = {
   id: string;
   label: string;
-  sourcePage: number;
-  slug: string;
+  focus?: string;
+  sourcePage?: number;
+  slug?: string;
 };
 
 /** Combined hub content for multi-sheet topics. */
@@ -95,6 +96,33 @@ export type LibraryTopic = {
   theme?: LibraryTheme;
   relatedBlog?: LibraryRelatedBlog;
 };
+
+/** Unique teaching angles for a multi-sheet theme (audience-facing labels). */
+export function getUniqueThemeAngles(
+  theme: LibraryTheme | undefined,
+  articles: LibraryArticle[],
+): { id: string; label: string; focus?: string }[] {
+  const seen = new Set<string>();
+  const out: { id: string; label: string; focus?: string }[] = [];
+  const push = (id: string, label: string, focus?: string) => {
+    const key = id || label.toLowerCase();
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push({ id: key, label, focus });
+  };
+  if (theme?.angles?.length) {
+    for (const angle of theme.angles) {
+      push(angle.id, angle.label, angle.focus);
+    }
+    return out;
+  }
+  for (const article of articles) {
+    if (article.themeRole) {
+      push(article.themeAngleId || article.themeRole, article.themeRole);
+    }
+  }
+  return out;
+}
 
 export const libraryDisclaimer =
   "These library pages are original education notes for both patients and practitioners at Nguyen's Osteopathic Clinic. They are not prescribing advice, product endorsements, or a republication of any third-party training manual. Patients should check with a GP, pharmacist, or osteopath before starting supplements. Practitioners should use them as discussion prompts only within their regulated scope.";

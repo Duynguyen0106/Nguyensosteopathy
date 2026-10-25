@@ -48,7 +48,7 @@ function padIfNeeded(sections, primary, pageNo, minWords, summary, caveats, faqs
     guard += 1;
     sections.push({
       heading: `Clinic teaching point ${guard} on ${primary}`,
-      body: `When teaching about ${primary} we repeat a short sequence: name the goal, name the uncertainty, name the safer next step. Goal examples include better sleep, steadier training, or correcting a documented dietary gap — not “curing” chronic pain with a bottle. Uncertainty means evidence quality varies by claim, population, dose, and product quality. The safer next step is usually food-first changes, pharmacist review of interactions, GP bloods when deficiency is plausible, and continuing the rehab plan already agreed in clinic. Sheet ${pageNo} in this library exists so patients and practitioners share the same vocabulary before those conversations. If symptoms escalate with fever, unexplained weight loss, progressive weakness, bladder or bowel change, chest pain, or night pain that is truly relentless, seek medical care urgently rather than adjusting ${primary}.`,
+      body: `When teaching about ${primary} we repeat a short sequence: name the goal, name the uncertainty, name the safer next step. Goal examples include better sleep, steadier training, or correcting a documented dietary gap — not “curing” chronic pain with a bottle. Uncertainty means evidence quality varies by claim, population, dose, and product quality. The safer next step is usually food-first changes, pharmacist review of interactions, GP bloods when deficiency is plausible, and continuing the rehab plan already agreed in clinic. This library note exists so patients and practitioners share the same vocabulary before those conversations. If symptoms escalate with fever, unexplained weight loss, progressive weakness, bladder or bowel change, chest pain, or night pain that is truly relentless, seek medical care urgently rather than adjusting ${primary}.`,
     });
   }
   return sections;
@@ -291,7 +291,7 @@ export function buildLongFormContent({
       },
     ];
   } else {
-    summary = `Clinic education notes (sheet ${pageNo}) on ${topicList}, centred on ${primary}, for patients and practitioners.`;
+    summary = `Clinic education notes on ${topicList}, centred on ${primary}, for patients and practitioners.`;
     sections = [
       {
         heading: "Overview",
@@ -497,14 +497,12 @@ export function buildCombinedThemeContent({
           ? "label-reading"
           : "ingredient";
 
-  const summary = `Combined clinic theme on ${title} (${sheetCount} library sheet${
-    sheetCount === 1 ? "" : "s"
-  } merged). Dual-audience education for patients and practitioners at Nguyen's Osteopathic Clinic — not a dosing protocol or product endorsement.`;
+  const summary = `A clear dual-audience clinic theme on ${title} for patients and practitioners at Nguyen's Osteopathic Clinic — not a dosing protocol or product endorsement.`;
 
   let sections = [
     {
       heading: `What this ${title} theme covers`,
-      body: `This hub gathers every library sheet tagged ${topicKey} into one ${kindNote} theme on ${primary}. The underlying source material repeated overlapping angles across ${sheetCount} pages; rather than ask readers to open near-duplicate sheets, we combine the teaching here. Angles represented include ${angleList}. ${msk} Browse scientific notes and references on this same page when available, and use the clinic blog for shorter patient articles when a related nutrition post exists.`,
+      body: `This page is the single place to read our ${kindNote} education on ${primary}. Teaching angles include ${angleList}. ${msk} Browse scientific notes and references on this same page when available, and use the clinic blog for shorter patient articles when a related nutrition post exists.`,
     },
     {
       heading: "In plain English",
@@ -532,7 +530,7 @@ export function buildCombinedThemeContent({
     },
     {
       heading: "Practitioner teaching points",
-      body: `Use this combined theme as a discussion scaffold around ${topicList}. Confirm medical history, allergy, pregnancy or breastfeeding, renal or hepatic disease, and concurrent medicines before any patient self-supplements. Prefer evidence-humble language. Signpost pharmacy or GP for interactions and pathology. Keep MSK rehab goals explicit so ${primary} does not become a distraction from loading plans. Document that advice was educational and non-prescribing. Sheet variants that used to live as separate URLs now redirect here so teaching stays on one canonical hub.`,
+      body: `Use this combined theme as a discussion scaffold around ${topicList}. Confirm medical history, allergy, pregnancy or breastfeeding, renal or hepatic disease, and concurrent medicines before any patient self-supplements. Prefer evidence-humble language. Signpost pharmacy or GP for interactions and pathology. Keep MSK rehab goals explicit so ${primary} does not become a distraction from loading plans. Document that advice was educational and non-prescribing.`,
     },
     {
       heading: "When to escalate instead of supplement-shop",
@@ -540,14 +538,11 @@ export function buildCombinedThemeContent({
     },
   ];
 
-  const caveats = [
-    ...sharedCaveats(primary),
-    `${sheetCount} source sheets on this topic are consolidated into this hub; old sheet URLs redirect here.`,
-  ];
+  const caveats = sharedCaveats(primary);
   const faqs = [
     {
-      question: `Why did separate ${title} sheets redirect here?`,
-      answer: `Multiple library pages repeated overlapping teaching on ${primary}. This hub is the canonical combined theme so patients and practitioners read one coherent note instead of near-duplicate variants.`,
+      question: `Is this the full clinic note on ${title}?`,
+      answer: `Yes. Overlapping teaching on ${primary} is gathered here as one theme so you do not need to compare near-duplicate pages. Use it to prepare questions; personal advice still needs a clinician.`,
     },
     ...sharedFaqs(primary),
   ];
@@ -575,6 +570,7 @@ export function buildCombinedThemeContent({
     angles: (angles || []).map((a) => ({
       id: a.id,
       label: a.label,
+      focus: a.focus,
       sourcePage: a.sourcePage,
       slug: a.slug,
     })),

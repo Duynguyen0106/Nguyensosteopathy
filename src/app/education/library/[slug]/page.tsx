@@ -133,7 +133,7 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
     { name: "Library", path: "/education/library" },
     { name: categoryLabel, path: categoryHref },
     { name: topicTitle, path: topicHref },
-    { name: article.variantLabel, path },
+    { name: article.title, path },
   ]);
 
   return (
@@ -169,8 +169,6 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
             <Link href={topicHref} className="hover:text-teal-dark">
               {topicTitle}
             </Link>
-            {" · "}
-            {article.variantLabel}
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             {article.title}
@@ -184,7 +182,7 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
             </p>
           ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href={topicHref}>All {topicTitle} sheets</ButtonLink>
+            <ButtonLink href={topicHref}>{topicTitle} theme</ButtonLink>
             {evidenceHref ? (
               <ButtonLink href={evidenceHref} variant="secondary">
                 Scientific notes &amp; references for {topicTitle}
@@ -262,17 +260,21 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
           <div className="mx-auto max-w-6xl">
             <h2 className="font-display text-2xl text-navy">
               {sameTopic.length > 0
-                ? `Other sheets on ${topicTitle}`
-                : "Related library sheets"}
+                ? `More on ${topicTitle}`
+                : "Related library topics"}
             </h2>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((item) => (
                 <li key={item.slug}>
                   <Link
-                    href={`/education/library/${item.slug}`}
+                    href={
+                      item.redirectsToTopic
+                        ? `/education/library/topic/${item.topicKey}`
+                        : `/education/library/${item.slug}`
+                    }
                     className="font-semibold text-teal hover:text-teal-dark"
                   >
-                    {item.variantLabel}: {item.title}
+                    {item.title}
                   </Link>
                 </li>
               ))}
@@ -282,7 +284,7 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
                 href={topicHref}
                 className="mt-6 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
               >
-                View all {topicTitle} sheets →
+                View {topicTitle} theme →
               </Link>
             ) : null}
           </div>

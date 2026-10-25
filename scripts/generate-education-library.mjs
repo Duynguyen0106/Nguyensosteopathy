@@ -550,15 +550,15 @@ function buildArticle(page) {
   } else if (primaryTopic) {
     primary = primaryTopic;
   } else if (kind === "ailment") {
-    primary = `Wellness themes (sheet ${pageNo})`;
+    primary = "Wellness themes";
   } else if (kind === "product") {
-    primary = `Supplement themes (sheet ${pageNo})`;
+    primary = "Supplement themes";
   } else if (kind === "sports") {
-    primary = `Sports & recovery themes (sheet ${pageNo})`;
+    primary = "Sports & recovery themes";
   } else if (kind === "reference") {
-    primary = `Label & forms themes (sheet ${pageNo})`;
+    primary = "Label & forms themes";
   } else {
-    primary = `Education notes (sheet ${pageNo})`;
+    primary = "Education notes";
   }
 
   const slug = `p${String(pageNo).padStart(3, "0")}-${slugify(primary)}`;
@@ -572,7 +572,7 @@ function buildArticle(page) {
     mskRelevant,
   });
   const { summary, sections, caveats, faqs } = longForm;
-  const isPlaceholder = /\(sheet \d+\)$/i.test(primary);
+  const isPlaceholder = !primaryTopic && kind !== "front";
 
   let topicKey;
   let topicTitle;
@@ -585,7 +585,7 @@ function buildArticle(page) {
     // Namespace so reference/forms sheets do not collide with ingredient hubs.
     const baseKey = primaryTopic
       ? canonicalTopicKey(primaryTopic)
-      : `sheet-${String(pageNo).padStart(3, "0")}`;
+      : `note-${String(pageNo).padStart(3, "0")}`;
     topicKey = `reference-${baseKey}`;
     topicTitle = primaryTopic
       ? `${primaryTopic} (label notes)`
@@ -597,14 +597,14 @@ function buildArticle(page) {
       canonicalTopicKey(primary) === topicKey ? primary : primaryTopic;
     category = categoryForTopicKey(topicKey, page.section);
   } else {
-    topicKey = `sheet-${String(pageNo).padStart(3, "0")}`;
+    topicKey = `note-${String(pageNo).padStart(3, "0")}`;
     topicTitle = primary;
     category = categoryFromSectionOnly(page.section);
   }
 
   const needsReview =
     kind !== "front" && (isPlaceholder || topics.length === 0);
-  const variantLabel = `Sheet ${pageNo}`;
+  const variantLabel = primary;
 
   return {
     slug,
@@ -691,7 +691,7 @@ for (const [topicKey, group] of byTopic) {
       article.caveats = angled.caveats;
       article.faqs = angled.faqs;
       article.wordCount = countContentWords(angled);
-      article.variantLabel = `${angle.label} · sheet ${article.sourcePage}`;
+      article.variantLabel = angle.label;
     }
   }
 

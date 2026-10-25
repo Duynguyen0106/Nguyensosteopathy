@@ -9,6 +9,7 @@ import {
   getAllLibraryTopicKeys,
   getLibraryCategoryLabel,
   getLibraryTopic,
+  getUniqueThemeAngles,
 } from "@/lib/education-library";
 import {
   getTopicEvidence,
@@ -35,14 +36,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const hasTheme = Boolean(topic.theme);
   const title = fitSerpTitle(
-    hasTheme ? `${topic.title} — combined theme` : `${topic.title} library topic`,
+    hasTheme ? `${topic.title} — clinic theme` : `${topic.title} education`,
   );
   const description = trimDescription(
     hasTheme
       ? topic.theme!.summary
-      : `${topic.sheetCount} dual-audience education sheet${
-          topic.sheetCount === 1 ? "" : "s"
-        } on ${topic.title} from Nguyen's Osteopathic Clinic.`,
+      : `Dual-audience education on ${topic.title} from Nguyen's Osteopathic Clinic.`,
   );
   const path = `/education/library/topic/${topic.topicKey}`;
   const ogTitle =
@@ -86,14 +85,15 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
     });
   const evidenceReady = hasTopicEvidence(topic.topicKey);
   const theme = topic.theme;
-  const multi = topic.sheetCount > 1;
+  const multi = Boolean(theme) || topic.sheetCount > 1;
+  const angles = getUniqueThemeAngles(theme, topic.articles);
 
   const pageLd = {
     "@context": "https://schema.org",
     "@type": theme ? "LearningResource" : "CollectionPage",
     "@id": `${site.websiteUrl}${path}#webpage`,
     name: theme
-      ? `${topic.title} — combined library theme`
+      ? `${topic.title} — clinic education theme`
       : `${topic.title} — library topic`,
     url: `${site.websiteUrl}${path}`,
     description: topic.summary,
@@ -103,9 +103,6 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
     },
     provider: { "@id": `${site.websiteUrl}/#clinic` },
     isPartOf: { "@id": `${site.websiteUrl}/education/library#webpage` },
-    ...(theme
-      ? {}
-      : { numberOfItems: topic.sheetCount }),
   };
 
   const faqLd =
@@ -166,10 +163,8 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             {theme
-              ? `Combined dual-audience theme from ${topic.sheetCount} library sheets`
-              : `${topic.sheetCount} dual-audience sheet${
-                  topic.sheetCount === 1 ? "" : "s"
-                } on this topic`}
+              ? "One dual-audience clinic theme for patients and practitioners"
+              : "Dual-audience education on this topic"}
             {topic.mskRelevant ? " · often relevant in MSK conversations" : ""}.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -181,7 +176,7 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
             ) : null}
             {theme ? (
               <ButtonLink href="#theme" variant="secondary">
-                Read combined theme
+                Read the theme
               </ButtonLink>
             ) : null}
             {topic.relatedBlog ? (
@@ -237,7 +232,7 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
           className="mx-auto max-w-3xl px-5 pb-12 md:px-8"
         >
           <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-            Combined theme
+            Clinic theme
           </p>
           <h2 className="mt-2 font-display text-3xl text-navy md:text-4xl">
             {theme.title}
@@ -297,60 +292,63 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
       ) : null}
 
       <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
-        <h2 className="font-display text-3xl text-navy">
-          {multi ? "Angles covered in this theme" : "Library sheet"}
-        </h2>
-        <p className="mt-2 text-base text-slate-600">
-          {multi
-            ? "Overlapping sheet variants are merged into the combined theme above. Former sheet URLs permanently redirect here. Sheet numbers match the internal library sequence."
-            : "Each sheet is a dual-audience education note. Sheet numbers match the internal library sequence."}
-        </p>
-        {multi ? (
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {topic.articles.map((article) => (
-              <li
-                key={article.slug}
-                className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5"
-              >
-                <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                  {article.themeRole || article.variantLabel}
-                  {article.mskRelevant ? " · MSK-relevant" : ""}
-                </p>
-                <p className="mt-2 font-display text-xl text-navy">
-                  Sheet {article.sourcePage}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  Included in the combined theme — this angle no longer has a
-                  separate indexed page.
-                </p>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {topic.articles.map((article) => (
-              <li key={article.slug}>
-                <Link
-                  href={`/education/library/${article.slug}`}
-                  className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal hover:shadow-sm md:p-5"
+        {multi && angles.length > 0 ? (
+          <>
+            <h2 className="font-display text-3xl text-navy">
+              What you will find in this theme
+            </h2>
+            <p className="mt-2 text-base text-slate-600">
+              These are the teaching angles covered above — not separate pages
+              to open.
+            </p>
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {angles.map((angle) => (
+                <li
+                  key={angle.id}
+                  className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5"
                 >
-                  <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                    {article.variantLabel}
-                    {article.mskRelevant ? " · MSK-relevant" : ""}
-                  </p>
-                  <h3 className="mt-2 font-display text-xl text-navy group-hover:text-teal-dark">
-                    {article.title}
+                  <h3 className="font-display text-xl text-navy">
+                    {angle.label}
                   </h3>
-                  <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">
-                    {article.summary}
-                  </p>
-                  <span className="mt-3 text-sm font-semibold text-teal">
-                    Read sheet →
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+                  {angle.focus ? (
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                      {angle.focus}
+                    </p>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <>
+            <h2 className="font-display text-3xl text-navy">Education note</h2>
+            <p className="mt-2 text-base text-slate-600">
+              Dual-audience clinic education for patients and practitioners.
+            </p>
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {topic.articles.map((article) => (
+                <li key={article.slug}>
+                  <Link
+                    href={`/education/library/${article.slug}`}
+                    className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal hover:shadow-sm md:p-5"
+                  >
+                    <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                      {article.mskRelevant ? "MSK-relevant" : "Library"}
+                    </p>
+                    <h3 className="mt-2 font-display text-xl text-navy group-hover:text-teal-dark">
+                      {article.title}
+                    </h3>
+                    <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">
+                      {article.summary}
+                    </p>
+                    <span className="mt-3 text-sm font-semibold text-teal">
+                      Read note →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </>
         )}
       </section>
     </div>

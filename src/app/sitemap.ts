@@ -4,6 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 import { conditions } from "@/lib/conditions";
 import { exercises, programmes } from "@/lib/exercises";
 import { educationArticles, educationTracks } from "@/lib/education";
+import { getSitemapAcupunctureCorpusPaths } from "@/lib/acupuncture-corpus";
 import {
   getSitemapLibraryArticleSlugs,
   getSitemapLibraryTopicKeys,
@@ -134,6 +135,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entry({
         path: `/education/acupuncture/reference/${type}`,
         priority: 0.5,
+      }),
+    ),
+    // American Dragon detail pages — primary discovery path for 4k+ records.
+    ...getSitemapAcupunctureCorpusPaths().map(({ type, slug }) =>
+      entry({
+        path: `/education/acupuncture/reference/${type}/${slug}`,
+        priority: 0.45,
+        changeFrequency: "yearly",
       }),
     ),
     ...getSitemapLibraryTopicKeys().map((topic) =>

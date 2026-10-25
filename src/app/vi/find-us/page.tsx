@@ -4,12 +4,35 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { LazyMapsEmbed } from "@/components/LazyMapsEmbed";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
-import { defaultOgImage, pageOpenGraph } from "@/lib/seo";
+import { defaultOgImage, faqPageJsonLd, pageOpenGraph } from "@/lib/seo";
 import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
+const viFindFaqs = [
+  {
+    question: "Phòng khám có cửa riêng ngoài phố không?",
+    answer:
+      "Không. Vào St James Pharmacy & Travel Clinic, hỏi quầy — nhân viên sẽ chỉ phòng osteopathy bên trong.",
+  },
+  {
+    question: "Osteopathy mở ngày nào?",
+    answer:
+      "Nhận lịch Thứ Hai, Ba, Năm, Sáu và Bảy. Đóng Thứ Tư và Chủ Nhật. Giờ mở cửa nhà thuốc (ra vào tòa nhà) có thể khác — luôn xem lịch online cho slot còn trống.",
+  },
+  {
+    question: "Gửi xe ở đâu?",
+    answer:
+      "Có chỗ gửi xe ngắn hạn quanh trung tâm Woolwich / Powis Street. Đến sớm vài phút nếu cần tìm chỗ trống; Elizabeth line và DLR cũng gần.",
+  },
+  {
+    question: "Đến từ Plumstead / Abbey Wood thế nào?",
+    answer:
+      "Elizabeth line, DLR hoặc National Rail tới Woolwich / Woolwich Arsenal rồi đi bộ ngắn đến 52 Powis Street. Nhiều tuyến xe buýt cũng dừng quanh trung tâm.",
+  },
+] as const;
+
 export const metadata: Metadata = {
-  title: "Địa chỉ & gửi xe — Osteopath Woolwich",
+  title: "Địa chỉ osteopath Woolwich",
   description:
     "Tìm Nguyen's Osteopathic Clinic trong St James Pharmacy, 52 Powis Street, Woolwich SE18 — gửi xe, Elizabeth line, DLR, và hướng dẫn khi đến nơi.",
   alternates: {
@@ -21,7 +44,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: pageOpenGraph({
-    title: "Địa chỉ & gửi xe — Osteopath Woolwich",
+    title: "Địa chỉ osteopath Woolwich",
     description:
       "Tìm phòng khám osteopathy trong St James Pharmacy, 52 Powis Street, Woolwich SE18 — gửi xe, Elizabeth line, DLR.",
     url: "/vi/find-us",
@@ -30,7 +53,7 @@ export const metadata: Metadata = {
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Địa chỉ & gửi xe — Osteopath Woolwich",
+    title: "Địa chỉ osteopath Woolwich",
     description:
       "Tìm phòng khám osteopathy trong St James Pharmacy, 52 Powis Street, Woolwich SE18 — gửi xe, Elizabeth line, DLR.",
     images: [defaultOgImage.url],
@@ -57,8 +80,14 @@ const travel = [
 ] as const;
 
 export default function VietnameseFindUsPage() {
+  const faqLd = faqPageJsonLd(viFindFaqs, "vi");
+
   return (
     <div className="bg-slate-50" lang="vi">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
@@ -181,6 +210,24 @@ export default function VietnameseFindUsPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-display text-3xl text-navy">Câu hỏi khi đến khám</h2>
+          <dl className="mt-6 space-y-5">
+            {viFindFaqs.map((item) => (
+              <div key={item.question}>
+                <dt className="text-base font-semibold text-navy">
+                  {item.question}
+                </dt>
+                <dd className="mt-1.5 text-sm leading-relaxed text-slate-600 md:text-base">
+                  {item.answer}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 

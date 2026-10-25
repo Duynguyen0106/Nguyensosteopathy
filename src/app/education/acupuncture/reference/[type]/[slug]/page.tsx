@@ -14,6 +14,7 @@ import {
   isAcupunctureCorpusType,
 } from "@/lib/acupuncture-corpus";
 import {
+  corpusMetaDescription,
   formatCorpusHeading,
   formatCorpusTitle,
 } from "@/lib/corpus-format";
@@ -21,7 +22,6 @@ import {
   breadcrumbJsonLd,
   defaultOgImage,
   fitSerpTitle,
-  trimDescription,
 } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -42,14 +42,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const typeLabel = getAcupunctureCorpusTypeLabel(type);
   const display = formatCorpusTitle(record.displayTitle || record.title);
   const title = fitSerpTitle(`${display} | ${typeLabel}`);
-  const description = trimDescription(
-    record.latin ||
-      record.category ||
-      Object.values(record.sections).find(
-        (body) => typeof body === "string" && body.trim().length > 40,
-      ) ||
-      `${display} — American Dragon reference at Nguyen's Osteopathic Clinic.`,
-  );
+  const description = corpusMetaDescription({
+    displayTitle: display,
+    typeLabel,
+    latin: record.latin,
+    category: record.category,
+    pointCode: record.pointCode,
+    sections: record.sections,
+  });
   const path = `/education/acupuncture/reference/${type}/${slug}`;
   return {
     title,
@@ -105,11 +105,52 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
     { name: display, path },
   ]);
 
+  const description = corpusMetaDescription({
+    displayTitle: display,
+    typeLabel,
+    latin: record.latin,
+    category: record.category,
+    pointCode: record.pointCode,
+    sections: record.sections,
+  });
+  const learningLd = {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    name: display,
+    description,
+    url: `${site.websiteUrl}${path}`,
+    learningResourceType: typeLabel,
+    isAccessibleForFree: true,
+    inLanguage: "en",
+    about: record.latin || record.category || display,
+    isPartOf: {
+      "@type": "CollectionPage",
+      name: `${typeLabel} — acupuncture reference`,
+      url: `${site.websiteUrl}/education/acupuncture/reference/${type}`,
+    },
+    author: {
+      "@type": "Person",
+      name: attribution.author,
+      url: attribution.sourceUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.websiteUrl,
+    },
+    citation: record.sourceUrl,
+    educationalUse: "professional development",
+  };
+
   return (
     <div className="bg-slate-50">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(learningLd) }}
       />
 
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">

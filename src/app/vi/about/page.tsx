@@ -3,9 +3,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
-import { defaultOgImage, pageOpenGraph } from "@/lib/seo";
+import { defaultOgImage, faqPageJsonLd, pageOpenGraph } from "@/lib/seo";
 import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
+
+const viAboutFaqs = [
+  {
+    question: "Austin có đăng ký GOsC không?",
+    answer: `Có. Austin Duy Nguyen là osteopath Fully Registered với General Osteopathic Council — số ${site.practitioner.regNo}. Bạn có thể xác minh trên sổ đăng ký GOsC công khai.`,
+  },
+  {
+    question: "Có khám bằng tiếng Việt không?",
+    answer:
+      "Có. Bạn có thể mô tả triệu chứng và hỏi đáp bằng tiếng Việt hoặc tiếng Anh — chọn ngôn ngữ bạn thấy thoải mái nhất.",
+  },
+  {
+    question: "Phòng khám ở đâu?",
+    answer: `Trong ${site.address.venue}, ${site.address.line1}, ${site.address.line2}. Vào nhà thuốc và hỏi quầy — họ sẽ chỉ phòng osteopathy.`,
+  },
+] as const;
 
 export const metadata: Metadata = {
   title: {
@@ -52,8 +68,14 @@ export const metadata: Metadata = {
 };
 
 export default function VietnameseAboutPage() {
+  const faqLd = faqPageJsonLd(viAboutFaqs, "vi");
+
   return (
     <div className="bg-slate-50" lang="vi">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       <section className="relative min-h-[min(72vh,720px)] overflow-hidden text-white">
         <Image
           src="/images/austin-nguyen.webp"
@@ -109,9 +131,22 @@ export default function VietnameseAboutPage() {
               bằng tiếng mẹ đẻ, với osteopath đăng ký đầy đủ tại Anh.
             </p>
             <p>
+              Đào tạo gồm Master of Osteopathy (BCOM), CertHE Medical Sciences
+              (Distinction), cùng CPD shockwave, Dip.Acu và NASM PFT. Mục tiêu
+              là điều trị rõ ràng, giải thích dễ hiểu, và kế hoạch phục hồi thực
+              tế — không phụ thuộc thuốc giảm đau dài hạn khi orthopaedic care
+              phù hợp.
+            </p>
+            <p>
               Phòng khám nằm trong {site.address.venue}, {site.address.line1},{" "}
               {site.address.line2}. Hỏi quầy nhà thuốc khi đến — không cần GP
-              referral.
+              referral. Nhận lịch Thứ Hai, Ba, Năm, Sáu và Bảy (đóng Tư &amp;
+              Chủ Nhật).
+            </p>
+            <p>
+              Dịch vụ phổ biến: đau lưng &amp; cổ, shockwave tập trung, hỗ trợ
+              thể thao, châm cứu y khoa, và khám tại nhà trong khu vực Woolwich /
+              SE London khi di chuyển đến phòng khám khó.
             </p>
           </div>
           <ul className="mt-10 grid gap-4 text-sm text-slate-700 md:grid-cols-2">
@@ -140,6 +175,24 @@ export default function VietnameseAboutPage() {
             </a>
             .
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-display text-3xl text-navy">Câu hỏi nhanh</h2>
+          <dl className="mt-6 space-y-5">
+            {viAboutFaqs.map((item) => (
+              <div key={item.question}>
+                <dt className="text-base font-semibold text-navy">
+                  {item.question}
+                </dt>
+                <dd className="mt-1.5 text-sm leading-relaxed text-slate-600 md:text-base">
+                  {item.answer}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 

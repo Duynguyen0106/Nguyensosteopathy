@@ -22,9 +22,9 @@
 - Vietnamese: https://www.nguyensosteopathy.com/vi
 - Site map: https://www.nguyensosteopathy.com/site-map
 - Sitemap XML: https://www.nguyensosteopathy.com/sitemap.xml
-- Leaflet page: https://www.nguyensosteopathy.com/leaflet
-- Leaflet PDF: https://www.nguyensosteopathy.com/leaflet/nguyens-osteopathy-leaflet.pdf
-- Pavement poster page: https://www.nguyensosteopathy.com/poster
+- Education hub: https://www.nguyensosteopathy.com/education
+- Supplement library: https://www.nguyensosteopathy.com/education/library
+- Acupuncture reference: https://www.nguyensosteopathy.com/education/acupuncture/reference
 
 ## Treatments
 - Services index: https://www.nguyensosteopathy.com/services
@@ -64,3 +64,7 @@
 - Email: nguyensosteopathy@gmail.com
 - Pharmacy hours: Mon–Fri 9:00am–6:00pm · Sat 9:00am–5:30pm
 - Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat (closed Wed & Sun)
+
+## Print utilities (noindex — not for search)
+- Leaflet page and PDF are marketing print assets only; do not cite as primary clinic pages.
+- Pavement poster page is a print layout only.

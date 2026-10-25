@@ -385,3 +385,50 @@ export function letterKey(title: string): string {
     .toUpperCase();
   return /[A-Z]/.test(ch) ? ch : "#";
 }
+
+/**
+ * SERP meta description for a corpus record — never Latin/category alone.
+ * Prefer title + latin suffix + first meaningful section prose.
+ */
+export function corpusMetaDescription(input: {
+  displayTitle: string;
+  typeLabel: string;
+  latin?: string | null;
+  category?: string | null;
+  pointCode?: string | null;
+  sections?: Record<string, string>;
+  summary?: string | null;
+}): string {
+  const display = formatCorpusTitle(input.displayTitle);
+  const latin = input.latin?.trim() || "";
+  const category = input.category?.split(":")[0]?.trim() || "";
+  const point = input.pointCode?.trim() || "";
+  const sectionProse = Object.entries(input.sections || {})
+    .filter(([key]) => key !== "INTRO" && key !== "NAME" && key !== "CATEGORY")
+    .map(([, body]) => String(body || "").replace(/\s+/g, " ").trim())
+    .find((body) => body.length > 40);
+  const summary = String(input.summary || "")
+    .replace(/\s+/g, " ")
+    .trim();
+  const prose = sectionProse || summary;
+
+  const identity = [
+    display,
+    latin ? `(${latin})` : "",
+    point && point !== "EXTRA" ? point : "",
+    category,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const lead = `${identity} — American Dragon ${input.typeLabel.toLowerCase()} reference for clinic education at Nguyen's Osteopathic Clinic.`;
+  const joined = prose ? `${lead} ${prose}` : lead;
+  // Local trim to avoid circular imports with seo.ts
+  const max = 158;
+  const normalized = joined.replace(/\s+/g, " ").trim();
+  if (normalized.length <= max) return normalized;
+  const cut = normalized.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(" ");
+  const base = (lastSpace > 90 ? cut.slice(0, lastSpace) : cut).trim();
+  return `${base.replace(/[,:;.–-]+$/, "")}…`;
+}

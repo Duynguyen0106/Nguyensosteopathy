@@ -2,17 +2,19 @@ import {
   acupuncturePatientDisclaimer,
   cpdPractitionerDisclaimer,
   libraryDualAudienceDisclaimer,
+  libraryDualAudienceDisclaimerShort,
   type EducationAudience,
   type EducationTrackId,
 } from "@/lib/education";
 
 const copy: Record<
   EducationTrackId,
-  { title: string; body: string } | null
+  { title: string; body: string; bodyShort?: string } | null
 > = {
   library: {
     title: "For patients & practitioners",
     body: libraryDualAudienceDisclaimer,
+    bodyShort: libraryDualAudienceDisclaimerShort,
   },
   acupuncture: {
     title: "Patient education — acupuncture",
@@ -27,12 +29,18 @@ const copy: Record<
 export function EducationAudienceBanner({
   trackId,
   audience,
+  compact = false,
 }: {
   trackId: EducationTrackId;
   audience: EducationAudience;
+  /** Shorter disclaimer for dense library browse/theme pages. */
+  compact?: boolean;
 }) {
   const content = copy[trackId];
   if (!content) return null;
+
+  const body =
+    compact && content.bodyShort ? content.bodyShort : content.body;
 
   const border =
     audience === "practitioners"
@@ -42,11 +50,13 @@ export function EducationAudienceBanner({
         : "border-teal/30 bg-teal/5";
   return (
     <aside
-      className={`rounded-2xl border px-5 py-4 text-sm leading-relaxed text-slate-700 md:px-6 md:py-5 md:text-base ${border}`}
+      className={`rounded-2xl border px-5 py-4 text-sm leading-relaxed text-slate-700 md:px-6 md:py-5 ${
+        compact ? "md:text-sm" : "md:text-base"
+      } ${border}`}
       role="note"
     >
       <p className="font-semibold text-navy">{content.title}</p>
-      <p className="mt-2">{content.body}</p>
+      <p className="mt-2">{body}</p>
     </aside>
   );
 }

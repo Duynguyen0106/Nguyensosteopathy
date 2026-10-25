@@ -11,6 +11,13 @@ function joinTopics(topics, fallback = "general nutrition and recovery themes") 
   return `${topics.slice(0, -1).join(", ")}, and ${topics[topics.length - 1]}`;
 }
 
+function scenarioHash(pageNo, primary) {
+  const key = `${pageNo}:${String(primary || "").toLowerCase()}`;
+  let h = 0;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+  return h;
+}
+
 function scenario(pageNo, primary) {
   const scenarios = [
     `a desk worker in Woolwich with evening stiffness who saw ${primary} mentioned online`,
@@ -21,8 +28,12 @@ function scenario(pageNo, primary) {
     `a shift worker with irregular meals wondering if ${primary} fills dietary gaps`,
     `a gym-goer with tendon irritability seeing ${primary} in a recovery stack advert`,
     `a patient with osteoarthritis pacing flare days and reading claims about ${primary}`,
+    `a cyclist with lingering knee irritability curious whether ${primary} belongs in their plan`,
+    `a new patient comparing three bottles and asking which ${primary} claim is even relevant`,
+    `someone sleeping poorly after a flare who was told ${primary} “fixes inflammation overnight”`,
+    `a carer shopping for a relative and unsure whether ${primary} interacts with existing medicines`,
   ];
-  return scenarios[pageNo % scenarios.length];
+  return scenarios[scenarioHash(pageNo, primary) % scenarios.length];
 }
 
 function mskBridge(primary, mskRelevant) {
@@ -87,11 +98,10 @@ export function buildLongFormContent({
   pageNo,
   mskRelevant,
 }) {
-  const topicList = joinTopics(topics);
-  const others = topics.filter((t) => t !== primary).slice(0, 3);
-  const otherClause = others.length
-    ? ` Related labels that also appear around this sheet include ${joinTopics(others)}.`
-    : "";
+  // Audience copy stays centred on the primary topic — neighbour OCR labels
+  // must not leak into summaries or “also touching …” clauses.
+  const topicList = primary;
+  const otherClause = "";
   const scene = scenario(pageNo, primary);
   const msk = mskBridge(primary, mskRelevant);
 
@@ -153,9 +163,9 @@ export function buildLongFormContent({
       },
     ];
   } else if (kind === "product") {
-    summary = `In-depth dual-audience clinic education on ${primary}${
-      others.length ? ` (also touching ${joinTopics(others)})` : ""
-    } — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.`;
+    summary = mskRelevant
+      ? `Clinic education on ${primary}: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.`
+      : `Clinic education on ${primary}: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.`;
     sections = [
       {
         heading: "In plain English",
@@ -195,7 +205,7 @@ export function buildLongFormContent({
       },
     ];
   } else if (kind === "ailment") {
-    summary = `Extended education notes on ${primary} and related wellness themes (${topicList}) for patients seeking context and practitioners preparing explanations beside MSK care.`;
+    summary = `Clinic education on ${primary}: context for patients and teaching prompts for practitioners when this wellness theme comes up beside MSK care.`;
     sections = [
       {
         heading: "Context first",
@@ -231,7 +241,7 @@ export function buildLongFormContent({
       },
     ];
   } else if (kind === "sports") {
-    summary = `Sports, training, and recovery education covering ${topicList}, with a deep look at ${primary} for active patients and practitioners coaching load.`;
+    summary = `Sports, training, and recovery education on ${primary} for active patients and practitioners coaching load.`;
     sections = [
       {
         heading: "Training load before powders",
@@ -263,7 +273,7 @@ export function buildLongFormContent({
       },
     ];
   } else if (kind === "reference") {
-    summary = `Label-reading and formulation education focused on ${primary} (${topicList}) for patients and practitioners who want calmer conversations about ingredient lists.`;
+    summary = `Label-reading and formulation education on ${primary} for patients and practitioners who want calmer conversations about ingredient lists.`;
     sections = [
       {
         heading: "Why labels look alarming",
@@ -291,11 +301,11 @@ export function buildLongFormContent({
       },
     ];
   } else {
-    summary = `Clinic education notes on ${topicList}, centred on ${primary}, for patients and practitioners.`;
+    summary = `Clinic education on ${primary} for patients and practitioners.`;
     sections = [
       {
         heading: "Overview",
-        body: `This entry covers ${topicList} in the context of osteopathic clinic education. Use it to prepare questions, not to self-prescribe. ${msk}`,
+        body: `This entry covers ${primary} in the context of osteopathic clinic education. Use it to prepare questions, not to self-prescribe. ${msk}`,
       },
       {
         heading: "Shared caution",
@@ -446,12 +456,11 @@ export function buildAngledSheetContent({
   });
   const focus = angle?.focus || "clinic education boundaries";
   const label = angle?.label || "Clinic angle";
-  const topicList = joinTopics(topics);
   const msk = mskBridge(primary, mskRelevant);
 
   const angledSection = {
     heading: `${label}: ${primary}`,
-    body: `This sheet emphasises the “${label.toLowerCase()}” angle for ${primary}. Focus: ${focus}. In clinic we still keep the same spine — food first where possible, pharmacist review for interactions, clear functional goals, and MSK rehab that is not displaced by shopping. ${msk} Related labels on this topic may include ${topicList}. Use the topic hub for the combined theme; this variant exists so patients and practitioners can jump to one teaching emphasis without re-reading every overlapping sheet.`,
+    body: `This sheet emphasises the “${label.toLowerCase()}” angle for ${primary}. Focus: ${focus}. In clinic we still keep the same spine — food first where possible, pharmacist review for interactions, clear functional goals, and MSK rehab that is not displaced by shopping. ${msk} Use the topic hub for the combined theme; this variant exists so patients and practitioners can jump to one teaching emphasis without re-reading every overlapping sheet.`,
   };
 
   const sections = [angledSection, ...base.sections.filter((s) => !/^Clinic teaching point/.test(s.heading))];
@@ -480,7 +489,7 @@ export function buildCombinedThemeContent({
   sheetSlugs,
   angles,
 }) {
-  const topicList = joinTopics(topics.length ? topics : [primary]);
+  const topicList = primary;
   const msk = mskBridge(primary, mskRelevant);
   const angleList =
     angles && angles.length
@@ -497,8 +506,40 @@ export function buildCombinedThemeContent({
           ? "label-reading"
           : "ingredient";
 
-  const summary = `A clear dual-audience clinic theme on ${title} for patients and practitioners at Nguyen's Osteopathic Clinic — not a dosing protocol or product endorsement.`;
-
+  const angleLabels =
+    angles && angles.length
+      ? angles.map((a) => a.label).filter(Boolean)
+      : [];
+  const focuses =
+    angles && angles.length
+      ? angles.map((a) => a.focus).filter(Boolean)
+      : [];
+  const summaryHash = scenarioHash(sheetCount || 1, topicKey || title);
+  let summary;
+  if (focuses.length) {
+    const focus = String(focuses[summaryHash % focuses.length]).replace(
+      /\.$/,
+      "",
+    );
+    const variants = [
+      `${title}: ${focus}.`,
+      `In the ${title} theme, we emphasise ${focus}.`,
+      `${title} hub — ${focus}.`,
+    ];
+    summary = variants[summaryHash % variants.length];
+    if (!/patient|practitioner|clinic|dosing|education/i.test(summary)) {
+      summary =
+        summary.replace(/\.$/, "") +
+        ". Dual-audience clinic education, not dosing advice.";
+    }
+  } else if (angleLabels.length >= 2) {
+    summary = `${title} gathered into one theme (${angleLabels
+      .slice(0, 3)
+      .join(", ")
+      .toLowerCase()}) for patients and practitioners.`;
+  } else {
+    summary = `Clinic theme on ${title} for patients and practitioners — shared vocabulary beside care, not a prescribing guide.`;
+  }
   let sections = [
     {
       heading: `What this ${title} theme covers`,
@@ -506,7 +547,7 @@ export function buildCombinedThemeContent({
     },
     {
       heading: "In plain English",
-      body: `${primary} often appears in conversations about diet quality, recovery, sleep, energy, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements and wellness themes only as optional adjuncts after understanding load, sleep, mood, and medical context — never as a stand-alone fix for back, neck, or joint pain. Think of this theme as a shared briefing for patients preparing questions and practitioners scaffolding consent conversations. Related labels that may appear beside this topic include ${topicList}.`,
+      body: `${primary} often appears in conversations about diet quality, recovery, sleep, energy, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements and wellness themes only as optional adjuncts after understanding load, sleep, mood, and medical context — never as a stand-alone fix for back, neck, or joint pain. Think of this theme as a shared briefing for patients preparing questions and practitioners scaffolding consent conversations.`,
     },
     {
       heading: "Food first, then products",

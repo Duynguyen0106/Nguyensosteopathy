@@ -15,6 +15,8 @@ import {
   getRelatedBlogForTopic,
   isLibraryConditionOverlapTopic,
   libraryArticles,
+  libraryDisplaySummary,
+  libraryPrimaryTopics,
 } from "@/lib/education-library";
 import { hasTopicEvidence } from "@/lib/library-evidence";
 import {
@@ -54,18 +56,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const cleanSummary = libraryDisplaySummary({
+    title: article.topicTitle || article.title,
+    summary: article.summary,
+    mskRelevant: article.mskRelevant,
+  });
+
   if (articleRedirectsToTopic(article)) {
     const topicPath = `/education/library/topic/${article.topicKey}`;
     return {
       title: fitSerpTitle(`${article.topicTitle || article.title} theme`),
-      description: trimDescription(article.summary),
+      description: trimDescription(cleanSummary),
       alternates: { canonical: topicPath },
       robots: { index: false, follow: true },
     };
   }
 
   const title = fitSerpTitle(`${article.title} education`);
-  const description = trimDescription(article.summary);
+  const description = trimDescription(cleanSummary);
   const path = `/education/library/${article.slug}`;
   const ogTitle =
     typeof title === "string"
@@ -204,41 +212,59 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
             {article.title}
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            {article.summary}
+            {libraryDisplaySummary({
+              title: article.title,
+              summary: article.summary,
+              mskRelevant: article.mskRelevant,
+            })}
           </p>
-          {article.topics.length > 0 ? (
+          {libraryPrimaryTopics(article).length > 0 ? (
             <p className="mt-4 text-sm text-slate-500">
-              Topics: {article.topics.join(" · ")}
+              Topic: {libraryPrimaryTopics(article).join(" · ")}
             </p>
           ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={topicHref}>{topicTitle} theme</ButtonLink>
-            {evidenceHref ? (
-              <ButtonLink href={evidenceHref} variant="secondary">
-                Scientific notes &amp; references for {topicTitle}
-              </ButtonLink>
-            ) : null}
-            {relatedBlog ? (
-              <ButtonLink
-                href={`/blog/${relatedBlog.slug}`}
-                variant="secondary"
-              >
-                Blog article
-              </ButtonLink>
-            ) : (
-              <ButtonLink href="/blog" variant="secondary">
-                Nutrition blog articles
-              </ButtonLink>
-            )}
-            <ButtonLink href="/book" variant="secondary">
-              Book online
+            <ButtonLink href="/education/library" variant="secondary">
+              All topics
             </ButtonLink>
           </div>
+          <p className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-500">
+            {evidenceHref ? (
+              <Link
+                href={evidenceHref}
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Scientific notes
+              </Link>
+            ) : null}
+            {relatedBlog ? (
+              <Link
+                href={`/blog/${relatedBlog.slug}`}
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Blog article
+              </Link>
+            ) : (
+              <Link
+                href="/blog"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Nutrition blog
+              </Link>
+            )}
+            <Link
+              href="/book"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Book online
+            </Link>
+          </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-10 md:px-8 md:py-12">
-        <EducationAudienceBanner trackId="library" audience="both" />
+      <section className="mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-10">
+        <EducationAudienceBanner trackId="library" audience="both" compact />
       </section>
 
       <section className="mx-auto max-w-3xl px-5 pb-12 md:px-8">

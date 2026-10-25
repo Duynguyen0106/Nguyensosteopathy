@@ -175,48 +175,103 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
             {topic.title}
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            {theme
-              ? "One dual-audience clinic theme for patients and practitioners"
-              : "Dual-audience education on this topic"}
-            {topic.mskRelevant ? " · often relevant in MSK conversations" : ""}.
+            {topic.summary}
+            {topic.mskRelevant ? " Often relevant in MSK conversations." : ""}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/education/library">All topics</ButtonLink>
-            {evidenceReady ? (
-              <ButtonLink href="#evidence" variant="secondary">
-                Scientific notes &amp; references
-              </ButtonLink>
-            ) : null}
-            {theme ? (
-              <ButtonLink href="#theme" variant="secondary">
-                Read the theme
-              </ButtonLink>
-            ) : null}
-            {topic.relatedBlog ? (
-              <ButtonLink
-                href={`/blog/${topic.relatedBlog.slug}`}
-                variant="secondary"
-              >
-                Blog: {topic.relatedBlog.title}
-              </ButtonLink>
-            ) : (
-              <ButtonLink href="/blog" variant="secondary">
-                Nutrition blog articles
-              </ButtonLink>
-            )}
-            <ButtonLink href="/book" variant="secondary">
-              Book online
+            <ButtonLink href={theme ? "#theme" : "#notes"}>
+              {theme ? "Read the theme" : "Read the note"}
+            </ButtonLink>
+            <ButtonLink href="/education/library" variant="secondary">
+              All topics
             </ButtonLink>
           </div>
+          <p className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-500">
+            {evidenceReady ? (
+              <a href="#evidence" className="font-semibold text-teal hover:text-teal-dark">
+                Scientific notes
+              </a>
+            ) : null}
+            {topic.relatedBlog ? (
+              <Link
+                href={`/blog/${topic.relatedBlog.slug}`}
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Blog: {topic.relatedBlog.title}
+              </Link>
+            ) : (
+              <Link href="/blog" className="font-semibold text-teal hover:text-teal-dark">
+                Nutrition blog
+              </Link>
+            )}
+            <Link href="/book" className="font-semibold text-teal hover:text-teal-dark">
+              Book online
+            </Link>
+          </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-10 md:px-8 md:py-12">
-        <EducationAudienceBanner trackId="library" audience="both" />
+      <section className="mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-10">
+        <EducationAudienceBanner trackId="library" audience="both" compact />
       </section>
 
+      {(theme || evidenceReady || multi) && (
+        <nav
+          aria-label="On this page"
+          className="sticky top-16 z-20 border-b border-slate-200/80 bg-slate-50/95 backdrop-blur md:top-20"
+        >
+          <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 px-5 py-3 md:px-8">
+            <p className="mr-1 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+              On this page
+            </p>
+            {evidenceReady ? (
+              <a
+                href="#evidence"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Evidence
+              </a>
+            ) : null}
+            {theme ? (
+              <a
+                href="#theme"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Theme
+              </a>
+            ) : null}
+            {multi && angles.length > 0 ? (
+              <a
+                href="#angles"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Angles
+              </a>
+            ) : (
+              <a
+                href="#notes"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Notes
+              </a>
+            )}
+            {topic.relatedBlog ? (
+              <a
+                href="#related-blog"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Blog
+              </a>
+            ) : null}
+          </div>
+        </nav>
+      )}
+
       {topic.relatedBlog ? (
-        <section className="mx-auto max-w-6xl px-5 pb-8 md:px-8">
+        <section
+          id="related-blog"
+          className="mx-auto max-w-6xl px-5 pb-8 md:px-8"
+        >
           <div className="rounded-2xl border border-teal/30 bg-white px-5 py-6 md:px-6">
             <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
               Related blog article
@@ -242,24 +297,18 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
       {theme ? (
         <section
           id="theme"
-          className="mx-auto max-w-3xl px-5 pb-12 md:px-8"
+          className="mx-auto max-w-3xl px-5 pb-12 pt-8 md:px-8"
         >
           <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
             Clinic theme
           </p>
-          <h2 className="mt-2 font-display text-3xl text-navy md:text-4xl">
-            {theme.title}
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            {theme.summary}
-          </p>
-
-          <div className="mt-10 space-y-10">
+          {/* Title/summary already shown in the hero — start at teaching sections. */}
+          <div className="mt-6 space-y-10">
             {theme.sections.map((section) => (
               <article key={section.heading}>
-                <h3 className="font-display text-2xl text-navy md:text-3xl">
+                <h2 className="font-display text-2xl text-navy md:text-3xl">
                   {section.heading}
-                </h3>
+                </h2>
                 <p className="mt-3 text-base leading-relaxed text-slate-700 md:text-lg">
                   {section.body}
                 </p>
@@ -269,9 +318,9 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
 
           {theme.caveats.length > 0 ? (
             <div className="mt-12 rounded-2xl border border-slate-200 bg-white px-5 py-6 md:px-6">
-              <h3 className="font-display text-2xl text-navy">
+              <h2 className="font-display text-2xl text-navy">
                 Important caveats
-              </h3>
+              </h2>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-base text-slate-700">
                 {theme.caveats.map((caveat) => (
                   <li key={caveat}>{caveat}</li>
@@ -282,9 +331,9 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
 
           {theme.faqs.length > 0 ? (
             <div className="mt-12">
-              <h3 className="font-display text-2xl text-navy md:text-3xl">
+              <h2 className="font-display text-2xl text-navy md:text-3xl">
                 FAQs
-              </h3>
+              </h2>
               <dl className="mt-6 space-y-6">
                 {theme.faqs.map((faq) => (
                   <div key={faq.question}>
@@ -304,7 +353,10 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
         </section>
       ) : null}
 
-      <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+      <section
+        id={multi && angles.length > 0 ? "angles" : "notes"}
+        className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24"
+      >
         {multi && angles.length > 0 ? (
           <>
             <h2 className="font-display text-3xl text-navy">

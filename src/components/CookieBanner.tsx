@@ -23,6 +23,7 @@ export function CookieBanner() {
   const firstButtonRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname() || "/";
   const isVi = pathname.startsWith("/vi");
+  const compactLibrary = pathname.includes("/education/library");
   const consent = useSyncExternalStore(
     subscribeConsent,
     getConsentSnapshot,
@@ -122,31 +123,65 @@ export function CookieBanner() {
       role="dialog"
       aria-modal="true"
       aria-labelledby={titleId}
-      className="fixed inset-x-0 bottom-0 z-[60] border-t border-navy/10 bg-white/95 p-4 shadow-[0_-12px_40px_rgba(11,44,69,0.12)] backdrop-blur-md md:p-5"
+      className={`fixed inset-x-0 bottom-0 z-[60] border-t border-navy/10 bg-white/95 shadow-[0_-12px_40px_rgba(11,44,69,0.12)] backdrop-blur-md ${
+        compactLibrary ? "p-3 md:p-3.5" : "p-4 md:p-5"
+      }`}
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <div
+        className={`mx-auto flex max-w-6xl flex-col md:flex-row md:items-center md:justify-between ${
+          compactLibrary ? "gap-3" : "gap-4"
+        }`}
+      >
         <p
           id={titleId}
-          className="max-w-3xl text-sm leading-relaxed text-slate-700"
+          className={`max-w-3xl leading-relaxed text-slate-700 ${
+            compactLibrary ? "text-xs md:text-sm" : "text-sm"
+          }`}
         >
           {isVi ? (
+            compactLibrary ? (
+              <>
+                Cookie / analytics trên trình duyệt này. Xem{" "}
+                <Link
+                  href="/cookies"
+                  className="font-semibold text-teal underline-offset-2 hover:underline"
+                >
+                  chính sách cookie
+                </Link>
+                . Escape = chỉ thiết yếu.
+              </>
+            ) : (
+              <>
+                Chúng tôi lưu lựa chọn cookie trên trình duyệt này (local
+                storage). Nếu bạn đồng ý, chúng tôi dùng analytics để cải thiện
+                website. Xem{" "}
+                <Link
+                  href="/cookies"
+                  className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
+                >
+                  Chính sách cookie
+                </Link>
+                {" · "}
+                <Link
+                  href="/privacy"
+                  className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
+                >
+                  Quyền riêng tư
+                </Link>
+                . Escape hoặc “Chỉ thiết yếu” tắt analytics.
+              </>
+            )
+          ) : compactLibrary ? (
             <>
-              Chúng tôi lưu lựa chọn cookie trên trình duyệt này (local storage).
-              Nếu bạn đồng ý, chúng tôi dùng analytics để cải thiện website. Xem{" "}
+              Cookie choice is stored in this browser. Analytics only with
+              permission.{" "}
               <Link
                 href="/cookies"
-                className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
+                className="font-semibold text-teal underline-offset-2 hover:underline"
               >
-                Chính sách cookie
+                Cookie Policy
               </Link>
-              {" · "}
-              <Link
-                href="/privacy"
-                className="inline-flex min-h-11 items-center font-semibold text-teal underline-offset-2 hover:underline"
-              >
-                Quyền riêng tư
-              </Link>
-              . Escape hoặc “Chỉ thiết yếu” tắt analytics.
+              . Escape = essential only.
             </>
           ) : (
             <>
@@ -175,14 +210,18 @@ export function CookieBanner() {
             ref={firstButtonRef}
             type="button"
             onClick={() => choose("declined")}
-            className="min-h-11 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+            className={`rounded-xl border border-slate-200 bg-white text-sm font-semibold text-navy hover:border-teal hover:text-teal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal ${
+              compactLibrary ? "min-h-10 px-3 py-2" : "min-h-11 px-4 py-2.5"
+            }`}
           >
             {isVi ? "Chỉ thiết yếu" : "Essential only"}
           </button>
           <button
             type="button"
             onClick={() => choose("accepted")}
-            className="min-h-11 rounded-xl bg-teal px-4 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+            className={`rounded-xl bg-teal text-sm font-semibold text-white hover:bg-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal ${
+              compactLibrary ? "min-h-10 px-3 py-2" : "min-h-11 px-4 py-2.5"
+            }`}
           >
             {isVi ? "Chấp nhận analytics" : "Accept analytics"}
           </button>

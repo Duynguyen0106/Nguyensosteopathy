@@ -22,29 +22,19 @@ export function LibraryEvidencePanel({
     return (
       <section
         id="evidence"
-        className="mx-auto max-w-6xl px-5 pb-10 md:px-8"
+        className="mx-auto max-w-6xl px-5 pb-6 md:px-8"
       >
-        <div className="rounded-2xl border border-slate-200 bg-white px-5 py-6 md:px-6">
-          <h2 className="font-display text-2xl text-navy md:text-3xl">
-            What the evidence says
-          </h2>
-          <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-600">
-            Scientific notes and references for {topicTitle} are being added to
-            this library. Until then, treat this theme as clinic education —
-            not a literature review — and check with a GP, pharmacist, or
-            osteopath before starting supplements.
-          </p>
-          <p className="mt-4 text-sm text-slate-500">
-            Prefer personal advice?{" "}
-            <Link
-              href="/book"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
-              Book online
-            </Link>
-            .
-          </p>
-        </div>
+        <p className="max-w-3xl text-sm leading-relaxed text-slate-500">
+          Graded scientific notes for {topicTitle} are not on this page yet —
+          treat the theme below as clinic education, not a literature review.{" "}
+          <Link
+            href="/book"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            Book online
+          </Link>{" "}
+          for personal advice.
+        </p>
       </section>
     );
   }

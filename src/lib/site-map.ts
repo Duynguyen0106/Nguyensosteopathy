@@ -13,6 +13,10 @@ export const siteMapGroups = [
       { href: "/education", label: "Education hub" },
       { href: "/education/library", label: "Supplement education library" },
       { href: "/education/acupuncture", label: "Acupuncture education" },
+      {
+        href: "/education/acupuncture/reference",
+        label: "Acupuncture reference corpus",
+      },
       { href: "/education/cpd", label: "CPD for practitioners" },
       { href: "/resources", label: "Patient resources" },
       { href: "/find-us", label: "Find us & parking" },

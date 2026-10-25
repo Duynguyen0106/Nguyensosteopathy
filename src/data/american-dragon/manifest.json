@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "baseUrl": "https://www.americandragon.com",
+  "permissionEnv": "AMERICAN_DRAGON_PERMISSION",
+  "permissionValue": "confirmed",
+  "userAgent": "NguyensOsteopathyCorpusBot/1.0 (+https://www.nguyensosteopathy.com/education/acupuncture; permission-gated research mirror)",
+  "rateLimitMs": 750,
+  "maxRetries": 3,
+  "indexes": {
+    "points": ["https://www.americandragon.com/PointsIndex2.html"],
+    "herbs": [
+      "https://www.americandragon.com/IndividualHerbsIndex2.html",
+      "https://www.americandragon.com/LatinIndividualHerbIndex2.html"
+    ],
+    "formulas": [
+      "https://www.americandragon.com/HerbFormulaIndex2.html",
+      "https://www.americandragon.com/HerbFormulaIndexA-G.html",
+      "https://www.americandragon.com/HerbFormulaIndexH-N.html",
+      "https://www.americandragon.com/HerbFormulaIndexO-T.html",
+      "https://www.americandragon.com/HerbFormulaIndexU-Z.html"
+    ],
+    "conditions": ["https://www.americandragon.com/ConditionsIndex2.html"]
+  },
+  "linkMatchers": {
+    "points": ["Points/", "/Points/"],
+    "herbs": ["Individualherbsupdate/", "/Individualherbsupdate/"],
+    "formulas": ["Herb%20Formulas%20copy/", "Herb Formulas copy/"],
+    "conditions": ["conditions/", "/conditions/", "../conditions/"]
+  },
+  "pointSections": [
+    "NAME",
+    "LOCATION",
+    "NEEDLING",
+    "COMMAND FUNCTIONS",
+    "ACTIONS",
+    "INDICATIONS",
+    "COMBINATIONS",
+    "CONTRAINDICATIONS",
+    "NOTES"
+  ],
+  "attribution": {
+    "sourceName": "American Dragon",
+    "sourceUrl": "https://www.americandragon.com",
+    "author": "Dr Joel Penner, OMD, LAc",
+    "licenseNote": "Ingest only with written permission from the owner/estate. Clinic education pages must use original clinic voice; do not mirror third-party HTML."
+  }
+}

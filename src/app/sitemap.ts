@@ -126,6 +126,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
           priority: 0.7,
         }),
       ),
+    entry({
+      path: "/education/acupuncture/reference",
+      priority: 0.55,
+    }),
     ...getSitemapLibraryTopicKeys().map((topic) =>
       entry({
         path: `/education/library/topic/${topic}`,

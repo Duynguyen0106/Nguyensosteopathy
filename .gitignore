@@ -33,6 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Permission-gated third-party corpus (American Dragon raw + normalized)
+/private/american-dragon/
+
 # vercel
 .vercel
 

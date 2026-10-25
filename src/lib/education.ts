@@ -66,7 +66,7 @@ export const educationTracks: EducationTrack[] = [
     title: "Acupuncture education",
     shortTitle: "Acupuncture",
     summary:
-      "Plain-English notes on medical acupuncture and electroacupuncture used at the clinic. Add handouts and topic pages here as you write them.",
+      "Plain-English patient notes on medical acupuncture and electroacupuncture used at the clinic, plus a permission-gated reference corpus framework for points, herbs, formulas, and patterns.",
     audience: "patients",
     audienceLabel: "For patients",
     ctaLabel: "Browse acupuncture guides",

@@ -1,0 +1,157 @@
+{
+  "generatedAt": "2026-10-25T17:59:37.465Z",
+  "source": "discovered-inventory",
+  "attribution": {
+    "sourceName": "American Dragon",
+    "sourceUrl": "https://www.americandragon.com",
+    "author": "Dr Joel Penner, OMD, LAc",
+    "licenseNote": "Ingest only with written permission from the owner/estate. Clinic education pages must use original clinic voice; do not mirror third-party HTML."
+  },
+  "permissionEnv": "AMERICAN_DRAGON_PERMISSION",
+  "categories": [
+    {
+      "id": "points",
+      "label": "Acupuncture points",
+      "description": "Channel and extraordinary points with location, needling, actions, and combinations."
+    },
+    {
+      "id": "herbs",
+      "label": "Individual herbs",
+      "description": "Single-herb monographs from the American Dragon herb index."
+    },
+    {
+      "id": "formulas",
+      "label": "Herb formulas",
+      "description": "Classical and modern formula pages indexed A–Z."
+    },
+    {
+      "id": "conditions",
+      "label": "Conditions & syndromes",
+      "description": "TCM pattern / biomedical condition reference pages (practitioner study — not UK diagnosis)."
+    }
+  ],
+  "counts": {
+    "points": 480,
+    "herbs": 688,
+    "formulas": 2746,
+    "conditions": 425
+  },
+  "inventoryTotal": 4339,
+  "totalsApprox": {
+    "points": 480,
+    "herbs": 688,
+    "formulas": 2746,
+    "conditions": 425,
+    "pages": 4339
+  },
+  "entries": [
+    {
+      "type": "conditions",
+      "slug": "abdominablockage",
+      "label": "AbdominaBlockage",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominaBlockage.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalcold",
+      "label": "AbdominalCold",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalCold.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalemptiness",
+      "label": "AbdominalEmptiness",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalEmptiness.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalfullnessanddistention",
+      "label": "AbdominalFullnessandDistention",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalFullnessandDistention.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalheat",
+      "label": "AbdominalHeat",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalHeat.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalheaviness",
+      "label": "AbdominalHeaviness",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalHeaviness.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalhyperfunction",
+      "label": "AbdominalHyperfunction",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalHyperfunction.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalhypofunction",
+      "label": "AbdominalHypofunction",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalHypofunction.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalitch",
+      "label": "AbdominalItch",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalItch.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalmasses",
+      "label": "AbdominalMasses",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalMasses.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalpain",
+      "label": "AbdominalPain",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalPain.html",
+      "status": "discovered",
+      "publishable": false
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalskinpain",
+      "label": "AbdominalSkinPain",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalSkinPain.html",
+      "status": "discovered",
+      "publishable": false
+    }
+  ],
+  "pipeline": {
+    "discover": "npm run education:acupuncture:discover",
+    "fetch": "AMERICAN_DRAGON_PERMISSION=confirmed npm run education:acupuncture:fetch",
+    "parse": "AMERICAN_DRAGON_PERMISSION=confirmed npm run education:acupuncture:parse",
+    "buildIndex": "npm run education:acupuncture:index"
+  },
+  "publishingRules": [
+    "Normalized records default to publishable:false.",
+    "Patient pages must use clinic-voice rewrites, not verbatim American Dragon HTML.",
+    "Cite American Dragon as a source when material informs a published note.",
+    "Full URL inventory and raw HTML stay under private/american-dragon/ (gitignored)."
+  ]
+}

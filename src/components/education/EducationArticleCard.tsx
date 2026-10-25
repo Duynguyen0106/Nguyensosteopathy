@@ -17,9 +17,9 @@ export function EducationArticleCard({
       <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
         {article.status === "coming-soon" ? "Coming soon" : "Guide"}
       </p>
-      <h3 className="mt-2 font-display text-2xl text-navy group-hover:text-teal-dark">
+      <h2 className="mt-2 font-display text-2xl text-navy group-hover:text-teal-dark">
         {article.title}
-      </h3>
+      </h2>
       <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600 md:text-base">
         {article.summary}
       </p>

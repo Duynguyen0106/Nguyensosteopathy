@@ -46,7 +46,6 @@ export type EducationArticle = {
   /** Public path e.g. /education/cpd/my-course.pdf */
   pdfPath?: string;
   relatedServiceSlug?: string;
-  relatedConditionSlugs?: string[];
 };
 
 export const educationTracks: EducationTrack[] = [
@@ -179,7 +178,7 @@ export const educationArticles: EducationArticle[] = [
       },
       {
         heading: "How we will use this hub",
-        body: "Future course summaries from Austin’s CPD will be published as separate pages under this track. Attach PDFs under public/education/cpd/ when you have handouts ready to share.",
+        body: "Future course summaries from Austin’s CPD will be published as separate pages under this track, with downloadable notes where useful.",
       },
     ],
     faqs: [
@@ -197,28 +196,28 @@ export const educationArticles: EducationArticle[] = [
   {
     slug: "course-slot-msk-rehab",
     track: "cpd",
-    title: "Course notes: MSK rehab (placeholder)",
+    title: "Course notes: MSK rehab",
     summary:
-      "Reserved slot for a future CPD course summary on musculoskeletal rehab programming. Replace this stub when you upload notes.",
+      "Practitioner notes from a future musculoskeletal rehab CPD activity will appear here when published.",
     status: "coming-soon",
     sections: [
       {
-        heading: "Placeholder",
-        body: "Add the course title, provider, date, learning outcomes, and clinical implications here. Link a PDF via pdfPath when the file is in public/education/cpd/.",
+        heading: "Not published yet",
+        body: "This page is a reserved space for a forthcoming CPD summary on MSK rehab programming. Check back after the next course update, or browse the CPD log template meanwhile.",
       },
     ],
   },
   {
     slug: "course-slot-acupuncture-update",
     track: "cpd",
-    title: "Course notes: acupuncture update (placeholder)",
+    title: "Course notes: acupuncture update",
     summary:
-      "Reserved slot for acupuncture/dry-needling CPD reflection. Practitioner audience only.",
+      "Practitioner reflection from a future acupuncture CPD update will appear here when published.",
     status: "coming-soon",
     sections: [
       {
-        heading: "Placeholder",
-        body: "Summarise safety updates, point selection thinking, and how the course changes consent or documentation in clinic. Keep patient-facing explanations on the Acupuncture education track instead.",
+        heading: "Not published yet",
+        body: "This page will hold practitioner-facing notes from an acupuncture CPD update. Patient explanations of needling stay on the Acupuncture education track.",
       },
     ],
   },

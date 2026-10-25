@@ -129,12 +129,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.65,
       }),
     ),
-    ...educationArticles.map((article) =>
-      entry({
-        path: `/education/${article.track}/${article.slug}`,
-        priority: article.status === "published" ? 0.65 : 0.4,
-      }),
-    ),
+    ...educationArticles
+      .filter((article) => article.status === "published")
+      .map((article) =>
+        entry({
+          path: `/education/${article.track}/${article.slug}`,
+          priority: 0.65,
+        }),
+      ),
     ...serviceAreas.map((area) =>
       entry({
         path: `/areas/${area.slug}`,

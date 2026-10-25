@@ -49,6 +49,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: path },
+    robots:
+      article.status === "coming-soon"
+        ? { index: false, follow: true }
+        : undefined,
     openGraph: {
       title: ogTitle,
       description,
@@ -76,24 +80,38 @@ export default async function EducationArticlePage({ params }: Props) {
 
   const path = educationHref(track.id, article.slug);
 
-  const pageLd = {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "@id": `${site.websiteUrl}${path}#webpage`,
-    name: article.title,
-    url: `${site.websiteUrl}${path}`,
-    description: article.summary,
-    audience: {
-      "@type": "Audience",
-      audienceType:
-        track.audience === "practitioners"
-          ? "Healthcare practitioners"
-          : "Patients",
-    },
-    reviewedBy: { "@id": `${site.websiteUrl}/#practitioner` },
-    provider: { "@id": `${site.websiteUrl}/#clinic` },
-    isPartOf: { "@id": `${site.websiteUrl}/#website` },
-  };
+  const pageLd =
+    track.audience === "practitioners"
+      ? {
+          "@context": "https://schema.org",
+          "@type": "LearningResource",
+          "@id": `${site.websiteUrl}${path}#webpage`,
+          name: article.title,
+          url: `${site.websiteUrl}${path}`,
+          description: article.summary,
+          educationalLevel: "Professional development",
+          audience: {
+            "@type": "Audience",
+            audienceType: "Healthcare practitioners",
+          },
+          provider: { "@id": `${site.websiteUrl}/#clinic` },
+          isPartOf: { "@id": `${site.websiteUrl}/#website` },
+        }
+      : {
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "@id": `${site.websiteUrl}${path}#webpage`,
+          name: article.title,
+          url: `${site.websiteUrl}${path}`,
+          description: article.summary,
+          audience: {
+            "@type": "Audience",
+            audienceType: "Patients",
+          },
+          reviewedBy: { "@id": `${site.websiteUrl}/#practitioner` },
+          provider: { "@id": `${site.websiteUrl}/#clinic` },
+          isPartOf: { "@id": `${site.websiteUrl}/#website` },
+        };
 
   const faqLd =
     article.faqs && article.faqs.length > 0

@@ -142,6 +142,17 @@ const groups = [
           "Patient guides on magnesium, vitamin D, omega-3, collagen, and when pills will not fix pain.",
       },
       {
+        href: "/education/acupuncture",
+        label: "Acupuncture education",
+        detail: "Patient notes on medical acupuncture used alongside osteopathy.",
+      },
+      {
+        href: "/education/cpd",
+        label: "CPD for practitioners",
+        detail:
+          "Public CPD notes labelled for osteopaths and allied practitioners — not patient advice.",
+      },
+      {
         href: "/leaflet",
         label: "Clinic leaflet",
         detail: "Printable overview of services, fees, and how to book.",

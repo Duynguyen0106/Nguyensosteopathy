@@ -134,12 +134,21 @@ export default async function EducationTrackPage({ params }: Props) {
         </ul>
 
         <p className="mt-12 text-sm text-slate-500">
-          Optional PDFs can be added under{" "}
-          <code className="rounded bg-white px-1.5 py-0.5 text-navy">
-            public/education/{track.slug}/
-          </code>{" "}
-          and linked from an article via{" "}
-          <code className="rounded bg-white px-1.5 py-0.5 text-navy">pdfPath</code>
+          Looking for something else?{" "}
+          <Link href="/education" className="font-semibold text-teal hover:text-teal-dark">
+            Back to the education hub
+          </Link>
+          {track.id === "acupuncture" ? (
+            <>
+              {" · "}
+              <Link
+                href="/aftercare"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                General aftercare
+              </Link>
+            </>
+          ) : null}
           .
         </p>
       </section>

@@ -153,7 +153,7 @@ const NAV_NOISE_LINE =
   /^(jump to main content|only search american dragon\.?com?|treatment protocols|individual herbs \(pin yin\)|herb formulas|chinese herbs|acupuncture relaxation technique|ask the doctor|donate|home joel penner|lone wolf press|search this site|©.*american dragon|&copy;.*american dragon)$/i;
 
 const CHROME_TITLES =
-  /^(individual herbs|herb formulas|erb formulas|point:?|conditions?|chinese herbs.*american dragon|chinese medicine)$/i;
+  /^(individual herbs|herb formulas|erb formulas|point:?|conditions?|chinese herbs.*american dragon|chinese medicine|american dragon)$/i;
 
 const TITLE_CHROME_SUFFIX =
   /\s*[-–—|]\s*(Chinese Herbs|Chinese Medicine|Acupuncture|American Dragon|Dr Joel Penner|OMD|LAc|Lone Wolf Press|Los Angeles).*$/i;
@@ -169,25 +169,29 @@ function cleanBody(text) {
 
 /** Canonical section keys for consistent UI / search. */
 const SECTION_ALIASES = [
-  [
-    /^CONTRAINDICATIONS.*HERB\/?DRUG/i,
-    "CONTRAINDICATIONS",
-  ],
-  [/^CONTRAINDICATIONS,?\s*INCOMPATIBILITIES/i, "CONTRAINDICATIONS"],
-  [/^ACTIONS AND INDICATIONS$/i, "ACTIONS AND INDICATIONS"],
+  [/^\*?CONTRAINDICATIO\w*.*(HERB\/?DRUG|INCOMPATIBILIT)/i, "CONTRAINDICATIONS"],
+  [/^\*?CONTRAINDICATIO\w*$/i, "CONTRAINDICATIONS"],
+  [/^ACTIONS AND INDICATIONS?$/i, "ACTIONS AND INDICATIONS"],
   [/^HERBS AND ACTIONS$/i, "HERBS AND ACTIONS"],
   [/^FORMULA ACTIONS$/i, "FORMULA ACTIONS"],
   [/^CLINICAL MANIFESTATIONS$/i, "CLINICAL MANIFESTATIONS"],
   [/^MAJOR COMBINATIONS$/i, "MAJOR COMBINATIONS"],
   [/^COMMAND FUNCTIONS$/i, "COMMAND FUNCTIONS"],
+  [/^CATEGOR(?:Y|IES)?$/i, "CATEGORY"],
 ];
 
 const KNOWN_SECTION_HEADINGS =
   /^(NAME|CATEGORY|PROPERTIES|ACTIONS|ACTIONS AND INDICATIONS|INDICATIONS|LOCATION|NEEDLING|COMMAND FUNCTIONS|COMBINATIONS|CONTRAINDICATIONS|NOTES|HERBS AND ACTIONS|FORMULA ACTIONS|SYNDROMES|CLINICAL MANIFESTATIONS|TREATS|MODIFICATIONS|MAJOR COMBINATIONS|INGREDIENTS|DIAGNOSIS|TREATMENT|GENERAL|HERBS|FORMULAS|POINTS|ALSO KNOWN AS)$/i;
 
 function canonicalizeSectionKey(raw) {
-  let key = stripTags(raw).replace(/:$/, "").trim().replace(/\s+/g, " ");
-  if (!key) return { key: "", headingValue: null };
+  let key = stripTags(raw)
+    .replace(/^[*★]+\s*/, "")
+    .replace(/:$/, "")
+    .trim()
+    .replace(/\s+/g, " ");
+  if (!key || /^(&nbsp;|\u00a0|\s)*$/i.test(key)) {
+    return { key: "", headingValue: null };
+  }
 
   if (/^NAME\b/i.test(key)) {
     const value = key.replace(/^NAME:\s*/i, "").trim();
@@ -198,12 +202,8 @@ function canonicalizeSectionKey(raw) {
     if (re.test(key)) return { key: canon, headingValue: null };
   }
 
-  // Formula pages put the formula title in the first h3 — store as NAME.
+  // Formula/herb pages sometimes put the title in the first h3 without NAME:
   if (!KNOWN_SECTION_HEADINGS.test(key) && key.length < 120) {
-    // Condition pattern headings stay as section keys; formula titles are short
-    // title-case / ALL CAPS names without being known section labels.
-    // Heuristic: if it looks like a known structural heading after aliasing, keep;
-    // otherwise caller may promote formula titles via promoteFormulaName().
     return { key: key.toUpperCase(), headingValue: null, maybeTitle: true };
   }
 
@@ -211,23 +211,40 @@ function canonicalizeSectionKey(raw) {
   return { key: key.toUpperCase(), headingValue: null };
 }
 
-/** Move a lone formula-title section key into NAME. */
+/** Move a lone title section key into NAME (formulas + some herbs). */
 export function promoteFormulaName(sections, title) {
   if (sections.NAME) return sections;
   const keys = Object.keys(sections);
-  const titleKey = keys.find(
-    (k) =>
-      !KNOWN_SECTION_HEADINGS.test(k) &&
-      (k === title.toUpperCase() ||
-        title.toUpperCase().startsWith(k) ||
-        k.startsWith(title.toUpperCase().slice(0, 12))),
-  );
+  const normTitle = String(title || "")
+    .toUpperCase()
+    .replace(/\s+/g, " ")
+    .trim();
+  const titleKey = keys.find((k) => {
+    if (KNOWN_SECTION_HEADINGS.test(k)) return false;
+    const nk = k.replace(/\s+/g, " ").trim();
+    return (
+      nk === normTitle ||
+      normTitle.startsWith(nk) ||
+      nk.startsWith(normTitle.slice(0, 12)) ||
+      // Herb name headings often include Latin / Chinese after dashes
+      nk.startsWith(normTitle.split(/\s+-\s+/)[0])
+    );
+  });
   if (!titleKey) return sections;
   const next = { ...sections };
   const body = next[titleKey];
   delete next[titleKey];
   next.NAME = [title, body].filter(Boolean).join("\n").trim();
   return next;
+}
+
+/** Normalize display titles: collapse odd spacing around parentheses. */
+export function tidyTitle(title) {
+  return String(title || "")
+    .replace(/\(\s+/g, "(")
+    .replace(/\s+\)/g, ")")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 /**
@@ -248,9 +265,10 @@ export function parseAccordionSections(html) {
 
     if (key === "NAME") {
       if (headingValue) {
+        const cleaned = tidyTitle(headingValue.replace(/\(\s*$/, ""));
         sections.NAME = sections.NAME
-          ? `${sections.NAME}\n${headingValue}`
-          : headingValue;
+          ? `${sections.NAME}\n${cleaned}`
+          : cleaned;
       }
       if (body) {
         sections.NAME = sections.NAME
@@ -328,6 +346,17 @@ function documentTitle(html) {
   return title;
 }
 
+function extractPointCode(text) {
+  const raw =
+    String(text || "").match(/\b((?:M|N)-[A-Z]+-\d+)\b/i)?.[1] ||
+    String(text || "").match(
+      /\b((?:REN|DU|UB|SJ|PC|HT|LU|LI|ST|SP|KI|LIV|GB|SI|BL|TB|CV|GV)[- ]?\d+[A-Z]?)\b/i,
+    )?.[1] ||
+    String(text || "").match(/\b([A-Z]{1,3}-\d+[A-Z]?)\b/i)?.[1] ||
+    null;
+  return raw ? raw.toUpperCase().replace(/\s+/g, "-") : null;
+}
+
 export function extractTitle(html, type, fallback = "") {
   const h1 = stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "")
     .replace(/\s+/g, " ")
@@ -338,25 +367,43 @@ export function extractTitle(html, type, fallback = "") {
   const docTitle = documentTitle(html);
 
   if (type === "points") {
-    if (h1 && !CHROME_TITLES.test(h1) && !/^POINT:?$/i.test(h1)) {
-      return h1.replace(/^POINT:\s*/i, "").replace(/\s+/g, " ").trim();
-    }
-    if (docTitle) return docTitle;
     const nameH = h3s.find((h) => /^NAME:/i.test(h));
-    if (nameH) return nameH.replace(/^NAME:\s*/i, "").trim();
-    return String(fallback || "").trim();
+    let name = nameH
+      ? tidyTitle(nameH.replace(/^NAME:\s*/i, "").replace(/\(\s*$/, ""))
+      : "";
+    const code =
+      extractPointCode(h1) ||
+      extractPointCode(docTitle) ||
+      extractPointCode(name) ||
+      extractPointCode(fallback);
+    if (name && code) {
+      name = name.replace(new RegExp(`\\(?\\s*${code}\\s*\\)?`, "i"), "").trim();
+      return tidyTitle(`${name} (${code})`);
+    }
+    if (name) return name;
+    if (h1 && !CHROME_TITLES.test(h1) && !/^POINT:?$/i.test(h1)) {
+      return tidyTitle(h1.replace(/^POINT:\s*/i, ""));
+    }
+    if (docTitle && !CHROME_TITLES.test(docTitle)) return tidyTitle(docTitle);
+    return tidyTitle(fallback);
   }
 
   if (type === "herbs") {
     const nameH = h3s.find((h) => /^NAME:/i.test(h));
     if (nameH) {
-      return nameH
-        .replace(/^NAME:\s*/i, "")
-        .replace(/\s+/g, " ")
-        .trim();
+      return tidyTitle(nameH.replace(/^NAME:\s*/i, ""));
     }
-    if (docTitle) return docTitle;
-    return String(fallback || h1 || "").trim();
+    // Some herb pages omit the NAME: label and put the name in the first h3.
+    const firstSubstantive = h3s.find(
+      (h) =>
+        h &&
+        !KNOWN_SECTION_HEADINGS.test(h) &&
+        !CHROME_TITLES.test(h) &&
+        h.length > 1,
+    );
+    if (firstSubstantive) return tidyTitle(firstSubstantive);
+    if (docTitle) return tidyTitle(docTitle);
+    return tidyTitle(fallback || h1);
   }
 
   if (type === "formulas") {
@@ -367,16 +414,16 @@ export function extractTitle(html, type, fallback = "") {
           h,
         ),
     );
-    if (nameH && !CHROME_TITLES.test(nameH)) return nameH.trim();
-    if (docTitle) return docTitle;
-    if (h1 && !CHROME_TITLES.test(h1)) return h1.trim();
-    return String(fallback || "").trim();
+    if (nameH && !CHROME_TITLES.test(nameH)) return tidyTitle(nameH);
+    if (docTitle) return tidyTitle(docTitle);
+    if (h1 && !CHROME_TITLES.test(h1)) return tidyTitle(h1);
+    return tidyTitle(fallback);
   }
 
   // conditions — h1 is usually the real condition name
-  if (h1 && !CHROME_TITLES.test(h1)) return h1.trim();
-  if (docTitle && !/chinese herbs/i.test(docTitle)) return docTitle;
-  return String(fallback || h1 || "").trim();
+  if (h1 && !CHROME_TITLES.test(h1)) return tidyTitle(h1);
+  if (docTitle && !/chinese herbs/i.test(docTitle)) return tidyTitle(docTitle);
+  return tidyTitle(fallback || h1);
 }
 
 export function enrichRecord(type, slug, title, sections, sourceUrl) {
@@ -401,21 +448,32 @@ export function enrichRecord(type, slug, title, sections, sourceUrl) {
       channelCode?.[1] ||
       title.match(/\b([A-Z]{1,3}-\d+[A-Z]?)\b/i)?.[1] ||
       ""
-    ).toUpperCase().replace(/\s+/g, "-") || null;
-    if (meta.pointCode?.startsWith("N-") || meta.pointCode?.startsWith("M-")) {
+    )
+      .toUpperCase()
+      .replace(/\s+/g, "-") || null;
+    if (
+      !meta.pointCode ||
+      meta.pointCode.startsWith("N-") ||
+      meta.pointCode.startsWith("M-")
+    ) {
       meta.channel = "EXTRA";
     } else {
-      meta.channel = meta.pointCode?.match(/^([A-Z]+)/)?.[1] || null;
+      meta.channel = meta.pointCode.match(/^([A-Z]+)/)?.[1] || null;
     }
     const name = sections.NAME || "";
-    const primaryName = name
-      .split(/\n/)
-      .map((s) => s.trim())
-      .find((s) => s && !/^(english|also known as)/i.test(s));
+    const primaryName = tidyTitle(
+      (name
+        .split(/\n/)
+        .map((s) => s.trim())
+        .find((s) => s && !/^(english|also known as)/i.test(s)) || "")
+        .replace(/\(\s*$/, "")
+        .replace(new RegExp(`\\(?\\s*${meta.pointCode || "___"}\\s*\\)?`, "i"), "")
+        .trim(),
+    );
     if (name) {
       meta.aliases = name
         .split(/\n|\/|,/)
-        .map((s) => s.trim())
+        .map((s) => tidyTitle(s.replace(/\(\s*$/, "")))
         .filter((s) => s && !/^(english|also known as):?$/i.test(s))
         .slice(0, 8);
     }
@@ -425,6 +483,8 @@ export function enrichRecord(type, slug, title, sections, sourceUrl) {
       meta.displayTitle = primaryName;
     } else if (meta.pointCode) {
       meta.displayTitle = meta.pointCode;
+    } else {
+      meta.displayTitle = tidyTitle(title);
     }
   }
 
@@ -439,7 +499,7 @@ export function enrichRecord(type, slug, title, sections, sourceUrl) {
       .split(/\s+-\s+/)
       .map((s) => s.trim())
       .filter(Boolean);
-    meta.pinyin = parts[0] || title.split(/\s+-\s+/)[0].trim();
+    meta.pinyin = tidyTitle(parts[0] || title.split(/\s+-\s+/)[0]);
 
     const labeledLatin = (() => {
       const idx = nameLines.findIndex((l) =>
@@ -470,8 +530,8 @@ export function enrichRecord(type, slug, title, sections, sourceUrl) {
           !/[\u4e00-\u9fff]/.test(p) &&
           !LATIN_RE.test(p),
       );
-    meta.displayTitle = meta.pinyin;
-    meta.aliases = [headingLine, meta.latin, english].filter(Boolean);
+    meta.displayTitle = tidyTitle(meta.pinyin);
+    meta.aliases = [tidyTitle(headingLine), meta.latin, english].filter(Boolean);
     if (sections.CATEGORY) {
       meta.category = sections.CATEGORY.split("\n")[0]
         .replace(/\s+/g, " ")

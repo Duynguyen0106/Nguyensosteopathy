@@ -20,6 +20,7 @@ import {
   loadManifest,
   parseSections,
   promoteFormulaName,
+  tidyTitle,
   writeJson,
 } from "./lib.mjs";
 
@@ -80,8 +81,10 @@ for (const entry of inventory.entries) {
         ];
 
   let sections = parseSections(html, known);
-  const title = extractTitle(html, entry.type, entry.label || entry.slug);
-  if (entry.type === "formulas") {
+  const title = tidyTitle(
+    extractTitle(html, entry.type, entry.label || entry.slug),
+  );
+  if (entry.type === "formulas" || entry.type === "herbs") {
     sections = promoteFormulaName(sections, title);
   }
   const enrichment = enrichRecord(

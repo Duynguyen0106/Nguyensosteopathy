@@ -3,17 +3,21 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { SupplementCard } from "@/components/supplements/SupplementCard";
 import { SupplementSafetyBanner } from "@/components/supplements/SupplementSafetyBanner";
-import { defaultOgImage } from "@/lib/seo";
+import { defaultOgImage, trimDescription } from "@/lib/seo";
 import {
+  getSupplementsByCategory,
   supplementCategories,
   supplements,
 } from "@/lib/supplements";
 import { site } from "@/lib/site";
 
+const hubDescription = trimDescription(
+  "Patient guides on supplements and recovery from Nguyen's Osteopathic Clinic in Woolwich: magnesium, vitamin D, omega-3, collagen, and when pills will not fix back pain.",
+);
+
 export const metadata: Metadata = {
   title: "Supplements & Recovery Guides",
-  description:
-    "Patient education on supplements and recovery habits from Nguyen's Osteopathic Clinic in Woolwich: magnesium, vitamin D, omega-3, collagen, and when pills will not fix back pain.",
+  description: hubDescription,
   alternates: { canonical: "/supplements" },
   keywords: [
     "osteopath supplements Woolwich",
@@ -24,16 +28,42 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: `Supplements & Recovery | ${site.name}`,
-    description:
-      "Original patient guides on supplements and recovery — educational only, not product sales.",
+    description: hubDescription,
     url: "/supplements",
     images: [defaultOgImage],
   },
 };
 
 export default function SupplementsIndexPage() {
+  const pageLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "@id": `${site.websiteUrl}/supplements#webpage`,
+    name: "Supplements & recovery guides",
+    url: `${site.websiteUrl}/supplements`,
+    description: hubDescription,
+    specialty: "https://schema.org/Musculoskeletal",
+    audience: {
+      "@type": "PeopleAudience",
+      geographicArea: { "@type": "City", name: "Woolwich" },
+    },
+    reviewedBy: { "@id": `${site.websiteUrl}/#practitioner` },
+    provider: { "@id": `${site.websiteUrl}/#clinic` },
+    isPartOf: { "@id": `${site.websiteUrl}/#website` },
+    hasPart: supplements.map((topic) => ({
+      "@type": "MedicalWebPage",
+      name: topic.title,
+      url: `${site.websiteUrl}/supplements/${topic.slug}`,
+    })),
+  };
+
   return (
     <div className="bg-slate-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
+      />
+
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
@@ -66,7 +96,7 @@ export default function SupplementsIndexPage() {
       <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
         <div className="flex flex-wrap gap-2">
           {supplementCategories.map((category) => {
-            const count = supplements.filter((t) => t.category === category).length;
+            const count = getSupplementsByCategory(category).length;
             if (!count) return null;
             return (
               <a
@@ -82,7 +112,7 @@ export default function SupplementsIndexPage() {
 
         <div className="mt-12 space-y-14">
           {supplementCategories.map((category) => {
-            const items = supplements.filter((t) => t.category === category);
+            const items = getSupplementsByCategory(category);
             if (!items.length) return null;
             const id = category.toLowerCase().replace(/[^a-z0-9]+/g, "-");
             return (

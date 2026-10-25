@@ -10,9 +10,9 @@ export function SupplementCard({ topic }: { topic: SupplementTopic }) {
       <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
         {topic.category}
       </p>
-      <h2 className="mt-2 font-display text-2xl text-navy group-hover:text-teal-dark">
+      <h3 className="mt-2 font-display text-2xl text-navy group-hover:text-teal-dark">
         {topic.title}
-      </h2>
+      </h3>
       <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600 md:text-base">
         {topic.summary}
       </p>

@@ -34,7 +34,11 @@ export type SupplementTopic = {
 };
 
 export const supplementDisclaimer =
-  "These pages are general patient education from Nguyen's Osteopathic Clinic. They are not a prescription, diagnosis, or product endorsement. Supplements can interact with medicines and medical conditions — check with your GP, pharmacist, or osteopath before starting anything new. Food supplements are not a substitute for clinical assessment, rehab, or prescribed treatment.";
+  "These pages are general patient education from Nguyen's Osteopathic Clinic. They are not a prescription, diagnosis, or product endorsement. Supplements can interact with medicines and medical conditions — check with your GP, pharmacist, or osteopath before starting anything new. If you are pregnant, breastfeeding, or planning pregnancy, get personalised advice before using concentrates or herbals. Food supplements are not a substitute for clinical assessment, rehab, or prescribed treatment.";
+
+/** Always-on core lines for compact banners (interactions + assessment). */
+export const supplementDisclaimerCore =
+  "Educational only — not a prescription or product endorsement. Check with your GP, pharmacist, or osteopath before starting supplements, especially if you take medicines, have a long-term condition, or are pregnant or breastfeeding. Supplements are not a substitute for assessment or rehab.";
 
 export const supplementCategories: SupplementTopic["category"][] = [
   "Guidance",
@@ -469,7 +473,7 @@ export const supplements: SupplementTopic[] = [
       {
         question: "Can I use a CBD rub?",
         answer:
-          "Rules and product quality vary. Discuss with a pharmacist, especially if you take other medicines. Do not assume CBD replaces assessment.",
+          "In the UK, CBD products sit in a grey area of quality and novel-food rules. Ask a pharmacist before use, especially with other medicines, and do not treat a rub as a substitute for diagnosis or rehab.",
       },
     ],
     caveats: [

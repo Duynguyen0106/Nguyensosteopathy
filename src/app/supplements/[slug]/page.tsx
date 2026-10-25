@@ -9,7 +9,12 @@ import {
   getSupplement,
   supplements,
 } from "@/lib/supplements";
-import { breadcrumbJsonLd, defaultOgImage, trimDescription } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  defaultOgImage,
+  fitSerpTitle,
+  trimDescription,
+} from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -23,13 +28,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const topic = getSupplement(slug);
   if (!topic) return {};
 
+  const title = fitSerpTitle(topic.title);
+  const description = trimDescription(topic.summary);
+  const ogTitle =
+    typeof title === "string" ? `${topic.title} | ${site.name}` : title.absolute;
+
   return {
-    title: topic.title,
-    description: trimDescription(topic.summary),
+    title,
+    description,
     alternates: { canonical: `/supplements/${topic.slug}` },
     openGraph: {
-      title: `${topic.title} | ${site.name}`,
-      description: trimDescription(topic.summary),
+      title: ogTitle,
+      description,
       url: `/supplements/${topic.slug}`,
       images: [defaultOgImage],
     },
@@ -52,10 +62,19 @@ export default async function SupplementDetailPage({ params }: Props) {
   const pageLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
+    "@id": `${site.websiteUrl}/supplements/${topic.slug}#webpage`,
     name: topic.title,
     url: `${site.websiteUrl}/supplements/${topic.slug}`,
     description: topic.summary,
+    about: {
+      "@type": "Thing",
+      name: topic.title,
+    },
     specialty: "https://schema.org/Musculoskeletal",
+    audience: {
+      "@type": "PeopleAudience",
+      geographicArea: { "@type": "City", name: "Woolwich" },
+    },
     reviewedBy: { "@id": `${site.websiteUrl}/#practitioner` },
     provider: { "@id": `${site.websiteUrl}/#clinic` },
     isPartOf: { "@id": `${site.websiteUrl}/#website` },

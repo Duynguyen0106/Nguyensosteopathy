@@ -11,6 +11,13 @@ function joinTopics(topics, fallback = "general nutrition and recovery themes") 
   return `${topics.slice(0, -1).join(", ")}, and ${topics[topics.length - 1]}`;
 }
 
+function scenarioHash(pageNo, primary) {
+  const key = `${pageNo}:${String(primary || "").toLowerCase()}`;
+  let h = 0;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+  return h;
+}
+
 function scenario(pageNo, primary) {
   const scenarios = [
     `a desk worker in Woolwich with evening stiffness who saw ${primary} mentioned online`,
@@ -21,8 +28,12 @@ function scenario(pageNo, primary) {
     `a shift worker with irregular meals wondering if ${primary} fills dietary gaps`,
     `a gym-goer with tendon irritability seeing ${primary} in a recovery stack advert`,
     `a patient with osteoarthritis pacing flare days and reading claims about ${primary}`,
+    `a cyclist with lingering knee irritability curious whether ${primary} belongs in their plan`,
+    `a new patient comparing three bottles and asking which ${primary} claim is even relevant`,
+    `someone sleeping poorly after a flare who was told ${primary} “fixes inflammation overnight”`,
+    `a carer shopping for a relative and unsure whether ${primary} interacts with existing medicines`,
   ];
-  return scenarios[pageNo % scenarios.length];
+  return scenarios[scenarioHash(pageNo, primary) % scenarios.length];
 }
 
 function mskBridge(primary, mskRelevant) {
@@ -499,13 +510,36 @@ export function buildCombinedThemeContent({
     angles && angles.length
       ? angles.map((a) => a.label).filter(Boolean)
       : [];
-  const summary =
-    angleLabels.length >= 2
-      ? `${title} theme covering ${angleLabels.slice(0, 3).join(", ")}${
-          angleLabels.length > 3 ? ` +${angleLabels.length - 3} more` : ""
-        } — for patients and practitioners, not dosing advice.`
-      : `Clinic theme on ${title} for patients and practitioners — shared vocabulary beside care, not a prescribing guide.`;
-
+  const focuses =
+    angles && angles.length
+      ? angles.map((a) => a.focus).filter(Boolean)
+      : [];
+  const summaryHash = scenarioHash(sheetCount || 1, topicKey || title);
+  let summary;
+  if (focuses.length) {
+    const focus = String(focuses[summaryHash % focuses.length]).replace(
+      /\.$/,
+      "",
+    );
+    const variants = [
+      `${title}: ${focus}.`,
+      `In the ${title} theme, we emphasise ${focus}.`,
+      `${title} hub — ${focus}.`,
+    ];
+    summary = variants[summaryHash % variants.length];
+    if (!/patient|practitioner|clinic|dosing|education/i.test(summary)) {
+      summary =
+        summary.replace(/\.$/, "") +
+        ". Dual-audience clinic education, not dosing advice.";
+    }
+  } else if (angleLabels.length >= 2) {
+    summary = `${title} gathered into one theme (${angleLabels
+      .slice(0, 3)
+      .join(", ")
+      .toLowerCase()}) for patients and practitioners.`;
+  } else {
+    summary = `Clinic theme on ${title} for patients and practitioners — shared vocabulary beside care, not a prescribing guide.`;
+  }
   let sections = [
     {
       heading: `What this ${title} theme covers`,

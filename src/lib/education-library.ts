@@ -164,11 +164,15 @@ export function isNoisyLibrarySummary(summary: string): boolean {
   const text = String(summary || "");
   return (
     /also touching/i.test(text) ||
+    /^Often comes up for /i.test(text) ||
+    /^A common picture is /i.test(text) ||
+    /theme covering .+ — for patients and practitioners/i.test(text) ||
     /^In-depth dual-audience clinic education on /i.test(text) ||
     /^Extended education notes on .+ and related wellness themes/i.test(text) ||
     /^Sports, training, and recovery education covering /i.test(text) ||
     /^Label-reading and formulation education focused on .+ \(/i.test(text) ||
-    /^Clinic education notes on .+, centred on /i.test(text)
+    /^Clinic education notes on .+, centred on /i.test(text) ||
+    /^Clinic education on .+: (plain-English|what it is)/i.test(text)
   );
 }
 

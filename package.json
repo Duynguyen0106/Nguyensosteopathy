@@ -22,7 +22,13 @@
     "seo:monthly": "node scripts/seo-monthly-compound.mjs",
     "seo:jsonld": "node scripts/validate-jsonld.mjs",
     "education:library": "node scripts/generate-education-library.mjs",
-    "education:evidence-scaffold": "node scripts/scaffold-library-evidence.mjs"
+    "education:evidence-scaffold": "node scripts/scaffold-library-evidence.mjs",
+    "education:acupuncture:discover": "node scripts/american-dragon/discover.mjs",
+    "education:acupuncture:fetch": "node scripts/american-dragon/fetch.mjs",
+    "education:acupuncture:parse": "node scripts/american-dragon/parse.mjs",
+    "education:acupuncture:publish": "node scripts/american-dragon/publish.mjs",
+    "education:acupuncture:index": "node scripts/american-dragon/build-index.mjs",
+    "education:acupuncture:merge": "AMERICAN_DRAGON_PERMISSION=confirmed node scripts/american-dragon/fetch.mjs --concurrency=8 && AMERICAN_DRAGON_PERMISSION=confirmed node scripts/american-dragon/parse.mjs && AMERICAN_DRAGON_PERMISSION=confirmed node scripts/american-dragon/publish.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

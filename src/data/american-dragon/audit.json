@@ -1,0 +1,89 @@
+{
+  "auditedAt": "2026-10-25",
+  "sourceSite": "https://www.americandragon.com",
+  "ownerAttribution": {
+    "author": "Dr Joel Penner, OMD, LAc",
+    "estateContact": "Shoshana (shoshanarb@yahoo.com)",
+    "publisher": "Lone Wolf Press",
+    "note": "Site remains online as a free reference after Dr Penner's passing (Jan 2020). Clinic reports written permission from the owner/estate before any corpus ingest."
+  },
+  "siteSummary": "Large classical Chinese medicine reference: acupuncture points, individual herbs, herb formulas, and medical-condition / syndrome pages. Legacy static HTML with accordion section headings.",
+  "contentTypes": [
+    {
+      "id": "points",
+      "label": "Acupuncture points",
+      "indexUrls": ["https://www.americandragon.com/PointsIndex2.html"],
+      "urlPattern": "/Points/{id}.html",
+      "approxCount": 480,
+      "sectionsObserved": [
+        "NAME",
+        "LOCATION",
+        "NEEDLING",
+        "COMMAND FUNCTIONS",
+        "ACTIONS",
+        "INDICATIONS",
+        "COMBINATIONS",
+        "CONTRAINDICATIONS",
+        "NOTES"
+      ]
+    },
+    {
+      "id": "herbs",
+      "label": "Individual herbs",
+      "indexUrls": [
+        "https://www.americandragon.com/IndividualHerbsIndex2.html",
+        "https://www.americandragon.com/LatinIndividualHerbIndex2.html"
+      ],
+      "urlPattern": "/Individualherbsupdate/{id}.html",
+      "approxCount": 688
+    },
+    {
+      "id": "formulas",
+      "label": "Herb formulas",
+      "indexUrls": [
+        "https://www.americandragon.com/HerbFormulaIndex2.html",
+        "https://www.americandragon.com/HerbFormulaIndexA-G.html",
+        "https://www.americandragon.com/HerbFormulaIndexH-N.html",
+        "https://www.americandragon.com/HerbFormulaIndexO-T.html",
+        "https://www.americandragon.com/HerbFormulaIndexU-Z.html"
+      ],
+      "urlPattern": "/Herb Formulas copy/{id}.html",
+      "approxCount": 2746,
+      "note": "Includes many numbered condition-specific formula variants (e.g. Acne1–Acne6)."
+    },
+    {
+      "id": "conditions",
+      "label": "Medical conditions / syndromes",
+      "indexUrls": ["https://www.americandragon.com/ConditionsIndex2.html"],
+      "urlPattern": "/conditions/{id}.html",
+      "approxCount": 425
+    }
+  ],
+  "totalsApprox": {
+    "points": 480,
+    "herbs": 688,
+    "formulas": 2746,
+    "conditions": 425,
+    "pages": 4339
+  },
+  "technicalNotes": [
+    "Static HTML; many accordion panels via JavaScript IDs (p7ABt*).",
+    "URL encoding quirks (spaces in 'Herb Formulas copy/', mixed absolute/relative links).",
+    "Duplicate/near-duplicate condition links with leading ../ or /.",
+    "Not a modern CMS — discovery must start from indexes, not a sitemap.",
+    "No public API observed."
+  ],
+  "clinicUsePolicy": [
+    "Do not republish American Dragon HTML verbatim on patient pages.",
+    "Ingest into a private normalized corpus first (permission-gated fetch).",
+    "Publish clinic-voice education notes that cite American Dragon as a source where appropriate.",
+    "Keep MSK patient acupuncture track separate from deep TCM reference browse."
+  ],
+  "frameworkPaths": {
+    "manifest": "src/data/american-dragon/manifest.json",
+    "scripts": "scripts/american-dragon/",
+    "privateRaw": "private/american-dragon/raw/",
+    "normalized": "private/american-dragon/normalized/",
+    "publicIndex": "src/data/acupuncture-corpus/index.json"
+  }
+}

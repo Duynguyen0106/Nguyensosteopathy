@@ -103,12 +103,20 @@ export default async function EducationTrackPage({ params }: Props) {
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/education">All education</ButtonLink>
             {track.id === "acupuncture" ? (
-              <ButtonLink
-                href="/services/acupuncture-electro"
-                variant="secondary"
-              >
-                Acupuncture service
-              </ButtonLink>
+              <>
+                <ButtonLink
+                  href="/education/acupuncture/reference"
+                  variant="secondary"
+                >
+                  Reference corpus
+                </ButtonLink>
+                <ButtonLink
+                  href="/services/acupuncture-electro"
+                  variant="secondary"
+                >
+                  Acupuncture service
+                </ButtonLink>
+              </>
             ) : (
               <ButtonLink href="/about" variant="secondary">
                 About Austin
@@ -144,6 +152,13 @@ export default async function EducationTrackPage({ params }: Props) {
           </Link>
           {track.id === "acupuncture" ? (
             <>
+              {" · "}
+              <Link
+                href="/education/acupuncture/reference"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Reference corpus framework
+              </Link>
               {" · "}
               <Link
                 href="/aftercare"

@@ -4,11 +4,16 @@
  * Optional PDFs: place files under public/education/<track>/ and set pdfPath.
  */
 
+import { getLibraryArticleCount } from "@/lib/education-library";
 import { supplements } from "@/lib/supplements";
 
-export type EducationAudience = "patients" | "practitioners";
+export type EducationAudience = "patients" | "practitioners" | "both";
 
-export type EducationTrackId = "nutrition" | "acupuncture" | "cpd";
+export type EducationTrackId =
+  | "nutrition"
+  | "library"
+  | "acupuncture"
+  | "cpd";
 
 export type EducationTrack = {
   id: EducationTrackId;
@@ -61,6 +66,17 @@ export const educationTracks: EducationTrack[] = [
     ctaLabel: "Browse nutrition guides",
   },
   {
+    id: "library",
+    slug: "library",
+    title: "Supplement education library",
+    shortTitle: "Library",
+    summary:
+      "230 original clinic-voice sheets for patients and practitioners covering common supplement and wellness themes — not a product catalogue.",
+    audience: "both",
+    audienceLabel: "For patients & practitioners",
+    ctaLabel: "Browse the full library",
+  },
+  {
     id: "acupuncture",
     slug: "acupuncture",
     title: "Acupuncture education",
@@ -90,6 +106,9 @@ export const cpdPractitionerDisclaimer =
 
 export const acupuncturePatientDisclaimer =
   "These pages are general patient education about acupuncture used at Nguyen's Osteopathic Clinic. They are not a diagnosis or a promise of outcome. Suitability is confirmed at assessment.";
+
+export const libraryDualAudienceDisclaimer =
+  "These library pages are written for both patients and practitioners. They are original clinic education notes — not prescribing protocols, brand endorsements, or a copy of any third-party training guide. Patients: check with your GP, pharmacist, or osteopath before starting supplements. Practitioners: use as discussion prompts within your regulated scope only.";
 
 /**
  * Acupuncture + CPD articles (nutrition uses supplements[]).
@@ -259,11 +278,18 @@ export function getNutritionTopicCount(): number {
   return supplements.length;
 }
 
+export function getEducationTrackCount(trackId: EducationTrackId): number {
+  if (trackId === "nutrition") return getNutritionTopicCount();
+  if (trackId === "library") return getLibraryArticleCount();
+  return getArticlesForTrack(trackId).length;
+}
+
 export function educationHref(
   track: EducationTrackId,
   slug?: string,
 ): string {
   if (!slug) return `/education/${track}`;
   if (track === "nutrition") return `/education/nutrition/${slug}`;
+  if (track === "library") return `/education/library/${slug}`;
   return `/education/${track}/${slug}`;
 }

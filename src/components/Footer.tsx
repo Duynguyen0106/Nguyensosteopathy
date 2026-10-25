@@ -18,6 +18,7 @@ const patientLinks = [
   { href: "/fees", label: "Fees & prices" },
   { href: "/exercises", label: "Home exercises" },
   { href: "/education", label: "Education hub" },
+  { href: "/education/library", label: "Supplement library" },
   { href: "/education/nutrition", label: "Nutrition & supplements" },
   { href: "/find-us", label: "Find us" },
   { href: "/contact", label: "Contact" },

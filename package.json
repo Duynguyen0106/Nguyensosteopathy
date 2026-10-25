@@ -20,7 +20,8 @@
     "seo:gbp": "node scripts/seo-gbp-ops.mjs",
     "seo:citations": "node scripts/seo-citation-audit.mjs",
     "seo:monthly": "node scripts/seo-monthly-compound.mjs",
-    "seo:jsonld": "node scripts/validate-jsonld.mjs"
+    "seo:jsonld": "node scripts/validate-jsonld.mjs",
+    "education:library": "node scripts/generate-education-library.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

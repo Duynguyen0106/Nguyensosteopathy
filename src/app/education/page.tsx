@@ -5,13 +5,14 @@ import { EducationTrackCard } from "@/components/education/EducationTrackCard";
 import {
   educationTracks,
   getArticlesForTrack,
+  getEducationTrackCount,
   getNutritionTopicCount,
 } from "@/lib/education";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 const description = trimDescription(
-  "Education hub at Nguyen's Osteopathic Clinic in Woolwich: nutrition and supplements for patients, acupuncture guides, and CPD notes labelled for practitioners.",
+  "Education hub at Nguyen's Osteopathic Clinic in Woolwich: nutrition guides, a 230-sheet dual-audience supplement library, acupuncture notes, and practitioner CPD.",
 );
 
 export const metadata: Metadata = {
@@ -33,6 +34,10 @@ export const metadata: Metadata = {
 };
 
 function countLabelFor(trackId: (typeof educationTracks)[number]["id"]) {
+  if (trackId === "library") {
+    const n = getEducationTrackCount("library");
+    return `${n} dual-audience sheets`;
+  }
   if (trackId === "nutrition") {
     const n = getNutritionTopicCount();
     return `${n} patient guide${n === 1 ? "" : "s"}`;
@@ -79,16 +84,17 @@ export default function EducationHubPage() {
             Education hub
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Patient guides on nutrition and acupuncture, plus CPD notes clearly
-            labelled for practitioners — hosted by {site.name}.
+            Patient nutrition guides, a full dual-audience supplement library,
+            acupuncture notes, and CPD labelled for practitioners — hosted by{" "}
+            {site.name}.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/education/nutrition">Nutrition guides</ButtonLink>
+            <ButtonLink href="/education/library">Supplement library</ButtonLink>
+            <ButtonLink href="/education/nutrition" variant="secondary">
+              Nutrition guides
+            </ButtonLink>
             <ButtonLink href="/book" variant="secondary">
               Book online
-            </ButtonLink>
-            <ButtonLink href="/resources" variant="secondary">
-              Patient resources
             </ButtonLink>
           </div>
         </div>

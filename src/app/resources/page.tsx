@@ -142,6 +142,12 @@ const groups = [
           "Patient guides on magnesium, vitamin D, omega-3, collagen, and when pills will not fix pain.",
       },
       {
+        href: "/education/library",
+        label: "Supplement education library",
+        detail:
+          "230 dual-audience sheets on common ingredients and wellness themes for patients and practitioners.",
+      },
+      {
         href: "/education/acupuncture",
         label: "Acupuncture education",
         detail: "Patient notes on medical acupuncture used alongside osteopathy.",

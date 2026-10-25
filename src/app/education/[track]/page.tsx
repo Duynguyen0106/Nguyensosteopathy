@@ -19,13 +19,13 @@ const trackIds = new Set<EducationTrackId>(["acupuncture", "cpd"]);
 
 export function generateStaticParams() {
   return educationTracks
-    .filter((track) => track.id !== "nutrition")
+    .filter((track) => track.id === "acupuncture" || track.id === "cpd")
     .map((track) => ({ track: track.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { track: trackSlug } = await params;
-  if (trackSlug === "nutrition") {
+  if (trackSlug === "nutrition" || trackSlug === "library") {
     return {};
   }
   const track = getEducationTrack(trackSlug);
@@ -49,6 +49,9 @@ export default async function EducationTrackPage({ params }: Props) {
   const { track: trackSlug } = await params;
   if (trackSlug === "nutrition") {
     redirect("/education/nutrition");
+  }
+  if (trackSlug === "library") {
+    redirect("/education/library");
   }
 
   const track = getEducationTrack(trackSlug);

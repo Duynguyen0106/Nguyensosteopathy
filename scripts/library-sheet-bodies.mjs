@@ -87,11 +87,10 @@ export function buildLongFormContent({
   pageNo,
   mskRelevant,
 }) {
-  const topicList = joinTopics(topics);
-  const others = topics.filter((t) => t !== primary).slice(0, 3);
-  const otherClause = others.length
-    ? ` Related labels that also appear around this sheet include ${joinTopics(others)}.`
-    : "";
+  // Audience copy stays centred on the primary topic — neighbour OCR labels
+  // must not leak into summaries or “also touching …” clauses.
+  const topicList = primary;
+  const otherClause = "";
   const scene = scenario(pageNo, primary);
   const msk = mskBridge(primary, mskRelevant);
 
@@ -153,9 +152,9 @@ export function buildLongFormContent({
       },
     ];
   } else if (kind === "product") {
-    summary = `In-depth dual-audience clinic education on ${primary}${
-      others.length ? ` (also touching ${joinTopics(others)})` : ""
-    } — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.`;
+    summary = mskRelevant
+      ? `Clinic education on ${primary}: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.`
+      : `Clinic education on ${primary}: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.`;
     sections = [
       {
         heading: "In plain English",
@@ -195,7 +194,7 @@ export function buildLongFormContent({
       },
     ];
   } else if (kind === "ailment") {
-    summary = `Extended education notes on ${primary} and related wellness themes (${topicList}) for patients seeking context and practitioners preparing explanations beside MSK care.`;
+    summary = `Clinic education on ${primary}: context for patients and teaching prompts for practitioners when this wellness theme comes up beside MSK care.`;
     sections = [
       {
         heading: "Context first",
@@ -231,7 +230,7 @@ export function buildLongFormContent({
       },
     ];
   } else if (kind === "sports") {
-    summary = `Sports, training, and recovery education covering ${topicList}, with a deep look at ${primary} for active patients and practitioners coaching load.`;
+    summary = `Sports, training, and recovery education on ${primary} for active patients and practitioners coaching load.`;
     sections = [
       {
         heading: "Training load before powders",
@@ -263,7 +262,7 @@ export function buildLongFormContent({
       },
     ];
   } else if (kind === "reference") {
-    summary = `Label-reading and formulation education focused on ${primary} (${topicList}) for patients and practitioners who want calmer conversations about ingredient lists.`;
+    summary = `Label-reading and formulation education on ${primary} for patients and practitioners who want calmer conversations about ingredient lists.`;
     sections = [
       {
         heading: "Why labels look alarming",
@@ -291,11 +290,11 @@ export function buildLongFormContent({
       },
     ];
   } else {
-    summary = `Clinic education notes on ${topicList}, centred on ${primary}, for patients and practitioners.`;
+    summary = `Clinic education on ${primary} for patients and practitioners.`;
     sections = [
       {
         heading: "Overview",
-        body: `This entry covers ${topicList} in the context of osteopathic clinic education. Use it to prepare questions, not to self-prescribe. ${msk}`,
+        body: `This entry covers ${primary} in the context of osteopathic clinic education. Use it to prepare questions, not to self-prescribe. ${msk}`,
       },
       {
         heading: "Shared caution",
@@ -446,12 +445,11 @@ export function buildAngledSheetContent({
   });
   const focus = angle?.focus || "clinic education boundaries";
   const label = angle?.label || "Clinic angle";
-  const topicList = joinTopics(topics);
   const msk = mskBridge(primary, mskRelevant);
 
   const angledSection = {
     heading: `${label}: ${primary}`,
-    body: `This sheet emphasises the “${label.toLowerCase()}” angle for ${primary}. Focus: ${focus}. In clinic we still keep the same spine — food first where possible, pharmacist review for interactions, clear functional goals, and MSK rehab that is not displaced by shopping. ${msk} Related labels on this topic may include ${topicList}. Use the topic hub for the combined theme; this variant exists so patients and practitioners can jump to one teaching emphasis without re-reading every overlapping sheet.`,
+    body: `This sheet emphasises the “${label.toLowerCase()}” angle for ${primary}. Focus: ${focus}. In clinic we still keep the same spine — food first where possible, pharmacist review for interactions, clear functional goals, and MSK rehab that is not displaced by shopping. ${msk} Use the topic hub for the combined theme; this variant exists so patients and practitioners can jump to one teaching emphasis without re-reading every overlapping sheet.`,
   };
 
   const sections = [angledSection, ...base.sections.filter((s) => !/^Clinic teaching point/.test(s.heading))];
@@ -480,7 +478,7 @@ export function buildCombinedThemeContent({
   sheetSlugs,
   angles,
 }) {
-  const topicList = joinTopics(topics.length ? topics : [primary]);
+  const topicList = primary;
   const msk = mskBridge(primary, mskRelevant);
   const angleList =
     angles && angles.length
@@ -506,7 +504,7 @@ export function buildCombinedThemeContent({
     },
     {
       heading: "In plain English",
-      body: `${primary} often appears in conversations about diet quality, recovery, sleep, energy, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements and wellness themes only as optional adjuncts after understanding load, sleep, mood, and medical context — never as a stand-alone fix for back, neck, or joint pain. Think of this theme as a shared briefing for patients preparing questions and practitioners scaffolding consent conversations. Related labels that may appear beside this topic include ${topicList}.`,
+      body: `${primary} often appears in conversations about diet quality, recovery, sleep, energy, or general wellness. At Nguyen's Osteopathic Clinic we discuss supplements and wellness themes only as optional adjuncts after understanding load, sleep, mood, and medical context — never as a stand-alone fix for back, neck, or joint pain. Think of this theme as a shared briefing for patients preparing questions and practitioners scaffolding consent conversations.`,
     },
     {
       heading: "Food first, then products",

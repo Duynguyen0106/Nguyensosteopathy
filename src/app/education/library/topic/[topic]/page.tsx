@@ -175,39 +175,39 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
             {topic.title}
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            {theme
-              ? "One dual-audience clinic theme for patients and practitioners"
-              : "Dual-audience education on this topic"}
-            {topic.mskRelevant ? " · often relevant in MSK conversations" : ""}.
+            {topic.summary}
+            {topic.mskRelevant ? " Often relevant in MSK conversations." : ""}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/education/library">All topics</ButtonLink>
-            {evidenceReady ? (
-              <ButtonLink href="#evidence" variant="secondary">
-                Scientific notes &amp; references
-              </ButtonLink>
-            ) : null}
-            {theme ? (
-              <ButtonLink href="#theme" variant="secondary">
-                Read the theme
-              </ButtonLink>
-            ) : null}
-            {topic.relatedBlog ? (
-              <ButtonLink
-                href={`/blog/${topic.relatedBlog.slug}`}
-                variant="secondary"
-              >
-                Blog: {topic.relatedBlog.title}
-              </ButtonLink>
-            ) : (
-              <ButtonLink href="/blog" variant="secondary">
-                Nutrition blog articles
-              </ButtonLink>
-            )}
-            <ButtonLink href="/book" variant="secondary">
-              Book online
+            <ButtonLink href={theme ? "#theme" : "#notes"}>
+              {theme ? "Read the theme" : "Read the note"}
+            </ButtonLink>
+            <ButtonLink href="/education/library" variant="secondary">
+              All topics
             </ButtonLink>
           </div>
+          <p className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-500">
+            {evidenceReady ? (
+              <a href="#evidence" className="font-semibold text-teal hover:text-teal-dark">
+                Scientific notes
+              </a>
+            ) : null}
+            {topic.relatedBlog ? (
+              <Link
+                href={`/blog/${topic.relatedBlog.slug}`}
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Blog: {topic.relatedBlog.title}
+              </Link>
+            ) : (
+              <Link href="/blog" className="font-semibold text-teal hover:text-teal-dark">
+                Nutrition blog
+              </Link>
+            )}
+            <Link href="/book" className="font-semibold text-teal hover:text-teal-dark">
+              Book online
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -215,8 +215,73 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
         <EducationAudienceBanner trackId="library" audience="both" />
       </section>
 
+      {(theme || evidenceReady || multi) && (
+        <nav
+          aria-label="On this page"
+          className="mx-auto max-w-6xl px-5 pb-6 md:px-8"
+        >
+          <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+            On this page
+          </p>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {evidenceReady ? (
+              <li>
+                <a
+                  href="#evidence"
+                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+                >
+                  Evidence
+                </a>
+              </li>
+            ) : null}
+            {theme ? (
+              <li>
+                <a
+                  href="#theme"
+                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+                >
+                  Theme
+                </a>
+              </li>
+            ) : null}
+            {multi && angles.length > 0 ? (
+              <li>
+                <a
+                  href="#angles"
+                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+                >
+                  Angles
+                </a>
+              </li>
+            ) : (
+              <li>
+                <a
+                  href="#notes"
+                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+                >
+                  Notes
+                </a>
+              </li>
+            )}
+            {topic.relatedBlog ? (
+              <li>
+                <a
+                  href="#related-blog"
+                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+                >
+                  Blog
+                </a>
+              </li>
+            ) : null}
+          </ul>
+        </nav>
+      )}
+
       {topic.relatedBlog ? (
-        <section className="mx-auto max-w-6xl px-5 pb-8 md:px-8">
+        <section
+          id="related-blog"
+          className="mx-auto max-w-6xl px-5 pb-8 md:px-8"
+        >
           <div className="rounded-2xl border border-teal/30 bg-white px-5 py-6 md:px-6">
             <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
               Related blog article
@@ -304,7 +369,10 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
         </section>
       ) : null}
 
-      <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+      <section
+        id={multi && angles.length > 0 ? "angles" : "notes"}
+        className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24"
+      >
         {multi && angles.length > 0 ? (
           <>
             <h2 className="font-display text-3xl text-navy">

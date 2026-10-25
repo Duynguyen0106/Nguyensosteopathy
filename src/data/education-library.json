@@ -4246,7 +4246,9 @@
       "title": "How to use this supplement library",
       "summary": "A full orientation for patients and practitioners using Nguyen's Osteopathic Clinic supplement education library: what the sheets are for, how to read them, and what they deliberately are not.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "How to use this supplement library"
+      ],
       "mskRelevant": false,
       "wordCount": 622,
       "sections": [
@@ -4314,7 +4316,7 @@
       "summary": "A detailed map of how this dual-audience education library is organised for patients and practitioners browsing nutrition, recovery, and label-reading themes.",
       "status": "published",
       "topics": [
-        "Sports"
+        "Library contents map"
       ],
       "mskRelevant": false,
       "wordCount": 642,
@@ -4380,14 +4382,10 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "In-depth dual-audience clinic education on Amino Acid (also touching B Complex, Quercetin, and Vitamin C) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Amino Acid: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Amino Acid",
-        "B Complex",
-        "Quercetin",
-        "Vitamin C",
-        "Collagen"
+        "Amino Acid"
       ],
       "mskRelevant": true,
       "wordCount": 1090,
@@ -4469,12 +4467,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Omega-3",
-      "summary": "In-depth dual-audience clinic education on Omega-3 (also touching Cholesterol and Flu) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Omega-3: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Omega-3",
-        "Flu"
+        "Omega-3"
       ],
       "mskRelevant": true,
       "wordCount": 1050,
@@ -4556,7 +4552,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -4641,11 +4637,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Vitamin K",
-      "summary": "In-depth dual-audience clinic education on Vitamin K (also touching Diabetes) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Vitamin K: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Vitamin K",
-        "Diabetes"
+        "Vitamin K"
       ],
       "mskRelevant": false,
       "wordCount": 1062,
@@ -4727,12 +4722,9 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Dandelion",
-      "summary": "In-depth dual-audience clinic education on Dandelion (also touching Blood Pressure, Constipation, and Cholesterol) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises patient questions.",
+      "summary": "Clinic education on Dandelion: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Constipation",
-        "Cholesterol",
         "Dandelion"
       ],
       "mskRelevant": true,
@@ -4815,13 +4807,10 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "In-depth dual-audience clinic education on Collagen (also touching Diabetes, Omega-3, and Hair) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Collagen: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Collagen",
-        "Diabetes",
-        "Omega-3",
-        "Hair"
+        "Collagen"
       ],
       "mskRelevant": true,
       "wordCount": 1053,
@@ -4903,12 +4892,10 @@
       "variantLabel": "Alpha Lipoic Acid",
       "needsReview": false,
       "title": "Alpha Lipoic Acid",
-      "summary": "In-depth dual-audience clinic education on Alpha Lipoic Acid (also touching Cholesterol and Creatine) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Alpha Lipoic Acid: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Alpha Lipoic Acid",
-        "Cholesterol",
-        "Creatine"
+        "Alpha Lipoic Acid"
       ],
       "mskRelevant": true,
       "wordCount": 956,
@@ -4986,13 +4973,10 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Cholesterol",
-      "summary": "In-depth dual-audience clinic education on Cholesterol (also touching Diabetes, Anxiety, and Hair) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Cholesterol: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Diabetes",
-        "Anxiety",
-        "Hair"
+        "Cholesterol"
       ],
       "mskRelevant": false,
       "wordCount": 1051,
@@ -5074,12 +5058,10 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "In-depth dual-audience clinic education on Amino Acid (also touching Blood Pressure and Citrulline) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises special populations.",
+      "summary": "Clinic education on Amino Acid: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Amino Acid",
-        "Citrulline"
+        "Amino Acid"
       ],
       "mskRelevant": false,
       "wordCount": 1074,
@@ -5161,13 +5143,10 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Ashwagandha",
-      "summary": "In-depth dual-audience clinic education on Ashwagandha (also touching Indigestion, Diarrhoea, and Ginseng) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Ashwagandha: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Ashwagandha",
-        "Indigestion",
-        "Diarrhoea",
-        "Ginseng"
+        "Ashwagandha"
       ],
       "mskRelevant": true,
       "wordCount": 1061,
@@ -5249,13 +5228,10 @@
       "variantLabel": "Astragalus",
       "needsReview": false,
       "title": "Astragalus",
-      "summary": "In-depth dual-audience clinic education on Astragalus (also touching Blood Pressure, Collagen, and Diabetes) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Astragalus: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Astragalus",
-        "Collagen",
-        "Diabetes"
+        "Astragalus"
       ],
       "mskRelevant": true,
       "wordCount": 924,
@@ -5333,13 +5309,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Devil's Claw",
-      "summary": "In-depth dual-audience clinic education on Devil's Claw (also touching Potassium, Probiotic, and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Devil's Claw: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Devil's Claw",
-        "Potassium",
-        "Probiotic",
-        "Calcium"
+        "Devil's Claw"
       ],
       "mskRelevant": true,
       "wordCount": 1079,
@@ -5421,14 +5394,10 @@
       "variantLabel": "Branched Chain",
       "needsReview": false,
       "title": "Branched Chain",
-      "summary": "In-depth dual-audience clinic education on Branched Chain (also touching Blood Pressure, Cholesterol, and Diarrhoea) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Branched Chain: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Branched Chain",
-        "Blood Pressure",
-        "Cholesterol",
-        "Diarrhoea",
-        "Anxiety"
+        "Branched Chain"
       ],
       "mskRelevant": true,
       "wordCount": 943,
@@ -5506,14 +5475,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Blood Pressure, Cholesterol, and Bad Breath) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cholesterol",
-        "Bad Breath",
-        "Magnesium",
-        "Potassium"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1068,
@@ -5595,14 +5560,10 @@
       "variantLabel": "Beta Alanine",
       "needsReview": false,
       "title": "Beta Alanine",
-      "summary": "In-depth dual-audience clinic education on Beta Alanine (also touching Cholesterol, Amino Acid, and Vitamin A) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Beta Alanine: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Beta Alanine",
-        "Cholesterol",
-        "Amino Acid",
-        "Vitamin A",
-        "Vitamin E"
+        "Beta Alanine"
       ],
       "mskRelevant": false,
       "wordCount": 947,
@@ -5680,12 +5641,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Quercetin",
-      "summary": "In-depth dual-audience clinic education on Quercetin (also touching Cholesterol and Vitamin C) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Quercetin: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Quercetin",
-        "Vitamin C"
+        "Quercetin"
       ],
       "mskRelevant": false,
       "wordCount": 1052,
@@ -5767,11 +5726,10 @@
       "variantLabel": "Immunity",
       "needsReview": false,
       "title": "Immunity",
-      "summary": "In-depth dual-audience clinic education on Immunity (also touching Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Immunity: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Immunity",
-        "Energy"
+        "Immunity"
       ],
       "mskRelevant": false,
       "wordCount": 913,
@@ -5849,11 +5807,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy (also touching Hair) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Energy",
-        "Hair"
+        "Energy"
       ],
       "mskRelevant": false,
       "wordCount": 1040,
@@ -5935,11 +5892,10 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Black Cohosh",
-      "summary": "In-depth dual-audience clinic education on Black Cohosh (also touching Turmeric) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises patient questions.",
+      "summary": "Clinic education on Black Cohosh: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Black Cohosh",
-        "Turmeric"
+        "Black Cohosh"
       ],
       "mskRelevant": true,
       "wordCount": 1068,
@@ -6021,12 +5977,9 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Vitamin K",
-      "summary": "In-depth dual-audience clinic education on Vitamin K (also touching Blood Pressure, Cholesterol, and Weight Loss) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Vitamin K: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cholesterol",
-        "Weight Loss",
         "Vitamin K"
       ],
       "mskRelevant": false,
@@ -6109,13 +6062,10 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Spirulina",
-      "summary": "In-depth dual-audience clinic education on Spirulina (also touching Blood Pressure, Eczema, and Sports) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Spirulina: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Spirulina",
-        "Eczema",
-        "Sports"
+        "Spirulina"
       ],
       "mskRelevant": false,
       "wordCount": 1050,
@@ -6197,12 +6147,10 @@
       "variantLabel": "Boswellia",
       "needsReview": false,
       "title": "Boswellia",
-      "summary": "In-depth dual-audience clinic education on Boswellia (also touching Cholesterol and Menopause) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Boswellia: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Boswellia",
-        "Menopause"
+        "Boswellia"
       ],
       "mskRelevant": true,
       "wordCount": 919,
@@ -6280,13 +6228,10 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Bromelain",
-      "summary": "In-depth dual-audience clinic education on Bromelain (also touching Constipation, Indigestion, and Quercetin) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises special populations.",
+      "summary": "Clinic education on Bromelain: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Constipation",
-        "Indigestion",
-        "Bromelain",
-        "Quercetin"
+        "Bromelain"
       ],
       "mskRelevant": true,
       "wordCount": 1056,
@@ -6368,14 +6313,10 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Blood Pressure, Cholesterol, and Potassium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cholesterol",
-        "Magnesium",
-        "Potassium",
-        "Insomnia"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1069,
@@ -6457,10 +6398,9 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Omega-3",
-      "summary": "In-depth dual-audience clinic education on Omega-3 (also touching Cholesterol) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Omega-3: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cholesterol",
         "Omega-3"
       ],
       "mskRelevant": true,
@@ -6543,13 +6483,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Vitamin D, Insomnia, and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Vitamin D",
-        "Insomnia",
-        "Calcium"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1061,
@@ -6631,12 +6568,10 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Tissue Salt",
-      "summary": "In-depth dual-audience clinic education on Tissue Salt (also touching Calcium and Colds) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises food-first approach.",
+      "summary": "Clinic education on Tissue Salt: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Tissue Salt",
-        "Calcium",
-        "Colds"
+        "Tissue Salt"
       ],
       "mskRelevant": true,
       "wordCount": 1072,
@@ -6718,13 +6653,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Tissue Salt",
-      "summary": "In-depth dual-audience clinic education on Tissue Salt (also touching Indigestion, Bloating, and Varicose) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Tissue Salt: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Tissue Salt",
-        "Indigestion",
-        "Bloating",
-        "Varicose"
+        "Tissue Salt"
       ],
       "mskRelevant": true,
       "wordCount": 1079,
@@ -6806,13 +6738,10 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "In-depth dual-audience clinic education on Amino Acid (also touching Constipation, Glutamine, and Potassium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Amino Acid: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Constipation",
-        "Amino Acid",
-        "Glutamine",
-        "Potassium"
+        "Amino Acid"
       ],
       "mskRelevant": true,
       "wordCount": 1078,
@@ -6894,11 +6823,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "In-depth dual-audience clinic education on Blood Pressure (also touching Hair) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Blood Pressure: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Hair"
+        "Blood Pressure"
       ],
       "mskRelevant": false,
       "wordCount": 1063,
@@ -6980,7 +6908,7 @@
       "variantLabel": "CBD",
       "needsReview": false,
       "title": "CBD",
-      "summary": "In-depth dual-audience clinic education on CBD — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on CBD: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "CBD"
@@ -7061,13 +6989,10 @@
       "variantLabel": "Hyaluronic Acid",
       "needsReview": false,
       "title": "Hyaluronic Acid",
-      "summary": "In-depth dual-audience clinic education on Hyaluronic Acid (also touching Chondroitin, Glucosamine, and Potassium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Hyaluronic Acid: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Hyaluronic Acid",
-        "Chondroitin",
-        "Glucosamine",
-        "Potassium"
+        "Hyaluronic Acid"
       ],
       "mskRelevant": true,
       "wordCount": 941,
@@ -7145,11 +7070,10 @@
       "variantLabel": "Diabetes",
       "needsReview": false,
       "title": "Diabetes",
-      "summary": "In-depth dual-audience clinic education on Diabetes (also touching Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Diabetes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Diabetes",
-        "Energy"
+        "Diabetes"
       ],
       "mskRelevant": true,
       "wordCount": 915,
@@ -7227,11 +7151,9 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Melatonin",
-      "summary": "In-depth dual-audience clinic education on Melatonin (also touching Indigestion and Bad Breath) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Melatonin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Indigestion",
-        "Bad Breath",
         "Melatonin"
       ],
       "mskRelevant": true,
@@ -7314,11 +7236,10 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Cholesterol",
-      "summary": "In-depth dual-audience clinic education on Cholesterol (also touching Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Cholesterol: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Energy"
+        "Cholesterol"
       ],
       "mskRelevant": true,
       "wordCount": 1040,
@@ -7400,10 +7321,9 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Spirulina",
-      "summary": "In-depth dual-audience clinic education on Spirulina (also touching Cholesterol) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Spirulina: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Cholesterol",
         "Spirulina"
       ],
       "mskRelevant": false,
@@ -7486,14 +7406,10 @@
       "variantLabel": "Chondroitin",
       "needsReview": false,
       "title": "Chondroitin",
-      "summary": "In-depth dual-audience clinic education on Chondroitin (also touching Cholesterol, Protein, and Anxiety) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Chondroitin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Chondroitin",
-        "Cholesterol",
-        "Protein",
-        "Anxiety",
-        "Energy"
+        "Chondroitin"
       ],
       "mskRelevant": true,
       "wordCount": 922,
@@ -7571,14 +7487,10 @@
       "variantLabel": "Chromium",
       "needsReview": false,
       "title": "Chromium",
-      "summary": "In-depth dual-audience clinic education on Chromium (also touching Cinnamon, Diabetes, and Anxiety) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Chromium: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Chromium",
-        "Cinnamon",
-        "Diabetes",
-        "Anxiety",
-        "Energy"
+        "Chromium"
       ],
       "mskRelevant": false,
       "wordCount": 921,
@@ -7656,14 +7568,10 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "In-depth dual-audience clinic education on Amino Acid (also touching Blood Pressure, Citicoline, and Colds) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Amino Acid: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Amino Acid",
-        "Citicoline",
-        "Colds",
-        "CLA"
+        "Amino Acid"
       ],
       "mskRelevant": true,
       "wordCount": 1086,
@@ -7745,7 +7653,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -7830,14 +7738,10 @@
       "variantLabel": "Vitamin B12",
       "needsReview": false,
       "title": "Vitamin B12",
-      "summary": "In-depth dual-audience clinic education on Vitamin B12 (also touching Anxiety, Fatigue, and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Vitamin B12: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Vitamin B12",
-        "Anxiety",
-        "Fatigue",
-        "Energy",
-        "Stress"
+        "Vitamin B12"
       ],
       "mskRelevant": false,
       "wordCount": 940,
@@ -7915,7 +7819,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -8000,12 +7904,10 @@
       "variantLabel": "Cod Liver Oil",
       "needsReview": false,
       "title": "Cod Liver Oil",
-      "summary": "In-depth dual-audience clinic education on Cod Liver Oil (also touching Calcium and Iron) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Cod Liver Oil: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cod Liver Oil",
-        "Calcium",
-        "Iron"
+        "Cod Liver Oil"
       ],
       "mskRelevant": true,
       "wordCount": 954,
@@ -8083,14 +7985,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Coenzyme Q10",
-      "summary": "In-depth dual-audience clinic education on Coenzyme Q10 (also touching Blood Pressure, Vitamin C, and Collagen) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Coenzyme Q10: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Coenzyme Q10",
-        "Vitamin C",
-        "Collagen",
-        "Immunity"
+        "Coenzyme Q10"
       ],
       "mskRelevant": true,
       "wordCount": 1086,
@@ -8172,7 +8070,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Potassium",
-      "summary": "In-depth dual-audience clinic education on Potassium — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Potassium: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Potassium"
@@ -8257,12 +8155,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Potassium and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Potassium",
-        "Calcium"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1051,
@@ -8344,12 +8240,10 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Potassium and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises patient questions.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Potassium",
-        "Calcium"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1054,
@@ -8431,11 +8325,10 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Potassium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Potassium"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1044,
@@ -8517,12 +8410,10 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Potassium and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Potassium",
-        "Calcium"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1048,
@@ -8604,12 +8495,10 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Potassium and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Potassium",
-        "Calcium"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1049,
@@ -8691,11 +8580,10 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Potassium",
-      "summary": "In-depth dual-audience clinic education on Potassium (also touching Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises special populations.",
+      "summary": "Clinic education on Potassium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Potassium",
-        "Calcium"
+        "Potassium"
       ],
       "mskRelevant": true,
       "wordCount": 1044,
@@ -8777,13 +8665,10 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Iron",
-      "summary": "In-depth dual-audience clinic education on Iron (also touching Cholesterol, Energy, and Hair) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Iron: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Energy",
-        "Iron",
-        "Hair"
+        "Iron"
       ],
       "mskRelevant": false,
       "wordCount": 1057,
@@ -8865,13 +8750,10 @@
       "variantLabel": "Cordyceps",
       "needsReview": false,
       "title": "Cordyceps",
-      "summary": "In-depth dual-audience clinic education on Cordyceps (also touching Blood Pressure, Magnesium, and Diabetes) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Cordyceps: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cordyceps",
-        "Magnesium",
-        "Diabetes"
+        "Cordyceps"
       ],
       "mskRelevant": true,
       "wordCount": 924,
@@ -8949,13 +8831,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Cranberry",
-      "summary": "In-depth dual-audience clinic education on Cranberry (also touching Creatine, Protein, and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Cranberry: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cranberry",
-        "Creatine",
-        "Protein",
-        "Energy"
+        "Cranberry"
       ],
       "mskRelevant": true,
       "wordCount": 1058,
@@ -9037,9 +8916,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": true,
       "wordCount": 921,
       "sections": [
@@ -9116,14 +8997,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Cranberry",
-      "summary": "In-depth dual-audience clinic education on Cranberry (also touching Curcumin, Anxiety, and Stress) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Cranberry: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cranberry",
-        "Curcumin",
-        "Anxiety",
-        "Stress",
-        "Colds"
+        "Cranberry"
       ],
       "mskRelevant": true,
       "wordCount": 1061,
@@ -9205,13 +9082,10 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Dandelion",
-      "summary": "In-depth dual-audience clinic education on Dandelion (also touching Magnesium, Menopause, and Eczema) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Dandelion: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Dandelion",
-        "Magnesium",
-        "Menopause",
-        "Eczema"
+        "Dandelion"
       ],
       "mskRelevant": true,
       "wordCount": 1058,
@@ -9293,7 +9167,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Devils Claw",
-      "summary": "In-depth dual-audience clinic education on Devils Claw — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Devils Claw: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Devils Claw"
@@ -9378,12 +9252,10 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Elderberry",
-      "summary": "In-depth dual-audience clinic education on Elderberry (also touching Echinacea and Eczema) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Elderberry: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Elderberry",
-        "Echinacea",
-        "Eczema"
+        "Elderberry"
       ],
       "mskRelevant": false,
       "wordCount": 1046,
@@ -9465,9 +9337,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": true,
       "wordCount": 919,
       "sections": [
@@ -9544,9 +9418,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -9623,14 +9499,10 @@
       "variantLabel": "Vitamin C",
       "needsReview": false,
       "title": "Vitamin C",
-      "summary": "In-depth dual-audience clinic education on Vitamin C (also touching Blood Pressure, Collagen, and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Vitamin C: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Vitamin C",
-        "Collagen",
-        "Calcium",
-        "Fatigue"
+        "Vitamin C"
       ],
       "mskRelevant": true,
       "wordCount": 944,
@@ -9708,7 +9580,7 @@
       "variantLabel": "Colds",
       "needsReview": false,
       "title": "Colds",
-      "summary": "In-depth dual-audience clinic education on Colds — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Colds: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Colds"
@@ -9789,9 +9661,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 919,
       "sections": [
@@ -9868,9 +9742,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 919,
       "sections": [
@@ -9947,12 +9823,10 @@
       "variantLabel": "Fish Oil",
       "needsReview": false,
       "title": "Fish Oil",
-      "summary": "In-depth dual-audience clinic education on Fish Oil (also touching Cholesterol and Flaxseed) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Fish Oil: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Fish Oil",
-        "Flaxseed"
+        "Fish Oil"
       ],
       "mskRelevant": true,
       "wordCount": 936,
@@ -10030,7 +9904,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Folic Acid",
-      "summary": "In-depth dual-audience clinic education on Folic Acid — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Folic Acid: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Folic Acid"
@@ -10115,7 +9989,7 @@
       "variantLabel": "Stress",
       "needsReview": false,
       "title": "Stress",
-      "summary": "In-depth dual-audience clinic education on Stress — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Stress: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Stress"
@@ -10196,10 +10070,9 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Garlic",
-      "summary": "In-depth dual-audience clinic education on Garlic (also touching Blood Pressure) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises food-first approach.",
+      "summary": "Clinic education on Garlic: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
         "Garlic"
       ],
       "mskRelevant": false,
@@ -10282,14 +10155,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Garlic",
-      "summary": "In-depth dual-audience clinic education on Garlic (also touching Blood Pressure, Cholesterol, and Athlete) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Garlic: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cholesterol",
-        "Athlete",
-        "Garlic",
-        "Colds"
+        "Garlic"
       ],
       "mskRelevant": false,
       "wordCount": 1060,
@@ -10371,7 +10240,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -10456,7 +10325,7 @@
       "variantLabel": "Ginger",
       "needsReview": false,
       "title": "Ginger",
-      "summary": "In-depth dual-audience clinic education on Ginger — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Ginger: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Ginger"
@@ -10537,14 +10406,10 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Ginseng",
-      "summary": "In-depth dual-audience clinic education on Ginseng (also touching Blood Pressure, Fatigue, and Ginkgo) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Ginseng: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Ginseng",
-        "Fatigue",
-        "Ginkgo",
-        "Stress"
+        "Ginseng"
       ],
       "mskRelevant": false,
       "wordCount": 1058,
@@ -10626,13 +10491,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Ginseng",
-      "summary": "In-depth dual-audience clinic education on Ginseng (also touching Blood Pressure, Fatigue, and Stress) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Ginseng: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Ginseng",
-        "Fatigue",
-        "Stress"
+        "Ginseng"
       ],
       "mskRelevant": false,
       "wordCount": 1054,
@@ -10714,11 +10576,10 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Cholesterol",
-      "summary": "In-depth dual-audience clinic education on Cholesterol (also touching Diabetes) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises patient questions.",
+      "summary": "Clinic education on Cholesterol: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Diabetes"
+        "Cholesterol"
       ],
       "mskRelevant": false,
       "wordCount": 1042,
@@ -10800,7 +10661,7 @@
       "variantLabel": "Glucosamine",
       "needsReview": false,
       "title": "Glucosamine",
-      "summary": "In-depth dual-audience clinic education on Glucosamine — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Glucosamine: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Glucosamine"
@@ -10881,14 +10742,11 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Whey Protein",
-      "summary": "In-depth dual-audience clinic education on Whey Protein (also touching Immunity, Protein, and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Whey Protein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Whey Protein",
-        "Immunity",
-        "Protein",
-        "Energy",
-        "Colds"
+        "Protein"
       ],
       "mskRelevant": true,
       "wordCount": 1074,
@@ -10970,14 +10828,10 @@
       "variantLabel": "Gotu Kola",
       "needsReview": false,
       "title": "Gotu Kola",
-      "summary": "In-depth dual-audience clinic education on Gotu Kola (also touching Blood Pressure, Cholesterol, and Probiotic) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Gotu Kola: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cholesterol",
-        "Gotu Kola",
-        "Probiotic",
-        "Varicose"
+        "Gotu Kola"
       ],
       "mskRelevant": false,
       "wordCount": 942,
@@ -11055,7 +10909,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "In-depth dual-audience clinic education on Blood Pressure — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises special populations.",
+      "summary": "Clinic education on Blood Pressure: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -11140,7 +10994,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -11225,7 +11079,7 @@
       "variantLabel": "Guarana",
       "needsReview": false,
       "title": "Guarana",
-      "summary": "In-depth dual-audience clinic education on Guarana — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Guarana: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Guarana"
@@ -11306,7 +11160,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Cholesterol",
-      "summary": "In-depth dual-audience clinic education on Cholesterol — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Cholesterol: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Cholesterol"
@@ -11391,9 +11245,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": true,
       "wordCount": 919,
       "sections": [
@@ -11470,10 +11326,9 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Protein",
-      "summary": "In-depth dual-audience clinic education on Protein (also touching Cholesterol) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Protein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cholesterol",
         "Protein"
       ],
       "mskRelevant": true,
@@ -11556,9 +11411,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": true,
       "wordCount": 919,
       "sections": [
@@ -11635,14 +11492,10 @@
       "variantLabel": "Manuka Honey",
       "needsReview": false,
       "title": "Manuka Honey",
-      "summary": "In-depth dual-audience clinic education on Manuka Honey (also touching Insomnia, Anxiety, and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Manuka Honey: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Manuka Honey",
-        "Insomnia",
-        "Anxiety",
-        "Energy",
-        "Stress"
+        "Manuka Honey"
       ],
       "mskRelevant": true,
       "wordCount": 941,
@@ -11720,11 +11573,10 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Menopause",
-      "summary": "In-depth dual-audience clinic education on Menopause (also touching Stress) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Menopause: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Menopause",
-        "Stress"
+        "Menopause"
       ],
       "mskRelevant": true,
       "wordCount": 1046,
@@ -11806,11 +11658,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "In-depth dual-audience clinic education on Collagen (also touching Sports) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Collagen: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Collagen",
-        "Sports"
+        "Collagen"
       ],
       "mskRelevant": true,
       "wordCount": 1046,
@@ -11892,7 +11743,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises patient questions.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -11977,14 +11828,10 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Garlic",
-      "summary": "In-depth dual-audience clinic education on Garlic (also touching Constipation, Insomnia, and Fatigue) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Garlic: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Constipation",
-        "Insomnia",
-        "Fatigue",
-        "Garlic",
-        "Energy"
+        "Garlic"
       ],
       "mskRelevant": true,
       "wordCount": 1054,
@@ -12066,9 +11913,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -12145,9 +11994,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -12224,9 +12075,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -12303,12 +12156,10 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Probiotic",
-      "summary": "In-depth dual-audience clinic education on Probiotic (also touching Cholesterol and Protein) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Probiotic: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Probiotic",
-        "Protein"
+        "Probiotic"
       ],
       "mskRelevant": true,
       "wordCount": 1058,
@@ -12390,11 +12241,10 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Probiotic",
-      "summary": "In-depth dual-audience clinic education on Probiotic (also touching Stress) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Probiotic: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Probiotic",
-        "Stress"
+        "Probiotic"
       ],
       "mskRelevant": false,
       "wordCount": 1044,
@@ -12476,11 +12326,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Ashwagandha",
-      "summary": "In-depth dual-audience clinic education on Ashwagandha (also touching Stress) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Ashwagandha: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Ashwagandha",
-        "Stress"
+        "Ashwagandha"
       ],
       "mskRelevant": true,
       "wordCount": 1049,
@@ -12562,12 +12411,10 @@
       "variantLabel": "Athlete",
       "needsReview": false,
       "title": "Athlete",
-      "summary": "In-depth dual-audience clinic education on Athlete (also touching Energy and Sleep) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Athlete: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Athlete",
-        "Energy",
-        "Sleep"
+        "Athlete"
       ],
       "mskRelevant": true,
       "wordCount": 920,
@@ -12645,11 +12492,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Lecithin",
-      "summary": "In-depth dual-audience clinic education on Lecithin (also touching Athlete) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Lecithin: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Lecithin",
-        "Athlete"
+        "Lecithin"
       ],
       "mskRelevant": false,
       "wordCount": 1043,
@@ -12731,9 +12577,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -12810,11 +12658,10 @@
       "variantLabel": "Lion's Mane",
       "needsReview": false,
       "title": "Lion's Mane",
-      "summary": "In-depth dual-audience clinic education on Lion's Mane (also touching Cranberry) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Lion's Mane: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Lion's Mane",
-        "Cranberry"
+        "Lion's Mane"
       ],
       "mskRelevant": false,
       "wordCount": 929,
@@ -12892,11 +12739,10 @@
       "variantLabel": "Lutein",
       "needsReview": false,
       "title": "Lutein",
-      "summary": "In-depth dual-audience clinic education on Lutein (also touching Zinc) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Lutein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Lutein",
-        "Zinc"
+        "Lutein"
       ],
       "mskRelevant": true,
       "wordCount": 913,
@@ -12974,13 +12820,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Lycopene, Bloating, and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Lycopene",
-        "Bloating",
-        "Calcium"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1055,
@@ -13062,14 +12905,10 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "In-depth dual-audience clinic education on Magnesium (also touching Blood Pressure, Cholesterol, and Protein) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises patient questions.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cholesterol",
-        "Magnesium",
-        "Protein",
-        "Anxiety"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 1064,
@@ -13151,9 +12990,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 919,
       "sections": [
@@ -13230,9 +13071,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 919,
       "sections": [
@@ -13309,9 +13152,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -13388,12 +13233,10 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Green Tea",
-      "summary": "In-depth dual-audience clinic education on Green Tea (also touching Colds and Flu) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises special populations.",
+      "summary": "Clinic education on Green Tea: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Green Tea",
-        "Colds",
-        "Flu"
+        "Green Tea"
       ],
       "mskRelevant": false,
       "wordCount": 1068,
@@ -13475,7 +13318,7 @@
       "variantLabel": "Glutamine",
       "needsReview": false,
       "title": "Glutamine",
-      "summary": "In-depth dual-audience clinic education on Glutamine — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Glutamine: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Glutamine"
@@ -13556,7 +13399,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -13641,14 +13484,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Multivitamin",
-      "summary": "In-depth dual-audience clinic education on Multivitamin (also touching Protein, Fatigue, and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Multivitamin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Multivitamin",
-        "Protein",
-        "Fatigue",
-        "Energy",
-        "Stress"
+        "Multivitamin"
       ],
       "mskRelevant": true,
       "wordCount": 1060,
@@ -13730,10 +13569,9 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Protein",
-      "summary": "In-depth dual-audience clinic education on Protein (also touching Diabetes) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises food-first approach.",
+      "summary": "Clinic education on Protein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Diabetes",
         "Protein"
       ],
       "mskRelevant": true,
@@ -13816,9 +13654,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 919,
       "sections": [
@@ -13895,14 +13735,10 @@
       "variantLabel": "Calcium",
       "needsReview": false,
       "title": "Calcium",
-      "summary": "In-depth dual-audience clinic education on Calcium (also touching Hay Fever, Nettle, and Eczema) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Calcium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Hay Fever",
-        "Calcium",
-        "Nettle",
-        "Eczema",
-        "Iron"
+        "Calcium"
       ],
       "mskRelevant": true,
       "wordCount": 927,
@@ -13980,14 +13816,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Potassium",
-      "summary": "In-depth dual-audience clinic education on Potassium (also touching Hay Fever, Fatigue, and Niacin) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Potassium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Potassium",
-        "Hay Fever",
-        "Fatigue",
-        "Niacin",
-        "Energy"
+        "Potassium"
       ],
       "mskRelevant": true,
       "wordCount": 1060,
@@ -14069,7 +13901,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -14154,13 +13986,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Iron",
-      "summary": "In-depth dual-audience clinic education on Iron (also touching Blood Pressure, Energy, and Zinc) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Iron: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Energy",
-        "Iron",
-        "Zinc"
+        "Iron"
       ],
       "mskRelevant": true,
       "wordCount": 1058,
@@ -14242,9 +14071,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -14321,13 +14152,10 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Protein",
-      "summary": "In-depth dual-audience clinic education on Protein (also touching Anxiety, Fatigue, and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Protein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Protein",
-        "Anxiety",
-        "Fatigue",
-        "Energy"
+        "Protein"
       ],
       "mskRelevant": true,
       "wordCount": 1053,
@@ -14409,12 +14237,10 @@
       "variantLabel": "B Complex",
       "needsReview": false,
       "title": "B Complex",
-      "summary": "In-depth dual-audience clinic education on B Complex (also touching Insomnia and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on B Complex: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "B Complex",
-        "Insomnia",
-        "Energy"
+        "B Complex"
       ],
       "mskRelevant": true,
       "wordCount": 938,
@@ -14492,12 +14318,10 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "In-depth dual-audience clinic education on Peppermint (also touching Bloating and Colds) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Peppermint: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Peppermint",
-        "Bloating",
-        "Colds"
+        "Peppermint"
       ],
       "mskRelevant": true,
       "wordCount": 1051,
@@ -14579,9 +14403,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": true,
       "wordCount": 921,
       "sections": [
@@ -14658,9 +14484,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -14737,10 +14565,9 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Potassium",
-      "summary": "In-depth dual-audience clinic education on Potassium (also touching Blood Pressure) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Potassium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
         "Potassium"
       ],
       "mskRelevant": true,
@@ -14823,7 +14650,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Psyllium",
-      "summary": "In-depth dual-audience clinic education on Psyllium — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Psyllium: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Psyllium"
@@ -14908,7 +14735,7 @@
       "variantLabel": "Hair",
       "needsReview": false,
       "title": "Hair",
-      "summary": "In-depth dual-audience clinic education on Hair — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Hair: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Hair"
@@ -14989,14 +14816,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Protein",
-      "summary": "In-depth dual-audience clinic education on Protein (also touching Menopause, Anxiety, and Fatigue) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Protein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Menopause",
-        "Protein",
-        "Anxiety",
-        "Fatigue",
-        "Energy"
+        "Protein"
       ],
       "mskRelevant": true,
       "wordCount": 1060,
@@ -15078,7 +14901,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Quercetin",
-      "summary": "In-depth dual-audience clinic education on Quercetin — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Quercetin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Quercetin"
@@ -15163,13 +14986,10 @@
       "variantLabel": "Krill Oil",
       "needsReview": false,
       "title": "Krill Oil",
-      "summary": "In-depth dual-audience clinic education on Krill Oil (also touching Cholesterol, Calcium, and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Krill Oil: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Cholesterol",
-        "Krill Oil",
-        "Calcium",
-        "Energy"
+        "Krill Oil"
       ],
       "mskRelevant": true,
       "wordCount": 941,
@@ -15247,10 +15067,9 @@
       "variantLabel": "Resveratrol",
       "needsReview": false,
       "title": "Resveratrol",
-      "summary": "In-depth dual-audience clinic education on Resveratrol (also touching Blood Pressure) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Resveratrol: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
         "Resveratrol"
       ],
       "mskRelevant": false,
@@ -15329,13 +15148,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Vitamin A",
-      "summary": "In-depth dual-audience clinic education on Vitamin A (also touching Colds, Iron, and Flu) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Vitamin A: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Vitamin A",
-        "Colds",
-        "Iron",
-        "Flu"
+        "Vitamin A"
       ],
       "mskRelevant": true,
       "wordCount": 1076,
@@ -15417,9 +15233,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -15496,9 +15314,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -15575,12 +15395,10 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "In-depth dual-audience clinic education on Collagen (also touching Blood Pressure and Iron) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Collagen: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Collagen",
-        "Iron"
+        "Collagen"
       ],
       "mskRelevant": true,
       "wordCount": 1050,
@@ -15662,7 +15480,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Protein",
-      "summary": "In-depth dual-audience clinic education on Protein — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Protein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Protein"
@@ -15747,9 +15565,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 919,
       "sections": [
@@ -15826,9 +15646,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": true,
       "wordCount": 921,
       "sections": [
@@ -15905,7 +15727,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "In-depth dual-audience clinic education on Blood Pressure — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Blood Pressure: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -15990,13 +15812,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Saw Palmetto",
-      "summary": "In-depth dual-audience clinic education on Saw Palmetto (also touching Cholesterol, Collagen, and Hair) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Saw Palmetto: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Saw Palmetto",
-        "Cholesterol",
-        "Collagen",
-        "Hair"
+        "Saw Palmetto"
       ],
       "mskRelevant": true,
       "wordCount": 1079,
@@ -16078,10 +15897,9 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Zinc",
-      "summary": "In-depth dual-audience clinic education on Zinc (also touching Menopause) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises food-first approach.",
+      "summary": "Clinic education on Zinc: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Menopause",
         "Zinc"
       ],
       "mskRelevant": false,
@@ -16164,14 +15982,10 @@
       "variantLabel": "Selenium",
       "needsReview": false,
       "title": "Selenium",
-      "summary": "In-depth dual-audience clinic education on Selenium (also touching Constipation, Fatigue, and Thyroid) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Selenium: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Constipation",
-        "Selenium",
-        "Fatigue",
-        "Thyroid",
-        "Iodine"
+        "Selenium"
       ],
       "mskRelevant": false,
       "wordCount": 920,
@@ -16249,9 +16063,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 917,
       "sections": [
@@ -16328,14 +16144,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Tissue Salt",
-      "summary": "In-depth dual-audience clinic education on Tissue Salt (also touching Magnesium, Collagen, and Selenium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Tissue Salt: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Tissue Salt",
-        "Magnesium",
-        "Collagen",
-        "Selenium",
-        "Immunity"
+        "Tissue Salt"
       ],
       "mskRelevant": true,
       "wordCount": 1079,
@@ -16417,11 +16229,10 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Slippery Elm",
-      "summary": "In-depth dual-audience clinic education on Slippery Elm (also touching Magnesium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Slippery Elm: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Slippery Elm",
-        "Magnesium"
+        "Slippery Elm"
       ],
       "mskRelevant": true,
       "wordCount": 1068,
@@ -16503,14 +16314,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Lecithin",
-      "summary": "In-depth dual-audience clinic education on Lecithin (also touching Blood Pressure, Cholesterol, and Protein) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Lecithin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cholesterol",
-        "Lecithin",
-        "Protein",
-        "Fatigue"
+        "Lecithin"
       ],
       "mskRelevant": true,
       "wordCount": 1062,
@@ -16592,14 +16399,10 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Multivitamin",
-      "summary": "In-depth dual-audience clinic education on Multivitamin (also touching Spirulina, Diabetes, and Protein) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises patient questions.",
+      "summary": "Clinic education on Multivitamin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Multivitamin",
-        "Spirulina",
-        "Diabetes",
-        "Protein",
-        "Nettle"
+        "Multivitamin"
       ],
       "mskRelevant": true,
       "wordCount": 1060,
@@ -16681,7 +16484,7 @@
       "variantLabel": "Flu",
       "needsReview": false,
       "title": "Flu",
-      "summary": "In-depth dual-audience clinic education on Flu — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Flu: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Flu"
@@ -16762,7 +16565,7 @@
       "variantLabel": "Taurine",
       "needsReview": false,
       "title": "Taurine",
-      "summary": "In-depth dual-audience clinic education on Taurine — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Taurine: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Taurine"
@@ -16843,12 +16646,10 @@
       "variantLabel": "Anxiety",
       "needsReview": false,
       "title": "Anxiety",
-      "summary": "In-depth dual-audience clinic education on Anxiety (also touching Energy and Stress) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Anxiety: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Anxiety",
-        "Energy",
-        "Stress"
+        "Anxiety"
       ],
       "mskRelevant": false,
       "wordCount": 916,
@@ -16926,13 +16727,10 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Melatonin",
-      "summary": "In-depth dual-audience clinic education on Melatonin (also touching Blood Pressure, Colds, and CLA) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises special populations.",
+      "summary": "Clinic education on Melatonin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Melatonin",
-        "Colds",
-        "CLA"
+        "Melatonin"
       ],
       "mskRelevant": true,
       "wordCount": 1058,
@@ -17014,13 +16812,10 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "In-depth dual-audience clinic education on Amino Acid (also touching Indigestion, Weight Loss, and Curcumin) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Amino Acid: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Indigestion",
-        "Weight Loss",
-        "Amino Acid",
-        "Curcumin"
+        "Amino Acid"
       ],
       "mskRelevant": true,
       "wordCount": 1088,
@@ -17102,12 +16897,10 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Coenzyme Q10",
-      "summary": "In-depth dual-audience clinic education on Coenzyme Q10 (also touching Valerian and Sleep) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Coenzyme Q10: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Coenzyme Q10",
-        "Valerian",
-        "Sleep"
+        "Coenzyme Q10"
       ],
       "mskRelevant": true,
       "wordCount": 1076,
@@ -17189,12 +16982,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "In-depth dual-audience clinic education on Collagen (also touching Blood Pressure and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Collagen: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Collagen",
-        "Energy"
+        "Collagen"
       ],
       "mskRelevant": true,
       "wordCount": 1059,
@@ -17276,7 +17067,7 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Vitamin A",
-      "summary": "In-depth dual-audience clinic education on Vitamin A — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises food-first approach.",
+      "summary": "Clinic education on Vitamin A: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Vitamin A"
@@ -17361,11 +17152,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy (also touching Stress) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Energy",
-        "Stress"
+        "Energy"
       ],
       "mskRelevant": false,
       "wordCount": 1043,
@@ -17447,7 +17237,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "In-depth dual-audience clinic education on Fatigue — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Fatigue: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Fatigue"
@@ -17532,11 +17322,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "In-depth dual-audience clinic education on Fatigue (also touching Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Fatigue: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Fatigue",
-        "Energy"
+        "Fatigue"
       ],
       "mskRelevant": false,
       "wordCount": 1040,
@@ -17618,7 +17407,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Energy"
@@ -17703,11 +17492,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "In-depth dual-audience clinic education on Fatigue (also touching Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Fatigue: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Fatigue",
-        "Energy"
+        "Fatigue"
       ],
       "mskRelevant": true,
       "wordCount": 1045,
@@ -17789,9 +17577,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 919,
       "sections": [
@@ -17868,11 +17658,10 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Eczema",
-      "summary": "In-depth dual-audience clinic education on Eczema (also touching Colds) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Eczema: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Eczema",
-        "Colds"
+        "Eczema"
       ],
       "mskRelevant": false,
       "wordCount": 1040,
@@ -17954,11 +17743,10 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Energy",
-      "summary": "In-depth dual-audience clinic education on Energy (also touching Stress) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Energy: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Energy",
-        "Stress"
+        "Energy"
       ],
       "mskRelevant": false,
       "wordCount": 1038,
@@ -18040,12 +17828,10 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Folate",
-      "summary": "In-depth dual-audience clinic education on Folate (also touching Fatigue and Colds) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Folate: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Fatigue",
-        "Folate",
-        "Colds"
+        "Folate"
       ],
       "mskRelevant": false,
       "wordCount": 1045,
@@ -18127,11 +17913,9 @@
       "variantLabel": "CLA",
       "needsReview": false,
       "title": "CLA",
-      "summary": "In-depth dual-audience clinic education on CLA (also touching Fatigue and Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on CLA: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Fatigue",
-        "Energy",
         "CLA"
       ],
       "mskRelevant": false,
@@ -18210,11 +17994,10 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "In-depth dual-audience clinic education on Collagen (also touching Fatigue) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Collagen: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Collagen",
-        "Fatigue"
+        "Collagen"
       ],
       "mskRelevant": true,
       "wordCount": 1051,
@@ -18296,12 +18079,10 @@
       "variantLabel": "Vitamin D",
       "needsReview": false,
       "title": "Vitamin D",
-      "summary": "In-depth dual-audience clinic education on Vitamin D (also touching Blood Pressure and Calcium) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Vitamin D: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Vitamin D",
-        "Calcium"
+        "Vitamin D"
       ],
       "mskRelevant": true,
       "wordCount": 939,
@@ -18379,13 +18160,10 @@
       "variantLabel": "Evening Primrose",
       "needsReview": false,
       "title": "Evening Primrose",
-      "summary": "In-depth dual-audience clinic education on Evening Primrose (also touching Blood Pressure, Cod Liver Oil, and Vitamin E) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Evening Primrose: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Evening Primrose",
-        "Blood Pressure",
-        "Cod Liver Oil",
-        "Vitamin E"
+        "Evening Primrose"
       ],
       "mskRelevant": true,
       "wordCount": 952,
@@ -18463,9 +18241,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": false,
       "wordCount": 919,
       "sections": [
@@ -18542,14 +18322,11 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Whey Protein",
-      "summary": "In-depth dual-audience clinic education on Whey Protein (also touching Vitamin E, Calcium, and Protein) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Whey Protein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Whey Protein",
-        "Vitamin E",
-        "Calcium",
-        "Protein",
-        "Energy"
+        "Protein"
       ],
       "mskRelevant": true,
       "wordCount": 1087,
@@ -18631,7 +18408,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "In-depth dual-audience clinic education on Blood Pressure — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Blood Pressure: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -18716,11 +18493,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "In-depth dual-audience clinic education on Blood Pressure (also touching Cholesterol) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Blood Pressure: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Cholesterol"
+        "Blood Pressure"
       ],
       "mskRelevant": true,
       "wordCount": 1066,
@@ -18802,9 +18578,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": true,
       "wordCount": 919,
       "sections": [
@@ -18881,11 +18659,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "In-depth dual-audience clinic education on Blood Pressure (also touching Energy) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises label literacy.",
+      "summary": "Clinic education on Blood Pressure: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Energy"
+        "Blood Pressure"
       ],
       "mskRelevant": false,
       "wordCount": 1062,
@@ -18967,7 +18744,7 @@
       "variantLabel": "Insomnia",
       "needsReview": false,
       "title": "Insomnia",
-      "summary": "In-depth dual-audience clinic education on Insomnia — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Insomnia: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Insomnia"
@@ -19048,11 +18825,10 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Zinc",
-      "summary": "In-depth dual-audience clinic education on Zinc (also touching Hair) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Zinc: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Zinc",
-        "Hair"
+        "Zinc"
       ],
       "mskRelevant": true,
       "wordCount": 1043,
@@ -19134,9 +18910,11 @@
       "variantLabel": "Supplement themes",
       "needsReview": true,
       "title": "Supplement themes",
-      "summary": "In-depth dual-audience clinic education on Supplement themes — what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
+      "summary": "Clinic education on Supplement themes: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Supplement themes"
+      ],
       "mskRelevant": true,
       "wordCount": 921,
       "sections": [
@@ -19213,12 +18991,10 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Devils Claw",
-      "summary": "In-depth dual-audience clinic education on Devils Claw (also touching Anxiety and Hair) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Devils Claw: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Devils Claw",
-        "Anxiety",
-        "Hair"
+        "Devils Claw"
       ],
       "mskRelevant": true,
       "wordCount": 1073,
@@ -19300,11 +19076,10 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Psyllium",
-      "summary": "In-depth dual-audience clinic education on Psyllium (also touching Immunity) — what it is, why patients ask, how it fits osteopathy, and what remains uncertain. This variant emphasises special populations.",
+      "summary": "Clinic education on Psyllium: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Psyllium",
-        "Immunity"
+        "Psyllium"
       ],
       "mskRelevant": false,
       "wordCount": 1042,
@@ -19386,7 +19161,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "Extended education notes on Fatigue and related wellness themes (Fatigue) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Fatigue: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Fatigue"
@@ -19467,12 +19242,10 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "Extended education notes on Peppermint and related wellness themes (Peppermint, Bad Breath, and Nettle) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Peppermint: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Peppermint",
-        "Bad Breath",
-        "Nettle"
+        "Peppermint"
       ],
       "mskRelevant": true,
       "wordCount": 848,
@@ -19550,9 +19323,11 @@
       "variantLabel": "Wellness themes",
       "needsReview": true,
       "title": "Wellness themes",
-      "summary": "Extended education notes on Wellness themes and related wellness themes (general nutrition and recovery themes) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Wellness themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Wellness themes"
+      ],
       "mskRelevant": false,
       "wordCount": 725,
       "sections": [
@@ -19625,9 +19400,11 @@
       "variantLabel": "Wellness themes",
       "needsReview": true,
       "title": "Wellness themes",
-      "summary": "Extended education notes on Wellness themes and related wellness themes (general nutrition and recovery themes) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Wellness themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Wellness themes"
+      ],
       "mskRelevant": false,
       "wordCount": 725,
       "sections": [
@@ -19700,13 +19477,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Devil's Claw",
-      "summary": "Extended education notes on Devil's Claw and related wellness themes (Devil's Claw, Peppermint, Diarrhoea, and Turmeric) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Devil's Claw: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Devil's Claw",
-        "Peppermint",
-        "Diarrhoea",
-        "Turmeric"
+        "Devil's Claw"
       ],
       "mskRelevant": true,
       "wordCount": 870,
@@ -19784,11 +19558,10 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Bromelain",
-      "summary": "Extended education notes on Bromelain and related wellness themes (Bromelain and Turmeric) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Bromelain: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Bromelain",
-        "Turmeric"
+        "Bromelain"
       ],
       "mskRelevant": true,
       "wordCount": 844,
@@ -19866,14 +19639,10 @@
       "variantLabel": "Rhodiola",
       "needsReview": false,
       "title": "Rhodiola",
-      "summary": "Extended education notes on Rhodiola and related wellness themes (Rhodiola, Valerian, Fatigue, Ginkgo, and Maca) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Rhodiola: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Rhodiola",
-        "Valerian",
-        "Fatigue",
-        "Ginkgo",
-        "Maca"
+        "Rhodiola"
       ],
       "mskRelevant": true,
       "wordCount": 717,
@@ -19947,13 +19716,10 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Extended education notes on Magnesium and related wellness themes (Magnesium, Bloating, Fatigue, and Sinus) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Bloating",
-        "Fatigue",
-        "Sinus"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 848,
@@ -20031,12 +19797,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Valerian",
-      "summary": "Extended education notes on Valerian and related wellness themes (Valerian, Guarana, and MSM) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises label literacy.",
+      "summary": "Clinic education on Valerian: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Valerian",
-        "Guarana",
-        "MSM"
+        "Valerian"
       ],
       "mskRelevant": true,
       "wordCount": 843,
@@ -20114,14 +19878,10 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "Extended education notes on Peppermint and related wellness themes (Peppermint, B Complex, Bromelain, Echinacea, and Fatigue) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises patient questions.",
+      "summary": "Clinic education on Peppermint: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Peppermint",
-        "B Complex",
-        "Bromelain",
-        "Echinacea",
-        "Fatigue"
+        "Peppermint"
       ],
       "mskRelevant": false,
       "wordCount": 850,
@@ -20199,12 +19959,10 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Dandelion",
-      "summary": "Extended education notes on Dandelion and related wellness themes (Dandelion, Magnesium, and Varicose) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Dandelion: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Dandelion",
-        "Magnesium",
-        "Varicose"
+        "Dandelion"
       ],
       "mskRelevant": true,
       "wordCount": 841,
@@ -20282,14 +20040,10 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "Extended education notes on Peppermint and related wellness themes (Peppermint, Potassium, Diabetes, Calcium, and Fatigue) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Peppermint: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Peppermint",
-        "Potassium",
-        "Diabetes",
-        "Calcium",
-        "Fatigue"
+        "Peppermint"
       ],
       "mskRelevant": true,
       "wordCount": 845,
@@ -20367,12 +20121,10 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Indigestion",
-      "summary": "Extended education notes on Indigestion and related wellness themes (Indigestion, Turmeric, and Ginger) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Indigestion: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Indigestion",
-        "Turmeric",
-        "Ginger"
+        "Indigestion"
       ],
       "mskRelevant": true,
       "wordCount": 843,
@@ -20450,7 +20202,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Eczema",
-      "summary": "Extended education notes on Eczema and related wellness themes (Eczema) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises special populations.",
+      "summary": "Clinic education on Eczema: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Eczema"
@@ -20531,14 +20283,10 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Green Tea",
-      "summary": "Extended education notes on Green Tea and related wellness themes (Green Tea, Rhodiola, Valerian, Ginseng, and Fatigue) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Green Tea: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Green Tea",
-        "Rhodiola",
-        "Valerian",
-        "Ginseng",
-        "Fatigue"
+        "Green Tea"
       ],
       "mskRelevant": true,
       "wordCount": 878,
@@ -20616,14 +20364,10 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Elderberry",
-      "summary": "Extended education notes on Elderberry and related wellness themes (Elderberry, Peppermint, Turmeric, Valerian, and Ginseng) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Elderberry: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Elderberry",
-        "Peppermint",
-        "Turmeric",
-        "Valerian",
-        "Ginseng"
+        "Elderberry"
       ],
       "mskRelevant": true,
       "wordCount": 853,
@@ -20701,13 +20445,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Slippery Elm",
-      "summary": "Extended education notes on Slippery Elm and related wellness themes (Slippery Elm, Indigestion, Peppermint, and Bloating) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Slippery Elm: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Slippery Elm",
-        "Indigestion",
-        "Peppermint",
-        "Bloating"
+        "Slippery Elm"
       ],
       "mskRelevant": true,
       "wordCount": 869,
@@ -20785,14 +20526,10 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Slippery Elm",
-      "summary": "Extended education notes on Slippery Elm and related wellness themes (Slippery Elm, Peppermint, Bromelain, Ginseng, and Fatigue) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises food-first approach.",
+      "summary": "Clinic education on Slippery Elm: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Slippery Elm",
-        "Peppermint",
-        "Bromelain",
-        "Ginseng",
-        "Fatigue"
+        "Slippery Elm"
       ],
       "mskRelevant": false,
       "wordCount": 865,
@@ -20870,11 +20607,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "Extended education notes on Peppermint and related wellness themes (Peppermint and Heartburn) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Peppermint: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Peppermint",
-        "Heartburn"
+        "Peppermint"
       ],
       "mskRelevant": false,
       "wordCount": 839,
@@ -20952,9 +20688,11 @@
       "variantLabel": "Wellness themes",
       "needsReview": true,
       "title": "Wellness themes",
-      "summary": "Extended education notes on Wellness themes and related wellness themes (general nutrition and recovery themes) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Wellness themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Wellness themes"
+      ],
       "mskRelevant": false,
       "wordCount": 725,
       "sections": [
@@ -21027,14 +20765,10 @@
       "variantLabel": "Constipation",
       "needsReview": false,
       "title": "Constipation",
-      "summary": "Extended education notes on Constipation and related wellness themes (Constipation, Diarrhoea, Psyllium, Bloating, and Ginger) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Constipation: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Constipation",
-        "Diarrhoea",
-        "Psyllium",
-        "Bloating",
-        "Ginger"
+        "Constipation"
       ],
       "mskRelevant": false,
       "wordCount": 714,
@@ -21108,14 +20842,10 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Indigestion",
-      "summary": "Extended education notes on Indigestion and related wellness themes (Indigestion, Peppermint, Rhodiola, Insomnia, and Ginseng) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Indigestion: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Indigestion",
-        "Peppermint",
-        "Rhodiola",
-        "Insomnia",
-        "Ginseng"
+        "Indigestion"
       ],
       "mskRelevant": false,
       "wordCount": 847,
@@ -21193,7 +20923,7 @@
       "variantLabel": "Bloating",
       "needsReview": false,
       "title": "Bloating",
-      "summary": "Extended education notes on Bloating and related wellness themes (Bloating) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Bloating: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Bloating"
@@ -21270,7 +21000,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "Extended education notes on Fatigue and related wellness themes (Fatigue) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises patient questions.",
+      "summary": "Clinic education on Fatigue: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Fatigue"
@@ -21351,12 +21081,10 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Valerian",
-      "summary": "Extended education notes on Valerian and related wellness themes (Valerian, Colds, and Flu) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises practitioner teaching.",
+      "summary": "Clinic education on Valerian: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Valerian",
-        "Colds",
-        "Flu"
+        "Valerian"
       ],
       "mskRelevant": false,
       "wordCount": 837,
@@ -21434,13 +21162,10 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "Extended education notes on Blood Pressure and related wellness themes (Blood Pressure, Depression, Guarana, and Fatigue) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Blood Pressure: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Depression",
-        "Guarana",
-        "Fatigue"
+        "Blood Pressure"
       ],
       "mskRelevant": false,
       "wordCount": 858,
@@ -21518,11 +21243,10 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Ginseng",
-      "summary": "Extended education notes on Ginseng and related wellness themes (Ginseng and Guarana) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Ginseng: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Ginseng",
-        "Guarana"
+        "Ginseng"
       ],
       "mskRelevant": false,
       "wordCount": 835,
@@ -21600,11 +21324,10 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Menopause",
-      "summary": "Extended education notes on Menopause and related wellness themes (Menopause and Anxiety) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises special populations.",
+      "summary": "Clinic education on Menopause: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Menopause",
-        "Anxiety"
+        "Menopause"
       ],
       "mskRelevant": true,
       "wordCount": 840,
@@ -21682,13 +21405,10 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Black Cohosh",
-      "summary": "Extended education notes on Black Cohosh and related wellness themes (Black Cohosh, Devil's Claw, Turmeric, and Valerian) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises sleep & stress context.",
+      "summary": "Clinic education on Black Cohosh: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Black Cohosh",
-        "Devil's Claw",
-        "Turmeric",
-        "Valerian"
+        "Black Cohosh"
       ],
       "mskRelevant": true,
       "wordCount": 877,
@@ -21766,12 +21486,10 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Extended education notes on Magnesium and related wellness themes (Magnesium, Turmeric, and Rosehip) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises when to escalate.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Turmeric",
-        "Rosehip"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 847,
@@ -21849,11 +21567,10 @@
       "variantLabel": "Rosehip",
       "needsReview": false,
       "title": "Rosehip",
-      "summary": "Extended education notes on Rosehip and related wellness themes (Rosehip and Stress) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Rosehip: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Rosehip",
-        "Stress"
+        "Rosehip"
       ],
       "mskRelevant": true,
       "wordCount": 711,
@@ -21927,7 +21644,7 @@
       "variantLabel": "Thyroid",
       "needsReview": false,
       "title": "Thyroid",
-      "summary": "Extended education notes on Thyroid and related wellness themes (Thyroid) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Thyroid: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Thyroid"
@@ -22004,11 +21721,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "Extended education notes on Blood Pressure and related wellness themes (Blood Pressure and Rosehip) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Blood Pressure: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Blood Pressure",
-        "Rosehip"
+        "Blood Pressure"
       ],
       "mskRelevant": false,
       "wordCount": 859,
@@ -22086,7 +21802,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Quercetin",
-      "summary": "Extended education notes on Quercetin and related wellness themes (Quercetin) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises evidence humility.",
+      "summary": "Clinic education on Quercetin: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
         "Quercetin"
@@ -22167,12 +21883,10 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Extended education notes on Magnesium and related wellness themes (Magnesium, Rhodiola, and Immunity) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises rehab fit.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Rhodiola",
-        "Immunity"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 843,
@@ -22250,7 +21964,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Bromelain",
-      "summary": "Extended education notes on Bromelain and related wellness themes (Bromelain) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises athlete & recovery.",
+      "summary": "Clinic education on Bromelain: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Bromelain"
@@ -22331,12 +22045,10 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Bromelain",
-      "summary": "Extended education notes on Bromelain and related wellness themes (Bromelain, Turmeric, and Rosehip) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises label literacy.",
+      "summary": "Clinic education on Bromelain: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Bromelain",
-        "Turmeric",
-        "Rosehip"
+        "Bromelain"
       ],
       "mskRelevant": true,
       "wordCount": 844,
@@ -22414,11 +22126,10 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Protein",
-      "summary": "Extended education notes on Protein and related wellness themes (Protein and MSM) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises patient questions.",
+      "summary": "Clinic education on Protein: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Protein",
-        "MSM"
+        "Protein"
       ],
       "mskRelevant": true,
       "wordCount": 844,
@@ -22496,12 +22207,10 @@
       "variantLabel": "Turmeric",
       "needsReview": false,
       "title": "Turmeric",
-      "summary": "Extended education notes on Turmeric and related wellness themes (Turmeric, Insomnia, and Stress) for patients seeking context and practitioners preparing explanations beside MSK care.",
+      "summary": "Clinic education on Turmeric: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Turmeric",
-        "Insomnia",
-        "Stress"
+        "Turmeric"
       ],
       "mskRelevant": true,
       "wordCount": 713,
@@ -22575,7 +22284,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "Extended education notes on Collagen and related wellness themes (Collagen) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises misconceptions.",
+      "summary": "Clinic education on Collagen: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
         "Collagen"
@@ -22656,12 +22365,10 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Saw Palmetto",
-      "summary": "Sports, training, and recovery education covering Saw Palmetto, Astragalus, and Echinacea, with a deep look at Saw Palmetto for active patients and practitioners coaching load. This variant emphasises time-limited trial.",
+      "summary": "Clinic education on Saw Palmetto: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
       "topics": [
-        "Saw Palmetto",
-        "Astragalus",
-        "Echinacea"
+        "Saw Palmetto"
       ],
       "mskRelevant": false,
       "wordCount": 749,
@@ -22735,11 +22442,10 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Extended education notes on Magnesium and related wellness themes (Magnesium and Varicose) for patients seeking context and practitioners preparing explanations beside MSK care. This variant emphasises special populations.",
+      "summary": "Clinic education on Magnesium: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Magnesium",
-        "Varicose"
+        "Magnesium"
       ],
       "mskRelevant": true,
       "wordCount": 840,
@@ -22817,9 +22523,11 @@
       "variantLabel": "Sports & recovery themes",
       "needsReview": true,
       "title": "Sports & recovery themes",
-      "summary": "Sports, training, and recovery education covering general nutrition and recovery themes, with a deep look at Sports & recovery themes for active patients and practitioners coaching load.",
+      "summary": "Clinic education on Sports & recovery themes: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.",
       "status": "published",
-      "topics": [],
+      "topics": [
+        "Sports & recovery themes"
+      ],
       "mskRelevant": false,
       "wordCount": 642,
       "sections": [
@@ -22888,11 +22596,11 @@
       "variantLabel": "Glutamine",
       "needsReview": false,
       "title": "Glutamine",
-      "summary": "Label-reading and formulation education focused on Glutamine (Glutamine and Ginseng) for patients and practitioners who want calmer conversations about ingredient lists.",
+      "summary": "Clinic education on Glutamine (label notes): plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Glutamine",
-        "Ginseng"
+        "Glutamine (label notes)",
+        "Glutamine"
       ],
       "mskRelevant": true,
       "wordCount": 520,
@@ -22958,14 +22666,10 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Multivitamin",
-      "summary": "Sports, training, and recovery education covering Multivitamin, Whey Protein, Weight Loss, Fenugreek, and Glutamine, with a deep look at Multivitamin for active patients and practitioners coaching load. This variant emphasises clinic overview.",
+      "summary": "Clinic education on Multivitamin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Multivitamin",
-        "Whey Protein",
-        "Weight Loss",
-        "Fenugreek",
-        "Glutamine"
+        "Multivitamin"
       ],
       "mskRelevant": true,
       "wordCount": 747,
@@ -23039,9 +22743,10 @@
       "variantLabel": "Energy",
       "needsReview": false,
       "title": "Energy",
-      "summary": "Label-reading and formulation education focused on Energy (Energy) for patients and practitioners who want calmer conversations about ingredient lists.",
+      "summary": "Clinic education on Energy (label notes): plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
+        "Energy (label notes)",
         "Energy"
       ],
       "mskRelevant": true,
@@ -23112,13 +22817,10 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Multivitamin",
-      "summary": "Sports, training, and recovery education covering Multivitamin, Weight Loss, Protein, and Energy, with a deep look at Multivitamin for active patients and practitioners coaching load. This variant emphasises safety & interactions.",
+      "summary": "Clinic education on Multivitamin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Multivitamin",
-        "Weight Loss",
-        "Protein",
-        "Energy"
+        "Multivitamin"
       ],
       "mskRelevant": true,
       "wordCount": 743,
@@ -23192,14 +22894,11 @@
       "variantLabel": "Vitamin A",
       "needsReview": false,
       "title": "Vitamin A",
-      "summary": "Label-reading and formulation education focused on Vitamin A (Vitamin A, Vitamin C, Vitamin D, Vitamin K, and Chromium) for patients and practitioners who want calmer conversations about ingredient lists.",
+      "summary": "Clinic education on Vitamin A (label notes): plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Vitamin A",
-        "Vitamin C",
-        "Vitamin D",
-        "Vitamin K",
-        "Chromium"
+        "Vitamin A (label notes)",
+        "Vitamin A"
       ],
       "mskRelevant": true,
       "wordCount": 537,
@@ -23265,13 +22964,11 @@
       "variantLabel": "Bad Breath",
       "needsReview": false,
       "title": "Bad Breath",
-      "summary": "Label-reading and formulation education focused on Bad Breath (Bad Breath, Depression, Diarrhoea, and Athlete) for patients and practitioners who want calmer conversations about ingredient lists.",
+      "summary": "Clinic education on Bad Breath (label notes): plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Bad Breath",
-        "Depression",
-        "Diarrhoea",
-        "Athlete"
+        "Bad Breath (label notes)",
+        "Bad Breath"
       ],
       "mskRelevant": true,
       "wordCount": 533,
@@ -23337,14 +23034,10 @@
       "variantLabel": "Riboflavin",
       "needsReview": false,
       "title": "Riboflavin",
-      "summary": "Sports, training, and recovery education covering Riboflavin, Magnesium, Potassium, Curcumin, and Lecithin, with a deep look at Riboflavin for active patients and practitioners coaching load.",
+      "summary": "Clinic education on Riboflavin: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Riboflavin",
-        "Magnesium",
-        "Potassium",
-        "Curcumin",
-        "Lecithin"
+        "Riboflavin"
       ],
       "mskRelevant": true,
       "wordCount": 606,
@@ -23414,14 +23107,11 @@
       "variantLabel": "Amino Acid",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "Label-reading and formulation education focused on Amino Acid (Amino Acid, Magnesium, Potassium, Chromium, and Selenium) for patients and practitioners who want calmer conversations about ingredient lists.",
+      "summary": "Clinic education on Amino Acid (label notes): plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.",
       "status": "published",
       "topics": [
-        "Amino Acid",
-        "Magnesium",
-        "Potassium",
-        "Chromium",
-        "Selenium"
+        "Amino Acid (label notes)",
+        "Amino Acid"
       ],
       "mskRelevant": true,
       "wordCount": 534,

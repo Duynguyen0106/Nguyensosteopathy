@@ -159,6 +159,69 @@ export function getUniqueThemeAngles(
 export const libraryDisclaimer =
   "These library pages are original education notes for both patients and practitioners at Nguyen's Osteopathic Clinic. They are not prescribing advice, product endorsements, or a republication of any third-party training manual. Patients should check with a GP, pharmacist, or osteopath before starting supplements. Practitioners should use them as discussion prompts only within their regulated scope.";
 
+/** True when a stored summary still uses the noisy multi-topic template. */
+export function isNoisyLibrarySummary(summary: string): boolean {
+  const text = String(summary || "");
+  return (
+    /also touching/i.test(text) ||
+    /^In-depth dual-audience clinic education on /i.test(text) ||
+    /^Extended education notes on .+ and related wellness themes/i.test(text) ||
+    /^Sports, training, and recovery education covering /i.test(text) ||
+    /^Label-reading and formulation education focused on .+ \(/i.test(text) ||
+    /^Clinic education notes on .+, centred on /i.test(text)
+  );
+}
+
+/**
+ * Audience-facing one-liner for cards and heroes. Prefers clean stored copy;
+ * otherwise builds a title-centred blurb (no cross-topic “also touching”).
+ */
+export function libraryDisplaySummary(opts: {
+  title: string;
+  summary?: string;
+  mskRelevant?: boolean;
+  isTheme?: boolean;
+}): string {
+  const title = String(opts.title || "").trim() || "this topic";
+  const raw = String(opts.summary || "").trim();
+  if (raw && !isNoisyLibrarySummary(raw)) return raw;
+
+  if (opts.isTheme) {
+    return `A clear dual-audience clinic theme on ${title} for patients and practitioners — what it is, why it comes up beside care, and what remains uncertain.`;
+  }
+  if (opts.mskRelevant) {
+    return `Clinic education on ${title}: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.`;
+  }
+  return `Clinic education on ${title}: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.`;
+}
+
+/** Primary topic labels only — drops OCR/neighbour spill into related tags. */
+export function libraryPrimaryTopics(article: {
+  title: string;
+  topicTitle?: string;
+  topics?: string[];
+}): string[] {
+  const primary = String(article.topicTitle || article.title || "").trim();
+  if (!primary) return [];
+  const norm = (value: string) =>
+    value.toLowerCase().replace(/[^a-z0-9]+/g, "");
+  const primaryNorm = norm(primary);
+  const extras = (article.topics || []).filter((topic) => {
+    const key = norm(topic);
+    if (!key || key === primaryNorm) return false;
+    // Keep only close variants of the same label (e.g. “Vitamin D” / “Vit D”).
+    return (
+      primaryNorm.includes(key) ||
+      key.includes(primaryNorm) ||
+      (primaryNorm.length >= 4 &&
+        key.length >= 4 &&
+        (primaryNorm.startsWith(key.slice(0, 4)) ||
+          key.startsWith(primaryNorm.slice(0, 4))))
+    );
+  });
+  return [primary, ...extras].slice(0, 2);
+}
+
 /** Browse category order + labels for the library index. */
 export const libraryCategoryOrder: {
   id: LibraryCategoryId;
@@ -304,12 +367,19 @@ export function getLibraryTopic(topicKey: string): LibraryTopic | undefined {
   const lead = articles.find((article) => !article.needsReview) ?? articles[0];
   const theme = getLibraryTheme(topicKey);
   const publicArticles = articles.filter((article) => !article.needsReview);
+  const title = lead.topicTitle || lead.title;
+  const mskRelevant = articles.some((article) => article.mskRelevant);
   return {
     topicKey,
-    title: lead.topicTitle || lead.title,
+    title,
     category: lead.category,
-    summary: theme?.summary ?? lead.summary,
-    mskRelevant: articles.some((article) => article.mskRelevant),
+    summary: libraryDisplaySummary({
+      title,
+      summary: theme?.summary ?? lead.summary,
+      mskRelevant,
+      isTheme: Boolean(theme),
+    }),
+    mskRelevant,
     sheetCount: articles.length,
     needsReview: articles.every((article) => article.needsReview),
     articles: publicArticles.length > 0 ? publicArticles : articles,

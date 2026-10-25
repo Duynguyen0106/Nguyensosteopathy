@@ -652,7 +652,9 @@ function buildArticle(page) {
     title: primary,
     summary,
     status: "published",
-    topics,
+    // Audience tags stay on the primary topic only — neighbour OCR labels
+    // must not pollute cards or “Topics:” chrome.
+    topics: [topicTitle || primary],
     mskRelevant,
     wordCount: countContentWords(longForm),
     sections,

@@ -16,9 +16,9 @@ const hubDescription = trimDescription(
 );
 
 export const metadata: Metadata = {
-  title: "Supplements & Recovery Guides",
+  title: "Nutrition & Supplements",
   description: hubDescription,
-  alternates: { canonical: "/supplements" },
+  alternates: { canonical: "/education/nutrition" },
   keywords: [
     "osteopath supplements Woolwich",
     "vitamin D musculoskeletal",
@@ -27,20 +27,20 @@ export const metadata: Metadata = {
     "supplements back pain SE18",
   ],
   openGraph: {
-    title: `Supplements & Recovery | ${site.name}`,
+    title: `Nutrition & Supplements | ${site.name}`,
     description: hubDescription,
-    url: "/supplements",
+    url: "/education/nutrition",
     images: [defaultOgImage],
   },
 };
 
-export default function SupplementsIndexPage() {
+export default function NutritionEducationPage() {
   const pageLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    "@id": `${site.websiteUrl}/supplements#webpage`,
-    name: "Supplements & recovery guides",
-    url: `${site.websiteUrl}/supplements`,
+    "@id": `${site.websiteUrl}/education/nutrition#webpage`,
+    name: "Nutrition & supplements",
+    url: `${site.websiteUrl}/education/nutrition`,
     description: hubDescription,
     specialty: "https://schema.org/Musculoskeletal",
     audience: {
@@ -53,7 +53,7 @@ export default function SupplementsIndexPage() {
     hasPart: supplements.map((topic) => ({
       "@type": "MedicalWebPage",
       name: topic.title,
-      url: `${site.websiteUrl}/supplements/${topic.slug}`,
+      url: `${site.websiteUrl}/education/nutrition/${topic.slug}`,
     })),
   };
 
@@ -67,10 +67,14 @@ export default function SupplementsIndexPage() {
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Patient education · Woolwich SE18
+            <Link href="/education" className="hover:text-teal-dark">
+              Education
+            </Link>
+            {" · "}
+            For patients
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
-            Supplements & recovery guides
+            Nutrition &amp; supplements
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Plain-English notes on vitamins, minerals, and recovery habits that
@@ -79,11 +83,11 @@ export default function SupplementsIndexPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href="/education" variant="secondary">
+              Education hub
+            </ButtonLink>
             <ButtonLink href="/exercises" variant="secondary">
               Exercise library
-            </ButtonLink>
-            <ButtonLink href="/resources" variant="secondary">
-              Patient resources
             </ButtonLink>
           </div>
         </div>
@@ -136,13 +140,23 @@ export default function SupplementsIndexPage() {
         </div>
 
         <p className="mt-14 text-sm text-slate-500">
-          Looking for condition-specific care instead?{" "}
+          More learning:{" "}
+          <Link
+            href="/education/acupuncture"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            acupuncture education
+          </Link>
+          {" · "}
+          <Link
+            href="/education/cpd"
+            className="font-semibold text-teal hover:text-teal-dark"
+          >
+            CPD for practitioners
+          </Link>
+          {" · "}
           <Link href="/conditions" className="font-semibold text-teal hover:text-teal-dark">
-            Browse conditions
-          </Link>{" "}
-          or{" "}
-          <Link href="/aftercare" className="font-semibold text-teal hover:text-teal-dark">
-            aftercare
+            conditions
           </Link>
           .
         </p>

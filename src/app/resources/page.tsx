@@ -130,10 +130,27 @@ const groups = [
         detail: "Practical articles on pain, recovery, and clinic life in Woolwich.",
       },
       {
-        href: "/supplements",
-        label: "Supplements & recovery",
+        href: "/education",
+        label: "Education hub",
+        detail:
+          "Nutrition & supplements, acupuncture guides, and practitioner CPD notes.",
+      },
+      {
+        href: "/education/nutrition",
+        label: "Nutrition & supplements",
         detail:
           "Patient guides on magnesium, vitamin D, omega-3, collagen, and when pills will not fix pain.",
+      },
+      {
+        href: "/education/acupuncture",
+        label: "Acupuncture education",
+        detail: "Patient notes on medical acupuncture used alongside osteopathy.",
+      },
+      {
+        href: "/education/cpd",
+        label: "CPD for practitioners",
+        detail:
+          "Public CPD notes labelled for osteopaths and allied practitioners — not patient advice.",
       },
       {
         href: "/leaflet",

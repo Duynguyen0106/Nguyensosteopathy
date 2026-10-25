@@ -4,7 +4,7 @@ import type { SupplementTopic } from "@/lib/supplements";
 export function SupplementCard({ topic }: { topic: SupplementTopic }) {
   return (
     <Link
-      href={`/supplements/${topic.slug}`}
+      href={`/education/nutrition/${topic.slug}`}
       className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-teal hover:shadow-sm md:p-6"
     >
       <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">

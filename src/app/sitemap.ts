@@ -3,6 +3,7 @@ import { serviceAreas } from "@/lib/areas";
 import { getAllPosts } from "@/lib/blog";
 import { conditions } from "@/lib/conditions";
 import { exercises, programmes } from "@/lib/exercises";
+import { educationArticles, educationTracks } from "@/lib/education";
 import { supplements } from "@/lib/supplements";
 import { services, site } from "@/lib/site";
 
@@ -80,7 +81,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/resources", priority: 0.8 },
     { path: "/aftercare", priority: 0.75 },
     { path: "/exercises", priority: 0.85 },
-    { path: "/supplements", priority: 0.75 },
+    { path: "/education", priority: 0.8 },
+    { path: "/education/nutrition", priority: 0.75 },
     { path: "/complaints", changeFrequency: "yearly", priority: 0.35 },
     { path: "/conditions", priority: 0.85 },
     { path: "/areas", priority: 0.85 },
@@ -113,12 +115,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.65,
       }),
     ),
+    ...educationTracks
+      .filter((track) => track.id !== "nutrition")
+      .map((track) =>
+        entry({
+          path: `/education/${track.slug}`,
+          priority: 0.7,
+        }),
+      ),
     ...supplements.map((topic) =>
       entry({
-        path: `/supplements/${topic.slug}`,
+        path: `/education/nutrition/${topic.slug}`,
         priority: 0.65,
       }),
     ),
+    ...educationArticles
+      .filter((article) => article.status === "published")
+      .map((article) =>
+        entry({
+          path: `/education/${article.track}/${article.slug}`,
+          priority: 0.65,
+        }),
+      ),
     ...serviceAreas.map((area) =>
       entry({
         path: `/areas/${area.slug}`,

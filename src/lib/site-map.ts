@@ -10,6 +10,7 @@ export const siteMapGroups = [
       { href: "/new-patients", label: "New patient guide" },
       { href: "/aftercare", label: "Aftercare guide" },
       { href: "/exercises", label: "Home exercises & rehab" },
+      { href: "/supplements", label: "Supplements & recovery" },
       { href: "/resources", label: "Patient resources" },
       { href: "/find-us", label: "Find us & parking" },
       { href: "/contact", label: "Contact" },

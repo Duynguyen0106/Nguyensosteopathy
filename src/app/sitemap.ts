@@ -3,6 +3,7 @@ import { serviceAreas } from "@/lib/areas";
 import { getAllPosts } from "@/lib/blog";
 import { conditions } from "@/lib/conditions";
 import { exercises, programmes } from "@/lib/exercises";
+import { supplements } from "@/lib/supplements";
 import { services, site } from "@/lib/site";
 
 const base = site.websiteUrl;
@@ -79,6 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/resources", priority: 0.8 },
     { path: "/aftercare", priority: 0.75 },
     { path: "/exercises", priority: 0.85 },
+    { path: "/supplements", priority: 0.75 },
     { path: "/complaints", changeFrequency: "yearly", priority: 0.35 },
     { path: "/conditions", priority: 0.85 },
     { path: "/areas", priority: 0.85 },
@@ -108,6 +110,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...exercises.map((exercise) =>
       entry({
         path: `/exercises/${exercise.slug}`,
+        priority: 0.65,
+      }),
+    ),
+    ...supplements.map((topic) =>
+      entry({
+        path: `/supplements/${topic.slug}`,
         priority: 0.65,
       }),
     ),

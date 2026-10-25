@@ -21,6 +21,7 @@ import {
 } from "@/lib/seo";
 import { bookHref, spineConditionSlugs } from "@/lib/seo-strategy";
 import { getService, site } from "@/lib/site";
+import { getSupplementsForCondition } from "@/lib/supplements";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -60,6 +61,7 @@ export default async function ConditionPage({ params }: Props) {
   const service = getService(condition.relatedServiceSlug);
   const related = getRelatedConditions(condition, 4);
   const relatedProgrammes = getProgrammesForCondition(condition.slug);
+  const relatedSupplements = getSupplementsForCondition(condition.slug, 3);
   const faqs = getConditionFaqs(condition);
   const expanded =
     Boolean(condition.causes) ||
@@ -291,6 +293,50 @@ export default async function ConditionPage({ params }: Props) {
               className="mt-8 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
             >
               Browse the full exercise library →
+            </Link>
+          </div>
+        </section>
+      ) : null}
+
+      {relatedSupplements.length > 0 ? (
+        <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="font-display text-3xl text-navy">
+              Supplements & recovery reading
+            </h2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
+              Optional patient education that sometimes comes up alongside{" "}
+              {condition.shortTitle.toLowerCase()} care. Educational only — not a
+              prescription.
+            </p>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedSupplements.map((topic) => (
+                <li key={topic.slug}>
+                  <Link
+                    href={`/supplements/${topic.slug}`}
+                    className="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 p-5 transition hover:border-teal"
+                  >
+                    <span className="text-xs font-semibold tracking-wide text-teal uppercase">
+                      {topic.category}
+                    </span>
+                    <span className="mt-2 font-semibold text-navy">
+                      {topic.title}
+                    </span>
+                    <span className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-600">
+                      {topic.summary}
+                    </span>
+                    <span className="mt-4 text-sm font-semibold text-teal">
+                      Read guide →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/supplements"
+              className="mt-8 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+            >
+              Browse all supplements guides →
             </Link>
           </div>
         </section>

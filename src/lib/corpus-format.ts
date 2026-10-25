@@ -212,13 +212,43 @@ function parseActionsIndications(body: string): CorpusBlock | null {
   return groups.length ? { kind: "split", groups } : null;
 }
 
+function stripRepeatedHeading(heading: string, body: string): string {
+  const key = heading.replace(/:$/, "").trim().toUpperCase();
+  const lines = String(body || "")
+    .split(/\n+/)
+    .map((l) => l.trim())
+    .filter(Boolean);
+  while (
+    lines[0] &&
+    (lines[0].toUpperCase() === key ||
+      lines[0].toUpperCase().startsWith(`${key} `) ||
+      /^(contraindications|incompatibilities|herb\/drug interactions)$/i.test(
+        lines[0],
+      ))
+  ) {
+    // Drop echoed section labels that AD often repeats in the body.
+    if (
+      lines[0].toUpperCase() === key ||
+      /^(contraindications|incompatibilities|herb\/drug interactions)$/i.test(
+        lines[0],
+      )
+    ) {
+      lines.shift();
+      continue;
+    }
+    break;
+  }
+  return lines.join("\n");
+}
+
 export function formatCorpusSection(
   heading: string,
   body: string,
 ): CorpusBlock {
   const key = heading.toUpperCase();
+  const cleaned = stripRepeatedHeading(heading, body);
   if (key === "PROPERTIES" || key === "PROPERTY") {
-    const parsed = parseProperties(body);
+    const parsed = parseProperties(cleaned);
     if (parsed) return parsed;
   }
   if (
@@ -226,12 +256,12 @@ export function formatCorpusSection(
     key === "ACTIONS AND INDICATION" ||
     key === "FORMULA ACTIONS"
   ) {
-    const parsed = parseActionsIndications(body);
+    const parsed = parseActionsIndications(cleaned);
     if (parsed) return parsed;
   }
 
   const merged = mergeSoftWrappedLines(
-    body
+    cleaned
       .split(/\n+/)
       .map((l) => l.trim())
       .filter(Boolean),

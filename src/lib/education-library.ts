@@ -47,6 +47,8 @@ export type LibraryArticle = {
   status: "published" | "coming-soon";
   topics: string[];
   mskRelevant: boolean;
+  /** Approximate education word count from generator (summary + sections + caveats + FAQs). */
+  wordCount?: number;
   sections: LibrarySection[];
   caveats: string[];
   faqs: LibraryFaq[];

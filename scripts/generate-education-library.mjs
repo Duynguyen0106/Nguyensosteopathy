@@ -196,6 +196,230 @@ function slugify(input) {
     .slice(0, 48);
 }
 
+/** Canonical topicKey aliases (lowercase labels → stable key). */
+const TOPIC_KEY_ALIASES = {
+  "b complex": "b-complex",
+  "b-complex": "b-complex",
+  "beta alanine": "beta-alanine",
+  "beta-alanine": "beta-alanine",
+  "branched chain": "bcaa",
+  bcaa: "bcaa",
+  "co enzyme q10": "coq10",
+  "coenzyme q10": "coq10",
+  coq10: "coq10",
+  "devils claw": "devils-claw",
+  "devil's claw": "devils-claw",
+  "lions mane": "lions-mane",
+  "lion's mane": "lions-mane",
+  "n-acetyl cysteine": "nac",
+  nac: "nac",
+  "omega 3": "omega-3",
+  "omega-3": "omega-3",
+  "st john": "st-johns-wort",
+  "st. john": "st-johns-wort",
+  folate: "folic-acid",
+  "folic acid": "folic-acid",
+  curcumin: "turmeric",
+  turmeric: "turmeric",
+  "glucosamine": "glucosamine",
+  "chondroitin": "chondroitin",
+};
+
+/** Browse category for a canonical topic key. */
+const TOPIC_CATEGORY = {
+  // minerals
+  calcium: "minerals",
+  chromium: "minerals",
+  iodine: "minerals",
+  iron: "minerals",
+  magnesium: "minerals",
+  potassium: "minerals",
+  selenium: "minerals",
+  zinc: "minerals",
+  zma: "minerals",
+  // vitamins
+  "b-complex": "vitamins",
+  "folic-acid": "vitamins",
+  lutein: "vitamins",
+  lycopene: "vitamins",
+  multivitamin: "vitamins",
+  niacin: "vitamins",
+  riboflavin: "vitamins",
+  "vitamin-a": "vitamins",
+  "vitamin-b1": "vitamins",
+  "vitamin-b12": "vitamins",
+  "vitamin-b6": "vitamins",
+  "vitamin-c": "vitamins",
+  "vitamin-d": "vitamins",
+  "vitamin-e": "vitamins",
+  "vitamin-k": "vitamins",
+  // amino acids / protein
+  "5-htp": "amino-acids-protein",
+  "acetyl-l-carnitine": "amino-acids-protein",
+  "amino-acid": "amino-acids-protein",
+  bcaa: "amino-acids-protein",
+  "beta-alanine": "amino-acids-protein",
+  collagen: "amino-acids-protein",
+  creatine: "amino-acids-protein",
+  glutamine: "amino-acids-protein",
+  "l-arginine": "amino-acids-protein",
+  "l-carnitine": "amino-acids-protein",
+  "l-glutamine": "amino-acids-protein",
+  "l-lysine": "amino-acids-protein",
+  "l-theanine": "amino-acids-protein",
+  "l-tryptophan": "amino-acids-protein",
+  "l-tyrosine": "amino-acids-protein",
+  protein: "amino-acids-protein",
+  taurine: "amino-acids-protein",
+  "whey-protein": "amino-acids-protein",
+  // fatty acids
+  "cod-liver-oil": "fatty-acids",
+  "evening-primrose": "fatty-acids",
+  "fish-oil": "fatty-acids",
+  flaxseed: "fatty-acids",
+  "krill-oil": "fatty-acids",
+  "omega-3": "fatty-acids",
+  cla: "fatty-acids",
+  lecithin: "fatty-acids",
+  // herbal / botanicals / other actives
+  "alpha-lipoic-acid": "herbal",
+  ashwagandha: "herbal",
+  astragalus: "herbal",
+  "black-cohosh": "herbal",
+  boswellia: "herbal",
+  bromelain: "herbal",
+  cbd: "herbal",
+  cinnamon: "herbal",
+  citicoline: "herbal",
+  citrulline: "herbal",
+  coq10: "herbal",
+  cordyceps: "herbal",
+  cranberry: "herbal",
+  dandelion: "herbal",
+  "devils-claw": "herbal",
+  "digestive-enzyme": "herbal",
+  echinacea: "herbal",
+  elderberry: "herbal",
+  fenugreek: "herbal",
+  feverfew: "herbal",
+  garlic: "herbal",
+  ginger: "herbal",
+  ginkgo: "herbal",
+  ginseng: "herbal",
+  glucosamine: "herbal",
+  chondroitin: "herbal",
+  "gotu-kola": "herbal",
+  "grape-seed": "herbal",
+  "green-tea": "herbal",
+  guarana: "herbal",
+  hawthorn: "herbal",
+  "holy-basil": "herbal",
+  "hyaluronic-acid": "herbal",
+  "lions-mane": "herbal",
+  maca: "herbal",
+  "manuka-honey": "herbal",
+  melatonin: "herbal",
+  "milk-thistle": "herbal",
+  msm: "herbal",
+  nac: "herbal",
+  nettle: "herbal",
+  "oregano-oil": "herbal",
+  peppermint: "herbal",
+  phosphatidylserine: "herbal",
+  probiotic: "herbal",
+  psyllium: "herbal",
+  quercetin: "herbal",
+  "red-clover": "herbal",
+  reishi: "herbal",
+  resveratrol: "herbal",
+  rhodiola: "herbal",
+  rosehip: "herbal",
+  "saw-palmetto": "herbal",
+  "slippery-elm": "herbal",
+  spirulina: "herbal",
+  "st-johns-wort": "herbal",
+  "tea-tree": "herbal",
+  "tissue-salt": "herbal",
+  turmeric: "herbal",
+  valerian: "herbal",
+  // wellness themes
+  "acid-reflux": "wellness-themes",
+  anxiety: "wellness-themes",
+  arthritis: "wellness-themes",
+  "bad-breath": "wellness-themes",
+  bloating: "wellness-themes",
+  "blood-pressure": "wellness-themes",
+  "bone-health": "wellness-themes",
+  cholesterol: "wellness-themes",
+  colds: "wellness-themes",
+  constipation: "wellness-themes",
+  cramp: "wellness-themes",
+  depression: "wellness-themes",
+  diabetes: "wellness-themes",
+  diarrhoea: "wellness-themes",
+  eczema: "wellness-themes",
+  energy: "wellness-themes",
+  fatigue: "wellness-themes",
+  flu: "wellness-themes",
+  gout: "wellness-themes",
+  hair: "wellness-themes",
+  "hay-fever": "wellness-themes",
+  headache: "wellness-themes",
+  heartburn: "wellness-themes",
+  hives: "wellness-themes",
+  immunity: "wellness-themes",
+  indigestion: "wellness-themes",
+  inflammation: "wellness-themes",
+  insomnia: "wellness-themes",
+  "joint-pain": "wellness-themes",
+  menopause: "wellness-themes",
+  migraine: "wellness-themes",
+  muscle: "wellness-themes",
+  osteoporosis: "wellness-themes",
+  pms: "wellness-themes",
+  pregnancy: "wellness-themes",
+  sciatica: "wellness-themes",
+  sinus: "wellness-themes",
+  sleep: "wellness-themes",
+  stress: "wellness-themes",
+  tendon: "wellness-themes",
+  thyroid: "wellness-themes",
+  uti: "wellness-themes",
+  varicose: "wellness-themes",
+  wound: "wellness-themes",
+  // sports / weight
+  athlete: "sports-weight",
+  electrolyte: "sports-weight",
+  sports: "sports-weight",
+  "weight-loss": "sports-weight",
+};
+
+function canonicalTopicKey(label) {
+  const lower = label.toLowerCase().trim();
+  if (TOPIC_KEY_ALIASES[lower]) return TOPIC_KEY_ALIASES[lower];
+  return slugify(lower);
+}
+
+function categoryForTopicKey(topicKey, section) {
+  if (TOPIC_CATEGORY[topicKey]) return TOPIC_CATEGORY[topicKey];
+  const kind = sectionKind(section);
+  if (kind === "front") return "start-here";
+  if (kind === "ailment") return "wellness-themes";
+  if (kind === "sports") return "sports-weight";
+  if (kind === "reference") return "reference-forms";
+  if (kind === "product") return "herbal";
+  return "wellness-themes";
+}
+
+function categoryFromSectionOnly(section) {
+  const kind = sectionKind(section);
+  if (kind === "front") return "start-here";
+  if (kind === "ailment") return "wellness-themes";
+  if (kind === "sports") return "sports-weight";
+  if (kind === "reference") return "reference-forms";
+  return "wellness-themes";
+}
+
 function titleCaseTopic(label) {
   const special = {
     "5-htp": "5-HTP",
@@ -261,21 +485,40 @@ function sectionKind(section) {
   return "general";
 }
 
+function isIngredientCategory(category) {
+  return [
+    "minerals",
+    "vitamins",
+    "amino-acids-protein",
+    "fatty-acids",
+    "herbal",
+  ].includes(category);
+}
+
+/** Prefer ingredient topics over wellness themes for product-sheet titles. */
+function pickPrimaryTopicLabel(topicLabels, kind) {
+  if (!topicLabels.length) return null;
+  if (kind !== "product") return topicLabels[0];
+  const ingredient = topicLabels.find((label) => {
+    const key = canonicalTopicKey(label);
+    return isIngredientCategory(categoryForTopicKey(key, "products-a-z"));
+  });
+  return ingredient || topicLabels[0];
+}
+
 function buildArticle(page) {
   const kind = sectionKind(page.section);
   const topics = extractTopics(page).map(titleCaseTopic);
   const pageNo = page.page;
+  const primaryTopic = pickPrimaryTopicLabel(topics, kind);
 
   let primary;
   if (kind === "front" && pageNo === 1) {
     primary = "How to use this supplement library";
   } else if (kind === "front") {
     primary = "Library contents map";
-  } else if (topics[0]) {
-    primary = topics[0];
-    if (topics.length > 1) {
-      // keep primary as first; mention others in summary
-    }
+  } else if (primaryTopic) {
+    primary = primaryTopic;
   } else if (kind === "ailment") {
     primary = `Wellness themes (sheet ${pageNo})`;
   } else if (kind === "product") {
@@ -437,10 +680,45 @@ function buildArticle(page) {
   }
 
   const tags = page.tags || [];
+  const isPlaceholder = /\(sheet \d+\)$/i.test(primary);
+
+  let topicKey;
+  let topicTitle;
+  let category;
+  if (kind === "front") {
+    topicKey = pageNo === 1 ? "how-to-use" : "contents-map";
+    topicTitle = primary;
+    category = "start-here";
+  } else if (kind === "reference") {
+    topicKey = primaryTopic
+      ? canonicalTopicKey(primaryTopic)
+      : `sheet-${String(pageNo).padStart(3, "0")}`;
+    topicTitle = primaryTopic || primary;
+    category = "reference-forms";
+  } else if (primaryTopic) {
+    topicKey = canonicalTopicKey(primaryTopic);
+    topicTitle =
+      canonicalTopicKey(primary) === topicKey ? primary : primaryTopic;
+    category = categoryForTopicKey(topicKey, page.section);
+  } else {
+    topicKey = `sheet-${String(pageNo).padStart(3, "0")}`;
+    topicTitle = primary;
+    category = categoryFromSectionOnly(page.section);
+  }
+
+  const needsReview =
+    kind !== "front" && (isPlaceholder || topics.length === 0);
+  const variantLabel = `Sheet ${pageNo}`;
+
   return {
     slug,
     sourcePage: pageNo,
     section: page.section,
+    category,
+    topicKey,
+    topicTitle,
+    variantLabel,
+    needsReview,
     title: primary,
     summary,
     status: "published",
@@ -494,12 +772,21 @@ fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(payload, null, 2));
 console.log(`Wrote ${articles.length} articles → ${OUT}`);
 const withTopics = articles.filter((a) => a.topics.length).length;
+const needsReview = articles.filter((a) => a.needsReview).length;
+const byCat = {};
+for (const a of articles) {
+  byCat[a.category] = (byCat[a.category] || 0) + 1;
+}
+const topicKeys = new Set(articles.map((a) => a.topicKey));
 console.log(`With detected topics: ${withTopics}/${articles.length}`);
+console.log(`Needs review: ${needsReview}`);
+console.log(`Unique topicKeys: ${topicKeys.size}`);
+console.log("Categories:", byCat);
 console.log(
   "Sample:",
   articles
     .filter((a) => a.topics.length)
     .slice(0, 8)
-    .map((a) => `${a.sourcePage}:${a.title}`)
+    .map((a) => `${a.sourcePage}:${a.category}/${a.topicKey}`)
     .join(" | "),
 );

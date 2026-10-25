@@ -4,7 +4,10 @@ import { getAllPosts } from "@/lib/blog";
 import { conditions } from "@/lib/conditions";
 import { exercises, programmes } from "@/lib/exercises";
 import { educationArticles, educationTracks } from "@/lib/education";
-import { libraryArticles } from "@/lib/education-library";
+import {
+  getAllLibraryTopicKeys,
+  libraryArticles,
+} from "@/lib/education-library";
 import { supplements } from "@/lib/supplements";
 import { services, site } from "@/lib/site";
 
@@ -129,6 +132,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entry({
         path: `/education/nutrition/${topic.slug}`,
         priority: 0.65,
+      }),
+    ),
+    ...getAllLibraryTopicKeys().map((topic) =>
+      entry({
+        path: `/education/library/topic/${topic}`,
+        priority: 0.6,
       }),
     ),
     ...libraryArticles.map((article) =>

@@ -7,6 +7,9 @@ import { EducationAudienceBanner } from "@/components/education/EducationAudienc
 import {
   getAllLibrarySlugs,
   getLibraryArticle,
+  getLibraryArticlesByTopic,
+  getLibraryCategoryLabel,
+  getNutritionGuideForTopic,
   libraryArticles,
 } from "@/lib/education-library";
 import {
@@ -55,14 +58,26 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
   if (!article) notFound();
 
   const path = `/education/library/${article.slug}`;
-  const related = libraryArticles
-    .filter(
-      (item) =>
-        item.slug !== article.slug &&
-        item.section === article.section &&
-        item.topics.some((topic) => article.topics.includes(topic)),
-    )
-    .slice(0, 4);
+  const categoryLabel = getLibraryCategoryLabel(article.category);
+  const categoryHref = `/education/library#${article.category}`;
+  const topicHref = `/education/library/topic/${article.topicKey}`;
+  const topicTitle = article.topicTitle || article.title;
+  const nutritionGuide = getNutritionGuideForTopic(article.topicKey);
+
+  const sameTopic = getLibraryArticlesByTopic(article.topicKey).filter(
+    (item) => item.slug !== article.slug,
+  );
+
+  const related =
+    sameTopic.length > 0
+      ? sameTopic.slice(0, 4)
+      : libraryArticles
+          .filter(
+            (item) =>
+              item.slug !== article.slug &&
+              item.topics.some((topic) => article.topics.includes(topic)),
+          )
+          .slice(0, 4);
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -94,7 +109,9 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
     { name: "Home", path: "/" },
     { name: "Education", path: "/education" },
     { name: "Library", path: "/education/library" },
-    { name: article.title, path },
+    { name: categoryLabel, path: categoryHref },
+    { name: topicTitle, path: topicHref },
+    { name: article.variantLabel, path },
   ]);
 
   return (
@@ -123,9 +140,15 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
               Library
             </Link>
             {" · "}
-            Sheet {article.sourcePage}
+            <Link href={categoryHref} className="hover:text-teal-dark">
+              {categoryLabel}
+            </Link>
             {" · "}
-            For patients &amp; practitioners
+            <Link href={topicHref} className="hover:text-teal-dark">
+              {topicTitle}
+            </Link>
+            {" · "}
+            {article.variantLabel}
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             {article.title}
@@ -139,10 +162,19 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
             </p>
           ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/education/library">All library sheets</ButtonLink>
-            <ButtonLink href="/education/nutrition" variant="secondary">
-              Featured nutrition guides
-            </ButtonLink>
+            <ButtonLink href={topicHref}>All {topicTitle} sheets</ButtonLink>
+            {nutritionGuide ? (
+              <ButtonLink
+                href={`/education/nutrition/${nutritionGuide.slug}`}
+                variant="secondary"
+              >
+                Patient guide
+              </ButtonLink>
+            ) : (
+              <ButtonLink href="/education/nutrition" variant="secondary">
+                Featured nutrition guides
+              </ButtonLink>
+            )}
             <ButtonLink href="/book" variant="secondary">
               Book online
             </ButtonLink>
@@ -201,7 +233,11 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
       {related.length > 0 ? (
         <section className="border-t border-slate-200 bg-white px-5 py-14 md:px-8 md:py-16">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-display text-2xl text-navy">Related library sheets</h2>
+            <h2 className="font-display text-2xl text-navy">
+              {sameTopic.length > 0
+                ? `Other sheets on ${topicTitle}`
+                : "Related library sheets"}
+            </h2>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((item) => (
                 <li key={item.slug}>
@@ -209,11 +245,19 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
                     href={`/education/library/${item.slug}`}
                     className="font-semibold text-teal hover:text-teal-dark"
                   >
-                    {item.title}
+                    {item.variantLabel}: {item.title}
                   </Link>
                 </li>
               ))}
             </ul>
+            {sameTopic.length > 4 ? (
+              <Link
+                href={topicHref}
+                className="mt-6 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
+              >
+                View all {topicTitle} sheets →
+              </Link>
+            ) : null}
           </div>
         </section>
       ) : null}

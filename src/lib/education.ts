@@ -60,7 +60,7 @@ export const educationTracks: EducationTrack[] = [
     title: "Nutrition & supplements",
     shortTitle: "Nutrition",
     summary:
-      "Patient guides on vitamins, minerals, and recovery habits that often come up alongside osteopathy — educational only, not prescribing.",
+      "Shorter patient guides on vitamins, minerals, and recovery habits that often come up alongside osteopathy — educational only, not prescribing. Browse the full topic catalogue in the Supplement library.",
     audience: "patients",
     audienceLabel: "For patients",
     ctaLabel: "Browse nutrition guides",
@@ -71,7 +71,7 @@ export const educationTracks: EducationTrack[] = [
     title: "Supplement education library",
     shortTitle: "Library",
     summary:
-      "230 original clinic-voice sheets for patients and practitioners covering common supplement and wellness themes — not a product catalogue.",
+      "Full dual-audience catalogue of 230 clinic-voice sheets, organised by topic (minerals, vitamins, herbals, wellness) — not a product catalogue. Shorter MSK patient guides live under Nutrition.",
     audience: "both",
     audienceLabel: "For patients & practitioners",
     ctaLabel: "Browse the full library",

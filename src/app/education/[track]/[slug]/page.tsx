@@ -31,7 +31,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { track: trackSlug, slug } = await params;
-  if (trackSlug === "nutrition") return {};
+  if (trackSlug === "nutrition" || trackSlug === "library") return {};
   const track = getEducationTrack(trackSlug);
   if (!track || !articleTracks.has(track.id)) return {};
   const article = getEducationArticle(track.id, slug);
@@ -66,6 +66,9 @@ export default async function EducationArticlePage({ params }: Props) {
   const { track: trackSlug, slug } = await params;
   if (trackSlug === "nutrition") {
     redirect(`/education/nutrition/${slug}`);
+  }
+  if (trackSlug === "library") {
+    redirect(`/education/library/${slug}`);
   }
 
   const track = getEducationTrack(trackSlug);

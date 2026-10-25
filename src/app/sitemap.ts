@@ -4,6 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 import { conditions } from "@/lib/conditions";
 import { exercises, programmes } from "@/lib/exercises";
 import { educationArticles, educationTracks } from "@/lib/education";
+import { libraryArticles } from "@/lib/education-library";
 import { supplements } from "@/lib/supplements";
 import { services, site } from "@/lib/site";
 
@@ -83,6 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/exercises", priority: 0.85 },
     { path: "/education", priority: 0.8 },
     { path: "/education/nutrition", priority: 0.75 },
+    { path: "/education/library", priority: 0.75 },
     { path: "/complaints", changeFrequency: "yearly", priority: 0.35 },
     { path: "/conditions", priority: 0.85 },
     { path: "/areas", priority: 0.85 },
@@ -116,7 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }),
     ),
     ...educationTracks
-      .filter((track) => track.id !== "nutrition")
+      .filter((track) => track.id !== "nutrition" && track.id !== "library")
       .map((track) =>
         entry({
           path: `/education/${track.slug}`,
@@ -127,6 +129,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entry({
         path: `/education/nutrition/${topic.slug}`,
         priority: 0.65,
+      }),
+    ),
+    ...libraryArticles.map((article) =>
+      entry({
+        path: `/education/library/${article.slug}`,
+        priority: 0.55,
       }),
     ),
     ...educationArticles

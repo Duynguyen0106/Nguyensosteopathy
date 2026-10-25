@@ -6,12 +6,12 @@ import { ServiceIcon } from "@/components/ServiceIcon";
 import { getServiceHref, services, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Osteopathy Services in Woolwich",
+  title: "Osteopathy services Woolwich",
   description:
     "Osteopathy services in Woolwich: back pain treatment, neck pain treatment, shockwave therapy, drug free pain relief, sports rehab, acupuncture, pregnancy…",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Osteopathy Services in Woolwich | Back Pain & Shockwave Therapy",
+    title: "Osteopathy services Woolwich | Back pain & shockwave",
     description:
       "Explore osteopathy, back pain treatment, neck pain treatment, and shockwave therapy at Nguyen's Osteopathic Clinic with Austin Duy Nguyen, GOsC-registered osteopath.",
     url: "/services",

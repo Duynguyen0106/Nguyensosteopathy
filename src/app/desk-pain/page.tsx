@@ -5,7 +5,7 @@ import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Desk & Office Pain Osteopath in Woolwich",
+  title: "Desk pain osteopath Woolwich",
   description:
     "Osteopathy for desk and hybrid workers in Woolwich SE18 — neck and shoulder tension, upper-back ache, text neck, and RSI-type wrist or forearm pain. Inside…",
   alternates: { canonical: "/desk-pain" },

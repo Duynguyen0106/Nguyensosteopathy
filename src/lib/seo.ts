@@ -118,3 +118,23 @@ export function pageOpenGraph({
     images: images ?? [defaultOgImage],
   };
 }
+
+/** FAQPage JSON-LD from question/answer pairs. */
+export function faqPageJsonLd(
+  items: readonly { question: string; answer: string }[],
+  inLanguage?: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    ...(inLanguage ? { inLanguage } : {}),
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}

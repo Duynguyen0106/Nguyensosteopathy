@@ -207,3 +207,24 @@ export function getAcupunctureCorpusTypeLabel(type: string): string {
     getAcupunctureCorpusCategories().find((c) => c.id === type)?.label ?? type
   );
 }
+
+/**
+ * Lightweight paths for sitemap.xml — uses catalog.json (no by-type body load).
+ * Prefer full/partial quality; thin is currently unused but excluded if present.
+ */
+export function getSitemapAcupunctureCorpusPaths(): {
+  type: AcupunctureCorpusType;
+  slug: string;
+}[] {
+  return getAcupunctureCorpusEntries()
+    .filter((entry) => {
+      if (!isAcupunctureCorpusType(String(entry.type))) return false;
+      if (entry.publishable === false) return false;
+      if (entry.quality === "thin") return false;
+      return Boolean(entry.slug);
+    })
+    .map((entry) => ({
+      type: entry.type as AcupunctureCorpusType,
+      slug: entry.slug,
+    }));
+}

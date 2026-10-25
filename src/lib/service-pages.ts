@@ -27,7 +27,7 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "back-neck-pain",
     h1: "Back & Neck Pain Treatment in Woolwich",
-    seoTitle: "Back & Neck Pain Treatment in Woolwich",
+    seoTitle: "Back & neck pain Woolwich",
     metaDescription: "Osteopathy for back and neck pain in Woolwich SE18 — sciatica, desk strain, disc-related stiffness and morning ache. Book with Austin Duy Nguyen at Nguyen's…",
     heroLine: "Assessment-led osteopathy for sciatica, postural strain, disc-related stiffness and everyday spinal ache — inside St James Pharmacy on Powis Street.",
     eyebrow: "Spine care · Woolwich SE18",
@@ -253,7 +253,7 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "mens-health-ed",
     h1: "Men's Health & ED Shockwave in Woolwich",
-    seoTitle: "Men's Health Shockwave Woolwich | ED LI-ESWT",
+    seoTitle: "Men's shockwave Woolwich",
     metaDescription:
       "Confidential men's health and ED shockwave in Woolwich SE18 using low-intensity focused LI-ESWT. Private, drug-free protocol at Nguyen's on Powis Street — £110 / 30 min.",
     heroLine:
@@ -338,7 +338,7 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "acupuncture-electro",
     h1: "Medical Acupuncture in Woolwich",
-    seoTitle: "Medical Acupuncture & Electroacupuncture in Woolwich",
+    seoTitle: "Medical acupuncture Woolwich",
     metaDescription: "Western medical acupuncture and electroacupuncture in Woolwich SE18 for muscle trigger points and localised pain. Available standalone or as a +£20 add-on…",
     heroLine: "Targeted needling and gentle microcurrent to calm irritable muscles and support pain relief — integrated with osteopathic care when useful.",
     eyebrow: "Acupuncture · Woolwich SE18",

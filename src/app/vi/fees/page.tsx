@@ -2,14 +2,43 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
-import { defaultOgImage, pageOpenGraph } from "@/lib/seo";
+import {
+  defaultOgImage,
+  faqPageJsonLd,
+  pageOpenGraph,
+  trimDescription,
+} from "@/lib/seo";
 import { bookHref } from "@/lib/seo-strategy";
 import { pricing, site } from "@/lib/site";
 
+const feesDescription = trimDescription(
+  "Bảng giá osteopathy Woolwich SE18: khám ban đầu £75, tái khám £60, khám tại nhà £120/£100, shockwave £90. Giảm 10% NHS & sinh viên.",
+);
+
+const viFeesFaqs = [
+  {
+    question: "Có phụ phí ẩn không?",
+    answer:
+      "Không. Loại lịch hẹn và mức phí được xác nhận trước khi điều trị. Add-on (châm cứu, giác hơi) chỉ dùng khi cần và đã thống nhất.",
+  },
+  {
+    question: "Giảm giá NHS / sinh viên thế nào?",
+    answer: `${site.discount} Xuất trình thẻ hợp lệ khi đến khám.`,
+  },
+  {
+    question: "Có xuất hóa đơn bảo hiểm không?",
+    answer:
+      "Phòng khám nhận self-pay. Sau buổi khám có thể xin biên lai chi tiết để bạn tự claim với bảo hiểm hoặc cash-plan — kiểm tra quyền lợi với insurer trước.",
+  },
+  {
+    question: "Chính sách hủy lịch?",
+    answer: site.cancellation,
+  },
+] as const;
+
 export const metadata: Metadata = {
   title: "Bảng giá osteopathy Woolwich",
-  description:
-    "Bảng giá osteopathy tại Woolwich SE18: khám ban đầu £75, tái khám £60, khám tại nhà £120 / £100, shockwave £90. Giảm 10% NHS & sinh viên. Đặt lịch tiếng Việt hoặc Anh.",
+  description: feesDescription,
   alternates: {
     canonical: "/vi/fees",
     languages: {
@@ -20,8 +49,7 @@ export const metadata: Metadata = {
   },
   openGraph: pageOpenGraph({
     title: "Bảng giá osteopathy Woolwich",
-    description:
-      "Bảng giá osteopathy Woolwich SE18: khám ban đầu £75, tái khám £60, khám tại nhà £120 / £100, shockwave £90. Giảm 10% NHS & sinh viên.",
+    description: feesDescription,
     url: "/vi/fees",
     images: [defaultOgImage],
     locale: "vi_VN",
@@ -29,8 +57,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bảng giá osteopathy Woolwich",
-    description:
-      "Bảng giá osteopathy Woolwich SE18: khám ban đầu £75, tái khám £60, khám tại nhà £120 / £100, shockwave £90. Giảm 10% NHS & sinh viên.",
+    description: feesDescription,
     images: [defaultOgImage.url],
   },
 };
@@ -50,8 +77,14 @@ const viLabels: Record<string, string> = {
 };
 
 export default function VietnameseFeesPage() {
+  const faqLd = faqPageJsonLd(viFeesFaqs, "vi");
+
   return (
     <div className="bg-slate-50" lang="vi">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
@@ -61,8 +94,9 @@ export default function VietnameseFeesPage() {
             Bảng giá rõ ràng
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Giá được xác nhận trước khi bắt đầu điều trị. Có thể hỏi bằng tiếng
-            Việt qua điện thoại hoặc WhatsApp.
+            Giá được xác nhận trước khi bắt đầu điều trị. Self-pay tại phòng
+            khám; có thể hỏi bằng tiếng Việt qua điện thoại hoặc WhatsApp nếu
+            bạn cần giải thích thời lượng buổi khám hoặc add-on.
           </p>
           <p className="mt-3 text-sm text-slate-500">
             <Link
@@ -128,10 +162,33 @@ export default function VietnameseFeesPage() {
             </div>
           </div>
 
+          <div className="mt-12 max-w-3xl">
+            <h2 className="font-display text-2xl text-navy">Câu hỏi về phí</h2>
+            <dl className="mt-6 space-y-5">
+              {viFeesFaqs.map((item) => (
+                <div key={item.question}>
+                  <dt className="text-base font-semibold text-navy">
+                    {item.question}
+                  </dt>
+                  <dd className="mt-1.5 text-sm leading-relaxed text-slate-600 md:text-base">
+                    {item.answer}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
           <p className="mt-10 text-sm text-slate-500">
             Bản tiếng Anh đầy đủ:{" "}
             <Link href="/fees" className="font-semibold text-teal hover:text-teal-dark">
               /fees
+            </Link>
+            {" · "}
+            <Link
+              href="/vi/book"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Đặt lịch
             </Link>
             .
           </p>

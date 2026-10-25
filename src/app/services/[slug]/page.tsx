@@ -11,7 +11,12 @@ import {
   relatedServices,
   servicePages,
 } from "@/lib/service-pages";
-import { breadcrumbJsonLd, segmentTitle, trimDescription, defaultOgImage } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  fitSerpTitle,
+  trimDescription,
+  defaultOgImage,
+} from "@/lib/seo";
 import {
   serviceBookCampaign,
   serviceClusterId,
@@ -34,10 +39,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!data) return { title: "Service" };
 
   const { page } = data;
-  const title = segmentTitle(page.seoTitle);
+  const title = fitSerpTitle(page.seoTitle);
   const description = trimDescription(page.metaDescription);
   const path = `/services/${page.slug}`;
   const hasViTwin = viServiceTwins.has(page.slug);
+  const ogTitle =
+    typeof title === "string" ? `${title} | ${site.name}` : title.absolute;
   return {
     title,
     description,
@@ -55,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     keywords: page.keywords,
     openGraph: {
-      title: `${title} | ${site.name}`,
+      title: ogTitle,
       description,
       url: path,
       images: [defaultOgImage],

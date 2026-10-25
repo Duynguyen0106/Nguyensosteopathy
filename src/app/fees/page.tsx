@@ -8,7 +8,7 @@ import { bookHref, moneyPageFaqs } from "@/lib/seo-strategy";
 import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Osteopath Fees & Prices in Woolwich",
+  title: "Osteopath fees in Woolwich",
   description:
     "Clear osteopathy fees in Woolwich SE18: initial £75, follow-up £60, home visits £120 / £100, shockwave £90, deep tissue £60. 10% NHS & student discount.",
   alternates: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Nguyen's Osteopathic Clinic pricing",
   ],
   openGraph: {
-    title: "Osteopath Fees & Prices in Woolwich",
+    title: "Osteopath fees in Woolwich",
     description:
       "Clear osteopathy fees in Woolwich SE18: initial £75, follow-up £60, home visits £120 / £100, shockwave £90. 10% NHS & student discount.",
     url: "/fees",

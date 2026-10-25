@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
+import { CorpusCrawlIndex } from "@/components/CorpusCrawlIndex";
 import { CorpusDirectory } from "@/components/CorpusDirectory";
 import {
   getAcupunctureCorpusAttribution,
@@ -10,7 +11,11 @@ import {
   isAcupunctureCorpusType,
   acupunctureCorpusTypes,
 } from "@/lib/acupuncture-corpus";
-import { defaultOgImage, fitSerpTitle, trimDescription } from "@/lib/seo";
+import {
+  defaultOgImage,
+  enrichDescription,
+  fitSerpTitle,
+} from "@/lib/seo";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ type: string }> };
@@ -24,8 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!isAcupunctureCorpusType(type)) return {};
   const label = getAcupunctureCorpusTypeLabel(type);
   const title = fitSerpTitle(`${label} — acupuncture reference`);
-  const description = trimDescription(
+  const description = enrichDescription(
     `${label} from the American Dragon reference corpus, published for clinic education at Nguyen's Osteopathic Clinic.`,
+    "Search by name, browse A–Z, or open any entry for practitioner study notes.",
   );
   const path = `/education/acupuncture/reference/${type}`;
   return {
@@ -110,7 +116,10 @@ export default async function AcupunctureCorpusTypePage({ params }: Props) {
             No entries published for this category yet.
           </p>
         ) : (
-          <CorpusDirectory type={type} entries={entries} />
+          <>
+            <CorpusDirectory type={type} entries={entries} />
+            <CorpusCrawlIndex type={type} entries={entries} />
+          </>
         )}
       </section>
     </div>

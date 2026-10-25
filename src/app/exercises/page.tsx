@@ -20,7 +20,7 @@ import { site } from "@/lib/site";
 const levelFilters: ExerciseLevel[] = ["early", "build", "return"];
 
 export const metadata: Metadata = {
-  title: "Home Exercises & Rehab Library",
+  title: "Home exercises & rehab",
   description:
     "Public rehab exercise library from Nguyen's Osteopathic Clinic in Woolwich: programmes and step-by-step drills for low back, neck, knee, heel, shoulder and…",
   alternates: { canonical: "/exercises" },

@@ -12,6 +12,7 @@ import {
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { getLatestPostCards } from "@/lib/blog";
 import { getFeaturedConditions } from "@/lib/conditions";
+import { faqPageJsonLd } from "@/lib/seo";
 import {
   faqs,
   getServiceHref,
@@ -39,9 +40,15 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const latestPosts = getLatestPostCards(3);
   const featuredConditions = getFeaturedConditions();
+  const homeFaqs = faqs.slice(0, 5);
+  const faqLd = faqPageJsonLd(homeFaqs);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       <Hero />
 
       {/* First section after hero — one job: how a visit works */}
@@ -476,7 +483,7 @@ export default function HomePage() {
               finding us inside the pharmacy.
             </p>
           </div>
-          <FaqAccordion items={faqs.slice(0, 5)} />
+          <FaqAccordion items={homeFaqs} />
           <p className="mt-6 text-center text-sm text-slate-600">
             <Link
               href="/faq"

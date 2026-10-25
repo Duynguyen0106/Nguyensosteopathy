@@ -14,7 +14,7 @@ import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 const description = trimDescription(
-  "Framework for gathering American Dragon acupuncture, herb, formula, and condition reference data into the clinic education corpus — permission-gated, clinic-voice publishing only.",
+  "American Dragon acupuncture, herb, formula, and condition reference corpus on the Nguyen's Osteopathic Clinic education site — published with owner permission for study use.",
 );
 
 export const metadata: Metadata = {
@@ -156,21 +156,26 @@ export default function AcupunctureReferenceCorpusPage() {
             const discoveredCount = counts[category.id] ?? 0;
             const approxCount = approx[category.id] ?? 0;
             return (
-              <li
-                key={category.id}
-                className="rounded-2xl border border-slate-200 bg-white p-5"
-              >
-                <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                  {discovered
-                    ? `${discoveredCount.toLocaleString()} discovered`
-                    : `~${approxCount.toLocaleString()} on source site`}
-                </p>
-                <h3 className="mt-2 font-display text-2xl text-navy">
-                  {category.label}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  {category.description}
-                </p>
+              <li key={category.id}>
+                <Link
+                  href={`/education/acupuncture/reference/${category.id}`}
+                  className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-teal hover:shadow-sm"
+                >
+                  <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                    {discoveredCount > 0
+                      ? `${discoveredCount.toLocaleString()} entries`
+                      : `~${approxCount.toLocaleString()} on source site`}
+                  </p>
+                  <h3 className="mt-2 font-display text-2xl text-navy group-hover:text-teal-dark">
+                    {category.label}
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                    {category.description}
+                  </p>
+                  <span className="mt-3 text-sm font-semibold text-teal">
+                    Browse {category.label.toLowerCase()} →
+                  </span>
+                </Link>
               </li>
             );
           })}

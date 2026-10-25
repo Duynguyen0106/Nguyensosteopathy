@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T17:59:37.465Z",
-  "source": "discovered-inventory",
+  "generatedAt": "2026-10-25T18:10:23.273Z",
+  "source": "published-corpus",
   "attribution": {
     "sourceName": "American Dragon",
     "sourceUrl": "https://www.americandragon.com",
@@ -32,126 +32,330 @@
   ],
   "counts": {
     "points": 480,
-    "herbs": 688,
-    "formulas": 2746,
-    "conditions": 425
+    "herbs": 686,
+    "formulas": 2737,
+    "conditions": 418
   },
-  "inventoryTotal": 4339,
+  "inventoryTotal": 4321,
   "totalsApprox": {
     "points": 480,
-    "herbs": 688,
-    "formulas": 2746,
-    "conditions": 425,
-    "pages": 4339
+    "herbs": 686,
+    "formulas": 2737,
+    "conditions": 418,
+    "pages": 4321
   },
   "entries": [
     {
       "type": "conditions",
+      "slug": "prostatichyerptrophy",
+      "title": "(BENIGN) PROSTATIC HYPERTROPHY, BPH, PROSTOMEGALY",
+      "sourceUrl": "https://www.americandragon.com/conditions/ProstaticHyerptrophy.html",
+      "summary": "(Benign) Prostatic Hypertrophy, BPH, Prostomegaly - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "thrombocytopenicpurpura",
+      "title": "(IMMUNE), (IDIOPATHETIC) THROMBOCYTOPENIC PURPURA",
+      "sourceUrl": "https://www.americandragon.com/conditions/ThrombocytopenicPurpura.html",
+      "summary": "Thrombocytopenic Purpura - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
+    },
+    {
+      "type": "conditions",
       "slug": "abdominablockage",
-      "label": "AbdominaBlockage",
+      "title": "ABDOMINAL BLOCKAGE",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominaBlockage.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalcold",
-      "label": "AbdominalCold",
+      "title": "ABDOMINAL COLD",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalCold.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Cold - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "FORMULAS",
+        "POINTS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalemptiness",
-      "label": "AbdominalEmptiness",
+      "title": "ABDOMINAL EMPTINESS",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalEmptiness.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Emptiness - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalfullnessanddistention",
-      "label": "AbdominalFullnessandDistention",
+      "title": "ABDOMINAL FULLNESS AND DISTENTION (BLOATING)",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalFullnessandDistention.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Fullness and Distention, Bloating - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Ne",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS",
+        "HERBS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalheat",
-      "label": "AbdominalHeat",
+      "title": "ABDOMINAL HEAT",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalHeat.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Heat - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalheaviness",
-      "label": "AbdominalHeaviness",
+      "title": "ABDOMINAL HEAVINESS (Incomplete)",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalHeaviness.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Heaviness - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalhyperfunction",
-      "label": "AbdominalHyperfunction",
+      "title": "ABDOMINAL HYPERFUNCTION",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalHyperfunction.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Hyperfunction - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalhypofunction",
-      "label": "AbdominalHypofunction",
+      "title": "ABDOMINAL HYPOFUNCTION",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalHypofunction.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Hypofunction - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalitch",
-      "label": "AbdominalItch",
+      "title": "ABDOMINAL ITCH",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalItch.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Itch - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalmasses",
-      "label": "AbdominalMasses",
+      "title": "ABDOMINAL MASSES",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalMasses.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Masses, Abdominal Tumors - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newslet",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS",
+        "FORMULAS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalpain",
-      "label": "AbdominalPain",
+      "title": "ABDOMINAL PAIN",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalPain.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Pain - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS",
+        "FORMULAS",
+        "HERBS"
+      ]
     },
     {
       "type": "conditions",
       "slug": "abdominalskinpain",
-      "label": "AbdominalSkinPain",
+      "title": "ABDOMINAL SKIN PAIN (Incomplete)",
       "sourceUrl": "https://www.americandragon.com/conditions/AbdominalSkinPain.html",
-      "status": "discovered",
-      "publishable": false
+      "summary": "Abdominal Skin Pain - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominalspasms",
+      "title": "ABDOMINAL SPASMS-ABDOMINAL CRAMPS",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalSpasms.html",
+      "summary": "Abdominal Spasms, Abdominal Cramps - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc. Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsle",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS",
+        "HERBS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "abdominaltension",
+      "title": "ABDOMINAL TENSION",
+      "sourceUrl": "https://www.americandragon.com/conditions/AbdominalTension.html",
+      "summary": "Abdominal Tension - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "FORMULAS",
+        "POINTS",
+        "HERBS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "acidreflux",
+      "title": "ACID REFLUX (ACID REGURITATION, GERD, REFLUX ESOPHAGITIS, LARYNGOPHARYNGEAL REFLUX, LPR, HEARTBURN)",
+      "sourceUrl": "https://www.americandragon.com/conditions/AcidReflux.html",
+      "summary": "Acid Reflux, Gerd, Reflux Esophagitis - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newslett",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "acnevulgaris",
+      "title": "ACNE VULGARIS",
+      "sourceUrl": "https://www.americandragon.com/conditions/AcneVulgaris.html",
+      "summary": "Acne, Acne Vulgaris - Chinese Medicine - Chinese Herbs - Acupuncture - American Dragon - Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS",
+        "FORMULAS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "acutehepatitis",
+      "title": "ACUTE HEPATITIS (HEPATITIS A AND E)",
+      "sourceUrl": "https://www.americandragon.com/conditions/AcuteHepatitis.html",
+      "summary": "Acute Hepatitis, Hepatitis A, Hepatitis E - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos News",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "acutelaryngitis",
+      "title": "ACUTE LARYNGITIS",
+      "sourceUrl": "https://www.americandragon.com/conditions/AcuteLaryngitis.html",
+      "summary": "Acute Laryngitis - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "acuteleukemia",
+      "title": "ACUTE LEUKEMIA (ACUTE MYELOID LEUKEMIA)",
+      "sourceUrl": "https://www.americandragon.com/conditions/AcuteLeukemia.html",
+      "summary": "Acute Leukemia - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "acutepancreatitis",
+      "title": "ACUTE PANCREATITIS",
+      "sourceUrl": "https://www.americandragon.com/conditions/AcutePancreatitis.html",
+      "summary": "Acute Pancreatitis - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS",
+        "FORMULAS",
+        "HERBS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "acutethromboticphlebitis",
+      "title": "ACUTE THROMBOTIC PHLEBITIS",
+      "sourceUrl": "https://www.americandragon.com/conditions/AcuteThromboticPhlebitis.html",
+      "summary": "Acute Thrombotic Phlebitis - Chinese Medicine - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos ",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
+    },
+    {
+      "type": "conditions",
+      "slug": "acutetonsillitis",
+      "title": "ACUTE TONSILLITIS",
+      "sourceUrl": "https://www.americandragon.com/conditions/AcuteTonsillitis.html",
+      "summary": "Acute Tonsillitis - Chinese herbs, Chinese medicine, Acupuncture, American Dragon, Dr Joel Penner OMD, LAc Jump to Main Content --> only search American Dragon.com --> Home Joel Penner Videos Newsletter",
+      "sectionKeys": [
+        "INTRO",
+        "TREATMENT",
+        "POINTS"
+      ]
     }
   ],
   "pipeline": {
     "discover": "npm run education:acupuncture:discover",
     "fetch": "AMERICAN_DRAGON_PERMISSION=confirmed npm run education:acupuncture:fetch",
     "parse": "AMERICAN_DRAGON_PERMISSION=confirmed npm run education:acupuncture:parse",
+    "publish": "AMERICAN_DRAGON_PERMISSION=confirmed npm run education:acupuncture:publish",
     "buildIndex": "npm run education:acupuncture:index"
   },
   "publishingRules": [
-    "Normalized records default to publishable:false.",
-    "Patient pages must use clinic-voice rewrites, not verbatim American Dragon HTML.",
-    "Cite American Dragon as a source when material informs a published note.",
-    "Full URL inventory and raw HTML stay under private/american-dragon/ (gitignored)."
-  ]
+    "Corpus published with owner/estate permission for clinic education use.",
+    "Every page attributes American Dragon / Dr Joel Penner.",
+    "Practitioner study reference — not a substitute for UK clinical assessment."
+  ],
+  "note": "Full browse list is in catalog.json; index keeps a short sample for hub status."
 }

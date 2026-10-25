@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AuthorBio } from "@/components/AuthorBio";
 import { ButtonLink } from "@/components/Button";
 import { SupplementSafetyBanner } from "@/components/supplements/SupplementSafetyBanner";
 import { getCondition } from "@/lib/conditions";
@@ -193,6 +194,10 @@ export default async function SupplementDetailPage({ params }: Props) {
             </dl>
           </div>
         ) : null}
+
+        <div className="mt-12">
+          <AuthorBio />
+        </div>
       </section>
 
       {(relatedConditions.length > 0 || relatedTopics.length > 0) && (

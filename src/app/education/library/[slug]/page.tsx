@@ -12,6 +12,7 @@ import {
   getRelatedBlogForTopic,
   libraryArticles,
 } from "@/lib/education-library";
+import { hasTopicEvidence } from "@/lib/library-evidence";
 import {
   breadcrumbJsonLd,
   defaultOgImage,
@@ -63,6 +64,9 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
   const topicHref = `/education/library/topic/${article.topicKey}`;
   const topicTitle = article.topicTitle || article.title;
   const relatedBlog = getRelatedBlogForTopic(article.topicKey);
+  const evidenceHref = hasTopicEvidence(article.topicKey)
+    ? `${topicHref}#evidence`
+    : null;
 
   const sameTopic = getLibraryArticlesByTopic(article.topicKey).filter(
     (item) => item.slug !== article.slug,
@@ -163,6 +167,11 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
           ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={topicHref}>All {topicTitle} sheets</ButtonLink>
+            {evidenceHref ? (
+              <ButtonLink href={evidenceHref} variant="secondary">
+                Scientific notes &amp; references for {topicTitle}
+              </ButtonLink>
+            ) : null}
             {relatedBlog ? (
               <ButtonLink
                 href={`/blog/${relatedBlog.slug}`}

@@ -7,6 +7,7 @@ import {
   getLibraryArticleCount,
   getLibraryTopicsByCategory,
 } from "@/lib/education-library";
+import { hasTopicEvidence } from "@/lib/library-evidence";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -119,36 +120,40 @@ export default function EducationLibraryIndexPage() {
                 </p>
               ) : null}
               <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {group.topics.map((topic) => (
-                  <li key={topic.topicKey}>
-                    <Link
-                      href={
-                        topic.sheetCount === 1
-                          ? `/education/library/${topic.articles[0].slug}`
-                          : `/education/library/topic/${topic.topicKey}`
-                      }
-                      className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal hover:shadow-sm md:p-5"
-                    >
-                      <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                        {topic.sheetCount} sheet
-                        {topic.sheetCount === 1 ? "" : "s"}
-                        {topic.mskRelevant ? " · MSK-relevant" : ""}
-                        {topic.relatedBlog ? " · Blog article" : ""}
-                      </p>
-                      <h3 className="mt-2 font-display text-xl text-navy group-hover:text-teal-dark">
-                        {topic.title}
-                      </h3>
-                      <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">
-                        {topic.summary}
-                      </p>
-                      <span className="mt-3 text-sm font-semibold text-teal">
-                        {topic.sheetCount === 1
-                          ? "Read sheet →"
-                          : "View topic →"}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
+                {group.topics.map((topic) => {
+                  const evidenceNotes = hasTopicEvidence(topic.topicKey);
+                  const href =
+                    evidenceNotes || topic.sheetCount > 1
+                      ? `/education/library/topic/${topic.topicKey}`
+                      : `/education/library/${topic.articles[0].slug}`;
+                  return (
+                    <li key={topic.topicKey}>
+                      <Link
+                        href={href}
+                        className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal hover:shadow-sm md:p-5"
+                      >
+                        <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+                          {topic.sheetCount} sheet
+                          {topic.sheetCount === 1 ? "" : "s"}
+                          {topic.mskRelevant ? " · MSK-relevant" : ""}
+                          {topic.relatedBlog ? " · Blog article" : ""}
+                          {evidenceNotes ? " · Evidence notes" : ""}
+                        </p>
+                        <h3 className="mt-2 font-display text-xl text-navy group-hover:text-teal-dark">
+                          {topic.title}
+                        </h3>
+                        <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">
+                          {topic.summary}
+                        </p>
+                        <span className="mt-3 text-sm font-semibold text-teal">
+                          {evidenceNotes || topic.sheetCount > 1
+                            ? "View topic →"
+                            : "Read sheet →"}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}

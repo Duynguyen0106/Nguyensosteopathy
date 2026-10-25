@@ -21,7 +21,8 @@
     "seo:citations": "node scripts/seo-citation-audit.mjs",
     "seo:monthly": "node scripts/seo-monthly-compound.mjs",
     "seo:jsonld": "node scripts/validate-jsonld.mjs",
-    "education:library": "node scripts/generate-education-library.mjs"
+    "education:library": "node scripts/generate-education-library.mjs",
+    "education:evidence-scaffold": "node scripts/scaffold-library-evidence.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

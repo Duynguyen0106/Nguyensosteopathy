@@ -4,6 +4,9 @@
  */
 
 import evidenceData from "@/data/library-evidence.json";
+import overlapData from "@/data/library-condition-overlap.json";
+
+const blockedEvidenceTopicKeys = new Set(overlapData.blockedTopicKeys);
 
 export type EvidenceGrade =
   | "high"
@@ -74,6 +77,14 @@ const byKey = new Map(
 export function getTopicEvidence(
   topicKey: string,
 ): LibraryTopicEvidence | undefined {
+  // Condition-overlap library hubs are removed; do not surface evidence stubs.
+  if (blockedEvidenceTopicKeys.has(topicKey)) return undefined;
+  if (
+    topicKey.startsWith("reference-") &&
+    blockedEvidenceTopicKeys.has(topicKey.slice("reference-".length))
+  ) {
+    return undefined;
+  }
   return byKey.get(topicKey);
 }
 

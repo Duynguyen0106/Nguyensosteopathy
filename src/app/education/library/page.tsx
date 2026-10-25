@@ -3,16 +3,15 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
 import {
-  getAllLibraryArticlesSorted,
-  getLibraryArticleCount,
   getLibraryTopicsByCategory,
+  type LibraryTopic,
 } from "@/lib/education-library";
 import { hasTopicEvidence } from "@/lib/library-evidence";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 const description = trimDescription(
-  "Supplement education library from Nguyen's Osteopathic Clinic: 230 original dual-audience sheets organised by topic for patients and practitioners.",
+  "Supplement education library from Nguyen's Osteopathic Clinic: original dual-audience themes organised by topic for patients and practitioners.",
 );
 
 export const metadata: Metadata = {
@@ -33,11 +32,55 @@ export const metadata: Metadata = {
   },
 };
 
+function topicHref(topic: LibraryTopic, evidenceNotes: boolean): string {
+  const combined = Boolean(topic.theme) || topic.sheetCount > 1;
+  if (combined || evidenceNotes) {
+    return `/education/library/topic/${topic.topicKey}`;
+  }
+  return `/education/library/${topic.articles[0].slug}`;
+}
+
+/** One browse row per topic — no internal sheet numbering. */
+function browseEntries(groups: ReturnType<typeof getLibraryTopicsByCategory>): {
+  key: string;
+  href: string;
+  label: string;
+  note?: string;
+}[] {
+  const seen = new Set<string>();
+  const rows: {
+    key: string;
+    href: string;
+    label: string;
+    note?: string;
+  }[] = [];
+
+  for (const group of groups) {
+    for (const topic of group.topics) {
+      if (seen.has(topic.topicKey)) continue;
+      seen.add(topic.topicKey);
+      const evidenceNotes = hasTopicEvidence(topic.topicKey);
+      const combined = Boolean(topic.theme) || topic.sheetCount > 1;
+      rows.push({
+        key: topic.topicKey,
+        href: topicHref(topic, evidenceNotes),
+        label: topic.title,
+        note: combined
+          ? "Combined theme"
+          : evidenceNotes
+            ? "Topic with evidence notes"
+            : undefined,
+      });
+    }
+  }
+
+  return rows.sort((a, b) => a.label.localeCompare(b.label));
+}
+
 export default function EducationLibraryIndexPage() {
   const groups = getLibraryTopicsByCategory();
-  const allSheets = getAllLibraryArticlesSorted();
-  const count = getLibraryArticleCount();
   const topicCount = groups.reduce((sum, group) => sum + group.topics.length, 0);
+  const browse = browseEntries(groups);
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -52,7 +95,7 @@ export default function EducationLibraryIndexPage() {
     },
     provider: { "@id": `${site.websiteUrl}/#clinic` },
     isPartOf: { "@id": `${site.websiteUrl}/#website` },
-    numberOfItems: count,
+    numberOfItems: topicCount,
   };
 
   return (
@@ -75,17 +118,18 @@ export default function EducationLibraryIndexPage() {
             Supplement education library
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            {count} original clinic-voice sheets grouped into {topicCount}{" "}
-            topics across minerals, vitamins, herbals, and wellness themes.
-            Educational only — not a product catalogue or prescribing guide.
+            {topicCount} clinic-voice topics across minerals, vitamins, herbals,
+            and wellness themes. Where angles overlapped, they are combined into
+            one clear theme. Educational only — not a product catalogue or
+            prescribing guide.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/education">Education hub</ButtonLink>
             <ButtonLink href="/blog" variant="secondary">
               Nutrition blog articles
             </ButtonLink>
-            <ButtonLink href="#all-sheets" variant="secondary">
-              Browse all sheets
+            <ButtonLink href="#all-topics" variant="secondary">
+              Browse all topics
             </ButtonLink>
           </div>
         </div>
@@ -122,10 +166,9 @@ export default function EducationLibraryIndexPage() {
               <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {group.topics.map((topic) => {
                   const evidenceNotes = hasTopicEvidence(topic.topicKey);
-                  const href =
-                    evidenceNotes || topic.sheetCount > 1
-                      ? `/education/library/topic/${topic.topicKey}`
-                      : `/education/library/${topic.articles[0].slug}`;
+                  const combined =
+                    Boolean(topic.theme) || topic.sheetCount > 1;
+                  const href = topicHref(topic, evidenceNotes);
                   return (
                     <li key={topic.topicKey}>
                       <Link
@@ -133,8 +176,7 @@ export default function EducationLibraryIndexPage() {
                         className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal hover:shadow-sm md:p-5"
                       >
                         <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                          {topic.sheetCount} sheet
-                          {topic.sheetCount === 1 ? "" : "s"}
+                          {combined ? "Combined theme" : "Topic"}
                           {topic.mskRelevant ? " · MSK-relevant" : ""}
                           {topic.relatedBlog ? " · Blog article" : ""}
                           {evidenceNotes ? " · Evidence notes" : ""}
@@ -146,9 +188,11 @@ export default function EducationLibraryIndexPage() {
                           {topic.summary}
                         </p>
                         <span className="mt-3 text-sm font-semibold text-teal">
-                          {evidenceNotes || topic.sheetCount > 1
-                            ? "View topic →"
-                            : "Read sheet →"}
+                          {combined
+                            ? "Read theme →"
+                            : evidenceNotes
+                              ? "View topic →"
+                              : "Read note →"}
                         </span>
                       </Link>
                     </li>
@@ -160,24 +204,27 @@ export default function EducationLibraryIndexPage() {
         </div>
 
         <details
-          id="all-sheets"
+          id="all-topics"
           className="mt-16 rounded-2xl border border-slate-200 bg-white px-5 py-6 md:px-6"
         >
           <summary className="cursor-pointer font-display text-2xl text-navy">
-            Browse all {count} sheets
+            Browse all {browse.length} topics
           </summary>
           <p className="mt-2 text-sm text-slate-600">
-            Full sheet list by source page number, including entries still marked
-            for light review.
+            A–Z by topic title. Combined themes open the hub; single topics open
+            the education note.
           </p>
           <ul className="mt-6 columns-1 gap-x-8 sm:columns-2 lg:columns-3">
-            {allSheets.map((article) => (
-              <li key={article.slug} className="mb-2 break-inside-avoid">
+            {browse.map((row) => (
+              <li key={row.key} className="mb-2 break-inside-avoid">
                 <Link
-                  href={`/education/library/${article.slug}`}
+                  href={row.href}
                   className="text-sm font-medium text-teal hover:text-teal-dark"
                 >
-                  {article.variantLabel}: {article.title}
+                  {row.label}
+                  {row.note ? (
+                    <span className="text-slate-500"> — {row.note}</span>
+                  ) : null}
                 </Link>
               </li>
             ))}

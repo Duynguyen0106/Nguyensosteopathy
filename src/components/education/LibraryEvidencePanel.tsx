@@ -30,7 +30,7 @@ export function LibraryEvidencePanel({
           </h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-600">
             Scientific notes and references for {topicTitle} are being added to
-            this library. Until then, treat sheet content as clinic education —
+            this library. Until then, treat this theme as clinic education —
             not a literature review — and check with a GP, pharmacist, or
             osteopath before starting supplements.
           </p>

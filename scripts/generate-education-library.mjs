@@ -9,14 +9,34 @@
 import fs from "fs";
 import path from "path";
 import {
+  buildAngledSheetContent,
+  buildCombinedThemeContent,
   buildLongFormContent,
   countContentWords,
+  getThemeAngle,
 } from "./library-sheet-bodies.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CORPUS = "/tmp/adobe-guide/corpus/pages.json";
 const OUT = path.join(ROOT, "src/data/education-library.json");
+const OVERLAP = JSON.parse(
+  fs.readFileSync(
+    path.join(ROOT, "src/data/library-condition-overlap.json"),
+    "utf8",
+  ),
+);
 const MIN_WORDS = 500;
+
+const CONDITION_OVERLAP_TOPIC_KEYS = new Set(OVERLAP.blockedTopicKeys || []);
+
+function isConditionOverlapKey(topicKey) {
+  if (!topicKey) return false;
+  if (CONDITION_OVERLAP_TOPIC_KEYS.has(topicKey)) return true;
+  if (topicKey.startsWith("reference-")) {
+    return CONDITION_OVERLAP_TOPIC_KEYS.has(topicKey.slice("reference-".length));
+  }
+  return false;
+}
 
 /** Common ingredients / themes to detect in OCR (longest first). */
 const KNOWN_TOPICS = [
@@ -522,20 +542,27 @@ function isIngredientCategory(category) {
   ].includes(category);
 }
 
-/** Prefer ingredient topics over wellness themes for product-sheet titles. */
+/** Prefer ingredient topics; never pick condition-overlap wellness stand-ins. */
 function pickPrimaryTopicLabel(topicLabels, kind) {
-  if (!topicLabels.length) return null;
-  if (kind !== "product") return topicLabels[0];
-  const ingredient = topicLabels.find((label) => {
+  const allowed = topicLabels.filter(
+    (label) => !isConditionOverlapKey(canonicalTopicKey(label)),
+  );
+  if (!allowed.length) return null;
+  if (kind !== "product") return allowed[0];
+  const ingredient = allowed.find((label) => {
     const key = canonicalTopicKey(label);
     return isIngredientCategory(categoryForTopicKey(key, "products-a-z"));
   });
-  return ingredient || topicLabels[0];
+  return ingredient || allowed[0];
 }
 
 function buildArticle(page) {
   const kind = sectionKind(page.section);
-  const topics = extractTopics(page).map(titleCaseTopic);
+  // Drop condition-overlap labels so ingredient notes do not advertise
+  // competing clinical landers in “also touching …” copy.
+  const topics = extractTopics(page)
+    .map(titleCaseTopic)
+    .filter((label) => !isConditionOverlapKey(canonicalTopicKey(label)));
   const pageNo = page.page;
   const primaryTopic = pickPrimaryTopicLabel(topics, kind);
 
@@ -547,15 +574,15 @@ function buildArticle(page) {
   } else if (primaryTopic) {
     primary = primaryTopic;
   } else if (kind === "ailment") {
-    primary = `Wellness themes (sheet ${pageNo})`;
+    primary = "Wellness themes";
   } else if (kind === "product") {
-    primary = `Supplement themes (sheet ${pageNo})`;
+    primary = "Supplement themes";
   } else if (kind === "sports") {
-    primary = `Sports & recovery themes (sheet ${pageNo})`;
+    primary = "Sports & recovery themes";
   } else if (kind === "reference") {
-    primary = `Label & forms themes (sheet ${pageNo})`;
+    primary = "Label & forms themes";
   } else {
-    primary = `Education notes (sheet ${pageNo})`;
+    primary = "Education notes";
   }
 
   const slug = `p${String(pageNo).padStart(3, "0")}-${slugify(primary)}`;
@@ -569,7 +596,7 @@ function buildArticle(page) {
     mskRelevant,
   });
   const { summary, sections, caveats, faqs } = longForm;
-  const isPlaceholder = /\(sheet \d+\)$/i.test(primary);
+  const isPlaceholder = !primaryTopic && kind !== "front";
 
   let topicKey;
   let topicTitle;
@@ -582,7 +609,7 @@ function buildArticle(page) {
     // Namespace so reference/forms sheets do not collide with ingredient hubs.
     const baseKey = primaryTopic
       ? canonicalTopicKey(primaryTopic)
-      : `sheet-${String(pageNo).padStart(3, "0")}`;
+      : `note-${String(pageNo).padStart(3, "0")}`;
     topicKey = `reference-${baseKey}`;
     topicTitle = primaryTopic
       ? `${primaryTopic} (label notes)`
@@ -594,19 +621,29 @@ function buildArticle(page) {
       canonicalTopicKey(primary) === topicKey ? primary : primaryTopic;
     category = categoryForTopicKey(topicKey, page.section);
   } else {
-    topicKey = `sheet-${String(pageNo).padStart(3, "0")}`;
+    topicKey = `note-${String(pageNo).padStart(3, "0")}`;
+    topicTitle = primary;
+    category = categoryFromSectionOnly(page.section);
+  }
+
+  // Condition landers live under /conditions (or pregnancy service) — never
+  // publish overlapping wellness hubs in the supplement library.
+  if (isConditionOverlapKey(topicKey)) {
+    topicKey = `note-${String(pageNo).padStart(3, "0")}`;
     topicTitle = primary;
     category = categoryFromSectionOnly(page.section);
   }
 
   const needsReview =
-    kind !== "front" && (isPlaceholder || topics.length === 0);
-  const variantLabel = `Sheet ${pageNo}`;
+    kind !== "front" &&
+    (isPlaceholder || topics.length === 0 || topicKey.startsWith("note-"));
+  const variantLabel = primary;
 
   return {
     slug,
     sourcePage: pageNo,
     section: page.section,
+    kind,
     category,
     topicKey,
     topicTitle,
@@ -643,20 +680,90 @@ for (const article of articles) {
   seen.add(slug);
 }
 
+/** Group by topicKey, combine multi-sheet themes, angle-differentiate variants. */
+const byTopic = new Map();
+for (const article of articles) {
+  const list = byTopic.get(article.topicKey) ?? [];
+  list.push(article);
+  byTopic.set(article.topicKey, list);
+}
+
+const themes = [];
+for (const [topicKey, group] of byTopic) {
+  group.sort((a, b) => a.sourcePage - b.sourcePage);
+  const multi = group.length > 1;
+  const lead = group.find((a) => !a.needsReview) ?? group[0];
+  const angles = group.map((article) => {
+    const angle = getThemeAngle(article.sourcePage);
+    return {
+      ...angle,
+      sourcePage: article.sourcePage,
+      slug: article.slug,
+    };
+  });
+
+  for (let i = 0; i < group.length; i++) {
+    const article = group[i];
+    const angle = angles[i];
+    article.themeRole = angle.label;
+    article.themeAngleId = angle.id;
+    article.isCanonical = !multi;
+    article.redirectsToTopic = multi;
+
+    if (multi && !article.needsReview) {
+      const angled = buildAngledSheetContent({
+        kind: article.kind || sectionKind(article.section),
+        primary: article.title,
+        topics: article.topics,
+        pageNo: article.sourcePage,
+        mskRelevant: article.mskRelevant,
+        angle,
+      });
+      article.summary = angled.summary;
+      article.sections = angled.sections;
+      article.caveats = angled.caveats;
+      article.faqs = angled.faqs;
+      article.wordCount = countContentWords(angled);
+      article.variantLabel = angle.label;
+    }
+  }
+
+  if (multi && !isConditionOverlapKey(topicKey)) {
+    const theme = buildCombinedThemeContent({
+      topicKey,
+      title: lead.topicTitle || lead.title,
+      kind: lead.kind || sectionKind(lead.section),
+      primary: lead.topicTitle || lead.title,
+      topics: [...new Set(group.flatMap((a) => a.topics))],
+      mskRelevant: group.some((a) => a.mskRelevant),
+      sheetCount: group.length,
+      sheetSlugs: group.map((a) => a.slug),
+      angles,
+    });
+    themes.push(theme);
+  }
+}
+
+themes.sort((a, b) => a.topicKey.localeCompare(b.topicKey));
+
 const payload = {
   generatedAt: new Date().toISOString(),
   source: "private-paraphrase-from-adobe-qrg-corpus",
-  note: "Original clinic-voice articles. OCR prose is not included.",
+  note: "Original clinic-voice articles. Multi-sheet topics expose a combined theme; variant sheet URLs redirect to the topic hub. OCR prose is not included.",
   count: articles.length,
+  themeCount: themes.length,
+  themes,
   articles,
 };
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(payload, null, 2));
-console.log(`Wrote ${articles.length} articles → ${OUT}`);
+console.log(`Wrote ${articles.length} articles + ${themes.length} themes → ${OUT}`);
 const withTopics = articles.filter((a) => a.topics.length).length;
 const needsReview = articles.filter((a) => a.needsReview).length;
+const redirected = articles.filter((a) => a.redirectsToTopic).length;
 const underMin = articles.filter((a) => (a.wordCount || 0) < MIN_WORDS);
+const themeUnder = themes.filter((t) => (t.wordCount || 0) < MIN_WORDS);
 const byCat = {};
 for (const a of articles) {
   byCat[a.category] = (byCat[a.category] || 0) + 1;
@@ -665,12 +772,15 @@ const topicKeys = new Set(articles.map((a) => a.topicKey));
 const words = articles.map((a) => a.wordCount || 0).sort((a, b) => a - b);
 console.log(`With detected topics: ${withTopics}/${articles.length}`);
 console.log(`Needs review: ${needsReview}`);
+console.log(`Redirected multi-sheet variants: ${redirected}`);
+console.log(`Combined themes: ${themes.length}`);
 console.log(`Unique topicKeys: ${topicKeys.size}`);
 console.log("Categories:", byCat);
 console.log(
   `Word counts — min ${words[0]}, median ${words[Math.floor(words.length / 2)]}, max ${words[words.length - 1]}`,
 );
-console.log(`Under ${MIN_WORDS} words: ${underMin.length}`);
+console.log(`Under ${MIN_WORDS} words (sheets): ${underMin.length}`);
+console.log(`Under ${MIN_WORDS} words (themes): ${themeUnder.length}`);
 if (underMin.length) {
   console.log(
     "Short samples:",
@@ -688,4 +798,4 @@ console.log(
     .map((a) => `${a.sourcePage}:${a.category}/${a.topicKey}:${a.wordCount}w`)
     .join(" | "),
 );
-if (underMin.length) process.exitCode = 1;
+if (underMin.length || themeUnder.length) process.exitCode = 1;

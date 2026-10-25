@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { AuthorBio } from "@/components/AuthorBio";
 import { ButtonLink } from "@/components/Button";
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
 import {
+  articleRedirectsToTopic,
   getAllLibrarySlugs,
+  getLegacyLibrarySheetRedirect,
   getLibraryArticle,
   getLibraryArticlesByTopic,
   getLibraryCategoryLabel,
+  getLibraryOverlapRedirect,
   getRelatedBlogForTopic,
+  isLibraryConditionOverlapTopic,
   libraryArticles,
 } from "@/lib/education-library";
 import { hasTopicEvidence } from "@/lib/library-evidence";
@@ -29,8 +33,36 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
+  const legacy = getLegacyLibrarySheetRedirect(slug);
+  if (legacy) {
+    return {
+      title: fitSerpTitle("Moved"),
+      alternates: { canonical: legacy },
+      robots: { index: false, follow: true },
+    };
+  }
   const article = getLibraryArticle(slug);
   if (!article) return {};
+
+  if (isLibraryConditionOverlapTopic(article.topicKey)) {
+    const dest =
+      getLibraryOverlapRedirect(article.topicKey) ?? "/education/library";
+    return {
+      title: fitSerpTitle("Moved"),
+      alternates: { canonical: dest },
+      robots: { index: false, follow: true },
+    };
+  }
+
+  if (articleRedirectsToTopic(article)) {
+    const topicPath = `/education/library/topic/${article.topicKey}`;
+    return {
+      title: fitSerpTitle(`${article.topicTitle || article.title} theme`),
+      description: trimDescription(article.summary),
+      alternates: { canonical: topicPath },
+      robots: { index: false, follow: true },
+    };
+  }
 
   const title = fitSerpTitle(`${article.title} education`);
   const description = trimDescription(article.summary);
@@ -44,6 +76,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: path },
+    robots: article.needsReview
+      ? { index: false, follow: false }
+      : undefined,
     openGraph: {
       title: ogTitle,
       description,
@@ -55,8 +90,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function EducationLibraryArticlePage({ params }: Props) {
   const { slug } = await params;
+  const legacy = getLegacyLibrarySheetRedirect(slug);
+  if (legacy) permanentRedirect(legacy);
+
   const article = getLibraryArticle(slug);
   if (!article) notFound();
+
+  if (isLibraryConditionOverlapTopic(article.topicKey)) {
+    permanentRedirect(
+      getLibraryOverlapRedirect(article.topicKey) ?? "/education/library",
+    );
+  }
+
+  if (articleRedirectsToTopic(article)) {
+    permanentRedirect(`/education/library/topic/${article.topicKey}`);
+  }
 
   const path = `/education/library/${article.slug}`;
   const categoryLabel = getLibraryCategoryLabel(article.category);
@@ -115,7 +163,7 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
     { name: "Library", path: "/education/library" },
     { name: categoryLabel, path: categoryHref },
     { name: topicTitle, path: topicHref },
-    { name: article.variantLabel, path },
+    { name: article.title, path },
   ]);
 
   return (
@@ -151,8 +199,6 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
             <Link href={topicHref} className="hover:text-teal-dark">
               {topicTitle}
             </Link>
-            {" · "}
-            {article.variantLabel}
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             {article.title}
@@ -166,7 +212,7 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
             </p>
           ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href={topicHref}>All {topicTitle} sheets</ButtonLink>
+            <ButtonLink href={topicHref}>{topicTitle} theme</ButtonLink>
             {evidenceHref ? (
               <ButtonLink href={evidenceHref} variant="secondary">
                 Scientific notes &amp; references for {topicTitle}
@@ -244,17 +290,21 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
           <div className="mx-auto max-w-6xl">
             <h2 className="font-display text-2xl text-navy">
               {sameTopic.length > 0
-                ? `Other sheets on ${topicTitle}`
-                : "Related library sheets"}
+                ? `More on ${topicTitle}`
+                : "Related library topics"}
             </h2>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((item) => (
                 <li key={item.slug}>
                   <Link
-                    href={`/education/library/${item.slug}`}
+                    href={
+                      item.redirectsToTopic
+                        ? `/education/library/topic/${item.topicKey}`
+                        : `/education/library/${item.slug}`
+                    }
                     className="font-semibold text-teal hover:text-teal-dark"
                   >
-                    {item.variantLabel}: {item.title}
+                    {item.title}
                   </Link>
                 </li>
               ))}
@@ -264,7 +314,7 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
                 href={topicHref}
                 className="mt-6 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
               >
-                View all {topicTitle} sheets →
+                View {topicTitle} theme →
               </Link>
             ) : null}
           </div>

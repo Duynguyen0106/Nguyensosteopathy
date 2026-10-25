@@ -5,8 +5,8 @@ import { conditions } from "@/lib/conditions";
 import { exercises, programmes } from "@/lib/exercises";
 import { educationArticles, educationTracks } from "@/lib/education";
 import {
+  getSitemapLibraryArticleSlugs,
   getSitemapLibraryTopicKeys,
-  libraryArticles,
 } from "@/lib/education-library";
 import { services, site } from "@/lib/site";
 
@@ -142,9 +142,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.6,
       }),
     ),
-    ...libraryArticles.map((article) =>
+    ...getSitemapLibraryArticleSlugs().map((slug) =>
       entry({
-        path: `/education/library/${article.slug}`,
+        path: `/education/library/${slug}`,
         priority: 0.55,
       }),
     ),

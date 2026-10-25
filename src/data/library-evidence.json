@@ -29,8 +29,8 @@
         {
           "id": "ref-ods-aa",
           "title": "Dietary Supplements for Exercise and Athletic Performance",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/exercise/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -90,8 +90,8 @@
         {
           "id": "ref-ods-athlete-hyd",
           "title": "Dietary Supplements for Exercise and Athletic Performance",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/exercise/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -179,7 +179,7 @@
           "statement": "Adequate calcium intake supports bone health, ideally from dietary sources first.",
           "audience": "both",
           "grade": "high",
-          "summary": "NHS nutrient advice and osteoporosis pathways emphasise calcium plus vitamin D context, falls prevention, and strength — not calcium tablets as a stand-alone MSK cure.",
+          "summary": "NHS nutrient advice and osteoporosis pathways emphasise calcium plus vitamin D context, falls prevention, and strength \u2014 not calcium tablets as a stand-alone MSK cure.",
           "referenceIds": [
             "ref-nhs-calcium",
             "ref-ros-calcium"
@@ -262,7 +262,7 @@
       "topicKey": "cod-liver-oil",
       "status": "draft",
       "lastReviewed": "2026-10-25",
-      "overview": "Cod liver oil supplies omega-3s plus vitamins A and D. Total vitamin A intake matters — more is not always safer.",
+      "overview": "Cod liver oil supplies omega-3s plus vitamins A and D. Total vitamin A intake matters \u2014 more is not always safer.",
       "claims": [
         {
           "id": "clo-vitamins",
@@ -287,9 +287,9 @@
         },
         {
           "id": "ref-ods-clo",
-          "title": "Omega-3 Fatty Acids — Fact Sheet for Health Professionals",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "title": "Omega-3 Fatty Acids \u2014 Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-types/fish-and-shellfish-nutrition/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -305,7 +305,7 @@
       "topicKey": "collagen",
       "status": "reviewed",
       "lastReviewed": "2026-10-25",
-      "overview": "Collagen supplements are popular for tendons and joints. Any trial should sit alongside progressive loading — not instead of it.",
+      "overview": "Collagen supplements are popular for tendons and joints. Any trial should sit alongside progressive loading \u2014 not instead of it.",
       "claims": [
         {
           "id": "col-rehab-first",
@@ -344,7 +344,7 @@
         },
         {
           "id": "ref-bps-tendinopathy",
-          "title": "Tendinopathy — patient information context via NHS musculoskeletal guides",
+          "title": "Tendinopathy \u2014 patient information context via NHS musculoskeletal guides",
           "publisher": "NHS",
           "url": "https://www.nhs.uk/conditions/tendonitis/",
           "type": "patient-info",
@@ -353,8 +353,8 @@
         {
           "id": "ref-ods-protein",
           "title": "Dietary Supplements for Exercise and Athletic Performance",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/exercise/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -400,11 +400,11 @@
       "topicKey": "devils-claw",
       "status": "draft",
       "lastReviewed": "2026-10-25",
-      "overview": "Devil’s claw is a traditional herbal sometimes marketed for joint or back discomfort. Evidence quality is limited; safety and interactions still matter.",
+      "overview": "Devil\u2019s claw is a traditional herbal sometimes marketed for joint or back discomfort. Evidence quality is limited; safety and interactions still matter.",
       "claims": [
         {
           "id": "dc-limited",
-          "statement": "Evidence that devil’s claw meaningfully improves back or joint pain is limited.",
+          "statement": "Evidence that devil\u2019s claw meaningfully improves back or joint pain is limited.",
           "audience": "both",
           "grade": "low",
           "summary": "Do not delay assessment of red-flag back pain. Prefer guideline-based MSK care and ask a pharmacist before herbal concentrates.",
@@ -426,9 +426,9 @@
         },
         {
           "id": "ref-mhra-herbal",
-          "title": "Herbal medicines guidance",
-          "publisher": "MHRA / GOV.UK",
-          "url": "https://www.gov.uk/government/collections/herbal-medicines-guidance-documents",
+          "title": "Herbal and homeopathic medicines",
+          "publisher": "GOV.UK / MHRA topic",
+          "url": "https://www.gov.uk/topic/medicines-medical-devices-blood/herbal-homeopathic-medicines",
           "type": "other",
           "accessed": "2026-10-25"
         }
@@ -491,9 +491,9 @@
       "references": [
         {
           "id": "ref-ods-omega3-fo",
-          "title": "Omega-3 Fatty Acids — Fact Sheet for Health Professionals",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "title": "Omega-3 Fatty Acids \u2014 Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-types/fish-and-shellfish-nutrition/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         },
@@ -631,7 +631,7 @@
       "topicKey": "inflammation",
       "status": "draft",
       "lastReviewed": "2026-10-25",
-      "overview": "‘Anti-inflammatory’ supplement claims are often broader than the evidence. Distinguish systemic inflammatory disease from everyday MSK tissue irritability.",
+      "overview": "\u2018Anti-inflammatory\u2019 supplement claims are often broader than the evidence. Distinguish systemic inflammatory disease from everyday MSK tissue irritability.",
       "claims": [
         {
           "id": "inf-load",
@@ -732,9 +732,9 @@
       "references": [
         {
           "id": "ref-ods-krill",
-          "title": "Omega-3 Fatty Acids — Fact Sheet for Health Professionals",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "title": "Omega-3 Fatty Acids \u2014 Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-types/fish-and-shellfish-nutrition/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -762,14 +762,14 @@
       "topicKey": "magnesium",
       "status": "reviewed",
       "lastReviewed": "2026-10-25",
-      "overview": "Magnesium is an essential mineral involved in muscle and nerve function. Food sources cover needs for many adults; supplements are most relevant when intake is low or a clinician has identified a gap — not as a stand-alone fix for back spasm.",
+      "overview": "Magnesium is an essential mineral involved in muscle and nerve function. Food sources cover needs for many adults; supplements are most relevant when intake is low or a clinician has identified a gap \u2014 not as a stand-alone fix for back spasm.",
       "claims": [
         {
           "id": "mg-role",
           "statement": "Magnesium contributes to normal muscle function and is obtained mainly from food.",
           "audience": "both",
           "grade": "high",
-          "summary": "UK and international nutrient references recognise magnesium’s role in muscle and nervous-system physiology. Leafy greens, nuts, seeds, and whole grains are primary food sources.",
+          "summary": "UK and international nutrient references recognise magnesium\u2019s role in muscle and nervous-system physiology. Leafy greens, nuts, seeds, and whole grains are primary food sources.",
           "referenceIds": [
             "ref-nhs-magnesium",
             "ref-ods-magnesium"
@@ -785,14 +785,14 @@
             "ref-cochrane-mg-cramps"
           ],
           "caveats": [
-            "Kidney disease and some medicines change magnesium advice — check with a pharmacist or GP."
+            "Kidney disease and some medicines change magnesium advice \u2014 check with a pharmacist or GP."
           ]
         }
       ],
       "references": [
         {
           "id": "ref-nhs-magnesium",
-          "title": "Vitamins and minerals — others (includes magnesium)",
+          "title": "Vitamins and minerals \u2014 others (includes magnesium)",
           "publisher": "NHS",
           "year": 2020,
           "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/others/",
@@ -801,9 +801,9 @@
         },
         {
           "id": "ref-ods-magnesium",
-          "title": "Magnesium — Fact Sheet for Health Professionals",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+          "title": "Magnesium \u2014 Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/others/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         },
@@ -891,9 +891,9 @@
         },
         {
           "id": "ref-ods-omega3",
-          "title": "Omega-3 Fatty Acids — Fact Sheet for Health Professionals",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "title": "Omega-3 Fatty Acids \u2014 Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-types/fish-and-shellfish-nutrition/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -950,7 +950,7 @@
       "references": [
         {
           "id": "ref-bda-protein",
-          "title": "Protein — Food Fact Sheet",
+          "title": "Protein \u2014 Food Fact Sheet",
           "publisher": "British Dietetic Association",
           "url": "https://www.bda.uk.com/resource/protein.html",
           "type": "patient-info",
@@ -959,8 +959,8 @@
         {
           "id": "ref-ods-athlete-pro",
           "title": "Dietary Supplements for Exercise and Athletic Performance",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/exercise/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -1210,7 +1210,7 @@
       "topicKey": "stress",
       "status": "reviewed",
       "lastReviewed": "2026-10-25",
-      "overview": "Stress and pain amplify each other. Sleep, caffeine timing, and load balance usually matter more than a stack of ‘calm’ capsules.",
+      "overview": "Stress and pain amplify each other. Sleep, caffeine timing, and load balance usually matter more than a stack of \u2018calm\u2019 capsules.",
       "claims": [
         {
           "id": "stress-sleep-pain",
@@ -1236,7 +1236,7 @@
         },
         {
           "id": "ref-nhs-stress",
-          "title": "Feelings and symptoms — stress",
+          "title": "Feelings and symptoms \u2014 stress",
           "publisher": "NHS",
           "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
           "type": "patient-info",
@@ -1267,13 +1267,13 @@
           "statement": "Curcumin may offer modest symptom relief for some people with osteoarthritis; effects are usually small and not a substitute for exercise-based care.",
           "audience": "both",
           "grade": "mixed",
-          "summary": "Reviews of curcumin for knee osteoarthritis report variable, often modest benefits. NICE OA care still centres on information, exercise, weight management where relevant, and appropriate analgesia — not herbals as first-line disease modifiers.",
+          "summary": "Reviews of curcumin for knee osteoarthritis report variable, often modest benefits. NICE OA care still centres on information, exercise, weight management where relevant, and appropriate analgesia \u2014 not herbals as first-line disease modifiers.",
           "referenceIds": [
             "ref-nice-oa-tur",
             "ref-ods-turmeric"
           ],
           "caveats": [
-            "Piperine-enhanced products can alter medicine metabolism — ask a pharmacist.",
+            "Piperine-enhanced products can alter medicine metabolism \u2014 ask a pharmacist.",
             "Gallbladder disease, surgery plans, and anticoagulants need review before concentrates."
           ]
         }
@@ -1290,9 +1290,9 @@
         },
         {
           "id": "ref-ods-turmeric",
-          "title": "Turmeric — Fact Sheet for Health Professionals",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/Turmeric-HealthProfessional/",
+          "title": "Turmeric \u2014 Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -1397,9 +1397,9 @@
         },
         {
           "id": "ref-ods-vitamin-d",
-          "title": "Vitamin D — Fact Sheet for Health Professionals",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+          "title": "Vitamin D \u2014 Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -1415,7 +1415,7 @@
       "topicKey": "whey-protein",
       "status": "draft",
       "lastReviewed": "2026-10-25",
-      "overview": "Whey is a convenient complete protein powder. It is a tool for hitting daily protein targets — not a requirement after every osteopathy visit.",
+      "overview": "Whey is a convenient complete protein powder. It is a tool for hitting daily protein targets \u2014 not a requirement after every osteopathy visit.",
       "claims": [
         {
           "id": "whey-convenience",
@@ -1432,8 +1432,8 @@
         {
           "id": "ref-ods-whey",
           "title": "Dietary Supplements for Exercise and Athletic Performance",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/live-well/exercise/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }
@@ -1450,7 +1450,7 @@
           "statement": "Zinc is an essential micronutrient; routine high-dose zinc for musculoskeletal pain lacks strong support.",
           "audience": "both",
           "grade": "moderate",
-          "summary": "Meet needs through diet where possible. Long-term high doses can cause copper imbalance and other harms — pharmacist advice matters.",
+          "summary": "Meet needs through diet where possible. Long-term high doses can cause copper imbalance and other harms \u2014 pharmacist advice matters.",
           "referenceIds": [
             "ref-nhs-zinc",
             "ref-ods-zinc"
@@ -1460,7 +1460,7 @@
       "references": [
         {
           "id": "ref-nhs-zinc",
-          "title": "Vitamins and minerals — others (includes zinc)",
+          "title": "Vitamins and minerals \u2014 others (includes zinc)",
           "publisher": "NHS",
           "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/others/",
           "type": "patient-info",
@@ -1468,9 +1468,9 @@
         },
         {
           "id": "ref-ods-zinc",
-          "title": "Zinc — Fact Sheet for Health Professionals",
-          "publisher": "NIH Office of Dietary Supplements",
-          "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+          "title": "Zinc \u2014 Fact Sheet for Health Professionals",
+          "publisher": "NIH Office of Dietary Supplements (NHS open summary linked)",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/others/",
           "type": "narrative-review",
           "accessed": "2026-10-25"
         }

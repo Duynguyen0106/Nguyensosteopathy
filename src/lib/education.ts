@@ -55,7 +55,7 @@ export const educationTracks: EducationTrack[] = [
     title: "Supplement education library",
     shortTitle: "Library",
     summary:
-      "Full dual-audience catalogue of 230 clinic-voice sheets, organised by topic (minerals, vitamins, herbals, wellness) — not a product catalogue. Shorter patient nutrition articles are on the blog.",
+      "Dual-audience clinic themes organised by topic (minerals, vitamins, herbals, wellness) — not a product catalogue. Overlapping angles are combined into one clear theme per topic. Shorter patient nutrition articles are on the blog.",
     audience: "both",
     audienceLabel: "For patients & practitioners",
     ctaLabel: "Browse the full library",

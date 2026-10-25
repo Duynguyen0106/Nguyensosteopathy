@@ -4,7 +4,39 @@
  */
 
 import libraryData from "@/data/education-library.json";
+import overlapData from "@/data/library-condition-overlap.json";
 import { getNutritionBlogMeta } from "@/lib/blog-posts-nutrition";
+
+const blockedTopicKeySet = new Set(overlapData.blockedTopicKeys);
+const overlapRedirects = overlapData.redirects as Record<string, string>;
+const legacySheetRedirects = overlapData.legacySheetRedirects as Record<
+  string,
+  string
+>;
+
+/** True when a library topic duplicates /conditions or a clinical service lander. */
+export function isLibraryConditionOverlapTopic(topicKey: string): boolean {
+  if (blockedTopicKeySet.has(topicKey)) return true;
+  if (topicKey.startsWith("reference-")) {
+    return blockedTopicKeySet.has(topicKey.slice("reference-".length));
+  }
+  return false;
+}
+
+export function getLibraryOverlapRedirect(topicKey: string): string | undefined {
+  if (overlapRedirects[topicKey]) return overlapRedirects[topicKey];
+  if (topicKey.startsWith("reference-")) {
+    const base = topicKey.slice("reference-".length);
+    return overlapRedirects[`reference-${base}`] ?? overlapRedirects[base];
+  }
+  return undefined;
+}
+
+export function getLegacyLibrarySheetRedirect(
+  slug: string,
+): string | undefined {
+  return legacySheetRedirects[slug];
+}
 
 export type LibraryRelatedBlog = {
   slug: string;
@@ -37,6 +69,7 @@ export type LibraryArticle = {
   slug: string;
   sourcePage: number;
   section: string;
+  kind?: string;
   category: LibraryCategoryId | string;
   topicKey: string;
   topicTitle: string;
@@ -49,9 +82,38 @@ export type LibraryArticle = {
   mskRelevant: boolean;
   /** Approximate education word count from generator (summary + sections + caveats + FAQs). */
   wordCount?: number;
+  /** Teaching angle label when this sheet is part of a multi-sheet theme. */
+  themeRole?: string;
+  themeAngleId?: string;
+  /** True when this sheet URL permanently redirects to the topic hub. */
+  redirectsToTopic?: boolean;
+  /** False for multi-sheet variants (hub is canonical). */
+  isCanonical?: boolean;
   sections: LibrarySection[];
   caveats: string[];
   faqs: LibraryFaq[];
+};
+
+export type LibraryThemeAngle = {
+  id: string;
+  label: string;
+  focus?: string;
+  sourcePage?: number;
+  slug?: string;
+};
+
+/** Combined hub content for multi-sheet topics. */
+export type LibraryTheme = {
+  topicKey: string;
+  title: string;
+  summary: string;
+  sections: LibrarySection[];
+  caveats: string[];
+  faqs: LibraryFaq[];
+  wordCount: number;
+  sheetCount: number;
+  sheetSlugs: string[];
+  angles: LibraryThemeAngle[];
 };
 
 export type LibraryTopic = {
@@ -63,8 +125,36 @@ export type LibraryTopic = {
   sheetCount: number;
   needsReview: boolean;
   articles: LibraryArticle[];
+  theme?: LibraryTheme;
   relatedBlog?: LibraryRelatedBlog;
 };
+
+/** Unique teaching angles for a multi-sheet theme (audience-facing labels). */
+export function getUniqueThemeAngles(
+  theme: LibraryTheme | undefined,
+  articles: LibraryArticle[],
+): { id: string; label: string; focus?: string }[] {
+  const seen = new Set<string>();
+  const out: { id: string; label: string; focus?: string }[] = [];
+  const push = (id: string, label: string, focus?: string) => {
+    const key = id || label.toLowerCase();
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push({ id: key, label, focus });
+  };
+  if (theme?.angles?.length) {
+    for (const angle of theme.angles) {
+      push(angle.id, angle.label, angle.focus);
+    }
+    return out;
+  }
+  for (const article of articles) {
+    if (article.themeRole) {
+      push(article.themeAngleId || article.themeRole, article.themeRole);
+    }
+  }
+  return out;
+}
 
 export const libraryDisclaimer =
   "These library pages are original education notes for both patients and practitioners at Nguyen's Osteopathic Clinic. They are not prescribing advice, product endorsements, or a republication of any third-party training manual. Patients should check with a GP, pharmacist, or osteopath before starting supplements. Practitioners should use them as discussion prompts only within their regulated scope.";
@@ -108,7 +198,7 @@ export const libraryCategoryOrder: {
   {
     id: "wellness-themes",
     label: "Wellness themes",
-    description: "Energy, sleep, joints, and related wellness topics.",
+    description: "Energy, sleep, and related wellness topics (not condition landers).",
   },
   {
     id: "sports-weight",
@@ -147,8 +237,16 @@ export const libraryTopicBlogMap: Record<string, string> = {
 
 export const libraryArticles = libraryData.articles as LibraryArticle[];
 
+export const libraryThemes = ((libraryData as { themes?: LibraryTheme[] })
+  .themes ?? []) as LibraryTheme[];
+
 export function getLibraryArticle(slug: string): LibraryArticle | undefined {
   return libraryArticles.find((article) => article.slug === slug);
+}
+
+export function getLibraryTheme(topicKey: string): LibraryTheme | undefined {
+  if (isLibraryConditionOverlapTopic(topicKey)) return undefined;
+  return libraryThemes.find((theme) => theme.topicKey === topicKey);
 }
 
 export function getAllLibrarySlugs(): string[] {
@@ -157,6 +255,19 @@ export function getAllLibrarySlugs(): string[] {
 
 export function getLibraryArticleCount(): number {
   return libraryArticles.length;
+}
+
+/** Sheet URLs that should stay in the sitemap (single-sheet, indexable). */
+export function getSitemapLibraryArticleSlugs(): string[] {
+  return libraryArticles
+    .filter(
+      (article) =>
+        !article.redirectsToTopic &&
+        !article.needsReview &&
+        !isLibraryConditionOverlapTopic(article.topicKey) &&
+        !getLegacyLibrarySheetRedirect(article.slug),
+    )
+    .map((article) => article.slug);
 }
 
 export function getLibraryCategoryLabel(categoryId: string): string {
@@ -179,25 +290,40 @@ export function getLibraryArticlesByTopic(topicKey: string): LibraryArticle[] {
     .sort((a, b) => a.sourcePage - b.sourcePage);
 }
 
+export function articleRedirectsToTopic(article: LibraryArticle): boolean {
+  if (article.redirectsToTopic) return true;
+  return getLibraryArticlesByTopic(article.topicKey).length > 1;
+}
+
 export function getLibraryTopic(topicKey: string): LibraryTopic | undefined {
-  const articles = getLibraryArticlesByTopic(topicKey);
+  if (isLibraryConditionOverlapTopic(topicKey)) return undefined;
+  const articles = getLibraryArticlesByTopic(topicKey).filter(
+    (article) => !isLibraryConditionOverlapTopic(article.topicKey),
+  );
   if (articles.length === 0) return undefined;
   const lead = articles.find((article) => !article.needsReview) ?? articles[0];
+  const theme = getLibraryTheme(topicKey);
+  const publicArticles = articles.filter((article) => !article.needsReview);
   return {
     topicKey,
     title: lead.topicTitle || lead.title,
     category: lead.category,
-    summary: lead.summary,
+    summary: theme?.summary ?? lead.summary,
     mskRelevant: articles.some((article) => article.mskRelevant),
     sheetCount: articles.length,
     needsReview: articles.every((article) => article.needsReview),
-    articles,
+    articles: publicArticles.length > 0 ? publicArticles : articles,
+    theme,
     relatedBlog: getRelatedBlogForTopic(topicKey),
   };
 }
 
 export function getAllLibraryTopicKeys(): string[] {
-  const keys = new Set(libraryArticles.map((article) => article.topicKey));
+  const keys = new Set(
+    libraryArticles
+      .map((article) => article.topicKey)
+      .filter((key) => !isLibraryConditionOverlapTopic(key)),
+  );
   return [...keys].sort((a, b) => a.localeCompare(b));
 }
 
@@ -207,6 +333,7 @@ export function getAllLibraryTopicKeys(): string[] {
  */
 export function getSitemapLibraryTopicKeys(): string[] {
   return getAllLibraryTopicKeys().filter((key) => {
+    if (isLibraryConditionOverlapTopic(key)) return false;
     const topic = getLibraryTopic(key);
     return Boolean(topic && !topic.needsReview && topic.sheetCount > 1);
   });

@@ -9,7 +9,7 @@ import {
   getLibraryArticle,
   getLibraryArticlesByTopic,
   getLibraryCategoryLabel,
-  getNutritionGuideForTopic,
+  getRelatedBlogForTopic,
   libraryArticles,
 } from "@/lib/education-library";
 import {
@@ -62,7 +62,7 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
   const categoryHref = `/education/library#${article.category}`;
   const topicHref = `/education/library/topic/${article.topicKey}`;
   const topicTitle = article.topicTitle || article.title;
-  const nutritionGuide = getNutritionGuideForTopic(article.topicKey);
+  const relatedBlog = getRelatedBlogForTopic(article.topicKey);
 
   const sameTopic = getLibraryArticlesByTopic(article.topicKey).filter(
     (item) => item.slug !== article.slug,
@@ -163,16 +163,16 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
           ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={topicHref}>All {topicTitle} sheets</ButtonLink>
-            {nutritionGuide ? (
+            {relatedBlog ? (
               <ButtonLink
-                href={`/education/nutrition/${nutritionGuide.slug}`}
+                href={`/blog/${relatedBlog.slug}`}
                 variant="secondary"
               >
-                Patient guide
+                Blog article
               </ButtonLink>
             ) : (
-              <ButtonLink href="/education/nutrition" variant="secondary">
-                Featured nutrition guides
+              <ButtonLink href="/blog" variant="secondary">
+                Nutrition blog articles
               </ButtonLink>
             )}
             <ButtonLink href="/book" variant="secondary">

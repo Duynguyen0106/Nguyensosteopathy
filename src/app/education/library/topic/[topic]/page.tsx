@@ -121,16 +121,16 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/education/library">All topics</ButtonLink>
-            {topic.nutritionGuide ? (
+            {topic.relatedBlog ? (
               <ButtonLink
-                href={`/education/nutrition/${topic.nutritionGuide.slug}`}
+                href={`/blog/${topic.relatedBlog.slug}`}
                 variant="secondary"
               >
-                Patient guide: {topic.nutritionGuide.title}
+                Blog: {topic.relatedBlog.title}
               </ButtonLink>
             ) : (
-              <ButtonLink href="/education/nutrition" variant="secondary">
-                Featured nutrition guides
+              <ButtonLink href="/blog" variant="secondary">
+                Nutrition blog articles
               </ButtonLink>
             )}
             <ButtonLink href="/book" variant="secondary">
@@ -144,23 +144,23 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
         <EducationAudienceBanner trackId="library" audience="both" />
       </section>
 
-      {topic.nutritionGuide ? (
+      {topic.relatedBlog ? (
         <section className="mx-auto max-w-6xl px-5 pb-8 md:px-8">
           <div className="rounded-2xl border border-teal/30 bg-white px-5 py-6 md:px-6">
             <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-              Featured patient guide
+              Related blog article
             </p>
             <h2 className="mt-2 font-display text-2xl text-navy">
-              {topic.nutritionGuide.title}
+              {topic.relatedBlog.title}
             </h2>
             <p className="mt-2 max-w-2xl text-base text-slate-600">
-              {topic.nutritionGuide.summary}
+              {topic.relatedBlog.summary}
             </p>
             <Link
-              href={`/education/nutrition/${topic.nutritionGuide.slug}`}
+              href={`/blog/${topic.relatedBlog.slug}`}
               className="mt-4 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
             >
-              Read the nutrition guide →
+              Read the blog article →
             </Link>
           </div>
         </section>

@@ -1,19 +1,14 @@
 /**
- * Education hub SSOT — tracks for nutrition, acupuncture, and CPD.
- * Nutrition topic bodies live in src/lib/supplements.ts.
+ * Education hub SSOT — tracks for library, acupuncture, and CPD.
+ * Former nutrition patient guides now live as blog posts (Nutrition & recovery).
  * Optional PDFs: place files under public/education/<track>/ and set pdfPath.
  */
 
 import { getLibraryArticleCount } from "@/lib/education-library";
-import { supplements } from "@/lib/supplements";
 
 export type EducationAudience = "patients" | "practitioners" | "both";
 
-export type EducationTrackId =
-  | "nutrition"
-  | "library"
-  | "acupuncture"
-  | "cpd";
+export type EducationTrackId = "library" | "acupuncture" | "cpd";
 
 export type EducationTrack = {
   id: EducationTrackId;
@@ -55,23 +50,12 @@ export type EducationArticle = {
 
 export const educationTracks: EducationTrack[] = [
   {
-    id: "nutrition",
-    slug: "nutrition",
-    title: "Nutrition & supplements",
-    shortTitle: "Nutrition",
-    summary:
-      "Shorter patient guides on vitamins, minerals, and recovery habits that often come up alongside osteopathy — educational only, not prescribing. Browse the full topic catalogue in the Supplement library.",
-    audience: "patients",
-    audienceLabel: "For patients",
-    ctaLabel: "Browse nutrition guides",
-  },
-  {
     id: "library",
     slug: "library",
     title: "Supplement education library",
     shortTitle: "Library",
     summary:
-      "Full dual-audience catalogue of 230 clinic-voice sheets, organised by topic (minerals, vitamins, herbals, wellness) — not a product catalogue. Shorter MSK patient guides live under Nutrition.",
+      "Full dual-audience catalogue of 230 clinic-voice sheets, organised by topic (minerals, vitamins, herbals, wellness) — not a product catalogue. Shorter patient nutrition articles are on the blog.",
     audience: "both",
     audienceLabel: "For patients & practitioners",
     ctaLabel: "Browse the full library",
@@ -111,7 +95,7 @@ export const libraryDualAudienceDisclaimer =
   "These library pages are written for both patients and practitioners. They are original clinic education notes — not prescribing protocols, brand endorsements, or a copy of any third-party training guide. Patients: check with your GP, pharmacist, or osteopath before starting supplements. Practitioners: use as discussion prompts within your regulated scope only.";
 
 /**
- * Acupuncture + CPD articles (nutrition uses supplements[]).
+ * Acupuncture + CPD articles.
  * Add new entries here; optional PDFs go in public/education/<track>/.
  */
 export const educationArticles: EducationArticle[] = [
@@ -273,13 +257,7 @@ export function getAllEducationArticleParams(): {
   }));
 }
 
-/** Nutrition topic count for hub cards (from supplements SSOT). */
-export function getNutritionTopicCount(): number {
-  return supplements.length;
-}
-
 export function getEducationTrackCount(trackId: EducationTrackId): number {
-  if (trackId === "nutrition") return getNutritionTopicCount();
   if (trackId === "library") return getLibraryArticleCount();
   return getArticlesForTrack(trackId).length;
 }
@@ -289,7 +267,6 @@ export function educationHref(
   slug?: string,
 ): string {
   if (!slug) return `/education/${track}`;
-  if (track === "nutrition") return `/education/nutrition/${slug}`;
   if (track === "library") return `/education/library/${slug}`;
   return `/education/${track}/${slug}`;
 }

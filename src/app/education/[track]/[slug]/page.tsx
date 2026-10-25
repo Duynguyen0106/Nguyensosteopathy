@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function EducationArticlePage({ params }: Props) {
   const { track: trackSlug, slug } = await params;
   if (trackSlug === "nutrition") {
-    redirect(`/education/nutrition/${slug}`);
+    redirect(`/blog/${slug}`);
   }
   if (trackSlug === "library") {
     redirect(`/education/library/${slug}`);

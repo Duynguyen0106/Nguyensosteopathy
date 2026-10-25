@@ -220,10 +220,10 @@ export default function AftercarePage() {
               </Link>
               {" · "}
               <Link
-                href="/education/nutrition"
+                href="/blog"
                 className="font-semibold text-teal hover:text-teal-dark"
               >
-                Nutrition & supplements
+                Nutrition & recovery blog
               </Link>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">

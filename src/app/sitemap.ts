@@ -8,7 +8,6 @@ import {
   getSitemapLibraryTopicKeys,
   libraryArticles,
 } from "@/lib/education-library";
-import { supplements } from "@/lib/supplements";
 import { services, site } from "@/lib/site";
 
 const base = site.websiteUrl;
@@ -86,7 +85,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/aftercare", priority: 0.75 },
     { path: "/exercises", priority: 0.85 },
     { path: "/education", priority: 0.8 },
-    { path: "/education/nutrition", priority: 0.75 },
     { path: "/education/library", priority: 0.75 },
     { path: "/complaints", changeFrequency: "yearly", priority: 0.35 },
     { path: "/conditions", priority: 0.85 },
@@ -121,19 +119,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }),
     ),
     ...educationTracks
-      .filter((track) => track.id !== "nutrition" && track.id !== "library")
+      .filter((track) => track.id !== "library")
       .map((track) =>
         entry({
           path: `/education/${track.slug}`,
           priority: 0.7,
         }),
       ),
-    ...supplements.map((topic) =>
-      entry({
-        path: `/education/nutrition/${topic.slug}`,
-        priority: 0.65,
-      }),
-    ),
     ...getSitemapLibraryTopicKeys().map((topic) =>
       entry({
         path: `/education/library/topic/${topic}`,

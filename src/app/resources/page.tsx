@@ -133,13 +133,7 @@ const groups = [
         href: "/education",
         label: "Education hub",
         detail:
-          "Nutrition & supplements, acupuncture guides, and practitioner CPD notes.",
-      },
-      {
-        href: "/education/nutrition",
-        label: "Nutrition & supplements",
-        detail:
-          "Patient guides on magnesium, vitamin D, omega-3, collagen, and when pills will not fix pain.",
+          "Supplement education library, acupuncture guides, and practitioner CPD notes.",
       },
       {
         href: "/education/library",

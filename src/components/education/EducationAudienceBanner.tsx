@@ -10,7 +10,6 @@ const copy: Record<
   EducationTrackId,
   { title: string; body: string } | null
 > = {
-  nutrition: null, // uses SupplementSafetyBanner
   library: {
     title: "For patients & practitioners",
     body: libraryDualAudienceDisclaimer,

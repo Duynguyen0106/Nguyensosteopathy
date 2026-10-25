@@ -80,8 +80,8 @@ export default function EducationLibraryIndexPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/education">Education hub</ButtonLink>
-            <ButtonLink href="/education/nutrition" variant="secondary">
-              Featured nutrition guides
+            <ButtonLink href="/blog" variant="secondary">
+              Nutrition blog articles
             </ButtonLink>
             <ButtonLink href="#all-sheets" variant="secondary">
               Browse all sheets
@@ -133,7 +133,7 @@ export default function EducationLibraryIndexPage() {
                         {topic.sheetCount} sheet
                         {topic.sheetCount === 1 ? "" : "s"}
                         {topic.mskRelevant ? " · MSK-relevant" : ""}
-                        {topic.nutritionGuide ? " · Patient guide" : ""}
+                        {topic.relatedBlog ? " · Blog article" : ""}
                       </p>
                       <h3 className="mt-2 font-display text-xl text-navy group-hover:text-teal-dark">
                         {topic.title}

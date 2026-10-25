@@ -12,6 +12,7 @@
     "poster": "node scripts/generate-poster.mjs",
     "pavement-poster": "node scripts/generate-pavement-poster.mjs",
     "business-card": "node scripts/generate-business-card.mjs",
+    "voucher": "node scripts/generate-voucher.mjs",
     "facebook-poster": "node scripts/generate-facebook-poster.mjs",
     "blog-images": "node scripts/fetch-blog-images.mjs && node scripts/fetch-blog-images-missing.mjs",
     "images:webp": "node scripts/convert-images-webp.mjs",

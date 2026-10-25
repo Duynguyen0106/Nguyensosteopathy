@@ -16,6 +16,8 @@ export default function robots(): MetadataRoute.Robots {
         "/facebook/",
         "/business-card",
         "/business-card/",
+        "/voucher",
+        "/voucher/",
       ],
     },
     sitemap: `${site.websiteUrl}/sitemap.xml`,

@@ -3,14 +3,15 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
 import {
+  getAllLibraryArticlesSorted,
   getLibraryArticleCount,
-  getLibraryArticlesBySection,
+  getLibraryTopicsByCategory,
 } from "@/lib/education-library";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 const description = trimDescription(
-  "Supplement education library from Nguyen's Osteopathic Clinic: 230 original dual-audience sheets on common ingredients and wellness themes for patients and practitioners.",
+  "Supplement education library from Nguyen's Osteopathic Clinic: 230 original dual-audience sheets organised by topic for patients and practitioners.",
 );
 
 export const metadata: Metadata = {
@@ -32,8 +33,10 @@ export const metadata: Metadata = {
 };
 
 export default function EducationLibraryIndexPage() {
-  const groups = getLibraryArticlesBySection();
+  const groups = getLibraryTopicsByCategory();
+  const allSheets = getAllLibraryArticlesSorted();
   const count = getLibraryArticleCount();
+  const topicCount = groups.reduce((sum, group) => sum + group.topics.length, 0);
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -71,17 +74,17 @@ export default function EducationLibraryIndexPage() {
             Supplement education library
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            {count} original clinic-voice sheets covering common supplement and
-            wellness themes. Educational only — not a product catalogue or
-            prescribing guide.
+            {count} original clinic-voice sheets grouped into {topicCount}{" "}
+            topics across minerals, vitamins, herbals, and wellness themes.
+            Educational only — not a product catalogue or prescribing guide.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/education">Education hub</ButtonLink>
             <ButtonLink href="/education/nutrition" variant="secondary">
               Featured nutrition guides
             </ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
-              Book online
+            <ButtonLink href="#all-sheets" variant="secondary">
+              Browse all sheets
             </ButtonLink>
           </div>
         </div>
@@ -95,44 +98,53 @@ export default function EducationLibraryIndexPage() {
         <div className="flex flex-wrap gap-2">
           {groups.map((group) => (
             <a
-              key={group.section}
-              href={`#${group.section}`}
+              key={group.category}
+              href={`#${group.category}`}
               className="inline-flex min-h-11 items-center rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm font-semibold text-navy transition hover:border-teal hover:text-teal"
             >
-              {group.label} ({group.articles.length})
+              {group.label} ({group.topics.length})
             </a>
           ))}
         </div>
 
         <div className="mt-12 space-y-14">
           {groups.map((group) => (
-            <div key={group.section} id={group.section}>
+            <div key={group.category} id={group.category}>
               <h2 className="font-display text-3xl text-navy md:text-4xl">
                 {group.label}
               </h2>
-              <p className="mt-2 text-base text-slate-600">
-                {group.articles.length} sheet
-                {group.articles.length === 1 ? "" : "s"}
-              </p>
+              {group.description ? (
+                <p className="mt-2 max-w-2xl text-base text-slate-600">
+                  {group.description}
+                </p>
+              ) : null}
               <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {group.articles.map((article) => (
-                  <li key={article.slug}>
+                {group.topics.map((topic) => (
+                  <li key={topic.topicKey}>
                     <Link
-                      href={`/education/library/${article.slug}`}
+                      href={
+                        topic.sheetCount === 1
+                          ? `/education/library/${topic.articles[0].slug}`
+                          : `/education/library/topic/${topic.topicKey}`
+                      }
                       className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal hover:shadow-sm md:p-5"
                     >
                       <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                        Sheet {article.sourcePage}
-                        {article.mskRelevant ? " · MSK-relevant" : ""}
+                        {topic.sheetCount} sheet
+                        {topic.sheetCount === 1 ? "" : "s"}
+                        {topic.mskRelevant ? " · MSK-relevant" : ""}
+                        {topic.nutritionGuide ? " · Patient guide" : ""}
                       </p>
                       <h3 className="mt-2 font-display text-xl text-navy group-hover:text-teal-dark">
-                        {article.title}
+                        {topic.title}
                       </h3>
                       <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">
-                        {article.summary}
+                        {topic.summary}
                       </p>
                       <span className="mt-3 text-sm font-semibold text-teal">
-                        Read sheet →
+                        {topic.sheetCount === 1
+                          ? "Read sheet →"
+                          : "View topic →"}
                       </span>
                     </Link>
                   </li>
@@ -141,6 +153,31 @@ export default function EducationLibraryIndexPage() {
             </div>
           ))}
         </div>
+
+        <details
+          id="all-sheets"
+          className="mt-16 rounded-2xl border border-slate-200 bg-white px-5 py-6 md:px-6"
+        >
+          <summary className="cursor-pointer font-display text-2xl text-navy">
+            Browse all {count} sheets
+          </summary>
+          <p className="mt-2 text-sm text-slate-600">
+            Full sheet list by source page number, including entries still marked
+            for light review.
+          </p>
+          <ul className="mt-6 columns-1 gap-x-8 sm:columns-2 lg:columns-3">
+            {allSheets.map((article) => (
+              <li key={article.slug} className="mb-2 break-inside-avoid">
+                <Link
+                  href={`/education/library/${article.slug}`}
+                  className="text-sm font-medium text-teal hover:text-teal-dark"
+                >
+                  {article.variantLabel}: {article.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </details>
       </section>
     </div>
   );

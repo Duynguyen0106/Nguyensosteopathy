@@ -4,6 +4,7 @@
  */
 
 import libraryData from "@/data/education-library.json";
+import { getSupplement, type SupplementTopic } from "@/lib/supplements";
 
 export type LibrarySection = {
   heading: string;
@@ -15,10 +16,26 @@ export type LibraryFaq = {
   answer: string;
 };
 
+export type LibraryCategoryId =
+  | "start-here"
+  | "minerals"
+  | "vitamins"
+  | "amino-acids-protein"
+  | "fatty-acids"
+  | "herbal"
+  | "wellness-themes"
+  | "sports-weight"
+  | "reference-forms";
+
 export type LibraryArticle = {
   slug: string;
   sourcePage: number;
   section: string;
+  category: LibraryCategoryId | string;
+  topicKey: string;
+  topicTitle: string;
+  variantLabel: string;
+  needsReview: boolean;
   title: string;
   summary: string;
   status: "published" | "coming-soon";
@@ -29,8 +46,98 @@ export type LibraryArticle = {
   faqs: LibraryFaq[];
 };
 
+export type LibraryTopic = {
+  topicKey: string;
+  title: string;
+  category: LibraryCategoryId | string;
+  summary: string;
+  mskRelevant: boolean;
+  sheetCount: number;
+  needsReview: boolean;
+  articles: LibraryArticle[];
+  nutritionGuide?: SupplementTopic;
+};
+
 export const libraryDisclaimer =
   "These library pages are original education notes for both patients and practitioners at Nguyen's Osteopathic Clinic. They are not prescribing advice, product endorsements, or a republication of any third-party training manual. Patients should check with a GP, pharmacist, or osteopath before starting supplements. Practitioners should use them as discussion prompts only within their regulated scope.";
+
+/** Browse category order + labels for the library index. */
+export const libraryCategoryOrder: {
+  id: LibraryCategoryId;
+  label: string;
+  description: string;
+}[] = [
+  {
+    id: "start-here",
+    label: "Start here",
+    description: "How to use this dual-audience library.",
+  },
+  {
+    id: "minerals",
+    label: "Minerals",
+    description: "Magnesium, zinc, iron, and related mineral notes.",
+  },
+  {
+    id: "vitamins",
+    label: "Vitamins",
+    description: "Vitamin D, B-complex, and related vitamin notes.",
+  },
+  {
+    id: "amino-acids-protein",
+    label: "Amino acids & protein",
+    description: "Collagen, protein, and amino-acid themes.",
+  },
+  {
+    id: "fatty-acids",
+    label: "Fatty acids",
+    description: "Omega-3, fish oils, and related fats.",
+  },
+  {
+    id: "herbal",
+    label: "Herbal & actives",
+    description: "Botanicals and common active ingredients.",
+  },
+  {
+    id: "wellness-themes",
+    label: "Wellness themes",
+    description: "Energy, sleep, joints, and related wellness topics.",
+  },
+  {
+    id: "sports-weight",
+    label: "Sports & weight",
+    description: "Training, recovery, and weight-related themes.",
+  },
+  {
+    id: "reference-forms",
+    label: "Reference & forms",
+    description: "Label-reading and formulation notes.",
+  },
+];
+
+/**
+ * Map library topicKey → curated /education/nutrition guide slug.
+ * Only topics with a clear patient-guide counterpart are listed.
+ */
+export const libraryTopicNutritionMap: Record<string, string> = {
+  magnesium: "magnesium-muscle-tension",
+  "vitamin-d": "vitamin-d-msk-health",
+  "omega-3": "omega-3-inflammation",
+  "fish-oil": "omega-3-inflammation",
+  "cod-liver-oil": "omega-3-inflammation",
+  "krill-oil": "omega-3-inflammation",
+  collagen: "collagen-tendons-joints",
+  turmeric: "turmeric-curcumin-caveats",
+  // sleep key rarely wins OCR primary; stress/insomnia cover the patient guide
+  stress: "sleep-recovery-nutrients",
+  insomnia: "sleep-recovery-nutrients",
+  // hydration guide: no electrolyte sheets in corpus — use sports-adjacent athlete theme
+  athlete: "hydration-electrolytes-active",
+  glucosamine: "glucosamine-chondroitin-joints",
+  chondroitin: "glucosamine-chondroitin-joints",
+  protein: "protein-rehab-recovery",
+  "whey-protein": "protein-rehab-recovery",
+  "amino-acid": "protein-rehab-recovery",
+};
 
 export const libraryArticles = libraryData.articles as LibraryArticle[];
 
@@ -46,6 +153,121 @@ export function getLibraryArticleCount(): number {
   return libraryArticles.length;
 }
 
+export function getLibraryCategoryLabel(categoryId: string): string {
+  return (
+    libraryCategoryOrder.find((item) => item.id === categoryId)?.label ??
+    categoryId
+  );
+}
+
+export function getNutritionGuideForTopic(
+  topicKey: string,
+): SupplementTopic | undefined {
+  const slug = libraryTopicNutritionMap[topicKey];
+  return slug ? getSupplement(slug) : undefined;
+}
+
+export function getLibraryArticlesByTopic(topicKey: string): LibraryArticle[] {
+  return libraryArticles
+    .filter((article) => article.topicKey === topicKey)
+    .sort((a, b) => a.sourcePage - b.sourcePage);
+}
+
+export function getLibraryTopic(topicKey: string): LibraryTopic | undefined {
+  const articles = getLibraryArticlesByTopic(topicKey);
+  if (articles.length === 0) return undefined;
+  const lead = articles.find((article) => !article.needsReview) ?? articles[0];
+  return {
+    topicKey,
+    title: lead.topicTitle || lead.title,
+    category: lead.category,
+    summary: lead.summary,
+    mskRelevant: articles.some((article) => article.mskRelevant),
+    sheetCount: articles.length,
+    needsReview: articles.every((article) => article.needsReview),
+    articles,
+    nutritionGuide: getNutritionGuideForTopic(topicKey),
+  };
+}
+
+export function getAllLibraryTopicKeys(): string[] {
+  const keys = new Set(libraryArticles.map((article) => article.topicKey));
+  return [...keys].sort((a, b) => a.localeCompare(b));
+}
+
+/**
+ * Topic hubs worth indexing: exclude needsReview stubs and single-sheet
+ * topics (those already surface as the sheet URL from the library index).
+ */
+export function getSitemapLibraryTopicKeys(): string[] {
+  return getAllLibraryTopicKeys().filter((key) => {
+    const topic = getLibraryTopic(key);
+    return Boolean(topic && !topic.needsReview && topic.sheetCount > 1);
+  });
+}
+
+export function getLibraryTopicsByCategory(): {
+  category: string;
+  label: string;
+  description: string;
+  topics: LibraryTopic[];
+}[] {
+  const topicsByKey = new Map<string, LibraryTopic>();
+  for (const key of getAllLibraryTopicKeys()) {
+    const topic = getLibraryTopic(key);
+    if (topic) topicsByKey.set(key, topic);
+  }
+
+  const groups: {
+    category: string;
+    label: string;
+    description: string;
+    topics: LibraryTopic[];
+  }[] = libraryCategoryOrder
+    .map((meta) => {
+      const topics = [...topicsByKey.values()]
+        .filter((topic) => topic.category === meta.id)
+        .filter((topic) => !(topic.needsReview && meta.id !== "start-here"))
+        .sort((a, b) => a.title.localeCompare(b.title));
+      return {
+        category: meta.id,
+        label: meta.label,
+        description: meta.description,
+        topics,
+      };
+    })
+    .filter((group) => group.topics.length > 0);
+
+  const known = new Set(libraryCategoryOrder.map((item) => item.id));
+  const extras = [...topicsByKey.values()].filter(
+    (topic) => !known.has(topic.category as LibraryCategoryId),
+  );
+  if (extras.length > 0) {
+    const byCat = new Map<string, LibraryTopic[]>();
+    for (const topic of extras) {
+      const list = byCat.get(topic.category) ?? [];
+      list.push(topic);
+      byCat.set(topic.category, list);
+    }
+    for (const [category, topics] of byCat) {
+      groups.push({
+        category,
+        label: category,
+        description: "",
+        topics: topics.sort((a, b) => a.title.localeCompare(b.title)),
+      });
+    }
+  }
+
+  return groups;
+}
+
+/** Flat list of all sheets for the secondary “browse all” section. */
+export function getAllLibraryArticlesSorted(): LibraryArticle[] {
+  return [...libraryArticles].sort((a, b) => a.sourcePage - b.sourcePage);
+}
+
+/** @deprecated Prefer getLibraryTopicsByCategory for the organised hub. */
 export function getLibraryArticlesBySection(): {
   section: string;
   label: string;

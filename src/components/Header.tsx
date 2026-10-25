@@ -30,7 +30,7 @@ const links = [
   { href: "/about", label: "About", desktop: true },
   { href: "/conditions", label: "Conditions", desktop: true },
   { href: "/exercises", label: "Exercises", desktop: true },
-  { href: "/supplements", label: "Supplements", desktop: false },
+  { href: "/education", label: "Education", desktop: false },
   { href: "/blog", label: "Blog", desktop: false },
   { href: "/fees", label: "Fees", desktop: true },
   { href: "/nhs-discount", label: "NHS 10%", desktop: false },

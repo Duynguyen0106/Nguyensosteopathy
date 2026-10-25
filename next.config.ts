@@ -101,6 +101,17 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        // Supplements hub moved under Education → Nutrition.
+        source: "/supplements",
+        destination: "/education/nutrition",
+        permanent: true,
+      },
+      {
+        source: "/supplements/:slug",
+        destination: "/education/nutrition/:slug",
+        permanent: true,
+      },
+      {
         source: "/back-neck",
         destination: "/services/back-neck-pain",
         permanent: true,

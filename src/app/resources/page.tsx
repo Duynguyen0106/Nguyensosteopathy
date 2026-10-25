@@ -130,8 +130,14 @@ const groups = [
         detail: "Practical articles on pain, recovery, and clinic life in Woolwich.",
       },
       {
-        href: "/supplements",
-        label: "Supplements & recovery",
+        href: "/education",
+        label: "Education hub",
+        detail:
+          "Nutrition & supplements, acupuncture guides, and practitioner CPD notes.",
+      },
+      {
+        href: "/education/nutrition",
+        label: "Nutrition & supplements",
         detail:
           "Patient guides on magnesium, vitamin D, omega-3, collagen, and when pills will not fix pain.",
       },

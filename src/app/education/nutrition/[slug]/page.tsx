@@ -37,17 +37,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: `/supplements/${topic.slug}` },
+    alternates: { canonical: `/education/nutrition/${topic.slug}` },
     openGraph: {
       title: ogTitle,
       description,
-      url: `/supplements/${topic.slug}`,
+      url: `/education/nutrition/${topic.slug}`,
       images: [defaultOgImage],
     },
   };
 }
 
-export default async function SupplementDetailPage({ params }: Props) {
+export default async function NutritionTopicPage({ params }: Props) {
   const { slug } = await params;
   const topic = getSupplement(slug);
   if (!topic) notFound();
@@ -63,9 +63,9 @@ export default async function SupplementDetailPage({ params }: Props) {
   const pageLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    "@id": `${site.websiteUrl}/supplements/${topic.slug}#webpage`,
+    "@id": `${site.websiteUrl}/education/nutrition/${topic.slug}#webpage`,
     name: topic.title,
-    url: `${site.websiteUrl}/supplements/${topic.slug}`,
+    url: `${site.websiteUrl}/education/nutrition/${topic.slug}`,
     description: topic.summary,
     about: {
       "@type": "Thing",
@@ -96,8 +96,9 @@ export default async function SupplementDetailPage({ params }: Props) {
 
   const crumbsLd = breadcrumbJsonLd([
     { name: "Home", path: "/" },
-    { name: "Supplements", path: "/supplements" },
-    { name: topic.title, path: `/supplements/${topic.slug}` },
+    { name: "Education", path: "/education" },
+    { name: "Nutrition", path: "/education/nutrition" },
+    { name: topic.title, path: `/education/nutrition/${topic.slug}` },
   ]);
 
   return (
@@ -120,8 +121,12 @@ export default async function SupplementDetailPage({ params }: Props) {
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            <Link href="/supplements" className="hover:text-teal-dark">
-              Supplements
+            <Link href="/education" className="hover:text-teal-dark">
+              Education
+            </Link>
+            {" · "}
+            <Link href="/education/nutrition" className="hover:text-teal-dark">
+              Nutrition
             </Link>
             {" · "}
             {topic.category}
@@ -143,7 +148,7 @@ export default async function SupplementDetailPage({ params }: Props) {
                 Exercise library
               </ButtonLink>
             )}
-            <ButtonLink href="/supplements" variant="secondary">
+            <ButtonLink href="/education/nutrition" variant="secondary">
               All guides
             </ButtonLink>
           </div>
@@ -227,7 +232,7 @@ export default async function SupplementDetailPage({ params }: Props) {
                   {relatedTopics.map((item) => (
                     <li key={item.slug}>
                       <Link
-                        href={`/supplements/${item.slug}`}
+                        href={`/education/nutrition/${item.slug}`}
                         className="font-semibold text-teal hover:text-teal-dark"
                       >
                         {item.title}

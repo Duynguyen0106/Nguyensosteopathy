@@ -313,7 +313,7 @@ export default async function ConditionPage({ params }: Props) {
               {relatedSupplements.map((topic) => (
                 <li key={topic.slug}>
                   <Link
-                    href={`/supplements/${topic.slug}`}
+                    href={`/education/nutrition/${topic.slug}`}
                     className="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 p-5 transition hover:border-teal"
                   >
                     <span className="text-xs font-semibold tracking-wide text-teal uppercase">
@@ -333,10 +333,10 @@ export default async function ConditionPage({ params }: Props) {
               ))}
             </ul>
             <Link
-              href="/supplements"
+              href="/education/nutrition"
               className="mt-8 inline-flex text-sm font-semibold text-teal hover:text-teal-dark"
             >
-              Browse all supplements guides →
+              Browse nutrition & supplements →
             </Link>
           </div>
         </section>

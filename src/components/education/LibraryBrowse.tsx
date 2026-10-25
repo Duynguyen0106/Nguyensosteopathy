@@ -35,13 +35,27 @@ type Props = {
   }[];
 };
 
+const LARGE_CATEGORY = 12;
+
 function topicBadge(topic: LibraryBrowseTopic): string {
   return topic.combined ? "Theme" : "Note";
+}
+
+function letterOf(title: string): string {
+  const ch = String(title || "")
+    .replace(/^\(+/, "")
+    .trim()
+    .charAt(0)
+    .toUpperCase();
+  return /[A-Z]/.test(ch) ? ch : "#";
 }
 
 export function LibraryBrowse({ groups, browse }: Props) {
   const [query, setQuery] = useState("");
   const deferred = useDeferredValue(query.trim().toLowerCase());
+  const [letterByCategory, setLetterByCategory] = useState<
+    Record<string, string>
+  >({});
 
   const allTopics = useMemo(
     () => groups.flatMap((group) => group.topics),
@@ -71,7 +85,9 @@ export function LibraryBrowse({ groups, browse }: Props) {
   return (
     <div>
       <label className="block max-w-xl" id="library-search">
-        <span className="text-sm font-semibold text-navy">Search topics</span>
+        <span className="text-sm font-semibold text-navy">
+          Filter by name
+        </span>
         <input
           type="search"
           value={query}
@@ -125,23 +141,71 @@ export function LibraryBrowse({ groups, browse }: Props) {
           </div>
 
           <div className="mt-12 space-y-14">
-            {groups.map((group) => (
-              <div key={group.category} id={group.category}>
-                <h2 className="font-display text-3xl text-navy md:text-4xl">
-                  {group.label}
-                </h2>
-                {group.description ? (
-                  <p className="mt-2 max-w-2xl text-base text-slate-600">
-                    {group.description}
-                  </p>
-                ) : null}
-                <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {group.topics.map((topic) => (
-                    <TopicCard key={topic.topicKey} topic={topic} />
-                  ))}
-                </ul>
-              </div>
-            ))}
+            {groups.map((group) => {
+              const large = group.topics.length >= LARGE_CATEGORY;
+              const letters = large
+                ? [
+                    ...new Set(
+                      group.topics.map((topic) => letterOf(topic.title)),
+                    ),
+                  ].sort((a, b) => a.localeCompare(b))
+                : [];
+              const activeLetter =
+                letterByCategory[group.category] || letters[0] || "A";
+              const visibleTopics = large
+                ? group.topics.filter(
+                    (topic) => letterOf(topic.title) === activeLetter,
+                  )
+                : group.topics;
+
+              return (
+                <div key={group.category} id={group.category}>
+                  <h2 className="font-display text-3xl text-navy md:text-4xl">
+                    {group.label}
+                  </h2>
+                  {group.description ? (
+                    <p className="mt-2 max-w-2xl text-base text-slate-600">
+                      {group.description}
+                    </p>
+                  ) : null}
+                  {large ? (
+                    <div className="mt-4 flex flex-wrap gap-1.5">
+                      {letters.map((letter) => (
+                        <button
+                          key={letter}
+                          type="button"
+                          onClick={() =>
+                            setLetterByCategory((prev) => ({
+                              ...prev,
+                              [group.category]: letter,
+                            }))
+                          }
+                          className={`min-h-9 min-w-9 rounded-lg border px-2 text-sm font-semibold transition ${
+                            activeLetter === letter
+                              ? "border-teal bg-teal text-white"
+                              : "border-slate-200 bg-white text-navy hover:border-teal hover:text-teal"
+                          }`}
+                          aria-pressed={activeLetter === letter}
+                        >
+                          {letter}
+                        </button>
+                      ))}
+                    </div>
+                  ) : null}
+                  <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    {visibleTopics.map((topic) => (
+                      <TopicCard key={topic.topicKey} topic={topic} />
+                    ))}
+                  </ul>
+                  {large ? (
+                    <p className="mt-3 text-sm text-slate-500">
+                      Showing {visibleTopics.length} of {group.topics.length} in{" "}
+                      {group.label} · letter {activeLetter}
+                    </p>
+                  ) : null}
+                </div>
+              );
+            })}
           </div>
         </>
       )}

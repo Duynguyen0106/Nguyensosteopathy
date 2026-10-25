@@ -211,69 +211,59 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-10 md:px-8 md:py-12">
-        <EducationAudienceBanner trackId="library" audience="both" />
+      <section className="mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-10">
+        <EducationAudienceBanner trackId="library" audience="both" compact />
       </section>
 
       {(theme || evidenceReady || multi) && (
         <nav
           aria-label="On this page"
-          className="mx-auto max-w-6xl px-5 pb-6 md:px-8"
+          className="sticky top-16 z-20 border-b border-slate-200/80 bg-slate-50/95 backdrop-blur md:top-20"
         >
-          <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-            On this page
-          </p>
-          <ul className="mt-3 flex flex-wrap gap-2">
+          <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 px-5 py-3 md:px-8">
+            <p className="mr-1 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
+              On this page
+            </p>
             {evidenceReady ? (
-              <li>
-                <a
-                  href="#evidence"
-                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
-                >
-                  Evidence
-                </a>
-              </li>
+              <a
+                href="#evidence"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Evidence
+              </a>
             ) : null}
             {theme ? (
-              <li>
-                <a
-                  href="#theme"
-                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
-                >
-                  Theme
-                </a>
-              </li>
+              <a
+                href="#theme"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Theme
+              </a>
             ) : null}
             {multi && angles.length > 0 ? (
-              <li>
-                <a
-                  href="#angles"
-                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
-                >
-                  Angles
-                </a>
-              </li>
+              <a
+                href="#angles"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Angles
+              </a>
             ) : (
-              <li>
-                <a
-                  href="#notes"
-                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
-                >
-                  Notes
-                </a>
-              </li>
+              <a
+                href="#notes"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Notes
+              </a>
             )}
             {topic.relatedBlog ? (
-              <li>
-                <a
-                  href="#related-blog"
-                  className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
-                >
-                  Blog
-                </a>
-              </li>
+              <a
+                href="#related-blog"
+                className="inline-flex min-h-9 items-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
+              >
+                Blog
+              </a>
             ) : null}
-          </ul>
+          </div>
         </nav>
       )}
 
@@ -307,24 +297,18 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
       {theme ? (
         <section
           id="theme"
-          className="mx-auto max-w-3xl px-5 pb-12 md:px-8"
+          className="mx-auto max-w-3xl px-5 pb-12 pt-8 md:px-8"
         >
           <p className="text-xs font-semibold tracking-[0.14em] text-teal uppercase">
             Clinic theme
           </p>
-          <h2 className="mt-2 font-display text-3xl text-navy md:text-4xl">
-            {theme.title}
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            {theme.summary}
-          </p>
-
-          <div className="mt-10 space-y-10">
+          {/* Title/summary already shown in the hero — start at teaching sections. */}
+          <div className="mt-6 space-y-10">
             {theme.sections.map((section) => (
               <article key={section.heading}>
-                <h3 className="font-display text-2xl text-navy md:text-3xl">
+                <h2 className="font-display text-2xl text-navy md:text-3xl">
                   {section.heading}
-                </h3>
+                </h2>
                 <p className="mt-3 text-base leading-relaxed text-slate-700 md:text-lg">
                   {section.body}
                 </p>
@@ -334,9 +318,9 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
 
           {theme.caveats.length > 0 ? (
             <div className="mt-12 rounded-2xl border border-slate-200 bg-white px-5 py-6 md:px-6">
-              <h3 className="font-display text-2xl text-navy">
+              <h2 className="font-display text-2xl text-navy">
                 Important caveats
-              </h3>
+              </h2>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-base text-slate-700">
                 {theme.caveats.map((caveat) => (
                   <li key={caveat}>{caveat}</li>
@@ -347,9 +331,9 @@ export default async function EducationLibraryTopicPage({ params }: Props) {
 
           {theme.faqs.length > 0 ? (
             <div className="mt-12">
-              <h3 className="font-display text-2xl text-navy md:text-3xl">
+              <h2 className="font-display text-2xl text-navy md:text-3xl">
                 FAQs
-              </h3>
+              </h2>
               <dl className="mt-6 space-y-6">
                 {theme.faqs.map((faq) => (
                   <div key={faq.question}>

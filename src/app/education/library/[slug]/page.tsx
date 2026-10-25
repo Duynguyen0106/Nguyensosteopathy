@@ -263,8 +263,8 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-10 md:px-8 md:py-12">
-        <EducationAudienceBanner trackId="library" audience="both" />
+      <section className="mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-10">
+        <EducationAudienceBanner trackId="library" audience="both" compact />
       </section>
 
       <section className="mx-auto max-w-3xl px-5 pb-12 md:px-8">

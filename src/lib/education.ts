@@ -94,6 +94,10 @@ export const acupuncturePatientDisclaimer =
 export const libraryDualAudienceDisclaimer =
   "These library pages are written for both patients and practitioners. They are original clinic education notes — not prescribing protocols, brand endorsements, or a copy of any third-party training guide. Patients: check with your GP, pharmacist, or osteopath before starting supplements. Practitioners: use as discussion prompts within your regulated scope only.";
 
+/** Shorter banner copy for library browse/read chrome. */
+export const libraryDualAudienceDisclaimerShort =
+  "Original clinic education for patients and practitioners — not prescribing advice or product endorsements. Check with a GP, pharmacist, or osteopath before starting supplements.";
+
 /**
  * Acupuncture + CPD articles.
  * Add new entries here; optional PDFs go in public/education/<track>/.

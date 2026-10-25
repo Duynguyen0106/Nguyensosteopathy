@@ -495,7 +495,16 @@ export function buildCombinedThemeContent({
           ? "label-reading"
           : "ingredient";
 
-  const summary = `A clear dual-audience clinic theme on ${title} for patients and practitioners at Nguyen's Osteopathic Clinic — not a dosing protocol or product endorsement.`;
+  const angleLabels =
+    angles && angles.length
+      ? angles.map((a) => a.label).filter(Boolean)
+      : [];
+  const summary =
+    angleLabels.length >= 2
+      ? `${title} theme covering ${angleLabels.slice(0, 3).join(", ")}${
+          angleLabels.length > 3 ? ` +${angleLabels.length - 3} more` : ""
+        } — for patients and practitioners, not dosing advice.`
+      : `Clinic theme on ${title} for patients and practitioners — shared vocabulary beside care, not a prescribing guide.`;
 
   let sections = [
     {

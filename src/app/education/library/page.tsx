@@ -159,7 +159,7 @@ export default function EducationLibraryIndexPage() {
             prescribing guide.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="#library-search">Search topics</ButtonLink>
+            <ButtonLink href="#start-here">Browse topics</ButtonLink>
             <ButtonLink href="#all-topics" variant="secondary">
               Browse A–Z
             </ButtonLink>
@@ -175,8 +175,8 @@ export default function EducationLibraryIndexPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-10 md:px-8 md:py-12">
-        <EducationAudienceBanner trackId="library" audience="both" />
+      <section className="mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-10">
+        <EducationAudienceBanner trackId="library" audience="both" compact />
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">

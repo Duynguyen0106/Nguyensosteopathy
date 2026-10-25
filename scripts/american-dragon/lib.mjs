@@ -247,6 +247,152 @@ export function tidyTitle(title) {
     .trim();
 }
 
+/** Convert inventory CamelCase labels to display titles (DingJingFang → DING JING FANG). */
+export function titleFromCamelLabel(label) {
+  const spaced = String(label || "")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2")
+    .replace(/([A-Za-z])(\d)/g, "$1 $2")
+    .replace(/(\d)([A-Za-z])/g, "$1 $2")
+    .replace(/[#_]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return spaced ? spaced.toUpperCase() : "";
+}
+
+/**
+ * Prefer inventory/URL label when the page chrome mislabels a formula
+ * (e.g. SanHao page titled Er Hao).
+ */
+const FORMULA_ORDINALS = new Set([
+  "yi",
+  "er",
+  "san",
+  "si",
+  "wu",
+  "liu",
+  "qi",
+  "ba",
+  "jiu",
+  "shi",
+]);
+
+function formulaOrdinal(text) {
+  const tokens = String(text || "")
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter(Boolean);
+  return (
+    tokens.find((t) => FORMULA_ORDINALS.has(t) || /^\d+$/.test(t)) || null
+  );
+}
+
+export function resolveFormulaTitle(html, label, fallback = "") {
+  const fromLabel = titleFromCamelLabel(label);
+  const extracted = tidyTitle(
+    extractTitle(html, "formulas", fallback || label),
+  );
+  if (!fromLabel) return extracted || tidyTitle(fallback);
+  if (!extracted) return fromLabel;
+
+  const stop = new Set([
+    "the",
+    "and",
+    "for",
+    "with",
+    "topical",
+    "formula",
+    "decoction",
+    "tang",
+    "fang",
+    "wan",
+    "fen",
+    "mi",
+    "lan",
+  ]);
+  const labelTokens = fromLabel
+    .toLowerCase()
+    .split(/\s+/)
+    .filter((t) => t.length > 1 && !stop.has(t));
+  const extractedLower = extracted.toLowerCase();
+  const missingDistinctive = labelTokens.filter(
+    (t) => !extractedLower.includes(t),
+  );
+  // Ordinal / Fang vs Tang mismatches → trust the URL/inventory label.
+  const labelOrd = formulaOrdinal(fromLabel);
+  const extractedOrd = formulaOrdinal(extracted);
+  if (labelOrd && extractedOrd && labelOrd !== extractedOrd) return fromLabel;
+  if (missingDistinctive.length > 0) return fromLabel;
+  if (
+    /\bfang\b/i.test(fromLabel) &&
+    /\btang\b/i.test(extracted) &&
+    !/\bfang\b/i.test(extracted)
+  ) {
+    return fromLabel;
+  }
+  if (
+    /\btang\b/i.test(fromLabel) &&
+    /\bfang\b/i.test(extracted) &&
+    !/\btang\b/i.test(extracted)
+  ) {
+    return fromLabel;
+  }
+  return extracted;
+}
+
+/** Normalize condition sections: INTRO → GENERAL when needed. */
+export function normalizeConditionSections(sections) {
+  const next = { ...sections };
+  if (!next.GENERAL && next.INTRO) {
+    next.GENERAL = next.INTRO;
+    delete next.INTRO;
+  }
+  // Promote lone CLINICAL MANIFESTATIONS under GENERAL when that is the only narrative.
+  if (
+    !next.GENERAL &&
+    next["CLINICAL MANIFESTATIONS"] &&
+    Object.keys(next).every((k) =>
+      [
+        "CLINICAL MANIFESTATIONS",
+        "TREATMENT",
+        "POINTS",
+        "HERBS",
+        "FORMULAS",
+        "NOTES",
+      ].includes(k),
+    )
+  ) {
+    next.GENERAL = next["CLINICAL MANIFESTATIONS"];
+  }
+  // Pattern-only pages: seed GENERAL from the first substantial section for summaries.
+  if (!next.GENERAL) {
+    const firstBody = Object.values(next).find(
+      (body) => typeof body === "string" && body.trim().length > 40,
+    );
+    if (firstBody) next.GENERAL = firstBody;
+  }
+
+  // Stub AD pages often dump "Clinical Manifestations / Treatment Principle / Points"
+  // into one GENERAL block — split out POINTS when present.
+  if (next.GENERAL && !next.POINTS && /\bpoints?\b/i.test(next.GENERAL)) {
+    const parts = next.GENERAL.split(/\n(?=Points?\b)/i);
+    if (parts.length > 1) {
+      const pointsBody = parts
+        .slice(1)
+        .join("\n")
+        .replace(/^Points?\s*/i, "")
+        .trim();
+      const generalBody = parts[0]
+        .replace(/\n?(Clinical Manifestations|Treatment Principle)\s*$/i, "")
+        .trim();
+      if (pointsBody) next.POINTS = pointsBody;
+      if (generalBody) next.GENERAL = generalBody;
+      else delete next.GENERAL;
+    }
+  }
+  return next;
+}
+
 /**
  * Parse American Dragon pages by accordion <h3> blocks (preferred).
  * Falls back to known section labels in plaintext when h3s are missing.
@@ -288,11 +434,12 @@ export function parseAccordionSections(html) {
 }
 
 /**
- * Legacy plaintext section parser (fallback when accordion h3s are sparse).
+ * Legacy plaintext section parser (fallback when accordion h3s are missing).
+ * Prefer accordion whenever at least one h3 body was found.
  */
 export function parseSections(html, knownSections = []) {
   const accordion = parseAccordionSections(html);
-  if (accordion.h3Count >= 2) {
+  if (accordion.h3Count >= 1) {
     return Object.fromEntries(
       Object.entries(accordion.sections).filter(
         ([, body]) => String(body || "").trim().length > 0,
@@ -457,6 +604,8 @@ export function enrichRecord(type, slug, title, sections, sourceUrl) {
       meta.pointCode.startsWith("M-")
     ) {
       meta.channel = "EXTRA";
+      // Source pages with no published code still get a stable EXTRA marker.
+      if (!meta.pointCode) meta.pointCode = "EXTRA";
     } else {
       meta.channel = meta.pointCode.match(/^([A-Z]+)/)?.[1] || null;
     }
@@ -537,6 +686,10 @@ export function enrichRecord(type, slug, title, sections, sourceUrl) {
         .replace(/\s+/g, " ")
         .trim()
         .slice(0, 120);
+    } else if (/japanese/i.test(sections.NOTES || "")) {
+      meta.category = "Japanese medicinals";
+    } else if (sections["ACTIONS AND INDICATIONS"] || sections.ACTIONS) {
+      meta.category = "Uncategorized";
     }
   }
 
@@ -584,17 +737,36 @@ export function enrichRecord(type, slug, title, sections, sourceUrl) {
     .join(" ")
     .split(/\s+/)
     .filter(Boolean).length;
+  const sectionCount = Object.keys(sections).length;
+
+  let quality = "thin";
+  if (type === "points") {
+    const hasCore =
+      Boolean(sections.LOCATION) &&
+      Boolean(sections.NEEDLING || sections.INDICATIONS);
+    if (wordCount >= 120 && sectionCount >= 3) quality = "full";
+    else if (hasCore || wordCount >= 40) quality = "partial";
+  } else if (type === "conditions") {
+    if (wordCount >= 120 && sectionCount >= 2) quality = "full";
+    else if (
+      wordCount >= 20 ||
+      sectionCount >= 1 ||
+      sections.POINTS ||
+      sections.GENERAL
+    ) {
+      quality = "partial";
+    }
+  } else if (wordCount >= 120 && sectionCount >= 3) {
+    quality = "full";
+  } else if (wordCount >= 40) {
+    quality = "partial";
+  }
 
   return {
     ...meta,
     wordCount,
-    sectionCount: Object.keys(sections).length,
-    quality:
-      wordCount >= 120 && Object.keys(sections).length >= 3
-        ? "full"
-        : wordCount >= 40
-          ? "partial"
-          : "thin",
+    sectionCount,
+    quality,
   };
 }
 

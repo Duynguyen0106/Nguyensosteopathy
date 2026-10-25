@@ -18,8 +18,10 @@ import {
   ensureDirs,
   extractTitle,
   loadManifest,
+  normalizeConditionSections,
   parseSections,
   promoteFormulaName,
+  resolveFormulaTitle,
   tidyTitle,
   writeJson,
 } from "./lib.mjs";
@@ -81,12 +83,18 @@ for (const entry of inventory.entries) {
         ];
 
   let sections = parseSections(html, known);
-  const title = tidyTitle(
-    extractTitle(html, entry.type, entry.label || entry.slug),
-  );
+  let title =
+    entry.type === "formulas"
+      ? resolveFormulaTitle(html, entry.label, entry.slug)
+      : tidyTitle(extractTitle(html, entry.type, entry.label || entry.slug));
+
   if (entry.type === "formulas" || entry.type === "herbs") {
     sections = promoteFormulaName(sections, title);
   }
+  if (entry.type === "conditions") {
+    sections = normalizeConditionSections(sections);
+  }
+
   const enrichment = enrichRecord(
     entry.type,
     entry.slug,

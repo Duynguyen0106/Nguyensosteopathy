@@ -31,6 +31,14 @@ export type AcupunctureCorpusEntry = {
   status?: string;
   publishable?: boolean;
   sectionKeys?: string[];
+  quality?: string | null;
+  channel?: string | null;
+  pinyin?: string | null;
+  latin?: string | null;
+  pointCode?: string | null;
+  category?: string | null;
+  wordCount?: number | null;
+  searchText?: string;
 };
 
 export type AcupunctureCorpusRecord = {
@@ -38,10 +46,22 @@ export type AcupunctureCorpusRecord = {
   type: AcupunctureCorpusType | string;
   slug: string;
   title: string;
+  rawTitle?: string;
+  displayTitle?: string;
   sourceUrl: string;
   gatheredAt?: string;
   publishable?: boolean;
   sections: Record<string, string>;
+  aliases?: string[];
+  channel?: string | null;
+  pinyin?: string | null;
+  latin?: string | null;
+  pointCode?: string | null;
+  category?: string | null;
+  searchText?: string;
+  wordCount?: number;
+  sectionCount?: number;
+  quality?: "full" | "partial" | "thin" | string;
   attribution?: {
     sourceName: string;
     sourceUrl: string;

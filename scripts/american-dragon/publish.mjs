@@ -28,6 +28,39 @@ fs.mkdirSync(BY_TYPE_DIR, { recursive: true });
 const types = ["points", "herbs", "formulas", "conditions"];
 const catalog = [];
 const counts = {};
+const quality = { full: 0, partial: 0, thin: 0 };
+
+const PREFERRED_SUMMARY_KEYS = [
+  "ACTIONS",
+  "ACTIONS AND INDICATIONS",
+  "FORMULA ACTIONS",
+  "INDICATIONS",
+  "TREATS",
+  "GENERAL",
+  "LOCATION",
+  "SYNDROMES",
+  "CLINICAL MANIFESTATIONS",
+  "PROPERTIES",
+  "CATEGORY",
+  "NAME",
+];
+
+function buildSummary(record) {
+  const sections = record.sections || {};
+  for (const key of PREFERRED_SUMMARY_KEYS) {
+    const body = sections[key];
+    if (typeof body === "string" && body.trim().length > 40) {
+      return body.replace(/\s+/g, " ").trim().slice(0, 220);
+    }
+  }
+  const first = Object.values(sections).find(
+    (body) => typeof body === "string" && body.trim().length > 40,
+  );
+  return String(first || "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 220);
+}
 
 for (const type of types) {
   const dir = path.join(NORMALIZED_DIR, type);
@@ -37,26 +70,35 @@ for (const type of types) {
       const record = JSON.parse(fs.readFileSync(path.join(dir, file), "utf8"));
       record.publishable = true;
       record.attribution = manifest.attribution;
-      // Compact section preview for listings
-      const firstSection = Object.values(record.sections || {}).find(
-        (body) => typeof body === "string" && body.trim().length > 40,
-      );
-      const summary = String(firstSection || "")
-        .replace(/\s+/g, " ")
-        .trim()
-        .slice(0, 220);
+      const title = record.displayTitle || record.title;
+      record.title = title;
+      const summary = buildSummary(record);
       records.push(record);
+      quality[record.quality || "partial"] =
+        (quality[record.quality || "partial"] || 0) + 1;
       catalog.push({
         type,
         slug: record.slug,
-        title: record.title,
+        title,
         sourceUrl: record.sourceUrl,
         summary,
         sectionKeys: Object.keys(record.sections || {}),
+        quality: record.quality || null,
+        channel: record.channel || null,
+        pinyin: record.pinyin || null,
+        latin: record.latin || null,
+        pointCode: record.pointCode || null,
+        category: record.category || null,
+        wordCount: record.wordCount || null,
+        searchText: (record.searchText || "").slice(0, 500),
       });
     }
   }
-  records.sort((a, b) => a.title.localeCompare(b.title));
+  records.sort((a, b) =>
+    String(a.title).localeCompare(String(b.title), undefined, {
+      sensitivity: "base",
+    }),
+  );
   counts[type] = records.length;
   writeJson(path.join(BY_TYPE_DIR, `${type}.json`), {
     type,
@@ -70,7 +112,7 @@ for (const type of types) {
 
 catalog.sort((a, b) =>
   a.type === b.type
-    ? a.title.localeCompare(b.title)
+    ? a.title.localeCompare(b.title, undefined, { sensitivity: "base" })
     : a.type.localeCompare(b.type),
 );
 
@@ -104,6 +146,7 @@ const index = {
     },
   ],
   counts,
+  quality,
   inventoryTotal: catalog.length,
   totalsApprox: {
     ...counts,
@@ -132,8 +175,10 @@ writeJson(path.join(OUT_DIR, "catalog.json"), {
   generatedAt: index.generatedAt,
   count: catalog.length,
   counts,
+  quality,
   entries: catalog,
 });
 
 console.log("Published catalog entries:", catalog.length);
 console.log("Counts:", counts);
+console.log("Quality:", quality);

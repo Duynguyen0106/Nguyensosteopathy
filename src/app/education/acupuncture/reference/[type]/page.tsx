@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
+import { CorpusDirectory } from "@/components/CorpusDirectory";
 import {
   getAcupunctureCorpusAttribution,
   getAcupunctureCorpusEntries,
@@ -118,18 +119,7 @@ export default async function AcupunctureCorpusTypePage({ params }: Props) {
             Corpus is still ingesting. Refresh after publish completes.
           </p>
         ) : (
-          <ul className="columns-1 gap-x-8 sm:columns-2 lg:columns-3">
-            {entries.map((entry) => (
-              <li key={entry.slug} className="mb-2 break-inside-avoid">
-                <Link
-                  href={`/education/acupuncture/reference/${type}/${entry.slug}`}
-                  className="text-sm font-medium text-teal hover:text-teal-dark"
-                >
-                  {entry.title || entry.label || entry.slug}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <CorpusDirectory type={type} entries={entries} />
         )}
       </section>
     </div>

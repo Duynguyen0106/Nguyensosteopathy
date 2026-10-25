@@ -14,9 +14,12 @@ import {
   NORMALIZED_DIR,
   RAW_DIR,
   assertPermission,
+  enrichRecord,
   ensureDirs,
+  extractTitle,
   loadManifest,
   parseSections,
+  promoteFormulaName,
   writeJson,
 } from "./lib.mjs";
 
@@ -35,45 +38,92 @@ const typeFilter = process.argv
   ?.split("=")[1];
 
 const byType = {};
+const qualityCounts = { full: 0, partial: 0, thin: 0 };
+const badTitles = [];
+
 for (const entry of inventory.entries) {
   if (typeFilter && entry.type !== typeFilter) continue;
   const rawPath = path.join(RAW_DIR, entry.type, `${entry.slug}.html`);
   if (!fs.existsSync(rawPath)) continue;
 
   const html = fs.readFileSync(rawPath, "utf8");
-  const sections =
+  const known =
     entry.type === "points"
-      ? parseSections(html, manifest.pointSections)
-      : parseSections(html, [
+      ? manifest.pointSections
+      : [
           "NAME",
+          "CATEGORY",
+          "PROPERTIES",
           "ACTIONS",
+          "ACTIONS AND INDICATIONS",
           "INDICATIONS",
           "INGREDIENTS",
+          "HERBS AND ACTIONS",
+          "FORMULA ACTIONS",
+          "SYNDROMES",
+          "CLINICAL MANIFESTATIONS",
+          "TREATS",
           "MODIFICATIONS",
           "CONTRAINDICATIONS",
+          "MAJOR COMBINATIONS",
           "NOTES",
           "DIAGNOSIS",
           "TREATMENT",
+          "GENERAL",
           "HERBS",
           "FORMULAS",
           "POINTS",
-        ]);
+          "LOCATION",
+          "NEEDLING",
+          "COMMAND FUNCTIONS",
+          "COMBINATIONS",
+        ];
 
-  const titleMatch =
-    html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]?.replace(/<[^>]+>/g, " ") ||
-    entry.label;
-  const title = titleMatch.replace(/\s+/g, " ").trim();
+  let sections = parseSections(html, known);
+  const title = extractTitle(html, entry.type, entry.label || entry.slug);
+  if (entry.type === "formulas") {
+    sections = promoteFormulaName(sections, title);
+  }
+  const enrichment = enrichRecord(
+    entry.type,
+    entry.slug,
+    title,
+    sections,
+    entry.url,
+  );
+
+  if (
+    !title ||
+    /^(individual herbs|herb formulas|erb formulas|point:?)$/i.test(title)
+  ) {
+    badTitles.push(`${entry.type}/${entry.slug}`);
+  }
+
+  qualityCounts[enrichment.quality] =
+    (qualityCounts[enrichment.quality] || 0) + 1;
 
   const record = {
     id: `${entry.type}:${entry.slug}`,
     type: entry.type,
     slug: entry.slug,
-    title,
+    title: enrichment.displayTitle || title,
+    rawTitle: title,
     sourceUrl: entry.url,
     source: manifest.attribution,
     gatheredAt: new Date().toISOString(),
     sections,
-    /** Clinic publishing gate — false until rewritten in clinic voice. */
+    displayTitle: enrichment.displayTitle,
+    aliases: enrichment.aliases,
+    channel: enrichment.channel,
+    pinyin: enrichment.pinyin,
+    latin: enrichment.latin,
+    pointCode: enrichment.pointCode,
+    category: enrichment.category,
+    searchText: enrichment.searchText,
+    wordCount: enrichment.wordCount,
+    sectionCount: enrichment.sectionCount,
+    quality: enrichment.quality,
+    /** Clinic publishing gate — flipped true by publish step. */
     publishable: false,
   };
 
@@ -85,8 +135,13 @@ for (const entry of inventory.entries) {
 writeJson(path.join(NORMALIZED_DIR, "parse-summary.json"), {
   parsedAt: new Date().toISOString(),
   counts: byType,
+  quality: qualityCounts,
+  badTitleCount: badTitles.length,
+  badTitleSample: badTitles.slice(0, 40),
 });
 console.log("Parsed counts:", byType);
+console.log("Quality:", qualityCounts);
+console.log("Bad titles:", badTitles.length);
 console.log(
-  "Normalized records are private + publishable:false until clinic rewrite.",
+  "Normalized records are private + publishable:false until publish step.",
 );

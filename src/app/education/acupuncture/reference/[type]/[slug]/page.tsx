@@ -32,10 +32,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const record = getAcupunctureCorpusRecord(type, slug);
   if (!record) return {};
   const typeLabel = getAcupunctureCorpusTypeLabel(type);
-  const title = fitSerpTitle(`${record.title} | ${typeLabel}`);
+  const display = record.displayTitle || record.title;
+  const title = fitSerpTitle(`${display} | ${typeLabel}`);
   const description = trimDescription(
-    Object.values(record.sections)[0] ||
-      `${record.title} — American Dragon reference at Nguyen's Osteopathic Clinic.`,
+    record.latin ||
+      record.category ||
+      Object.values(record.sections).find(
+        (body) => typeof body === "string" && body.trim().length > 40,
+      ) ||
+      `${display} — American Dragon reference at Nguyen's Osteopathic Clinic.`,
   );
   const path = `/education/acupuncture/reference/${type}/${slug}`;
   return {
@@ -63,7 +68,10 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
   const path = `/education/acupuncture/reference/${type}/${slug}`;
   const sectionEntries = Object.entries(record.sections || {}).filter(
     ([key, body]) =>
-      key !== "INTRO" && typeof body === "string" && body.trim().length > 0,
+      key !== "INTRO" &&
+      key !== "NAME" &&
+      typeof body === "string" &&
+      body.trim().length > 0,
   );
 
   const crumbsLd = breadcrumbJsonLd([
@@ -100,8 +108,24 @@ export default async function AcupunctureCorpusRecordPage({ params }: Props) {
             </Link>
           </p>
           <h1 className="mt-3 max-w-4xl font-display text-4xl text-navy md:text-5xl">
-            {record.title}
+            {record.displayTitle || record.title}
           </h1>
+          {(record.latin ||
+            record.category ||
+            record.pointCode ||
+            record.channel) && (
+            <p className="mt-3 max-w-2xl text-base text-slate-600">
+              {[
+                record.latin,
+                record.category,
+                record.pointCode && record.channel
+                  ? `${record.channel} channel`
+                  : record.channel,
+              ]
+                .filter(Boolean)
+                .join(" · ")}
+            </p>
+          )}
           <p className="mt-4 max-w-2xl text-base text-slate-600">
             Source:{" "}
             <a

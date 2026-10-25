@@ -60,7 +60,8 @@ export type BookCampaign =
   | "conditions"
   | "vi"
   | "faq"
-  | "aftercare";
+  | "aftercare"
+  | "osteopathy";
 
 /** Booking URL with UTM so Treow/analytics can attribute organic SEO. */
 export function bookHref(campaign: BookCampaign): string {

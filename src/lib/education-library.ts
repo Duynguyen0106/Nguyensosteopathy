@@ -4,7 +4,39 @@
  */
 
 import libraryData from "@/data/education-library.json";
+import overlapData from "@/data/library-condition-overlap.json";
 import { getNutritionBlogMeta } from "@/lib/blog-posts-nutrition";
+
+const blockedTopicKeySet = new Set(overlapData.blockedTopicKeys);
+const overlapRedirects = overlapData.redirects as Record<string, string>;
+const legacySheetRedirects = overlapData.legacySheetRedirects as Record<
+  string,
+  string
+>;
+
+/** True when a library topic duplicates /conditions or a clinical service lander. */
+export function isLibraryConditionOverlapTopic(topicKey: string): boolean {
+  if (blockedTopicKeySet.has(topicKey)) return true;
+  if (topicKey.startsWith("reference-")) {
+    return blockedTopicKeySet.has(topicKey.slice("reference-".length));
+  }
+  return false;
+}
+
+export function getLibraryOverlapRedirect(topicKey: string): string | undefined {
+  if (overlapRedirects[topicKey]) return overlapRedirects[topicKey];
+  if (topicKey.startsWith("reference-")) {
+    const base = topicKey.slice("reference-".length);
+    return overlapRedirects[`reference-${base}`] ?? overlapRedirects[base];
+  }
+  return undefined;
+}
+
+export function getLegacyLibrarySheetRedirect(
+  slug: string,
+): string | undefined {
+  return legacySheetRedirects[slug];
+}
 
 export type LibraryRelatedBlog = {
   slug: string;
@@ -166,7 +198,7 @@ export const libraryCategoryOrder: {
   {
     id: "wellness-themes",
     label: "Wellness themes",
-    description: "Energy, sleep, joints, and related wellness topics.",
+    description: "Energy, sleep, and related wellness topics (not condition landers).",
   },
   {
     id: "sports-weight",
@@ -213,6 +245,7 @@ export function getLibraryArticle(slug: string): LibraryArticle | undefined {
 }
 
 export function getLibraryTheme(topicKey: string): LibraryTheme | undefined {
+  if (isLibraryConditionOverlapTopic(topicKey)) return undefined;
   return libraryThemes.find((theme) => theme.topicKey === topicKey);
 }
 
@@ -227,7 +260,13 @@ export function getLibraryArticleCount(): number {
 /** Sheet URLs that should stay in the sitemap (single-sheet, indexable). */
 export function getSitemapLibraryArticleSlugs(): string[] {
   return libraryArticles
-    .filter((article) => !article.redirectsToTopic && !article.needsReview)
+    .filter(
+      (article) =>
+        !article.redirectsToTopic &&
+        !article.needsReview &&
+        !isLibraryConditionOverlapTopic(article.topicKey) &&
+        !getLegacyLibrarySheetRedirect(article.slug),
+    )
     .map((article) => article.slug);
 }
 
@@ -257,7 +296,10 @@ export function articleRedirectsToTopic(article: LibraryArticle): boolean {
 }
 
 export function getLibraryTopic(topicKey: string): LibraryTopic | undefined {
-  const articles = getLibraryArticlesByTopic(topicKey);
+  if (isLibraryConditionOverlapTopic(topicKey)) return undefined;
+  const articles = getLibraryArticlesByTopic(topicKey).filter(
+    (article) => !isLibraryConditionOverlapTopic(article.topicKey),
+  );
   if (articles.length === 0) return undefined;
   const lead = articles.find((article) => !article.needsReview) ?? articles[0];
   const theme = getLibraryTheme(topicKey);
@@ -277,7 +319,11 @@ export function getLibraryTopic(topicKey: string): LibraryTopic | undefined {
 }
 
 export function getAllLibraryTopicKeys(): string[] {
-  const keys = new Set(libraryArticles.map((article) => article.topicKey));
+  const keys = new Set(
+    libraryArticles
+      .map((article) => article.topicKey)
+      .filter((key) => !isLibraryConditionOverlapTopic(key)),
+  );
   return [...keys].sort((a, b) => a.localeCompare(b));
 }
 
@@ -287,6 +333,7 @@ export function getAllLibraryTopicKeys(): string[] {
  */
 export function getSitemapLibraryTopicKeys(): string[] {
   return getAllLibraryTopicKeys().filter((key) => {
+    if (isLibraryConditionOverlapTopic(key)) return false;
     const topic = getLibraryTopic(key);
     return Boolean(topic && !topic.needsReview && topic.sheetCount > 1);
   });

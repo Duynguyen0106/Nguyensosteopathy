@@ -1,0 +1,53 @@
+{
+  "note": "Library / supplement wellness topics that duplicate /conditions or clinical service landers. Keep ingredient hubs; block condition stand-ins.",
+  "blockedTopicKeys": [
+    "arthritis",
+    "osteoporosis",
+    "inflammation",
+    "muscle",
+    "pregnancy",
+    "sciatica",
+    "joint-pain",
+    "tendon",
+    "headache",
+    "migraine",
+    "gout",
+    "bone-health",
+    "cramp"
+  ],
+  "redirects": {
+    "arthritis": "/conditions",
+    "osteoporosis": "/conditions/osteoporosis",
+    "inflammation": "/conditions",
+    "muscle": "/conditions",
+    "pregnancy": "/services/pregnancy-support",
+    "sciatica": "/conditions/sciatica",
+    "joint-pain": "/conditions",
+    "tendon": "/conditions",
+    "headache": "/conditions/cervicogenic-headache",
+    "migraine": "/conditions/cervicogenic-headache",
+    "gout": "/conditions",
+    "bone-health": "/conditions/osteoporosis",
+    "cramp": "/conditions",
+    "reference-inflammation": "/education/library",
+    "reference-muscle": "/education/library",
+    "reference-arthritis": "/education/library",
+    "reference-osteoporosis": "/education/library",
+    "reference-pregnancy": "/education/library"
+  },
+  "legacySheetRedirects": {
+    "p123-arthritis": "/conditions",
+    "p127-arthritis": "/conditions",
+    "p211-osteoporosis": "/conditions/osteoporosis",
+    "p185-inflammation": "/conditions",
+    "p203-inflammation": "/conditions",
+    "p216-inflammation": "/conditions",
+    "p057-muscle": "/conditions",
+    "p087-muscle": "/conditions",
+    "p177-muscle": "/conditions",
+    "p042-pregnancy": "/services/pregnancy-support",
+    "p085-pregnancy": "/services/pregnancy-support",
+    "p119-pregnancy": "/services/pregnancy-support",
+    "p228-inflammation": "/education/library"
+  }
+}

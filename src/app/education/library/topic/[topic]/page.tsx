@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { AuthorBio } from "@/components/AuthorBio";
 import { ButtonLink } from "@/components/Button";
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
@@ -8,8 +8,10 @@ import { LibraryEvidencePanel } from "@/components/education/LibraryEvidencePane
 import {
   getAllLibraryTopicKeys,
   getLibraryCategoryLabel,
+  getLibraryOverlapRedirect,
   getLibraryTopic,
   getUniqueThemeAngles,
+  isLibraryConditionOverlapTopic,
 } from "@/lib/education-library";
 import {
   getTopicEvidence,
@@ -31,6 +33,14 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topic: topicKey } = await params;
+  if (isLibraryConditionOverlapTopic(topicKey)) {
+    const dest = getLibraryOverlapRedirect(topicKey) ?? "/conditions";
+    return {
+      title: fitSerpTitle("Moved to conditions"),
+      alternates: { canonical: dest },
+      robots: { index: false, follow: true },
+    };
+  }
   const topic = getLibraryTopic(topicKey);
   if (!topic) return {};
 
@@ -69,6 +79,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function EducationLibraryTopicPage({ params }: Props) {
   const { topic: topicKey } = await params;
+  if (isLibraryConditionOverlapTopic(topicKey)) {
+    permanentRedirect(getLibraryOverlapRedirect(topicKey) ?? "/conditions");
+  }
   const topic = getLibraryTopic(topicKey);
   if (!topic) notFound();
 

@@ -1,4 +1,20 @@
 import type { NextConfig } from "next";
+import libraryOverlap from "./src/data/library-condition-overlap.json";
+
+const libraryOverlapRedirects = [
+  ...Object.entries(libraryOverlap.redirects).map(([topic, destination]) => ({
+    source: `/education/library/topic/${topic}`,
+    destination,
+    permanent: true,
+  })),
+  ...Object.entries(libraryOverlap.legacySheetRedirects).map(
+    ([slug, destination]) => ({
+      source: `/education/library/${slug}`,
+      destination,
+      permanent: true,
+    }),
+  ),
+];
 
 const nextConfig: NextConfig = {
   experimental: {
@@ -77,6 +93,7 @@ const nextConfig: NextConfig = {
     // Canonical SEO pages are /services/[slug]. Legacy hubs 301 here.
     // Keep /osteopathy, /desk-pain, /cupping as standalone guides (not in services[]).
     return [
+      ...libraryOverlapRedirects,
       {
         // Crawlers sometimes request /sitemap without the .xml extension.
         source: "/sitemap",

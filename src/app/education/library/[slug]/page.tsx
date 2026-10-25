@@ -7,10 +7,13 @@ import { EducationAudienceBanner } from "@/components/education/EducationAudienc
 import {
   articleRedirectsToTopic,
   getAllLibrarySlugs,
+  getLegacyLibrarySheetRedirect,
   getLibraryArticle,
   getLibraryArticlesByTopic,
   getLibraryCategoryLabel,
+  getLibraryOverlapRedirect,
   getRelatedBlogForTopic,
+  isLibraryConditionOverlapTopic,
   libraryArticles,
 } from "@/lib/education-library";
 import { hasTopicEvidence } from "@/lib/library-evidence";
@@ -30,8 +33,26 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
+  const legacy = getLegacyLibrarySheetRedirect(slug);
+  if (legacy) {
+    return {
+      title: fitSerpTitle("Moved"),
+      alternates: { canonical: legacy },
+      robots: { index: false, follow: true },
+    };
+  }
   const article = getLibraryArticle(slug);
   if (!article) return {};
+
+  if (isLibraryConditionOverlapTopic(article.topicKey)) {
+    const dest =
+      getLibraryOverlapRedirect(article.topicKey) ?? "/education/library";
+    return {
+      title: fitSerpTitle("Moved"),
+      alternates: { canonical: dest },
+      robots: { index: false, follow: true },
+    };
+  }
 
   if (articleRedirectsToTopic(article)) {
     const topicPath = `/education/library/topic/${article.topicKey}`;
@@ -69,8 +90,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function EducationLibraryArticlePage({ params }: Props) {
   const { slug } = await params;
+  const legacy = getLegacyLibrarySheetRedirect(slug);
+  if (legacy) permanentRedirect(legacy);
+
   const article = getLibraryArticle(slug);
   if (!article) notFound();
+
+  if (isLibraryConditionOverlapTopic(article.topicKey)) {
+    permanentRedirect(
+      getLibraryOverlapRedirect(article.topicKey) ?? "/education/library",
+    );
+  }
 
   if (articleRedirectsToTopic(article)) {
     permanentRedirect(`/education/library/topic/${article.topicKey}`);

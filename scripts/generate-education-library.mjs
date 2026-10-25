@@ -19,7 +19,24 @@ import {
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CORPUS = "/tmp/adobe-guide/corpus/pages.json";
 const OUT = path.join(ROOT, "src/data/education-library.json");
+const OVERLAP = JSON.parse(
+  fs.readFileSync(
+    path.join(ROOT, "src/data/library-condition-overlap.json"),
+    "utf8",
+  ),
+);
 const MIN_WORDS = 500;
+
+const CONDITION_OVERLAP_TOPIC_KEYS = new Set(OVERLAP.blockedTopicKeys || []);
+
+function isConditionOverlapKey(topicKey) {
+  if (!topicKey) return false;
+  if (CONDITION_OVERLAP_TOPIC_KEYS.has(topicKey)) return true;
+  if (topicKey.startsWith("reference-")) {
+    return CONDITION_OVERLAP_TOPIC_KEYS.has(topicKey.slice("reference-".length));
+  }
+  return false;
+}
 
 /** Common ingredients / themes to detect in OCR (longest first). */
 const KNOWN_TOPICS = [
@@ -525,20 +542,27 @@ function isIngredientCategory(category) {
   ].includes(category);
 }
 
-/** Prefer ingredient topics over wellness themes for product-sheet titles. */
+/** Prefer ingredient topics; never pick condition-overlap wellness stand-ins. */
 function pickPrimaryTopicLabel(topicLabels, kind) {
-  if (!topicLabels.length) return null;
-  if (kind !== "product") return topicLabels[0];
-  const ingredient = topicLabels.find((label) => {
+  const allowed = topicLabels.filter(
+    (label) => !isConditionOverlapKey(canonicalTopicKey(label)),
+  );
+  if (!allowed.length) return null;
+  if (kind !== "product") return allowed[0];
+  const ingredient = allowed.find((label) => {
     const key = canonicalTopicKey(label);
     return isIngredientCategory(categoryForTopicKey(key, "products-a-z"));
   });
-  return ingredient || topicLabels[0];
+  return ingredient || allowed[0];
 }
 
 function buildArticle(page) {
   const kind = sectionKind(page.section);
-  const topics = extractTopics(page).map(titleCaseTopic);
+  // Drop condition-overlap labels so ingredient notes do not advertise
+  // competing clinical landers in “also touching …” copy.
+  const topics = extractTopics(page)
+    .map(titleCaseTopic)
+    .filter((label) => !isConditionOverlapKey(canonicalTopicKey(label)));
   const pageNo = page.page;
   const primaryTopic = pickPrimaryTopicLabel(topics, kind);
 
@@ -602,8 +626,17 @@ function buildArticle(page) {
     category = categoryFromSectionOnly(page.section);
   }
 
+  // Condition landers live under /conditions (or pregnancy service) — never
+  // publish overlapping wellness hubs in the supplement library.
+  if (isConditionOverlapKey(topicKey)) {
+    topicKey = `note-${String(pageNo).padStart(3, "0")}`;
+    topicTitle = primary;
+    category = categoryFromSectionOnly(page.section);
+  }
+
   const needsReview =
-    kind !== "front" && (isPlaceholder || topics.length === 0);
+    kind !== "front" &&
+    (isPlaceholder || topics.length === 0 || topicKey.startsWith("note-"));
   const variantLabel = primary;
 
   return {
@@ -695,7 +728,7 @@ for (const [topicKey, group] of byTopic) {
     }
   }
 
-  if (multi) {
+  if (multi && !isConditionOverlapKey(topicKey)) {
     const theme = buildCombinedThemeContent({
       topicKey,
       title: lead.topicTitle || lead.title,

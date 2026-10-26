@@ -14,6 +14,7 @@ import {
 import {
   breadcrumbJsonLd,
   defaultOgImage,
+  absoluteSerpTitle,
   fitSerpTitle,
   trimDescription,
 } from "@/lib/seo";
@@ -40,10 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = fitSerpTitle(article.title);
   const description = trimDescription(article.summary);
   const path = educationHref(track.id, article.slug);
-  const ogTitle =
-    typeof title === "string"
-      ? `${article.title} | ${site.name}`
-      : title.absolute;
+  const ogTitle = absoluteSerpTitle(title);
 
   return {
     title,

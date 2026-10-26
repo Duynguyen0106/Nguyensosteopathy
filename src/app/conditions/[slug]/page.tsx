@@ -17,6 +17,7 @@ import {
   breadcrumbJsonLd,
   defaultOgImage,
   enrichDescription,
+  absoluteSerpTitle,
   fitSerpTitle,
 } from "@/lib/seo";
 import { bookHref, spineConditionSlugs } from "@/lib/seo-strategy";
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: `/conditions/${condition.slug}` },
     keywords: condition.keywords,
     openGraph: {
-      title: `${title} | ${site.name}`,
+      title: absoluteSerpTitle(title),
       description,
       url: `/conditions/${condition.slug}`,
       images: [defaultOgImage],

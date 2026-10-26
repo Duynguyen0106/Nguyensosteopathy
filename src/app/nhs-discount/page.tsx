@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { defaultOgImage } from "@/lib/seo";
+import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { breadcrumbJsonLd, defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -38,6 +40,10 @@ const points = [
     title: "How to book",
     body: "Book online as usual, then show ID at the pharmacy clinic. Call if you are unsure which appointment type to choose.",
   },
+  {
+    title: "What to bring",
+    body: "Photo ID that shows your NHS role or student status — for example an NHS staff card, university ID, or enrolment letter.",
+  },
 ] as const;
 
 export default function NhsDiscountPage() {
@@ -55,6 +61,11 @@ export default function NhsDiscountPage() {
       seller: { "@id": `${site.websiteUrl}/#clinic` },
     },
   };
+  const crumbsLd = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "NHS & student discount", path: "/nhs-discount" },
+  ]);
+  const bookUrl = bookHref("services");
 
   return (
     <div className="bg-slate-50">
@@ -62,78 +73,80 @@ export default function NhsDiscountPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
+      />
 
-      <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Community pricing · Woolwich SE18
+      <section className="relative min-h-[min(88vh,820px)] overflow-hidden text-white">
+        <Image
+          src="/images/clinic-desk.webp"
+          alt="Clinic desk at Nguyen's Osteopathic Clinic"
+          fill
+          priority
+          fetchPriority="high"
+          quality={75}
+          sizes="100vw"
+          className="object-cover object-[center_30%]"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-navy-deep/94 via-navy/80 to-navy/40"
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-navy-deep/88 via-transparent to-navy/25"
+          aria-hidden
+        />
+        <div className="relative mx-auto flex min-h-[min(88vh,820px)] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:px-8 md:pb-24">
+          <p className="about-rise text-xs font-semibold tracking-[0.28em] text-teal-mist uppercase">
+            {site.name}
           </p>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
+          <h1 className="about-rise about-rise-delay-1 mt-4 max-w-3xl font-display text-5xl leading-[1.05] md:text-7xl">
             NHS &amp; student discount
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            {site.discount}
+          <p className="about-rise about-rise-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
+            10% off eligible fees for NHS staff and students — show valid ID at
+            your appointment.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink href="/fees" variant="secondary">
+          <div className="about-rise about-rise-delay-3 mt-8 flex flex-wrap gap-3">
+            <ButtonLink href={bookUrl} variant="onDark">
+              Book online
+            </ButtonLink>
+            <ButtonLink href="/fees" variant="onDarkOutline">
               View fees
             </ButtonLink>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-display text-3xl text-navy md:text-4xl">
+          <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
             How it works
+          </p>
+          <h2 className="mt-3 max-w-2xl font-display text-3xl text-navy md:text-5xl">
+            Clear fee, same care
           </h2>
-          <ul className="mt-10 grid gap-6 sm:grid-cols-2">
+          <ul className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
             {points.map((item) => (
               <li
                 key={item.title}
-                className="rounded-xl border border-slate-200 bg-slate-50 p-5"
+                className="flex flex-col gap-1 py-5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
               >
                 <h3 className="text-lg font-semibold text-navy">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <p className="max-w-xl text-sm leading-relaxed text-slate-600 sm:text-right md:text-base">
                   {item.body}
                 </p>
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl text-navy md:text-4xl">
-            What to bring
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">
-            Bring photo ID that shows your NHS role or student status — for
-            example an NHS staff card, university ID, or letter confirming
-            enrolment. We apply the 10% reduction when we confirm ID at
-            reception inside the pharmacy. The discount covers eligible clinic
-            fees listed on the fees page; optional add-ons are confirmed before
-            treatment starts.
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">
+          <p className="mt-8 max-w-3xl text-base leading-relaxed text-slate-600">
             Online booking uses standard listed prices. Mention NHS or student
             status when you arrive so the fee is adjusted before you pay — you
-            do not need a separate promo code.
+            do not need a separate promo code. Optional add-ons are confirmed
+            before treatment starts.
           </p>
-        </div>
-      </section>
-
-      <section className="px-5 py-16 md:px-8 md:py-20">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="font-display text-3xl text-navy">Ready when you are</h2>
-          <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-            Same registered osteopathic care — with a clearer fee if you work in
-            the NHS or are studying. Explore treatments, then book a time that
-            fits.
-          </p>
-          <p className="mt-4 text-sm text-slate-600">
+          <p className="mt-6 text-sm text-slate-600">
             Related:{" "}
             <Link
               href="/blog/nhs-student-osteopathy-discount-woolwich"
@@ -156,13 +169,35 @@ export default function NhsDiscountPage() {
               New patient guide
             </Link>
           </p>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden text-white">
+        <Image
+          src="/images/clinic-room.webp"
+          alt="Treatment room at Nguyen's Osteopathic Clinic"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-navy-deep/88" aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+          <p className="text-xs font-semibold tracking-[0.28em] text-teal-mist uppercase">
+            {site.name}
+          </p>
+          <h2 className="mt-4 max-w-2xl font-display text-3xl md:text-5xl">
+            Ready when you are
+          </h2>
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
+            Same registered osteopathic care — with a clearer fee if you work in
+            the NHS or are studying.
+          </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book an appointment</ButtonLink>
-            <ButtonLink href="/services" variant="secondary">
-              Services
+            <ButtonLink href={bookUrl} variant="onDark">
+              Book an appointment
             </ButtonLink>
-            <ButtonLink href="/contact" variant="secondary">
-              Contact
+            <ButtonLink href="/services" variant="onDarkOutline">
+              Services
             </ButtonLink>
           </div>
         </div>

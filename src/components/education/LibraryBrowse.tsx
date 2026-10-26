@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useDeferredValue, useMemo, useState } from "react";
+import { letterKey } from "@/lib/corpus-format";
 
 export type LibraryBrowseTopic = {
   topicKey: string;
@@ -39,15 +40,6 @@ const LARGE_CATEGORY = 12;
 
 function topicBadge(topic: LibraryBrowseTopic): string {
   return topic.combined ? "Theme" : "Note";
-}
-
-function letterOf(title: string): string {
-  const ch = String(title || "")
-    .replace(/^\(+/, "")
-    .trim()
-    .charAt(0)
-    .toUpperCase();
-  return /[A-Z]/.test(ch) ? ch : "#";
 }
 
 export function LibraryBrowse({ groups, browse }: Props) {
@@ -146,7 +138,7 @@ export function LibraryBrowse({ groups, browse }: Props) {
               const letters = large
                 ? [
                     ...new Set(
-                      group.topics.map((topic) => letterOf(topic.title)),
+                      group.topics.map((topic) => letterKey(topic.title)),
                     ),
                   ].sort((a, b) => a.localeCompare(b))
                 : [];
@@ -154,7 +146,7 @@ export function LibraryBrowse({ groups, browse }: Props) {
                 letterByCategory[group.category] || letters[0] || "A";
               const visibleTopics = large
                 ? group.topics.filter(
-                    (topic) => letterOf(topic.title) === activeLetter,
+                    (topic) => letterKey(topic.title) === activeLetter,
                   )
                 : group.topics;
 

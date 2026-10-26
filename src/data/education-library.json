@@ -8,7 +8,7 @@
     {
       "topicKey": "amino-acid",
       "title": "Amino Acid",
-      "summary": "Amino Acid hub — claim strength, marketing language, and what graded evidence notes can and cannot prove. Dual-audience clinic education, not dosing advice.",
+      "summary": "Amino Acid hub — claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "sections": [
         {
           "heading": "What this Amino Acid theme covers",
@@ -121,7 +121,7 @@
     {
       "topicKey": "ashwagandha",
       "title": "Ashwagandha",
-      "summary": "Ashwagandha hub — plain-English framing, why the theme appears beside MSK care, and how to prepare questions. Dual-audience clinic education, not dosing advice.",
+      "summary": "Ashwagandha hub — caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "sections": [
         {
           "heading": "What this Ashwagandha theme covers",
@@ -299,7 +299,7 @@
     {
       "topicKey": "blood-pressure",
       "title": "Blood Pressure",
-      "summary": "Blood Pressure hub — loading plans, sleep, pacing, and keeping supplements from displacing hands-on care. Dual-audience clinic education, not dosing advice.",
+      "summary": "Blood Pressure hub — loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "sections": [
         {
           "heading": "What this Blood Pressure theme covers",
@@ -436,7 +436,7 @@
     {
       "topicKey": "bromelain",
       "title": "Bromelain",
-      "summary": "Bromelain hub — claim strength, marketing language, and what graded evidence notes can and cannot prove. Dual-audience clinic education, not dosing advice.",
+      "summary": "Bromelain hub — older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "sections": [
         {
           "heading": "What this Bromelain theme covers",
@@ -646,7 +646,7 @@
     {
       "topicKey": "collagen",
       "title": "Collagen",
-      "summary": "Collagen: plain-English framing, why the theme appears beside MSK care, and how to prepare questions. Dual-audience clinic education, not dosing advice.",
+      "summary": "Collagen hub — consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "sections": [
         {
           "heading": "What this Collagen theme covers",
@@ -767,7 +767,7 @@
     {
       "topicKey": "coq10",
       "title": "Coenzyme Q10",
-      "summary": "Coenzyme Q10: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care. Dual-audience clinic education, not dosing advice.",
+      "summary": "Coenzyme Q10 hub — loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "sections": [
         {
           "heading": "What this Coenzyme Q10 theme covers",
@@ -856,7 +856,7 @@
     {
       "topicKey": "cranberry",
       "title": "Cranberry",
-      "summary": "In the Cranberry theme, we emphasise plain-English framing, why the theme appears beside MSK care, and how to prepare questions. Dual-audience clinic education, not dosing advice.",
+      "summary": "Cranberry hub — plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "sections": [
         {
           "heading": "What this Cranberry theme covers",
@@ -1042,7 +1042,7 @@
     {
       "topicKey": "devils-claw",
       "title": "Devil's Claw",
-      "summary": "Devil's Claw: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care. Dual-audience clinic education, not dosing advice.",
+      "summary": "Devil's Claw hub — plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "sections": [
         {
           "heading": "What this Devil's Claw theme covers",
@@ -1147,7 +1147,7 @@
     {
       "topicKey": "eczema",
       "title": "Eczema",
-      "summary": "Eczema hub — older adults, polypharmacy, pregnancy planning, and when GP bloods matter first. Dual-audience clinic education, not dosing advice.",
+      "summary": "Eczema hub — consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "sections": [
         {
           "heading": "What this Eczema theme covers",
@@ -1236,7 +1236,7 @@
     {
       "topicKey": "elderberry",
       "title": "Elderberry",
-      "summary": "In the Elderberry theme, we emphasise training load, return-to-play markers, hydration, and sport-rule awareness. Dual-audience clinic education, not dosing advice.",
+      "summary": "Elderberry hub — training load, return-to-play markers, hydration, and sport-rule awareness.",
       "sections": [
         {
           "heading": "What this Elderberry theme covers",
@@ -1325,7 +1325,7 @@
     {
       "topicKey": "energy",
       "title": "Energy",
-      "summary": "Energy hub — training load, return-to-play markers, hydration, and sport-rule awareness. Dual-audience clinic education, not dosing advice.",
+      "summary": "Energy hub — training load, return-to-play markers, hydration, and sport-rule awareness.",
       "sections": [
         {
           "heading": "What this Energy theme covers",
@@ -1494,7 +1494,7 @@
     {
       "topicKey": "fatigue",
       "title": "Fatigue",
-      "summary": "Fatigue: claim strength, marketing language, and what graded evidence notes can and cannot prove. Dual-audience clinic education, not dosing advice.",
+      "summary": "Fatigue hub — claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "sections": [
         {
           "heading": "What this Fatigue theme covers",
@@ -1607,7 +1607,7 @@
     {
       "topicKey": "folic-acid",
       "title": "Folic Acid",
-      "summary": "Folic Acid: duration, functional success markers, reassessment dates, and when to stop. Dual-audience clinic education, not dosing advice.",
+      "summary": "Folic Acid hub — red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "sections": [
         {
           "heading": "What this Folic Acid theme covers",
@@ -1696,7 +1696,7 @@
     {
       "topicKey": "garlic",
       "title": "Garlic",
-      "summary": "Garlic hub — consent language, scope boundaries, documentation, and CPD-style discussion prompts. Dual-audience clinic education, not dosing advice.",
+      "summary": "Garlic hub — dietary pattern, meal regularity, and when food already covers everyday needs.",
       "sections": [
         {
           "heading": "What this Garlic theme covers",
@@ -1793,7 +1793,7 @@
     {
       "topicKey": "ginseng",
       "title": "Ginseng",
-      "summary": "Ginseng hub — duration, functional success markers, reassessment dates, and when to stop. Dual-audience clinic education, not dosing advice.",
+      "summary": "Ginseng hub — training load, return-to-play markers, hydration, and sport-rule awareness.",
       "sections": [
         {
           "heading": "What this Ginseng theme covers",
@@ -1890,7 +1890,7 @@
     {
       "topicKey": "green-tea",
       "title": "Green Tea",
-      "summary": "Green Tea hub — older adults, polypharmacy, pregnancy planning, and when GP bloods matter first. Dual-audience clinic education, not dosing advice.",
+      "summary": "Green Tea hub — older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "sections": [
         {
           "heading": "What this Green Tea theme covers",
@@ -1979,7 +1979,7 @@
     {
       "topicKey": "indigestion",
       "title": "Indigestion",
-      "summary": "In the Indigestion theme, we emphasise training load, return-to-play markers, hydration, and sport-rule awareness. Dual-audience clinic education, not dosing advice.",
+      "summary": "Indigestion hub — duration, functional success markers, reassessment dates, and when to stop.",
       "sections": [
         {
           "heading": "What this Indigestion theme covers",
@@ -2068,7 +2068,7 @@
     {
       "topicKey": "iron",
       "title": "Iron",
-      "summary": "Iron hub — caffeine timing, stress load, evening routines, and recovery basics that outrank products. Dual-audience clinic education, not dosing advice.",
+      "summary": "Iron hub — caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "sections": [
         {
           "heading": "What this Iron theme covers",
@@ -2157,7 +2157,7 @@
     {
       "topicKey": "lecithin",
       "title": "Lecithin",
-      "summary": "Lecithin: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks. Dual-audience clinic education, not dosing advice.",
+      "summary": "Lecithin hub — medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "sections": [
         {
           "heading": "What this Lecithin theme covers",
@@ -2246,7 +2246,7 @@
     {
       "topicKey": "magnesium",
       "title": "Magnesium",
-      "summary": "Magnesium hub — medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks. Dual-audience clinic education, not dosing advice.",
+      "summary": "Magnesium hub — medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "sections": [
         {
           "heading": "What this Magnesium theme covers",
@@ -2431,7 +2431,7 @@
     {
       "topicKey": "melatonin",
       "title": "Melatonin",
-      "summary": "Melatonin: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first. Dual-audience clinic education, not dosing advice.",
+      "summary": "Melatonin hub — consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "sections": [
         {
           "heading": "What this Melatonin theme covers",
@@ -2520,7 +2520,7 @@
     {
       "topicKey": "menopause",
       "title": "Menopause",
-      "summary": "Menopause: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first. Dual-audience clinic education, not dosing advice.",
+      "summary": "Menopause hub — training load, return-to-play markers, hydration, and sport-rule awareness.",
       "sections": [
         {
           "heading": "What this Menopause theme covers",
@@ -2714,7 +2714,7 @@
     {
       "topicKey": "omega-3",
       "title": "Omega-3",
-      "summary": "Omega-3: red-flag symptoms, urgent care thresholds, and not delaying medical assessment. Dual-audience clinic education, not dosing advice.",
+      "summary": "Omega-3 hub — loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "sections": [
         {
           "heading": "What this Omega-3 theme covers",
@@ -2803,7 +2803,7 @@
     {
       "topicKey": "peppermint",
       "title": "Peppermint",
-      "summary": "In the Peppermint theme, we emphasise detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks. Dual-audience clinic education, not dosing advice.",
+      "summary": "Peppermint hub — duration, functional success markers, reassessment dates, and when to stop.",
       "sections": [
         {
           "heading": "What this Peppermint theme covers",
@@ -2916,7 +2916,7 @@
     {
       "topicKey": "potassium",
       "title": "Potassium",
-      "summary": "Potassium hub — older adults, polypharmacy, pregnancy planning, and when GP bloods matter first. Dual-audience clinic education, not dosing advice.",
+      "summary": "Potassium hub — training load, return-to-play markers, hydration, and sport-rule awareness.",
       "sections": [
         {
           "heading": "What this Potassium theme covers",
@@ -3021,7 +3021,7 @@
     {
       "topicKey": "probiotic",
       "title": "Probiotic",
-      "summary": "Probiotic: red-flag symptoms, urgent care thresholds, and not delaying medical assessment. Dual-audience clinic education, not dosing advice.",
+      "summary": "Probiotic hub — caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "sections": [
         {
           "heading": "What this Probiotic theme covers",
@@ -3231,7 +3231,7 @@
     {
       "topicKey": "psyllium",
       "title": "Psyllium",
-      "summary": "Psyllium: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first. Dual-audience clinic education, not dosing advice.",
+      "summary": "Psyllium hub — plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "sections": [
         {
           "heading": "What this Psyllium theme covers",
@@ -3320,7 +3320,7 @@
     {
       "topicKey": "quercetin",
       "title": "Quercetin",
-      "summary": "Quercetin hub — claim strength, marketing language, and what graded evidence notes can and cannot prove. Dual-audience clinic education, not dosing advice.",
+      "summary": "Quercetin hub — loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "sections": [
         {
           "heading": "What this Quercetin theme covers",
@@ -3417,7 +3417,7 @@
     {
       "topicKey": "saw-palmetto",
       "title": "Saw Palmetto",
-      "summary": "Saw Palmetto: plain-English framing, why the theme appears beside MSK care, and how to prepare questions. Dual-audience clinic education, not dosing advice.",
+      "summary": "Saw Palmetto hub — plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "sections": [
         {
           "heading": "What this Saw Palmetto theme covers",
@@ -3506,7 +3506,7 @@
     {
       "topicKey": "slippery-elm",
       "title": "Slippery Elm",
-      "summary": "In the Slippery Elm theme, we emphasise plain-English framing, why the theme appears beside MSK care, and how to prepare questions. Dual-audience clinic education, not dosing advice.",
+      "summary": "Slippery Elm hub — training load, return-to-play markers, hydration, and sport-rule awareness.",
       "sections": [
         {
           "heading": "What this Slippery Elm theme covers",
@@ -3603,7 +3603,7 @@
     {
       "topicKey": "spirulina",
       "title": "Spirulina",
-      "summary": "Spirulina: duration, functional success markers, reassessment dates, and when to stop. Dual-audience clinic education, not dosing advice.",
+      "summary": "Spirulina hub — detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "sections": [
         {
           "heading": "What this Spirulina theme covers",
@@ -3692,7 +3692,7 @@
     {
       "topicKey": "tissue-salt",
       "title": "Tissue Salt",
-      "summary": "Tissue Salt: dietary pattern, meal regularity, and when food already covers everyday needs. Dual-audience clinic education, not dosing advice.",
+      "summary": "Tissue Salt hub — dietary pattern, meal regularity, and when food already covers everyday needs.",
       "sections": [
         {
           "heading": "What this Tissue Salt theme covers",
@@ -3789,7 +3789,7 @@
     {
       "topicKey": "valerian",
       "title": "Valerian",
-      "summary": "Valerian hub — dose totals, duplicate actives, proprietary blends, and a calm pack-reading method. Dual-audience clinic education, not dosing advice.",
+      "summary": "Valerian hub — dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "sections": [
         {
           "heading": "What this Valerian theme covers",
@@ -3878,7 +3878,7 @@
     {
       "topicKey": "vitamin-a",
       "title": "Vitamin A",
-      "summary": "Vitamin A hub — dose totals, duplicate actives, proprietary blends, and a calm pack-reading method. Dual-audience clinic education, not dosing advice.",
+      "summary": "Vitamin A hub — dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "sections": [
         {
           "heading": "What this Vitamin A theme covers",
@@ -3967,7 +3967,7 @@
     {
       "topicKey": "vitamin-k",
       "title": "Vitamin K",
-      "summary": "Vitamin K: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method. Dual-audience clinic education, not dosing advice.",
+      "summary": "Vitamin K hub — dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "sections": [
         {
           "heading": "What this Vitamin K theme covers",
@@ -4056,7 +4056,7 @@
     {
       "topicKey": "whey-protein",
       "title": "Whey Protein",
-      "summary": "In the Whey Protein theme, we emphasise medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks. Dual-audience clinic education, not dosing advice.",
+      "summary": "Whey Protein hub — detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "sections": [
         {
           "heading": "What this Whey Protein theme covers",
@@ -4145,7 +4145,7 @@
     {
       "topicKey": "zinc",
       "title": "Zinc",
-      "summary": "In the Zinc theme, we emphasise dietary pattern, meal regularity, and when food already covers everyday needs. Dual-audience clinic education, not dosing advice.",
+      "summary": "Zinc hub — dietary pattern, meal regularity, and when food already covers everyday needs.",
       "sections": [
         {
           "heading": "What this Zinc theme covers",
@@ -4382,7 +4382,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "Amino Acid: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Amino Acid: claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "status": "published",
       "topics": [
         "Amino Acid"
@@ -4467,7 +4467,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Omega-3",
-      "summary": "Omega-3: before surgery, chemotherapy, or new anticoagulant regimens, ask the treating team which supplements to pause.",
+      "summary": "Omega-3: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Omega-3"
@@ -4552,7 +4552,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Energy",
-      "summary": "Energy: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Energy: training load, return-to-play markers, hydration, and sport-rule awareness.",
       "status": "published",
       "topics": [
         "Energy"
@@ -4637,7 +4637,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Vitamin K",
-      "summary": "Vitamin K: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Vitamin K: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Vitamin K"
@@ -4722,7 +4722,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Dandelion",
-      "summary": "If you already take Dandelion and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Dandelion: goal setting, stop rules, diaries, and what to bring to clinic or pharmacy.",
       "status": "published",
       "topics": [
         "Dandelion"
@@ -4807,7 +4807,7 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "Collagen: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Collagen: consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "status": "published",
       "topics": [
         "Collagen"
@@ -4892,7 +4892,7 @@
       "variantLabel": "Alpha Lipoic Acid",
       "needsReview": false,
       "title": "Alpha Lipoic Acid",
-      "summary": "Alpha Lipoic Acid: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take.",
+      "summary": "Alpha Lipoic Acid often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Alpha Lipoic Acid"
@@ -4973,7 +4973,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Cholesterol",
-      "summary": "Cholesterol: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Cholesterol: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Cholesterol"
@@ -5058,7 +5058,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "Amino Acid: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Amino Acid: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Amino Acid"
@@ -5143,7 +5143,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Ashwagandha",
-      "summary": "Ashwagandha: before surgery, chemotherapy, or new anticoagulant regimens, ask the treating team which supplements to pause.",
+      "summary": "Ashwagandha: caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "status": "published",
       "topics": [
         "Ashwagandha"
@@ -5228,7 +5228,7 @@
       "variantLabel": "Astragalus",
       "needsReview": false,
       "title": "Astragalus",
-      "summary": "Astragalus: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Astragalus often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Astragalus"
@@ -5394,7 +5394,7 @@
       "variantLabel": "Branched Chain",
       "needsReview": false,
       "title": "Branched Chain",
-      "summary": "Branched Chain: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Branched Chain often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Branched Chain"
@@ -5475,7 +5475,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "If you already take Magnesium and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Magnesium: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -5641,7 +5641,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Quercetin",
-      "summary": "If you are curious about Quercetin, bring the product label or a photo to your appointment.",
+      "summary": "Quercetin: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Quercetin"
@@ -5726,7 +5726,7 @@
       "variantLabel": "Immunity",
       "needsReview": false,
       "title": "Immunity",
-      "summary": "Even when Immunity is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Immunity often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Immunity"
@@ -5807,7 +5807,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Energy",
-      "summary": "If you are curious about Energy, bring the product label or a photo to your appointment.",
+      "summary": "Energy: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Energy"
@@ -5977,7 +5977,7 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Vitamin K",
-      "summary": "Vitamin K: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Vitamin K: consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "status": "published",
       "topics": [
         "Vitamin K"
@@ -6062,7 +6062,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Spirulina",
-      "summary": "If you are curious about Spirulina, bring the product label or a photo to your appointment.",
+      "summary": "Spirulina: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Spirulina"
@@ -6147,7 +6147,7 @@
       "variantLabel": "Boswellia",
       "needsReview": false,
       "title": "Boswellia",
-      "summary": "Boswellia: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Boswellia often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Boswellia"
@@ -6228,7 +6228,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Bromelain",
-      "summary": "If you already take Bromelain and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Bromelain: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Bromelain"
@@ -6313,7 +6313,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Magnesium: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Magnesium: caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -6398,7 +6398,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Omega-3",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Omega-3 is even worth a time-limited trial.",
+      "summary": "Omega-3: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Omega-3"
@@ -6483,7 +6483,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Magnesium is even worth a time-limited trial.",
+      "summary": "Magnesium: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -6568,7 +6568,7 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Tissue Salt",
-      "summary": "Tissue Salt: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Tissue Salt: dietary pattern, meal regularity, and when food already covers everyday needs.",
       "status": "published",
       "topics": [
         "Tissue Salt"
@@ -6653,7 +6653,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Tissue Salt",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Tissue Salt is even worth a time-limited trial.",
+      "summary": "Tissue Salt: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Tissue Salt"
@@ -6823,7 +6823,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "Blood Pressure: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Blood Pressure: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -6989,7 +6989,7 @@
       "variantLabel": "Hyaluronic Acid",
       "needsReview": false,
       "title": "Hyaluronic Acid",
-      "summary": "Hyaluronic Acid: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Hyaluronic Acid often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Hyaluronic Acid"
@@ -7070,7 +7070,7 @@
       "variantLabel": "Diabetes",
       "needsReview": false,
       "title": "Diabetes",
-      "summary": "Diabetes: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take.",
+      "summary": "Diabetes often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Diabetes"
@@ -7151,7 +7151,7 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Melatonin",
-      "summary": "Melatonin: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Melatonin: consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "status": "published",
       "topics": [
         "Melatonin"
@@ -7236,7 +7236,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Cholesterol",
-      "summary": "If you already take Cholesterol and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Cholesterol: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Cholesterol"
@@ -7321,7 +7321,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Spirulina",
-      "summary": "Spirulina: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Spirulina: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Spirulina"
@@ -7406,7 +7406,7 @@
       "variantLabel": "Chondroitin",
       "needsReview": false,
       "title": "Chondroitin",
-      "summary": "Chondroitin: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Chondroitin often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Chondroitin"
@@ -7487,7 +7487,7 @@
       "variantLabel": "Chromium",
       "needsReview": false,
       "title": "Chromium",
-      "summary": "Even when Chromium is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Chromium often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Chromium"
@@ -7568,7 +7568,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Amino Acid",
-      "summary": "Amino Acid: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take.",
+      "summary": "Amino Acid: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Amino Acid"
@@ -7653,7 +7653,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Energy",
-      "summary": "Energy: before surgery, chemotherapy, or new anticoagulant regimens, ask the treating team which supplements to pause.",
+      "summary": "Energy: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Energy"
@@ -7738,7 +7738,7 @@
       "variantLabel": "Vitamin B12",
       "needsReview": false,
       "title": "Vitamin B12",
-      "summary": "Even when Vitamin B12 is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Vitamin B12 often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Vitamin B12"
@@ -7819,7 +7819,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Energy",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Energy is even worth a time-limited trial.",
+      "summary": "Energy: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Energy"
@@ -7904,7 +7904,7 @@
       "variantLabel": "Cod Liver Oil",
       "needsReview": false,
       "title": "Cod Liver Oil",
-      "summary": "If you are curious about Cod Liver Oil, bring the product label or a photo to your appointment.",
+      "summary": "Cod Liver Oil often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Cod Liver Oil"
@@ -7985,7 +7985,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Coenzyme Q10",
-      "summary": "Coenzyme Q10: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take.",
+      "summary": "Coenzyme Q10: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Coenzyme Q10"
@@ -8070,7 +8070,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Potassium",
-      "summary": "If you already take Potassium and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Potassium: training load, return-to-play markers, hydration, and sport-rule awareness.",
       "status": "published",
       "topics": [
         "Potassium"
@@ -8155,7 +8155,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "If you already take Magnesium and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel (1).",
+      "summary": "Magnesium: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -8240,7 +8240,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Magnesium: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Magnesium: goal setting, stop rules, diaries, and what to bring to clinic or pharmacy.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -8325,7 +8325,7 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Magnesium: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take.",
+      "summary": "Magnesium: consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -8410,7 +8410,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Magnesium is even worth a time-limited trial (1).",
+      "summary": "Magnesium: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -8495,7 +8495,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Magnesium: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype (1).",
+      "summary": "Magnesium: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -8580,7 +8580,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Potassium",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Potassium is even worth a time-limited trial.",
+      "summary": "Potassium: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Potassium"
@@ -8665,7 +8665,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Iron",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Iron is even worth a time-limited trial.",
+      "summary": "Iron: caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "status": "published",
       "topics": [
         "Iron"
@@ -8750,7 +8750,7 @@
       "variantLabel": "Cordyceps",
       "needsReview": false,
       "title": "Cordyceps",
-      "summary": "Cordyceps: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Cordyceps often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Cordyceps"
@@ -8831,7 +8831,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Cranberry",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Cranberry is even worth a time-limited trial.",
+      "summary": "Cranberry: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Cranberry"
@@ -8997,7 +8997,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Cranberry",
-      "summary": "Cranberry: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Cranberry: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Cranberry"
@@ -9082,7 +9082,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Dandelion",
-      "summary": "Dandelion: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Dandelion: claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "status": "published",
       "topics": [
         "Dandelion"
@@ -9167,7 +9167,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Devils Claw",
-      "summary": "Devils Claw: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Devils Claw: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Devils Claw"
@@ -9252,7 +9252,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Elderberry",
-      "summary": "Even when Elderberry is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Elderberry: training load, return-to-play markers, hydration, and sport-rule awareness.",
       "status": "published",
       "topics": [
         "Elderberry"
@@ -9580,7 +9580,7 @@
       "variantLabel": "Colds",
       "needsReview": false,
       "title": "Colds",
-      "summary": "If you are curious about Colds, bring the product label or a photo to your appointment.",
+      "summary": "Colds often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Colds"
@@ -9823,7 +9823,7 @@
       "variantLabel": "Fish Oil",
       "needsReview": false,
       "title": "Fish Oil",
-      "summary": "Fish Oil: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Fish Oil often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Fish Oil"
@@ -9904,7 +9904,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Folic Acid",
-      "summary": "Even when Folic Acid is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Folic Acid: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Folic Acid"
@@ -10070,7 +10070,7 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Garlic",
-      "summary": "Garlic: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Garlic: dietary pattern, meal regularity, and when food already covers everyday needs.",
       "status": "published",
       "topics": [
         "Garlic"
@@ -10155,7 +10155,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Garlic",
-      "summary": "Garlic: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype (1).",
+      "summary": "Garlic: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Garlic"
@@ -10240,7 +10240,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Energy",
-      "summary": "Energy: do not combine multiple products that duplicate the same active without checking the combined total (1).",
+      "summary": "Energy: claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "status": "published",
       "topics": [
         "Energy"
@@ -10325,7 +10325,7 @@
       "variantLabel": "Ginger",
       "needsReview": false,
       "title": "Ginger",
-      "summary": "Ginger: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Ginger often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Ginger"
@@ -10406,7 +10406,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Ginseng",
-      "summary": "Ginseng: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Ginseng: training load, return-to-play markers, hydration, and sport-rule awareness.",
       "status": "published",
       "topics": [
         "Ginseng"
@@ -10491,7 +10491,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Ginseng",
-      "summary": "Ginseng: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Ginseng: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Ginseng"
@@ -10576,7 +10576,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Cholesterol",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Cholesterol is even worth a time-limited trial.",
+      "summary": "Cholesterol: goal setting, stop rules, diaries, and what to bring to clinic or pharmacy.",
       "status": "published",
       "topics": [
         "Cholesterol"
@@ -10661,7 +10661,7 @@
       "variantLabel": "Glucosamine",
       "needsReview": false,
       "title": "Glucosamine",
-      "summary": "Glucosamine: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take.",
+      "summary": "Glucosamine often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Glucosamine"
@@ -10742,7 +10742,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Whey Protein",
-      "summary": "If you already take Whey Protein and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Whey Protein: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Whey Protein",
@@ -10909,7 +10909,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "Blood Pressure: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Blood Pressure: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -10994,7 +10994,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Energy",
-      "summary": "If you already take Energy and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Energy: caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "status": "published",
       "topics": [
         "Energy"
@@ -11079,7 +11079,7 @@
       "variantLabel": "Guarana",
       "needsReview": false,
       "title": "Guarana",
-      "summary": "If you already take Guarana and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Guarana often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Guarana"
@@ -11160,7 +11160,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Cholesterol",
-      "summary": "If you are curious about Cholesterol, bring the product label or a photo to your appointment.",
+      "summary": "Cholesterol: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Cholesterol"
@@ -11326,7 +11326,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Protein",
-      "summary": "If you are curious about Protein, bring the product label or a photo to your appointment.",
+      "summary": "Protein: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Protein"
@@ -11492,7 +11492,7 @@
       "variantLabel": "Manuka Honey",
       "needsReview": false,
       "title": "Manuka Honey",
-      "summary": "Manuka Honey: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Manuka Honey often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Manuka Honey"
@@ -11573,7 +11573,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Menopause",
-      "summary": "If you already take Menopause and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Menopause: training load, return-to-play markers, hydration, and sport-rule awareness.",
       "status": "published",
       "topics": [
         "Menopause"
@@ -11658,7 +11658,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "Collagen: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Collagen: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Collagen"
@@ -11743,7 +11743,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Energy",
-      "summary": "Energy: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Energy: goal setting, stop rules, diaries, and what to bring to clinic or pharmacy.",
       "status": "published",
       "topics": [
         "Energy"
@@ -11828,7 +11828,7 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Garlic",
-      "summary": "Garlic: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype (2).",
+      "summary": "Garlic: consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "status": "published",
       "topics": [
         "Garlic"
@@ -12156,7 +12156,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Probiotic",
-      "summary": "Probiotic: before surgery, chemotherapy, or new anticoagulant regimens, ask the treating team which supplements to pause.",
+      "summary": "Probiotic: caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "status": "published",
       "topics": [
         "Probiotic"
@@ -12241,7 +12241,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Probiotic",
-      "summary": "Probiotic: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Probiotic: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Probiotic"
@@ -12326,7 +12326,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Ashwagandha",
-      "summary": "Ashwagandha: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Ashwagandha: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Ashwagandha"
@@ -12411,7 +12411,7 @@
       "variantLabel": "Athlete",
       "needsReview": false,
       "title": "Athlete",
-      "summary": "Athlete: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Athlete often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Athlete"
@@ -12492,7 +12492,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Lecithin",
-      "summary": "Even when Lecithin is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Lecithin: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Lecithin"
@@ -12658,7 +12658,7 @@
       "variantLabel": "Lion's Mane",
       "needsReview": false,
       "title": "Lion's Mane",
-      "summary": "Lion's Mane: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Lion's Mane often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Lion's Mane"
@@ -12739,7 +12739,7 @@
       "variantLabel": "Lutein",
       "needsReview": false,
       "title": "Lutein",
-      "summary": "Lutein: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Lutein often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Lutein"
@@ -12820,7 +12820,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "Magnesium: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Magnesium: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -12905,7 +12905,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "If you are curious about Magnesium, bring the product label or a photo to your appointment.",
+      "summary": "Magnesium: goal setting, stop rules, diaries, and what to bring to clinic or pharmacy.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -13233,7 +13233,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Green Tea",
-      "summary": "Green Tea: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Green Tea: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Green Tea"
@@ -13318,7 +13318,7 @@
       "variantLabel": "Glutamine",
       "needsReview": false,
       "title": "Glutamine",
-      "summary": "If you already take Glutamine and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Glutamine often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Glutamine"
@@ -13399,7 +13399,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Energy",
-      "summary": "If you are curious about Energy, bring the product label or a photo to your appointment (1).",
+      "summary": "Energy: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Energy"
@@ -13484,7 +13484,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Multivitamin",
-      "summary": "Multivitamin: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Multivitamin: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Multivitamin"
@@ -13569,7 +13569,7 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Protein",
-      "summary": "Protein: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Protein: dietary pattern, meal regularity, and when food already covers everyday needs.",
       "status": "published",
       "topics": [
         "Protein"
@@ -13735,7 +13735,7 @@
       "variantLabel": "Calcium",
       "needsReview": false,
       "title": "Calcium",
-      "summary": "Calcium: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Calcium often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Calcium"
@@ -13816,7 +13816,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Potassium",
-      "summary": "Potassium: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Potassium: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Potassium"
@@ -13901,7 +13901,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Energy",
-      "summary": "Energy: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Energy: training load, return-to-play markers, hydration, and sport-rule awareness.",
       "status": "published",
       "topics": [
         "Energy"
@@ -13986,7 +13986,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Iron",
-      "summary": "Iron: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Iron: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Iron"
@@ -14318,7 +14318,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "If you already take Peppermint and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Peppermint: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Peppermint"
@@ -14565,7 +14565,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Potassium",
-      "summary": "Potassium: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Potassium: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Potassium"
@@ -14650,7 +14650,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Psyllium",
-      "summary": "Psyllium: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Psyllium: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Psyllium"
@@ -14735,7 +14735,7 @@
       "variantLabel": "Hair",
       "needsReview": false,
       "title": "Hair",
-      "summary": "If you already take Hair and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Hair often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Hair"
@@ -14901,7 +14901,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Quercetin",
-      "summary": "Quercetin: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Quercetin: claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "status": "published",
       "topics": [
         "Quercetin"
@@ -14986,7 +14986,7 @@
       "variantLabel": "Krill Oil",
       "needsReview": false,
       "title": "Krill Oil",
-      "summary": "Krill Oil: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Krill Oil often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Krill Oil"
@@ -15067,7 +15067,7 @@
       "variantLabel": "Resveratrol",
       "needsReview": false,
       "title": "Resveratrol",
-      "summary": "Resveratrol: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product.",
+      "summary": "Resveratrol often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Resveratrol"
@@ -15148,7 +15148,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Vitamin A",
-      "summary": "Vitamin A: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Vitamin A: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Vitamin A"
@@ -15395,7 +15395,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "If you are curious about Collagen, bring the product label or a photo to your appointment.",
+      "summary": "Collagen: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Collagen"
@@ -15480,7 +15480,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Protein",
-      "summary": "Protein: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Protein: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Protein"
@@ -15727,7 +15727,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "If you are curious about Blood Pressure, bring the product label or a photo to your appointment.",
+      "summary": "Blood Pressure: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -15812,7 +15812,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Saw Palmetto",
-      "summary": "Saw Palmetto: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take.",
+      "summary": "Saw Palmetto: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Saw Palmetto"
@@ -15897,7 +15897,7 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Zinc",
-      "summary": "Zinc: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Zinc: dietary pattern, meal regularity, and when food already covers everyday needs.",
       "status": "published",
       "topics": [
         "Zinc"
@@ -15982,7 +15982,7 @@
       "variantLabel": "Selenium",
       "needsReview": false,
       "title": "Selenium",
-      "summary": "Even when Selenium is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Selenium often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Selenium"
@@ -16144,7 +16144,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Tissue Salt",
-      "summary": "If you are curious about Tissue Salt, bring the product label or a photo to your appointment.",
+      "summary": "Tissue Salt: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Tissue Salt"
@@ -16314,7 +16314,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Lecithin",
-      "summary": "Lecithin: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Lecithin: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Lecithin"
@@ -16399,7 +16399,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Multivitamin",
-      "summary": "Multivitamin: gut upset, headache, skin reactions, and medicine interactions are all possible depending on the product (1).",
+      "summary": "Multivitamin: goal setting, stop rules, diaries, and what to bring to clinic or pharmacy.",
       "status": "published",
       "topics": [
         "Multivitamin"
@@ -16484,7 +16484,7 @@
       "variantLabel": "Flu",
       "needsReview": false,
       "title": "Flu",
-      "summary": "Flu: before surgery, chemotherapy, or new anticoagulant regimens, ask the treating team which supplements to pause.",
+      "summary": "Flu often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Flu"
@@ -16565,7 +16565,7 @@
       "variantLabel": "Taurine",
       "needsReview": false,
       "title": "Taurine",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Taurine is even worth a time-limited trial.",
+      "summary": "Taurine often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Taurine"
@@ -16646,7 +16646,7 @@
       "variantLabel": "Anxiety",
       "needsReview": false,
       "title": "Anxiety",
-      "summary": "Even when Anxiety is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Anxiety often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Anxiety"
@@ -16727,7 +16727,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Melatonin",
-      "summary": "If you are curious about Melatonin, bring the product label or a photo to your appointment.",
+      "summary": "Melatonin: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Melatonin"
@@ -16897,7 +16897,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Coenzyme Q10",
-      "summary": "Coenzyme Q10: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take (1).",
+      "summary": "Coenzyme Q10: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Coenzyme Q10"
@@ -16982,7 +16982,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "If you already take Collagen and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Collagen: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Collagen"
@@ -17067,7 +17067,7 @@
       "variantLabel": "Food-first approach",
       "needsReview": false,
       "title": "Vitamin A",
-      "summary": "Vitamin A: before surgery, chemotherapy, or new anticoagulant regimens, ask the treating team which supplements to pause.",
+      "summary": "Vitamin A: dietary pattern, meal regularity, and when food already covers everyday needs.",
       "status": "published",
       "topics": [
         "Vitamin A"
@@ -17237,7 +17237,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "Fatigue: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure.",
+      "summary": "Fatigue: claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "status": "published",
       "topics": [
         "Fatigue"
@@ -17322,7 +17322,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "Fatigue: clinic conversations go better when patients hear that uncertainty is normal, that pharmacists are allies, and that stopping a useless product is a win rather than a failure (1).",
+      "summary": "Fatigue: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Fatigue"
@@ -17492,7 +17492,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Fatigue is even worth a time-limited trial.",
+      "summary": "Fatigue: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Fatigue"
@@ -17743,7 +17743,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Energy",
-      "summary": "If you already take Energy and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel (1).",
+      "summary": "Energy: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Energy"
@@ -17828,7 +17828,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Folate",
-      "summary": "If you already take Folate and feel better, that still does not prove the capsule caused the change — training and reassurance often move in parallel.",
+      "summary": "Folate: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Folate"
@@ -17913,7 +17913,7 @@
       "variantLabel": "CLA",
       "needsReview": false,
       "title": "CLA",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether CLA is even worth a time-limited trial.",
+      "summary": "CLA often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "CLA"
@@ -17994,7 +17994,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "A sensible sequence is screen red flags, clarify the MSK driver, set a loading plan, then decide whether Collagen is even worth a time-limited trial.",
+      "summary": "Collagen: caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "status": "published",
       "topics": [
         "Collagen"
@@ -18079,7 +18079,7 @@
       "variantLabel": "Vitamin D",
       "needsReview": false,
       "title": "Vitamin D",
-      "summary": "Vitamin D: food-first approaches and graded movement usually matter more for musculoskeletal recovery than any single capsule.",
+      "summary": "Vitamin D often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Vitamin D"
@@ -18160,7 +18160,7 @@
       "variantLabel": "Evening Primrose",
       "needsReview": false,
       "title": "Evening Primrose",
-      "summary": "Evening Primrose: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype.",
+      "summary": "Evening Primrose often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Evening Primrose"
@@ -18408,7 +18408,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "Blood Pressure: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype (1).",
+      "summary": "Blood Pressure: claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -18493,7 +18493,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "Blood Pressure: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Blood Pressure: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -18659,7 +18659,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "Blood Pressure: writing those answers down before an appointment keeps the visit focused on MSK progress rather than product hype (2).",
+      "summary": "Blood Pressure: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -18744,7 +18744,7 @@
       "variantLabel": "Insomnia",
       "needsReview": false,
       "title": "Insomnia",
-      "summary": "If you are curious about Insomnia, bring the product label or a photo to your appointment.",
+      "summary": "Insomnia often appears in conversations about diet quality, recovery, sleep, or general wellness.",
       "status": "published",
       "topics": [
         "Insomnia"
@@ -18825,7 +18825,7 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Zinc",
-      "summary": "Zinc: if a product still seems relevant, choose reputable labelling, avoid mystery proprietary blends, and check the total dose against other supplements you already take.",
+      "summary": "Zinc: consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "status": "published",
       "topics": [
         "Zinc"
@@ -18991,7 +18991,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Devils Claw",
-      "summary": "Devils Claw: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Devils Claw: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Devils Claw"
@@ -19076,7 +19076,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Psyllium",
-      "summary": "Psyllium: do not combine multiple products that duplicate the same active without checking the combined total.",
+      "summary": "Psyllium: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Psyllium"
@@ -19242,7 +19242,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "Peppermint: the helpful clinic response is to map aggravating loads, screen for red flags, and only then discuss whether diet, sleep, or a supplement conversation is proportionate.",
+      "summary": "Peppermint: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Peppermint"
@@ -19477,7 +19477,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Devil's Claw",
-      "summary": "If Devil's Claw is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Devil's Claw: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Devil's Claw"
@@ -19558,7 +19558,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Bromelain",
-      "summary": "If Bromelain is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Bromelain: claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "status": "published",
       "topics": [
         "Bromelain"
@@ -19797,7 +19797,7 @@
       "variantLabel": "Label literacy",
       "needsReview": false,
       "title": "Valerian",
-      "summary": "Valerian may still deserve a pharmacist chat, but it should not own the whole plan.",
+      "summary": "Valerian: dose totals, duplicate actives, proprietary blends, and a calm pack-reading method.",
       "status": "published",
       "topics": [
         "Valerian"
@@ -19959,7 +19959,7 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Dandelion",
-      "summary": "If Dandelion is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Dandelion: consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "status": "published",
       "topics": [
         "Dandelion"
@@ -20040,7 +20040,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "Peppermint may still deserve a pharmacist chat, but it should not own the whole plan.",
+      "summary": "Peppermint: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Peppermint"
@@ -20121,7 +20121,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Indigestion",
-      "summary": "If Indigestion is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Indigestion: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Indigestion"
@@ -20202,7 +20202,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Eczema",
-      "summary": "Eczema: the helpful clinic response is to map aggravating loads, screen for red flags, and only then discuss whether diet, sleep, or a supplement conversation is proportionate.",
+      "summary": "Eczema: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Eczema"
@@ -20283,7 +20283,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Green Tea",
-      "summary": "Green Tea: keep a two-week diary of sleep, steps, and flare triggers; that diary often explains more than a product label.",
+      "summary": "Green Tea: caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "status": "published",
       "topics": [
         "Green Tea"
@@ -20364,7 +20364,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Elderberry",
-      "summary": "Elderberry may still deserve a pharmacist chat, but it should not own the whole plan.",
+      "summary": "Elderberry: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Elderberry"
@@ -20445,7 +20445,7 @@
       "variantLabel": "Clinic overview",
       "needsReview": false,
       "title": "Slippery Elm",
-      "summary": "Slippery Elm may still deserve a pharmacist chat, but it should not own the whole plan.",
+      "summary": "Slippery Elm: plain-English framing, why the theme appears beside MSK care, and how to prepare questions.",
       "status": "published",
       "topics": [
         "Slippery Elm"
@@ -20607,7 +20607,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Peppermint",
-      "summary": "Peppermint: keep a two-week diary of sleep, steps, and flare triggers; that diary often explains more than a product label.",
+      "summary": "Peppermint: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Peppermint"
@@ -20765,7 +20765,7 @@
       "variantLabel": "Constipation",
       "needsReview": false,
       "title": "Constipation",
-      "summary": "Constipation may still deserve a pharmacist chat, but it should not own the whole plan.",
+      "summary": "Topics such as Constipation, Diarrhoea, Psyllium, Bloating, and Ginger may sit beside musculoskeletal care, but many need medical diagnosis before…",
       "status": "published",
       "topics": [
         "Constipation"
@@ -20842,7 +20842,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Indigestion",
-      "summary": "Indigestion: keep a two-week diary of sleep, steps, and flare triggers; that diary often explains more than a product label.",
+      "summary": "Indigestion: training load, return-to-play markers, hydration, and sport-rule awareness.",
       "status": "published",
       "topics": [
         "Indigestion"
@@ -20923,7 +20923,7 @@
       "variantLabel": "Bloating",
       "needsReview": false,
       "title": "Bloating",
-      "summary": "Bloating: the helpful clinic response is to map aggravating loads, screen for red flags, and only then discuss whether diet, sleep, or a supplement conversation is proportionate.",
+      "summary": "Topics such as Bloating may sit beside musculoskeletal care, but many need medical diagnosis before supplement talk.",
       "status": "published",
       "topics": [
         "Bloating"
@@ -21000,7 +21000,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Fatigue",
-      "summary": "Fatigue: the helpful clinic response is to map aggravating loads, screen for red flags, and only then discuss whether diet, sleep, or a supplement conversation is proportionate.",
+      "summary": "Fatigue: goal setting, stop rules, diaries, and what to bring to clinic or pharmacy.",
       "status": "published",
       "topics": [
         "Fatigue"
@@ -21081,7 +21081,7 @@
       "variantLabel": "Practitioner teaching",
       "needsReview": false,
       "title": "Valerian",
-      "summary": "If Valerian is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Valerian: consent language, scope boundaries, documentation, and CPD-style discussion prompts.",
       "status": "published",
       "topics": [
         "Valerian"
@@ -21162,7 +21162,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "If Blood Pressure is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Blood Pressure: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -21243,7 +21243,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Ginseng",
-      "summary": "Ginseng: keep a two-week diary of sleep, steps, and flare triggers; that diary often explains more than a product label.",
+      "summary": "Ginseng: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Ginseng"
@@ -21324,7 +21324,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Menopause",
-      "summary": "If Menopause is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Menopause: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Menopause"
@@ -21405,7 +21405,7 @@
       "variantLabel": "Sleep & stress context",
       "needsReview": false,
       "title": "Black Cohosh",
-      "summary": "Black Cohosh: keep a two-week diary of sleep, steps, and flare triggers; that diary often explains more than a product label.",
+      "summary": "Black Cohosh: caffeine timing, stress load, evening routines, and recovery basics that outrank products.",
       "status": "published",
       "topics": [
         "Black Cohosh"
@@ -21486,7 +21486,7 @@
       "variantLabel": "When to escalate",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "If Magnesium is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Magnesium: red-flag symptoms, urgent care thresholds, and not delaying medical assessment.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -21567,7 +21567,7 @@
       "variantLabel": "Rosehip",
       "needsReview": false,
       "title": "Rosehip",
-      "summary": "If Rosehip is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Topics such as Rosehip and Stress may sit beside musculoskeletal care, but many need medical diagnosis before supplement talk.",
       "status": "published",
       "topics": [
         "Rosehip"
@@ -21644,7 +21644,7 @@
       "variantLabel": "Thyroid",
       "needsReview": false,
       "title": "Thyroid",
-      "summary": "If Thyroid is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Topics such as Thyroid may sit beside musculoskeletal care, but many need medical diagnosis before supplement talk.",
       "status": "published",
       "topics": [
         "Thyroid"
@@ -21721,7 +21721,7 @@
       "variantLabel": "Safety & interactions",
       "needsReview": false,
       "title": "Blood Pressure",
-      "summary": "Blood Pressure: keep a two-week diary of sleep, steps, and flare triggers; that diary often explains more than a product label.",
+      "summary": "Blood Pressure: medicines, pregnancy, kidney or liver disease, surgery pauses, and pharmacist checks.",
       "status": "published",
       "topics": [
         "Blood Pressure"
@@ -21802,7 +21802,7 @@
       "variantLabel": "Evidence humility",
       "needsReview": false,
       "title": "Quercetin",
-      "summary": "Quercetin: keep a two-week diary of sleep, steps, and flare triggers; that diary often explains more than a product label.",
+      "summary": "Quercetin: claim strength, marketing language, and what graded evidence notes can and cannot prove.",
       "status": "published",
       "topics": [
         "Quercetin"
@@ -21883,7 +21883,7 @@
       "variantLabel": "Rehab fit",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "If Magnesium is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take (1).",
+      "summary": "Magnesium: loading plans, sleep, pacing, and keeping supplements from displacing hands-on care.",
       "status": "published",
       "topics": [
         "Magnesium"
@@ -21964,7 +21964,7 @@
       "variantLabel": "Athlete & recovery",
       "needsReview": false,
       "title": "Bromelain",
-      "summary": "Bromelain: the helpful clinic response is to map aggravating loads, screen for red flags, and only then discuss whether diet, sleep, or a supplement conversation is proportionate.",
+      "summary": "Bromelain: training load, return-to-play markers, hydration, and sport-rule awareness.",
       "status": "published",
       "topics": [
         "Bromelain"
@@ -22126,7 +22126,7 @@
       "variantLabel": "Patient questions",
       "needsReview": false,
       "title": "Protein",
-      "summary": "Protein may still deserve a pharmacist chat, but it should not own the whole plan.",
+      "summary": "Protein: goal setting, stop rules, diaries, and what to bring to clinic or pharmacy.",
       "status": "published",
       "topics": [
         "Protein"
@@ -22207,7 +22207,7 @@
       "variantLabel": "Turmeric",
       "needsReview": false,
       "title": "Turmeric",
-      "summary": "Turmeric: the helpful clinic response is to map aggravating loads, screen for red flags, and only then discuss whether diet, sleep, or a supplement conversation is proportionate.",
+      "summary": "Topics such as Turmeric, Insomnia, and Stress may sit beside musculoskeletal care, but many need medical diagnosis before supplement talk.",
       "status": "published",
       "topics": [
         "Turmeric"
@@ -22284,7 +22284,7 @@
       "variantLabel": "Misconceptions",
       "needsReview": false,
       "title": "Collagen",
-      "summary": "If Collagen is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take.",
+      "summary": "Collagen: detox myths, “natural means safe,” more-is-better thinking, and indefinite stacks.",
       "status": "published",
       "topics": [
         "Collagen"
@@ -22365,7 +22365,7 @@
       "variantLabel": "Time-limited trial",
       "needsReview": false,
       "title": "Saw Palmetto",
-      "summary": "Even when Saw Palmetto is not the centre of an MSK diagnosis, patients still bring it into osteopathy visits.",
+      "summary": "Saw Palmetto: duration, functional success markers, reassessment dates, and when to stop.",
       "status": "published",
       "topics": [
         "Saw Palmetto"
@@ -22442,7 +22442,7 @@
       "variantLabel": "Special populations",
       "needsReview": false,
       "title": "Magnesium",
-      "summary": "If Magnesium is part of your concern, describe timing, aggravating factors, relieving factors, and any medicines you already take (2).",
+      "summary": "Magnesium: older adults, polypharmacy, pregnancy planning, and when GP bloods matter first.",
       "status": "published",
       "topics": [
         "Magnesium"

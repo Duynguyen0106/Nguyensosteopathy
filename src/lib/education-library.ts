@@ -159,26 +159,9 @@ export function getUniqueThemeAngles(
 export const libraryDisclaimer =
   "These library pages are original education notes for both patients and practitioners at Nguyen's Osteopathic Clinic. They are not prescribing advice, product endorsements, or a republication of any third-party training manual. Patients should check with a GP, pharmacist, or osteopath before starting supplements. Practitioners should use them as discussion prompts only within their regulated scope.";
 
-/** True when a stored summary still uses the noisy multi-topic template. */
-export function isNoisyLibrarySummary(summary: string): boolean {
-  const text = String(summary || "");
-  return (
-    /also touching/i.test(text) ||
-    /^Often comes up for /i.test(text) ||
-    /^A common picture is /i.test(text) ||
-    /theme covering .+ — for patients and practitioners/i.test(text) ||
-    /^In-depth dual-audience clinic education on /i.test(text) ||
-    /^Extended education notes on .+ and related wellness themes/i.test(text) ||
-    /^Sports, training, and recovery education covering /i.test(text) ||
-    /^Label-reading and formulation education focused on .+ \(/i.test(text) ||
-    /^Clinic education notes on .+, centred on /i.test(text) ||
-    /^Clinic education on .+: (plain-English|what it is)/i.test(text)
-  );
-}
-
 /**
- * Audience-facing one-liner for cards and heroes. Prefers clean stored copy;
- * otherwise builds a title-centred blurb (no cross-topic “also touching”).
+ * Audience-facing one-liner for cards and heroes.
+ * Trusts stored JSON summaries (cleaned at source) — no runtime boilerplate regen.
  */
 export function libraryDisplaySummary(opts: {
   title: string;
@@ -186,17 +169,12 @@ export function libraryDisplaySummary(opts: {
   mskRelevant?: boolean;
   isTheme?: boolean;
 }): string {
-  const title = String(opts.title || "").trim() || "this topic";
-  const raw = String(opts.summary || "").trim();
-  if (raw && !isNoisyLibrarySummary(raw)) return raw;
-
-  if (opts.isTheme) {
-    return `A clear dual-audience clinic theme on ${title} for patients and practitioners — what it is, why it comes up beside care, and what remains uncertain.`;
-  }
-  if (opts.mskRelevant) {
-    return `Clinic education on ${title}: plain-English context for patients and teaching prompts for practitioners, especially when it comes up beside MSK care.`;
-  }
-  return `Clinic education on ${title}: what it is, why patients ask, how it fits osteopathy, and what remains uncertain.`;
+  const raw = (opts.summary || "").trim();
+  if (raw) return raw;
+  const title = (opts.title || "").trim() || "this topic";
+  return opts.isTheme
+    ? `${title} — clinic education theme for patients and practitioners.`
+    : `${title} — clinic education notes for patients and practitioners.`;
 }
 
 /** Primary topic labels only — drops OCR/neighbour spill into related tags. */

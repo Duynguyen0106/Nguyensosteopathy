@@ -56,24 +56,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const cleanSummary = libraryDisplaySummary({
-    title: article.topicTitle || article.title,
-    summary: article.summary,
-    mskRelevant: article.mskRelevant,
-  });
+  const description = trimDescription(
+    article.summary ||
+      libraryDisplaySummary({
+        title: article.topicTitle || article.title,
+        summary: article.summary,
+        mskRelevant: article.mskRelevant,
+      }),
+  );
 
   if (articleRedirectsToTopic(article)) {
     const topicPath = `/education/library/topic/${article.topicKey}`;
     return {
       title: fitSerpTitle(`${article.topicTitle || article.title} theme`),
-      description: trimDescription(cleanSummary),
+      description,
       alternates: { canonical: topicPath },
       robots: { index: false, follow: true },
     };
   }
 
   const title = fitSerpTitle(`${article.title} education`);
-  const description = trimDescription(cleanSummary);
   const path = `/education/library/${article.slug}`;
   const ogTitle =
     typeof title === "string"
@@ -212,11 +214,12 @@ export default async function EducationLibraryArticlePage({ params }: Props) {
             {article.title}
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            {libraryDisplaySummary({
-              title: article.title,
-              summary: article.summary,
-              mskRelevant: article.mskRelevant,
-            })}
+            {article.summary?.trim() ||
+              libraryDisplaySummary({
+                title: article.title,
+                summary: article.summary,
+                mskRelevant: article.mskRelevant,
+              })}
           </p>
           {libraryPrimaryTopics(article).length > 0 ? (
             <p className="mt-4 text-sm text-slate-500">

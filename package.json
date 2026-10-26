@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "lint:conditions": "node scripts/lint-condition-density.mjs",
     "leaflet": "node scripts/generate-leaflet.mjs",
     "promo": "node scripts/generate-promo-graphic.mjs",
     "poster": "node scripts/generate-poster.mjs",

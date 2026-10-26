@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { defaultOgImage } from "@/lib/seo";
+import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
+import { breadcrumbJsonLd, defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -35,12 +37,27 @@ const points = [
     body: "Circular marks can appear and usually fade over several days. We explain this before treatment so there are no surprises.",
   },
   {
-    title: "Add-on, not a standalone spa ritual",
+    title: "Add-on, not a spa ritual",
     body: "At Nguyen's, cupping supports osteopathy or deep tissue work — it is not sold as a wellness package without assessment.",
   },
   {
     title: "Fee",
     body: "Cupping therapy add-on is +£15 when agreed. Main session fees are listed on the fees page.",
+  },
+] as const;
+
+const dayOf = [
+  {
+    title: "Agreed before cups go on",
+    body: "After history and examination, Austin explains whether cupping is likely to help. The +£15 fee is confirmed before treatment continues — never billed as a surprise.",
+  },
+  {
+    title: "Short, focused placement",
+    body: "Cups sit for a short period. You may feel a pulling sensation rather than sharp pain. Prefer osteopathy or massage alone? That is always fine.",
+  },
+  {
+    title: "Clothing and work plans",
+    body: "We check whether temporary circular marks would be a problem for work or events before we proceed.",
   },
 ] as const;
 
@@ -57,6 +74,11 @@ export default function CuppingPage() {
       name: "Cupping therapy",
     },
   };
+  const crumbsLd = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Cupping", path: "/cupping" },
+  ]);
+  const bookUrl = bookHref("services");
 
   return (
     <div className="bg-slate-50">
@@ -64,47 +86,68 @@ export default function CuppingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbsLd) }}
+      />
 
-      <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Soft-tissue add-on · Woolwich SE18
+      <section className="relative min-h-[min(88vh,820px)] overflow-hidden text-white">
+        <Image
+          src="/images/clinic-treatment.webp"
+          alt="Treatment room at Nguyen's Osteopathic Clinic"
+          fill
+          priority
+          fetchPriority="high"
+          quality={75}
+          sizes="100vw"
+          className="object-cover object-[center_35%]"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-navy-deep/94 via-navy/80 to-navy/40"
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-navy-deep/88 via-transparent to-navy/25"
+          aria-hidden
+        />
+        <div className="relative mx-auto flex min-h-[min(88vh,820px)] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:px-8 md:pb-24">
+          <p className="about-rise text-xs font-semibold tracking-[0.28em] text-teal-mist uppercase">
+            {site.name}
           </p>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
+          <h1 className="about-rise about-rise-delay-1 mt-4 max-w-3xl font-display text-5xl leading-[1.05] md:text-7xl">
             Cupping therapy
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Optional suction-based soft-tissue care for muscular tightness —
-            added only when clinically useful and agreed with you.
+          <p className="about-rise about-rise-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
+            Optional suction-based soft-tissue care — added only when clinically
+            useful alongside osteopathy or deep tissue massage.
           </p>
-          <p className="mt-4 text-sm font-bold tracking-wide text-teal-dark">
-            Add-on +£15 · Often paired with osteopathy or deep tissue massage
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink href="/services/deep-tissue-massage" variant="secondary">
-              Deep tissue massage
+          <div className="about-rise about-rise-delay-3 mt-8 flex flex-wrap gap-3">
+            <ButtonLink href={bookUrl} variant="onDark">
+              Book online
             </ButtonLink>
-            <ButtonLink href="/fees" variant="secondary">
-              Fees
+            <ButtonLink href={site.phoneHref} variant="onDarkOutline">
+              Call {site.phone}
             </ButtonLink>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
+      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-display text-3xl text-navy md:text-4xl">
+          <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+            Soft-tissue add-on
+          </p>
+          <h2 className="mt-3 max-w-2xl font-display text-3xl text-navy md:text-5xl">
             When we consider cupping
           </h2>
-          <ul className="mt-10 grid gap-6 sm:grid-cols-2">
+          <ul className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
             {points.map((item) => (
               <li
                 key={item.title}
-                className="rounded-xl border border-slate-200 bg-slate-50 p-5"
+                className="flex flex-col gap-1 py-5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
               >
                 <h3 className="text-lg font-semibold text-navy">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <p className="max-w-xl text-sm leading-relaxed text-slate-600 sm:text-right md:text-base">
                   {item.body}
                 </p>
               </li>
@@ -113,36 +156,25 @@ export default function CuppingPage() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl text-navy md:text-4xl">
-            What to expect on the day
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">
-            After history and examination, Austin explains whether cupping is
-            likely to help the tissues you present with. Cups are placed for a
-            short period; you may feel a pulling sensation rather than sharp
-            pain. Temporary circular marks are common and usually fade over a
-            few days — we check clothing and work plans first if marks would be
-            a problem.
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">
-            Cupping is never billed as a surprise. If we agree to add it, the
-            +£15 fee is confirmed before treatment continues. Prefer hands-on
-            osteopathy or massage alone? That is always fine — cupping is an
-            option, not a package requirement.
-          </p>
-        </div>
-      </section>
-
-      <section className="px-5 py-16 md:px-8 md:py-20">
+      <section className="border-b border-slate-200 px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-display text-3xl text-navy">Next steps</h2>
-          <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-            Book an osteopathy or massage appointment and we will discuss whether
-            cupping is useful on the day — never pressure, always clinical judgement.
+          <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+            On the day
           </p>
-          <p className="mt-4 text-sm text-slate-600">
+          <h2 className="mt-3 max-w-2xl font-display text-3xl text-navy md:text-5xl">
+            What to expect
+          </h2>
+          <ul className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+            {dayOf.map((item) => (
+              <li key={item.title} className="py-5">
+                <h3 className="text-lg font-semibold text-navy">{item.title}</h3>
+                <p className="mt-2 max-w-3xl text-base leading-relaxed text-slate-600">
+                  {item.body}
+                </p>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-10 text-sm text-slate-600">
             Related:{" "}
             <Link
               href="/blog/cupping-therapy-add-on-woolwich"
@@ -159,18 +191,47 @@ export default function CuppingPage() {
             </Link>
             {" · "}
             <Link
-              href="/services/acupuncture-electro"
+              href="/services/deep-tissue-massage"
               className="font-semibold text-teal hover:text-teal-dark"
             >
-              Acupuncture
+              Deep tissue massage
+            </Link>
+            {" · "}
+            <Link
+              href="/fees"
+              className="font-semibold text-teal hover:text-teal-dark"
+            >
+              Fees
             </Link>
           </p>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden text-white">
+        <Image
+          src="/images/clinic-room.webp"
+          alt="Treatment room at Nguyen's Osteopathic Clinic"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-navy-deep/88" aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+          <p className="text-xs font-semibold tracking-[0.28em] text-teal-mist uppercase">
+            {site.name}
+          </p>
+          <h2 className="mt-4 max-w-2xl font-display text-3xl md:text-5xl">
+            Book osteopathy or massage
+          </h2>
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
+            We discuss whether cupping is useful on the day — clinical judgement,
+            never pressure. Inside {site.address.venue}.
+          </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
-            <ButtonLink href="/services/back-neck-pain" variant="secondary">
-              Back &amp; neck
+            <ButtonLink href={bookUrl} variant="onDark">
+              Book online
             </ButtonLink>
-            <ButtonLink href="/find-us" variant="secondary">
+            <ButtonLink href="/find-us" variant="onDarkOutline">
               Find us
             </ButtonLink>
           </div>

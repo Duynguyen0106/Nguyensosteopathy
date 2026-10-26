@@ -13,6 +13,7 @@ import {
 } from "@/lib/service-pages";
 import {
   breadcrumbJsonLd,
+  absoluteSerpTitle,
   fitSerpTitle,
   trimDescription,
   defaultOgImage,
@@ -43,8 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = trimDescription(page.metaDescription);
   const path = `/services/${page.slug}`;
   const hasViTwin = viServiceTwins.has(page.slug);
-  const ogTitle =
-    typeof title === "string" ? `${title} | ${site.name}` : title.absolute;
+  const ogTitle = absoluteSerpTitle(title);
   return {
     title,
     description,

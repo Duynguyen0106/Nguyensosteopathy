@@ -9,10 +9,8 @@ export function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
   const response = NextResponse.next();
 
-  if (
-    host.endsWith(".vercel.app") ||
-    host === "nguyensosteopathy.vercel.app"
-  ) {
+  // Covers nguyensosteopathy.vercel.app and any other *.vercel.app preview host.
+  if (host.endsWith(".vercel.app")) {
     response.headers.set("X-Robots-Tag", "noindex, nofollow");
   }
 

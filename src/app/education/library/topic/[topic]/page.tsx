@@ -20,6 +20,7 @@ import {
 import {
   breadcrumbJsonLd,
   defaultOgImage,
+  absoluteSerpTitle,
   fitSerpTitle,
   trimDescription,
 } from "@/lib/seo";
@@ -54,10 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : `Dual-audience education on ${topic.title} from Nguyen's Osteopathic Clinic.`,
   );
   const path = `/education/library/topic/${topic.topicKey}`;
-  const ogTitle =
-    typeof title === "string"
-      ? `${topic.title} | ${site.name}`
-      : title.absolute;
+  const ogTitle = absoluteSerpTitle(title);
 
   const robots = topic.needsReview
     ? { index: false, follow: false }

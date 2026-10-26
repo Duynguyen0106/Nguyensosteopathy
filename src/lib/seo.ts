@@ -32,19 +32,27 @@ function clipAtWord(text: string, budget: number): string {
   return base.replace(/[,:;.–/-]+$/, "");
 }
 
+export type FittedSerpTitle = NonNullable<Metadata["title"]>;
+
 /**
  * Fit a title for the root `%s | ${site.name}` template when the segment is
  * short enough. For longer clinical/blog titles, return an absolute title with
  * a compact brand so the primary keywords stay readable (~60 chars total).
  */
-export function fitSerpTitle(
-  title: string,
-  maxTotal = 60,
-): string | { absolute: string } {
+export function fitSerpTitle(title: string, maxTotal = 60): FittedSerpTitle {
   const cleaned = segmentTitle(title);
   if (cleaned.length + fullBrandTail.length <= maxTotal) return cleaned;
   const budget = Math.max(24, maxTotal - compactBrandTail.length);
   return { absolute: `${clipAtWord(cleaned, budget)}${compactBrandTail}` };
+}
+
+/** Absolute string for Open Graph / JSON-LD from a fitSerpTitle result. */
+export function absoluteSerpTitle(fitted: FittedSerpTitle): string {
+  if (typeof fitted === "string") return `${fitted}${fullBrandTail}`;
+  if (fitted && typeof fitted === "object" && "absolute" in fitted) {
+    return String(fitted.absolute || "");
+  }
+  return site.name;
 }
 
 /** Keep meta descriptions near typical SERP length. */

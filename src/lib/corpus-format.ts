@@ -2,6 +2,8 @@
  * Format American Dragon corpus section bodies for readable clinic UI.
  */
 
+import { trimDescription } from "@/lib/seo";
+
 const MERIDIANS = new Set(
   [
     "heart",
@@ -50,18 +52,6 @@ const TASTES = new Set(
   ].map((s) => s.toLowerCase()),
 );
 
-export function formatCorpusHeading(heading: string): string {
-  return String(heading || "")
-    .toLowerCase()
-    .replace(/\b\w/g, (c) => c.toUpperCase())
-    .replace(/\bAnd\b/g, "and")
-    .replace(/\bOf\b/g, "of")
-    .replace(/\bThe\b/g, "the")
-    .replace(/\bWith\b/g, "with")
-    .replace(/\bIn\b/g, "in")
-    .replace(/\bFor\b/g, "for");
-}
-
 const SMALL_TITLE_WORDS = new Set([
   "a",
   "an",
@@ -83,7 +73,7 @@ const SMALL_TITLE_WORDS = new Set([
 
 /** Readable display titles: "DANG GUI" → "Dang Gui", keep LI-4 / N-HN-54. */
 export function formatCorpusTitle(title: string): string {
-  const raw = String(title || "").replace(/\s+/g, " ").trim();
+  const raw = title.replace(/\s+/g, " ").trim();
   if (!raw) return "";
 
   // Mask point codes so hyphen splitting does not break LI-4 / N-HN-54.
@@ -117,6 +107,11 @@ export function formatCorpusTitle(title: string): string {
     .join("");
 
   return titled.replace(/__CODE(\d+)__/g, (_, i) => codes[Number(i)] || "");
+}
+
+/** Section headings share the same title-case rules as corpus display titles. */
+export function formatCorpusHeading(heading: string): string {
+  return formatCorpusTitle(heading);
 }
 
 /** Merge soft-wrapped lines where a continuation starts lowercase or mid-clause. */
@@ -271,7 +266,7 @@ function parseActionsIndications(body: string): CorpusBlock | null {
 
 function stripRepeatedHeading(heading: string, body: string): string {
   const key = heading.replace(/:$/, "").trim().toUpperCase();
-  const lines = String(body || "")
+  const lines = body
     .split(/\n+/)
     .map((l) => l.trim())
     .filter(Boolean);
@@ -378,7 +373,7 @@ export function corpusSearchPlaceholder(type: string): string {
 }
 
 export function letterKey(title: string): string {
-  const ch = String(title || "")
+  const ch = title
     .replace(/^\(+/, "")
     .trim()
     .charAt(0)
@@ -405,11 +400,9 @@ export function corpusMetaDescription(input: {
   const point = input.pointCode?.trim() || "";
   const sectionProse = Object.entries(input.sections || {})
     .filter(([key]) => key !== "INTRO" && key !== "NAME" && key !== "CATEGORY")
-    .map(([, body]) => String(body || "").replace(/\s+/g, " ").trim())
+    .map(([, body]) => body.replace(/\s+/g, " ").trim())
     .find((body) => body.length > 40);
-  const summary = String(input.summary || "")
-    .replace(/\s+/g, " ")
-    .trim();
+  const summary = (input.summary || "").replace(/\s+/g, " ").trim();
   const prose = sectionProse || summary;
 
   const identity = [
@@ -423,12 +416,5 @@ export function corpusMetaDescription(input: {
 
   const lead = `${identity} — American Dragon ${input.typeLabel.toLowerCase()} reference for clinic education at Nguyen's Osteopathic Clinic.`;
   const joined = prose ? `${lead} ${prose}` : lead;
-  // Local trim to avoid circular imports with seo.ts
-  const max = 158;
-  const normalized = joined.replace(/\s+/g, " ").trim();
-  if (normalized.length <= max) return normalized;
-  const cut = normalized.slice(0, max - 1);
-  const lastSpace = cut.lastIndexOf(" ");
-  const base = (lastSpace > 90 ? cut.slice(0, lastSpace) : cut).trim();
-  return `${base.replace(/[,:;.–-]+$/, "")}…`;
+  return trimDescription(joined);
 }

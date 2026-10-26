@@ -22,6 +22,7 @@ import { hasTopicEvidence } from "@/lib/library-evidence";
 import {
   breadcrumbJsonLd,
   defaultOgImage,
+  absoluteSerpTitle,
   fitSerpTitle,
   trimDescription,
 } from "@/lib/seo";
@@ -77,10 +78,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = fitSerpTitle(`${article.title} education`);
   const path = `/education/library/${article.slug}`;
-  const ogTitle =
-    typeof title === "string"
-      ? `${article.title} | ${site.name}`
-      : title.absolute;
+  const ogTitle = absoluteSerpTitle(title);
 
   return {
     title,

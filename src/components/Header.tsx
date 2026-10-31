@@ -25,8 +25,15 @@ function navLinkClass(active: boolean) {
     : "inline-flex min-h-11 items-center text-navy/75 transition hover:text-teal";
 }
 
+type NavLink = {
+  href: string;
+  label: string;
+  desktop: boolean;
+  external?: boolean;
+};
+
 /** Primary lg row — Blog stays mobile-only to ease crowding with VI/EN switch. */
-const links = [
+const links: NavLink[] = [
   { href: "/about", label: "About", desktop: true },
   { href: "/conditions", label: "Conditions", desktop: true },
   { href: "/exercises", label: "Exercises", desktop: true },
@@ -37,6 +44,12 @@ const links = [
   { href: "/insurance", label: "Insurance", desktop: false },
   { href: "/reviews", label: "Reviews", desktop: false },
   { href: "/find-us", label: "Find us", desktop: true },
+  {
+    href: site.products.treowClinic.url,
+    label: site.products.treowClinic.name,
+    desktop: true,
+    external: true,
+  },
   { href: "/contact", label: "Contact", desktop: false },
   { href: "/vi", label: "Tiếng Việt", desktop: true },
 ];
@@ -366,6 +379,19 @@ export function Header() {
           {links
             .filter((link) => link.href !== "/about" && link.desktop)
             .map((link) => {
+              if (link.external) {
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={navLinkClass(false)}
+                  >
+                    {link.label}
+                  </a>
+                );
+              }
               const href = resolveNavHref(pathname, link.href);
               const active = pathMatches(pathname, href);
               return (
@@ -588,6 +614,20 @@ export function Header() {
                   {links
                     .filter((link) => link.href !== "/about")
                     .map((link) => {
+                      if (link.external) {
+                        return (
+                          <a
+                            key={link.href}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block rounded-xl px-3 py-3 text-base text-navy hover:bg-cream-mist"
+                            onClick={closeMenu}
+                          >
+                            {link.label}
+                          </a>
+                        );
+                      }
                       const href = resolveNavHref(pathname, link.href);
                       const active = pathMatches(pathname, href);
                       return (

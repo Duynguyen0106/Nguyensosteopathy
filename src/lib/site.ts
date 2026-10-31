@@ -185,8 +185,8 @@ export const site = {
     treowClinic: {
       name: "Treow Clinic",
       shortLabel: "Treow",
-      url: "https://treow-clinic.vercel.app",
-      loginUrl: "https://treow-clinic.vercel.app/login",
+      url: "https://treowclinic.com/",
+      loginUrl: "https://treowclinic.com/login",
       tagline: "Clinic booking and practice management",
       description:
         "The booking and clinic app that powers online appointments for Nguyen's Osteopathic Clinic — staff login, services, hours, and the public /book embed.",

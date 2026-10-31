@@ -1,19 +1,19 @@
 Nguyen's Osteopathic Clinic — logo working files
 ================================================
 
-Source (raster)
-  nguyens-osteopathic-clinic-logo-source.jpg   Original upload (1536x1024)
+RECOMMENDED VECTOR (traced from official artwork)
+  nguyens-osteopathic-clinic-logo.svg
+  - True vector paths
+  - Navy #052D51 + teal #088E91 matching the source logo
+  - Open in Figma / Illustrator / Inkscape
 
-Working / editable
-  nguyens-osteopathic-clinic-logo.svg          Vector lockup (open in Figma / Illustrator / Inkscape)
+PIXEL-EXACT SVG (embedded PNG — identical to original)
+  nguyens-osteopathic-clinic-logo-exact.svg
+  - Use if you need a perfect visual match without editing paths
 
-Print & web ready
-  nguyens-osteopathic-clinic-logo.png          Full lockup, transparent background
-  nguyens-osteopathic-clinic-logo.webp         Full lockup (web)
-  nguyens-logo-mark.png                        Icon only (N + spine), transparent
-  nguyens-logo-mark.webp                       Icon only (web)
+RASTER
+  nguyens-osteopathic-clinic-logo.png / .webp   Transparent lockup
+  nguyens-logo-mark.png / .webp                 Icon only
+  nguyens-osteopathic-clinic-logo-source.jpg    Original upload
 
-Also copied into the site at:
-  public/images/logo.jpg
-  public/images/logo-lockup.{svg,png,webp}
-  public/images/logo-mark.{png,webp}
+preview-vector.png  Quick preview of the traced SVG

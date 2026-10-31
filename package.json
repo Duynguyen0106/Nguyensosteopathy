@@ -16,6 +16,7 @@
     "voucher": "node scripts/generate-voucher.mjs",
     "facebook-poster": "node scripts/generate-facebook-poster.mjs",
     "tos-poster": "node scripts/generate-tos-night-poster.mjs",
+    "linkedin-cover": "node scripts/generate-linkedin-cover.mjs",
     "blog-images": "node scripts/fetch-blog-images.mjs && node scripts/fetch-blog-images-missing.mjs",
     "images:webp": "node scripts/convert-images-webp.mjs",
     "seo:gsc": "node scripts/seo-gsc-checklist.mjs",

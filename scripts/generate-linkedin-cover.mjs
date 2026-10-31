@@ -207,7 +207,7 @@ const browser = await chromium.launch({
 });
 const page = await browser.newPage({
   viewport: { width: W, height: H },
-  deviceScaleFactor: 2,
+  deviceScaleFactor: 1,
 });
 await page.goto(`file://${htmlPath}`, { waitUntil: "networkidle" });
 await page.evaluate(async () => {

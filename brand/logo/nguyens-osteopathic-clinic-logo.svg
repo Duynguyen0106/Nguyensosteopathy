@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Nguyen's Osteopathic Clinic</title>
+  <desc id="desc">Logo lockup: serif N with teal spine, clinic name, and tagline.</desc>
+  <defs>
+    <linearGradient id="spineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(292 28)">
+    <path
+      fill="#0B2C45"
+      d="M18 12h38c3.2 0 5.2 1.6 5.2 4.4v148.2c0 2.8-2 4.4-5.2 4.4H28.8c-3.2 0-5.2-1.6-5.2-4.4V52.6L118.6 169h0.4c2.8 0 4.8-1.5 4.8-4.2V16.4c0-2.8 2-4.4 5.2-4.4H168c3.2 0 5.2 1.6 5.2 4.4v148.2c0 2.8-2 4.4-5.2 4.4h-38c-3.2 0-5.2-1.6-5.2-4.4V131.4L48.2 12H18z"
+    />
+    <g fill="url(#spineGrad)" transform="translate(118 8)">
+      <ellipse cx="22" cy="14" rx="16" ry="9" transform="rotate(-18 22 14)"/>
+      <ellipse cx="26" cy="36" rx="15" ry="8.5" transform="rotate(-8 26 36)"/>
+      <ellipse cx="28" cy="58" rx="14.5" ry="8" transform="rotate(2 28 58)"/>
+      <ellipse cx="26" cy="80" rx="14" ry="7.8" transform="rotate(10 26 80)"/>
+      <ellipse cx="22" cy="102" rx="13.5" ry="7.5" transform="rotate(16 22 102)"/>
+      <ellipse cx="16" cy="124" rx="13" ry="7.2" transform="rotate(20 16 124)"/>
+      <ellipse cx="10" cy="146" rx="12" ry="7" transform="rotate(18 10 146)"/>
+      <ellipse cx="6" cy="166" rx="11" ry="6.5" transform="rotate(12 6 166)"/>
+      <path fill="#0F766E" opacity="0.55" d="M20 10c8 18 12 40 8 62s-14 40-22 58c3-1 6-1 8 0 9-18 20-36 24-58s0-44-8-62c-2-1-6-1-10 0z"/>
+    </g>
+  </g>
+
+  <text x="400" y="292" text-anchor="middle" fill="#0B2C45"
+    font-family="Georgia, 'Times New Roman', Times, serif" font-size="72" font-weight="700" letter-spacing="6">NGUYEN'S</text>
+  <text x="400" y="348" text-anchor="middle" fill="#0D9488"
+    font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    font-size="26" font-weight="600" letter-spacing="10">OSTEOPATHIC CLINIC</text>
+
+  <line x1="120" y1="412" x2="250" y2="412" stroke="#0D9488" stroke-width="2"/>
+  <line x1="550" y1="412" x2="680" y2="412" stroke="#0D9488" stroke-width="2"/>
+  <text x="400" y="418" text-anchor="middle" fill="#0B2C45"
+    font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    font-size="18" font-weight="500">Recover, Realign, and Restore Your Vitality</text>
+</svg>

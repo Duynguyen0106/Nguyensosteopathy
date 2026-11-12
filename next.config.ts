@@ -17,12 +17,6 @@ const libraryOverlapRedirects = [
 ];
 
 const nextConfig: NextConfig = {
-  serverActions: {
-    allowedOrigins: [
-      "nguyensosteopathy.com",
-      "www.nguyensosteopathy.com",
-    ],
-  },
   experimental: {
     agentUpgrade: "security",
   },

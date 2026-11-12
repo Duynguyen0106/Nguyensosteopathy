@@ -89,12 +89,19 @@ See [`.env.example`](.env.example) for:
 
 ```bash
 npm run dev          # local Next.js
-npm run build        # Next.js production build
+npm run build        # OpenNext Cloudflare Worker build (also used by Workers Builds)
+npm run build:next   # plain `next build` only
 npm run preview      # OpenNext build + Wrangler local preview
 npm run deploy       # OpenNext build + deploy to Cloudflare Workers
 npm run lint
 npm run leaflet
 ```
+
+Workers Builds (Git) should use:
+
+- **Build command:** `npm run build` (or `npx opennextjs-cloudflare build`)
+- **Deploy command:** `npx wrangler deploy`  
+  (or `npx opennextjs-cloudflare deploy` if you prefer rebuild+deploy in one step)
 
 ## Deploy (Cloudflare Workers + OpenNext)
 

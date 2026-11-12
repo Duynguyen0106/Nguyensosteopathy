@@ -19,6 +19,11 @@ const libraryOverlapRedirects = [
 const nextConfig: NextConfig = {
   experimental: {
     agentUpgrade: "security",
+    allowedDevOrigins: [
+      "nguyensosteopathy.com",
+      "www.nguyensosteopathy.com",
+      "nguyensosteopathy.duydichdanh.workers.dev",
+    ],
   },
   cacheComponents: true,
   partialPrefetching: true,

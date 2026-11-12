@@ -83,21 +83,32 @@ See [`.env.example`](.env.example) for:
 - Treow booking URLs
 - Optional `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_GTM_ID` (consent-gated)
 - Server-only `GOOGLE_PLACES_API_KEY` for live Google reviews on `/` and `/reviews`
-  (Places API **New** + billing; restrict the key to that API; set on Vercel Production)
+  (Places API **New** + billing; restrict the key to that API; set as a Cloudflare Worker secret)
 
 ## Scripts
 
 ```bash
-npm run dev
-npm run build
-npm run start
+npm run dev          # local Next.js
+npm run build        # Next.js production build
+npm run preview      # OpenNext build + Wrangler local preview
+npm run deploy       # OpenNext build + deploy to Cloudflare Workers
 npm run lint
 npm run leaflet
 ```
 
-## Deploy (Vercel)
+## Deploy (Cloudflare Workers + OpenNext)
 
-1. Import `Duynguyen0106/Nguyensosteopathy` in [Vercel](https://vercel.com/new).
-2. Framework preset: Next.js (defaults are fine).
-3. Set env vars from `.env.example` (Places API for reviews; GA/GTM optional).
-4. Deploy production from `main` after merging the PR.
+Hosting runs on **Cloudflare Workers** via [`@opennextjs/cloudflare`](https://opennext.js.org/cloudflare). The DNS zone for `nguyensosteopathy.com` is already on Cloudflare.
+
+1. Install deps: `npm install`
+2. Log in: `npx wrangler login` (or set `CLOUDFLARE_API_TOKEN`)
+3. Copy [`.dev.vars.example`](.dev.vars.example) → `.dev.vars` for local preview secrets
+4. Set production secrets / vars in **Workers & Pages → nguyensosteopathy → Settings → Variables**:
+   - `GOOGLE_PLACES_API_KEY` (secret)
+   - `GOOGLE_PLACE_ID`, `GOOGLE_PLACE_QUERY`
+   - optional `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_GTM_ID`
+5. Deploy: `npm run deploy` (or connect the GitHub repo to Cloudflare Workers Builds on `main`)
+6. Confirm custom domains **www.nguyensosteopathy.com** and **nguyensosteopathy.com** are attached to the Worker (see `wrangler.jsonc` `routes`)
+7. After cutover is healthy, remove the old Vercel project so `*.vercel.app` stops serving a second copy
+
+Optional: create an R2 bucket `nguyensosteopathy-next-cache` and uncomment the R2 binding in `wrangler.jsonc` + `open-next.config.ts` for ISR / fetch revalidation cache (Google reviews).

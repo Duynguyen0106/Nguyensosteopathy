@@ -2,15 +2,19 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 /**
- * Keep *.vercel.app (and other non-canonical hosts) out of the index.
- * Custom domain www is the only production host we want crawled.
+ * Keep non-canonical preview hosts out of the index.
+ * Production crawl target: www.nguyensosteopathy.com
  */
 export function middleware(request: NextRequest) {
-  const host = request.headers.get("host") || "";
+  const host = (request.headers.get("host") || "").toLowerCase();
   const response = NextResponse.next();
 
-  // Covers nguyensosteopathy.vercel.app and any other *.vercel.app preview host.
-  if (host.endsWith(".vercel.app")) {
+  const isPreviewHost =
+    host.endsWith(".vercel.app") ||
+    host.endsWith(".workers.dev") ||
+    host.endsWith(".pages.dev");
+
+  if (isPreviewHost) {
     response.headers.set("X-Robots-Tag", "noindex, nofollow");
   }
 

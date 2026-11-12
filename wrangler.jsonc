@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "nguyensosteopathy",
+  "main": ".open-next/worker.js",
+  "upload_source_maps": true,
+  "compatibility_date": "2026-11-12",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  // Preview URL already referenced in next.config allowedDevOrigins
+  "workers_dev": true,
+  // Custom domains (zone already on Cloudflare DNS). Attach/confirm in
+  // Workers & Pages → nguyensosteopathy → Settings → Domains.
+  "routes": [
+    { "pattern": "www.nguyensosteopathy.com", "custom_domain": true },
+    { "pattern": "nguyensosteopathy.com", "custom_domain": true }
+  ],
+  // Optional ISR / fetch cache. Create the bucket once:
+  //   npx wrangler r2 bucket create nguyensosteopathy-next-cache
+  // Then uncomment:
+  // "r2_buckets": [
+  //   { "binding": "NEXT_INC_CACHE_R2_BUCKET", "bucket_name": "nguyensosteopathy-next-cache" }
+  // ]
+}

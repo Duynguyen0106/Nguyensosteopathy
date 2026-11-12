@@ -1,0 +1,6 @@
+# Cloudflare static asset caching (OpenNext / Workers assets)
+/_next/static/*
+  Cache-Control: public,max-age=31536000,immutable
+
+/images/*
+  Cache-Control: public,max-age=31536000,immutable

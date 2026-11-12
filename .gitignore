@@ -36,8 +36,14 @@ yarn-error.log*
 # Permission-gated third-party corpus (American Dragon raw + normalized)
 /private/american-dragon/
 
-# vercel
+# vercel (legacy — site deploys to Cloudflare Workers)
 .vercel
+
+# cloudflare / OpenNext
+.open-next
+.wrangler
+.dev.vars
+cloudflare-env.d.ts
 
 # typescript
 *.tsbuildinfo

@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 import libraryOverlap from "./src/data/library-condition-overlap.json";
+
+// Enables Cloudflare bindings during `next dev` (no-op in production builds).
+initOpenNextCloudflareForDev();
 
 const libraryOverlapRedirects = [
   ...Object.entries(libraryOverlap.redirects).map(([topic, destination]) => ({
@@ -19,12 +23,13 @@ const libraryOverlapRedirects = [
 const nextConfig: NextConfig = {
   experimental: {
     agentUpgrade: "security",
-    allowedDevOrigins: [
-      "nguyensosteopathy.com",
-      "www.nguyensosteopathy.com",
-      "nguyensosteopathy.duydichdanh.workers.dev",
-    ],
   },
+  // Dev-only: allow custom / Workers preview hosts to hit the Next dev server.
+  allowedDevOrigins: [
+    "nguyensosteopathy.com",
+    "www.nguyensosteopathy.com",
+    "nguyensosteopathy.duydichdanh.workers.dev",
+  ],
   cacheComponents: true,
   partialPrefetching: true,
   poweredByHeader: false,

@@ -1,7 +1,8 @@
 # Local Wrangler / OpenNext preview secrets (copy to .dev.vars — never commit)
 NEXT_PUBLIC_BOOKING_URL=https://www.nguyensosteopathy.com/book
-NEXT_PUBLIC_BOOKING_EMBED_URL=https://treow-clinic.vercel.app/embed/nguyens-osteopathy
-NEXT_PUBLIC_BOOKING_EXTERNAL_URL=https://treow-clinic.vercel.app/book/nguyens-osteopathy
+NEXT_PUBLIC_TREOW_APP_ORIGIN=https://treow-clinic.duydichdanh.workers.dev
+NEXT_PUBLIC_BOOKING_EMBED_URL=https://treow-clinic.duydichdanh.workers.dev/embed/nguyens-osteopathy
+NEXT_PUBLIC_BOOKING_EXTERNAL_URL=https://treow-clinic.duydichdanh.workers.dev/book/nguyens-osteopathy
 NEXT_PUBLIC_GA_MEASUREMENT_ID=
 NEXT_PUBLIC_GTM_ID=
 GOOGLE_PLACES_API_KEY=

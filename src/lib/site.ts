@@ -162,13 +162,20 @@ export const site = {
   bookingUrl:
     process.env.NEXT_PUBLIC_BOOKING_URL ??
     "https://www.nguyensosteopathy.com/book",
+  /**
+   * Treow Clinic app (Cloudflare Workers). Override booking paths with env if
+   * you attach a custom domain later.
+   */
+  treowAppOrigin:
+    process.env.NEXT_PUBLIC_TREOW_APP_ORIGIN ??
+    "https://treow-clinic.duydichdanh.workers.dev",
   /** Treow non-embed public booking (fallback / “open full page”). */
   bookingExternalUrl:
     process.env.NEXT_PUBLIC_BOOKING_EXTERNAL_URL ??
-    "https://treow-clinic.vercel.app/book/nguyens-osteopathy",
+    "https://treow-clinic.duydichdanh.workers.dev/book/nguyens-osteopathy",
   bookingEmbedUrl:
     process.env.NEXT_PUBLIC_BOOKING_EMBED_URL ??
-    "https://treow-clinic.vercel.app/embed/nguyens-osteopathy",
+    "https://treow-clinic.duydichdanh.workers.dev/embed/nguyens-osteopathy",
   /**
    * Products Austin built — clinician/clinic tools (not patient booking embeds).
    * MSK Tutor is for therapists/students; Treow powers this site’s /book widget.
@@ -185,8 +192,8 @@ export const site = {
     treowClinic: {
       name: "Treow Clinic",
       shortLabel: "Treow",
-      url: "https://treowclinic.com/",
-      loginUrl: "https://treowclinic.com/login",
+      url: "https://treow-clinic.duydichdanh.workers.dev/",
+      loginUrl: "https://treow-clinic.duydichdanh.workers.dev/login",
       tagline: "Clinic booking and practice management",
       description:
         "The booking and clinic app that powers online appointments for Nguyen's Osteopathic Clinic — staff login, services, hours, and the public /book embed.",

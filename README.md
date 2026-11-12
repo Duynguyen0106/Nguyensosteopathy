@@ -29,10 +29,10 @@ Printable A5 leaflet (148×210mm, letterbox-friendly, with booking QR): `public/
 | Surface | Default URL |
 |---------|-------------|
 | Site `/book` page | `https://www.nguyensosteopathy.com/book` |
-| `/book` embed iframe | `https://treow-clinic.vercel.app/embed/nguyens-osteopathy` |
-| “Open full booking page” | `https://treow-clinic.vercel.app/book/nguyens-osteopathy` |
+| `/book` embed iframe | `https://treow-clinic.duydichdanh.workers.dev/embed/nguyens-osteopathy` |
+| “Open full booking page” | `https://treow-clinic.duydichdanh.workers.dev/book/nguyens-osteopathy` |
 
-Override with `NEXT_PUBLIC_BOOKING_URL`, `NEXT_PUBLIC_BOOKING_EMBED_URL`, and `NEXT_PUBLIC_BOOKING_EXTERNAL_URL` if needed.
+Override with `NEXT_PUBLIC_TREOW_APP_ORIGIN`, `NEXT_PUBLIC_BOOKING_URL`, `NEXT_PUBLIC_BOOKING_EMBED_URL`, and `NEXT_PUBLIC_BOOKING_EXTERNAL_URL` if needed (e.g. after attaching a custom domain to Treow).
 
 Canonical service URLs are `/services/[slug]`. Legacy hubs (`/shockwave`, `/back-neck`, …) permanently redirect there.
 
@@ -52,7 +52,7 @@ Product URLs live in `site.products` inside `src/lib/site.ts` and are linked fro
 | Product | Audience | Live URL |
 |---------|----------|----------|
 | **MSK Tutor** | Clinicians / students (not patients) | https://osteotutor-c0c151c1.vercel.app |
-| **Treow Clinic** | Clinic booking / staff app | https://treow-clinic.vercel.app |
+| **Treow Clinic** | Clinic booking / staff app | https://treow-clinic.duydichdanh.workers.dev |
 
 ### LinkedIn checklist (manual)
 
@@ -65,7 +65,7 @@ On [Austin’s LinkedIn](https://www.linkedin.com/in/austin-nguyen-do):
 
 ### Treow staff profile checklist (manual)
 
-At [Treow login](https://treow-clinic.vercel.app/login), for clinic slug `nguyens-osteopathy`:
+At [Treow login](https://treow-clinic.duydichdanh.workers.dev/login), for clinic slug `nguyens-osteopathy`:
 
 1. Confirm practitioner name, photo, GOsC Reg. No. **12332**, and bio match the marketing site.
 2. Align services, prices, and bookable hours with `src/lib/site.ts`.

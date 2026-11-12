@@ -30,8 +30,11 @@ const nextConfig: NextConfig = {
     "www.nguyensosteopathy.com",
     "nguyensosteopathy.duydichdanh.workers.dev",
   ],
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Disabled for Cloudflare Workers / OpenNext: workerd cancels hung requests
+  // (CF 1101) when Cache Components + partial prefetching are enabled.
+  // Re-enable after OpenNext documents full support for this combo.
+  cacheComponents: false,
+  partialPrefetching: false,
   poweredByHeader: false,
   compress: true,
   images: {

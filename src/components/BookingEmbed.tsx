@@ -11,7 +11,7 @@ function embedOrigin(url: string) {
   try {
     return new URL(url).origin;
   } catch {
-    return "https://treow-clinic.vercel.app";
+    return site.treowAppOrigin;
   }
 }
 

@@ -14,10 +14,18 @@ const nap = {
   line2: "Charlton, London, SE7 8UG",
   venue: "Village Pharmacy",
   bookable: {
-    open: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    closed: ["Wednesday", "Sunday"],
-    weekday: "09:00–18:00",
-    saturday: "09:00–17:30",
+    open: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    closed: [],
+    weekday: "09:00–20:00",
+    saturday: "09:00–20:00",
   },
 };
 
@@ -26,7 +34,7 @@ const directories = [
     id: "yell",
     label: "Yell",
     url: "https://www.yell.com/s/osteopaths-woolwich.html",
-    note: "Search listing; open clinic profile and confirm Wednesday CLOSED",
+    note: "Search listing; open clinic profile and confirm Mon–Sun 09:00–20:00",
   },
   {
     id: "gosc",
@@ -50,13 +58,13 @@ const directories = [
     id: "apple",
     label: "Apple Maps",
     url: "https://maps.apple.com/?q=Nguyen%27s+Osteopathic+Clinic+Woolwich",
-    note: "Confirm NAP + Wednesday closed",
+    note: "Confirm NAP + Mon–Sun 09:00–20:00",
   },
   {
     id: "bing",
     label: "Bing Places",
     url: "https://www.bing.com/maps?q=Nguyen%27s+Osteopathic+Clinic+Woolwich",
-    note: "Confirm NAP + Wednesday closed",
+    note: "Confirm NAP + Mon–Sun 09:00–20:00",
   },
   {
     id: "google",
@@ -75,9 +83,13 @@ console.log(`  Website: ${nap.website}`);
 console.log(`  Address: ${nap.venue}, ${nap.line1}, ${nap.line2}`);
 console.log("  Bookable hours:");
 console.log(
-  `    ${nap.bookable.open.join(", ")} — weekdays ${nap.bookable.weekday}; Sat ${nap.bookable.saturday}`,
+  `    ${nap.bookable.open.join(", ")} — ${nap.bookable.weekday}`,
 );
-console.log(`    CLOSED: ${nap.bookable.closed.join(", ")}`);
+console.log(
+  nap.bookable.closed.length
+    ? `    CLOSED: ${nap.bookable.closed.join(", ")}`
+    : "    CLOSED: (none — open every day)",
+);
 console.log("");
 
 console.log("Directories to verify (manual open + tick):\n");
@@ -119,6 +131,5 @@ for (const d of directories) {
 }
 
 console.log(`
-Fix rule: if any directory shows Wednesday open for osteopathy, update it to CLOSED.
-Pharmacy building access must not be listed as osteopathy bookable hours.
+Fix rule: directories should show Monday–Sunday 09:00–20:00 for clinic hours.
 `);

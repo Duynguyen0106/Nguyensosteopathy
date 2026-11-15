@@ -140,8 +140,7 @@ export default function VietnameseAboutPage() {
             <p>
               Phòng khám nằm trong {site.address.venue}, {site.address.line1},{" "}
               {site.address.line2}. Hỏi quầy nhà thuốc khi đến — không cần GP
-              referral. Nhận lịch Thứ Hai, Ba, Năm, Sáu và Bảy (đóng Tư &amp;
-              Chủ Nhật).
+              referral. Mở cửa Thứ Hai đến Chủ Nhật, 9:00–20:00.
             </p>
             <p>
               Dịch vụ phổ biến: đau lưng &amp; cổ, shockwave tập trung, hỗ trợ

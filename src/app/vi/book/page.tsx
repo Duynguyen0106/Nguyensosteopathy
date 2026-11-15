@@ -21,7 +21,7 @@ const viBookFaqs = [
   {
     question: "Ngày nào phòng khám nhận lịch?",
     answer:
-      "Osteopathy nhận lịch Thứ Hai, Thứ Ba, Thứ Năm, Thứ Sáu và Thứ Bảy. Đóng cửa Thứ Tư và Chủ Nhật. Lịch online luôn hiện khung giờ còn trống.",
+      "Phòng khám mở cửa Thứ Hai đến Chủ Nhật, 9:00–20:00. Lịch online luôn hiện khung giờ còn trống.",
   },
   {
     question: "Có nói tiếng Việt khi đặt lịch không?",
@@ -114,9 +114,8 @@ export default function VietnameseBookPage() {
             Ngày nhận lịch
           </p>
           <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-            Ngày nhận lịch osteopathy: Thứ Hai, Thứ Ba, Thứ Năm, Thứ Sáu và Thứ
-            Bảy (đóng Thứ Tư và Chủ Nhật). Lịch trực tuyến luôn hiển thị khung
-            giờ còn trống — giờ mở cửa nhà thuốc có thể khác giờ bookable.
+            Phòng khám mở cửa Thứ Hai đến Chủ Nhật, 9:00–20:00. Lịch trực tuyến
+            luôn hiển thị khung giờ còn trống.
           </p>
           <p className="mt-3 text-sm text-slate-600">
             Khám tại nhà?{" "}

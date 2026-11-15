@@ -370,19 +370,10 @@ export default function VietnamesePage() {
               <div className="mt-4 space-y-3 text-sm text-slate-700 md:text-base">
                 <p>
                   <span className="font-semibold text-navy">
-                    Nhà thuốc (ra vào tòa nhà):
+                    Giờ mở cửa:
                   </span>{" "}
-                  Thứ Hai–Thứ Sáu 9:00–18:00 · Thứ Bảy 9:00–17:30
-                </p>
-                <p>
-                  <span className="font-semibold text-navy">
-                    Osteopathy (đặt lịch):
-                  </span>{" "}
-                  Thứ Hai, Thứ Ba, Thứ Năm, Thứ Sáu &amp; Thứ Bảy —{" "}
-                  <strong className="font-semibold text-navy">
-                    đóng Thứ Tư và Chủ Nhật
-                  </strong>
-                  . Lịch trực tuyến luôn hiển thị các khung giờ còn trống.
+                  Thứ Hai đến Chủ Nhật, 9:00–20:00. Lịch trực tuyến luôn hiển thị
+                  các khung giờ còn trống.
                 </p>
               </div>
 

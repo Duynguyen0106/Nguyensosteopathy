@@ -1096,7 +1096,7 @@ export const serviceBlogPosts: ServicePost[] = [
     sections: [
       {
         paragraphs: [
-          `Use ${site.websiteUrl}/book to choose a service and time. Wednesday and Sunday are unavailable for appointments.`,
+          `Use ${site.websiteUrl}/book to choose a service and time. The clinic is open Monday to Sunday, 9:00am – 8:00pm.`,
           `Prefer to talk it through? Call ${site.phone}. No GP referral needed.`,
         ],
       },
@@ -1141,7 +1141,7 @@ export const serviceBlogPosts: ServicePost[] = [
       {
         paragraphs: [
           "We are based inside Village Pharmacy at 9 The Village, Charlton SE7 8UG. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
-          "Pharmacy hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Wear comfortable clothing for movement assessment.",
+          "Open Monday to Sunday, 9:00am – 8:00pm. Wear comfortable clothing for movement assessment.",
         ],
       },
     ],

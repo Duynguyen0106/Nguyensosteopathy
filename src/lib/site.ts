@@ -135,25 +135,30 @@ export const site = {
   },
   /** Pharmacy / venue opening pattern (building access). */
   hours: [
-    { days: "Monday – Friday", time: "9:00am – 6:00pm" },
-    { days: "Saturday", time: "9:00am – 5:30pm" },
+    { days: "Monday – Sunday", time: "9:00am – 8:00pm" },
   ],
-  /** Osteopathy booking pattern (pharmacy access hours may differ). */
+  /** Osteopathy booking pattern (aligned with clinic open hours). */
   booking: {
-    bookableDaysLabel:
-      "Monday, Tuesday, Thursday, Friday and Saturday",
-    closedDaysLabel: "Wednesday and Sunday",
-    /** Display rows for bookable osteopathy clinic times (not pharmacy access). */
+    bookableDaysLabel: "Monday to Sunday",
+    /** Empty when the clinic is open every day. */
+    closedDaysLabel: "",
+    /** Display rows for bookable osteopathy clinic times. */
     hours: [
-      { days: "Mon, Tue, Thu, Fri", time: "9:00am – 6:00pm" },
-      { days: "Saturday", time: "9:00am – 5:30pm" },
+      { days: "Monday – Sunday", time: "9:00am – 8:00pm" },
     ],
-    shortNote:
-      "Bookable osteopathy days: Mon, Tue, Thu, Fri & Sat (closed Wed & Sun).",
-    note: "Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday). Live slots are always shown in the booking calendar.",
-    schemaWeekdays: ["Monday", "Tuesday", "Thursday", "Friday"] as const,
-    weekday: { opens: "09:00", closes: "18:00" },
-    saturday: { opens: "09:00", closes: "17:30" },
+    shortNote: "Open Monday to Sunday, 9:00am – 8:00pm.",
+    note: "The clinic is open Monday to Sunday, 9:00am – 8:00pm. Live slots are always shown in the booking calendar.",
+    schemaWeekdays: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ] as const,
+    weekday: { opens: "09:00", closes: "20:00" },
+    saturday: { opens: "09:00", closes: "20:00" },
   },
   cancellation: "24 hours' notice is required for cancellations.",
   discount:
@@ -208,12 +213,6 @@ export const bookingHoursSpecification = [
     dayOfWeek: [...site.booking.schemaWeekdays],
     opens: site.booking.weekday.opens,
     closes: site.booking.weekday.closes,
-  },
-  {
-    "@type": "OpeningHoursSpecification" as const,
-    dayOfWeek: "Saturday" as const,
-    opens: site.booking.saturday.opens,
-    closes: site.booking.saturday.closes,
   },
 ];
 
@@ -274,7 +273,7 @@ export const faqs = [
   {
     question: "What are your opening hours?",
     answer:
-      "The pharmacy building (access) is open Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Osteopathy appointments are separate: bookable Mon, Tue, Thu, Fri & Sat — closed Wednesday and Sunday. Live slots are always shown in the online booking calendar.",
+      "The clinic is open Monday to Sunday, 9:00am – 8:00pm. Live slots are always shown in the online booking calendar.",
   },
   {
     question: "Can I speak Vietnamese at the clinic?",

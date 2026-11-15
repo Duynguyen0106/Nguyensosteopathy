@@ -59,7 +59,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Local care in Charlton SE7",
         paragraphs: [
-          `The clinic sits inside Village Pharmacy at 9 The Village, Charlton, London SE7 8UG — convenient for Plumstead, Charlton, Abbey Wood, Thamesmead and Greenwich. Ask at the pharmacy counter on arrival and you will be directed to the osteopathy room. Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday).`,
+          `The clinic sits inside Village Pharmacy at 9 The Village, Charlton, London SE7 8UG — convenient for Plumstead, Charlton, Abbey Wood, Thamesmead and Greenwich. Ask at the pharmacy counter on arrival and you will be directed to the osteopathy room. The clinic is open Monday to Sunday, 9:00am – 8:00pm.`,
           "If spinal pain is affecting your work or daily life, booking an assessment is a practical next step. You can also explore our condition guides on sciatica, neck pain and disc-related symptoms, or read about desk and office pain if screen work is the main driver.",
           "NHS staff and students receive 10% off with valid ID. Live booking slots are shown on our booking page. Prefer Vietnamese? Austin can consult in Vietnamese or English so you can describe symptoms without a language barrier.",
         ],
@@ -77,7 +77,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "How soon can I book in Charlton?",
         answer:
-          "Online booking shows live availability. Regular bookable days are Mon, Tue, Thu, Fri and Sat. Call or WhatsApp if you need help choosing a slot.",
+          "Online booking shows live availability every day, 9:00am – 8:00pm. Call or WhatsApp if you need help choosing a slot.",
       },
       {
         question: "What should I wear?",
@@ -439,7 +439,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Book deep tissue massage in SE18",
         paragraphs: [
-          `Nguyen's Osteopathic Clinic operates inside Village Pharmacy at The Village with bookable days Monday, Tuesday, Thursday, Friday and Saturday. NHS and student discounts apply with valid ID shown at the appointment.`,
+          `Nguyen's Osteopathic Clinic operates inside Village Pharmacy at The Village and is open Monday to Sunday, 9:00am – 8:00pm. NHS and student discounts apply with valid ID shown at the appointment.`,
           "Explore related services for back and neck osteopathy, sports rehab, or acupuncture if needling may complement soft-tissue release. Online booking is the fastest way to secure a 45-minute slot that fits your week.",
           "First-time visitors are welcome; say if it is your first clinical massage so we can pace accordingly. Combine with osteopathy across a month if joint stiffness and muscle load are both loud, or keep massage as maintenance when you are otherwise managing well between heavier training or desk blocks.",
           "If you are unsure whether to book massage or osteopathy first, start with an osteopathy assessment when joints feel stuck or pain refers, and choose massage when muscular heaviness and local tightness are the loudest complaints in day-to-day life.",
@@ -646,7 +646,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Book gentle care in Charlton SE7",
         paragraphs: [
-          `Find Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village. Bookable osteopathy days run Monday, Tuesday, Thursday, Friday and Saturday. Vietnamese or English consultation is available.`,
+          `Find Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village. The clinic is open Monday to Sunday, 9:00am – 8:00pm. Vietnamese or English consultation is available.`,
           "Related pages include headache and joint treatment, pregnancy support, and paediatric care. For a fuller explanation of osteopathy in general, see our what-is-osteopathy guide.",
           "If you tried osteopathy elsewhere and found it too forceful, mention that when you book. We can prioritise a cranial-led first session and only introduce other techniques if and when you want them. Your consent stays central throughout every visit.",
           "Commuters and local residents alike use cranial-focused sessions as a reset when stress settles into the neck and jaw. It is still clinical osteopathy — just delivered at a dosage that respects a sensitive system and a busy Woolwich week.",

@@ -235,7 +235,7 @@ const priority = {
       {
         heading: "Where to find us",
         paragraphs: [
-          "The clinic is inside Village Pharmacy, The Village, Charlton SE7 8UG. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Pharmacy hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking details and clinic hours for osteopathy are on our [find us](/find-us) and [book](/book) pages.",
+          "The clinic is inside Village Pharmacy, The Village, Charlton SE7 8UG. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Open Monday to Sunday, 9:00am – 8:00pm. Online booking details are on our [find us](/find-us) and [book](/book) pages.",
           "Parking, bus links, and nearby DLR/rail options are covered in local guides across the blog if you are travelling from Greenwich, Charlton, or Thamesmead.",
         ],
       },

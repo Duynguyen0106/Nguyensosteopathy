@@ -116,11 +116,21 @@ if (typeof clinic.geo?.latitude !== "number" || typeof clinic.geo?.longitude !==
   fail("geo coordinates missing");
 } else ok(`geo: ${clinic.geo.latitude}, ${clinic.geo.longitude}`);
 
-if (!Array.isArray(clinic.openingHoursSpecification) || clinic.openingHoursSpecification.length < 2) {
+if (!Array.isArray(clinic.openingHoursSpecification) || clinic.openingHoursSpecification.length < 1) {
   fail("openingHoursSpecification incomplete");
 } else {
   ok(`openingHoursSpecification: ${clinic.openingHoursSpecification.length} entries`);
   console.log(JSON.stringify(clinic.openingHoursSpecification, null, 2));
+  const days = clinic.openingHoursSpecification.flatMap((spec) =>
+    Array.isArray(spec.dayOfWeek) ? spec.dayOfWeek : [spec.dayOfWeek],
+  );
+  const opens = clinic.openingHoursSpecification[0]?.opens;
+  const closes = clinic.openingHoursSpecification[0]?.closes;
+  if (days.length < 7) fail("openingHoursSpecification missing full week");
+  else ok(`openingHoursSpecification covers ${days.length} days`);
+  if (opens !== "09:00" || closes !== "20:00") {
+    fail(`expected 09:00–20:00, got ${opens}–${closes}`);
+  } else ok("openingHours 09:00–20:00");
 }
 
 if (!Array.isArray(clinic.availableService) || clinic.availableService.length < 5) {

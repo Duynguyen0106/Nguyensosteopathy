@@ -100,10 +100,10 @@ npm run leaflet
 
 Workers Builds (Git) — recommended dashboard settings:
 
-- **Build command:** `npm run build` (or `npm run cf:build`)  
-  `open-next.config.ts` sets `buildCommand: "npx next build"` so OpenNext does not recurse when `npm run build` is the OpenNext CLI.
-- **Deploy command:** `npx wrangler deploy`  
-  `wrangler.jsonc` also runs OpenNext if `.open-next/worker.js` is missing, so a blank/mis-set Build command still deploys.
+- **Build command:** `npm run build` (or leave blank — Wrangler runs OpenNext via `wrangler.jsonc` `build.command`)
+- **Deploy command:** `npx wrangler deploy`
+- **Preview command:** `npx wrangler preview` (requires `previews: {}` in `wrangler.jsonc`)
+- `open-next.config.ts` sets `buildCommand: "npx next build"` so OpenNext does not recurse when `npm run build` is the OpenNext CLI.
 - Builds API needs a **user-scoped** API token (account tokens return “Invalid token”). Prefer the dashboard if you only have an account token.
 
 ## Deploy (Cloudflare Workers + OpenNext)

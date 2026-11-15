@@ -232,8 +232,9 @@ export default function FindUsPage() {
                 ))}
               </ul>
               <p className="mt-3 text-xs leading-relaxed text-slate-500">
-                Closed {site.booking.closedDaysLabel}. Live slots are always
-                shown in the booking calendar.
+                {site.booking.closedDaysLabel
+                  ? `Closed ${site.booking.closedDaysLabel}. Live slots are always shown in the booking calendar.`
+                  : "Open every day. Live slots are always shown in the booking calendar."}
               </p>
             </div>
           </div>

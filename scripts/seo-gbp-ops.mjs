@@ -24,7 +24,7 @@ const faqs = [
   ],
   [
     "What days can I book osteopathy?",
-    "Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday. We are closed Wednesday and Sunday. Live slots are shown on the booking page.",
+    "The clinic is open Monday to Sunday, 9:00am – 8:00pm. Live slots are shown on the booking page.",
   ],
   [
     "Is parking available near The Village, Charlton?",
@@ -75,14 +75,14 @@ console.log(`   Phone: ${site.phone}`);
 console.log(`   Website: ${site.websiteUrl}`);
 console.log(`   Address: ${site.address}`);
 console.log(`
-2. Hours (bookable osteopathy — NOT pharmacy-only access):
-   Monday     09:00–18:00
-   Tuesday    09:00–18:00
-   Wednesday  CLOSED
-   Thursday   09:00–18:00
-   Friday     09:00–18:00
-   Saturday   09:00–17:30
-   Sunday     CLOSED
+2. Hours (clinic open hours):
+   Monday     09:00–20:00
+   Tuesday    09:00–20:00
+   Wednesday  09:00–20:00
+   Thursday   09:00–20:00
+   Friday     09:00–20:00
+   Saturday   09:00–20:00
+   Sunday     09:00–20:00
 `);
 
 console.log("3. Q&A — seed these in GBP (copy/paste):\n");

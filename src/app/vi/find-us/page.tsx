@@ -17,7 +17,7 @@ const viFindFaqs = [
   {
     question: "Osteopathy mở ngày nào?",
     answer:
-      "Nhận lịch Thứ Hai, Ba, Năm, Sáu và Bảy. Đóng Thứ Tư và Chủ Nhật. Giờ mở cửa nhà thuốc (ra vào tòa nhà) có thể khác — luôn xem lịch online cho slot còn trống.",
+      "Phòng khám mở cửa Thứ Hai đến Chủ Nhật, 9:00–20:00. Lịch online luôn hiện khung giờ còn trống.",
   },
   {
     question: "Gửi xe ở đâu?",
@@ -205,8 +205,9 @@ export default function VietnameseFindUsPage() {
                 ))}
               </ul>
               <p className="mt-3 text-xs leading-relaxed text-slate-500">
-                Đóng {site.booking.closedDaysLabel}. Lịch trực tuyến luôn hiện
-                khung giờ còn trống.
+                {site.booking.closedDaysLabel
+                  ? `Đóng ${site.booking.closedDaysLabel}. Lịch trực tuyến luôn hiện khung giờ còn trống.`
+                  : "Mở cửa mỗi ngày. Lịch trực tuyến luôn hiện khung giờ còn trống."}
               </p>
             </div>
           </div>

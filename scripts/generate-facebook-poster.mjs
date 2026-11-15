@@ -182,7 +182,7 @@ const html = `<!DOCTYPE html>
 
     <div class="date-block">
       <p class="label">Bookable days</p>
-      <p class="date">Mon, Tue, Thu, Fri &amp; Sat</p>
+      <p class="date">Mon – Sun · 9:00am – 8:00pm</p>
     </div>
     <p class="details">
       Book with Austin Duy Nguyen, GOsC-registered osteopath, inside Village Pharmacy on The Village. No GP referral needed. NHS &amp; student 10%

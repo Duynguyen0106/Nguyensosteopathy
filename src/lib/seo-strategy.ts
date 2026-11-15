@@ -263,7 +263,7 @@ export const localPackFaqs = [
   {
     question: "What days can I book osteopathy?",
     answer:
-      "Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday. We are closed Wednesday and Sunday. Live slots are shown on the booking page.",
+      "The clinic is open Monday to Sunday, 9:00am – 8:00pm. Live slots are shown on the booking page.",
   },
   {
     question: "Is parking available near The Village, Charlton?",

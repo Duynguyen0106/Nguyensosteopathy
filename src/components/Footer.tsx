@@ -153,9 +153,13 @@ export function Footer() {
             ))}
           </div>
           <p className="mt-3 text-xs leading-relaxed text-white/70">
-            {isVi
-              ? `Đóng cửa ${site.booking.closedDaysLabel}. Lịch trống hiện trên đặt online.`
-              : `Closed ${site.booking.closedDaysLabel}. Live slots are shown in online booking.`}
+            {site.booking.closedDaysLabel
+              ? isVi
+                ? `Đóng cửa ${site.booking.closedDaysLabel}. Lịch trống hiện trên đặt online.`
+                : `Closed ${site.booking.closedDaysLabel}. Live slots are shown in online booking.`
+              : isVi
+                ? "Mở cửa mỗi ngày. Lịch trống hiện trên đặt online."
+                : "Open every day. Live slots are shown in online booking."}
           </p>
         </div>
 

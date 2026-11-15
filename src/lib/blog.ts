@@ -160,7 +160,7 @@ const blogPostInputs: BlogPostInput[] = [
       {
         heading: "Where to find us",
         paragraphs: [
-          `The clinic is inside ${site.address.venue}, ${site.address.line1}, ${site.address.line2}. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Pharmacy hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking is available Mon, Tue, Thu, Fri and Sat (closed Wednesday and Sunday).`,
+          `The clinic is inside ${site.address.venue}, ${site.address.line1}, ${site.address.line2}. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Open Monday to Sunday, 9:00am – 8:00pm. Online booking shows live availability.`,
         ],
       },
     ],
@@ -725,7 +725,7 @@ const blogPostInputs: BlogPostInput[] = [
           "GOsC-registered osteopath with clear, private appointments",
           "Drug-free care for back, neck, sports, and specialist pathways",
           "Online booking with no GP referral required",
-          `Pharmacy hours Mon–Fri 9–6 and Sat 9–5:30; bookable osteopathy days Mon, Tue, Thu, Fri and Sat`,
+          `Open Monday to Sunday, 9:00am – 8:00pm`,
         ],
         paragraphs: [
           "Whether you are dealing with desk neck from a Canary Wharf commute or weekend football niggles, local assessment beats hoping it will settle on its own.",

@@ -7,10 +7,10 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Khám osteopathy tại nhà · Woolwich & SE London",
+    absolute: "Khám osteopathy tại nhà · Charlton & SE London",
   },
   description:
-    "Khám osteopathy tại nhà gần Woolwich: buổi đầu £120 (60 phút), tái khám £100 (30 phút). Liên hệ Austin Duy Nguyen để xác nhận địa chỉ trước khi đặt.",
+    "Khám osteopathy tại nhà gần Charlton: buổi đầu £120 (60 phút), tái khám £100 (30 phút). Liên hệ Austin Duy Nguyen để xác nhận địa chỉ trước khi đặt.",
   alternates: {
     canonical: "/vi/services/home-visits",
     languages: {
@@ -21,22 +21,22 @@ export const metadata: Metadata = {
   },
   keywords: [
     "khám osteopathy tại nhà",
-    "osteopath home visit Woolwich",
-    "osteopath đến nhà SE18",
+    "osteopath home visit Charlton",
+    "osteopath đến nhà SE7",
   ],
   openGraph: pageOpenGraph({
-    title: "Khám osteopathy tại nhà · Woolwich",
+    title: "Khám osteopathy tại nhà · Charlton",
     description:
-      "Buổi đầu £120 (60 phút), tái khám £100 (30 phút). Phục vụ địa bàn gần Woolwich — xác nhận địa chỉ trước khi đặt.",
+      "Buổi đầu £120 (60 phút), tái khám £100 (30 phút). Phục vụ địa bàn gần Charlton — xác nhận địa chỉ trước khi đặt.",
     url: "/vi/services/home-visits",
     images: [defaultOgImage],
     locale: "vi_VN",
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Khám osteopathy tại nhà · Woolwich",
+    title: "Khám osteopathy tại nhà · Charlton",
     description:
-      "Buổi đầu £120 (60 phút), tái khám £100 (30 phút). Phục vụ địa bàn gần Woolwich.",
+      "Buổi đầu £120 (60 phút), tái khám £100 (30 phút). Phục vụ địa bàn gần Charlton.",
     images: [defaultOgImage.url],
   },
 };

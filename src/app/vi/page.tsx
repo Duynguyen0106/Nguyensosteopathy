@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     absolute: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
   },
   description:
-    "Osteopath người Việt đăng ký GOsC tại Woolwich SE18 — Austin Duy Nguyen hỗ trợ cộng đồng Việt bằng tiếng Việt và tiếng Anh. Đặt lịch không cần GP referral.",
+    "Osteopath người Việt đăng ký GOsC tại Charlton SE7 — Austin Duy Nguyen hỗ trợ cộng đồng Việt bằng tiếng Việt và tiếng Anh. Đặt lịch không cần GP referral.",
   alternates: {
     canonical: "/vi",
     languages: {
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   },
   keywords: [
     "osteopath người Việt",
-    "phòng khám xương khớp Woolwich",
+    "phòng khám xương khớp Charlton",
     "Austin Duy Nguyen",
     "osteopathy cộng đồng Việt UK",
     "đau lưng thợ nails",
-    "osteopath SE18",
+    "osteopath SE7",
   ],
   other: {
     "content-language": "vi",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
     description:
-      "Osteopath người Việt nói tiếng Việt tại Woolwich — chăm sóc cơ xương khớp cho cộng đồng Việt tại London SE18.",
+      "Osteopath người Việt nói tiếng Việt tại Charlton — chăm sóc cơ xương khớp cho cộng đồng Việt tại London SE7.",
     url: "/vi",
     locale: "vi_VN",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Phòng khám Xương khớp Nguyễn | Osteopath người Việt tại Anh",
     description:
-      "Osteopath người Việt nói tiếng Việt tại Woolwich — chăm sóc cơ xương khớp cho cộng đồng Việt tại London SE18.",
+      "Osteopath người Việt nói tiếng Việt tại Charlton — chăm sóc cơ xương khớp cho cộng đồng Việt tại London SE7.",
     images: ["/images/austin-nguyen.webp"],
   },
 };
@@ -315,7 +315,7 @@ export default function VietnamesePage() {
           <div className="relative aspect-[4/5] overflow-hidden md:aspect-[5/4]">
             <Image
               src="/images/clinic-room.webp"
-              alt="Không gian phòng khám Nguyen's Osteopathic Clinic tại Woolwich"
+              alt="Không gian phòng khám Nguyen's Osteopathic Clinic tại Charlton"
               fill
               loading="lazy"
               decoding="async"

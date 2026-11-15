@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = fitSerpTitle(`${condition.shortTitle} Woolwich`);
   const description = enrichDescription(
     condition.summary,
-    `Osteopathic care in Woolwich SE18 at ${site.name} — book without a GP referral.`,
+    `Osteopathic care in Charlton SE18 at ${site.name} — book without a GP referral.`,
   );
   return {
     title,

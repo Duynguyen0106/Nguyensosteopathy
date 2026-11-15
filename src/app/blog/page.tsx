@@ -169,7 +169,7 @@ export default function BlogIndexPage() {
             Ready to be assessed in clinic?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-slate-600">
-            Book online or call {site.phone}. Inside Village Pharmacy, Woolwich
+            Book online or call {site.phone}. Inside Village Pharmacy, Charlton
             — {site.booking.shortNote}
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">

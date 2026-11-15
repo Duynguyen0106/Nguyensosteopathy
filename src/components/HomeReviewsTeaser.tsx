@@ -15,7 +15,7 @@ export async function HomeReviewsTeaser() {
           <p className="font-display text-2xl">Find us on Google</p>
           <p className="mt-1 text-sm text-white/75">
             Read public ratings, or share your visit to help neighbours find care
-            in Woolwich.
+            in Charlton.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
@@ -102,7 +102,7 @@ export async function HomeReviewsTeaser() {
         <div className="mt-8 flex flex-col gap-4 border-l-2 border-teal/40 pl-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-xl text-base leading-relaxed text-slate-600">
             No public Google quotes to show yet. Book a visit, then leave a
-            review to help neighbours find care in Woolwich.
+            review to help neighbours find care in Charlton.
           </p>
           <div className="flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>

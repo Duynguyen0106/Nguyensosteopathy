@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Cupping add-on in Woolwich",
   description:
-    "Cupping therapy add-on (+£15) in Woolwich SE18 for muscular tightness — used when clinically useful alongside osteopathy or deep tissue massage at Nguyen's…",
+    "Cupping therapy add-on (+£15) in Charlton SE18 for muscular tightness — used when clinically useful alongside osteopathy or deep tissue massage at Nguyen's…",
   alternates: { canonical: "/cupping" },
   keywords: [
     "cupping Woolwich",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cupping Therapy Add-on | Nguyen's Osteopathic Clinic",
     description:
-      "Optional cupping add-on (+£15) for muscular tightness in Woolwich SE18 — used only when clinically useful alongside osteopathy or deep tissue massage.",
+      "Optional cupping add-on (+£15) for muscular tightness in Charlton SE18 — used only when clinically useful alongside osteopathy or deep tissue massage.",
     url: "/cupping",
     images: [defaultOgImage],
   },
@@ -68,7 +68,7 @@ export default function CuppingPage() {
     name: "Cupping Therapy Add-on in Woolwich",
     url: `${site.websiteUrl}/cupping`,
     description:
-      "Cupping therapy add-on for muscular tightness in Woolwich SE18.",
+      "Cupping therapy add-on for muscular tightness in Charlton SE18.",
     about: {
       "@type": "MedicalTherapy",
       name: "Cupping therapy",

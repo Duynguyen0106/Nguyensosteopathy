@@ -7,7 +7,7 @@ import { LazyMapsEmbed } from "@/components/LazyMapsEmbed";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact Osteopath in Woolwich",
+  title: "Contact Osteopath in Charlton",
   description: `Contact Nguyen's Osteopathic Clinic inside Village Pharmacy, 9 The Village, Charlton SE7. Call ${site.phone}, WhatsApp, email, or book online.`,
   alternates: { canonical: "/contact" },
   keywords: [
@@ -210,7 +210,7 @@ export default function ContactPage() {
           </div>
           <div className="mt-8">
             <LazyMapsEmbed
-              title="Map to Nguyen's Osteopathic Clinic, 9 The Village Woolwich"
+              title="Map to Nguyen's Osteopathic Clinic, 9 The Village Charlton"
               src={site.address.mapsEmbedUrl}
             />
           </div>

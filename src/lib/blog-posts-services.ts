@@ -23,7 +23,7 @@ export const serviceBlogPosts: ServicePost[] = [
   // —— Back & neck ——
   post({
     slug: "lumbar-disc-pain-osteopath-woolwich",
-    title: "Lumbar disc pain in Woolwich: what osteopathy can (and cannot) do",
+    title: "Lumbar disc pain in Charlton: what osteopathy can (and cannot) do",
     description:
       "Disc-related lower back pain explained for SE18 patients — flare patterns, red flags, and how gentle osteopathy supports recovery.",
     date: "2026-10-09",
@@ -94,7 +94,7 @@ export const serviceBlogPosts: ServicePost[] = [
     sections: [
       {
         paragraphs: [
-          "Thoracic (mid-back) pain often sits between the shoulder blades after hours at a laptop, especially with a low screen or soft sofa working from home in Woolwich and Greenwich.",
+          "Thoracic (mid-back) pain often sits between the shoulder blades after hours at a laptop, especially with a low screen or soft sofa working from home in Charlton and Greenwich.",
           "Treatment focuses on rib and thoracic mobility, shoulder girdle load, and simple desk resets you can repeat between meetings.",
         ],
       },
@@ -105,7 +105,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "whiplash-neck-pain-osteopath-se18",
     title: "Whiplash and neck pain after a road accident: osteopathy in SE18",
     description:
-      "Stiff, sore neck after a collision or sudden jolt? What to expect from osteopathic assessment in Woolwich and when imaging matters.",
+      "Stiff, sore neck after a collision or sudden jolt? What to expect from osteopathic assessment in Charlton and when imaging matters.",
     date: "2026-10-09",
     category: "Back & neck",
     keywords: [
@@ -128,7 +128,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "morning-back-stiffness-osteopath",
     title: "Morning back stiffness: why it happens and how osteopathy helps",
     description:
-      "Waking stiff then loosening after a shower is common. Causes, sleep positions, and osteopathy for morning lower back stiffness in Woolwich.",
+      "Waking stiff then loosening after a shower is common. Causes, sleep positions, and osteopathy for morning lower back stiffness in Charlton.",
     date: "2026-10-09",
     category: "Back & neck",
     keywords: [
@@ -174,7 +174,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "tmj-jaw-pain-osteopath-woolwich",
     title: "TMJ and jaw pain: osteopathy for clenching and clicking",
     description:
-      "Jaw click, temple ache, or morning tightness from clenching? How osteopathy addresses TMJ-related pain in Woolwich.",
+      "Jaw click, temple ache, or morning tightness from clenching? How osteopathy addresses TMJ-related pain in Charlton.",
     date: "2026-10-09",
     category: "Headaches & joints",
     keywords: [
@@ -216,7 +216,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "ankle-sprain-rehab-osteopath-woolwich",
-    title: "Ankle sprain rehab with an osteopath in Woolwich",
+    title: "Ankle sprain rehab with an osteopath in Charlton",
     description:
       "Rolled your ankle on the pavement or pitch? Osteopathy for sprain recovery, swelling timelines, and return to walking or sport in SE18.",
     date: "2026-10-09",
@@ -240,7 +240,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "wrist-hand-pain-osteopath-se18",
     title: "Wrist and hand pain from desk work: osteopathy in SE18",
     description:
-      "Keyboard and mouse strain, wrist ache, and forearm tightness — how osteopathy helps desk-related upper limb pain in Woolwich.",
+      "Keyboard and mouse strain, wrist ache, and forearm tightness — how osteopathy helps desk-related upper limb pain in Charlton.",
     date: "2026-10-09",
     category: "Headaches & joints",
     keywords: [
@@ -335,7 +335,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "tennis-elbow-shockwave-osteopath-woolwich",
-    title: "Tennis elbow in Woolwich: osteopathy and focused shockwave",
+    title: "Tennis elbow in Charlton: osteopathy and focused shockwave",
     description:
       "Lateral elbow pain from gripping, DIY, or racket sport. How osteopathy and LI-ESWT help tennis elbow (lateral epicondylalgia) in SE18.",
     date: "2026-10-09",
@@ -379,7 +379,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "patellar-tendinopathy-shockwave-woolwich",
-    title: "Patellar tendinopathy (jumper’s knee): care in Woolwich",
+    title: "Patellar tendinopathy (jumper’s knee): care in Charlton",
     description:
       "Front-of-knee tendon pain from jumping or stairs? Osteopathy, load management, and shockwave options in SE18.",
     date: "2026-10-09",
@@ -393,7 +393,7 @@ export const serviceBlogPosts: ServicePost[] = [
       {
         paragraphs: [
           "Patellar tendon pain often sits just below the kneecap with jumping, stairs, or decline squats. Complete rest usually fails; progressive loading is key.",
-          "Focused shockwave can support selected stubborn cases after assessment at our Woolwich clinic.",
+          "Focused shockwave can support selected stubborn cases after assessment at our Charlton clinic.",
         ],
       },
     ],
@@ -425,7 +425,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "shockwave-vs-osteopathy-when-to-combine",
     title: "Shockwave vs osteopathy: when we combine them",
     description:
-      "Hands-on osteopathy and focused shockwave solve different parts of stubborn tendon pain. How we choose at our Woolwich clinic.",
+      "Hands-on osteopathy and focused shockwave solve different parts of stubborn tendon pain. How we choose at our Charlton clinic.",
     date: "2026-10-09",
     category: "Focused shockwave",
     keywords: [
@@ -447,7 +447,7 @@ export const serviceBlogPosts: ServicePost[] = [
   // —— Men's health & ED ——
   post({
     slug: "li-eswt-erectile-dysfunction-woolwich",
-    title: "LI-ESWT for erectile dysfunction: discreet care in Woolwich",
+    title: "LI-ESWT for erectile dysfunction: discreet care in Charlton",
     description:
       "Low-intensity focused shockwave as a non-drug, non-surgical option for vascular-related ED — private appointments in SE18.",
     date: "2026-10-09",
@@ -477,7 +477,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "mens-pelvic-health-osteopathy-woolwich",
     title: "Men’s pelvic health: discreet osteopathy and shockwave options",
     description:
-      "Pelvic discomfort, post-activity ache, or vascular recovery goals — how discreet men’s health appointments work in Woolwich.",
+      "Pelvic discomfort, post-activity ache, or vascular recovery goals — how discreet men’s health appointments work in Charlton.",
     date: "2026-10-09",
     category: "Men's health",
     keywords: [
@@ -499,7 +499,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "how-many-shockwave-sessions-ed",
     title: "How many LI-ESWT sessions for ED protocols?",
     description:
-      "Typical course thinking for men’s health shockwave protocols — why plans are individual and what review looks like in Woolwich.",
+      "Typical course thinking for men’s health shockwave protocols — why plans are individual and what review looks like in Charlton.",
     date: "2026-10-09",
     category: "Men's health",
     keywords: [
@@ -589,7 +589,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "acupuncture-add-on-vs-standalone",
     title: "Acupuncture add-on vs standalone session: which to book?",
     description:
-      "Choosing between acupuncture as a +£20 add-on within osteopathy or a focused needling session at our Woolwich clinic.",
+      "Choosing between acupuncture as a +£20 add-on within osteopathy or a focused needling session at our Charlton clinic.",
     date: "2026-10-09",
     category: "Acupuncture & cupping",
     keywords: [
@@ -609,7 +609,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "cupping-therapy-add-on-woolwich",
-    title: "Cupping therapy add-on in Woolwich: who it helps",
+    title: "Cupping therapy add-on in Charlton: who it helps",
     description:
       "Cupping as a +£15 soft-tissue adjunct for muscular tightness — what marks mean, when we use it, and fees.",
     date: "2026-10-09",
@@ -633,9 +633,9 @@ export const serviceBlogPosts: ServicePost[] = [
   // —— Deep tissue massage ——
   post({
     slug: "deep-tissue-massage-woolwich-osteopath",
-    title: "Deep tissue massage in Woolwich with an osteopath-led clinic",
+    title: "Deep tissue massage in Charlton with an osteopath-led clinic",
     description:
-      "45-minute deep tissue massage (£60) for knotted, training-heavy or desk-tight muscles at Village Pharmacy, Woolwich.",
+      "45-minute deep tissue massage (£60) for knotted, training-heavy or desk-tight muscles at Village Pharmacy, Charlton.",
     date: "2026-10-09",
     category: "Deep tissue",
     keywords: [
@@ -657,7 +657,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "deep-tissue-vs-osteopathy-woolwich",
     title: "Deep tissue massage vs osteopathy: which do I need?",
     description:
-      "Muscle-only tightness versus joint and movement problems — how to choose between massage and osteopathy in Woolwich.",
+      "Muscle-only tightness versus joint and movement problems — how to choose between massage and osteopathy in Charlton.",
     date: "2026-10-09",
     category: "Deep tissue",
     keywords: [
@@ -677,7 +677,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "post-gym-muscle-soreness-massage-woolwich",
-    title: "Post-gym soreness and knots: massage care in Woolwich",
+    title: "Post-gym soreness and knots: massage care in Charlton",
     description:
       "DOMS versus true injury, and when deep tissue massage helps training-related muscle load in SE18.",
     date: "2026-10-09",
@@ -747,7 +747,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "gym-shoulder-injury-osteopath-woolwich",
     title: "Gym shoulder injuries: pressing, pulling, and osteopathy",
     description:
-      "Pain with bench, overhead press, or pull-ups? How osteopathy helps gym-related shoulder irritability in Woolwich.",
+      "Pain with bench, overhead press, or pull-ups? How osteopathy helps gym-related shoulder irritability in Charlton.",
     date: "2026-10-09",
     category: "Sports rehab",
     keywords: [
@@ -769,7 +769,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "football-muscle-strain-osteopath-se18",
     title: "Football muscle strains: osteopathy for SE18 players",
     description:
-      "Hamstring, calf, and groin strains from five-a-side and Sunday league — timelines and return-to-play support in Woolwich.",
+      "Hamstring, calf, and groin strains from five-a-side and Sunday league — timelines and return-to-play support in Charlton.",
     date: "2026-10-09",
     category: "Sports rehab",
     keywords: [
@@ -813,7 +813,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "overuse-injuries-gym-running-woolwich",
     title: "Overuse injuries from gym and running: early signs to act on",
     description:
-      "Niggles that warm up then return next session are early overuse warnings. When to book osteopathy in Woolwich.",
+      "Niggles that warm up then return next session are early overuse warnings. When to book osteopathy in Charlton.",
     date: "2026-10-09",
     category: "Sports rehab",
     keywords: [
@@ -835,7 +835,7 @@ export const serviceBlogPosts: ServicePost[] = [
   // —— Pregnancy ——
   post({
     slug: "pelvic-girdle-pain-pregnancy-woolwich",
-    title: "Pelvic girdle pain in pregnancy: osteopathy in Woolwich",
+    title: "Pelvic girdle pain in pregnancy: osteopathy in Charlton",
     description:
       "SPD and pelvic girdle pain with walking or turning in bed — gentle, trimester-aware osteopathy in SE18.",
     date: "2026-10-09",
@@ -859,7 +859,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "pregnancy-rib-pain-osteopath-woolwich",
     title: "Rib pain in pregnancy: gentle osteopathic care",
     description:
-      "Side and rib-cage discomfort as the bump grows — how pregnancy-adapted osteopathy can help in Woolwich.",
+      "Side and rib-cage discomfort as the bump grows — how pregnancy-adapted osteopathy can help in Charlton.",
     date: "2026-10-09",
     category: "Pregnancy",
     keywords: [
@@ -925,7 +925,7 @@ export const serviceBlogPosts: ServicePost[] = [
   // —— Cranial ——
   post({
     slug: "cranial-osteopathy-woolwich-what-is-it",
-    title: "What is cranial osteopathy? A Woolwich clinic guide",
+    title: "What is cranial osteopathy? A Charlton clinic guide",
     description:
       "Gentle cranial osteopathy explained — who it suits, what a session feels like, and how it differs from firmer manual therapy.",
     date: "2026-10-09",
@@ -949,7 +949,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "cranial-osteopathy-for-stress-tension",
     title: "Cranial osteopathy for stress-held tension",
     description:
-      "When stress sits in the head, jaw, and upper neck, cranial-style osteopathy offers a calmer treatment option in Woolwich.",
+      "When stress sits in the head, jaw, and upper neck, cranial-style osteopathy offers a calmer treatment option in Charlton.",
     date: "2026-10-09",
     category: "Cranial",
     keywords: [
@@ -993,7 +993,7 @@ export const serviceBlogPosts: ServicePost[] = [
   // —— Paediatric ——
   post({
     slug: "paediatric-osteopathy-woolwich-parents-guide",
-    title: "Paediatric osteopathy in Woolwich: a parents’ guide",
+    title: "Paediatric osteopathy in Charlton: a parents’ guide",
     description:
       "Gentle, age-adapted osteopathy for infants and children — what parents can expect at Nguyen's Osteopathic Clinic.",
     date: "2026-10-09",
@@ -1017,7 +1017,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "growing-pains-osteopath-woolwich",
     title: "Growing pains and childhood aches: when to see an osteopath",
     description:
-      "Night-time limb aches in children are common. When reassurance is enough, and when osteopathic assessment in Woolwich helps.",
+      "Night-time limb aches in children are common. When reassurance is enough, and when osteopathic assessment in Charlton helps.",
     date: "2026-10-09",
     category: "Paediatric",
     keywords: [
@@ -1039,7 +1039,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "child-posture-backpack-osteopath-se18",
     title: "School backpacks and child posture: osteopath tips for SE18",
     description:
-      "Heavy bags and device time affect young spines. Practical posture advice and when to book paediatric osteopathy in Woolwich.",
+      "Heavy bags and device time affect young spines. Practical posture advice and when to book paediatric osteopathy in Charlton.",
     date: "2026-10-09",
     category: "Paediatric",
     keywords: [
@@ -1105,7 +1105,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "osteopathy-fees-woolwich-price-list",
-    title: "Osteopathy fees in Woolwich: clear 2026 price list",
+    title: "Osteopathy fees in Charlton: clear 2026 price list",
     description:
       "Initial £75, follow-up £60, shockwave £90, specialist ED protocol £110, massage £60, add-ons explained — transparent fees at SE18.",
     date: "2026-10-09",
@@ -1127,7 +1127,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "osteopath-inside-st-james-pharmacy-woolwich",
-    title: "Osteopath inside Village Pharmacy, The Village Woolwich",
+    title: "Osteopath inside Village Pharmacy, The Village Charlton",
     description:
       "Find Nguyen's Osteopathic Clinic inside Village Pharmacy — directions, arrival tips, and parking pointers.",
     date: "2026-10-09",
@@ -1151,7 +1151,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "what-to-wear-osteopathy-appointment",
     title: "What to wear to your osteopathy appointment",
     description:
-      "Comfortable clothing tips for assessment and treatment at our Woolwich clinic — shorts, stretch fabrics, and privacy.",
+      "Comfortable clothing tips for assessment and treatment at our Charlton clinic — shorts, stretch fabrics, and privacy.",
     date: "2026-10-09",
     category: "Clinic info",
     keywords: [

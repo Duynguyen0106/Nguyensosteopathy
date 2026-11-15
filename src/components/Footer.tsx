@@ -80,7 +80,7 @@ export function Footer() {
           </div>
           <p className="mt-4 max-w-sm text-base leading-relaxed text-white/75 md:text-lg">
             {isVi
-              ? "Chăm sóc cơ xương khớp bằng tiếng Việt và tiếng Anh tại Woolwich SE18."
+              ? "Chăm sóc cơ xương khớp bằng tiếng Việt và tiếng Anh tại Charlton SE7."
               : site.tagline}
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -257,7 +257,7 @@ export function Footer() {
             .
           </p>
           <p>
-            Located inside {site.address.venue}, Woolwich.{" "}
+            Located inside {site.address.venue}, Charlton.{" "}
             <Link
               href="/privacy"
               className="font-semibold text-white underline underline-offset-2 hover:text-teal-mist"

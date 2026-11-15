@@ -6,12 +6,12 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: `How ${site.name} uses essential and analytics cookies on the Woolwich clinic website, and how to change your choice.`,
+  description: `How ${site.name} uses essential and analytics cookies on the Charlton clinic website, and how to change your choice.`,
   alternates: { canonical: "/cookies" },
   openGraph: {
     title: "Cookie Policy",
     description:
-      "How Nguyen's Osteopathic Clinic uses essential and analytics cookies, and how to change your consent choice on the Woolwich clinic website.",
+      "How Nguyen's Osteopathic Clinic uses essential and analytics cookies, and how to change your consent choice on the Charlton clinic website.",
     url: "/cookies",
     images: [defaultOgImage],
   },

@@ -6,7 +6,7 @@ export const defaultOgImage = {
   url: "/images/og-default.webp",
   width: 1200,
   height: 630,
-  alt: "Austin Duy Nguyen, GOsC osteopath at Nguyen's Osteopathic Clinic in Woolwich",
+  alt: "Austin Duy Nguyen, GOsC osteopath at Nguyen's Osteopathic Clinic in Charlton",
 } as const;
 
 /**

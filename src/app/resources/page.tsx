@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Patient Resources",
   description:
-    "Patient resources for Nguyen's Osteopathic Clinic in Woolwich: new-patient guide, aftercare, home exercises, fees, insurance receipts, find us, FAQ…",
+    "Patient resources for Nguyen's Osteopathic Clinic in Charlton: new-patient guide, aftercare, home exercises, fees, insurance receipts, find us, FAQ…",
   alternates: { canonical: "/resources" },
   keywords: [
     "osteopath Woolwich patient guide",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Patient Resources | Nguyen's Osteopathic Clinic",
     description:
-      "Practical guides for booking, visiting, fees, and reading before your osteopathy appointment in Woolwich.",
+      "Practical guides for booking, visiting, fees, and reading before your osteopathy appointment in Charlton.",
     url: "/resources",
     images: [defaultOgImage],
   },
@@ -127,7 +127,7 @@ const groups = [
       {
         href: "/blog",
         label: "Blog",
-        detail: "Practical articles on pain, recovery, and clinic life in Woolwich.",
+        detail: "Practical articles on pain, recovery, and clinic life in Charlton.",
       },
       {
         href: "/education",
@@ -182,7 +182,7 @@ const groups = [
       {
         href: "/about",
         label: "About Austin",
-        detail: "GOsC-registered osteopath practising in Woolwich SE18.",
+        detail: "GOsC-registered osteopath practising in Charlton SE18.",
       },
       {
         href: "/vi",

@@ -11,7 +11,7 @@ const priority = {
     sections: [
       {
         paragraphs: [
-          "Sciatica is not a single diagnosis — it is a pattern of nerve-related pain that travels from the lower back or buttock into the leg. People in Woolwich often notice it after long sits on the Elizabeth line, lifting at work, or weekends of DIY and sport.",
+          "Sciatica is not a single diagnosis — it is a pattern of nerve-related pain that travels from the lower back or buttock into the leg. People in Charlton often notice it after long sits on the Elizabeth line, lifting at work, or weekends of DIY and sport.",
           "At Nguyen's Osteopathic Clinic we assess whether irritation is coming from the lumbar spine, the disc, the sacroiliac joint, or soft tissue around the nerve pathway — then treat the driver, not only the tingling calf.",
         ],
       },
@@ -141,7 +141,7 @@ const priority = {
     sections: [
       {
         paragraphs: [
-          "Focused shockwave therapy (LI-ESWT) is a non-invasive option for persistent soft-tissue and tendon problems that have not settled with rest or standard hands-on care alone. At our Woolwich clinic it is delivered as a clinical protocol, not a spa add-on.",
+          "Focused shockwave therapy (LI-ESWT) is a non-invasive option for persistent soft-tissue and tendon problems that have not settled with rest or standard hands-on care alone. At our Charlton clinic it is delivered as a clinical protocol, not a spa add-on.",
           "Sound waves are directed to the target tissue to support healing responses and pain modulation. Sessions are typically around 30 minutes, with a clear plan discussed first.",
         ],
       },
@@ -174,7 +174,7 @@ const priority = {
       {
         heading: "How it pairs with osteopathy",
         paragraphs: [
-          "Hands-on osteopathy addresses joint and soft-tissue drivers around the tendon. Shockwave targets local tendon irritability. Together they often cover both the painful spot and the movement pattern that keeps reloading it — which is why combined plans are common for stubborn heel and elbow presentations in Woolwich.",
+          "Hands-on osteopathy addresses joint and soft-tissue drivers around the tendon. Shockwave targets local tendon irritability. Together they often cover both the painful spot and the movement pattern that keeps reloading it — which is why combined plans are common for stubborn heel and elbow presentations in Charlton.",
         ],
       },
       {
@@ -195,7 +195,7 @@ const priority = {
     sections: [
       {
         paragraphs: [
-          "If you have been searching for an osteopath in Woolwich, you are usually looking for two things: clear answers about pain that will not settle, and a practitioner you can trust. At Nguyen's Osteopathic Clinic, care is provided by Austin Duy Nguyen, a GOsC-registered osteopath (Reg. No. 12332), inside Village Pharmacy at The Village.",
+          "If you have been searching for an osteopath in Charlton, you are usually looking for two things: clear answers about pain that will not settle, and a practitioner you can trust. At Nguyen's Osteopathic Clinic, care is provided by Austin Duy Nguyen, a GOsC-registered osteopath (Reg. No. 12332), inside Village Pharmacy at The Village.",
           "Osteopathy is a hands-on, drug-free approach. We assess how your joints, muscles, and nerves move together, then treat the cause of symptoms — not only the sore spot.",
         ],
       },
@@ -257,7 +257,7 @@ const priority = {
     sections: [
       {
         paragraphs: [
-          "A simple checklist for your first osteopathy appointment in Woolwich — clothing, questions, medical letters, and how long it takes.",
+          "A simple checklist for your first osteopathy appointment in Charlton — clothing, questions, medical letters, and how long it takes.",
           "First visits at Nguyen's Osteopathic Clinic usually last about 60 minutes: history, assessment, explanation, and treatment where appropriate. No GP referral is required.",
         ],
       },
@@ -411,7 +411,7 @@ const priority = {
     sections: [
       {
         paragraphs: [
-          "Shoulder pain in Woolwich ranges from desk-related aches to true frozen shoulder (adhesive capsulitis) with progressive loss of reach and rotation. Night pain when lying on the side is a common reason people finally book.",
+          "Shoulder pain in Charlton ranges from desk-related aches to true frozen shoulder (adhesive capsulitis) with progressive loss of reach and rotation. Night pain when lying on the side is a common reason people finally book.",
           "Osteopathy helps by matching care to the stage — calming irritability early, then restoring motion and strength as tissue allows.",
         ],
       },

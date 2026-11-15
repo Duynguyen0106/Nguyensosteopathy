@@ -8,7 +8,7 @@ import { getServiceHref, services, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Osteopathy services Woolwich",
   description:
-    "Osteopathy services in Woolwich: back pain treatment, neck pain treatment, shockwave therapy, drug free pain relief, sports rehab, acupuncture, pregnancy…",
+    "Osteopathy services in Charlton: back pain treatment, neck pain treatment, shockwave therapy, drug free pain relief, sports rehab, acupuncture, pregnancy…",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Osteopathy services Woolwich | Back pain & shockwave",

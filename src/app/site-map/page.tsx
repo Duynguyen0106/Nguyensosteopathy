@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Site Map",
     description:
-      "HTML site map for Nguyen's Osteopathic Clinic — booking, treatments, conditions, areas, Vietnamese pages, and clinic information for Woolwich SE18.",
+      "HTML site map for Nguyen's Osteopathic Clinic — booking, treatments, conditions, areas, Vietnamese pages, and clinic information for Charlton SE7.",
     url: "/site-map",
     images: [defaultOgImage],
   },

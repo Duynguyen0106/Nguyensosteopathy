@@ -25,10 +25,10 @@ const viAboutFaqs = [
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Về Austin Duy Nguyen | Osteopath người Việt tại Woolwich",
+    absolute: "Về Austin Duy Nguyen | Osteopath người Việt tại Charlton",
   },
   description:
-    "Austin Duy Nguyen — osteopath đăng ký GOsC (số 12332), Master of Osteopathy (BCOM). Phòng khám phục vụ cộng đồng Việt tại Woolwich SE18 bằng tiếng Việt và Anh.",
+    "Austin Duy Nguyen — osteopath đăng ký GOsC (số 12332), Master of Osteopathy (BCOM). Phòng khám phục vụ cộng đồng Việt tại Charlton SE7 bằng tiếng Việt và Anh.",
   alternates: {
     canonical: "/vi/about",
     languages: {
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
     "Austin Duy Nguyen",
     "osteopath người Việt",
     "GOsC 12332",
-    "osteopath Woolwich tiếng Việt",
+    "osteopath Charlton tiếng Việt",
   ],
   openGraph: pageOpenGraph({
     title: "Về Austin Duy Nguyen | Osteopath người Việt",
     description:
-      "Osteopath đăng ký GOsC phục vụ cộng đồng Việt tại Woolwich — khám bằng tiếng Việt hoặc tiếng Anh.",
+      "Osteopath đăng ký GOsC phục vụ cộng đồng Việt tại Charlton — khám bằng tiếng Việt hoặc tiếng Anh.",
     url: "/vi/about",
     images: [
       {
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Về Austin Duy Nguyen | Osteopath người Việt",
     description:
-      "Osteopath đăng ký GOsC phục vụ cộng đồng Việt tại Woolwich — khám bằng tiếng Việt hoặc tiếng Anh.",
+      "Osteopath đăng ký GOsC phục vụ cộng đồng Việt tại Charlton — khám bằng tiếng Việt hoặc tiếng Anh.",
     images: ["/images/austin-nguyen.webp"],
   },
 };
@@ -100,7 +100,7 @@ export default function VietnameseAboutPage() {
           </h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-white/85">
             Osteopath đăng ký GOsC (số {site.practitioner.regNo}) — khám bằng
-            tiếng Việt hoặc tiếng Anh tại Woolwich SE18.
+            tiếng Việt hoặc tiếng Anh tại Charlton SE7.
           </p>
           <p className="mt-3 text-sm text-white/70">
             <Link href="/about" className="font-semibold text-teal-light" hrefLang="en-GB">
@@ -145,7 +145,7 @@ export default function VietnameseAboutPage() {
             </p>
             <p>
               Dịch vụ phổ biến: đau lưng &amp; cổ, shockwave tập trung, hỗ trợ
-              thể thao, châm cứu y khoa, và khám tại nhà trong khu vực Woolwich /
+              thể thao, châm cứu y khoa, và khám tại nhà trong khu vực Charlton /
               SE London khi di chuyển đến phòng khám khó.
             </p>
           </div>

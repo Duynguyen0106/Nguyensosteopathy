@@ -12,7 +12,7 @@ import { bookHref } from "@/lib/seo-strategy";
 import { pricing, site } from "@/lib/site";
 
 const feesDescription = trimDescription(
-  "Bảng giá osteopathy Woolwich SE18: khám ban đầu £75, tái khám £60, khám tại nhà £120/£100, shockwave £90. Giảm 10% NHS & sinh viên.",
+  "Bảng giá osteopathy Charlton SE7: khám ban đầu £75, tái khám £60, khám tại nhà £120/£100, shockwave £90. Giảm 10% NHS & sinh viên.",
 );
 
 const viFeesFaqs = [

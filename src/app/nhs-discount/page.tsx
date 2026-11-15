@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "NHS & Student Discount",
   description:
-    "10% NHS staff and student discount at Nguyen's Osteopathic Clinic in Woolwich SE18. Valid ID required at appointment. See how it works with booking.",
+    "10% NHS staff and student discount at Nguyen's Osteopathic Clinic in Charlton SE18. Valid ID required at appointment. See how it works with booking.",
   alternates: { canonical: "/nhs-discount" },
   keywords: [
     "NHS discount osteopath Woolwich",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NHS & Student Discount | Nguyen's Osteopathic Clinic",
     description:
-      "10% off eligible osteopathy fees for NHS staff and students at Nguyen's Osteopathic Clinic in Woolwich SE18 — show valid ID at your appointment.",
+      "10% off eligible osteopathy fees for NHS staff and students at Nguyen's Osteopathic Clinic in Charlton SE18 — show valid ID at your appointment.",
     url: "/nhs-discount",
     images: [defaultOgImage],
   },
@@ -53,7 +53,7 @@ export default function NhsDiscountPage() {
     name: "NHS & Student Discount",
     url: `${site.websiteUrl}/nhs-discount`,
     description:
-      "10% NHS staff and student discount at Nguyen's Osteopathic Clinic in Woolwich.",
+      "10% NHS staff and student discount at Nguyen's Osteopathic Clinic in Charlton.",
     mainEntity: {
       "@type": "Offer",
       name: "NHS staff & student discount",

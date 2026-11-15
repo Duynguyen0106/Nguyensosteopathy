@@ -10,7 +10,7 @@ import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 const description = trimDescription(
-  "Education hub at Nguyen's Osteopathic Clinic in Woolwich: a dual-audience supplement library organised by topic, acupuncture notes, and practitioner CPD. Patient nutrition articles are on the blog.",
+  "Education hub at Nguyen's Osteopathic Clinic in Charlton: a dual-audience supplement library organised by topic, acupuncture notes, and practitioner CPD. Patient nutrition articles are on the blog.",
 );
 
 export const metadata: Metadata = {

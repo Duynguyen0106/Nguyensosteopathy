@@ -76,7 +76,7 @@ export function bookHref(campaign: BookCampaign): string {
 /** Prefilled WhatsApp message patients can use — or clinic can forward. */
 export function reviewAskWhatsAppHref(): string {
   const text = [
-    `Hi — if your visit to ${site.name} helped, a short Google review means a lot to neighbours in Woolwich looking for an osteopath:`,
+    `Hi — if your visit to ${site.name} helped, a short Google review means a lot to neighbours in Charlton looking for an osteopath:`,
     site.googleReviewsUrl,
   ].join("\n");
   return `${site.whatsappUrl}?text=${encodeURIComponent(text)}`;

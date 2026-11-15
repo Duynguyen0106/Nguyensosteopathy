@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Accessibility Statement",
   description:
-    "Accessibility information for Nguyen's Osteopathic Clinic website and Woolwich clinic visits — how we aim to make digital and in-person access clearer.",
+    "Accessibility information for Nguyen's Osteopathic Clinic website and Charlton clinic visits — how we aim to make digital and in-person access clearer.",
   alternates: { canonical: "/accessibility" },
   openGraph: {
     title: "Accessibility Statement",
@@ -39,7 +39,7 @@ export default function AccessibilityPage() {
               {site.name} is working toward WCAG 2.2 AA for this website and aims
               to make clinic visits as usable as possible. We continue to improve
               digital clarity, booking paths, and practical arrival information
-              for patients in Woolwich SE18.
+              for patients in Charlton SE18.
             </p>
           </section>
 

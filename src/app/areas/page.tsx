@@ -60,7 +60,7 @@ export default function AreasPage() {
             Areas we serve
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Based in Woolwich SE18 — practical for patients across Plumstead,
+            Based in Charlton SE18 — practical for patients across Plumstead,
             Abbey Wood, Greenwich, Charlton, and Thamesmead who want registered
             osteopathy without a central London trip.
           </p>

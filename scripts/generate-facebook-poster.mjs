@@ -173,7 +173,7 @@ const html = `<!DOCTYPE html>
     </div>
 
     <p class="eyebrow">Now booking</p>
-    <h1>Osteopathy in Woolwich</h1>
+    <h1>Osteopathy in Charlton</h1>
 
     <div class="offer">
       <span class="pct" style="font-size:72px;letter-spacing:0.04em">BOOK</span>

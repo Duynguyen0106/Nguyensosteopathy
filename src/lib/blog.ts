@@ -119,7 +119,7 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "osteopath-woolwich-what-to-expect",
     title: "Osteopath in Woolwich: what to expect at your first visit",
     description:
-      "Looking for an osteopath in Woolwich? Learn what happens in a first appointment, who osteopathy helps, and how to book at Nguyen's Osteopathic Clinic on Powis Street.",
+      "Looking for an osteopath in Woolwich? Learn what happens in a first appointment, who osteopathy helps, and how to book at Nguyen's Osteopathic Clinic at The Village.",
     date: "2026-10-08",
     readingMinutes: 6,
     category: "Getting started",
@@ -183,7 +183,7 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "Back pain is one of the most common reasons people book an osteopath in Woolwich. Desk work on Powis Street, commuting, lifting, and weekend sport all load the spine differently — and symptoms often start gradually.",
+          "Back pain is one of the most common reasons people book an osteopath in Woolwich. Desk work at The Village, commuting, lifting, and weekend sport all load the spine differently — and symptoms often start gradually.",
           "Osteopathy looks at the whole movement pattern: lumbar joints, hips, mid-back mobility, and how you sit or lift day to day. Treatment may include soft-tissue work, joint mobilisation, and clear advice you can use between visits.",
         ],
       },
@@ -246,7 +246,7 @@ const blogPostInputs: BlogPostInput[] = [
         heading: "When to seek urgent medical care",
         paragraphs: [
           "Osteopathy is not a substitute for emergency care. Seek urgent help if you have new bladder or bowel changes, numbness in the saddle area, rapidly worsening leg weakness, unexplained weight loss, fever with back pain, or pain after significant trauma.",
-          "For persistent but non-emergency pain — sleep disruption, work limitation, or recurring flares — an osteopathic assessment is a sensible next step. You do not need a GP referral to book at Nguyen's Osteopathic Clinic inside St James Pharmacy.",
+          "For persistent but non-emergency pain — sleep disruption, work limitation, or recurring flares — an osteopathic assessment is a sensible next step. You do not need a GP referral to book at Nguyen's Osteopathic Clinic inside Village Pharmacy.",
         ],
       },
       {
@@ -477,7 +477,7 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "sciatica-woolwich-osteopath",
     title: "Sciatica in Woolwich: causes, symptoms, and when osteopathy helps",
     description:
-      "Sharp or shooting leg pain from Woolwich commuting and desk work? Learn common sciatica triggers, red flags, and how osteopathy at St James Pharmacy can help.",
+      "Sharp or shooting leg pain from Woolwich commuting and desk work? Learn common sciatica triggers, red flags, and how osteopathy at Village Pharmacy can help.",
     date: "2026-10-09",
     readingMinutes: 7,
     category: "Back & neck",
@@ -564,7 +564,7 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Book online for headache and neck assessment at St James Pharmacy, Woolwich.",
+    cta: "Book online for headache and neck assessment at Village Pharmacy, Woolwich.",
   },
   {
     slug: "pregnancy-osteopathy-woolwich",
@@ -700,7 +700,7 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "osteopath-greenwich-charlton-thamesmead",
     title: "Osteopath near Greenwich, Charlton, and Thamesmead",
     description:
-      "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on Powis Street, Woolwich SE18 is easy to reach and open for online booking.",
+      "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on The Village, Charlton SE7 is easy to reach and open for online booking.",
     date: "2026-10-09",
     readingMinutes: 4,
     category: "Local guides",
@@ -715,8 +715,8 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "You do not have to travel into central London for registered osteopathic care. Nguyen's Osteopathic Clinic sits inside St James Pharmacy on Powis Street, Woolwich SE18 6LQ — practical for patients from Greenwich, Charlton, Thamesmead, Plumstead, and Abbey Wood.",
-          "The clinic is a short walk from Woolwich Arsenal station and local bus routes along Powis Street. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
+          "You do not have to travel into central London for registered osteopathic care. Nguyen's Osteopathic Clinic sits inside Village Pharmacy on The Village, Charlton SE7 8UG — practical for patients from Greenwich, Charlton, Thamesmead, Plumstead, and Abbey Wood.",
+          "The clinic is a short walk from Woolwich Arsenal station and local bus routes along The Village. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
         ],
       },
       {

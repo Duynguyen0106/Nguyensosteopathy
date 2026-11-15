@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "osteopathy resources SE18",
     "new patient osteopath Woolwich",
     "osteopath fees Woolwich",
-    "St James Pharmacy osteopath help",
+    "Village Pharmacy osteopath help",
   ],
   openGraph: {
     title: "Patient Resources | Nguyen's Osteopathic Clinic",
@@ -38,7 +38,7 @@ const groups = [
       {
         href: "/find-us",
         label: "Find us & parking",
-        detail: "Powis Street directions, transport, and pharmacy arrival.",
+        detail: "The Village directions, transport, and pharmacy arrival.",
       },
       {
         href: "/faq",
@@ -205,7 +205,7 @@ export default function ResourcesPage() {
             Patient resources
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Practical links for booking, visiting St James Pharmacy, fees,
+            Practical links for booking, visiting Village Pharmacy, fees,
             paperwork, and reading before your appointment at {site.name}.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

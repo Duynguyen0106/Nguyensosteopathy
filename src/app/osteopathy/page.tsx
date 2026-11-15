@@ -199,7 +199,7 @@ export default function OsteopathyPage() {
                 means a private consultation with{" "}
                 {site.practitioner.name}, {site.practitioner.title} (Reg. No.{" "}
                 {site.practitioner.regNo}) — inside {site.address.venue} on
-                Powis Street.
+                The Village.
               </p>
               <p>
                 Pain in one place often starts somewhere else. We look at how

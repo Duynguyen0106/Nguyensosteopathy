@@ -11,7 +11,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         paragraphs: [
           "Nail technicians often work with eyes down, shoulders rolled forward, and wrists locked in fine movements for hours. Over months, the neck, upper back, thumbs, and forearms pay the price — especially on busy Woolwich and SE London salon days with back-to-back clients and little recovery between appointments.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess posture, soft tissue, and joint mobility, then treat what is irritable while giving practical salon setup and break advice you can actually use between clients. You do not need a GP referral to book.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess posture, soft tissue, and joint mobility, then treat what is irritable while giving practical salon setup and break advice you can actually use between clients. You do not need a GP referral to book.",
         ],
       },
       {
@@ -133,7 +133,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "When to get assessed",
         paragraphs: [
-          "Book if pain is stopping sleep, if leg symptoms are travelling below the knee, or if you are compensating so hard that the other side of your back is now angry too. You do not need a GP referral to see Austin Duy Nguyen at St James Pharmacy, Powis Street.",
+          "Book if pain is stopping sleep, if leg symptoms are travelling below the knee, or if you are compensating so hard that the other side of your back is now angry too. You do not need a GP referral to see Austin Duy Nguyen at Village Pharmacy, The Village.",
         ],
       },
     ],
@@ -201,7 +201,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "When to book",
         paragraphs: [
-          "Progressive arm weakness, unremitting night pain, trauma, or systemic symptoms need medical review. For the common desk-driven ache that returns every Sunday evening, an osteopathic assessment at St James Pharmacy, Powis Street is a practical next step without a GP referral.",
+          "Progressive arm weakness, unremitting night pain, trauma, or systemic symptoms need medical review. For the common desk-driven ache that returns every Sunday evening, an osteopathic assessment at Village Pharmacy, The Village is a practical next step without a GP referral.",
         ],
       },
     ],
@@ -263,7 +263,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
         heading: "Recovery timelines and when to book sooner",
         paragraphs: [
           "Many acute sciatic flares ease over two to six weeks with sensible load and targeted care. Stubborn or recurrent patterns may need six to twelve weeks. Leg symptoms often lag behind back comfort — that is common, not a failure of treatment.",
-          "Do not wait months if pain is stopping sleep, work, or walking. You do not need a GP referral to see Austin Duy Nguyen at St James Pharmacy, Powis Street.",
+          "Do not wait months if pain is stopping sleep, work, or walking. You do not need a GP referral to see Austin Duy Nguyen at Village Pharmacy, The Village.",
         ],
       },
     ],
@@ -497,7 +497,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         paragraphs: [
           "A “slipped disc” is usually a bulging or irritated disc that sensitises nearby nerves. Pain may stay in the back or travel into the buttock and leg. Desk work, lifting, and long commutes are common local triggers.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy, we assess movement, nerve irritability, and pelvic mechanics before treating. Hands-on care aims to ease protective muscle spasm and restore confident motion — not to “push a disc back in”.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy, we assess movement, nerve irritability, and pelvic mechanics before treating. Hands-on care aims to ease protective muscle spasm and restore confident motion — not to “push a disc back in”.",
         ],
       },
       {
@@ -554,7 +554,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
     sections: [
       {
         paragraphs: [
-          "If you have been searching for an osteopath in Woolwich, you are usually looking for two things: clear answers about pain that will not settle, and a practitioner you can trust. At Nguyen's Osteopathic Clinic, care is provided by Austin Duy Nguyen, a GOsC-registered osteopath (Reg. No. 12332), inside St James Pharmacy on Powis Street.",
+          "If you have been searching for an osteopath in Woolwich, you are usually looking for two things: clear answers about pain that will not settle, and a practitioner you can trust. At Nguyen's Osteopathic Clinic, care is provided by Austin Duy Nguyen, a GOsC-registered osteopath (Reg. No. 12332), inside Village Pharmacy at The Village.",
           "Osteopathy is a hands-on, drug-free approach. We assess how your joints, muscles, and nerves move together, then treat the cause of symptoms — not only the sore spot.",
         ],
       },
@@ -601,7 +601,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "Where to find us and what happens after",
         paragraphs: [
-          "The clinic is inside St James Pharmacy, Powis Street, Woolwich SE18 6LQ. Ask at the pharmacy counter on arrival. Mild ache after hands-on treatment can occur as tissues settle — clear aftercare is given before you leave. If anything unexpected appears, call the clinic rather than worrying overnight.",
+          "The clinic is inside Village Pharmacy, The Village, Charlton SE7 8UG. Ask at the pharmacy counter on arrival. Mild ache after hands-on treatment can occur as tissues settle — clear aftercare is given before you leave. If anything unexpected appears, call the clinic rather than worrying overnight.",
           "Vietnamese-speaking patients who prefer to explain symptoms in Vietnamese can do so with Austin — language should not block good MSK care. Booking is online via [/book](/book), or call if you need help choosing an appointment type.",
         ],
       },
@@ -655,7 +655,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "Practical arrival tips",
         paragraphs: [
-          "Arrive a few minutes early and check in at St James Pharmacy on Powis Street. Avoid arriving straight from a maximal gym session if you can — it can temporarily change how tissues feel on examination.",
+          "Arrive a few minutes early and check in at Village Pharmacy at The Village. Avoid arriving straight from a maximal gym session if you can — it can temporarily change how tissues feel on examination.",
           "Booking is online via [/book](/book), or call if you need help choosing an appointment type.",
         ],
       },
@@ -671,7 +671,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         paragraphs: [
           "Thoracic (mid-back) pain often sits between the shoulder blades after hours at a laptop — especially with a low screen, a soft sofa “office,” or arms reaching forward to a trackpad all afternoon around Woolwich and Greenwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess rib and thoracic mobility, shoulder girdle load, and neck contribution, then give desk resets you can repeat between meetings. You do not need a GP referral to book.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess rib and thoracic mobility, shoulder girdle load, and neck contribution, then give desk resets you can repeat between meetings. You do not need a GP referral to book.",
         ],
       },
       {

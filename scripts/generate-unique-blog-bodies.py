@@ -333,7 +333,7 @@ def build_body(post: dict) -> dict:
 
     intro = [
         f"{post['description'].rstrip('.')}.",
-        f"At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess {bits['audience']} with a focus on {bits['load']}, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book.",
+        f"At Nguyen's Osteopathic Clinic inside Village Pharmacy on The Village, we assess {bits['audience']} with a focus on {bits['load']}, then match hands-on care to what is actually irritable — not a generic stretch sheet. You do not need a GP referral to book.",
     ]
 
     why = [

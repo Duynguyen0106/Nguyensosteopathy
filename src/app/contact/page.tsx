@@ -8,19 +8,19 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Osteopath in Woolwich",
-  description: `Contact Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18. Call ${site.phone}, WhatsApp, email, or book online.`,
+  description: `Contact Nguyen's Osteopathic Clinic inside Village Pharmacy, 9 The Village, Charlton SE7. Call ${site.phone}, WhatsApp, email, or book online.`,
   alternates: { canonical: "/contact" },
   keywords: [
     "contact osteopath Woolwich",
-    "osteopath Powis Street",
-    "St James Pharmacy osteopath",
+    "osteopath The Village",
+    "Village Pharmacy osteopath",
     "osteopath SE18 phone",
     "Nguyen's Osteopathic Clinic contact",
   ],
   openGraph: {
-    title: "Contact Nguyen's Osteopathic Clinic | Woolwich SE18",
+    title: "Contact Nguyen's Osteopathic Clinic | Charlton SE7",
     description:
-      "Call, WhatsApp, email, or visit us inside St James Pharmacy on Powis Street.",
+      "Call, WhatsApp, email, or visit us inside Village Pharmacy at The Village.",
     url: "/contact",
     images: [defaultOgImage],
   },
@@ -182,7 +182,7 @@ export default function ContactPage() {
             <div>
               <h2 className="font-display text-3xl text-navy">Find us on the map</h2>
               <p className="mt-2 text-sm text-slate-600">
-                52 Powis Street, Woolwich — easy from Greenwich, Plumstead, and
+                9 The Village, Charlton — easy from Greenwich, Plumstead, and
                 Abbey Wood.{" "}
                 <Link
                   href="/find-us"
@@ -210,7 +210,7 @@ export default function ContactPage() {
           </div>
           <div className="mt-8">
             <LazyMapsEmbed
-              title="Map to Nguyen's Osteopathic Clinic, 52 Powis Street Woolwich"
+              title="Map to Nguyen's Osteopathic Clinic, 9 The Village Woolwich"
               src={site.address.mapsEmbedUrl}
             />
           </div>

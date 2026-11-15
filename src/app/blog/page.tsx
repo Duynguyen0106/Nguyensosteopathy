@@ -86,8 +86,8 @@ export default function BlogIndexPage() {
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
             Clear guides from {site.practitioner.name} at {site.name} — covering
             osteopathy, back pain treatment, neck pain treatment, shockwave
-            therapy, sports rehab, pregnancy support, and how to book inside St
-            James Pharmacy.
+            therapy, sports rehab, pregnancy support, and how to book inside
+            Village Pharmacy.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>
@@ -169,7 +169,7 @@ export default function BlogIndexPage() {
             Ready to be assessed in clinic?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-slate-600">
-            Book online or call {site.phone}. Inside St James Pharmacy, Woolwich
+            Book online or call {site.phone}. Inside Village Pharmacy, Woolwich
             — {site.booking.shortNote}
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">

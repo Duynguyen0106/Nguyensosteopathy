@@ -254,7 +254,7 @@ const html = `<!DOCTYPE html>
       <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="1250" height="870" />
     </div>
 
-    <p class="eyebrow">Inside St James Pharmacy · Woolwich</p>
+    <p class="eyebrow">Inside Village Pharmacy · Woolwich</p>
     <h1>Back pain &amp; joint strain — treated properly</h1>
     <p class="lede">
       Drug-free osteopathy with Austin Duy Nguyen, GOsC-registered osteopath.
@@ -283,7 +283,7 @@ const html = `<!DOCTYPE html>
     <div class="meta">
       <div>
         <p class="label">Visit</p>
-        <p>St James Pharmacy<br/>52 Powis Street<br/>Woolwich SE18 6LQ</p>
+        <p>Village Pharmacy<br/>9 The Village<br/>Charlton SE7 8UG</p>
       </div>
       <div>
         <p class="label">Hours</p>

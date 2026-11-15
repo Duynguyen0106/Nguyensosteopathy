@@ -91,7 +91,7 @@ export default function VietnameseHomeVisitsPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Đánh giá và điều trị tại địa chỉ của bạn khi đi lại khó — cùng tiêu
-            chuẩn lâm sàng như tại St James Pharmacy, với bảng giá rõ ràng.
+            chuẩn lâm sàng như tại Village Pharmacy, với bảng giá rõ ràng.
           </p>
           <p className="mt-4 text-sm font-bold tracking-wide text-teal-dark">
             Ban đầu £120 (60 phút) · Tái khám £100 (30 phút)

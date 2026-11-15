@@ -79,7 +79,7 @@ function decodeHtmlEntities(value: string) {
   return current;
 }
 
-/** Public Place ID for Nguyen's Osteopathic Clinic (St James Pharmacy, Woolwich). */
+/** Public Place ID for Nguyen's Osteopathic Clinic (update when GBP moves with the clinic). */
 export const NGUYENS_PLACE_ID = "ChIJG4dhhJip2EcRVmEEenyYD8E";
 
 function configuredPlaceId() {
@@ -91,7 +91,7 @@ function configuredPlaceId() {
 function placeQuery() {
   return (
     process.env.GOOGLE_PLACE_QUERY?.trim() ||
-    "Nguyen's Osteopathic Clinic 52 Powis Street Woolwich SE18"
+    "Nguyen's Osteopathic Clinic Village Pharmacy 9 The Village Charlton SE7"
   );
 }
 

@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 const ctaBook =
   `Book online at ${site.websiteUrl}/book or call ${site.phone}.`;
 const clinic =
-  `${site.name} inside ${site.address.venue}, ${site.address.line1}, Woolwich SE18 6LQ`;
+  `${site.name} inside ${site.address.venue}, ${site.address.line1}, Charlton SE7 8UG`;
 
 type BatchPost = Omit<BlogPost, "image" | "readingMinutes"> & {
   readingMinutes?: number;
@@ -116,7 +116,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "osteopath-plumstead-abbey-wood-se18",
     title: "Osteopath near Plumstead and Abbey Wood: Woolwich SE18 clinic",
     description:
-      "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic on Powis Street, Woolwich is a short hop for SE18 patients.",
+      "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Woolwich is a short hop for SE18 patients.",
     date: "2026-10-10",
     category: "Local guides",
     keywords: [
@@ -128,8 +128,8 @@ export const batch3BlogPosts: BatchPost[] = [
     sections: [
       {
         paragraphs: [
-          `Patients from Plumstead, Abbey Wood, and Woolwich Common regularly visit ${clinic}. Bus and DLR links make Powis Street practical without travelling into central London.`,
-          `Ask at the St James Pharmacy counter on arrival and staff will direct you to the osteopathy room. Book online or call if you need help choosing a slot.`,
+          `Patients from Plumstead, Abbey Wood, and Woolwich Common regularly visit ${clinic}. Bus and DLR links make The Village practical without travelling into central London.`,
+          `Ask at the Village Pharmacy counter on arrival and staff will direct you to the osteopathy room. Book online or call if you need help choosing a slot.`,
         ],
       },
     ],
@@ -139,20 +139,20 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "parking-osteopath-woolwich-powis-street",
     title: "Parking and getting to our Woolwich osteopath clinic",
     description:
-      "How to reach Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street — parking tips, buses, and DLR for SE18 patients.",
+      "How to reach Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village — parking tips, buses, and DLR for SE18 patients.",
     date: "2026-10-10",
     category: "Clinic info",
     keywords: [
-      "parking Powis Street Woolwich",
+      "parking The Village Woolwich",
       "osteopath Woolwich directions",
-      "St James Pharmacy parking",
+      "Village Pharmacy parking",
       "how to get to osteopath SE18",
     ],
     sections: [
       {
         paragraphs: [
           `We are inside ${site.address.venue} at ${site.address.line1}, ${site.address.line2}. Woolwich town centre has short-stay parking nearby; check local signs for time limits and payment.`,
-          "Public transport is often easiest: Woolwich Arsenal station (Elizabeth line, DLR, National Rail) and local buses serving Powis Street / General Gordon Place.",
+          "Public transport is often easiest: Woolwich Arsenal station (Elizabeth line, DLR, National Rail) and local buses serving The Village / Charlton Church Lane.",
         ],
       },
       {

@@ -393,9 +393,9 @@ export default function VietnamesePage() {
                 <li>
                   Vào{" "}
                   <strong className="font-semibold text-navy">
-                    St James Pharmacy &amp; Travel Clinic
+                    Village Pharmacy
                   </strong>{" "}
-                  tại 52 Powis Street, Woolwich SE18 6LQ.
+                  tại 9 The Village, Charlton SE7 8UG.
                 </li>
                 <li>
                   Hỏi quầy nhà thuốc — họ sẽ chỉ phòng osteopathy.

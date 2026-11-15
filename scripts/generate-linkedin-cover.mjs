@@ -183,7 +183,7 @@ const html = `<!DOCTYPE html>
       <p class="web">www.nguyensosteopathy.com</p>
       <div>
         <p class="phone">07882 843513</p>
-        <p class="loc">Inside St James Pharmacy<br/>52 Powis Street, Woolwich SE18 6LQ</p>
+        <p class="loc">Inside Village Pharmacy<br/>9 The Village, Charlton SE7 8UG</p>
       </div>
     </div>
   </div>

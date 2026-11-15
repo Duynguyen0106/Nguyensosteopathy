@@ -17,7 +17,7 @@ console.log("   - Do NOT publish batches of new thin blogs");
 console.log("");
 console.log("3. GBP compound:");
 console.log("   - Keep weekly posts + monthly photos");
-console.log("   - Film 15–30s Powis Street walk-in (pharmacy counter → room)");
+console.log("   - Film 15–30s The Village walk-in (pharmacy counter → room)");
 console.log("   - Review velocity: count new reviews; reply <48h");
 console.log("");
 console.log("4. Bookings:");

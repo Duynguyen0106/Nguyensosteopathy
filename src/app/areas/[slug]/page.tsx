@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = `Osteopath near ${area.name}`;
   const description = enrichDescription(
-    `Private osteopathy near ${area.name} at St James Pharmacy, Powis Street, Woolwich SE18. ${area.summary}`,
+    `Private osteopathy near ${area.name} at Village Pharmacy, The Village, Charlton SE7. ${area.summary}`,
     `Book online with ${site.name} — no GP referral needed.`,
   );
 

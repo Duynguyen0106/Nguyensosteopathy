@@ -12,7 +12,7 @@ const viFindFaqs = [
   {
     question: "Phòng khám có cửa riêng ngoài phố không?",
     answer:
-      "Không. Vào St James Pharmacy & Travel Clinic, hỏi quầy — nhân viên sẽ chỉ phòng osteopathy bên trong.",
+      "Không. Vào Village Pharmacy, hỏi quầy — nhân viên sẽ chỉ phòng osteopathy bên trong.",
   },
   {
     question: "Osteopathy mở ngày nào?",
@@ -22,19 +22,19 @@ const viFindFaqs = [
   {
     question: "Gửi xe ở đâu?",
     answer:
-      "Có chỗ gửi xe ngắn hạn quanh trung tâm Woolwich / Powis Street. Đến sớm vài phút nếu cần tìm chỗ trống; Elizabeth line và DLR cũng gần.",
+      "Có chỗ gửi xe ngắn hạn quanh The Village / Charlton. Đến sớm vài phút nếu cần tìm chỗ trống; ga Charlton cũng gần.",
   },
   {
-    question: "Đến từ Plumstead / Abbey Wood thế nào?",
+    question: "Đến từ Plumstead / Abbey Wood / Woolwich thế nào?",
     answer:
-      "Elizabeth line, DLR hoặc National Rail tới Woolwich / Woolwich Arsenal rồi đi bộ ngắn đến 52 Powis Street. Nhiều tuyến xe buýt cũng dừng quanh trung tâm.",
+      "Xe buýt hoặc tàu tới Charlton rồi đi bộ ngắn đến 9 The Village. Nhiều tuyến xe buýt cũng dừng quanh làng Charlton.",
   },
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Địa chỉ osteopath Woolwich",
+  title: "Địa chỉ osteopath Charlton",
   description:
-    "Tìm Nguyen's Osteopathic Clinic trong St James Pharmacy, 52 Powis Street, Woolwich SE18 — gửi xe, Elizabeth line, DLR, và hướng dẫn khi đến nơi.",
+    "Tìm Nguyen's Osteopathic Clinic trong Village Pharmacy, 9 The Village, Charlton SE7 8UG — gửi xe, ga Charlton, xe buýt, và hướng dẫn khi đến nơi.",
   alternates: {
     canonical: "/vi/find-us",
     languages: {
@@ -44,34 +44,34 @@ export const metadata: Metadata = {
     },
   },
   openGraph: pageOpenGraph({
-    title: "Địa chỉ osteopath Woolwich",
+    title: "Địa chỉ osteopath Charlton",
     description:
-      "Tìm phòng khám osteopathy trong St James Pharmacy, 52 Powis Street, Woolwich SE18 — gửi xe, Elizabeth line, DLR.",
+      "Tìm phòng khám osteopathy trong Village Pharmacy, 9 The Village, Charlton SE7 8UG — gửi xe, ga Charlton, xe buýt.",
     url: "/vi/find-us",
     images: [defaultOgImage],
     locale: "vi_VN",
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Địa chỉ osteopath Woolwich",
+    title: "Địa chỉ osteopath Charlton",
     description:
-      "Tìm phòng khám osteopathy trong St James Pharmacy, 52 Powis Street, Woolwich SE18 — gửi xe, Elizabeth line, DLR.",
+      "Tìm phòng khám osteopathy trong Village Pharmacy, 9 The Village, Charlton SE7 8UG — gửi xe, ga Charlton, xe buýt.",
     images: [defaultOgImage.url],
   },
 };
 
 const travel = [
   {
-    title: "Elizabeth line, DLR & National Rail",
-    body: "Xuống Woolwich / Woolwich Arsenal — đi bộ ngắn đến Powis Street. Hỏi quầy nhà thuốc khi vào.",
+    title: "National Rail",
+    body: "Xuống ga Charlton — đi bộ ngắn đến The Village. Hỏi quầy nhà thuốc khi vào.",
   },
   {
     title: "Xe buýt",
-    body: "Nhiều tuyến dừng quanh trung tâm Woolwich. Đến số 52 Powis Street — St James Pharmacy & Travel Clinic.",
+    body: "Nhiều tuyến dừng quanh làng Charlton. Đến số 9 The Village — Village Pharmacy.",
   },
   {
     title: "Gửi xe ngắn hạn",
-    body: "Có chỗ gửi xe ngắn hạn ở trung tâm thị trấn. Đến sớm vài phút nếu cần tìm chỗ trống.",
+    body: "Có chỗ gửi xe ngắn hạn quanh The Village. Đến sớm vài phút nếu cần tìm chỗ trống.",
   },
   {
     title: "Khi vào nhà thuốc",
@@ -91,7 +91,7 @@ export default function VietnameseFindUsPage() {
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Địa chỉ · Woolwich SE18
+            Địa chỉ · Charlton SE7
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             Tìm chúng tôi &amp; gửi xe
@@ -237,7 +237,7 @@ export default function VietnameseFindUsPage() {
             <div>
               <h2 className="font-display text-3xl text-navy">Bản đồ</h2>
               <p className="mt-2 text-sm text-slate-600">
-                {site.address.line1}, Woolwich — trong nhà thuốc, không có cửa
+                {site.address.line1}, Charlton — trong nhà thuốc, không có cửa
                 riêng ngoài phố.
               </p>
             </div>
@@ -252,7 +252,7 @@ export default function VietnameseFindUsPage() {
           </div>
           <div className="mt-8">
             <LazyMapsEmbed
-              title="Bản đồ đến Nguyen's Osteopathic Clinic, 52 Powis Street Woolwich"
+              title="Bản đồ đến Nguyen's Osteopathic Clinic, 9 The Village Charlton"
               src={site.address.mapsEmbedUrl}
             />
           </div>

@@ -97,8 +97,8 @@ export default function VietnameseBackNeckPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Osteopathy đánh giá tư thế, khớp và mô mềm — cho sciatica, đau do
-            ngồi máy, cứng cột sống và đau cổ vai. Khám trong St James Pharmacy
-            trên Powis Street.
+            ngồi máy, cứng cột sống và đau cổ vai. Khám trong Village Pharmacy
+            trên The Village.
           </p>
           <p className="mt-4 text-sm font-bold tracking-wide text-teal-dark">
             Ban đầu £75 (60 phút) · Tái khám £60 · Không cần GP referral

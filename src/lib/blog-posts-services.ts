@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 const ctaBook =
   `Book online at ${site.websiteUrl}/book or call ${site.phone}.`;
 const clinic =
-  `${site.name} inside ${site.address.venue}, ${site.address.line1}, Woolwich SE18 6LQ`;
+  `${site.name} inside ${site.address.venue}, ${site.address.line1}, Charlton SE7 8UG`;
 
 type ServicePost = Omit<BlogPost, "image" | "readingMinutes"> & {
   readingMinutes?: number;
@@ -635,7 +635,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "deep-tissue-massage-woolwich-osteopath",
     title: "Deep tissue massage in Woolwich with an osteopath-led clinic",
     description:
-      "45-minute deep tissue massage (£60) for knotted, training-heavy or desk-tight muscles at St James Pharmacy, Woolwich.",
+      "45-minute deep tissue massage (£60) for knotted, training-heavy or desk-tight muscles at Village Pharmacy, Woolwich.",
     date: "2026-10-09",
     category: "Deep tissue",
     keywords: [
@@ -1127,20 +1127,20 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "osteopath-inside-st-james-pharmacy-woolwich",
-    title: "Osteopath inside St James Pharmacy, Powis Street Woolwich",
+    title: "Osteopath inside Village Pharmacy, The Village Woolwich",
     description:
-      "Find Nguyen's Osteopathic Clinic inside St James Pharmacy & Travel Clinic — directions, arrival tips, and parking pointers.",
+      "Find Nguyen's Osteopathic Clinic inside Village Pharmacy — directions, arrival tips, and parking pointers.",
     date: "2026-10-09",
     category: "Clinic info",
     keywords: [
-      "St James Pharmacy osteopath",
-      "Powis Street osteopath",
+      "Village Pharmacy osteopath",
+      "The Village osteopath",
       "osteopath Woolwich Arsenal",
     ],
     sections: [
       {
         paragraphs: [
-          "We are based inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich SE18 6LQ. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
+          "We are based inside Village Pharmacy at 9 The Village, Charlton SE7 8UG. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
           "Pharmacy hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Wear comfortable clothing for movement assessment.",
         ],
       },

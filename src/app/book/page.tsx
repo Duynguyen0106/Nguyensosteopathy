@@ -187,7 +187,7 @@ export default function BookPage() {
           Before you book — quick answers
         </h2>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-          Common questions from Woolwich patients booking osteopathy at 52 Powis
+          Common questions from Charlton patients booking osteopathy at 9 The Village
           Street.
         </p>
         <FaqAccordion items={moneyPageFaqs} />

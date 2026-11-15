@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Areas We Serve",
   description:
-    "Osteopath serving Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from St James Pharmacy, 52 Powis Street, SE18. Book online — no GP…",
+    "Osteopath serving Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from Village Pharmacy, 9 The Village, SE18. Book online — no GP…",
   alternates: { canonical: "/areas" },
   keywords: [
     "osteopath Woolwich",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Areas We Serve | Nguyen's Osteopathic Clinic",
     description:
-      "Osteopathy for Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from St James Pharmacy, SE18 — book online without a GP referral.",
+      "Osteopathy for Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from Village Pharmacy, SE18 — book online without a GP referral.",
     url: "/areas",
     images: [defaultOgImage],
   },
@@ -93,11 +93,11 @@ export default function AreasPage() {
             {[
               {
                 title: "Public transport",
-                body: "Woolwich Arsenal (Elizabeth line, DLR, National Rail) plus buses serving Powis Street.",
+                body: "Charlton station (National Rail) plus local buses serving The Village.",
               },
               {
                 title: "Parking",
-                body: "Short-stay Woolwich town-centre parking nearby — check signs for limits and payment.",
+                body: "On-street and nearby short-stay parking in Charlton village — check signs for limits and payment.",
               },
               {
                 title: "Hours",

@@ -215,8 +215,8 @@ const html = `<!DOCTYPE html>
         <p class="reg">Reg. No. 12332</p>
       </div>
       <div class="place">
-        Inside St James Pharmacy<br/>
-        Woolwich · SE18 6LQ
+        Inside Village Pharmacy<br/>
+        Woolwich · SE7 8UG
       </div>
     </div>
   </section>
@@ -230,7 +230,7 @@ const html = `<!DOCTYPE html>
       <p class="line"><strong>${EMAIL}</strong></p>
       <p class="line"><strong>${SITE}</strong></p>
       <p class="line">Mon–Fri 9–6 · Sat 9–5:30</p>
-      <p class="line">52 Powis Street, Woolwich</p>
+      <p class="line">9 The Village, Charlton</p>
     </div>
     <aside class="qr-col">
       <img src="${qrDataUri}" alt="Book online QR" width="600" height="600" />

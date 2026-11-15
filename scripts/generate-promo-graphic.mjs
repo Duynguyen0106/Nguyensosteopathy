@@ -346,7 +346,7 @@ const html = `<!DOCTYPE html>
       </div>
       <div class="card">
         <p class="label">Visit</p>
-        <p>St James Pharmacy · Woolwich SE18 6LQ</p>
+        <p>Village Pharmacy · Charlton SE7 8UG</p>
       </div>
       <div class="card">
         <p class="label">Book</p>

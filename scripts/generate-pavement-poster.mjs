@@ -250,7 +250,7 @@ function buildHtml(sizeKey) {
       <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="1250" height="870" />
     </div>
 
-    <p class="eyebrow">Inside St James Pharmacy · Woolwich</p>
+    <p class="eyebrow">Inside Village Pharmacy · Woolwich</p>
     <h1>Back pain treated properly</h1>
     <p class="lede">
       Drug-free osteopathy. Book online or call — no GP referral needed.
@@ -272,7 +272,7 @@ function buildHtml(sizeKey) {
     <div class="meta">
       <div>
         <p class="label">Visit</p>
-        <p>St James Pharmacy · 52 Powis Street<br/>Woolwich, London SE18 6LQ</p>
+        <p>Village Pharmacy · 9 The Village<br/>Woolwich, London SE7 8UG</p>
       </div>
       <div>
         <p class="label">Hours</p>

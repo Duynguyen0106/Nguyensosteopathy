@@ -521,7 +521,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
       {
         "heading": "Everyday MSK recovery",
         "paragraphs": [
-          "After osteopathy, we often encourage normal hydration and gentle movement. You do not need a sports drink for a standard office day or a short walk along Powis Street."
+          "After osteopathy, we often encourage normal hydration and gentle movement. You do not need a sports drink for a standard office day or a short walk along The Village."
         ]
       },
       {

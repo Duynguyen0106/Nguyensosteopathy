@@ -185,15 +185,14 @@ const html = `<!DOCTYPE html>
       <p class="date">Mon, Tue, Thu, Fri &amp; Sat</p>
     </div>
     <p class="details">
-      Book with Austin Duy Nguyen, GOsC-registered osteopath, inside St James
-      Pharmacy on Powis Street. No GP referral needed. NHS &amp; student 10%
+      Book with Austin Duy Nguyen, GOsC-registered osteopath, inside Village Pharmacy on The Village. No GP referral needed. NHS &amp; student 10%
       discount with valid ID.
     </p>
 
     <div class="foot">
       <div>
         <p class="phone">07882 843513</p>
-        <p class="meta">Book online · Inside St James Pharmacy<br/>52 Powis Street, Woolwich SE18 6LQ</p>
+        <p class="meta">Book online · Inside Village Pharmacy<br/>9 The Village, Charlton SE7 8UG</p>
       </div>
       <div class="web">
         www.nguyensosteopathy.com/book

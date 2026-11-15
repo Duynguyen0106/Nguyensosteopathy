@@ -65,7 +65,7 @@ const priority = {
       {
         heading: "When to book sooner",
         paragraphs: [
-          "Do not wait months if pain is stopping sleep, work, or walking. Early assessment often shortens recovery and reduces fear around movement. You do not need a GP referral to see Austin Duy Nguyen at St James Pharmacy, Powis Street.",
+          "Do not wait months if pain is stopping sleep, work, or walking. Early assessment often shortens recovery and reduces fear around movement. You do not need a GP referral to see Austin Duy Nguyen at Village Pharmacy, The Village.",
         ],
       },
     ],
@@ -195,7 +195,7 @@ const priority = {
     sections: [
       {
         paragraphs: [
-          "If you have been searching for an osteopath in Woolwich, you are usually looking for two things: clear answers about pain that will not settle, and a practitioner you can trust. At Nguyen's Osteopathic Clinic, care is provided by Austin Duy Nguyen, a GOsC-registered osteopath (Reg. No. 12332), inside St James Pharmacy on Powis Street.",
+          "If you have been searching for an osteopath in Woolwich, you are usually looking for two things: clear answers about pain that will not settle, and a practitioner you can trust. At Nguyen's Osteopathic Clinic, care is provided by Austin Duy Nguyen, a GOsC-registered osteopath (Reg. No. 12332), inside Village Pharmacy at The Village.",
           "Osteopathy is a hands-on, drug-free approach. We assess how your joints, muscles, and nerves move together, then treat the cause of symptoms — not only the sore spot.",
         ],
       },
@@ -235,7 +235,7 @@ const priority = {
       {
         heading: "Where to find us",
         paragraphs: [
-          "The clinic is inside St James Pharmacy, Powis Street, Woolwich SE18 6LQ. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Pharmacy hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking details and clinic hours for osteopathy are on our [find us](/find-us) and [book](/book) pages.",
+          "The clinic is inside Village Pharmacy, The Village, Charlton SE7 8UG. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Pharmacy hours are Monday–Friday 9:00am–6:00pm and Saturday 9:00am–5:30pm. Online booking details and clinic hours for osteopathy are on our [find us](/find-us) and [book](/book) pages.",
           "Parking, bus links, and nearby DLR/rail options are covered in local guides across the blog if you are travelling from Greenwich, Charlton, or Thamesmead.",
         ],
       },
@@ -296,7 +296,7 @@ const priority = {
       {
         heading: "Practical arrival tips",
         paragraphs: [
-          "Arrive a few minutes early and check in at St James Pharmacy on Powis Street. Bring water if you like. Avoid arriving straight from a maximal gym session if you can — it can temporarily change how tissues feel on examination.",
+          "Arrive a few minutes early and check in at Village Pharmacy at The Village. Bring water if you like. Avoid arriving straight from a maximal gym session if you can — it can temporarily change how tissues feel on examination.",
           "Booking is online via [/book](/book), or call if you need help choosing an appointment type.",
         ],
       },
@@ -459,7 +459,7 @@ const priority = {
       {
         paragraphs: [
           "A “slipped disc” is usually a bulging or irritated disc that sensitises nearby nerves. Pain may stay in the back or travel into the buttock and leg. Desk work, lifting, and long Elizabeth line sits are common local triggers.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy, we assess movement, nerve irritability, and pelvic mechanics before treating. Hands-on care aims to ease protective muscle spasm and restore confident motion — not to “push a disc back in”.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy, we assess movement, nerve irritability, and pelvic mechanics before treating. Hands-on care aims to ease protective muscle spasm and restore confident motion — not to “push a disc back in”.",
         ],
       },
       {

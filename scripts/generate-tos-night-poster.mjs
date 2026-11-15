@@ -252,7 +252,7 @@ const html = `<!DOCTYPE html>
     <div class="foot">
       <div>
         <p class="phone">07882 843513</p>
-        <p class="meta">Austin Duy Nguyen · GOsC Reg. 12332<br/>St James Pharmacy · Woolwich SE18</p>
+        <p class="meta">Austin Duy Nguyen · GOsC Reg. 12332<br/>Village Pharmacy · Woolwich SE18</p>
       </div>
       <div class="web">
         www.nguyensosteopathy.com/book

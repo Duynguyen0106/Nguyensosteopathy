@@ -7,20 +7,20 @@ import { FaqJsonLd } from "@/components/JsonLd";
 import { faqs, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Osteopath FAQ Woolwich",
+  title: "Osteopath FAQ Charlton",
   description:
-    "FAQ for Nguyen's Osteopathic Clinic in Woolwich: GP referrals, first visits, fees, hours inside St James Pharmacy, and Vietnamese-speaking care.",
+    "FAQ for Nguyen's Osteopathic Clinic in Charlton: GP referrals, first visits, fees, hours inside Village Pharmacy, and Vietnamese-speaking care.",
   alternates: { canonical: "/faq" },
   keywords: [
-    "osteopath Woolwich FAQ",
-    "first osteopathy visit Woolwich",
-    "osteopath St James Pharmacy",
+    "osteopath Charlton FAQ",
+    "first osteopathy visit Charlton",
+    "osteopath Village Pharmacy",
     "Vietnamese osteopath questions",
   ],
   openGraph: {
     title: "FAQ | Nguyen's Osteopathic Clinic",
     description:
-      "FAQ for Nguyen's Osteopathic Clinic: GP referrals, first visits, fees, hours inside St James Pharmacy, and Vietnamese-speaking care in Woolwich SE18.",
+      "FAQ for Nguyen's Osteopathic Clinic: GP referrals, first visits, fees, hours inside Village Pharmacy, and Vietnamese-speaking care in Charlton SE7.",
     url: "/faq",
     images: [defaultOgImage],
   },
@@ -41,7 +41,7 @@ export default function FaqPage() {
           </h1>
           <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Clear answers before you book — referrals, first visits, finding us
-            inside the pharmacy, and how care works in Woolwich SE18.
+            inside the pharmacy, and how care works in Charlton SE7.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/book">Book online</ButtonLink>

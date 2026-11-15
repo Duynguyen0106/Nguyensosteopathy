@@ -89,20 +89,22 @@ See [`.env.example`](.env.example) for:
 
 ```bash
 npm run dev          # local Next.js
-npm run build        # plain `next build` (also invoked by OpenNext)
-npm run cf:build     # OpenNext Cloudflare Worker build
+npm run build        # OpenNext Cloudflare Worker build (safe for Workers Builds)
+npm run build:next   # plain `next build` only
+npm run cf:build     # alias for `npm run build`
 npm run preview      # OpenNext build + Wrangler local preview
 npm run deploy       # OpenNext build + deploy to Cloudflare Workers
 npm run lint
 npm run leaflet
 ```
 
-Workers Builds (Git) should use:
+Workers Builds (Git) — recommended dashboard settings:
 
-- **Build command:** `npm run cf:build` (or `npx opennextjs-cloudflare build`)  
-  Do **not** set this to `npm run build` — OpenNext already runs `next build` internally.
+- **Build command:** `npm run build` (or `npm run cf:build`)  
+  `open-next.config.ts` sets `buildCommand: "npx next build"` so OpenNext does not recurse when `npm run build` is the OpenNext CLI.
 - **Deploy command:** `npx wrangler deploy`  
-  (or `npx opennextjs-cloudflare deploy` if you prefer rebuild+deploy in one step)
+  `wrangler.jsonc` also runs OpenNext if `.open-next/worker.js` is missing, so a blank/mis-set Build command still deploys.
+- Builds API needs a **user-scoped** API token (account tokens return “Invalid token”). Prefer the dashboard if you only have an account token.
 
 ## Deploy (Cloudflare Workers + OpenNext)
 
@@ -117,6 +119,7 @@ Hosting runs on **Cloudflare Workers** via [`@opennextjs/cloudflare`](https://op
    - optional `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_GTM_ID`
 5. Deploy: `npm run deploy` (or connect the GitHub repo to Cloudflare Workers Builds on `main`)
 6. Confirm custom domains **www.nguyensosteopathy.com** and **nguyensosteopathy.com** are attached to the Worker (see `wrangler.jsonc` `routes`)
-7. After cutover is healthy, remove the old Vercel project so `*.vercel.app` stops serving a second copy
+7. After cutover is healthy, remove/disconnect the old Vercel project (currently returns HTTP 402 / account blocked) and update the GitHub repo homepage away from `*.vercel.app`
+8. Rotate any Cloudflare API token that was pasted into chat; create a fresh deploy token for Wrangler/CI
 
 Optional: create an R2 bucket `nguyensosteopathy-next-cache` and uncomment the R2 binding in `wrangler.jsonc` + `open-next.config.ts` for ISR / fetch revalidation cache (Google reviews).

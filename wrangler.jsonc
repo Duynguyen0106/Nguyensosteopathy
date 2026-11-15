@@ -5,6 +5,11 @@
   "upload_source_maps": true,
   "compatibility_date": "2026-11-12",
   "compatibility_flags": ["nodejs_compat"],
+  // Workers Builds deploy step runs `npx wrangler deploy`. If the dashboard
+  // Build command is empty/mis-set, still produce the OpenNext worker bundle.
+  "build": {
+    "command": "test -f .open-next/worker.js || npm run cf:build"
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"

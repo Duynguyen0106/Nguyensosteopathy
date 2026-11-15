@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Desk pain osteopath Woolwich",
   description:
-    "Osteopathy for desk and hybrid workers in Charlton SE18 — neck and shoulder tension, upper-back ache, text neck, and RSI-type wrist or forearm pain. Inside…",
+    "Osteopathy for desk and hybrid workers in Charlton SE7 — neck and shoulder tension, upper-back ache, text neck, and RSI-type wrist or forearm pain. Inside…",
   alternates: { canonical: "/desk-pain" },
   keywords: [
     "desk pain osteopath Woolwich",
@@ -102,7 +102,7 @@ export default function DeskPainPage() {
     name: "Desk & Office Pain Osteopath in Charlton",
     url: `${site.websiteUrl}/desk-pain`,
     description:
-      "Osteopathy for desk and hybrid worker neck, back, and RSI-type pain in Charlton SE18.",
+      "Osteopathy for desk and hybrid worker neck, back, and RSI-type pain in Charlton SE7.",
     about: {
       "@type": "MedicalCondition",
       name: "Work-related musculoskeletal pain",

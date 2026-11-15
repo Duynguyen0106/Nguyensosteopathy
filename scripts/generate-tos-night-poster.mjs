@@ -246,13 +246,13 @@ const html = `<!DOCTYPE html>
 
     <div class="cta">
       <strong>Book</strong>
-      <span>Osteopathy assessment<br/>in Woolwich</span>
+      <span>Osteopathy assessment<br/>in Charlton</span>
     </div>
 
     <div class="foot">
       <div>
         <p class="phone">07882 843513</p>
-        <p class="meta">Austin Duy Nguyen · GOsC Reg. 12332<br/>Village Pharmacy · Woolwich SE18</p>
+        <p class="meta">Austin Duy Nguyen · GOsC Reg. 12332<br/>Village Pharmacy · Charlton SE7</p>
       </div>
       <div class="web">
         www.nguyensosteopathy.com/book

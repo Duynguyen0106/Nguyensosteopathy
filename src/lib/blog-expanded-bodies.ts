@@ -3649,7 +3649,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Charlton SE18.",
+          "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Charlton SE7.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess office workers and creatives with grip-heavy mouse or tablet days with a focus on sustained wrist extension, pinch grip, and forearm fatigue, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },

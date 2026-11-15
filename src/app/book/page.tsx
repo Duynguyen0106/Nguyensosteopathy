@@ -8,7 +8,7 @@ import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { moneyPageFaqs } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
-const bookDescription = `Book online with Nguyen's Osteopathic Clinic in Charlton SE18. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath — no GP referral needed.`;
+const bookDescription = `Book online with Nguyen's Osteopathic Clinic in Charlton SE7. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath — no GP referral needed.`;
 
 export const metadata: Metadata = {
   title: "Book osteopathy in Charlton",

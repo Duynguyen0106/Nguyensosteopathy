@@ -216,7 +216,7 @@ const html = `<!DOCTYPE html>
       </div>
       <div class="place">
         Inside Village Pharmacy<br/>
-        Woolwich · SE7 8UG
+        Charlton · SE7 8UG
       </div>
     </div>
   </section>

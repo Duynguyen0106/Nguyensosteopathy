@@ -551,7 +551,7 @@ const html = `<!DOCTYPE html>
     </header>
 
     <div class="front-body">
-      <p class="eyebrow">Woolwich · Drug-free care</p>
+      <p class="eyebrow">Charlton · Drug-free care</p>
       <h1>Back pain, joint strain &amp; stubborn tension — treated properly</h1>
       <p class="lede">
         Hands-on osteopathy and specialist therapies for clear answers,
@@ -689,7 +689,7 @@ const html = `<!DOCTYPE html>
         <div>
           <p class="section-label">Find us online</p>
           <blockquote class="quote">
-            <p>Book online for live appointment slots. Public Google reviews appear as patients visit — scan the QR or search Nguyen’s Osteopathic Clinic, Woolwich.</p>
+            <p>Book online for live appointment slots. Public Google reviews appear as patients visit — scan the QR or search Nguyen’s Osteopathic Clinic, Charlton.</p>
             <cite>nguyensosteopathy.com · Google reviews</cite>
           </blockquote>
           <blockquote class="quote">
@@ -713,7 +713,7 @@ const html = `<!DOCTYPE html>
       <div class="back-cta">
         <div>
           <h2>Ready when you are</h2>
-          <p>Scan to book online, or call now.<br/>Inside Village Pharmacy, Woolwich.</p>
+          <p>Scan to book online, or call now.<br/>Inside Village Pharmacy, Charlton.</p>
           <p class="phone">${PHONE}</p>
         </div>
         <img src="${qrDataUri}" alt="Book online QR" width="1200" height="1200" />

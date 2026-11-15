@@ -28,7 +28,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "back-neck-pain",
     h1: "Back & Neck Pain Treatment in Charlton",
     seoTitle: "Back & neck pain Woolwich",
-    metaDescription: "Osteopathy for back and neck pain in Charlton SE18 — sciatica, desk strain, disc-related stiffness and morning ache. Book with Austin Duy Nguyen at Nguyen's…",
+    metaDescription: "Osteopathy for back and neck pain in Charlton SE7 — sciatica, desk strain, disc-related stiffness and morning ache. Book with Austin Duy Nguyen at Nguyen's…",
     heroLine: "Assessment-led osteopathy for sciatica, postural strain, disc-related stiffness and everyday spinal ache — inside Village Pharmacy at The Village.",
     eyebrow: "Spine care · Woolwich SE18",
     sections: [
@@ -57,7 +57,7 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Local care in Charlton SE18",
+        heading: "Local care in Charlton SE7",
         paragraphs: [
           `The clinic sits inside Village Pharmacy at 9 The Village, Charlton, London SE7 8UG — convenient for Plumstead, Charlton, Abbey Wood, Thamesmead and Greenwich. Ask at the pharmacy counter on arrival and you will be directed to the osteopathy room. Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday).`,
           "If spinal pain is affecting your work or daily life, booking an assessment is a practical next step. You can also explore our condition guides on sciatica, neck pain and disc-related symptoms, or read about desk and office pain if screen work is the main driver.",
@@ -105,7 +105,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "headaches-joints",
     h1: "Headache & Joint Treatment in Charlton",
     seoTitle: "Headache & Joint Treatment in Charlton",
-    metaDescription: "Osteopathy for tension headaches, cervicogenic headache and joint stiffness in Charlton SE18. Shoulder, hip, knee and ankle support at Nguyen's Osteopathic…",
+    metaDescription: "Osteopathy for tension headaches, cervicogenic headache and joint stiffness in Charlton SE7. Shoulder, hip, knee and ankle support at Nguyen's Osteopathic…",
     heroLine: "Calm irritable neck-driven headaches and rebuild comfortable movement in stiff or post-injury joints — drug-free care in Charlton.",
     eyebrow: "Headaches & joints · Woolwich SE18",
     sections: [
@@ -172,7 +172,7 @@ export const servicePages: ServicePageContent[] = [
     h1: "Shockwave Therapy in Woolwich",
     seoTitle: "Shockwave Therapy Woolwich | Focused LI-ESWT",
     metaDescription:
-      "Shockwave therapy in Charlton SE18 for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. Focused LI-ESWT £90 after screening at Nguyen's at The Village.",
+      "Shockwave therapy in Charlton SE7 for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. Focused LI-ESWT £90 after screening at Nguyen's at The Village.",
     heroLine:
       "Focused LI-ESWT for stubborn heel, elbow, Achilles and tendon pain at 9 The Village, Charlton SE7 — clinically screened, then delivered with a clear loading plan.",
     eyebrow: "Shockwave Woolwich · SE18",
@@ -255,7 +255,7 @@ export const servicePages: ServicePageContent[] = [
     h1: "Men's Health & ED Shockwave in Woolwich",
     seoTitle: "Men's shockwave Woolwich",
     metaDescription:
-      "Confidential men's health and ED shockwave in Charlton SE18 using low-intensity focused LI-ESWT. Private, drug-free protocol at Nguyen's at The Village — £110 / 30 min.",
+      "Confidential men's health and ED shockwave in Charlton SE7 using low-intensity focused LI-ESWT. Private, drug-free protocol at Nguyen's at The Village — £110 / 30 min.",
     heroLine:
       "Discreet, non-invasive LI-ESWT for vascular-related erectile difficulties — private one-to-one care inside Village Pharmacy, Charlton SE7.",
     eyebrow: "Men's health Woolwich · confidential",
@@ -285,7 +285,7 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Book confidentially in Charlton SE18",
+        heading: "Book confidentially in Charlton SE7",
         paragraphs: [
           "Online booking and phone enquiries are handled discreetly. The clinic serves Woolwich and surrounding SE London neighbourhoods with Saturday availability within our bookable pattern. Vietnamese or English consultation is available if you prefer to discuss symptoms without a language barrier.",
           "For tendon-focused shockwave rather than men's health protocol, see our Focused Shockwave page. For general musculoskeletal pain, start with osteopathy for back, neck or sports injury instead.",
@@ -339,7 +339,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "acupuncture-electro",
     h1: "Medical Acupuncture in Woolwich",
     seoTitle: "Medical acupuncture Woolwich",
-    metaDescription: "Western medical acupuncture and electroacupuncture in Charlton SE18 for muscle trigger points and localised pain. Available standalone or as a +£20 add-on…",
+    metaDescription: "Western medical acupuncture and electroacupuncture in Charlton SE7 for muscle trigger points and localised pain. Available standalone or as a +£20 add-on…",
     heroLine: "Targeted needling and gentle microcurrent to calm irritable muscles and support pain relief — integrated with osteopathic care when useful.",
     eyebrow: "Acupuncture · Woolwich SE18",
     sections: [
@@ -368,7 +368,7 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Book acupuncture in Charlton SE18",
+        heading: "Book acupuncture in Charlton SE7",
         paragraphs: [
           "Find us inside Village Pharmacy, 9 The Village. Book online, call, or ask when scheduling osteopathy whether an acupuncture add-on is likely to be useful for your case. Vietnamese-speaking consultation is available if that helps you describe symptoms more comfortably.",
           "If needles are not for you, osteopathy and massage remain fully available without them. We respect preference and will never insist on needling as a condition of care or recovery.",
@@ -477,7 +477,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "sports-injury-rehab",
     h1: "Sports Injury & Rehab in Woolwich",
     seoTitle: "Sports Injury & Rehab in Woolwich",
-    metaDescription: "Sports injury assessment and rehab in Charlton SE18 for strains, sprains and overuse. Return-to-sport planning with osteopathy at Nguyen's Osteopathic Clinic.",
+    metaDescription: "Sports injury assessment and rehab in Charlton SE7 for strains, sprains and overuse. Return-to-sport planning with osteopathy at Nguyen's Osteopathic Clinic.",
     heroLine: "Assessment, hands-on care and progressive loading so you return to training with better mechanics — not guesswork.",
     eyebrow: "Sport & rehab · Woolwich SE18",
     sections: [
@@ -546,7 +546,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "pregnancy-support",
     h1: "Pregnancy Osteopathy in Charlton",
     seoTitle: "Pregnancy Osteopathy in Charlton",
-    metaDescription: "Gentle pregnancy osteopathy in Charlton SE18 for pelvic girdle discomfort, lower-back and rib strain. Trimester-aware care at Nguyen's Osteopathic Clinic.",
+    metaDescription: "Gentle pregnancy osteopathy in Charlton SE7 for pelvic girdle discomfort, lower-back and rib strain. Trimester-aware care at Nguyen's Osteopathic Clinic.",
     heroLine: "Trimester-aware, gentle osteopathic care for pelvic pressure, postural change and pregnancy-related backache.",
     eyebrow: "Pregnancy care · Woolwich SE18",
     sections: [
@@ -644,7 +644,7 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Book gentle care in Charlton SE18",
+        heading: "Book gentle care in Charlton SE7",
         paragraphs: [
           `Find Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village. Bookable osteopathy days run Monday, Tuesday, Thursday, Friday and Saturday. Vietnamese or English consultation is available.`,
           "Related pages include headache and joint treatment, pregnancy support, and paediatric care. For a fuller explanation of osteopathy in general, see our what-is-osteopathy guide.",
@@ -684,7 +684,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "paediatric-care",
     h1: "Paediatric Osteopathy in Charlton",
     seoTitle: "Paediatric Osteopathy in Charlton",
-    metaDescription: "Gentle paediatric osteopathy in Charlton SE18 for infants and children. Calm, parent-led appointments at Nguyen's Osteopathic Clinic inside Village Pharmacy.",
+    metaDescription: "Gentle paediatric osteopathy in Charlton SE7 for infants and children. Calm, parent-led appointments at Nguyen's Osteopathic Clinic inside Village Pharmacy.",
     heroLine: "Soft, measured osteopathic care tailored to your child's age and comfort — with clear explanations for parents throughout.",
     eyebrow: "Paediatric care · Woolwich SE18",
     sections: [

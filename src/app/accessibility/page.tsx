@@ -39,7 +39,7 @@ export default function AccessibilityPage() {
               {site.name} is working toward WCAG 2.2 AA for this website and aims
               to make clinic visits as usable as possible. We continue to improve
               digital clarity, booking paths, and practical arrival information
-              for patients in Charlton SE18.
+              for patients in Charlton SE7.
             </p>
           </section>
 

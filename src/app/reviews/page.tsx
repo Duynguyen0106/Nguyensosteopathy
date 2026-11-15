@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Patient Reviews | Nguyen's Osteopathic Clinic",
     description:
-      "Read Google reviews for Nguyen's Osteopathic Clinic in Charlton SE18, and share your visit after treatment with Austin Duy Nguyen.",
+      "Read Google reviews for Nguyen's Osteopathic Clinic in Charlton SE7, and share your visit after treatment with Austin Duy Nguyen.",
     url: "/reviews",
     images: [defaultOgImage],
   },

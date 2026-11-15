@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Complaints Procedure | Nguyen's Osteopathic Clinic",
     description:
-      "How to raise a concern about osteopathic care in Charlton SE18.",
+      "How to raise a concern about osteopathic care in Charlton SE7.",
     url: "/complaints",
     images: [defaultOgImage],
   },

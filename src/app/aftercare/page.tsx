@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aftercare | Nguyen's Osteopathic Clinic",
     description:
-      "Practical aftercare guidance after your osteopathy appointment in Charlton SE18.",
+      "Practical aftercare guidance after your osteopathy appointment in Charlton SE7.",
     url: "/aftercare",
     images: [defaultOgImage],
   },

@@ -335,7 +335,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "rsi-wrist-forearm-office-osteopath",
     title: "RSI wrist and forearm pain for office and creative workers",
     description:
-      "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Charlton SE18.",
+      "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Charlton SE7.",
     date: "2026-10-10",
     category: "Headaches & joints",
     keywords: [

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Facebook feed poster (1080×1080) — clinic booking promo for Woolwich.
+ * Facebook feed poster (1080×1080) — clinic booking promo for Charlton.
  * No discount claim — opening-day % offers were removed sitewide.
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";

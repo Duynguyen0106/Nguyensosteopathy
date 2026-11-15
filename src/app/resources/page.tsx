@@ -182,7 +182,7 @@ const groups = [
       {
         href: "/about",
         label: "About Austin",
-        detail: "GOsC-registered osteopath practising in Charlton SE18.",
+        detail: "GOsC-registered osteopath practising in Charlton SE7.",
       },
       {
         href: "/vi",

@@ -254,7 +254,7 @@ const html = `<!DOCTYPE html>
       <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="1250" height="870" />
     </div>
 
-    <p class="eyebrow">Inside Village Pharmacy · Woolwich</p>
+    <p class="eyebrow">Inside Village Pharmacy · Charlton</p>
     <h1>Back pain &amp; joint strain — treated properly</h1>
     <p class="lede">
       Drug-free osteopathy with Austin Duy Nguyen, GOsC-registered osteopath.

@@ -168,7 +168,7 @@ const html = `<!DOCTYPE html>
     </div>
 
     <div class="copy">
-      <p class="eyebrow">Woolwich · SE London</p>
+      <p class="eyebrow">Charlton · SE London</p>
       <h1>Nguyen's Osteopathic Clinic</h1>
       <p class="role">Austin Duy Nguyen · GOsC-Registered Osteopath · Reg. 12332</p>
       <p class="tagline">Recover, Realign, and Restore Your Vitality</p>

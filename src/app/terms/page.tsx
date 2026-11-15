@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms & Cancellation Policy",
-  description: `Clinic terms, booking conditions, and cancellation policy for ${site.name} in Charlton SE18.`,
+  description: `Clinic terms, booking conditions, and cancellation policy for ${site.name} in Charlton SE7.`,
   alternates: { canonical: "/terms" },
   openGraph: {
     title: "Terms & Cancellation Policy",

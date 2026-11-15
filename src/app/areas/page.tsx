@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Areas We Serve",
   description:
-    "Osteopath serving Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from Village Pharmacy, 9 The Village, SE18. Book online — no GP…",
+    "Osteopath serving Charlton, Woolwich, Plumstead, Abbey Wood, Greenwich, and Thamesmead from Village Pharmacy, 9 The Village, SE7. Book online — no GP…",
   alternates: { canonical: "/areas" },
   keywords: [
     "osteopath Woolwich",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Areas We Serve | Nguyen's Osteopathic Clinic",
     description:
-      "Osteopathy for Woolwich, Plumstead, Abbey Wood, Greenwich, Charlton, and Thamesmead from Village Pharmacy, SE18 — book online without a GP referral.",
+      "Osteopathy for Charlton, Woolwich, Plumstead, Abbey Wood, Greenwich, and Thamesmead from Village Pharmacy, SE7 — book online without a GP referral.",
     url: "/areas",
     images: [defaultOgImage],
   },
@@ -60,7 +60,7 @@ export default function AreasPage() {
             Areas we serve
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Based in Charlton SE18 — practical for patients across Plumstead,
+            Based in Charlton SE7 — practical for patients across Plumstead,
             Abbey Wood, Greenwich, Charlton, and Thamesmead who want registered
             osteopathy without a central London trip.
           </p>

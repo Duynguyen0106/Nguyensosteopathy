@@ -113,7 +113,7 @@ export default function OsteopathyPage() {
     name: "What Is Osteopathy?",
     url: `${site.websiteUrl}/osteopathy`,
     description:
-      "Explanation of osteopathy and how care works at Nguyen's Osteopathic Clinic in Charlton SE18.",
+      "Explanation of osteopathy and how care works at Nguyen's Osteopathic Clinic in Charlton SE7.",
     about: {
       "@type": "MedicalTherapy",
       name: "Osteopathy",
@@ -171,7 +171,7 @@ export default function OsteopathyPage() {
           </h1>
           <p className="about-rise about-rise-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
             Regulated, drug-free care for how you move — assessed and treated
-            one-to-one in Charlton SE18.
+            one-to-one in Charlton SE7.
           </p>
           <div className="about-rise about-rise-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href={bookUrl} variant="onDark">

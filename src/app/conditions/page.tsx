@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Conditions We Treat | Nguyen's Osteopathic Clinic",
     description:
-      "Explore the MSK conditions catalogue we treat in Charlton SE18, organised by body region.",
+      "Explore the MSK conditions catalogue we treat in Charlton SE7, organised by body region.",
     url: "/conditions",
     images: [defaultOgImage],
   },

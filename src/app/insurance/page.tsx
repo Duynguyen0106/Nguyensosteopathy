@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Insurance & Self-Pay | Nguyen's Osteopathic Clinic",
     description:
-      "Self-pay osteopathy fees in Charlton SE18, itemised receipts for private insurance or cash-plan claims, and what to check with your insurer before booking.",
+      "Self-pay osteopathy fees in Charlton SE7, itemised receipts for private insurance or cash-plan claims, and what to check with your insurer before booking.",
     url: "/insurance",
     images: [defaultOgImage],
   },

@@ -168,7 +168,7 @@ const html = `<!DOCTYPE html>
     </div>
 
     <div class="copy">
-      <p class="eyebrow">Woolwich · SE London</p>
+      <p class="eyebrow">Charlton · SE London</p>
       <h1>Nguyen's Osteopathic Clinic</h1>
       <p class="role">Austin Duy Nguyen · GOsC-Registered Osteopath · Reg. 12332</p>
       <p class="tagline">Recover, Realign, and Restore Your Vitality</p>
@@ -183,7 +183,7 @@ const html = `<!DOCTYPE html>
       <p class="web">www.nguyensosteopathy.com</p>
       <div>
         <p class="phone">07882 843513</p>
-        <p class="loc">Inside St James Pharmacy<br/>52 Powis Street, Woolwich SE18 6LQ</p>
+        <p class="loc">Inside Village Pharmacy<br/>9 The Village, Charlton SE7 8UG</p>
       </div>
     </div>
   </div>

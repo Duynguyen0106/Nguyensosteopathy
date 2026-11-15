@@ -9,18 +9,18 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "New Patients",
   description:
-    "Preparing for your first visit to Nguyen's Osteopathic Clinic in Woolwich: what to wear, what to bring, arrival at St James Pharmacy, appointment length…",
+    "Preparing for your first visit to Nguyen's Osteopathic Clinic in Charlton: what to wear, what to bring, arrival at Village Pharmacy, appointment length…",
   alternates: { canonical: "/new-patients" },
   keywords: [
-    "first osteopathy appointment Woolwich",
+    "first osteopathy appointment Charlton",
     "what to wear osteopath",
     "new patient osteopath SE18",
-    "St James Pharmacy osteopath arrival",
+    "Village Pharmacy osteopath arrival",
   ],
   openGraph: {
     title: "New patient guide | Nguyen's Osteopathic Clinic",
     description:
-      "First-visit guide for Nguyen's Osteopathic Clinic: what to wear, what to bring, arrival at St James Pharmacy, and how long appointments last in Woolwich SE18.",
+      "First-visit guide for Nguyen's Osteopathic Clinic: what to wear, what to bring, arrival at Village Pharmacy, and how long appointments last in Charlton SE7.",
     url: "/new-patients",
     images: [defaultOgImage],
   },
@@ -283,7 +283,7 @@ export default function NewPatientsPage() {
             Ready for your first visit?
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
-            Inside {site.address.venue}, short walk from Woolwich Arsenal.{" "}
+            Inside {site.address.venue}, short walk from Charlton station.{" "}
             {site.booking.shortNote}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

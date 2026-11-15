@@ -26,16 +26,16 @@ export type ServicePageContent = {
 export const servicePages: ServicePageContent[] = [
   {
     slug: "back-neck-pain",
-    h1: "Back & Neck Pain Treatment in Woolwich",
+    h1: "Back & Neck Pain Treatment in Charlton",
     seoTitle: "Back & neck pain Woolwich",
-    metaDescription: "Osteopathy for back and neck pain in Woolwich SE18 — sciatica, desk strain, disc-related stiffness and morning ache. Book with Austin Duy Nguyen at Nguyen's…",
-    heroLine: "Assessment-led osteopathy for sciatica, postural strain, disc-related stiffness and everyday spinal ache — inside St James Pharmacy on Powis Street.",
+    metaDescription: "Osteopathy for back and neck pain in Charlton SE7 — sciatica, desk strain, disc-related stiffness and morning ache. Book with Austin Duy Nguyen at Nguyen's…",
+    heroLine: "Assessment-led osteopathy for sciatica, postural strain, disc-related stiffness and everyday spinal ache — inside Village Pharmacy at The Village.",
     eyebrow: "Spine care · Woolwich SE18",
     sections: [
       {
         heading: "Why back and neck pain linger",
         paragraphs: [
-          "Back and neck pain are among the most common reasons people seek an osteopath in Woolwich and the wider SE18 area. Symptoms often start after a busy week at a desk, a sudden lift, a long commute, or simply a period when movement has become stiff and guarded. What keeps pain going is rarely one dramatic moment alone — it is usually how joints, muscles and daily habits share load once irritation has begun.",
+          "Back and neck pain are among the most common reasons people seek an osteopath in Charlton and the wider SE18 area. Symptoms often start after a busy week at a desk, a sudden lift, a long commute, or simply a period when movement has become stiff and guarded. What keeps pain going is rarely one dramatic moment alone — it is usually how joints, muscles and daily habits share load once irritation has begun.",
           "At Nguyen's Osteopathic Clinic we look beyond the sore spot. Protective muscle spasm, reduced spinal mobility, pelvic asymmetry and desk posture can all feed into the same pattern of ache, referral into the buttock or leg, or a neck that does not want to turn freely. Understanding that pattern is the first step toward lasting relief rather than temporary easing.",
           "People who work at screens for long hours often notice symptoms creep in gradually: a heavy neck by late afternoon, a stiff lower back after commuting, or a sharp catch when standing from a chair. Others arrive after a clear incident — a lift that went wrong, a weekend of decorating, or a flare that followed unusual inactivity. Both patterns respond best when we identify the mechanical drivers rather than chasing symptoms alone.",
         ],
@@ -57,9 +57,9 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Local care in Woolwich SE18",
+        heading: "Local care in Charlton SE7",
         paragraphs: [
-          `The clinic sits inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich, London SE18 6LQ — convenient for Plumstead, Charlton, Abbey Wood, Thamesmead and Greenwich. Ask at the pharmacy counter on arrival and you will be directed to the osteopathy room. Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday).`,
+          `The clinic sits inside Village Pharmacy at 9 The Village, Charlton, London SE7 8UG — convenient for Plumstead, Charlton, Abbey Wood, Thamesmead and Greenwich. Ask at the pharmacy counter on arrival and you will be directed to the osteopathy room. Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday (closed Wednesday and Sunday).`,
           "If spinal pain is affecting your work or daily life, booking an assessment is a practical next step. You can also explore our condition guides on sciatica, neck pain and disc-related symptoms, or read about desk and office pain if screen work is the main driver.",
           "NHS staff and students receive 10% off with valid ID. Live booking slots are shown on our booking page. Prefer Vietnamese? Austin can consult in Vietnamese or English so you can describe symptoms without a language barrier.",
         ],
@@ -75,7 +75,7 @@ export const servicePages: ServicePageContent[] = [
         answer: "Osteopathy can help many people with sciatica-type symptoms by addressing spinal mobility, soft-tissue tone and aggravating habits. We screen for signs that need urgent medical care and refer when appropriate.",
       },
       {
-        question: "How soon can I book in Woolwich?",
+        question: "How soon can I book in Charlton?",
         answer:
           "Online booking shows live availability. Regular bookable days are Mon, Tue, Thu, Fri and Sat. Call or WhatsApp if you need help choosing a slot.",
       },
@@ -84,9 +84,9 @@ export const servicePages: ServicePageContent[] = [
         answer: "Comfortable clothing that allows you to move and for us to assess your spine and related areas. You can change on site if needed.",
       },
       {
-        question: "Where is the osteopath for back pain on Powis Street?",
+        question: "Where is the osteopath for back pain at The Village?",
         answer:
-          "Nguyen's Osteopathic Clinic is inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich SE18 6LQ. Ask at the pharmacy counter and staff will direct you to the treatment room.",
+          "Nguyen's Osteopathic Clinic is inside Village Pharmacy at 9 The Village, Charlton SE7 8UG. Ask at the pharmacy counter and staff will direct you to the treatment room.",
       },
       {
         question: "Can I speak Vietnamese about my back or neck pain?",
@@ -103,16 +103,16 @@ export const servicePages: ServicePageContent[] = [
   },
   {
     slug: "headaches-joints",
-    h1: "Headache & Joint Treatment in Woolwich",
-    seoTitle: "Headache & Joint Treatment in Woolwich",
-    metaDescription: "Osteopathy for tension headaches, cervicogenic headache and joint stiffness in Woolwich SE18. Shoulder, hip, knee and ankle support at Nguyen's Osteopathic…",
-    heroLine: "Calm irritable neck-driven headaches and rebuild comfortable movement in stiff or post-injury joints — drug-free care in Woolwich.",
+    h1: "Headache & Joint Treatment in Charlton",
+    seoTitle: "Headache & Joint Treatment in Charlton",
+    metaDescription: "Osteopathy for tension headaches, cervicogenic headache and joint stiffness in Charlton SE7. Shoulder, hip, knee and ankle support at Nguyen's Osteopathic…",
+    heroLine: "Calm irritable neck-driven headaches and rebuild comfortable movement in stiff or post-injury joints — drug-free care in Charlton.",
     eyebrow: "Headaches & joints · Woolwich SE18",
     sections: [
       {
         heading: "When headaches and joints share a story",
         paragraphs: [
-          "Tension-type and cervicogenic headaches often travel with stiff upper necks, overloaded shoulders and jaws that never quite switch off. Joint irritability in the shoulder, hip, knee or ankle can likewise linger when glide is lost and surrounding muscles stay protective long after the original strain. At our Woolwich clinic we treat these patterns as connected, not as isolated complaints.",
+          "Tension-type and cervicogenic headaches often travel with stiff upper necks, overloaded shoulders and jaws that never quite switch off. Joint irritability in the shoulder, hip, knee or ankle can likewise linger when glide is lost and surrounding muscles stay protective long after the original strain. At our Charlton clinic we treat these patterns as connected, not as isolated complaints.",
           "Many patients arriving from SE18 and nearby neighbourhoods describe headaches that build through the working day, clicking or catching joints after sport, or a sense that one area always feels tight no matter how much they stretch. Hands-on assessment helps separate musculoskeletal drivers from symptoms that need medical input.",
           "Screen-heavy work and long commutes leave many people with a familiar pattern: tight muscles at the base of the skull, elevated shoulders, and a headache that sits behind the eyes or wraps the temples. Joint complaints tell their own story — a shoulder that will not reach comfortably into a jacket, a hip that aches after sitting, or a knee that objects to stairs after sport. Naming the pattern clearly makes treatment more precise.",
         ],
@@ -128,13 +128,13 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "What happens in clinic",
         paragraphs: [
-          "Initial consultations last around 60 minutes inside St James Pharmacy on Powis Street. We discuss headache frequency, triggers, joint history and your goals, then examine the regions most likely to be involved. Hands-on techniques may include mobilisation, soft-tissue work and gentle stretching, always paced to your comfort.",
+          "Initial consultations last around 60 minutes inside Village Pharmacy at The Village. We discuss headache frequency, triggers, joint history and your goals, then examine the regions most likely to be involved. Hands-on techniques may include mobilisation, soft-tissue work and gentle stretching, always paced to your comfort.",
           "Follow-ups refine the plan as symptoms change. Some people improve quickly once upper-neck mechanics settle; longer-standing joint irritability may need a short course of care plus graded loading. NHS staff and students receive 10% off with valid ID at the appointment.",
           "Red-flag headaches — sudden thunderclap onset, headache with fever or rash, neurological change, or headache after significant trauma — need urgent medical assessment first. Musculoskeletal osteopathy is for patterns consistent with tension and cervicogenic drivers after serious causes are addressed.",
         ],
       },
       {
-        heading: "Book headache or joint care in Woolwich",
+        heading: "Book headache or joint care in Charlton",
         paragraphs: [
           "Nguyen's Osteopathic Clinic serves Woolwich, Plumstead, Charlton, Abbey Wood, Thamesmead and Greenwich. No GP referral is required for typical musculoskeletal presentations. If you are unsure whether your headache is suitable for osteopathy, call or message and we will help you decide the safest first step.",
           "Ready to book? Use online booking or call the clinic. Related services include back and neck care if spinal stiffness is the main driver, cranial osteopathy for those who prefer a very gentle style, and deep tissue massage when muscular load is dominant.",
@@ -172,15 +172,15 @@ export const servicePages: ServicePageContent[] = [
     h1: "Shockwave Therapy in Woolwich",
     seoTitle: "Shockwave Therapy Woolwich | Focused LI-ESWT",
     metaDescription:
-      "Shockwave therapy in Woolwich SE18 for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. Focused LI-ESWT £90 after screening at Nguyen's on Powis Street.",
+      "Shockwave therapy in Charlton SE7 for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. Focused LI-ESWT £90 after screening at Nguyen's at The Village.",
     heroLine:
-      "Focused LI-ESWT for stubborn heel, elbow, Achilles and tendon pain at 52 Powis Street, Woolwich SE18 — clinically screened, then delivered with a clear loading plan.",
+      "Focused LI-ESWT for stubborn heel, elbow, Achilles and tendon pain at 9 The Village, Charlton SE7 — clinically screened, then delivered with a clear loading plan.",
     eyebrow: "Shockwave Woolwich · SE18",
     sections: [
       {
         heading: "When tendons stop settling with rest",
         paragraphs: [
-          "Focused extracorporeal shockwave therapy (LI-ESWT) is used for persistent tendon and fascia problems that have plateaued with rest, stretching or general soft-tissue care alone. Common reasons people book in Woolwich include plantar fasciitis and morning heel pain, Achilles irritability, tennis or golfer's elbow, patellar tendon pain and stubborn shoulder tendon symptoms.",
+          "Focused extracorporeal shockwave therapy (LI-ESWT) is used for persistent tendon and fascia problems that have plateaued with rest, stretching or general soft-tissue care alone. Common reasons people book in Charlton include plantar fasciitis and morning heel pain, Achilles irritability, tennis or golfer's elbow, patellar tendon pain and stubborn shoulder tendon symptoms.",
           "Unlike a massage gun or wellness gadget, focused shockwave delivers controlled acoustic energy to a specific tissue depth after clinical screening. Sessions are short and targeted. Suitability is always confirmed first — not every sore tendon is a shockwave candidate, and some presentations need imaging or medical review instead.",
           "Tendons adapt to load slowly. When training volume jumps, footwear changes, or desk-to-gym transitions overload a tissue that was already irritable, symptoms can persist for months. Shockwave is considered when that persistence matches a tendinopathy pattern and conservative loading alone has stalled — not as a shortcut past diagnosis or a replacement for sensible rehab.",
         ],
@@ -204,10 +204,10 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Book shockwave screening in Woolwich",
         paragraphs: [
-          "Nguyen's Osteopathic Clinic is based inside St James Pharmacy at 52 Powis Street, SE18 6LQ. Book online or call to arrange an assessment. If you are unsure whether shockwave or osteopathy alone is the better first step, say so when you book — we will guide you honestly.",
+          "Nguyen's Osteopathic Clinic is based inside Village Pharmacy at 9 The Village, SE7 8UG. Book online or call to arrange an assessment. If you are unsure whether shockwave or osteopathy alone is the better first step, say so when you book — we will guide you honestly.",
           "Patients often combine this service with sports injury rehab or back and neck care when mechanics elsewhere overload the tendon. Explore related condition guides for plantar fasciitis, Achilles tendinopathy and tennis elbow for more detail before your visit.",
-          "Parking and public transport options for Powis Street are covered on our find-us page. If you are travelling from Greenwich, Charlton or Thamesmead, allow a few extra minutes on busy retail days. Book online to lock a screening slot, then decide on a course together once suitability is confirmed.",
-          "If morning heel pain, tennis elbow or Achilles stiffness has lasted beyond a few weeks of sensible rest, a screening visit is a practical way to decide whether focused shockwave, osteopathy alone, or medical review is the better next step for you in Woolwich.",
+          "Parking and public transport options for The Village are covered on our find-us page. If you are travelling from Greenwich, Charlton or Thamesmead, allow a few extra minutes on busy retail days. Book online to lock a screening slot, then decide on a course together once suitability is confirmed.",
+          "If morning heel pain, tennis elbow or Achilles stiffness has lasted beyond a few weeks of sensible rest, a screening visit is a practical way to decide whether focused shockwave, osteopathy alone, or medical review is the better next step for you in Charlton.",
         ],
       },
     ],
@@ -217,7 +217,7 @@ export const servicePages: ServicePageContent[] = [
         answer: "No. Focused LI-ESWT is a medical device pathway delivering controlled acoustic energy after clinical screening — not a wellness gadget.",
       },
       {
-        question: "How much is shockwave therapy in Woolwich?",
+        question: "How much is shockwave therapy in Charlton?",
         answer:
           "Focused shockwave is £90 per session after clinical screening. Fees are confirmed before you commit to a course. See our fees page for the full list.",
       },
@@ -236,7 +236,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "Do I need a GP referral for shockwave in SE18?",
         answer:
-          "No. You can book screening directly at Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street. We refer on if medical review is the safer next step.",
+          "No. You can book screening directly at Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village. We refer on if medical review is the safer next step.",
       },
     ],
     relatedSlugs: [
@@ -255,16 +255,16 @@ export const servicePages: ServicePageContent[] = [
     h1: "Men's Health & ED Shockwave in Woolwich",
     seoTitle: "Men's shockwave Woolwich",
     metaDescription:
-      "Confidential men's health and ED shockwave in Woolwich SE18 using low-intensity focused LI-ESWT. Private, drug-free protocol at Nguyen's on Powis Street — £110 / 30 min.",
+      "Confidential men's health and ED shockwave in Charlton SE7 using low-intensity focused LI-ESWT. Private, drug-free protocol at Nguyen's at The Village — £110 / 30 min.",
     heroLine:
-      "Discreet, non-invasive LI-ESWT for vascular-related erectile difficulties — private one-to-one care inside St James Pharmacy, Woolwich SE18.",
+      "Discreet, non-invasive LI-ESWT for vascular-related erectile difficulties — private one-to-one care inside Village Pharmacy, Charlton SE7.",
     eyebrow: "Men's health Woolwich · confidential",
     sections: [
       {
         heading: "A private pathway for men's health",
         paragraphs: [
           "Talking about erectile difficulties or pelvic recovery can feel uncomfortable. Our men's health service is designed to be confidential, respectful and clear from the first conversation. Low-intensity focused shockwave (LI-ESWT) is offered as a drug-free, non-invasive option for suitable vascular-related presentations, with time built in for questions so you understand the plan before treatment begins.",
-          "Appointments take place in a private consultation room inside St James Pharmacy, Woolwich. There is no open gym-floor setting and no rushed explanation. Austin Duy Nguyen explains screening, expected course structure and how this pathway differs from general musculoskeletal shockwave used for tendons.",
+          "Appointments take place in a private consultation room inside Village Pharmacy, Charlton. There is no open gym-floor setting and no rushed explanation. Austin Duy Nguyen explains screening, expected course structure and how this pathway differs from general musculoskeletal shockwave used for tendons.",
           "Shame and silence keep many men from seeking help early. Our clinic culture is straightforward and non-judgemental: you will not be rushed, joked about, or sold a miracle. The focus is clinical screening, clear consent and a protocol you understand, with privacy respected from enquiry through to follow-up.",
         ],
       },
@@ -285,11 +285,11 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Book confidentially in Woolwich SE18",
+        heading: "Book confidentially in Charlton SE7",
         paragraphs: [
           "Online booking and phone enquiries are handled discreetly. The clinic serves Woolwich and surrounding SE London neighbourhoods with Saturday availability within our bookable pattern. Vietnamese or English consultation is available if you prefer to discuss symptoms without a language barrier.",
           "For tendon-focused shockwave rather than men's health protocol, see our Focused Shockwave page. For general musculoskeletal pain, start with osteopathy for back, neck or sports injury instead.",
-          "The clinic is inside a working pharmacy on Powis Street; arrival is discreet via the pharmacy entrance. Ask at the counter for the osteopathy room. Message WhatsApp for scheduling questions if you prefer not to call, and we will help you choose an appropriate appointment type.",
+          "The clinic is inside a working pharmacy at The Village; arrival is discreet via the pharmacy entrance. Ask at the counter for the osteopathy room. Message WhatsApp for scheduling questions if you prefer not to call, and we will help you choose an appropriate appointment type.",
           "Men travelling from Greenwich, Charlton, Plumstead or Thamesmead often choose this clinic because appointments stay private, explanations stay plain, and there is no pressure to decide everything in the first five minutes of walking through the door.",
           "Questions are encouraged at every stage, including how LI-ESWT sits alongside any medications or investigations you already have. Bringing a short list of concerns to the first visit helps us cover what matters most without rushing the clinical screening conversation.",
           `Our bookable pattern includes Saturday availability, which helps if weekday confidential appointments are hard to arrange around work in central London or local SE18 roles.`,
@@ -306,7 +306,7 @@ export const servicePages: ServicePageContent[] = [
         answer: "No GP referral is required to book. We may still recommend medical review if screening suggests it is the safer pathway.",
       },
       {
-        question: "How much is men's health shockwave in Woolwich?",
+        question: "How much is men's health shockwave in Charlton?",
         answer:
           "The specialist ED / pelvic protocol is £110 for 30 minutes. Fees are explained before treatment starts — see our fees page for the full list.",
       },
@@ -339,7 +339,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "acupuncture-electro",
     h1: "Medical Acupuncture in Woolwich",
     seoTitle: "Medical acupuncture Woolwich",
-    metaDescription: "Western medical acupuncture and electroacupuncture in Woolwich SE18 for muscle trigger points and localised pain. Available standalone or as a +£20 add-on…",
+    metaDescription: "Western medical acupuncture and electroacupuncture in Charlton SE7 for muscle trigger points and localised pain. Available standalone or as a +£20 add-on…",
     heroLine: "Targeted needling and gentle microcurrent to calm irritable muscles and support pain relief — integrated with osteopathic care when useful.",
     eyebrow: "Acupuncture · Woolwich SE18",
     sections: [
@@ -368,9 +368,9 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Book acupuncture in Woolwich SE18",
+        heading: "Book acupuncture in Charlton SE7",
         paragraphs: [
-          "Find us inside St James Pharmacy, 52 Powis Street. Book online, call, or ask when scheduling osteopathy whether an acupuncture add-on is likely to be useful for your case. Vietnamese-speaking consultation is available if that helps you describe symptoms more comfortably.",
+          "Find us inside Village Pharmacy, 9 The Village. Book online, call, or ask when scheduling osteopathy whether an acupuncture add-on is likely to be useful for your case. Vietnamese-speaking consultation is available if that helps you describe symptoms more comfortably.",
           "If needles are not for you, osteopathy and massage remain fully available without them. We respect preference and will never insist on needling as a condition of care or recovery.",
           "Add-on acupuncture can be requested when you book osteopathy, or we may suggest it during assessment. Standalone sessions are available when needling is the main focus. Check the fees page for current pricing and NHS or student discount rules before you visit.",
           "Woolwich patients who sit for long hours or train hard sometimes use acupuncture strategically during flare weeks, then return to osteopathy or massage as the mainstay once irritability settles — a flexible plan rather than a rigid package.",
@@ -408,14 +408,14 @@ export const servicePages: ServicePageContent[] = [
     slug: "deep-tissue-massage",
     h1: "Deep Tissue Massage in Woolwich",
     seoTitle: "Deep Tissue Massage in Woolwich",
-    metaDescription: "Deep tissue massage in Woolwich SE18 for chronic muscle tension, desk strain and training load. 45-minute sessions at Nguyen's Osteopathic Clinic inside St…",
+    metaDescription: "Deep tissue massage in Charlton SE7 for chronic muscle tension, desk strain and training load. 45-minute sessions at Nguyen's Osteopathic Clinic inside Village Pharmacy.",
     heroLine: "Progressive, feedback-led soft-tissue work for knotted, heavy or restricted muscles after desk days, training or stress.",
     eyebrow: "Soft-tissue care · Woolwich SE18",
     sections: [
       {
         heading: "Massage with clinical intent",
         paragraphs: [
-          "Deep tissue massage at our Woolwich clinic is not a generic spa ritual. It targets the layers that hold chronic tension — useful when shoulders feel bolted, the mid-back never loosens, or training leaves muscles dense and sore beyond normal recovery. Pressure builds progressively and is always guided by your feedback so treatment stays effective without becoming overwhelming.",
+          "Deep tissue massage at our Charlton clinic is not a generic spa ritual. It targets the layers that hold chronic tension — useful when shoulders feel bolted, the mid-back never loosens, or training leaves muscles dense and sore beyond normal recovery. Pressure builds progressively and is always guided by your feedback so treatment stays effective without becoming overwhelming.",
           "Many patients combine massage with osteopathic joint care across a course of visits: massage addresses soft-tissue load while osteopathy restores joint mobility and movement patterns. Others book massage when muscular tightness is the main complaint and joint findings are secondary.",
           "Chronic tightness often layers over joint restriction or loading habits. That is why a clinic-based massage session includes a short clinical conversation rather than music and silence alone. Understanding why your upper traps never switch off changes how we work and what you do afterwards at a desk or in the gym.",
         ],
@@ -432,14 +432,14 @@ export const servicePages: ServicePageContent[] = [
         heading: "During and after your session",
         paragraphs: [
           "Expect focused work on agreed regions, attention to breathing and positioning for comfort, and aftercare tips to keep tissues moving well. Mild tenderness afterwards is common; gentle movement and usual hydration usually settle it within a day or two.",
-          "Regular desk workers in Woolwich and SE London often schedule massage around busy project cycles, while athletes time sessions around heavier training blocks. We can suggest spacing that matches your diary rather than a fixed weekly template that ignores recovery.",
+          "Regular desk workers in Charlton and SE London often schedule massage around busy project cycles, while athletes time sessions around heavier training blocks. We can suggest spacing that matches your diary rather than a fixed weekly template that ignores recovery.",
           "Hydration, gentle walking and avoiding back-to-back maximal training on the same day usually help recovery. If cupping is used, temporary marks can appear — we discuss that before starting. Contact us if pain after massage feels clearly excessive rather than typical post-treatment ache.",
         ],
       },
       {
         heading: "Book deep tissue massage in SE18",
         paragraphs: [
-          `Nguyen's Osteopathic Clinic operates inside St James Pharmacy on Powis Street with bookable days Monday, Tuesday, Thursday, Friday and Saturday. NHS and student discounts apply with valid ID shown at the appointment.`,
+          `Nguyen's Osteopathic Clinic operates inside Village Pharmacy at The Village with bookable days Monday, Tuesday, Thursday, Friday and Saturday. NHS and student discounts apply with valid ID shown at the appointment.`,
           "Explore related services for back and neck osteopathy, sports rehab, or acupuncture if needling may complement soft-tissue release. Online booking is the fastest way to secure a 45-minute slot that fits your week.",
           "First-time visitors are welcome; say if it is your first clinical massage so we can pace accordingly. Combine with osteopathy across a month if joint stiffness and muscle load are both loud, or keep massage as maintenance when you are otherwise managing well between heavier training or desk blocks.",
           "If you are unsure whether to book massage or osteopathy first, start with an osteopathy assessment when joints feel stuck or pain refers, and choose massage when muscular heaviness and local tightness are the loudest complaints in day-to-day life.",
@@ -477,7 +477,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "sports-injury-rehab",
     h1: "Sports Injury & Rehab in Woolwich",
     seoTitle: "Sports Injury & Rehab in Woolwich",
-    metaDescription: "Sports injury assessment and rehab in Woolwich SE18 for strains, sprains and overuse. Return-to-sport planning with osteopathy at Nguyen's Osteopathic Clinic.",
+    metaDescription: "Sports injury assessment and rehab in Charlton SE7 for strains, sprains and overuse. Return-to-sport planning with osteopathy at Nguyen's Osteopathic Clinic.",
     heroLine: "Assessment, hands-on care and progressive loading so you return to training with better mechanics — not guesswork.",
     eyebrow: "Sport & rehab · Woolwich SE18",
     sections: [
@@ -485,7 +485,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "Injuries that interrupt training",
         paragraphs: [
           "Whether you run the Thames Path, lift in a local gym, or play weekend sport across Greenwich borough, soft-tissue and joint injuries can stall progress quickly. Sprains, strains and overuse niggles improve fastest when assessment, hands-on care and progressive loading sit together rather than as disconnected appointments.",
-          "At Nguyen's Osteopathic Clinic in Woolwich we build rehab plans that respect tissue healing timelines while keeping you as active as safely possible. Guessing your way back often leads to flare-ups; clear milestones reduce that risk and keep motivation realistic.",
+          "At Nguyen's Osteopathic Clinic in Charlton we build rehab plans that respect tissue healing timelines while keeping you as active as safely possible. Guessing your way back often leads to flare-ups; clear milestones reduce that risk and keep motivation realistic.",
           "Woolwich and Greenwich have a growing community of recreational runners, hybrid athletes and pitch-sport players. Injuries here are often mixed: a sprain that never fully restored control, a tendon irritated by a mileage spike, or a back that complains when deadlifts climb too quickly. Rehab has to match the sport, not a generic template.",
         ],
       },
@@ -508,10 +508,10 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Train again with a local osteopath",
         paragraphs: [
-          "Based inside St James Pharmacy, SE18, we are easy to reach from Woolwich Arsenal, Plumstead and Charlton. Book online for an initial 60-minute assessment. No GP referral is required for most sports soft-tissue presentations; we refer promptly if examination suggests otherwise.",
+          "Based inside Village Pharmacy, SE7, we are easy to reach from Charlton station, Greenwich, Woolwich and Plumstead. Book online for an initial 60-minute assessment. No GP referral is required for most sports soft-tissue presentations; we refer promptly if examination suggests otherwise.",
           "Related reading includes our focused shockwave and deep tissue massage pages. For spinal pain limiting lifting or running, see back and neck treatment as well.",
           "Initial osteopathy assessment is the usual entry point; shockwave or acupuncture may be added later if indicated. Book early in a flare when possible — early guidance often shortens time on the sidelines compared with waiting until compensation patterns are entrenched.",
-          "Local athletes who train around shift work or family schedules appreciate clear, minimal home programmes that fit real life. We would rather give you three useful drills than a sheet you will never follow between sessions in Woolwich or elsewhere in SE18. Between visits you can also browse our public home exercise library for illustrated building blocks, then we tailor dosage to your sport in clinic.",
+          "Local athletes who train around shift work or family schedules appreciate clear, minimal home programmes that fit real life. We would rather give you three useful drills than a sheet you will never follow between sessions in Charlton or elsewhere in SE18. Between visits you can also browse our public home exercise library for illustrated building blocks, then we tailor dosage to your sport in clinic.",
           "If imaging has already been done, bring reports to the first visit so we can interpret findings alongside how you move today. Scans matter, but function and load tolerance often decide the rehab timetable more than a single radiology sentence.",
           "Weekend athletes across Woolwich and Charlton often share the same trap: resting completely until pain fades, then returning overnight to full training. Graded exposure beats that boom-bust cycle for most soft-tissue injuries we see.",
         ],
@@ -544,16 +544,16 @@ export const servicePages: ServicePageContent[] = [
   },
   {
     slug: "pregnancy-support",
-    h1: "Pregnancy Osteopathy in Woolwich",
-    seoTitle: "Pregnancy Osteopathy in Woolwich",
-    metaDescription: "Gentle pregnancy osteopathy in Woolwich SE18 for pelvic girdle discomfort, lower-back and rib strain. Trimester-aware care at Nguyen's Osteopathic Clinic.",
+    h1: "Pregnancy Osteopathy in Charlton",
+    seoTitle: "Pregnancy Osteopathy in Charlton",
+    metaDescription: "Gentle pregnancy osteopathy in Charlton SE7 for pelvic girdle discomfort, lower-back and rib strain. Trimester-aware care at Nguyen's Osteopathic Clinic.",
     heroLine: "Trimester-aware, gentle osteopathic care for pelvic pressure, postural change and pregnancy-related backache.",
     eyebrow: "Pregnancy care · Woolwich SE18",
     sections: [
       {
         heading: "Supporting your body as it changes",
         paragraphs: [
-          "Pregnancy alters how the pelvis, spine and soft tissues carry load. Pelvic girdle discomfort, lower-back ache, rib strain and postural fatigue are common — and they deserve care that respects your trimester, comfort and medical guidance. Osteopathy at our Woolwich clinic uses gentle techniques and positioning adapted for pregnancy rather than a one-size treatment style.",
+          "Pregnancy alters how the pelvis, spine and soft tissues carry load. Pelvic girdle discomfort, lower-back ache, rib strain and postural fatigue are common — and they deserve care that respects your trimester, comfort and medical guidance. Osteopathy at our Charlton clinic uses gentle techniques and positioning adapted for pregnancy rather than a one-size treatment style.",
           "We take time to understand your stage of pregnancy, any midwife or consultant advice you have been given, and which daily tasks aggravate symptoms. Treatment never replaces obstetric care; it complements it by addressing musculoskeletal strain that makes weeks feel harder than they need to.",
           "Each trimester brings different mechanical demands. Early pregnancy may unsettle a previously manageable back; mid-pregnancy often loads the pelvis and ribs differently; later stages challenge balance, sleep and endurance for simple tasks. Care that ignores those differences feels generic — ours is paced to how you present on the day.",
         ],
@@ -569,7 +569,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Your appointment experience",
         paragraphs: [
-          "Initial visits last about 60 minutes in a private room inside St James Pharmacy. Bring any relevant maternity notes you are happy to share. Ask when booking if you need specific access support so we can plan arrival smoothly through the pharmacy.",
+          "Initial visits last about 60 minutes in a private room inside Village Pharmacy. Bring any relevant maternity notes you are happy to share. Ask when booking if you need specific access support so we can plan arrival smoothly through the pharmacy.",
           "Follow-ups adjust as your body and symptoms change week by week. Mild treatment-related ache can occur; we prefer conservative dosing and clear aftercare. Contact us or your maternity team if you develop red-flag symptoms such as severe headache, calf pain with swelling, vaginal bleeding, or reduced fetal movements.",
           "Feeling heard matters. Pregnancy musculoskeletal pain is often dismissed as something to endure. We take symptoms seriously while staying clear about the limits of osteopathy and when medical review should come first.",
         ],
@@ -580,7 +580,7 @@ export const servicePages: ServicePageContent[] = [
           "Nguyen's Osteopathic Clinic serves expectant parents across SE18 and nearby areas. Online booking shows live times on our bookable days. If you are unsure whether osteopathy is appropriate alongside your maternity pathway, message or call first — we will help you decide.",
           "Related services include general back and neck care for postnatal musculoskeletal recovery, and cranial osteopathy for those who prefer an especially light touch. Paediatric care is available separately for infants and children after birth.",
           "Postnatal musculoskeletal recovery can be booked once you and your medical team are happy for you to attend. Mention how recently you gave birth when booking so we pace appropriately. Pelvic health concerns beyond musculoskeletal osteopathy may need specialist physiotherapy — we will signpost when that is the better fit.",
-          "From Powis Street it is straightforward to combine a maternity-friendly appointment with other errands in Woolwich town centre. Tell us if you need a quieter arrival time or a little extra room for positioning so we can prepare the treatment space before you arrive.",
+          "From The Village it is straightforward to combine a maternity-friendly appointment with other errands in Charlton town centre. Tell us if you need a quieter arrival time or a little extra room for positioning so we can prepare the treatment space before you arrive.",
           "Side-lying and supported positions are used freely so you are never expected to stay in an uncomfortable posture for the sake of a technique. If something does not feel right, say so immediately and we will change approach without fuss.",
           "Looking ahead to postnatal months, many parents return when feeding postures, lifting car seats or returning to walking routines stir old spinal or pelvic patterns. Mention postnatal goals early if that is already on your mind.",
         ],
@@ -613,9 +613,9 @@ export const servicePages: ServicePageContent[] = [
   },
   {
     slug: "cranial-therapy",
-    h1: "Cranial Osteopathy in Woolwich",
-    seoTitle: "Cranial Osteopathy in Woolwich",
-    metaDescription: "Gentle cranial osteopathy in Woolwich SE18 for head, jaw and upper-neck tension patterns. Calm, precise care at Nguyen's Osteopathic Clinic inside St James…",
+    h1: "Cranial Osteopathy in Charlton",
+    seoTitle: "Cranial Osteopathy in Charlton",
+    metaDescription: "Gentle cranial osteopathy in Charlton SE7 for head, jaw and upper-neck tension patterns. Calm, precise care at Nguyen's Osteopathic Clinic inside Village Pharmacy.",
     heroLine: "Subtle, precise hands-on care for people who prefer a quieter therapeutic approach — including sensitive nervous systems and upper-neck tension patterns.",
     eyebrow: "Gentle care · Woolwich SE18",
     sections: [
@@ -623,7 +623,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "A calmer style of osteopathy",
         paragraphs: [
           "Cranial osteopathy uses very light, precise contact to ease patterns of tension through the head, neck and wider body. It suits people who find firmer techniques too intense, those holding stress in the upper neck and jaw, and anyone seeking a quieter treatment environment without sacrificing clinical structure.",
-          "Despite the name, cranial work is not only about the head. Osteopaths trained in this approach still assess how the whole body shares strain; the difference is dosage and pace. At our Woolwich clinic, sessions remain unhurried with regular check-ins so you never feel rushed or over-treated.",
+          "Despite the name, cranial work is not only about the head. Osteopaths trained in this approach still assess how the whole body shares strain; the difference is dosage and pace. At our Charlton clinic, sessions remain unhurried with regular check-ins so you never feel rushed or over-treated.",
           "Sensitivity to treatment is not a weakness — it is information. People with hypermobile patterns, high stress loads, or previous difficult manual therapy experiences often do better when dosage starts low and trust builds. Cranial osteopathy gives us that dosage dial without abandoning assessment.",
         ],
       },
@@ -644,9 +644,9 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Book gentle care in Woolwich SE18",
+        heading: "Book gentle care in Charlton SE7",
         paragraphs: [
-          `Find Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street. Bookable osteopathy days run Monday, Tuesday, Thursday, Friday and Saturday. Vietnamese or English consultation is available.`,
+          `Find Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village. Bookable osteopathy days run Monday, Tuesday, Thursday, Friday and Saturday. Vietnamese or English consultation is available.`,
           "Related pages include headache and joint treatment, pregnancy support, and paediatric care. For a fuller explanation of osteopathy in general, see our what-is-osteopathy guide.",
           "If you tried osteopathy elsewhere and found it too forceful, mention that when you book. We can prioritise a cranial-led first session and only introduce other techniques if and when you want them. Your consent stays central throughout every visit.",
           "Commuters and local residents alike use cranial-focused sessions as a reset when stress settles into the neck and jaw. It is still clinical osteopathy — just delivered at a dosage that respects a sensitive system and a busy Woolwich week.",
@@ -682,16 +682,16 @@ export const servicePages: ServicePageContent[] = [
   },
   {
     slug: "paediatric-care",
-    h1: "Paediatric Osteopathy in Woolwich",
-    seoTitle: "Paediatric Osteopathy in Woolwich",
-    metaDescription: "Gentle paediatric osteopathy in Woolwich SE18 for infants and children. Calm, parent-led appointments at Nguyen's Osteopathic Clinic inside St James Pharmacy.",
+    h1: "Paediatric Osteopathy in Charlton",
+    seoTitle: "Paediatric Osteopathy in Charlton",
+    metaDescription: "Gentle paediatric osteopathy in Charlton SE7 for infants and children. Calm, parent-led appointments at Nguyen's Osteopathic Clinic inside Village Pharmacy.",
     heroLine: "Soft, measured osteopathic care tailored to your child's age and comfort — with clear explanations for parents throughout.",
     eyebrow: "Paediatric care · Woolwich SE18",
     sections: [
       {
         heading: "Care paced for children and parents",
         paragraphs: [
-          "Paediatric osteopathy at Nguyen's Osteopathic Clinic is soft, measured and always adapted to your child's age. We take time with parents, explain what we are doing in plain language, and never rush a child who needs a moment to settle. The clinic room inside St James Pharmacy offers a private setting away from a busy open treatment floor.",
+          "Paediatric osteopathy at Nguyen's Osteopathic Clinic is soft, measured and always adapted to your child's age. We take time with parents, explain what we are doing in plain language, and never rush a child who needs a moment to settle. The clinic room inside Village Pharmacy offers a private setting away from a busy open treatment floor.",
           "Families from Woolwich, Plumstead, Abbey Wood and nearby areas book when they want gentle musculoskeletal support and a calm clinical manner. We are honest about what osteopathy can and cannot address, and we encourage you to keep your GP, health visitor or paediatrician involved in your child's wider care.",
           "Children are not small adults. Communication, consent, session length and technique all change with age. Babies need a different pace from school-age children who can describe where they feel sore. We adjust language and handling so the appointment feels safe rather than clinical in a frightening way.",
         ],
@@ -717,8 +717,8 @@ export const servicePages: ServicePageContent[] = [
         paragraphs: [
           "Online booking and phone enquiries are welcome. If you are booking for a young infant, mention age when you reserve so we can allocate appropriate time and expectations. Vietnamese-speaking parents can request a Vietnamese consultation.",
           "Related services include cranial osteopathy for adults who prefer a gentle style, and pregnancy support for antenatal musculoskeletal care. For older teens with sports injuries, our sports rehab pathway may be more appropriate — ask when booking.",
-          "Sibling bookings and school-run timing can be discussed when you call. The pharmacy setting means arrival is familiar for many local families already using St James for prescriptions or travel clinic services. Ask at the counter for the osteopathy room if you are unsure on the day.",
-          "Many local families already know St James Pharmacy for prescriptions and travel vaccines, which makes bringing a child for osteopathy feel less unfamiliar. Mention any access or settling needs when you book so we can make the visit as calm as possible from the start.",
+          "Sibling bookings and school-run timing can be discussed when you call. The pharmacy setting means arrival is familiar for many local families already using Village Pharmacy for prescriptions. Ask at the counter for the osteopathy room if you are unsure on the day.",
+          "Many local families already know Village Pharmacy for prescriptions, which makes bringing a child for osteopathy feel less unfamiliar. Mention any access or settling needs when you book so we can make the visit as calm as possible from the start.",
           "We never ask a child to be braver than they feel. Settling time, breaks, and parent-led soothing are part of good paediatric practice. An unfinished technique is better than a frightened child, and we can continue another day if needed.",
           "If another healthcare professional has suggested osteopathy, bring their note if you have one. Collaboration works best when everyone understands what has already been tried and what concerns remain unanswered.",
         ],
@@ -751,18 +751,18 @@ export const servicePages: ServicePageContent[] = [
   },
   {
     slug: "home-visits",
-    h1: "Home Visit Osteopath in Woolwich & SE London",
+    h1: "Home Visit Osteopath in Charlton & SE London",
     seoTitle: "Home Visit Osteopath Woolwich | £120 Initial",
     metaDescription:
       "Home visit osteopath near Woolwich SE18. Initial visit £120 for 60 minutes; follow-up £100 for 30 minutes. Austin Duy Nguyen — when clinic travel is difficult.",
     heroLine:
-      "Osteopathy at your address near Woolwich and nearby SE London when getting to Powis Street is hard — same GOsC standards, clear £120 / £100 home-visit fees.",
+      "Osteopathy at your address near Woolwich and nearby SE London when getting to The Village is hard — same GOsC standards, clear £120 / £100 home-visit fees.",
     eyebrow: "Home visit osteopath · Woolwich SE18",
     sections: [
       {
         heading: "When home-visit osteopathy helps",
         paragraphs: [
-          "Home-visit osteopathy is for people who need musculoskeletal care but find travel to the clinic difficult — after injury, with limited mobility, during recovery, or when remaining at home simply works better for you or the person you care for. Treatment still follows the same GOsC-registered clinical standards as appointments inside St James Pharmacy on Powis Street.",
+          "Home-visit osteopathy is for people who need musculoskeletal care but find travel to the clinic difficult — after injury, with limited mobility, during recovery, or when remaining at home simply works better for you or the person you care for. Treatment still follows the same GOsC-registered clinical standards as appointments inside Village Pharmacy at The Village.",
           "Austin Duy Nguyen brings assessment and hands-on treatment to suitable addresses local to Woolwich and nearby SE London. Coverage is confirmed before you book so travel time, access, and parking or entry notes are clear. If your address sits outside the practical visiting area, we will say so honestly and help you plan a clinic visit instead.",
           "Carers, older adults, and people recovering from flare-ups often choose home care because a clinic trip would cancel out the benefit of attending. Others prefer a familiar space when anxiety, fatigue, or childcare make leaving home impractical. The goal is the same either way: a thorough assessment and a treatment plan you can continue safely between visits.",
         ],
@@ -779,22 +779,22 @@ export const servicePages: ServicePageContent[] = [
         heading: "How a home visit works",
         paragraphs: [
           "Before the day, we confirm your address, access notes, and any stairs, parking, or entry details that help arrival run smoothly. Please clear a flat space large enough for comfortable movement assessment and treatment — a firm bed, sturdy table arrangement we discuss in advance, or suitable floor space with padding as agreed. Wear comfortable clothing that allows easy movement.",
-          "The clinical process mirrors a clinic appointment: detailed history, posture and movement testing, treatment selected for your presentation, and practical guidance you can use between sessions. Some people continue with further home visits; others return to the Woolwich clinic once travel becomes easier. We only recommend follow-up when it is clinically useful.",
+          "The clinical process mirrors a clinic appointment: detailed history, posture and movement testing, treatment selected for your presentation, and practical guidance you can use between sessions. Some people continue with further home visits; others return to the Charlton clinic once travel becomes easier. We only recommend follow-up when it is clinically useful.",
           "If symptoms include red-flag features such as progressive weakness, unexplained weight loss, fever, or bladder or bowel changes, seek urgent medical care before or instead of routine musculoskeletal treatment. Home visits are for appropriate mechanical problems after serious causes have been considered.",
         ],
       },
       {
         heading: "Book a home visit near Woolwich SE18",
         paragraphs: [
-          "Contact the clinic to confirm your address and arrange a home-visit slot. Online booking is geared toward clinic appointments inside St James Pharmacy; home visits are coordinated by phone, WhatsApp, or enquiry so travel logistics can be checked first. Vietnamese or English consultation is available.",
-          "Related clinic services include back and neck pain care, sports injury rehab, and paediatric osteopathy if a family member needs gentle in-clinic support instead. Explore the fees page for the full price list, or book a standard clinic appointment if you can travel to Powis Street.",
+          "Contact the clinic to confirm your address and arrange a home-visit slot. Online booking is geared toward clinic appointments inside Village Pharmacy; home visits are coordinated by phone, WhatsApp, or enquiry so travel logistics can be checked first. Vietnamese or English consultation is available.",
+          "Related clinic services include back and neck pain care, sports injury rehab, and paediatric osteopathy if a family member needs gentle in-clinic support instead. Explore the fees page for the full price list, or book a standard clinic appointment if you can travel to The Village.",
           "Home care does not replace your GP or emergency services. It extends osteopathic access when the barrier is getting through the door — so assessment and treatment can still start without waiting until travel is easy again.",
         ],
       },
     ],
     faqs: [
       {
-        question: "How much is a home visit osteopath in Woolwich?",
+        question: "How much is a home visit osteopath in Charlton?",
         answer:
           "Initial home consultation and treatment is £120 for 60 minutes. Follow-up home treatment is £100 for 30 minutes. We confirm suitability and address coverage before booking.",
       },
@@ -806,7 +806,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "Can I book a home visit online?",
         answer:
-          "Home visits are arranged by phone, WhatsApp, or enquiry so we can check address, access, and travel time. Clinic appointments at St James Pharmacy can still be booked online.",
+          "Home visits are arranged by phone, WhatsApp, or enquiry so we can check address, access, and travel time. Clinic appointments at Village Pharmacy can still be booked online.",
       },
       {
         question: "What should I prepare at home?",

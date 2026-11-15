@@ -269,7 +269,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               Frequently asked questions
             </h2>
             <p className="mt-3 text-base leading-relaxed text-slate-600">
-              Quick answers about {service.title.toLowerCase()} at our Woolwich
+              Quick answers about {service.title.toLowerCase()} at our Charlton
               clinic.
             </p>
             <FaqAccordion items={page.faqs} />
@@ -410,7 +410,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               Ready to book {service.title.toLowerCase()}?
             </h2>
             <p className="mt-3 text-base leading-relaxed text-white/80">
-              Online booking shows live availability at our Woolwich clinic.
+              Online booking shows live availability at our Charlton clinic.
               Prefer to talk first? Call or WhatsApp and we will help you choose
               the right appointment.
             </p>

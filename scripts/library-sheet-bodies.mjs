@@ -20,7 +20,7 @@ function scenarioHash(pageNo, primary) {
 
 function scenario(pageNo, primary) {
   const scenarios = [
-    `a desk worker in Woolwich with evening stiffness who saw ${primary} mentioned online`,
+    `a desk worker in Charlton with evening stiffness who saw ${primary} mentioned online`,
     `a runner rebuilding after a soft-tissue flare who was offered ${primary} in a shop`,
     `an older adult balancing several medicines who asked whether ${primary} might “help the joints”`,
     `a parent juggling sleep disruption and residual neck or back ache curious about ${primary}`,
@@ -114,7 +114,7 @@ export function buildLongFormContent({
     sections = [
       {
         heading: "What this library is",
-        body: "These pages are original clinic education notes inspired by the supplement and wellness questions that arise every week in osteopathic practice in Woolwich. They are written for both patients and practitioners on purpose. Patients get plain-English context before an appointment. Practitioners get a shared vocabulary for teaching, consent, and expectation-setting. The library is not a pharmacy training manual, a retail catalogue, a dosing protocol, or a republication of any third-party quick-reference guide.",
+        body: "These pages are original clinic education notes inspired by the supplement and wellness questions that arise every week in osteopathic practice in Charlton. They are written for both patients and practitioners on purpose. Patients get plain-English context before an appointment. Practitioners get a shared vocabulary for teaching, consent, and expectation-setting. The library is not a pharmacy training manual, a retail catalogue, a dosing protocol, or a republication of any third-party quick-reference guide.",
       },
       {
         heading: "How to read an entry",

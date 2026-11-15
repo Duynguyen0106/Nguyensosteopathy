@@ -20,7 +20,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Practical guide to common back pain causes for Woolwich and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess Woolwich residents dealing with recurring or new back pain with a focus on commuting sits, work demands, and weekend DIY or sport spikes, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess Woolwich residents dealing with recurring or new back pain with a focus on commuting sits, work demands, and weekend DIY or sport spikes, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -75,13 +75,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Short answer for Woolwich patients: no GP referral is required to book osteopathy privately. Here’s what to bring and when to speak to your GP first.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives do I need a GP referral to see an osteopath??",
         "paragraphs": [
-          "You do not need a GP referral to book osteopathy privately. Bring any letters or imaging you already have; they help context without delaying care. For people planning a first visit in Woolwich, that often means clarifying fees, arrival, and what happens in the first session.",
+          "You do not need a GP referral to book osteopathy privately. Bring any letters or imaging you already have; they help context without delaying care. For people planning a first visit in Charlton, that often means clarifying fees, arrival, and what happens in the first session.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -108,7 +108,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Patient speaking with a clinician about self-referral"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on practical booking and visit prep so the first hour is useful. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -129,14 +129,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "How osteopathy supports runners, gym-goers, and weekend athletes in Woolwich with load management and hands-on sports injury care.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "How osteopathy supports runners, gym-goers, and weekend athletes in Charlton with load management and hands-on sports injury care.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess runners, gym-goers, and weekend athletes in Charlton with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives sports injury rehab with an osteopath?",
         "paragraphs": [
-          "Clinic visits for sports injury rehab with an osteopath usually start by mapping aggravators — work, commute, sleep, and training. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
+          "Clinic visits for sports injury rehab with an osteopath usually start by mapping aggravators — work, commute, sleep, and training. For runners, gym-goers, and weekend athletes in Charlton, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [hamstring strain](/conditions/hamstring-strain) and [lateral ankle sprain](/conditions/lateral-ankle-sprain)."
         ]
@@ -163,7 +163,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Sportsperson recovering from a musculoskeletal injury"
         },
         "paragraphs": [
-          "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
+          "Assessment for runners, gym-goers, and weekend athletes in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
           "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on graded return to load, footwear checks, and session spacing. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
@@ -185,13 +185,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Confidential low-intensity focused shockwave protocols for vascular-related erectile difficulties at Nguyen's Osteopathic Clinic — drug-free and private.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives men’s health and ED?",
         "paragraphs": [
-          "When people describe men’s health and ED, we look at tissue capacity versus the demands of the week. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "When people describe men’s health and ED, we look at tissue capacity versus the demands of the week. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -218,7 +218,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Private consultation setting for men’s health care"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on clear screening, realistic session planning, and privacy at every step. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -240,13 +240,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "How the 10% NHS staff and student discount works at Nguyen's Osteopathic Clinic — eligibility, valid ID, and how to book.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives 10% NHS and student osteopathy discount?",
         "paragraphs": [
-          "The 10% NHS and student discount applies with valid ID shown at the appointment. It does not change the clinical assessment — we still take a full history and examine carefully before recommending care. For people planning a first or follow-up visit in Woolwich, clear fees and arrival guidance matter as much as the discount itself.",
+          "The 10% NHS and student discount applies with valid ID shown at the appointment. It does not change the clinical assessment — we still take a full history and examine carefully before recommending care. For people planning a first or follow-up visit in Charlton, clear fees and arrival guidance matter as much as the discount itself.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -273,7 +273,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "NHS and student ID cards representing clinic discount eligibility"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on practical booking and visit prep so the first hour is useful. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
@@ -295,7 +295,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Desk-related tension headaches, tight upper neck, and jaw strain are common in SE18. See how osteopathy can ease cervicogenic and tension-type headaches.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -349,14 +349,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Gentle osteopathic care in Woolwich for pregnancy-related pelvic girdle pain, rib strain, and back discomfort — adapted to your trimester.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "Gentle osteopathic care in Charlton for pregnancy-related pelvic girdle pain, rib strain, and back discomfort — adapted to your trimester.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess expectant and postpartum patients in Charlton with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
         "heading": "What drives pregnancy osteopathy?",
         "paragraphs": [
-          "Clinic visits for pregnancy osteopathy usually start by mapping aggravators — work, commute, sleep, and training. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
+          "Clinic visits for pregnancy osteopathy usually start by mapping aggravators — work, commute, sleep, and training. For expectant and postpartum patients in Charlton, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
@@ -383,7 +383,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Pregnant woman supporting her lower back"
         },
         "paragraphs": [
-          "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
+          "Assessment for expectant and postpartum patients in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
           "Expect calm, irritability-matched manual care plus a short plan covering side-lying support, pacing around feeds, and safe mobility. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
@@ -405,13 +405,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Confused between osteopathy and physiotherapy in SE18? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives osteopath vs physiotherapist?",
         "paragraphs": [
-          "Osteopaths and physiotherapists both treat musculoskeletal problems, with overlapping skills and different training routes. Choice often comes down to the practitioner’s assessment style and your goals. For people comparing options in Woolwich, a clear first-visit plan matters more than the job title alone.",
+          "Osteopaths and physiotherapists both treat musculoskeletal problems, with overlapping skills and different training routes. Choice often comes down to the practitioner’s assessment style and your goals. For people comparing options in Charlton, a clear first-visit plan matters more than the job title alone.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -438,7 +438,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Clinician assessing a patient’s shoulder in clinic"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on practical booking and visit prep so the first hour is useful. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
@@ -460,7 +460,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Hip stiffness, runner’s knee, and stair pain are common around Woolwich and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
@@ -514,14 +514,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on Powis Street, Woolwich SE18 is easy to reach and open for online booking.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in Woolwich and SE18 with a focus on daily work and commuting load, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on The Village, Charlton SE7 is easy to reach and open for online booking.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people in Charlton and SE18 with a focus on daily work and commuting load, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives osteopath near Greenwich, Charlton, and Thamesmead?",
         "paragraphs": [
-          "Clinic visits for osteopath near Greenwich, Charlton, and Thamesmead usually start by mapping aggravators — work, commute, sleep, and training. For people in Woolwich and SE18, that often means daily work and commuting load.",
+          "Clinic visits for osteopath near Greenwich, Charlton, and Thamesmead usually start by mapping aggravators — work, commute, sleep, and training. For people in Charlton and SE18, that often means daily work and commuting load.",
           "Useful change starts with small changes to how you sit, stand, and recover. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -548,7 +548,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "London street scene representing Greenwich and south-east London"
         },
         "paragraphs": [
-          "Assessment for people in Woolwich and SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
+          "Assessment for people in Charlton and SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on small changes to how you sit, stand, and recover. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -570,13 +570,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Honest guidance on osteopathy treatment frequency: what affects recovery time, typical plans for back and neck pain, and when to review progress.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives how many osteopathy sessions will I need??",
         "paragraphs": [
-          "Session numbers depend on how long symptoms have been present, what aggravates them, and your goals. Many people notice change within a few visits; we review progress rather than selling packages. For people planning care in Woolwich, honest timelines beat fixed “courses”.",
+          "Session numbers depend on how long symptoms have been present, what aggravates them, and your goals. Many people notice change within a few visits; we review progress rather than selling packages. For people planning care in Charlton, honest timelines beat fixed “courses”.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -603,7 +603,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Treatment plan notes and calendar for booking sessions"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on practical booking and visit prep so the first hour is useful. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
@@ -625,13 +625,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "One-sided buttock or pelvic ache after walking or turning in bed? How SI joint irritation presents and how Woolwich osteopathy helps.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess expectant and postpartum patients in Charlton with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives sacroiliac joint pain?",
         "paragraphs": [
-          "Symptoms around sacroiliac joint pain often appear when the load of daily life outpaces recovery. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
+          "Symptoms around sacroiliac joint pain often appear when the load of daily life outpaces recovery. For expectant and postpartum patients in Charlton, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
@@ -658,7 +658,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Athlete holding the side of the pelvis and hip"
         },
         "paragraphs": [
-          "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
+          "Assessment for expectant and postpartum patients in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on side-lying support, pacing around feeds, and safe mobility. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -679,8 +679,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Stiff, sore neck after a collision or sudden jolt? What to expect from osteopathic assessment in Woolwich and when imaging matters.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "Stiff, sore neck after a collision or sudden jolt? What to expect from osteopathic assessment in Charlton and when imaging matters.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -734,8 +734,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Waking stiff then loosening after a shower is common. Causes, sleep positions, and osteopathy for morning lower back stiffness in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people who wake stiff and take 20–40 minutes to loosen with a focus on overnight stillness, mattress/pillow setup, and first movements of the day, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "Waking stiff then loosening after a shower is common. Causes, sleep positions, and osteopathy for morning lower back stiffness in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people who wake stiff and take 20–40 minutes to loosen with a focus on overnight stillness, mattress/pillow setup, and first movements of the day, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -790,7 +790,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Phone scroll posture loads the neck. Practical osteopathy tips for text neck, forward head posture, and SE18 desk-and-device strain.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people who scroll and message for hours on phones and tablets with a focus on sustained phone flexion and one-thumb typing, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people who scroll and message for hours on phones and tablets with a focus on sustained phone flexion and one-thumb typing, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
@@ -844,8 +844,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Jaw click, temple ache, or morning tightness from clenching? How osteopathy addresses TMJ-related pain in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "Jaw click, temple ache, or morning tightness from clenching? How osteopathy addresses TMJ-related pain in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -900,7 +900,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Not sure if your headache is migraine or tension-type? Clear differences and when Woolwich osteopathy is a sensible next step.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -955,13 +955,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Rolled your ankle on the pavement or pitch? Osteopathy for sprain recovery, swelling timelines, and return to walking or sport in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives ankle sprain rehab with an osteopath?",
         "paragraphs": [
-          "We treat ankle sprain rehab with an osteopath as a pattern in how you move and recover, not just a label. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "We treat ankle sprain rehab with an osteopath as a pattern in how you move and recover, not just a label. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -988,7 +988,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Ankle wrap and rehab for a sprained ankle"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on clear screening, realistic session planning, and privacy at every step. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -1009,8 +1009,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Keyboard and mouse strain, wrist ache, and forearm tightness — how osteopathy helps desk-related upper limb pain in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "Keyboard and mouse strain, wrist ache, and forearm tightness — how osteopathy helps desk-related upper limb pain in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -1065,7 +1065,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Osteopathy will not reverse osteoarthritis, but it can improve comfort and movement. Practical joint care for Woolwich patients.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -1120,13 +1120,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Stiff, sore Achilles when running or walking? Focused shockwave and progressive loading for Achilles tendinopathy near Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives achilles tendinopathy?",
         "paragraphs": [
-          "Symptoms around achilles tendinopathy often appear when the load of daily life outpaces recovery. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Symptoms around achilles tendinopathy often appear when the load of daily life outpaces recovery. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -1153,7 +1153,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Runner’s lower leg and Achilles tendon region"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on clear screening, realistic session planning, and privacy at every step. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
@@ -1175,13 +1175,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pain on the inner elbow from lifting or golf swings? Osteopathy for medial epicondylalgia and when shockwave is considered.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives golfer’s elbow?",
         "paragraphs": [
-          "Golfer’s elbow rarely has a single cause; capacity and load usually drift apart first. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Golfer’s elbow rarely has a single cause; capacity and load usually drift apart first. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -1208,7 +1208,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Golfer’s grip and forearm load related to medial elbow pain"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Osteopathy here blends assessment-led hands-on care with simple guidance on clear screening, realistic session planning, and privacy at every step. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
@@ -1230,7 +1230,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Front-of-knee tendon pain from jumping or stairs? Osteopathy, load management, and shockwave options in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -1285,13 +1285,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "A plain-English guide to LI-ESWT at Nguyen's Osteopathic Clinic: suitability, sensations, aftercare, and fees.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives what to expect in a focused shockwave session?",
         "paragraphs": [
-          "Clinic visits for what to expect in a focused shockwave session usually start by mapping aggravators — work, commute, sleep, and training. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "Clinic visits for what to expect in a focused shockwave session usually start by mapping aggravators — work, commute, sleep, and training. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [tennis elbow](/conditions/tennis-elbow)."
         ]
@@ -1318,7 +1318,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Clinical treatment room prepared for therapy"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on practical booking and visit prep so the first hour is useful. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
@@ -1339,8 +1339,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Hands-on osteopathy and focused shockwave solve different parts of stubborn tendon pain. How we choose at our Woolwich clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with stubborn tendon or soft-tissue pain with a focus on grip, impact, or repetitive strain that has not settled with rest alone, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "Hands-on osteopathy and focused shockwave solve different parts of stubborn tendon pain. How we choose at our Charlton clinic.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with stubborn tendon or soft-tissue pain with a focus on grip, impact, or repetitive strain that has not settled with rest alone, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -1395,13 +1395,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Low-intensity focused shockwave as a non-drug, non-surgical option for vascular-related ED — private appointments in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives LI-ESWT for erectile dysfunction?",
         "paragraphs": [
-          "When people describe LI-ESWT for erectile dysfunction, we look at tissue capacity versus the demands of the week. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "When people describe LI-ESWT for erectile dysfunction, we look at tissue capacity versus the demands of the week. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -1428,7 +1428,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Calm private consultation room for discreet men’s health care"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on clear screening, realistic session planning, and privacy at every step. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -1449,14 +1449,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Pelvic discomfort, post-activity ache, or vascular recovery goals — how discreet men’s health appointments work in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "Pelvic discomfort, post-activity ache, or vascular recovery goals — how discreet men’s health appointments work in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives men’s pelvic health?",
         "paragraphs": [
-          "Men’s pelvic health rarely has a single cause; capacity and load usually drift apart first. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Men’s pelvic health rarely has a single cause; capacity and load usually drift apart first. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -1483,7 +1483,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Professional clinician speaking privately with a patient"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on clear screening, realistic session planning, and privacy at every step. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
@@ -1504,14 +1504,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Typical course thinking for men’s health shockwave protocols — why plans are individual and what review looks like in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "Typical course thinking for men’s health shockwave protocols — why plans are individual and what review looks like in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives how many LI-ESWT sessions for ED protocols??",
         "paragraphs": [
-          "Clinic visits for how many LI-ESWT sessions for ED protocols? usually start by mapping aggravators — work, commute, sleep, and training. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "Clinic visits for how many LI-ESWT sessions for ED protocols? usually start by mapping aggravators — work, commute, sleep, and training. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [tennis elbow](/conditions/tennis-elbow)."
         ]
@@ -1538,7 +1538,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Planning notes for a course of treatment sessions"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on practical booking and visit prep so the first hour is useful. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -1560,13 +1560,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Considering non-tablet approaches for erectile difficulties? Questions to ask about LI-ESWT, privacy, and medical screening.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives drug-free ED options?",
         "paragraphs": [
-          "Drug-free ED options rarely has a single cause; capacity and load usually drift apart first. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Drug-free ED options rarely has a single cause; capacity and load usually drift apart first. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -1593,7 +1593,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Quiet clinic corridor suggesting private medical discussion"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on clear screening, realistic session planning, and privacy at every step. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
@@ -1615,7 +1615,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Western medical acupuncture as an adjunct for muscle pain and trigger-point irritability at Nguyen's Osteopathic Clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -1670,7 +1670,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "When gentle microcurrent is added to medical acupuncture for persistent localised pain — what it feels like and who it suits.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -1724,14 +1724,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Choosing between acupuncture as a +£20 add-on within osteopathy or a focused needling session at our Woolwich clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "Choosing between acupuncture as a +£20 add-on within osteopathy or a focused needling session at our Charlton clinic.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives acupuncture add-on vs standalone session?",
         "paragraphs": [
-          "We treat acupuncture add-on vs standalone session as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "We treat acupuncture add-on vs standalone session as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [tennis elbow](/conditions/tennis-elbow) and [fibromyalgia](/conditions/fibromyalgia)."
         ]
@@ -1758,7 +1758,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Clinic tray with acupuncture needles and sterile packs"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on practical booking and visit prep so the first hour is useful. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
@@ -1780,7 +1780,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Cupping as a +£15 soft-tissue adjunct for muscular tightness — what marks mean, when we use it, and fees.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
@@ -1834,8 +1834,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "45-minute deep tissue massage (£60) for knotted, training-heavy or desk-tight muscles at St James Pharmacy, Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "45-minute deep tissue massage (£60) for knotted, training-heavy or desk-tight muscles at Village Pharmacy, Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -1889,8 +1889,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Muscle-only tightness versus joint and movement problems — how to choose between massage and osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "Muscle-only tightness versus joint and movement problems — how to choose between massage and osteopathy in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -1945,7 +1945,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "DOMS versus true injury, and when deep tissue massage helps training-related muscle load in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -2000,7 +2000,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Stress-held upper traps and neck tightness respond well to paced deep tissue work and simple breathing resets.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -2055,7 +2055,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "IT band, shin, Achilles, and knee niggles from Thames Path and park runs — assessment and rehab planning in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -2109,8 +2109,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Pain with bench, overhead press, or pull-ups? How osteopathy helps gym-related shoulder irritability in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "Pain with bench, overhead press, or pull-ups? How osteopathy helps gym-related shoulder irritability in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
@@ -2164,8 +2164,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Hamstring, calf, and groin strains from five-a-side and Sunday league — timelines and return-to-play support in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in physically demanding roles across SE London with a focus on repeated lifts, twists, and hard-floor standing, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "Hamstring, calf, and groin strains from five-a-side and Sunday league — timelines and return-to-play support in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people in physically demanding roles across SE London with a focus on repeated lifts, twists, and hard-floor standing, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -2220,13 +2220,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Clear milestones before you return to running, gym, or team sport after ligament sprain — reduce re-injury risk.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess runners, gym-goers, and weekend athletes in Charlton with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives return to sport after a sprain?",
         "paragraphs": [
-          "Return to sport after a sprain rarely has a single cause; capacity and load usually drift apart first. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
+          "Return to sport after a sprain rarely has a single cause; capacity and load usually drift apart first. For runners, gym-goers, and weekend athletes in Charlton, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [hamstring strain](/conditions/hamstring-strain) and [lateral ankle sprain](/conditions/lateral-ankle-sprain)."
         ]
@@ -2253,7 +2253,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Athlete preparing to return to sport after injury"
         },
         "paragraphs": [
-          "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
+          "Assessment for runners, gym-goers, and weekend athletes in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
           "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on graded return to load, footwear checks, and session spacing. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
         ]
       },
@@ -2274,14 +2274,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Niggles that warm up then return next session are early overuse warnings. When to book osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "Niggles that warm up then return next session are early overuse warnings. When to book osteopathy in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess runners, gym-goers, and weekend athletes in Charlton with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives overuse injuries from gym and running?",
         "paragraphs": [
-          "When people describe overuse injuries from gym and running, we look at tissue capacity versus the demands of the week. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
+          "When people describe overuse injuries from gym and running, we look at tissue capacity versus the demands of the week. For runners, gym-goers, and weekend athletes in Charlton, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [patellofemoral pain](/conditions/patellofemoral-pain) and [ITB syndrome](/conditions/itb-syndrome)."
         ]
@@ -2308,7 +2308,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Runner training hard, early overuse injury risk"
         },
         "paragraphs": [
-          "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
+          "Assessment for runners, gym-goers, and weekend athletes in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on graded return to load, footwear checks, and session spacing. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -2330,13 +2330,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "SPD and pelvic girdle pain with walking or turning in bed — gentle, trimester-aware osteopathy in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess expectant and postpartum patients in Charlton with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
         "heading": "What drives pelvic girdle pain in pregnancy?",
         "paragraphs": [
-          "When people describe pelvic girdle pain in pregnancy, we look at tissue capacity versus the demands of the week. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
+          "When people describe pelvic girdle pain in pregnancy, we look at tissue capacity versus the demands of the week. For expectant and postpartum patients in Charlton, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
@@ -2363,7 +2363,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Pregnant woman supporting her pelvis while standing"
         },
         "paragraphs": [
-          "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
+          "Assessment for expectant and postpartum patients in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
           "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on side-lying support, pacing around feeds, and safe mobility. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
@@ -2384,8 +2384,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Side and rib-cage discomfort as the bump grows — how pregnancy-adapted osteopathy can help in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "Side and rib-cage discomfort as the bump grows — how pregnancy-adapted osteopathy can help in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -2440,13 +2440,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Feeding postures, carrying, and healing tissues — postpartum back and pelvic support with a Woolwich osteopath.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives postpartum back pain?",
         "paragraphs": [
-          "Symptoms around postpartum back pain often appear when the load of daily life outpaces recovery. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Symptoms around postpartum back pain often appear when the load of daily life outpaces recovery. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -2473,7 +2473,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "New parent holding a baby, postpartum back strain"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on clear screening, realistic session planning, and privacy at every step. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
@@ -2495,13 +2495,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "How pregnancy osteopathy is adapted for safety and comfort at Nguyen's Osteopathic Clinic, Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess expectant and postpartum patients in Charlton with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives is osteopathy safe in pregnancy??",
         "paragraphs": [
-          "We treat is osteopathy safe in pregnancy? as a pattern in how you move and recover, not just a label. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
+          "We treat is osteopathy safe in pregnancy? as a pattern in how you move and recover, not just a label. For expectant and postpartum patients in Charlton, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
@@ -2528,7 +2528,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Calm pregnant patient resting, safety-focused care"
         },
         "paragraphs": [
-          "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
+          "Assessment for expectant and postpartum patients in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
           "Osteopathy here blends assessment-led hands-on care with simple guidance on side-lying support, pacing around feeds, and safe mobility. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
@@ -2550,7 +2550,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle cranial osteopathy explained — who it suits, what a session feels like, and how it differs from firmer manual therapy.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -2604,8 +2604,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "When stress sits in the head, jaw, and upper neck, cranial-style osteopathy offers a calmer treatment option in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "When stress sits in the head, jaw, and upper neck, cranial-style osteopathy offers a calmer treatment option in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -2660,7 +2660,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Firner joint-focused work versus gentler cranial styles — matching technique to your preferences at our SE18 clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -2715,13 +2715,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle, age-adapted osteopathy for infants and children — what parents can expect at Nguyen's Osteopathic Clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives paediatric osteopathy?",
         "paragraphs": [
-          "Clinic visits for paediatric osteopathy usually start by mapping aggravators — work, commute, sleep, and training. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Clinic visits for paediatric osteopathy usually start by mapping aggravators — work, commute, sleep, and training. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -2748,7 +2748,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Parent with a young child in a calm healthcare setting"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on clear screening, realistic session planning, and privacy at every step. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -2769,14 +2769,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Night-time limb aches in children are common. When reassurance is enough, and when osteopathic assessment in Woolwich helps.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "Night-time limb aches in children are common. When reassurance is enough, and when osteopathic assessment in Charlton helps.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives growing pains and childhood aches?",
         "paragraphs": [
-          "Clinic visits for growing pains and childhood aches usually start by mapping aggravators — work, commute, sleep, and training. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Clinic visits for growing pains and childhood aches usually start by mapping aggravators — work, commute, sleep, and training. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -2803,7 +2803,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Child resting after activity, growing pains context"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on clear screening, realistic session planning, and privacy at every step. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
@@ -2824,14 +2824,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Heavy bags and device time affect young spines. Practical posture advice and when to book paediatric osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess parents seeking gentle musculoskeletal care for children in Woolwich with a focus on growth, posture habits, backpacks, and preferred head or limb positions, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "Heavy bags and device time affect young spines. Practical posture advice and when to book paediatric osteopathy in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess parents seeking gentle musculoskeletal care for children in Charlton with a focus on growth, posture habits, backpacks, and preferred head or limb positions, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives school backpacks and child posture?",
         "paragraphs": [
-          "When people describe school backpacks and child posture, we look at tissue capacity versus the demands of the week. For parents seeking gentle musculoskeletal care for children in Woolwich, that often means growth, posture habits, backpacks, and preferred head or limb positions.",
+          "When people describe school backpacks and child posture, we look at tissue capacity versus the demands of the week. For parents seeking gentle musculoskeletal care for children in Charlton, that often means growth, posture habits, backpacks, and preferred head or limb positions.",
           "Useful change starts with simple home positioning advice and when to seek assessment. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [scheuermanns](/conditions/scheuermanns) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
@@ -2858,7 +2858,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Schoolchild with a backpack, posture load on the spine"
         },
         "paragraphs": [
-          "Assessment for parents seeking gentle musculoskeletal care for children in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under growth, posture habits, backpacks, and preferred head or limb positions. Findings are explained in plain English before treatment begins.",
+          "Assessment for parents seeking gentle musculoskeletal care for children in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under growth, posture habits, backpacks, and preferred head or limb positions. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on simple home positioning advice and when to seek assessment. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -2880,13 +2880,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle infant musculoskeletal care explained — consent, what sessions look like, and realistic expectations.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess parents seeking gentle musculoskeletal care for children in Woolwich with a focus on growth, posture habits, backpacks, and preferred head or limb positions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess parents seeking gentle musculoskeletal care for children in Charlton with a focus on growth, posture habits, backpacks, and preferred head or limb positions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives infant osteopathy?",
         "paragraphs": [
-          "Infant osteopathy rarely has a single cause; capacity and load usually drift apart first. For parents seeking gentle musculoskeletal care for children in Woolwich, that often means growth, posture habits, backpacks, and preferred head or limb positions.",
+          "Infant osteopathy rarely has a single cause; capacity and load usually drift apart first. For parents seeking gentle musculoskeletal care for children in Charlton, that often means growth, posture habits, backpacks, and preferred head or limb positions.",
           "Useful change starts with simple home positioning advice and when to seek assessment. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
@@ -2913,7 +2913,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Infant resting peacefully with a parent nearby"
         },
         "paragraphs": [
-          "Assessment for parents seeking gentle musculoskeletal care for children in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under growth, posture habits, backpacks, and preferred head or limb positions. Findings are explained in plain English before treatment begins.",
+          "Assessment for parents seeking gentle musculoskeletal care for children in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under growth, posture habits, backpacks, and preferred head or limb positions. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on simple home positioning advice and when to seek assessment. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
@@ -2935,13 +2935,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Step-by-step online booking for Nguyen's Osteopathic Clinic — appointment types, live calendar slots, and phone backup.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives how to book an osteopath online?",
         "paragraphs": [
-          "Symptoms around how to book an osteopath online often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "Symptoms around how to book an osteopath online often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -2968,7 +2968,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Booking a clinic appointment on a laptop"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Osteopathy here blends assessment-led hands-on care with simple guidance on practical booking and visit prep so the first hour is useful. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
@@ -2990,13 +2990,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Initial £75, follow-up £60, shockwave £90, specialist ED protocol £110, massage £60, add-ons explained — transparent fees at SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
         "heading": "What drives osteopathy fees?",
         "paragraphs": [
-          "Symptoms around osteopathy fees often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "Symptoms around osteopathy fees often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -3023,7 +3023,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Clear pricing and payment planning for clinic fees"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Expect calm, irritability-matched manual care plus a short plan covering practical booking and visit prep so the first hour is useful. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
@@ -3044,14 +3044,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Find Nguyen's Osteopathic Clinic inside St James Pharmacy & Travel Clinic — directions, arrival tips, and parking pointers.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "Find Nguyen's Osteopathic Clinic inside Village Pharmacy — directions, arrival tips, and parking pointers.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
-        "heading": "What drives osteopath inside St James Pharmacy, Powis Street?",
+        "heading": "What drives osteopath inside Village Pharmacy, The Village?",
         "paragraphs": [
-          "Osteopath inside St James Pharmacy, Powis Street rarely has a single cause; capacity and load usually drift apart first. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "Osteopath inside Village Pharmacy, The Village rarely has a single cause; capacity and load usually drift apart first. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -3078,7 +3078,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Pharmacy and clinic entrance area for patient arrival"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on practical booking and visit prep so the first hour is useful. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
@@ -3099,14 +3099,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Comfortable clothing tips for assessment and treatment at our Woolwich clinic — shorts, stretch fabrics, and privacy.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "Comfortable clothing tips for assessment and treatment at our Charlton clinic — shorts, stretch fabrics, and privacy.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives what to wear to your osteopathy appointment?",
         "paragraphs": [
-          "We treat what to wear to your osteopathy appointment as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "We treat what to wear to your osteopathy appointment as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -3133,7 +3133,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Comfortable stretch clothing suitable for an osteopathy visit"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on practical booking and visit prep so the first hour is useful. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
         ]
       },
@@ -3154,8 +3154,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Looking for a Vietnamese osteopath in the UK? How Nguyen's Osteopathic Clinic in Woolwich supports clear MSK care for the Vietnamese community.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "Looking for a Vietnamese osteopath in the UK? How Nguyen's Osteopathic Clinic in Charlton supports clear MSK care for the Vietnamese community.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -3188,7 +3188,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Clinician speaking warmly with a patient in consultation"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on practical booking and visit prep so the first hour is useful. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -3209,14 +3209,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic on Powis Street, Woolwich is a short hop for SE18 patients.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Woolwich is a short hop for SE18 patients.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives osteopath near Plumstead and Abbey Wood?",
         "paragraphs": [
-          "Symptoms around osteopath near Plumstead and Abbey Wood often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "Symptoms around osteopath near Plumstead and Abbey Wood often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -3243,7 +3243,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "London neighbourhood street representing SE18 local travel"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on practical booking and visit prep so the first hour is useful. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
@@ -3264,14 +3264,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "How to reach Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street — parking tips, buses, and DLR for SE18 patients.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "How to reach Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village — parking tips, buses, and DLR for SE18 patients.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives parking and getting to our?",
         "paragraphs": [
-          "We treat parking and getting to our as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "We treat parking and getting to our as a pattern in how you move and recover, not just a label. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sciatica](/conditions/sciatica) and [neck pain](/conditions/neck-pain)."
         ]
@@ -3298,7 +3298,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Town centre street and parking context for clinic arrival"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on practical booking and visit prep so the first hour is useful. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -3320,7 +3320,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Living with pain for months? How osteopathy approaches persistent back, neck, and joint pain — and when medical review comes first.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -3375,13 +3375,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle osteopathy for older adults with stiffness, joint wear, and balance confidence — what to expect at our SE18 clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people in Woolwich and SE18 with a focus on daily work and commuting load, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people in Charlton and SE18 with a focus on daily work and commuting load, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives osteopathy for older adults?",
         "paragraphs": [
-          "We treat osteopathy for older adults as a pattern in how you move and recover, not just a label. For people in Woolwich and SE18, that often means daily work and commuting load.",
+          "We treat osteopathy for older adults as a pattern in how you move and recover, not just a label. For people in Charlton and SE18, that often means daily work and commuting load.",
           "Useful change starts with small changes to how you sit, stand, and recover. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -3408,7 +3408,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Older adult walking outdoors with joint stiffness concern"
         },
         "paragraphs": [
-          "Assessment for people in Woolwich and SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
+          "Assessment for people in Charlton and SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
           "Osteopathy here blends assessment-led hands-on care with simple guidance on small changes to how you sit, stand, and recover. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
@@ -3430,7 +3430,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pain sitting on hard seats or after a fall onto the tailbone? How coccyx pain presents and how Woolwich osteopathy approaches it.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
@@ -3485,7 +3485,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Repetitive lifting, twisting, and bending at work? Osteopathy for warehouse, construction, and trade-related back strain in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess warehouse, delivery, and trades workers across SE18 with a focus on floor-to-waist lifts, awkward reaches, and long shifts on concrete, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess warehouse, delivery, and trades workers across SE18 with a focus on floor-to-waist lifts, awkward reaches, and long shifts on concrete, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
@@ -3539,8 +3539,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Sharp rib or side pain when breathing, twisting, or coughing? How thoracic and rib irritation is assessed at our Woolwich clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "Sharp rib or side pain when breathing, twisting, or coughing? How thoracic and rib irritation is assessed at our Charlton clinic.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
@@ -3594,8 +3594,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Pain on the outside of the hip when lying on that side or climbing stairs? How trochanteric irritation is managed with osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "Pain on the outside of the hip when lying on that side or climbing stairs? How trochanteric irritation is managed with osteopathy in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
@@ -3649,8 +3649,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Woolwich SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess office workers and creatives with grip-heavy mouse or tablet days with a focus on sustained wrist extension, pinch grip, and forearm fatigue, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Charlton SE7.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess office workers and creatives with grip-heavy mouse or tablet days with a focus on sustained wrist extension, pinch grip, and forearm fatigue, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -3705,13 +3705,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Stubborn shoulder calcium deposits and night pain? When focused shockwave and osteopathy are considered for calcific tendon irritation.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives calcific shoulder tendonitis and focused shockwave?",
         "paragraphs": [
-          "Clinic visits for calcific shoulder tendonitis and focused shockwave usually start by mapping aggravators — work, commute, sleep, and training. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Clinic visits for calcific shoulder tendonitis and focused shockwave usually start by mapping aggravators — work, commute, sleep, and training. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -3738,7 +3738,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Person with shoulder pain reaching overhead carefully"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on clear screening, realistic session planning, and privacy at every step. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -3760,13 +3760,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "What influences focused shockwave fees at Nguyen's Osteopathic Clinic — session type, course length, and how to book in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people planning a first or follow-up visit in Woolwich with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives shockwave therapy cost?",
         "paragraphs": [
-          "Symptoms around shockwave therapy cost often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Woolwich, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
+          "Symptoms around shockwave therapy cost often appear when the load of daily life outpaces recovery. For people planning a first or follow-up visit in Charlton, that often means uncertainty about referrals, fees, arrival, and what happens in clinic.",
           "Useful change starts with practical booking and visit prep so the first hour is useful. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [plantar fasciitis](/conditions/plantar-fasciitis) and [tennis elbow](/conditions/tennis-elbow)."
         ]
@@ -3793,7 +3793,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Clinic pricing and payment planning for treatment fees"
         },
         "paragraphs": [
-          "Assessment for people planning a first or follow-up visit in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
+          "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on practical booking and visit prep so the first hour is useful. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
@@ -3815,13 +3815,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Pain along the shin when running or after increasing mileage? How osteopathy helps shin splints and when to rest or image.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives shin splints and medial tibial stress?",
         "paragraphs": [
-          "Shin splints and medial tibial stress rarely has a single cause; capacity and load usually drift apart first. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "Shin splints and medial tibial stress rarely has a single cause; capacity and load usually drift apart first. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -3848,7 +3848,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Runner holding the shin after training load pain"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Osteopathy here blends assessment-led hands-on care with simple guidance on clear screening, realistic session planning, and privacy at every step. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
@@ -3869,14 +3869,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Aching lumbar spine after long rides? How bike setup and osteopathy help cyclists with lower back pain in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "Aching lumbar spine after long rides? How bike setup and osteopathy help cyclists with lower back pain in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess runners, gym-goers, and weekend athletes in Charlton with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives cycling lower back pain?",
         "paragraphs": [
-          "Cycling lower back pain rarely has a single cause; capacity and load usually drift apart first. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
+          "Cycling lower back pain rarely has a single cause; capacity and load usually drift apart first. For runners, gym-goers, and weekend athletes in Charlton, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [patellofemoral pain](/conditions/patellofemoral-pain)."
         ]
@@ -3903,7 +3903,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Cyclist on a road bike representing lower back ride strain"
         },
         "paragraphs": [
-          "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
+          "Assessment for runners, gym-goers, and weekend athletes in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
           "Expect calm, irritability-matched manual care plus a short plan covering graded return to load, footwear checks, and session spacing. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
@@ -3925,13 +3925,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Overstretched joints or flare-ups after class? How osteopathy helps yoga and Pilates-related strains in SE18.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess runners, gym-goers, and weekend athletes in Woolwich with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess runners, gym-goers, and weekend athletes in Charlton with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives yoga and Pilates injuries?",
         "paragraphs": [
-          "Clinic visits for yoga and Pilates injuries usually start by mapping aggravators — work, commute, sleep, and training. For runners, gym-goers, and weekend athletes in Woolwich, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
+          "Clinic visits for yoga and Pilates injuries usually start by mapping aggravators — work, commute, sleep, and training. For runners, gym-goers, and weekend athletes in Charlton, that often means training spikes, hard surfaces, and incomplete recovery between sessions.",
           "Useful change starts with graded return to load, footwear checks, and session spacing. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [hamstring strain](/conditions/hamstring-strain) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
@@ -3958,7 +3958,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Person stretching in a yoga pose related to flexibility strain"
         },
         "paragraphs": [
-          "Assessment for runners, gym-goers, and weekend athletes in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
+          "Assessment for runners, gym-goers, and weekend athletes in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under training spikes, hard surfaces, and incomplete recovery between sessions. Findings are explained in plain English before treatment begins.",
           "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on graded return to load, footwear checks, and session spacing. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
@@ -3980,7 +3980,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Tight traps, stiff mid-back, and screen fatigue — how deep tissue massage supports desk workers at Nguyen's Osteopathic Clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess desk workers who want soft-tissue relief between osteopathy sessions with a focus on upper trap guarding and forearm tightness from mouse and keyboard work, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess desk workers who want soft-tissue relief between osteopathy sessions with a focus on upper trap guarding and forearm tightness from mouse and keyboard work, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
@@ -4035,7 +4035,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Not sure whether cupping or deep tissue massage is right for you? A plain-English guide for Woolwich patients.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
@@ -4089,14 +4089,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Buttock or leg pain in pregnancy? How we assess pregnancy-related sciatic-type symptoms safely in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess expectant and postpartum patients in Woolwich with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then explain findings in plain English before treatment starts, with a short plan that fits SE18 life. You can book without a GP referral."
+          "Buttock or leg pain in pregnancy? How we assess pregnancy-related sciatic-type symptoms safely in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess expectant and postpartum patients in Charlton with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives pregnancy sciatica and leg pain?",
         "paragraphs": [
-          "Symptoms around pregnancy sciatica and leg pain often appear when the load of daily life outpaces recovery. For expectant and postpartum patients in Woolwich, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
+          "Symptoms around pregnancy sciatica and leg pain often appear when the load of daily life outpaces recovery. For expectant and postpartum patients in Charlton, that often means changing pelvic mechanics, sleep position, and caring for a baby.",
           "Useful change starts with side-lying support, pacing around feeds, and safe mobility. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
@@ -4123,7 +4123,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Pregnant woman supporting her lower back and hip"
         },
         "paragraphs": [
-          "Assessment for expectant and postpartum patients in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
+          "Assessment for expectant and postpartum patients in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under changing pelvic mechanics, sleep position, and caring for a baby. Findings are explained in plain English before treatment begins.",
           "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on side-lying support, pacing around feeds, and safe mobility. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
@@ -4144,14 +4144,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Noticing your baby prefers one side? What parents ask about positional preference and gentle paediatric osteopathy in Woolwich.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess men seeking discreet, drug-free options in Woolwich with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "Noticing your baby prefers one side? What parents ask about positional preference and gentle paediatric osteopathy in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives baby preferential head turn?",
         "paragraphs": [
-          "When people describe baby preferential head turn, we look at tissue capacity versus the demands of the week. For men seeking discreet, drug-free options in Woolwich, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
+          "When people describe baby preferential head turn, we look at tissue capacity versus the demands of the week. For men seeking discreet, drug-free options in Charlton, that often means vascular, pelvic-floor, and lifestyle contributors discussed privately.",
           "Useful change starts with clear screening, realistic session planning, and privacy at every step. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -4178,7 +4178,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Parent holding a baby during gentle paediatric care discussion"
         },
         "paragraphs": [
-          "Assessment for men seeking discreet, drug-free options in Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
+          "Assessment for men seeking discreet, drug-free options in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under vascular, pelvic-floor, and lifestyle contributors discussed privately. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on clear screening, realistic session planning, and privacy at every step. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -4199,8 +4199,8 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Prefer a quieter treatment style for headaches and stress-held tension? How cranial osteopathy is used at our Woolwich clinic.",
-          "At Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "Prefer a quieter treatment style for headaches and stress-held tension? How cranial osteopathy is used at our Charlton clinic.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {

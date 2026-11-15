@@ -8,10 +8,10 @@ import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { moneyPageFaqs } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
-const bookDescription = `Book online with Nguyen's Osteopathic Clinic in Woolwich SE18. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath — no GP referral needed.`;
+const bookDescription = `Book online with Nguyen's Osteopathic Clinic in Charlton SE7. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath — no GP referral needed.`;
 
 export const metadata: Metadata = {
-  title: "Book osteopathy in Woolwich",
+  title: "Book osteopathy in Charlton",
   description: bookDescription,
   alternates: {
     canonical: "/book",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Book osteopathy in Woolwich",
+    title: "Book osteopathy in Charlton",
     description: bookDescription,
     url: "/book",
     images: [defaultOgImage],
@@ -187,7 +187,7 @@ export default function BookPage() {
           Before you book — quick answers
         </h2>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-          Common questions from Woolwich patients booking osteopathy at 52 Powis
+          Common questions from Charlton patients booking osteopathy at 9 The Village
           Street.
         </p>
         <FaqAccordion items={moneyPageFaqs} />

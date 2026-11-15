@@ -551,7 +551,7 @@ const html = `<!DOCTYPE html>
     </header>
 
     <div class="front-body">
-      <p class="eyebrow">Woolwich · Drug-free care</p>
+      <p class="eyebrow">Charlton · Drug-free care</p>
       <h1>Back pain, joint strain &amp; stubborn tension — treated properly</h1>
       <p class="lede">
         Hands-on osteopathy and specialist therapies for clear answers,
@@ -563,7 +563,7 @@ const html = `<!DOCTYPE html>
           <h2>Austin Duy Nguyen</h2>
           <p class="role">GOsC-Registered Osteopath · Reg. No. 12332</p>
           <p>
-            Private consultations inside St James Pharmacy &amp; Travel Clinic.
+            Private consultations inside Village Pharmacy.
             No GP referral needed. 10% NHS staff &amp; student discount with valid ID.
           </p>
         </div>
@@ -594,7 +594,7 @@ const html = `<!DOCTYPE html>
       <div class="front-meta">
         <div class="meta-item">
           <p class="label">Visit</p>
-          <p><strong>St James Pharmacy</strong><br/>52 Powis Street<br/>Woolwich SE18 6LQ</p>
+          <p><strong>Village Pharmacy</strong><br/>9 The Village<br/>Charlton SE7 8UG</p>
         </div>
         <div class="meta-item">
           <p class="label">Hours</p>
@@ -608,7 +608,7 @@ const html = `<!DOCTYPE html>
 
       <p class="notice">
         <strong>Scan to book online</strong> or call ${PHONE_RAW}.
-        Private consultations inside St James Pharmacy — no GP referral needed.
+        Private consultations inside Village Pharmacy — no GP referral needed.
       </p>
     </div>
 
@@ -689,11 +689,11 @@ const html = `<!DOCTYPE html>
         <div>
           <p class="section-label">Find us online</p>
           <blockquote class="quote">
-            <p>Book online for live appointment slots. Public Google reviews appear as patients visit — scan the QR or search Nguyen’s Osteopathic Clinic, Woolwich.</p>
+            <p>Book online for live appointment slots. Public Google reviews appear as patients visit — scan the QR or search Nguyen’s Osteopathic Clinic, Charlton.</p>
             <cite>nguyensosteopathy.com · Google reviews</cite>
           </blockquote>
           <blockquote class="quote">
-            <p>Inside St James Pharmacy &amp; Travel Clinic, 52 Powis Street, Woolwich SE18 6LQ. No GP referral needed.</p>
+            <p>Inside Village Pharmacy, 9 The Village, Charlton SE7 8UG. No GP referral needed.</p>
             <cite>GOsC Reg. No. 12332</cite>
           </blockquote>
         </div>
@@ -713,7 +713,7 @@ const html = `<!DOCTYPE html>
       <div class="back-cta">
         <div>
           <h2>Ready when you are</h2>
-          <p>Scan to book online, or call now.<br/>Inside St James Pharmacy, Woolwich.</p>
+          <p>Scan to book online, or call now.<br/>Inside Village Pharmacy, Charlton.</p>
           <p class="phone">${PHONE}</p>
         </div>
         <img src="${qrDataUri}" alt="Book online QR" width="1200" height="1200" />

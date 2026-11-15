@@ -44,7 +44,7 @@ const EXPLICIT: Record<string, ConditionLink[]> = {
     { slug: "neck-pain", anchor: "neck-driven arm symptoms" },
   ],
   "shoulder-pain-frozen-shoulder-woolwich": [
-    { slug: "frozen-shoulder", anchor: "frozen shoulder care in Woolwich" },
+    { slug: "frozen-shoulder", anchor: "frozen shoulder care in Charlton" },
     { slug: "subacromial-pain", anchor: "subacromial shoulder pain" },
     { slug: "rotator-cuff-tear", anchor: "rotator cuff–related shoulder pain" },
   ],
@@ -74,7 +74,7 @@ const EXPLICIT: Record<string, ConditionLink[]> = {
     { slug: "acl-rehab", anchor: "ACL rehab guidance" },
   ],
   "hip-knee-pain-osteopath-woolwich": [
-    { slug: "hip-oa", anchor: "hip osteoarthritis care in Woolwich" },
+    { slug: "hip-oa", anchor: "hip osteoarthritis care in Charlton" },
     { slug: "meniscal-injury", anchor: "meniscal knee injury patterns" },
     { slug: "femoroacetabular-impingement", anchor: "hip impingement / FAI-type pain" },
   ],
@@ -156,7 +156,7 @@ const CATEGORY_DEFAULTS: Partial<Record<BlogCategory, ConditionLink[]>> = {
     { slug: "neck-pain", anchor: "neck pain guides" },
   ],
   "Local guides": [
-    { slug: "non-specific-low-back-pain", anchor: "lower back pain care in Woolwich" },
+    { slug: "non-specific-low-back-pain", anchor: "lower back pain care in Charlton" },
     { slug: "neck-pain", anchor: "neck pain care in SE18" },
   ],
   Cranial: [

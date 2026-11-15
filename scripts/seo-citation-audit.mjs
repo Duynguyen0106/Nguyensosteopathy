@@ -10,9 +10,9 @@ const nap = {
   phoneE164: "+447882843513",
   email: "nguyensosteopathy@gmail.com",
   website: "https://www.nguyensosteopathy.com",
-  line1: "52 Powis Street",
-  line2: "Woolwich, London, SE18 6LQ",
-  venue: "St James Pharmacy & Travel Clinic",
+  line1: "9 The Village",
+  line2: "Charlton, London, SE7 8UG",
+  venue: "Village Pharmacy",
   bookable: {
     open: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
     closed: ["Wednesday", "Sunday"],
@@ -109,9 +109,9 @@ for (const d of directories) {
       /closed[^.]{0,40}wednesday/i.test(text);
     const hasPhone =
       lower.includes("07882") || lower.includes("7882843513") || lower.includes("+447882");
-    const hasPowis = lower.includes("powis");
+    const hasVillage = lower.includes("village") || lower.includes("charlton");
     console.log(
-      `  ${d.id}: HTTP ${res.status} phone=${hasPhone ? "yes" : "?"} powis=${hasPowis ? "yes" : "?"} wedClosed=${wedClosed ? "yes" : "?"} wedOpenHint=${wedOpen ? "CHECK" : "no"}`,
+      `  ${d.id}: HTTP ${res.status} phone=${hasPhone ? "yes" : "?"} village=${hasVillage ? "yes" : "?"} wedClosed=${wedClosed ? "yes" : "?"} wedOpenHint=${wedOpen ? "CHECK" : "no"}`,
     );
   } catch (err) {
     console.log(`  ${d.id}: fetch failed (${err.cause?.code ?? err.message}) — verify manually`);

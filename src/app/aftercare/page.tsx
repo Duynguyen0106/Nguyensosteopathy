@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Aftercare",
   description:
-    "Aftercare advice following osteopathy at Nguyen's Osteopathic Clinic in Woolwich: soreness, rest, movement, hydration, when to contact us, and how follow-up…",
+    "Aftercare advice following osteopathy at Nguyen's Osteopathic Clinic in Charlton: soreness, rest, movement, hydration, when to contact us, and how follow-up…",
   alternates: { canonical: "/aftercare" },
   keywords: [
     "osteopathy aftercare Woolwich",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aftercare | Nguyen's Osteopathic Clinic",
     description:
-      "Practical aftercare guidance after your osteopathy appointment in Woolwich SE18.",
+      "Practical aftercare guidance after your osteopathy appointment in Charlton SE7.",
     url: "/aftercare",
     images: [defaultOgImage],
   },

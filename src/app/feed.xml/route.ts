@@ -33,7 +33,7 @@ export async function GET() {
   <channel>
     <title>${escapeXml(site.name)} Blog</title>
     <link>${site.websiteUrl}/blog</link>
-    <description>Local osteopathy guides from ${escapeXml(site.name)} in Woolwich SE18.</description>
+    <description>Local osteopathy guides from ${escapeXml(site.name)} in Charlton SE7.</description>
     <language>en-gb</language>
 ${items}
   </channel>

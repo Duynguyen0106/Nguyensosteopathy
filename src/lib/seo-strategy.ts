@@ -76,7 +76,7 @@ export function bookHref(campaign: BookCampaign): string {
 /** Prefilled WhatsApp message patients can use — or clinic can forward. */
 export function reviewAskWhatsAppHref(): string {
   const text = [
-    `Hi — if your visit to ${site.name} helped, a short Google review means a lot to neighbours in Woolwich looking for an osteopath:`,
+    `Hi — if your visit to ${site.name} helped, a short Google review means a lot to neighbours in Charlton looking for an osteopath:`,
     site.googleReviewsUrl,
   ].join("\n");
   return `${site.whatsappUrl}?text=${encodeURIComponent(text)}`;
@@ -225,40 +225,40 @@ export const monthlyReviewChecklist = [
   "Citation spot-check: Yell/Apple/Bing hours match site.ts",
   "Do not mass-produce thin condition/blog pages",
   "Only after winners identified: competitor-gap blog topics",
-  "Optional: short GBP walk-in video from Powis Street pharmacy entrance",
+  "Optional: short GBP walk-in video from The Village pharmacy entrance",
 ] as const;
 
 /** Four weekly GBP post drafts — rotate; always include a booking CTA. */
 export const gbpWeeklyPostDrafts = [
   {
     theme: "Book online",
-    body: `Looking for an osteopath in Woolwich SE18? Book online with Austin Duy Nguyen (GOsC) inside St James Pharmacy, 52 Powis Street — no GP referral needed.\n\nBook: ${site.websiteUrl}/book`,
+    body: `Looking for an osteopath in Charlton SE7? Book online with Austin Duy Nguyen (GOsC) inside Village Pharmacy, 9 The Village — no GP referral needed.\n\nBook: ${site.websiteUrl}/book`,
   },
   {
     theme: "Home visits",
-    body: `Home-visit osteopathy near Woolwich when clinic travel is hard. Initial visit £120 (60 min); follow-up £100 (30 min). Message us to confirm your address.\n\nDetails: ${site.websiteUrl}/services/home-visits`,
+    body: `Home-visit osteopathy near Charlton when clinic travel is hard. Initial visit £120 (60 min); follow-up £100 (30 min). Message us to confirm your address.\n\nDetails: ${site.websiteUrl}/services/home-visits`,
   },
   {
     theme: "Vietnamese care",
-    body: `Cần osteopath nói tiếng Việt tại Woolwich? Austin Duy Nguyen khám bằng tiếng Việt hoặc tiếng Anh — trong St James Pharmacy, Powis Street SE18.\n\nĐặt lịch: ${site.websiteUrl}/vi/book`,
+    body: `Cần osteopath nói tiếng Việt tại Charlton? Austin Duy Nguyen khám bằng tiếng Việt hoặc tiếng Anh — trong Village Pharmacy, The Village SE7.\n\nĐặt lịch: ${site.websiteUrl}/vi/book`,
   },
   {
     theme: "Shockwave",
-    body: `Stubborn heel, elbow or Achilles pain in Woolwich? Focused shockwave (LI-ESWT) is available after clinical screening — £90 per session.\n\nLearn more: ${site.websiteUrl}/services/focused-shockwave`,
+    body: `Stubborn heel, elbow or Achilles pain in Charlton? Focused shockwave (LI-ESWT) is available after clinical screening — £90 per session.\n\nLearn more: ${site.websiteUrl}/services/focused-shockwave`,
   },
 ] as const;
 
 /** GBP Q&A seeds — also used as FAQPage on /reviews and /find-us. */
 export const localPackFaqs = [
   {
-    question: "Do I need a GP referral to see an osteopath in Woolwich?",
+    question: "Do I need a GP referral to see an osteopath in Charlton?",
     answer:
       "No. You can book Nguyen's Osteopathic Clinic directly online or by phone — a GP referral is not required.",
   },
   {
-    question: "Where is the clinic inside St James Pharmacy?",
+    question: "Where is the clinic inside Village Pharmacy?",
     answer:
-      "We are inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich SE18 6LQ. Ask at the pharmacy counter on arrival and staff will direct you to the osteopathy room.",
+      "We are inside Village Pharmacy at 9 The Village, Charlton SE7 8UG. Ask at the pharmacy counter on arrival and staff will direct you to the osteopathy room.",
   },
   {
     question: "What days can I book osteopathy?",
@@ -266,9 +266,9 @@ export const localPackFaqs = [
       "Bookable osteopathy days are Monday, Tuesday, Thursday, Friday and Saturday. We are closed Wednesday and Sunday. Live slots are shown on the booking page.",
   },
   {
-    question: "Is parking available near Powis Street?",
+    question: "Is parking available near The Village, Charlton?",
     answer:
-      "Short-stay Woolwich town-centre car parks and nearby on-street bays serve the clinic. Allow a few extra minutes on busy days. Woolwich Arsenal station is a short walk.",
+      "On-street and nearby short-stay bays serve The Village in Charlton. Allow a few extra minutes on busy days. Charlton station is a short walk.",
   },
   {
     question: "Can I speak Vietnamese at the clinic?",
@@ -287,7 +287,7 @@ export const localPackFaqs = [
   },
   {
     question: "How do I leave a Google review?",
-    answer: `After your visit, open our Google reviews link and share honest feedback — it helps Woolwich neighbours choose care: ${site.googleReviewsUrl}`,
+    answer: `After your visit, open our Google reviews link and share honest feedback — it helps Charlton neighbours choose care: ${site.googleReviewsUrl}`,
   },
 ] as const;
 

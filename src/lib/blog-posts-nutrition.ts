@@ -98,7 +98,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -168,7 +168,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -212,7 +212,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         "heading": "FAQs",
         "paragraphs": [
           "Can I just take a high-street spray? Many adults use a standard maintenance product safely. If you already take multivitamins, cod liver oil, or prescription D, add up the total and check with a pharmacist to avoid excess.",
-          "Does sunshine in Woolwich cover me? Short summer exposure can help, but indoor work, darker skin, covering clothing, and winter UV make deficiency common in London. Do not rely on 'feeling fine' as a test result."
+          "Does sunshine in Charlton cover me? Short summer exposure can help, but indoor work, darker skin, covering clothing, and winter UV make deficiency common in London. Do not rely on 'feeling fine' as a test result."
         ]
       },
       {
@@ -232,7 +232,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -295,7 +295,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -364,7 +364,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -427,7 +427,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -496,7 +496,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -521,7 +521,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
       {
         "heading": "Everyday MSK recovery",
         "paragraphs": [
-          "After osteopathy, we often encourage normal hydration and gentle movement. You do not need a sports drink for a standard office day or a short walk along Powis Street."
+          "After osteopathy, we often encourage normal hydration and gentle movement. You do not need a sports drink for a standard office day or a short walk along The Village."
         ]
       },
       {
@@ -565,7 +565,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -628,7 +628,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -697,7 +697,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),
@@ -760,7 +760,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
         ]
       }
     ],
-    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Woolwich if pain or recovery questions need a personal plan.",
+    cta: "Book an assessment at Nguyen's Osteopathic Clinic in Charlton if pain or recovery questions need a personal plan.",
     ctaHref: "/book",
     ctaLabel: "Book online",
   }),

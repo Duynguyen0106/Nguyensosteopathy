@@ -94,7 +94,7 @@ export default function AboutPage() {
             {site.practitioner.name}
           </h1>
           <p className="about-rise about-rise-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
-            Master of Osteopathy. A Vietnamese-speaking osteopath in Woolwich.
+            Master of Osteopathy. A Vietnamese-speaking osteopath in Charlton.
             A name chosen so our community can find care — and feel understood.
           </p>
           <div className="about-rise about-rise-delay-3 mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
@@ -425,7 +425,7 @@ export default function AboutPage() {
             </strong>{" "}
             so Vietnamese patients searching for help would see a familiar name
             and know: this place was built with you in mind. It reminds me —
-            every morning I unlock the door in Woolwich — that my education in
+            every morning I unlock the door in Charlton — that my education in
             Britain, my volunteer heart in Vietnam, and my duty to our UK
             community are one continuous path.
           </p>
@@ -448,7 +448,7 @@ export default function AboutPage() {
               clinics
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-slate-700">
-              Alongside hands-on care in Woolwich, Austin builds digital tools
+              Alongside hands-on care in Charlton, Austin builds digital tools
               that help MSK clinicians reason safely and help clinics take
               bookings without friction. Patients book here through Treow;
               therapists can practise clinical reasoning with MSK Tutor.

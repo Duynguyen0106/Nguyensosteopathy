@@ -7,19 +7,19 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Patient Resources",
   description:
-    "Patient resources for Nguyen's Osteopathic Clinic in Woolwich: new-patient guide, aftercare, home exercises, fees, insurance receipts, find us, FAQ…",
+    "Patient resources for Nguyen's Osteopathic Clinic in Charlton: new-patient guide, aftercare, home exercises, fees, insurance receipts, find us, FAQ…",
   alternates: { canonical: "/resources" },
   keywords: [
     "osteopath Woolwich patient guide",
     "osteopathy resources SE18",
     "new patient osteopath Woolwich",
     "osteopath fees Woolwich",
-    "St James Pharmacy osteopath help",
+    "Village Pharmacy osteopath help",
   ],
   openGraph: {
     title: "Patient Resources | Nguyen's Osteopathic Clinic",
     description:
-      "Practical guides for booking, visiting, fees, and reading before your osteopathy appointment in Woolwich.",
+      "Practical guides for booking, visiting, fees, and reading before your osteopathy appointment in Charlton.",
     url: "/resources",
     images: [defaultOgImage],
   },
@@ -38,7 +38,7 @@ const groups = [
       {
         href: "/find-us",
         label: "Find us & parking",
-        detail: "Powis Street directions, transport, and pharmacy arrival.",
+        detail: "The Village directions, transport, and pharmacy arrival.",
       },
       {
         href: "/faq",
@@ -127,7 +127,7 @@ const groups = [
       {
         href: "/blog",
         label: "Blog",
-        detail: "Practical articles on pain, recovery, and clinic life in Woolwich.",
+        detail: "Practical articles on pain, recovery, and clinic life in Charlton.",
       },
       {
         href: "/education",
@@ -182,7 +182,7 @@ const groups = [
       {
         href: "/about",
         label: "About Austin",
-        detail: "GOsC-registered osteopath practising in Woolwich SE18.",
+        detail: "GOsC-registered osteopath practising in Charlton SE7.",
       },
       {
         href: "/vi",
@@ -205,7 +205,7 @@ export default function ResourcesPage() {
             Patient resources
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Practical links for booking, visiting St James Pharmacy, fees,
+            Practical links for booking, visiting Village Pharmacy, fees,
             paperwork, and reading before your appointment at {site.name}.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

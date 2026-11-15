@@ -5,6 +5,11 @@
   "upload_source_maps": true,
   "compatibility_date": "2026-11-12",
   "compatibility_flags": ["nodejs_compat"],
+  // Workers Builds deploy/preview runs wrangler. Always produce the OpenNext
+  // worker bundle here so a blank or plain `next build` Build command still works.
+  "build": {
+    "command": "npm run cf:build"
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
@@ -12,6 +17,9 @@
   "observability": {
     "enabled": true
   },
+  // Required for Workers Builds PR previews (`npx wrangler preview`).
+  // Empty = inherit top-level assets/compat; do not put production routes here.
+  "previews": {},
   // Preview URL already referenced in next.config allowedDevOrigins
   "workers_dev": true,
   // Custom domains (zone already on Cloudflare DNS). Attach/confirm in

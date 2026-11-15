@@ -18,7 +18,7 @@ export const site = {
       "https://www.osteopathy.org.uk/register-search/registrants/003WT00000T8U4XYAV/",
     goscValidFrom: "16 October 2026",
     goscValidTo: "15 October 2027",
-    bio: "Austin is a GOsC-registered osteopath and founder of Nguyen's Osteopathic Clinic in Woolwich. He specialises in back pain, neck pain, and sports injuries, and speaks English and Vietnamese.",
+    bio: "Austin is a GOsC-registered osteopath and founder of Nguyen's Osteopathic Clinic in Charlton. He specialises in back pain, neck pain, and sports injuries, and speaks English and Vietnamese.",
     /**
      * Public qualifications — PDFs only where privacy-safe.
      * University transcript is not published (contains personal data).
@@ -118,19 +118,19 @@ export const site = {
    * content dates. Bump when major site copy/structure ships — do not use
    * request-time `new Date()` in sitemap.ts (forces a dynamic route).
    */
-  sitemapDefaultLastmod: "2026-10-22",
+  sitemapDefaultLastmod: "2026-11-15",
   address: {
-    line1: "52 Powis Street",
-    line2: "Woolwich, London, SE18 6LQ",
-    venue: "St James Pharmacy & Travel Clinic",
+    line1: "9 The Village",
+    line2: "Charlton, London, SE7 8UG",
+    venue: "Village Pharmacy",
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=52+Powis+Street+Woolwich+London+SE18+6LQ",
+      "https://www.google.com/maps/search/?api=1&query=9+The+Village+Charlton+London+SE7+8UG",
     mapsEmbedUrl:
-      "https://maps.google.com/maps?q=52+Powis+Street+Woolwich+London+SE18+6LQ&z=16&output=embed",
+      "https://maps.google.com/maps?q=9+The+Village+Charlton+London+SE7+8UG&z=16&output=embed",
     /** WGS84 for schema.org / meta geo tags (single source of truth). */
     geo: {
-      latitude: 51.4912,
-      longitude: 0.0672,
+      latitude: 51.48182,
+      longitude: 0.03648,
     },
   },
   /** Pharmacy / venue opening pattern (building access). */
@@ -267,9 +267,9 @@ export const faqs = [
       "It depends on your condition, how long symptoms have been present, and your goals. Many patients notice improvement within a few sessions; we review progress regularly and only recommend further care when it is clinically useful.",
   },
   {
-    question: "Where is the clinic located inside St James Pharmacy?",
+    question: "Where is the clinic located inside Village Pharmacy?",
     answer:
-      "We are based inside St James Pharmacy & Travel Clinic at 52 Powis Street, Woolwich, London SE18 6LQ. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy consultation room.",
+      "We are based inside Village Pharmacy at 9 The Village, Charlton, London SE7 8UG. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy consultation room.",
   },
   {
     question: "What are your opening hours?",
@@ -302,9 +302,9 @@ export const faqs = [
       "24 hours' notice is required for cancellations. Please call or use your booking confirmation options as soon as you know you cannot attend so we can offer the slot to someone else.",
   },
   {
-    question: "Is parking available near Powis Street?",
+    question: "Is parking available near The Village, Charlton?",
     answer:
-      "Powis Street and nearby Woolwich town-centre car parks serve the clinic. Allow a few extra minutes for parking on busy days. Public transport to Woolwich is also convenient.",
+      "On-street and nearby short-stay parking serves The Village in Charlton. Allow a few extra minutes on busy days. Charlton station and local buses are also convenient.",
   },
   {
     question: "Do you offer shockwave therapy?",
@@ -314,7 +314,7 @@ export const faqs = [
   {
     question: "Do you offer home visits?",
     answer:
-      "Yes. Home-visit osteopathy is available when travel to the clinic is difficult. Initial home consultation and treatment is £120 for 60 minutes; follow-up home treatment is £100 for 30 minutes. Coverage is local to Woolwich and nearby SE London — contact us to confirm your address before booking.",
+      "Yes. Home-visit osteopathy is available when travel to the clinic is difficult. Initial home consultation and treatment is £120 for 60 minutes; follow-up home treatment is £100 for 30 minutes. Coverage is local to Charlton and nearby SE London — contact us to confirm your address before booking.",
   },
 ] as const;
 

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Page not found | Nguyen's Osteopathic Clinic",
     description:
-      "That link may be out of date. Try booking or browsing services at our Woolwich clinic.",
+      "That link may be out of date. Try booking or browsing services at our Charlton clinic.",
     url: "/404",
   },
 };

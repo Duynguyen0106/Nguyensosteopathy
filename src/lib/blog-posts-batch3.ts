@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 const ctaBook =
   `Book online at ${site.websiteUrl}/book or call ${site.phone}.`;
 const clinic =
-  `${site.name} inside ${site.address.venue}, ${site.address.line1}, Woolwich SE18 6LQ`;
+  `${site.name} inside ${site.address.venue}, ${site.address.line1}, Charlton SE7 8UG`;
 
 type BatchPost = Omit<BlogPost, "image" | "readingMinutes"> & {
   readingMinutes?: number;
@@ -22,9 +22,9 @@ function post(partial: BatchPost): BatchPost {
 export const batch3BlogPosts: BatchPost[] = [
   post({
     slug: "vietnamese-osteopath-woolwich-uk",
-    title: "Vietnamese osteopath in Woolwich: care without the language barrier",
+    title: "Vietnamese osteopath in Charlton: care without the language barrier",
     description:
-      "Looking for a Vietnamese osteopath in the UK? How Nguyen's Osteopathic Clinic in Woolwich supports clear MSK care for the Vietnamese community.",
+      "Looking for a Vietnamese osteopath in the UK? How Nguyen's Osteopathic Clinic in Charlton supports clear MSK care for the Vietnamese community.",
     date: "2026-10-10",
     category: "Local guides",
     keywords: [
@@ -59,7 +59,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "nail-technician-neck-wrist-pain-osteopath",
     title: "Nail technician neck and wrist pain: osteopathy for salon workers",
     description:
-      "Long hours bent over a nail desk? How neck, shoulder, and wrist strain builds — and how osteopathy in Woolwich can help salon workers.",
+      "Long hours bent over a nail desk? How neck, shoulder, and wrist strain builds — and how osteopathy in Charlton can help salon workers.",
     date: "2026-10-10",
     category: "Local guides",
     keywords: [
@@ -116,7 +116,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "osteopath-plumstead-abbey-wood-se18",
     title: "Osteopath near Plumstead and Abbey Wood: Woolwich SE18 clinic",
     description:
-      "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic on Powis Street, Woolwich is a short hop for SE18 patients.",
+      "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Woolwich is a short hop for SE18 patients.",
     date: "2026-10-10",
     category: "Local guides",
     keywords: [
@@ -128,8 +128,8 @@ export const batch3BlogPosts: BatchPost[] = [
     sections: [
       {
         paragraphs: [
-          `Patients from Plumstead, Abbey Wood, and Woolwich Common regularly visit ${clinic}. Bus and DLR links make Powis Street practical without travelling into central London.`,
-          `Ask at the St James Pharmacy counter on arrival and staff will direct you to the osteopathy room. Book online or call if you need help choosing a slot.`,
+          `Patients from Plumstead, Abbey Wood, and Woolwich Common regularly visit ${clinic}. Bus and DLR links make The Village practical without travelling into central London.`,
+          `Ask at the Village Pharmacy counter on arrival and staff will direct you to the osteopathy room. Book online or call if you need help choosing a slot.`,
         ],
       },
     ],
@@ -139,20 +139,20 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "parking-osteopath-woolwich-powis-street",
     title: "Parking and getting to our Woolwich osteopath clinic",
     description:
-      "How to reach Nguyen's Osteopathic Clinic inside St James Pharmacy on Powis Street — parking tips, buses, and DLR for SE18 patients.",
+      "How to reach Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village — parking tips, buses, and DLR for SE18 patients.",
     date: "2026-10-10",
     category: "Clinic info",
     keywords: [
-      "parking Powis Street Woolwich",
+      "parking The Village Charlton",
       "osteopath Woolwich directions",
-      "St James Pharmacy parking",
+      "Village Pharmacy parking",
       "how to get to osteopath SE18",
     ],
     sections: [
       {
         paragraphs: [
-          `We are inside ${site.address.venue} at ${site.address.line1}, ${site.address.line2}. Woolwich town centre has short-stay parking nearby; check local signs for time limits and payment.`,
-          "Public transport is often easiest: Woolwich Arsenal station (Elizabeth line, DLR, National Rail) and local buses serving Powis Street / General Gordon Place.",
+          `We are inside ${site.address.venue} at ${site.address.line1}, ${site.address.line2}. Charlton village has short-stay parking nearby; check local signs for time limits and payment.`,
+          "Public transport is often easiest: Woolwich Arsenal station (Elizabeth line, DLR, National Rail) and local buses serving The Village / Charlton Church Lane.",
         ],
       },
       {
@@ -166,7 +166,7 @@ export const batch3BlogPosts: BatchPost[] = [
   }),
   post({
     slug: "chronic-pain-osteopath-woolwich",
-    title: "Chronic pain and osteopathy in Woolwich: a practical first step",
+    title: "Chronic pain and osteopathy in Charlton: a practical first step",
     description:
       "Living with pain for months? How osteopathy approaches persistent back, neck, and joint pain — and when medical review comes first.",
     date: "2026-10-10",
@@ -189,7 +189,7 @@ export const batch3BlogPosts: BatchPost[] = [
   }),
   post({
     slug: "osteopathy-for-older-adults-woolwich",
-    title: "Osteopathy for older adults in Woolwich: safer movement, less stiffness",
+    title: "Osteopathy for older adults in Charlton: safer movement, less stiffness",
     description:
       "Gentle osteopathy for older adults with stiffness, joint wear, and balance confidence — what to expect at our SE18 clinic.",
     date: "2026-10-10",
@@ -214,7 +214,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "first-osteopathy-visit-checklist-woolwich",
     title: "First osteopathy visit checklist: what to bring and ask",
     description:
-      "A simple checklist for your first osteopathy appointment in Woolwich — clothing, questions, medical letters, and how long it takes.",
+      "A simple checklist for your first osteopathy appointment in Charlton — clothing, questions, medical letters, and how long it takes.",
     date: "2026-10-10",
     category: "Getting started",
     keywords: [
@@ -289,7 +289,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "rib-pain-breathing-osteopath-woolwich",
     title: "Rib pain and stiff breathing: osteopathy for the thoracic cage",
     description:
-      "Sharp rib or side pain when breathing, twisting, or coughing? How thoracic and rib irritation is assessed at our Woolwich clinic.",
+      "Sharp rib or side pain when breathing, twisting, or coughing? How thoracic and rib irritation is assessed at our Charlton clinic.",
     date: "2026-10-10",
     category: "Headaches & joints",
     keywords: [
@@ -312,7 +312,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "hip-bursitis-osteopath-woolwich",
     title: "Outer hip pain and bursitis: osteopathy for side-lying ache",
     description:
-      "Pain on the outside of the hip when lying on that side or climbing stairs? How trochanteric irritation is managed with osteopathy in Woolwich.",
+      "Pain on the outside of the hip when lying on that side or climbing stairs? How trochanteric irritation is managed with osteopathy in Charlton.",
     date: "2026-10-10",
     category: "Headaches & joints",
     keywords: [
@@ -335,7 +335,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "rsi-wrist-forearm-office-osteopath",
     title: "RSI wrist and forearm pain for office and creative workers",
     description:
-      "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Woolwich SE18.",
+      "Mouse, keyboard, or tablet strain in the wrist and forearm? Osteopathy for repetitive strain patterns in Charlton SE7.",
     date: "2026-10-10",
     category: "Headaches & joints",
     keywords: [
@@ -379,7 +379,7 @@ export const batch3BlogPosts: BatchPost[] = [
   }),
   post({
     slug: "shockwave-therapy-cost-woolwich",
-    title: "Shockwave therapy cost in Woolwich: what affects the fee",
+    title: "Shockwave therapy cost in Charlton: what affects the fee",
     description:
       "What influences focused shockwave fees at Nguyen's Osteopathic Clinic — session type, course length, and how to book in SE18.",
     date: "2026-10-10",
@@ -427,7 +427,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "cycling-lower-back-pain-osteopath-woolwich",
     title: "Cycling lower back pain: bike posture and osteopathy",
     description:
-      "Aching lumbar spine after long rides? How bike setup and osteopathy help cyclists with lower back pain in Woolwich.",
+      "Aching lumbar spine after long rides? How bike setup and osteopathy help cyclists with lower back pain in Charlton.",
     date: "2026-10-10",
     category: "Sports rehab",
     keywords: [
@@ -519,7 +519,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "pregnancy-sciatica-osteopath-woolwich",
     title: "Pregnancy sciatica and leg pain: gentle osteopathy support",
     description:
-      "Buttock or leg pain in pregnancy? How we assess pregnancy-related sciatic-type symptoms safely in Woolwich.",
+      "Buttock or leg pain in pregnancy? How we assess pregnancy-related sciatic-type symptoms safely in Charlton.",
     date: "2026-10-10",
     category: "Pregnancy",
     keywords: [
@@ -542,7 +542,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "baby-preferential-head-turn-osteopath",
     title: "Baby preferential head turn: when parents seek osteopathy",
     description:
-      "Noticing your baby prefers one side? What parents ask about positional preference and gentle paediatric osteopathy in Woolwich.",
+      "Noticing your baby prefers one side? What parents ask about positional preference and gentle paediatric osteopathy in Charlton.",
     date: "2026-10-10",
     category: "Paediatric",
     keywords: [
@@ -565,7 +565,7 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "cranial-osteopathy-headaches-woolwich",
     title: "Cranial osteopathy for headaches and held tension",
     description:
-      "Prefer a quieter treatment style for headaches and stress-held tension? How cranial osteopathy is used at our Woolwich clinic.",
+      "Prefer a quieter treatment style for headaches and stress-held tension? How cranial osteopathy is used at our Charlton clinic.",
     date: "2026-10-10",
     category: "Cranial",
     keywords: [

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Facebook feed poster (1080×1080) — clinic booking promo for Woolwich.
+ * Facebook feed poster (1080×1080) — clinic booking promo for Charlton.
  * No discount claim — opening-day % offers were removed sitewide.
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
@@ -173,7 +173,7 @@ const html = `<!DOCTYPE html>
     </div>
 
     <p class="eyebrow">Now booking</p>
-    <h1>Osteopathy in Woolwich</h1>
+    <h1>Osteopathy in Charlton</h1>
 
     <div class="offer">
       <span class="pct" style="font-size:72px;letter-spacing:0.04em">BOOK</span>
@@ -185,15 +185,14 @@ const html = `<!DOCTYPE html>
       <p class="date">Mon, Tue, Thu, Fri &amp; Sat</p>
     </div>
     <p class="details">
-      Book with Austin Duy Nguyen, GOsC-registered osteopath, inside St James
-      Pharmacy on Powis Street. No GP referral needed. NHS &amp; student 10%
+      Book with Austin Duy Nguyen, GOsC-registered osteopath, inside Village Pharmacy on The Village. No GP referral needed. NHS &amp; student 10%
       discount with valid ID.
     </p>
 
     <div class="foot">
       <div>
         <p class="phone">07882 843513</p>
-        <p class="meta">Book online · Inside St James Pharmacy<br/>52 Powis Street, Woolwich SE18 6LQ</p>
+        <p class="meta">Book online · Inside Village Pharmacy<br/>9 The Village, Charlton SE7 8UG</p>
       </div>
       <div class="web">
         www.nguyensosteopathy.com/book

@@ -117,9 +117,9 @@ function withImage(post: BlogPostInput): BlogPost {
 const blogPostInputs: BlogPostInput[] = [
   {
     slug: "osteopath-woolwich-what-to-expect",
-    title: "Osteopath in Woolwich: what to expect at your first visit",
+    title: "Osteopath in Charlton: what to expect at your first visit",
     description:
-      "Looking for an osteopath in Woolwich? Learn what happens in a first appointment, who osteopathy helps, and how to book at Nguyen's Osteopathic Clinic on Powis Street.",
+      "Looking for an osteopath in Charlton? Learn what happens in a first appointment, who osteopathy helps, and how to book at Nguyen's Osteopathic Clinic at The Village.",
     date: "2026-10-08",
     readingMinutes: 6,
     category: "Getting started",
@@ -132,7 +132,7 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          `If you have been searching for an osteopath in Woolwich, you are usually looking for two things: clear answers about pain that will not settle, and a practitioner you can trust. At ${site.name}, care is provided by ${site.practitioner.name}, a ${site.practitioner.title} (Reg. No. ${site.practitioner.regNo}), inside ${site.address.venue} on ${site.address.line1}.`,
+          `If you have been searching for an osteopath in Charlton, you are usually looking for two things: clear answers about pain that will not settle, and a practitioner you can trust. At ${site.name}, care is provided by ${site.practitioner.name}, a ${site.practitioner.title} (Reg. No. ${site.practitioner.regNo}), inside ${site.address.venue} on ${site.address.line1}.`,
           "Osteopathy is a hands-on, drug-free approach. We assess how your joints, muscles, and nerves move together, then treat the cause of symptoms — not only the sore spot.",
         ],
       },
@@ -168,7 +168,7 @@ const blogPostInputs: BlogPostInput[] = [
   },
   {
     slug: "back-pain-woolwich-osteopathy",
-    title: "Back pain in Woolwich: when osteopathy can help",
+    title: "Back pain in Charlton: when osteopathy can help",
     description:
       "Practical guide to common back pain causes for Woolwich and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
     date: "2026-10-08",
@@ -183,7 +183,7 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "Back pain is one of the most common reasons people book an osteopath in Woolwich. Desk work on Powis Street, commuting, lifting, and weekend sport all load the spine differently — and symptoms often start gradually.",
+          "Back pain is one of the most common reasons people book an osteopath in Charlton. Desk work at The Village, commuting, lifting, and weekend sport all load the spine differently — and symptoms often start gradually.",
           "Osteopathy looks at the whole movement pattern: lumbar joints, hips, mid-back mobility, and how you sit or lift day to day. Treatment may include soft-tissue work, joint mobilisation, and clear advice you can use between visits.",
         ],
       },
@@ -246,7 +246,7 @@ const blogPostInputs: BlogPostInput[] = [
         heading: "When to seek urgent medical care",
         paragraphs: [
           "Osteopathy is not a substitute for emergency care. Seek urgent help if you have new bladder or bowel changes, numbness in the saddle area, rapidly worsening leg weakness, unexplained weight loss, fever with back pain, or pain after significant trauma.",
-          "For persistent but non-emergency pain — sleep disruption, work limitation, or recurring flares — an osteopathic assessment is a sensible next step. You do not need a GP referral to book at Nguyen's Osteopathic Clinic inside St James Pharmacy.",
+          "For persistent but non-emergency pain — sleep disruption, work limitation, or recurring flares — an osteopathic assessment is a sensible next step. You do not need a GP referral to book at Nguyen's Osteopathic Clinic inside Village Pharmacy.",
         ],
       },
       {
@@ -272,7 +272,7 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "desk-neck-and-shoulder-pain",
     title: "Desk neck and shoulder pain: a Woolwich osteopath’s guide",
     description:
-      "Why office and hybrid workers in Woolwich get neck and shoulder pain — and how osteopathy plus desk setup changes can help.",
+      "Why office and hybrid workers in Charlton get neck and shoulder pain — and how osteopathy plus desk setup changes can help.",
     date: "2026-10-08",
     readingMinutes: 5,
     category: "Back & neck",
@@ -302,11 +302,11 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Book a neck and shoulder assessment at Nguyen's Osteopathic Clinic in Woolwich.",
+    cta: "Book a neck and shoulder assessment at Nguyen's Osteopathic Clinic in Charlton.",
   },
   {
     slug: "focused-shockwave-therapy-woolwich",
-    title: "Focused shockwave therapy in Woolwich: who it is for",
+    title: "Focused shockwave therapy in Charlton: who it is for",
     description:
       "Learn how low-intensity focused shockwave (LI-ESWT) is used at Nguyen's Osteopathic Clinic for stubborn tendon and soft-tissue problems.",
     date: "2026-10-08",
@@ -321,7 +321,7 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "Focused shockwave therapy (LI-ESWT) is a non-invasive option for persistent soft-tissue and tendon problems that have not settled with rest or standard hands-on care alone. At our Woolwich clinic it is delivered as a clinical protocol, not a spa add-on.",
+          "Focused shockwave therapy (LI-ESWT) is a non-invasive option for persistent soft-tissue and tendon problems that have not settled with rest or standard hands-on care alone. At our Charlton clinic it is delivered as a clinical protocol, not a spa add-on.",
           "Sound waves are directed to the target tissue to support healing responses and pain modulation. Sessions are typically around 30 minutes, with a clear plan discussed first.",
         ],
       },
@@ -375,9 +375,9 @@ const blogPostInputs: BlogPostInput[] = [
   },
   {
     slug: "sports-injury-osteopath-woolwich",
-    title: "Sports injury rehab with an osteopath in Woolwich",
+    title: "Sports injury rehab with an osteopath in Charlton",
     description:
-      "How osteopathy supports runners, gym-goers, and weekend athletes in Woolwich with load management and hands-on sports injury care.",
+      "How osteopathy supports runners, gym-goers, and weekend athletes in Charlton with load management and hands-on sports injury care.",
     date: "2026-10-08",
     readingMinutes: 5,
     category: "Sports rehab",
@@ -406,11 +406,11 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Book a sports injury assessment in Woolwich online.",
+    cta: "Book a sports injury assessment in Charlton online.",
   },
   {
     slug: "mens-health-shockwave-woolwich",
-    title: "Men’s health and ED: discreet LI-ESWT care in Woolwich",
+    title: "Men’s health and ED: discreet LI-ESWT care in Charlton",
     description:
       "Confidential low-intensity focused shockwave protocols for vascular-related erectile difficulties at Nguyen's Osteopathic Clinic — drug-free and private.",
     date: "2026-10-08",
@@ -455,7 +455,7 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "We offer a 10% discount for NHS staff and students at Nguyen's Osteopathic Clinic in Woolwich. Valid ID is required at your appointment.",
+          "We offer a 10% discount for NHS staff and students at Nguyen's Osteopathic Clinic in Charlton. Valid ID is required at your appointment.",
           "The discount is our way of supporting local healthcare workers and students who often carry physical load from long shifts or study.",
         ],
       },
@@ -475,9 +475,9 @@ const blogPostInputs: BlogPostInput[] = [
   },
   {
     slug: "sciatica-woolwich-osteopath",
-    title: "Sciatica in Woolwich: causes, symptoms, and when osteopathy helps",
+    title: "Sciatica in Charlton: causes, symptoms, and when osteopathy helps",
     description:
-      "Sharp or shooting leg pain from Woolwich commuting and desk work? Learn common sciatica triggers, red flags, and how osteopathy at St James Pharmacy can help.",
+      "Sharp or shooting leg pain from Woolwich commuting and desk work? Learn common sciatica triggers, red flags, and how osteopathy at Village Pharmacy can help.",
     date: "2026-10-09",
     readingMinutes: 7,
     category: "Back & neck",
@@ -491,7 +491,7 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "Sciatica is not a single diagnosis — it is a pattern of nerve-related pain that travels from the lower back or buttock into the leg. People in Woolwich often notice it after long sits on the Elizabeth line, lifting at work, or weekends of DIY and sport.",
+          "Sciatica is not a single diagnosis — it is a pattern of nerve-related pain that travels from the lower back or buttock into the leg. People in Charlton often notice it after long sits on the Elizabeth line, lifting at work, or weekends of DIY and sport.",
           `At ${site.name} we assess whether irritation is coming from the lumbar spine, the disc, the sacroiliac joint, or soft tissue around the nerve pathway — then treat the driver, not only the tingling calf.`,
         ],
       },
@@ -521,7 +521,7 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: `Book an initial osteopathy assessment in Woolwich online, or call ${site.phone}.`,
+    cta: `Book an initial osteopathy assessment in Charlton online, or call ${site.phone}.`,
   },
   {
     slug: "tension-headaches-neck-osteopath-woolwich",
@@ -564,13 +564,13 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Book online for headache and neck assessment at St James Pharmacy, Woolwich.",
+    cta: "Book online for headache and neck assessment at Village Pharmacy, Charlton.",
   },
   {
     slug: "pregnancy-osteopathy-woolwich",
-    title: "Pregnancy osteopathy in Woolwich: pelvic pain, back ache, and posture",
+    title: "Pregnancy osteopathy in Charlton: pelvic pain, back ache, and posture",
     description:
-      "Gentle osteopathic care in Woolwich for pregnancy-related pelvic girdle pain, rib strain, and back discomfort — adapted to your trimester.",
+      "Gentle osteopathic care in Charlton for pregnancy-related pelvic girdle pain, rib strain, and back discomfort — adapted to your trimester.",
     date: "2026-10-09",
     readingMinutes: 6,
     category: "Pregnancy",
@@ -608,11 +608,11 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: `Book pregnancy-adapted osteopathy in Woolwich online or call ${site.phone}.`,
+    cta: `Book pregnancy-adapted osteopathy in Charlton online or call ${site.phone}.`,
   },
   {
     slug: "osteopath-vs-physiotherapist-woolwich",
-    title: "Osteopath vs physiotherapist: which should I book in Woolwich?",
+    title: "Osteopath vs physiotherapist: which should I book in Charlton?",
     description:
       "Confused between osteopathy and physiotherapy in SE18? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
     date: "2026-10-09",
@@ -628,7 +628,7 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "People searching for help in Woolwich often type both “osteopath near me” and “physio near me”. Both professions are regulated, both treat musculoskeletal problems, and both can be excellent — the difference is usually emphasis and style of care.",
+          "People searching for help in Charlton often type both “osteopath near me” and “physio near me”. Both professions are regulated, both treat musculoskeletal problems, and both can be excellent — the difference is usually emphasis and style of care.",
           "Osteopaths (GOsC-registered) typically spend more of the session on hands-on assessment and treatment of joints and soft tissues across related regions. Physiotherapists often emphasise graded exercise and rehab protocols, with manual therapy as one tool among many. In practice, good clinicians overlap.",
         ],
       },
@@ -655,7 +655,7 @@ const blogPostInputs: BlogPostInput[] = [
   },
   {
     slug: "hip-knee-pain-osteopath-woolwich",
-    title: "Hip and knee pain in Woolwich: osteopathy for walkers, runners, and desk workers",
+    title: "Hip and knee pain in Charlton: osteopathy for walkers, runners, and desk workers",
     description:
       "Hip stiffness, runner’s knee, and stair pain are common around Woolwich and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
     date: "2026-10-09",
@@ -700,7 +700,7 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "osteopath-greenwich-charlton-thamesmead",
     title: "Osteopath near Greenwich, Charlton, and Thamesmead",
     description:
-      "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on Powis Street, Woolwich SE18 is easy to reach and open for online booking.",
+      "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on The Village, Charlton SE7 is easy to reach and open for online booking.",
     date: "2026-10-09",
     readingMinutes: 4,
     category: "Local guides",
@@ -715,8 +715,8 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "You do not have to travel into central London for registered osteopathic care. Nguyen's Osteopathic Clinic sits inside St James Pharmacy on Powis Street, Woolwich SE18 6LQ — practical for patients from Greenwich, Charlton, Thamesmead, Plumstead, and Abbey Wood.",
-          "The clinic is a short walk from Woolwich Arsenal station and local bus routes along Powis Street. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
+          "You do not have to travel into central London for registered osteopathic care. Nguyen's Osteopathic Clinic sits inside Village Pharmacy on The Village, Charlton SE7 8UG — practical for patients from Greenwich, Charlton, Thamesmead, Plumstead, and Abbey Wood.",
+          "The clinic is a short walk from Woolwich Arsenal station and local bus routes along The Village. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
         ],
       },
       {
@@ -778,7 +778,7 @@ const blogPostInputs: BlogPostInput[] = [
   },
   {
     slug: "shoulder-pain-frozen-shoulder-woolwich",
-    title: "Shoulder pain and frozen shoulder: osteopathy in Woolwich",
+    title: "Shoulder pain and frozen shoulder: osteopathy in Charlton",
     description:
       "Reach overhead without wincing. Learn how osteopathy helps shoulder stiffness, rotator cuff irritation, and frozen shoulder patterns in SE18.",
     date: "2026-10-09",

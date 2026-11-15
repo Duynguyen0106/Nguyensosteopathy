@@ -104,11 +104,11 @@ if (clinic.telephone !== "+447882843513") {
 
 const addr = clinic.address ?? {};
 const street = String(addr.streetAddress ?? "");
-if (!street.includes("52 Powis Street") || !street.includes("St James Pharmacy")) {
+if (!street.includes("9 The Village") || !street.includes("Village Pharmacy")) {
   fail(`Full address incomplete: ${street}`);
 } else ok(`address.streetAddress: ${street}`);
-if (addr.addressLocality !== "Woolwich") fail("addressLocality missing Woolwich");
-if (addr.postalCode !== "SE18 6LQ") fail("postalCode missing SE18 6LQ");
+if (addr.addressLocality !== "Charlton") fail("addressLocality missing Charlton");
+if (addr.postalCode !== "SE7 8UG") fail("postalCode missing SE7 8UG");
 if (addr.addressCountry !== "GB") fail("addressCountry missing GB");
 else ok("address locality/postal/country OK");
 

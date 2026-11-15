@@ -10,7 +10,7 @@ import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Osteopath fees in Woolwich",
   description:
-    "Clear osteopathy fees in Woolwich SE18: initial £75, follow-up £60, home visits £120 / £100, shockwave £90, deep tissue £60. 10% NHS & student discount.",
+    "Clear osteopathy fees in Charlton SE7: initial £75, follow-up £60, home visits £120 / £100, shockwave £90, deep tissue £60. 10% NHS & student discount.",
   alternates: {
     canonical: "/fees",
     languages: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Osteopath fees in Woolwich",
     description:
-      "Clear osteopathy fees in Woolwich SE18: initial £75, follow-up £60, home visits £120 / £100, shockwave £90. 10% NHS & student discount.",
+      "Clear osteopathy fees in Charlton SE7: initial £75, follow-up £60, home visits £120 / £100, shockwave £90. 10% NHS & student discount.",
     url: "/fees",
     images: [defaultOgImage],
   },
@@ -101,7 +101,7 @@ export default function FeesPage() {
             Treatments &amp; fees
           </h1>
           <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Clear prices for osteopathy and clinic services in Woolwich SE18 —
+            Clear prices for osteopathy and clinic services in Charlton SE7 —
             so you can book with confidence.
           </p>
           <p className="opening-hero-copy opening-hero-delay-2 mt-3 text-sm text-slate-500">

@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Desk pain osteopath Woolwich",
   description:
-    "Osteopathy for desk and hybrid workers in Woolwich SE18 — neck and shoulder tension, upper-back ache, text neck, and RSI-type wrist or forearm pain. Inside…",
+    "Osteopathy for desk and hybrid workers in Charlton SE7 — neck and shoulder tension, upper-back ache, text neck, and RSI-type wrist or forearm pain. Inside…",
   alternates: { canonical: "/desk-pain" },
   keywords: [
     "desk pain osteopath Woolwich",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Desk & Office Pain | Nguyen's Osteopathic Clinic",
     description:
-      "Hands-on care for laptop necks, desk backs, and forearm load in Woolwich.",
+      "Hands-on care for laptop necks, desk backs, and forearm load in Charlton.",
     url: "/desk-pain",
     images: [defaultOgImage],
   },
@@ -99,10 +99,10 @@ export default function DeskPainPage() {
   const pageLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    name: "Desk & Office Pain Osteopath in Woolwich",
+    name: "Desk & Office Pain Osteopath in Charlton",
     url: `${site.websiteUrl}/desk-pain`,
     description:
-      "Osteopathy for desk and hybrid worker neck, back, and RSI-type pain in Woolwich SE18.",
+      "Osteopathy for desk and hybrid worker neck, back, and RSI-type pain in Charlton SE7.",
     about: {
       "@type": "MedicalCondition",
       name: "Work-related musculoskeletal pain",

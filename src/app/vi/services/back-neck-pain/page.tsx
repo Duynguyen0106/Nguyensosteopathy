@@ -8,10 +8,10 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Điều trị đau lưng & cổ tại Woolwich | Osteopath người Việt",
+    absolute: "Điều trị đau lưng & cổ tại Charlton | Osteopath người Việt",
   },
   description:
-    "Osteopathy cho đau lưng, đau cổ, sciatica và cứng cột sống tại Woolwich SE18. Austin Duy Nguyen — osteopath người Việt đăng ký GOsC. Đặt lịch không cần GP.",
+    "Osteopathy cho đau lưng, đau cổ, sciatica và cứng cột sống tại Charlton SE7. Austin Duy Nguyen — osteopath người Việt đăng ký GOsC. Đặt lịch không cần GP.",
   alternates: {
     canonical: "/vi/services/back-neck-pain",
     languages: {
@@ -21,24 +21,24 @@ export const metadata: Metadata = {
     },
   },
   keywords: [
-    "đau lưng Woolwich",
+    "đau lưng Charlton",
     "đau cổ osteopath",
     "sciatica người Việt",
-    "osteopath SE18",
+    "osteopath SE7",
   ],
   openGraph: pageOpenGraph({
-    title: "Điều trị đau lưng & cổ tại Woolwich",
+    title: "Điều trị đau lưng & cổ tại Charlton",
     description:
-      "Osteopathy cho đau lưng, cổ và sciatica — khám bằng tiếng Việt tại Woolwich SE18.",
+      "Osteopathy cho đau lưng, cổ và sciatica — khám bằng tiếng Việt tại Charlton SE7.",
     url: "/vi/services/back-neck-pain",
     images: [defaultOgImage],
     locale: "vi_VN",
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Điều trị đau lưng & cổ tại Woolwich",
+    title: "Điều trị đau lưng & cổ tại Charlton",
     description:
-      "Osteopathy cho đau lưng, cổ và sciatica — khám bằng tiếng Việt tại Woolwich SE18.",
+      "Osteopathy cho đau lưng, cổ và sciatica — khám bằng tiếng Việt tại Charlton SE7.",
     images: [defaultOgImage.url],
   },
 };
@@ -90,15 +90,15 @@ export default function VietnameseBackNeckPage() {
             ← Trang tiếng Việt
           </Link>
           <p className="mt-5 text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Đau lưng &amp; cổ · Woolwich SE18
+            Đau lưng &amp; cổ · Charlton SE7
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
-            Điều trị đau lưng &amp; cổ tại Woolwich
+            Điều trị đau lưng &amp; cổ tại Charlton
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Osteopathy đánh giá tư thế, khớp và mô mềm — cho sciatica, đau do
-            ngồi máy, cứng cột sống và đau cổ vai. Khám trong St James Pharmacy
-            trên Powis Street.
+            ngồi máy, cứng cột sống và đau cổ vai. Khám trong Village Pharmacy
+            trên The Village.
           </p>
           <p className="mt-4 text-sm font-bold tracking-wide text-teal-dark">
             Ban đầu £75 (60 phút) · Tái khám £60 · Không cần GP referral

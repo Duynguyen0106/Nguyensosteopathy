@@ -18,7 +18,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Patient Reviews",
   description:
-    "Read Google reviews for Nguyen's Osteopathic Clinic in Woolwich. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
+    "Read Google reviews for Nguyen's Osteopathic Clinic in Charlton. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
   alternates: { canonical: "/reviews" },
   keywords: [
     "osteopath Woolwich reviews",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Patient Reviews | Nguyen's Osteopathic Clinic",
     description:
-      "Read Google reviews for Nguyen's Osteopathic Clinic in Woolwich SE18, and share your visit after treatment with Austin Duy Nguyen.",
+      "Read Google reviews for Nguyen's Osteopathic Clinic in Charlton SE7, and share your visit after treatment with Austin Duy Nguyen.",
     url: "/reviews",
     images: [defaultOgImage],
   },

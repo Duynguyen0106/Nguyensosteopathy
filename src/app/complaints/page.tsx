@@ -6,12 +6,12 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Complaints Procedure",
-  description: `How to raise a concern or complaint about care at ${site.name} in Woolwich. Contact the clinic first; GOsC registration details for ${site.practitioner.name}.`,
+  description: `How to raise a concern or complaint about care at ${site.name} in Charlton. Contact the clinic first; GOsC registration details for ${site.practitioner.name}.`,
   alternates: { canonical: "/complaints" },
   openGraph: {
     title: "Complaints Procedure | Nguyen's Osteopathic Clinic",
     description:
-      "How to raise a concern about osteopathic care in Woolwich SE18.",
+      "How to raise a concern about osteopathic care in Charlton SE7.",
     url: "/complaints",
     images: [defaultOgImage],
   },

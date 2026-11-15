@@ -12,12 +12,12 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Conditions We Treat",
   description:
-    "Musculoskeletal conditions we help with at Nguyen's Osteopathic Clinic in Woolwich — neck, back, hip, knee, shoulder, elbow, wrist, and foot — with clear…",
+    "Musculoskeletal conditions we help with at Nguyen's Osteopathic Clinic in Charlton — neck, back, hip, knee, shoulder, elbow, wrist, and foot — with clear…",
   alternates: { canonical: "/conditions" },
   openGraph: {
     title: "Conditions We Treat | Nguyen's Osteopathic Clinic",
     description:
-      "Explore the MSK conditions catalogue we treat in Woolwich SE18, organised by body region.",
+      "Explore the MSK conditions catalogue we treat in Charlton SE7, organised by body region.",
     url: "/conditions",
     images: [defaultOgImage],
   },
@@ -106,7 +106,7 @@ export default function ConditionsIndexPage() {
               How we treat
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
-              Looking for osteopathic treatment in Woolwich for pain that will
+              Looking for osteopathic treatment in Charlton for pain that will
               not settle? We assess and treat common musculoskeletal
               presentations at {site.address.venue} — clear diagnosis of what is
               driving your symptoms, then a practical plan for work, commuting,

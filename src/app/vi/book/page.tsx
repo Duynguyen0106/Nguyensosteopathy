@@ -37,10 +37,10 @@ const viBookFaqs = [
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Đặt lịch osteopathy Woolwich | Phòng khám Xương khớp Nguyễn",
+    absolute: "Đặt lịch osteopathy Charlton | Phòng khám Xương khớp Nguyễn",
   },
   description:
-    "Đặt lịch osteopathy online tại Woolwich SE18 với Austin Duy Nguyen — osteopath người Việt đăng ký GOsC. Không cần GP referral. Gọi hoặc WhatsApp nếu cần hỗ trợ.",
+    "Đặt lịch osteopathy online tại Charlton SE7 với Austin Duy Nguyen — osteopath người Việt đăng ký GOsC. Không cần GP referral. Gọi hoặc WhatsApp nếu cần hỗ trợ.",
   alternates: {
     canonical: "/vi/book",
     languages: {
@@ -50,18 +50,18 @@ export const metadata: Metadata = {
     },
   },
   openGraph: pageOpenGraph({
-    title: "Đặt lịch osteopathy Woolwich",
+    title: "Đặt lịch osteopathy Charlton",
     description:
-      "Đặt lịch online với osteopath người Việt tại Woolwich SE18 — không cần GP referral.",
+      "Đặt lịch online với osteopath người Việt tại Charlton SE7 — không cần GP referral.",
     url: "/vi/book",
     images: [defaultOgImage],
     locale: "vi_VN",
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Đặt lịch osteopathy Woolwich",
+    title: "Đặt lịch osteopathy Charlton",
     description:
-      "Đặt lịch online với osteopath người Việt tại Woolwich SE18 — không cần GP referral.",
+      "Đặt lịch online với osteopath người Việt tại Charlton SE7 — không cần GP referral.",
     images: [defaultOgImage.url],
   },
 };

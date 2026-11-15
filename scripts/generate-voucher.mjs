@@ -21,7 +21,7 @@ const BOOK_URL = "https://www.nguyensosteopathy.com/book";
 const SITE = "www.nguyensosteopathy.com";
 const PHONE = "07882 843513";
 const EMAIL = "nguyensosteopathy@gmail.com";
-const ADDRESS = "St James Pharmacy · 52 Powis Street · Woolwich SE18 6LQ";
+const ADDRESS = "Village Pharmacy · 9 The Village · Charlton SE7 8UG";
 
 mkdirSync(outDir, { recursive: true });
 mkdirSync(artifactDir, { recursive: true });
@@ -423,7 +423,7 @@ const html = `<!DOCTYPE html>
         Total value £500 · Redeemable at Nguyen&apos;s Osteopathic Clinic ·
         GOsC-registered care · No GP referral needed
       </p>
-      <p class="place">Woolwich SE18</p>
+      <p class="place">Charlton SE7</p>
     </div>
   </section>
 

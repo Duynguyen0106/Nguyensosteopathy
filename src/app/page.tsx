@@ -143,7 +143,7 @@ export default function HomePage() {
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-teal/20 to-navy/10 blur-xl" />
             <Image
               src="/images/clinic-room.webp"
-              alt="Treatment and consultation room at Nguyen's Osteopathic Clinic inside St James Pharmacy, Woolwich"
+              alt="Treatment and consultation room at Nguyen's Osteopathic Clinic inside Village Pharmacy, Charlton"
               width={800}
               height={600}
               sizes="(max-width: 768px) 90vw, 40vw"
@@ -175,7 +175,7 @@ export default function HomePage() {
             <p className="mt-6 text-lg leading-relaxed text-slate-700">
               Master of Osteopathy graduate of the British College of
               Osteopathic Medicine, and a Vietnamese-speaking GOsC osteopath
-              practising in Woolwich. {site.name} exists so our community can
+              practising in Charlton. {site.name} exists so our community can
               find drug-free care they recognise, in a clinic built around
               root-cause treatment and dignity.
             </p>
@@ -532,7 +532,7 @@ export default function HomePage() {
             Find us
           </p>
           <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
-            Osteopath in Woolwich — inside {site.address.venue}
+            Osteopath in Charlton — inside {site.address.venue}
           </h2>
           <p className="mt-5 text-lg font-medium text-slate-700">
             {site.address.line1}
@@ -540,7 +540,7 @@ export default function HomePage() {
             {site.address.line2}
           </p>
           <p className="mt-3 text-base leading-relaxed text-slate-600 md:text-lg">
-            Easy to reach from Greenwich, Charlton, Plumstead, Thamesmead, and
+            Easy to reach from Greenwich, Woolwich, Plumstead, Thamesmead, and
             Abbey Wood. Ask at the pharmacy counter on arrival — they will
             direct you to the osteopathy room.
           </p>

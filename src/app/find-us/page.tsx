@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Find Us & Parking",
   description:
-    "How to find Nguyen's Osteopathic Clinic inside St James Pharmacy, 52 Powis Street, Woolwich SE18 — parking, Elizabeth line, DLR, buses, and what to do on…",
+    "How to find Nguyen's Osteopathic Clinic inside Village Pharmacy, 9 The Village, Charlton SE7 8UG — parking, Charlton station, buses, and what to do on arrival.",
   alternates: {
     canonical: "/find-us",
     languages: {
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     },
   },
   keywords: [
-    "osteopath Woolwich parking",
-    "Powis Street osteopath directions",
-    "St James Pharmacy osteopath",
-    "Woolwich Arsenal osteopath",
-    "how to get to osteopath SE18",
+    "osteopath Charlton parking",
+    "The Village osteopath directions",
+    "Village Pharmacy osteopath",
+    "Charlton station osteopath",
+    "how to get to osteopath SE7",
   ],
   openGraph: {
     title: "Find Us & Parking | Nguyen's Osteopathic Clinic",
     description:
-      "Directions, parking tips, and arrival guide for our Woolwich SE18 clinic.",
+      "Directions, parking tips, and arrival guide for our Charlton SE7 clinic.",
     url: "/find-us",
     images: [defaultOgImage],
   },
@@ -38,20 +38,20 @@ export const metadata: Metadata = {
 
 const travel = [
   {
-    title: "Elizabeth line, DLR & National Rail",
-    body: "Alight at Woolwich Arsenal. It is a short walk into Powis Street — follow signs toward the town-centre shops and pharmacy strip.",
+    title: "National Rail",
+    body: "Alight at Charlton station. It is a short walk into The Village — follow signs for Charlton village and look for Village Pharmacy at number 9.",
   },
   {
     title: "Buses",
-    body: "Local routes serve Powis Street and General Gordon Place. Check live boards for the nearest stop to Woolwich town centre.",
+    body: "Local routes serve The Village and Charlton Church Lane. Check live boards for the nearest stop to Charlton village.",
   },
   {
     title: "Driving & parking",
-    body: "Short-stay Woolwich town-centre car parks and on-street bays are nearby. Allow a few extra minutes on busy days and always check signs for time limits and payment.",
+    body: "On-street and nearby short-stay bays serve The Village. Allow a few extra minutes on busy days and always check signs for time limits and payment.",
   },
   {
     title: "Walking from the station",
-    body: "From Woolwich Arsenal, head toward Powis Street. Look for St James Pharmacy & Travel Clinic at number 52 — we are inside, not a street-front osteopathy shopfront.",
+    body: "From Charlton station, head toward The Village. Look for Village Pharmacy at number 9 — we are inside, not a street-front osteopathy shopfront.",
   },
 ] as const;
 
@@ -108,15 +108,15 @@ export default function FindUsPage() {
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Directions · Woolwich SE18
+            Directions · Charlton SE7
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             Find us &amp; parking
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Inside {site.address.venue} at {site.address.line1},{" "}
-            {site.address.line2} — easy by Elizabeth line, DLR, bus, or short-stay
-            town-centre parking.
+            {site.address.line2} — easy by rail, bus, or short-stay parking near
+            Charlton village.
           </p>
           <p className="mt-3 text-sm text-slate-500">
             <Link
@@ -285,7 +285,7 @@ export default function FindUsPage() {
             <div>
               <h2 className="font-display text-3xl text-navy">Map</h2>
               <p className="mt-2 text-sm text-slate-600">
-                {site.address.line1}, Woolwich — inside the pharmacy, not a
+                {site.address.line1}, Charlton — inside the pharmacy, not a
                 separate street entrance.
               </p>
             </div>
@@ -300,7 +300,7 @@ export default function FindUsPage() {
           </div>
           <div className="mt-8">
             <LazyMapsEmbed
-              title="Map to Nguyen's Osteopathic Clinic, 52 Powis Street Woolwich"
+              title="Map to Nguyen's Osteopathic Clinic, 9 The Village Charlton"
               src={site.address.mapsEmbedUrl}
             />
           </div>
@@ -322,7 +322,7 @@ export default function FindUsPage() {
             Local visit questions
           </h2>
           <p className="mt-3 max-w-2xl text-base text-slate-600">
-            Clear answers for Woolwich locals — also useful as Google Business
+            Clear answers for Charlton locals — also useful as Google Business
             Profile Q&amp;A seeds.
           </p>
           <ul className="mt-10 grid gap-8 md:grid-cols-2">

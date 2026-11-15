@@ -22,7 +22,7 @@ const levelFilters: ExerciseLevel[] = ["early", "build", "return"];
 export const metadata: Metadata = {
   title: "Home exercises & rehab",
   description:
-    "Public rehab exercise library from Nguyen's Osteopathic Clinic in Woolwich: programmes and step-by-step drills for low back, neck, knee, heel, shoulder and…",
+    "Public rehab exercise library from Nguyen's Osteopathic Clinic in Charlton: programmes and step-by-step drills for low back, neck, knee, heel, shoulder and…",
   alternates: { canonical: "/exercises" },
   keywords: [
     "osteopath exercises Woolwich",
@@ -319,7 +319,7 @@ export default function ExercisesHubPage({ searchParams }: Props) {
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
             Public pages cannot account for every flare, surgery, or sport demand.
-            Book an assessment in Woolwich and we will match loading to how
+            Book an assessment in Charlton and we will match loading to how
             irritable your tissues are today.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

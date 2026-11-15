@@ -24,10 +24,11 @@ export function buildClinicJsonLd() {
     alternateName: [
       "Nguyen's Osteopathy",
       "Nguyens Osteopathic Clinic",
+      "Nguyen's Osteopath Charlton",
       "Nguyen's Osteopath Woolwich",
     ],
     description:
-      `Drug-free osteopathic care in Woolwich with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. ${site.practitioner.regNo}). Back pain, neck pain, focused shockwave, men’s health, sports rehab, and more — inside St James Pharmacy, SE18.`,
+      `Drug-free osteopathic care in Charlton with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. ${site.practitioner.regNo}). Back pain, neck pain, focused shockwave, men’s health, sports rehab, and more — inside Village Pharmacy, SE7.`,
     url: site.websiteUrl,
     image: [
       `${site.websiteUrl}/images/logo-lockup.webp`,
@@ -51,9 +52,9 @@ export function buildClinicJsonLd() {
     address: {
       "@type": "PostalAddress",
       streetAddress: `${site.address.venue}, ${site.address.line1}`,
-      addressLocality: "Woolwich",
+      addressLocality: "Charlton",
       addressRegion: "London",
-      postalCode: "SE18 6LQ",
+      postalCode: "SE7 8UG",
       addressCountry: "GB",
     },
     geo: {
@@ -64,9 +65,9 @@ export function buildClinicJsonLd() {
     hasMap: site.address.mapsUrl,
     openingHoursSpecification: bookingHoursSpecification,
     areaServed: [
+      { "@type": "City", name: "Charlton" },
       { "@type": "City", name: "Woolwich" },
       { "@type": "City", name: "Greenwich" },
-      { "@type": "City", name: "Charlton" },
       { "@type": "City", name: "Plumstead" },
       { "@type": "City", name: "Thamesmead" },
       { "@type": "City", name: "Abbey Wood" },
@@ -130,7 +131,7 @@ export function buildPractitionerJsonLd() {
     legalName: site.practitioner.legalName,
     jobTitle: site.practitioner.title,
     description:
-      "GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (University of Westminster), Dip.Acu, shockwave-trained, and NASM Personal Fitness Trainer — practising at Nguyen's Osteopathic Clinic in Woolwich. Builder of MSK Tutor and Treow Clinic.",
+      "GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (University of Westminster), Dip.Acu, shockwave-trained, and NASM Personal Fitness Trainer — practising at Nguyen's Osteopathic Clinic in Charlton. Builder of MSK Tutor and Treow Clinic.",
     url: `${site.websiteUrl}/about`,
     image: `${site.websiteUrl}/images/austin-nguyen.webp`,
     telephone: site.phoneE164,
@@ -221,9 +222,9 @@ export function buildPractitionerJsonLd() {
     address: {
       "@type": "PostalAddress",
       streetAddress: `${site.address.venue}, ${site.address.line1}`,
-      addressLocality: "Woolwich",
+      addressLocality: "Charlton",
       addressRegion: "London",
-      postalCode: "SE18 6LQ",
+      postalCode: "SE7 8UG",
       addressCountry: "GB",
     },
   };

@@ -109,7 +109,7 @@ export async function GoogleReviewsFeed() {
             <p className="text-sm leading-relaxed text-slate-600 md:text-base">
               Your Google listing is connected, but there are no public review
               texts to show yet. After your visit, a short Google review helps
-              neighbours choose care in Woolwich.
+              neighbours choose care in Charlton.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <ButtonLink

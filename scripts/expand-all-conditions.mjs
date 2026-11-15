@@ -305,7 +305,7 @@ relatedBySlug["patellar-tendinopathy"] = [
 const expansions = {
   "neck-pain": {
     causes:
-      "Neck pain usually builds from sustained postures, protective muscle guarding, and irritated cervical or upper-thoracic joints rather than a single “out of place” bone. Long phone or screen use, nail-desk work, awkward sleep positions, and sudden reaches can all load the same tissues. Disc or facet irritation may refer into the shoulder blade; soft-tissue tension can feed headache patterns. At Nguyen’s Osteopathic Clinic in Woolwich we map how your work, sleep, and training interact with mobility and strength so treatment matches the real driver — not a generic stretch sheet.",
+      "Neck pain usually builds from sustained postures, protective muscle guarding, and irritated cervical or upper-thoracic joints rather than a single “out of place” bone. Long phone or screen use, nail-desk work, awkward sleep positions, and sudden reaches can all load the same tissues. Disc or facet irritation may refer into the shoulder blade; soft-tissue tension can feed headache patterns. At Nguyen’s Osteopathic Clinic in Charlton we map how your work, sleep, and training interact with mobility and strength so treatment matches the real driver — not a generic stretch sheet.",
     whoAffected:
       "Office and hybrid workers, nail technicians, drivers, and parents carrying children on one hip are common presentations in SE18. People returning to the gym after time off often flare the neck when pressing or looking up. Mid-life desk workers with previous whiplash or migraine history may notice stiffness returning under stress. Red flags such as progressive arm weakness, unexplained weight loss, or severe unremitting night pain need medical review; we help you spot those early.",
     whatToExpect:
@@ -337,7 +337,7 @@ const expansions = {
   },
   "cervical-radiculopathy": {
     causes:
-      "Cervical radiculopathy means a nerve root in the neck is irritated — often by disc material, foraminal narrowing, or local inflammation. That can send sharp, burning, or electric pain into the arm with pins and needles or numbness in a dermatome. Looking up, looking down for long periods, or sleeping in awkward positions may aggravate it. Not every arm ache is nerve root pain; shoulder and thoracic patterns can mimic it, so assessment comes first at our Woolwich clinic.",
+      "Cervical radiculopathy means a nerve root in the neck is irritated — often by disc material, foraminal narrowing, or local inflammation. That can send sharp, burning, or electric pain into the arm with pins and needles or numbness in a dermatome. Looking up, looking down for long periods, or sleeping in awkward positions may aggravate it. Not every arm ache is nerve root pain; shoulder and thoracic patterns can mimic it, so assessment comes first at our Charlton clinic.",
     whoAffected:
       "Adults with desk-heavy roles, trades using overhead tools, and people with previous neck trauma present most often. Mid-life disc changes raise risk, but younger adults can flare after sudden loading. If you develop progressive hand weakness, gait change, or bowel/bladder symptoms, that needs urgent medical pathways rather than routine osteopathy alone.",
     whatToExpect:
@@ -371,7 +371,7 @@ const expansions = {
     causes:
       "Cervicogenic headache is driven by upper cervical joints and soft tissue referring pain into the head — often one-sided and linked to neck posture or movement. Sustained desk flexion, awkward sleep, and previous neck injury are common contributors. It can overlap with migraine or tension-type headache, so we look for neck reproduction of symptoms rather than assuming every headache is “just stress.”",
     whoAffected:
-      "Desk workers, drivers, and people with prior whiplash or chronic neck stiffness present frequently in Woolwich. Those who clench at screens or sleep prone may notice morning starts. Sudden severe headache unlike your usual pattern, neurological change, or fever needs urgent medical care — we help you recognise when osteopathy is not the first step.",
+      "Desk workers, drivers, and people with prior whiplash or chronic neck stiffness present frequently in Charlton. Those who clench at screens or sleep prone may notice morning starts. Sudden severe headache unlike your usual pattern, neurological change, or fever needs urgent medical care — we help you recognise when osteopathy is not the first step.",
     whatToExpect:
       "Assessment includes neck movement, upper cervical palpation, and screening for migraine red flags. Treatment focuses on gentle upper cervical and thoracic work plus soft-tissue release, paired with posture and break advice. We track headache frequency, intensity, and medication use between visits so progress is measurable.",
     recoveryTimeline:
@@ -529,7 +529,7 @@ const expansions = {
   },
   "non-specific-low-back-pain": {
     causes:
-      "Most low back pain has no single catastrophic finding on a scan — it is a sensitive, loaded system of joints, discs, and soft tissue reacting to sudden load, deconditioning, stress, or awkward postures. “Non-specific” does not mean imaginary; it means we treat the pattern in front of us. Prolonged sitting, DIY spikes, and poor sleep commonly feed flares in Woolwich patients.",
+      "Most low back pain has no single catastrophic finding on a scan — it is a sensitive, loaded system of joints, discs, and soft tissue reacting to sudden load, deconditioning, stress, or awkward postures. “Non-specific” does not mean imaginary; it means we treat the pattern in front of us. Prolonged sitting, DIY spikes, and poor sleep commonly feed flares in Charlton patients.",
     whoAffected:
       "Working-age adults, parents, and people returning to sport after inactivity are frequent visitors. Previous episodes raise recurrence risk if strength and pacing are ignored. Red flags — saddle numbness, progressive weakness, fever, unexplained weight loss — need medical pathways first.",
     whatToExpect:
@@ -627,7 +627,7 @@ const expansions = {
     causes:
       "Spondylolysis is a stress reaction or fracture of the pars interarticularis, sometimes with slip (spondylolisthesis). Extension and rotation sports — cricket bowling, gymnastics, football — raise risk. Pain typically worsens with bending backwards. Early load management protects healing; ignoring it can prolong bone stress.",
     whoAffected:
-      "Adolescents and young athletes are classic presentations; adults can have chronic pars defects with mechanical pain. Parents and coaches in Woolwich often bring active teens with extension-related backache. Night pain or neurological change needs broader medical review.",
+      "Adolescents and young athletes are classic presentations; adults can have chronic pars defects with mechanical pain. Parents and coaches in Charlton often bring active teens with extension-related backache. Night pain or neurological change needs broader medical review.",
     whatToExpect:
       "We screen for bone-stress risk, modify extension-heavy training, and build core and hip strength in safer ranges. Hands-on care addresses protective spasm without forcing extension. Referral for imaging occurs when suspicion is high or progress stalls.",
     recoveryTimeline:
@@ -691,7 +691,7 @@ const expansions = {
     causes:
       "Sacroiliac joint pain is often localised near the dimples of Venus and linked to asymmetric load, pregnancy-related ligament change, or force-closure deficits in the pelvic girdle. Stepping off a kerb awkwardly, single-leg sport, or carrying a toddler on one hip can flare it. True inflammatory sacroiliitis needs medical pathways; mechanical SI patterns respond to load and motor control care.",
     whoAffected:
-      "Peripartum patients, runners, and people with leg-length or gait asymmetry present often in Woolwich. Desk workers who cross legs habitually may notice one-sided buttock pain. Fever, night sweats, or inflammatory red flags prompt GP referral.",
+      "Peripartum patients, runners, and people with leg-length or gait asymmetry present often in Charlton. Desk workers who cross legs habitually may notice one-sided buttock pain. Fever, night sweats, or inflammatory red flags prompt GP referral.",
     whatToExpect:
       "We assess pelvic landmarks carefully without over-claiming “out of place” narratives, then treat soft tissue and joints while rebuilding glute and trunk control. Advice covers sleep positions, walking progression, and temporary load tweaks. Belts are considered selectively, not by default.",
     recoveryTimeline:
@@ -883,7 +883,7 @@ const expansions = {
     causes:
       "Hamstring strains occur when fibres are overloaded in high-speed running, kicking, or sudden stretch under fatigue. Previous strain is the biggest risk factor. Proximal tendon pain behaves more like tendinopathy and needs different loading than a mid-belly muscle tear.",
     whoAffected:
-      "Footballers, sprinters, and weekend athletes in Woolwich present often. Older athletes returning too fast after rest are vulnerable. Complete tears with major bruising and weakness need medical imaging pathways.",
+      "Footballers, sprinters, and weekend athletes in Charlton present often. Older athletes returning too fast after rest are vulnerable. Complete tears with major bruising and weakness need medical imaging pathways.",
     whatToExpect:
       "We stage healing: protect early irritability, then progressive strength and speed exposure. Hands-on care helps secondary spasm; rehab quality decides return-to-play. Lumbar and pelvic contributors are checked so recurrence risk drops.",
     recoveryTimeline:
@@ -1013,7 +1013,7 @@ const expansions = {
     whoAffected:
       "Basketball, volleyball, and football athletes, plus gym athletes doing heavy plyometrics, present often. Adolescents can have related traction issues that need age-appropriate plans. Morning stiffness after hard sessions is common.",
     whatToExpect:
-      "We confirm tendon versus fat-pad or PF joint drivers, then start progressive tendon loading — isometric then heavier strength — while adjusting jump volume. Hands-on care addresses secondary soft tissue; shockwave may be discussed for stubborn cases at our Woolwich clinic.",
+      "We confirm tendon versus fat-pad or PF joint drivers, then start progressive tendon loading — isometric then heavier strength — while adjusting jump volume. Hands-on care addresses secondary soft tissue; shockwave may be discussed for stubborn cases at our Charlton clinic.",
     recoveryTimeline:
       "Tendon rehab commonly needs 8–12+ weeks. Pain during loading within agreed limits can be acceptable; sharp after-response guides dosing.",
     faqs: [
@@ -1139,7 +1139,7 @@ const expansions = {
     causes:
       "Lateral ankle sprains stretch or tear the outer ankle ligaments after inversion on uneven ground or in sport. Swelling and bruising vary with grade. Incomplete rehab — not the initial twist alone — predicts chronic instability.",
     whoAffected:
-      "Footballers, netball players, and people who miss a kerb in Woolwich present often. Recurrent rollers need balance and strength work, not only rest and a tubigrip.",
+      "Footballers, netball players, and people who miss a kerb in Charlton present often. Recurrent rollers need balance and strength work, not only rest and a tubigrip.",
     whatToExpect:
       "Early care manages swelling and protected mobility, then progressive strength, balance, and return-to-run or sport drills. Hands-on treatment helps residual stiffness. We screen for fracture risk when Ottawa rules suggest imaging.",
     recoveryTimeline:
@@ -1491,7 +1491,7 @@ const expansions = {
     causes:
       "Tennis elbow (lateral elbow tendinopathy) is load-related tendon pain from gripping, lifting, and repetitive wrist extension — tools, mouse use, and racket sports included. Sudden DIY or new gym gripping often triggers it. The tendon needs progressive loading, not endless rest.",
     whoAffected:
-      "Tradespeople, desk workers, and racket athletes in Woolwich present frequently. Neck referral can mimic elbow pain — we screen. Constant night pain with swelling may need medical review.",
+      "Tradespeople, desk workers, and racket athletes in Charlton present frequently. Neck referral can mimic elbow pain — we screen. Constant night pain with swelling may need medical review.",
     whatToExpect:
       "We assess elbow, wrist, and shoulder contributors, then start progressive tendon loading while adjusting aggravating grips. Hands-on care eases forearm soft tissue; focused shockwave can be considered for persistent cases after screening.",
     recoveryTimeline:

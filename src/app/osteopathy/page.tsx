@@ -13,7 +13,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "What Is Osteopathy?",
   description:
-    "What osteopathy is, how a GOsC-registered osteopath works, and what to expect at Nguyen's Osteopathic Clinic in Woolwich — hands-on assessment, no GP…",
+    "What osteopathy is, how a GOsC-registered osteopath works, and what to expect at Nguyen's Osteopathic Clinic in Charlton — hands-on assessment, no GP…",
   alternates: { canonical: "/osteopathy" },
   keywords: [
     "what is osteopathy",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "What Is Osteopathy? | Nguyen's Osteopathic Clinic",
     description:
-      "Plain-English guide to osteopathy and how care works at our Woolwich clinic.",
+      "Plain-English guide to osteopathy and how care works at our Charlton clinic.",
     url: "/osteopathy",
     images: [defaultOgImage],
   },
@@ -113,7 +113,7 @@ export default function OsteopathyPage() {
     name: "What Is Osteopathy?",
     url: `${site.websiteUrl}/osteopathy`,
     description:
-      "Explanation of osteopathy and how care works at Nguyen's Osteopathic Clinic in Woolwich SE18.",
+      "Explanation of osteopathy and how care works at Nguyen's Osteopathic Clinic in Charlton SE7.",
     about: {
       "@type": "MedicalTherapy",
       name: "Osteopathy",
@@ -146,7 +146,7 @@ export default function OsteopathyPage() {
       <section className="relative min-h-[min(88vh,820px)] overflow-hidden text-white">
         <Image
           src="/images/clinic-treatment.webp"
-          alt="Treatment room at Nguyen's Osteopathic Clinic in Woolwich"
+          alt="Treatment room at Nguyen's Osteopathic Clinic in Charlton"
           fill
           priority
           fetchPriority="high"
@@ -171,7 +171,7 @@ export default function OsteopathyPage() {
           </h1>
           <p className="about-rise about-rise-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl">
             Regulated, drug-free care for how you move — assessed and treated
-            one-to-one in Woolwich SE18.
+            one-to-one in Charlton SE7.
           </p>
           <div className="about-rise about-rise-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href={bookUrl} variant="onDark">
@@ -199,7 +199,7 @@ export default function OsteopathyPage() {
                 means a private consultation with{" "}
                 {site.practitioner.name}, {site.practitioner.title} (Reg. No.{" "}
                 {site.practitioner.regNo}) — inside {site.address.venue} on
-                Powis Street.
+                The Village.
               </p>
               <p>
                 Pain in one place often starts somewhere else. We look at how
@@ -378,7 +378,7 @@ export default function OsteopathyPage() {
             {site.name}
           </p>
           <h2 className="mt-4 max-w-2xl font-display text-3xl md:text-5xl">
-            Book osteopathy in Woolwich
+            Book osteopathy in Charlton
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
             {site.booking.shortNote} Inside {site.address.venue},{" "}

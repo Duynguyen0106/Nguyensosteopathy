@@ -5,7 +5,8 @@ import { site } from "@/lib/site";
 
 const MIN_HEIGHT = 900;
 const MOBILE_MIN_HEIGHT = 960;
-const LOAD_TIMEOUT_MS = 20000;
+const MAX_HEIGHT = 2800;
+const LOAD_TIMEOUT_MS = 45000;
 
 function embedOrigin(url: string) {
   try {
@@ -21,13 +22,30 @@ function floorHeight(next: number) {
   return Math.max(next, isMobile ? MOBILE_MIN_HEIGHT : MIN_HEIGHT);
 }
 
+function cappedHeight(next: number) {
+  return Math.min(floorHeight(next), MAX_HEIGHT);
+}
+
+function isTreowEmbedPayload(data: unknown): data is {
+  type?: string;
+  event?: string;
+  height?: number;
+  frameHeight?: number;
+} {
+  return Boolean(data && typeof data === "object");
+}
+
 export function BookingEmbed() {
   const shellRef = useRef<HTMLDivElement>(null);
   const frameRef = useRef<HTMLIFrameElement>(null);
-  const [shouldLoad, setShouldLoad] = useState(false);
+  // Always mount immediately — BookingEmbed only sits on /book and /vi/book.
+  const [shouldLoad] = useState(true);
+  const [frameKey, setFrameKey] = useState(0);
   const [height, setHeight] = useState(MIN_HEIGHT);
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
+  /** Bumped on any Treow postMessage so the load timeout restarts. */
+  const [loadHeartbeat, setLoadHeartbeat] = useState(0);
   const allowedOrigin = useMemo(
     () => embedOrigin(site.bookingEmbedUrl),
     [],
@@ -35,7 +53,7 @@ export function BookingEmbed() {
 
   useEffect(() => {
     const syncHeight = () => {
-      setHeight((current) => floorHeight(current));
+      setHeight((current) => cappedHeight(current));
     };
     syncHeight();
     window.addEventListener("resize", syncHeight);
@@ -43,42 +61,39 @@ export function BookingEmbed() {
   }, []);
 
   useEffect(() => {
-    const shell = shellRef.current;
-    if (!shell || shouldLoad) return;
+    const markLoaded = () => {
+      setLoaded(true);
+      setFailed(false);
+    };
 
-    const activate = () => setShouldLoad(true);
-
-    if (typeof IntersectionObserver === "undefined") {
-      const id = window.setTimeout(activate, 0);
-      return () => window.clearTimeout(id);
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          activate();
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "240px 0px" },
-    );
-    observer.observe(shell);
-    return () => observer.disconnect();
-  }, [shouldLoad]);
-
-  useEffect(() => {
     const onMessage = (event: MessageEvent) => {
       if (event.origin !== allowedOrigin) return;
       const data = event.data;
-      if (!data || typeof data !== "object") return;
-      const next =
+      if (!isTreowEmbedPayload(data)) return;
+
+      const typedTreow = data.type === "treow-booking-embed";
+      const heightValue =
         typeof data.height === "number"
           ? data.height
           : typeof data.frameHeight === "number"
             ? data.frameHeight
             : null;
-      if (next && next > 400) {
-        setHeight(floorHeight(next + 24));
+      const usableHeight =
+        heightValue !== null && Number.isFinite(heightValue) && heightValue > 400;
+      const isReady = data.event === "ready";
+
+      if (!typedTreow && !usableHeight && !isReady) return;
+
+      // ready + usable height from the allowed origin count as loaded success.
+      if (isReady || usableHeight) {
+        markLoaded();
+      } else {
+        // Other treow-booking-embed events only reset the load timeout.
+        setLoadHeartbeat((n) => n + 1);
+      }
+
+      if (usableHeight && heightValue !== null) {
+        setHeight(cappedHeight(heightValue + 24));
       }
     };
     window.addEventListener("message", onMessage);
@@ -91,7 +106,15 @@ export function BookingEmbed() {
       setFailed(true);
     }, LOAD_TIMEOUT_MS);
     return () => window.clearTimeout(timer);
-  }, [shouldLoad, loaded, failed]);
+  }, [shouldLoad, loaded, failed, frameKey, loadHeartbeat]);
+
+  const retry = () => {
+    setFailed(false);
+    setLoaded(false);
+    setHeight(MIN_HEIGHT);
+    setLoadHeartbeat(0);
+    setFrameKey((key) => key + 1);
+  };
 
   const showFailure = failed && !loaded;
 
@@ -109,7 +132,7 @@ export function BookingEmbed() {
           <div className="h-12 w-full rounded-xl bg-slate-200 motion-safe:animate-pulse" aria-hidden />
           <div className="mt-4 h-40 w-full rounded-xl bg-slate-200 motion-safe:animate-pulse" aria-hidden />
           <p className="text-sm font-medium text-slate-500" role="status">
-            {shouldLoad ? "Loading booking calendar…" : "Preparing booking calendar…"}
+            Loading booking calendar…
           </p>
         </div>
       ) : null}
@@ -117,15 +140,22 @@ export function BookingEmbed() {
       {showFailure ? (
         <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-4 bg-slate-50 px-6 py-10 text-center md:rounded-2xl">
           <p className="max-w-md text-base text-slate-700">
-            The booking calendar could not load. Open the full booking page,
-            message us on WhatsApp, or call {site.phone}.
+            The booking calendar could not load. Retry the embed, open the full
+            booking page, message us on WhatsApp, or call {site.phone}.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
+            <button
+              type="button"
+              onClick={retry}
+              className="inline-flex min-h-11 items-center justify-center rounded-xl bg-teal px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark"
+            >
+              Retry
+            </button>
             <a
               href={site.bookingExternalUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center justify-center rounded-xl bg-teal px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-dark"
+              className="inline-flex min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
             >
               Open full booking page
             </a>
@@ -149,6 +179,7 @@ export function BookingEmbed() {
 
       {shouldLoad ? (
         <iframe
+          key={frameKey}
           ref={frameRef}
           src={site.bookingEmbedUrl}
           title="Book an appointment with Nguyen's Osteopathic Clinic"

@@ -37,7 +37,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
     """Derive audience, load, and advice cues from slug/title."""
     blob = f"{slug} {title} {' '.join(keywords)}".lower()
     bits = {
-        "audience": "people in Woolwich and SE18",
+        "audience": "people in Charlton and SE18",
         "load": "daily work and commuting load",
         "setup": "small changes to how you sit, stand, and recover",
         "ex1_name": "gentle mobility drill",
@@ -50,7 +50,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
     # Occupational / audience patterns
     if any(k in blob for k in ["desk", "office", "laptop", "text-neck", "smartphone", "rsi", "wrist-forearm"]):
         bits.update(
-            audience="desk and hybrid workers around Woolwich",
+            audience="desk and hybrid workers around Charlton",
             load="laptop posture, mouse reach, and long sits on the Elizabeth line or DLR",
             setup="screen height, keyboard position, and movement snacks between calls",
             ex1_name="chin-nod neck reset",
@@ -58,7 +58,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
             ex2_name="shoulder-blade slide",
             ex2="Gently draw the shoulder blades down and slightly together without puffing the chest. Hold 5 seconds, repeat 8–10 times after long screen blocks.",
             condition_links=[
-                ("neck pain treatment in Woolwich", "neck-pain"),
+                ("neck pain treatment in Charlton", "neck-pain"),
                 ("upper-back postural strain", "thoracic-joint-dysfunction"),
             ],
         )
@@ -72,13 +72,13 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
             ex2_name="standing extension snack",
             ex2="Hands on the belt line, gently lean back 5–8 times within comfort after a heavy lift block. Stop if leg pain or pins and needles appear.",
             condition_links=[
-                ("lower back pain treatment in Woolwich", "non-specific-low-back-pain"),
+                ("lower back pain treatment in Charlton", "non-specific-low-back-pain"),
                 ("sciatica", "sciatica"),
             ],
         )
     if any(k in blob for k in ["run", "gym", "sport", "achilles", "ankle", "shin", "patellar", "cycling", "yoga", "pilates"]):
         bits.update(
-            audience="runners, gym-goers, and weekend athletes in Woolwich",
+            audience="runners, gym-goers, and weekend athletes in Charlton",
             load="training spikes, hard surfaces, and incomplete recovery between sessions",
             setup="graded return to load, footwear checks, and session spacing",
             ex1_name="isometric hold",
@@ -92,7 +92,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
         )
     if any(k in blob for k in ["pregnan", "pelvic", "postpartum", "sciatica"]):
         bits.update(
-            audience="expectant and postpartum patients in Woolwich",
+            audience="expectant and postpartum patients in Charlton",
             load="changing pelvic mechanics, sleep position, and caring for a baby",
             setup="side-lying support, pacing around feeds, and safe mobility",
             ex1_name="pelvic tilt in side-lying",
@@ -115,7 +115,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
             ex2="Tiny chin nods (not big tip-backs) for 5 reps, then slow turns within a comfortable range. Pair with looking at eye-level across the room for 20 seconds every half hour.",
             condition_links=[
                 ("cervicogenic headaches", "cervicogenic-headache"),
-                ("neck pain treatment in Woolwich", "neck-pain"),
+                ("neck pain treatment in Charlton", "neck-pain"),
             ],
         )
     if any(k in blob for k in ["shockwave", "tennis", "golfer", "plantar", "calcific", "elbow"]):
@@ -134,7 +134,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
         )
     if any(k in blob for k in ["hip", "knee", "bursitis", "osteoarthritis", "coccyx", "rib", "shoulder"]):
         bits.update(
-            audience="adults with joint-related aches around Woolwich",
+            audience="adults with joint-related aches around Charlton",
             load="stairs, walking distance, sleep position, and sitting blocks",
             setup="activity pacing and joint-friendly movement rather than forced end-range stretching",
             ex1_name="short-arc mobility",
@@ -148,7 +148,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
         )
     if any(k in blob for k in ["baby", "infant", "paediatric", "child", "growing", "preferential"]):
         bits.update(
-            audience="parents seeking gentle musculoskeletal care for children in Woolwich",
+            audience="parents seeking gentle musculoskeletal care for children in Charlton",
             load="growth, posture habits, backpacks, and preferred head or limb positions",
             setup="simple home positioning advice and when to seek assessment",
             ex1_name="play-position variety",
@@ -162,7 +162,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
         )
     if any(k in blob for k in ["mens", "ed", "erectile", "pelvic-health", "li-eswt"]):
         bits.update(
-            audience="men seeking discreet, drug-free options in Woolwich",
+            audience="men seeking discreet, drug-free options in Charlton",
             load="vascular, pelvic-floor, and lifestyle contributors discussed privately",
             setup="clear screening, realistic session planning, and privacy at every step",
             ex1_name="breathing down into the pelvis",
@@ -187,7 +187,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
         )
     if any(k in blob for k in ["book", "fees", "pharmacy", "parking", "vietnamese", "plumstead", "referral", "sessions", "wear", "nhs", "student", "vs-physio", "what-to-expect"]):
         bits.update(
-            audience="people planning a first or follow-up visit in Woolwich",
+            audience="people planning a first or follow-up visit in Charlton",
             load="uncertainty about referrals, fees, arrival, and what happens in clinic",
             setup="practical booking and visit prep so the first hour is useful",
             ex1_name="symptom timeline note",
@@ -203,7 +203,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
     # Slug-specific refinements (highest priority)
     specific = {
         "nail-technician-neck-wrist-pain-osteopath": None,  # in priority
-        "text-neck-smartphone-osteopath-woolwich": {
+        "text-neck-smartphone-osteopath-charlton": {
             "audience": "people who scroll and message for hours on phones and tablets",
             "load": "sustained phone flexion and one-thumb typing",
             "setup": "eye-level phone holds, voice notes, and micro-breaks from the lock screen",
@@ -212,7 +212,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
             "ex2_name": "thumb and forearm shake-out",
             "ex2": "Open and close the fists 10 times, then gently shake the hands out after long scrolling. Add a 20-second look across the room at eye level.",
             "condition_links": [
-                ("neck pain treatment in Woolwich", "neck-pain"),
+                ("neck pain treatment in Charlton", "neck-pain"),
                 ("cervicogenic headaches", "cervicogenic-headache"),
             ],
         },
@@ -229,7 +229,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
                 ("tennis elbow", "tennis-elbow"),
             ],
         },
-        "lifting-back-pain-warehouse-trades-woolwich": {
+        "lifting-back-pain-warehouse-trades-charlton": {
             "audience": "warehouse, delivery, and trades workers across SE18",
             "load": "floor-to-waist lifts, awkward reaches, and long shifts on concrete",
             "setup": "team lifts, hip-hinge habit, and footwear that still has cushioning",
@@ -238,11 +238,11 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
             "ex2_name": "calf and hip unload",
             "ex2": "After a shift, 20–30 seconds per side in a gentle half-kneeling hip-flexor position (pad under the knee) often undoes the forward-lean fatigue better than toe-touches.",
             "condition_links": [
-                ("lower back pain treatment in Woolwich", "non-specific-low-back-pain"),
+                ("lower back pain treatment in Charlton", "non-specific-low-back-pain"),
                 ("sciatica", "sciatica"),
             ],
         },
-        "massage-for-desk-workers-woolwich": {
+        "massage-for-desk-workers-charlton": {
             "audience": "desk workers who want soft-tissue relief between osteopathy sessions",
             "load": "upper trap guarding and forearm tightness from mouse and keyboard work",
             "setup": "matching massage intensity to how irritable you are that week",
@@ -264,12 +264,12 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
             "ex2_name": "walk before stretch",
             "ex2": "Take a 3–5 minute easy walk indoors before aggressive toe-touches. Warm tissues stretch more kindly than cold ones.",
             "condition_links": [
-                ("lower back pain treatment in Woolwich", "non-specific-low-back-pain"),
+                ("lower back pain treatment in Charlton", "non-specific-low-back-pain"),
                 ("facet-related back pain", "facet-syndrome"),
             ],
         },
-        "back-pain-woolwich-osteopathy": {
-            "audience": "Woolwich residents dealing with recurring or new back pain",
+        "back-pain-charlton-osteopathy": {
+            "audience": "Charlton residents dealing with recurring or new back pain",
             "load": "commuting sits, work demands, and weekend DIY or sport spikes",
             "setup": "early assessment, sensible pacing, and graded return to activity",
             "ex1_name": "walk breaks",
@@ -277,7 +277,7 @@ def topic_bits(slug: str, title: str, keywords: list[str]) -> dict:
             "ex2_name": "hip-hinge for daily tasks",
             "ex2": "When picking washing or bags off the floor, push the hips back with soft knees rather than rounding through the lower back. Practice with a light object first.",
             "condition_links": [
-                ("lower back pain treatment in Woolwich", "non-specific-low-back-pain"),
+                ("lower back pain treatment in Charlton", "non-specific-low-back-pain"),
                 ("sciatica", "sciatica"),
             ],
         },
@@ -309,12 +309,12 @@ def topic_phrase(post: dict) -> str:
     short = re.sub(r":.*$", "", short).strip()
     # Drop trailing location fluff for cleaner headings
     short = re.sub(
-        r"\s+(in|for|at|from)\s+Woolwich.*$",
+        r"\s+(in|for|at|from)\s+Charlton.*$",
         "",
         short,
         flags=re.I,
     ).strip()
-    short = re.sub(r"\s+Woolwich.*$", "", short, flags=re.I).strip()
+    short = re.sub(r"\s+Charlton.*$", "", short, flags=re.I).strip()
     short = re.sub(r"\s+SE18.*$", "", short, flags=re.I).strip()
     if not short:
         return "this issue"

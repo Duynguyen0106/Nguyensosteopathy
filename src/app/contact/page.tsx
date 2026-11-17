@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: `Contact Nguyen's Osteopathic Clinic inside Village Pharmacy, 9 The Village, Charlton SE7. Call ${site.phone}, WhatsApp, email, or book online.`,
   alternates: { canonical: "/contact" },
   keywords: [
-    "contact osteopath Woolwich",
+    "contact osteopath Charlton",
     "osteopath The Village",
     "Village Pharmacy osteopath",
     "osteopath SE18 phone",

@@ -271,7 +271,7 @@ export default function FindUsPage() {
             </Link>
             {" · "}
             <Link
-              href="/blog/parking-osteopath-woolwich-powis-street"
+              href="/blog/parking-osteopath-charlton-the-village"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Longer parking article

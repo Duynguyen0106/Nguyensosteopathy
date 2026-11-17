@@ -25,16 +25,16 @@ export const metadata: Metadata = {
     "Public rehab exercise library from Nguyen's Osteopathic Clinic in Charlton: programmes and step-by-step drills for low back, neck, knee, heel, shoulder and…",
   alternates: { canonical: "/exercises" },
   keywords: [
-    "osteopath exercises Woolwich",
+    "osteopath exercises Charlton",
     "home rehab exercises SE18",
-    "sciatica exercises Woolwich",
+    "sciatica exercises Charlton",
     "desk neck exercises London",
     "plantar fasciitis exercises SE18",
   ],
   openGraph: {
     title: "Home Exercises & Rehab | Nguyen's Osteopathic Clinic",
     description:
-      "Browse programmes and step-by-step home exercises from our Woolwich osteopathy clinic.",
+      "Browse programmes and step-by-step home exercises from our Charlton osteopathy clinic.",
     url: "/exercises",
     images: [defaultOgImage],
   },
@@ -208,7 +208,7 @@ export default function ExercisesHubPage({ searchParams }: Props) {
     specialty: "https://schema.org/Musculoskeletal",
     audience: {
       "@type": "PeopleAudience",
-      geographicArea: { "@type": "City", name: "Woolwich" },
+      geographicArea: { "@type": "City", name: "Charlton" },
     },
     reviewedBy: { "@id": `${site.websiteUrl}/#practitioner` },
     provider: { "@id": `${site.websiteUrl}/#clinic` },
@@ -225,7 +225,7 @@ export default function ExercisesHubPage({ searchParams }: Props) {
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Patient rehab · Woolwich SE18
+            Patient rehab · Charlton SE7
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             Home exercises &amp; rehab library

@@ -16,7 +16,7 @@ const pexels = (id) =>
   `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=1400`;
 
 const IMAGES = {
-  "vietnamese-osteopath-woolwich-uk": {
+  "vietnamese-osteopath-charlton-uk": {
     url: pexels(3184418),
     alt: "Clinician speaking warmly with a patient in consultation",
   },
@@ -24,7 +24,7 @@ const IMAGES = {
     url: pexels(3997379),
     alt: "Nail technician working at a salon desk with bent neck posture",
   },
-  "restaurant-kitchen-back-pain-osteopath-woolwich": {
+  "restaurant-kitchen-back-pain-osteopath-charlton": {
     url: pexels(2253643),
     alt: "Kitchen chef at work representing hospitality physical strain",
   },
@@ -32,35 +32,35 @@ const IMAGES = {
     url: pexels(460672),
     alt: "London neighbourhood street representing SE18 local travel",
   },
-  "parking-osteopath-woolwich-powis-street": {
+  "parking-osteopath-charlton-the-village": {
     url: pexels(164634),
     alt: "Town centre street and parking context for clinic arrival",
   },
-  "chronic-pain-osteopath-woolwich": {
+  "chronic-pain-osteopath-charlton": {
     url: pexels(4506105),
     alt: "Person holding a persistently painful lower back",
   },
-  "osteopathy-for-older-adults-woolwich": {
+  "osteopathy-for-older-adults-charlton": {
     url: pexels(3768131),
     alt: "Older adult walking outdoors with joint stiffness concern",
   },
-  "first-osteopathy-visit-checklist-woolwich": {
+  "first-osteopathy-visit-checklist-charlton": {
     url: pexels(4226256),
     alt: "Checklist and preparation notes for a clinic appointment",
   },
-  "coccyx-tailbone-pain-osteopath-woolwich": {
+  "coccyx-tailbone-pain-osteopath-charlton": {
     url: pexels(4502143),
     alt: "Person sitting carefully due to tailbone discomfort",
   },
-  "lifting-back-pain-warehouse-trades-woolwich": {
+  "lifting-back-pain-warehouse-trades-charlton": {
     url: pexels(4246120),
     alt: "Warehouse worker lifting boxes, manual handling strain",
   },
-  "rib-pain-breathing-osteopath-woolwich": {
+  "rib-pain-breathing-osteopath-charlton": {
     url: pexels(3822688),
     alt: "Person holding their side ribs while breathing carefully",
   },
-  "hip-bursitis-osteopath-woolwich": {
+  "hip-bursitis-osteopath-charlton": {
     url: pexels(6111613),
     alt: "Person holding the outer hip after side-lying pain",
   },
@@ -68,35 +68,35 @@ const IMAGES = {
     url: pexels(4050315),
     alt: "Office worker with wrist and forearm strain at a laptop",
   },
-  "calcific-tendonitis-shoulder-shockwave-woolwich": {
+  "calcific-tendonitis-shoulder-shockwave-charlton": {
     url: pexels(4502147),
     alt: "Person with shoulder pain reaching overhead carefully",
   },
-  "shockwave-therapy-cost-woolwich": {
+  "shockwave-therapy-cost-charlton": {
     url: pexels(4386467),
     alt: "Clinic pricing and payment planning for treatment fees",
   },
-  "shin-splints-osteopath-woolwich": {
+  "shin-splints-osteopath-charlton": {
     url: pexels(3764013),
     alt: "Runner holding the shin after training load pain",
   },
-  "cycling-lower-back-pain-osteopath-woolwich": {
+  "cycling-lower-back-pain-osteopath-charlton": {
     url: pexels(100582),
     alt: "Cyclist on a road bike representing lower back ride strain",
   },
-  "yoga-pilates-injury-osteopath-woolwich": {
+  "yoga-pilates-injury-osteopath-charlton": {
     url: pexels(3822906),
     alt: "Person stretching in a yoga pose related to flexibility strain",
   },
-  "massage-for-desk-workers-woolwich": {
+  "massage-for-desk-workers-charlton": {
     url: pexels(3757952),
     alt: "Deep tissue massage for desk-related shoulder tension",
   },
-  "cupping-vs-massage-woolwich": {
+  "cupping-vs-massage-charlton": {
     url: pexels(3738377),
     alt: "Soft-tissue therapy tools comparing massage and cupping care",
   },
-  "pregnancy-sciatica-osteopath-woolwich": {
+  "pregnancy-sciatica-osteopath-charlton": {
     url: pexels(6843310),
     alt: "Pregnant woman supporting her lower back and hip",
   },
@@ -104,11 +104,11 @@ const IMAGES = {
     url: pexels(149164),
     alt: "Parent holding a baby during gentle paediatric care discussion",
   },
-  "cranial-osteopathy-headaches-woolwich": {
+  "cranial-osteopathy-headaches-charlton": {
     url: pexels(3822621),
     alt: "Calm resting position suited to gentle cranial osteopathy",
   },
-  "opening-day-osteopath-woolwich-5-november": {
+  "opening-day-osteopath-charlton-5-november": {
     url: pexels(3184292),
     alt: "Clinic team celebrating a professional opening milestone",
   },

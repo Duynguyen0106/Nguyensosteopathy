@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Site Map",
-  description: `HTML site map for ${site.name} — book, treatments, conditions, areas, and clinic information for Woolwich SE18.`,
+  description: `HTML site map for ${site.name} — book, treatments, conditions, areas, and clinic information for Charlton SE7.`,
   alternates: { canonical: "/site-map" },
   openGraph: {
     title: "Site Map",

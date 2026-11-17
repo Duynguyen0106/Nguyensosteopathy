@@ -25,7 +25,7 @@ export const serviceAreas: ServiceArea[] = [
     travelNote:
       "Short walk from Charlton station and local buses along The Village / Charlton Church Lane.",
     detail:
-      "Nguyen's Osteopathic Clinic is based inside Village Pharmacy at 9 The Village, Charlton SE7 8UG, so local patients can combine pharmacy errands with a private osteopathy appointment without a central-London trek. Care is with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332), for back and neck pain, sciatica, sports injuries, focused shockwave when suitable, pregnancy support, and discreet men’s health pathways. Charlton Park runners, pitch-side knocks at The Valley, hybrid workers on the SE7–SE10 corridor, and families who prefer Vietnamese or English consultations use the clinic as a local first stop. Charlton station and local buses make same-day travel realistic if you work toward Greenwich, Canary Wharf, or Woolwich and want care closer to home than a central clinic. No GP referral is required for most musculoskeletal presentations. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Fees, NHS/student discount rules, and aftercare guidance are listed clearly so you know what to expect before you visit.",
+      "Nguyen's Osteopathic Clinic is based inside Village Pharmacy at 9 The Village, Charlton SE7 8UG, so local patients can combine pharmacy errands with a private osteopathy appointment without a central-London trek. Care is with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332), for back and neck pain, sciatica, sports injuries, focused shockwave when suitable, pregnancy support, and discreet men’s health pathways. Charlton Park runners, pitch-side knocks at The Valley, hybrid workers on the SE7–SE10 corridor, and families who prefer Vietnamese or English consultations use the clinic as a local first stop. Charlton station and local buses make same-day travel realistic if you work toward Greenwich or Canary Wharf and want care closer to home than a central clinic. No GP referral is required for most musculoskeletal presentations. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Fees, NHS/student discount rules, and aftercare guidance are listed clearly so you know what to expect before you visit.",
     whyVisit: [
       "Clinic based on The Village inside Village Pharmacy",
       "Easy for Charlton station and village arrivals",
@@ -40,42 +40,17 @@ export const serviceAreas: ServiceArea[] = [
     ],
   },
   {
-    slug: "woolwich",
-    name: "Woolwich",
-    shortName: "Woolwich SE18",
-    summary:
-      "A short hop for Woolwich patients who want registered osteopathic care in nearby Charlton without travelling into central London.",
-    heroLine:
-      "Registered osteopathy close to Woolwich — private appointments in Charlton village, no GP referral needed.",
-    travelNote:
-      "Bus or short drive from Woolwich town centre to Village Pharmacy on The Village, Charlton.",
-    detail:
-      "Woolwich, Royal Arsenal riverside, and Woolwich Common patients often prefer a short bus or drive to Charlton rather than booking a central clinic that eats half the day. At Nguyen's Osteopathic Clinic inside Village Pharmacy (9 The Village, Charlton SE7 8UG), care is with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332), for back and neck pain, sciatica, sports injuries, focused shockwave when suitable, pregnancy support, and discreet men’s health pathways. Desk workers around the town centre, tradespeople on local builds, runners on the Thames Path toward Thames Barrier Park, and families who prefer Vietnamese or English consultations are regular visitors. No GP referral is required for most musculoskeletal presentations. Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room. Fees, NHS/student discount rules, and aftercare guidance are listed clearly so you know what to expect before you visit.",
-    whyVisit: [
-      "Short hop from Woolwich into Charlton village",
-      "Helpful for desk, trades, and sports niggles",
-      "Parking tips and arrival guide on Find us",
-      "Vietnamese or English consultations available",
-    ],
-    relatedBlogSlug: "osteopath-woolwich-what-to-expect",
-    keywords: [
-      "osteopath Woolwich",
-      "osteopath SE18",
-      "osteopath near Woolwich",
-    ],
-  },
-  {
     slug: "plumstead",
     name: "Plumstead",
     shortName: "Plumstead",
     summary:
-      "A short hop for Plumstead and Woolwich Common patients who want registered osteopathic care without travelling into central London.",
+      "A short hop for Plumstead and Plumstead Common patients who want registered osteopathic care without travelling into central London.",
     heroLine:
       "Close enough for Plumstead locals who want assessment this week — not a central London trek.",
     travelNote:
-      "Bus or drive via Woolwich toward Charlton village; ask at Village Pharmacy for the osteopathy room.",
+      "Bus or drive toward Charlton village; ask at Village Pharmacy for the osteopathy room.",
     detail:
-      "Plumstead, Plumstead Common, and Woolwich Common patients often prefer a short bus or drive to Village Pharmacy in Charlton rather than booking a central clinic that eats half the day. Care is with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332), covering mechanical back and neck pain, desk strain from hybrid work, trades niggles from local builds, park-run and Common running injuries, and focused shockwave for selected stubborn heel or shoulder tendons after screening. Parents around the Common schools and shift workers who need evening-friendly planning are regular visitors; Vietnamese or English consultations are available if that helps you describe symptoms accurately. Bring comfortable clothes and any recent letters if you have them — we explain findings in plain English and leave a short home plan you can keep. NHS staff and students receive 10% off with valid ID. No GP referral is required for most musculoskeletal presentations. Regular bookable days follow the clinic hours on Find us; parking tips, pharmacy arrival steps, fees, and cancellation rules are published up front before you visit.",
+      "Plumstead and Plumstead Common patients often prefer a short bus or drive to Village Pharmacy in Charlton rather than booking a central clinic that eats half the day. Care is with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. 12332), covering mechanical back and neck pain, desk strain from hybrid work, trades niggles from local builds, park-run and Common running injuries, and focused shockwave for selected stubborn heel or shoulder tendons after screening. Parents around the Common schools and shift workers who need evening-friendly planning are regular visitors; Vietnamese or English consultations are available if that helps you describe symptoms accurately. Bring comfortable clothes and any recent letters if you have them — we explain findings in plain English and leave a short home plan you can keep. NHS staff and students receive 10% off with valid ID. No GP referral is required for most musculoskeletal presentations. Regular bookable days follow the clinic hours on Find us; parking tips, pharmacy arrival steps, fees, and cancellation rules are published up front before you visit.",
     whyVisit: [
       "Short bus or drive toward Charlton village",
       "Helpful for desk, trades, and sports niggles",

@@ -116,7 +116,7 @@ function withImage(post: BlogPostInput): BlogPost {
 
 const blogPostInputs: BlogPostInput[] = [
   {
-    slug: "osteopath-woolwich-what-to-expect",
+    slug: "osteopath-charlton-what-to-expect",
     title: "Osteopath in Charlton: what to expect at your first visit",
     description:
       "Looking for an osteopath in Charlton? Learn what happens in a first appointment, who osteopathy helps, and how to book at Nguyen's Osteopathic Clinic at The Village.",
@@ -124,8 +124,8 @@ const blogPostInputs: BlogPostInput[] = [
     readingMinutes: 6,
     category: "Getting started",
     keywords: [
-      "osteopath Woolwich",
-      "osteopathy Woolwich",
+      "osteopath Charlton",
+      "osteopathy Charlton",
       "osteopath SE18",
       "first osteopathy appointment",
     ],
@@ -139,7 +139,7 @@ const blogPostInputs: BlogPostInput[] = [
       {
         heading: "Who osteopathy can help",
         paragraphs: [
-          "People visit us from Woolwich, Greenwich, Thamesmead, Charlton, and across south-east London for everyday and specialist problems.",
+          "People visit us from Charlton, Greenwich, Thamesmead, Charlton, and across south-east London for everyday and specialist problems.",
         ],
         bullets: [
           "Back and neck pain from desk work or lifting",
@@ -167,18 +167,18 @@ const blogPostInputs: BlogPostInput[] = [
     cta: `Book online or call ${site.phone} to arrange your first visit.`,
   },
   {
-    slug: "back-pain-woolwich-osteopathy",
+    slug: "back-pain-charlton-osteopathy",
     title: "Back pain in Charlton: when osteopathy can help",
     description:
-      "Practical guide to common back pain causes for Woolwich and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
+      "Practical guide to common back pain causes for Charlton and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
     date: "2026-10-08",
     readingMinutes: 9,
     category: "Back & neck",
     keywords: [
-      "back pain Woolwich",
+      "back pain Charlton",
       "osteopath for back pain London",
       "lower back pain SE18",
-      "sciatica Woolwich",
+      "sciatica Charlton",
     ],
     sections: [
       {
@@ -190,7 +190,7 @@ const blogPostInputs: BlogPostInput[] = [
       {
         heading: "Why back pain is so common in SE18",
         paragraphs: [
-          "Woolwich and the wider Greenwich borough mix standing retail shifts, warehouse and trades work, long Elizabeth line or DLR sits, and hybrid desk days. That variety is good for a town — and hard on a lumbar spine that never gets the same load twice in one week.",
+          "Charlton and the wider Greenwich borough mix standing retail shifts, warehouse and trades work, long Elizabeth line or DLR sits, and hybrid desk days. That variety is good for a town — and hard on a lumbar spine that never gets the same load twice in one week.",
           "Most back pain is [non-specific mechanical pain](/conditions/non-specific-low-back-pain): sensitive joints, discs, and soft tissue reacting to sudden load, deconditioning, poor sleep, or stress. A scan is not required for every flare. What you do need is a clear plan so fear of movement does not become the second injury.",
         ],
       },
@@ -223,7 +223,7 @@ const blogPostInputs: BlogPostInput[] = [
         },
         paragraphs: [
           "Your first visit is usually about 60 minutes. We take a focused history, screen for neurological and medical red flags, and examine how your lumbar spine, pelvis, hips, and mid-back share load. Findings are explained in plain English before any hands-on care starts.",
-          "Treatment is matched to irritability. An acute flare may need gentle mobilisation and soft-tissue work with short-term activity tweaks. A recurrent desk pattern often needs more emphasis on thoracic mobility, hip strength, and graded return to lifting or running. Related guides such as [sciatica in Woolwich](/blog/sciatica-woolwich-osteopath) and our [back and neck service page](/services/back-neck-pain) sit beside this article if leg symptoms or neck drivers are part of your picture.",
+          "Treatment is matched to irritability. An acute flare may need gentle mobilisation and soft-tissue work with short-term activity tweaks. A recurrent desk pattern often needs more emphasis on thoracic mobility, hip strength, and graded return to lifting or running. Related guides such as [sciatica in Charlton](/blog/sciatica-charlton-osteopath) and our [back and neck service page](/services/back-neck-pain) sit beside this article if leg symptoms or neck drivers are part of your picture.",
           "We review progress honestly. Further sessions are recommended when they are clinically useful — not as a default package.",
         ],
       },
@@ -270,22 +270,22 @@ const blogPostInputs: BlogPostInput[] = [
   },
   {
     slug: "desk-neck-and-shoulder-pain",
-    title: "Desk neck and shoulder pain: a Woolwich osteopath’s guide",
+    title: "Desk neck and shoulder pain: a Charlton osteopath’s guide",
     description:
       "Why office and hybrid workers in Charlton get neck and shoulder pain — and how osteopathy plus desk setup changes can help.",
     date: "2026-10-08",
     readingMinutes: 5,
     category: "Back & neck",
     keywords: [
-      "neck pain Woolwich",
+      "neck pain Charlton",
       "shoulder pain osteopath",
-      "desk posture Woolwich",
+      "desk posture Charlton",
       "tech neck London",
     ],
     sections: [
       {
         paragraphs: [
-          "Hybrid and office work around Woolwich often means hours at a laptop. The neck and upper shoulders take the load when the screen sits too low, the chair is too soft, or you hold tension through deadlines.",
+          "Hybrid and office work around Charlton often means hours at a laptop. The neck and upper shoulders take the load when the screen sits too low, the chair is too soft, or you hold tension through deadlines.",
           "Patients often describe a heavy, aching neck, tight shoulders, or headaches that build through the afternoon. Osteopathy can release irritable soft tissue, improve joint mobility, and show you a few movement resets that fit a working day.",
         ],
       },
@@ -305,7 +305,7 @@ const blogPostInputs: BlogPostInput[] = [
     cta: "Book a neck and shoulder assessment at Nguyen's Osteopathic Clinic in Charlton.",
   },
   {
-    slug: "focused-shockwave-therapy-woolwich",
+    slug: "focused-shockwave-therapy-charlton",
     title: "Focused shockwave therapy in Charlton: who it is for",
     description:
       "Learn how low-intensity focused shockwave (LI-ESWT) is used at Nguyen's Osteopathic Clinic for stubborn tendon and soft-tissue problems.",
@@ -313,8 +313,8 @@ const blogPostInputs: BlogPostInput[] = [
     readingMinutes: 6,
     category: "Focused shockwave",
     keywords: [
-      "shockwave therapy Woolwich",
-      "LI-ESWT Woolwich",
+      "shockwave therapy Charlton",
+      "LI-ESWT Charlton",
       "focused shockwave London",
       "tendon pain osteopath",
     ],
@@ -343,13 +343,13 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "do-i-need-gp-referral-osteopath",
     title: "Do I need a GP referral to see an osteopath?",
     description:
-      "Short answer for Woolwich patients: no GP referral is required to book osteopathy privately. Here’s what to bring and when to speak to your GP first.",
+      "Short answer for Charlton patients: no GP referral is required to book osteopathy privately. Here’s what to bring and when to speak to your GP first.",
     date: "2026-10-08",
     readingMinutes: 4,
     category: "Getting started",
     keywords: [
       "osteopath without GP referral",
-      "private osteopath Woolwich",
+      "private osteopath Charlton",
       "book osteopath SE18",
     ],
     sections: [
@@ -374,7 +374,7 @@ const blogPostInputs: BlogPostInput[] = [
     cta: `Ready to book? Use online booking or call ${site.phone}.`,
   },
   {
-    slug: "sports-injury-osteopath-woolwich",
+    slug: "sports-injury-osteopath-charlton",
     title: "Sports injury rehab with an osteopath in Charlton",
     description:
       "How osteopathy supports runners, gym-goers, and weekend athletes in Charlton with load management and hands-on sports injury care.",
@@ -382,14 +382,14 @@ const blogPostInputs: BlogPostInput[] = [
     readingMinutes: 5,
     category: "Sports rehab",
     keywords: [
-      "sports injury Woolwich",
+      "sports injury Charlton",
       "osteopath for runners London",
       "muscle strain osteopath SE18",
     ],
     sections: [
       {
         paragraphs: [
-          "From parkrun training to gym programmes, sports injuries around Woolwich often come from doing more, too soon, with too little recovery. Osteopathy helps by calming irritable tissue, restoring movement, and planning a sensible return to activity.",
+          "From parkrun training to gym programmes, sports injuries around Charlton often come from doing more, too soon, with too little recovery. Osteopathy helps by calming irritable tissue, restoring movement, and planning a sensible return to activity.",
           "We look beyond the painful site — hip control for knee pain, thoracic mobility for shoulder load, and footwear or training spikes that keep symptoms returning.",
         ],
       },
@@ -409,7 +409,7 @@ const blogPostInputs: BlogPostInput[] = [
     cta: "Book a sports injury assessment in Charlton online.",
   },
   {
-    slug: "mens-health-shockwave-woolwich",
+    slug: "mens-health-shockwave-charlton",
     title: "Men’s health and ED: discreet LI-ESWT care in Charlton",
     description:
       "Confidential low-intensity focused shockwave protocols for vascular-related erectile difficulties at Nguyen's Osteopathic Clinic — drug-free and private.",
@@ -418,7 +418,7 @@ const blogPostInputs: BlogPostInput[] = [
     category: "Men's health",
     keywords: [
       "ED shockwave therapy London",
-      "LI-ESWT Woolwich",
+      "LI-ESWT Charlton",
       "men's health osteopath",
       "erectile dysfunction shockwave UK",
     ],
@@ -440,8 +440,8 @@ const blogPostInputs: BlogPostInput[] = [
     cta: "Enquire confidentially by phone or book the specialist pathway online.",
   },
   {
-    slug: "nhs-student-osteopathy-discount-woolwich",
-    title: "10% NHS and student osteopathy discount in Woolwich",
+    slug: "nhs-student-osteopathy-discount-charlton",
+    title: "10% NHS and student osteopathy discount in Charlton",
     description:
       "How the 10% NHS staff and student discount works at Nguyen's Osteopathic Clinic — eligibility, valid ID, and how to book.",
     date: "2026-10-08",
@@ -449,7 +449,7 @@ const blogPostInputs: BlogPostInput[] = [
     category: "Clinic info",
     keywords: [
       "NHS discount osteopath",
-      "student osteopath discount Woolwich",
+      "student osteopath discount Charlton",
       "cheap osteopath SE18",
     ],
     sections: [
@@ -474,18 +474,18 @@ const blogPostInputs: BlogPostInput[] = [
     cta: "Book online and mention NHS or student status when you arrive with ID.",
   },
   {
-    slug: "sciatica-woolwich-osteopath",
+    slug: "sciatica-charlton-osteopath",
     title: "Sciatica in Charlton: causes, symptoms, and when osteopathy helps",
     description:
-      "Sharp or shooting leg pain from Woolwich commuting and desk work? Learn common sciatica triggers, red flags, and how osteopathy at Village Pharmacy can help.",
+      "Sharp or shooting leg pain from Charlton commuting and desk work? Learn common sciatica triggers, red flags, and how osteopathy at Village Pharmacy can help.",
     date: "2026-10-09",
     readingMinutes: 7,
     category: "Back & neck",
     keywords: [
-      "sciatica Woolwich",
+      "sciatica Charlton",
       "sciatica osteopath",
       "leg pain SE18",
-      "piriformis syndrome Woolwich",
+      "piriformis syndrome Charlton",
       "osteopath for sciatica London",
     ],
     sections: [
@@ -524,8 +524,8 @@ const blogPostInputs: BlogPostInput[] = [
     cta: `Book an initial osteopathy assessment in Charlton online, or call ${site.phone}.`,
   },
   {
-    slug: "tension-headaches-neck-osteopath-woolwich",
-    title: "Tension headaches and neck pain: help from a Woolwich osteopath",
+    slug: "tension-headaches-neck-osteopath-charlton",
+    title: "Tension headaches and neck pain: help from a Charlton osteopath",
     description:
       "Desk-related tension headaches, tight upper neck, and jaw strain are common in SE18. See how osteopathy can ease cervicogenic and tension-type headaches.",
     date: "2026-10-09",
@@ -533,7 +533,7 @@ const blogPostInputs: BlogPostInput[] = [
     category: "Headaches & joints",
     keywords: [
       "tension headache osteopath",
-      "neck pain Woolwich",
+      "neck pain Charlton",
       "cervicogenic headache",
       "osteopath for headaches SE18",
       "jaw tension osteopath London",
@@ -541,7 +541,7 @@ const blogPostInputs: BlogPostInput[] = [
     sections: [
       {
         paragraphs: [
-          "Not every headache is a migraine. Many Woolwich patients describe a band-like pressure, sore temples, or pain that starts at the base of the skull after screen time — classic tension-type or cervicogenic patterns linked to the neck and shoulders.",
+          "Not every headache is a migraine. Many Charlton patients describe a band-like pressure, sore temples, or pain that starts at the base of the skull after screen time — classic tension-type or cervicogenic patterns linked to the neck and shoulders.",
           "Osteopathy looks at how the upper cervical joints, jaw, and shoulder girdle share load. When those structures stiffen, the nervous system stays “on”, and headaches return each afternoon.",
         ],
       },
@@ -567,7 +567,7 @@ const blogPostInputs: BlogPostInput[] = [
     cta: "Book online for headache and neck assessment at Village Pharmacy, Charlton.",
   },
   {
-    slug: "pregnancy-osteopathy-woolwich",
+    slug: "pregnancy-osteopathy-charlton",
     title: "Pregnancy osteopathy in Charlton: pelvic pain, back ache, and posture",
     description:
       "Gentle osteopathic care in Charlton for pregnancy-related pelvic girdle pain, rib strain, and back discomfort — adapted to your trimester.",
@@ -575,11 +575,11 @@ const blogPostInputs: BlogPostInput[] = [
     readingMinutes: 6,
     category: "Pregnancy",
     keywords: [
-      "pregnancy osteopath Woolwich",
+      "pregnancy osteopath Charlton",
       "pelvic girdle pain osteopath",
       "osteopathy pregnancy SE18",
       "SPD osteopath London",
-      "pregnancy back pain Woolwich",
+      "pregnancy back pain Charlton",
     ],
     sections: [
       {
@@ -611,7 +611,7 @@ const blogPostInputs: BlogPostInput[] = [
     cta: `Book pregnancy-adapted osteopathy in Charlton online or call ${site.phone}.`,
   },
   {
-    slug: "osteopath-vs-physiotherapist-woolwich",
+    slug: "osteopath-vs-physiotherapist-charlton",
     title: "Osteopath vs physiotherapist: which should I book in Charlton?",
     description:
       "Confused between osteopathy and physiotherapy in SE18? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
@@ -620,10 +620,10 @@ const blogPostInputs: BlogPostInput[] = [
     category: "Getting started",
     keywords: [
       "osteopath vs physiotherapist",
-      "osteopathy or physio Woolwich",
+      "osteopathy or physio Charlton",
       "difference osteopath physio",
       "manual therapy SE18",
-      "who to see for back pain Woolwich",
+      "who to see for back pain Charlton",
     ],
     sections: [
       {
@@ -654,17 +654,17 @@ const blogPostInputs: BlogPostInput[] = [
     cta: "Prefer to start with osteopathy? Book online at nguyensosteopathy.com/book.",
   },
   {
-    slug: "hip-knee-pain-osteopath-woolwich",
+    slug: "hip-knee-pain-osteopath-charlton",
     title: "Hip and knee pain in Charlton: osteopathy for walkers, runners, and desk workers",
     description:
-      "Hip stiffness, runner’s knee, and stair pain are common around Woolwich and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
+      "Hip stiffness, runner’s knee, and stair pain are common around Charlton and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
     date: "2026-10-09",
     readingMinutes: 6,
     category: "Headaches & joints",
     keywords: [
-      "hip pain osteopath Woolwich",
+      "hip pain osteopath Charlton",
       "knee pain osteopath SE18",
-      "runners knee Woolwich",
+      "runners knee Charlton",
       "osteoarthritis osteopath London",
       "hip stiffness Greenwich",
     ],
@@ -694,7 +694,7 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Book a hip or knee assessment with our Woolwich osteopath online.",
+    cta: "Book a hip or knee assessment with our Charlton osteopath online.",
   },
   {
     slug: "osteopath-greenwich-charlton-thamesmead",
@@ -710,13 +710,13 @@ const blogPostInputs: BlogPostInput[] = [
       "osteopath Thamesmead",
       "osteopath SE18",
       "osteopath near Greenwich Park",
-      "manual therapy Woolwich Arsenal",
+      "manual therapy Charlton station",
     ],
     sections: [
       {
         paragraphs: [
           "You do not have to travel into central London for registered osteopathic care. Nguyen's Osteopathic Clinic sits inside Village Pharmacy on The Village, Charlton SE7 8UG — practical for patients from Greenwich, Charlton, Thamesmead, Plumstead, and Abbey Wood.",
-          "The clinic is a short walk from Woolwich Arsenal station and local bus routes along The Village. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
+          "The clinic is a short walk from Charlton station and local bus routes along The Village. Ask at the pharmacy counter on arrival and they will direct you to the consultation room.",
         ],
       },
       {
@@ -747,7 +747,7 @@ const blogPostInputs: BlogPostInput[] = [
       "osteopath treatment plan",
       "how often see osteopath",
       "osteopathy course of treatment",
-      "osteopath Woolwich fees",
+      "osteopath Charlton fees",
     ],
     sections: [
       {
@@ -777,7 +777,7 @@ const blogPostInputs: BlogPostInput[] = [
     cta: "Ready to start with a clear plan? Book your first visit online.",
   },
   {
-    slug: "shoulder-pain-frozen-shoulder-woolwich",
+    slug: "shoulder-pain-frozen-shoulder-charlton",
     title: "Shoulder pain and frozen shoulder: osteopathy in Charlton",
     description:
       "Reach overhead without wincing. Learn how osteopathy helps shoulder stiffness, rotator cuff irritation, and frozen shoulder patterns in SE18.",
@@ -785,9 +785,9 @@ const blogPostInputs: BlogPostInput[] = [
     readingMinutes: 6,
     category: "Headaches & joints",
     keywords: [
-      "shoulder pain osteopath Woolwich",
+      "shoulder pain osteopath Charlton",
       "frozen shoulder osteopath",
-      "rotator cuff Woolwich",
+      "rotator cuff Charlton",
       "shoulder stiffness SE18",
       "osteopath for shoulder pain London",
     ],
@@ -817,7 +817,7 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
     ],
-    cta: "Book shoulder assessment at Nguyen's Osteopathic Clinic, Woolwich.",
+    cta: "Book shoulder assessment at Nguyen's Osteopathic Clinic, Charlton.",
   },
   ...serviceBlogPosts,
   ...batch3BlogPosts,

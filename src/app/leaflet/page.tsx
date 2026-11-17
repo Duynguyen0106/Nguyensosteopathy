@@ -7,12 +7,12 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Clinic Leaflet",
   description:
-    "Download the Nguyen's Osteopathic Clinic leaflet PDF — services, fees overview, and Woolwich contact details for print or sharing.",
+    "Download the Nguyen's Osteopathic Clinic leaflet PDF — services, fees overview, and Charlton contact details for print or sharing.",
   alternates: { canonical: "/leaflet" },
   robots: { index: false, follow: true },
   openGraph: {
     title: "Clinic Leaflet | Nguyen's Osteopathic Clinic",
-    description: "Print-ready clinic leaflet PDF for Woolwich SE18.",
+    description: "Print-ready clinic leaflet PDF for Charlton SE7.",
     url: "/leaflet",
     images: [defaultOgImage],
   },
@@ -33,7 +33,7 @@ export default function LeafletPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             A print-ready PDF with clinic details, key services, and how to book
-            at {site.address.venue}, Woolwich.
+            at {site.address.venue}, Charlton.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={pdfHref} target="_blank" rel="noopener noreferrer">

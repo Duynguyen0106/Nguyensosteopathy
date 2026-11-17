@@ -25,7 +25,7 @@ const viFindFaqs = [
       "Có chỗ gửi xe ngắn hạn quanh The Village / Charlton. Đến sớm vài phút nếu cần tìm chỗ trống; ga Charlton cũng gần.",
   },
   {
-    question: "Đến từ Plumstead / Abbey Wood / Woolwich thế nào?",
+    question: "Đến từ Plumstead / Abbey Wood / Charlton thế nào?",
     answer:
       "Xe buýt hoặc tàu tới Charlton rồi đi bộ ngắn đến 9 The Village. Nhiều tuyến xe buýt cũng dừng quanh làng Charlton.",
   },

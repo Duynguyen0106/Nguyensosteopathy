@@ -9,58 +9,58 @@ export type ConditionLink = {
 /** Explicit 2–3 condition targets for known occupational / clinical posts. */
 const EXPLICIT: Record<string, ConditionLink[]> = {
   "nail-technician-neck-wrist-pain-osteopath": [
-    { slug: "neck-pain", anchor: "neck pain treatment in Woolwich" },
+    { slug: "neck-pain", anchor: "neck pain treatment in Charlton" },
     { slug: "tennis-elbow", anchor: "tennis elbow" },
     { slug: "carpal-tunnel", anchor: "wrist and hand pain such as carpal tunnel" },
   ],
-  "restaurant-kitchen-back-pain-osteopath-woolwich": [
-    { slug: "non-specific-low-back-pain", anchor: "lower back pain treatment in Woolwich" },
+  "restaurant-kitchen-back-pain-osteopath-charlton": [
+    { slug: "non-specific-low-back-pain", anchor: "lower back pain treatment in Charlton" },
     { slug: "plantar-fasciitis", anchor: "plantar fasciitis and heel pain" },
     { slug: "knee-oa", anchor: "knee pain from standing and pivoting" },
   ],
   "desk-neck-and-shoulder-pain": [
-    { slug: "neck-pain", anchor: "neck pain treatment in Woolwich" },
+    { slug: "neck-pain", anchor: "neck pain treatment in Charlton" },
     { slug: "non-specific-low-back-pain", anchor: "lower back pain from prolonged sitting" },
     { slug: "thoracic-joint-dysfunction", anchor: "upper-back postural strain" },
   ],
-  "sciatica-woolwich-osteopath": [
-    { slug: "sciatica", anchor: "sciatica treatment in Woolwich" },
+  "sciatica-charlton-osteopath": [
+    { slug: "sciatica", anchor: "sciatica treatment in Charlton" },
     { slug: "lumbar-disc-radiculopathy", anchor: "lumbar disc-related leg pain" },
     { slug: "piriformis-syndrome", anchor: "deep gluteal / piriformis-related pain" },
   ],
-  "lumbar-disc-pain-osteopath-woolwich": [
-    { slug: "lumbar-disc-radiculopathy", anchor: "lumbar disc pain in Woolwich" },
+  "lumbar-disc-pain-osteopath-charlton": [
+    { slug: "lumbar-disc-radiculopathy", anchor: "lumbar disc pain in Charlton" },
     { slug: "sciatica", anchor: "sciatica symptoms" },
     { slug: "non-specific-low-back-pain", anchor: "mechanical lower back pain" },
   ],
-  "plantar-fasciitis-shockwave-woolwich": [
-    { slug: "plantar-fasciitis", anchor: "plantar fasciitis treatment in Woolwich" },
+  "plantar-fasciitis-shockwave-charlton": [
+    { slug: "plantar-fasciitis", anchor: "plantar fasciitis treatment in Charlton" },
     { slug: "achilles-tendinopathy", anchor: "Achilles tendon pain" },
     { slug: "shin-splints", anchor: "shin splints from impact loading" },
   ],
-  "tennis-elbow-shockwave-osteopath-woolwich": [
-    { slug: "tennis-elbow", anchor: "tennis elbow treatment in Woolwich" },
+  "tennis-elbow-shockwave-osteopath-charlton": [
+    { slug: "tennis-elbow", anchor: "tennis elbow treatment in Charlton" },
     { slug: "medial-epicondylalgia", anchor: "golfer's elbow on the inner side" },
     { slug: "neck-pain", anchor: "neck-driven arm symptoms" },
   ],
-  "shoulder-pain-frozen-shoulder-woolwich": [
+  "shoulder-pain-frozen-shoulder-charlton": [
     { slug: "frozen-shoulder", anchor: "frozen shoulder care in Charlton" },
     { slug: "subacromial-pain", anchor: "subacromial shoulder pain" },
     { slug: "rotator-cuff-tear", anchor: "rotator cuff–related shoulder pain" },
   ],
-  "focused-shockwave-therapy-woolwich": [
+  "focused-shockwave-therapy-charlton": [
     { slug: "plantar-fasciitis", anchor: "stubborn plantar heel pain" },
     { slug: "tennis-elbow", anchor: "persistent tennis elbow" },
     { slug: "achilles-tendinopathy", anchor: "Achilles tendinopathy" },
   ],
-  "back-pain-woolwich-osteopathy": [
-    { slug: "non-specific-low-back-pain", anchor: "lower back pain treatment in Woolwich" },
+  "back-pain-charlton-osteopathy": [
+    { slug: "non-specific-low-back-pain", anchor: "lower back pain treatment in Charlton" },
     { slug: "sciatica", anchor: "sciatica" },
     { slug: "facet-syndrome", anchor: "facet-related back pain" },
   ],
-  "tension-headaches-neck-osteopath-woolwich": [
+  "tension-headaches-neck-osteopath-charlton": [
     { slug: "cervicogenic-headache", anchor: "cervicogenic headaches" },
-    { slug: "neck-pain", anchor: "neck pain treatment in Woolwich" },
+    { slug: "neck-pain", anchor: "neck pain treatment in Charlton" },
     { slug: "thoracic-joint-dysfunction", anchor: "upper-back joint stiffness" },
   ],
   "morning-back-stiffness-osteopath": [
@@ -68,22 +68,22 @@ const EXPLICIT: Record<string, ConditionLink[]> = {
     { slug: "lumbar-stenosis", anchor: "walking-related lumbar stenosis patterns" },
     { slug: "facet-syndrome", anchor: "facet-related back stiffness" },
   ],
-  "sports-injury-osteopath-woolwich": [
+  "sports-injury-osteopath-charlton": [
     { slug: "hamstring-strain", anchor: "hamstring strain rehab" },
     { slug: "spondylolysis", anchor: "stress-related lumbar spondylolysis pathways" },
     { slug: "acl-rehab", anchor: "ACL rehab guidance" },
   ],
-  "hip-knee-pain-osteopath-woolwich": [
+  "hip-knee-pain-osteopath-charlton": [
     { slug: "hip-oa", anchor: "hip osteoarthritis care in Charlton" },
     { slug: "meniscal-injury", anchor: "meniscal knee injury patterns" },
     { slug: "femoroacetabular-impingement", anchor: "hip impingement / FAI-type pain" },
   ],
-  "hip-bursitis-osteopath-woolwich": [
+  "hip-bursitis-osteopath-charlton": [
     { slug: "greater-trochanteric-pain", anchor: "greater trochanteric pain syndrome" },
     { slug: "groin-pain", anchor: "groin and adductor-related pain" },
     { slug: "hip-oa", anchor: "hip joint osteoarthritis" },
   ],
-  "gym-shoulder-injury-osteopath-woolwich": [
+  "gym-shoulder-injury-osteopath-charlton": [
     { slug: "subacromial-pain", anchor: "subacromial shoulder pain" },
     { slug: "shoulder-instability", anchor: "shoulder instability and apprehension" },
     { slug: "ac-joint-injury", anchor: "AC joint sprain or OA" },
@@ -93,22 +93,22 @@ const EXPLICIT: Record<string, ConditionLink[]> = {
     { slug: "dequervains", anchor: "De Quervain's thumb-side wrist pain" },
     { slug: "cmc-oa", anchor: "base-of-thumb CMC osteoarthritis" },
   ],
-  "osteoarthritis-joints-osteopath-woolwich": [
+  "osteoarthritis-joints-osteopath-charlton": [
     { slug: "knee-oa", anchor: "knee osteoarthritis" },
     { slug: "hallux-rigidus", anchor: "stiff big-toe / hallux rigidus" },
     { slug: "osteoporosis", anchor: "bone health considerations in osteoporosis" },
   ],
-  "ankle-sprain-rehab-osteopath-woolwich": [
+  "ankle-sprain-rehab-osteopath-charlton": [
     { slug: "lateral-ankle-sprain", anchor: "lateral ankle sprain rehab" },
     { slug: "morton-neuroma", anchor: "forefoot neuroma-type pain" },
     { slug: "achilles-tendinopathy", anchor: "Achilles tendon load pain" },
   ],
-  "overuse-injuries-gym-running-woolwich": [
+  "overuse-injuries-gym-running-charlton": [
     { slug: "shin-splints", anchor: "shin splints from impact loading" },
     { slug: "deconditioning", anchor: "deconditioning after time off training" },
     { slug: "itb-syndrome", anchor: "IT band–related lateral knee pain" },
   ],
-  "return-to-sport-after-sprain-woolwich": [
+  "return-to-sport-after-sprain-charlton": [
     { slug: "lateral-ankle-sprain", anchor: "ankle sprain return-to-sport" },
     { slug: "acl-rehab", anchor: "ACL and knee rehab milestones" },
     { slug: "post-surgical-general", anchor: "post-surgical return-to-activity guidance" },
@@ -122,8 +122,8 @@ const EXPLICIT: Record<string, ConditionLink[]> = {
 
 const CATEGORY_DEFAULTS: Partial<Record<BlogCategory, ConditionLink[]>> = {
   "Back & neck": [
-    { slug: "non-specific-low-back-pain", anchor: "lower back pain treatment in Woolwich" },
-    { slug: "neck-pain", anchor: "neck pain treatment in Woolwich" },
+    { slug: "non-specific-low-back-pain", anchor: "lower back pain treatment in Charlton" },
+    { slug: "neck-pain", anchor: "neck pain treatment in Charlton" },
     { slug: "sciatica", anchor: "sciatica" },
   ],
   "Headaches & joints": [
@@ -239,8 +239,8 @@ export function getBlogConditionLinks(
   category: BlogCategory,
 ): ConditionLink[] {
   const raw = EXPLICIT[slug] ?? CATEGORY_DEFAULTS[category] ?? [
-    { slug: "non-specific-low-back-pain", anchor: "lower back pain treatment in Woolwich" },
-    { slug: "neck-pain", anchor: "neck pain treatment in Woolwich" },
+    { slug: "non-specific-low-back-pain", anchor: "lower back pain treatment in Charlton" },
+    { slug: "neck-pain", anchor: "neck pain treatment in Charlton" },
     { slug: "sciatica", anchor: "sciatica" },
   ];
   return raw

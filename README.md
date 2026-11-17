@@ -1,6 +1,6 @@
 # Nguyen's Osteopathic Clinic
 
-Marketing website for Nguyen's Osteopathic Clinic in Woolwich — branded from the clinic leaflet and logo, with online booking via [Treow Clinic](https://github.com/Duynguyen0106/Clinical-app) (`Clinical-app`).
+Marketing website for Nguyen's Osteopathic Clinic in Charlton — branded from the clinic leaflet and logo, with online booking via [Treow Clinic](https://github.com/Duynguyen0106/Clinical-app) (`Clinical-app`).
 
 ## Stack
 
@@ -59,7 +59,7 @@ Product URLs live in `site.products` inside `src/lib/site.ts` and are linked fro
 On [Austin’s LinkedIn](https://www.linkedin.com/in/austin-nguyen-do):
 
 1. **Featured** — pin clinic site (`https://www.nguyensosteopathy.com`), MSK Tutor, and Treow Clinic.
-2. **About / Experience** — mention GOsC osteopath at Nguyen’s Osteopathic Clinic (Woolwich), plus builder of MSK Tutor and Treow Clinic.
+2. **About / Experience** — mention GOsC osteopath at Nguyen’s Osteopathic Clinic (Charlton), plus builder of MSK Tutor and Treow Clinic.
 3. **Website links** — add `nguyensosteopathy.com`, Osteotutor URL, and Treow URL.
 4. **Projects** — create LinkedIn Projects for MSK Tutor and Treow with short blurbs from `site.products.*.description`.
 

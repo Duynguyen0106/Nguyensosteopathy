@@ -360,7 +360,7 @@ export default function HomePage() {
                 From the blog
               </p>
               <h2 className="mt-3 font-display text-3xl text-navy md:text-4xl">
-                Local osteopathy guides for Woolwich
+                Local osteopathy guides for Charlton
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-600 md:text-lg">
                 Practical articles to help you understand symptoms, treatment
@@ -540,7 +540,7 @@ export default function HomePage() {
             {site.address.line2}
           </p>
           <p className="mt-3 text-base leading-relaxed text-slate-600 md:text-lg">
-            Easy to reach from Greenwich, Woolwich, Plumstead, Thamesmead, and
+            Easy to reach from Greenwich, Charlton, Plumstead, Thamesmead, and
             Abbey Wood. Ask at the pharmacy counter on arrival — they will
             direct you to the osteopathy room.
           </p>

@@ -14,19 +14,19 @@ export type ExpandedBlogBody = {
  *  Handcrafted priority overrides live in blog-expanded-priority.ts.
  */
 export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
-  "back-pain-woolwich-osteopathy": {
+  "back-pain-charlton-osteopathy": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "Practical guide to common back pain causes for Woolwich and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess Woolwich residents dealing with recurring or new back pain with a focus on commuting sits, work demands, and weekend DIY or sport spikes, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "Practical guide to common back pain causes for Charlton and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess Charlton residents dealing with recurring or new back pain with a focus on commuting sits, work demands, and weekend DIY or sport spikes, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
         "heading": "What drives back pain?",
         "paragraphs": [
-          "Symptoms around back pain often appear when the load of daily life outpaces recovery. For Woolwich residents dealing with recurring or new back pain, that often means commuting sits, work demands, and weekend DIY or sport spikes.",
+          "Symptoms around back pain often appear when the load of daily life outpaces recovery. For Charlton residents dealing with recurring or new back pain, that often means commuting sits, work demands, and weekend DIY or sport spikes.",
           "Useful change starts with early assessment, sensible pacing, and graded return to activity. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [lumbar disc radiculopathy](/conditions/lumbar-disc-radiculopathy)."
         ]
@@ -49,11 +49,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/back-pain-woolwich-osteopathy.webp",
+          "src": "/images/blog/back-pain-charlton-osteopathy.webp",
           "alt": "Adult holding the lower back due to back pain"
         },
         "paragraphs": [
-          "Assessment for Woolwich residents dealing with recurring or new back pain covers joint mobility, soft-tissue tone, and how neighbouring regions share load under commuting sits, work demands, and weekend DIY or sport spikes. Findings are explained in plain English before treatment begins.",
+          "Assessment for Charlton residents dealing with recurring or new back pain covers joint mobility, soft-tissue tone, and how neighbouring regions share load under commuting sits, work demands, and weekend DIY or sport spikes. Findings are explained in plain English before treatment begins.",
           "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on early assessment, sensible pacing, and graded return to activity. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
         ]
       },
@@ -74,7 +74,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Short answer for Woolwich patients: no GP referral is required to book osteopathy privately. Here’s what to bring and when to speak to your GP first.",
+          "Short answer for Charlton patients: no GP referral is required to book osteopathy privately. Here’s what to bring and when to speak to your GP first.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
@@ -124,7 +124,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "sports-injury-osteopath-woolwich": {
+  "sports-injury-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -159,7 +159,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/sports-injury-osteopath-woolwich.webp",
+          "src": "/images/blog/sports-injury-osteopath-charlton.webp",
           "alt": "Sportsperson recovering from a musculoskeletal injury"
         },
         "paragraphs": [
@@ -179,7 +179,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "mens-health-shockwave-woolwich": {
+  "mens-health-shockwave-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -214,7 +214,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/mens-health-shockwave-woolwich.webp",
+          "src": "/images/blog/mens-health-shockwave-charlton.webp",
           "alt": "Private consultation setting for men’s health care"
         },
         "paragraphs": [
@@ -234,7 +234,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "nhs-student-osteopathy-discount-woolwich": {
+  "nhs-student-osteopathy-discount-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -269,7 +269,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/nhs-student-osteopathy-discount-woolwich.webp",
+          "src": "/images/blog/nhs-student-osteopathy-discount-charlton.webp",
           "alt": "NHS and student ID cards representing clinic discount eligibility"
         },
         "paragraphs": [
@@ -289,7 +289,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "tension-headaches-neck-osteopath-woolwich": {
+  "tension-headaches-neck-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -324,7 +324,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/tension-headaches-neck-osteopath-woolwich.webp",
+          "src": "/images/blog/tension-headaches-neck-osteopath-charlton.webp",
           "alt": "Person holding their head with a tension headache"
         },
         "paragraphs": [
@@ -344,7 +344,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "pregnancy-osteopathy-woolwich": {
+  "pregnancy-osteopathy-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -379,7 +379,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/pregnancy-osteopathy-woolwich.webp",
+          "src": "/images/blog/pregnancy-osteopathy-charlton.webp",
           "alt": "Pregnant woman supporting her lower back"
         },
         "paragraphs": [
@@ -399,7 +399,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "osteopath-vs-physiotherapist-woolwich": {
+  "osteopath-vs-physiotherapist-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -434,7 +434,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/osteopath-vs-physiotherapist-woolwich.webp",
+          "src": "/images/blog/osteopath-vs-physiotherapist-charlton.webp",
           "alt": "Clinician assessing a patient’s shoulder in clinic"
         },
         "paragraphs": [
@@ -454,19 +454,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "hip-knee-pain-osteopath-woolwich": {
+  "hip-knee-pain-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "Hip stiffness, runner’s knee, and stair pain are common around Woolwich and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
+          "Hip stiffness, runner’s knee, and stair pain are common around Charlton and Greenwich Park. Learn how osteopathy assesses the chain from foot to spine.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives hip and knee pain?",
         "paragraphs": [
-          "We treat hip and knee pain as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "We treat hip and knee pain as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [greater trochanteric pain](/conditions/greater-trochanteric-pain)."
         ]
@@ -489,11 +489,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/hip-knee-pain-osteopath-woolwich.webp",
+          "src": "/images/blog/hip-knee-pain-osteopath-charlton.webp",
           "alt": "Runner stretching the hip and knee outdoors"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
         ]
       },
@@ -619,12 +619,12 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "sacroiliac-joint-pain-woolwich": {
+  "sacroiliac-joint-pain-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "One-sided buttock or pelvic ache after walking or turning in bed? How SI joint irritation presents and how Woolwich osteopathy helps.",
+          "One-sided buttock or pelvic ache after walking or turning in bed? How SI joint irritation presents and how Charlton osteopathy helps.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess expectant and postpartum patients in Charlton with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
@@ -654,7 +654,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/sacroiliac-joint-pain-woolwich.webp",
+          "src": "/images/blog/sacroiliac-joint-pain-charlton.webp",
           "alt": "Athlete holding the side of the pelvis and hip"
         },
         "paragraphs": [
@@ -680,13 +680,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Stiff, sore neck after a collision or sudden jolt? What to expect from osteopathic assessment in Charlton and when imaging matters.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
         "heading": "What drives whiplash and neck pain after a road accident?",
         "paragraphs": [
-          "Whiplash and neck pain after a road accident rarely has a single cause; capacity and load usually drift apart first. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "Whiplash and neck pain after a road accident rarely has a single cause; capacity and load usually drift apart first. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [whiplash](/conditions/whiplash) and [cervicogenic headache](/conditions/cervicogenic-headache)."
         ]
@@ -713,7 +713,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Person holding a stiff neck after injury"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on activity pacing and joint-friendly movement rather than forced end-range stretching. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
@@ -784,7 +784,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "text-neck-smartphone-osteopath-woolwich": {
+  "text-neck-smartphone-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -819,7 +819,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/text-neck-smartphone-osteopath-woolwich.webp",
+          "src": "/images/blog/text-neck-smartphone-osteopath-charlton.webp",
           "alt": "Person looking down at a phone, text-neck posture"
         },
         "paragraphs": [
@@ -839,7 +839,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "tmj-jaw-pain-osteopath-woolwich": {
+  "tmj-jaw-pain-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -874,7 +874,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/tmj-jaw-pain-osteopath-woolwich.webp",
+          "src": "/images/blog/tmj-jaw-pain-osteopath-charlton.webp",
           "alt": "Close view of jaw and face area related to TMJ discomfort"
         },
         "paragraphs": [
@@ -899,7 +899,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Not sure if your headache is migraine or tension-type? Clear differences and when Woolwich osteopathy is a sensible next step.",
+          "Not sure if your headache is migraine or tension-type? Clear differences and when Charlton osteopathy is a sensible next step.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
@@ -949,7 +949,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "ankle-sprain-rehab-osteopath-woolwich": {
+  "ankle-sprain-rehab-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -984,7 +984,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/ankle-sprain-rehab-osteopath-woolwich.webp",
+          "src": "/images/blog/ankle-sprain-rehab-osteopath-charlton.webp",
           "alt": "Ankle wrap and rehab for a sprained ankle"
         },
         "paragraphs": [
@@ -1010,13 +1010,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Keyboard and mouse strain, wrist ache, and forearm tightness — how osteopathy helps desk-related upper limb pain in Charlton.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess desk and hybrid workers around Charlton with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
         "heading": "What drives wrist and hand pain from desk work?",
         "paragraphs": [
-          "Clinic visits for wrist and hand pain from desk work usually start by mapping aggravators — work, commute, sleep, and training. For desk and hybrid workers around Woolwich, that often means laptop posture, mouse reach, and long sits on the Elizabeth line or DLR.",
+          "Clinic visits for wrist and hand pain from desk work usually start by mapping aggravators — work, commute, sleep, and training. For desk and hybrid workers around Charlton, that often means laptop posture, mouse reach, and long sits on the Elizabeth line or DLR.",
           "Useful change starts with screen height, keyboard position, and movement snacks between calls. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [carpal tunnel](/conditions/carpal-tunnel) and [De Quervains](/conditions/dequervains)."
         ]
@@ -1043,7 +1043,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Hands typing on a keyboard, desk-related wrist strain"
         },
         "paragraphs": [
-          "Assessment for desk and hybrid workers around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under laptop posture, mouse reach, and long sits on the Elizabeth line or DLR. Findings are explained in plain English before treatment begins.",
+          "Assessment for desk and hybrid workers around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under laptop posture, mouse reach, and long sits on the Elizabeth line or DLR. Findings are explained in plain English before treatment begins.",
           "Hands-on care is matched to how sensitive tissues feel today, then reinforced with clear advice on screen height, keyboard position, and movement snacks between calls. If something needs medical eyes before hands-on care, we flag it early and help you choose the safer path."
         ]
       },
@@ -1059,19 +1059,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "osteoarthritis-joints-osteopath-woolwich": {
+  "osteoarthritis-joints-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "Osteopathy will not reverse osteoarthritis, but it can improve comfort and movement. Practical joint care for Woolwich patients.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "Osteopathy will not reverse osteoarthritis, but it can improve comfort and movement. Practical joint care for Charlton patients.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives osteoarthritis and stiff joints?",
         "paragraphs": [
-          "We treat osteoarthritis and stiff joints as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "We treat osteoarthritis and stiff joints as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [hip osteoarthritis](/conditions/hip-oa) and [knee osteoarthritis](/conditions/knee-oa)."
         ]
@@ -1094,11 +1094,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/osteoarthritis-joints-osteopath-woolwich.webp",
+          "src": "/images/blog/osteoarthritis-joints-osteopath-charlton.webp",
           "alt": "Older adult walking carefully with stiff joints"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on activity pacing and joint-friendly movement rather than forced end-range stretching. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -1114,12 +1114,12 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "achilles-tendinopathy-shockwave-woolwich": {
+  "achilles-tendinopathy-shockwave-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "Stiff, sore Achilles when running or walking? Focused shockwave and progressive loading for Achilles tendinopathy near Woolwich.",
+          "Stiff, sore Achilles when running or walking? Focused shockwave and progressive loading for Achilles tendinopathy near Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
@@ -1149,7 +1149,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/achilles-tendinopathy-shockwave-woolwich.webp",
+          "src": "/images/blog/achilles-tendinopathy-shockwave-charlton.webp",
           "alt": "Runner’s lower leg and Achilles tendon region"
         },
         "paragraphs": [
@@ -1169,7 +1169,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "golfers-elbow-osteopath-woolwich": {
+  "golfers-elbow-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1204,7 +1204,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/golfers-elbow-osteopath-woolwich.webp",
+          "src": "/images/blog/golfers-elbow-osteopath-charlton.webp",
           "alt": "Golfer’s grip and forearm load related to medial elbow pain"
         },
         "paragraphs": [
@@ -1224,19 +1224,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "patellar-tendinopathy-shockwave-woolwich": {
+  "patellar-tendinopathy-shockwave-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
           "Front-of-knee tendon pain from jumping or stairs? Osteopathy, load management, and shockwave options in SE18.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives patellar tendinopathy (jumper’s knee)?",
         "paragraphs": [
-          "Clinic visits for patellar tendinopathy (jumper’s knee) usually start by mapping aggravators — work, commute, sleep, and training. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "Clinic visits for patellar tendinopathy (jumper’s knee) usually start by mapping aggravators — work, commute, sleep, and training. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [patellar tendinopathy](/conditions/patellar-tendinopathy) and [patellofemoral pain](/conditions/patellofemoral-pain)."
         ]
@@ -1259,11 +1259,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/patellar-tendinopathy-shockwave-woolwich.webp",
+          "src": "/images/blog/patellar-tendinopathy-shockwave-charlton.webp",
           "alt": "Athlete holding the front of the knee after jumping load"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Expect calm, irritability-matched manual care plus a short plan covering activity pacing and joint-friendly movement rather than forced end-range stretching. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
@@ -1389,7 +1389,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "li-eswt-erectile-dysfunction-woolwich": {
+  "li-eswt-erectile-dysfunction-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1424,7 +1424,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/li-eswt-erectile-dysfunction-woolwich.webp",
+          "src": "/images/blog/li-eswt-erectile-dysfunction-charlton.webp",
           "alt": "Calm private consultation room for discreet men’s health care"
         },
         "paragraphs": [
@@ -1444,7 +1444,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "mens-pelvic-health-osteopathy-woolwich": {
+  "mens-pelvic-health-osteopathy-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1479,7 +1479,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/mens-pelvic-health-osteopathy-woolwich.webp",
+          "src": "/images/blog/mens-pelvic-health-osteopathy-charlton.webp",
           "alt": "Professional clinician speaking privately with a patient"
         },
         "paragraphs": [
@@ -1554,7 +1554,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "drug-free-ed-options-woolwich": {
+  "drug-free-ed-options-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1589,7 +1589,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/drug-free-ed-options-woolwich.webp",
+          "src": "/images/blog/drug-free-ed-options-charlton.webp",
           "alt": "Quiet clinic corridor suggesting private medical discussion"
         },
         "paragraphs": [
@@ -1609,7 +1609,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "medical-acupuncture-osteopath-woolwich": {
+  "medical-acupuncture-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1644,7 +1644,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/medical-acupuncture-osteopath-woolwich.webp",
+          "src": "/images/blog/medical-acupuncture-osteopath-charlton.webp",
           "alt": "Acupuncture needles used in medical needling treatment"
         },
         "paragraphs": [
@@ -1664,7 +1664,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "electroacupuncture-pain-relief-woolwich": {
+  "electroacupuncture-pain-relief-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1699,7 +1699,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/electroacupuncture-pain-relief-woolwich.webp",
+          "src": "/images/blog/electroacupuncture-pain-relief-charlton.webp",
           "alt": "Acupuncture treatment setup for muscle pain relief"
         },
         "paragraphs": [
@@ -1774,7 +1774,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "cupping-therapy-add-on-woolwich": {
+  "cupping-therapy-add-on-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1809,7 +1809,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/cupping-therapy-add-on-woolwich.webp",
+          "src": "/images/blog/cupping-therapy-add-on-charlton.webp",
           "alt": "Cupping therapy cups on a treatment tray"
         },
         "paragraphs": [
@@ -1829,7 +1829,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "deep-tissue-massage-woolwich-osteopath": {
+  "deep-tissue-massage-charlton-osteopath": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1864,7 +1864,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/deep-tissue-massage-woolwich-osteopath.webp",
+          "src": "/images/blog/deep-tissue-massage-charlton-osteopath.webp",
           "alt": "Deep tissue massage on the back and shoulders"
         },
         "paragraphs": [
@@ -1884,7 +1884,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "deep-tissue-vs-osteopathy-woolwich": {
+  "deep-tissue-vs-osteopathy-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1919,7 +1919,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/deep-tissue-vs-osteopathy-woolwich.webp",
+          "src": "/images/blog/deep-tissue-vs-osteopathy-charlton.webp",
           "alt": "Hands-on soft-tissue therapy during a clinic session"
         },
         "paragraphs": [
@@ -1939,7 +1939,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "post-gym-muscle-soreness-massage-woolwich": {
+  "post-gym-muscle-soreness-massage-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -1974,7 +1974,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/post-gym-muscle-soreness-massage-woolwich.webp",
+          "src": "/images/blog/post-gym-muscle-soreness-massage-charlton.webp",
           "alt": "Gym training session leading to muscle soreness"
         },
         "paragraphs": [
@@ -1994,7 +1994,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "stress-shoulder-tension-massage-woolwich": {
+  "stress-shoulder-tension-massage-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2029,7 +2029,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/stress-shoulder-tension-massage-woolwich.webp",
+          "src": "/images/blog/stress-shoulder-tension-massage-charlton.webp",
           "alt": "Person rubbing tense upper shoulders from stress"
         },
         "paragraphs": [
@@ -2049,19 +2049,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "running-injuries-osteopath-woolwich": {
+  "running-injuries-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
           "IT band, shin, Achilles, and knee niggles from Thames Path and park runs — assessment and rehab planning in SE18.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives running injuries?",
         "paragraphs": [
-          "When people describe running injuries, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "When people describe running injuries, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [patellofemoral pain](/conditions/patellofemoral-pain) and [ITB syndrome](/conditions/itb-syndrome)."
         ]
@@ -2084,11 +2084,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/running-injuries-osteopath-woolwich.webp",
+          "src": "/images/blog/running-injuries-osteopath-charlton.webp",
           "alt": "Runner on a path representing running injuries"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Osteopathy here blends assessment-led hands-on care with simple guidance on activity pacing and joint-friendly movement rather than forced end-range stretching. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
@@ -2104,19 +2104,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "gym-shoulder-injury-osteopath-woolwich": {
+  "gym-shoulder-injury-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
           "Pain with bench, overhead press, or pull-ups? How osteopathy helps gym-related shoulder irritability in Charlton.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives gym shoulder injuries?",
         "paragraphs": [
-          "We treat gym shoulder injuries as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "We treat gym shoulder injuries as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [subacromial pain](/conditions/subacromial-pain) and [frozen shoulder](/conditions/frozen-shoulder)."
         ]
@@ -2139,11 +2139,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/gym-shoulder-injury-osteopath-woolwich.webp",
+          "src": "/images/blog/gym-shoulder-injury-osteopath-charlton.webp",
           "alt": "Gym training that can irritate the shoulder joint"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Expect calm, irritability-matched manual care plus a short plan covering activity pacing and joint-friendly movement rather than forced end-range stretching. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
@@ -2214,7 +2214,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "return-to-sport-after-sprain-woolwich": {
+  "return-to-sport-after-sprain-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2249,7 +2249,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/return-to-sport-after-sprain-woolwich.webp",
+          "src": "/images/blog/return-to-sport-after-sprain-charlton.webp",
           "alt": "Athlete preparing to return to sport after injury"
         },
         "paragraphs": [
@@ -2269,7 +2269,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "overuse-injuries-gym-running-woolwich": {
+  "overuse-injuries-gym-running-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2304,7 +2304,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/overuse-injuries-gym-running-woolwich.webp",
+          "src": "/images/blog/overuse-injuries-gym-running-charlton.webp",
           "alt": "Runner training hard, early overuse injury risk"
         },
         "paragraphs": [
@@ -2324,7 +2324,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "pelvic-girdle-pain-pregnancy-woolwich": {
+  "pelvic-girdle-pain-pregnancy-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2359,7 +2359,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/pelvic-girdle-pain-pregnancy-woolwich.webp",
+          "src": "/images/blog/pelvic-girdle-pain-pregnancy-charlton.webp",
           "alt": "Pregnant woman supporting her pelvis while standing"
         },
         "paragraphs": [
@@ -2379,19 +2379,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "pregnancy-rib-pain-osteopath-woolwich": {
+  "pregnancy-rib-pain-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
           "Side and rib-cage discomfort as the bump grows — how pregnancy-adapted osteopathy can help in Charlton.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives rib pain in pregnancy?",
         "paragraphs": [
-          "When people describe rib pain in pregnancy, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "When people describe rib pain in pregnancy, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction) and [coccydynia](/conditions/coccydynia)."
         ]
@@ -2414,11 +2414,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/pregnancy-rib-pain-osteopath-woolwich.webp",
+          "src": "/images/blog/pregnancy-rib-pain-osteopath-charlton.webp",
           "alt": "Pregnant woman with hand on her side and ribcage"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Sessions typically combine mobilisation or soft-tissue techniques with coaching on activity pacing and joint-friendly movement rather than forced end-range stretching. Red flags and stalled progress get an honest redirect — treatment is never sold for its own sake."
         ]
       },
@@ -2434,12 +2434,12 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "postpartum-back-pain-osteopath-woolwich": {
+  "postpartum-back-pain-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "Feeding postures, carrying, and healing tissues — postpartum back and pelvic support with a Woolwich osteopath.",
+          "Feeding postures, carrying, and healing tissues — postpartum back and pelvic support with a Charlton osteopath.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
@@ -2469,7 +2469,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/postpartum-back-pain-osteopath-woolwich.webp",
+          "src": "/images/blog/postpartum-back-pain-osteopath-charlton.webp",
           "alt": "New parent holding a baby, postpartum back strain"
         },
         "paragraphs": [
@@ -2489,12 +2489,12 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "pregnancy-osteopathy-safety-woolwich": {
+  "pregnancy-osteopathy-safety-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "How pregnancy osteopathy is adapted for safety and comfort at Nguyen's Osteopathic Clinic, Woolwich.",
+          "How pregnancy osteopathy is adapted for safety and comfort at Nguyen's Osteopathic Clinic, Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess expectant and postpartum patients in Charlton with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
@@ -2524,7 +2524,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/pregnancy-osteopathy-safety-woolwich.webp",
+          "src": "/images/blog/pregnancy-osteopathy-safety-charlton.webp",
           "alt": "Calm pregnant patient resting, safety-focused care"
         },
         "paragraphs": [
@@ -2544,7 +2544,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "cranial-osteopathy-woolwich-what-is-it": {
+  "cranial-osteopathy-charlton-what-is-it": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2579,7 +2579,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/cranial-osteopathy-woolwich-what-is-it.webp",
+          "src": "/images/blog/cranial-osteopathy-charlton-what-is-it.webp",
           "alt": "Calm treatment setting for gentle cranial osteopathy"
         },
         "paragraphs": [
@@ -2654,7 +2654,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "cranial-vs-structural-osteopathy-woolwich": {
+  "cranial-vs-structural-osteopathy-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2689,7 +2689,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/cranial-vs-structural-osteopathy-woolwich.webp",
+          "src": "/images/blog/cranial-vs-structural-osteopathy-charlton.webp",
           "alt": "Osteopath choosing a gentle hands-on technique"
         },
         "paragraphs": [
@@ -2709,7 +2709,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "paediatric-osteopathy-woolwich-parents-guide": {
+  "paediatric-osteopathy-charlton-parents-guide": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2744,7 +2744,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/paediatric-osteopathy-woolwich-parents-guide.webp",
+          "src": "/images/blog/paediatric-osteopathy-charlton-parents-guide.webp",
           "alt": "Parent with a young child in a calm healthcare setting"
         },
         "paragraphs": [
@@ -2764,7 +2764,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "growing-pains-osteopath-woolwich": {
+  "growing-pains-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2799,7 +2799,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/growing-pains-osteopath-woolwich.webp",
+          "src": "/images/blog/growing-pains-osteopath-charlton.webp",
           "alt": "Child resting after activity, growing pains context"
         },
         "paragraphs": [
@@ -2874,7 +2874,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "infant-osteopathy-what-parents-ask-woolwich": {
+  "infant-osteopathy-what-parents-ask-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2909,7 +2909,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/infant-osteopathy-what-parents-ask-woolwich.webp",
+          "src": "/images/blog/infant-osteopathy-what-parents-ask-charlton.webp",
           "alt": "Infant resting peacefully with a parent nearby"
         },
         "paragraphs": [
@@ -2929,7 +2929,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "book-osteopath-online-woolwich": {
+  "book-osteopath-online-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -2964,7 +2964,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/book-osteopath-online-woolwich.webp",
+          "src": "/images/blog/book-osteopath-online-charlton.webp",
           "alt": "Booking a clinic appointment on a laptop"
         },
         "paragraphs": [
@@ -2984,7 +2984,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "osteopathy-fees-woolwich-price-list": {
+  "osteopathy-fees-charlton-price-list": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3019,7 +3019,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/osteopathy-fees-woolwich-price-list.webp",
+          "src": "/images/blog/osteopathy-fees-charlton-price-list.webp",
           "alt": "Clear pricing and payment planning for clinic fees"
         },
         "paragraphs": [
@@ -3039,7 +3039,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "osteopath-inside-st-james-pharmacy-woolwich": {
+  "osteopath-inside-village-pharmacy-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3074,7 +3074,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/osteopath-inside-st-james-pharmacy-woolwich.webp",
+          "src": "/images/blog/osteopath-inside-village-pharmacy-charlton.webp",
           "alt": "Pharmacy and clinic entrance area for patient arrival"
         },
         "paragraphs": [
@@ -3149,7 +3149,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "vietnamese-osteopath-woolwich-uk": {
+  "vietnamese-osteopath-charlton-uk": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3184,7 +3184,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/vietnamese-osteopath-woolwich-uk.webp",
+          "src": "/images/blog/vietnamese-osteopath-charlton-uk.webp",
           "alt": "Clinician speaking warmly with a patient in consultation"
         },
         "paragraphs": [
@@ -3209,7 +3209,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Woolwich is a short hop for SE18 patients.",
+          "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Charlton is a short hop for SE18 patients.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
@@ -3259,7 +3259,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "parking-osteopath-woolwich-powis-street": {
+  "parking-osteopath-charlton-the-village": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3294,7 +3294,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/parking-osteopath-woolwich-powis-street.webp",
+          "src": "/images/blog/parking-osteopath-charlton-the-village.webp",
           "alt": "Town centre street and parking context for clinic arrival"
         },
         "paragraphs": [
@@ -3314,19 +3314,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "chronic-pain-osteopath-woolwich": {
+  "chronic-pain-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
           "Living with pain for months? How osteopathy approaches persistent back, neck, and joint pain — and when medical review comes first.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess desk and hybrid workers around Woolwich with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess desk and hybrid workers around Charlton with a focus on laptop posture, mouse reach, and long sits on the Elizabeth line or DLR, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
         "heading": "What drives chronic pain and osteopathy?",
         "paragraphs": [
-          "Symptoms around chronic pain and osteopathy often appear when the load of daily life outpaces recovery. For desk and hybrid workers around Woolwich, that often means laptop posture, mouse reach, and long sits on the Elizabeth line or DLR.",
+          "Symptoms around chronic pain and osteopathy often appear when the load of daily life outpaces recovery. For desk and hybrid workers around Charlton, that often means laptop posture, mouse reach, and long sits on the Elizabeth line or DLR.",
           "Useful change starts with screen height, keyboard position, and movement snacks between calls. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [fibromyalgia](/conditions/fibromyalgia) and [non-specific low back pain](/conditions/non-specific-low-back-pain)."
         ]
@@ -3349,11 +3349,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/chronic-pain-osteopath-woolwich.webp",
+          "src": "/images/blog/chronic-pain-osteopath-charlton.webp",
           "alt": "Person holding a persistently painful lower back"
         },
         "paragraphs": [
-          "Assessment for desk and hybrid workers around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under laptop posture, mouse reach, and long sits on the Elizabeth line or DLR. Findings are explained in plain English before treatment begins.",
+          "Assessment for desk and hybrid workers around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under laptop posture, mouse reach, and long sits on the Elizabeth line or DLR. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on screen height, keyboard position, and movement snacks between calls. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },
@@ -3369,7 +3369,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "osteopathy-for-older-adults-woolwich": {
+  "osteopathy-for-older-adults-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3404,7 +3404,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/osteopathy-for-older-adults-woolwich.webp",
+          "src": "/images/blog/osteopathy-for-older-adults-charlton.webp",
           "alt": "Older adult walking outdoors with joint stiffness concern"
         },
         "paragraphs": [
@@ -3424,19 +3424,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "coccyx-tailbone-pain-osteopath-woolwich": {
+  "coccyx-tailbone-pain-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "Pain sitting on hard seats or after a fall onto the tailbone? How coccyx pain presents and how Woolwich osteopathy approaches it.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
+          "Pain sitting on hard seats or after a fall onto the tailbone? How coccyx pain presents and how Charlton osteopathy approaches it.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
       {
         "heading": "What drives coccyx (tailbone) pain?",
         "paragraphs": [
-          "When people describe coccyx (tailbone) pain, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "When people describe coccyx (tailbone) pain, we look at tissue capacity versus the demands of the week. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [coccydynia](/conditions/coccydynia) and [sacroiliac joint dysfunction](/conditions/si-joint-dysfunction)."
         ]
@@ -3459,11 +3459,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/coccyx-tailbone-pain-osteopath-woolwich.webp",
+          "src": "/images/blog/coccyx-tailbone-pain-osteopath-charlton.webp",
           "alt": "Person sitting carefully due to tailbone discomfort"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Expect calm, irritability-matched manual care plus a short plan covering activity pacing and joint-friendly movement rather than forced end-range stretching. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
@@ -3479,7 +3479,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "lifting-back-pain-warehouse-trades-woolwich": {
+  "lifting-back-pain-warehouse-trades-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3514,7 +3514,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/lifting-back-pain-warehouse-trades-woolwich.webp",
+          "src": "/images/blog/lifting-back-pain-warehouse-trades-charlton.webp",
           "alt": "Warehouse worker lifting boxes, manual handling strain"
         },
         "paragraphs": [
@@ -3534,19 +3534,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "rib-pain-breathing-osteopath-woolwich": {
+  "rib-pain-breathing-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
           "Sharp rib or side pain when breathing, twisting, or coughing? How thoracic and rib irritation is assessed at our Charlton clinic.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives rib pain and stiff breathing?",
         "paragraphs": [
-          "We treat rib pain and stiff breathing as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "We treat rib pain and stiff breathing as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [costochondritis](/conditions/costochondritis) and [thoracic joint dysfunction](/conditions/thoracic-joint-dysfunction)."
         ]
@@ -3569,11 +3569,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/rib-pain-breathing-osteopath-woolwich.webp",
+          "src": "/images/blog/rib-pain-breathing-osteopath-charlton.webp",
           "alt": "Person holding their side ribs while breathing carefully"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on activity pacing and joint-friendly movement rather than forced end-range stretching. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
         ]
       },
@@ -3589,19 +3589,19 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "hip-bursitis-osteopath-woolwich": {
+  "hip-bursitis-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
           "Pain on the outside of the hip when lying on that side or climbing stairs? How trochanteric irritation is managed with osteopathy in Charlton.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Woolwich with a focus on stairs, walking distance, sleep position, and sitting blocks, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives outer hip pain and bursitis?",
         "paragraphs": [
-          "We treat outer hip pain and bursitis as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Woolwich, that often means stairs, walking distance, sleep position, and sitting blocks.",
+          "We treat outer hip pain and bursitis as a pattern in how you move and recover, not just a label. For adults with joint-related aches around Charlton, that often means stairs, walking distance, sleep position, and sitting blocks.",
           "Useful change starts with activity pacing and joint-friendly movement rather than forced end-range stretching. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [greater trochanteric pain](/conditions/greater-trochanteric-pain) and [hip osteoarthritis](/conditions/hip-oa)."
         ]
@@ -3624,11 +3624,11 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/hip-bursitis-osteopath-woolwich.webp",
+          "src": "/images/blog/hip-bursitis-osteopath-charlton.webp",
           "alt": "Person holding the outer hip after side-lying pain"
         },
         "paragraphs": [
-          "Assessment for adults with joint-related aches around Woolwich covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
+          "Assessment for adults with joint-related aches around Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under stairs, walking distance, sleep position, and sitting blocks. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on activity pacing and joint-friendly movement rather than forced end-range stretching. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -3699,7 +3699,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "calcific-tendonitis-shoulder-shockwave-woolwich": {
+  "calcific-tendonitis-shoulder-shockwave-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3734,7 +3734,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/calcific-tendonitis-shoulder-shockwave-woolwich.webp",
+          "src": "/images/blog/calcific-tendonitis-shoulder-shockwave-charlton.webp",
           "alt": "Person with shoulder pain reaching overhead carefully"
         },
         "paragraphs": [
@@ -3754,7 +3754,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "shockwave-therapy-cost-woolwich": {
+  "shockwave-therapy-cost-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3789,7 +3789,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/shockwave-therapy-cost-woolwich.webp",
+          "src": "/images/blog/shockwave-therapy-cost-charlton.webp",
           "alt": "Clinic pricing and payment planning for treatment fees"
         },
         "paragraphs": [
@@ -3809,7 +3809,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "shin-splints-osteopath-woolwich": {
+  "shin-splints-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3844,7 +3844,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/shin-splints-osteopath-woolwich.webp",
+          "src": "/images/blog/shin-splints-osteopath-charlton.webp",
           "alt": "Runner holding the shin after training load pain"
         },
         "paragraphs": [
@@ -3864,7 +3864,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "cycling-lower-back-pain-osteopath-woolwich": {
+  "cycling-lower-back-pain-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3899,7 +3899,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/cycling-lower-back-pain-osteopath-woolwich.webp",
+          "src": "/images/blog/cycling-lower-back-pain-osteopath-charlton.webp",
           "alt": "Cyclist on a road bike representing lower back ride strain"
         },
         "paragraphs": [
@@ -3919,7 +3919,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "yoga-pilates-injury-osteopath-woolwich": {
+  "yoga-pilates-injury-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -3954,7 +3954,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/yoga-pilates-injury-osteopath-woolwich.webp",
+          "src": "/images/blog/yoga-pilates-injury-osteopath-charlton.webp",
           "alt": "Person stretching in a yoga pose related to flexibility strain"
         },
         "paragraphs": [
@@ -3974,7 +3974,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "massage-for-desk-workers-woolwich": {
+  "massage-for-desk-workers-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -4009,7 +4009,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/massage-for-desk-workers-woolwich.webp",
+          "src": "/images/blog/massage-for-desk-workers-charlton.webp",
           "alt": "Deep tissue massage for desk-related shoulder tension"
         },
         "paragraphs": [
@@ -4029,12 +4029,12 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "cupping-vs-massage-woolwich": {
+  "cupping-vs-massage-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
         "paragraphs": [
-          "Not sure whether cupping or deep tissue massage is right for you? A plain-English guide for Woolwich patients.",
+          "Not sure whether cupping or deep tissue massage is right for you? A plain-English guide for Charlton patients.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
@@ -4064,7 +4064,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/cupping-vs-massage-woolwich.webp",
+          "src": "/images/blog/cupping-vs-massage-charlton.webp",
           "alt": "Soft-tissue therapy tools comparing massage and cupping care"
         },
         "paragraphs": [
@@ -4084,7 +4084,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "pregnancy-sciatica-osteopath-woolwich": {
+  "pregnancy-sciatica-osteopath-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -4119,7 +4119,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/pregnancy-sciatica-osteopath-woolwich.webp",
+          "src": "/images/blog/pregnancy-sciatica-osteopath-charlton.webp",
           "alt": "Pregnant woman supporting her lower back and hip"
         },
         "paragraphs": [
@@ -4194,7 +4194,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "ctaHref": "/book",
     "ctaLabel": "Book online"
   },
-  "cranial-osteopathy-headaches-woolwich": {
+  "cranial-osteopathy-headaches-charlton": {
     "readingMinutes": 8,
     "sections": [
       {
@@ -4229,7 +4229,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "heading": "How osteopathy helps",
         "image": {
-          "src": "/images/blog/cranial-osteopathy-headaches-woolwich.webp",
+          "src": "/images/blog/cranial-osteopathy-headaches-charlton.webp",
           "alt": "Calm resting position suited to gentle cranial osteopathy"
         },
         "paragraphs": [

@@ -7,15 +7,15 @@ import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Desk pain osteopath Woolwich",
+  title: "Desk pain osteopath Charlton",
   description:
     "Osteopathy for desk and hybrid workers in Charlton SE7 — neck and shoulder tension, upper-back ache, text neck, and RSI-type wrist or forearm pain. Inside…",
   alternates: { canonical: "/desk-pain" },
   keywords: [
-    "desk pain osteopath Woolwich",
+    "desk pain osteopath Charlton",
     "office neck pain SE18",
     "hybrid worker osteopath London",
-    "RSI wrist osteopath Woolwich",
+    "RSI wrist osteopath Charlton",
     "text neck osteopath",
     "upper back pain desk workers",
   ],
@@ -74,11 +74,11 @@ const reads = [
     label: "Desk neck & shoulder pain",
   },
   {
-    href: "/blog/upper-back-pain-desk-workers-woolwich",
+    href: "/blog/upper-back-pain-desk-workers-charlton",
     label: "Upper back pain for desk workers",
   },
   {
-    href: "/blog/text-neck-smartphone-osteopath-woolwich",
+    href: "/blog/text-neck-smartphone-osteopath-charlton",
     label: "Text neck & smartphones",
   },
   {
@@ -90,7 +90,7 @@ const reads = [
     label: "Nail technician strain",
   },
   {
-    href: "/blog/massage-for-desk-workers-woolwich",
+    href: "/blog/massage-for-desk-workers-charlton",
     label: "Massage for desk workers",
   },
 ] as const;
@@ -302,7 +302,7 @@ export default function DeskPainPage() {
             Book between meetings
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
-            Inside {site.address.venue}, short walk from Woolwich Arsenal.{" "}
+            Inside {site.address.venue}, short walk from Charlton station.{" "}
             {site.booking.shortNote}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

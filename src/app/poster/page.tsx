@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Print posters | Nguyen's Osteopathic Clinic",
     description:
-      "A1 and A2 pavement signs plus A3 window poster PDFs for Woolwich SE18.",
+      "A1 and A2 pavement signs plus A3 window poster PDFs for Charlton SE7.",
     url: "/poster",
     images: [defaultOgImage],
   },
@@ -54,7 +54,7 @@ export default function PosterPage() {
           <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Print-ready PDFs for pavement A-boards and the pharmacy window —
             brand-first, distance-readable, with phone and booking QR for{" "}
-            {site.address.venue}, Woolwich.
+            {site.address.venue}, Charlton.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink

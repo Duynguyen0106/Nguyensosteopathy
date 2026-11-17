@@ -25,7 +25,6 @@ export function buildClinicJsonLd() {
       "Nguyen's Osteopathy",
       "Nguyens Osteopathic Clinic",
       "Nguyen's Osteopath Charlton",
-      "Nguyen's Osteopath Woolwich",
     ],
     description:
       `Drug-free osteopathic care in Charlton with Austin Duy Nguyen, GOsC-registered osteopath (Reg. No. ${site.practitioner.regNo}). Back pain, neck pain, focused shockwave, men’s health, sports rehab, and more — inside Village Pharmacy, SE7.`,
@@ -66,7 +65,6 @@ export function buildClinicJsonLd() {
     openingHoursSpecification: bookingHoursSpecification,
     areaServed: [
       { "@type": "City", name: "Charlton" },
-      { "@type": "City", name: "Woolwich" },
       { "@type": "City", name: "Greenwich" },
       { "@type": "City", name: "Plumstead" },
       { "@type": "City", name: "Thamesmead" },

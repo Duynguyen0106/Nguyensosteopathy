@@ -50,11 +50,10 @@ export const siteMapGroups = [
     links: [
       { href: "/conditions", label: "Conditions index" },
       { href: "/areas", label: "Areas we serve" },
-      { href: "/areas/woolwich", label: "Woolwich" },
+      { href: "/areas/charlton", label: "Charlton" },
       { href: "/areas/plumstead", label: "Plumstead" },
       { href: "/areas/abbey-wood", label: "Abbey Wood" },
       { href: "/areas/greenwich", label: "Greenwich" },
-      { href: "/areas/charlton", label: "Charlton" },
       { href: "/areas/thamesmead", label: "Thamesmead" },
     ],
   },

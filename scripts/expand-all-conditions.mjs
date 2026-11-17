@@ -433,7 +433,7 @@ const expansions = {
   },
   "thoracic-joint-dysfunction": {
     causes:
-      "Mid-back or interscapular ache often comes from stiff thoracic joints, overloaded postural muscles, and prolonged flexed sitting. Rib cage mobility and breathing pattern influence how the area feels with deep breaths or desk work. Disc issues are less common here than in the lumbar spine, but we still screen when symptoms are atypical. Local Woolwich desk and retail roles frequently feed this pattern.",
+      "Mid-back or interscapular ache often comes from stiff thoracic joints, overloaded postural muscles, and prolonged flexed sitting. Rib cage mobility and breathing pattern influence how the area feels with deep breaths or desk work. Disc issues are less common here than in the lumbar spine, but we still screen when symptoms are atypical. Local Charlton desk and retail roles frequently feed this pattern.",
     whoAffected:
       "Office workers, students, and people who drive long shifts are frequent visitors. Gym-goers who press heavy while lacking thoracic extension may flare between the blades. Chest pain of cardiac concern is never assumed musculoskeletal — sudden severe chest pain, breathlessness, or arm heaviness needs urgent medical care first.",
     whatToExpect:

@@ -5,8 +5,8 @@
  */
 console.log("=== Monthly compound SEO (Days 61–90) ===\n");
 console.log("1. GSC Performance (last 28 days vs prior 28):");
-console.log("   - Filter queries: osteopath woolwich | se18 | plumstead |");
-console.log("     shockwave woolwich | vietnamese osteopath | home visit woolwich");
+console.log("   - Filter queries: osteopath charlton | se18 | plumstead |");
+console.log("     shockwave charlton | vietnamese osteopath | home visit charlton");
 console.log("   - Note money pages with rising impressions but weak CTR → refresh title/meta/intro");
 console.log("   - Note pages with falling impressions → check indexing / internal links");
 console.log("");

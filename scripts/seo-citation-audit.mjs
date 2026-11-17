@@ -33,7 +33,7 @@ const directories = [
   {
     id: "yell",
     label: "Yell",
-    url: "https://www.yell.com/s/osteopaths-woolwich.html",
+    url: "https://www.yell.com/s/osteopaths-charlton.html",
     note: "Search listing; open clinic profile and confirm Mon–Sun 09:00–20:00",
   },
   {
@@ -52,18 +52,18 @@ const directories = [
     id: "linkedin",
     label: "LinkedIn",
     url: "https://www.linkedin.com/in/austin-nguyen-do",
-    note: "Location Woolwich / osteopath wording",
+    note: "Location Charlton / osteopath wording",
   },
   {
     id: "apple",
     label: "Apple Maps",
-    url: "https://maps.apple.com/?q=Nguyen%27s+Osteopathic+Clinic+Woolwich",
+    url: "https://maps.apple.com/?q=Nguyen%27s+Osteopathic+Clinic+Charlton",
     note: "Confirm NAP + Mon–Sun 09:00–20:00",
   },
   {
     id: "bing",
     label: "Bing Places",
-    url: "https://www.bing.com/maps?q=Nguyen%27s+Osteopathic+Clinic+Woolwich",
+    url: "https://www.bing.com/maps?q=Nguyen%27s+Osteopathic+Clinic+Charlton",
     note: "Confirm NAP + Mon–Sun 09:00–20:00",
   },
   {

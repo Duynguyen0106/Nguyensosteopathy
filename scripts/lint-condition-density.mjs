@@ -29,7 +29,7 @@ const FIELD_BUDGET = {
 };
 
 const LOCALITY =
-  /\b(?:Woolwich|Charlton|SE18|SE7|Elizabeth(?:\s+line)?|Greenwich\s+borough|The\s+Village|Woolwich\s+Arsenal|Charlton\s+station)\b/gi;
+  /\b(?:Charlton|SE18|SE7|Elizabeth(?:\s+line)?|Greenwich\s+borough|The\s+Village|Charlton\s+station|Plumstead|Abbey\s+Wood|Thamesmead)\b/gi;
 
 const FIELDS = Object.keys(FIELD_BUDGET);
 

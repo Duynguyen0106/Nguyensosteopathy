@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Aftercare advice following osteopathy at Nguyen's Osteopathic Clinic in Charlton: soreness, rest, movement, hydration, when to contact us, and how follow-up…",
   alternates: { canonical: "/aftercare" },
   keywords: [
-    "osteopathy aftercare Woolwich",
+    "osteopathy aftercare Charlton",
     "after osteopath treatment advice",
     "osteopath recovery tips SE18",
     "post treatment osteopathy London",

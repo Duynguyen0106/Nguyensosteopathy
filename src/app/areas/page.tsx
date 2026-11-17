@@ -8,22 +8,21 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Areas We Serve",
   description:
-    "Osteopath serving Charlton, Woolwich, Plumstead, Abbey Wood, Greenwich, and Thamesmead from Village Pharmacy, 9 The Village, SE7. Book online — no GP…",
+    "Osteopath serving Charlton, Plumstead, Abbey Wood, Greenwich, and Thamesmead from Village Pharmacy, 9 The Village, SE7. Book online — no GP…",
   alternates: { canonical: "/areas" },
   keywords: [
-    "osteopath Woolwich",
+    "osteopath Charlton",
     "osteopath Plumstead",
     "osteopath Abbey Wood",
     "osteopath Greenwich",
-    "osteopath Charlton",
     "osteopath Thamesmead",
-    "osteopath SE18",
+    "osteopath SE7",
     "areas we serve osteopath",
   ],
   openGraph: {
     title: "Areas We Serve | Nguyen's Osteopathic Clinic",
     description:
-      "Osteopathy for Charlton, Woolwich, Plumstead, Abbey Wood, Greenwich, and Thamesmead from Village Pharmacy, SE7 — book online without a GP referral.",
+      "Osteopathy for Charlton, Plumstead, Abbey Wood, Greenwich, and Thamesmead from Village Pharmacy, SE7 — book online without a GP referral.",
     url: "/areas",
     images: [defaultOgImage],
   },
@@ -61,7 +60,7 @@ export default function AreasPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Based in Charlton SE7 — practical for patients across Plumstead,
-            Abbey Wood, Greenwich, Charlton, and Thamesmead who want registered
+            Abbey Wood, Greenwich, and Thamesmead who want registered
             osteopathy without a central London trip.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -121,7 +120,7 @@ export default function AreasPage() {
             </Link>
             {" · "}
             <Link
-              href="/blog/parking-osteopath-woolwich-powis-street"
+              href="/blog/parking-osteopath-charlton-the-village"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Longer travel article

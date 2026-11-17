@@ -22,7 +22,7 @@ const moneyPages = [
   ["P1", "/services/home-visits"],
   ["P1", "/about"],
   ["P1", "/reviews"],
-  ["P1", "/areas/woolwich"],
+  ["P1", "/areas/charlton"],
   ["P1", "/vi"],
   ["P1", "/vi/book"],
   ["P1", "/vi/about"],
@@ -78,9 +78,9 @@ Manual GSC steps (cannot automate):
   1. Open Google Search Console → Sitemaps → submit/resubmit:
      ${sitemapUrl}
   2. URL Inspection → Request indexing for each P0 URL above (then P1).
-  3. Track queries monthly: osteopath woolwich | osteopath se18 |
-     osteopath plumstead | shockwave woolwich | vietnamese osteopath |
-     osteopath home visit woolwich
+  3. Track queries monthly: osteopath charlton | osteopath se18 |
+     osteopath plumstead | shockwave charlton | vietnamese osteopath |
+     osteopath home visit charlton
 `);
 
 if (failures > 0) {

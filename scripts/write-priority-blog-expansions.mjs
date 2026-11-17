@@ -5,7 +5,7 @@
 import fs from "node:fs";
 
 const priority = {
-  "sciatica-woolwich-osteopath": {
+  "sciatica-charlton-osteopath": {
     updated: "2026-10-15",
     readingMinutes: 10,
     sections: [
@@ -38,12 +38,12 @@ const priority = {
       {
         heading: "How osteopathy approaches sciatica",
         image: {
-          src: "/images/blog/lumbar-disc-pain-osteopath-woolwich.jpg",
+          src: "/images/blog/lumbar-disc-pain-osteopath-charlton.jpg",
           alt: "Person holding the lower back with disc-related lumbar pain",
         },
         paragraphs: [
           "Your first visit includes a case history, neurological screening where appropriate, and hands-on assessment of the spine, pelvis, and hips. Treatment may combine gentle mobilisation, soft-tissue work, and clear advice on positions that calm or aggravate symptoms.",
-          "Many people improve with conservative care. Read our fuller clinical notes on [sciatica treatment in Woolwich](/conditions/sciatica) and [lumbar disc / radiculopathy](/conditions/lumbar-disc-radiculopathy) if you want condition-level detail before you book.",
+          "Many people improve with conservative care. Read our fuller clinical notes on [sciatica treatment in Charlton](/conditions/sciatica) and [lumbar disc / radiculopathy](/conditions/lumbar-disc-radiculopathy) if you want condition-level detail before you book.",
           "If findings suggest imaging, GP review, or urgent pathways — progressive weakness, saddle numbness, or bladder change — we say so plainly and help you act quickly.",
         ],
       },
@@ -80,7 +80,7 @@ const priority = {
     sections: [
       {
         paragraphs: [
-          "Hybrid and office work around Woolwich often means hours at a laptop. The neck and upper shoulders take the load when the screen sits too low, the chair is too soft, or you hold tension through deadlines.",
+          "Hybrid and office work around Charlton often means hours at a laptop. The neck and upper shoulders take the load when the screen sits too low, the chair is too soft, or you hold tension through deadlines.",
           "Patients often describe a heavy, aching neck, tight shoulders, or headaches that build through the afternoon. Osteopathy can release irritable soft tissue, improve joint mobility, and show you a few movement resets that fit a working day.",
         ],
       },
@@ -107,12 +107,12 @@ const priority = {
       {
         heading: "How osteopathy helps desk-related pain",
         image: {
-          src: "/images/blog/tension-headaches-neck-osteopath-woolwich.jpg",
+          src: "/images/blog/tension-headaches-neck-osteopath-charlton.jpg",
           alt: "Person experiencing neck tension related to desk work and headaches",
         },
         paragraphs: [
           "Assessment covers cervical and thoracic mobility, shoulder contribution, and nerve irritability when arm symptoms are present. Treatment may include gentle mobilisation and soft-tissue work, never forced into sharp pain.",
-          "If headaches are part of your picture, see also [tension headaches and neck pain](/blog/tension-headaches-neck-osteopath-woolwich) and [cervicogenic headache](/conditions/cervicogenic-headache). Arm pins and needles may overlap with [cervical radiculopathy](/conditions/cervical-radiculopathy) — we screen rather than assume it is only tight muscles.",
+          "If headaches are part of your picture, see also [tension headaches and neck pain](/blog/tension-headaches-neck-osteopath-charlton) and [cervicogenic headache](/conditions/cervicogenic-headache). Arm pins and needles may overlap with [cervical radiculopathy](/conditions/cervical-radiculopathy) — we screen rather than assume it is only tight muscles.",
         ],
       },
       {
@@ -135,7 +135,7 @@ const priority = {
     ctaLabel: "View neck pain guide",
   },
 
-  "focused-shockwave-therapy-woolwich": {
+  "focused-shockwave-therapy-charlton": {
     updated: "2026-10-15",
     readingMinutes: 10,
     sections: [
@@ -155,7 +155,7 @@ const priority = {
       {
         heading: "What a session involves",
         image: {
-          src: "/images/blog/plantar-fasciitis-shockwave-woolwich.jpg",
+          src: "/images/blog/plantar-fasciitis-shockwave-charlton.jpg",
           alt: "Clinical focused shockwave therapy context for heel and tendon pain",
         },
         paragraphs: [
@@ -189,7 +189,7 @@ const priority = {
     ctaLabel: "View shockwave therapy guide",
   },
 
-  "osteopath-woolwich-what-to-expect": {
+  "osteopath-charlton-what-to-expect": {
     updated: "2026-10-15",
     readingMinutes: 10,
     sections: [
@@ -202,7 +202,7 @@ const priority = {
       {
         heading: "Who osteopathy can help",
         paragraphs: [
-          "People visit us from Woolwich, Greenwich, Thamesmead, Charlton, and across south-east London for everyday and specialist problems.",
+          "People visit us from Charlton, Greenwich, Thamesmead, Charlton, and across south-east London for everyday and specialist problems.",
         ],
         bullets: [
           "Back and neck pain from desk work or lifting",
@@ -216,12 +216,12 @@ const priority = {
       {
         heading: "Your first appointment (about 60 minutes)",
         image: {
-          src: "/images/blog/first-osteopathy-visit-checklist-woolwich.jpg",
+          src: "/images/blog/first-osteopathy-visit-checklist-charlton.jpg",
           alt: "Checklist-style preparation for a first osteopathy appointment",
         },
         paragraphs: [
           "We start with a case history: when symptoms began, what aggravates them, your work or sport, and what you want to get back to. Next comes a movement and hands-on examination. Findings are explained in plain English before treatment begins, where appropriate.",
-          "Wear comfortable clothing that lets you move easily. Bring any recent scan reports or letters if you have them — useful, but not required. You do not need a GP referral to book. For a printable-style list, see our [first visit checklist](/blog/first-osteopathy-visit-checklist-woolwich).",
+          "Wear comfortable clothing that lets you move easily. Bring any recent scan reports or letters if you have them — useful, but not required. You do not need a GP referral to book. For a printable-style list, see our [first visit checklist](/blog/first-osteopathy-visit-checklist-charlton).",
         ],
       },
       {
@@ -251,7 +251,7 @@ const priority = {
     ctaLabel: "Book online",
   },
 
-  "first-osteopathy-visit-checklist-woolwich": {
+  "first-osteopathy-visit-checklist-charlton": {
     updated: "2026-10-15",
     readingMinutes: 8,
     sections: [
@@ -279,18 +279,18 @@ const priority = {
         level: 3,
         paragraphs: [
           "Good questions unlock clearer plans: What is the likely driver? What should I modify this week? How will we know I am improving? When would imaging or a GP review be useful?",
-          "Read [what to expect at your first visit](/blog/osteopath-woolwich-what-to-expect) for the fuller narrative, and skim [fees](/fees) so cost is not a surprise mid-conversation.",
+          "Read [what to expect at your first visit](/blog/osteopath-charlton-what-to-expect) for the fuller narrative, and skim [fees](/fees) so cost is not a surprise mid-conversation.",
         ],
       },
       {
         heading: "What happens in the room",
         image: {
-          src: "/images/blog/osteopath-woolwich-what-to-expect.jpg",
-          alt: "Osteopathy consultation setting for a first visit in Woolwich",
+          src: "/images/blog/osteopath-charlton-what-to-expect.jpg",
+          alt: "Osteopathy consultation setting for a first visit in Charlton",
         },
         paragraphs: [
           "After history and examination, Austin explains findings before hands-on care. Treatment is matched to irritability. You can decline any technique you are uncomfortable with — consent is ongoing, not a one-time signature.",
-          "If your pain picture overlaps a specific condition, we may point you to guides such as [back pain in Woolwich](/blog/back-pain-woolwich-osteopathy) or relevant [condition pages](/conditions) for later reading — never as homework that replaces care.",
+          "If your pain picture overlaps a specific condition, we may point you to guides such as [back pain in Charlton](/blog/back-pain-charlton-osteopathy) or relevant [condition pages](/conditions) for later reading — never as homework that replaces care.",
         ],
       },
       {
@@ -306,13 +306,13 @@ const priority = {
     ctaLabel: "Book your first visit",
   },
 
-  "plantar-fasciitis-shockwave-woolwich": {
+  "plantar-fasciitis-shockwave-charlton": {
     updated: "2026-10-15",
     readingMinutes: 10,
     sections: [
       {
         paragraphs: [
-          "First-step heel pain that makes morning kitchen trips miserable is often plantar fasciitis — overload of the plantar fascia under soft-tissue and calf tension. Standing shifts, hard floors, and sudden walking volume are common Woolwich triggers.",
+          "First-step heel pain that makes morning kitchen trips miserable is often plantar fasciitis — overload of the plantar fascia under soft-tissue and calf tension. Standing shifts, hard floors, and sudden walking volume are common Charlton triggers.",
           "At Nguyen's Osteopathic Clinic we combine load advice, hands-on care, and focused shockwave when clinically suitable for stubborn cases.",
         ],
       },
@@ -338,7 +338,7 @@ const priority = {
       {
         heading: "How osteopathy and shockwave help",
         image: {
-          src: "/images/blog/achilles-tendinopathy-shockwave-woolwich.jpg",
+          src: "/images/blog/achilles-tendinopathy-shockwave-charlton.jpg",
           alt: "Lower leg and foot region relevant to heel and Achilles load issues",
         },
         paragraphs: [
@@ -359,13 +359,13 @@ const priority = {
     ctaLabel: "View plantar fasciitis guide",
   },
 
-  "tennis-elbow-shockwave-osteopath-woolwich": {
+  "tennis-elbow-shockwave-osteopath-charlton": {
     updated: "2026-10-15",
     readingMinutes: 9,
     sections: [
       {
         paragraphs: [
-          "Tennis elbow is lateral elbow tendon pain from gripping, lifting, mouse use, and tools — not only racket sports. Trades, desk workers, and DIY spikes are frequent Woolwich presentations.",
+          "Tennis elbow is lateral elbow tendon pain from gripping, lifting, mouse use, and tools — not only racket sports. Trades, desk workers, and DIY spikes are frequent Charlton presentations.",
           "Osteopathy addresses forearm and shoulder drivers; focused shockwave can help stubborn tendon pain after screening.",
         ],
       },
@@ -385,7 +385,7 @@ const priority = {
       {
         heading: "Treatment options we discuss",
         image: {
-          src: "/images/blog/golfers-elbow-osteopath-woolwich.jpg",
+          src: "/images/blog/golfers-elbow-osteopath-charlton.jpg",
           alt: "Elbow and forearm strain relevant to gripping and tendon overload",
         },
         paragraphs: [
@@ -405,7 +405,7 @@ const priority = {
     ctaLabel: "View tennis elbow guide",
   },
 
-  "shoulder-pain-frozen-shoulder-woolwich": {
+  "shoulder-pain-frozen-shoulder-charlton": {
     updated: "2026-10-15",
     readingMinutes: 10,
     sections: [
@@ -425,7 +425,7 @@ const priority = {
       {
         heading: "What we do in clinic",
         image: {
-          src: "/images/blog/gym-shoulder-injury-osteopath-woolwich.jpg",
+          src: "/images/blog/gym-shoulder-injury-osteopath-charlton.jpg",
           alt: "Shoulder mobility and gym-related shoulder strain context",
         },
         paragraphs: [
@@ -452,7 +452,7 @@ const priority = {
     ctaLabel: "View frozen shoulder guide",
   },
 
-  "lumbar-disc-pain-osteopath-woolwich": {
+  "lumbar-disc-pain-osteopath-charlton": {
     updated: "2026-10-15",
     readingMinutes: 10,
     sections: [
@@ -465,7 +465,7 @@ const priority = {
       {
         heading: "How disc-related pain behaves",
         paragraphs: [
-          "Flexion-heavy sitting and lifting often aggravate irritable discs. Some people get more leg symptoms than back pain. Morning stiffness and sit-to-stand catches are common. Pair this article with [sciatica in Woolwich](/blog/sciatica-woolwich-osteopath) and the [lumbar disc condition page](/conditions/lumbar-disc-radiculopathy) if nerve symptoms dominate.",
+          "Flexion-heavy sitting and lifting often aggravate irritable discs. Some people get more leg symptoms than back pain. Morning stiffness and sit-to-stand catches are common. Pair this article with [sciatica in Charlton](/blog/sciatica-charlton-osteopath) and the [lumbar disc condition page](/conditions/lumbar-disc-radiculopathy) if nerve symptoms dominate.",
         ],
       },
       {
@@ -482,7 +482,7 @@ const priority = {
       {
         heading: "What conservative care looks like",
         image: {
-          src: "/images/blog/sciatica-woolwich-osteopath.jpg",
+          src: "/images/blog/sciatica-charlton-osteopath.jpg",
           alt: "Sciatic-type leg pain related to lumbar nerve irritation",
         },
         paragraphs: [
@@ -498,7 +498,7 @@ const priority = {
         ],
       },
       {
-        heading: "Next step in Woolwich",
+        heading: "Next step in Charlton",
         paragraphs: [
           "If disc-type pain is limiting work or sleep, book an assessment. Bring any existing scan reports; they help conversation even when they are not required to start care. Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) when nerve signs are absent.",
         ],

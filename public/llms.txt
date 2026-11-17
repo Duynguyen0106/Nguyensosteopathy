@@ -45,11 +45,10 @@
 ## Conditions & areas
 - Conditions index: https://www.nguyensosteopathy.com/conditions
 - Areas we serve: https://www.nguyensosteopathy.com/areas
-- Woolwich: https://www.nguyensosteopathy.com/areas/woolwich
+- Charlton: https://www.nguyensosteopathy.com/areas/charlton
 - Plumstead: https://www.nguyensosteopathy.com/areas/plumstead
 - Abbey Wood: https://www.nguyensosteopathy.com/areas/abbey-wood
 - Greenwich: https://www.nguyensosteopathy.com/areas/greenwich
-- Charlton: https://www.nguyensosteopathy.com/areas/charlton
 - Thamesmead: https://www.nguyensosteopathy.com/areas/thamesmead
 
 ## Legal

@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     "Patient resources for Nguyen's Osteopathic Clinic in Charlton: new-patient guide, aftercare, home exercises, fees, insurance receipts, find us, FAQ…",
   alternates: { canonical: "/resources" },
   keywords: [
-    "osteopath Woolwich patient guide",
+    "osteopath Charlton patient guide",
     "osteopathy resources SE18",
-    "new patient osteopath Woolwich",
-    "osteopath fees Woolwich",
+    "new patient osteopath Charlton",
+    "osteopath fees Charlton",
     "Village Pharmacy osteopath help",
   ],
   openGraph: {
@@ -199,7 +199,7 @@ export default function ResourcesPage() {
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Patient hub · Woolwich SE18
+            Patient hub · Charlton SE7
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             Patient resources

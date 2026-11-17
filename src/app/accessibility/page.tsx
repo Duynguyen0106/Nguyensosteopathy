@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Accessibility Statement",
     description:
-      "Website and clinic accessibility information for Woolwich SE18 patients.",
+      "Website and clinic accessibility information for Charlton SE7 patients.",
     url: "/accessibility",
     images: [defaultOgImage],
   },

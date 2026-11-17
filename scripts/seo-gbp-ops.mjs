@@ -44,7 +44,7 @@ const faqs = [
   ],
   [
     "How do I leave a Google review?",
-    `After your visit, open our Google reviews link and share honest feedback — it helps Woolwich neighbours choose care: ${site.googleReviewsUrl}`,
+    `After your visit, open our Google reviews link and share honest feedback — it helps Charlton neighbours choose care: ${site.googleReviewsUrl}`,
   ],
 ];
 

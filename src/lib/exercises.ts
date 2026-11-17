@@ -849,7 +849,7 @@ export const programmes: Programme[] = [
     slug: "desk-neck-reset",
     title: "Desk neck reset",
     summary:
-      "Micro-breaks for screen-heavy days around Woolwich and SE18 — neck, shoulder blades, and mid-back.",
+      "Micro-breaks for screen-heavy days around Charlton and SE18 — neck, shoulder blades, and mid-back.",
     audience:
       "Desk and hybrid workers with posture-related neck or upper-back stiffness without acute trauma.",
     phase: "rebuild",

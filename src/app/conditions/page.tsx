@@ -110,7 +110,7 @@ export default function ConditionsIndexPage() {
               not settle? We assess and treat common musculoskeletal
               presentations at {site.address.venue} — clear diagnosis of what is
               driving your symptoms, then a practical plan for work, commuting,
-              or sport. People visit from Woolwich, Plumstead, Abbey Wood,
+              or sport. People visit from Charlton, Plumstead, Abbey Wood,
               Thamesmead, Charlton, and Greenwich. You do not need a GP referral.
             </p>
             <ul className="mt-6 space-y-3 text-base leading-relaxed text-slate-700">

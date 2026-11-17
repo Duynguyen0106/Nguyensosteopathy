@@ -12,7 +12,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Osteopathy Blog",
   description:
-    "Osteopathy blog for Woolwich and SE18: back pain treatment, neck pain treatment, shockwave therapy, sports rehab, pregnancy, men’s health, and clinic guides…",
+    "Osteopathy blog for Charlton and SE18: back pain treatment, neck pain treatment, shockwave therapy, sports rehab, pregnancy, men’s health, and clinic guides…",
   robots: {
     index: true,
     follow: true,
@@ -25,15 +25,15 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: `${site.websiteUrl}/blog` },
   keywords: [
-    "osteopathy blog Woolwich",
-    "back pain treatment Woolwich",
+    "osteopathy blog Charlton",
+    "back pain treatment Charlton",
     "neck pain treatment SE18",
     "shockwave therapy London",
     "osteopath advice Greenwich",
     "drug free pain relief",
   ],
   openGraph: {
-    title: "Osteopathy Blog | Woolwich Advice & Guides",
+    title: "Osteopathy Blog | Charlton Advice & Guides",
     description:
       "Local osteopathy articles organised by topic — practical guides for pain, treatment options, and booking at Nguyen's Osteopathic Clinic.",
     url: `${site.websiteUrl}/blog`,
@@ -50,9 +50,9 @@ export default function BlogIndexPage() {
   const collectionLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Osteopathy Blog | Woolwich Advice & Guides",
+    name: "Osteopathy Blog | Charlton Advice & Guides",
     description:
-      "Practical osteopathy guides for Woolwich and South East London, organised by clinic service topics.",
+      "Practical osteopathy guides for Charlton and South East London, organised by clinic service topics.",
     url: `${site.websiteUrl}/blog`,
     isPartOf: { "@id": `${site.websiteUrl}/#website` },
     about: { "@id": `${site.websiteUrl}/#clinic` },
@@ -81,7 +81,7 @@ export default function BlogIndexPage() {
             Clinic blog · {total} articles
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
-            Osteopathy advice for Woolwich and SE18
+            Osteopathy advice for Charlton and SE18
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
             Clear guides from {site.practitioner.name} at {site.name} — covering

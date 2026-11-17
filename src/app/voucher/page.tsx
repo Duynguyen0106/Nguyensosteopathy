@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "4-Session Care Voucher | Nguyen's Osteopathic Clinic",
     description:
-      "Print-ready gift voucher: four clinic visits, £500 total value — Woolwich SE18.",
+      "Print-ready gift voucher: four clinic visits, £500 total value — Charlton SE7.",
     url: "/voucher",
     images: [defaultOgImage],
   },

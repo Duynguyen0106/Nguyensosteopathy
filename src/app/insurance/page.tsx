@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     "How payment works at Nguyen's Osteopathic Clinic in Charlton: self-pay fees, receipts for insurance claims, and what to bring if your policy may reimburse…",
   alternates: { canonical: "/insurance" },
   keywords: [
-    "osteopath insurance Woolwich",
+    "osteopath insurance Charlton",
     "private health insurance osteopathy SE18",
     "osteopath receipt London",
-    "self pay osteopath Woolwich",
-    "Bupa osteopath Woolwich",
+    "self pay osteopath Charlton",
+    "Bupa osteopath Charlton",
   ],
   openGraph: {
     title: "Insurance & Self-Pay | Nguyen's Osteopathic Clinic",
@@ -50,7 +50,7 @@ export default function InsurancePage() {
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Fees &amp; paperwork · Woolwich SE18
+            Fees &amp; paperwork · Charlton SE7
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             Insurance &amp; self-pay

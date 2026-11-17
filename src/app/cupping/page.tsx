@@ -7,15 +7,15 @@ import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Cupping add-on in Woolwich",
+  title: "Cupping add-on in Charlton",
   description:
     "Cupping therapy add-on (+£15) in Charlton SE7 for muscular tightness — used when clinically useful alongside osteopathy or deep tissue massage at Nguyen's…",
   alternates: { canonical: "/cupping" },
   keywords: [
-    "cupping Woolwich",
+    "cupping Charlton",
     "cupping therapy SE18",
     "cupping add-on osteopath",
-    "cupping vs massage Woolwich",
+    "cupping vs massage Charlton",
     "myofascial cupping London",
   ],
   openGraph: {
@@ -65,7 +65,7 @@ export default function CuppingPage() {
   const pageLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    name: "Cupping Therapy Add-on in Woolwich",
+    name: "Cupping Therapy Add-on in Charlton",
     url: `${site.websiteUrl}/cupping`,
     description:
       "Cupping therapy add-on for muscular tightness in Charlton SE7.",
@@ -177,14 +177,14 @@ export default function CuppingPage() {
           <p className="mt-10 text-sm text-slate-600">
             Related:{" "}
             <Link
-              href="/blog/cupping-therapy-add-on-woolwich"
+              href="/blog/cupping-therapy-add-on-charlton"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Cupping add-on guide
             </Link>
             {" · "}
             <Link
-              href="/blog/cupping-vs-massage-woolwich"
+              href="/blog/cupping-vs-massage-charlton"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Cupping vs massage

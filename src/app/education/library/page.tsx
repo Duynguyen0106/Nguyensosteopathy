@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/education/library" },
   keywords: [
-    "supplement education Woolwich",
+    "supplement education Charlton",
     "osteopath nutrition library",
     "practitioner supplement notes",
     "patient supplement guides SE18",

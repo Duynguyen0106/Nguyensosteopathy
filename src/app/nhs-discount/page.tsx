@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     "10% NHS staff and student discount at Nguyen's Osteopathic Clinic in Charlton SE7. Valid ID required at appointment. See how it works with booking.",
   alternates: { canonical: "/nhs-discount" },
   keywords: [
-    "NHS discount osteopath Woolwich",
+    "NHS discount osteopath Charlton",
     "student discount osteopathy SE18",
-    "cheap osteopath Woolwich",
+    "cheap osteopath Charlton",
     "NHS staff osteopath London",
     "student osteopath discount",
   ],
@@ -149,7 +149,7 @@ export default function NhsDiscountPage() {
           <p className="mt-6 text-sm text-slate-600">
             Related:{" "}
             <Link
-              href="/blog/nhs-student-osteopathy-discount-woolwich"
+              href="/blog/nhs-student-osteopathy-discount-charlton"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Discount article

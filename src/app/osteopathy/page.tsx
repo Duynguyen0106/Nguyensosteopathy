@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/osteopathy" },
   keywords: [
     "what is osteopathy",
-    "osteopath Woolwich",
+    "osteopath Charlton",
     "osteopathy explained",
     "GOsC osteopath SE18",
     "drug free osteopathy London",
-    "osteopath vs physiotherapist Woolwich",
+    "osteopath vs physiotherapist Charlton",
   ],
   openGraph: {
     title: "What Is Osteopathy? | Nguyen's Osteopathic Clinic",
@@ -345,7 +345,7 @@ export default function OsteopathyPage() {
           <p className="mt-10 text-sm text-slate-600">
             More detail:{" "}
             <Link
-              href="/blog/osteopath-vs-physiotherapist-woolwich"
+              href="/blog/osteopath-vs-physiotherapist-charlton"
               className="font-semibold text-teal hover:text-teal-dark"
             >
               Osteopath vs physiotherapist

@@ -37,7 +37,7 @@ const viFeesFaqs = [
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Bảng giá osteopathy Woolwich",
+  title: "Bảng giá osteopathy Charlton",
   description: feesDescription,
   alternates: {
     canonical: "/vi/fees",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: pageOpenGraph({
-    title: "Bảng giá osteopathy Woolwich",
+    title: "Bảng giá osteopathy Charlton",
     description: feesDescription,
     url: "/vi/fees",
     images: [defaultOgImage],
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Bảng giá osteopathy Woolwich",
+    title: "Bảng giá osteopathy Charlton",
     description: feesDescription,
     images: [defaultOgImage.url],
   },

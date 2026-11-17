@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "Phục vụ khu vực nào?",
-    a: "Ưu tiên Woolwich và SE London lân cận. Gửi địa chỉ để chúng tôi xác nhận trước.",
+    a: "Ưu tiên Charlton và SE London lân cận. Gửi địa chỉ để chúng tôi xác nhận trước.",
   },
 ] as const;
 
@@ -84,7 +84,7 @@ export default function VietnameseHomeVisitsPage() {
             ← Trang tiếng Việt
           </Link>
           <p className="mt-5 text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Khám tại nhà · Woolwich &amp; SE London
+            Khám tại nhà · Charlton &amp; SE London
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             Osteopathy tại nhà khi khó đến phòng khám

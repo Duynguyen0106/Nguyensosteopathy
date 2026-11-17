@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Read Google reviews for Nguyen's Osteopathic Clinic in Charlton. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
   alternates: { canonical: "/reviews" },
   keywords: [
-    "osteopath Woolwich reviews",
+    "osteopath Charlton reviews",
     "Nguyen's Osteopathic Clinic Google reviews",
     "osteopath SE18 feedback",
     "Austin Duy Nguyen reviews",
@@ -101,7 +101,7 @@ export default function ReviewsPage() {
               Been to the clinic? Your review helps neighbours find care.
             </p>
             <p className="mt-2 text-sm text-white/75 md:text-base">
-              Honest Google feedback helps Woolwich locals choose an osteopath
+              Honest Google feedback helps Charlton locals choose an osteopath
               they can trust — especially the Vietnamese community looking for
               someone who understands.
             </p>

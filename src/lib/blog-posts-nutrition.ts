@@ -40,12 +40,12 @@ export const nutritionBlogPosts: NutritionPost[] = [
     category: CATEGORY,
     keywords: [
       "supplements back pain",
-      "vitamins for back pain Woolwich",
+      "vitamins for back pain Charlton",
       "osteopath nutrition SE18",
       "MSK supplements myth"
     ],
     image: {
-      "src": "/images/blog/back-pain-woolwich-osteopathy.webp",
+      "src": "/images/blog/back-pain-charlton-osteopathy.webp",
       "alt": "Adult holding the lower back due to back pain"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["supplements-wont-fix-back-pain"],
@@ -111,11 +111,11 @@ export const nutritionBlogPosts: NutritionPost[] = [
     keywords: [
       "magnesium muscle tension",
       "magnesium cramps osteopath",
-      "magnesium Woolwich",
+      "magnesium Charlton",
       "tight muscles supplements"
     ],
     image: {
-      "src": "/images/blog/chronic-pain-osteopath-woolwich.webp",
+      "src": "/images/blog/chronic-pain-osteopath-charlton.webp",
       "alt": "Person dealing with persistent muscle tension and pain"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["magnesium-muscle-tension"],
@@ -180,12 +180,12 @@ export const nutritionBlogPosts: NutritionPost[] = [
     category: CATEGORY,
     keywords: [
       "vitamin D musculoskeletal",
-      "vitamin D osteopath Woolwich",
+      "vitamin D osteopath Charlton",
       "vitamin D bone health SE18",
       "vitamin D deficiency UK"
     ],
     image: {
-      "src": "/images/blog/osteoarthritis-joints-osteopath-woolwich.webp",
+      "src": "/images/blog/osteoarthritis-joints-osteopath-charlton.webp",
       "alt": "Hands and joints — bone and muscle health context"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["vitamin-d-msk-health"],
@@ -246,10 +246,10 @@ export const nutritionBlogPosts: NutritionPost[] = [
       "omega-3 inflammation joints",
       "fish oil osteopath",
       "EPA DHA joint pain",
-      "omega-3 Woolwich"
+      "omega-3 Charlton"
     ],
     image: {
-      "src": "/images/blog/hip-knee-pain-osteopath-woolwich.webp",
+      "src": "/images/blog/hip-knee-pain-osteopath-charlton.webp",
       "alt": "Hip and knee comfort during everyday movement"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["omega-3-inflammation"],
@@ -308,11 +308,11 @@ export const nutritionBlogPosts: NutritionPost[] = [
     keywords: [
       "collagen tendons",
       "collagen supplements joints",
-      "collagen rehab Woolwich",
+      "collagen rehab Charlton",
       "tendon collagen osteopath"
     ],
     image: {
-      "src": "/images/blog/achilles-tendinopathy-shockwave-woolwich.webp",
+      "src": "/images/blog/achilles-tendinopathy-shockwave-charlton.webp",
       "alt": "Lower leg and Achilles tendon region during rehab"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["collagen-tendons-joints"],
@@ -381,7 +381,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
       "herbal joint supplements"
     ],
     image: {
-      "src": "/images/blog/osteoarthritis-joints-osteopath-woolwich.webp",
+      "src": "/images/blog/osteoarthritis-joints-osteopath-charlton.webp",
       "alt": "Osteoarthritis joint care conversation in clinic"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["turmeric-curcumin-caveats"],
@@ -440,7 +440,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
     keywords: [
       "sleep recovery nutrients",
       "sleep and pain osteopath",
-      "magnesium sleep Woolwich",
+      "magnesium sleep Charlton",
       "pain insomnia recovery"
     ],
     image: {
@@ -452,7 +452,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
       {
         "heading": "Why sleep belongs on an MSK plan",
         "paragraphs": [
-          "Poor sleep raises pain sensitivity and slows rehab adherence. Evening scrolling, late caffeine, alcohol, and uncontrolled night pain are common Woolwich-clinic themes — more than exotic supplements."
+          "Poor sleep raises pain sensitivity and slows rehab adherence. Evening scrolling, late caffeine, alcohol, and uncontrolled night pain are common Charlton-clinic themes — more than exotic supplements."
         ]
       },
       {
@@ -510,7 +510,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
       "hydration electrolytes training",
       "sports drink osteopath",
       "cramps electrolytes",
-      "active recovery Woolwich"
+      "active recovery Charlton"
     ],
     image: {
       "src": "/images/blog/football-muscle-strain-osteopath-se18.webp",
@@ -578,11 +578,11 @@ export const nutritionBlogPosts: NutritionPost[] = [
     keywords: [
       "glucosamine chondroitin",
       "joint supplements osteoarthritis",
-      "glucosamine Woolwich",
+      "glucosamine Charlton",
       "cartilage supplements evidence"
     ],
     image: {
-      "src": "/images/blog/hip-knee-pain-osteopath-woolwich.webp",
+      "src": "/images/blog/hip-knee-pain-osteopath-charlton.webp",
       "alt": "Knee and hip osteoarthritis support"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["glucosamine-chondroitin-joints"],
@@ -641,11 +641,11 @@ export const nutritionBlogPosts: NutritionPost[] = [
     keywords: [
       "protein rehab recovery",
       "protein intake injury",
-      "protein osteopath Woolwich",
+      "protein osteopath Charlton",
       "muscle recovery protein"
     ],
     image: {
-      "src": "/images/blog/ankle-sprain-rehab-osteopath-woolwich.webp",
+      "src": "/images/blog/ankle-sprain-rehab-osteopath-charlton.webp",
       "alt": "Rehab training to rebuild strength after injury"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["protein-rehab-recovery"],
@@ -711,10 +711,10 @@ export const nutritionBlogPosts: NutritionPost[] = [
       "topical gel vs supplements",
       "pain gel osteopath",
       "oral supplements pain",
-      "pharmacy pain relief Woolwich"
+      "pharmacy pain relief Charlton"
     ],
     image: {
-      "src": "/images/blog/deep-tissue-massage-woolwich-osteopath.webp",
+      "src": "/images/blog/deep-tissue-massage-charlton-osteopath.webp",
       "alt": "Hands-on clinic care alongside pharmacy products"
     },
     relatedConditionSlugs: nutritionBlogRelatedConditions["topical-vs-oral-pain-relief"],

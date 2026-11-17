@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Vietnamese osteopath UK",
     "Austin Duy Nguyen",
     "British College of Osteopathic Medicine",
-    "osteopath Woolwich Vietnamese",
+    "osteopath Charlton Vietnamese",
     "Nguyen's Osteopathic Clinic story",
     "Vietnamese community osteopathy London",
   ],
@@ -201,7 +201,7 @@ export default function AboutPage() {
               />
               <Image
                 src="/images/clinic-treatment.webp"
-                alt="Treatment table and clinical certificates in the Woolwich osteopathy room"
+                alt="Treatment table and clinical certificates in the Charlton osteopathy room"
                 width={900}
                 height={1200}
                 loading="lazy"
@@ -225,7 +225,7 @@ export default function AboutPage() {
             />
             <Image
               src="/images/clinic-room.webp"
-              alt="Full view of the osteopathy consultation and treatment room in Woolwich"
+              alt="Full view of the osteopathy consultation and treatment room in Charlton"
               width={800}
               height={600}
               loading="lazy"
@@ -311,7 +311,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-white/88">
             <p>
-              Far from Woolwich, I remain deeply committed to{" "}
+              Far from Charlton, I remain deeply committed to{" "}
               <strong className="font-semibold text-white">
                 supporting spine and bone health in children in Vietnam
               </strong>
@@ -519,7 +519,7 @@ export default function AboutPage() {
             Walk in as a patient. Leave knowing you were understood.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-white/85">
-            Inside {site.address.venue}, {site.address.line1}, Woolwich. Book
+            Inside {site.address.venue}, {site.address.line1}, Charlton. Book
             online or call — no GP referral needed.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">

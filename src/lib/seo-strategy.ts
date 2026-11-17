@@ -25,7 +25,7 @@ export const moneyPages = [
   { path: "/services/home-visits", label: "Home visits", priority: "P1" },
   { path: "/about", label: "About Austin", priority: "P1" },
   { path: "/reviews", label: "Reviews", priority: "P1" },
-  { path: "/areas/woolwich", label: "Woolwich area", priority: "P1" },
+  { path: "/areas/charlton", label: "Charlton area", priority: "P1" },
   { path: "/areas/plumstead", label: "Plumstead area", priority: "P1" },
   { path: "/areas/abbey-wood", label: "Abbey Wood area", priority: "P1" },
   { path: "/vi", label: "Vietnamese hub", priority: "P1" },
@@ -35,14 +35,14 @@ export const moneyPages = [
 
 /** Queries to watch monthly in Google Search Console. */
 export const trackedQueries = [
-  "osteopath woolwich",
+  "osteopath charlton",
   "osteopath se18",
   "osteopath plumstead",
   "osteopath abbey wood",
-  "shockwave woolwich",
+  "shockwave charlton",
   "vietnamese osteopath",
-  "osteopath home visit woolwich",
-  "mens health shockwave woolwich",
+  "osteopath home visit charlton",
+  "mens health shockwave charlton",
 ] as const;
 
 export type BookCampaign =
@@ -109,7 +109,7 @@ export const topicClusters: TopicCluster[] = [
       { href: "/desk-pain", label: "Desk & office pain" },
       { href: "/exercises", label: "Home exercises" },
       {
-        href: "/blog/back-pain-woolwich-osteopathy",
+        href: "/blog/back-pain-charlton-osteopathy",
         label: "Back pain guide",
       },
     ],
@@ -124,11 +124,11 @@ export const topicClusters: TopicCluster[] = [
       { href: "/services/sports-injury-rehab", label: "Sports injury rehab" },
       { href: "/fees", label: "Fees" },
       {
-        href: "/blog/focused-shockwave-therapy-woolwich",
+        href: "/blog/focused-shockwave-therapy-charlton",
         label: "Shockwave guide",
       },
       {
-        href: "/blog/mens-health-shockwave-woolwich",
+        href: "/blog/mens-health-shockwave-charlton",
         label: "Men's health guide",
       },
     ],
@@ -139,7 +139,7 @@ export const topicClusters: TopicCluster[] = [
     hubHref: "/find-us",
     hubLabel: "Find us & parking",
     links: [
-      { href: "/areas/woolwich", label: "Woolwich" },
+      { href: "/areas/charlton", label: "Charlton" },
       { href: "/areas/plumstead", label: "Plumstead" },
       { href: "/areas/abbey-wood", label: "Abbey Wood" },
       { href: "/areas/greenwich", label: "Greenwich" },

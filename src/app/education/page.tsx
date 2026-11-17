@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/education" },
   keywords: [
-    "osteopath education Woolwich",
+    "osteopath education Charlton",
     "supplement education library SE18",
     "acupuncture education London",
     "osteopathy CPD notes",
@@ -71,7 +71,7 @@ export default function EducationHubPage() {
       <section className="hero-wash border-b border-slate-200 px-5 pt-14 pb-16 md:px-8 md:pt-20 md:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-            Learn with the clinic · Woolwich SE18
+            Learn with the clinic · Charlton SE7
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             Education hub

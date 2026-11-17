@@ -21,7 +21,7 @@ const moneyPages = [
   ["P1", "/services/home-visits"],
   ["P1", "/about"],
   ["P1", "/reviews"],
-  ["P1", "/areas/woolwich"],
+  ["P1", "/areas/charlton"],
   ["P1", "/vi"],
   ["P1", "/vi/book"],
   ["P1", "/vi/about"],
@@ -30,12 +30,12 @@ const moneyPages = [
 ];
 
 const queries = [
-  "osteopath woolwich",
+  "osteopath charlton",
   "osteopath se18",
   "osteopath plumstead",
-  "shockwave woolwich",
+  "shockwave charlton",
   "vietnamese osteopath",
-  "osteopath home visit woolwich",
+  "osteopath home visit charlton",
 ];
 
 console.log("=== GSC hygiene checklist ===\n");

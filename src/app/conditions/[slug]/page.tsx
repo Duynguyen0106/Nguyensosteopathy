@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const condition = getCondition(slug);
   if (!condition) return {};
 
-  const title = fitSerpTitle(`${condition.shortTitle} Woolwich`);
+  const title = fitSerpTitle(`${condition.shortTitle} Charlton`);
   const description = enrichDescription(
     condition.summary,
     `Osteopathic care in Charlton SE7 at ${site.name} — book without a GP referral.`,
@@ -89,7 +89,7 @@ export default async function ConditionPage({ params }: Props) {
       "@type": "PeopleAudience",
       geographicArea: {
         "@type": "City",
-        name: "Woolwich",
+        name: "Charlton",
       },
     },
     reviewedBy: { "@id": `${site.websiteUrl}/#practitioner` },
@@ -140,7 +140,7 @@ export default async function ConditionPage({ params }: Props) {
             {" · "}
             {condition.region}
             {" · "}
-            Woolwich SE18
+            Charlton SE7
           </p>
           <p className="mt-4 text-sm leading-relaxed text-slate-600">
             Reviewed by{" "}

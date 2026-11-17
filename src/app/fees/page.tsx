@@ -8,7 +8,7 @@ import { bookHref, moneyPageFaqs } from "@/lib/seo-strategy";
 import { pricing, schemaOfferId, schemaOffers, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Osteopath fees in Woolwich",
+  title: "Osteopath fees in Charlton",
   description:
     "Clear osteopathy fees in Charlton SE7: initial £75, follow-up £60, home visits £120 / £100, shockwave £90, deep tissue £60. 10% NHS & student discount.",
   alternates: {
@@ -20,15 +20,15 @@ export const metadata: Metadata = {
     },
   },
   keywords: [
-    "osteopath Woolwich prices",
-    "osteopath Woolwich fees",
+    "osteopath Charlton prices",
+    "osteopath Charlton fees",
     "osteopathy cost SE18",
-    "home visit osteopath price Woolwich",
-    "shockwave therapy price Woolwich",
+    "home visit osteopath price Charlton",
+    "shockwave therapy price Charlton",
     "Nguyen's Osteopathic Clinic pricing",
   ],
   openGraph: {
-    title: "Osteopath fees in Woolwich",
+    title: "Osteopath fees in Charlton",
     description:
       "Clear osteopathy fees in Charlton SE7: initial £75, follow-up £60, home visits £120 / £100, shockwave £90. 10% NHS & student discount.",
     url: "/fees",
@@ -223,7 +223,7 @@ export default function FeesPage() {
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
             Fees are confirmed before treatment. These answers help you choose
-            the right appointment type for Woolwich SE18.
+            the right appointment type for Charlton SE7.
           </p>
           <FaqAccordion items={moneyPageFaqs} />
         </div>

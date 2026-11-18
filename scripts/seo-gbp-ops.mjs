@@ -67,7 +67,12 @@ const posts = [
   ],
 ];
 
-/** Paste into GBP → Edit profile → Services. Prices match src/lib/site.ts. */
+/**
+ * Paste into GBP → Edit profile → Services.
+ * Mix of exact fees (appointments) + “From £75” condition names for search coverage.
+ * Names mirror common Google queries (back pain near me, frozen shoulder, plantar fasciitis…).
+ * Prices match src/lib/site.ts — do not invent NHS pathways or treatments you do not offer.
+ */
 const gbpServiceGroups = [
   {
     category: "Osteopathy appointments",
@@ -75,72 +80,217 @@ const gbpServiceGroups = [
       [
         "Initial osteopathy consultation & treatment",
         "£75",
-        "60-minute first visit with Austin Duy Nguyen, GOsC-registered osteopath. Full case history, movement assessment, explanation of findings, and hands-on treatment when appropriate. No GP referral needed.",
+        "60-minute first visit with Austin Duy Nguyen, GOsC-registered osteopath in Charlton SE7. Full case history, movement assessment, findings explained, and hands-on treatment when appropriate. No GP referral needed.",
       ],
       [
         "Follow-up osteopathic treatment",
         "£60",
-        "30-minute follow-up for ongoing osteopathic care. Progress review, hands-on treatment, and updated home advice.",
+        "30-minute follow-up osteopathy. Progress review, hands-on treatment, and updated home advice after your initial consultation.",
+      ],
+      [
+        "Private osteopath Charlton SE7",
+        "From £75",
+        "Private osteopathy inside Village Pharmacy, 9 The Village, Charlton. One-to-one care with online booking and evening / weekend hours.",
+      ],
+      [
+        "Same-week osteopathy appointment",
+        "From £75",
+        "Book a same-week osteopathy slot when available. Live availability shown online — Mon–Sun 9am–8pm.",
       ],
     ],
   },
   {
-    category: "Back, neck & spine",
+    category: "Back & spine",
     services: [
       [
-        "Back pain osteopathy",
+        "Lower back pain treatment",
         "From £75",
-        "Assessment and hands-on care for lower-back pain, stiffness, and mechanical spinal irritation in Charlton SE7.",
+        "Osteopathy for lower back pain, morning stiffness, and mechanical lumbar irritation in Charlton / SE London.",
       ],
       [
-        "Neck pain osteopathy",
+        "Upper back & thoracic pain treatment",
         "From £75",
-        "Treatment for neck pain, desk strain, and restricted upper-spine movement. Private one-to-one care inside Village Pharmacy.",
+        "Hands-on care for mid-back ache, rib-cage stiffness, and desk-related upper-back strain.",
       ],
       [
         "Sciatica treatment",
         "From £75",
-        "Osteopathic assessment for sciatica-type leg pain, including screening for red flags and a clear plan for recovery.",
+        "Assessment for sciatica-type buttock and leg pain, with red-flag screening and a clear recovery plan.",
       ],
       [
-        "Disc-related back pain care",
+        "Slipped disc / disc bulge care",
         "From £75",
-        "Careful assessment and hands-on treatment for disc-related stiffness and flare-ups, with advice you can keep between visits.",
+        "Careful osteopathic assessment for disc-related back pain and flare-ups, with advice you can keep between visits.",
+      ],
+      [
+        "Sacroiliac (SI) joint pain treatment",
+        "From £75",
+        "Osteopathy for SI joint irritation, one-sided low-back ache, and walking-related pelvic stiffness.",
+      ],
+      [
+        "Coccyx / tailbone pain osteopathy",
+        "From £75",
+        "Gentle assessment for coccyx discomfort after sitting, falls, or childbirth-related strain.",
+      ],
+      [
+        "Spinal stiffness & mobility treatment",
+        "From £75",
+        "Treatment to ease spinal stiffness and restore freer movement through the neck, mid-back, and lower back.",
+      ],
+      [
+        "Lumbago osteopathy",
+        "From £75",
+        "Hands-on osteopathy for acute or lingering lumbago / low-back flare-ups when clinically appropriate.",
       ],
     ],
   },
   {
-    category: "Headaches & joints",
+    category: "Neck & headaches",
     services: [
       [
-        "Tension headache osteopathy",
+        "Neck pain osteopathy",
         "From £75",
-        "Osteopathy for tension-type and neck-related headaches, focusing on upper-neck mechanics and shoulder load.",
+        "Treatment for neck pain, restricted turning, and upper-spine strain from screens or sleep position.",
       ],
+      [
+        "Whiplash injury osteopathy",
+        "From £75",
+        "Assessment and gentle rehab support after road-traffic or impact-related neck strain.",
+      ],
+      [
+        "Tension headache treatment",
+        "From £75",
+        "Osteopathy for tension-type headaches linked to neck and shoulder load.",
+      ],
+      [
+        "Migraine-related neck tension care",
+        "From £75",
+        "Hands-on care for neck and shoulder drivers that often sit alongside migraine patterns — not a substitute for medical migraine care.",
+      ],
+      [
+        "Cervicogenic headache osteopathy",
+        "From £75",
+        "Assessment for headaches that start in the neck and refer to the head or behind the eyes.",
+      ],
+      [
+        "Text neck / phone posture strain",
+        "From £75",
+        "Care for forward-head posture strain, phone-related neck ache, and upper-trap tightness.",
+      ],
+    ],
+  },
+  {
+    category: "Shoulders, arms & wrists",
+    services: [
       [
         "Shoulder pain treatment",
         "From £75",
-        "Hands-on osteopathy for shoulder stiffness, overuse irritation, and movement restriction after sport or desk work.",
+        "Osteopathy for shoulder stiffness, overuse irritation, and limited reach after sport or desk work.",
       ],
+      [
+        "Frozen shoulder osteopathy",
+        "From £75",
+        "Assessment and staged care for adhesive capsulitis / frozen shoulder stiffness and night pain.",
+      ],
+      [
+        "Rotator cuff strain treatment",
+        "From £75",
+        "Hands-on and rehab advice for rotator cuff irritation, overhead ache, and training-related shoulder load.",
+      ],
+      [
+        "Tennis elbow treatment",
+        "From £75",
+        "Osteopathy and loading advice for lateral elbow pain from gripping, racket sport, or desk work.",
+      ],
+      [
+        "Golfer's elbow treatment",
+        "From £75",
+        "Care for medial elbow pain linked to gripping, lifting, or repetitive forearm load.",
+      ],
+      [
+        "Wrist & forearm strain treatment",
+        "From £75",
+        "Osteopathy for RSI-type wrist and forearm strain from typing, mouse use, or training.",
+      ],
+      [
+        "Carpal tunnel symptom support",
+        "From £75",
+        "Assessment for wrist and hand numbness or ache; screening advice and soft-tissue care when osteopathy is appropriate.",
+      ],
+    ],
+  },
+  {
+    category: "Hips, knees, feet & ankles",
+    services: [
       [
         "Hip pain osteopathy",
         "From £75",
-        "Assessment and treatment for hip stiffness, walking-related ache, and peri-hip soft-tissue irritation.",
+        "Treatment for hip stiffness, walking-related ache, and peri-hip soft-tissue irritation.",
       ],
       [
         "Knee pain osteopathy",
         "From £75",
-        "Osteopathic care for knee irritability linked to load, stairs, sport, or desk-to-training spikes.",
+        "Care for knee irritability linked to stairs, sport, desk-to-training spikes, or prolonged sitting.",
       ],
       [
-        "Jaw / TMJ osteopathy",
+        "Ankle sprain rehab",
         "From £75",
-        "Gentle assessment for jaw tension, clenching-related discomfort, and related neck contribution.",
+        "Osteopathic assessment and rehab planning after ankle sprain or lingering instability.",
+      ],
+      [
+        "Plantar fasciitis / heel pain treatment",
+        "From £75",
+        "Assessment for heel and arch pain on first steps; manual care plus loading advice. Shockwave available when suitable.",
+      ],
+      [
+        "Achilles tendon pain treatment",
+        "From £75",
+        "Care for Achilles irritation in runners and walkers, with loading guidance and optional focused shockwave.",
+      ],
+      [
+        "Shin splints osteopathy",
+        "From £75",
+        "Assessment for medial tibial stress-type shin pain in runners and new gym walkers.",
+      ],
+      [
+        "Foot pain osteopathy",
+        "From £75",
+        "Hands-on care for forefoot, midfoot, or arch discomfort that affects walking or training.",
+      ],
+      [
+        "Osteoarthritis joint support",
+        "From £75",
+        "Osteopathy to ease stiffness and improve comfortable movement around osteoarthritic hips, knees, or spine — alongside your medical care.",
       ],
     ],
   },
   {
-    category: "Sports & rehab",
+    category: "Jaw, ribs & pelvis",
+    services: [
+      [
+        "TMJ / jaw pain osteopathy",
+        "From £75",
+        "Gentle assessment for jaw clicking, clenching-related discomfort, and related neck contribution.",
+      ],
+      [
+        "Rib pain & costochondral strain care",
+        "From £75",
+        "Osteopathy for rib-cage stiffness, breathing-related ache, and side-trunk strain after cough or twist.",
+      ],
+      [
+        "Pelvic girdle pain treatment",
+        "From £75",
+        "Assessment for pelvic girdle discomfort in pregnancy or postnatal recovery, adapted to comfort and trimester.",
+      ],
+      [
+        "Posture correction osteopathy",
+        "From £75",
+        "Hands-on care plus practical advice for posture-related neck, shoulder, and lower-back strain.",
+      ],
+    ],
+  },
+  {
+    category: "Sports, work & rehab",
     services: [
       [
         "Sports injury osteopathy",
@@ -148,49 +298,109 @@ const gbpServiceGroups = [
         "Assessment and rehab planning for strains, sprains, and overuse injuries from running, gym, or team sport.",
       ],
       [
-        "Running injury assessment",
+        "Running injury clinic",
         "From £75",
-        "Osteopathy for runners with Achilles, shin, knee, or lower-back niggles — load advice included.",
+        "Osteopathy for runners with Achilles, shin, knee, ITB-type, or lower-back niggles — load advice included.",
       ],
       [
-        "Desk & posture strain treatment",
+        "Gym & weightlifting injury care",
+        "From £75",
+        "Care for training-related back, shoulder, or hip irritation with return-to-lift guidance.",
+      ],
+      [
+        "Football & pitch-sport injury support",
+        "From £75",
+        "Assessment for muscle strains, ankle twists, and overuse niggles common in amateur football and pitch sports.",
+      ],
+      [
+        "Desk worker posture & RSI treatment",
         "From £75",
         "Care for hybrid and office workers with neck, upper-back, and wrist/forearm strain from long sits.",
+      ],
+      [
+        "Workplace injury osteopathy",
+        "From £75",
+        "Private osteopathy after lifting, desk, or work-related musculoskeletal strain — reports not included unless agreed.",
+      ],
+      [
+        "Return-to-sport rehab planning",
+        "From £75",
+        "Graduated rehab milestones after soft-tissue injury so you return to training with clearer loading rules.",
+      ],
+      [
+        "Muscle strain & ligament sprain care",
+        "From £75",
+        "Hands-on care and early rehab advice for common muscle strains and ligament sprains.",
       ],
     ],
   },
   {
-    category: "Specialist therapies",
+    category: "Shockwave & specialist therapies",
     services: [
       [
         "Focused shockwave therapy (LI-ESWT)",
         "£90",
-        "30-minute focused low-intensity shockwave for stubborn tendon problems after clinical screening — heel, elbow, Achilles, and selected shoulder tendons.",
+        "30-minute focused low-intensity shockwave for stubborn tendon problems after clinical screening.",
+      ],
+      [
+        "Shockwave for plantar fasciitis",
+        "£90",
+        "Focused LI-ESWT for persistent heel / plantar fascia pain when clinically suitable after screening.",
+      ],
+      [
+        "Shockwave for tennis elbow",
+        "£90",
+        "Focused shockwave for stubborn lateral elbow tendinopathy after assessment.",
+      ],
+      [
+        "Shockwave for Achilles tendinopathy",
+        "£90",
+        "LI-ESWT for persistent Achilles tendon pain, combined with loading advice.",
+      ],
+      [
+        "Shockwave for shoulder calcific / tendon pain",
+        "£90",
+        "Focused shockwave for selected chronic shoulder tendon problems after screening.",
       ],
       [
         "Men's health & ED shockwave protocol",
         "£110",
-        "Confidential 30-minute LI-ESWT men's health / ED protocol in a private setting. Drug-free, non-invasive care with clear screening first.",
+        "Confidential 30-minute LI-ESWT men's health / ED protocol. Drug-free, non-invasive care in a private setting.",
       ],
       [
-        "Deep tissue massage",
+        "Erectile dysfunction LI-ESWT Charlton",
+        "£110",
+        "Discreet vascular LI-ESWT pathway for men seeking a non-drug, non-surgical option in Charlton SE7.",
+      ],
+      [
+        "Deep tissue massage Charlton",
         "£60",
         "45-minute deep tissue massage for chronic muscular tightness, training load, and desk-related tension.",
       ],
       [
-        "Medical acupuncture / electroacupuncture",
-        "+£20",
-        "Western medical acupuncture or electroacupuncture as a standalone focus or +£20 add-on when clinically useful for trigger points and localised pain.",
+        "Sports massage therapy",
+        "£60",
+        "Firm soft-tissue massage for athletes and active people before or after heavy training blocks.",
       ],
       [
-        "Cupping therapy add-on",
+        "Medical acupuncture / dry needling",
+        "+£20",
+        "Western medical acupuncture or dry-needling style care for trigger points — standalone focus or +£20 add-on.",
+      ],
+      [
+        "Electroacupuncture pain relief",
+        "+£20",
+        "Electroacupuncture as an adjunct for localised muscle and joint irritability when clinically useful.",
+      ],
+      [
+        "Cupping therapy for muscle tension",
         "+£15",
-        "Optional cupping add-on (+£15) for muscular tightness when clinically useful alongside osteopathy or massage.",
+        "Optional cupping add-on (+£15) for muscular tightness alongside osteopathy or massage.",
       ],
     ],
   },
   {
-    category: "Pregnancy, cranial & paediatric",
+    category: "Pregnancy, babies & gentle care",
     services: [
       [
         "Pregnancy osteopathy",
@@ -198,14 +408,34 @@ const gbpServiceGroups = [
         "Gentle, trimester-aware osteopathy for pelvic girdle discomfort, lower-back and rib strain during pregnancy.",
       ],
       [
-        "Cranial osteopathy",
+        "SPD / pelvic girdle pain in pregnancy",
         "From £75",
-        "Subtle, gentle cranial osteopathy for people who prefer a quieter treatment style for head, jaw, and tension patterns.",
+        "Support for pregnancy-related pelvic girdle pain (SPD-type discomfort) with positioning adapted to your trimester.",
       ],
       [
-        "Paediatric osteopathy",
+        "Postnatal osteopathy",
+        "From £75",
+        "Gentle postnatal musculoskeletal care for back, neck, and pelvic strain after birth — pacing adapted to recovery.",
+      ],
+      [
+        "Cranial osteopathy",
+        "From £75",
+        "Subtle cranial osteopathy for people who prefer a quieter treatment style for head, jaw, and tension patterns.",
+      ],
+      [
+        "Paediatric / baby osteopathy",
         "From £75",
         "Soft, parent-led osteopathic care for infants and children in a calm private setting.",
+      ],
+      [
+        "Infant unsettledness & feeding-position support",
+        "From £75",
+        "Gentle paediatric osteopathy with parent guidance around comfort and positioning — not a medical diagnosis service.",
+      ],
+      [
+        "Elderly / older adult osteopathy",
+        "From £75",
+        "Adapted osteopathy for older adults with stiffness, balance-related joint ache, or osteoarthritis discomfort.",
       ],
     ],
   },
@@ -215,12 +445,17 @@ const gbpServiceGroups = [
       [
         "Home visit osteopathy — initial",
         "£120",
-        "60-minute initial osteopathy at your home when clinic travel is difficult. Local Charlton / SE London coverage — confirm address first.",
+        "60-minute initial osteopathy at your home when clinic travel is difficult. Local Charlton / SE London — confirm address first.",
       ],
       [
         "Home visit osteopathy — follow-up",
         "£100",
-        "30-minute follow-up home osteopathy visit after an initial home assessment.",
+        "30-minute follow-up home osteopathy after an initial home assessment.",
+      ],
+      [
+        "Mobile osteopath Charlton & SE London",
+        "From £100",
+        "Mobile / home-visit osteopathy for limited mobility, post-injury recovery, or carers who cannot easily leave home.",
       ],
     ],
   },
@@ -229,14 +464,19 @@ const gbpServiceGroups = [
 const gbpMinimumSet = [
   "Initial osteopathy consultation & treatment — £75",
   "Follow-up osteopathic treatment — £60",
-  "Focused shockwave therapy (LI-ESWT) — £90",
-  "Deep tissue massage — £60",
-  "Home visit osteopathy — initial — £120",
-  "Back pain osteopathy — From £75",
+  "Lower back pain treatment — From £75",
   "Neck pain osteopathy — From £75",
   "Sciatica treatment — From £75",
+  "Frozen shoulder osteopathy — From £75",
+  "Plantar fasciitis / heel pain treatment — From £75",
   "Sports injury osteopathy — From £75",
+  "Focused shockwave therapy (LI-ESWT) — £90",
+  "Deep tissue massage Charlton — £60",
   "Men's health & ED shockwave protocol — £110",
+  "Home visit osteopathy — initial — £120",
+  "Pregnancy osteopathy — From £75",
+  "Running injury clinic — From £75",
+  "TMJ / jaw pain osteopathy — From £75",
 ];
 
 console.log("=== GBP ops pack ===\n");

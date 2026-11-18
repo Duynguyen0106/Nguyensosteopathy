@@ -67,6 +67,178 @@ const posts = [
   ],
 ];
 
+/** Paste into GBP → Edit profile → Services. Prices match src/lib/site.ts. */
+const gbpServiceGroups = [
+  {
+    category: "Osteopathy appointments",
+    services: [
+      [
+        "Initial osteopathy consultation & treatment",
+        "£75",
+        "60-minute first visit with Austin Duy Nguyen, GOsC-registered osteopath. Full case history, movement assessment, explanation of findings, and hands-on treatment when appropriate. No GP referral needed.",
+      ],
+      [
+        "Follow-up osteopathic treatment",
+        "£60",
+        "30-minute follow-up for ongoing osteopathic care. Progress review, hands-on treatment, and updated home advice.",
+      ],
+    ],
+  },
+  {
+    category: "Back, neck & spine",
+    services: [
+      [
+        "Back pain osteopathy",
+        "From £75",
+        "Assessment and hands-on care for lower-back pain, stiffness, and mechanical spinal irritation in Charlton SE7.",
+      ],
+      [
+        "Neck pain osteopathy",
+        "From £75",
+        "Treatment for neck pain, desk strain, and restricted upper-spine movement. Private one-to-one care inside Village Pharmacy.",
+      ],
+      [
+        "Sciatica treatment",
+        "From £75",
+        "Osteopathic assessment for sciatica-type leg pain, including screening for red flags and a clear plan for recovery.",
+      ],
+      [
+        "Disc-related back pain care",
+        "From £75",
+        "Careful assessment and hands-on treatment for disc-related stiffness and flare-ups, with advice you can keep between visits.",
+      ],
+    ],
+  },
+  {
+    category: "Headaches & joints",
+    services: [
+      [
+        "Tension headache osteopathy",
+        "From £75",
+        "Osteopathy for tension-type and neck-related headaches, focusing on upper-neck mechanics and shoulder load.",
+      ],
+      [
+        "Shoulder pain treatment",
+        "From £75",
+        "Hands-on osteopathy for shoulder stiffness, overuse irritation, and movement restriction after sport or desk work.",
+      ],
+      [
+        "Hip pain osteopathy",
+        "From £75",
+        "Assessment and treatment for hip stiffness, walking-related ache, and peri-hip soft-tissue irritation.",
+      ],
+      [
+        "Knee pain osteopathy",
+        "From £75",
+        "Osteopathic care for knee irritability linked to load, stairs, sport, or desk-to-training spikes.",
+      ],
+      [
+        "Jaw / TMJ osteopathy",
+        "From £75",
+        "Gentle assessment for jaw tension, clenching-related discomfort, and related neck contribution.",
+      ],
+    ],
+  },
+  {
+    category: "Sports & rehab",
+    services: [
+      [
+        "Sports injury osteopathy",
+        "From £75",
+        "Assessment and rehab planning for strains, sprains, and overuse injuries from running, gym, or team sport.",
+      ],
+      [
+        "Running injury assessment",
+        "From £75",
+        "Osteopathy for runners with Achilles, shin, knee, or lower-back niggles — load advice included.",
+      ],
+      [
+        "Desk & posture strain treatment",
+        "From £75",
+        "Care for hybrid and office workers with neck, upper-back, and wrist/forearm strain from long sits.",
+      ],
+    ],
+  },
+  {
+    category: "Specialist therapies",
+    services: [
+      [
+        "Focused shockwave therapy (LI-ESWT)",
+        "£90",
+        "30-minute focused low-intensity shockwave for stubborn tendon problems after clinical screening — heel, elbow, Achilles, and selected shoulder tendons.",
+      ],
+      [
+        "Men's health & ED shockwave protocol",
+        "£110",
+        "Confidential 30-minute LI-ESWT men's health / ED protocol in a private setting. Drug-free, non-invasive care with clear screening first.",
+      ],
+      [
+        "Deep tissue massage",
+        "£60",
+        "45-minute deep tissue massage for chronic muscular tightness, training load, and desk-related tension.",
+      ],
+      [
+        "Medical acupuncture / electroacupuncture",
+        "+£20",
+        "Western medical acupuncture or electroacupuncture as a standalone focus or +£20 add-on when clinically useful for trigger points and localised pain.",
+      ],
+      [
+        "Cupping therapy add-on",
+        "+£15",
+        "Optional cupping add-on (+£15) for muscular tightness when clinically useful alongside osteopathy or massage.",
+      ],
+    ],
+  },
+  {
+    category: "Pregnancy, cranial & paediatric",
+    services: [
+      [
+        "Pregnancy osteopathy",
+        "From £75",
+        "Gentle, trimester-aware osteopathy for pelvic girdle discomfort, lower-back and rib strain during pregnancy.",
+      ],
+      [
+        "Cranial osteopathy",
+        "From £75",
+        "Subtle, gentle cranial osteopathy for people who prefer a quieter treatment style for head, jaw, and tension patterns.",
+      ],
+      [
+        "Paediatric osteopathy",
+        "From £75",
+        "Soft, parent-led osteopathic care for infants and children in a calm private setting.",
+      ],
+    ],
+  },
+  {
+    category: "Home visits",
+    services: [
+      [
+        "Home visit osteopathy — initial",
+        "£120",
+        "60-minute initial osteopathy at your home when clinic travel is difficult. Local Charlton / SE London coverage — confirm address first.",
+      ],
+      [
+        "Home visit osteopathy — follow-up",
+        "£100",
+        "30-minute follow-up home osteopathy visit after an initial home assessment.",
+      ],
+    ],
+  },
+];
+
+const gbpMinimumSet = [
+  "Initial osteopathy consultation & treatment — £75",
+  "Follow-up osteopathic treatment — £60",
+  "Focused shockwave therapy (LI-ESWT) — £90",
+  "Deep tissue massage — £60",
+  "Home visit osteopathy — initial — £120",
+  "Back pain osteopathy — From £75",
+  "Neck pain osteopathy — From £75",
+  "Sciatica treatment — From £75",
+  "Sports injury osteopathy — From £75",
+  "Men's health & ED shockwave protocol — £110",
+];
+
 console.log("=== GBP ops pack ===\n");
 console.log("1. Profile basics");
 console.log(`   Name: ${site.name}`);
@@ -85,29 +257,49 @@ console.log(`
    Sunday     09:00–20:00
 `);
 
-console.log("3. Q&A — seed these in GBP (copy/paste):\n");
+console.log("3. Services — paste into GBP → Edit profile → Services:\n");
+console.log(
+  "   Tip: add priced appointment types first, then condition names for search.\n",
+);
+console.log("   Show standard fees only; put the 10% NHS/student discount in the business description or a Google post.\n");
+for (const group of gbpServiceGroups) {
+  console.log(`   ### ${group.category}`);
+  for (const [name, price, description] of group.services) {
+    console.log(`   Service: ${name}`);
+    console.log(`   Price:   ${price}`);
+    console.log(`   Desc:    ${description}`);
+    console.log("");
+  }
+}
+console.log("   --- Minimum 10-service starter set ---");
+for (const [i, line] of gbpMinimumSet.entries()) {
+  console.log(`   ${i + 1}. ${line}`);
+}
+console.log("");
+
+console.log("4. Q&A — seed these in GBP (copy/paste):\n");
 for (const [i, [q, a]] of faqs.entries()) {
   console.log(`   Q${i + 1}. ${q}`);
   console.log(`   A${i + 1}. ${a}\n`);
 }
 
-console.log("4. Photos (refresh monthly):");
+console.log("5. Photos (refresh monthly):");
 console.log("   - Pharmacy / The Village approach (exterior)");
 console.log("   - Treatment room");
 console.log("   - Austin (practitioner)");
 console.log("");
 
-console.log("5. Weekly posts (rotate):\n");
+console.log("6. Weekly posts (rotate):\n");
 for (const [theme, body] of posts) {
   console.log(`   — ${theme} —`);
   console.log(`   ${body.replace(/\n/g, "\n   ")}\n`);
 }
 
-console.log("6. Review engine:");
+console.log("7. Review engine:");
 console.log(`   Google reviews URL: ${site.googleReviewsUrl}`);
 console.log(`   WhatsApp clinic: ${site.whatsappUrl}`);
 console.log(
   "   After suitable visits: send reviews URL via WhatsApp/SMS; reply within 48h.",
 );
 console.log(`   Site helper page: ${site.websiteUrl}/reviews`);
-console.log("\n7. Walk-in video (Days 61–90): 15–30s from The Village into pharmacy counter → osteopathy room.");
+console.log("\n8. Walk-in video (Days 61–90): 15–30s from The Village into pharmacy counter → osteopathy room.");

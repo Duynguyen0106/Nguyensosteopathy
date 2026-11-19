@@ -1,19 +1,18 @@
 #!/usr/bin/env node
 /**
- * Generate Nguyen's Osteopathic Clinic A5 print leaflet (PDF)
- * with a QR code pointing at the live booking page.
+ * Nguyen's Osteopathic Clinic — A5 print leaflet (PDF)
+ * with QR code to the live booking page.
  *
  * Print target: A5 (148×210mm) — UK letterbox / door-drop friendly.
- * ~300dpi raster assets, vector text via Chromium PDF.
  *
- * Layout:
- * front = brand + problem/benefit hook + practitioner trust + conditions + book CTA
- * back  = fees + first visit + Google reviews CTA + contact
+ * Front = brand + hero atmosphere + one hook + book CTA
+ * Back  = fees + first visit + contact
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
+import { execFileSync } from "node:child_process";
 import QRCode from "qrcode";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -24,17 +23,74 @@ const artifactDir = "/opt/cursor/artifacts/leaflet";
 const BOOK_URL = "https://www.nguyensosteopathy.com/book";
 const SITE_URL = "https://www.nguyensosteopathy.com";
 const PHONE = "07882 843513";
-const PHONE_RAW = "07882843513";
+const EMAIL = "nguyensosteopathy@gmail.com";
 
 mkdirSync(outDir, { recursive: true });
 mkdirSync(artifactDir, { recursive: true });
+mkdirSync("/opt/cursor/artifacts", { recursive: true });
 
 const require = createRequire(import.meta.url);
 
-const logoLockupPath = join(root, "public/images/logo-lockup.png");
-const logoMarkPath = join(root, "public/images/logo-mark.png");
-const logoLockupDataUri = `data:image/png;base64,${readFileSync(logoLockupPath).toString("base64")}`;
-const logoDataUri = `data:image/png;base64,${readFileSync(logoMarkPath).toString("base64")}`;
+const logoLockupDataUri = `data:image/png;base64,${readFileSync(
+  join(root, "public/images/logo-lockup.png"),
+).toString("base64")}`;
+const logoMarkDataUri = `data:image/png;base64,${readFileSync(
+  join(root, "public/images/logo-mark.png"),
+).toString("base64")}`;
+
+function webpToJpegDataUri(inputPath, maxWidth) {
+  const tmp = join(
+    outDir,
+    `.tmp-${inputPath.split("/").pop().replace(/\W+/g, "")}.jpg`,
+  );
+  execFileSync(
+    "ffmpeg",
+    [
+      "-y",
+      "-i",
+      inputPath,
+      "-vf",
+      `scale=${maxWidth}:-1`,
+      "-q:v",
+      "3",
+      "-frames:v",
+      "1",
+      "-update",
+      "1",
+      tmp,
+    ],
+    { stdio: "pipe" },
+  );
+  const uri = `data:image/jpeg;base64,${readFileSync(tmp).toString("base64")}`;
+  try {
+    execFileSync("rm", ["-f", tmp]);
+  } catch {
+    /* ignore */
+  }
+  return uri;
+}
+
+let heroUri;
+try {
+  heroUri = webpToJpegDataUri(
+    join(root, "public/images/clinic-room.webp"),
+    1800,
+  );
+} catch {
+  heroUri = `data:image/webp;base64,${readFileSync(
+    join(root, "public/images/clinic-room.webp"),
+  ).toString("base64")}`;
+}
+
+let austinUri;
+try {
+  austinUri = webpToJpegDataUri(
+    join(root, "public/images/austin-nguyen.webp"),
+    600,
+  );
+} catch {
+  austinUri = null;
+}
 
 const qrPng = await QRCode.toBuffer(BOOK_URL, {
   type: "png",
@@ -57,19 +113,18 @@ const html = `<!DOCTYPE html>
   <style>
     :root {
       --navy: #0b2c45;
-      --navy-deep: #071e30;
+      --navy-deep: #061828;
       --teal: #0f766e;
-      --teal-soft: #0d9488;
+      --teal-soft: #14b8a6;
+      --teal-mist: #99f6e4;
       --slate: #475569;
       --muted: #64748b;
-      --line: #dbe4ee;
-      --paper: #f4f7f8;
+      --line: #d7e3ea;
+      --paper: #f3f7f8;
       --white: #ffffff;
     }
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body {
-      margin: 0;
-      padding: 0;
       background: #fff;
       color: var(--navy);
       font-family: "Source Sans 3", system-ui, sans-serif;
@@ -88,150 +143,200 @@ const html = `<!DOCTYPE html>
       flex-direction: column;
       page-break-after: always;
       break-after: page;
-      background:
-        linear-gradient(180deg, #eef5f4 0%, #ffffff 38%, #f7fafb 100%);
+      background: var(--white);
     }
-    .front-body, .back-body { flex: 1 1 auto; }
-    .page-foot { flex: 0 0 auto; }
     .page:last-child { page-break-after: auto; break-after: auto; }
 
-    /* —— FRONT —— */
-    .masthead {
-      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #0a3d4d 100%);
+    /* ——— FRONT ——— */
+    .hero {
+      position: relative;
+      height: 78mm;
+      flex: 0 0 auto;
+      overflow: hidden;
       color: #fff;
-      padding: 6mm 8mm 5.5mm;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 4mm;
-      align-items: end;
+      background: var(--navy-deep);
     }
-    .brand-lockup {
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      background: url("${heroUri}") center 40% / cover no-repeat;
+      filter: saturate(0.9) contrast(1.05);
+      transform: scale(1.03);
+    }
+    .hero-wash {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(6,24,40,0.35) 0%, rgba(6,24,40,0.15) 40%, rgba(6,24,40,0.92) 100%),
+        linear-gradient(105deg, rgba(6,24,40,0.75) 0%, rgba(11,44,69,0.35) 55%, transparent 100%);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      padding: 5.5mm 7mm 5mm;
       display: flex;
-      align-items: center;
-      gap: 3mm;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    .brand-lockup .logo-lockup {
-      height: 18mm;
-      width: auto;
-      max-width: 42mm;
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 4mm;
+    }
+    .logo-badge {
       background: #fff;
       border-radius: 2mm;
-      padding: 1.4mm 1.8mm;
-      object-fit: contain;
+      padding: 1.4mm 1.6mm;
+      box-shadow: 0 1mm 2.5mm rgba(0,0,0,0.25);
+    }
+    .logo-badge img {
       display: block;
-      box-shadow: 0 0.8mm 2mm rgba(0,0,0,0.18);
+      height: 14mm;
+      width: auto;
+      max-width: 34mm;
+      object-fit: contain;
     }
-    .mast-cta { text-align: right; }
-    .mast-cta .phone {
-      font-size: 11pt;
+    .hero-phone {
+      text-align: right;
+    }
+    .hero-phone strong {
+      display: block;
+      font-size: 10pt;
       font-weight: 700;
-      letter-spacing: 0.02em;
-      margin: 0;
+      letter-spacing: 0.01em;
     }
-    .mast-cta .hint {
-      margin: 0.8mm 0 0;
-      font-size: 6.5pt;
-      letter-spacing: 0.12em;
+    .hero-phone span {
+      display: block;
+      margin-top: 0.8mm;
+      font-size: 6pt;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: rgba(255,255,255,0.72);
+      font-weight: 700;
+    }
+    .hero-brand {
+      max-width: 34ch;
+    }
+    .eyebrow {
+      font-size: 6.5pt;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--teal-mist);
+      margin-bottom: 1.5mm;
+    }
+    .hero-brand h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 18pt;
+      line-height: 0.98;
+      font-weight: 700;
+      margin: 0;
+      text-shadow: 0 0.5mm 2mm rgba(0,0,0,0.35);
     }
 
-    .front-body { padding: 4.5mm 8mm 0; }
-    .back-body { padding: 3.5mm 8mm 0; }
+    .front-body {
+      flex: 1 1 auto;
+      padding: 5mm 7mm 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5mm;
+      background:
+        radial-gradient(ellipse 80% 50% at 100% 0%, rgba(20,184,166,0.08), transparent 55%),
+        linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
+    }
+    .hook h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 14.5pt;
+      line-height: 1.08;
+      font-weight: 700;
+      color: var(--navy);
+      max-width: 18ch;
+      margin-bottom: 1.8mm;
+    }
+    .hook p {
+      font-size: 8pt;
+      line-height: 1.35;
+      color: var(--slate);
+      max-width: 48ch;
+    }
 
-    .eyebrow {
-      margin: 0 0 1.2mm;
-      font-size: 6.5pt;
+    .practitioner {
+      display: grid;
+      grid-template-columns: ${austinUri ? "16mm 1fr" : "1fr"};
+      gap: 3mm;
+      align-items: center;
+      padding-bottom: 3mm;
+      border-bottom: 0.25mm solid var(--line);
+    }
+    .practitioner img {
+      width: 16mm;
+      height: 16mm;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 0.35mm solid rgba(15,118,110,0.35);
+    }
+    .practitioner h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 11pt;
+      font-weight: 700;
+      margin-bottom: 0.5mm;
+    }
+    .practitioner .role {
+      font-size: 7pt;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 1mm;
+    }
+    .practitioner .note {
+      font-size: 7pt;
+      line-height: 1.3;
+      color: var(--slate);
+    }
+
+    .front-split {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3.5mm;
+      align-items: stretch;
+      flex: 1 1 auto;
+    }
+    .section-label {
+      font-size: 6pt;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       font-weight: 700;
       color: var(--teal);
+      margin-bottom: 2mm;
     }
-    h1 {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 17pt;
-      line-height: 1.05;
-      margin: 0 0 1.8mm;
-      font-weight: 700;
-      color: var(--navy);
-      max-width: 20ch;
-    }
-    .lede {
-      margin: 0 0 3mm;
-      font-size: 8pt;
-      line-height: 1.35;
-      color: var(--slate);
-      max-width: 52ch;
-    }
-
-    .trust-row {
-      margin-bottom: 3mm;
-      padding: 2.5mm 3mm;
-      border: 0.25mm solid var(--line);
-      border-radius: 2mm;
-      background: rgba(255,255,255,0.72);
-    }
-    .trust-copy h2 {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 11pt;
-      margin: 0 0 0.6mm;
-      font-weight: 700;
-    }
-    .trust-copy .role {
-      margin: 0 0 1.2mm;
-      font-size: 7.5pt;
-      color: var(--teal);
-      font-weight: 700;
-    }
-    .trust-copy p {
-      margin: 0;
-      font-size: 7.5pt;
-      line-height: 1.35;
-      color: var(--slate);
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 3.5mm;
-      align-items: stretch;
-    }
-    .section-label {
-      margin: 0 0 2mm;
-      font-size: 6.5pt;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--teal);
-    }
-    .conditions {
+    .helps {
       list-style: none;
-      margin: 0;
-      padding: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.4mm 2.5mm;
+      gap: 1.5mm 2.5mm;
     }
-    .conditions li {
+    .helps li {
       font-size: 7.5pt;
       font-weight: 600;
       line-height: 1.2;
-      padding-left: 2.8mm;
+      padding-left: 2.6mm;
       position: relative;
     }
-    .conditions li::before {
+    .helps li::before {
       content: "";
       position: absolute;
       left: 0;
-      top: 1.2mm;
-      width: 1.3mm;
-      height: 1.3mm;
-      border-radius: 999px;
+      top: 1.3mm;
+      width: 1.2mm;
+      height: 1.2mm;
+      border-radius: 50%;
       background: var(--teal-soft);
     }
 
-    .book-block {
-      background: var(--navy);
+    .book {
+      background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 55%, #0a3d4d 100%);
       color: #fff;
       border-radius: 2.5mm;
       padding: 3mm 2.5mm;
@@ -240,199 +345,172 @@ const html = `<!DOCTYPE html>
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 1.4mm;
+      gap: 1.5mm;
     }
-    .book-block img {
-      width: 26mm;
-      height: 26mm;
+    .book .scan {
+      font-size: 6pt;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--teal-mist);
+    }
+    .book img {
+      width: 28mm;
+      height: 28mm;
       background: #fff;
       border-radius: 1.8mm;
       padding: 1.4mm;
     }
-    .book-block .scan {
-      margin: 0;
-      font-size: 6pt;
+    .book strong {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 11pt;
+      font-weight: 700;
+    }
+    .book .url {
+      font-size: 5.5pt;
+      line-height: 1.25;
+      opacity: 0.8;
+      max-width: 22ch;
+      word-break: break-all;
+    }
+
+    .front-foot {
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 3mm;
+      padding: 3mm 0 4.5mm;
+      border-top: 0.25mm solid var(--line);
+    }
+    .front-foot .label {
+      font-size: 5.8pt;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       font-weight: 700;
-      color: #99f6e4;
-    }
-    .book-block strong {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 10pt;
-      font-weight: 700;
-    }
-    .book-block .url {
-      margin: 0;
-      font-size: 5.5pt;
-      line-height: 1.25;
-      opacity: 0.82;
-      word-break: break-all;
-      max-width: 22ch;
-    }
-
-    .front-meta {
-      margin-top: 3mm;
-      display: grid;
-      grid-template-columns: 1.25fr 1fr 1fr;
-      gap: 2.5mm;
-      padding-top: 2.5mm;
-      border-top: 0.25mm solid var(--line);
-    }
-    .meta-item .label {
-      margin: 0 0 0.8mm;
-      font-size: 6pt;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      font-weight: 700;
       color: var(--teal);
+      margin-bottom: 0.8mm;
     }
-    .meta-item p {
-      margin: 0;
+    .front-foot p {
       font-size: 7pt;
       line-height: 1.3;
+      font-weight: 600;
     }
-    .notice {
-      margin-top: 2.5mm;
-      margin-bottom: 0;
-      font-size: 7pt;
-      line-height: 1.3;
-      color: var(--slate);
-      padding: 1.8mm 2.2mm;
-      background: rgba(15,118,110,0.07);
-      border-left: 0.8mm solid var(--teal);
-    }
-    .notice strong { color: var(--navy); }
+    .front-foot strong { font-weight: 700; }
 
-    .page-foot {
-      position: static;
-      margin: 2mm 8mm 4.5mm;
-      display: flex;
-      justify-content: space-between;
-      gap: 2mm;
-      font-size: 6pt;
-      color: var(--muted);
-      border-top: 0.2mm solid var(--line);
-      padding-top: 1.5mm;
-    }
-
-    /* —— BACK —— */
+    /* ——— BACK ——— */
     .back-head {
-      padding: 6mm 8mm 0;
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #0a3d4d 100%);
+      color: #fff;
+      padding: 6mm 7mm 5mm;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 3mm;
+      align-items: flex-end;
+      gap: 4mm;
     }
-    .back-head .brand-mini {
+    .back-brand {
       display: flex;
       align-items: center;
-      gap: 2mm;
+      gap: 2.5mm;
     }
-    .back-head .logo-badge {
-      width: 10mm;
-      height: 10mm;
-      border-radius: 1.8mm;
+    .back-brand .mark {
+      width: 11mm;
+      height: 11mm;
       background: #fff;
-      border: 0.2mm solid var(--line);
-      display: grid;
-      place-items: center;
-      padding: 0.8mm;
-      flex-shrink: 0;
+      border-radius: 1.6mm;
+      padding: 1mm;
     }
-    .back-head .logo-badge img {
+    .back-brand .mark img {
       width: 100%;
       height: 100%;
       object-fit: contain;
       display: block;
     }
-    .brand-name {
+    .back-brand .name {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 12pt;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-size: 13pt;
       font-weight: 700;
-      margin: 0;
       line-height: 1;
     }
-    .brand-sub {
-      margin: 0.8mm 0 0;
-      font-size: 6pt;
-      letter-spacing: 0.16em;
+    .back-brand .sub {
+      margin-top: 1mm;
+      font-size: 6.5pt;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--teal);
+      color: rgba(255,255,255,0.7);
       font-weight: 700;
     }
-    .back-head .brand-name { font-size: 11pt; color: var(--navy); }
-    .back-title { text-align: right; }
-    .back-title h1 {
+    .back-head h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
       font-size: 14pt;
-      max-width: none;
-      margin: 0;
+      line-height: 1.05;
+      font-weight: 700;
       text-align: right;
+      max-width: 14ch;
     }
-    .back-title p {
-      margin: 0.8mm 0 0;
-      font-size: 7pt;
-      color: var(--slate);
+
+    .back-body {
+      flex: 1 1 auto;
+      padding: 4.5mm 7mm 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5mm;
+      background: linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
     }
 
     .fees {
       width: 100%;
       border-collapse: collapse;
-      font-size: 7pt;
-      margin-bottom: 2.5mm;
-    }
-    .fees th, .fees td {
-      text-align: left;
-      padding: 1.4mm 1.2mm;
-      border-bottom: 0.2mm solid var(--line);
-      vertical-align: top;
+      font-size: 7.2pt;
     }
     .fees th {
-      background: var(--navy);
-      color: #fff;
+      text-align: left;
       font-size: 6pt;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      font-weight: 700;
-    }
-    .fees th:first-child { padding-left: 2.2mm; }
-    .fees th:last-child { text-align: right; padding-right: 2.2mm; }
-    .fees td:first-child { padding-left: 2.2mm; font-weight: 700; }
-    .fees td:nth-child(2) { color: var(--slate); white-space: nowrap; }
-    .fees td:last-child {
-      text-align: right;
-      font-weight: 700;
       color: var(--teal);
-      padding-right: 2.2mm;
-      white-space: nowrap;
+      font-weight: 700;
+      padding: 0 0 1.5mm;
+      border-bottom: 0.35mm solid var(--navy);
     }
-    .fees tr:nth-child(even) td { background: rgba(15,118,110,0.04); }
+    .fees th:last-child,
+    .fees td:last-child { text-align: right; }
+    .fees th:nth-child(2),
+    .fees td:nth-child(2) { text-align: center; width: 18mm; }
+    .fees td {
+      padding: 1.6mm 0;
+      border-bottom: 0.2mm solid var(--line);
+      font-weight: 600;
+      vertical-align: baseline;
+    }
+    .fees td:first-child { font-weight: 600; padding-right: 2mm; }
+    .fees td:last-child {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--navy);
+    }
     .fee-note {
-      margin: -1mm 0 3mm;
-      font-size: 6pt;
+      font-size: 6.5pt;
+      line-height: 1.35;
       color: var(--muted);
-      line-height: 1.3;
+      margin-top: 1.5mm;
     }
 
     .back-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 3.5mm;
-      margin-bottom: 3mm;
     }
     .steps {
       list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 2mm;
+      display: flex;
+      flex-direction: column;
+      gap: 2.2mm;
     }
     .steps li {
       display: grid;
-      grid-template-columns: 5mm 1fr;
-      gap: 1.5mm;
+      grid-template-columns: 6mm 1fr;
+      gap: 2mm;
       align-items: start;
     }
     .steps .num {
@@ -448,216 +526,217 @@ const html = `<!DOCTYPE html>
       margin-bottom: 0.4mm;
     }
     .steps span {
-      font-size: 6.5pt;
+      display: block;
+      font-size: 6.8pt;
       line-height: 1.3;
       color: var(--slate);
+      font-weight: 500;
     }
 
-    .quote {
-      margin: 0 0 2mm;
-      padding: 0 0 0 2mm;
-      border-left: 0.7mm solid var(--teal-soft);
+    .visit-box {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 2.5mm;
+      padding: 3mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 42mm;
     }
-    .quote p {
-      margin: 0 0 0.8mm;
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 8pt;
-      line-height: 1.25;
-      font-weight: 600;
+    .visit-box .section-label { color: var(--teal-mist); }
+    .visit-box p {
+      font-size: 7.2pt;
+      line-height: 1.35;
+      color: rgba(255,255,255,0.9);
     }
-    .quote cite {
-      font-style: normal;
-      font-size: 6pt;
-      color: var(--muted);
+    .visit-box .addr {
+      margin-top: 2.5mm;
+      font-size: 7pt;
       font-weight: 700;
-      letter-spacing: 0.03em;
+      line-height: 1.35;
     }
-
-    .specialist {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5mm;
-      margin-bottom: 3mm;
-    }
-    .specialist article {
-      background: var(--paper);
-      padding: 2.5mm;
-      border-radius: 1.8mm;
-    }
-    .specialist h3 {
-      margin: 0 0 0.8mm;
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 9pt;
-    }
-    .specialist p {
-      margin: 0;
-      font-size: 6.5pt;
-      line-height: 1.3;
-      color: var(--slate);
+    .visit-box .hours {
+      margin-top: 1.5mm;
+      font-size: 7pt;
+      color: var(--teal-mist);
+      font-weight: 700;
     }
 
     .back-cta {
+      margin-top: auto;
+      margin-bottom: 4.5mm;
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 3mm;
       align-items: center;
-      background: var(--navy);
+      background: linear-gradient(135deg, var(--navy-deep), #0a3d4d);
       color: #fff;
       border-radius: 2.5mm;
-      padding: 3mm 3.5mm;
+      padding: 3.5mm;
     }
     .back-cta h2 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 12pt;
-      margin: 0 0 0.8mm;
+      font-size: 13pt;
+      font-weight: 700;
+      margin-bottom: 1mm;
     }
     .back-cta p {
-      margin: 0;
       font-size: 7pt;
-      line-height: 1.3;
+      line-height: 1.35;
       opacity: 0.9;
     }
     .back-cta .phone {
+      margin-top: 1.8mm;
       font-size: 11pt;
       font-weight: 700;
-      margin-top: 1.5mm;
+      opacity: 1;
     }
     .back-cta img {
-      width: 20mm;
-      height: 20mm;
+      width: 22mm;
+      height: 22mm;
       background: #fff;
-      border-radius: 1.5mm;
-      padding: 1mm;
+      border-radius: 1.6mm;
+      padding: 1.2mm;
+    }
+
+    .tiny-foot {
+      position: absolute;
+      left: 7mm;
+      right: 7mm;
+      bottom: 3mm;
+      display: flex;
+      justify-content: space-between;
+      gap: 2mm;
+      font-size: 5.8pt;
+      color: var(--muted);
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <!-- FRONT -->
   <section class="page">
-    <header class="masthead">
-      <div class="brand-lockup">
-        <img
-          class="logo-lockup"
-          src="${logoLockupDataUri}"
-          alt="Nguyen's Osteopathic Clinic — Recover, Realign, and Restore Your Vitality"
-          width="1000"
-          height="696"
-        />
+    <div class="hero">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-top">
+          <div class="logo-badge">
+            <img src="${logoLockupDataUri}" alt="Nguyen's Osteopathic Clinic" width="1000" height="696" />
+          </div>
+          <div class="hero-phone">
+            <strong>${PHONE}</strong>
+            <span>Call or scan to book</span>
+          </div>
+        </div>
+        <div class="hero-brand">
+          <p class="eyebrow">Charlton · SE7</p>
+          <h1>Nguyen's Osteopathic Clinic</h1>
+        </div>
       </div>
-      <div class="mast-cta">
-        <p class="phone">${PHONE}</p>
-        <p class="hint">Call or scan to book</p>
-      </div>
-    </header>
+    </div>
 
     <div class="front-body">
-      <p class="eyebrow">Charlton · Drug-free care</p>
-      <h1>Back pain, joint strain &amp; stubborn tension — treated properly</h1>
-      <p class="lede">
-        Hands-on osteopathy and specialist therapies for clear answers,
-        private one-to-one care, and a plan that gets you moving again.
-      </p>
+      <div class="hook">
+        <h2>Back pain, joint strain &amp; stubborn tension — treated properly</h2>
+        <p>
+          Hands-on osteopathy for clear answers, private one-to-one care,
+          and a plan that gets you moving again. No GP referral needed.
+        </p>
+      </div>
 
-      <div class="trust-row">
-        <div class="trust-copy">
-          <h2>Austin Duy Nguyen</h2>
+      <div class="practitioner">
+        ${
+          austinUri
+            ? `<img src="${austinUri}" alt="Austin Duy Nguyen" width="400" height="400" />`
+            : ""
+        }
+        <div>
+          <h3>Austin Duy Nguyen</h3>
           <p class="role">GOsC-Registered Osteopath · Reg. No. 12332</p>
-          <p>
-            Private consultations inside Village Pharmacy.
-            No GP referral needed. 10% NHS staff &amp; student discount with valid ID.
+          <p class="note">
+            Consultations in English or Vietnamese inside Village Pharmacy.
+            10% NHS staff &amp; student discount with valid ID.
           </p>
         </div>
       </div>
 
-      <div class="split">
+      <div class="front-split">
         <div>
-          <p class="section-label">Conditions we commonly help</p>
-          <ul class="conditions">
+          <p class="section-label">Commonly help with</p>
+          <ul class="helps">
             <li>Back &amp; neck pain</li>
-            <li>Headaches &amp; jaw</li>
+            <li>Sciatica</li>
             <li>Shoulder, hip &amp; knee</li>
-            <li>Sports &amp; overuse</li>
+            <li>Sports injuries</li>
             <li>Desk &amp; posture strain</li>
-            <li>Pregnancy discomfort</li>
             <li>Focused shockwave</li>
+            <li>Pregnancy support</li>
             <li>Men’s health &amp; ED</li>
           </ul>
         </div>
-        <aside class="book-block">
+        <aside class="book">
           <p class="scan">Scan to book</p>
           <img src="${qrDataUri}" alt="QR code to book online" width="1200" height="1200" />
           <strong>Book online</strong>
-          <p class="url">${BOOK_URL}</p>
+          <p class="url">${BOOK_URL.replace("https://", "")}</p>
         </aside>
       </div>
 
-      <div class="front-meta">
-        <div class="meta-item">
+      <div class="front-foot">
+        <div>
           <p class="label">Visit</p>
-          <p><strong>Village Pharmacy</strong><br/>9 The Village<br/>Charlton SE7 8UG</p>
+          <p><strong>Village Pharmacy</strong><br/>9 The Village, Charlton SE7 8UG</p>
         </div>
-        <div class="meta-item">
-          <p class="label">Hours</p>
-          <p><strong>Mon – Sun</strong> 9:00am – 8:00pm</p>
-        </div>
-        <div class="meta-item">
-          <p class="label">Contact</p>
-          <p><strong>${PHONE_RAW}</strong><br/>nguyensosteopathy@gmail.com</p>
+        <div>
+          <p class="label">Open hours</p>
+          <p><strong>Monday – Sunday</strong><br/>9:00am – 8:00pm</p>
         </div>
       </div>
-
-      <p class="notice">
-        <strong>Scan to book online</strong> or call ${PHONE_RAW}.
-        Private consultations inside Village Pharmacy — no GP referral needed.
-      </p>
-    </div>
-
-    <div class="page-foot">
-      <span>GOsC Reg. No. 12332</span>
-      <span>Facebook: Nguyen’s Osteopathy</span>
-      <span>${SITE_URL.replace("https://", "")}</span>
     </div>
   </section>
 
   <!-- BACK -->
   <section class="page">
     <header class="back-head">
-      <div class="brand-mini">
-        <div class="logo-badge">
-          <img src="${logoDataUri}" alt="" width="512" height="512" />
+      <div class="back-brand">
+        <div class="mark">
+          <img src="${logoMarkDataUri}" alt="" width="512" height="512" />
         </div>
         <div>
-          <p class="brand-name">Nguyen's</p>
-          <p class="brand-sub">Treatments &amp; fees</p>
+          <p class="name">Nguyen's</p>
+          <p class="sub">Treatments &amp; fees</p>
         </div>
       </div>
-      <div class="back-title">
-        <h1>Clear fees. Clear next steps.</h1>
-        <p>Transparent pricing · book online in minutes</p>
-      </div>
+      <h1>Clear fees. Clear next steps.</h1>
     </header>
 
     <div class="back-body">
-      <p class="section-label">Fees</p>
-      <table class="fees">
-        <thead>
-          <tr>
-            <th>Service</th>
-            <th>Duration</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Initial Consultation &amp; Treatment</td><td>60 mins</td><td>£75</td></tr>
-          <tr><td>Follow-up Osteopathic Treatment</td><td>30 mins</td><td>£60</td></tr>
-          <tr><td>Focused Shockwave Therapy (LI-ESWT)</td><td>30 mins</td><td>£90</td></tr>
-          <tr><td>Specialist ED Treatment &amp; Pelvic Protocol</td><td>30 mins</td><td>£110</td></tr>
-          <tr><td>Acupuncture / Electroacupuncture</td><td>30 mins / add-on</td><td>+£20</td></tr>
-          <tr><td>Deep Tissue Massage Therapy</td><td>45 mins</td><td>£60</td></tr>
-          <tr><td>Cupping Therapy Add-on</td><td>45 mins</td><td>+£15</td></tr>
-        </tbody>
-      </table>
-      <p class="fee-note">Add-on prices (+£) are extras to a treatment session. 24 hours’ notice for cancellations. 10% NHS staff &amp; student discount with valid ID.</p>
+      <div>
+        <p class="section-label">Fees</p>
+        <table class="fees">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Time</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Initial consultation &amp; treatment</td><td>60 mins</td><td>£75</td></tr>
+            <tr><td>Follow-up osteopathic treatment</td><td>30 mins</td><td>£60</td></tr>
+            <tr><td>Focused shockwave (LI-ESWT)</td><td>30 mins</td><td>£90</td></tr>
+            <tr><td>Men’s health / ED protocol</td><td>30 mins</td><td>£110</td></tr>
+            <tr><td>Deep tissue massage</td><td>45 mins</td><td>£60</td></tr>
+            <tr><td>Home visit — initial</td><td>60 mins</td><td>£120</td></tr>
+            <tr><td>Home visit — follow-up</td><td>30 mins</td><td>£100</td></tr>
+          </tbody>
+        </table>
+        <p class="fee-note">
+          Acupuncture +£20 · Cupping +£15 as clinically useful add-ons.
+          24 hours’ notice for cancellations. 10% NHS &amp; student discount with valid ID.
+        </p>
+      </div>
 
       <div class="back-grid">
         <div>
@@ -686,44 +765,32 @@ const html = `<!DOCTYPE html>
             </li>
           </ol>
         </div>
-        <div>
-          <p class="section-label">Find us online</p>
-          <blockquote class="quote">
-            <p>Book online for live appointment slots. Public Google reviews appear as patients visit — scan the QR or search Nguyen’s Osteopathic Clinic, Charlton.</p>
-            <cite>nguyensosteopathy.com · Google reviews</cite>
-          </blockquote>
-          <blockquote class="quote">
-            <p>Inside Village Pharmacy, 9 The Village, Charlton SE7 8UG. No GP referral needed.</p>
-            <cite>GOsC Reg. No. 12332</cite>
-          </blockquote>
-        </div>
-      </div>
-
-      <div class="specialist">
-        <article>
-          <h3>Focused shockwave</h3>
-          <p>Low-intensity focused shockwave for stubborn tendon and soft-tissue problems.</p>
-        </article>
-        <article>
-          <h3>Men’s health &amp; ED</h3>
-          <p>Discreet LI-ESWT in a private setting — drug-free, non-invasive care.</p>
-        </article>
+        <aside class="visit-box">
+          <div>
+            <p class="section-label">Find us</p>
+            <p>Ask at the pharmacy counter on arrival — we are inside, not a street shopfront.</p>
+          </div>
+          <div>
+            <p class="addr">Village Pharmacy<br/>9 The Village<br/>Charlton SE7 8UG</p>
+            <p class="hours">Mon–Sun · 9am–8pm</p>
+          </div>
+        </aside>
       </div>
 
       <div class="back-cta">
         <div>
           <h2>Ready when you are</h2>
-          <p>Scan to book online, or call now.<br/>Inside Village Pharmacy, Charlton.</p>
+          <p>Scan to book online, or call / WhatsApp now.<br/>${EMAIL}</p>
           <p class="phone">${PHONE}</p>
         </div>
         <img src="${qrDataUri}" alt="Book online QR" width="1200" height="1200" />
       </div>
     </div>
 
-    <div class="page-foot">
-      <span>© 2026 Nguyen’s Osteopathic Clinic</span>
+    <div class="tiny-foot">
+      <span>GOsC Reg. No. 12332</span>
       <span>${SITE_URL.replace("https://", "")}</span>
-      <span>Facebook: Nguyen’s Osteopathy</span>
+      <span>© 2026 Nguyen’s Osteopathic Clinic</span>
     </div>
   </section>
 </body>
@@ -736,15 +803,14 @@ let chromium;
 try {
   ({ chromium } = await import("playwright"));
 } catch {
-  try {
-    ({ chromium } = require("/tmp/node_modules/playwright"));
-  } catch {
-    ({ chromium } = await import("/tmp/node_modules/playwright/index.mjs"));
-  }
+  ({ chromium } = require("/tmp/node_modules/playwright"));
 }
 
-const browser = await chromium.launch({ headless: true });
-// A5 @ ~150dpi preview viewport (148mm ≈ 874px, 210mm ≈ 1240px at 150dpi)
+const browser = await chromium.launch({
+  executablePath: "/usr/bin/google-chrome-stable",
+  headless: true,
+  args: ["--no-sandbox"],
+});
 const context = await browser.newContext({
   viewport: { width: 874, height: 1240 },
   deviceScaleFactor: 2,
@@ -771,27 +837,24 @@ const pages = page.locator(".page");
 const pageCount = await pages.count();
 for (let i = 0; i < pageCount; i += 1) {
   const name = i === 0 ? "leaflet-front.png" : "leaflet-back.png";
+  const bufPath = join(artifactDir, name);
   await pages.nth(i).screenshot({
-    path: join(artifactDir, name),
+    path: bufPath,
     type: "png",
     scale: "device",
   });
+  writeFileSync(join("/opt/cursor/artifacts", name), readFileSync(bufPath));
 }
 
 await browser.close();
 
 writeFileSync(join(artifactDir, "nguyens-osteopathy-leaflet.pdf"), readFileSync(pdfPath));
 writeFileSync(
-  join("/opt/cursor/artifacts", "leaflet-front.png"),
-  readFileSync(join(artifactDir, "leaflet-front.png")),
-);
-writeFileSync(
-  join("/opt/cursor/artifacts", "leaflet-back.png"),
-  readFileSync(join(artifactDir, "leaflet-back.png")),
+  join("/opt/cursor/artifacts", "nguyens-osteopathy-leaflet.pdf"),
+  readFileSync(pdfPath),
 );
 
 console.log("QR:", BOOK_URL);
-console.log("PDF:", pdfPath);
-console.log("PDF bytes:", readFileSync(pdfPath).length);
-console.log("Format: A5 (148×210mm) — letterbox / door-drop");
+console.log("PDF:", pdfPath, readFileSync(pdfPath).length);
+console.log("Format: A5 (148×210mm)");
 console.log("Artifacts:", artifactDir);

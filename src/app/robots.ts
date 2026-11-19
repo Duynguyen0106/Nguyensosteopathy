@@ -20,6 +20,8 @@ export default function robots(): MetadataRoute.Robots {
         "/voucher/",
       ],
     },
+    // Next serves a sitemap index at /sitemap.xml that points at
+    // /sitemap/0.xml (core), /sitemap/1.xml (education), /sitemap/2.xml (acupuncture).
     sitemap: `${site.websiteUrl}/sitemap.xml`,
     host: site.websiteUrl,
   };

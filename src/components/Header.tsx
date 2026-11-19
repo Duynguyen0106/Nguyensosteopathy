@@ -265,7 +265,8 @@ export function Header() {
             height={926}
             className="h-12 w-auto max-w-[9.5rem] object-contain object-left transition group-hover:opacity-90 sm:h-14 sm:max-w-[11rem] md:h-[5.25rem] md:max-w-none"
             sizes="(max-width: 640px) 152px, (max-width: 768px) 176px, 210px"
-            priority
+            // Avoid competing with the homepage hero LCP image on inner routes.
+            priority={pathname === "/" || pathname === "/vi"}
           />
         </Link>
 
@@ -537,7 +538,7 @@ export function Header() {
                       className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
                       onClick={closeMenu}
                     >
-                      Call
+                      {isVi ? "Gọi" : "Call"}
                     </a>
                     <a
                       href={site.whatsappUrl}

@@ -4,7 +4,7 @@ import { BookingEmbed } from "@/components/BookingEmbed";
 import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { defaultOgImage, faqPageJsonLd, pageOpenGraph } from "@/lib/seo";
-import { bookHref, withBookingAttribution } from "@/lib/seo-strategy";
+import { bookHref, viBookHref, withBookingAttribution } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const viBookFaqs = [

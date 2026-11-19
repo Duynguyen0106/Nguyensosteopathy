@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Accessibility Statement",
   description:
-    "Accessibility information for Nguyen's Osteopathic Clinic website and Charlton clinic visits — how we aim to make digital and in-person access clearer.",
+    "Accessibility information for Nguyen's Osteopathic Clinic website and Charlton clinic visits — known limits, alternatives, and how to get help.",
   alternates: { canonical: "/accessibility" },
   openGraph: {
     title: "Accessibility Statement",
@@ -29,17 +29,17 @@ export default function AccessibilityPage() {
           Accessibility statement
         </h1>
         <p className="mt-4 text-sm text-slate-600">
-          Last updated: 10 October 2026
+          Last updated: 19 November 2026
         </p>
 
         <div className="mt-10 space-y-8 text-base leading-relaxed text-slate-700">
           <section>
             <h2 className="font-display text-2xl text-navy">Our commitment</h2>
             <p className="mt-3">
-              {site.name} is working toward WCAG 2.2 AA for this website and aims
-              to make clinic visits as usable as possible. We continue to improve
-              digital clarity, booking paths, and practical arrival information
-              for patients in Charlton SE7.
+              {site.name} aims to make this website and clinic visits usable for
+              as many people as possible. We work toward WCAG 2.2 AA on pages we
+              fully control, and we provide phone and WhatsApp alternatives when
+              third-party tools get in the way.
             </p>
           </section>
 
@@ -57,11 +57,70 @@ export default function AccessibilityPage() {
                 Responsive layouts tested on common phone and desktop widths
               </li>
             </ul>
+          </section>
+
+          <section>
+            <h2 className="font-display text-2xl text-navy">
+              Known limits (not fully WCAG AA)
+            </h2>
+            <ul className="mt-3 list-disc space-y-2 pl-5">
+              <li>
+                <strong className="font-semibold text-navy">
+                  Treow booking iframe
+                </strong>{" "}
+                on{" "}
+                <Link
+                  href="/book"
+                  className="font-semibold text-teal hover:text-teal-dark"
+                >
+                  /book
+                </Link>{" "}
+                — third-party calendar embed; keyboard, screen-reader, and zoom
+                behaviour can differ from the rest of the site.
+              </li>
+              <li>
+                <strong className="font-semibold text-navy">
+                  Google Maps embeds
+                </strong>{" "}
+                on Find us and related pages — map controls and iframe content
+                are outside our full control.
+              </li>
+              <li>
+                <strong className="font-semibold text-navy">
+                  Cookie banner + mobile Book bar
+                </strong>{" "}
+                — on small screens both can stack near the bottom of the
+                viewport until consent is set; we hide the Book bar while the
+                cookie dialog is open.
+              </li>
+            </ul>
             <p className="mt-3">
-              Some third-party embeds (for example Google Maps or the Treow
-              booking widget) are outside our full control and may not meet the
-              same accessibility standard. If an embed blocks you, contact us and
-              we will help book or share information another way.
+              If an embed blocks you, call{" "}
+              <a
+                href={site.phoneHref}
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                {site.phone}
+              </a>
+              , message{" "}
+              <a
+                href={site.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                WhatsApp
+              </a>
+              , or open the{" "}
+              <a
+                href={site.bookingExternalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                full booking page
+              </a>{" "}
+              instead of the embed.
             </p>
           </section>
 
@@ -122,8 +181,8 @@ export default function AccessibilityPage() {
 
         <div className="mt-12 flex flex-wrap gap-3">
           <ButtonLink href="/contact">Contact us</ButtonLink>
-          <ButtonLink href="/privacy" variant="secondary">
-            Privacy policy
+          <ButtonLink href={site.phoneHref} variant="secondary">
+            Call {site.phone}
           </ButtonLink>
           <ButtonLink href="/find-us" variant="secondary">
             Find us

@@ -48,8 +48,8 @@ export function BookingEmbed({
 }: BookingEmbedProps) {
   const shellRef = useRef<HTMLDivElement>(null);
   const frameRef = useRef<HTMLIFrameElement>(null);
-  // Always mount immediately — BookingEmbed only sits on /book and /vi/book.
-  const [shouldLoad] = useState(true);
+  // Defer iframe until the shell is near the viewport — keeps /book LCP lighter.
+  const [shouldLoad, setShouldLoad] = useState(false);
   const [frameKey, setFrameKey] = useState(0);
   const [height, setHeight] = useState(MIN_HEIGHT);
   const [loaded, setLoaded] = useState(false);
@@ -66,6 +66,28 @@ export function BookingEmbed({
     window.addEventListener("resize", syncHeight);
     return () => window.removeEventListener("resize", syncHeight);
   }, []);
+
+  useEffect(() => {
+    const node = shellRef.current;
+    if (!node || shouldLoad) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setShouldLoad(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "240px 0px", threshold: 0.01 },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [shouldLoad]);
 
   useEffect(() => {
     const markLoaded = () => {

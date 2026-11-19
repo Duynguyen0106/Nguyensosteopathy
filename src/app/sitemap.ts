@@ -49,10 +49,16 @@ function entry({
 }
 
 /**
- * Cached by default in Next.js unless request-time APIs are used.
- * Keep lastModified values deterministic (no `new Date()` at request time).
+ * Split crawl weight so Google can prioritise money pages separately from the
+ * large education / acupuncture corpora.
+ * Served as /sitemap/0.xml (core), /sitemap/1.xml (education), /sitemap/2.xml
+ * (acupuncture) under a /sitemap.xml index.
  */
-export default function sitemap(): MetadataRoute.Sitemap {
+export async function generateSitemaps() {
+  return [{ id: 0 }, { id: 1 }, { id: 2 }];
+}
+
+function buildCoreSitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
   const latestPostLastmod = posts.reduce((latest, post) => {
     const stamp = toLastmod(post.updated ?? post.date);
@@ -82,11 +88,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/reviews", priority: 0.85 },
     { path: "/faq", priority: 0.8 },
     { path: "/new-patients", priority: 0.8 },
-    { path: "/resources", priority: 0.8 },
+    { path: "/resources", priority: 0.75 },
     { path: "/aftercare", priority: 0.75 },
     { path: "/exercises", priority: 0.85 },
-    { path: "/education", priority: 0.8 },
-    { path: "/education/library", priority: 0.75 },
+    { path: "/education", priority: 0.7 },
+    { path: "/education/library", priority: 0.55 },
     { path: "/complaints", changeFrequency: "yearly", priority: 0.35 },
     { path: "/conditions", priority: 0.85 },
     { path: "/areas", priority: 0.85 },
@@ -98,10 +104,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
     { path: "/cupping", priority: 0.7 },
     { path: "/site-map", priority: 0.4 },
-    // Print utilities (/leaflet, /poster) are noindex — omit from sitemap.
     { path: "/cookies", changeFrequency: "yearly", priority: 0.3 },
     { path: "/insurance", priority: 0.7 },
-    // RSS is linked via <link rel="alternate"> — not a page URL for sitemap.
     { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
   ];
 
@@ -119,52 +123,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.65,
       }),
     ),
-    ...educationTracks
-      .filter((track) => track.id !== "library")
-      .map((track) =>
-        entry({
-          path: `/education/${track.slug}`,
-          priority: 0.7,
-        }),
-      ),
-    entry({
-      path: "/education/acupuncture/reference",
-      priority: 0.55,
-    }),
-    ...(["points", "herbs", "formulas", "conditions"] as const).map((type) =>
-      entry({
-        path: `/education/acupuncture/reference/${type}`,
-        priority: 0.5,
-      }),
-    ),
-    // American Dragon detail pages — primary discovery path for 4k+ records.
-    ...getSitemapAcupunctureCorpusPaths().map(({ type, slug }) =>
-      entry({
-        path: `/education/acupuncture/reference/${type}/${slug}`,
-        priority: 0.45,
-        changeFrequency: "yearly",
-      }),
-    ),
-    ...getSitemapLibraryTopicKeys().map((topic) =>
-      entry({
-        path: `/education/library/topic/${topic}`,
-        priority: 0.6,
-      }),
-    ),
-    ...getSitemapLibraryArticleSlugs().map((slug) =>
-      entry({
-        path: `/education/library/${slug}`,
-        priority: 0.55,
-      }),
-    ),
-    ...educationArticles
-      .filter((article) => article.status === "published")
-      .map((article) =>
-        entry({
-          path: `/education/${article.track}/${article.slug}`,
-          priority: 0.65,
-        }),
-      ),
     ...serviceAreas.map((area) =>
       entry({
         path: `/areas/${area.slug}`,
@@ -183,7 +141,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
       }),
     ),
-    // Per-post lastmod from content dates (updated, else publish date).
     ...posts.map((post) =>
       entry({
         path: `/blog/${post.slug}`,
@@ -192,4 +149,75 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }),
     ),
   ];
+}
+
+function buildEducationSitemap(): MetadataRoute.Sitemap {
+  return [
+    ...educationTracks
+      .filter((track) => track.id !== "library")
+      .map((track) =>
+        entry({
+          path: `/education/${track.slug}`,
+          priority: 0.55,
+          changeFrequency: "monthly",
+        }),
+      ),
+    ...getSitemapLibraryTopicKeys().map((topic) =>
+      entry({
+        path: `/education/library/topic/${topic}`,
+        priority: 0.45,
+        changeFrequency: "monthly",
+      }),
+    ),
+    ...getSitemapLibraryArticleSlugs().map((slug) =>
+      entry({
+        path: `/education/library/${slug}`,
+        priority: 0.4,
+        changeFrequency: "yearly",
+      }),
+    ),
+    ...educationArticles
+      .filter((article) => article.status === "published")
+      .map((article) =>
+        entry({
+          path: `/education/${article.track}/${article.slug}`,
+          priority: 0.5,
+          changeFrequency: "monthly",
+        }),
+      ),
+  ];
+}
+
+function buildAcupunctureSitemap(): MetadataRoute.Sitemap {
+  return [
+    entry({
+      path: "/education/acupuncture/reference",
+      priority: 0.4,
+      changeFrequency: "yearly",
+    }),
+    ...(["points", "herbs", "formulas", "conditions"] as const).map((type) =>
+      entry({
+        path: `/education/acupuncture/reference/${type}`,
+        priority: 0.35,
+        changeFrequency: "yearly",
+      }),
+    ),
+    // Detail pages — keep in a dedicated sitemap so core money pages stay lean.
+    ...getSitemapAcupunctureCorpusPaths().map(({ type, slug }) =>
+      entry({
+        path: `/education/acupuncture/reference/${type}/${slug}`,
+        priority: 0.3,
+        changeFrequency: "yearly",
+      }),
+    ),
+  ];
+}
+
+export default async function sitemap(props: {
+  id: Promise<string>;
+}): Promise<MetadataRoute.Sitemap> {
+  const id = Number(await props.id);
+  if (id === 1) return buildEducationSitemap();
+  if (id === 2) return buildAcupunctureSitemap();
+  return buildCoreSitemap();
 }

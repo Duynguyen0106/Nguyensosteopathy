@@ -138,8 +138,8 @@ export default function FindUsPage() {
             <ButtonLink href={bookHref("find-us")} variant="secondary">
               Book an appointment
             </ButtonLink>
-            <ButtonLink href="/areas" variant="secondary">
-              Areas we serve
+            <ButtonLink href="/contact" variant="secondary">
+              Contact / message
             </ButtonLink>
           </div>
         </div>

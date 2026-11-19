@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
-import { bookHref } from "@/lib/seo-strategy";
+import { viBookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -137,12 +137,30 @@ export default function VietnamesePage() {
             mình được hiểu, không chỉ được điều trị.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
-            <ButtonLink href={bookHref("vi")}>Đặt lịch khám</ButtonLink>
+            <ButtonLink href={viBookHref()}>Đặt lịch khám</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="onDarkOutline">
               Gọi {site.phone}
             </ButtonLink>
           </div>
           <p className="opening-hero-copy opening-hero-delay-3 mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-white/80">
+            <Link
+              href="/vi/fees"
+              className="font-semibold text-teal-mist underline-offset-4 hover:underline"
+            >
+              Bảng giá
+            </Link>
+            <Link
+              href="/vi/find-us"
+              className="font-semibold text-teal-mist underline-offset-4 hover:underline"
+            >
+              Địa chỉ &amp; gửi xe
+            </Link>
+            <Link
+              href="/vi/services/back-neck-pain"
+              className="font-semibold text-teal-mist underline-offset-4 hover:underline"
+            >
+              Đau lưng &amp; cổ
+            </Link>
             <a
               href={site.whatsappUrl}
               target="_blank"
@@ -445,7 +463,7 @@ export default function VietnamesePage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href={bookHref("vi")}>Đặt lịch online</ButtonLink>
+            <ButtonLink href={viBookHref()}>Đặt lịch online</ButtonLink>
             <ButtonLink
               href={site.whatsappUrl}
               variant="secondary"

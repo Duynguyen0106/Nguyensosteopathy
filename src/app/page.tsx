@@ -238,9 +238,6 @@ export default function HomePage() {
             </div>
             <div className="flex flex-wrap gap-3">
               <ButtonLink href={bookHref("home")}>Book online</ButtonLink>
-              <ButtonLink href="/services/focused-shockwave" variant="secondary">
-                Shockwave guide
-              </ButtonLink>
               <ButtonLink href="/services" variant="secondary">
                 View all services
               </ButtonLink>

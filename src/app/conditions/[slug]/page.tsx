@@ -142,25 +142,6 @@ export default async function ConditionPage({ params }: Props) {
             {" · "}
             Charlton SE7
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-slate-600">
-            Reviewed by{" "}
-            <Link
-              href="/about"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
-              {site.practitioner.name}
-            </Link>
-            , {site.practitioner.title} (Reg. No.{" "}
-            <a
-              href={site.practitioner.goscRegisterUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-teal hover:text-teal-dark"
-            >
-              {site.practitioner.regNo}
-            </a>
-            )
-          </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
             {condition.title}
           </h1>
@@ -172,9 +153,6 @@ export default async function ConditionPage({ params }: Props) {
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>
-          </div>
-          <div className="mt-10 max-w-3xl">
-            <AuthorBio />
           </div>
         </div>
       </section>
@@ -271,6 +249,9 @@ export default async function ConditionPage({ params }: Props) {
             FAQs about {condition.shortTitle.toLowerCase()}
           </h2>
           <FaqAccordion items={faqs} />
+          <div className="mt-12">
+            <AuthorBio />
+          </div>
         </div>
       </section>
 

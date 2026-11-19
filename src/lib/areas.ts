@@ -12,6 +12,38 @@ export type ServiceArea = {
   keywords: string[];
 };
 
+export type AreaFaq = { question: string; answer: string };
+
+/** Local FAQs for area landers + FAQPage JSON-LD. */
+export function getAreaFaqs(area: ServiceArea): AreaFaq[] {
+  return [
+    {
+      question: `Do I need a GP referral to see an osteopath from ${area.name}?`,
+      answer:
+        "No. You can book Nguyen's Osteopathic Clinic directly online or by phone — a GP referral is not required for most musculoskeletal presentations.",
+    },
+    {
+      question: `Where is the clinic for patients travelling from ${area.name}?`,
+      answer: `We are inside Village Pharmacy at 9 The Village, Charlton SE7 8UG. ${area.travelNote} Ask at the pharmacy counter on arrival and staff will direct you to the osteopathy room.`,
+    },
+    {
+      question: "What days can I book osteopathy?",
+      answer:
+        "The clinic is open Monday to Sunday, 9:00am – 8:00pm. Live slots are always shown on the booking page.",
+    },
+    {
+      question: `Is home-visit osteopathy available near ${area.name}?`,
+      answer:
+        "Yes, when clinic travel is difficult. Home-visit initial appointments are £120 (60 minutes) and follow-ups are £100 (30 minutes). Contact us first to confirm your address is within local coverage.",
+    },
+    {
+      question: "Can I speak Vietnamese at the clinic?",
+      answer:
+        "Yes. Austin Duy Nguyen can consult in Vietnamese or English so you can describe symptoms without a language barrier.",
+    },
+  ];
+}
+
 /** Local catchments for SEO and patient orientation around Charlton SE7. */
 export const serviceAreas: ServiceArea[] = [
   {

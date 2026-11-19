@@ -45,12 +45,6 @@ const links: NavLink[] = [
   { href: "/insurance", label: "Insurance", desktop: false },
   { href: "/reviews", label: "Reviews", desktop: false },
   { href: "/find-us", label: "Find us", desktop: true },
-  {
-    href: site.products.treowClinic.url,
-    label: site.products.treowClinic.name,
-    desktop: true,
-    external: true,
-  },
   { href: "/contact", label: "Contact", desktop: false },
   { href: "/vi", label: "Tiếng Việt", desktop: true },
 ];

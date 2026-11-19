@@ -30,19 +30,23 @@ export const metadata: Metadata = {
 const points = [
   {
     title: "Who qualifies",
-    body: "NHS staff and students. Bring valid ID to the appointment so we can apply the discount.",
+    body: "Current NHS staff (including bank/agency with an NHS role) and enrolled students (university, college, or recognised training programme). Bring valid ID to the appointment.",
   },
   {
-    title: "How much",
-    body: "10% off eligible clinic fees listed on our fees page — confirmed when you attend.",
+    title: "Fees that get 10% off",
+    body: "Initial osteopathy (£75), follow-up osteopathy (£60), focused shockwave (£90), men’s health / ED protocol (£110), and deep tissue massage (£60). Discount is taken off the standard listed fee when ID is shown.",
+  },
+  {
+    title: "What is not discounted",
+    body: "Add-ons billed on top of a session — acupuncture / electroacupuncture (+£20) and cupping (+£15). Home-visit fees (£120 / £100) are also excluded unless we agree otherwise when you book.",
+  },
+  {
+    title: "Accepted ID examples",
+    body: "NHS staff / smartcard or employer ID; university or college student card; current enrolment letter or training-programme ID. Expired cards and screenshots alone are not enough.",
   },
   {
     title: "How to book",
-    body: "Book online as usual, then show ID at the pharmacy clinic. Call if you are unsure which appointment type to choose.",
-  },
-  {
-    title: "What to bring",
-    body: "Photo ID that shows your NHS role or student status — for example an NHS staff card, university ID, or enrolment letter.",
+    body: "Book online at the standard listed price, then show ID at the pharmacy clinic before you pay. No promo code is needed. Call if you are unsure which appointment type to choose.",
   },
 ] as const;
 
@@ -141,11 +145,32 @@ export default function NhsDiscountPage() {
             ))}
           </ul>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-slate-600">
-            Online booking uses standard listed prices. Mention NHS or student
+            Online booking shows standard listed prices. Mention NHS or student
             status when you arrive so the fee is adjusted before you pay — you
             do not need a separate promo code. Optional add-ons are confirmed
-            before treatment starts.
+            before treatment starts. One discount per appointment; cannot be
+            combined with other offers.
           </p>
+          <ul className="mt-6 max-w-3xl space-y-2 text-sm leading-relaxed text-slate-600 md:text-base">
+            <li>
+              <span className="font-semibold text-navy">Example:</span> Initial
+              consultation £75 → £67.50 with valid NHS/student ID.
+            </li>
+            <li>
+              <span className="font-semibold text-navy">Example:</span> Follow-up
+              £60 → £54 with valid ID.
+            </li>
+            <li>
+              Full current price list:{" "}
+              <Link
+                href="/fees"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Fees
+              </Link>
+              .
+            </li>
+          </ul>
           <p className="mt-6 text-sm text-slate-600">
             Related:{" "}
             <Link

@@ -48,17 +48,50 @@ function entry({
   };
 }
 
+function escapeXml(value: string): string {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
+}
+
+function toUrlsetXml(entries: MetadataRoute.Sitemap): string {
+  const body = entries
+    .map((item) => {
+      const lastmod =
+        item.lastModified instanceof Date
+          ? item.lastModified.toISOString()
+          : item.lastModified
+            ? new Date(item.lastModified).toISOString()
+            : undefined;
+      const parts = [
+        "<url>",
+        `<loc>${escapeXml(item.url)}</loc>`,
+      ];
+      if (lastmod) parts.push(`<lastmod>${lastmod}</lastmod>`);
+      if (item.changeFrequency) {
+        parts.push(`<changefreq>${item.changeFrequency}</changefreq>`);
+      }
+      if (typeof item.priority === "number") {
+        parts.push(`<priority>${item.priority.toFixed(1)}</priority>`);
+      }
+      parts.push("</url>");
+      return parts.join("");
+    })
+    .join("");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${body}</urlset>\n`;
+}
+
 /**
  * Split crawl weight so Google can prioritise money pages separately from the
  * large education / acupuncture corpora.
  * Served as /sitemap/0.xml (core), /sitemap/1.xml (education), /sitemap/2.xml
  * (acupuncture) under a /sitemap.xml index.
  */
-export async function generateSitemaps() {
-  return [{ id: 0 }, { id: 1 }, { id: 2 }];
-}
-
-function buildCoreSitemap(): MetadataRoute.Sitemap {
+export function buildCoreSitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
   const latestPostLastmod = posts.reduce((latest, post) => {
     const stamp = toLastmod(post.updated ?? post.date);
@@ -151,7 +184,7 @@ function buildCoreSitemap(): MetadataRoute.Sitemap {
   ];
 }
 
-function buildEducationSitemap(): MetadataRoute.Sitemap {
+export function buildEducationSitemap(): MetadataRoute.Sitemap {
   return [
     ...educationTracks
       .filter((track) => track.id !== "library")
@@ -188,7 +221,7 @@ function buildEducationSitemap(): MetadataRoute.Sitemap {
   ];
 }
 
-function buildAcupunctureSitemap(): MetadataRoute.Sitemap {
+export function buildAcupunctureSitemap(): MetadataRoute.Sitemap {
   return [
     entry({
       path: "/education/acupuncture/reference",
@@ -213,11 +246,29 @@ function buildAcupunctureSitemap(): MetadataRoute.Sitemap {
   ];
 }
 
-export default async function sitemap(props: {
-  id: Promise<string>;
-}): Promise<MetadataRoute.Sitemap> {
-  const id = Number(await props.id);
-  if (id === 1) return buildEducationSitemap();
-  if (id === 2) return buildAcupunctureSitemap();
-  return buildCoreSitemap();
+export function sitemapUrlsetResponse(
+  entries: MetadataRoute.Sitemap,
+): Response {
+  return new Response(toUrlsetXml(entries), {
+    headers: {
+      "Content-Type": "application/xml; charset=utf-8",
+      "Cache-Control": "public, max-age=3600, s-maxage=3600",
+    },
+  });
+}
+
+export function sitemapIndexResponse(): Response {
+  const body = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>${escapeXml(`${base}/sitemap/0.xml`)}</loc></sitemap>
+  <sitemap><loc>${escapeXml(`${base}/sitemap/1.xml`)}</loc></sitemap>
+  <sitemap><loc>${escapeXml(`${base}/sitemap/2.xml`)}</loc></sitemap>
+</sitemapindex>
+`;
+  return new Response(body, {
+    headers: {
+      "Content-Type": "application/xml; charset=utf-8",
+      "Cache-Control": "public, max-age=3600, s-maxage=3600",
+    },
+  });
 }

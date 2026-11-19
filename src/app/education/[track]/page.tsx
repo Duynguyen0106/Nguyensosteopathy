@@ -6,7 +6,7 @@ import { EducationArticleCard } from "@/components/education/EducationArticleCar
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
 import {
   educationTracks,
-  getArticlesForTrack,
+  getBrowsableArticlesForTrack,
   getEducationTrack,
   type EducationTrackId,
 } from "@/lib/education";
@@ -58,7 +58,7 @@ export default async function EducationTrackPage({ params }: Props) {
   const track = getEducationTrack(trackSlug);
   if (!track || !trackIds.has(track.id)) notFound();
 
-  const articles = getArticlesForTrack(track.id);
+  const articles = getBrowsableArticlesForTrack(track.id);
 
   const pageLd = {
     "@context": "https://schema.org",

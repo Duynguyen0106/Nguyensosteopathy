@@ -24,8 +24,8 @@ const WIDTH = 1600;
 const HEIGHT = 1200;
 
 // Prepare high-res assets
-const photoPath = join(outDir, "austin-nguyen.jpg");
-const logoPath = join(outDir, "logo.jpg");
+const photoPath = join(outDir, "austin-nguyen.webp");
+const logoPath = join(outDir, "logo.webp");
 
 const photoPng = await sharp(photoPath)
   .resize(1100, 1100, { fit: "cover", position: "top" })

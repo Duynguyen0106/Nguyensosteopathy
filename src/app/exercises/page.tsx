@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import Link from "next/link";
 import { Suspense } from "react";
 import { ButtonLink } from "@/components/Button";
@@ -26,10 +27,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/exercises" },
   keywords: [
     "osteopath exercises Charlton",
-    "home rehab exercises SE18",
+    "home rehab exercises Charlton",
     "sciatica exercises Charlton",
     "desk neck exercises London",
-    "plantar fasciitis exercises SE18",
+    "plantar fasciitis exercises Charlton",
   ],
   openGraph: {
     title: "Home Exercises & Rehab | Nguyen's Osteopathic Clinic",
@@ -240,7 +241,7 @@ export default function ExercisesHubPage({ searchParams }: Props) {
             <ButtonLink href="/aftercare" variant="secondary">
               Aftercare guide
             </ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
+            <ButtonLink href={bookHref("exercises")} variant="secondary">
               Book assessment
             </ButtonLink>
           </div>
@@ -323,7 +324,7 @@ export default function ExercisesHubPage({ searchParams }: Props) {
             irritable your tissues are today.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("exercises")}>Book online</ButtonLink>
             <ButtonLink href="/services/sports-injury-rehab" variant="secondary">
               Sports injury &amp; rehab
             </ButtonLink>

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/nhs-discount" },
   keywords: [
     "NHS discount osteopath Charlton",
-    "student discount osteopathy SE18",
+    "student discount osteopathy Charlton",
     "cheap osteopath Charlton",
     "NHS staff osteopath London",
     "student osteopath discount",
@@ -65,7 +65,7 @@ export default function NhsDiscountPage() {
     { name: "Home", path: "/" },
     { name: "NHS & student discount", path: "/nhs-discount" },
   ]);
-  const bookUrl = bookHref("services");
+  const bookUrl = bookHref("nhs");
 
   return (
     <div className="bg-slate-50">

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords: [
     "osteopath Charlton prices",
     "osteopath Charlton fees",
-    "osteopathy cost SE18",
+    "osteopathy cost Charlton",
     "home visit osteopath price Charlton",
     "shockwave therapy price Charlton",
     "Nguyen's Osteopathic Clinic pricing",

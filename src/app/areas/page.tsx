@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { serviceAreas } from "@/lib/areas";
@@ -64,7 +65,7 @@ export default function AreasPage() {
             osteopathy without a central London trip.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book an appointment</ButtonLink>
+            <ButtonLink href={bookHref("areas")}>Book an appointment</ButtonLink>
             <ButtonLink href="/find-us" variant="secondary">
               Find us &amp; parking
             </ButtonLink>
@@ -164,7 +165,7 @@ export default function AreasPage() {
                   >
                     {area.name} page →
                   </Link>
-                  <Link href="/book" className="hover:text-teal-dark">
+                  <Link href={bookHref("areas")} className="hover:text-teal-dark">
                     Book
                   </Link>
                   {area.relatedBlogSlug ? (
@@ -190,7 +191,7 @@ export default function AreasPage() {
             your first visit.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("areas")}>Book online</ButtonLink>
             <ButtonLink href="/conditions" variant="secondary">
               Conditions
             </ButtonLink>

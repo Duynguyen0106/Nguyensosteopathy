@@ -849,7 +849,7 @@ export const programmes: Programme[] = [
     slug: "desk-neck-reset",
     title: "Desk neck reset",
     summary:
-      "Micro-breaks for screen-heavy days around Charlton and SE18 — neck, shoulder blades, and mid-back.",
+      "Micro-breaks for screen-heavy days around Charlton and nearby SE London — neck, shoulder blades, and mid-back.",
     audience:
       "Desk and hybrid workers with posture-related neck or upper-back stiffness without acute trauma.",
     phase: "rebuild",
@@ -908,7 +908,7 @@ export const programmes: Programme[] = [
     slug: "patellofemoral-build",
     title: "Patellofemoral build",
     summary:
-      "Quad and hip control for kneecap irritability — stairs, hills, and return to training around SE18.",
+      "Quad and hip control for kneecap irritability — stairs, hills, and return to training around Charlton.",
     audience:
       "Adults with front-of-knee or kneecap pain that settles with load management, without locking or giving-way from instability.",
     phase: "rebuild",

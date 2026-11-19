@@ -9,11 +9,12 @@ import {
   resolveViHref,
   viFooterLabels,
 } from "@/lib/i18n-chrome";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 /** Lean footer — full catalogue remains on /site-map. */
 const patientLinks = [
-  { href: "/book", label: "Book online" },
+  { href: bookHref("footer"), label: "Book online" },
   { href: "/new-patients", label: "New patients" },
   { href: "/fees", label: "Fees & prices" },
   { href: "/exercises", label: "Home exercises" },
@@ -84,7 +85,7 @@ export function Footer() {
               : site.tagline}
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <ButtonLink href="/book">
+            <ButtonLink href={hrefFor(bookHref("footer"))}>
               {isVi ? "Đặt lịch online" : "Book online"}
             </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">

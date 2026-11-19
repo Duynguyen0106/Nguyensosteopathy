@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import Link from "next/link";
 import { BlogDirectory } from "@/components/BlogDirectory";
 import { ButtonLink } from "@/components/Button";
@@ -12,7 +13,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Osteopathy Blog",
   description:
-    "Osteopathy blog for Charlton and SE18: back pain treatment, neck pain treatment, shockwave therapy, sports rehab, pregnancy, men’s health, and clinic guides…",
+    "Osteopathy blog for Charlton and nearby SE London: back pain treatment, neck pain treatment, shockwave therapy, sports rehab, pregnancy, men’s health, and clinic guides…",
   robots: {
     index: true,
     follow: true,
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   keywords: [
     "osteopathy blog Charlton",
     "back pain treatment Charlton",
-    "neck pain treatment SE18",
+    "neck pain treatment Charlton",
     "shockwave therapy London",
     "osteopath advice Greenwich",
     "drug free pain relief",
@@ -81,7 +82,7 @@ export default function BlogIndexPage() {
             Clinic blog · {total} articles
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
-            Osteopathy advice for Charlton and SE18
+            Osteopathy advice for Charlton and nearby SE London
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
             Clear guides from {site.practitioner.name} at {site.name} — covering
@@ -90,7 +91,7 @@ export default function BlogIndexPage() {
             Village Pharmacy.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("blog")}>Book online</ButtonLink>
             <ButtonLink href="/services" variant="secondary">
               View services
             </ButtonLink>
@@ -173,7 +174,7 @@ export default function BlogIndexPage() {
             — {site.booking.shortNote}
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("blog")}>Book online</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>

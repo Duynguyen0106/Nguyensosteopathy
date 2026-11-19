@@ -25,13 +25,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "lumbar-disc-pain-osteopath-charlton",
     title: "Lumbar disc pain in Charlton: what osteopathy can (and cannot) do",
     description:
-      "Disc-related lower back pain explained for SE18 patients — flare patterns, red flags, and how gentle osteopathy supports recovery.",
+      "Disc-related lower back pain explained for Charlton patients — flare patterns, red flags, and how gentle osteopathy supports recovery.",
     date: "2026-10-09",
     category: "Back & neck",
     keywords: [
       "lumbar disc osteopath",
       "slipped disc Charlton",
-      "disc bulge osteopathy SE18",
+      "disc bulge osteopathy Charlton",
       "lower back disc pain London",
     ],
     sections: [
@@ -65,7 +65,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "sacroiliac joint pain",
       "SI joint osteopath Charlton",
-      "pelvic pain osteopathy SE18",
+      "pelvic pain osteopathy Charlton",
       "buttock pain osteopath",
     ],
     sections: [
@@ -82,13 +82,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "upper-back-pain-desk-workers-charlton",
     title: "Upper back pain for Charlton desk workers",
     description:
-      "Mid-back stiffness between the shoulder blades is common after laptop days. Learn postural drivers and osteopathic treatment options in SE18.",
+      "Mid-back stiffness between the shoulder blades is common after laptop days. Learn postural drivers and osteopathic treatment options in Charlton.",
     date: "2026-10-09",
     category: "Back & neck",
     keywords: [
       "upper back pain osteopath",
       "thoracic pain Charlton",
-      "shoulder blade pain SE18",
+      "shoulder blade pain Charlton",
       "desk posture osteopathy",
     ],
     sections: [
@@ -103,7 +103,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "whiplash-neck-pain-osteopath-se18",
-    title: "Whiplash and neck pain after a road accident: osteopathy in SE18",
+    title: "Whiplash and neck pain after a road accident: osteopathy in Charlton",
     description:
       "Stiff, sore neck after a collision or sudden jolt? What to expect from osteopathic assessment in Charlton and when imaging matters.",
     date: "2026-10-09",
@@ -111,7 +111,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "whiplash osteopath Charlton",
       "neck pain after car accident",
-      "whiplash SE18",
+      "whiplash Charlton",
       "osteopathy road traffic injury",
     ],
     sections: [
@@ -150,13 +150,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "text-neck-smartphone-osteopath-charlton",
     title: "Text neck from smartphones: osteopath advice for Charlton",
     description:
-      "Phone scroll posture loads the neck. Practical osteopathy tips for text neck, forward head posture, and SE18 desk-and-device strain.",
+      "Phone scroll posture loads the neck. Practical osteopathy tips for text neck, forward head posture, and nearby SE London desk-and-device strain.",
     date: "2026-10-09",
     category: "Back & neck",
     keywords: [
       "text neck osteopath",
       "smartphone neck pain Charlton",
-      "forward head posture SE18",
+      "forward head posture Charlton",
     ],
     sections: [
       {
@@ -180,7 +180,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "TMJ osteopath Charlton",
       "jaw pain osteopathy",
-      "teeth clenching neck pain SE18",
+      "teeth clenching neck pain Charlton",
     ],
     sections: [
       {
@@ -202,7 +202,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "migraine vs tension headache",
       "osteopath for migraine Charlton",
-      "cervicogenic headache SE18",
+      "cervicogenic headache Charlton",
     ],
     sections: [
       {
@@ -218,13 +218,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "ankle-sprain-rehab-osteopath-charlton",
     title: "Ankle sprain rehab with an osteopath in Charlton",
     description:
-      "Rolled your ankle on the pavement or pitch? Osteopathy for sprain recovery, swelling timelines, and return to walking or sport in SE18.",
+      "Rolled your ankle on the pavement or pitch? Osteopathy for sprain recovery, swelling timelines, and return to walking or sport in Charlton.",
     date: "2026-10-09",
     category: "Headaches & joints",
     keywords: [
       "ankle sprain osteopath",
       "twisted ankle Charlton",
-      "ankle rehab SE18",
+      "ankle rehab Charlton",
     ],
     sections: [
       {
@@ -238,7 +238,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "wrist-hand-pain-osteopath-se18",
-    title: "Wrist and hand pain from desk work: osteopathy in SE18",
+    title: "Wrist and hand pain from desk work: osteopathy in Charlton",
     description:
       "Keyboard and mouse strain, wrist ache, and forearm tightness — how osteopathy helps desk-related upper limb pain in Charlton.",
     date: "2026-10-09",
@@ -246,7 +246,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "wrist pain osteopath",
       "mouse arm Charlton",
-      "forearm pain SE18 osteopathy",
+      "forearm pain Charlton osteopathy",
     ],
     sections: [
       {
@@ -268,7 +268,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "osteoarthritis osteopath",
       "arthritic joints Charlton",
-      "stiff knees osteopathy SE18",
+      "stiff knees osteopathy Charlton",
     ],
     sections: [
       {
@@ -286,13 +286,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "plantar-fasciitis-shockwave-charlton",
     title: "Plantar fasciitis and heel pain: focused shockwave in Charlton",
     description:
-      "First-step heel pain that will not settle? How focused shockwave (LI-ESWT) and load advice help plantar fasciopathy in SE18.",
+      "First-step heel pain that will not settle? How focused shockwave (LI-ESWT) and load advice help plantar fasciopathy in Charlton.",
     date: "2026-10-09",
     category: "Focused shockwave",
     keywords: [
       "plantar fasciitis Charlton",
       "heel pain shockwave",
-      "plantar fasciopathy osteopath SE18",
+      "plantar fasciopathy osteopath Charlton",
       "LI-ESWT heel",
     ],
     sections: [
@@ -321,7 +321,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "Achilles tendinopathy shockwave",
       "Achilles pain osteopath Charlton",
-      "LI-ESWT Achilles SE18",
+      "LI-ESWT Achilles Charlton",
     ],
     sections: [
       {
@@ -337,13 +337,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "tennis-elbow-shockwave-osteopath-charlton",
     title: "Tennis elbow in Charlton: osteopathy and focused shockwave",
     description:
-      "Lateral elbow pain from gripping, DIY, or racket sport. How osteopathy and LI-ESWT help tennis elbow (lateral epicondylalgia) in SE18.",
+      "Lateral elbow pain from gripping, DIY, or racket sport. How osteopathy and LI-ESWT help tennis elbow (lateral epicondylalgia) in Charlton.",
     date: "2026-10-09",
     category: "Focused shockwave",
     keywords: [
       "tennis elbow Charlton",
       "lateral epicondylitis shockwave",
-      "elbow pain osteopath SE18",
+      "elbow pain osteopath Charlton",
     ],
     sections: [
       {
@@ -365,7 +365,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "golfer's elbow osteopath",
       "medial elbow pain Charlton",
-      "epicondylalgia SE18",
+      "epicondylalgia Charlton",
     ],
     sections: [
       {
@@ -381,13 +381,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "patellar-tendinopathy-shockwave-charlton",
     title: "Patellar tendinopathy (jumper’s knee): care in Charlton",
     description:
-      "Front-of-knee tendon pain from jumping or stairs? Osteopathy, load management, and shockwave options in SE18.",
+      "Front-of-knee tendon pain from jumping or stairs? Osteopathy, load management, and shockwave options in Charlton.",
     date: "2026-10-09",
     category: "Focused shockwave",
     keywords: [
       "patellar tendinopathy",
       "jumpers knee Charlton",
-      "knee tendon shockwave SE18",
+      "knee tendon shockwave Charlton",
     ],
     sections: [
       {
@@ -409,7 +409,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "focused shockwave what to expect",
       "LI-ESWT Charlton",
-      "shockwave therapy session SE18",
+      "shockwave therapy session Charlton",
     ],
     sections: [
       {
@@ -449,12 +449,12 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "li-eswt-erectile-dysfunction-charlton",
     title: "LI-ESWT for erectile dysfunction: discreet care in Charlton",
     description:
-      "Low-intensity focused shockwave as a non-drug, non-surgical option for vascular-related ED — private appointments in SE18.",
+      "Low-intensity focused shockwave as a non-drug, non-surgical option for vascular-related ED — private appointments in Charlton.",
     date: "2026-10-09",
     category: "Men's health",
     keywords: [
       "LI-ESWT ED Charlton",
-      "shockwave erectile dysfunction SE18",
+      "shockwave erectile dysfunction Charlton",
       "non drug ED treatment London",
     ],
     sections: [
@@ -482,7 +482,7 @@ export const serviceBlogPosts: ServicePost[] = [
     category: "Men's health",
     keywords: [
       "mens pelvic health Charlton",
-      "male pelvic osteopath SE18",
+      "male pelvic osteopath Charlton",
       "discreet mens clinic Charlton",
     ],
     sections: [
@@ -550,7 +550,7 @@ export const serviceBlogPosts: ServicePost[] = [
     category: "Acupuncture & cupping",
     keywords: [
       "medical acupuncture Charlton",
-      "osteopath acupuncture SE18",
+      "osteopath acupuncture Charlton",
       "dry needling Charlton",
     ],
     sections: [
@@ -572,7 +572,7 @@ export const serviceBlogPosts: ServicePost[] = [
     category: "Acupuncture & cupping",
     keywords: [
       "electroacupuncture Charlton",
-      "electro acupuncture osteopath SE18",
+      "electro acupuncture osteopath Charlton",
       "microcurrent acupuncture London",
     ],
     sections: [
@@ -595,7 +595,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "acupuncture add-on osteopath",
       "acupuncture fees Charlton",
-      "needling with osteopathy SE18",
+      "needling with osteopathy Charlton",
     ],
     sections: [
       {
@@ -616,7 +616,7 @@ export const serviceBlogPosts: ServicePost[] = [
     category: "Acupuncture & cupping",
     keywords: [
       "cupping Charlton",
-      "cupping osteopath SE18",
+      "cupping osteopath Charlton",
       "cupping therapy add-on London",
     ],
     sections: [
@@ -640,7 +640,7 @@ export const serviceBlogPosts: ServicePost[] = [
     category: "Deep tissue",
     keywords: [
       "deep tissue massage Charlton",
-      "sports massage SE18",
+      "sports massage Charlton",
       "deep tissue osteopath London",
     ],
     sections: [
@@ -663,7 +663,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "massage vs osteopathy",
       "deep tissue or osteopath Charlton",
-      "when to see osteopath SE18",
+      "when to see osteopath Charlton",
     ],
     sections: [
       {
@@ -679,12 +679,12 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "post-gym-muscle-soreness-massage-charlton",
     title: "Post-gym soreness and knots: massage care in Charlton",
     description:
-      "DOMS versus true injury, and when deep tissue massage helps training-related muscle load in SE18.",
+      "DOMS versus true injury, and when deep tissue massage helps training-related muscle load in Charlton.",
     date: "2026-10-09",
     category: "Deep tissue",
     keywords: [
       "post gym massage Charlton",
-      "DOMS massage SE18",
+      "DOMS massage Charlton",
       "muscle knots osteopath",
     ],
     sections: [
@@ -707,7 +707,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "stress shoulder tension massage",
       "tight traps Charlton",
-      "neck shoulder massage SE18",
+      "neck shoulder massage Charlton",
     ],
     sections: [
       {
@@ -725,13 +725,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "running-injuries-osteopath-charlton",
     title: "Running injuries: osteopathy for Charlton and Greenwich runners",
     description:
-      "IT band, shin, Achilles, and knee niggles from Thames Path and park runs — assessment and rehab planning in SE18.",
+      "IT band, shin, Achilles, and knee niggles from Thames Path and park runs — assessment and rehab planning in Charlton.",
     date: "2026-10-09",
     category: "Sports rehab",
     keywords: [
       "running injury osteopath Charlton",
       "runners knee Greenwich",
-      "IT band syndrome SE18",
+      "IT band syndrome Charlton",
     ],
     sections: [
       {
@@ -753,7 +753,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "gym shoulder injury osteopath",
       "bench press shoulder pain Charlton",
-      "overhead press pain SE18",
+      "overhead press pain Charlton",
     ],
     sections: [
       {
@@ -767,7 +767,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "football-muscle-strain-osteopath-se18",
-    title: "Football muscle strains: osteopathy for SE18 players",
+    title: "Football muscle strains: osteopathy for Charlton players",
     description:
       "Hamstring, calf, and groin strains from five-a-side and Sunday league — timelines and return-to-play support in Charlton.",
     date: "2026-10-09",
@@ -775,7 +775,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "football injury osteopath",
       "hamstring strain Charlton",
-      "groin strain osteopathy SE18",
+      "groin strain osteopathy Charlton",
     ],
     sections: [
       {
@@ -797,7 +797,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "return to sport osteopath",
       "sprain recovery Charlton",
-      "return to play SE18",
+      "return to play Charlton",
     ],
     sections: [
       {
@@ -819,7 +819,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "overuse injury osteopath",
       "training niggle Charlton",
-      "load management SE18",
+      "load management Charlton",
     ],
     sections: [
       {
@@ -837,13 +837,13 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "pelvic-girdle-pain-pregnancy-charlton",
     title: "Pelvic girdle pain in pregnancy: osteopathy in Charlton",
     description:
-      "SPD and pelvic girdle pain with walking or turning in bed — gentle, trimester-aware osteopathy in SE18.",
+      "SPD and pelvic girdle pain with walking or turning in bed — gentle, trimester-aware osteopathy in Charlton.",
     date: "2026-10-09",
     category: "Pregnancy",
     keywords: [
       "pelvic girdle pain pregnancy",
       "SPD osteopath Charlton",
-      "pregnancy pelvic pain SE18",
+      "pregnancy pelvic pain Charlton",
     ],
     sections: [
       {
@@ -865,7 +865,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "rib pain pregnancy osteopath",
       "pregnancy thoracic pain Charlton",
-      "rib flare pregnancy SE18",
+      "rib flare pregnancy Charlton",
     ],
     sections: [
       {
@@ -887,7 +887,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "postpartum back pain osteopath",
       "after birth osteopathy Charlton",
-      "feeding posture pain SE18",
+      "feeding posture pain Charlton",
     ],
     sections: [
       {
@@ -933,7 +933,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "cranial osteopathy Charlton",
       "what is cranial osteopathy",
-      "gentle osteopath SE18",
+      "gentle osteopath Charlton",
     ],
     sections: [
       {
@@ -971,7 +971,7 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "cranial-vs-structural-osteopathy-charlton",
     title: "Cranial vs structural osteopathy: how we choose",
     description:
-      "Firner joint-focused work versus gentler cranial styles — matching technique to your preferences at our SE18 clinic.",
+      "Firner joint-focused work versus gentler cranial styles — matching technique to your preferences at our Charlton clinic.",
     date: "2026-10-09",
     category: "Cranial",
     keywords: [
@@ -1000,7 +1000,7 @@ export const serviceBlogPosts: ServicePost[] = [
     category: "Paediatric",
     keywords: [
       "paediatric osteopath Charlton",
-      "osteopath for children SE18",
+      "osteopath for children Charlton",
       "baby osteopath Charlton",
     ],
     sections: [
@@ -1023,7 +1023,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "growing pains osteopath",
       "child leg pain Charlton",
-      "paediatric musculoskeletal SE18",
+      "paediatric musculoskeletal Charlton",
     ],
     sections: [
       {
@@ -1037,7 +1037,7 @@ export const serviceBlogPosts: ServicePost[] = [
   }),
   post({
     slug: "child-posture-backpack-osteopath-se18",
-    title: "School backpacks and child posture: osteopath tips for SE18",
+    title: "School backpacks and child posture: osteopath tips for Charlton",
     description:
       "Heavy bags and device time affect young spines. Practical posture advice and when to book paediatric osteopathy in Charlton.",
     date: "2026-10-09",
@@ -1045,7 +1045,7 @@ export const serviceBlogPosts: ServicePost[] = [
     keywords: [
       "child posture osteopath",
       "school bag back pain Charlton",
-      "kids neck pain SE18",
+      "kids neck pain Charlton",
     ],
     sections: [
       {
@@ -1066,7 +1066,7 @@ export const serviceBlogPosts: ServicePost[] = [
     category: "Paediatric",
     keywords: [
       "infant osteopath Charlton",
-      "baby osteopathy SE18",
+      "baby osteopathy Charlton",
       "cranial baby osteopath London",
     ],
     sections: [
@@ -1090,7 +1090,7 @@ export const serviceBlogPosts: ServicePost[] = [
     category: "Clinic info",
     keywords: [
       "book osteopath online Charlton",
-      "osteopath booking SE18",
+      "osteopath booking Charlton",
       "Treow booking Nguyen",
     ],
     sections: [
@@ -1107,12 +1107,12 @@ export const serviceBlogPosts: ServicePost[] = [
     slug: "osteopathy-fees-charlton-price-list",
     title: "Osteopathy fees in Charlton: clear 2026 price list",
     description:
-      "Initial £75, follow-up £60, shockwave £90, specialist ED protocol £110, massage £60, add-ons explained — transparent fees at SE18.",
+      "Initial £75, follow-up £60, shockwave £90, specialist ED protocol £110, massage £60, add-ons explained — transparent fees in Charlton.",
     date: "2026-10-09",
     category: "Clinic info",
     keywords: [
       "osteopath prices Charlton",
-      "osteopathy fees SE18",
+      "osteopathy fees Charlton",
       "how much osteopath London",
     ],
     sections: [

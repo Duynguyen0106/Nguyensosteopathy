@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useSyncExternalStore } from "react";
 import { getConsentSnapshot, subscribeConsent } from "@/lib/cookie-consent";
+import { resolveViHref } from "@/lib/i18n-chrome";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const MOBILE_BOOK_PAD = "4.25rem";
@@ -30,6 +32,8 @@ export function MobileBookBar() {
     pathname === "/vi" ||
     pathname === "/book" ||
     pathname.startsWith("/book/") ||
+    pathname === "/vi/book" ||
+    pathname.startsWith("/vi/book/") ||
     pathname.startsWith("/leaflet") ||
     pathname.startsWith("/poster");
 
@@ -48,6 +52,9 @@ export function MobileBookBar() {
 
   const isVi = pathname.startsWith("/vi");
   const label = isVi ? "Đặt lịch" : "Book";
+  const bookPath = isVi
+    ? resolveViHref(bookHref("mobile-bar"))
+    : bookHref("mobile-bar");
 
   return (
     <div
@@ -56,7 +63,7 @@ export function MobileBookBar() {
       style={{ bottom: "calc(0.75rem + var(--cookie-banner-pad, 0px))" }}
     >
       <Link
-        href="/book"
+        href={bookPath}
         className="pointer-events-auto inline-flex min-h-12 min-w-[10.5rem] items-center justify-center rounded-xl bg-teal px-6 text-base font-semibold text-white shadow-lg shadow-teal/30 ring-1 ring-teal/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
         aria-label={
           isVi ? `Đặt lịch khám — ${site.name}` : `Book online — ${site.name}`

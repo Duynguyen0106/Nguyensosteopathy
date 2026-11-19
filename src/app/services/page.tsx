@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ServiceIcon } from "@/components/ServiceIcon";
@@ -156,7 +157,7 @@ export default function ServicesPage() {
               for help choosing the right appointment.
             </p>
           </div>
-          <ButtonLink href="/book">Book an appointment</ButtonLink>
+          <ButtonLink href={bookHref("services")}>Book an appointment</ButtonLink>
         </div>
       </div>
     </div>

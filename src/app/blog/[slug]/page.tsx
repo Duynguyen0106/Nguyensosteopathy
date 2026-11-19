@@ -7,6 +7,7 @@ import { BlogRichText } from "@/components/BlogRichText";
 import { ButtonLink } from "@/components/Button";
 import { categoryToId, getAllPosts, getPost } from "@/lib/blog";
 import { breadcrumbJsonLd, fitSerpTitle, trimDescription } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 type Props = {
@@ -84,7 +85,10 @@ export default async function BlogPostPage({ params }: Props) {
   ].slice(0, 3);
   const categoryHref = `/blog#${categoryToId(post.category)}`;
   const updated = post.updated ?? post.date;
-  const ctaHref = post.ctaHref ?? "/book";
+  const ctaHref =
+    post.ctaHref && post.ctaHref !== "/book"
+      ? post.ctaHref
+      : bookHref("blog");
   const ctaLabel = post.ctaLabel ?? "Book online";
 
   const postUrl = `${site.websiteUrl}/blog/${post.slug}`;

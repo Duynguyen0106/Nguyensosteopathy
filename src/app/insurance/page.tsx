@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { site } from "@/lib/site";
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/insurance" },
   keywords: [
     "osteopath insurance Charlton",
-    "private health insurance osteopathy SE18",
+    "private health insurance osteopathy Charlton",
     "osteopath receipt London",
     "self pay osteopath Charlton",
     "Bupa osteopath Charlton",
@@ -61,7 +62,7 @@ export default function InsurancePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/fees">View fees</ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
+            <ButtonLink href={bookHref("insurance")} variant="secondary">
               Book online
             </ButtonLink>
             <ButtonLink href="/contact" variant="secondary">
@@ -173,7 +174,7 @@ export default function InsurancePage() {
             </Link>
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("insurance")}>Book online</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>

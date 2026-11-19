@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     "contact osteopath Charlton",
     "osteopath The Village",
     "Village Pharmacy osteopath",
-    "osteopath SE18 phone",
+    "osteopath Charlton phone",
     "Nguyen's Osteopathic Clinic contact",
   ],
   openGraph: {
@@ -76,7 +77,7 @@ export default function ContactPage() {
             time that suits you.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("contact")}>Book online</ButtonLink>
             <ButtonLink
               href={site.whatsappUrl}
               variant="secondary"

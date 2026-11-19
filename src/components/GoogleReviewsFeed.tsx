@@ -1,6 +1,7 @@
 import { ButtonLink } from "@/components/Button";
 import { StarRating } from "@/components/StarRating";
 import { getGooglePlaceReviews } from "@/lib/google-reviews";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 function Stars({ rating }: { rating: number }) {
@@ -37,7 +38,7 @@ export async function GoogleReviewsFeed() {
             >
               Open Google reviews
             </ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
+            <ButtonLink href={bookHref("reviews")} variant="secondary">
               Book online
             </ButtonLink>
           </div>
@@ -119,7 +120,7 @@ export async function GoogleReviewsFeed() {
               >
                 Leave a Google review
               </ButtonLink>
-              <ButtonLink href="/book" variant="secondary">
+              <ButtonLink href={bookHref("reviews")} variant="secondary">
                 Book online
               </ButtonLink>
             </div>

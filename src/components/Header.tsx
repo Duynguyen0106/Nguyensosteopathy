@@ -12,6 +12,7 @@ import {
   viNavLabels,
   viServiceLabels,
 } from "@/lib/i18n-chrome";
+import { bookHref } from "@/lib/seo-strategy";
 import { getServiceHref, services, site } from "@/lib/site";
 
 function pathMatches(pathname: string, href: string) {
@@ -447,7 +448,7 @@ export function Header() {
             </svg>
           </a>
           <ButtonLink
-            href="/book"
+            href={isVi ? resolveViHref(bookHref("header")) : bookHref("header")}
             className="min-h-11 px-3 py-2 sm:px-5 sm:py-2.5"
           >
             {isVi ? "Đặt lịch" : "Book Now"}
@@ -555,7 +556,9 @@ export function Header() {
                     </a>
                   </div>
                   <Link
-                    href="/book"
+                    href={
+                      isVi ? resolveViHref(bookHref("header")) : bookHref("header")
+                    }
                     className="mb-3 block min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
                     onClick={closeMenu}
                   >

@@ -116,13 +116,13 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "osteopath-plumstead-abbey-wood-se18",
     title: "Osteopath near Plumstead and Abbey Wood: Charlton SE7 clinic",
     description:
-      "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Charlton is a short hop for SE18 patients.",
+      "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Charlton is a short hop for Charlton patients.",
     date: "2026-10-10",
     category: "Local guides",
     keywords: [
       "osteopath Plumstead",
       "osteopath Abbey Wood",
-      "osteopath SE18",
+      "osteopath Charlton",
       "osteopathy Charlton nearby",
     ],
     sections: [
@@ -173,7 +173,7 @@ export const batch3BlogPosts: BatchPost[] = [
     category: "Getting started",
     keywords: [
       "chronic pain osteopath Charlton",
-      "long term back pain SE18",
+      "long term back pain Charlton",
       "persistent pain osteopathy London",
       "drug free pain relief Charlton",
     ],
@@ -191,13 +191,13 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "osteopathy-for-older-adults-charlton",
     title: "Osteopathy for older adults in Charlton: safer movement, less stiffness",
     description:
-      "Gentle osteopathy for older adults with stiffness, joint wear, and balance confidence — what to expect at our SE18 clinic.",
+      "Gentle osteopathy for older adults with stiffness, joint wear, and balance confidence — what to expect at our Charlton clinic.",
     date: "2026-10-10",
     category: "Getting started",
     keywords: [
       "osteopath for elderly Charlton",
       "osteopathy older adults London",
-      "joint stiffness SE18",
+      "joint stiffness Charlton",
       "gentle osteopathy Charlton",
     ],
     sections: [
@@ -250,7 +250,7 @@ export const batch3BlogPosts: BatchPost[] = [
       "coccyx pain osteopath",
       "tailbone pain Charlton",
       "coccydynia osteopathy",
-      "pain sitting osteopath SE18",
+      "pain sitting osteopath Charlton",
     ],
     sections: [
       {
@@ -266,14 +266,14 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "lifting-back-pain-warehouse-trades-charlton",
     title: "Lifting and back pain for warehouse and trades workers",
     description:
-      "Repetitive lifting, twisting, and bending at work? Osteopathy for warehouse, construction, and trade-related back strain in SE18.",
+      "Repetitive lifting, twisting, and bending at work? Osteopathy for warehouse, construction, and trade-related back strain in Charlton.",
     date: "2026-10-10",
     category: "Back & neck",
     keywords: [
       "warehouse back pain osteopath",
       "manual handling back pain",
       "trades back pain Charlton",
-      "lifting injury osteopathy SE18",
+      "lifting injury osteopathy Charlton",
     ],
     sections: [
       {
@@ -296,7 +296,7 @@ export const batch3BlogPosts: BatchPost[] = [
       "rib pain osteopath",
       "thoracic pain Charlton",
       "costochondral pain osteopathy",
-      "pain breathing osteopath SE18",
+      "pain breathing osteopath Charlton",
     ],
     sections: [
       {
@@ -319,7 +319,7 @@ export const batch3BlogPosts: BatchPost[] = [
       "hip bursitis osteopath",
       "trochanteric pain Charlton",
       "outer hip pain osteopathy",
-      "side lying hip pain SE18",
+      "side lying hip pain Charlton",
     ],
     sections: [
       {
@@ -365,7 +365,7 @@ export const batch3BlogPosts: BatchPost[] = [
       "calcific tendonitis shockwave",
       "shoulder calcium osteopath",
       "LI-ESWT shoulder Charlton",
-      "focused shockwave shoulder SE18",
+      "focused shockwave shoulder Charlton",
     ],
     sections: [
       {
@@ -381,13 +381,13 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "shockwave-therapy-cost-charlton",
     title: "Shockwave therapy cost in Charlton: what affects the fee",
     description:
-      "What influences focused shockwave fees at Nguyen's Osteopathic Clinic — session type, course length, and how to book in SE18.",
+      "What influences focused shockwave fees at Nguyen's Osteopathic Clinic — session type, course length, and how to book in Charlton.",
     date: "2026-10-10",
     category: "Focused shockwave",
     keywords: [
       "shockwave therapy cost Charlton",
       "LI-ESWT price London",
-      "focused shockwave fees SE18",
+      "focused shockwave fees Charlton",
       "shockwave osteopath cost",
     ],
     sections: [
@@ -410,7 +410,7 @@ export const batch3BlogPosts: BatchPost[] = [
     keywords: [
       "shin splints osteopath",
       "medial tibial stress Charlton",
-      "runner shin pain SE18",
+      "runner shin pain Charlton",
       "osteopathy running injuries London",
     ],
     sections: [
@@ -434,7 +434,7 @@ export const batch3BlogPosts: BatchPost[] = [
       "cycling lower back pain",
       "cyclist osteopath Charlton",
       "bike posture back pain",
-      "osteopathy for cyclists SE18",
+      "osteopathy for cyclists Charlton",
     ],
     sections: [
       {
@@ -450,14 +450,14 @@ export const batch3BlogPosts: BatchPost[] = [
     slug: "yoga-pilates-injury-osteopath-charlton",
     title: "Yoga and Pilates injuries: when flexibility meets irritation",
     description:
-      "Overstretched joints or flare-ups after class? How osteopathy helps yoga and Pilates-related strains in SE18.",
+      "Overstretched joints or flare-ups after class? How osteopathy helps yoga and Pilates-related strains in Charlton.",
     date: "2026-10-10",
     category: "Sports rehab",
     keywords: [
       "yoga injury osteopath",
       "pilates injury Charlton",
       "hypermobility osteopathy London",
-      "stretch injury SE18",
+      "stretch injury Charlton",
     ],
     sections: [
       {
@@ -479,7 +479,7 @@ export const batch3BlogPosts: BatchPost[] = [
     keywords: [
       "deep tissue massage desk workers",
       "massage Charlton office",
-      "shoulder tension massage SE18",
+      "shoulder tension massage Charlton",
       "desk worker massage London",
     ],
     sections: [
@@ -502,7 +502,7 @@ export const batch3BlogPosts: BatchPost[] = [
     keywords: [
       "cupping vs massage",
       "cupping therapy Charlton",
-      "massage or cupping SE18",
+      "massage or cupping Charlton",
       "soft tissue add on osteopath",
     ],
     sections: [
@@ -525,7 +525,7 @@ export const batch3BlogPosts: BatchPost[] = [
     keywords: [
       "pregnancy sciatica osteopath",
       "pregnant leg pain Charlton",
-      "sciatica pregnancy SE18",
+      "sciatica pregnancy Charlton",
       "antenatal osteopathy London",
     ],
     sections: [
@@ -548,7 +548,7 @@ export const batch3BlogPosts: BatchPost[] = [
     keywords: [
       "baby head preference osteopath",
       "infant torticollis Charlton",
-      "paediatric osteopathy SE18",
+      "paediatric osteopathy Charlton",
       "baby neck preference London",
     ],
     sections: [
@@ -571,7 +571,7 @@ export const batch3BlogPosts: BatchPost[] = [
     keywords: [
       "cranial osteopathy headaches",
       "gentle osteopathy Charlton",
-      "cranial treatment SE18",
+      "cranial treatment Charlton",
       "stress tension cranial osteopathy",
     ],
     sections: [

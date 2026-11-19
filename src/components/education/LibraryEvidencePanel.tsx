@@ -6,6 +6,7 @@ import {
   resolveClaimReferences,
   type LibraryTopicEvidence,
 } from "@/lib/library-evidence";
+import { bookHref } from "@/lib/seo-strategy";
 
 export function LibraryEvidencePanel({
   evidence,
@@ -28,7 +29,7 @@ export function LibraryEvidencePanel({
           Graded scientific notes for {topicTitle} are not on this page yet —
           treat the theme below as clinic education, not a literature review.{" "}
           <Link
-            href="/book"
+            href={bookHref("education")}
             className="font-semibold text-teal hover:text-teal-dark"
           >
             Book online

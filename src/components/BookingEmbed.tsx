@@ -35,7 +35,17 @@ function isTreowEmbedPayload(data: unknown): data is {
   return Boolean(data && typeof data === "object");
 }
 
-export function BookingEmbed() {
+type BookingEmbedProps = {
+  /** Absolute Treow embed URL, already including forwarded UTMs when present. */
+  embedSrc?: string;
+  /** Absolute Treow full-page booking URL (fallback / open full calendar). */
+  externalHref?: string;
+};
+
+export function BookingEmbed({
+  embedSrc = site.bookingEmbedUrl,
+  externalHref = site.bookingExternalUrl,
+}: BookingEmbedProps) {
   const shellRef = useRef<HTMLDivElement>(null);
   const frameRef = useRef<HTMLIFrameElement>(null);
   // Always mount immediately — BookingEmbed only sits on /book and /vi/book.
@@ -46,10 +56,7 @@ export function BookingEmbed() {
   const [failed, setFailed] = useState(false);
   /** Bumped on any Treow postMessage so the load timeout restarts. */
   const [loadHeartbeat, setLoadHeartbeat] = useState(0);
-  const allowedOrigin = useMemo(
-    () => embedOrigin(site.bookingEmbedUrl),
-    [],
-  );
+  const allowedOrigin = useMemo(() => embedOrigin(embedSrc), [embedSrc]);
 
   useEffect(() => {
     const syncHeight = () => {
@@ -152,7 +159,7 @@ export function BookingEmbed() {
               Retry
             </button>
             <a
-              href={site.bookingExternalUrl}
+              href={externalHref}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-navy hover:border-teal hover:text-teal"
@@ -181,7 +188,7 @@ export function BookingEmbed() {
         <iframe
           key={frameKey}
           ref={frameRef}
-          src={site.bookingEmbedUrl}
+          src={embedSrc}
           title="Book an appointment with Nguyen's Osteopathic Clinic"
           referrerPolicy="no-referrer-when-downgrade"
           sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-modals"

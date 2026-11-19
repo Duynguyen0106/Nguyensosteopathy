@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   keywords: [
     "first osteopathy appointment Charlton",
     "what to wear osteopath",
-    "new patient osteopath SE18",
+    "new patient osteopath Charlton",
     "Village Pharmacy osteopath arrival",
   ],
   openGraph: {

@@ -47,6 +47,9 @@ export const trackedQueries = [
 
 export type BookCampaign =
   | "home"
+  | "header"
+  | "mobile-bar"
+  | "footer"
   | "services"
   | "back-neck"
   | "shockwave"
@@ -58,19 +61,82 @@ export type BookCampaign =
   | "about"
   | "areas"
   | "conditions"
+  | "blog"
+  | "author-bio"
+  | "contact"
+  | "education"
+  | "exercises"
+  | "insurance"
+  | "resources"
+  | "nhs"
   | "vi"
   | "faq"
   | "aftercare"
-  | "osteopathy";
+  | "osteopathy"
+  | "new-patients";
 
-/** Booking URL with UTM so Treow/analytics can attribute organic SEO. */
-export function bookHref(campaign: BookCampaign): string {
-  const params = new URLSearchParams({
+/** UTM query string used on /book and forwarded into the Treow embed. */
+export function bookUtmParams(campaign: BookCampaign): URLSearchParams {
+  return new URLSearchParams({
     utm_source: "website",
     utm_medium: "seo",
     utm_campaign: campaign,
   });
-  return `/book?${params.toString()}`;
+}
+
+/** Booking URL with UTM so Treow/analytics can attribute organic SEO. */
+export function bookHref(campaign: BookCampaign): string {
+  return `/book?${bookUtmParams(campaign).toString()}`;
+}
+
+/** Vietnamese booking URL with the same attribution pattern. */
+export function viBookHref(campaign: BookCampaign = "vi"): string {
+  return `/vi/book?${bookUtmParams(campaign).toString()}`;
+}
+
+const BOOKING_UTM_KEYS = [
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+] as const;
+
+/**
+ * Copy UTM (+ optional gclid/fbclid) from the /book page query onto a Treow
+ * embed or external booking URL so attribution survives the iframe.
+ */
+export function withBookingAttribution(
+  baseUrl: string,
+  incoming: URLSearchParams | Record<string, string | string[] | undefined>,
+): string {
+  const params =
+    incoming instanceof URLSearchParams
+      ? incoming
+      : new URLSearchParams(
+          Object.entries(incoming).flatMap(([key, value]) => {
+            if (value === undefined) return [];
+            if (Array.isArray(value)) {
+              return value.map((entry) => [key, entry] as [string, string]);
+            }
+            return [[key, value] as [string, string]];
+          }),
+        );
+
+  try {
+    const url = new URL(baseUrl);
+    for (const key of BOOKING_UTM_KEYS) {
+      const value = params.get(key);
+      if (value) url.searchParams.set(key, value);
+    }
+    for (const key of ["gclid", "fbclid", "msclkid"] as const) {
+      const value = params.get(key);
+      if (value) url.searchParams.set(key, value);
+    }
+    return url.toString();
+  } catch {
+    return baseUrl;
+  }
 }
 
 /** Prefilled WhatsApp message patients can use — or clinic can forward. */

@@ -35,7 +35,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Why back and neck pain linger",
         paragraphs: [
-          "Back and neck pain are among the most common reasons people seek an osteopath in Charlton and the wider SE18 area. Symptoms often start after a busy week at a desk, a sudden lift, a long commute, or simply a period when movement has become stiff and guarded. What keeps pain going is rarely one dramatic moment alone — it is usually how joints, muscles and daily habits share load once irritation has begun.",
+          "Back and neck pain are among the most common reasons people seek an osteopath in Charlton and the wider Charlton area. Symptoms often start after a busy week at a desk, a sudden lift, a long commute, or simply a period when movement has become stiff and guarded. What keeps pain going is rarely one dramatic moment alone — it is usually how joints, muscles and daily habits share load once irritation has begun.",
           "At Nguyen's Osteopathic Clinic we look beyond the sore spot. Protective muscle spasm, reduced spinal mobility, pelvic asymmetry and desk posture can all feed into the same pattern of ache, referral into the buttock or leg, or a neck that does not want to turn freely. Understanding that pattern is the first step toward lasting relief rather than temporary easing.",
           "People who work at screens for long hours often notice symptoms creep in gradually: a heavy neck by late afternoon, a stiff lower back after commuting, or a sharp catch when standing from a chair. Others arrive after a clear incident — a lift that went wrong, a weekend of decorating, or a flare that followed unusual inactivity. Both patterns respond best when we identify the mechanical drivers rather than chasing symptoms alone.",
         ],
@@ -98,7 +98,7 @@ export const servicePages: ServicePageContent[] = [
       "headaches-joints", "deep-tissue-massage", "sports-injury-rehab", "focused-shockwave",
     ],
     keywords: [
-      "back pain osteopath Charlton", "neck pain treatment SE18", "sciatica osteopath Charlton", "desk neck pain London",
+      "back pain osteopath Charlton", "neck pain treatment Charlton", "sciatica osteopath Charlton", "desk neck pain London",
     ],
   },
   {
@@ -113,7 +113,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "When headaches and joints share a story",
         paragraphs: [
           "Tension-type and cervicogenic headaches often travel with stiff upper necks, overloaded shoulders and jaws that never quite switch off. Joint irritability in the shoulder, hip, knee or ankle can likewise linger when glide is lost and surrounding muscles stay protective long after the original strain. At our Charlton clinic we treat these patterns as connected, not as isolated complaints.",
-          "Many patients arriving from SE18 and nearby neighbourhoods describe headaches that build through the working day, clicking or catching joints after sport, or a sense that one area always feels tight no matter how much they stretch. Hands-on assessment helps separate musculoskeletal drivers from symptoms that need medical input.",
+          "Many patients arriving from Charlton and nearby neighbourhoods describe headaches that build through the working day, clicking or catching joints after sport, or a sense that one area always feels tight no matter how much they stretch. Hands-on assessment helps separate musculoskeletal drivers from symptoms that need medical input.",
           "Screen-heavy work and long commutes leave many people with a familiar pattern: tight muscles at the base of the skull, elevated shoulders, and a headache that sits behind the eyes or wraps the temples. Joint complaints tell their own story — a shoulder that will not reach comfortably into a jacket, a hip that aches after sitting, or a knee that objects to stairs after sport. Naming the pattern clearly makes treatment more precise.",
         ],
       },
@@ -164,7 +164,7 @@ export const servicePages: ServicePageContent[] = [
       "back-neck-pain", "cranial-therapy", "deep-tissue-massage", "acupuncture-electro",
     ],
     keywords: [
-      "headache osteopath Charlton", "tension headache SE18", "joint pain osteopath Charlton", "cervicogenic headache London",
+      "headache osteopath Charlton", "tension headache Charlton", "joint pain osteopath Charlton", "cervicogenic headache London",
     ],
   },
   {
@@ -175,7 +175,7 @@ export const servicePages: ServicePageContent[] = [
       "Shockwave therapy in Charlton SE7 for plantar fasciitis, tennis elbow, Achilles and stubborn tendinopathy. Focused LI-ESWT £90 after screening at Nguyen's at The Village.",
     heroLine:
       "Focused LI-ESWT for stubborn heel, elbow, Achilles and tendon pain at 9 The Village, Charlton SE7 — clinically screened, then delivered with a clear loading plan.",
-    eyebrow: "Shockwave Charlton · SE18",
+    eyebrow: "Shockwave Charlton · Charlton",
     sections: [
       {
         heading: "When tendons stop settling with rest",
@@ -234,7 +234,7 @@ export const servicePages: ServicePageContent[] = [
         answer: "Vascular LI-ESWT for men's health is a separate confidential pathway with its own protocol and fee. See our Men's Health & ED service page.",
       },
       {
-        question: "Do I need a GP referral for shockwave in SE18?",
+        question: "Do I need a GP referral for shockwave in Charlton?",
         answer:
           "No. You can book screening directly at Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village. We refer on if medical review is the safer next step.",
       },
@@ -245,7 +245,7 @@ export const servicePages: ServicePageContent[] = [
     keywords: [
       "shockwave charlton",
       "shockwave therapy Charlton",
-      "LI-ESWT SE18",
+      "LI-ESWT Charlton",
       "shockwave plantar fasciitis Charlton",
       "focused shockwave London",
     ],
@@ -292,7 +292,7 @@ export const servicePages: ServicePageContent[] = [
           "The clinic is inside a working pharmacy at The Village; arrival is discreet via the pharmacy entrance. Ask at the counter for the osteopathy room. Message WhatsApp for scheduling questions if you prefer not to call, and we will help you choose an appropriate appointment type.",
           "Men travelling from Greenwich, Charlton, Plumstead or Thamesmead often choose this clinic because appointments stay private, explanations stay plain, and there is no pressure to decide everything in the first five minutes of walking through the door.",
           "Questions are encouraged at every stage, including how LI-ESWT sits alongside any medications or investigations you already have. Bringing a short list of concerns to the first visit helps us cover what matters most without rushing the clinical screening conversation.",
-          `Our bookable pattern includes Saturday availability, which helps if weekday confidential appointments are hard to arrange around work in central London or local SE18 roles.`,
+          `Our bookable pattern includes Saturday availability, which helps if weekday confidential appointments are hard to arrange around work in central London or local Charlton roles.`,
         ],
       },
     ],
@@ -331,7 +331,7 @@ export const servicePages: ServicePageContent[] = [
       "mens health shockwave charlton",
       "men's health shockwave Charlton",
       "ED treatment Charlton",
-      "LI-ESWT ED SE18",
+      "LI-ESWT ED Charlton",
       "discreet shockwave London",
     ],
   },
@@ -401,7 +401,7 @@ export const servicePages: ServicePageContent[] = [
       "back-neck-pain", "deep-tissue-massage", "sports-injury-rehab", "headaches-joints",
     ],
     keywords: [
-      "medical acupuncture Charlton", "electroacupuncture SE18", "dry needling osteopath Charlton", "acupuncture for muscle pain London",
+      "medical acupuncture Charlton", "electroacupuncture Charlton", "dry needling osteopath Charlton", "acupuncture for muscle pain London",
     ],
   },
   {
@@ -437,7 +437,7 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Book deep tissue massage in SE18",
+        heading: "Book deep tissue massage in Charlton",
         paragraphs: [
           `Nguyen's Osteopathic Clinic operates inside Village Pharmacy at The Village and is open Monday to Sunday, 9:00am – 8:00pm. NHS and student discounts apply with valid ID shown at the appointment.`,
           "Explore related services for back and neck osteopathy, sports rehab, or acupuncture if needling may complement soft-tissue release. Online booking is the fastest way to secure a 45-minute slot that fits your week.",
@@ -470,7 +470,7 @@ export const servicePages: ServicePageContent[] = [
       "back-neck-pain", "sports-injury-rehab", "acupuncture-electro", "headaches-joints",
     ],
     keywords: [
-      "deep tissue massage Charlton", "sports massage SE18", "desk tension massage Charlton", "massage osteopath clinic London",
+      "deep tissue massage Charlton", "sports massage Charlton", "desk tension massage Charlton", "massage osteopath clinic London",
     ],
   },
   {
@@ -511,7 +511,7 @@ export const servicePages: ServicePageContent[] = [
           "Based inside Village Pharmacy, SE7, we are easy to reach from Charlton station, Greenwich, Charlton and Plumstead. Book online for an initial 60-minute assessment. No GP referral is required for most sports soft-tissue presentations; we refer promptly if examination suggests otherwise.",
           "Related reading includes our focused shockwave and deep tissue massage pages. For spinal pain limiting lifting or running, see back and neck treatment as well.",
           "Initial osteopathy assessment is the usual entry point; shockwave or acupuncture may be added later if indicated. Book early in a flare when possible — early guidance often shortens time on the sidelines compared with waiting until compensation patterns are entrenched.",
-          "Local athletes who train around shift work or family schedules appreciate clear, minimal home programmes that fit real life. We would rather give you three useful drills than a sheet you will never follow between sessions in Charlton or elsewhere in SE18. Between visits you can also browse our public home exercise library for illustrated building blocks, then we tailor dosage to your sport in clinic.",
+          "Local athletes who train around shift work or family schedules appreciate clear, minimal home programmes that fit real life. We would rather give you three useful drills than a sheet you will never follow between sessions in Charlton or elsewhere in Charlton. Between visits you can also browse our public home exercise library for illustrated building blocks, then we tailor dosage to your sport in clinic.",
           "If imaging has already been done, bring reports to the first visit so we can interpret findings alongside how you move today. Scans matter, but function and load tolerance often decide the rehab timetable more than a single radiology sentence.",
           "Weekend athletes across Charlton and Charlton often share the same trap: resting completely until pain fades, then returning overnight to full training. Graded exposure beats that boom-bust cycle for most soft-tissue injuries we see.",
         ],
@@ -539,7 +539,7 @@ export const servicePages: ServicePageContent[] = [
       "focused-shockwave", "deep-tissue-massage", "back-neck-pain", "acupuncture-electro",
     ],
     keywords: [
-      "sports injury osteopath Charlton", "rehab SE18", "running injury Charlton", "sprain strain osteopath London",
+      "sports injury osteopath Charlton", "rehab Charlton", "running injury Charlton", "sprain strain osteopath London",
     ],
   },
   {
@@ -577,7 +577,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Book pregnancy support in Charlton",
         paragraphs: [
-          "Nguyen's Osteopathic Clinic serves expectant parents across SE18 and nearby areas. Online booking shows live times on our bookable days. If you are unsure whether osteopathy is appropriate alongside your maternity pathway, message or call first — we will help you decide.",
+          "Nguyen's Osteopathic Clinic serves expectant parents across Charlton and nearby areas. Online booking shows live times on our bookable days. If you are unsure whether osteopathy is appropriate alongside your maternity pathway, message or call first — we will help you decide.",
           "Related services include general back and neck care for postnatal musculoskeletal recovery, and cranial osteopathy for those who prefer an especially light touch. Paediatric care is available separately for infants and children after birth.",
           "Postnatal musculoskeletal recovery can be booked once you and your medical team are happy for you to attend. Mention how recently you gave birth when booking so we pace appropriately. Pelvic health concerns beyond musculoskeletal osteopathy may need specialist physiotherapy — we will signpost when that is the better fit.",
           "From The Village it is straightforward to combine a maternity-friendly appointment with other errands in Charlton town centre. Tell us if you need a quieter arrival time or a little extra room for positioning so we can prepare the treatment space before you arrive.",
@@ -608,7 +608,7 @@ export const servicePages: ServicePageContent[] = [
       "back-neck-pain", "cranial-therapy", "paediatric-care", "deep-tissue-massage",
     ],
     keywords: [
-      "pregnancy osteopath Charlton", "pelvic girdle pain SE18", "pregnancy back pain Charlton", "antenatal osteopathy London",
+      "pregnancy osteopath Charlton", "pelvic girdle pain Charlton", "pregnancy back pain Charlton", "antenatal osteopathy London",
     ],
   },
   {
@@ -677,7 +677,7 @@ export const servicePages: ServicePageContent[] = [
       "headaches-joints", "paediatric-care", "pregnancy-support", "back-neck-pain",
     ],
     keywords: [
-      "cranial osteopathy Charlton", "gentle osteopath SE18", "cranial osteopath London", "jaw neck tension Charlton",
+      "cranial osteopathy Charlton", "gentle osteopath Charlton", "cranial osteopath London", "jaw neck tension Charlton",
     ],
   },
   {
@@ -713,7 +713,7 @@ export const servicePages: ServicePageContent[] = [
         ],
       },
       {
-        heading: "Book paediatric care in SE18",
+        heading: "Book paediatric care in Charlton",
         paragraphs: [
           "Online booking and phone enquiries are welcome. If you are booking for a young infant, mention age when you reserve so we can allocate appropriate time and expectations. Vietnamese-speaking parents can request a Vietnamese consultation.",
           "Related services include cranial osteopathy for adults who prefer a gentle style, and pregnancy support for antenatal musculoskeletal care. For older teens with sports injuries, our sports rehab pathway may be more appropriate — ask when booking.",
@@ -746,7 +746,7 @@ export const servicePages: ServicePageContent[] = [
       "cranial-therapy", "pregnancy-support", "sports-injury-rehab", "back-neck-pain",
     ],
     keywords: [
-      "paediatric osteopath Charlton", "baby osteopath SE18", "child osteopath Charlton", "gentle osteopathy children London",
+      "paediatric osteopath Charlton", "baby osteopath Charlton", "child osteopath Charlton", "gentle osteopathy children London",
     ],
   },
   {
@@ -828,7 +828,7 @@ export const servicePages: ServicePageContent[] = [
     keywords: [
       "osteopath home visit charlton",
       "home visit osteopath Charlton",
-      "osteopath home visit SE18",
+      "osteopath home visit Charlton",
       "domiciliary osteopathy London",
       "mobile osteopath Charlton",
     ],

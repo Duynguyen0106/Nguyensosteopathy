@@ -41,7 +41,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
     keywords: [
       "supplements back pain",
       "vitamins for back pain Charlton",
-      "osteopath nutrition SE18",
+      "osteopath nutrition Charlton",
       "MSK supplements myth"
     ],
     image: {
@@ -181,7 +181,7 @@ export const nutritionBlogPosts: NutritionPost[] = [
     keywords: [
       "vitamin D musculoskeletal",
       "vitamin D osteopath Charlton",
-      "vitamin D bone health SE18",
+      "vitamin D bone health Charlton",
       "vitamin D deficiency UK"
     ],
     image: {

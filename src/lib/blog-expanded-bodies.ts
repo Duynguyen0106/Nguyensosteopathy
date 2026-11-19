@@ -19,7 +19,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Practical guide to common back pain causes for Charlton and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
+          "Practical guide to common back pain causes for Charlton and nearby SE London residents, how osteopathy approaches treatment, and when to seek urgent care.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess Charlton residents dealing with recurring or new back pain with a focus on commuting sits, work demands, and weekend DIY or sport spikes, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
@@ -294,14 +294,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Desk-related tension headaches, tight upper neck, and jaw strain are common in SE18. See how osteopathy can ease cervicogenic and tension-type headaches.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "Desk-related tension headaches, tight upper neck, and jaw strain are common in Charlton. See how osteopathy can ease cervicogenic and tension-type headaches.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in Charlton with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives tension headaches and neck pain?",
         "paragraphs": [
-          "When people describe tension headaches and neck pain, we look at tissue capacity versus the demands of the week. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
+          "When people describe tension headaches and neck pain, we look at tissue capacity versus the demands of the week. For people with neck-driven headache or jaw tension in Charlton, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
@@ -328,7 +328,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Person holding their head with a tension headache"
         },
         "paragraphs": [
-          "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
+          "Assessment for people with neck-driven headache or jaw tension in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
           "Osteopathy here blends assessment-led hands-on care with simple guidance on screen height, jaw relaxation, and short neck resets. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
@@ -404,7 +404,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Confused between osteopathy and physiotherapy in SE18? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
+          "Confused between osteopathy and physiotherapy in Charlton? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
@@ -515,13 +515,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Looking for an osteopath near Greenwich, Charlton, or Thamesmead? Nguyen's Osteopathic Clinic on The Village, Charlton SE7 is easy to reach and open for online booking.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people in Charlton and SE18 with a focus on daily work and commuting load, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people in Charlton and nearby SE London with a focus on daily work and commuting load, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives osteopath near Greenwich, Charlton, and Thamesmead?",
         "paragraphs": [
-          "Clinic visits for osteopath near Greenwich, Charlton, and Thamesmead usually start by mapping aggravators — work, commute, sleep, and training. For people in Charlton and SE18, that often means daily work and commuting load.",
+          "Clinic visits for osteopath near Greenwich, Charlton, and Thamesmead usually start by mapping aggravators — work, commute, sleep, and training. For people in Charlton and nearby SE London, that often means daily work and commuting load.",
           "Useful change starts with small changes to how you sit, stand, and recover. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -548,7 +548,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "London street scene representing Greenwich and south-east London"
         },
         "paragraphs": [
-          "Assessment for people in Charlton and SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
+          "Assessment for people in Charlton and nearby SE London covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
           "Treatment often pairs joint and soft-tissue work with the irritability of the day, plus practical advice on small changes to how you sit, stand, and recover. When GP review or imaging looks wiser first, we say that clearly instead of pushing unnecessary sessions."
         ]
       },
@@ -789,7 +789,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Phone scroll posture loads the neck. Practical osteopathy tips for text neck, forward head posture, and SE18 desk-and-device strain.",
+          "Phone scroll posture loads the neck. Practical osteopathy tips for text neck, forward head posture, and nearby SE London desk-and-device strain.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people who scroll and message for hours on phones and tablets with a focus on sustained phone flexion and one-thumb typing, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
@@ -845,13 +845,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Jaw click, temple ache, or morning tightness from clenching? How osteopathy addresses TMJ-related pain in Charlton.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in Charlton with a focus on screen posture, clenching, and stress-held upper neck muscles, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives TMJ and jaw pain?",
         "paragraphs": [
-          "Clinic visits for TMJ and jaw pain usually start by mapping aggravators — work, commute, sleep, and training. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
+          "Clinic visits for TMJ and jaw pain usually start by mapping aggravators — work, commute, sleep, and training. For people with neck-driven headache or jaw tension in Charlton, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
@@ -878,7 +878,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Close view of jaw and face area related to TMJ discomfort"
         },
         "paragraphs": [
-          "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
+          "Assessment for people with neck-driven headache or jaw tension in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
           "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on screen height, jaw relaxation, and short neck resets. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
@@ -900,13 +900,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Not sure if your headache is migraine or tension-type? Clear differences and when Charlton osteopathy is a sensible next step.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in Charlton with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives migraine vs tension headache?",
         "paragraphs": [
-          "Migraine vs tension headache rarely has a single cause; capacity and load usually drift apart first. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
+          "Migraine vs tension headache rarely has a single cause; capacity and load usually drift apart first. For people with neck-driven headache or jaw tension in Charlton, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [whiplash](/conditions/whiplash)."
         ]
@@ -933,7 +933,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Person resting in a darkened room with a migraine"
         },
         "paragraphs": [
-          "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
+          "Assessment for people with neck-driven headache or jaw tension in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
           "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, jaw relaxation, and short neck resets. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
         ]
       },
@@ -954,7 +954,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Rolled your ankle on the pavement or pitch? Osteopathy for sprain recovery, swelling timelines, and return to walking or sport in SE18.",
+          "Rolled your ankle on the pavement or pitch? Osteopathy for sprain recovery, swelling timelines, and return to walking or sport in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
@@ -1229,7 +1229,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Front-of-knee tendon pain from jumping or stairs? Osteopathy, load management, and shockwave options in SE18.",
+          "Front-of-knee tendon pain from jumping or stairs? Osteopathy, load management, and shockwave options in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
@@ -1394,7 +1394,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Low-intensity focused shockwave as a non-drug, non-surgical option for vascular-related ED — private appointments in SE18.",
+          "Low-intensity focused shockwave as a non-drug, non-surgical option for vascular-related ED — private appointments in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess men seeking discreet, drug-free options in Charlton with a focus on vascular, pelvic-floor, and lifestyle contributors discussed privately, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
@@ -1944,7 +1944,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "DOMS versus true injury, and when deep tissue massage helps training-related muscle load in SE18.",
+          "DOMS versus true injury, and when deep tissue massage helps training-related muscle load in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess patients considering hands-on adjuncts or soft-tissue care with a focus on muscle guarding, desk tension, and post-training tightness, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
@@ -2054,7 +2054,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "IT band, shin, Achilles, and knee niggles from Thames Path and park runs — assessment and rehab planning in SE18.",
+          "IT band, shin, Achilles, and knee niggles from Thames Path and park runs — assessment and rehab planning in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess adults with joint-related aches around Charlton with a focus on stairs, walking distance, sleep position, and sitting blocks, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
@@ -2329,7 +2329,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "SPD and pelvic girdle pain with walking or turning in bed — gentle, trimester-aware osteopathy in SE18.",
+          "SPD and pelvic girdle pain with walking or turning in bed — gentle, trimester-aware osteopathy in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess expectant and postpartum patients in Charlton with a focus on changing pelvic mechanics, sleep position, and caring for a baby, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
@@ -2550,13 +2550,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Gentle cranial osteopathy explained — who it suits, what a session feels like, and how it differs from firmer manual therapy.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in Charlton with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives what is cranial osteopathy? A?",
         "paragraphs": [
-          "We treat what is cranial osteopathy? A as a pattern in how you move and recover, not just a label. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
+          "We treat what is cranial osteopathy? A as a pattern in how you move and recover, not just a label. For people with neck-driven headache or jaw tension in Charlton, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
@@ -2583,7 +2583,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Calm treatment setting for gentle cranial osteopathy"
         },
         "paragraphs": [
-          "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
+          "Assessment for people with neck-driven headache or jaw tension in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
           "Expect calm, irritability-matched manual care plus a short plan covering screen height, jaw relaxation, and short neck resets. Honesty about limits is part of care — including when rest, imaging, or another clinician should lead."
         ]
       },
@@ -2605,13 +2605,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "When stress sits in the head, jaw, and upper neck, cranial-style osteopathy offers a calmer treatment option in Charlton.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in Charlton with a focus on screen posture, clenching, and stress-held upper neck muscles, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
       {
         "heading": "What drives cranial osteopathy for stress-held tension?",
         "paragraphs": [
-          "Cranial osteopathy for stress-held tension rarely has a single cause; capacity and load usually drift apart first. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
+          "Cranial osteopathy for stress-held tension rarely has a single cause; capacity and load usually drift apart first. For people with neck-driven headache or jaw tension in Charlton, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
@@ -2638,7 +2638,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Person resting peacefully to release stress-held tension"
         },
         "paragraphs": [
-          "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
+          "Assessment for people with neck-driven headache or jaw tension in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
           "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on screen height, jaw relaxation, and short neck resets. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
@@ -2659,14 +2659,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Firner joint-focused work versus gentler cranial styles — matching technique to your preferences at our SE18 clinic.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
+          "Firner joint-focused work versus gentler cranial styles — matching technique to your preferences at our Charlton clinic.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in Charlton with a focus on screen posture, clenching, and stress-held upper neck muscles, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
       {
         "heading": "What drives cranial vs structural osteopathy?",
         "paragraphs": [
-          "Symptoms around cranial vs structural osteopathy often appear when the load of daily life outpaces recovery. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
+          "Symptoms around cranial vs structural osteopathy often appear when the load of daily life outpaces recovery. For people with neck-driven headache or jaw tension in Charlton, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
@@ -2693,7 +2693,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Osteopath choosing a gentle hands-on technique"
         },
         "paragraphs": [
-          "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
+          "Assessment for people with neck-driven headache or jaw tension in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
           "Care may include gentle mobilisation and soft-tissue work matched to irritability, plus advice on screen height, jaw relaxation, and short neck resets. If medical review or imaging is the safer next step, we say so plainly rather than selling a long course you do not need."
         ]
       },
@@ -2989,7 +2989,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Initial £75, follow-up £60, shockwave £90, specialist ED protocol £110, massage £60, add-ons explained — transparent fees at SE18.",
+          "Initial £75, follow-up £60, shockwave £90, specialist ED protocol £110, massage £60, add-ons explained — transparent fees in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then tailor hands-on care to the tissues that are irritable today — not a one-size stretch routine. You do not need a GP referral to book."
         ]
       },
@@ -3209,7 +3209,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Charlton is a short hop for SE18 patients.",
+          "Need an osteopath near Plumstead or Abbey Wood? Nguyen's Osteopathic Clinic at The Village, Charlton is a short hop for Charlton patients.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
@@ -3240,7 +3240,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
         "heading": "How osteopathy helps",
         "image": {
           "src": "/images/blog/osteopath-plumstead-abbey-wood-se18.webp",
-          "alt": "London neighbourhood street representing SE18 local travel"
+          "alt": "London neighbourhood street representing Charlton local travel"
         },
         "paragraphs": [
           "Assessment for people planning a first or follow-up visit in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under uncertainty about referrals, fees, arrival, and what happens in clinic. Findings are explained in plain English before treatment begins.",
@@ -3264,7 +3264,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "How to reach Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village — parking tips, buses, and DLR for SE18 patients.",
+          "How to reach Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village — parking tips, buses, and DLR for Charlton patients.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
@@ -3374,14 +3374,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Gentle osteopathy for older adults with stiffness, joint wear, and balance confidence — what to expect at our SE18 clinic.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people in Charlton and SE18 with a focus on daily work and commuting load, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
+          "Gentle osteopathy for older adults with stiffness, joint wear, and balance confidence — what to expect at our Charlton clinic.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people in Charlton and nearby SE London with a focus on daily work and commuting load, then pair assessment with practical load advice you can keep between visits. No GP referral is required for most musculoskeletal presentations."
         ]
       },
       {
         "heading": "What drives osteopathy for older adults?",
         "paragraphs": [
-          "We treat osteopathy for older adults as a pattern in how you move and recover, not just a label. For people in Charlton and SE18, that often means daily work and commuting load.",
+          "We treat osteopathy for older adults as a pattern in how you move and recover, not just a label. For people in Charlton and nearby SE London, that often means daily work and commuting load.",
           "Useful change starts with small changes to how you sit, stand, and recover. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "If symptoms overlap more than one area, our [conditions index](/conditions) is a useful place to compare guides before you book."
         ]
@@ -3408,7 +3408,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Older adult walking outdoors with joint stiffness concern"
         },
         "paragraphs": [
-          "Assessment for people in Charlton and SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
+          "Assessment for people in Charlton and nearby SE London covers joint mobility, soft-tissue tone, and how neighbouring regions share load under daily work and commuting load. Findings are explained in plain English before treatment begins.",
           "Osteopathy here blends assessment-led hands-on care with simple guidance on small changes to how you sit, stand, and recover. Clear screening comes first; if osteopathy is not the best fit today, we tell you and point you on."
         ]
       },
@@ -3484,14 +3484,14 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Repetitive lifting, twisting, and bending at work? Osteopathy for warehouse, construction, and trade-related back strain in SE18.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess warehouse, delivery, and trades workers across SE18 with a focus on floor-to-waist lifts, awkward reaches, and long shifts on concrete, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
+          "Repetitive lifting, twisting, and bending at work? Osteopathy for warehouse, construction, and trade-related back strain in Charlton.",
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess warehouse, delivery, and trades workers across Charlton with a focus on floor-to-waist lifts, awkward reaches, and long shifts on concrete, then calm protective spasm and rebuild capacity without forcing into sharp pain. A GP referral is not required to start."
         ]
       },
       {
         "heading": "What drives lifting and back pain for warehouse and trades workers?",
         "paragraphs": [
-          "Symptoms around lifting and back pain for warehouse and trades workers often appear when the load of daily life outpaces recovery. For warehouse, delivery, and trades workers across SE18, that often means floor-to-waist lifts, awkward reaches, and long shifts on concrete.",
+          "Symptoms around lifting and back pain for warehouse and trades workers often appear when the load of daily life outpaces recovery. For warehouse, delivery, and trades workers across Charlton, that often means floor-to-waist lifts, awkward reaches, and long shifts on concrete.",
           "Useful change starts with team lifts, hip-hinge habit, and footwear that still has cushioning. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [non-specific low back pain](/conditions/non-specific-low-back-pain) and [lumbar disc radiculopathy](/conditions/lumbar-disc-radiculopathy)."
         ]
@@ -3518,7 +3518,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Warehouse worker lifting boxes, manual handling strain"
         },
         "paragraphs": [
-          "Assessment for warehouse, delivery, and trades workers across SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under floor-to-waist lifts, awkward reaches, and long shifts on concrete. Findings are explained in plain English before treatment begins.",
+          "Assessment for warehouse, delivery, and trades workers across Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under floor-to-waist lifts, awkward reaches, and long shifts on concrete. Findings are explained in plain English before treatment begins.",
           "Care is explained before it starts: mobilisation and soft-tissue work as needed, then advice on team lifts, hip-hinge habit, and footwear that still has cushioning. You leave knowing whether hands-on care, load change, or medical review should come next."
         ]
       },
@@ -3759,7 +3759,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "What influences focused shockwave fees at Nguyen's Osteopathic Clinic — session type, course length, and how to book in SE18.",
+          "What influences focused shockwave fees at Nguyen's Osteopathic Clinic — session type, course length, and how to book in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people planning a first or follow-up visit in Charlton with a focus on uncertainty about referrals, fees, arrival, and what happens in clinic, then explain findings in plain English before treatment starts, with a short plan that fits SE7 life. You can book without a GP referral."
         ]
       },
@@ -3924,7 +3924,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
     "sections": [
       {
         "paragraphs": [
-          "Overstretched joints or flare-ups after class? How osteopathy helps yoga and Pilates-related strains in SE18.",
+          "Overstretched joints or flare-ups after class? How osteopathy helps yoga and Pilates-related strains in Charlton.",
           "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess runners, gym-goers, and weekend athletes in Charlton with a focus on training spikes, hard surfaces, and incomplete recovery between sessions, then adjust desk, training, or sleep loads alongside hands-on care so gains survive the next busy week. No GP referral needed for most visits."
         ]
       },
@@ -4200,13 +4200,13 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
       {
         "paragraphs": [
           "Prefer a quieter treatment style for headaches and stress-held tension? How cranial osteopathy is used at our Charlton clinic.",
-          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in SE18 with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
+          "At Nguyen's Osteopathic Clinic inside Village Pharmacy at The Village, we assess people with neck-driven headache or jaw tension in Charlton with a focus on screen posture, clenching, and stress-held upper neck muscles, then set clear stop rules and home drills matched to your week, not a printed sheet for someone else. Booking does not need a GP referral."
         ]
       },
       {
         "heading": "What drives cranial osteopathy for headaches and held tension?",
         "paragraphs": [
-          "We treat cranial osteopathy for headaches and held tension as a pattern in how you move and recover, not just a label. For people with neck-driven headache or jaw tension in SE18, that often means screen posture, clenching, and stress-held upper neck muscles.",
+          "We treat cranial osteopathy for headaches and held tension as a pattern in how you move and recover, not just a label. For people with neck-driven headache or jaw tension in Charlton, that often means screen posture, clenching, and stress-held upper neck muscles.",
           "Useful change starts with screen height, jaw relaxation, and short neck resets. Complete rest alone rarely solves the week you actually live — commuting, shifts, caring responsibilities, and training all count.",
           "Related reading: [cervicogenic headache](/conditions/cervicogenic-headache) and [neck pain](/conditions/neck-pain)."
         ]
@@ -4233,7 +4233,7 @@ export const blogExpandedBodies: Record<string, ExpandedBlogBody> = {
           "alt": "Calm resting position suited to gentle cranial osteopathy"
         },
         "paragraphs": [
-          "Assessment for people with neck-driven headache or jaw tension in SE18 covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
+          "Assessment for people with neck-driven headache or jaw tension in Charlton covers joint mobility, soft-tissue tone, and how neighbouring regions share load under screen posture, clenching, and stress-held upper neck muscles. Findings are explained in plain English before treatment begins.",
           "We may use gentle mobilisation, soft-tissue work, and graded movement coaching focused on screen height, jaw relaxation, and short neck resets. We would rather pause and refer than continue a plan that is not the right next step."
         ]
       },

@@ -126,7 +126,7 @@ const blogPostInputs: BlogPostInput[] = [
     keywords: [
       "osteopath Charlton",
       "osteopathy Charlton",
-      "osteopath SE18",
+      "osteopath Charlton",
       "first osteopathy appointment",
     ],
     sections: [
@@ -170,14 +170,14 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "back-pain-charlton-osteopathy",
     title: "Back pain in Charlton: when osteopathy can help",
     description:
-      "Practical guide to common back pain causes for Charlton and SE18 residents, how osteopathy approaches treatment, and when to seek urgent care.",
+      "Practical guide to common back pain causes for Charlton and nearby SE London residents, how osteopathy approaches treatment, and when to seek urgent care.",
     date: "2026-10-08",
     readingMinutes: 9,
     category: "Back & neck",
     keywords: [
       "back pain Charlton",
       "osteopath for back pain London",
-      "lower back pain SE18",
+      "lower back pain Charlton",
       "sciatica Charlton",
     ],
     sections: [
@@ -188,7 +188,7 @@ const blogPostInputs: BlogPostInput[] = [
         ],
       },
       {
-        heading: "Why back pain is so common in SE18",
+        heading: "Why back pain is so common in Charlton",
         paragraphs: [
           "Charlton and the wider Greenwich borough mix standing retail shifts, warehouse and trades work, long Elizabeth line or DLR sits, and hybrid desk days. That variety is good for a town — and hard on a lumbar spine that never gets the same load twice in one week.",
           "Most back pain is [non-specific mechanical pain](/conditions/non-specific-low-back-pain): sensitive joints, discs, and soft tissue reacting to sudden load, deconditioning, poor sleep, or stress. A scan is not required for every flare. What you do need is a clear plan so fear of movement does not become the second injury.",
@@ -350,7 +350,7 @@ const blogPostInputs: BlogPostInput[] = [
     keywords: [
       "osteopath without GP referral",
       "private osteopath Charlton",
-      "book osteopath SE18",
+      "book osteopath Charlton",
     ],
     sections: [
       {
@@ -384,7 +384,7 @@ const blogPostInputs: BlogPostInput[] = [
     keywords: [
       "sports injury Charlton",
       "osteopath for runners London",
-      "muscle strain osteopath SE18",
+      "muscle strain osteopath Charlton",
     ],
     sections: [
       {
@@ -450,7 +450,7 @@ const blogPostInputs: BlogPostInput[] = [
     keywords: [
       "NHS discount osteopath",
       "student osteopath discount Charlton",
-      "cheap osteopath SE18",
+      "cheap osteopath Charlton",
     ],
     sections: [
       {
@@ -484,7 +484,7 @@ const blogPostInputs: BlogPostInput[] = [
     keywords: [
       "sciatica Charlton",
       "sciatica osteopath",
-      "leg pain SE18",
+      "leg pain Charlton",
       "piriformis syndrome Charlton",
       "osteopath for sciatica London",
     ],
@@ -527,7 +527,7 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "tension-headaches-neck-osteopath-charlton",
     title: "Tension headaches and neck pain: help from a Charlton osteopath",
     description:
-      "Desk-related tension headaches, tight upper neck, and jaw strain are common in SE18. See how osteopathy can ease cervicogenic and tension-type headaches.",
+      "Desk-related tension headaches, tight upper neck, and jaw strain are common in Charlton. See how osteopathy can ease cervicogenic and tension-type headaches.",
     date: "2026-10-09",
     readingMinutes: 6,
     category: "Headaches & joints",
@@ -535,7 +535,7 @@ const blogPostInputs: BlogPostInput[] = [
       "tension headache osteopath",
       "neck pain Charlton",
       "cervicogenic headache",
-      "osteopath for headaches SE18",
+      "osteopath for headaches Charlton",
       "jaw tension osteopath London",
     ],
     sections: [
@@ -577,7 +577,7 @@ const blogPostInputs: BlogPostInput[] = [
     keywords: [
       "pregnancy osteopath Charlton",
       "pelvic girdle pain osteopath",
-      "osteopathy pregnancy SE18",
+      "osteopathy pregnancy Charlton",
       "SPD osteopath London",
       "pregnancy back pain Charlton",
     ],
@@ -614,7 +614,7 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "osteopath-vs-physiotherapist-charlton",
     title: "Osteopath vs physiotherapist: which should I book in Charlton?",
     description:
-      "Confused between osteopathy and physiotherapy in SE18? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
+      "Confused between osteopathy and physiotherapy in Charlton? A clear comparison of approach, when each helps, and how to choose for back, neck, or sports pain.",
     date: "2026-10-09",
     readingMinutes: 5,
     category: "Getting started",
@@ -622,7 +622,7 @@ const blogPostInputs: BlogPostInput[] = [
       "osteopath vs physiotherapist",
       "osteopathy or physio Charlton",
       "difference osteopath physio",
-      "manual therapy SE18",
+      "manual therapy Charlton",
       "who to see for back pain Charlton",
     ],
     sections: [
@@ -663,7 +663,7 @@ const blogPostInputs: BlogPostInput[] = [
     category: "Headaches & joints",
     keywords: [
       "hip pain osteopath Charlton",
-      "knee pain osteopath SE18",
+      "knee pain osteopath Charlton",
       "runners knee Charlton",
       "osteoarthritis osteopath London",
       "hip stiffness Greenwich",
@@ -708,7 +708,7 @@ const blogPostInputs: BlogPostInput[] = [
       "osteopath Greenwich",
       "osteopath Charlton",
       "osteopath Thamesmead",
-      "osteopath SE18",
+      "osteopath Charlton",
       "osteopath near Greenwich Park",
       "manual therapy Charlton station",
     ],
@@ -780,7 +780,7 @@ const blogPostInputs: BlogPostInput[] = [
     slug: "shoulder-pain-frozen-shoulder-charlton",
     title: "Shoulder pain and frozen shoulder: osteopathy in Charlton",
     description:
-      "Reach overhead without wincing. Learn how osteopathy helps shoulder stiffness, rotator cuff irritation, and frozen shoulder patterns in SE18.",
+      "Reach overhead without wincing. Learn how osteopathy helps shoulder stiffness, rotator cuff irritation, and frozen shoulder patterns in Charlton.",
     date: "2026-10-09",
     readingMinutes: 6,
     category: "Headaches & joints",
@@ -788,7 +788,7 @@ const blogPostInputs: BlogPostInput[] = [
       "shoulder pain osteopath Charlton",
       "frozen shoulder osteopath",
       "rotator cuff Charlton",
-      "shoulder stiffness SE18",
+      "shoulder stiffness Charlton",
       "osteopath for shoulder pain London",
     ],
     sections: [

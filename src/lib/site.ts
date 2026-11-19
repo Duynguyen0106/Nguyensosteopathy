@@ -9,7 +9,7 @@ export const site = {
     title: "GOsC-Registered Osteopath",
     regNo: "12332",
     credentials:
-      "Master of Osteopathy (BCOM); CertHE Medical Sciences with Distinction (University of Westminster); Dip.Acu; Shockwave CPD; NASM Personal Fitness Trainer",
+      "Master of Osteopathy (BCOM); CertHE Medical Sciences with Distinction (University of Westminster); currently pursuing MD (IUHS, class of 2030); Dip.Acu; Shockwave CPD; NASM Personal Fitness Trainer",
     /**
      * Direct GOsC public Register profile (Reg. No. 12332 — Fully Registered).
      * Search fallback: https://www.osteopathy.org.uk/register-search/?search=1&registration=12332
@@ -18,7 +18,7 @@ export const site = {
       "https://www.osteopathy.org.uk/register-search/registrants/003WT00000T8U4XYAV/",
     goscValidFrom: "16 October 2026",
     goscValidTo: "15 October 2027",
-    bio: "Austin is a GOsC-registered osteopath and founder of Nguyen's Osteopathic Clinic in Charlton. He specialises in back pain, neck pain, and sports injuries, and speaks English and Vietnamese.",
+    bio: "Austin is a GOsC-registered osteopath and founder of Nguyen's Osteopathic Clinic in Charlton. He specialises in back pain, neck pain, and sports injuries, speaks English and Vietnamese, and is currently pursuing a Doctor of Medicine degree at IUHS (class of 2030).",
     /**
      * Public qualifications — PDFs only where privacy-safe.
      * University transcript is not published (contains personal data).
@@ -57,6 +57,18 @@ export const site = {
         detail:
           "Awarded with Distinction — biomedical foundation including anatomy, physiology, and research methods.",
         dateLabel: "21 June 2023",
+        href: undefined as string | undefined,
+        certificateHref: undefined as string | undefined,
+      },
+      {
+        id: "md-iuhs",
+        kind: "study" as const,
+        title: "Doctor of Medicine (MD) — in progress",
+        shortTitle: "MD (pursuing)",
+        issuer: "International University of the Health Sciences (IUHS)",
+        detail:
+          "Currently pursuing a Doctor of Medicine degree (class of 2030). This is postgraduate medical study and does not replace GOsC osteopathy registration or imply a UK medical licence.",
+        dateLabel: "In progress · Class of 2030",
         href: undefined as string | undefined,
         certificateHref: undefined as string | undefined,
       },

@@ -181,9 +181,11 @@ export function buildPractitionerJsonLd() {
           ? "Professional licence"
           : item.kind === "degree"
             ? "degree"
-            : item.kind === "diploma"
-              ? "diploma"
-              : "certificate",
+            : item.kind === "study"
+              ? "degree (in progress)"
+              : item.kind === "diploma"
+                ? "diploma"
+                : "certificate",
       name: item.title,
       description: `${item.detail} (${item.dateLabel})`,
       recognizedBy: {

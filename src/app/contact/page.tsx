@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
 import { bookHref } from "@/lib/seo-strategy";
-import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
 import { site } from "@/lib/site";

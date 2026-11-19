@@ -24,6 +24,7 @@
     "facebook-cover": "node scripts/generate-facebook-cover.mjs",
     "tos-poster": "node scripts/generate-tos-night-poster.mjs",
     "linkedin-cover": "node scripts/generate-linkedin-cover.mjs",
+    "intro": "node scripts/generate-clinic-intro.mjs",
     "blog-images": "node scripts/fetch-blog-images.mjs && node scripts/fetch-blog-images-missing.mjs",
     "images:webp": "node scripts/convert-images-webp.mjs",
     "seo:gsc": "node scripts/seo-gsc-checklist.mjs",

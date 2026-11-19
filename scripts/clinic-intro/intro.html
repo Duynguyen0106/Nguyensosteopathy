@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nguyen's Osteopathic Clinic — Intro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --navy: #0b2c45;
+      --teal: #0f766e;
+      --bg0: #f8fafc;
+      --bg1: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--bg1);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .stage {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(ellipse 55% 45% at 50% 40%, rgba(15, 118, 110, 0.055), transparent 68%),
+        linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 52%, #f1f5f9 100%);
+    }
+
+    .lockup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-1.5%);
+    }
+
+    .mark {
+      position: relative;
+      width: min(40vh, 480px);
+      height: min(40vh, 480px);
+      margin-bottom: 1.8vh;
+    }
+
+    .mark img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    #spineLayer {
+      opacity: 1;
+      /* reveal bottom → top via clip-path */
+      clip-path: inset(100% 0 0 0);
+    }
+
+    #nLayer {
+      opacity: 0;
+      transform: scale(0.94);
+      transform-origin: center center;
+    }
+
+    .wordmark {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 700;
+      font-size: min(7vh, 86px);
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      line-height: 1;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(14px);
+    }
+
+    .clinic {
+      margin-top: 1.35vh;
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: min(2.25vh, 27px);
+      letter-spacing: 0.28em;
+      color: var(--teal);
+      text-align: center;
+      opacity: 0;
+      transform: translateY(12px);
+    }
+
+    .tagline-row {
+      margin-top: 3vh;
+      display: flex;
+      align-items: center;
+      gap: 1.35rem;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    .tagline-row .rule {
+      width: min(8vw, 92px);
+      height: 2px;
+      background: #0f766e;
+      border-radius: 1px;
+      transform: scaleX(0);
+      transform-origin: center;
+    }
+
+    .tagline {
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-weight: 500;
+      font-size: min(1.8vh, 22px);
+      letter-spacing: 0.02em;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="lockup">
+      <div class="mark" aria-hidden="true">
+        <img id="spineLayer" src="./layer-spine.png" alt="" />
+        <img id="nLayer" src="./layer-n.png" alt="" />
+      </div>
+      <div class="wordmark" id="wordmark">NGUYEN&rsquo;S</div>
+      <div class="clinic" id="clinic">OSTEOPATHIC CLINIC</div>
+      <div class="tagline-row" id="taglineRow">
+        <span class="rule" id="ruleL"></span>
+        <span class="tagline">Recover, Realign, and Restore Your Vitality</span>
+        <span class="rule" id="ruleR"></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const DURATION = 11;
+
+    const spineLayer = document.getElementById("spineLayer");
+    const nLayer = document.getElementById("nLayer");
+    const wordmark = document.getElementById("wordmark");
+    const clinic = document.getElementById("clinic");
+    const taglineRow = document.getElementById("taglineRow");
+    const ruleL = document.getElementById("ruleL");
+    const ruleR = document.getElementById("ruleR");
+
+    function clamp(v, a, b) {
+      return Math.max(a, Math.min(b, v));
+    }
+
+    function easeOutQuint(x) {
+      return 1 - Math.pow(1 - x, 5);
+    }
+
+    function easeOutCubic(x) {
+      return 1 - Math.pow(1 - x, 3);
+    }
+
+    function range(t, a, b, easing = easeOutCubic) {
+      if (t <= a) return 0;
+      if (t >= b) return 1;
+      return easing((t - a) / (b - a));
+    }
+
+    function seek(timeSec) {
+      const t = clamp(timeSec, 0, DURATION);
+
+      // Soft spine draw 0.4 → 3.2s (clip from bottom)
+      const spineP = range(t, 0.4, 3.2, easeOutQuint);
+      const hiddenTop = (1 - spineP) * 100;
+      spineLayer.style.clipPath = `inset(${hiddenTop}% 0 0 0)`;
+      spineLayer.style.opacity = spineP > 0.02 ? "1" : "0";
+
+      // N fades + scales 3.2 → 4.6s
+      const nP = range(t, 3.2, 4.55, easeOutQuint);
+      nLayer.style.opacity = String(nP);
+      nLayer.style.transform = `scale(${0.94 + 0.06 * nP})`;
+
+      // NGUYEN'S 4.6 → 6.0s
+      const wP = range(t, 4.6, 5.9, easeOutCubic);
+      wordmark.style.opacity = String(wP);
+      wordmark.style.transform = `translateY(${(1 - wP) * 14}px)`;
+
+      // OSTEOPATHIC CLINIC 6.0 → 7.4s
+      const cP = range(t, 6.0, 7.3, easeOutCubic);
+      clinic.style.opacity = String(cP);
+      clinic.style.transform = `translateY(${(1 - cP) * 12}px)`;
+
+      // Tagline + rules 7.4 → 9.0s
+      const tagP = range(t, 7.4, 8.9, easeOutCubic);
+      taglineRow.style.opacity = String(tagP);
+      taglineRow.style.transform = `translateY(${(1 - tagP) * 10}px)`;
+      ruleL.style.transform = `scaleX(${tagP})`;
+      ruleR.style.transform = `scaleX(${tagP})`;
+    }
+
+    async function ready() {
+      await Promise.all(
+        [...document.images].map((img) =>
+          img.complete
+            ? Promise.resolve()
+            : new Promise((res, rej) => {
+                img.onload = res;
+                img.onerror = rej;
+              }),
+        ),
+      );
+      if (document.fonts?.ready) await document.fonts.ready;
+      seek(0);
+      document.documentElement.dataset.ready = "1";
+    }
+
+    window.__INTRO__ = { duration: DURATION, seek, ready: ready() };
+    ready();
+  </script>
+</body>
+</html>

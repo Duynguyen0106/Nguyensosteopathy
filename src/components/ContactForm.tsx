@@ -23,12 +23,24 @@ function buildEnquiryText(data: FormData) {
     .join("\n");
 }
 
+function isHoneypotTripped(data: FormData): boolean {
+  // Hidden field bots often fill; humans never see it.
+  return String(data.get("company_website") ?? "").trim().length > 0;
+}
+
 export function ContactForm() {
-  const [hint, setHint] = useState<"idle" | "whatsapp" | "email">("idle");
+  const [hint, setHint] = useState<"idle" | "whatsapp" | "email" | "sent">(
+    "idle",
+  );
 
   function openWhatsApp(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const text = encodeURIComponent(buildEnquiryText(new FormData(event.currentTarget)));
+    const data = new FormData(event.currentTarget);
+    if (isHoneypotTripped(data)) {
+      setHint("sent");
+      return;
+    }
+    const text = encodeURIComponent(buildEnquiryText(data));
     setHint("whatsapp");
     const anchor = document.createElement("a");
     anchor.href = `${site.whatsappUrl}?text=${text}`;
@@ -44,6 +56,10 @@ export function ContactForm() {
     if (!form.reportValidity()) return;
 
     const data = new FormData(form);
+    if (isHoneypotTripped(data)) {
+      setHint("sent");
+      return;
+    }
     const name = String(data.get("name") ?? "").trim();
     const subject = encodeURIComponent(
       `Enquiry from ${name || "website visitor"} — ${site.name}`,
@@ -61,9 +77,23 @@ export function ContactForm() {
   return (
     <form
       onSubmit={openWhatsApp}
-      className="space-y-4"
+      className="relative space-y-4"
       aria-label="Send an enquiry"
     >
+      {/* Honeypot — visually hidden; leave empty. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-[10000px] h-0 w-0 overflow-hidden opacity-0"
+      >
+        <label htmlFor="company_website">Company website</label>
+        <input
+          id="company_website"
+          name="company_website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       <div>
         <label htmlFor="contact-name" className="text-sm font-medium text-navy">
           Name
@@ -141,7 +171,9 @@ export function ContactForm() {
       </div>
 
       <div aria-live="polite">
-        {hint === "whatsapp" ? (
+        {hint === "sent" ? (
+          <p className="text-sm text-slate-600">Thanks — we will be in touch.</p>
+        ) : hint === "whatsapp" ? (
           <p className="text-sm text-slate-600">
             WhatsApp should open with your message. Prefer email? Use{" "}
             <a href={site.emailHref} className="prose-link">

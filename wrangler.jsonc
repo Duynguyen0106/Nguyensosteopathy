@@ -34,4 +34,9 @@
   // "r2_buckets": [
   //   { "binding": "NEXT_INC_CACHE_R2_BUCKET", "bucket_name": "nguyensosteopathy-next-cache" }
   // ]
+
+  // Dashboard (outer) layer for scrapers — enable in Cloudflare zone:
+  //   Security → Bots → Bot Fight Mode (or Super Bot Fight Mode)
+  //   Security → WAF → Rate limiting rules for likely-automated traffic
+  // In-Worker defence lives in src/middleware.ts + src/lib/anti-scrape.ts.
 }

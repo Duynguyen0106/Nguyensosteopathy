@@ -4,7 +4,7 @@ import { ButtonLink } from "@/components/Button";
 import { EducationTrackCard } from "@/components/education/EducationTrackCard";
 import {
   educationTracks,
-  getArticlesForTrack,
+  getBrowsableArticlesForTrack,
 } from "@/lib/education";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { bookHref } from "@/lib/seo-strategy";
@@ -36,12 +36,7 @@ function countLabelFor(trackId: (typeof educationTracks)[number]["id"]) {
   if (trackId === "library") {
     return "Topic themes for patients & practitioners";
   }
-  const articles = getArticlesForTrack(trackId);
-  const live = articles.filter((a) => a.status === "published").length;
-  const soon = articles.length - live;
-  if (soon > 0) {
-    return `${live} published · ${soon} coming soon`;
-  }
+  const live = getBrowsableArticlesForTrack(trackId).length;
   return `${live} guide${live === 1 ? "" : "s"}`;
 }
 

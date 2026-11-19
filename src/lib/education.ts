@@ -242,6 +242,15 @@ export function getArticlesForTrack(
   return educationArticles.filter((article) => article.track === track);
 }
 
+/** Browse lists only — coming-soon stubs stay out of hub/track grids (F10). */
+export function getBrowsableArticlesForTrack(
+  track: EducationTrackId,
+): EducationArticle[] {
+  return getArticlesForTrack(track).filter(
+    (article) => article.status === "published",
+  );
+}
+
 export function getEducationArticle(
   track: EducationTrackId,
   slug: string,
@@ -263,7 +272,7 @@ export function getAllEducationArticleParams(): {
 
 export function getEducationTrackCount(trackId: EducationTrackId): number {
   if (trackId === "library") return getLibraryArticleCount();
-  return getArticlesForTrack(trackId).length;
+  return getBrowsableArticlesForTrack(trackId).length;
 }
 
 export function educationHref(

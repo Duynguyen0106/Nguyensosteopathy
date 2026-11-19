@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   keywords: [
     "osteopath Charlton reviews",
     "Nguyen's Osteopathic Clinic Google reviews",
-    "osteopath SE18 feedback",
+    "osteopath Charlton feedback",
     "Austin Duy Nguyen reviews",
   ],
   openGraph: {

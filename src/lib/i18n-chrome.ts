@@ -61,16 +61,22 @@ export const viFooterLabels: Record<string, string> = {
   "/site-map": "Sơ đồ trang",
 };
 
-/** On /vi/* remaps for pages that have Vietnamese twins. */
+/** On /vi/* remaps for pages that have Vietnamese twins. Keeps ?query (e.g. UTMs). */
 export function resolveViHref(href: string): string {
-  if (href === "/fees") return "/vi/fees";
-  if (href === "/find-us") return "/vi/find-us";
-  if (href === "/book") return "/vi/book";
-  if (href === "/about") return "/vi/about";
-  if (href === "/services/back-neck-pain") return "/vi/services/back-neck-pain";
-  if (href === "/services/home-visits") return "/vi/services/home-visits";
-  if (href === "/vi") return "/";
-  return href;
+  const qIndex = href.indexOf("?");
+  const path = qIndex === -1 ? href : href.slice(0, qIndex);
+  const query = qIndex === -1 ? "" : href.slice(qIndex);
+  let mapped = path;
+  if (path === "/fees") mapped = "/vi/fees";
+  else if (path === "/find-us") mapped = "/vi/find-us";
+  else if (path === "/book") mapped = "/vi/book";
+  else if (path === "/about") mapped = "/vi/about";
+  else if (path === "/services/back-neck-pain") {
+    mapped = "/vi/services/back-neck-pain";
+  } else if (path === "/services/home-visits") {
+    mapped = "/vi/services/home-visits";
+  } else if (path === "/vi") mapped = "/";
+  return `${mapped}${query}`;
 }
 
 export function chromeLabel(
@@ -80,5 +86,6 @@ export function chromeLabel(
   map: Record<string, string>,
 ): string {
   if (!isVi) return english;
-  return map[href] ?? english;
+  const path = href.split("?")[0] ?? href;
+  return map[path] ?? map[href] ?? english;
 }

@@ -12,6 +12,7 @@ import {
   viNavLabels,
   viServiceLabels,
 } from "@/lib/i18n-chrome";
+import { bookHref } from "@/lib/seo-strategy";
 import { getServiceHref, services, site } from "@/lib/site";
 
 function pathMatches(pathname: string, href: string) {
@@ -44,12 +45,6 @@ const links: NavLink[] = [
   { href: "/insurance", label: "Insurance", desktop: false },
   { href: "/reviews", label: "Reviews", desktop: false },
   { href: "/find-us", label: "Find us", desktop: true },
-  {
-    href: site.products.treowClinic.url,
-    label: site.products.treowClinic.name,
-    desktop: true,
-    external: true,
-  },
   { href: "/contact", label: "Contact", desktop: false },
   { href: "/vi", label: "Tiếng Việt", desktop: true },
 ];
@@ -270,7 +265,8 @@ export function Header() {
             height={926}
             className="h-12 w-auto max-w-[9.5rem] object-contain object-left transition group-hover:opacity-90 sm:h-14 sm:max-w-[11rem] md:h-[5.25rem] md:max-w-none"
             sizes="(max-width: 640px) 152px, (max-width: 768px) 176px, 210px"
-            priority
+            // Avoid competing with the homepage hero LCP image on inner routes.
+            priority={pathname === "/" || pathname === "/vi"}
           />
         </Link>
 
@@ -447,7 +443,7 @@ export function Header() {
             </svg>
           </a>
           <ButtonLink
-            href="/book"
+            href={isVi ? resolveViHref(bookHref("header")) : bookHref("header")}
             className="min-h-11 px-3 py-2 sm:px-5 sm:py-2.5"
           >
             {isVi ? "Đặt lịch" : "Book Now"}
@@ -542,7 +538,7 @@ export function Header() {
                       className="min-h-11 rounded-xl border border-slate-200 bg-white px-3 py-3 text-center text-sm font-semibold text-navy"
                       onClick={closeMenu}
                     >
-                      Call
+                      {isVi ? "Gọi" : "Call"}
                     </a>
                     <a
                       href={site.whatsappUrl}
@@ -555,7 +551,9 @@ export function Header() {
                     </a>
                   </div>
                   <Link
-                    href="/book"
+                    href={
+                      isVi ? resolveViHref(bookHref("header")) : bookHref("header")
+                    }
                     className="mb-3 block min-h-11 rounded-xl bg-teal px-3 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark"
                     onClick={closeMenu}
                   >

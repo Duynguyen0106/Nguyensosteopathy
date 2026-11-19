@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "what is osteopathy",
     "osteopath Charlton",
     "osteopathy explained",
-    "GOsC osteopath SE18",
+    "GOsC osteopath Charlton",
     "drug free osteopathy London",
     "osteopath vs physiotherapist Charlton",
   ],

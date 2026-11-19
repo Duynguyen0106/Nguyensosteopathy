@@ -177,7 +177,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "sciatica-charlton-osteopath",
     keywords: [
       "sciatica Charlton",
-      "sciatica osteopath SE18",
+      "sciatica osteopath Charlton",
       "leg pain osteopath Charlton",
     ],
     featured: true,
@@ -243,7 +243,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "nail-technician-neck-wrist-pain-osteopath",
     keywords: [
       "neck pain Charlton",
-      "neck osteopath SE18",
+      "neck osteopath Charlton",
       "desk neck pain osteopath",
     ],
     featured: true,
@@ -308,7 +308,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "desk-neck-and-shoulder-pain",
     keywords: [
       "Cervical radiculopathy Charlton",
-      "Cervical radiculopathy osteopath SE18",
+      "Cervical radiculopathy osteopath Charlton",
       "cervical radiculopathy Charlton",
     ],
   },
@@ -318,7 +318,7 @@ export const conditions: Condition[] = [
     shortTitle: "Cervicogenic headache",
     region: "Cervical",
     summary:
-      "One-sided headaches that start in the neck, not another vague tension label — upper-cervical osteopathy and desk advice for Charlton and SE18.",
+      "One-sided headaches that start in the neck, not another vague tension label — upper-cervical osteopathy and desk advice for Charlton and nearby SE London.",
     heroLine:
       "When headache starts in the neck, we treat the upper cervical drivers — not another vague tension-type label.",
     symptoms: [
@@ -372,7 +372,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "tension-headaches-neck-osteopath-charlton",
     keywords: [
       "Cervicogenic headache Charlton",
-      "Cervicogenic headache osteopath SE18",
+      "Cervicogenic headache osteopath Charlton",
       "cervicogenic headache Charlton",
     ],
   },
@@ -384,7 +384,7 @@ export const conditions: Condition[] = [
     summary:
       "Neck pain, stiffness, and guarded turning after a collision or sudden jolt — paced osteopathic care that rebuilds confidence without forcing range.",
     heroLine:
-      "A structured look at whiplash-associated disorder for SE18 patients — history, examination, and a plan you can follow.",
+      "A structured look at whiplash-associated disorder for Charlton patients — history, examination, and a plan you can follow.",
     symptoms: [
       "Neck pain and stiffness after a collision or sudden jolt",
       "Headache, dizziness, or guarded turning in traffic",
@@ -436,7 +436,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "whiplash-neck-pain-osteopath-se18",
     keywords: [
       "Whiplash-associated disorder Charlton",
-      "Whiplash-associated disorder osteopath SE18",
+      "Whiplash-associated disorder osteopath Charlton",
       "whiplash Charlton",
     ],
   },
@@ -461,7 +461,7 @@ export const conditions: Condition[] = [
       "Rule out cardiac or visceral referral when chest symptoms are atypical",
     ],
     causes:
-      `Mid-back or interscapular ache often comes from stiff thoracic joints, overloaded postural muscles, and prolonged flexed desk or phone postures common in SE18 offices and studies. Rib joints can join the story with breath-related catch or one-sided sharpness. Cervical and lumbar contributors refer into the same region, so treating “between the shoulder blades” alone often fails. Sudden reaches, coughing illnesses, and heavy pressing without thoracic extension capacity are local triggers. At Nguyen’s Osteopathic Clinic we restore thoracic and rib motion, ease scapular load, and match advice to your real desk week. Combined phone crane and laptop lap-work on sofas keeps the same flexed thoracic load even when the office chair is “ergonomic.” Everyday SE7 load patterns matter as much as the tissue label.`,
+      `Mid-back or interscapular ache often comes from stiff thoracic joints, overloaded postural muscles, and prolonged flexed desk or phone postures common in Charlton offices and studies. Rib joints can join the story with breath-related catch or one-sided sharpness. Cervical and lumbar contributors refer into the same region, so treating “between the shoulder blades” alone often fails. Sudden reaches, coughing illnesses, and heavy pressing without thoracic extension capacity are local triggers. At Nguyen’s Osteopathic Clinic we restore thoracic and rib motion, ease scapular load, and match advice to your real desk week. Combined phone crane and laptop lap-work on sofas keeps the same flexed thoracic load even when the office chair is “ergonomic.” Everyday SE7 load patterns matter as much as the tissue label.`,
     whoAffected:
       `Office workers, students, and people who drive long shifts are frequent visitors. Gym-goers who press heavy while lacking thoracic extension notice end-of-set mid-back pinch. Nail technicians and phone-heavy roles share flexed postures that feed the same pattern. Breath-related chest pain with cardiac red flags needs medical exclusion first. Recurrent “knot between the blades” after deadline weeks is a classic Greenwich borough story. Musicians and trades overhead work can irritate thoracic and rib joints with sustained elevation under fatigue. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.`,
     whatToExpect:
@@ -505,7 +505,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "upper-back-pain-desk-workers-charlton",
     keywords: [
       "Thoracic joint / postural pain Charlton",
-      "Thoracic joint / postural pain osteopath SE18",
+      "Thoracic joint / postural pain osteopath Charlton",
       "thoracic joint dysfunction Charlton",
     ],
   },
@@ -530,9 +530,9 @@ export const conditions: Condition[] = [
       "Coordinate with GP if chest pain character remains uncertain",
     ],
     causes:
-      "Costochondritis and related costovertebral irritation produce sharp, localised chest or rib-angle pain that you can usually point to with one finger. The costal cartilages and rib joints become sensitised after viral illness, coughing fits, sudden loading in the gym, or repetitive reaching and twisting at work. Protective spasm in the intercostals and thoracic erectors then makes every deep breath or sneeze feel risky, which feeds a cycle of shallow breathing and further stiffness. Unlike cardiac pain, the discomfort is typically reproducible with palpation, trunk rotation, or pressing the arms across the body. That said, chest pain always deserves a careful filter — we never treat mechanical labels as a substitute for urgent medical assessment when the story includes crushing pressure, sweating, syncope, or breathlessness at rest. At Nguyen’s Osteopathic Clinic in Charlton we map rib motion, thoracic segments, and shoulder girdle load together so care targets the driver rather than chasing a single tender spot. Desk-to-DIY spikes and winter coughs around SE7 and nearby SE18 are frequent local triggers we plan around.",
+      "Costochondritis and related costovertebral irritation produce sharp, localised chest or rib-angle pain that you can usually point to with one finger. The costal cartilages and rib joints become sensitised after viral illness, coughing fits, sudden loading in the gym, or repetitive reaching and twisting at work. Protective spasm in the intercostals and thoracic erectors then makes every deep breath or sneeze feel risky, which feeds a cycle of shallow breathing and further stiffness. Unlike cardiac pain, the discomfort is typically reproducible with palpation, trunk rotation, or pressing the arms across the body. That said, chest pain always deserves a careful filter — we never treat mechanical labels as a substitute for urgent medical assessment when the story includes crushing pressure, sweating, syncope, or breathlessness at rest. At Nguyen’s Osteopathic Clinic in Charlton we map rib motion, thoracic segments, and shoulder girdle load together so care targets the driver rather than chasing a single tender spot. Desk-to-DIY spikes and winter coughs around SE7 and nearby Charlton are frequent local triggers we plan around.",
     whoAffected:
-      "Active adults after winter coughs, CrossFit or bench-press spikes, and DIY weekends present often across SE18 and Greenwich. Desk workers who sit slumped then suddenly reach overhead notice the same pattern. People with health anxiety about heart disease may avoid movement for weeks, which prolongs recovery once cardiac causes are cleared. Pregnancy-related rib flare and postpartum coughing can also light up the costochondral junctions. Anyone with unexplained fever, progressive shortness of breath, or pain that migrates into the jaw or left arm needs emergency or GP pathways first — osteopathy starts only when a musculoskeletal pattern is clear and safe. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
+      "Active adults after winter coughs, CrossFit or bench-press spikes, and DIY weekends present often across Charlton and Greenwich. Desk workers who sit slumped then suddenly reach overhead notice the same pattern. People with health anxiety about heart disease may avoid movement for weeks, which prolongs recovery once cardiac causes are cleared. Pregnancy-related rib flare and postpartum coughing can also light up the costochondral junctions. Anyone with unexplained fever, progressive shortness of breath, or pain that migrates into the jaw or left arm needs emergency or GP pathways first — osteopathy starts only when a musculoskeletal pattern is clear and safe. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     whatToExpect:
       "Your first visit clarifies red-flag screening history, then examines local tenderness, rib spring, thoracic rotation, and breathing mechanics. Once the pattern looks musculoskeletal, hands-on care may combine gentle rib and thoracic mobilisation with soft-tissue work to the chest wall and upper back — never forced into a painful gasp. You leave with pacing for coughs, sneezes, and which pressing or twisting gym moves to pause briefly. Follow-ups track how far you can inhale, sleep on your side, and return to desks or trains without guarding. If the character of pain stays uncertain, we stop and coordinate with your GP rather than repeating sessions on hope alone. We explain fees before follow-ups and judge progress by breath depth and reach comfort between visits.",
     recoveryTimeline:
@@ -574,7 +574,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "rib-pain-breathing-osteopath-charlton",
     keywords: [
       "Costochondritis / costovertebral pain Charlton",
-      "Costochondritis / costovertebral pain osteopath SE18",
+      "Costochondritis / costovertebral pain osteopath Charlton",
       "costochondritis Charlton",
     ],
   },
@@ -586,7 +586,7 @@ export const conditions: Condition[] = [
     summary:
       "Rounded mid-back posture and end-of-day ache from Scheuermann’s or postural kyphosis — realistic mobility and strength, not forced straightening.",
     heroLine:
-      "A structured look at scheuermann's / postural hyperkyphosis for SE18 patients — history, examination, and a plan you can follow. Local commuting, standing retail shifts, and desk hours in SE18 often shape how symptoms show up day to day.",
+      "A structured look at scheuermann's / postural hyperkyphosis for Charlton patients — history, examination, and a plan you can follow. Local commuting, standing retail shifts, and desk hours in Charlton often shape how symptoms show up day to day.",
     symptoms: [
       "Rounded mid-back posture with aching after long sitting",
       "Limited extension and tight anterior chest soft tissue",
@@ -643,7 +643,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "upper-back-pain-desk-workers-charlton",
     keywords: [
       "Scheuermann's / postural hyperkyphosis Charlton",
-      "Scheuermann's / postural hyperkyphosis osteopath SE18",
+      "Scheuermann's / postural hyperkyphosis osteopath Charlton",
       "scheuermanns Charlton",
     ],
   },
@@ -712,7 +712,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "back-pain-charlton-osteopathy",
     keywords: [
       "Non-specific low back pain Charlton",
-      "Non-specific low back pain osteopath SE18",
+      "Non-specific low back pain osteopath Charlton",
       "non specific low back pain Charlton",
     ],
   },
@@ -781,7 +781,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "lumbar-disc-pain-osteopath-charlton",
     keywords: [
       "Lumbar disc / radiculopathy Charlton",
-      "Lumbar disc / radiculopathy osteopath SE18",
+      "Lumbar disc / radiculopathy osteopath Charlton",
       "lumbar disc radiculopathy Charlton",
     ],
   },
@@ -791,9 +791,9 @@ export const conditions: Condition[] = [
     shortTitle: "Lumbar spinal stenosis",
     region: "Lumbar",
     summary:
-      "Leg heaviness that builds on walking or standing and eases when you sit or lean forward — stenosis-aware pacing and mobilisation in SE18.",
+      "Leg heaviness that builds on walking or standing and eases when you sit or lean forward — stenosis-aware pacing and mobilisation in Charlton.",
     heroLine:
-      "A structured look at lumbar spinal stenosis for SE18 patients — history, examination, and a plan you can follow.",
+      "A structured look at lumbar spinal stenosis for Charlton patients — history, examination, and a plan you can follow.",
     symptoms: [
       "Leg heaviness or ache that builds with walking or standing",
       "Relief when you sit or lean forward on a trolley",
@@ -850,7 +850,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "back-pain-charlton-osteopathy",
     keywords: [
       "Lumbar spinal stenosis Charlton",
-      "Lumbar spinal stenosis osteopath SE18",
+      "Lumbar spinal stenosis osteopath Charlton",
       "lumbar stenosis Charlton",
     ],
   },
@@ -919,7 +919,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "sports-injury-osteopath-charlton",
     keywords: [
       "Spondylolysis / spondylolisthesis Charlton",
-      "Spondylolysis / spondylolisthesis osteopath SE18",
+      "Spondylolysis / spondylolisthesis osteopath Charlton",
       "spondylolysis Charlton",
     ],
   },
@@ -944,9 +944,9 @@ export const conditions: Condition[] = [
       "Refer on if night pain, fever, or neurological change sits outside this pattern",
     ],
     causes:
-      `Facet (zygapophyseal) joints can become irritable with extension and rotation, producing well-localised unilateral low back or buttock ache that often eases with flexion. Prolonged standing, awkward reaches, gardening, and sleeping prone are common Charlton triggers. Facet pain overlaps with disc and SI patterns, so assessment that carefully reproduces extension-rotation load matters more than a generic “disc” label. Protective muscle spasm then limits turning and walking until irritability drops. At Nguyen’s Osteopathic Clinic we calm the irritable segment, restore comfortable motion, and change the habits that keep extension load high. Combined rotation under fatigue — lifting a suitcase from a boot, twisting to a back seat — is a frequent SE18 trigger story. Everyday SE7 load patterns matter as much as the tissue label.`,
+      `Facet (zygapophyseal) joints can become irritable with extension and rotation, producing well-localised unilateral low back or buttock ache that often eases with flexion. Prolonged standing, awkward reaches, gardening, and sleeping prone are common Charlton triggers. Facet pain overlaps with disc and SI patterns, so assessment that carefully reproduces extension-rotation load matters more than a generic “disc” label. Protective muscle spasm then limits turning and walking until irritability drops. At Nguyen’s Osteopathic Clinic we calm the irritable segment, restore comfortable motion, and change the habits that keep extension load high. Combined rotation under fatigue — lifting a suitcase from a boot, twisting to a back seat — is a frequent Charlton trigger story. Everyday SE7 load patterns matter as much as the tissue label.`,
     whoAffected:
-      `Active adults and older patients with extension-biased pain present commonly across SE18. People who stand long retail or pharmacy shifts, or sleep prone, notice morning unilateral ache. Gym-goers who chase end-range backbends without capacity flare similarly. Progressive leg weakness, saddle change, or unremitting night pain needs medical pathways — not another mobilisation session alone. Recurrent “same spot” flares after DIY weekends are a frequent local story. Older adults with degenerative facet change still benefit from mobility and strength; age alone is not a reason to avoid guided care. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.`,
+      `Active adults and older patients with extension-biased pain present commonly across Charlton. People who stand long retail or pharmacy shifts, or sleep prone, notice morning unilateral ache. Gym-goers who chase end-range backbends without capacity flare similarly. Progressive leg weakness, saddle change, or unremitting night pain needs medical pathways — not another mobilisation session alone. Recurrent “same spot” flares after DIY weekends are a frequent local story. Older adults with degenerative facet change still benefit from mobility and strength; age alone is not a reason to avoid guided care. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.`,
     whatToExpect:
       `Assessment reproduces extension-rotation pain carefully, then hands-on techniques reduce joint irritability and soft-tissue guarding. Advice reshapes standing breaks, sleep position, and early return to hinge and walk loads. Strength of hips and trunk reduces how often the same facet lights up. You leave with clear flare rules and simple drills that do not poke the bear. We escalate if pain spreads with neurological change or fails to settle after a fair trial. Sleep and standing micro-break plans are written so clinic gains survive the next long retail or pharmacy shift. Local Charlton and Greenwich borough life — pavements, hills, Tube steps, and desk-to-sport spikes — shapes how we dose care so advice fits your real week rather than a generic leaflet. We judge progress by function you can feel between visits, explain fees before follow-ups, and refer promptly when red flags or stalled recovery make osteopathy-only care the wrong next step.`,
     recoveryTimeline:
@@ -988,7 +988,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "morning-back-stiffness-osteopath",
     keywords: [
       "Facet joint / extension-pattern LBP Charlton",
-      "Facet joint / extension-pattern LBP osteopath SE18",
+      "Facet joint / extension-pattern LBP osteopath Charlton",
       "facet syndrome Charlton",
     ],
   },
@@ -1057,7 +1057,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "sacroiliac-joint-pain-charlton",
     keywords: [
       "Sacroiliac joint dysfunction Charlton",
-      "Sacroiliac joint dysfunction osteopath SE18",
+      "Sacroiliac joint dysfunction osteopath Charlton",
       "si joint dysfunction Charlton",
     ],
   },
@@ -1082,7 +1082,7 @@ export const conditions: Condition[] = [
       "Flag trauma, infection, or unexplained weight-loss pathways promptly",
     ],
     causes:
-      "Coccydynia is pain at the tailbone that flares with sitting, rising from a chair, or hard seats after a fall, childbirth, cycling, or weeks of unforgiving office chairs. Local soft tissue, pelvic floor guarding, and lumbar or sacroiliac contributors can keep the area sensitised long after the original knock. People often lean to one side, shorten meetings, and avoid trains — which then stiffens the surrounding pelvis and prolongs the problem. Rarely, infection, fracture non-union, or other pelvic pathology mimics simple coccyx pain, so we take trauma history, bowel change, fever, and unexplained weight loss seriously rather than labelling every seat ache as “just the tailbone.” At Nguyen’s Osteopathic Clinic in Charlton we look at how you sit, how the pelvis loads on stairs, and whether lumbar referral is amplifying local tenderness. Elizabeth line hard seats and long Arsenal waits are frequent SE18 aggravators we plan cushion and sit-stand strategies around.",
+      "Coccydynia is pain at the tailbone that flares with sitting, rising from a chair, or hard seats after a fall, childbirth, cycling, or weeks of unforgiving office chairs. Local soft tissue, pelvic floor guarding, and lumbar or sacroiliac contributors can keep the area sensitised long after the original knock. People often lean to one side, shorten meetings, and avoid trains — which then stiffens the surrounding pelvis and prolongs the problem. Rarely, infection, fracture non-union, or other pelvic pathology mimics simple coccyx pain, so we take trauma history, bowel change, fever, and unexplained weight loss seriously rather than labelling every seat ache as “just the tailbone.” At Nguyen’s Osteopathic Clinic in Charlton we look at how you sit, how the pelvis loads on stairs, and whether lumbar referral is amplifying local tenderness. Elizabeth line hard seats and long Arsenal waits are frequent Charlton aggravators we plan cushion and sit-stand strategies around.",
     whoAffected:
       "Post-partum patients, cyclists, and people after slips on ice or stairs present frequently from Plumstead, Thamesmead, and the Charlton station area. Desk workers on hard chairs and drivers on long SE London routes notice end-of-day spikes. Hypermobile patients and those with pelvic floor tension after pregnancy may struggle with toilet positions and soft sofas alike. Night pain with fever, progressive neurological change, or bowel/bladder red flags need medical review first — osteopathy is not the front door for those pathways. Bring a short note of sitting minutes you can manage and which seats flare you — that history shortens the first assessment.",
     whatToExpect:
@@ -1126,7 +1126,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "coccyx-tailbone-pain-osteopath-charlton",
     keywords: [
       "Coccydynia Charlton",
-      "Coccydynia osteopath SE18",
+      "Coccydynia osteopath Charlton",
       "coccydynia Charlton",
     ],
   },
@@ -1136,7 +1136,7 @@ export const conditions: Condition[] = [
     shortTitle: "Hip osteoarthritis",
     region: "Pelvis & Hip",
     summary:
-      "Groin or deep hip ache with hills, socks, and morning stiffness — osteopathy and load advice that keep SE18 walks possible.",
+      "Groin or deep hip ache with hills, socks, and morning stiffness — osteopathy and load advice that keep Charlton walks possible.",
     heroLine:
       "Support for hip osteoarthritis with osteopathy in Charlton: assessment first, then tailored hands-on care. We connect clinic findings to your real week so advice fits Charlton life, not a generic leaflet.",
     symptoms: [
@@ -1151,13 +1151,13 @@ export const conditions: Condition[] = [
       "Discuss GP, imaging, or injection pathways when function plateaus",
     ],
     causes:
-      "Hip osteoarthritis involves joint cartilage change, stiffness, and activity-related groin or deep lateral hip pain. Morning stiffness that eases then returns after longer walks, hills, or putting on socks is typical. Previous cam/pincer morphology, heavy physical work, and age-related change contribute; secondary gluteal weakness and lumbar referral amplify the story. Greater trochanteric pain and FAI-type pinch can coexist or mimic OA, so we localise groin versus outer-hip drivers carefully at Nguyen’s Osteopathic Clinic in Charlton. Imaging labels help when they change decisions; function still leads day-to-day planning. Car transfers, low sofas, and soft mattresses can all provoke the same deep ache when rotation range and glute endurance are limited. Everyday SE18 hills, Thames Path walks, and Tube steps matter as much as the X-ray grade when we set realistic walking goals.",
+      "Hip osteoarthritis involves joint cartilage change, stiffness, and activity-related groin or deep lateral hip pain. Morning stiffness that eases then returns after longer walks, hills, or putting on socks is typical. Previous cam/pincer morphology, heavy physical work, and age-related change contribute; secondary gluteal weakness and lumbar referral amplify the story. Greater trochanteric pain and FAI-type pinch can coexist or mimic OA, so we localise groin versus outer-hip drivers carefully at Nguyen’s Osteopathic Clinic in Charlton. Imaging labels help when they change decisions; function still leads day-to-day planning. Car transfers, low sofas, and soft mattresses can all provoke the same deep ache when rotation range and glute endurance are limited. Everyday Charlton hills, Thames Path walks, and Tube steps matter as much as the X-ray grade when we set realistic walking goals.",
     whoAffected:
       "Adults over fifty, previous athletes, and people with standing or lifting jobs present often. Grandparents who want Thames Path walks and drivers who struggle getting in and out of cars are common. People who avoid walking for fear of “wearing the joint out” often decondition faster — sensible load usually helps more than total rest. Rapidly progressive night pain, unexplained weight loss, or true locking needs medical pathways. Most mechanical hip OA patterns still improve walking and sock-reach with strength and pacing even when X-rays stay imperfect. Bring a short note of which hills, transfers, or dressing tasks fail first — that history shortens the first assessment.",
     whatToExpect:
-      "We assess gait, rotation range, single-leg control, and lumbar contribution. Treatment builds hip and glute endurance, eases secondary soft tissue, and coaches hill and sit-to-stand pacing for real SE18 errands. Hands-on care supports comfort; we avoid forcing into painful end-range pinch. Injection or surgical timing is discussed when function remains limited after fair conservative care. Sock reach, car transfers, and walking distance lead the plan so progress is visible week to week. We also review walking aids and footwear when they would improve confidence on uneven Charlton pavements without encouraging total avoidance. We explain fees before follow-ups and refer promptly when walking capacity keeps declining despite rehab.",
+      "We assess gait, rotation range, single-leg control, and lumbar contribution. Treatment builds hip and glute endurance, eases secondary soft tissue, and coaches hill and sit-to-stand pacing for real Charlton errands. Hands-on care supports comfort; we avoid forcing into painful end-range pinch. Injection or surgical timing is discussed when function remains limited after fair conservative care. Sock reach, car transfers, and walking distance lead the plan so progress is visible week to week. We also review walking aids and footwear when they would improve confidence on uneven Charlton pavements without encouraging total avoidance. We explain fees before follow-ups and refer promptly when walking capacity keeps declining despite rehab.",
     recoveryTimeline:
-      "Gains often appear over 6–12 weeks. Structural change remains; function is the target. Early wins are dressing and shorter flares after walks; later wins are hills and longer SE18 errands. Recurrence of flare weeks is expected after heavy days — we shorten recovery and escalate if walking capacity keeps declining despite rehab. Maintenance glute work after settling helps protect the gains you worked for. Patients who keep short daily walks during flare weeks usually regain distance faster than those who rest completely for a fortnight. We set review points so you know when progress is on track versus when injection or orthopaedic pathways should be discussed. Local Charlton hills and Thames Path goals shape how we pace return after each flare week.",
+      "Gains often appear over 6–12 weeks. Structural change remains; function is the target. Early wins are dressing and shorter flares after walks; later wins are hills and longer Charlton errands. Recurrence of flare weeks is expected after heavy days — we shorten recovery and escalate if walking capacity keeps declining despite rehab. Maintenance glute work after settling helps protect the gains you worked for. Patients who keep short daily walks during flare weeks usually regain distance faster than those who rest completely for a fortnight. We set review points so you know when progress is on track versus when injection or orthopaedic pathways should be discussed. Local Charlton hills and Thames Path goals shape how we pace return after each flare week.",
     faqs: [
       {
         question: "Is walking bad for hip OA?",
@@ -1195,7 +1195,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "hip-knee-pain-osteopath-charlton",
     keywords: [
       "Hip osteoarthritis Charlton",
-      "Hip osteoarthritis osteopath SE18",
+      "Hip osteoarthritis osteopath Charlton",
       "hip oa Charlton",
     ],
   },
@@ -1220,7 +1220,7 @@ export const conditions: Condition[] = [
       "Escalate if night pain or weakness suggests tear or other pathology",
     ],
     causes:
-      "Greater trochanteric pain syndrome (GTPS) involves the gluteal tendons and bursal tissues on the outside of the hip — the bony point you can feel at the side. Side-lying sleep, sudden walking or running volume, weak hip abductor control, and pelvic drop on stairs commonly overload the tendon complex. It is often mislabelled as “hip bursitis” alone; tendon load capacity is usually the bigger story, and rubbing the bursal tissues without rebuilding strength rarely lasts. Lumbar referral, hip osteoarthritis, and ITB-related patterns can mimic lateral hip pain, which is why we screen the back and kinetic chain rather than treating the trochanter in isolation. At Nguyen’s Osteopathic Clinic in Charlton we match hands-on ease with a graded loading plan so night pain and stairs improve together. Cambered Common paths and Arsenal stair climbs are frequent SE18 spike errors we pace carefully while capacity rebuilds.",
+      "Greater trochanteric pain syndrome (GTPS) involves the gluteal tendons and bursal tissues on the outside of the hip — the bony point you can feel at the side. Side-lying sleep, sudden walking or running volume, weak hip abductor control, and pelvic drop on stairs commonly overload the tendon complex. It is often mislabelled as “hip bursitis” alone; tendon load capacity is usually the bigger story, and rubbing the bursal tissues without rebuilding strength rarely lasts. Lumbar referral, hip osteoarthritis, and ITB-related patterns can mimic lateral hip pain, which is why we screen the back and kinetic chain rather than treating the trochanter in isolation. At Nguyen’s Osteopathic Clinic in Charlton we match hands-on ease with a graded loading plan so night pain and stairs improve together. Cambered Common paths and Arsenal stair climbs are frequent Charlton spike errors we pace carefully while capacity rebuilds.",
     whoAffected:
       "Runners, walkers increasing distance for commuting or park runs, and middle-aged adults — especially women peri-menopause — present frequently across Greenwich borough. Side sleepers notice night pain that wakes them when they roll onto the sore hip. Desk workers who sit long then spike weekend hills, and parents carrying toddlers on one hip, often share the same outer-hip flare. Progressive night pain with weakness raising the leg, or pain that clearly tracks from the lower back into the thigh, needs a broader assessment — and sometimes imaging or GP input — rather than another foam-roll session. Bring a short note of night wakes and which stairs or hills flare you — that history shortens the first assessment.",
     whatToExpect:
@@ -1264,7 +1264,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "hip-bursitis-osteopath-charlton",
     keywords: [
       "Greater trochanteric pain syndrome Charlton",
-      "Greater trochanteric pain syndrome osteopath SE18",
+      "Greater trochanteric pain syndrome osteopath Charlton",
       "greater trochanteric pain Charlton",
     ],
   },
@@ -1276,7 +1276,7 @@ export const conditions: Condition[] = [
     summary:
       "Groin pinch with deep squat, sit, or twist — FAI-aware mobility that never stretches into the catch.",
     heroLine:
-      "A structured look at femoroacetabular impingement / labral pain for SE18 patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
+      "A structured look at femoroacetabular impingement / labral pain for Charlton patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
       "Pinch in the groin with deep squat, sit, or twist",
       "Sport or gym positions that catch at end range",
@@ -1333,7 +1333,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "hip-knee-pain-osteopath-charlton",
     keywords: [
       "Femoroacetabular impingement / labral pain Charlton",
-      "Femoroacetabular impingement / labral pain osteopath SE18",
+      "Femoroacetabular impingement / labral pain osteopath Charlton",
       "femoroacetabular impingement Charlton",
     ],
   },
@@ -1345,7 +1345,7 @@ export const conditions: Condition[] = [
     summary:
       "Deep buttock ache that mimics sciatica — lumbar screen first, then deep-gluteal soft-tissue and sitting tweaks.",
     heroLine:
-      "A structured look at deep gluteal / piriformis syndrome for SE18 patients — history, examination, and a plan you can follow.",
+      "A structured look at deep gluteal / piriformis syndrome for Charlton patients — history, examination, and a plan you can follow.",
     symptoms: [
       "Deep buttock ache that can refer toward the thigh",
       "Worse with prolonged sitting or wallet-in-back-pocket habits",
@@ -1358,9 +1358,9 @@ export const conditions: Condition[] = [
       "Neurological screen so nerve-root drivers are not missed",
     ],
     causes:
-      "Piriformis-related or deep gluteal pain describes buttock irritability that can refer into the thigh and mimic sciatica. Prolonged sitting on the Elizabeth line, sudden sprint or hill work, and pelvic asymmetry commonly aggravate the deep external rotators. True lumbar nerve-root compression can look identical from the patient’s view, so we screen lumbar neurology carefully rather than stretching every buttock ache as “piriformis.” Sacroiliac and hip joint drivers also feed deep gluteal patterns we see at Nguyen’s Osteopathic Clinic in Charlton. Naming the pattern matters because the wrong stretch into an irritable nerve root can prolong the problem. Wallets in back pockets and soft sofas that collapse the pelvis into a twist add daily irritation on top of commute sitting. Everyday SE18 desk-to-hill spikes matter as much as the tissue label when we set sitting and run goals.",
+      "Piriformis-related or deep gluteal pain describes buttock irritability that can refer into the thigh and mimic sciatica. Prolonged sitting on the Elizabeth line, sudden sprint or hill work, and pelvic asymmetry commonly aggravate the deep external rotators. True lumbar nerve-root compression can look identical from the patient’s view, so we screen lumbar neurology carefully rather than stretching every buttock ache as “piriformis.” Sacroiliac and hip joint drivers also feed deep gluteal patterns we see at Nguyen’s Osteopathic Clinic in Charlton. Naming the pattern matters because the wrong stretch into an irritable nerve root can prolong the problem. Wallets in back pockets and soft sofas that collapse the pelvis into a twist add daily irritation on top of commute sitting. Everyday Charlton desk-to-hill spikes matter as much as the tissue label when we set sitting and run goals.",
     whoAffected:
-      "Desk workers on long sits, runners, drivers, and people after awkward lifts present often from SE18 and nearby. Night pain with progressive leg weakness, saddle numbness, or bladder change is a red-flag lumbar pathway — not a stretch plan. Hybrid workers who sit all week then spike weekend hills notice the same deep buttock flare. Most mechanical deep gluteal patterns settle with load change, pelvic control, and graded exposure to sitting when lumbar radiculopathy is excluded. Bring a short note of sit minutes, walk tolerance, and whether leg symptoms dominate — that history shortens the first assessment. Trades and parents sharing long van or Tube sits after lifts often arrive with the same deep buttock pattern we see at the The Village clinic.",
+      "Desk workers on long sits, runners, drivers, and people after awkward lifts present often from Charlton and nearby. Night pain with progressive leg weakness, saddle numbness, or bladder change is a red-flag lumbar pathway — not a stretch plan. Hybrid workers who sit all week then spike weekend hills notice the same deep buttock flare. Most mechanical deep gluteal patterns settle with load change, pelvic control, and graded exposure to sitting when lumbar radiculopathy is excluded. Bring a short note of sit minutes, walk tolerance, and whether leg symptoms dominate — that history shortens the first assessment. Trades and parents sharing long van or Tube sits after lifts often arrive with the same deep buttock pattern we see at the The Village clinic.",
     whatToExpect:
       "We screen lumbar nerve roots, then assess hip and pelvic contributors and sitting tolerance. Care eases deep gluteal soft tissue, rebuilds hip control, and coaches sit-stand mixing for commute days. Nerve-friendly movement is used when neural tension is part of the picture; aggressive end-range stretches are avoided while irritability is high. Imaging talk follows atypical neurology or stalled recovery. Sitting minutes and walk tolerance lead weekly goals you can track between visits. When true radicular signs dominate, we shift emphasis to nerve-friendly pacing and lumbar assessment rather than deeper buttock stretching. We explain fees before follow-ups and refer promptly when neurology progresses.",
     recoveryTimeline:
@@ -1402,7 +1402,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "sciatica-charlton-osteopath",
     keywords: [
       "Deep gluteal / piriformis syndrome Charlton",
-      "Deep gluteal / piriformis syndrome osteopath SE18",
+      "Deep gluteal / piriformis syndrome osteopath Charlton",
       "piriformis syndrome Charlton",
     ],
   },
@@ -1414,7 +1414,7 @@ export const conditions: Condition[] = [
     summary:
       "Sudden pulls or nagging proximal hamstring tendon pain — staged loading so runners and gym-goers return without re-tearing.",
     heroLine:
-      "From sudden pulls to nagging proximal tendon pain — we stage loading so SE18 runners and gym-goers return without re-tearing.",
+      "From sudden pulls to nagging proximal tendon pain — we stage loading so Charlton runners and gym-goers return without re-tearing.",
     symptoms: [
       "Sudden or gradual pain in the belly or origin of the hamstring",
       "Discomfort accelerating, lunging, or hinging at the hip",
@@ -1429,7 +1429,7 @@ export const conditions: Condition[] = [
     causes:
       `Hamstring strains occur when fibres are overloaded in high-speed running, kicking, or sudden stretch under fatigue — classic Charlton football and sprint patterns after a quiet midweek. Previous strain is the biggest risk factor because scarred tissue and incomplete strength often leave a weak link in late swing. Proximal tendon pain at the sit-bone behaves more like tendinopathy and needs different loading than a mid-belly muscle tear: heavy-slow hinge work rather than aggressive ballistic stretch. Protective lumbar and pelvic stiffness can make the hamstring feel “tight” when the real driver is disc or SI irritability referring down the thigh. Sudden pops with major bruising, a palpable gap, or inability to walk raise avulsion or high-grade tear pathways that need imaging rather than massage. At Nguyen’s Osteopathic Clinic in Charlton we grade the tissue, check neural tension, and map how your training week actually loaded the posterior chain before we invent a stretch routine. Fatigue in the final third of matches and poor warm-up after cold Charlton evenings are recurring local triggers we plan around rather than ignore.`,
     whoAffected:
-      `Footballers, sprinters, racket athletes, and weekend gym-goers in SE18 and nearby Greenwich borough present often after acceleration or kick drills. Older athletes returning too fast after rest, and desk workers who suddenly add deadlifts, are vulnerable because tendon capacity lags ambition. Parents chasing toddlers with awkward lunges share similar proximal tendon irritability without a dramatic sports story. Complete tears with major bruising and marked weakness need medical imaging pathways first. Recurrent “tight hamstring” that never settles after stretch-only care often hides lumbar referral or proximal tendinopathy — both need a different plan than foam-rolling the belly of the muscle every night.`,
+      `Footballers, sprinters, racket athletes, and weekend gym-goers in Charlton and nearby Greenwich borough present often after acceleration or kick drills. Older athletes returning too fast after rest, and desk workers who suddenly add deadlifts, are vulnerable because tendon capacity lags ambition. Parents chasing toddlers with awkward lunges share similar proximal tendon irritability without a dramatic sports story. Complete tears with major bruising and marked weakness need medical imaging pathways first. Recurrent “tight hamstring” that never settles after stretch-only care often hides lumbar referral or proximal tendinopathy — both need a different plan than foam-rolling the belly of the muscle every night.`,
     whatToExpect:
       `We stage healing: protect early irritability, then progressive strength and speed exposure matched to your sport or gym goals. Hands-on care helps secondary spasm and pelvic contributors; rehab quality decides return-to-play more than any single soft-tissue session. Lumbar and pelvic drivers are checked so recurrence risk drops when you sprint again. You leave with clear stop rules for pain during drills, and a ladder from isometric holds to hinge strength to run-throughs. Sprint and hinge milestones decide clearance; reinjury risk beats bravado every time. Fees and follow-up spacing are agreed so you are not guessing how many visits sit inside the rehab arc.`,
     recoveryTimeline:
@@ -1471,7 +1471,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "football-muscle-strain-osteopath-se18",
     keywords: [
       "Hamstring strain / proximal tendinopathy Charlton",
-      "Hamstring strain / proximal tendinopathy osteopath SE18",
+      "Hamstring strain / proximal tendinopathy osteopath Charlton",
       "hamstring strain Charlton",
     ],
   },
@@ -1540,7 +1540,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "sports-injury-osteopath-charlton",
     keywords: [
       "Adductor-related groin pain Charlton",
-      "Adductor-related groin pain osteopath SE18",
+      "Adductor-related groin pain osteopath Charlton",
       "groin pain Charlton",
     ],
   },
@@ -1552,7 +1552,7 @@ export const conditions: Condition[] = [
     summary:
       "Knee ache, stiffness, and crepitus with stairs and hills — quad-friendly care and honest talk about injections when plateaus hit.",
     heroLine:
-      "A structured look at knee osteoarthritis for SE18 patients — history, examination, and a plan you can follow. We connect clinic findings to your real week so advice fits Charlton life, not a generic leaflet.",
+      "A structured look at knee osteoarthritis for Charlton patients — history, examination, and a plan you can follow. We connect clinic findings to your real week so advice fits Charlton life, not a generic leaflet.",
     symptoms: [
       "Knee ache and stiffness with stairs, hills, or rising from chairs",
       "Crepitus or swelling after longer walks",
@@ -1565,7 +1565,7 @@ export const conditions: Condition[] = [
       "Coordinate with GP for imaging, injection, or surgical timing when needed",
     ],
     causes:
-      "Knee osteoarthritis involves joint cartilage change, stiffness, and activity-related ache that often eases then returns with longer walks or stairs. Morning stiffness, crepitus, and reduced confidence on uneven SE18 pavements are common. Previous injury, excess load spikes, and age-related change contribute; secondary soft-tissue tension and hip weakness amplify disability more than many people expect. X-ray severity often poorly matches how limited you feel, so we treat walking tolerance and stair confidence — not only the film. Inflammatory arthritis and meniscal mechanical blocks can overlap and need different pathways, which is why assessment comes before a generic “arthritis stretches” sheet. Weather changes and longer supermarket walks often reveal capacity limits before constant pain does, which is why we measure function as carefully as discomfort. At Nguyen’s Osteopathic Clinic in Charlton we match strength and pacing to Arsenal stairs, hills, and errands you actually need to keep.",
+      "Knee osteoarthritis involves joint cartilage change, stiffness, and activity-related ache that often eases then returns with longer walks or stairs. Morning stiffness, crepitus, and reduced confidence on uneven Charlton pavements are common. Previous injury, excess load spikes, and age-related change contribute; secondary soft-tissue tension and hip weakness amplify disability more than many people expect. X-ray severity often poorly matches how limited you feel, so we treat walking tolerance and stair confidence — not only the film. Inflammatory arthritis and meniscal mechanical blocks can overlap and need different pathways, which is why assessment comes before a generic “arthritis stretches” sheet. Weather changes and longer supermarket walks often reveal capacity limits before constant pain does, which is why we measure function as carefully as discomfort. At Nguyen’s Osteopathic Clinic in Charlton we match strength and pacing to Arsenal stairs, hills, and errands you actually need to keep.",
     whoAffected:
       "Adults over fifty, previous athletes, and people with physically demanding jobs present frequently from Greenwich borough. Grandparents who want longer park walks and shoppers who struggle with stairs are typical visitors. People who have “rested” for months often feel weaker and less confident even when pain is moderate. Hot, swollen multiple joints, night fever, or sudden locking after trauma need medical review. Most mechanical OA patterns still gain meaningful function with strength, pacing, and footwear advice even when structure remains changed. People told to “rest the joint” for months commonly arrive weaker and more fearful of stairs than when symptoms began. Bring a short note of which stairs, hills, or shop trips fail first — that history shortens the first assessment.",
     whatToExpect:
@@ -1609,7 +1609,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "hip-knee-pain-osteopath-charlton",
     keywords: [
       "Knee osteoarthritis Charlton",
-      "Knee osteoarthritis osteopath SE18",
+      "Knee osteoarthritis osteopath Charlton",
       "knee oa Charlton",
     ],
   },
@@ -1634,7 +1634,7 @@ export const conditions: Condition[] = [
       "Rule out inflammatory or acute traumatic knee red flags",
     ],
     causes:
-      "Patellofemoral pain is front-of-knee or kneecap irritability that flares with stairs, hills, squats, or prolonged sitting with bent knees — the “movie theatre” sign. It is usually a load-capacity story in the joint between kneecap and femur, not “something floating out of place” that needs endless cracking. Hip weakness, sudden running volume, soft shoes on hard SE London pavements, and desk-to-weekend training spikes commonly drive it. True locking, marked swelling after trauma, or giving-way from instability points to other pathways — meniscus, ligament, or osteochondral injury — that we screen for carefully before building a kneecap load plan at Nguyen’s Osteopathic Clinic in Charlton. Soft, unsupportive city shoes on hard pavements raise demand through the kneecap with every Arsenal stair climb, especially when hip endurance is already low from desk weeks. Everyday SE18 hills and Elizabeth line standing blocks matter as much as the gym label when we set stair and run goals.",
+      "Patellofemoral pain is front-of-knee or kneecap irritability that flares with stairs, hills, squats, or prolonged sitting with bent knees — the “movie theatre” sign. It is usually a load-capacity story in the joint between kneecap and femur, not “something floating out of place” that needs endless cracking. Hip weakness, sudden running volume, soft shoes on hard SE London pavements, and desk-to-weekend training spikes commonly drive it. True locking, marked swelling after trauma, or giving-way from instability points to other pathways — meniscus, ligament, or osteochondral injury — that we screen for carefully before building a kneecap load plan at Nguyen’s Osteopathic Clinic in Charlton. Soft, unsupportive city shoes on hard pavements raise demand through the kneecap with every Arsenal stair climb, especially when hip endurance is already low from desk weeks. Everyday Charlton hills and Elizabeth line standing blocks matter as much as the gym label when we set stair and run goals.",
     whoAffected:
       "Runners, gym athletes, adolescents in growth spurts, and people who stand long retail shifts present often from Charlton and Greenwich. Commuters who climb Arsenal stairs daily notice end-of-day ache that eases with rest then returns on the next hill. People returning to sport after exams or injury layoffs often spike volume too quickly. Sudden trauma with swelling, locking that needs a wriggle to unlock, or knee giving way needs assessment beyond a simple kneecap load plan. Most non-traumatic front-of-knee pain responds to graded loading when red flags are absent. Bring a short note of which stairs, hills, or squat depths flare you — that history shortens the first assessment.",
     whatToExpect:
@@ -1678,7 +1678,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "running-injuries-osteopath-charlton",
     keywords: [
       "Patellofemoral pain syndrome Charlton",
-      "Patellofemoral pain syndrome osteopath SE18",
+      "Patellofemoral pain syndrome osteopath Charlton",
       "patellofemoral pain Charlton",
     ],
   },
@@ -1703,7 +1703,7 @@ export const conditions: Condition[] = [
       "Discuss shockwave or imaging only when rehab plateaus",
     ],
     causes:
-      `Patellar tendinopathy is load-related pain in the tendon below the kneecap — classic in jumping, sprinting, and heavy plyometric gym work around Charlton and SE18. Energy-storage loads (jumping, cutting, acceleration) stress the tendon faster than it adapts after quiet weeks or sudden volume spikes. It is not simply “inflammation that needs rest forever”; capacity and progressive loading decide recovery. Fat-pad irritation, patellofemoral joint pain, and Osgood-related patterns in adolescents can mimic or overlap, so assessment matters before a stretch-only plan. Hard court surfaces, hills, and weekend tournament blocks commonly keep the tendon irritable. At Nguyen’s Osteopathic Clinic we map training errors, landing control, and hip/quad capacity rather than chasing a single magic stretch. Sudden charity-run plyometric blocks and hard Charlton court surfaces are frequent local spike errors we plan around rather than ignore. Everyday SE7 load patterns matter as much as the tissue label.`,
+      `Patellar tendinopathy is load-related pain in the tendon below the kneecap — classic in jumping, sprinting, and heavy plyometric gym work around Charlton and nearby SE London. Energy-storage loads (jumping, cutting, acceleration) stress the tendon faster than it adapts after quiet weeks or sudden volume spikes. It is not simply “inflammation that needs rest forever”; capacity and progressive loading decide recovery. Fat-pad irritation, patellofemoral joint pain, and Osgood-related patterns in adolescents can mimic or overlap, so assessment matters before a stretch-only plan. Hard court surfaces, hills, and weekend tournament blocks commonly keep the tendon irritable. At Nguyen’s Osteopathic Clinic we map training errors, landing control, and hip/quad capacity rather than chasing a single magic stretch. Sudden charity-run plyometric blocks and hard Charlton court surfaces are frequent local spike errors we plan around rather than ignore. Everyday SE7 load patterns matter as much as the tissue label.`,
     whoAffected:
       `Basketball, volleyball, football, and netball athletes present often, as do gym athletes stacking jump work onto weak single-leg strength. Adolescents can have growth-related anterior knee pain that still needs load advice. Desk workers who suddenly add skipping or box jumps after sedentary weeks share the same spike-error story. Night throbbing with marked swelling, giving-way, or true locking needs a different pathway than typical tendon loading. People who only foam-roll and keep jumping unchanged usually prolong the flare. Return-to-gym after injury layoffs often underestimates tendon capacity — ambition outruns adaptation within two loud weeks. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.`,
     whatToExpect:
@@ -1747,7 +1747,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "patellar-tendinopathy-shockwave-charlton",
     keywords: [
       "Patellar tendinopathy Charlton",
-      "Patellar tendinopathy osteopath SE18",
+      "Patellar tendinopathy osteopath Charlton",
       "patellar tendinopathy Charlton",
     ],
   },
@@ -1816,7 +1816,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "return-to-sport-after-sprain-charlton",
     keywords: [
       "ACL injury / post-reconstruction Charlton",
-      "ACL injury / post-reconstruction osteopath SE18",
+      "ACL injury / post-reconstruction osteopath Charlton",
       "acl rehab Charlton",
     ],
   },
@@ -1843,7 +1843,7 @@ export const conditions: Condition[] = [
     causes:
       `Meniscal injury involves the cartilage shock absorbers in the knee — from acute twist trauma on sport or uneven Charlton pavement to degenerative tears with age and load. Pain along the joint line, swelling after pivots, and true locking or catching are classic clues. Not every joint-line ache is a tear that needs surgery; many degenerative patterns settle with strength and pacing. Ligament injury, patellofemoral pain, and referred hip pain can overlap, so we take trauma history and mechanical symptoms seriously before labelling. Deep squatting to low cupboards and twisting out of cars are everyday local triggers that keep degenerative meniscal tissue irritable even without sport. At Nguyen’s Osteopathic Clinic we calm effusion and stage squat and twist loads carefully rather than forcing through a locked knee. Everyday SE7 load patterns matter as much as the tissue label on a scan or search result.`,
     whoAffected:
-      `Athletes after twist injuries, adults with degenerative joint change, and people who kneel or squat heavily at work present often. Weekend football and awkward gets-out-of-a-car twists are common stories across SE18. Sudden inability to fully straighten, repeated locking, or a hot swollen knee after trauma needs timely medical or imaging pathways. Gradual joint-line ache without locking often still benefits from osteopathy-led load rehab while we watch for mechanical blocks. People who continue pivoting through a catching knee often prolong swelling and delay strength gains. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.`,
+      `Athletes after twist injuries, adults with degenerative joint change, and people who kneel or squat heavily at work present often. Weekend football and awkward gets-out-of-a-car twists are common stories across Charlton. Sudden inability to fully straighten, repeated locking, or a hot swollen knee after trauma needs timely medical or imaging pathways. Gradual joint-line ache without locking often still benefits from osteopathy-led load rehab while we watch for mechanical blocks. People who continue pivoting through a catching knee often prolong swelling and delay strength gains. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.`,
     whatToExpect:
       `Assessment tests joint line tenderness, swelling, range, and locking history. Care rebuilds quad and hip control, eases secondary soft tissue, and stages squat and twist loads carefully. Hands-on work supports comfort; we do not force through a locked knee. Orthopaedic opinion is discussed for true locking, large traumatic tears, or stalled function after a fair trial. Stair and pivot confidence guide progress so you know when sport return is criteria-based rather than guessed. Local hills and Tube steps shape dosing; fees are clear before follow-ups. Local Charlton and Greenwich borough life — pavements, hills, Tube steps, and desk-to-sport spikes — shapes how we dose care so advice fits your real week rather than a generic leaflet. We judge progress by function you can feel between visits, explain fees before follow-ups, and refer promptly when red flags or stalled recovery make osteopathy-only care the wrong next step.`,
     recoveryTimeline:
@@ -1885,7 +1885,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "hip-knee-pain-osteopath-charlton",
     keywords: [
       "Meniscal injury Charlton",
-      "Meniscal injury osteopath SE18",
+      "Meniscal injury osteopath Charlton",
       "meniscal injury Charlton",
     ],
   },
@@ -1954,7 +1954,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "running-injuries-osteopath-charlton",
     keywords: [
       "Iliotibial band syndrome Charlton",
-      "Iliotibial band syndrome osteopath SE18",
+      "Iliotibial band syndrome osteopath Charlton",
       "itb syndrome Charlton",
     ],
   },
@@ -1966,7 +1966,7 @@ export const conditions: Condition[] = [
     summary:
       "Outer-ankle pain and swelling after a roll — early protected mobility, then hop tests that clear sport honestly.",
     heroLine:
-      "A structured look at lateral ankle sprain for SE18 patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
+      "A structured look at lateral ankle sprain for Charlton patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
       "Pain and swelling on the outer ankle after a roll or invert",
       "Difficulty weight-bearing or trusting uneven ground",
@@ -1981,9 +1981,9 @@ export const conditions: Condition[] = [
     causes:
       `Lateral ankle sprains stretch or tear the outer ankle ligaments after inversion on uneven ground, sport landings, or a missed kerb on Charlton and Plumstead pavements. Swelling and bruising vary with grade; some ankles look quiet yet feel profoundly unstable. Incomplete rehab — not the initial twist alone — predicts chronic instability and the “it keeps going over” story. Protected early motion beats long immobilisation for most grade I–II patterns, but fracture, syndesmosis (“high ankle”), and osteochondral injury must be screened when weight-bearing is impossible or bony landmarks are tender. At Nguyen’s Osteopathic Clinic we grade ligament irritability, check foot and hip contribution to balance, and rebuild trust on uneven ground rather than relying on a tubigrip forever. Hip and foot strength deficits quietly prolong outer-ankle irritability even after ligaments have biologically healed, which is why strap-only plans fail on the next uneven pavement.`,
     whoAffected:
-      `Footballers, netball players, dancers, and people who roll the ankle stepping off a kerb in SE18 present often. Recurrent rollers need balance and strength work, not only rest and compression. Desk workers who then play weekend five-a-side commonly under-rehab the first sprain and pay for it on the second. Adolescents and adults with generalised laxity may feel “better walking” while still failing single-leg balance on soft surfaces. Inability to weight-bear, deformity, numbness, or Ottawa-rule bony tenderness needs imaging pathways first. Chronic giving-way on stairs or cobbles deserves assessment even months after the original twist. Shift workers who roll the ankle at the end of a long standing day often under-dose rehab because evenings feel too tired — we design shorter daily drills that still rebuild trust.`,
+      `Footballers, netball players, dancers, and people who roll the ankle stepping off a kerb in Charlton present often. Recurrent rollers need balance and strength work, not only rest and compression. Desk workers who then play weekend five-a-side commonly under-rehab the first sprain and pay for it on the second. Adolescents and adults with generalised laxity may feel “better walking” while still failing single-leg balance on soft surfaces. Inability to weight-bear, deformity, numbness, or Ottawa-rule bony tenderness needs imaging pathways first. Chronic giving-way on stairs or cobbles deserves assessment even months after the original twist. Shift workers who roll the ankle at the end of a long standing day often under-dose rehab because evenings feel too tired — we design shorter daily drills that still rebuild trust.`,
     whatToExpect:
-      `Early care manages swelling and protected mobility, then progressive strength, balance, and return-to-run or sport drills with brace advice when useful. Hands-on treatment helps residual stiffness in the ankle and neighbouring joints that quietly alter push-off. We screen for fracture risk when Ottawa rules suggest imaging and explain hop and balance tests before any sport clearance. You leave with a clear ladder from alphabet motion to isometric load to single-leg work on harder surfaces. Single-leg balance and hop tests clear sport — not a hopeful ankle strap alone. Fees for follow-ups are agreed as irritability drops so you are not locked into weekly visits by default. Footwear and surface advice for SE18 pavements sits alongside the drills so you are not only strong in clinic trainers.`,
+      `Early care manages swelling and protected mobility, then progressive strength, balance, and return-to-run or sport drills with brace advice when useful. Hands-on treatment helps residual stiffness in the ankle and neighbouring joints that quietly alter push-off. We screen for fracture risk when Ottawa rules suggest imaging and explain hop and balance tests before any sport clearance. You leave with a clear ladder from alphabet motion to isometric load to single-leg work on harder surfaces. Single-leg balance and hop tests clear sport — not a hopeful ankle strap alone. Fees for follow-ups are agreed as irritability drops so you are not locked into weekly visits by default. Footwear and surface advice for Charlton pavements sits alongside the drills so you are not only strong in clinic trainers.`,
     recoveryTimeline:
       `Mild sprains may settle in 1–3 weeks for daily walking; moderate injuries often need 4–8 weeks before sport feels trustworthy. Chronic instability rehab can take longer but responds well to neuromuscular training when done consistently. Early wins are confident flat walking and quieter morning stiffness; later wins are uneven pavements, cutting drills, and match play without the same roll fear. Proprioception lags swelling; hop tests clear sport more honestly than “it feels okay walking” alone. Recurrence drops when balance work continues after the ankle “feels fine.” A quiet maintenance balance habit twice a week after settling cuts the next roll risk more than any single brace purchase.`,
     faqs: [
@@ -2023,7 +2023,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "ankle-sprain-rehab-osteopath-charlton",
     keywords: [
       "Lateral ankle sprain Charlton",
-      "Lateral ankle sprain osteopath SE18",
+      "Lateral ankle sprain osteopath Charlton",
       "lateral ankle sprain Charlton",
     ],
   },
@@ -2092,7 +2092,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "achilles-tendinopathy-shockwave-charlton",
     keywords: [
       "Achilles tendinopathy Charlton",
-      "Achilles tendinopathy osteopath SE18",
+      "Achilles tendinopathy osteopath Charlton",
       "achilles tendinopathy Charlton",
     ],
   },
@@ -2162,7 +2162,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "plantar-fasciitis-shockwave-charlton",
     keywords: [
       "plantar fasciitis Charlton",
-      "heel pain osteopath SE18",
+      "heel pain osteopath Charlton",
       "shockwave heel pain Charlton",
     ],
     featured: true,
@@ -2190,7 +2190,7 @@ export const conditions: Condition[] = [
     causes:
       `Medial tibial stress syndrome (“shin splints”) is load-related pain along the shin from running or marching volume that outpaces bone and soft-tissue adaptation. Hard pavements around Charlton, sudden mileage jumps for a charity run, new minimal shoes, and calf endurance deficits all contribute. The periosteum and deep calf attachments become irritable; true stress fracture must be considered when pain becomes focal, progressive, and worse with hopping or at night. Exertional compartment syndrome is a different pattern — tight pressure and neurological change with activity that eases only with rest — and needs a different pathway. At Nguyen’s Osteopathic Clinic we separate soft-tissue overload from bone-stress risk before anyone “runs through it,” and we reshape surface, shoes, and weekly volume rather than stretching alone. Cadence and step-width tweaks sometimes reduce tibial load, but only after we have ruled out focal bone stress that would make continued impact unsafe.`,
     whoAffected:
-      `New runners, military-style training, park-run progressions, and athletes changing from treadmill to Thames Path concrete present often from SE18 and nearby. Adolescents in growth spurts need careful dosing because bone stress risk rises when sport volume spikes during growth. Desk workers who suddenly add evening runs after sedentary weeks share the same load-error story. Night pain, single-point bone tenderness, or pain that worsens after every session raises stress-fracture suspicion and should pause impact pending clinical review. People who only ice and keep mileage unchanged usually prolong the problem. Charity-run beginners who jump from sofa to 5k plans in under eight weeks are classic presentations; so are parents adding buggy runs on hard paths without calf capacity.`,
+      `New runners, military-style training, park-run progressions, and athletes changing from treadmill to Thames Path concrete present often from Charlton and nearby. Adolescents in growth spurts need careful dosing because bone stress risk rises when sport volume spikes during growth. Desk workers who suddenly add evening runs after sedentary weeks share the same load-error story. Night pain, single-point bone tenderness, or pain that worsens after every session raises stress-fracture suspicion and should pause impact pending clinical review. People who only ice and keep mileage unchanged usually prolong the problem. Charity-run beginners who jump from sofa to 5k plans in under eight weeks are classic presentations; so are parents adding buggy runs on hard paths without calf capacity.`,
     whatToExpect:
       `We differentiate soft-tissue overload from bone-stress risk, adjust running load, and build calf and foot capacity with graded drills. Hands-on care eases secondary calf and tibial soft-tissue tightness while we coach surfaces, shoes, and cross-training that keep fitness without hammering the tibia. Imaging referral happens when bone stress is likely; we do not guess with more foam rolling. You leave with clear hop and walk rules, and a reload ladder that respects bone biology. Hop pain and run volume decide rest versus reload; bone stress always outranks pace goals. Cross-training options (bike, pool, or incline walks) keep fitness while the tibia calms, with clear criteria for when easy runs return.`,
     recoveryTimeline:
@@ -2232,7 +2232,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "shin-splints-osteopath-charlton",
     keywords: [
       "Medial tibial stress syndrome Charlton",
-      "Medial tibial stress syndrome osteopath SE18",
+      "Medial tibial stress syndrome osteopath Charlton",
       "shin splints Charlton",
     ],
   },
@@ -2259,7 +2259,7 @@ export const conditions: Condition[] = [
     causes:
       "Hallux rigidus is stiffness and osteoarthritis of the first metatarsophalangeal (big-toe) joint that limits the toe bend needed for push-off. Prior turf-toe style trauma, repetitive forefoot load in sport or standing work, and age-related joint change all contribute. As the joint loses extension, people roll the foot outward or shorten the stride, which can then irritate the knee, hip, or plantar fascia. Dorsal bony spurs and local swelling make flexible city shoes feel pinching on pavements around Charlton and Greenwich. Inflammatory arthritis can look similar when joints are hot and multiple — that pathway needs medical care rather than footwear tips alone. We assess how much useful motion remains and how your gait is compensating, not only how “bad” an X-ray looks. At Nguyen’s Osteopathic Clinic we match footwear and load advice to Arsenal stairs, hills, and workdays you still need to keep.",
     whoAffected:
-      "Adults with forefoot pain on walking — especially uphill, on stairs, or in soft ballet-style flats — present often from SE18 and nearby. Dancers, court athletes, and people who stand long retail shifts may notice earlier stiffness. Middle-aged walkers increasing park-run volume commonly flare the joint before they notice knee ache from the altered push-off. Red, hot, or rapidly swelling joints, or sudden inability to bear weight after trauma, need medical or imaging pathways first. Bring a short note of which shoes and hills flare the big toe — that history shortens the first assessment.",
+      "Adults with forefoot pain on walking — especially uphill, on stairs, or in soft ballet-style flats — present often from Charlton and nearby. Dancers, court athletes, and people who stand long retail shifts may notice earlier stiffness. Middle-aged walkers increasing park-run volume commonly flare the joint before they notice knee ache from the altered push-off. Red, hot, or rapidly swelling joints, or sudden inability to bear weight after trauma, need medical or imaging pathways first. Bring a short note of which shoes and hills flare the big toe — that history shortens the first assessment.",
     whatToExpect:
       "We measure available 1st MTP range, watch gait push-off, and review the shoes you actually wear to work and on weekends. Hands-on care gently mobilises the stiff big-toe joint and eases intrinsic foot and calf tension that add to toe bend demand. Advice usually includes a stiffer sole or rocker profile, activity tweaks for hills and gym days, and strength cues so the knee and hip stop overcompensating. Surgical or orthopaedic opinion is discussed when end-stage stiffness still limits daily walking after a fair conservative trial — we explain that plainly rather than promising full motion return. We explain fees before follow-ups and judge progress by pavement distance and shoe comfort you can feel between visits.",
     recoveryTimeline:
@@ -2301,7 +2301,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "osteoarthritis-joints-osteopath-charlton",
     keywords: [
       "Hallux rigidus / 1st MTP OA Charlton",
-      "Hallux rigidus / 1st MTP OA osteopath SE18",
+      "Hallux rigidus / 1st MTP OA osteopath Charlton",
       "hallux rigidus Charlton",
     ],
   },
@@ -2313,7 +2313,7 @@ export const conditions: Condition[] = [
     summary:
       "Burning forefoot pain or a pebble-in-shoe feeling — width and cushion advice, with podiatry talk when nights burn.",
     heroLine:
-      "A structured look at morton's neuroma for SE18 patients — history, examination, and a plan you can follow.",
+      "A structured look at morton's neuroma for Charlton patients — history, examination, and a plan you can follow.",
     symptoms: [
       "Burning or electric pain under the forefoot between the toes",
       "Feeling of a pebble in the shoe when walking",
@@ -2326,7 +2326,7 @@ export const conditions: Condition[] = [
       "Coordinate with podiatry or imaging when night burning persists",
     ],
     causes:
-      `Morton’s neuroma-type pain is irritation of an interdigital nerve in the forefoot — classically between the third and fourth toes — with burning, pebbles-in-the-shoe sensation, or toes going numb in tight footwear. Narrow fashion shoes, hard retail floors, and repetitive forefoot load in running or court sport keep the space compressed. Metatarsal mobility, calf tightness, and hallux stiffness can quietly raise forefoot pressure even when the shoe is “supportive.” It is not always a true neuroma on imaging; mechanical irritation of the nerve and bursal tissue often settles when compression drops. At Nguyen’s Osteopathic Clinic we assess shoe width, metatarsal load, and referral from higher up before chasing injections as a first step. Long shopping days in SE18 high-street shoes after weeks of trainers are a classic local flare. Everyday SE7 load patterns matter as much as the tissue label on a scan or search result. Metatarsal pads help some people; others need width first.`,
+      `Morton’s neuroma-type pain is irritation of an interdigital nerve in the forefoot — classically between the third and fourth toes — with burning, pebbles-in-the-shoe sensation, or toes going numb in tight footwear. Narrow fashion shoes, hard retail floors, and repetitive forefoot load in running or court sport keep the space compressed. Metatarsal mobility, calf tightness, and hallux stiffness can quietly raise forefoot pressure even when the shoe is “supportive.” It is not always a true neuroma on imaging; mechanical irritation of the nerve and bursal tissue often settles when compression drops. At Nguyen’s Osteopathic Clinic we assess shoe width, metatarsal load, and referral from higher up before chasing injections as a first step. Long shopping days in Charlton high-street shoes after weeks of trainers are a classic local flare. Everyday SE7 load patterns matter as much as the tissue label on a scan or search result. Metatarsal pads help some people; others need width first.`,
     whoAffected:
       `Adults in narrow fashion shoes, retail and hospitality staff on hard floors, runners, and court athletes present often from Charlton and Greenwich. People with wider forefeet in pointed shoes notice end-of-day burning first. Sudden inability to weight-bear, spreading redness with fever, or progressive foot drop needs medical pathways. Recurrence after shoe changes alone usually means load and intrinsic foot capacity still need work. Bring the shoes that hurt — that history shortens the first assessment. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.`,
     whatToExpect:
@@ -2370,7 +2370,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "plantar-fasciitis-shockwave-charlton",
     keywords: [
       "Morton's neuroma Charlton",
-      "Morton's neuroma osteopath SE18",
+      "Morton's neuroma osteopath Charlton",
       "morton neuroma Charlton",
     ],
   },
@@ -2382,7 +2382,7 @@ export const conditions: Condition[] = [
     summary:
       "Painful arc lifting the arm, worse at night on that side — cuff-friendly mobilisation and overhead load advice.",
     heroLine:
-      "Support for subacromial pain syndrome with osteopathy in Charlton: assessment first, then tailored hands-on care. Local commuting, standing retail shifts, and desk hours in SE18 often shape how symptoms show up day to day.",
+      "Support for subacromial pain syndrome with osteopathy in Charlton: assessment first, then tailored hands-on care. Local commuting, standing retail shifts, and desk hours in Charlton often shape how symptoms show up day to day.",
     symptoms: [
       "Painful arc when lifting the arm out to the side or overhead",
       "Night pain when lying on the shoulder",
@@ -2395,7 +2395,7 @@ export const conditions: Condition[] = [
       "Flag traumatic weakness or night pain that may need imaging",
     ],
     causes:
-      "Subacromial pain describes irritable structures under the acromion — bursal tissue and cuff tendons — that flare with overhead reach, lying on the side, or repetitive elevation at work or the gym. It is often a load and control problem rather than a bone that must be “filed away.” Scapular upward rotation deficits, thoracic stiffness, and sudden painting or pressing volume commonly tip capacity over the edge. Frozen shoulder and cervical referral can look similar early on, so assessment separates global loss of rotation from a painful arc with preserved passive motion. We treat the driver of compression and load at our Charlton clinic, not a single ultrasound buzzword, and we explain when imaging would change the plan versus when graded rehab should lead. Poor sleep positions and unsupported laptop work amplify the same compression pattern overnight, which is why night advice sits beside gym modifications in most plans. Everyday SE18 DIY and desk-to-overhead spikes matter as much as the scan label.",
+      "Subacromial pain describes irritable structures under the acromion — bursal tissue and cuff tendons — that flare with overhead reach, lying on the side, or repetitive elevation at work or the gym. It is often a load and control problem rather than a bone that must be “filed away.” Scapular upward rotation deficits, thoracic stiffness, and sudden painting or pressing volume commonly tip capacity over the edge. Frozen shoulder and cervical referral can look similar early on, so assessment separates global loss of rotation from a painful arc with preserved passive motion. We treat the driver of compression and load at our Charlton clinic, not a single ultrasound buzzword, and we explain when imaging would change the plan versus when graded rehab should lead. Poor sleep positions and unsupported laptop work amplify the same compression pattern overnight, which is why night advice sits beside gym modifications in most plans. Everyday Charlton DIY and desk-to-overhead spikes matter as much as the scan label.",
     whoAffected:
       "Desk and hybrid workers who then DIY overhead, gym athletes returning to pressing, painters, hair and beauty trades, and racket players present frequently from Charlton and Plumstead. Side sleepers notice night pain that wakes them when they roll onto the sore shoulder. Rapid loss of all directions of motion with severe night pain suggests adhesive capsulitis pathways; trauma with inability to lift needs urgent review. Most mechanical subacromial patterns settle with load change and control work when red flags are absent, especially when thoracic mobility and scapular endurance are rebuilt together. Bring a short note of which reaches and sleep positions flare you — that history shortens the first assessment.",
     whatToExpect:
@@ -2439,7 +2439,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "shoulder-pain-frozen-shoulder-charlton",
     keywords: [
       "Subacromial pain syndrome Charlton",
-      "Subacromial pain syndrome osteopath SE18",
+      "Subacromial pain syndrome osteopath Charlton",
       "subacromial pain Charlton",
     ],
   },
@@ -2508,7 +2508,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "gym-shoulder-injury-osteopath-charlton",
     keywords: [
       "Rotator cuff tear Charlton",
-      "Rotator cuff tear osteopath SE18",
+      "Rotator cuff tear osteopath Charlton",
       "rotator cuff tear Charlton",
     ],
   },
@@ -2578,7 +2578,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "shoulder-pain-frozen-shoulder-charlton",
     keywords: [
       "frozen shoulder Charlton",
-      "stiff shoulder osteopath SE18",
+      "stiff shoulder osteopath Charlton",
       "adhesive capsulitis Charlton",
     ],
     featured: true,
@@ -2604,7 +2604,7 @@ export const conditions: Condition[] = [
       "Refer recurrent traumatic dislocations for specialist opinion",
     ],
     causes:
-      "Shoulder instability follows ligament or labral injury after trauma, or inherent laxity that lets the ball of the joint feel loose in certain positions. People describe apprehension, giving-way, or frank dislocation with overhead reach, contact, or end-range stretch. After a traumatic dislocation the joint needs proper acute reduction and screening; ongoing problems then come from weak cuff and scapular control plus fear of the next pop. Overhead and contact sports raise recurrence risk if neuromuscular control is not rebuilt. Atraumatic or hypermobility-related instability behaves differently — stretching into end range often makes it worse. At Nguyen’s Osteopathic Clinic in Charlton we define the direction of instability and the positions that scare you before choosing any hands-on or rehab step. Everyday SE18 gym, contact sport, and overhead reach demands shape how we stage return rather than chasing flexibility myths.",
+      "Shoulder instability follows ligament or labral injury after trauma, or inherent laxity that lets the ball of the joint feel loose in certain positions. People describe apprehension, giving-way, or frank dislocation with overhead reach, contact, or end-range stretch. After a traumatic dislocation the joint needs proper acute reduction and screening; ongoing problems then come from weak cuff and scapular control plus fear of the next pop. Overhead and contact sports raise recurrence risk if neuromuscular control is not rebuilt. Atraumatic or hypermobility-related instability behaves differently — stretching into end range often makes it worse. At Nguyen’s Osteopathic Clinic in Charlton we define the direction of instability and the positions that scare you before choosing any hands-on or rehab step. Everyday Charlton gym, contact sport, and overhead reach demands shape how we stage return rather than chasing flexibility myths.",
     whoAffected:
       "Young contact and overhead athletes — rugby, climbing, swimming, gymnastic-style training — present most often from Greenwich and surrounding boroughs. Hypermobile patients and people with repeated “partial pops” without a big trauma may have atraumatic instability. Desk workers after an old dislocation sometimes notice apprehension only when reaching for a high shelf or sleeping on that side. Neurological deficit, inability to move the arm after a new dislocation, or suspected fracture needs urgent care pathways — not a same-day osteopathy slot for reduction. Bring a short note of which positions feel unsafe and whether you have had a true dislocation — that history shortens the first assessment.",
     whatToExpect:
@@ -2648,7 +2648,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "gym-shoulder-injury-osteopath-charlton",
     keywords: [
       "Shoulder instability Charlton",
-      "Shoulder instability osteopath SE18",
+      "Shoulder instability osteopath Charlton",
       "shoulder instability Charlton",
     ],
   },
@@ -2660,7 +2660,7 @@ export const conditions: Condition[] = [
     summary:
       "Pain on top of the shoulder after a fall or with cross-body reach — AC-aware early loading and deformity escalation.",
     heroLine:
-      "Practical assessment and a clear plan for ac joint sprain / oa — so you understand the driver and the next steps. Local commuting, standing retail shifts, and desk hours in SE18 often shape how symptoms show up day to day.",
+      "Practical assessment and a clear plan for ac joint sprain / oa — so you understand the driver and the next steps. Local commuting, standing retail shifts, and desk hours in Charlton often shape how symptoms show up day to day.",
     symptoms: [
       "Pain on top of the shoulder near the AC joint",
       "Discomfort with cross-body reach, press-ups, or carrying straps",
@@ -2717,7 +2717,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "gym-shoulder-injury-osteopath-charlton",
     keywords: [
       "AC joint sprain / OA Charlton",
-      "AC joint sprain / OA osteopath SE18",
+      "AC joint sprain / OA osteopath Charlton",
       "ac joint injury Charlton",
     ],
   },
@@ -2800,7 +2800,7 @@ export const conditions: Condition[] = [
     summary:
       "Inner-elbow pain with gripping, tools, or wrist flexion load — flexor-origin care and technique changes that cut peak strain.",
     heroLine:
-      "A structured look at medial epicondylalgia for SE18 patients — history, examination, and a plan you can follow. Local commuting, standing retail shifts, and desk hours in SE18 often shape how symptoms show up day to day.",
+      "A structured look at medial epicondylalgia for Charlton patients — history, examination, and a plan you can follow. Local commuting, standing retail shifts, and desk hours in Charlton often shape how symptoms show up day to day.",
     symptoms: [
       "Inner-elbow pain with gripping, lifting, or wrist flexion load",
       "Tenderness over the medial epicondyle after tool or gym days",
@@ -2813,9 +2813,9 @@ export const conditions: Condition[] = [
       "Discuss imaging if medial instability or acute tear is suspected",
     ],
     causes:
-      "Medial epicondylalgia — often called golfer’s elbow — is overload of the common flexor-pronator tendon on the inner elbow. Gripping tools, throwing, climbing, wrist-flexion heavy gym work, and sudden spikes in mouse or screwdriver volume commonly tip capacity over the edge. Like tennis elbow on the outside, the tissue needs graded loading rather than endless rest or only massage. Ulnar nerve irritation at the cubital tunnel can sit alongside or mimic medial elbow pain with tingling into the ring and little fingers — so we separate tendon from nerve drivers on assessment. Poor shoulder endurance and gripping with a flexed wrist raise peak strain at the medial epicondyle during real SE18 workdays. At Nguyen’s Osteopathic Clinic in Charlton we map tool grips, climbing volume, and desk demands before choosing load, hands-on care, or nerve pathways.",
+      "Medial epicondylalgia — often called golfer’s elbow — is overload of the common flexor-pronator tendon on the inner elbow. Gripping tools, throwing, climbing, wrist-flexion heavy gym work, and sudden spikes in mouse or screwdriver volume commonly tip capacity over the edge. Like tennis elbow on the outside, the tissue needs graded loading rather than endless rest or only massage. Ulnar nerve irritation at the cubital tunnel can sit alongside or mimic medial elbow pain with tingling into the ring and little fingers — so we separate tendon from nerve drivers on assessment. Poor shoulder endurance and gripping with a flexed wrist raise peak strain at the medial epicondyle during real Charlton workdays. At Nguyen’s Osteopathic Clinic in Charlton we map tool grips, climbing volume, and desk demands before choosing load, hands-on care, or nerve pathways.",
     whoAffected:
-      "Tradespeople, climbers, throwers, racket players, and desk workers with aggressive gripping present often from Charlton, Plumstead, and Greenwich. DIY weekends after quiet weeks are a classic flare trigger. Ring-and-little-finger tingling, night numbness, or hand clumsiness need ulnar-nerve screening rather than a pure tendon plan. Red, hot elbows or systemic joint pain suggest inflammatory pathways needing medical care. Bring a short note of which grips flare the inner elbow and whether fingers tingle — that history shortens the first assessment. Tool trades around SE18 who spike screwdriver or hammer volume after quiet weeks are classic visitors.",
+      "Tradespeople, climbers, throwers, racket players, and desk workers with aggressive gripping present often from Charlton, Plumstead, and Greenwich. DIY weekends after quiet weeks are a classic flare trigger. Ring-and-little-finger tingling, night numbness, or hand clumsiness need ulnar-nerve screening rather than a pure tendon plan. Red, hot elbows or systemic joint pain suggest inflammatory pathways needing medical care. Bring a short note of which grips flare the inner elbow and whether fingers tingle — that history shortens the first assessment. Tool trades around Charlton who spike screwdriver or hammer volume after quiet weeks are classic visitors.",
     whatToExpect:
       "Assessment confirms medial tendon irritability, screens ulnar nerve and cervical mimics, then sets a progressive grip-loading ladder with task modification for tools, mouse, and lifts. Hands-on forearm and shoulder care supports the reload without pretending soft tissue alone is the cure. When clinically suitable we discuss focused shockwave for stubborn tendon pain and confirm fees first. Grip and tool tasks set the weekly scoreboard; we review rather than grinding the same passive session forever. Local Charlton trades and sport demands shape how we dose care so advice fits your real week rather than a generic leaflet. We refer promptly when nerve signs progress or inflammatory red flags appear.",
     recoveryTimeline:
@@ -2857,7 +2857,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "golfers-elbow-osteopath-charlton",
     keywords: [
       "Medial epicondylalgia Charlton",
-      "Medial epicondylalgia osteopath SE18",
+      "Medial epicondylalgia osteopath Charlton",
       "medial epicondylalgia Charlton",
     ],
   },
@@ -2926,7 +2926,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "wrist-hand-pain-osteopath-se18",
     keywords: [
       "Cubital tunnel syndrome Charlton",
-      "Cubital tunnel syndrome osteopath SE18",
+      "Cubital tunnel syndrome osteopath Charlton",
       "cubital tunnel Charlton",
     ],
   },
@@ -2947,7 +2947,7 @@ export const conditions: Condition[] = [
     howWeHelp: [
       "Screen median nerve signs versus cervical radiculopathy mimics",
       "Gentle wrist and forearm soft-tissue care plus nerve glides as tolerated",
-      "Keyboard, phone, and night-splint strategies for SE18 desk roles",
+      "Keyboard, phone, and night-splint strategies for Charlton desk roles",
       "Refer for nerve studies or injection when numbness is constant",
     ],
     causes:
@@ -2995,7 +2995,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "rsi-wrist-forearm-office-osteopath",
     keywords: [
       "Carpal tunnel syndrome Charlton",
-      "Carpal tunnel syndrome osteopath SE18",
+      "Carpal tunnel syndrome osteopath Charlton",
       "carpal tunnel Charlton",
     ],
   },
@@ -3020,9 +3020,9 @@ export const conditions: Condition[] = [
       "Discuss injection or imaging if swelling and pain stall",
     ],
     causes:
-      "De Quervain’s tenosynovitis irritates the thumb tendons (APL/EPB) in the first dorsal compartment at the wrist. Repetitive lifting with the thumb abducted, phone scrolling, wringing, and new-parent “mummy thumb” postures are classic drivers. The compartment becomes swollen and painful with hitchhiker’s hitch–type load, picking up a child under the arms, or lifting a kettle. Sudden spikes in caring load after quiet months overwhelm tendon capacity; complete rest then a hard return often restarts the cycle. CMC osteoarthritis and intersection syndrome can sit nearby — we localise which structure is irritable rather than treating every radial wrist ache the same way. At Nguyen’s Osteopathic Clinic in Charlton we map phone, lift, and childcare grips against SE18 workdays before choosing relative rest, hands-on care, or medical options. Everyday Elizabeth line scrolling and The Village parenting loads matter as much as the tendon label.",
+      "De Quervain’s tenosynovitis irritates the thumb tendons (APL/EPB) in the first dorsal compartment at the wrist. Repetitive lifting with the thumb abducted, phone scrolling, wringing, and new-parent “mummy thumb” postures are classic drivers. The compartment becomes swollen and painful with hitchhiker’s hitch–type load, picking up a child under the arms, or lifting a kettle. Sudden spikes in caring load after quiet months overwhelm tendon capacity; complete rest then a hard return often restarts the cycle. CMC osteoarthritis and intersection syndrome can sit nearby — we localise which structure is irritable rather than treating every radial wrist ache the same way. At Nguyen’s Osteopathic Clinic in Charlton we map phone, lift, and childcare grips against Charlton workdays before choosing relative rest, hands-on care, or medical options. Everyday Elizabeth line scrolling and The Village parenting loads matter as much as the tendon label.",
     whoAffected:
-      "New parents, grandparents sharing childcare, desk workers on phones, hair and beauty trades, and people using pinch grips all day present often from SE18. Postpartum hormonal and load changes make this especially common in the first year. Hot, swollen multiple joints or systemic inflammatory signs need medical care — De Quervain’s is usually a load story, not an autoimmune one, but mimics exist. Bring a short note of which lifts and phone habits flare the thumb side — that history shortens the first assessment. Hybrid workers who scroll on the commute then lift toddlers at home often share the same radial sting pattern.",
+      "New parents, grandparents sharing childcare, desk workers on phones, hair and beauty trades, and people using pinch grips all day present often from Charlton. Postpartum hormonal and load changes make this especially common in the first year. Hot, swollen multiple joints or systemic inflammatory signs need medical care — De Quervain’s is usually a load story, not an autoimmune one, but mimics exist. Bring a short note of which lifts and phone habits flare the thumb side — that history shortens the first assessment. Hybrid workers who scroll on the commute then lift toddlers at home often share the same radial sting pattern.",
     whatToExpect:
       "Assessment confirms first-compartment irritability (including Finkelstein-type load) and screens CMC and forearm contributors. We modify aggravating lifts — bring baby close, avoid awkward ulnar deviation — use relative rest of the worst tasks, then progressively reload the tendons. Hands-on forearm care and short-term splinting can calm early irritability while habits change. Phone and lift coaching continues until day-to-day grips no longer spark the same radial sting. Injection or imaging talk comes if swelling and pain stall despite a fair load trial. We explain fees before follow-ups and judge progress by kettle, phone, and childcare grips you can feel between visits, referring promptly when swelling stays marked.",
     recoveryTimeline:
@@ -3064,7 +3064,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "wrist-hand-pain-osteopath-se18",
     keywords: [
       "De Quervain's tenosynovitis Charlton",
-      "De Quervain's tenosynovitis osteopath SE18",
+      "De Quervain's tenosynovitis osteopath Charlton",
       "dequervains Charlton",
     ],
   },
@@ -3074,9 +3074,9 @@ export const conditions: Condition[] = [
     shortTitle: "Thumb CMC osteoarthritis",
     region: "Elbow & Wrist",
     summary:
-      "Base-of-thumb pain with jars, keys, and pinch — CMC mobilisation and splint advice for daily tasks in SE18.",
+      "Base-of-thumb pain with jars, keys, and pinch — CMC mobilisation and splint advice for daily tasks in Charlton.",
     heroLine:
-      "A structured look at thumb cmc osteoarthritis for SE18 patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
+      "A structured look at thumb cmc osteoarthritis for Charlton patients — history, examination, and a plan you can follow. Bring a short note of what eases or aggravates symptoms — that history shortens the first assessment.",
     symptoms: [
       "Pain at the base of the thumb with pinch and twist",
       "Difficulty opening jars, turning keys, or writing for long",
@@ -3133,7 +3133,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "wrist-hand-pain-osteopath-se18",
     keywords: [
       "Thumb CMC osteoarthritis Charlton",
-      "Thumb CMC osteoarthritis osteopath SE18",
+      "Thumb CMC osteoarthritis osteopath Charlton",
       "cmc oa Charlton",
     ],
   },
@@ -3145,7 +3145,7 @@ export const conditions: Condition[] = [
     summary:
       "Widespread aching, fatigue, and non-refreshing sleep — gentle osteopathy focused on pacing and calm, alongside GP pathways.",
     heroLine:
-      "A structured look at fibromyalgia / central sensitisation for SE18 patients — history, examination, and a plan you can follow.",
+      "A structured look at fibromyalgia / central sensitisation for Charlton patients — history, examination, and a plan you can follow.",
     symptoms: [
       "Widespread aching with fatigue and non-refreshing sleep",
       "Flare days after small increases in activity or stress",
@@ -3202,7 +3202,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "chronic-pain-osteopath-charlton",
     keywords: [
       "Fibromyalgia / central sensitisation Charlton",
-      "Fibromyalgia / central sensitisation osteopath SE18",
+      "Fibromyalgia / central sensitisation osteopath Charlton",
       "fibromyalgia Charlton",
     ],
   },
@@ -3229,7 +3229,7 @@ export const conditions: Condition[] = [
     causes:
       `Deconditioning is reduced fitness, strength, balance, and movement confidence after illness, pain flares, surgery, or long inactivity — not a character flaw. Everyday Charlton tasks (hills to the station, stairs with shopping, getting off the sofa) then feel harder, which feeds avoidance and further loss of capacity. Fear of flare after previous pain episodes often keeps people below the dose that would rebuild them. It is reversible with graded exposure and strength when medical barriers are respected. Jumping straight into bootcamp or “making up for lost time” in the gym commonly rebounds into setbacks. At Nguyen’s Osteopathic Clinic we set tiny repeatable ladders and ease the stiff regions that block early re-entry to movement. Pain-related fear and “rest until zero pain” advice from well-meaning friends often deepen the capacity gap more than the original illness.`,
     whoAffected:
-      `People after surgery, long COVID-type fatigue patterns, chronic pain flare cycles, and long sedentary stretches present often from SE18 and nearby. Older adults after falls fear, and desk workers who stopped all incidental walking in hybrid roles, share similar confidence gaps. Parents exhausted by caring loads may notice breathlessness on modest hills that used to feel easy. Unexplained chest pain, severe breathlessness at rest, syncope, or medical red flags need GP review before ambitious training. Patients told to “just exercise more” without a graded plan often fail — not from lack of willpower, but from dose errors. NHS staff and students on irregular shifts benefit from micro-doses that fit real rotas rather than perfect gym calendars.`,
+      `People after surgery, long COVID-type fatigue patterns, chronic pain flare cycles, and long sedentary stretches present often from Charlton and nearby. Older adults after falls fear, and desk workers who stopped all incidental walking in hybrid roles, share similar confidence gaps. Parents exhausted by caring loads may notice breathlessness on modest hills that used to feel easy. Unexplained chest pain, severe breathlessness at rest, syncope, or medical red flags need GP review before ambitious training. Patients told to “just exercise more” without a graded plan often fail — not from lack of willpower, but from dose errors. NHS staff and students on irregular shifts benefit from micro-doses that fit real rotas rather than perfect gym calendars.`,
     whatToExpect:
       `We set a baseline you can repeat on a bad day, then progress walking minutes, sit-to-stand strength, balance, and joint mobility without heroic spikes. Hands-on care eases secondary stiffness in neck, back, and hips that make early movement feel punishing. Plans respect medical advice from your GP when fatigue syndromes are complex; we do not override cardiac or post-viral precautions. You leave with clear weekly targets and stop rules for flares. Sit-to-stand and walk minutes are the wins; we build capacity without bootcamp shock. Follow-ups adjust dose when life (shifts, caring, illness) interrupts consistency. Balance and sit-to-stand progressions are measured in clinic so you can see objective change when motivation dips.`,
     recoveryTimeline:
@@ -3271,7 +3271,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "osteopathy-for-older-adults-charlton",
     keywords: [
       "General deconditioning / sedentary lifestyle Charlton",
-      "General deconditioning / sedentary lifestyle osteopath SE18",
+      "General deconditioning / sedentary lifestyle osteopath Charlton",
       "deconditioning Charlton",
     ],
   },
@@ -3340,7 +3340,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "osteopathy-for-older-adults-charlton",
     keywords: [
       "Osteoporosis / low bone density Charlton",
-      "Osteoporosis / low bone density osteopath SE18",
+      "Osteoporosis / low bone density osteopath Charlton",
       "osteoporosis Charlton",
     ],
   },
@@ -3367,7 +3367,7 @@ export const conditions: Condition[] = [
     causes:
       `After surgery, stiffness, protective muscle guarding, scar sensitivity, swelling, and deconditioning commonly limit function even when the operation succeeded. Fear of “undoing” the surgery slows natural movement; neighbouring joints then compensate and pick up secondary pain. Wound stage, implant precautions, and consultant timelines decide what is safe — osteopathy supports recovery inside that envelope and does not replace surgical advice. Orthopaedic, abdominal, and other procedures each carry different early limits. At Nguyen’s Osteopathic Clinic in Charlton we restore comfortable mobility and graded strength while respecting your surgeon and physio milestones, and we escalate infection, DVT, or unexpected neurological change immediately. Scar adherence and protective bracing can persist for months if never gently addressed, especially after procedures where early physio access was limited.`,
     whoAffected:
-      `Patients after joint replacement, arthroscopy, spinal procedures, abdominal surgery, or fracture fixation who feel stuck with stiffness or compensatory pain present often from SE18 and nearby. People discharged with a sheet of exercises but little confidence commonly need hands-on ease plus clearer dosing. Signs of infection, calf swelling suggestive of DVT, wound breakdown, fever, or sudden neurological change need urgent medical care first — not soft-tissue work. Those still under active surgical restriction (non-weight-bearing, range limits) must bring written precautions so we do not guess. Post-op fatigue and sleep disruption are normal early; boom-bust “catch up” weeks often prolong irritability. Carers returning to lifting children or shopping bags need task-specific progressions inside their surgical limits, not generic gym templates.`,
+      `Patients after joint replacement, arthroscopy, spinal procedures, abdominal surgery, or fracture fixation who feel stuck with stiffness or compensatory pain present often from Charlton and nearby. People discharged with a sheet of exercises but little confidence commonly need hands-on ease plus clearer dosing. Signs of infection, calf swelling suggestive of DVT, wound breakdown, fever, or sudden neurological change need urgent medical care first — not soft-tissue work. Those still under active surgical restriction (non-weight-bearing, range limits) must bring written precautions so we do not guess. Post-op fatigue and sleep disruption are normal early; boom-bust “catch up” weeks often prolong irritability. Carers returning to lifting children or shopping bags need task-specific progressions inside their surgical limits, not generic gym templates.`,
     whatToExpect:
       `We review your stage, wound status, and precautions first, then restore comfortable mobility and neighbouring joint function within surgical limits. Soft-tissue care around scars and compensatory regions is progressive and gentle early on; aggressive “scar breaking” is avoided while tissue is irritable. Graded strength and daily-task return sit inside your surgeon/physio timeline with clear stop rules. Communication is plain about what we will and will not do. Surgeon timelines and wound status always outrank our local preferences. You leave knowing which home drills match this week’s stage and when to contact the surgical team instead of pushing through. Swelling and sleep quality are tracked as closely as range so we know when to hold versus progress.`,
     recoveryTimeline:
@@ -3409,7 +3409,7 @@ export const conditions: Condition[] = [
     relatedBlogSlug: "sports-injury-osteopath-charlton",
     keywords: [
       "Post-surgical rehab Charlton",
-      "Post-surgical rehab osteopath SE18",
+      "Post-surgical rehab osteopath Charlton",
       "post surgical general Charlton",
     ],
   },

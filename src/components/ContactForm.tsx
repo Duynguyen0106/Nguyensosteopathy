@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FormEvent, MouseEvent, useState } from "react";
 import { site } from "@/lib/site";
+import { bookHref } from "@/lib/seo-strategy";
 
 function buildEnquiryText(data: FormData) {
   const name = String(data.get("name") ?? "").trim();
@@ -151,7 +152,7 @@ export function ContactForm() {
               {site.phone}
             </a>
             , or{" "}
-            <Link href="/book" className="prose-link">
+            <Link href={bookHref("contact")} className="prose-link">
               book online
             </Link>
             .
@@ -168,7 +169,7 @@ export function ContactForm() {
               WhatsApp
             </a>
             , or{" "}
-            <Link href="/book" className="prose-link">
+            <Link href={bookHref("contact")} className="prose-link">
               book online
             </Link>
             .
@@ -177,7 +178,7 @@ export function ContactForm() {
           <p className="text-xs text-slate-500">
             WhatsApp is the quickest way to reach us on a phone. Email opens your
             mail app as a backup — or{" "}
-            <Link href="/book" className="prose-link">
+            <Link href={bookHref("contact")} className="prose-link">
               book online
             </Link>
             .

@@ -4,7 +4,7 @@ import { BookingEmbed } from "@/components/BookingEmbed";
 import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { defaultOgImage, faqPageJsonLd, pageOpenGraph } from "@/lib/seo";
-import { bookHref } from "@/lib/seo-strategy";
+import { bookHref, viBookHref, withBookingAttribution } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const viBookFaqs = [
@@ -66,7 +66,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function VietnameseBookPage() {
+type VietnameseBookPageProps = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function VietnameseBookPage({
+  searchParams,
+}: VietnameseBookPageProps) {
+  const params = await searchParams;
+  const embedSrc = withBookingAttribution(site.bookingEmbedUrl, params);
+  const externalHref = withBookingAttribution(site.bookingExternalUrl, params);
   const faqLd = faqPageJsonLd(viBookFaqs, "vi");
 
   return (
@@ -147,7 +156,7 @@ export default function VietnameseBookPage() {
         </div>
       </div>
 
-      <BookingEmbed />
+      <BookingEmbed embedSrc={embedSrc} externalHref={externalHref} />
 
       <section className="mx-auto max-w-3xl px-5 py-12 md:px-8">
         <h2 className="font-display text-2xl text-navy md:text-3xl">

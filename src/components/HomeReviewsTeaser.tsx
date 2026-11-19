@@ -1,6 +1,7 @@
 import { ButtonLink } from "@/components/Button";
 import { StarRating } from "@/components/StarRating";
 import { getGooglePlaceReviews } from "@/lib/google-reviews";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 /** Compact homepage social proof — rating + up to two Google quotes. */
@@ -19,7 +20,7 @@ export async function HomeReviewsTeaser() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <ButtonLink href="/book">Book online</ButtonLink>
+          <ButtonLink href={bookHref("reviews")}>Book online</ButtonLink>
           <ButtonLink
             href={mapsUrl}
             variant="secondary"
@@ -105,7 +106,7 @@ export async function HomeReviewsTeaser() {
             review to help neighbours find care in Charlton.
           </p>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("reviews")}>Book online</ButtonLink>
             <ButtonLink
               href={mapsUrl}
               variant="secondary"

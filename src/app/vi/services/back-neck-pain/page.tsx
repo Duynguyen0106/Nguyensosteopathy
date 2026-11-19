@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { defaultOgImage, pageOpenGraph } from "@/lib/seo";
-import { bookHref } from "@/lib/seo-strategy";
+import { viBookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -182,7 +182,7 @@ export default function VietnameseBackNeckPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href={bookHref("vi")}>Đặt lịch online</ButtonLink>
+            <ButtonLink href={viBookHref()}>Đặt lịch online</ButtonLink>
             <ButtonLink href="/vi/services/home-visits" variant="secondary">
               Khám tại nhà
             </ButtonLink>

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/cupping" },
   keywords: [
     "cupping Charlton",
-    "cupping therapy SE18",
+    "cupping therapy Charlton",
     "cupping add-on osteopath",
     "cupping vs massage Charlton",
     "myofascial cupping London",

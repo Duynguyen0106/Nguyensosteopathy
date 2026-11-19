@@ -157,7 +157,7 @@ const CATEGORY_DEFAULTS: Partial<Record<BlogCategory, ConditionLink[]>> = {
   ],
   "Local guides": [
     { slug: "non-specific-low-back-pain", anchor: "lower back pain care in Charlton" },
-    { slug: "neck-pain", anchor: "neck pain care in SE18" },
+    { slug: "neck-pain", anchor: "neck pain care in Charlton" },
   ],
   Cranial: [
     { slug: "cervicogenic-headache", anchor: "neck-related headaches" },

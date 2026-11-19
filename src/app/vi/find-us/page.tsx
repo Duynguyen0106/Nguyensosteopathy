@@ -5,7 +5,7 @@ import { ButtonLink } from "@/components/Button";
 import { LazyMapsEmbed } from "@/components/LazyMapsEmbed";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { defaultOgImage, faqPageJsonLd, pageOpenGraph } from "@/lib/seo";
-import { bookHref } from "@/lib/seo-strategy";
+import { viBookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const viFindFaqs = [
@@ -117,7 +117,7 @@ export default function VietnameseFindUsPage() {
             >
               Mở Google Maps
             </ButtonLink>
-            <ButtonLink href={bookHref("vi")} variant="secondary">
+            <ButtonLink href={viBookHref()} variant="secondary">
               Đặt lịch
             </ButtonLink>
             <ButtonLink href="/vi" variant="secondary">

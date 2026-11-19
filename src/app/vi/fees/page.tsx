@@ -8,7 +8,7 @@ import {
   pageOpenGraph,
   trimDescription,
 } from "@/lib/seo";
-import { bookHref } from "@/lib/seo-strategy";
+import { viBookHref } from "@/lib/seo-strategy";
 import { pricing, site } from "@/lib/site";
 
 const feesDescription = trimDescription(
@@ -108,7 +108,7 @@ export default function VietnameseFeesPage() {
             </Link>
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href={bookHref("vi")}>Đặt lịch online</ButtonLink>
+            <ButtonLink href={viBookHref()}>Đặt lịch online</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Gọi {site.phone}
             </ButtonLink>

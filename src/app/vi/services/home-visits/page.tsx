@@ -4,6 +4,7 @@ import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { defaultOgImage, pageOpenGraph } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { viBookHref } from "@/lib/seo-strategy";
 
 export const metadata: Metadata = {
   title: {
@@ -115,7 +116,7 @@ export default function VietnameseHomeVisitsPage() {
             >
               WhatsApp
             </ButtonLink>
-            <ButtonLink href="/vi/book" variant="secondary">
+            <ButtonLink href={viBookHref()} variant="secondary">
               Đặt lịch tại phòng khám
             </ButtonLink>
           </div>

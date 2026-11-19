@@ -1,26 +1,25 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
-import Link from "next/link";
+import { bookHref } from "@/lib/seo-strategy";
 import { ButtonLink } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
-import { LazyMapsEmbed } from "@/components/LazyMapsEmbed";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Osteopath in Charlton",
-  description: `Contact Nguyen's Osteopathic Clinic inside Village Pharmacy, 9 The Village, Charlton SE7. Call ${site.phone}, WhatsApp, email, or book online.`,
+  description: `Contact Nguyen's Osteopathic Clinic in Charlton SE7. Call ${site.phone}, WhatsApp, email, or send a message — book online when you are ready.`,
   alternates: { canonical: "/contact" },
   keywords: [
     "contact osteopath Charlton",
-    "osteopath The Village",
-    "Village Pharmacy osteopath",
-    "osteopath SE18 phone",
+    "osteopath Charlton phone",
+    "WhatsApp osteopath Charlton",
+    "email osteopath SE7",
     "Nguyen's Osteopathic Clinic contact",
   ],
   openGraph: {
     title: "Contact Nguyen's Osteopathic Clinic | Charlton SE7",
     description:
-      "Call, WhatsApp, email, or visit us inside Village Pharmacy at The Village.",
+      "Call, WhatsApp, email, or send a message — book online when you are ready.",
     url: "/contact",
     images: [defaultOgImage],
   },
@@ -69,14 +68,14 @@ export default function ContactPage() {
             Nguyen&apos;s Osteopathic Clinic
           </p>
           <h1 className="opening-hero-copy opening-hero-delay-1 mt-3 max-w-3xl font-display text-4xl text-navy md:text-6xl">
-            Contact &amp; visit
+            Contact the clinic
           </h1>
           <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Reach Austin by phone, WhatsApp, or email — or book online for a
-            time that suits you.
+            time that suits you. For directions and parking, see Find us.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("contact")}>Book online</ButtonLink>
             <ButtonLink
               href={site.whatsappUrl}
               variant="secondary"
@@ -124,7 +123,7 @@ export default function ContactPage() {
             </ul>
 
             <div className="mt-10 border-t border-slate-200 pt-8">
-              <h2 className="font-display text-2xl text-navy">Visit us</h2>
+              <h2 className="font-display text-2xl text-navy">Clinic address</h2>
               <p className="mt-3 text-base font-medium text-slate-700">
                 {site.address.venue}
                 <br />
@@ -133,32 +132,17 @@ export default function ContactPage() {
                 {site.address.line2}
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Ask at the pharmacy counter on arrival — they will direct you to
-                the osteopathy consultation room.
+                {site.booking.shortNote} For parking, rail, buses, and arrival
+                steps, use the Find us guide.
               </p>
-              <p className="mt-4 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                Pharmacy building
-              </p>
-              <ul className="mt-2 space-y-1 text-sm font-medium text-slate-700">
-                {site.hours.map((row) => (
-                  <li key={row.days}>
-                    <span className="text-navy">{row.days}</span> · {row.time}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-xs font-semibold tracking-[0.14em] text-teal uppercase">
-                Bookable osteopathy
-              </p>
-              <ul className="mt-2 space-y-1 text-sm font-medium text-slate-700">
-                {site.booking.hours.map((row) => (
-                  <li key={`book-${row.days}`}>
-                    <span className="text-navy">{row.days}</span> · {row.time}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-3 text-xs leading-relaxed text-slate-500">
-                {site.booking.shortNote}
-              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ButtonLink href="/find-us" variant="secondary">
+                  Find us &amp; parking
+                </ButtonLink>
+                <ButtonLink href="/areas" variant="secondary">
+                  Areas we serve
+                </ButtonLink>
+              </div>
               <p className="mt-4 text-xs text-slate-500">{site.cancellation}</p>
             </div>
           </div>
@@ -172,47 +156,6 @@ export default function ContactPage() {
             <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
               <ContactForm />
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 className="font-display text-3xl text-navy">Find us on the map</h2>
-              <p className="mt-2 text-sm text-slate-600">
-                9 The Village, Charlton — easy from Greenwich, Plumstead, and
-                Abbey Wood.{" "}
-                <Link
-                  href="/find-us"
-                  className="font-semibold text-teal hover:text-teal-dark"
-                >
-                  Find us &amp; parking →
-                </Link>
-                {" · "}
-                <Link
-                  href="/areas"
-                  className="font-semibold text-teal hover:text-teal-dark"
-                >
-                  Areas we serve
-                </Link>
-              </p>
-            </div>
-            <ButtonLink
-              href={site.address.mapsUrl}
-              variant="navy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open in Google Maps
-            </ButtonLink>
-          </div>
-          <div className="mt-8">
-            <LazyMapsEmbed
-              title="Map to Nguyen's Osteopathic Clinic, 9 The Village Charlton"
-              src={site.address.mapsEmbedUrl}
-            />
           </div>
         </div>
       </section>

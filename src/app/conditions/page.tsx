@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { defaultOgImage } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import {
@@ -154,7 +155,7 @@ export default function ConditionsIndexPage() {
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <ButtonLink
-                href="/book"
+                href={bookHref("conditions")}
                 variant="navy"
                 className="min-h-12 px-6 py-3 text-base font-bold tracking-wide"
               >

@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
 import {
   getAllServiceAreaSlugs,
+  getAreaFaqs,
   getServiceArea,
   serviceAreas,
 } from "@/lib/areas";
@@ -12,6 +14,7 @@ import {
   breadcrumbJsonLd,
   defaultOgImage,
   enrichDescription,
+  faqPageJsonLd,
 } from "@/lib/seo";
 import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
@@ -53,6 +56,7 @@ export default async function AreaPage({ params }: Props) {
   if (!area) notFound();
 
   const others = serviceAreas.filter((item) => item.slug !== area.slug);
+  const faqs = getAreaFaqs(area);
 
   const pageLd = {
     "@context": "https://schema.org",
@@ -69,6 +73,7 @@ export default async function AreaPage({ params }: Props) {
     },
   };
 
+  const faqLd = faqPageJsonLd(faqs);
   const crumbsLd = breadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Areas", path: "/areas" },
@@ -80,6 +85,10 @@ export default async function AreaPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <script
         type="application/ld+json"
@@ -107,9 +116,6 @@ export default async function AreaPage({ params }: Props) {
             </ButtonLink>
             <ButtonLink href="/find-us" variant="secondary">
               Find us &amp; parking
-            </ButtonLink>
-            <ButtonLink href="/services/home-visits" variant="secondary">
-              Home visits
             </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
@@ -179,8 +185,23 @@ export default async function AreaPage({ params }: Props) {
               >
                 Open in Maps
               </ButtonLink>
+              <ButtonLink href="/services/home-visits" variant="secondary">
+                Home visits
+              </ButtonLink>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-display text-3xl text-navy">
+            FAQs for patients near {area.name}
+          </h2>
+          <p className="mt-3 text-base leading-relaxed text-slate-600">
+            Quick answers before you travel from {area.name} to Charlton SE7.
+          </p>
+          <FaqAccordion items={faqs} />
         </div>
       </section>
 
@@ -226,6 +247,13 @@ export default async function AreaPage({ params }: Props) {
               </li>
             ) : null}
           </ul>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            <ButtonLink href={bookHref("areas")}>Book online</ButtonLink>
+            <ButtonLink href="/find-us" variant="secondary">
+              Find us
+            </ButtonLink>
+          </div>
 
           <div className="mt-14">
             <h2 className="font-display text-2xl text-navy">

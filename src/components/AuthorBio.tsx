@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ButtonLink } from "@/components/Button";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 type AuthorBioProps = {
@@ -50,7 +51,7 @@ export function AuthorBio({ className = "" }: AuthorBioProps) {
           {site.practitioner.bio}
         </p>
         <div className="mt-4 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
-          <ButtonLink href="/book">Book an appointment</ButtonLink>
+          <ButtonLink href={bookHref("author-bio")}>Book an appointment</ButtonLink>
           <ButtonLink href="/about" variant="secondary">
             About Austin
           </ButtonLink>

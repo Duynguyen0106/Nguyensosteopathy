@@ -13,6 +13,7 @@ import { ServiceIcon } from "@/components/ServiceIcon";
 import { getLatestPostCards } from "@/lib/blog";
 import { getFeaturedConditions } from "@/lib/conditions";
 import { faqPageJsonLd } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import {
   faqs,
   getServiceHref,
@@ -208,7 +209,7 @@ export default function HomePage() {
             </a>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <ButtonLink href="/book">Book online</ButtonLink>
+              <ButtonLink href={bookHref("home")}>Book online</ButtonLink>
               <ButtonLink href="/about" variant="secondary">
                 Read Austin&apos;s story
               </ButtonLink>
@@ -236,10 +237,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <ButtonLink href="/book">Book online</ButtonLink>
-              <ButtonLink href="/services/focused-shockwave" variant="secondary">
-                Shockwave guide
-              </ButtonLink>
+              <ButtonLink href={bookHref("home")}>Book online</ButtonLink>
               <ButtonLink href="/services" variant="secondary">
                 View all services
               </ButtonLink>
@@ -341,7 +339,7 @@ export default function HomePage() {
             {site.discount}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("home")}>Book online</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>
@@ -545,7 +543,7 @@ export default function HomePage() {
             direct you to the osteopathy room.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/book">Book online</ButtonLink>
+            <ButtonLink href={bookHref("home")}>Book online</ButtonLink>
             <ButtonLink href={site.phoneHref} variant="secondary">
               Call {site.phone}
             </ButtonLink>

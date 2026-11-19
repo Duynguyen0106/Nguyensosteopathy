@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/desk-pain" },
   keywords: [
     "desk pain osteopath Charlton",
-    "office neck pain SE18",
+    "office neck pain Charlton",
     "hybrid worker osteopath London",
     "RSI wrist osteopath Charlton",
     "text neck osteopath",

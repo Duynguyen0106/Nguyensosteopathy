@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { defaultOgImage, faqPageJsonLd, pageOpenGraph } from "@/lib/seo";
-import { bookHref } from "@/lib/seo-strategy";
+import { viBookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const viAboutFaqs = [
@@ -108,7 +108,7 @@ export default function VietnameseAboutPage() {
             </Link>
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href={bookHref("vi")} variant="onDark">
+            <ButtonLink href={viBookHref()} variant="onDark">
               Đặt lịch
             </ButtonLink>
             <ButtonLink href={site.phoneHref} variant="onDarkOutline">

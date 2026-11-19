@@ -148,7 +148,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         paragraphs: [
           "Hybrid and office work around Charlton often means hours at a laptop. The neck and upper shoulders take the load when the screen sits too low, the chair is too soft, or you hold tension through deadlines and back-to-back calls.",
-          "Patients describe a heavy aching neck, tight shoulders, or headaches that build through the afternoon. Osteopathy can release irritable soft tissue, improve joint mobility, and show you movement snacks that fit a real SE18 workday — not a wellness retreat.",
+          "Patients describe a heavy aching neck, tight shoulders, or headaches that build through the afternoon. Osteopathy can release irritable soft tissue, improve joint mobility, and show you movement snacks that fit a real Charlton workday — not a wellness retreat.",
         ],
       },
       {
@@ -375,7 +375,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
       {
         heading: "Footwear and standing jobs",
         paragraphs: [
-          "Retail and hospitality floors in SE18 are unforgiving. Rotating into a firmer shoe mid-shift and using a small anti-fatigue mat where allowed can cut end-of-day heel spikes. Avoid spending evenings barefoot on hard tiles if mornings are already brutal.",
+          "Retail and hospitality floors in Charlton are unforgiving. Rotating into a firmer shoe mid-shift and using a small anti-fatigue mat where allowed can cut end-of-day heel spikes. Avoid spending evenings barefoot on hard tiles if mornings are already brutal.",
           "If night pain and whole-foot swelling dominate, seek medical review to exclude other causes before assuming plantar fasciitis.",
         ],
       },
@@ -678,7 +678,7 @@ export const blogExpandedPriority: Record<string, ExpandedBlogBody> = {
         heading: "Why desk days lock the mid-back",
         paragraphs: [
           "Looking down at a laptop closes the upper back and asks the muscles between the shoulder blades to hold a long static load. Soft sofas and café tables make it worse: hips sink, the chest collapses, and the mid-back never gets the extension it needs through the day.",
-          "Phone-shoulder clenching on calls and a secondary monitor off to one side add a constant twist. By evening many people feel a dull band between the blades, a catch on deep breath, or stiffness turning to check a blind spot in traffic after a hybrid SE18 commute.",
+          "Phone-shoulder clenching on calls and a secondary monitor off to one side add a constant twist. By evening many people feel a dull band between the blades, a catch on deep breath, or stiffness turning to check a blind spot in traffic after a hybrid Charlton commute.",
           "The fix is rarely “sit up straighter” alone. Tissues that have been compressed all day need mobility, load variety, and a setup that does not recreate the same fold every time you open the laptop.",
         ],
       },

@@ -5,7 +5,7 @@ import { BookingEmbed } from "@/components/BookingEmbed";
 import { ButtonLink } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
-import { moneyPageFaqs } from "@/lib/seo-strategy";
+import { moneyPageFaqs, withBookingAttribution } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const bookDescription = `Book online with Nguyen's Osteopathic Clinic in Charlton SE7. Call ${site.phone} or reserve with Austin Duy Nguyen, GOsC osteopath — no GP referral needed.`;
@@ -29,7 +29,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BookPage() {
+type BookPageProps = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function BookPage({ searchParams }: BookPageProps) {
+  const params = await searchParams;
+  const embedSrc = withBookingAttribution(site.bookingEmbedUrl, params);
+  const externalHref = withBookingAttribution(site.bookingExternalUrl, params);
+
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -93,7 +101,7 @@ export default function BookPage() {
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <ButtonLink
-              href={site.bookingExternalUrl}
+              href={externalHref}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -156,7 +164,7 @@ export default function BookPage() {
         <meta itemProp="name" content="Book an osteopathy appointment online" />
         <link itemProp="target" href={site.bookingUrl} />
         <h2 className="sr-only">Online booking widget</h2>
-        <BookingEmbed />
+        <BookingEmbed embedSrc={embedSrc} externalHref={externalHref} />
         <p className="mt-4 px-5 text-center text-sm font-medium text-slate-600 md:px-0">
           Online booking powered by{" "}
           <a
@@ -171,7 +179,7 @@ export default function BookPage() {
         </p>
         <div className="mt-4 flex justify-center px-5 sm:hidden">
           <ButtonLink
-            href={site.bookingExternalUrl}
+            href={externalHref}
             target="_blank"
             rel="noopener noreferrer"
             variant="secondary"

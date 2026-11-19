@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { bookHref } from "@/lib/seo-strategy";
 
 export function ExerciseSafetyBanner({ compact = false }: { compact?: boolean }) {
   return (
@@ -16,7 +17,7 @@ export function ExerciseSafetyBanner({ compact = false }: { compact?: boolean })
           <>
             {" "}
             Prefer a plan built around your case?{" "}
-            <Link href="/book" className="font-semibold text-teal hover:text-teal-dark">
+            <Link href={bookHref("exercises")} className="font-semibold text-teal hover:text-teal-dark">
               Book online
             </Link>{" "}
             or call{" "}

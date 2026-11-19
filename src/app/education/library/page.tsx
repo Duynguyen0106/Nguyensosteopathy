@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "supplement education Charlton",
     "osteopath nutrition library",
     "practitioner supplement notes",
-    "patient supplement guides SE18",
+    "patient supplement guides Charlton",
   ],
   openGraph: {
     title: `Supplement Education Library | ${site.name}`,

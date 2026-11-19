@@ -7,6 +7,7 @@ import {
   getArticlesForTrack,
 } from "@/lib/education";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
+import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
 const description = trimDescription(
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/education" },
   keywords: [
     "osteopath education Charlton",
-    "supplement education library SE18",
+    "supplement education library Charlton",
     "acupuncture education London",
     "osteopathy CPD notes",
   ],
@@ -90,7 +91,7 @@ export default function EducationHubPage() {
             <ButtonLink href="/blog" variant="secondary">
               Nutrition blog articles
             </ButtonLink>
-            <ButtonLink href="/book" variant="secondary">
+            <ButtonLink href={bookHref("education")} variant="secondary">
               Book online
             </ButtonLink>
           </div>
@@ -112,7 +113,7 @@ export default function EducationHubPage() {
         <p className="mt-12 max-w-3xl text-sm leading-relaxed text-slate-500">
           CPD pages are public but written for practitioners. Patient care
           questions still belong in a booked assessment —{" "}
-          <Link href="/book" className="font-semibold text-teal hover:text-teal-dark">
+          <Link href={bookHref("education")} className="font-semibold text-teal hover:text-teal-dark">
             book online
           </Link>{" "}
           or see{" "}

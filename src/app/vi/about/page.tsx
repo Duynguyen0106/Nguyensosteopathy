@@ -132,10 +132,13 @@ export default function VietnameseAboutPage() {
             </p>
             <p>
               Đào tạo gồm Master of Osteopathy (BCOM), CertHE Medical Sciences
-              (Distinction), cùng CPD shockwave, Dip.Acu và NASM PFT. Mục tiêu
-              là điều trị rõ ràng, giải thích dễ hiểu, và kế hoạch phục hồi thực
-              tế — không phụ thuộc thuốc giảm đau dài hạn khi orthopaedic care
-              phù hợp.
+              (Distinction), cùng CPD shockwave, Dip.Acu và NASM PFT. Austin
+              đang theo học chương trình Doctor of Medicine (MD) tại
+              International University of the Health Sciences (IUHS), lớp 2030 —
+              đây là việc học thêm, chưa phải bác sĩ y khoa và không thay thế
+              đăng ký GOsC để hành nghề osteopathy. Mục tiêu là điều trị rõ
+              ràng, giải thích dễ hiểu, và kế hoạch phục hồi thực tế — không phụ
+              thuộc thuốc giảm đau dài hạn khi orthopaedic care phù hợp.
             </p>
             <p>
               Phòng khám nằm trong {site.address.venue}, {site.address.line1},{" "}
@@ -157,6 +160,9 @@ export default function VietnameseAboutPage() {
             </li>
             <li className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
               CertHE Medical Sciences (Distinction)
+            </li>
+            <li className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+              MD (đang theo học) — IUHS · lớp 2030
             </li>
             <li className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
               Shockwave CPD · Dip.Acu · NASM PFT

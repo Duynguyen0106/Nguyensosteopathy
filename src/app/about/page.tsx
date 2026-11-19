@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Austin Duy Nguyen",
   description:
-    "Meet Austin Duy Nguyen — GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (Westminster)…",
+    "Meet Austin Duy Nguyen — GOsC-registered osteopath (Reg. No. 12332), Master of Osteopathy (BCOM), CertHE Medical Sciences with Distinction (Westminster), currently pursuing MD at IUHS (class of 2030).",
   alternates: {
     canonical: "/about",
     languages: {
@@ -175,7 +175,16 @@ export default function AboutPage() {
                 <strong className="font-semibold text-navy">
                   CertHE in Medical Sciences with Distinction
                 </strong>{" "}
-                at the University of Westminster.
+                at the University of Westminster. I am currently pursuing a{" "}
+                <strong className="font-semibold text-navy">
+                  Doctor of Medicine (MD)
+                </strong>{" "}
+                at the{" "}
+                <strong className="font-semibold text-navy">
+                  International University of the Health Sciences (IUHS)
+                </strong>
+                , class of 2030 — postgraduate medical study that does not
+                replace GOsC registration or imply a UK medical licence.
               </p>
               <p className="mt-5 text-lg leading-relaxed text-slate-700">
                 Ongoing clinical CPD includes a{" "}
@@ -246,11 +255,13 @@ export default function AboutPage() {
                     ? "Registration"
                     : item.kind === "degree"
                       ? "Degree"
-                      : item.kind === "diploma"
-                        ? "Diploma"
-                        : item.kind === "certificate"
-                          ? "Certificate"
-                          : "CPD"}
+                      : item.kind === "study"
+                        ? "In progress"
+                        : item.kind === "diploma"
+                          ? "Diploma"
+                          : item.kind === "certificate"
+                            ? "Certificate"
+                            : "CPD"}
                 </p>
                 <h3 className="mt-2 font-display text-xl text-navy">
                   {item.shortTitle}

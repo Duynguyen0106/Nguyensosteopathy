@@ -29,7 +29,7 @@ mkdirSync("/opt/cursor/artifacts/screenshots", { recursive: true });
 
 const require = createRequire(import.meta.url);
 
-// Transparent lockup for dark A-board backgrounds (navy ink remapped to white; teal kept).
+// Original lockup with white background removed (navy→white for dark boards; teal kept).
 const logoLockupUri = `data:image/png;base64,${readFileSync(
   join(root, "public/images/logo-lockup-on-dark.png"),
 ).toString("base64")}`;
@@ -113,90 +113,93 @@ function buildHtml(sizeKey) {
         linear-gradient(168deg, var(--navy-deep) 0%, var(--navy) 46%, #0a3a4a 100%);
       display: flex;
       flex-direction: column;
-      padding: ${isA2 ? `${s(12)} ${s(14)} ${s(10)}` : `${s(16)} ${s(18)} ${s(14)}`};
+      padding: ${isA2 ? `${s(10)} ${s(14)} ${s(9)}` : `${s(14)} ${s(18)} ${s(12)}`};
+      align-items: center;
+      text-align: center;
     }
     .ribbon {
-      align-self: flex-start;
+      align-self: center;
       background: var(--teal);
       color: #fff;
-      font-size: ${isA2 ? pt(16) : pt(14)};
+      font-size: ${isA2 ? pt(15) : pt(14)};
       font-weight: 800;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: ${s(3)} ${s(5.5)};
+      padding: ${s(2.8)} ${s(6)};
       border-radius: ${s(2)};
-      margin-bottom: ${isA2 ? s(7) : s(10)};
-    }
-    .top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: ${s(8)};
+      margin-bottom: ${isA2 ? s(6) : s(8)};
     }
     .logo-wrap {
       background: transparent;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: ${isA2 ? s(2) : s(4)} 0 ${isA2 ? s(4) : s(6)};
     }
     .logo-wrap img {
       display: block;
-      height: ${isA1 ? s(58) : s(48)};
-      width: auto;
-      max-width: ${isA1 ? s(140) : s(118)};
+      height: auto;
+      width: ${isA1 ? s(250) : s(220)};
+      max-width: 92%;
       object-fit: contain;
     }
     .lang {
-      text-align: right;
-      font-size: ${isA2 ? pt(14) : pt(13)};
+      font-size: ${isA2 ? pt(13) : pt(12)};
       font-weight: 800;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--teal-bright);
-      line-height: 1.25;
-      padding-top: ${s(2)};
+      line-height: 1.3;
+      margin-bottom: ${isA2 ? s(5) : s(7)};
     }
     .lang span {
-      display: block;
-      margin-top: ${s(1.2)};
-      font-size: ${isA2 ? pt(12) : pt(11)};
-      letter-spacing: 0.12em;
-      color: rgba(255,255,255,0.72);
+      display: inline;
+      margin-left: ${s(2)};
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.78);
       font-weight: 700;
     }
 
     .brand-block {
-      margin-top: ${isA2 ? s(10) : s(14)};
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .eyebrow {
-      font-size: ${isA2 ? pt(16) : pt(15)};
+      font-size: ${isA2 ? pt(15) : pt(14)};
       letter-spacing: 0.18em;
       text-transform: uppercase;
       font-weight: 800;
       color: var(--teal-bright);
-      margin-bottom: ${s(3)};
+      margin-bottom: ${s(2.5)};
     }
     h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${isA1 ? pt(78) : pt(76)};
-      line-height: 0.92;
+      font-size: ${isA1 ? pt(60) : pt(54)};
+      line-height: 0.94;
       font-weight: 700;
-      max-width: 11ch;
+      max-width: 12ch;
       letter-spacing: -0.02em;
     }
     .lede {
-      margin-top: ${isA2 ? s(5) : s(7)};
-      font-size: ${isA2 ? pt(22) : pt(20)};
+      margin-top: ${isA2 ? s(4) : s(5)};
+      font-size: ${isA2 ? pt(20) : pt(18)};
       line-height: 1.25;
-      max-width: 24ch;
+      max-width: 28ch;
       color: rgba(255,255,255,0.92);
       font-weight: 700;
     }
 
     .cta-stack {
       margin-top: auto;
+      width: 100%;
       display: grid;
       grid-template-columns: 1.25fr 0.75fr;
       gap: ${s(8)};
       align-items: stretch;
+      text-align: left;
     }
     .phone-panel {
       background: rgba(255,255,255,0.1);
@@ -265,11 +268,13 @@ function buildHtml(sizeKey) {
 
     .meta {
       margin-top: ${isA2 ? s(6) : s(8)};
+      width: 100%;
       display: grid;
       grid-template-columns: 1.4fr 1fr;
       gap: ${s(5)};
       padding-top: ${s(4)};
       border-top: 0.45mm solid rgba(255,255,255,0.24);
+      text-align: left;
     }
     .meta .label {
       font-size: ${isA2 ? pt(13) : pt(12)};
@@ -286,12 +291,14 @@ function buildHtml(sizeKey) {
     }
     .foot {
       margin-top: ${s(3.5)};
+      width: 100%;
       display: flex;
       justify-content: space-between;
       gap: ${s(4)};
       font-size: ${isA2 ? pt(12) : pt(11)};
       font-weight: 700;
       color: rgba(255,255,255,0.62);
+      text-align: left;
     }
   </style>
 </head>
@@ -299,15 +306,13 @@ function buildHtml(sizeKey) {
   <section class="poster">
     <div class="ribbon">Inside Village Pharmacy · Charlton SE7</div>
 
-    <div class="top">
-      <div class="logo-wrap">
-        <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="1250" height="870" />
-      </div>
-      <p class="lang">
-        English · Vietnamese
-        <span>No GP referral needed</span>
-      </p>
+    <div class="logo-wrap">
+      <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="1247" height="868" />
     </div>
+    <p class="lang">
+      English · Vietnamese
+      <span>· No GP referral needed</span>
+    </p>
 
     <div class="brand-block">
       <p class="eyebrow">Osteopathy · Charlton</p>

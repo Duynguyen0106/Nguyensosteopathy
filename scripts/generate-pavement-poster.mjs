@@ -30,16 +30,66 @@ mkdirSync("/opt/cursor/artifacts/screenshots", { recursive: true });
 
 const require = createRequire(import.meta.url);
 
-// Original lockup with white background removed (navy→white for dark boards; teal kept).
-const logoLockupUri = `data:image/png;base64,${readFileSync(
+// High-res lockup (~3600px wide ≈ 300dpi at A2 print width) — navy→white for dark boards.
+const logoLockupBuf = readFileSync(
   join(root, "public/images/logo-lockup-on-dark.png"),
-).toString("base64")}`;
+);
+const logoLockupUri = `data:image/png;base64,${logoLockupBuf.toString("base64")}`;
+// PNG IHDR width/height are big-endian u32 at byte offsets 16 and 20.
+const logoMeta = {
+  width: logoLockupBuf.readUInt32BE(16),
+  height: logoLockupBuf.readUInt32BE(20),
+};
 
+/** Local TTFs → data-URI @font-face so Chrome embeds every face (vector type in PDF). */
+function fontDataUri(fileName) {
+  const buf = readFileSync(join(root, "public/fonts", fileName));
+  return `data:font/ttf;base64,${buf.toString("base64")}`;
+}
+const fontFaceCss = `
+    @font-face {
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 600;
+      font-display: block;
+      src: url("${fontDataUri("SourceSans3-SemiBold.ttf")}") format("truetype");
+    }
+    @font-face {
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 700;
+      font-display: block;
+      src: url("${fontDataUri("SourceSans3-Bold.ttf")}") format("truetype");
+    }
+    @font-face {
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 800;
+      font-display: block;
+      src: url("${fontDataUri("SourceSans3-ExtraBold.ttf")}") format("truetype");
+    }
+    @font-face {
+      font-family: "Cormorant Garamond";
+      font-style: normal;
+      font-weight: 600;
+      font-display: block;
+      src: url("${fontDataUri("CormorantGaramond-SemiBold.ttf")}") format("truetype");
+    }
+    @font-face {
+      font-family: "Cormorant Garamond";
+      font-style: normal;
+      font-weight: 700;
+      font-display: block;
+      src: url("${fontDataUri("CormorantGaramond-Bold.ttf")}") format("truetype");
+    }
+`;
+
+// QR at ~300dpi for the A2 panel (~68mm → ~804px min; 3200px gives sharp scan + print headroom).
 const qrPng = await QRCode.toBuffer(BOOK_URL, {
   type: "png",
   errorCorrectionLevel: "H",
   margin: 2,
-  width: 1600,
+  width: 3200,
   color: { dark: "#0b2c45", light: "#ffffff" },
 });
 writeFileSync(join(outDir, "booking-qr.png"), qrPng);
@@ -81,10 +131,8 @@ function buildHtml(sizeKey) {
 <head>
   <meta charset="utf-8" />
   <title>Nguyen's Osteopathic Clinic — ${size.label} A-board Poster</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@600;700;800&display=swap" rel="stylesheet" />
   <style>
+${fontFaceCss}
     :root {
       --navy: #0b2c45;
       --navy-deep: #061828;
@@ -96,7 +144,7 @@ function buildHtml(sizeKey) {
     html, body {
       background: #fff;
       color: var(--white);
-      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-family: "Source Sans 3", sans-serif;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
       text-rendering: geometricPrecision;
@@ -171,7 +219,7 @@ function buildHtml(sizeKey) {
       margin-bottom: ${isA2 ? s(4) : s(5)};
     }
     h1 {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: ${isA1 ? pt(52) : pt(46)};
       line-height: 0.95;
       font-weight: 700;
@@ -250,7 +298,7 @@ function buildHtml(sizeKey) {
       color: var(--teal);
     }
     .qr-panel strong {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: ${isA2 ? pt(20) : pt(18)};
       font-weight: 700;
     }
@@ -296,7 +344,7 @@ function buildHtml(sizeKey) {
     <div class="ribbon">Inside Village Pharmacy · Charlton SE7</div>
 
     <div class="logo-wrap">
-      <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="1247" height="868" />
+      <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="${logoMeta.width}" height="${logoMeta.height}" />
     </div>
     <p class="lang">
       English · Vietnamese
@@ -318,7 +366,7 @@ function buildHtml(sizeKey) {
       </div>
       <aside class="qr-panel">
         <p class="scan">Scan to book</p>
-        <img src="${qrDataUri}" alt="QR code to book online" width="1600" height="1600" />
+        <img src="${qrDataUri}" alt="QR code to book online" width="3200" height="3200" />
         <strong>Book online</strong>
       </aside>
     </div>
@@ -363,15 +411,40 @@ for (const sizeKey of /** @type {const} */ (["a1", "a2"])) {
   });
   const context = await browser.newContext({
     viewport: size.viewport,
-    deviceScaleFactor: 2,
+    // Higher DPR for preview screenshots; PDF embeds images at intrinsic px.
+    deviceScaleFactor: 3,
   });
   const page = await context.newPage();
   await page.emulateMedia({ media: "print" });
   await page.goto(`file://${htmlPath}`, { waitUntil: "networkidle" });
-  await page.evaluate(async () => {
+  const fontStatus = await page.evaluate(async () => {
     if (document.fonts?.ready) await document.fonts.ready;
+    const need = [
+      { family: "Source Sans 3", weight: "600" },
+      { family: "Source Sans 3", weight: "700" },
+      { family: "Source Sans 3", weight: "800" },
+      { family: "Cormorant Garamond", weight: "700" },
+    ];
+    const loaded = [];
+    for (const f of need) {
+      const faces = await document.fonts.load(`${f.weight} 24px "${f.family}"`);
+      loaded.push({
+        ...f,
+        faces: faces.length,
+        check: document.fonts.check(`${f.weight} 24px "${f.family}"`),
+      });
+    }
+    return loaded;
   });
-  await page.waitForTimeout(800);
+  if (!fontStatus.every((f) => f.check && f.faces > 0)) {
+    console.error("Font load failed:", JSON.stringify(fontStatus, null, 2));
+    process.exit(1);
+  }
+  console.log(
+    `${size.label} fonts ready:`,
+    fontStatus.map((f) => `${f.family} ${f.weight}`).join(", "),
+  );
+  await page.waitForTimeout(300);
 
   // Overflow / distance-type audit for A2 (primary A-board size)
   if (sizeKey === "a2") {

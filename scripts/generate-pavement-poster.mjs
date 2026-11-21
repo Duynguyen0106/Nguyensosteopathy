@@ -29,8 +29,9 @@ mkdirSync("/opt/cursor/artifacts/screenshots", { recursive: true });
 
 const require = createRequire(import.meta.url);
 
+// Transparent lockup for dark A-board backgrounds (navy ink remapped to white; teal kept).
 const logoLockupUri = `data:image/png;base64,${readFileSync(
-  join(root, "public/images/logo-lockup.png"),
+  join(root, "public/images/logo-lockup-on-dark.png"),
 ).toString("base64")}`;
 
 const qrPng = await QRCode.toBuffer(BOOK_URL, {
@@ -133,16 +134,14 @@ function buildHtml(sizeKey) {
       gap: ${s(8)};
     }
     .logo-wrap {
-      background: var(--white);
-      border-radius: ${s(4)};
-      padding: ${s(4)} ${s(5)};
-      box-shadow: 0 ${s(2)} ${s(7)} rgba(0,0,0,0.28);
+      background: transparent;
+      padding: 0;
     }
     .logo-wrap img {
       display: block;
-      height: ${isA1 ? s(48) : s(34)};
+      height: ${isA1 ? s(58) : s(48)};
       width: auto;
-      max-width: ${isA1 ? s(112) : s(84)};
+      max-width: ${isA1 ? s(140) : s(118)};
       object-fit: contain;
     }
     .lang {
@@ -165,7 +164,7 @@ function buildHtml(sizeKey) {
     }
 
     .brand-block {
-      margin-top: ${isA2 ? s(8) : s(12)};
+      margin-top: ${isA2 ? s(10) : s(14)};
     }
     .eyebrow {
       font-size: ${isA2 ? pt(16) : pt(15)};
@@ -175,17 +174,9 @@ function buildHtml(sizeKey) {
       color: var(--teal-bright);
       margin-bottom: ${s(3)};
     }
-    .brand-name {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${isA1 ? pt(42) : pt(40)};
-      line-height: 0.96;
-      font-weight: 700;
-      max-width: 14ch;
-      margin-bottom: ${isA2 ? s(5) : s(8)};
-    }
     h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${isA1 ? pt(78) : pt(74)};
+      font-size: ${isA1 ? pt(78) : pt(76)};
       line-height: 0.92;
       font-weight: 700;
       max-width: 11ch;
@@ -320,7 +311,6 @@ function buildHtml(sizeKey) {
 
     <div class="brand-block">
       <p class="eyebrow">Osteopathy · Charlton</p>
-      <p class="brand-name">Nguyen's Osteopathic Clinic</p>
       <h1>Back pain treated properly</h1>
       <p class="lede">
         Hands-on osteopathy. Book online or call — open 9am–8pm daily.
@@ -405,7 +395,6 @@ for (const sizeKey of /** @type {const} */ (["a1", "a2"])) {
         overflow: poster ? poster.scrollHeight > poster.clientHeight + 1 : null,
         sizes: [
           pick(".ribbon"),
-          pick(".brand-name"),
           pick("h1"),
           pick(".lede"),
           pick(".phone-panel .number"),

@@ -111,15 +111,56 @@ const qrPng = await QRCode.toBuffer(BOOK_URL, {
 writeFileSync(join(outDir, "booking-qr.png"), qrPng);
 const qrDataUri = `data:image/png;base64,${qrPng.toString("base64")}`;
 
+/** Local TTFs → data-URI @font-face so Chrome embeds every face in the print PDF. */
+function fontDataUri(fileName) {
+  const buf = readFileSync(join(root, "public/fonts", fileName));
+  return `data:font/ttf;base64,${buf.toString("base64")}`;
+}
+const fontFaceCss = `
+    @font-face {
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 400;
+      font-display: block;
+      src: url("${fontDataUri("SourceSans3-Regular.ttf")}") format("truetype");
+    }
+    @font-face {
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 600;
+      font-display: block;
+      src: url("${fontDataUri("SourceSans3-SemiBold.ttf")}") format("truetype");
+    }
+    @font-face {
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 700;
+      font-display: block;
+      src: url("${fontDataUri("SourceSans3-Bold.ttf")}") format("truetype");
+    }
+    @font-face {
+      font-family: "Cormorant Garamond";
+      font-style: normal;
+      font-weight: 600;
+      font-display: block;
+      src: url("${fontDataUri("CormorantGaramond-SemiBold.ttf")}") format("truetype");
+    }
+    @font-face {
+      font-family: "Cormorant Garamond";
+      font-style: normal;
+      font-weight: 700;
+      font-display: block;
+      src: url("${fontDataUri("CormorantGaramond-Bold.ttf")}") format("truetype");
+    }
+`;
+
 const html = `<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <title>Nguyen's Osteopathic Clinic — A5 Pharmacy Leaflet</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+${fontFaceCss}
     :root {
       --navy: #0b2c45;
       --navy-deep: #061828;
@@ -136,7 +177,7 @@ const html = `<!DOCTYPE html>
     html, body {
       background: #fff;
       color: var(--navy);
-      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-family: "Source Sans 3", sans-serif;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
       text-rendering: geometricPrecision;
@@ -261,7 +302,7 @@ const html = `<!DOCTYPE html>
         linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
     }
     .hook h2 {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: 14pt;
       line-height: 1.08;
       font-weight: 700;
@@ -321,7 +362,7 @@ const html = `<!DOCTYPE html>
       border: 0.3mm solid rgba(15,118,110,0.35);
     }
     .practitioner h3 {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: 12pt;
       font-weight: 700;
       margin-bottom: 0.3mm;
@@ -410,7 +451,7 @@ const html = `<!DOCTYPE html>
       padding: 1.2mm;
     }
     .book strong {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: 12pt;
       font-weight: 700;
     }
@@ -488,7 +529,7 @@ const html = `<!DOCTYPE html>
       white-space: nowrap;
     }
     .back-head h1 {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: 13.5pt;
       line-height: 1.05;
       font-weight: 700;
@@ -532,7 +573,7 @@ const html = `<!DOCTYPE html>
     }
     .fees td:first-child { padding-right: 1.5mm; }
     .fees td:last-child {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: 10.5pt;
       font-weight: 700;
       color: var(--navy);
@@ -562,7 +603,7 @@ const html = `<!DOCTYPE html>
       align-items: start;
     }
     .steps .num {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: 11pt;
       font-weight: 700;
       color: var(--teal);
@@ -578,7 +619,7 @@ const html = `<!DOCTYPE html>
       font-size: 7.5pt;
       line-height: 1.28;
       color: var(--slate);
-      font-weight: 500;
+      font-weight: 400;
     }
 
     .side-stack {
@@ -660,7 +701,7 @@ const html = `<!DOCTYPE html>
       font-size: 7.5pt;
       line-height: 1.28;
       color: var(--slate);
-      font-weight: 500;
+      font-weight: 400;
     }
 
     .back-cta {
@@ -676,7 +717,7 @@ const html = `<!DOCTYPE html>
       padding: 2.4mm;
     }
     .back-cta h2 {
-      font-family: "Cormorant Garamond", Georgia, serif;
+      font-family: "Cormorant Garamond", serif;
       font-size: 13pt;
       font-weight: 700;
       margin-bottom: 0.6mm;
@@ -959,10 +1000,39 @@ const context = await browser.newContext({
 const page = await context.newPage();
 await page.emulateMedia({ media: "print" });
 await page.goto(`file://${htmlPath}`, { waitUntil: "networkidle" });
-await page.evaluate(async () => {
+const fontStatus = await page.evaluate(async () => {
   if (document.fonts?.ready) await document.fonts.ready;
+  const need = [
+    { family: "Source Sans 3", weight: "400" },
+    { family: "Source Sans 3", weight: "600" },
+    { family: "Source Sans 3", weight: "700" },
+    { family: "Cormorant Garamond", weight: "600" },
+    { family: "Cormorant Garamond", weight: "700" },
+  ];
+  const loaded = [];
+  for (const f of need) {
+    const ok = await document.fonts.load(`${f.weight} 16px "${f.family}"`);
+    loaded.push({
+      ...f,
+      faces: ok.length,
+      check: document.fonts.check(`${f.weight} 16px "${f.family}"`),
+    });
+  }
+  return {
+    status: document.fonts.status,
+    size: document.fonts.size,
+    loaded,
+  };
 });
-await page.waitForTimeout(800);
+if (!fontStatus.loaded.every((f) => f.check && f.faces > 0)) {
+  console.error("Font load failed:", JSON.stringify(fontStatus, null, 2));
+  process.exit(1);
+}
+console.log(
+  "Fonts ready:",
+  fontStatus.loaded.map((f) => `${f.family} ${f.weight}`).join(", "),
+);
+await page.waitForTimeout(300);
 
 const pdfPath = join(outDir, "nguyens-osteopathy-leaflet.pdf");
 await page.pdf({
@@ -972,6 +1042,7 @@ await page.pdf({
   preferCSSPageSize: true,
   margin: { top: "0", right: "0", bottom: "0", left: "0" },
   scale: 1,
+  // Chromium embeds used @font-face TTFs as subsets when generating PDF.
 });
 
 const pages = page.locator(".page");

@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 /**
  * A1 + A2 pavement / A-board posters for Nguyen's Osteopathic Clinic.
- * Distance-readable: brand, one headline, one line of support, phone, QR, place.
- * Same visual language as the A3 window poster.
+ *
+ * Street hierarchy (2–5 m glance):
+ *   1) centred brand lockup  2) one headline  3) phone + QR  4) place/hours
+ * Avoid stacked labels that compete with the logo.
+ *
+ * Print tip (A-board): A2 portrait, colour, weather sleeve/laminate if outdoors.
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -21,11 +25,14 @@ const PHONE = "07882 843513";
 
 mkdirSync(outDir, { recursive: true });
 mkdirSync(artifactDir, { recursive: true });
+mkdirSync("/opt/cursor/artifacts", { recursive: true });
+mkdirSync("/opt/cursor/artifacts/screenshots", { recursive: true });
 
 const require = createRequire(import.meta.url);
 
+// Original lockup with white background removed (navy→white for dark boards; teal kept).
 const logoLockupUri = `data:image/png;base64,${readFileSync(
-  join(root, "public/images/logo-lockup.png"),
+  join(root, "public/images/logo-lockup-on-dark.png"),
 ).toString("base64")}`;
 
 const qrPng = await QRCode.toBuffer(BOOK_URL, {
@@ -44,7 +51,6 @@ const SIZES = {
     label: "A1",
     widthMm: 594,
     heightMm: 841,
-    // ~96dpi CSS px for A1
     viewport: { width: 2245, height: 3179 },
     scale: makeScale(1.55),
   },
@@ -53,35 +59,37 @@ const SIZES = {
     widthMm: 420,
     heightMm: 594,
     viewport: { width: 1587, height: 2245 },
-    scale: makeScale(1.2),
+    // Hot type + tighter spacing so pavement type can grow without overflow
+    scale: makeScale(1.62, 1.12),
   },
 };
 
-function makeScale(factor) {
-  const s = (n) => `${(n * factor).toFixed(2)}mm`;
-  const pt = (n) => `${(n * factor).toFixed(1)}pt`;
-  return { s, pt, factor };
+function makeScale(typeFactor, spaceFactor = typeFactor) {
+  const s = (n) => `${(n * spaceFactor).toFixed(2)}mm`;
+  const pt = (n) => `${(n * typeFactor).toFixed(1)}pt`;
+  return { s, pt, factor: typeFactor };
 }
 
 function buildHtml(sizeKey) {
   const size = SIZES[sizeKey];
   const { s, pt } = size.scale;
   const isA1 = sizeKey === "a1";
+  const isA2 = sizeKey === "a2";
 
   return `<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8" />
-  <title>Nguyen's Osteopathic Clinic — ${size.label} Pavement Poster</title>
+  <title>Nguyen's Osteopathic Clinic — ${size.label} A-board Poster</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
       --navy: #0b2c45;
       --navy-deep: #061828;
       --teal: #0f766e;
-      --teal-bright: #2dd4bf;
+      --teal-bright: #5eead4;
       --white: #ffffff;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -92,6 +100,7 @@ function buildHtml(sizeKey) {
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
       text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
     }
     @page { size: ${size.label} portrait; margin: 0; }
     .poster {
@@ -100,165 +109,210 @@ function buildHtml(sizeKey) {
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(ellipse 90% 55% at 100% 0%, rgba(13,148,136,0.30), transparent 55%),
-        radial-gradient(ellipse 70% 50% at 0% 100%, rgba(45,212,191,0.14), transparent 50%),
-        linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 48%, #0a3a4a 100%);
+        radial-gradient(ellipse 85% 50% at 110% -5%, rgba(13,148,136,0.38), transparent 55%),
+        radial-gradient(ellipse 65% 45% at -10% 105%, rgba(45,212,191,0.16), transparent 52%),
+        linear-gradient(168deg, var(--navy-deep) 0%, var(--navy) 46%, #0a3a4a 100%);
       display: flex;
       flex-direction: column;
-      padding: ${s(18)} ${s(20)} ${s(16)};
+      padding: ${isA2 ? `${s(10)} ${s(14)} ${s(9)}` : `${s(14)} ${s(18)} ${s(12)}`};
+      align-items: center;
+      text-align: center;
+    }
+    .ribbon {
+      align-self: center;
+      background: var(--teal);
+      color: #fff;
+      font-size: ${isA2 ? pt(14) : pt(13)};
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: ${s(2.6)} ${s(5.5)};
+      border-radius: ${s(2)};
+      margin-bottom: ${isA2 ? s(4) : s(6)};
     }
     .logo-wrap {
-      align-self: flex-start;
-      background: var(--white);
-      border-radius: ${s(4.5)};
-      padding: ${s(4.5)} ${s(5.5)};
-      box-shadow: 0 ${s(2)} ${s(8)} rgba(0,0,0,0.28);
+      background: transparent;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: ${isA2 ? s(1) : s(2)} 0 ${isA2 ? s(3) : s(4)};
+      flex: 0 0 auto;
     }
     .logo-wrap img {
       display: block;
-      height: ${isA1 ? s(52) : s(44)};
-      width: auto;
-      max-width: ${isA1 ? s(120) : s(100)};
+      height: auto;
+      width: ${isA1 ? s(280) : s(255)};
+      max-width: 94%;
       object-fit: contain;
     }
-    .eyebrow {
-      margin-top: ${s(14)};
-      font-size: ${pt(13)};
-      letter-spacing: 0.28em;
+    .lang {
+      font-size: ${isA2 ? pt(13) : pt(12)};
+      font-weight: 800;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      font-weight: 700;
       color: var(--teal-bright);
+      line-height: 1.25;
+      margin-bottom: ${isA2 ? s(6) : s(8)};
+    }
+    .lang span {
+      display: inline;
+      margin-left: ${s(1.5)};
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.78);
+      font-weight: 700;
+    }
+
+    .brand-block {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: ${isA2 ? s(4) : s(5)};
     }
     h1 {
-      margin-top: ${s(5)};
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${isA1 ? pt(72) : pt(58)};
-      line-height: 0.96;
+      font-size: ${isA1 ? pt(52) : pt(46)};
+      line-height: 0.95;
       font-weight: 700;
-      max-width: 12ch;
-      letter-spacing: -0.015em;
+      max-width: 13ch;
+      letter-spacing: -0.02em;
     }
     .lede {
-      margin-top: ${s(7)};
-      font-size: ${pt(17)};
-      line-height: 1.35;
-      max-width: 28ch;
+      margin-top: ${isA2 ? s(3.5) : s(4)};
+      font-size: ${isA2 ? pt(18) : pt(16)};
+      line-height: 1.28;
+      max-width: 26ch;
       color: rgba(255,255,255,0.9);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .cta-stack {
       margin-top: auto;
+      width: 100%;
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: ${s(9)};
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: ${s(7)};
       align-items: stretch;
+      text-align: left;
     }
     .phone-panel {
-      background: rgba(255,255,255,0.09);
-      border: 0.45mm solid rgba(255,255,255,0.2);
-      border-radius: ${s(5.5)};
-      padding: ${s(9)} ${s(9)};
+      background: rgba(255,255,255,0.1);
+      border: 0.5mm solid rgba(255,255,255,0.24);
+      border-radius: ${s(5)};
+      padding: ${s(7)} ${s(8)};
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     .phone-panel .label {
-      font-size: ${pt(11)};
-      letter-spacing: 0.24em;
+      font-size: ${pt(13)};
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--teal-bright);
-      margin-bottom: ${s(3)};
+      margin-bottom: ${s(2)};
     }
     .phone-panel .number {
-      font-size: ${isA1 ? pt(48) : pt(38)};
-      font-weight: 700;
+      font-size: ${isA1 ? pt(56) : pt(58)};
+      font-weight: 800;
       letter-spacing: 0.01em;
-      line-height: 1.02;
+      line-height: 1;
     }
     .phone-panel .hint {
-      margin-top: ${s(3.5)};
-      font-size: ${pt(13)};
-      color: rgba(255,255,255,0.78);
-      font-weight: 600;
+      margin-top: ${s(2.5)};
+      font-size: ${isA2 ? pt(15) : pt(14)};
+      color: rgba(255,255,255,0.82);
+      font-weight: 700;
     }
     .qr-panel {
       background: var(--white);
       color: var(--navy);
-      border-radius: ${s(5.5)};
-      padding: ${s(6.5)};
+      border-radius: ${s(5)};
+      padding: ${s(4.5)};
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: ${s(3)};
+      gap: ${s(1.8)};
     }
     .qr-panel img {
-      width: ${isA1 ? s(78) : s(64)};
-      height: ${isA1 ? s(78) : s(64)};
+      width: ${isA1 ? s(88) : s(68)};
+      height: ${isA1 ? s(88) : s(68)};
       display: block;
     }
     .qr-panel .scan {
-      font-size: ${pt(11)};
-      letter-spacing: 0.2em;
+      font-size: ${isA2 ? pt(12) : pt(11)};
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--teal);
     }
     .qr-panel strong {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${pt(20)};
+      font-size: ${isA2 ? pt(20) : pt(18)};
+      font-weight: 700;
     }
 
     .meta {
-      margin-top: ${s(9)};
+      margin-top: ${isA2 ? s(6) : s(8)};
+      width: 100%;
       display: grid;
-      grid-template-columns: 1.35fr 1fr;
-      gap: ${s(6)};
-      padding-top: ${s(5.5)};
-      border-top: 0.4mm solid rgba(255,255,255,0.22);
+      grid-template-columns: 1.4fr 1fr;
+      gap: ${s(5)};
+      padding-top: ${s(4)};
+      border-top: 0.45mm solid rgba(255,255,255,0.24);
+      text-align: left;
     }
     .meta .label {
-      font-size: ${pt(10)};
-      letter-spacing: 0.18em;
+      font-size: ${isA2 ? pt(13) : pt(12)};
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--teal-bright);
-      margin-bottom: ${s(1.8)};
+      margin-bottom: ${s(1.4)};
     }
-    .meta p {
-      font-size: ${pt(13.5)};
-      line-height: 1.35;
-      font-weight: 700;
+    .meta .value {
+      font-size: ${isA2 ? pt(20) : pt(18)};
+      line-height: 1.25;
+      font-weight: 800;
     }
     .foot {
-      margin-top: ${s(5)};
+      margin-top: ${s(3.5)};
+      width: 100%;
       display: flex;
       justify-content: space-between;
       gap: ${s(4)};
-      font-size: ${pt(10)};
-      font-weight: 600;
-      color: rgba(255,255,255,0.58);
+      font-size: ${isA2 ? pt(12) : pt(11)};
+      font-weight: 700;
+      color: rgba(255,255,255,0.62);
+      text-align: left;
     }
   </style>
 </head>
 <body>
   <section class="poster">
-    <div class="logo-wrap">
-      <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="1250" height="870" />
-    </div>
+    <div class="ribbon">Inside Village Pharmacy · Charlton SE7</div>
 
-    <p class="eyebrow">Inside Village Pharmacy · Charlton</p>
-    <h1>Back pain treated properly</h1>
-    <p class="lede">
-      Drug-free osteopathy. Book online or call — no GP referral needed.
+    <div class="logo-wrap">
+      <img src="${logoLockupUri}" alt="Nguyen's Osteopathic Clinic" width="1247" height="868" />
+    </div>
+    <p class="lang">
+      English · Vietnamese
+      <span>· No GP referral needed</span>
     </p>
+
+    <div class="brand-block">
+      <h1>Back pain treated properly</h1>
+      <p class="lede">
+        Hands-on osteopathy. Book online or call.
+      </p>
+    </div>
 
     <div class="cta-stack">
       <div class="phone-panel">
-        <p class="label">Call to book</p>
+        <p class="label">Call / WhatsApp</p>
         <p class="number">${PHONE}</p>
         <p class="hint">Or scan to book online</p>
       </div>
@@ -272,11 +326,11 @@ function buildHtml(sizeKey) {
     <div class="meta">
       <div>
         <p class="label">Visit</p>
-        <p>Village Pharmacy · 9 The Village<br/>Charlton, London SE7 8UG</p>
+        <p class="value">Village Pharmacy · 9 The Village<br/>Charlton, London SE7 8UG</p>
       </div>
       <div>
         <p class="label">Hours</p>
-        <p>Mon–Sun 9:00am–8:00pm</p>
+        <p class="value">Monday – Sunday<br/>9:00am – 8:00pm</p>
       </div>
     </div>
 
@@ -302,7 +356,11 @@ for (const sizeKey of /** @type {const} */ (["a1", "a2"])) {
   const htmlPath = join(outDir, `poster-${sizeKey}.html`);
   writeFileSync(htmlPath, html);
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({
+    executablePath: "/usr/bin/google-chrome-stable",
+    headless: true,
+    args: ["--no-sandbox"],
+  });
   const context = await browser.newContext({
     viewport: size.viewport,
     deviceScaleFactor: 2,
@@ -314,6 +372,31 @@ for (const sizeKey of /** @type {const} */ (["a1", "a2"])) {
     if (document.fonts?.ready) await document.fonts.ready;
   });
   await page.waitForTimeout(800);
+
+  // Overflow / distance-type audit for A2 (primary A-board size)
+  if (sizeKey === "a2") {
+    const audit = await page.evaluate(() => {
+      const poster = document.querySelector(".poster");
+      const pick = (sel) => {
+        const el = document.querySelector(sel);
+        if (!el) return null;
+        const pt = (parseFloat(getComputedStyle(el).fontSize) * 72) / 96;
+        return { sel, pt: +pt.toFixed(1), text: (el.textContent || "").trim().slice(0, 48) };
+      };
+      return {
+        overflow: poster ? poster.scrollHeight > poster.clientHeight + 1 : null,
+        sizes: [
+          pick(".ribbon"),
+          pick("h1"),
+          pick(".lede"),
+          pick(".phone-panel .number"),
+          pick(".meta .value"),
+          pick(".foot"),
+        ],
+      };
+    });
+    console.log("A2 type audit:", JSON.stringify(audit, null, 2));
+  }
 
   const pdfName = `nguyens-osteopathy-poster-${sizeKey}.pdf`;
   const pdfPath = join(outDir, pdfName);
@@ -334,6 +417,10 @@ for (const sizeKey of /** @type {const} */ (["a1", "a2"])) {
     scale: "device",
   });
   writeFileSync(
+    join("/opt/cursor/artifacts", previewName),
+    readFileSync(join(artifactDir, previewName)),
+  );
+  writeFileSync(
     join("/opt/cursor/artifacts/screenshots", previewName),
     readFileSync(join(artifactDir, previewName)),
   );
@@ -341,12 +428,10 @@ for (const sizeKey of /** @type {const} */ (["a1", "a2"])) {
   await browser.close();
 
   writeFileSync(join(artifactDir, pdfName), readFileSync(pdfPath));
-  writeFileSync(
-    join("/opt/cursor/artifacts", pdfName),
-    readFileSync(pdfPath),
-  );
+  writeFileSync(join("/opt/cursor/artifacts", pdfName), readFileSync(pdfPath));
 
   console.log(`${size.label} PDF:`, pdfPath, readFileSync(pdfPath).length, "bytes");
 }
 
 console.log("Artifacts:", artifactDir);
+console.log("Primary A-board size: A2 (420×594mm)");

@@ -57,21 +57,22 @@ const SIZES = {
     widthMm: 420,
     heightMm: 594,
     viewport: { width: 1587, height: 2245 },
-    // Slightly hotter scale so A2 A-board type reads from the pavement
-    scale: makeScale(1.28),
+    // Hot type + tighter spacing so pavement type can grow without overflow
+    scale: makeScale(1.62, 1.12),
   },
 };
 
-function makeScale(factor) {
-  const s = (n) => `${(n * factor).toFixed(2)}mm`;
-  const pt = (n) => `${(n * factor).toFixed(1)}pt`;
-  return { s, pt, factor };
+function makeScale(typeFactor, spaceFactor = typeFactor) {
+  const s = (n) => `${(n * spaceFactor).toFixed(2)}mm`;
+  const pt = (n) => `${(n * typeFactor).toFixed(1)}pt`;
+  return { s, pt, factor: typeFactor };
 }
 
 function buildHtml(sizeKey) {
   const size = SIZES[sizeKey];
   const { s, pt } = size.scale;
   const isA1 = sizeKey === "a1";
+  const isA2 = sizeKey === "a2";
 
   return `<!DOCTYPE html>
 <html lang="en-GB">
@@ -111,19 +112,19 @@ function buildHtml(sizeKey) {
         linear-gradient(168deg, var(--navy-deep) 0%, var(--navy) 46%, #0a3a4a 100%);
       display: flex;
       flex-direction: column;
-      padding: ${s(16)} ${s(18)} ${s(14)};
+      padding: ${isA2 ? `${s(12)} ${s(14)} ${s(10)}` : `${s(16)} ${s(18)} ${s(14)}`};
     }
     .ribbon {
       align-self: flex-start;
       background: var(--teal);
       color: #fff;
-      font-size: ${pt(14)};
+      font-size: ${isA2 ? pt(16) : pt(14)};
       font-weight: 800;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: ${s(3.2)} ${s(6)};
+      padding: ${s(3)} ${s(5.5)};
       border-radius: ${s(2)};
-      margin-bottom: ${s(10)};
+      margin-bottom: ${isA2 ? s(7) : s(10)};
     }
     .top {
       display: flex;
@@ -139,14 +140,14 @@ function buildHtml(sizeKey) {
     }
     .logo-wrap img {
       display: block;
-      height: ${isA1 ? s(48) : s(40)};
+      height: ${isA1 ? s(48) : s(34)};
       width: auto;
-      max-width: ${isA1 ? s(112) : s(96)};
+      max-width: ${isA1 ? s(112) : s(84)};
       object-fit: contain;
     }
     .lang {
       text-align: right;
-      font-size: ${pt(13)};
+      font-size: ${isA2 ? pt(14) : pt(13)};
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -157,44 +158,44 @@ function buildHtml(sizeKey) {
     .lang span {
       display: block;
       margin-top: ${s(1.2)};
-      font-size: ${pt(11)};
-      letter-spacing: 0.14em;
+      font-size: ${isA2 ? pt(12) : pt(11)};
+      letter-spacing: 0.12em;
       color: rgba(255,255,255,0.72);
       font-weight: 700;
     }
 
     .brand-block {
-      margin-top: ${s(12)};
+      margin-top: ${isA2 ? s(8) : s(12)};
     }
     .eyebrow {
-      font-size: ${pt(15)};
-      letter-spacing: 0.22em;
+      font-size: ${isA2 ? pt(16) : pt(15)};
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       font-weight: 800;
       color: var(--teal-bright);
-      margin-bottom: ${s(4)};
+      margin-bottom: ${s(3)};
     }
     .brand-name {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${isA1 ? pt(42) : pt(36)};
-      line-height: 0.98;
+      font-size: ${isA1 ? pt(42) : pt(40)};
+      line-height: 0.96;
       font-weight: 700;
       max-width: 14ch;
-      margin-bottom: ${s(8)};
+      margin-bottom: ${isA2 ? s(5) : s(8)};
     }
     h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${isA1 ? pt(78) : pt(68)};
-      line-height: 0.94;
+      font-size: ${isA1 ? pt(78) : pt(74)};
+      line-height: 0.92;
       font-weight: 700;
       max-width: 11ch;
       letter-spacing: -0.02em;
     }
     .lede {
-      margin-top: ${s(7)};
-      font-size: ${pt(20)};
-      line-height: 1.28;
-      max-width: 26ch;
+      margin-top: ${isA2 ? s(5) : s(7)};
+      font-size: ${isA2 ? pt(22) : pt(20)};
+      line-height: 1.25;
+      max-width: 24ch;
       color: rgba(255,255,255,0.92);
       font-weight: 700;
     }
@@ -224,14 +225,14 @@ function buildHtml(sizeKey) {
       margin-bottom: ${s(2.5)};
     }
     .phone-panel .number {
-      font-size: ${isA1 ? pt(52) : pt(46)};
+      font-size: ${isA1 ? pt(52) : pt(54)};
       font-weight: 800;
       letter-spacing: 0.01em;
       line-height: 1;
     }
     .phone-panel .hint {
-      margin-top: ${s(3.5)};
-      font-size: ${pt(15)};
+      margin-top: ${s(3)};
+      font-size: ${isA2 ? pt(16) : pt(15)};
       color: rgba(255,255,255,0.82);
       font-weight: 700;
     }
@@ -239,65 +240,65 @@ function buildHtml(sizeKey) {
       background: var(--white);
       color: var(--navy);
       border-radius: ${s(5)};
-      padding: ${s(6)};
+      padding: ${s(5)};
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: ${s(2.5)};
+      gap: ${s(2)};
     }
     .qr-panel img {
-      width: ${isA1 ? s(82) : s(70)};
-      height: ${isA1 ? s(82) : s(70)};
+      width: ${isA1 ? s(82) : s(62)};
+      height: ${isA1 ? s(82) : s(62)};
       display: block;
     }
     .qr-panel .scan {
-      font-size: ${pt(12)};
-      letter-spacing: 0.16em;
+      font-size: ${isA2 ? pt(13) : pt(12)};
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       font-weight: 800;
       color: var(--teal);
     }
     .qr-panel strong {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${pt(22)};
+      font-size: ${isA2 ? pt(24) : pt(22)};
       font-weight: 700;
     }
     .qr-panel .url {
-      font-size: ${pt(11)};
+      font-size: ${isA2 ? pt(12) : pt(11)};
       font-weight: 700;
       color: rgba(11,44,69,0.7);
       line-height: 1.2;
     }
 
     .meta {
-      margin-top: ${s(8)};
+      margin-top: ${isA2 ? s(6) : s(8)};
       display: grid;
       grid-template-columns: 1.4fr 1fr;
-      gap: ${s(6)};
-      padding-top: ${s(5)};
+      gap: ${s(5)};
+      padding-top: ${s(4)};
       border-top: 0.45mm solid rgba(255,255,255,0.24);
     }
     .meta .label {
-      font-size: ${pt(12)};
-      letter-spacing: 0.16em;
+      font-size: ${isA2 ? pt(13) : pt(12)};
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       font-weight: 800;
       color: var(--teal-bright);
-      margin-bottom: ${s(1.6)};
+      margin-bottom: ${s(1.4)};
     }
     .meta .value {
-      font-size: ${pt(18)};
-      line-height: 1.28;
+      font-size: ${isA2 ? pt(20) : pt(18)};
+      line-height: 1.25;
       font-weight: 800;
     }
     .foot {
-      margin-top: ${s(4.5)};
+      margin-top: ${s(3.5)};
       display: flex;
       justify-content: space-between;
       gap: ${s(4)};
-      font-size: ${pt(11)};
+      font-size: ${isA2 ? pt(12) : pt(11)};
       font-weight: 700;
       color: rgba(255,255,255,0.62);
     }
@@ -322,7 +323,7 @@ function buildHtml(sizeKey) {
       <p class="brand-name">Nguyen's Osteopathic Clinic</p>
       <h1>Back pain treated properly</h1>
       <p class="lede">
-        Hands-on osteopathy. Book online or call — open every day 9am–8pm.
+        Hands-on osteopathy. Book online or call — open 9am–8pm daily.
       </p>
     </div>
 

@@ -45,9 +45,6 @@ const require = createRequire(import.meta.url);
 const logoLockupDataUri = `data:image/png;base64,${readFileSync(
   join(root, "public/images/logo-lockup.png"),
 ).toString("base64")}`;
-const logoMarkDataUri = `data:image/png;base64,${readFileSync(
-  join(root, "public/images/logo-mark.png"),
-).toString("base64")}`;
 
 function webpToJpegDataUri(inputPath, maxWidth) {
   const tmp = join(
@@ -452,43 +449,42 @@ const html = `<!DOCTYPE html>
     .back-head {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #0a3d4d 100%);
       color: #fff;
-      padding: 3.8mm 6.5mm 3.2mm;
+      padding: 3.2mm 6.5mm 3mm;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       gap: 3mm;
     }
     .back-brand {
       display: flex;
-      align-items: center;
-      gap: 2.2mm;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.2mm;
+      min-width: 0;
     }
-    .back-brand .mark {
-      width: 10mm;
-      height: 10mm;
+    .back-brand .logo-badge {
       background: #fff;
-      border-radius: 1.4mm;
-      padding: 0.9mm;
+      border-radius: 1.6mm;
+      padding: 1.1mm 1.3mm;
+      box-shadow: 0 0.6mm 1.6mm rgba(0,0,0,0.22);
+      flex: 0 0 auto;
     }
-    .back-brand .mark img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    .back-brand .logo-badge img {
       display: block;
-    }
-    .back-brand .name {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 13pt;
-      font-weight: 700;
-      line-height: 1;
+      height: 17mm;
+      width: auto;
+      max-width: 32mm;
+      object-fit: contain;
+      object-position: center;
     }
     .back-brand .sub {
-      margin-top: 0.7mm;
-      font-size: 7.5pt;
-      letter-spacing: 0.1em;
+      font-size: 7pt;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.78);
+      color: rgba(255,255,255,0.82);
       font-weight: 700;
+      line-height: 1.2;
+      white-space: nowrap;
     }
     .back-head h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
@@ -819,13 +815,10 @@ const html = `<!DOCTYPE html>
   <section class="page">
     <header class="back-head">
       <div class="back-brand">
-        <div class="mark">
-          <img src="${logoMarkDataUri}" alt="" width="512" height="512" />
+        <div class="logo-badge">
+          <img src="${logoLockupDataUri}" alt="Nguyen's Osteopathic Clinic" width="1000" height="696" />
         </div>
-        <div>
-          <p class="name">Nguyen's</p>
-          <p class="sub">Fees · first visit · find us</p>
-        </div>
+        <p class="sub">Fees · first visit · find us</p>
       </div>
       <h1>Everything you need before you book</h1>
     </header>

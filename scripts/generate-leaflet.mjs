@@ -42,8 +42,9 @@ mkdirSync("/opt/cursor/artifacts", { recursive: true });
 
 const require = createRequire(import.meta.url);
 
+/** Print crop: N + wordmark only (tagline omitted — illegible at A5 badge size). */
 const logoLockupDataUri = `data:image/png;base64,${readFileSync(
-  join(root, "public/images/logo-lockup.png"),
+  join(root, "public/images/logo-lockup-print.png"),
 ).toString("base64")}`;
 
 function webpToJpegDataUri(inputPath, maxWidth) {
@@ -218,9 +219,9 @@ const html = `<!DOCTYPE html>
     }
     .logo-badge img {
       display: block;
-      height: 13mm;
+      height: 14.5mm;
       width: auto;
-      max-width: 34mm;
+      max-width: 36mm;
       object-fit: contain;
     }
     .hero-phone {
@@ -395,7 +396,7 @@ const html = `<!DOCTYPE html>
       gap: 1.1mm;
     }
     .book .scan {
-      font-size: 7.5pt;
+      font-size: 8pt;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       font-weight: 700;
@@ -414,7 +415,7 @@ const html = `<!DOCTYPE html>
       font-weight: 700;
     }
     .book .url {
-      font-size: 7.5pt;
+      font-size: 8pt;
       line-height: 1.25;
       opacity: 0.92;
       max-width: 24ch;
@@ -471,14 +472,14 @@ const html = `<!DOCTYPE html>
     }
     .back-brand .logo-badge img {
       display: block;
-      height: 17mm;
+      height: 18mm;
       width: auto;
-      max-width: 32mm;
+      max-width: 34mm;
       object-fit: contain;
       object-position: center;
     }
     .back-brand .sub {
-      font-size: 7pt;
+      font-size: 7.5pt;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: rgba(255,255,255,0.82);
@@ -687,7 +688,7 @@ const html = `<!DOCTYPE html>
     }
     .back-cta .phone {
       margin-top: 1.2mm;
-      font-size: 12.5pt;
+      font-size: 13.5pt;
       font-weight: 700;
       opacity: 1;
     }
@@ -763,7 +764,6 @@ const html = `<!DOCTYPE html>
           <h3>Austin Duy Nguyen</h3>
           <p class="role">Registered osteopath · Founder</p>
           <p class="note">
-            Consultations in English or Vietnamese.
             10% NHS staff &amp; student discount with valid ID.
           </p>
         </div>
@@ -780,7 +780,7 @@ const html = `<!DOCTYPE html>
             <li>Desk &amp; posture strain</li>
             <li>Neck headaches</li>
             <li>Pregnancy support</li>
-            <li>Deep tissue massage</li>
+            <li>Acupuncture / cupping</li>
           </ul>
           <p class="helps-note">
             Unsure? Ask at the counter or call.

@@ -8,6 +8,12 @@ export const site = {
     legalName: "Ba-duy Nguyen",
     title: "GOsC-Registered Osteopath",
     regNo: "12332",
+    /**
+     * Text that appears on itemised patient receipts / insurance claims.
+     * Uses the marketing name patients know, plus the GOsC register legal name.
+     */
+    receiptName: "Austin Duy Nguyen",
+    receiptLegalName: "Ba-duy Nguyen",
     credentials:
       "Master of Osteopathy (BCOM); CertHE Medical Sciences with Distinction (University of Westminster); currently pursuing MD (IUHS, class of 2030); Dip.Acu; Shockwave CPD; NASM Personal Fitness Trainer",
     /**

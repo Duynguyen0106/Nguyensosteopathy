@@ -2,8 +2,9 @@
 /**
  * A1 + A2 pavement / A-board posters for Nguyen's Osteopathic Clinic.
  *
- * Designed for street viewing (2–5 m): brand first, one headline,
- * one support line, giant phone + QR, place + hours.
+ * Street hierarchy (2–5 m glance):
+ *   1) centred brand lockup  2) one headline  3) phone + QR  4) place/hours
+ * Avoid stacked labels that compete with the logo.
  *
  * Print tip (A-board): A2 portrait, colour, weather sleeve/laminate if outdoors.
  */
@@ -121,13 +122,13 @@ function buildHtml(sizeKey) {
       align-self: center;
       background: var(--teal);
       color: #fff;
-      font-size: ${isA2 ? pt(15) : pt(14)};
+      font-size: ${isA2 ? pt(14) : pt(13)};
       font-weight: 800;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: ${s(2.8)} ${s(6)};
+      padding: ${s(2.6)} ${s(5.5)};
       border-radius: ${s(2)};
-      margin-bottom: ${isA2 ? s(6) : s(8)};
+      margin-bottom: ${isA2 ? s(4) : s(6)};
     }
     .logo-wrap {
       background: transparent;
@@ -135,13 +136,14 @@ function buildHtml(sizeKey) {
       display: flex;
       justify-content: center;
       width: 100%;
-      margin: ${isA2 ? s(2) : s(4)} 0 ${isA2 ? s(4) : s(6)};
+      margin: ${isA2 ? s(1) : s(2)} 0 ${isA2 ? s(3) : s(4)};
+      flex: 0 0 auto;
     }
     .logo-wrap img {
       display: block;
       height: auto;
-      width: ${isA1 ? s(250) : s(220)};
-      max-width: 92%;
+      width: ${isA1 ? s(280) : s(255)};
+      max-width: 94%;
       object-fit: contain;
     }
     .lang {
@@ -150,12 +152,12 @@ function buildHtml(sizeKey) {
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--teal-bright);
-      line-height: 1.3;
-      margin-bottom: ${isA2 ? s(5) : s(7)};
+      line-height: 1.25;
+      margin-bottom: ${isA2 ? s(6) : s(8)};
     }
     .lang span {
       display: inline;
-      margin-left: ${s(2)};
+      margin-left: ${s(1.5)};
       letter-spacing: 0.08em;
       color: rgba(255,255,255,0.78);
       font-weight: 700;
@@ -166,29 +168,22 @@ function buildHtml(sizeKey) {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    .eyebrow {
-      font-size: ${isA2 ? pt(15) : pt(14)};
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      font-weight: 800;
-      color: var(--teal-bright);
-      margin-bottom: ${s(2.5)};
+      margin-bottom: ${isA2 ? s(4) : s(5)};
     }
     h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${isA1 ? pt(60) : pt(54)};
-      line-height: 0.94;
+      font-size: ${isA1 ? pt(52) : pt(46)};
+      line-height: 0.95;
       font-weight: 700;
-      max-width: 12ch;
+      max-width: 13ch;
       letter-spacing: -0.02em;
     }
     .lede {
-      margin-top: ${isA2 ? s(4) : s(5)};
-      font-size: ${isA2 ? pt(20) : pt(18)};
-      line-height: 1.25;
-      max-width: 28ch;
-      color: rgba(255,255,255,0.92);
+      margin-top: ${isA2 ? s(3.5) : s(4)};
+      font-size: ${isA2 ? pt(18) : pt(16)};
+      line-height: 1.28;
+      max-width: 26ch;
+      color: rgba(255,255,255,0.9);
       font-weight: 700;
     }
 
@@ -196,8 +191,8 @@ function buildHtml(sizeKey) {
       margin-top: auto;
       width: 100%;
       display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: ${s(8)};
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: ${s(7)};
       align-items: stretch;
       text-align: left;
     }
@@ -205,28 +200,28 @@ function buildHtml(sizeKey) {
       background: rgba(255,255,255,0.1);
       border: 0.5mm solid rgba(255,255,255,0.24);
       border-radius: ${s(5)};
-      padding: ${s(8)} ${s(9)};
+      padding: ${s(7)} ${s(8)};
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     .phone-panel .label {
       font-size: ${pt(13)};
-      letter-spacing: 0.2em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       font-weight: 800;
       color: var(--teal-bright);
-      margin-bottom: ${s(2.5)};
+      margin-bottom: ${s(2)};
     }
     .phone-panel .number {
-      font-size: ${isA1 ? pt(52) : pt(54)};
+      font-size: ${isA1 ? pt(56) : pt(58)};
       font-weight: 800;
       letter-spacing: 0.01em;
       line-height: 1;
     }
     .phone-panel .hint {
-      margin-top: ${s(3)};
-      font-size: ${isA2 ? pt(16) : pt(15)};
+      margin-top: ${s(2.5)};
+      font-size: ${isA2 ? pt(15) : pt(14)};
       color: rgba(255,255,255,0.82);
       font-weight: 700;
     }
@@ -234,21 +229,21 @@ function buildHtml(sizeKey) {
       background: var(--white);
       color: var(--navy);
       border-radius: ${s(5)};
-      padding: ${s(5)};
+      padding: ${s(4.5)};
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: ${s(2)};
+      gap: ${s(1.8)};
     }
     .qr-panel img {
-      width: ${isA1 ? s(82) : s(62)};
-      height: ${isA1 ? s(82) : s(62)};
+      width: ${isA1 ? s(88) : s(68)};
+      height: ${isA1 ? s(88) : s(68)};
       display: block;
     }
     .qr-panel .scan {
-      font-size: ${isA2 ? pt(13) : pt(12)};
+      font-size: ${isA2 ? pt(12) : pt(11)};
       letter-spacing: 0.14em;
       text-transform: uppercase;
       font-weight: 800;
@@ -256,14 +251,8 @@ function buildHtml(sizeKey) {
     }
     .qr-panel strong {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: ${isA2 ? pt(24) : pt(22)};
+      font-size: ${isA2 ? pt(20) : pt(18)};
       font-weight: 700;
-    }
-    .qr-panel .url {
-      font-size: ${isA2 ? pt(12) : pt(11)};
-      font-weight: 700;
-      color: rgba(11,44,69,0.7);
-      line-height: 1.2;
     }
 
     .meta {
@@ -315,10 +304,9 @@ function buildHtml(sizeKey) {
     </p>
 
     <div class="brand-block">
-      <p class="eyebrow">Osteopathy · Charlton</p>
       <h1>Back pain treated properly</h1>
       <p class="lede">
-        Hands-on osteopathy. Book online or call — open 9am–8pm daily.
+        Hands-on osteopathy. Book online or call.
       </p>
     </div>
 
@@ -326,13 +314,12 @@ function buildHtml(sizeKey) {
       <div class="phone-panel">
         <p class="label">Call / WhatsApp</p>
         <p class="number">${PHONE}</p>
-        <p class="hint">Or scan the QR to book online</p>
+        <p class="hint">Or scan to book online</p>
       </div>
       <aside class="qr-panel">
         <p class="scan">Scan to book</p>
         <img src="${qrDataUri}" alt="QR code to book online" width="1600" height="1600" />
         <strong>Book online</strong>
-        <p class="url">nguyensosteopathy.com<br/>/book</p>
       </aside>
     </div>
 

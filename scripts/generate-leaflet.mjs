@@ -12,6 +12,10 @@
  * Type scale (print readability for arm’s-length / older patients):
  *   Body / lists / fees ≥ 8.5–9.5pt · Labels ≥ 7.5pt · Fine print ≥ 7pt
  *   Display headlines stay larger; avoid <7pt except legal footer.
+ *
+ * Counter-leaflet hierarchy (expert pass):
+ *   Front = where + who + hook + scan/call (detail lives on the back)
+ *   Cut redundant labels; keep one GOsC mention on the front face.
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -160,21 +164,21 @@ const html = `<!DOCTYPE html>
       background: linear-gradient(90deg, var(--teal) 0%, #0d9488 100%);
       color: #fff;
       text-align: center;
-      padding: 2.4mm 6mm;
-      font-size: 7.5pt;
+      padding: 2.5mm 6mm;
+      font-size: 8pt;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
     }
     .ribbon strong {
       letter-spacing: 0.02em;
       text-transform: none;
-      font-size: 8.5pt;
+      font-size: 9pt;
     }
 
     .hero {
       position: relative;
-      height: 52mm;
+      height: 46mm;
       flex: 0 0 auto;
       overflow: hidden;
       color: #fff;
@@ -217,9 +221,9 @@ const html = `<!DOCTYPE html>
     }
     .logo-badge img {
       display: block;
-      height: 11mm;
+      height: 13mm;
       width: auto;
-      max-width: 30mm;
+      max-width: 34mm;
       object-fit: contain;
     }
     .hero-phone {
@@ -227,7 +231,7 @@ const html = `<!DOCTYPE html>
     }
     .hero-phone strong {
       display: block;
-      font-size: 12.5pt;
+      font-size: 13.5pt;
       font-weight: 700;
       letter-spacing: 0.01em;
     }
@@ -237,23 +241,15 @@ const html = `<!DOCTYPE html>
       font-size: 7.5pt;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.8);
+      color: rgba(255,255,255,0.82);
       font-weight: 700;
     }
     .hero-brand .eyebrow {
-      font-size: 7.5pt;
-      letter-spacing: 0.18em;
+      font-size: 8pt;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       font-weight: 700;
       color: var(--teal-mist);
-      margin-bottom: 0.8mm;
-    }
-    .hero-brand h1 {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 18pt;
-      line-height: 0.98;
-      font-weight: 700;
-      text-shadow: 0 0.4mm 1.6mm rgba(0,0,0,0.35);
     }
 
     .front-body {
@@ -268,7 +264,7 @@ const html = `<!DOCTYPE html>
     }
     .hook h2 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 13.5pt;
+      font-size: 14pt;
       line-height: 1.08;
       font-weight: 700;
       color: var(--navy);
@@ -282,8 +278,8 @@ const html = `<!DOCTYPE html>
 
     .trust {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.4mm;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.6mm;
     }
     .trust li {
       list-style: none;
@@ -742,17 +738,16 @@ const html = `<!DOCTYPE html>
         </div>
         <div class="hero-brand">
           <p class="eyebrow">Osteopathy · Charlton · SE London</p>
-          <h1>Nguyen's Osteopathic Clinic</h1>
         </div>
       </div>
     </div>
 
     <div class="front-body">
       <div class="hook">
-        <h2>Back pain, joint strain &amp; stubborn tension — treated properly, right here</h2>
+        <h2>Back pain &amp; joint strain — treated properly, right here</h2>
         <p>
           Hands-on osteopathy with clear answers and a plan to get you moving again.
-          No GP referral needed. Book online or ask staff for the osteopathy room.
+          No GP referral needed — book online or ask staff for the room.
         </p>
       </div>
 
@@ -760,7 +755,6 @@ const html = `<!DOCTYPE html>
         <li><strong>GOsC</strong><span>Reg. No. 12332</span></li>
         <li><strong>7 days</strong><span>9am – 8pm</span></li>
         <li><strong>EN · VI</strong><span>Bilingual care</span></li>
-        <li><strong>Direct</strong><span>No referral</span></li>
       </ul>
 
       <div class="practitioner">
@@ -771,9 +765,9 @@ const html = `<!DOCTYPE html>
         }
         <div>
           <h3>Austin Duy Nguyen</h3>
-          <p class="role">GOsC-Registered Osteopath · Reg. No. 12332</p>
+          <p class="role">Registered osteopath · Founder</p>
           <p class="note">
-            Founder of the clinic. Consultations in English or Vietnamese.
+            Consultations in English or Vietnamese.
             10% NHS staff &amp; student discount with valid ID.
           </p>
         </div>
@@ -791,11 +785,9 @@ const html = `<!DOCTYPE html>
             <li>Neck headaches</li>
             <li>Pregnancy support</li>
             <li>Deep tissue massage</li>
-            <li>Acupuncture / cupping</li>
-            <li>Focused shockwave</li>
           </ul>
           <p class="helps-note">
-            Unsure if osteopathy is right? Ask at the counter or call.
+            Unsure? Ask at the counter or call.
           </p>
         </div>
         <aside class="book">
@@ -816,8 +808,8 @@ const html = `<!DOCTYPE html>
           <p><strong>Monday – Sunday</strong><br/>9:00am – 8:00pm</p>
         </div>
         <div>
-          <p class="label">Online</p>
-          <p><strong>Website &amp; reviews</strong><br/>nguyensosteopathy.com</p>
+          <p class="label">WhatsApp</p>
+          <p><strong>${PHONE}</strong><br/>Message to book</p>
         </div>
       </div>
     </div>
@@ -852,9 +844,9 @@ const html = `<!DOCTYPE html>
           <tbody>
             <tr><td>Initial consultation &amp; treatment</td><td>60 mins</td><td>£75</td></tr>
             <tr><td>Follow-up osteopathic treatment</td><td>30 mins</td><td>£60</td></tr>
+            <tr><td>Deep tissue massage</td><td>45 mins</td><td>£60</td></tr>
             <tr><td>Focused shockwave (LI-ESWT)</td><td>30 mins</td><td>£90</td></tr>
             <tr><td>Men’s health / ED protocol</td><td>30 mins</td><td>£110</td></tr>
-            <tr><td>Deep tissue massage</td><td>45 mins</td><td>£60</td></tr>
             <tr><td>Home visit — initial</td><td>60 mins</td><td>£120</td></tr>
             <tr><td>Home visit — follow-up</td><td>30 mins</td><td>£100</td></tr>
           </tbody>

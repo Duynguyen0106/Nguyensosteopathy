@@ -38,7 +38,7 @@ const points = [
   },
   {
     title: "What is not discounted",
-    body: "Add-ons billed on top of a session — acupuncture / electroacupuncture (+£20) and cupping (+£15). Home-visit fees (£120 / £100) are also excluded unless we agree otherwise when you book.",
+    body: "Add-ons billed on top of a session — acupuncture add-on (+£20) and cupping (+£15). Standalone acupuncture / electroacupuncture (£75 / 45 mins) follows the same 10% rule as other clinic sessions. Home-visit fees (£120 / £100) are excluded unless we agree otherwise when you book.",
   },
   {
     title: "Accepted ID examples",

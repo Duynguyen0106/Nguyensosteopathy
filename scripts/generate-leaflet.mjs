@@ -501,10 +501,10 @@ const html = `<!DOCTYPE html>
 
     .back-body {
       flex: 1 1 auto;
-      padding: 2.8mm 6.5mm 0;
+      padding: 2.4mm 6.5mm 0;
       display: flex;
       flex-direction: column;
-      gap: 2.1mm;
+      gap: 1.6mm;
       background: linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
     }
 
@@ -520,7 +520,7 @@ const html = `<!DOCTYPE html>
       text-transform: uppercase;
       color: var(--teal);
       font-weight: 700;
-      padding: 0 0 1.1mm;
+      padding: 0 0 0.9mm;
       border-bottom: 0.3mm solid var(--navy);
     }
     .fees th:last-child,
@@ -528,7 +528,7 @@ const html = `<!DOCTYPE html>
     .fees th:nth-child(2),
     .fees td:nth-child(2) { text-align: center; width: 17mm; }
     .fees td {
-      padding: 1.05mm 0;
+      padding: 0.85mm 0;
       border-bottom: 0.18mm solid var(--line);
       font-weight: 600;
       vertical-align: baseline;
@@ -536,15 +536,15 @@ const html = `<!DOCTYPE html>
     .fees td:first-child { padding-right: 1.5mm; }
     .fees td:last-child {
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 11pt;
+      font-size: 10.5pt;
       font-weight: 700;
       color: var(--navy);
     }
     .fee-note {
       font-size: 7.5pt;
-      line-height: 1.32;
+      line-height: 1.28;
       color: var(--slate);
-      margin-top: 1.1mm;
+      margin-top: 0.8mm;
     }
 
     .back-grid {
@@ -556,7 +556,7 @@ const html = `<!DOCTYPE html>
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 1.2mm;
+      gap: 0.9mm;
     }
     .steps li {
       display: grid;
@@ -649,7 +649,7 @@ const html = `<!DOCTYPE html>
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2mm;
-      padding: 1.8mm 2.2mm;
+      padding: 1.4mm 2mm;
       border: 0.2mm solid var(--line);
       border-radius: 1.8mm;
       background: #fff;
@@ -668,7 +668,7 @@ const html = `<!DOCTYPE html>
 
     .back-cta {
       margin-top: auto;
-      margin-bottom: 4mm;
+      margin-bottom: 3.2mm;
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 2.4mm;
@@ -845,6 +845,7 @@ const html = `<!DOCTYPE html>
             <tr><td>Initial consultation &amp; treatment</td><td>60 mins</td><td>£75</td></tr>
             <tr><td>Follow-up osteopathic treatment</td><td>30 mins</td><td>£60</td></tr>
             <tr><td>Deep tissue massage</td><td>45 mins</td><td>£60</td></tr>
+            <tr><td>Acupuncture / electroacupuncture</td><td>45 mins</td><td>£75</td></tr>
             <tr><td>Focused shockwave (LI-ESWT)</td><td>30 mins</td><td>£90</td></tr>
             <tr><td>Men’s health / ED protocol</td><td>30 mins</td><td>£110</td></tr>
             <tr><td>Home visit — initial</td><td>60 mins</td><td>£120</td></tr>
@@ -852,9 +853,8 @@ const html = `<!DOCTYPE html>
           </tbody>
         </table>
         <p class="fee-note">
-          Acupuncture +£20 · Cupping +£15 when useful.
-          24 hours’ notice for cancellations.
-          10% NHS staff &amp; student discount with valid ID. No GP referral needed.
+          Add-ons when useful: acupuncture +£20 · cupping +£15.
+          24h cancellation notice. 10% NHS staff &amp; student discount with ID.
         </p>
       </div>
 

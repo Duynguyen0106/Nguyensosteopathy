@@ -4,6 +4,7 @@ import { notFound, redirect } from "next/navigation";
 import { AuthorBio } from "@/components/AuthorBio";
 import { ButtonLink } from "@/components/Button";
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
+import { CpdReflectiveRecordForm } from "@/components/education/CpdReflectiveRecordForm";
 import {
   educationHref,
   getAllEducationArticleParams,
@@ -11,6 +12,7 @@ import {
   getEducationTrack,
   type EducationTrackId,
 } from "@/lib/education";
+import { formatOpsThemes, learningModeLabel } from "@/lib/gosc-cpd";
 import {
   breadcrumbJsonLd,
   defaultOgImage,
@@ -182,18 +184,34 @@ export default async function EducationArticlePage({ params }: Props) {
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             {article.summary}
           </p>
-          {article.provider || article.hoursLabel || article.completedOn ? (
-            <p className="mt-4 text-sm font-medium text-slate-700">
-              {[
-                article.provider,
-                article.hoursLabel,
-                article.completedOn
-                  ? `Completed ${article.completedOn}`
-                  : null,
-              ]
-                .filter(Boolean)
-                .join(" · ")}
-            </p>
+          {article.provider ||
+          article.hoursLabel ||
+          article.completedOn ||
+          article.gosc ? (
+            <div className="mt-4 space-y-1 text-sm font-medium text-slate-700">
+              {article.provider || article.hoursLabel || article.completedOn ? (
+                <p>
+                  {[
+                    article.provider,
+                    article.hoursLabel,
+                    article.completedOn
+                      ? `Completed ${article.completedOn}`
+                      : null,
+                  ]
+                    .filter(Boolean)
+                    .join(" · ")}
+                </p>
+              ) : null}
+              {article.gosc ? (
+                <p className="text-slate-600">
+                  GOsC map: {formatOpsThemes(article.gosc.opsThemes)}
+                  {" · "}
+                  {learningModeLabel(article.gosc.learningMode)}
+                  {" · "}
+                  Suggested {article.gosc.suggestedHours}h
+                </p>
+              ) : null}
+            </div>
           ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={`/education/${track.slug}`}>
@@ -318,6 +336,21 @@ export default async function EducationArticlePage({ params }: Props) {
                 </div>
               ))}
             </dl>
+          </div>
+        ) : null}
+
+        {track.id === "cpd" && article.status === "published" ? (
+          <div className="mt-12">
+            <CpdReflectiveRecordForm
+              defaults={{
+                activityTitle: article.title,
+                provider: article.provider,
+                suggestedHours: article.gosc?.suggestedHours,
+                learningMode: article.gosc?.learningMode,
+                opsThemes: article.gosc?.opsThemes,
+                activityUrl: `${site.websiteUrl}${path}`,
+              }}
+            />
           </div>
         ) : null}
 

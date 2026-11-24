@@ -4,12 +4,15 @@ import { notFound, redirect } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
 import { EducationArticleCard } from "@/components/education/EducationArticleCard";
 import { EducationAudienceBanner } from "@/components/education/EducationAudienceBanner";
+import { CpdSchemePanel } from "@/components/education/CpdSchemePanel";
 import {
+  educationHref,
   educationTracks,
   getBrowsableArticlesForTrack,
   getEducationTrack,
   type EducationTrackId,
 } from "@/lib/education";
+import { GOSC_CPD_URL } from "@/lib/gosc-cpd";
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -124,6 +127,12 @@ export default async function EducationTrackPage({ params }: Props) {
             ) : null}
             {track.id === "cpd" ? (
               <>
+                <ButtonLink
+                  href={educationHref("cpd", "gosc-cpd-scheme-overview")}
+                  variant="secondary"
+                >
+                  Start with scheme overview
+                </ButtonLink>
                 <ButtonLink href="/about" variant="secondary">
                   Credentials on About
                 </ButtonLink>
@@ -153,7 +162,29 @@ export default async function EducationTrackPage({ params }: Props) {
         />
       </section>
 
+      {track.id === "cpd" ? (
+        <section className="mx-auto max-w-6xl px-5 pb-10 md:px-8">
+          <CpdSchemePanel />
+          <p className="mt-4 text-sm text-slate-500">
+            Official GOsC hub:{" "}
+            <a
+              href={GOSC_CPD_URL}
+              className="font-semibold text-teal hover:text-teal-dark"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              osteopathy.org.uk CPD section
+            </a>
+          </p>
+        </section>
+      ) : null}
+
       <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+        {track.id === "cpd" ? (
+          <h2 className="mb-6 font-display text-2xl text-navy md:text-3xl">
+            CPD activities on this site
+          </h2>
+        ) : null}
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {articles.map((article) => (
             <li key={article.slug}>

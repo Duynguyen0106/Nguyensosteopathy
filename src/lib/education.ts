@@ -46,6 +46,17 @@ export type EducationArticle = {
   /** Public path e.g. /education/cpd/my-course.pdf */
   pdfPath?: string;
   relatedServiceSlug?: string;
+  /**
+   * Optional link to `site.practitioner.qualifications[].id`
+   * (used for CPD course summaries tied to a certificate).
+   */
+  relatedCredentialId?: string;
+  /** Course provider when this is a CPD summary */
+  provider?: string;
+  /** e.g. "8 hours" */
+  hoursLabel?: string;
+  /** Human date label e.g. "10 October 2026" */
+  completedOn?: string;
 };
 
 export const educationTracks: EducationTrack[] = [
@@ -168,6 +179,54 @@ export const educationArticles: EducationArticle[] = [
     ],
   },
   {
+    slug: "shockwave-therapy-clinical-practice",
+    track: "cpd",
+    title: "Course notes: Shockwave Therapy for Clinical Practice",
+    summary:
+      "Practitioner summary of an 8-hour OMT Training CPD in radial extracorporeal shockwave therapy (rESWT) — indications, contraindications, safety, and MSK integration at this clinic.",
+    status: "published",
+    relatedCredentialId: "shockwave-cpd",
+    relatedServiceSlug: "focused-shockwave",
+    provider: "OMT Training",
+    hoursLabel: "8 hours",
+    completedOn: "10 October 2026",
+    sections: [
+      {
+        heading: "Learning outcomes",
+        body: "Recognise when radial shockwave is a reasonable adjunct for stubborn tendon and soft-tissue presentations; screen contraindications and red flags before treatment; explain expected sensation, dosing logic, and aftercare in plain language; and document consent, device settings, and review points within osteopathic MSK care.",
+      },
+      {
+        heading: "Clinical integration at this clinic",
+        body: "Shockwave is offered after clinical screening as an adjunctive tool — not a stand-alone gadget pathway. Sessions sit alongside load management, soft-tissue and joint work, and graded rehab. Suitability is confirmed first; not every sore tendon is a shockwave candidate. Patient-facing service detail lives on the focused shockwave page; this note is for practitioner reflection and CPD logging.",
+      },
+      {
+        heading: "Safety and scope reminders",
+        body: "Respect manufacturer guidance, infection control, and device maintenance. Exclude or refer when history suggests medical review should lead (for example unexplained progressive neurological change, suspected fracture, or presentations outside osteopathic scope). Keep CPD certificates and local protocols with your regulator file — this page summarises learning; it does not replace the certificate or insurer wording.",
+      },
+      {
+        heading: "Reflection prompts",
+        body: "Use the CPD log template to record: which presentations you will screen more carefully; what you will change in consent language; how you will dose and review a short course; and when you will stop and refer. Revisit those notes after the next few shockwave episodes in clinic.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is this the same as the certificate PDF?",
+        answer:
+          "No. The certificate proves course completion. This page is a practitioner summary and reflection aid linked to that credential.",
+      },
+      {
+        question: "Where do patients read about shockwave?",
+        answer:
+          "Send patients to the focused shockwave service page and fees list. Keep this CPD note for colleagues and your own log.",
+      },
+    ],
+    caveats: [
+      "Practitioner education only — not patient treatment instructions.",
+      "Does not replace the course certificate, device training records, or professional indemnity terms.",
+      "Practise within GOsC scope and your own competence.",
+    ],
+  },
+  {
     slug: "cpd-log-template",
     track: "cpd",
     title: "CPD log template (clinic use)",
@@ -184,8 +243,8 @@ export const educationArticles: EducationArticle[] = [
         body: "1) Activity title and provider. 2) Date and hours. 3) Learning objectives. 4) Key clinical takeaways. 5) What you will change in assessment or rehab. 6) Evidence or references to revisit. 7) Follow-up date to check whether practice changed.",
       },
       {
-        heading: "How we will use this hub",
-        body: "Future course summaries from Austin’s CPD will be published as separate pages under this track, with downloadable notes where useful.",
+        heading: "How we use this hub",
+        body: "Course summaries from Austin’s CPD are published as separate pages under this track (starting with Shockwave Therapy for Clinical Practice), with certificate links on About and downloadable notes where useful. Use this template after each activity.",
       },
     ],
     faqs: [
@@ -198,34 +257,6 @@ export const educationArticles: EducationArticle[] = [
     caveats: [
       "Not patient advice.",
       "Does not replace your professional indemnity, local protocols, or course certificates.",
-    ],
-  },
-  {
-    slug: "course-slot-msk-rehab",
-    track: "cpd",
-    title: "Course notes: MSK rehab",
-    summary:
-      "Practitioner notes from a future musculoskeletal rehab CPD activity will appear here when published.",
-    status: "coming-soon",
-    sections: [
-      {
-        heading: "Not published yet",
-        body: "This page is a reserved space for a forthcoming CPD summary on MSK rehab programming. Check back after the next course update, or browse the CPD log template meanwhile.",
-      },
-    ],
-  },
-  {
-    slug: "course-slot-acupuncture-update",
-    track: "cpd",
-    title: "Course notes: acupuncture update",
-    summary:
-      "Practitioner reflection from a future acupuncture CPD update will appear here when published.",
-    status: "coming-soon",
-    sections: [
-      {
-        heading: "Not published yet",
-        body: "This page will hold practitioner-facing notes from an acupuncture CPD update. Patient explanations of needling stay on the Acupuncture education track.",
-      },
     ],
   },
 ];
@@ -257,6 +288,17 @@ export function getEducationArticle(
 ): EducationArticle | undefined {
   return educationArticles.find(
     (article) => article.track === track && article.slug === slug,
+  );
+}
+
+/** CPD course summary tied to a qualifications[].id, if published. */
+export function getEducationArticleByCredentialId(
+  credentialId: string,
+): EducationArticle | undefined {
+  return educationArticles.find(
+    (article) =>
+      article.relatedCredentialId === credentialId &&
+      article.status === "published",
   );
 }
 

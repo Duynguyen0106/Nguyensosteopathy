@@ -109,7 +109,58 @@ export const site = {
         href: undefined as string | undefined,
         certificateHref: "/credentials/nasm-personal-fitness-trainer.pdf",
       },
+      {
+        id: "malpractice-insurance",
+        kind: "insurance" as const,
+        title: "Medical Malpractice & Public/Products Liability",
+        shortTitle: "Malpractice & public liability",
+        issuer: "Institute of Osteopathy · Intact Insurance (via James Hallam Ltd)",
+        detail:
+          "iO member cover — Medical Malpractice, Public & Products Liability. Limit £5,000,000 any one event. Master Policy RTT284089. Includes osteopathy plus qualified adjuncts such as acupuncture, dry needling, shockwave therapy, sports/remedial massage, pregnancy massage, and ultrasound.",
+        dateLabel: "1 Dec 2026 – 30 Nov 2027",
+        href: undefined as string | undefined,
+        certificateHref:
+          "/credentials/medical-malpractice-insurance-2026-2027.pdf",
+      },
     ],
+    /**
+     * Professional indemnity / malpractice cover (iO member scheme).
+     * Public PDFs omit premium/fee pages. Bridge cert covers 25–30 Nov 2026.
+     */
+    insurance: {
+      policyholder: "Mr Ba-Duy Nguyen",
+      masterPolicyNo: "RTT284089",
+      cover: "Medical Malpractice, Public & Products Liability",
+      limitAnyOneEvent: "£5,000,000",
+      libelSlanderAggregate: "£5,000,000",
+      productsAggregate: "£5,000,000",
+      disciplinaryCostsAggregate: "£100,000",
+      insurers: "Intact Insurance",
+      arrangedVia:
+        "Institute of Osteopathy (Appointed Representative of James Hallam Ltd)",
+      periodFrom: "1 December 2026",
+      periodTo: "30 November 2027",
+      renewalDate: "1 December 2027",
+      certificateHref:
+        "/credentials/medical-malpractice-insurance-2026-2027.pdf",
+      bridgeCertificateHref:
+        "/credentials/medical-malpractice-insurance-2026-bridge.pdf",
+      bridgePeriodLabel: "25–30 November 2026",
+      treatmentsCovered: [
+        "Osteopathy",
+        "Acupuncture",
+        "Dry needling",
+        "Shockwave therapy",
+        "Sports and remedial massage / sports injuries",
+        "Pregnancy massage",
+        "Swedish massage",
+        "Baby/infant massage",
+        "Personal training / exercise prescription",
+        "Taping / kinesiology tape",
+        "Ultrasound",
+        "Reflexology",
+      ],
+    },
   },
   phone: "07882 843513",
   /** E.164 for schema.org and reliable click-to-call. */
@@ -130,7 +181,7 @@ export const site = {
    * content dates. Bump when major site copy/structure ships — do not use
    * request-time `new Date()` in sitemap.ts (forces a dynamic route).
    */
-  sitemapDefaultLastmod: "2026-11-15",
+  sitemapDefaultLastmod: "2026-11-24",
   address: {
     line1: "9 The Village",
     line2: "Charlton, London, SE7 8UG",

@@ -261,7 +261,9 @@ export default function AboutPage() {
                           ? "Diploma"
                           : item.kind === "certificate"
                             ? "Certificate"
-                            : "CPD"}
+                            : item.kind === "insurance"
+                              ? "Insurance"
+                              : "CPD"}
                 </p>
                 <h3 className="mt-2 font-display text-xl text-navy">
                   {item.shortTitle}
@@ -293,7 +295,9 @@ export default function AboutPage() {
                       rel="noopener noreferrer"
                       className="text-sm font-semibold text-teal hover:text-teal-dark"
                     >
-                      View certificate (PDF)
+                      {item.kind === "insurance"
+                        ? "View insurance certificate (PDF)"
+                        : "View certificate (PDF)"}
                     </a>
                   ) : null}
                 </div>

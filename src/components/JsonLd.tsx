@@ -174,38 +174,40 @@ export function buildPractitionerJsonLd() {
         name: "University of Westminster",
       },
     ],
-    hasCredential: site.practitioner.qualifications.map((item) => ({
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory:
-        item.kind === "licence"
-          ? "Professional licence"
-          : item.kind === "degree"
-            ? "degree"
-            : item.kind === "study"
-              ? "degree (in progress)"
-              : item.kind === "diploma"
-                ? "diploma"
-                : "certificate",
-      name: item.title,
-      description: `${item.detail} (${item.dateLabel})`,
-      recognizedBy: {
-        "@type": "Organization",
-        name: item.issuer,
-        ...(item.id === "gosc"
-          ? { url: "https://www.osteopathy.org.uk/" }
-          : {}),
-      },
-      ...(item.id === "gosc"
-        ? {
-            identifier: site.practitioner.regNo,
-            url: site.practitioner.goscRegisterUrl,
-          }
-        : item.certificateHref
-          ? { url: `${site.websiteUrl}${item.certificateHref}` }
-          : item.href
-            ? { url: item.href }
+    hasCredential: site.practitioner.qualifications
+      .filter((item) => item.kind !== "insurance")
+      .map((item) => ({
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory:
+          item.kind === "licence"
+            ? "Professional licence"
+            : item.kind === "degree"
+              ? "degree"
+              : item.kind === "study"
+                ? "degree (in progress)"
+                : item.kind === "diploma"
+                  ? "diploma"
+                  : "certificate",
+        name: item.title,
+        description: `${item.detail} (${item.dateLabel})`,
+        recognizedBy: {
+          "@type": "Organization",
+          name: item.issuer,
+          ...(item.id === "gosc"
+            ? { url: "https://www.osteopathy.org.uk/" }
             : {}),
-    })),
+        },
+        ...(item.id === "gosc"
+          ? {
+              identifier: site.practitioner.regNo,
+              url: site.practitioner.goscRegisterUrl,
+            }
+          : item.certificateHref
+            ? { url: `${site.websiteUrl}${item.certificateHref}` }
+            : item.href
+              ? { url: item.href }
+              : {}),
+      })),
     memberOf: {
       "@type": "Organization",
       name: "General Osteopathic Council",

@@ -17,7 +17,7 @@ export const siteMapGroups = [
         href: "/education/acupuncture/reference",
         label: "Acupuncture reference corpus",
       },
-      { href: "/education/cpd", label: "CPD for practitioners" },
+      { href: "/education/cpd", label: "CPD (GOsC-aligned)" },
       { href: "/resources", label: "Patient resources" },
       { href: "/find-us", label: "Find us & parking" },
       { href: "/contact", label: "Contact" },

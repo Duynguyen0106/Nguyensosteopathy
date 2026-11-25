@@ -60,9 +60,11 @@ export default function FaqPage() {
         <div className="mx-auto max-w-3xl">
           <FaqAccordion items={faqs} headingLevel={2} />
           <p className="mt-8 text-sm text-slate-600">
-            Still unsure?{" "}
+            Still unsure? Use{" "}
+            <strong className="font-semibold text-navy">Ask the clinic</strong>{" "}
+            in the corner for a quick answer,{" "}
             <Link href="/contact" className="prose-link">
-              Contact us
+              contact us
             </Link>
             , WhatsApp, or call{" "}
             <a href={site.phoneHref} className="prose-link">

@@ -23,6 +23,11 @@ export function isCorpusPath(pathname: string): boolean {
   );
 }
 
+/** Patient ask API — middleware skips general scrape bucket; route self-limits. */
+export function isAskApiPath(pathname: string): boolean {
+  return pathname === "/api/ask" || pathname.startsWith("/api/ask/");
+}
+
 export function clientIp(request: Request): string {
   const cf = request.headers.get("cf-connecting-ip");
   if (cf) return cf.trim();
@@ -92,6 +97,8 @@ export function takeRateToken(
 export const RATE_LIMITS = {
   general: { limit: 90, windowMs: 60_000 },
   corpus: { limit: 25, windowMs: 60_000 },
+  /** Chat bursts — enforced in /api/ask (middleware skips this path). */
+  ask: { limit: 10, windowMs: 10 * 60_000 },
 } as const;
 
 export function forbiddenResponse(reason: string): Response {
@@ -111,6 +118,22 @@ export function tooManyRequestsResponse(retryAfterSec: number): Response {
     status: 429,
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "no-store",
+      "Retry-After": String(retryAfterSec),
+      "X-Robots-Tag": "noindex",
+    },
+  });
+}
+
+/** JSON 429 for API clients (e.g. /api/ask widget). */
+export function tooManyRequestsJson(
+  retryAfterSec: number,
+  error = "Too many requests — please try again shortly.",
+): Response {
+  return new Response(JSON.stringify({ error, retryAfterSec }), {
+    status: 429,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "no-store",
       "Retry-After": String(retryAfterSec),
       "X-Robots-Tag": "noindex",

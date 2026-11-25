@@ -7,6 +7,7 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { MobileBookBar } from "@/components/MobileBookBar";
+import { PatientAskWidget } from "@/components/PatientAskWidget";
 import { SkipLink } from "@/components/SkipLink";
 import { defaultOgImage } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -146,6 +147,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <Footer />
         <MobileBookBar />
+        <PatientAskWidget />
         <CookieBanner />
         <GoogleAnalytics />
         <ConsentAnalytics />

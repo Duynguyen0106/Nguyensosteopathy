@@ -13,6 +13,7 @@
 
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "lint": "eslint",
+    "test:patient-ask": "npx --yes tsx --test src/lib/patient-ask/patient-ask.test.ts",
     "lint:conditions": "node scripts/lint-condition-density.mjs",
     "leaflet": "node scripts/generate-leaflet.mjs",
     "promo": "node scripts/generate-promo-graphic.mjs",

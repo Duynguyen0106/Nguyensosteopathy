@@ -1,36 +1,44 @@
 import { faqs, pricing, site } from "@/lib/site";
-import type { PatientAskHandoff } from "@/lib/patient-ask/safety";
+import { DISCLAIMER, type PatientAskHandoff } from "@/lib/patient-ask/safety";
 
 export type LocalAnswer = {
   answer: string;
   handoff?: PatientAskHandoff;
 };
 
-function includesAny(text: string, needles: string[]): boolean {
-  return needles.some((needle) => text.includes(needle));
+function hasWord(text: string, word: string): boolean {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`\\b${escaped}\\b`, "i").test(text);
+}
+
+function hasAnyWord(text: string, words: string[]): boolean {
+  return words.some((word) => hasWord(text, word));
+}
+
+function hasPhrase(text: string, phrase: string): boolean {
+  return text.includes(phrase.toLowerCase());
+}
+
+function hasAnyPhrase(text: string, phrases: string[]): boolean {
+  return phrases.some((phrase) => hasPhrase(text, phrase));
 }
 
 /**
  * Deterministic answers for the most common clinic-ops questions.
- * Used before the LLM and as a better fallback when the model is unavailable.
+ * Uses word boundaries / intent phrases to avoid false positives
+ * (e.g. "open to trying" must not match opening hours).
  */
 export function matchLocalAnswer(question: string): LocalAnswer | null {
-  const q = question.toLowerCase();
+  const q = question.toLowerCase().trim();
 
   if (
-    includesAny(q, [
-      "fee",
-      "fees",
-      "price",
-      "prices",
-      "cost",
+    hasAnyPhrase(q, [
       "how much",
-      "pricing",
-      "charge",
-      "£",
       "initial visit",
       "initial consultation",
-    ])
+    ]) ||
+    hasAnyWord(q, ["fee", "fees", "price", "prices", "cost", "pricing", "charge"]) ||
+    q.includes("£")
   ) {
     const lines = pricing
       .slice(0, 6)
@@ -43,20 +51,37 @@ export function matchLocalAnswer(question: string): LocalAnswer | null {
         "",
         `${site.discount}. Full list: /fees`,
         "",
-        "General clinic information — not a diagnosis.",
+        DISCLAIMER,
       ].join("\n"),
       handoff: "book",
     };
   }
 
+  // Cancellation before generic "book" intent.
   if (
-    includesAny(q, [
-      "hour",
-      "hours",
-      "open",
-      "opening",
-      "when are you",
-      "what time",
+    hasAnyWord(q, ["cancel", "cancellation", "reschedule", "postpone"]) ||
+    hasAnyPhrase(q, ["cancel my", "change my booking", "change my appointment"])
+  ) {
+    return {
+      answer: [
+        site.cancellation,
+        "Please call or WhatsApp as soon as you know, or use the options in your booking confirmation.",
+        `Phone: ${site.phone}`,
+        "",
+        DISCLAIMER,
+      ].join("\n"),
+      handoff: "whatsapp",
+    };
+  }
+
+  if (
+    hasAnyWord(q, ["hour", "hours", "opening"]) ||
+    hasAnyPhrase(q, [
+      "when are you open",
+      "what time are you",
+      "are you open",
+      "opening times",
+      "opening hours",
     ])
   ) {
     const hours = site.booking.hours
@@ -68,22 +93,22 @@ export function matchLocalAnswer(question: string): LocalAnswer | null {
         site.booking.note,
         "Live slots are always shown on /book.",
         "",
-        "General clinic information — not a diagnosis.",
+        DISCLAIMER,
       ].join("\n"),
       handoff: "book",
     };
   }
 
   if (
-    includesAny(q, [
+    hasAnyPhrase(q, [
       "where are you",
-      "address",
-      "location",
       "find you",
-      "parking",
-      "charlton",
+      "your address",
+      "clinic address",
       "village pharmacy",
-    ])
+      "how do i get",
+    ]) ||
+    hasAnyWord(q, ["address", "location", "parking", "directions"])
   ) {
     return {
       answer: [
@@ -91,20 +116,21 @@ export function matchLocalAnswer(question: string): LocalAnswer | null {
         "Ask at the pharmacy counter on arrival and they will direct you to the osteopathy room.",
         "Directions and parking: /find-us",
         "",
-        "General clinic information — not a diagnosis.",
+        DISCLAIMER,
       ].join("\n"),
       handoff: "phone",
     };
   }
 
   if (
-    includesAny(q, [
-      "referral",
+    hasAnyPhrase(q, [
       "gp referral",
       "doctor referral",
       "need a gp",
       "need a doctor",
-    ])
+      "need referral",
+    ]) ||
+    (hasWord(q, "referral") && !hasWord(q, "prefer"))
   ) {
     return {
       answer: [
@@ -112,51 +138,121 @@ export function matchLocalAnswer(question: string): LocalAnswer | null {
         "If you have relevant medical letters or imaging, bring them along.",
         "Book: /book",
         "",
-        "General clinic information — not a diagnosis.",
+        DISCLAIMER,
       ].join("\n"),
       handoff: "book",
     };
   }
 
-  if (includesAny(q, ["book", "appointment", "availability", "slot"])) {
+  if (
+    hasAnyPhrase(q, [
+      "book online",
+      "book an appointment",
+      "make an appointment",
+      "availability",
+      "available slots",
+      "want to book",
+      "like to book",
+    ]) ||
+    (hasWord(q, "appointment") &&
+      hasAnyWord(q, ["book", "booking", "schedule", "arrange"])) ||
+    (hasWord(q, "slot") && hasAnyWord(q, ["book", "available", "free"]))
+  ) {
     return {
       answer: [
         "You can book online at /book, or call/WhatsApp the clinic for help choosing a time.",
         site.booking.shortNote,
         "",
-        "General clinic information — not a diagnosis.",
+        DISCLAIMER,
       ].join("\n"),
       handoff: "book",
     };
   }
 
-  if (includesAny(q, ["nhs", "student", "discount"])) {
+  if (
+    hasAnyWord(q, ["nhs", "student", "discount"]) ||
+    hasAnyPhrase(q, ["10%", "ten percent"])
+  ) {
     return {
       answer: [
         site.discount,
         "More detail: /nhs-discount",
         "",
-        "General clinic information — not a diagnosis.",
+        DISCLAIMER,
       ].join("\n"),
       handoff: "book",
     };
   }
 
-  // Soft FAQ keyword overlap — first published FAQ that shares several words.
+  // Soft FAQ overlap — prefer question-side tokens; require stronger score.
+  const stop = new Set([
+    "what",
+    "when",
+    "where",
+    "which",
+    "with",
+    "have",
+    "does",
+    "about",
+    "your",
+    "from",
+    "this",
+    "that",
+    "they",
+    "them",
+    "will",
+    "would",
+    "could",
+    "should",
+    "into",
+    "than",
+    "then",
+    "just",
+    "like",
+    "some",
+    "more",
+    "also",
+    "very",
+  ]);
   const tokens = q
     .replace(/[^a-z0-9\s]/g, " ")
     .split(/\s+/)
-    .filter((t) => t.length > 3);
+    .filter((t) => t.length > 3 && !stop.has(t));
+
   if (tokens.length >= 2) {
-    let best: { score: number; question: string; answer: string } | null = null;
+    let best: {
+      score: number;
+      questionScore: number;
+      question: string;
+      answer: string;
+    } | null = null;
+
     for (const item of faqs) {
-      const hay = `${item.question} ${item.answer}`.toLowerCase();
-      const score = tokens.reduce((sum, token) => sum + (hay.includes(token) ? 1 : 0), 0);
-      if (score >= 2 && (!best || score > best.score)) {
-        best = { score, question: item.question, answer: item.answer };
+      const questionHay = item.question.toLowerCase();
+      const answerHay = item.answer.toLowerCase();
+      let questionScore = 0;
+      let answerScore = 0;
+      for (const token of tokens) {
+        if (questionHay.includes(token)) questionScore += 1;
+        else if (answerHay.includes(token)) answerScore += 1;
+      }
+      // Weight question matches higher than answer-body matches.
+      const score = questionScore * 2 + answerScore;
+      if (
+        questionScore >= 3 &&
+        score >= 5 &&
+        (!best || score > best.score)
+      ) {
+        best = {
+          score,
+          questionScore,
+          question: item.question,
+          answer: item.answer,
+        };
       }
     }
-    if (best && best.score >= Math.min(3, tokens.length)) {
+
+    if (best && best.questionScore >= 3 && best.score >= 5) {
       return {
         answer: [
           best.answer,
@@ -164,7 +260,7 @@ export function matchLocalAnswer(question: string): LocalAnswer | null {
           `Related FAQ: ${best.question}`,
           "More answers: /faq",
           "",
-          "General clinic information — not a diagnosis.",
+          DISCLAIMER,
         ].join("\n"),
       };
     }

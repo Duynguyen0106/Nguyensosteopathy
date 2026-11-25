@@ -1,22 +1,29 @@
 import { NextResponse } from "next/server";
 import {
+  RATE_LIMITS,
   clientIp,
   takeRateToken,
-  tooManyRequestsResponse,
+  tooManyRequestsJson,
 } from "@/lib/anti-scrape";
 import { completeChat, resolveAiConfig } from "@/lib/patient-ask/llm";
 import { matchLocalAnswer } from "@/lib/patient-ask/local-answers";
 import {
   FALLBACK_NO_KEY_ANSWER,
-  checkPatientAskSafety,
-  extractHandoff,
+  checkMessagesSafety,
+  filterModelAnswer,
   type PatientAskHandoff,
 } from "@/lib/patient-ask/safety";
 import { buildPatientAskSystemPrompt } from "@/lib/patient-ask/system-prompt";
 
 const MAX_MESSAGES = 12;
 const MAX_CONTENT_CHARS = 1_200;
-const ASK_RATE = { limit: 10, windowMs: 10 * 60_000 } as const;
+
+const ALLOWED_ORIGIN_HOSTS = new Set([
+  "www.nguyensosteopathy.com",
+  "nguyensosteopathy.com",
+  "localhost",
+  "127.0.0.1",
+]);
 
 type IncomingMessage = {
   role?: unknown;
@@ -28,22 +35,37 @@ type AskBody = {
   honeypot?: unknown;
 };
 
+function isAllowedHost(host: string): boolean {
+  const bare = host.toLowerCase().split(":")[0] || "";
+  if (ALLOWED_ORIGIN_HOSTS.has(bare)) return true;
+  // Cloudflare Workers preview hosts for this project.
+  if (bare.endsWith(".nguyensosteopathy.workers.dev")) return true;
+  if (bare.endsWith(".workers.dev") && bare.includes("nguyensosteopathy")) {
+    return true;
+  }
+  return false;
+}
+
 function sameSiteOrigin(request: Request): boolean {
   const origin = request.headers.get("origin");
+  const host = (request.headers.get("host") || "").toLowerCase();
+
   if (!origin) {
-    // Same-origin navigations / some browsers omit Origin on POST from same site.
+    // Browsers may omit Origin on same-origin POST; require sec-fetch-site.
     const secFetchSite = request.headers.get("sec-fetch-site");
-    if (!secFetchSite || secFetchSite === "same-origin" || secFetchSite === "same-site") {
-      return true;
+    if (secFetchSite === "same-origin" || secFetchSite === "same-site") {
+      return isAllowedHost(host);
     }
+    // Reject bare requests with neither Origin nor a same-site fetch metadata
+    // (blocks casual curl quota burns).
     return false;
   }
 
   try {
-    const host = request.headers.get("host") || "";
-    const originHost = new URL(origin).host;
+    const originHost = new URL(origin).host.toLowerCase();
     if (!host) return false;
-    return originHost === host || originHost.endsWith(".nguyensosteopathy.com");
+    if (originHost === host) return isAllowedHost(host);
+    return isAllowedHost(originHost) && isAllowedHost(host);
   } catch {
     return false;
   }
@@ -57,7 +79,12 @@ function normaliseMessages(
   const out: { role: "user" | "assistant"; content: string }[] = [];
 
   for (const item of sliced) {
-    const role = item.role === "assistant" ? "assistant" : item.role === "user" ? "user" : null;
+    const role =
+      item.role === "assistant"
+        ? "assistant"
+        : item.role === "user"
+          ? "user"
+          : null;
     if (!role) return null;
     if (typeof item.content !== "string") return null;
     const content = item.content.trim().slice(0, MAX_CONTENT_CHARS);
@@ -69,6 +96,21 @@ function normaliseMessages(
   return out;
 }
 
+/**
+ * Only send the latest user question to the model (plus system prompt).
+ * Ignores client-supplied assistant turns to reduce prompt injection.
+ */
+function modelMessages(
+  messages: { role: "user" | "assistant"; content: string }[],
+) {
+  const latestUser = messages.filter((m) => m.role === "user").at(-1);
+  if (!latestUser) return null;
+  return [
+    { role: "system" as const, content: buildPatientAskSystemPrompt() },
+    { role: "user" as const, content: latestUser.content },
+  ];
+}
+
 export async function POST(request: Request) {
   if (!sameSiteOrigin(request)) {
     return NextResponse.json({ error: "Forbidden origin" }, { status: 403 });
@@ -77,11 +119,11 @@ export async function POST(request: Request) {
   const ip = clientIp(request);
   const { ok, retryAfterSec } = takeRateToken(
     `ask:${ip}`,
-    ASK_RATE.limit,
-    ASK_RATE.windowMs,
+    RATE_LIMITS.ask.limit,
+    RATE_LIMITS.ask.windowMs,
   );
   if (!ok) {
-    return tooManyRequestsResponse(retryAfterSec);
+    return tooManyRequestsJson(retryAfterSec);
   }
 
   let body: AskBody;
@@ -104,8 +146,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid messages" }, { status: 400 });
   }
 
-  const latestUser = messages.filter((m) => m.role === "user").at(-1)?.content || "";
-  const safety = checkPatientAskSafety(latestUser);
+  const safety = checkMessagesSafety(messages);
   if (safety.blocked) {
     return NextResponse.json({
       answer: safety.answer,
@@ -113,13 +154,15 @@ export async function POST(request: Request) {
     });
   }
 
+  const latestUser =
+    messages.filter((m) => m.role === "user").at(-1)?.content || "";
+
   // Grounded SSOT answers first for common ops questions (fees/hours/location).
   const local = matchLocalAnswer(latestUser);
   if (local) {
     return NextResponse.json({
       answer: local.answer,
       ...(local.handoff ? { handoff: local.handoff } : {}),
-      local: true,
     });
   }
 
@@ -128,25 +171,25 @@ export async function POST(request: Request) {
     return NextResponse.json({
       answer: FALLBACK_NO_KEY_ANSWER,
       handoff: "whatsapp" as PatientAskHandoff,
-      fallback: true,
     });
   }
 
+  const llmMessages = modelMessages(messages);
+  if (!llmMessages) {
+    return NextResponse.json({ error: "Invalid messages" }, { status: 400 });
+  }
+
   try {
-    const raw = await completeChat(config, [
-      { role: "system", content: buildPatientAskSystemPrompt() },
-      ...messages,
-    ]);
-    const { cleanAnswer, handoff } = extractHandoff(raw);
+    const raw = await completeChat(config, llmMessages);
+    const filtered = filterModelAnswer(raw);
     return NextResponse.json({
-      answer: cleanAnswer,
-      ...(handoff ? { handoff } : {}),
+      answer: filtered.answer,
+      ...(filtered.handoff ? { handoff: filtered.handoff } : {}),
     });
   } catch {
     return NextResponse.json({
       answer: FALLBACK_NO_KEY_ANSWER,
       handoff: "whatsapp" as PatientAskHandoff,
-      fallback: true,
     });
   }
 }

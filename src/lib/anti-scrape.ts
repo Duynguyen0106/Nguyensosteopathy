@@ -124,3 +124,19 @@ export function tooManyRequestsResponse(retryAfterSec: number): Response {
     },
   });
 }
+
+/** JSON 429 for API clients (e.g. /api/ask widget). */
+export function tooManyRequestsJson(
+  retryAfterSec: number,
+  error = "Too many requests — please try again shortly.",
+): Response {
+  return new Response(JSON.stringify({ error, retryAfterSec }), {
+    status: 429,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store",
+      "Retry-After": String(retryAfterSec),
+      "X-Robots-Tag": "noindex",
+    },
+  });
+}

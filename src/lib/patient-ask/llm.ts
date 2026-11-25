@@ -9,6 +9,8 @@ export type AiConfig = {
   model: string;
 };
 
+const DEFAULT_TIMEOUT_MS = 12_000;
+
 export function resolveAiConfig(): AiConfig | null {
   const key = process.env.AI_API_KEY?.trim() || "";
   if (!key) return null;
@@ -39,6 +41,7 @@ type CompletionsResponse = {
 export async function completeChat(
   config: AiConfig,
   messages: ChatMessage[],
+  timeoutMs = DEFAULT_TIMEOUT_MS,
 ): Promise<string> {
   const headers: Record<string, string> = {
     Authorization: `Bearer ${config.key}`,
@@ -51,26 +54,39 @@ export async function completeChat(
     headers["X-Title"] = "Nguyens Osteopathic Clinic Ask";
   }
 
-  const response = await fetch(`${config.baseUrl}/chat/completions`, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      model: config.model,
-      temperature: 0.3,
-      max_tokens: 700,
-      messages,
-    }),
-  });
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
 
-  const data = (await response.json()) as CompletionsResponse;
-  if (!response.ok) {
-    const detail = data.error?.message || response.statusText;
-    throw new Error(`AI request failed (${response.status}): ${detail}`);
-  }
+  try {
+    const response = await fetch(`${config.baseUrl}/chat/completions`, {
+      method: "POST",
+      headers,
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: config.model,
+        temperature: 0.3,
+        max_tokens: 700,
+        messages,
+      }),
+    });
 
-  const content = data.choices?.[0]?.message?.content?.trim();
-  if (!content) {
-    throw new Error("AI returned an empty answer");
+    const data = (await response.json()) as CompletionsResponse;
+    if (!response.ok) {
+      const detail = data.error?.message || response.statusText;
+      throw new Error(`AI request failed (${response.status}): ${detail}`);
+    }
+
+    const content = data.choices?.[0]?.message?.content?.trim();
+    if (!content) {
+      throw new Error("AI returned an empty answer");
+    }
+    return content;
+  } catch (error) {
+    if (error instanceof Error && error.name === "AbortError") {
+      throw new Error("AI request timed out");
+    }
+    throw error;
+  } finally {
+    clearTimeout(timer);
   }
-  return content;
 }

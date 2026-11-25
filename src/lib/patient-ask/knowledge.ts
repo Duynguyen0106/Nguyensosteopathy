@@ -8,6 +8,7 @@ import {
 /**
  * Compact clinic facts for the patient ask assistant.
  * Built from SSOT only — never free-web browse.
+ * Omits master policy numbers / certificate paths (public /insurance page covers detail).
  */
 export function buildClinicKnowledgePack(): string {
   const hours = site.booking.hours
@@ -60,14 +61,11 @@ export function buildClinicKnowledgePack(): string {
     "Services (summaries):",
     serviceLines,
     "",
-    "Professional indemnity (malpractice) cover:",
+    "Professional indemnity (summary for patients):",
     `- Cover: ${ins.cover}`,
     `- Limit any one event: ${ins.limitAnyOneEvent}`,
-    `- Insurers: ${ins.insurers} via ${ins.arrangedVia}`,
-    `- Master policy: ${ins.masterPolicyNo}`,
     `- Period: ${ins.periodFrom} to ${ins.periodTo}`,
-    `- Certificates: ${ins.certificateHref} (and bridge ${ins.bridgeCertificateHref} for ${ins.bridgePeriodLabel})`,
-    `- Public page: ${site.websiteUrl}/insurance`,
+    `- Public certificates and insurer details: ${site.websiteUrl}/insurance`,
     "",
     "Published FAQs:",
     faqLines,

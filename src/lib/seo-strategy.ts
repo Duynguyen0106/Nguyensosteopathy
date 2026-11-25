@@ -73,7 +73,8 @@ export type BookCampaign =
   | "faq"
   | "aftercare"
   | "osteopathy"
-  | "new-patients";
+  | "new-patients"
+  | "ask";
 
 /** UTM query string used on /book and forwarded into the Treow embed. */
 export function bookUtmParams(campaign: BookCampaign): URLSearchParams {

@@ -45,10 +45,10 @@ export async function completeChat(
     "Content-Type": "application/json",
   };
 
-  // OpenRouter optional attribution headers (harmless elsewhere).
+  // OpenRouter optional attribution headers (ASCII only — fetch rejects non-latin-1).
   if (config.baseUrl.includes("openrouter.ai")) {
     headers["HTTP-Referer"] = "https://www.nguyensosteopathy.com";
-    headers["X-Title"] = "Nguyen's Osteopathic Clinic — Ask";
+    headers["X-Title"] = "Nguyens Osteopathic Clinic Ask";
   }
 
   const response = await fetch(`${config.baseUrl}/chat/completions`, {

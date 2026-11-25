@@ -135,7 +135,7 @@ export function PatientAskWidget() {
     void sendMessage(draft);
   }
 
-  const bookPath = bookHref("ask-widget");
+  const bookPath = bookHref("ask");
 
   return (
     <div

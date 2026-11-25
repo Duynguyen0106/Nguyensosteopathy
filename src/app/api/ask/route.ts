@@ -5,6 +5,7 @@ import {
   tooManyRequestsResponse,
 } from "@/lib/anti-scrape";
 import { completeChat, resolveAiConfig } from "@/lib/patient-ask/llm";
+import { matchLocalAnswer } from "@/lib/patient-ask/local-answers";
 import {
   FALLBACK_NO_KEY_ANSWER,
   checkPatientAskSafety,
@@ -111,6 +112,16 @@ export async function POST(request: Request) {
     return NextResponse.json({
       answer: safety.answer,
       handoff: safety.handoff,
+    });
+  }
+
+  // Grounded SSOT answers first for common ops questions (fees/hours/location).
+  const local = matchLocalAnswer(latestUser);
+  if (local) {
+    return NextResponse.json({
+      answer: local.answer,
+      ...(local.handoff ? { handoff: local.handoff } : {}),
+      local: true,
     });
   }
 

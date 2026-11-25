@@ -241,6 +241,7 @@ export const exercises: Exercise[] = [
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
       "coccydynia-sit-ease",
+      "hamstring-return",
       "knee-settle-early",
       "lateral-hip-settle",
       "osteoporosis-safe-load",
@@ -285,6 +286,7 @@ export const exercises: Exercise[] = [
       "acute-low-back-settle",
       "coccydynia-sit-ease",
       "desk-neck-reset",
+      "hamstring-return",
       "lateral-hip-settle",
       "osteoporosis-safe-load",
       "stenosis-flexion-calm",
@@ -630,6 +632,7 @@ export const exercises: Exercise[] = [
     relatedProgrammeSlugs: [
       "ankle-sprain-early",
       "plantar-heel-load",
+      "shin-calf-capacity",
     ],
   },
   {
@@ -663,6 +666,7 @@ export const exercises: Exercise[] = [
     relatedProgrammeSlugs: [
       "ankle-sprain-early",
       "plantar-heel-load",
+      "shin-calf-capacity",
     ],
   },
   {
@@ -802,7 +806,10 @@ export const exercises: Exercise[] = [
       "lateral-ankle-sprain",
       "achilles-tendinopathy",
     ],
-    relatedProgrammeSlugs: ["ankle-sprain-early"],
+    relatedProgrammeSlugs: [
+      "ankle-sprain-early",
+      "shin-calf-capacity",
+    ],
   },
   {
     slug: "single-leg-balance",
@@ -844,6 +851,7 @@ export const exercises: Exercise[] = [
       "osteoporosis-safe-load",
       "patellofemoral-build",
       "plantar-heel-load",
+      "shin-calf-capacity",
     ],
   },
   {
@@ -879,6 +887,7 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
+      "hamstring-return",
       "lateral-hip-settle",
       "osteoporosis-safe-load",
       "post-visit-gentle-move",
@@ -1202,6 +1211,7 @@ export const exercises: Exercise[] = [
       "lumbar-disc-radiculopathy",
     ],
     relatedProgrammeSlugs: [
+      "hamstring-return",
       "patellofemoral-build",
       "sciatica-nerve-calm",
     ],
@@ -1801,6 +1811,7 @@ export const exercises: Exercise[] = [
       "ankle-sprain-early",
       "forefoot-ease",
       "plantar-heel-load",
+      "shin-calf-capacity",
     ],
   },
   {
@@ -2083,7 +2094,10 @@ export const exercises: Exercise[] = [
       "plantar-fasciitis",
       "shin-splints",
     ],
-    relatedProgrammeSlugs: ["plantar-heel-load"],
+    relatedProgrammeSlugs: [
+      "plantar-heel-load",
+      "shin-calf-capacity",
+    ],
   },
   {
     slug: "single-leg-rdl",
@@ -2118,6 +2132,7 @@ export const exercises: Exercise[] = [
       "osteoporosis",
     ],
     relatedProgrammeSlugs: [
+      "hamstring-return",
       "lateral-hip-settle",
       "osteoporosis-safe-load",
       "patellofemoral-build",
@@ -2193,6 +2208,7 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
+      "hamstring-return",
       "osteoporosis-safe-load",
       "sciatica-nerve-calm",
     ],
@@ -2570,6 +2586,358 @@ export const exercises: Exercise[] = [
       "tennis-elbow-build",
     ],
   },
+  {
+    slug: "tibialis-raise",
+    title: "Tibialis anterior raise",
+    summary:
+      "Heel-down, toes-up lifts for shin control — useful when shin-splint patterns flare with running or hills.",
+    region: "Ankle & Foot",
+    level: "build",
+    equipment: "Wall or chair for light support (optional)",
+    illustration: "ankle-alphabet",
+    steps: [
+      "Stand with heels on the floor and lightly hold a wall if needed.",
+      "Lift the forefeet and toes toward the shins, keeping heels down.",
+      "Pause briefly, then lower with control.",
+      "Keep the knees soft — do not lock back.",
+    ],
+    cues: [
+      "Feel the front of the shin working, not the toes clawing hard.",
+      "Small range with clean control beats bouncing.",
+    ],
+    avoid: [
+      "Pushing through sharp shin pain that worsens after sessions.",
+      "Leaning back so the calves take over.",
+    ],
+    dosage: "10–15 slow reps, 2–3 sets, most days",
+    relatedConditionSlugs: [
+      "shin-splints",
+      "lateral-ankle-sprain",
+      "achilles-tendinopathy",
+    ],
+    relatedProgrammeSlugs: [
+      "ankle-sprain-early",
+      "shin-calf-capacity",
+    ],
+  },
+  {
+    slug: "knee-to-wall-dorsiflexion",
+    title: "Knee-to-wall dorsiflexion",
+    summary:
+      "Gentle ankle mobility test-and-train: drive the knee toward a wall without lifting the heel.",
+    region: "Ankle & Foot",
+    level: "early",
+    equipment: "Wall",
+    illustration: "standing-calf",
+    steps: [
+      "Stand facing a wall with one foot forward, toes a few centimetres from the wall.",
+      "Keeping the heel down, bend the front knee toward the wall.",
+      "Ease off before sharp front-of-ankle pinching, then repeat.",
+      "Move the foot back slightly as range improves over days.",
+    ],
+    cues: [
+      "Knee tracks over the second toe — avoid collapsing inward.",
+      "Compare sides; chase symmetry more than forcing a number.",
+    ],
+    avoid: [
+      "Forcing through a hard bony block or hot swollen ankle.",
+      "Lifting the heel to cheat range.",
+    ],
+    dosage: "8–12 gentle reps each side, 1–2 sets, most days",
+    relatedConditionSlugs: [
+      "shin-splints",
+      "lateral-ankle-sprain",
+      "achilles-tendinopathy",
+      "plantar-fasciitis",
+    ],
+    relatedProgrammeSlugs: [
+      "ankle-sprain-early",
+      "plantar-heel-load",
+      "shin-calf-capacity",
+    ],
+  },
+  {
+    slug: "nordic-hamstring-assist",
+    title: "Assisted Nordic hamstring lower",
+    summary:
+      "Kneeling slow forward lean with hand assist — return-level hamstring capacity once early drills are easy.",
+    region: "Hip",
+    level: "return",
+    equipment: "Mat; partner, strap, or sturdy furniture to anchor heels",
+    illustration: "standing-hinge",
+    steps: [
+      "Kneel tall with heels anchored and a soft landing zone in front.",
+      "Keep hips extended and slowly lean forward from the knees.",
+      "Use your hands to catch and assist the lower as soon as control fades.",
+      "Push back to the start — do not bounce into a full uncontrolled fall.",
+    ],
+    cues: [
+      "Think “long from knees to shoulders,” not folding at the hips.",
+      "Shallow controlled range beats deep failed reps.",
+    ],
+    avoid: [
+      "Max-effort unassisted Nordics while the hamstring is still irritable.",
+      "Rounding the low back hard to gain range.",
+    ],
+    dosage: "4–6 assisted lowers, 2 sets, 2–3 days per week once settle drills are calm",
+    relatedConditionSlugs: [
+      "hamstring-strain",
+      "acl-rehab",
+      "non-specific-low-back-pain",
+    ],
+    relatedProgrammeSlugs: [
+      "hamstring-return",
+      "patellofemoral-build",
+    ],
+  },
+  {
+    slug: "reverse-lunge-control",
+    title: "Reverse lunge control",
+    summary:
+      "Step-back lunges for knee and hip control — return-to-load friendly when stairs and squats feel settled.",
+    region: "Knee",
+    level: "return",
+    equipment: "None (light support nearby if balance is unsure)",
+    illustration: "step-down",
+    steps: [
+      "Stand tall, then step one foot back into a shallow lunge.",
+      "Lower until the front thigh works without the knee diving inward.",
+      "Drive through the front foot to stand, then switch sides.",
+      "Keep the trunk fairly upright.",
+    ],
+    cues: [
+      "Front knee soft over mid-foot — not collapsing into a knock-knee.",
+      "Shorten the step if the front of the knee pinches.",
+    ],
+    avoid: [
+      "Deep painful lunges while the joint is swollen or locking.",
+      "Pushing through giving-way or sharp joint-line pain.",
+    ],
+    dosage: "6–8 each side, 2 sets, most days once early knee drills are easy",
+    relatedConditionSlugs: [
+      "acl-rehab",
+      "patellofemoral-pain",
+      "itb-syndrome",
+      "hamstring-strain",
+    ],
+    relatedProgrammeSlugs: [
+      "hamstring-return",
+      "knee-settle-early",
+      "patellofemoral-build",
+    ],
+  },
+  {
+    slug: "band-pull-apart",
+    title: "Band pull-apart",
+    summary:
+      "Light band rows with arms long for upper-back endurance — desk and shoulder-stability friendly.",
+    region: "Thoracic",
+    level: "build",
+    equipment: "Light resistance band",
+    illustration: "band-row",
+    steps: [
+      "Hold a light band at shoulder height with arms straight in front.",
+      "Pull the band apart by drawing the shoulder blades together.",
+      "Pause, then return slowly without shrugging.",
+      "Keep ribs quiet — do not lean back to cheat.",
+    ],
+    cues: [
+      "Elbows soft; think “spread the band,” not yanking.",
+      "Stop short of pinching at the top of the shoulders.",
+    ],
+    avoid: [
+      "Heavy bands that recreate neck or shoulder-tip pain.",
+      "Holding the breath or flaring the ribs hard.",
+    ],
+    dosage: "10–15 reps, 2 sets, most days",
+    relatedConditionSlugs: [
+      "scheuermanns",
+      "thoracic-joint-dysfunction",
+      "shoulder-instability",
+      "subacromial-pain",
+      "neck-pain",
+    ],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "osteoporosis-safe-load",
+      "shoulder-stability-build",
+    ],
+  },
+  {
+    slug: "prone-y-raise",
+    title: "Prone Y raise",
+    summary:
+      "Face-down arms into a Y for lower trapezius and scapular control — progress after T raises feel easy.",
+    region: "Shoulder",
+    level: "return",
+    equipment: "Mat or firm bed",
+    illustration: "prone-press",
+    steps: [
+      "Lie face down with forehead on a towel and arms overhead in a shallow Y, thumbs up.",
+      "Lift the arms a short distance without shrugging the ears.",
+      "Pause, then lower with control.",
+      "Keep the neck long and low back quiet.",
+    ],
+    cues: [
+      "Think long arms and light shoulder-blade slide, not high lifts.",
+      "If the top of the shoulder pinches, widen the Y or shorten the lift.",
+    ],
+    avoid: [
+      "Arching the lumbar spine to gain height.",
+      "Heavy dumbbells before bodyweight control is solid.",
+    ],
+    dosage: "8–12 reps, 2 sets, most days once prone T raises are easy",
+    relatedConditionSlugs: [
+      "shoulder-instability",
+      "subacromial-pain",
+      "rotator-cuff-tear",
+      "scheuermanns",
+    ],
+    relatedProgrammeSlugs: [
+      "shoulder-arc-calm",
+      "shoulder-stability-build",
+    ],
+  },
+  {
+    slug: "short-copenhagen",
+    title: "Short Copenhagen adductor hold",
+    summary:
+      "Side-lying inner-thigh hold with the top leg supported — early-to-build groin capacity without a full Copenhagen drop.",
+    region: "Hip",
+    level: "build",
+    equipment: "Bench, sofa edge, or sturdy chair",
+    illustration: "side-lying",
+    steps: [
+      "Lie on your side with the top leg resting on a bench at about mid-shin height.",
+      "Lift the bottom leg to meet the top, or keep both stacked and press the top inner thigh lightly into the bench.",
+      "Hold a gentle isometric, then relax.",
+      "Keep the trunk long — avoid collapsing into a side crunch.",
+    ],
+    cues: [
+      "Mild inner-thigh effort you can breathe through is enough.",
+      "Shorten the lever (support closer to the knee) if this feels too hard.",
+    ],
+    avoid: [
+      "Pushing through sharp groin pinching or recent acute adductor tear pain.",
+      "Twisting the pelvis to cheat height.",
+    ],
+    dosage: "5–8 second holds × 6–8, 1–2 sets each side, most days",
+    relatedConditionSlugs: [
+      "groin-pain",
+      "femoroacetabular-impingement",
+      "hip-oa",
+    ],
+    relatedProgrammeSlugs: [
+      "hamstring-return",
+      "lateral-hip-settle",
+    ],
+  },
+  {
+    slug: "standing-itb-open",
+    title: "Standing ITB open",
+    summary:
+      "Cross-leg side-bend stretch for outer-hip and ITB tightness linked to runner’s knee patterns.",
+    region: "Hip",
+    level: "early",
+    equipment: "Wall for balance (optional)",
+    illustration: "standing-hinge",
+    steps: [
+      "Stand and cross the sore-side leg behind the other.",
+      "Gently lean the trunk away from the sore side until you feel an outer-hip / outer-thigh stretch.",
+      "Hold without bouncing, then switch if needed.",
+      "Keep both feet grounded.",
+    ],
+    cues: [
+      "Lengthen through the outer hip rather than collapsing the low back.",
+      "A mild stretch that eases is useful; sharp joint-line knee pain is not.",
+    ],
+    avoid: [
+      "Forcing into irritable lateral knee pain.",
+      "Twisting aggressively through the lumbar spine.",
+    ],
+    dosage: "20–30 second hold, 2 rounds each side, most days",
+    relatedConditionSlugs: [
+      "itb-syndrome",
+      "greater-trochanteric-pain",
+      "patellofemoral-pain",
+    ],
+    relatedProgrammeSlugs: [
+      "lateral-hip-settle",
+      "patellofemoral-build",
+    ],
+  },
+  {
+    slug: "midrange-quad-isometric",
+    title: "Mid-range quad isometric",
+    summary:
+      "Seated or wall-supported knee-bend hold for patellar tendon loading without deep squat irritability.",
+    region: "Knee",
+    level: "build",
+    equipment: "Chair or wall",
+    illustration: "step-down",
+    steps: [
+      "Sit tall or lean lightly on a wall with the knees bent about 30–60°.",
+      "Press the feet into the floor and gently tense the quads as if straightening, without fully extending.",
+      "Hold, breathe, then relax.",
+      "Keep effort around 30–40% — enough to feel the tendon work, not flare for hours.",
+    ],
+    cues: [
+      "Mild tendon ache that settles by next day can be acceptable in build phase.",
+      "If swelling rises, shorten holds and return to early settle drills.",
+    ],
+    avoid: [
+      "Deep painful angles while the tendon is hot and puffy.",
+      "Breath-holding or hard Valsalva.",
+    ],
+    dosage: "20–30 second holds × 5–8, most days",
+    relatedConditionSlugs: [
+      "patellar-tendinopathy",
+      "patellofemoral-pain",
+      "acl-rehab",
+      "knee-oa",
+    ],
+    relatedProgrammeSlugs: [
+      "hamstring-return",
+      "knee-settle-early",
+      "patellofemoral-build",
+    ],
+  },
+  {
+    slug: "wrist-rotation-isometric",
+    title: "Wrist rotation isometric",
+    summary:
+      "Gentle forearm pronation/supination holds against a fist or towel — calm loading for medial and lateral elbow patterns.",
+    region: "Elbow & Wrist",
+    level: "early",
+    equipment: "Rolled towel or soft ball",
+    illustration: "seated-desk",
+    steps: [
+      "Sit with the elbow bent by your side and forearm neutral, holding a rolled towel.",
+      "Gently try to rotate the palm down (pronate) against the towel without moving much.",
+      "Relax, then gently try to rotate the palm up (supinate) against the towel.",
+      "Keep effort light and pain-light at the elbow.",
+    ],
+    cues: [
+      "Think “activate,” not wrench the forearm.",
+      "Shoulder stays quiet; movement stays at the forearm.",
+    ],
+    avoid: [
+      "Pushing through sharp outer- or inner-elbow pain that lingers.",
+      "Large painful twisting through an irritable wrist.",
+    ],
+    dosage: "5–8 second holds each direction × 6–8, 1–2 sets, most days",
+    relatedConditionSlugs: [
+      "medial-epicondylalgia",
+      "tennis-elbow",
+      "cubital-tunnel",
+      "carpal-tunnel",
+    ],
+    relatedProgrammeSlugs: [
+      "tennis-elbow-build",
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
+    ],
+  },
 ];
 
 export const programmes: Programme[] = [
@@ -2635,6 +3003,7 @@ export const programmes: Programme[] = [
       "prone-cobra-short",
       "doorway-pec-stretch",
       "wall-angels",
+      "band-pull-apart",
       "open-book-pregnancy",
       "hip-hinge-practice",
       "diaphragmatic-breathing",
@@ -2703,10 +3072,14 @@ export const programmes: Programme[] = [
       "sit-to-stand",
       "wall-sit-isometric",
       "spanish-squat-hold",
+      "midrange-quad-isometric",
       "step-down-control",
+      "reverse-lunge-control",
+      "standing-itb-open",
       "single-leg-balance",
       "single-leg-rdl",
       "hamstring-slider",
+      "nordic-hamstring-assist",
     ],
     relatedConditionSlugs: [
       "patellofemoral-pain",
@@ -2740,6 +3113,7 @@ export const programmes: Programme[] = [
       "seated-hallux-lift",
       "metatarsal-spread",
       "towel-toe-curls",
+      "knee-to-wall-dorsiflexion",
       "single-leg-balance",
     ],
     relatedConditionSlugs: [
@@ -2774,6 +3148,7 @@ export const programmes: Programme[] = [
       "wall-angels",
       "band-external-rotation",
       "prone-t-raise",
+      "prone-y-raise",
       "wall-push-up-plus",
     ],
     relatedConditionSlugs: [
@@ -2800,13 +3175,19 @@ export const programmes: Programme[] = [
     phase: "settle",
     exerciseSlugs: [
       "ankle-alphabet",
+      "knee-to-wall-dorsiflexion",
       "calf-wall-stretch",
       "isometric-heel-raise",
+      "tibialis-raise",
       "towel-toe-curls",
       "single-leg-balance",
       "tandem-balance",
     ],
-    relatedConditionSlugs: ["lateral-ankle-sprain", "achilles-tendinopathy"],
+    relatedConditionSlugs: [
+      "lateral-ankle-sprain",
+      "achilles-tendinopathy",
+      "shin-splints",
+    ],
     relatedServiceSlug: "sports-injury-rehab",
     precautions: [
       "Inability to weight-bear after injury, deformity, or numbness needs urgent assessment (Ottawa rules / medical review).",
@@ -2866,6 +3247,8 @@ export const programmes: Programme[] = [
       "hip-flexor-stretch",
       "piriformis-figure-four",
       "hip-figure-four-flex",
+      "standing-itb-open",
+      "short-copenhagen",
       "hip-hinge-practice",
       "sit-to-stand",
       "single-leg-balance",
@@ -2878,6 +3261,7 @@ export const programmes: Programme[] = [
       "hip-oa",
       "femoroacetabular-impingement",
       "groin-pain",
+      "itb-syndrome",
     ],
     relatedServiceSlug: "focused-shockwave",
     precautions: [
@@ -2906,6 +3290,7 @@ export const programmes: Programme[] = [
       "towel-grip-isometric",
       "thumb-cmc-isometric",
       "thumb-opposition-slides",
+      "wrist-rotation-isometric",
       "median-nerve-glide",
       "ulnar-nerve-glide",
       "band-external-rotation",
@@ -2939,6 +3324,7 @@ export const programmes: Programme[] = [
       "towel-grip-isometric",
       "thumb-cmc-isometric",
       "thumb-opposition-slides",
+      "wrist-rotation-isometric",
       "median-nerve-glide",
       "ulnar-nerve-glide",
       "seated-scapular-set",
@@ -2971,6 +3357,7 @@ export const programmes: Programme[] = [
       "wrist-extensor-stretch",
       "wrist-flexor-stretch",
       "towel-grip-isometric",
+      "wrist-rotation-isometric",
       "eccentric-wrist-extension",
       "seated-scapular-set",
       "wall-push-up-plus",
@@ -3062,6 +3449,7 @@ export const programmes: Programme[] = [
       "bridge-march",
       "wall-angels",
       "wall-push-up-plus",
+      "band-pull-apart",
       "single-leg-balance",
       "tandem-balance",
       "single-leg-rdl",
@@ -3074,6 +3462,7 @@ export const programmes: Programme[] = [
       "deconditioning",
       "post-surgical-general",
       "spondylolysis",
+      "scheuermanns",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
@@ -3124,7 +3513,9 @@ export const programmes: Programme[] = [
       "glute-bridge",
       "single-leg-balance",
       "wall-sit-isometric",
+      "midrange-quad-isometric",
       "spanish-squat-hold",
+      "reverse-lunge-control",
     ],
     relatedConditionSlugs: [
       "meniscal-injury",
@@ -3138,7 +3529,7 @@ export const programmes: Programme[] = [
       "True locking, marked swelling after injury, or giving-way episodes need assessment before progressing wall sits or steps.",
       "Keep squat depth shallow while the joint feels hot or puffy.",
       "Post-op knees: stay inside surgeon range and swelling rules.",
-      "Spanish squat holds are optional progression — skip while the joint is swollen.",
+      "Spanish squat holds and reverse lunges are optional progressions — skip while the joint is swollen.",
     ],
   },
   {
@@ -3187,6 +3578,8 @@ export const programmes: Programme[] = [
       "shoulder-pendulum",
       "table-slides",
       "prone-t-raise",
+      "prone-y-raise",
+      "band-pull-apart",
       "wall-push-up-plus",
       "wall-angels",
     ],
@@ -3195,12 +3588,13 @@ export const programmes: Programme[] = [
       "subacromial-pain",
       "rotator-cuff-tear",
       "ac-joint-injury",
+      "scheuermanns",
     ],
     relatedServiceSlug: "sports-injury-rehab",
     precautions: [
       "Recent dislocation, suspected fracture, or neurological loss needs medical review first.",
       "Stay out of positions that recreate apprehension — shorten range instead.",
-      "Progress T raises only when isometrics feel calm.",
+      "Progress T and Y raises only when isometrics feel calm.",
     ],
   },
   {
@@ -3229,6 +3623,70 @@ export const programmes: Programme[] = [
       "Sudden forefoot swelling, open sores, or infection signs need medical review first.",
       "Wear roomy footwear; avoid narrow toe boxes while irritability is high.",
       "Stop drills that recreate lasting neural burning into the toes.",
+    ],
+  },
+  {
+    slug: "hamstring-return",
+    title: "Hamstring return",
+    summary:
+      "From easy sliders into assisted Nordics and reverse lunges once a hamstring strain or posterior-chain irritability has settled.",
+    audience:
+      "Adults returning to running, field sport, or gym hinge work after a hamstring strain or related posterior-chain flare, without red-flag neurological loss.",
+    phase: "capacity",
+    exerciseSlugs: [
+      "hamstring-slider",
+      "glute-bridge",
+      "bridge-march",
+      "hip-hinge-practice",
+      "single-leg-rdl",
+      "nordic-hamstring-assist",
+      "reverse-lunge-control",
+      "midrange-quad-isometric",
+      "short-copenhagen",
+      "bird-dog",
+    ],
+    relatedConditionSlugs: [
+      "hamstring-strain",
+      "acl-rehab",
+      "groin-pain",
+      "non-specific-low-back-pain",
+    ],
+    relatedServiceSlug: "sports-injury-rehab",
+    precautions: [
+      "Acute tear with clear bruising, inability to walk, or suspected avulsion needs medical review first.",
+      "Do not rush unassisted Nordics — assisted control first.",
+      "Sharp sudden “pop” or giving-way means stop and get assessed.",
+    ],
+  },
+  {
+    slug: "shin-calf-capacity",
+    title: "Shin and calf capacity",
+    summary:
+      "Ankle mobility plus tibialis and calf loading for shin-splint and return-to-run patterns — short sessions, gradual hills.",
+    audience:
+      "Adults with shin or calf load intolerance from running, walking hills, or recent ankle sprain who can hop lightly without sharp bone pain.",
+    phase: "rebuild",
+    exerciseSlugs: [
+      "ankle-alphabet",
+      "knee-to-wall-dorsiflexion",
+      "calf-wall-stretch",
+      "isometric-heel-raise",
+      "tibialis-raise",
+      "eccentric-heel-drop",
+      "single-leg-balance",
+      "towel-toe-curls",
+    ],
+    relatedConditionSlugs: [
+      "shin-splints",
+      "achilles-tendinopathy",
+      "lateral-ankle-sprain",
+      "plantar-fasciitis",
+    ],
+    relatedServiceSlug: "sports-injury-rehab",
+    precautions: [
+      "Focal bone tenderness, night pain, or sudden calf swelling/DVT signs needs medical review — not this programme alone.",
+      "Keep running volume flat or slightly down while building these drills.",
+      "Stop if shin pain rises day-to-day rather than settling within 24 hours.",
     ],
   },
 ];

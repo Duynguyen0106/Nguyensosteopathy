@@ -363,7 +363,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "What to expect",
         paragraphs: [
           "After discussing goals and comfort preferences, fine needles are placed precisely. With electroacupuncture, a mild pulsing sensation may be felt. Sessions are monitored closely; needles can be adjusted or removed if anything feels wrong. Afterwards we advise on activity, hydration and what short-lived post-treatment ache can feel like.",
-          "Acupuncture often pairs well with osteopathy for back and neck pain, sports rehab loading plans, or deep tissue massage on alternate visits when soft-tissue load is high. Your plan stays coherent rather than collecting unrelated add-ons.",
+          "Acupuncture often pairs well with osteopathy for back and neck pain, sports rehab loading plans, or deep tissue massage on alternate visits when soft-tissue load is high. Your plan stays coherent rather than collecting unrelated add-ons. Between visits you can also use our public home exercise library for desk-neck, shoulder and upper-limb drills while irritability settles.",
           "Hygiene and single-use needles are non-negotiable. Skin is prepared appropriately, and needle sites are monitored. If you feel faint, dizzy, or unusually anxious, tell us immediately — we will remove needles and help you settle before deciding whether to continue another day.",
         ],
       },
@@ -651,7 +651,7 @@ export const servicePages: ServicePageContent[] = [
           "If you tried osteopathy elsewhere and found it too forceful, mention that when you book. We can prioritise a cranial-led first session and only introduce other techniques if and when you want them. Your consent stays central throughout every visit.",
           "Commuters and local residents alike use cranial-focused sessions as a reset when stress settles into the neck and jaw. It is still clinical osteopathy — just delivered at a dosage that respects a sensitive system and a busy Charlton week.",
           "You remain clothed for cranial-focused sessions, and draping or positioning is adjusted for warmth and modesty. The atmosphere is intentionally calm, yet you can ask clinical questions at any point — gentle does not mean unexplained.",
-          "For headache-dominant presentations we may still recommend a blended plan over several visits, mixing cranial dosage with conventional neck care as tolerance allows. The sequence is agreed with you rather than imposed.",
+          "For headache-dominant presentations we may still recommend a blended plan over several visits, mixing cranial dosage with conventional neck care as tolerance allows. The sequence is agreed with you rather than imposed. Our public exercise library also has gentle desk-neck and breathing drills you can use between quieter sessions — always stay inside what feels settled after cranial care.",
         ],
       },
     ],

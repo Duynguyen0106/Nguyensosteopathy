@@ -23,6 +23,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of band external rotation: elbow at side, forearm rotating out",
     credit: "Free educational illustration",
   },
+  "band-pull-apart": {
+    src: "/images/exercises/band-pull-apart.webp",
+    alt: "Educational illustration of a standing band pull-apart",
+    credit: "Free educational illustration",
+  },
   "bird-dog": {
     src: "/images/exercises/bird-dog.webp",
     alt: "Person on hands and knees extending opposite arm and leg (bird-dog)",
@@ -148,6 +153,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of a single knee-to-chest stretch on the back",
     credit: "Free educational illustration",
   },
+  "knee-to-wall-dorsiflexion": {
+    src: "/images/exercises/knee-to-wall-dorsiflexion.webp",
+    alt: "Educational illustration of knee-to-wall ankle dorsiflexion",
+    credit: "Free educational illustration",
+  },
   "levator-stretch": {
     src: "/images/exercises/levator-stretch.webp",
     alt: "Educational illustration of a levator scapulae diagonal neck stretch",
@@ -161,6 +171,16 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "metatarsal-spread": {
     src: "/images/exercises/metatarsal-spread.webp",
     alt: "Educational illustration of a barefoot metatarsal / toe spread",
+    credit: "Free educational illustration",
+  },
+  "midrange-quad-isometric": {
+    src: "/images/exercises/midrange-quad-isometric.webp",
+    alt: "Educational illustration of a mid-range quad isometric hold",
+    credit: "Free educational illustration",
+  },
+  "nordic-hamstring-assist": {
+    src: "/images/exercises/nordic-hamstring-assist.webp",
+    alt: "Educational illustration of an assisted Nordic hamstring lower",
     credit: "Free educational illustration",
   },
   "open-book-pregnancy": {
@@ -208,10 +228,20 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of a prone T raise with arms lifted to the sides",
     credit: "Free educational illustration",
   },
+  "prone-y-raise": {
+    src: "/images/exercises/prone-y-raise.webp",
+    alt: "Educational illustration of a prone Y raise",
+    credit: "Free educational illustration",
+  },
   "quad-set-short-arc": {
     src: "/images/exercises/quad-set-short-arc.webp",
     alt: "Instructional illustration of a quad set / short-arc knee extension",
     credit: "Illustration via Wikimedia Commons (BruceBlaus, CC BY-SA 4.0)",
+  },
+  "reverse-lunge-control": {
+    src: "/images/exercises/reverse-lunge-control.webp",
+    alt: "Educational illustration of a reverse lunge",
+    credit: "Free educational illustration",
   },
   "sciatic-nerve-glide": {
     src: "/images/exercises/sciatic-nerve-glide.webp",
@@ -236,6 +266,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "seated-thoracic-rotation": {
     src: "/images/exercises/seated-thoracic-rotation.webp",
     alt: "Educational illustration of seated thoracic rotation in a chair",
+    credit: "Free educational illustration",
+  },
+  "short-copenhagen": {
+    src: "/images/exercises/short-copenhagen.webp",
+    alt: "Educational illustration of a short Copenhagen adductor hold",
     credit: "Free educational illustration",
   },
   "shoulder-pendulum": {
@@ -271,6 +306,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "spanish-squat-hold": {
     src: "/images/exercises/spanish-squat-hold.webp",
     alt: "Educational illustration of a Spanish squat hold with a band behind the knees",
+    credit: "Free educational illustration",
+  },
+  "standing-itb-open": {
+    src: "/images/exercises/standing-itb-open.webp",
+    alt: "Educational illustration of a standing ITB open / cross-leg side bend",
     credit: "Free educational illustration",
   },
   "step-down-control": {
@@ -311,6 +351,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "thumb-opposition-slides": {
     src: "/images/exercises/thumb-opposition-slides.webp",
     alt: "Educational illustration of thumb tip opposition slides across the fingers",
+    credit: "Free educational illustration",
+  },
+  "tibialis-raise": {
+    src: "/images/exercises/tibialis-raise.webp",
+    alt: "Educational illustration of standing tibialis anterior raises",
     credit: "Free educational illustration",
   },
   "towel-grip-isometric": {
@@ -356,6 +401,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "wrist-flexor-stretch": {
     src: "/images/exercises/wrist-flexor-stretch.webp",
     alt: "Educational illustration of a wrist flexor stretch with palm facing up",
+    credit: "Free educational illustration",
+  },
+  "wrist-rotation-isometric": {
+    src: "/images/exercises/wrist-rotation-isometric.webp",
+    alt: "Educational illustration of seated wrist rotation isometrics with a towel",
     credit: "Free educational illustration",
   },
 };

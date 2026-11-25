@@ -348,5 +348,55 @@
     "src": "/images/exercises/farmer-carry-walk.webp",
     "alt": "Educational illustration of a farmer carry walk with even weights",
     "credit": "Free educational illustration"
+  },
+  "tibialis-raise": {
+    "src": "/images/exercises/tibialis-raise.webp",
+    "alt": "Educational illustration of standing tibialis anterior raises",
+    "credit": "Free educational illustration"
+  },
+  "knee-to-wall-dorsiflexion": {
+    "src": "/images/exercises/knee-to-wall-dorsiflexion.webp",
+    "alt": "Educational illustration of knee-to-wall ankle dorsiflexion",
+    "credit": "Free educational illustration"
+  },
+  "nordic-hamstring-assist": {
+    "src": "/images/exercises/nordic-hamstring-assist.webp",
+    "alt": "Educational illustration of an assisted Nordic hamstring lower",
+    "credit": "Free educational illustration"
+  },
+  "reverse-lunge-control": {
+    "src": "/images/exercises/reverse-lunge-control.webp",
+    "alt": "Educational illustration of a reverse lunge",
+    "credit": "Free educational illustration"
+  },
+  "band-pull-apart": {
+    "src": "/images/exercises/band-pull-apart.webp",
+    "alt": "Educational illustration of a standing band pull-apart",
+    "credit": "Free educational illustration"
+  },
+  "prone-y-raise": {
+    "src": "/images/exercises/prone-y-raise.webp",
+    "alt": "Educational illustration of a prone Y raise",
+    "credit": "Free educational illustration"
+  },
+  "short-copenhagen": {
+    "src": "/images/exercises/short-copenhagen.webp",
+    "alt": "Educational illustration of a short Copenhagen adductor hold",
+    "credit": "Free educational illustration"
+  },
+  "standing-itb-open": {
+    "src": "/images/exercises/standing-itb-open.webp",
+    "alt": "Educational illustration of a standing ITB open / cross-leg side bend",
+    "credit": "Free educational illustration"
+  },
+  "midrange-quad-isometric": {
+    "src": "/images/exercises/midrange-quad-isometric.webp",
+    "alt": "Educational illustration of a mid-range quad isometric hold",
+    "credit": "Free educational illustration"
+  },
+  "wrist-rotation-isometric": {
+    "src": "/images/exercises/wrist-rotation-isometric.webp",
+    "alt": "Educational illustration of seated wrist rotation isometrics with a towel",
+    "credit": "Free educational illustration"
   }
 }

@@ -749,6 +749,124 @@ const ILLUSTRATIONS = {
       <path d="M230 93 L240 100 L230 107" fill="none" stroke="${teal}" stroke-width="3" stroke-linecap="round"/>
     `),
   },
+  "tibialis-raise": {
+    alt: "Educational illustration of standing tibialis anterior raises",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="160" cy="42" r="12" fill="${navy}"/>
+      <path d="M160 54 L160 115 M160 75 L130 145 M160 75 L190 145 M160 115 L145 190 M160 115 L175 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M145 190 L145 175 M175 190 L175 175" stroke="${teal}" stroke-width="4" stroke-linecap="round"/>
+      <path d="M145 175 L138 168 M175 175 L182 168" stroke="${teal}" stroke-width="3" stroke-linecap="round"/>
+    `),
+  },
+  "knee-to-wall-dorsiflexion": {
+    alt: "Educational illustration of knee-to-wall ankle dorsiflexion",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="250" y="40" width="14" height="150" rx="2" fill="#94a3b8"/>
+      <circle cx="130" cy="48" r="12" fill="${navy}"/>
+      <path d="M130 60 L150 110 M150 110 L125 190 M150 110 L195 190 M130 85 L105 130"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M195 190 L230 150" stroke="${teal}" stroke-width="3.5" stroke-dasharray="5 4"/>
+      <circle cx="230" cy="150" r="4" fill="${teal}"/>
+    `),
+  },
+  "nordic-hamstring-assist": {
+    alt: "Educational illustration of an assisted Nordic hamstring lower",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="185" rx="100" ry="10" fill="#e2e8f0"/>
+      <circle cx="95" cy="70" r="12" fill="${navy}"/>
+      <path d="M105 80 L150 120 L175 175 M150 120 L120 175"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M105 95 L145 130" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <rect x="155" y="175" width="50" height="10" rx="2" fill="#94a3b8"/>
+    `),
+  },
+  "reverse-lunge-control": {
+    alt: "Educational illustration of a reverse lunge",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="155" cy="45" r="12" fill="${navy}"/>
+      <path d="M155 57 L155 105 M155 80 L125 120 M155 80 L185 120 M155 105 L130 160 M155 105 L200 175 M130 160 L120 190 M200 175 L210 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M210 190 H235" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "band-pull-apart": {
+    alt: "Educational illustration of a standing band pull-apart",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <circle cx="160" cy="48" r="12" fill="${navy}"/>
+      <path d="M160 60 L160 130 M160 85 L130 160 M160 85 L190 160 M160 130 L145 190 M160 130 L175 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M80 90 H240" stroke="${teal}" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="80" cy="90" r="5" fill="${teal}"/>
+      <circle cx="240" cy="90" r="5" fill="${teal}"/>
+    `),
+  },
+  "prone-y-raise": {
+    alt: "Educational illustration of a prone Y raise",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="175" rx="100" ry="10" fill="#e2e8f0"/>
+      <circle cx="160" cy="95" r="11" fill="${navy}"/>
+      <path d="M160 106 L160 155" fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M95 70 L160 115 L225 70" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M95 70 L90 58 M225 70 L230 58" stroke="${teal}" stroke-width="3.5" stroke-linecap="round"/>
+    `),
+  },
+  "short-copenhagen": {
+    alt: "Educational illustration of a short Copenhagen adductor hold",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="200" y="100" width="70" height="14" rx="3" fill="#94a3b8"/>
+      <circle cx="70" cy="80" r="12" fill="${navy}"/>
+      <path d="M82 88 L150 110 L230 107 M150 110 L145 160"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M145 160 L145 130" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="160" cy="180" rx="90" ry="10" fill="#e2e8f0"/>
+    `),
+  },
+  "standing-itb-open": {
+    alt: "Educational illustration of a standing ITB open / cross-leg side bend",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="170" cy="42" r="12" fill="${navy}"/>
+      <path d="M170 54 L155 110 M155 80 L125 70 M155 80 L200 115 M155 110 L140 190 M155 110 L185 155 L200 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M125 70 L100 55" stroke="${teal}" stroke-width="3.5" stroke-linecap="round"/>
+    `),
+  },
+  "midrange-quad-isometric": {
+    alt: "Educational illustration of a mid-range quad isometric hold",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <rect x="230" y="40" width="14" height="150" rx="2" fill="#94a3b8"/>
+      <circle cx="150" cy="48" r="12" fill="${navy}"/>
+      <path d="M150 60 L150 105 M150 80 L120 120 M150 80 L185 115 M150 105 L135 155 M150 105 L175 155 M135 155 L130 190 M175 155 L180 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M175 140 Q190 125 205 140" fill="none" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "wrist-rotation-isometric": {
+    alt: "Educational illustration of seated wrist rotation isometrics with a towel",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="100" y="130" width="120" height="14" rx="3" fill="#cbd5e1"/>
+      <circle cx="140" cy="55" r="12" fill="${navy}"/>
+      <path d="M140 67 L140 130 M140 90 L110 125 M140 90 L175 105"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="200" cy="105" rx="22" ry="12" fill="${teal}" opacity="0.35"/>
+      <path d="M190 95 A18 18 0 0 1 210 115" fill="none" stroke="${teal}" stroke-width="3"/>
+      <path d="M205 118 L210 115 L208 108" fill="none" stroke="${teal}" stroke-width="2.5" stroke-linecap="round"/>
+    `),
+  },
 };
 
 mkdirSync(outDir, { recursive: true });

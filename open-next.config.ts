@@ -1,5 +1,5 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare";
-import r2IncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/r2-incremental-cache";
+import staticAssetsIncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/static-assets-incremental-cache";
 
 /**
  * OpenNext → Cloudflare Workers adapter.
@@ -7,13 +7,15 @@ import r2IncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cac
  * can use `"build": "opennextjs-cloudflare build"` for Workers Builds without
  * infinite recursion.
  *
- * Incremental cache uses R2 so prerendered SSG routes (including the large
- * acupuncture corpus) are served from cache instead of re-running on workerd
- * without access to `src/data` files.
+ * Use the static-assets incremental cache (read-only prerender store under
+ * `cdn-cgi/_next_cache`). The acupuncture corpus is fully SSG; R2 was
+ * populating correctly but runtime lookups still served poisoned 404 HIT
+ * entries after workerd SSR misses. Static assets cannot be overwritten by
+ * those misses.
  */
 export default {
   ...defineCloudflareConfig({
-    incrementalCache: r2IncrementalCache,
+    incrementalCache: staticAssetsIncrementalCache,
   }),
   buildCommand: "npx next build",
 };

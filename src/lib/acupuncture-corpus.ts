@@ -1,6 +1,10 @@
 /**
  * Acupuncture education corpus (American Dragon ingest, owner-permitted).
- * Record bodies are read from disk so large JSON is not bundled into every route.
+ *
+ * Listing metadata comes from the imported catalog (safe on Workers).
+ * Full record bodies live in by-type JSON and are read from disk at
+ * **build time** only — detail routes must be `force-static` so Cloudflare
+ * Workers serve prerendered HTML (workerd has no `src/data` filesystem).
  */
 
 import fs from "fs";
@@ -40,6 +44,22 @@ export type AcupunctureCorpusEntry = {
   wordCount?: number | null;
   searchText?: string;
 };
+
+/** Slim entry for directory UI — omits heavy searchText / summary blobs. */
+export type AcupunctureCorpusBrowseEntry = Pick<
+  AcupunctureCorpusEntry,
+  | "type"
+  | "slug"
+  | "title"
+  | "label"
+  | "sourceUrl"
+  | "channel"
+  | "pinyin"
+  | "latin"
+  | "pointCode"
+  | "category"
+  | "quality"
+>;
 
 export type AcupunctureCorpusRecord = {
   id: string;
@@ -98,7 +118,11 @@ export const acupunctureCorpusTypes: AcupunctureCorpusType[] = [
   "conditions",
 ];
 
+/** Above this, type hubs use letter links instead of shipping every row to the client. */
+export const CORPUS_CLIENT_DIRECTORY_MAX = 900;
+
 const typeCache = new Map<string, AcupunctureCorpusRecord[]>();
+const slugIndexCache = new Map<string, Map<string, AcupunctureCorpusRecord>>();
 
 function typeFile(type: AcupunctureCorpusType) {
   return path.join(
@@ -108,19 +132,52 @@ function typeFile(type: AcupunctureCorpusType) {
   );
 }
 
+function canReadCorpusFromDisk(): boolean {
+  // Workerd / Edge have no Node filesystem for src/data.
+  if (typeof (globalThis as { EdgeRuntime?: string }).EdgeRuntime === "string") {
+    return false;
+  }
+  try {
+    return typeof fs.existsSync === "function" && typeof fs.readFileSync === "function";
+  } catch {
+    return false;
+  }
+}
+
 function loadTypeRecords(type: AcupunctureCorpusType): AcupunctureCorpusRecord[] {
   if (typeCache.has(type)) return typeCache.get(type)!;
-  const file = typeFile(type);
-  if (!fs.existsSync(file)) {
+
+  if (!canReadCorpusFromDisk()) {
     typeCache.set(type, []);
     return [];
   }
-  const parsed = JSON.parse(fs.readFileSync(file, "utf8")) as {
-    records?: AcupunctureCorpusRecord[];
-  };
-  const records = parsed.records ?? [];
-  typeCache.set(type, records);
-  return records;
+
+  const file = typeFile(type);
+  try {
+    if (!fs.existsSync(file)) {
+      typeCache.set(type, []);
+      return [];
+    }
+    const parsed = JSON.parse(fs.readFileSync(file, "utf8")) as {
+      records?: AcupunctureCorpusRecord[];
+    };
+    const records = parsed.records ?? [];
+    typeCache.set(type, records);
+    return records;
+  } catch {
+    typeCache.set(type, []);
+    return [];
+  }
+}
+
+function slugIndex(type: AcupunctureCorpusType): Map<string, AcupunctureCorpusRecord> {
+  if (slugIndexCache.has(type)) return slugIndexCache.get(type)!;
+  const map = new Map<string, AcupunctureCorpusRecord>();
+  for (const record of loadTypeRecords(type)) {
+    map.set(record.slug, record);
+  }
+  slugIndexCache.set(type, map);
+  return map;
 }
 
 export function isAcupunctureCorpusType(
@@ -149,6 +206,25 @@ export function getAcupunctureCorpusEntries(
     []) as AcupunctureCorpusEntry[];
   if (!type) return entries;
   return entries.filter((entry) => entry.type === type);
+}
+
+/** Directory / crawl UI payload — drops multi‑KB searchText fields. */
+export function getAcupunctureCorpusBrowseEntries(
+  type?: AcupunctureCorpusType,
+): AcupunctureCorpusBrowseEntry[] {
+  return getAcupunctureCorpusEntries(type).map((entry) => ({
+    type: entry.type,
+    slug: entry.slug,
+    title: entry.title,
+    label: entry.label,
+    sourceUrl: entry.sourceUrl,
+    channel: entry.channel,
+    pinyin: entry.pinyin,
+    latin: entry.latin,
+    pointCode: entry.pointCode,
+    category: entry.category,
+    quality: entry.quality,
+  }));
 }
 
 export function getAcupunctureCorpusAttribution() {
@@ -186,13 +262,18 @@ export function getAcupunctureCorpusRecord(
   type: AcupunctureCorpusType,
   slug: string,
 ): AcupunctureCorpusRecord | undefined {
-  return loadTypeRecords(type).find((record) => record.slug === slug);
+  return slugIndex(type).get(slug);
 }
 
 export function getAllAcupunctureCorpusParams(): {
   type: AcupunctureCorpusType;
   slug: string;
 }[] {
+  // Prefer catalog so generateStaticParams works even if by-type JSON is absent
+  // in a partial checkout; bodies still resolve from by-type at page build time.
+  const fromCatalog = getSitemapAcupunctureCorpusPaths();
+  if (fromCatalog.length > 0) return fromCatalog;
+
   const params: { type: AcupunctureCorpusType; slug: string }[] = [];
   for (const type of acupunctureCorpusTypes) {
     for (const record of getAcupunctureCorpusRecords(type)) {

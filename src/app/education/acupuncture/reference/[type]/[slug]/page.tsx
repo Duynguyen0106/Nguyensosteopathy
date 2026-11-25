@@ -27,6 +27,14 @@ import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ type: string; slug: string }> };
 
+/**
+ * Prerender every corpus entry at build time. On Cloudflare Workers, runtime
+ * `fs` cannot load `src/data/acupuncture-corpus/by-type/*.json`, which previously
+ * made every detail URL render as a Next.js “Page not found” error page.
+ */
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllAcupunctureCorpusParams().map(({ type, slug }) => ({
     type,

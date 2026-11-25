@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
-import type { AcupunctureCorpusEntry } from "@/lib/acupuncture-corpus";
+import type { AcupunctureCorpusBrowseEntry } from "@/lib/acupuncture-corpus";
 import {
   corpusSearchPlaceholder,
   formatCorpusTitle,
@@ -11,7 +11,7 @@ import {
 
 type Props = {
   type: string;
-  entries: AcupunctureCorpusEntry[];
+  entries: AcupunctureCorpusBrowseEntry[];
 };
 
 const LETTERS = [
@@ -90,8 +90,6 @@ export function CorpusDirectory({ type, entries }: Props) {
           entry.pointCode,
           entry.channel,
           entry.category,
-          entry.searchText,
-          entry.summary,
         ]
           .filter(Boolean)
           .join(" ")

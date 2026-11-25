@@ -4,12 +4,14 @@ import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
 import { CorpusCrawlIndex } from "@/components/CorpusCrawlIndex";
 import { CorpusDirectory } from "@/components/CorpusDirectory";
+import { CorpusLetterDirectory } from "@/components/CorpusLetterDirectory";
 import {
+  CORPUS_CLIENT_DIRECTORY_MAX,
+  acupunctureCorpusTypes,
   getAcupunctureCorpusAttribution,
-  getAcupunctureCorpusEntries,
+  getAcupunctureCorpusBrowseEntries,
   getAcupunctureCorpusTypeLabel,
   isAcupunctureCorpusType,
-  acupunctureCorpusTypes,
 } from "@/lib/acupuncture-corpus";
 import {
   defaultOgImage,
@@ -17,6 +19,13 @@ import {
   fitSerpTitle,
 } from "@/lib/seo";
 import { site } from "@/lib/site";
+
+/**
+ * Prerender at build time. Cloudflare Workers cannot read `src/data/.../by-type`
+ * via Node `fs` at runtime — without force-static, detail hubs SSR and 404/1102.
+ */
+export const dynamic = "force-static";
+export const dynamicParams = false;
 
 type Props = { params: Promise<{ type: string }> };
 
@@ -52,8 +61,9 @@ export default async function AcupunctureCorpusTypePage({ params }: Props) {
   if (!isAcupunctureCorpusType(type)) notFound();
 
   const label = getAcupunctureCorpusTypeLabel(type);
-  const entries = getAcupunctureCorpusEntries(type);
+  const entries = getAcupunctureCorpusBrowseEntries(type);
   const attribution = getAcupunctureCorpusAttribution();
+  const useLetterHub = entries.length > CORPUS_CLIENT_DIRECTORY_MAX;
 
   return (
     <div className="bg-slate-50">
@@ -115,6 +125,11 @@ export default async function AcupunctureCorpusTypePage({ params }: Props) {
           <p className="text-base text-slate-600">
             No entries published for this category yet.
           </p>
+        ) : useLetterHub ? (
+          <>
+            <CorpusLetterDirectory type={type} entries={entries} />
+            <CorpusCrawlIndex type={type} entries={entries} mode="closed" />
+          </>
         ) : (
           <>
             <CorpusDirectory type={type} entries={entries} />

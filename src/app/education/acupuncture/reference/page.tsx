@@ -10,6 +10,8 @@ import {
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 const description = trimDescription(
   "Browse acupuncture points, herbs, formulas, and conditions from the American Dragon reference corpus — published with permission for clinic education at Nguyen's Osteopathic Clinic.",
 );

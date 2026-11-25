@@ -28,12 +28,13 @@
     { "pattern": "www.nguyensosteopathy.com", "custom_domain": true },
     { "pattern": "nguyensosteopathy.com", "custom_domain": true }
   ],
-  // Optional ISR / fetch cache. Create the bucket once:
-  //   npx wrangler r2 bucket create nguyensosteopathy-next-cache
-  // Then uncomment:
-  // "r2_buckets": [
-  //   { "binding": "NEXT_INC_CACHE_R2_BUCKET", "bucket_name": "nguyensosteopathy-next-cache" }
-  // ]
+  // ISR / SSG incremental cache for OpenNext (acupuncture corpus + other SSG).
+  "r2_buckets": [
+    {
+      "binding": "NEXT_INC_CACHE_R2_BUCKET",
+      "bucket_name": "nguyensosteopathy-next-cache"
+    }
+  ]
 
   // Dashboard (outer) layer for scrapers — enable in Cloudflare zone:
   //   Security → Bots → Bot Fight Mode (or Super Bot Fight Mode)

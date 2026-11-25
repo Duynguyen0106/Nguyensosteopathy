@@ -1,4 +1,5 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare";
+import r2IncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/r2-incremental-cache";
 
 /**
  * OpenNext → Cloudflare Workers adapter.
@@ -6,11 +7,13 @@ import { defineCloudflareConfig } from "@opennextjs/cloudflare";
  * can use `"build": "opennextjs-cloudflare build"` for Workers Builds without
  * infinite recursion.
  *
- * Enable R2 incremental cache in wrangler.jsonc + here when the bucket exists:
- *   import r2IncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/r2-incremental-cache";
- *   export default { ...defineCloudflareConfig({ incrementalCache: r2IncrementalCache }), buildCommand: "npx next build" };
+ * Incremental cache uses R2 so prerendered SSG routes (including the large
+ * acupuncture corpus) are served from cache instead of re-running on workerd
+ * without access to `src/data` files.
  */
 export default {
-  ...defineCloudflareConfig(),
+  ...defineCloudflareConfig({
+    incrementalCache: r2IncrementalCache,
+  }),
   buildCommand: "npx next build",
 };

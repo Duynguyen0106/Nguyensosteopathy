@@ -298,5 +298,55 @@
     "src": "/images/exercises/open-book-pregnancy.webp",
     "alt": "Educational illustration of a supported side-lying open-book rotation with pillows",
     "credit": "Free educational illustration"
+  },
+  "cervical-nod-retraction": {
+    "src": "/images/exercises/cervical-nod-retraction.webp",
+    "alt": "Educational illustration of a seated chin tuck with a gentle upper-neck nod",
+    "credit": "Free educational illustration"
+  },
+  "isometric-shoulder-er": {
+    "src": "/images/exercises/isometric-shoulder-er.webp",
+    "alt": "Educational illustration of isometric shoulder external rotation against a wall",
+    "credit": "Free educational illustration"
+  },
+  "prone-t-raise": {
+    "src": "/images/exercises/prone-t-raise.webp",
+    "alt": "Educational illustration of a prone T raise with arms lifted to the sides",
+    "credit": "Free educational illustration"
+  },
+  "thumb-opposition-slides": {
+    "src": "/images/exercises/thumb-opposition-slides.webp",
+    "alt": "Educational illustration of thumb tip opposition slides across the fingers",
+    "credit": "Free educational illustration"
+  },
+  "metatarsal-spread": {
+    "src": "/images/exercises/metatarsal-spread.webp",
+    "alt": "Educational illustration of a barefoot metatarsal / toe spread",
+    "credit": "Free educational illustration"
+  },
+  "seated-hallux-lift": {
+    "src": "/images/exercises/seated-hallux-lift.webp",
+    "alt": "Educational illustration of a seated big-toe lift with lesser toes down",
+    "credit": "Free educational illustration"
+  },
+  "hip-figure-four-flex": {
+    "src": "/images/exercises/hip-figure-four-flex.webp",
+    "alt": "Educational illustration of a supine figure-four hip stretch",
+    "credit": "Free educational illustration"
+  },
+  "prone-cobra-short": {
+    "src": "/images/exercises/prone-cobra-short.webp",
+    "alt": "Educational illustration of a short prone cobra chest lift",
+    "credit": "Free educational illustration"
+  },
+  "spanish-squat-hold": {
+    "src": "/images/exercises/spanish-squat-hold.webp",
+    "alt": "Educational illustration of a Spanish squat hold with a band behind the knees",
+    "credit": "Free educational illustration"
+  },
+  "farmer-carry-walk": {
+    "src": "/images/exercises/farmer-carry-walk.webp",
+    "alt": "Educational illustration of a farmer carry walk with even weights",
+    "credit": "Free educational illustration"
   }
 }

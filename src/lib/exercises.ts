@@ -132,11 +132,11 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
-      "sciatica-nerve-calm",
-      "post-visit-gentle-move",
-      "stenosis-flexion-calm",
       "coccydynia-sit-ease",
+      "post-visit-gentle-move",
       "pregnancy-pelvic-ease",
+      "sciatica-nerve-calm",
+      "stenosis-flexion-calm",
     ],
   },
   {
@@ -170,8 +170,8 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
-      "sciatica-nerve-calm",
       "post-visit-gentle-move",
+      "sciatica-nerve-calm",
     ],
   },
   {
@@ -203,9 +203,7 @@ export const exercises: Exercise[] = [
       "deconditioning",
       "post-surgical-general",
     ],
-    relatedProgrammeSlugs: [
-      "acute-low-back-settle",
-    ],
+    relatedProgrammeSlugs: ["acute-low-back-settle"],
   },
   {
     slug: "glute-bridge",
@@ -242,12 +240,12 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
-      "sciatica-nerve-calm",
-      "patellofemoral-build",
-      "lateral-hip-settle",
-      "osteoporosis-safe-load",
       "coccydynia-sit-ease",
       "knee-settle-early",
+      "lateral-hip-settle",
+      "osteoporosis-safe-load",
+      "patellofemoral-build",
+      "sciatica-nerve-calm",
     ],
   },
   {
@@ -285,11 +283,11 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
+      "coccydynia-sit-ease",
       "desk-neck-reset",
       "lateral-hip-settle",
-      "stenosis-flexion-calm",
       "osteoporosis-safe-load",
-      "coccydynia-sit-ease",
+      "stenosis-flexion-calm",
     ],
   },
   {
@@ -325,9 +323,9 @@ export const exercises: Exercise[] = [
     relatedProgrammeSlugs: [
       "desk-neck-reset",
       "post-visit-gentle-move",
-      "upper-limb-desk-calm",
-      "tennis-elbow-settle",
       "pregnancy-pelvic-ease",
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -362,12 +360,13 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "desk-neck-reset",
-      "shoulder-arc-calm",
-      "upper-limb-desk-calm",
-      "tennis-elbow-settle",
-      "tennis-elbow-build",
       "frozen-shoulder-early",
       "pregnancy-pelvic-ease",
+      "shoulder-arc-calm",
+      "shoulder-stability-build",
+      "tennis-elbow-build",
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -400,9 +399,9 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "desk-neck-reset",
+      "frozen-shoulder-early",
       "shoulder-arc-calm",
       "upper-limb-desk-calm",
-      "frozen-shoulder-early",
     ],
   },
   {
@@ -433,9 +432,7 @@ export const exercises: Exercise[] = [
       "lumbar-disc-radiculopathy",
       "piriformis-syndrome",
     ],
-    relatedProgrammeSlugs: [
-      "sciatica-nerve-calm",
-    ],
+    relatedProgrammeSlugs: ["sciatica-nerve-calm"],
   },
   {
     slug: "piriformis-figure-four",
@@ -466,8 +463,8 @@ export const exercises: Exercise[] = [
       "si-joint-dysfunction",
     ],
     relatedProgrammeSlugs: [
-      "sciatica-nerve-calm",
       "lateral-hip-settle",
+      "sciatica-nerve-calm",
     ],
   },
   {
@@ -501,8 +498,8 @@ export const exercises: Exercise[] = [
       "meniscal-injury",
     ],
     relatedProgrammeSlugs: [
-      "patellofemoral-build",
       "knee-settle-early",
+      "patellofemoral-build",
     ],
   },
   {
@@ -535,9 +532,9 @@ export const exercises: Exercise[] = [
       "meniscal-injury",
     ],
     relatedProgrammeSlugs: [
-      "patellofemoral-build",
-      "lateral-hip-settle",
       "knee-settle-early",
+      "lateral-hip-settle",
+      "patellofemoral-build",
     ],
   },
   {
@@ -568,9 +565,7 @@ export const exercises: Exercise[] = [
       "itb-syndrome",
       "acl-rehab",
     ],
-    relatedProgrammeSlugs: [
-      "patellofemoral-build",
-    ],
+    relatedProgrammeSlugs: ["patellofemoral-build"],
   },
   {
     slug: "plantar-fascia-roll",
@@ -600,6 +595,7 @@ export const exercises: Exercise[] = [
       "achilles-tendinopathy",
     ],
     relatedProgrammeSlugs: [
+      "forefoot-ease",
       "plantar-heel-load",
     ],
   },
@@ -632,8 +628,8 @@ export const exercises: Exercise[] = [
       "shin-splints",
     ],
     relatedProgrammeSlugs: [
-      "plantar-heel-load",
       "ankle-sprain-early",
+      "plantar-heel-load",
     ],
   },
   {
@@ -665,8 +661,8 @@ export const exercises: Exercise[] = [
       "lateral-ankle-sprain",
     ],
     relatedProgrammeSlugs: [
-      "plantar-heel-load",
       "ankle-sprain-early",
+      "plantar-heel-load",
     ],
   },
   {
@@ -699,9 +695,10 @@ export const exercises: Exercise[] = [
       "ac-joint-injury",
     ],
     relatedProgrammeSlugs: [
-      "shoulder-arc-calm",
-      "post-visit-gentle-move",
       "frozen-shoulder-early",
+      "post-visit-gentle-move",
+      "shoulder-arc-calm",
+      "shoulder-stability-build",
     ],
   },
   {
@@ -738,9 +735,10 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "desk-neck-reset",
-      "shoulder-arc-calm",
-      "upper-limb-desk-calm",
       "osteoporosis-safe-load",
+      "shoulder-arc-calm",
+      "shoulder-stability-build",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -773,6 +771,7 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "shoulder-arc-calm",
+      "shoulder-stability-build",
       "upper-limb-desk-calm",
     ],
   },
@@ -803,9 +802,7 @@ export const exercises: Exercise[] = [
       "lateral-ankle-sprain",
       "achilles-tendinopathy",
     ],
-    relatedProgrammeSlugs: [
-      "ankle-sprain-early",
-    ],
+    relatedProgrammeSlugs: ["ankle-sprain-early"],
   },
   {
     slug: "single-leg-balance",
@@ -840,12 +837,13 @@ export const exercises: Exercise[] = [
       "post-surgical-general",
     ],
     relatedProgrammeSlugs: [
-      "patellofemoral-build",
-      "plantar-heel-load",
       "ankle-sprain-early",
+      "forefoot-ease",
+      "knee-settle-early",
       "lateral-hip-settle",
       "osteoporosis-safe-load",
-      "knee-settle-early",
+      "patellofemoral-build",
+      "plantar-heel-load",
     ],
   },
   {
@@ -881,9 +879,9 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
-      "post-visit-gentle-move",
       "lateral-hip-settle",
       "osteoporosis-safe-load",
+      "post-visit-gentle-move",
     ],
   },
   {
@@ -922,16 +920,16 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
-      "desk-neck-reset",
-      "sciatica-nerve-calm",
-      "post-visit-gentle-move",
-      "upper-limb-desk-calm",
-      "tennis-elbow-settle",
-      "frozen-shoulder-early",
-      "stenosis-flexion-calm",
-      "osteoporosis-safe-load",
       "coccydynia-sit-ease",
+      "desk-neck-reset",
+      "frozen-shoulder-early",
+      "osteoporosis-safe-load",
+      "post-visit-gentle-move",
       "pregnancy-pelvic-ease",
+      "sciatica-nerve-calm",
+      "stenosis-flexion-calm",
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -969,8 +967,8 @@ export const exercises: Exercise[] = [
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
       "post-visit-gentle-move",
-      "stenosis-flexion-calm",
       "pregnancy-pelvic-ease",
+      "stenosis-flexion-calm",
     ],
   },
   {
@@ -1002,9 +1000,7 @@ export const exercises: Exercise[] = [
       "deconditioning",
       "si-joint-dysfunction",
     ],
-    relatedProgrammeSlugs: [
-      "acute-low-back-settle",
-    ],
+    relatedProgrammeSlugs: ["acute-low-back-settle"],
   },
   {
     slug: "prone-press-up",
@@ -1035,9 +1031,7 @@ export const exercises: Exercise[] = [
       "lumbar-disc-radiculopathy",
       "facet-syndrome",
     ],
-    relatedProgrammeSlugs: [
-      "acute-low-back-settle",
-    ],
+    relatedProgrammeSlugs: ["acute-low-back-settle"],
   },
   {
     slug: "seated-flexion-fold",
@@ -1068,9 +1062,7 @@ export const exercises: Exercise[] = [
       "non-specific-low-back-pain",
       "lumbar-disc-radiculopathy",
     ],
-    relatedProgrammeSlugs: [
-      "stenosis-flexion-calm",
-    ],
+    relatedProgrammeSlugs: ["stenosis-flexion-calm"],
   },
   {
     slug: "knee-to-chest",
@@ -1106,10 +1098,10 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
-      "sciatica-nerve-calm",
-      "post-visit-gentle-move",
-      "stenosis-flexion-calm",
       "coccydynia-sit-ease",
+      "post-visit-gentle-move",
+      "sciatica-nerve-calm",
+      "stenosis-flexion-calm",
     ],
   },
   {
@@ -1143,8 +1135,8 @@ export const exercises: Exercise[] = [
       "itb-syndrome",
     ],
     relatedProgrammeSlugs: [
-      "patellofemoral-build",
       "lateral-hip-settle",
+      "patellofemoral-build",
     ],
   },
   {
@@ -1177,9 +1169,7 @@ export const exercises: Exercise[] = [
       "femoroacetabular-impingement",
       "groin-pain",
     ],
-    relatedProgrammeSlugs: [
-      "lateral-hip-settle",
-    ],
+    relatedProgrammeSlugs: ["lateral-hip-settle"],
   },
   {
     slug: "hamstring-slider",
@@ -1212,8 +1202,8 @@ export const exercises: Exercise[] = [
       "lumbar-disc-radiculopathy",
     ],
     relatedProgrammeSlugs: [
-      "sciatica-nerve-calm",
       "patellofemoral-build",
+      "sciatica-nerve-calm",
     ],
   },
   {
@@ -1252,11 +1242,11 @@ export const exercises: Exercise[] = [
       "post-surgical-general",
     ],
     relatedProgrammeSlugs: [
-      "patellofemoral-build",
-      "lateral-hip-settle",
-      "stenosis-flexion-calm",
-      "osteoporosis-safe-load",
       "knee-settle-early",
+      "lateral-hip-settle",
+      "osteoporosis-safe-load",
+      "patellofemoral-build",
+      "stenosis-flexion-calm",
     ],
   },
   {
@@ -1289,9 +1279,7 @@ export const exercises: Exercise[] = [
       "costochondritis",
       "scheuermanns",
     ],
-    relatedProgrammeSlugs: [
-      "desk-neck-reset",
-    ],
+    relatedProgrammeSlugs: ["desk-neck-reset"],
   },
   {
     slug: "seated-thoracic-rotation",
@@ -1396,8 +1384,8 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "desk-neck-reset",
-      "shoulder-arc-calm",
       "frozen-shoulder-early",
+      "shoulder-arc-calm",
     ],
   },
   {
@@ -1431,8 +1419,9 @@ export const exercises: Exercise[] = [
       "ac-joint-injury",
     ],
     relatedProgrammeSlugs: [
-      "shoulder-arc-calm",
       "frozen-shoulder-early",
+      "shoulder-arc-calm",
+      "shoulder-stability-build",
     ],
   },
   {
@@ -1466,9 +1455,9 @@ export const exercises: Exercise[] = [
       "carpal-tunnel",
     ],
     relatedProgrammeSlugs: [
-      "upper-limb-desk-calm",
-      "tennis-elbow-settle",
       "tennis-elbow-build",
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -1503,9 +1492,9 @@ export const exercises: Exercise[] = [
       "cubital-tunnel",
     ],
     relatedProgrammeSlugs: [
-      "upper-limb-desk-calm",
-      "tennis-elbow-settle",
       "tennis-elbow-build",
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -1537,8 +1526,8 @@ export const exercises: Exercise[] = [
       "cervical-radiculopathy",
     ],
     relatedProgrammeSlugs: [
-      "upper-limb-desk-calm",
       "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -1570,8 +1559,8 @@ export const exercises: Exercise[] = [
       "cervical-radiculopathy",
     ],
     relatedProgrammeSlugs: [
-      "upper-limb-desk-calm",
       "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -1605,9 +1594,9 @@ export const exercises: Exercise[] = [
       "cubital-tunnel",
     ],
     relatedProgrammeSlugs: [
-      "upper-limb-desk-calm",
-      "tennis-elbow-settle",
       "tennis-elbow-build",
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -1638,9 +1627,7 @@ export const exercises: Exercise[] = [
       "tennis-elbow",
       "medial-epicondylalgia",
     ],
-    relatedProgrammeSlugs: [
-      "tennis-elbow-build",
-    ],
+    relatedProgrammeSlugs: ["tennis-elbow-build"],
   },
   {
     slug: "thumb-cmc-isometric",
@@ -1671,8 +1658,8 @@ export const exercises: Exercise[] = [
       "dequervains",
     ],
     relatedProgrammeSlugs: [
-      "upper-limb-desk-calm",
       "tennis-elbow-settle",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -1776,6 +1763,7 @@ export const exercises: Exercise[] = [
       "morton-neuroma",
     ],
     relatedProgrammeSlugs: [
+      "forefoot-ease",
       "plantar-heel-load",
     ],
   },
@@ -1810,8 +1798,9 @@ export const exercises: Exercise[] = [
       "shin-splints",
     ],
     relatedProgrammeSlugs: [
-      "plantar-heel-load",
       "ankle-sprain-early",
+      "forefoot-ease",
+      "plantar-heel-load",
     ],
   },
   {
@@ -1882,10 +1871,11 @@ export const exercises: Exercise[] = [
       "spondylolysis",
     ],
     relatedProgrammeSlugs: [
-      "shoulder-arc-calm",
-      "tennis-elbow-build",
       "frozen-shoulder-early",
       "osteoporosis-safe-load",
+      "shoulder-arc-calm",
+      "shoulder-stability-build",
+      "tennis-elbow-build",
     ],
   },
   {
@@ -1953,8 +1943,8 @@ export const exercises: Exercise[] = [
       "groin-pain",
     ],
     relatedProgrammeSlugs: [
-      "lateral-hip-settle",
       "coccydynia-sit-ease",
+      "lateral-hip-settle",
       "pregnancy-pelvic-ease",
     ],
   },
@@ -2024,8 +2014,8 @@ export const exercises: Exercise[] = [
       "acl-rehab",
     ],
     relatedProgrammeSlugs: [
-      "patellofemoral-build",
       "knee-settle-early",
+      "patellofemoral-build",
     ],
   },
   {
@@ -2060,8 +2050,8 @@ export const exercises: Exercise[] = [
       "meniscal-injury",
     ],
     relatedProgrammeSlugs: [
-      "patellofemoral-build",
       "knee-settle-early",
+      "patellofemoral-build",
     ],
   },
   {
@@ -2093,9 +2083,7 @@ export const exercises: Exercise[] = [
       "plantar-fasciitis",
       "shin-splints",
     ],
-    relatedProgrammeSlugs: [
-      "plantar-heel-load",
-    ],
+    relatedProgrammeSlugs: ["plantar-heel-load"],
   },
   {
     slug: "single-leg-rdl",
@@ -2130,9 +2118,9 @@ export const exercises: Exercise[] = [
       "osteoporosis",
     ],
     relatedProgrammeSlugs: [
-      "patellofemoral-build",
       "lateral-hip-settle",
       "osteoporosis-safe-load",
+      "patellofemoral-build",
     ],
   },
   {
@@ -2205,8 +2193,8 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
-      "sciatica-nerve-calm",
       "osteoporosis-safe-load",
+      "sciatica-nerve-calm",
     ],
   },
   {
@@ -2242,6 +2230,344 @@ export const exercises: Exercise[] = [
     relatedProgrammeSlugs: [
       "desk-neck-reset",
       "pregnancy-pelvic-ease",
+    ],
+  },
+  {
+    slug: "cervical-nod-retraction",
+    title: "Chin tuck with nod",
+    summary:
+      "Gentle upper-neck nod combined with a chin tuck for desk neck and cervicogenic headache patterns.",
+    region: "Cervical",
+    level: "early",
+    equipment: "None",
+    illustration: "chin-tuck",
+    steps: [
+      "Sit tall and draw the chin straight back into a small chin tuck.",
+      "From that position, nod the head as if saying a tiny “yes,” keeping the tuck.",
+      "Return to the tucked start, then relax to neutral.",
+      "Keep the movement small — this is upper-neck control, not a big stretch.",
+    ],
+    cues: [
+      "Imagine sliding the back of your head up a wall.",
+      "Shoulders stay heavy; jaw stays soft.",
+    ],
+    avoid: [
+      "Tipping into a big forward head poke between reps.",
+      "Pushing through dizziness or lingering arm tingling.",
+    ],
+    dosage: "8–10 slow nods, 1–2 sets, several times on desk days",
+    relatedConditionSlugs: [
+      "neck-pain",
+      "cervicogenic-headache",
+      "whiplash",
+      "cervical-radiculopathy",
+    ],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "post-visit-gentle-move",
+    ],
+  },
+  {
+    slug: "isometric-shoulder-er",
+    title: "Isometric shoulder external rotation",
+    summary:
+      "Elbow-at-side outward rotation hold against a wall or doorframe — early cuff activation without large range.",
+    region: "Shoulder",
+    level: "early",
+    equipment: "Wall or doorframe",
+    illustration: "band-row",
+    steps: [
+      "Stand with the elbow bent to 90° and tucked by your side.",
+      "Place the back of the hand or wrist against a wall or doorframe.",
+      "Gently rotate outward into the wall at about 30% effort without moving the elbow away.",
+      "Hold, relax, and repeat.",
+    ],
+    cues: [
+      "Keep the elbow glued to the ribs.",
+      "Light effort that you can breathe through is enough.",
+    ],
+    avoid: [
+      "Shrugging or leaning the whole body into the wall.",
+      "Pushing through sharp anterior shoulder pain.",
+    ],
+    dosage: "5–8 second holds × 8–10, 1–2 sets, most days",
+    relatedConditionSlugs: [
+      "shoulder-instability",
+      "subacromial-pain",
+      "rotator-cuff-tear",
+      "ac-joint-injury",
+    ],
+    relatedProgrammeSlugs: [
+      "frozen-shoulder-early",
+      "shoulder-arc-calm",
+      "shoulder-stability-build",
+    ],
+  },
+  {
+    slug: "prone-t-raise",
+    title: "Prone T raise",
+    summary:
+      "Face-down arm lifts into a T shape for scapular and posterior shoulder control — return-to-load friendly.",
+    region: "Shoulder",
+    level: "return",
+    equipment: "Mat or firm bed",
+    illustration: "prone-press",
+    steps: [
+      "Lie face down with the forehead resting on a towel and arms out to the sides in a T, thumbs up.",
+      "Gently lift the arms a short distance, squeezing the shoulder blades lightly.",
+      "Pause, then lower with control.",
+      "Keep the neck long — do not crane up to watch your hands.",
+    ],
+    cues: [
+      "Think “long arms,” not high lifts.",
+      "Stop short of pinching at the top of the shoulder.",
+    ],
+    avoid: [
+      "Arching the low back to gain height.",
+      "Holding the breath or yanking the arms.",
+    ],
+    dosage: "8–12 reps, 2 sets, most days once early shoulder drills are easy",
+    relatedConditionSlugs: [
+      "shoulder-instability",
+      "subacromial-pain",
+      "rotator-cuff-tear",
+      "thoracic-joint-dysfunction",
+    ],
+    relatedProgrammeSlugs: [
+      "shoulder-arc-calm",
+      "shoulder-stability-build",
+    ],
+  },
+  {
+    slug: "thumb-opposition-slides",
+    title: "Thumb opposition slides",
+    summary:
+      "Gentle tip-to-tip slides from index to little finger for CMC and fine-motor calm after gripping or phone use.",
+    region: "Elbow & Wrist",
+    level: "early",
+    equipment: "None",
+    illustration: "seated-desk",
+    steps: [
+      "Rest the hand comfortably, wrist neutral.",
+      "Touch the thumb tip to the index tip, then slide to the middle, ring, and little finger tips.",
+      "Return along the same path without forcing the thumb web to collapse.",
+      "Keep the motion smooth and pain-light at the thumb base.",
+    ],
+    cues: [
+      "Quality circles of contact beat speed.",
+      "Support the hand on a table if control is hard mid-air.",
+    ],
+    avoid: [
+      "Forcing through sharp base-of-thumb pain.",
+      "Gripping the phone hard immediately afterward.",
+    ],
+    dosage: "5–8 full slides, 2 sets, 1–2 times daily",
+    relatedConditionSlugs: ["cmc-oa", "dequervains", "carpal-tunnel"],
+    relatedProgrammeSlugs: [
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
+    ],
+  },
+  {
+    slug: "metatarsal-spread",
+    title: "Metatarsal spread",
+    summary:
+      "Active forefoot widening to ease crowded metatarsal heads — useful for Morton-type forefoot irritability.",
+    region: "Ankle & Foot",
+    level: "early",
+    equipment: "None",
+    illustration: "ankle-alphabet",
+    steps: [
+      "Sit barefoot with the foot relaxed on the floor.",
+      "Try to spread the toes and widen the forefoot without clawing hard.",
+      "Hold a gentle spread, then relax.",
+      "Optional: place fingers between toes for a passive assist if active spread is limited.",
+    ],
+    cues: [
+      "Think “wide foot,” not curling toes under.",
+      "Stop if neural burning into the toes increases and lingers.",
+    ],
+    avoid: [
+      "Aggressive toe-stretching through inflamed neuromas.",
+      "Doing this in tight shoes — barefoot or roomy footwear only.",
+    ],
+    dosage: "8–10 gentle spreads, 2 sets, most days",
+    relatedConditionSlugs: [
+      "morton-neuroma",
+      "hallux-rigidus",
+      "plantar-fasciitis",
+    ],
+    relatedProgrammeSlugs: [
+      "forefoot-ease",
+      "plantar-heel-load",
+    ],
+  },
+  {
+    slug: "seated-hallux-lift",
+    title: "Seated hallux lift",
+    summary:
+      "Lift only the big toe while the lesser toes stay down — builds control for stiff first MTP joints.",
+    region: "Ankle & Foot",
+    level: "build",
+    equipment: "None",
+    illustration: "ankle-alphabet",
+    steps: [
+      "Sit barefoot with the foot flat.",
+      "Keep the four lesser toes down and lift only the big toe.",
+      "Pause, lower with control, and repeat.",
+      "Then reverse: keep the big toe down and lift the lesser toes if able.",
+    ],
+    cues: [
+      "Small, precise lifts beat big compensations from the ankle.",
+      "Place a finger lightly on the lesser toes to remind them to stay down.",
+    ],
+    avoid: [
+      "Forcing through hot, swollen first MTP joints.",
+      "Rolling the whole foot onto the outer edge to cheat.",
+    ],
+    dosage: "8–12 lifts, 2 sets, most days",
+    relatedConditionSlugs: [
+      "hallux-rigidus",
+      "morton-neuroma",
+      "plantar-fasciitis",
+    ],
+    relatedProgrammeSlugs: [
+      "forefoot-ease",
+      "plantar-heel-load",
+    ],
+  },
+  {
+    slug: "hip-figure-four-flex",
+    title: "Supine figure-four flex",
+    summary:
+      "Gentle hip external-rotation stretch in flexion for FAI-type or outer-hip tightness — keep out of the pinch.",
+    region: "Hip",
+    level: "early",
+    equipment: "Mat",
+    illustration: "figure-four",
+    steps: [
+      "Lie on your back and cross the ankle over the opposite thigh (figure-four).",
+      "Keep the pelvis level and gently draw the uncrossed thigh toward you until you feel a mild outer-hip stretch.",
+      "Hold without forcing into a sharp groin pinch.",
+      "Switch sides.",
+    ],
+    cues: [
+      "If the groin pinches, reduce the pull or uncross slightly.",
+      "Breathe into the outer hip rather than yanking.",
+    ],
+    avoid: [
+      "Pushing into FAI-type pinching at the front of the hip.",
+      "Twisting the low back to gain range.",
+    ],
+    dosage: "20–30 second hold each side, 2 rounds, most days",
+    relatedConditionSlugs: [
+      "femoroacetabular-impingement",
+      "greater-trochanteric-pain",
+      "hip-oa",
+      "piriformis-syndrome",
+    ],
+    relatedProgrammeSlugs: ["lateral-hip-settle"],
+  },
+  {
+    slug: "prone-cobra-short",
+    title: "Short prone cobra",
+    summary:
+      "Small face-down chest lift for thoracic extension — helpful for desk kyphosis patterns when lumbar extension is kept minimal.",
+    region: "Thoracic",
+    level: "early",
+    equipment: "Mat",
+    illustration: "prone-press",
+    steps: [
+      "Lie face down with hands by the shoulders or lightly under the forehead.",
+      "Lengthen through the crown and lift the chest a short distance, keeping the lower ribs near the surface.",
+      "Pause, then lower with control.",
+      "Think mid-back open, not a big lumbar arch.",
+    ],
+    cues: [
+      "Slide the shoulder blades gently down the back.",
+      "Keep the neck long — eyes toward the floor a little ahead.",
+    ],
+    avoid: [
+      "Cranking into a high cobra that loads the low back.",
+      "Forcing through sharp mid-back pain.",
+    ],
+    dosage: "6–10 gentle lifts, 1–2 sets, 1–2 times daily",
+    relatedConditionSlugs: [
+      "scheuermanns",
+      "thoracic-joint-dysfunction",
+      "neck-pain",
+      "costochondritis",
+      "facet-syndrome",
+    ],
+    relatedProgrammeSlugs: ["desk-neck-reset"],
+  },
+  {
+    slug: "spanish-squat-hold",
+    title: "Spanish squat hold",
+    summary:
+      "Band-behind-knees squat isometric for patellar tendon loading — build phase once early knee drills are easy.",
+    region: "Knee",
+    level: "return",
+    equipment: "Heavy resistance band anchored behind you",
+    illustration: "standing-hinge",
+    steps: [
+      "Loop a strong band behind the knees and step forward to create tension (or use a Spanish-squat setup).",
+      "Sit back into a comfortable squat angle where the tendon feels loaded but tolerable.",
+      "Hold without letting the knees cave inward, then stand to rest.",
+      "Keep the trunk fairly upright and the heels down.",
+    ],
+    cues: [
+      "Mild tendon ache that settles by the next day can be acceptable.",
+      "Shorter solid holds beat long shaky ones.",
+    ],
+    avoid: [
+      "Deep painful angles while the tendon is hot and swollen.",
+      "Letting the band pull you into a forward knee collapse.",
+    ],
+    dosage: "20–40 second holds × 3–5, most days once settle/build drills are easy",
+    relatedConditionSlugs: [
+      "patellar-tendinopathy",
+      "patellofemoral-pain",
+      "knee-oa",
+    ],
+    relatedProgrammeSlugs: [
+      "knee-settle-early",
+      "patellofemoral-build",
+    ],
+  },
+  {
+    slug: "farmer-carry-walk",
+    title: "Farmer carry walk",
+    summary:
+      "Short loaded walks with even weights for return-to-load grip, trunk, and posture control.",
+    region: "Whole body",
+    level: "return",
+    equipment: "Two even dumbbells, kettlebells, or shopping bags",
+    illustration: "standing-hinge",
+    steps: [
+      "Stand tall holding an even weight in each hand by your sides.",
+      "Walk a short distance with quiet shoulders and a steady trunk.",
+      "Turn carefully and return.",
+      "Set the weights down with a hip hinge rather than a rounded drop.",
+    ],
+    cues: [
+      "Ribs stacked over pelvis; do not lean away from a heavier side.",
+      "Choose a load you can carry with good posture — bags count.",
+    ],
+    avoid: [
+      "Uneven heavy loads that twist the trunk hard.",
+      "Holding the breath or shrugging into the ears.",
+    ],
+    dosage: "20–40 metre walks × 3–4, most days once early drills are easy",
+    relatedConditionSlugs: [
+      "deconditioning",
+      "osteoporosis",
+      "non-specific-low-back-pain",
+      "tennis-elbow",
+    ],
+    relatedProgrammeSlugs: [
+      "osteoporosis-safe-load",
+      "tennis-elbow-build",
     ],
   },
 ];
@@ -2298,6 +2624,7 @@ export const programmes: Programme[] = [
     phase: "rebuild",
     exerciseSlugs: [
       "chin-tuck",
+      "cervical-nod-retraction",
       "upper-trap-stretch",
       "levator-stretch",
       "isometric-neck-rotation",
@@ -2305,6 +2632,7 @@ export const programmes: Programme[] = [
       "seated-thoracic-rotation",
       "open-book-rotation",
       "thoracic-extension-roll",
+      "prone-cobra-short",
       "doorway-pec-stretch",
       "wall-angels",
       "open-book-pregnancy",
@@ -2319,6 +2647,7 @@ export const programmes: Programme[] = [
       "costochondritis",
       "whiplash",
       "scheuermanns",
+      "facet-syndrome",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
@@ -2373,6 +2702,7 @@ export const programmes: Programme[] = [
       "glute-bridge",
       "sit-to-stand",
       "wall-sit-isometric",
+      "spanish-squat-hold",
       "step-down-control",
       "single-leg-balance",
       "single-leg-rdl",
@@ -2407,6 +2737,8 @@ export const programmes: Programme[] = [
       "isometric-heel-raise",
       "eccentric-heel-drop",
       "great-toe-extension",
+      "seated-hallux-lift",
+      "metatarsal-spread",
       "towel-toe-curls",
       "single-leg-balance",
     ],
@@ -2436,10 +2768,12 @@ export const programmes: Programme[] = [
       "shoulder-pendulum",
       "table-slides",
       "seated-scapular-set",
+      "isometric-shoulder-er",
       "open-book-rotation",
       "doorway-pec-stretch",
       "wall-angels",
       "band-external-rotation",
+      "prone-t-raise",
       "wall-push-up-plus",
     ],
     relatedConditionSlugs: [
@@ -2494,6 +2828,7 @@ export const programmes: Programme[] = [
       "knee-to-chest",
       "cat-cow",
       "chin-tuck",
+      "cervical-nod-retraction",
       "upper-trap-stretch",
       "levator-stretch",
       "isometric-neck-rotation",
@@ -2530,6 +2865,7 @@ export const programmes: Programme[] = [
       "glute-bridge",
       "hip-flexor-stretch",
       "piriformis-figure-four",
+      "hip-figure-four-flex",
       "hip-hinge-practice",
       "sit-to-stand",
       "single-leg-balance",
@@ -2569,6 +2905,7 @@ export const programmes: Programme[] = [
       "wrist-flexor-stretch",
       "towel-grip-isometric",
       "thumb-cmc-isometric",
+      "thumb-opposition-slides",
       "median-nerve-glide",
       "ulnar-nerve-glide",
       "band-external-rotation",
@@ -2601,6 +2938,7 @@ export const programmes: Programme[] = [
       "wrist-flexor-stretch",
       "towel-grip-isometric",
       "thumb-cmc-isometric",
+      "thumb-opposition-slides",
       "median-nerve-glide",
       "ulnar-nerve-glide",
       "seated-scapular-set",
@@ -2636,6 +2974,7 @@ export const programmes: Programme[] = [
       "eccentric-wrist-extension",
       "seated-scapular-set",
       "wall-push-up-plus",
+      "farmer-carry-walk",
     ],
     relatedConditionSlugs: [
       "tennis-elbow",
@@ -2660,6 +2999,7 @@ export const programmes: Programme[] = [
       "shoulder-pendulum",
       "table-slides",
       "seated-scapular-set",
+      "isometric-shoulder-er",
       "doorway-pec-stretch",
       "open-book-rotation",
       "wall-push-up-plus",
@@ -2726,6 +3066,7 @@ export const programmes: Programme[] = [
       "tandem-balance",
       "single-leg-rdl",
       "side-plank-short",
+      "farmer-carry-walk",
       "bird-dog",
     ],
     relatedConditionSlugs: [
@@ -2783,6 +3124,7 @@ export const programmes: Programme[] = [
       "glute-bridge",
       "single-leg-balance",
       "wall-sit-isometric",
+      "spanish-squat-hold",
     ],
     relatedConditionSlugs: [
       "meniscal-injury",
@@ -2796,6 +3138,7 @@ export const programmes: Programme[] = [
       "True locking, marked swelling after injury, or giving-way episodes need assessment before progressing wall sits or steps.",
       "Keep squat depth shallow while the joint feels hot or puffy.",
       "Post-op knees: stay inside surgeon range and swelling rules.",
+      "Spanish squat holds are optional progression — skip while the joint is swollen.",
     ],
   },
   {
@@ -2827,6 +3170,65 @@ export const programmes: Programme[] = [
       "Follow maternity advice on positions (including lying flat) — personal guidance beats this page.",
       "Stop for vaginal bleeding, reduced fetal movements, severe headache, or calf swelling — contact your maternity team or urgent care.",
       "Pelvic girdle pain: keep ranges small and avoid asymmetrical lunges that recreate sharp pubic or SI pain.",
+    ],
+  },
+  {
+    slug: "shoulder-stability-build",
+    title: "Shoulder stability build",
+    summary:
+      "Isometric cuff work into scapular T raises for people rebuilding confidence after instability or irritable cuff patterns.",
+    audience:
+      "Adults with shoulder instability or cuff irritability who can tolerate light isometrics without apprehension or night fever.",
+    phase: "rebuild",
+    exerciseSlugs: [
+      "seated-scapular-set",
+      "isometric-shoulder-er",
+      "band-external-rotation",
+      "shoulder-pendulum",
+      "table-slides",
+      "prone-t-raise",
+      "wall-push-up-plus",
+      "wall-angels",
+    ],
+    relatedConditionSlugs: [
+      "shoulder-instability",
+      "subacromial-pain",
+      "rotator-cuff-tear",
+      "ac-joint-injury",
+    ],
+    relatedServiceSlug: "sports-injury-rehab",
+    precautions: [
+      "Recent dislocation, suspected fracture, or neurological loss needs medical review first.",
+      "Stay out of positions that recreate apprehension — shorten range instead.",
+      "Progress T raises only when isometrics feel calm.",
+    ],
+  },
+  {
+    slug: "forefoot-ease",
+    title: "Forefoot ease",
+    summary:
+      "Toe and metatarsal control for crowded forefeet, stiff big toes, and Morton-type burning — barefoot, short sessions.",
+    audience:
+      "Adults with forefoot crowding, hallux stiffness, or Morton-type symptoms without open wounds or acute infection.",
+    phase: "rebuild",
+    exerciseSlugs: [
+      "metatarsal-spread",
+      "seated-hallux-lift",
+      "great-toe-extension",
+      "towel-toe-curls",
+      "plantar-fascia-roll",
+      "single-leg-balance",
+    ],
+    relatedConditionSlugs: [
+      "morton-neuroma",
+      "hallux-rigidus",
+      "plantar-fasciitis",
+    ],
+    relatedServiceSlug: "focused-shockwave",
+    precautions: [
+      "Sudden forefoot swelling, open sores, or infection signs need medical review first.",
+      "Wear roomy footwear; avoid narrow toe boxes while irritability is high.",
+      "Stop drills that recreate lasting neural burning into the toes.",
     ],
   },
 ];

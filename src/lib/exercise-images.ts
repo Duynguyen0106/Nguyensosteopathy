@@ -43,6 +43,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of cat–cow on hands and knees",
     credit: "Free educational illustration",
   },
+  "cervical-nod-retraction": {
+    src: "/images/exercises/cervical-nod-retraction.webp",
+    alt: "Educational illustration of a seated chin tuck with a gentle upper-neck nod",
+    credit: "Free educational illustration",
+  },
   "chin-tuck": {
     src: "/images/exercises/chin-tuck.webp",
     alt: "Educational illustration of a seated chin tuck (gentle cervical retraction)",
@@ -78,6 +83,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of eccentric wrist extension with a light weight",
     credit: "Free educational illustration",
   },
+  "farmer-carry-walk": {
+    src: "/images/exercises/farmer-carry-walk.webp",
+    alt: "Educational illustration of a farmer carry walk with even weights",
+    credit: "Free educational illustration",
+  },
   "glute-bridge": {
     src: "/images/exercises/glute-bridge.webp",
     alt: "Person performing a glute bridge on a yoga mat with hips lifted",
@@ -91,6 +101,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "hamstring-slider": {
     src: "/images/exercises/hamstring-slider.webp",
     alt: "Educational illustration of a supine hamstring slider with the knee easing straight",
+    credit: "Free educational illustration",
+  },
+  "hip-figure-four-flex": {
+    src: "/images/exercises/hip-figure-four-flex.webp",
+    alt: "Educational illustration of a supine figure-four hip stretch",
     credit: "Free educational illustration",
   },
   "hip-flexor-stretch": {
@@ -118,6 +133,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of isometric neck rotation against a hand",
     credit: "Free educational illustration",
   },
+  "isometric-shoulder-er": {
+    src: "/images/exercises/isometric-shoulder-er.webp",
+    alt: "Educational illustration of isometric shoulder external rotation against a wall",
+    credit: "Free educational illustration",
+  },
   "knee-rolls": {
     src: "/images/exercises/knee-rolls.webp",
     alt: "Person lying on their back with knees rolled to one side for gentle lumbar mobility",
@@ -136,6 +156,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "median-nerve-glide": {
     src: "/images/exercises/median-nerve-glide.webp",
     alt: "Educational illustration of a gentle median nerve glide for the arm and wrist",
+    credit: "Free educational illustration",
+  },
+  "metatarsal-spread": {
+    src: "/images/exercises/metatarsal-spread.webp",
+    alt: "Educational illustration of a barefoot metatarsal / toe spread",
     credit: "Free educational illustration",
   },
   "open-book-pregnancy": {
@@ -168,9 +193,19 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Bare foot resting on a foam roller for plantar fascia / sole mobility",
     credit: "Photo via Pexels (#20890283)",
   },
+  "prone-cobra-short": {
+    src: "/images/exercises/prone-cobra-short.webp",
+    alt: "Educational illustration of a short prone cobra chest lift",
+    credit: "Free educational illustration",
+  },
   "prone-press-up": {
     src: "/images/exercises/prone-press-up.webp",
     alt: "Educational illustration of a prone press-up: chest lifts while hips stay down",
+    credit: "Free educational illustration",
+  },
+  "prone-t-raise": {
+    src: "/images/exercises/prone-t-raise.webp",
+    alt: "Educational illustration of a prone T raise with arms lifted to the sides",
     credit: "Free educational illustration",
   },
   "quad-set-short-arc": {
@@ -186,6 +221,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "seated-flexion-fold": {
     src: "/images/exercises/seated-flexion-fold.webp",
     alt: "Educational illustration of a seated flexion fold in a chair",
+    credit: "Free educational illustration",
+  },
+  "seated-hallux-lift": {
+    src: "/images/exercises/seated-hallux-lift.webp",
+    alt: "Educational illustration of a seated big-toe lift with lesser toes down",
     credit: "Free educational illustration",
   },
   "seated-scapular-set": {
@@ -228,6 +268,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of a sit-to-stand from a chair",
     credit: "Free educational illustration",
   },
+  "spanish-squat-hold": {
+    src: "/images/exercises/spanish-squat-hold.webp",
+    alt: "Educational illustration of a Spanish squat hold with a band behind the knees",
+    credit: "Free educational illustration",
+  },
   "step-down-control": {
     src: "/images/exercises/step-down-control.webp",
     alt: "Person standing on a step box practicing controlled step-down knee control",
@@ -261,6 +306,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "thumb-cmc-isometric": {
     src: "/images/exercises/thumb-cmc-isometric.webp",
     alt: "Educational illustration of a gentle thumb CMC isometric OK-shape hold",
+    credit: "Free educational illustration",
+  },
+  "thumb-opposition-slides": {
+    src: "/images/exercises/thumb-opposition-slides.webp",
+    alt: "Educational illustration of thumb tip opposition slides across the fingers",
     credit: "Free educational illustration",
   },
   "towel-grip-isometric": {

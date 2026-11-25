@@ -424,7 +424,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "Who it suits",
         paragraphs: [
           "Deep tissue work helps chronic muscular tightness, training-related muscle load, desk-related shoulder and back tension, and anyone who needs focused release in priority regions. Sessions last 45 minutes and are priced clearly on our fees page. Cupping can be added when appropriate for an additional fee.",
-          "We take a brief history even for massage-focused visits so we do not work aggressively into tissues that need a different approach. If assessment suggests osteopathy or shockwave would serve you better, we say so and help you switch pathway rather than selling the wrong session.",
+          "We take a brief history even for massage-focused visits so we do not work aggressively into tissues that need a different approach. If assessment suggests osteopathy or shockwave would serve you better, we say so and help you switch pathway rather than selling the wrong session. Between visits you can use our public home exercise library for desk-neck and upper-back mobility drills so soft tissue does not tighten straight back to baseline.",
           "Athletes sometimes book the day after heavy sessions; office workers often book mid-week when desk posture has peaked. We help you time sessions so soft tissue is receptive rather than so inflamed that deeper work is counterproductive. Communication during treatment keeps pressure in the productive zone.",
         ],
       },
@@ -561,7 +561,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "What gentle pregnancy care looks like",
         paragraphs: [
-          "Expect careful positioning, soft mobilisation and soft-tissue approaches chosen for comfort. We avoid techniques or positions that feel unsafe for you. Practical advice covers sleep setup, standing work, lifting older children and pacing activity through the week. Our public exercise library also includes a pregnancy pelvic ease programme with trimester-aware cautions — always follow your maternity team's advice first."
+          "Expect careful positioning, soft mobilisation and soft-tissue approaches chosen for comfort. We avoid techniques or positions that feel unsafe for you. Practical advice covers sleep setup, standing work, lifting older children and pacing activity through the week. Our public exercise library also includes a pregnancy pelvic ease programme with trimester-aware cautions — always follow your maternity team's advice first.",
           "Ideal reasons to book include pelvic girdle discomfort, lower-back and rib strain in pregnancy, and postural change as your baby grows. Later-trimester visits focus on comfort and function; earlier visits may address desk or pre-existing spinal patterns that pregnancy has unsettled.",
           "We collaborate with your existing maternity advice. If you have been told to avoid certain positions or activities, tell us before treatment begins. Supportive strategies are discussed without pushing products you do not need, and partners are welcome to hear simple ways to help at home.",
         ],
@@ -779,7 +779,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "How a home visit works",
         paragraphs: [
           "Before the day, we confirm your address, access notes, and any stairs, parking, or entry details that help arrival run smoothly. Please clear a flat space large enough for comfortable movement assessment and treatment — a firm bed, sturdy table arrangement we discuss in advance, or suitable floor space with padding as agreed. Wear comfortable clothing that allows easy movement.",
-          "The clinical process mirrors a clinic appointment: detailed history, posture and movement testing, treatment selected for your presentation, and practical guidance you can use between sessions. Some people continue with further home visits; others return to the Charlton clinic once travel becomes easier. We only recommend follow-up when it is clinically useful.",
+          "The clinical process mirrors a clinic appointment: detailed history, posture and movement testing, treatment selected for your presentation, and practical guidance you can use between sessions. We often leave a short home plan and point you to our public exercise library for illustrated drills when travel to follow-up is limited. Some people continue with further home visits; others return to the Charlton clinic once travel becomes easier. We only recommend follow-up when it is clinically useful.",
           "If symptoms include red-flag features such as progressive weakness, unexplained weight loss, fever, or bladder or bowel changes, seek urgent medical care before or instead of routine musculoskeletal treatment. Home visits are for appropriate mechanical problems after serious causes have been considered.",
         ],
       },

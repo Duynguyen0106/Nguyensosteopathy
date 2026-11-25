@@ -1,0 +1,65 @@
+{
+  "clinic": "Nguyen's Osteopathic Clinic",
+  "placeId": "ChIJG4dhhJip2EcRVmEEenyYD8E",
+  "listingRating": 5,
+  "listingRatingCount": 118,
+  "collectedUniqueTextReviews": 5,
+  "note": "Google Places API and unsigned Maps only expose 5 written reviews (listing shows 118 ratings; many may be star-only or gated behind sign-in). facebook-album/ has the share-ready set.",
+  "folders": {
+    "all": "/opt/cursor/artifacts/google-reviews-facebook",
+    "facebookAlbum": "/opt/cursor/artifacts/google-reviews-facebook/facebook-album",
+    "siteMirror": "/workspace/public/reviews/google-screenshots"
+  },
+  "reviews": [
+    {
+      "n": 1,
+      "author": "HEVN8",
+      "rating": 5,
+      "time": "a week ago",
+      "text": "Visited Dr Nguyen today very good service for both me and my friend was very thorough with our treatments did not rush explained everything in detail and also what supplements to take. Highly recommend. 5* plus",
+      "facebookFile": "001-hevn8-facebook.png",
+      "mapsFile": "001-hevn8-maps.png",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsVU1EVnpNV2gwTVRkd1MyNXRXWGgzVVhaUWNsRRAB"
+    },
+    {
+      "n": 2,
+      "author": "kirankumar Chaudhari",
+      "rating": 5,
+      "time": "a month ago",
+      "text": "Good treatment. I highly recommend Dr Nguyen, he is knowledgeable and explains everything in detail. Can’t wait to come back",
+      "facebookFile": "002-kirankumar-chaudhari-facebook.png",
+      "mapsFile": "002-kirankumar-chaudhari-maps.png",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoa2VuUlZiR1EyVUV0T1NIVjVTekl3VlZoRWNXYxAB"
+    },
+    {
+      "n": 3,
+      "author": "Saraswoti Moktan",
+      "rating": 5,
+      "time": "a month ago",
+      "text": "⭐⭐⭐⭐⭐\n\nI had a really great experience at Nguyen’s Osteopathic Clinic. Dr. Nguyen treated my neck very well and provided excellent care. He was very professional, kind, friendly, and approachable. He took the time to treat me properly and made me feel comfortable throughout the appointment. I was very happy with the treatment and the overall experience. I highly recommend Dr. Nguyen to anyone looking for excellent osteopathic care. Thank you for your wonderful service!",
+      "facebookFile": "003-saraswoti-moktan-facebook.png",
+      "mapsFile": "003-saraswoti-moktan-maps.png",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pOTWJtcHhSMUp0U0dJeVIwNXpVbXhVUlhsR1dHYxAB"
+    },
+    {
+      "n": 4,
+      "author": "Bình Đàm",
+      "rating": 5,
+      "time": "a month ago",
+      "text": "I’m extremely satisfied with the quality of service at  clinic. The experience was excellent from start to finish, and I truly appreciate the professionalism, care, and attention to detail. The atmosphere is welcoming and comfortable, and I felt well taken care of throughout my visit. I highly recommend this clinic to anyone looking for high-quality osteopathic care. I will definitely come back!",
+      "facebookFile": "004-binh-dam-facebook.png",
+      "mapsFile": "004-binh-dam-maps.png",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xNMmVqRndUbGx3TkVaWE5XZHZPR2xrUWxwRFJWRRAB"
+    },
+    {
+      "n": 5,
+      "author": "Kelvin Nguyen",
+      "rating": 5,
+      "time": "a month ago",
+      "text": "\"Dr. Austin is an exceptionally knowledgeable and dedicated physician. His professional approach to joint and bone pain management combines Western and Traditional Chinese Medicine, delivering outstanding results, faster treatment times, and great home care guidance. Don't hesitate to seek his advice even for minor pain symptoms. I highly recommend his services!",
+      "facebookFile": "005-kelvin-nguyen-facebook.png",
+      "mapsFile": "005-kelvin-nguyen-maps.png",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1VmVqQkJSSFpwUWpSVmFYRjBUVEV3UjJscVVVRRAB"
+    }
+  ]
+}

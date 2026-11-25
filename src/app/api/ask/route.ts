@@ -14,8 +14,6 @@ import {
 } from "@/lib/patient-ask/safety";
 import { buildPatientAskSystemPrompt } from "@/lib/patient-ask/system-prompt";
 
-export const runtime = "nodejs";
-
 const MAX_MESSAGES = 12;
 const MAX_CONTENT_CHARS = 1_200;
 const ASK_RATE = { limit: 10, windowMs: 10 * 60_000 } as const;

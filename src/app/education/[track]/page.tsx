@@ -13,6 +13,10 @@ import {
 import { defaultOgImage, trimDescription } from "@/lib/seo";
 import { site } from "@/lib/site";
 
+const shockwaveCredential = site.practitioner.qualifications.find(
+  (item) => item.id === "shockwave-cpd",
+);
+
 type Props = { params: Promise<{ track: string }> };
 
 const trackIds = new Set<EducationTrackId>(["acupuncture", "cpd"]);
@@ -117,11 +121,24 @@ export default async function EducationTrackPage({ params }: Props) {
                   Acupuncture service
                 </ButtonLink>
               </>
-            ) : (
-              <ButtonLink href="/about" variant="secondary">
-                About Austin
-              </ButtonLink>
-            )}
+            ) : null}
+            {track.id === "cpd" ? (
+              <>
+                <ButtonLink href="/about" variant="secondary">
+                  Credentials on About
+                </ButtonLink>
+                {shockwaveCredential?.certificateHref ? (
+                  <ButtonLink
+                    href={shockwaveCredential.certificateHref}
+                    variant="secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Shockwave certificate (PDF)
+                  </ButtonLink>
+                ) : null}
+              </>
+            ) : null}
             <ButtonLink href="/book" variant="secondary">
               Book online
             </ButtonLink>
@@ -165,6 +182,24 @@ export default async function EducationTrackPage({ params }: Props) {
                 className="font-semibold text-teal hover:text-teal-dark"
               >
                 General aftercare
+              </Link>
+            </>
+          ) : null}
+          {track.id === "cpd" ? (
+            <>
+              {" · "}
+              <Link
+                href="/about"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                About &amp; credentials
+              </Link>
+              {" · "}
+              <Link
+                href="/services/focused-shockwave"
+                className="font-semibold text-teal hover:text-teal-dark"
+              >
+                Focused shockwave (patients)
               </Link>
             </>
           ) : null}

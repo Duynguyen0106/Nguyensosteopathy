@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/Button";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
+import {
+  educationHref,
+  getEducationArticleByCredentialId,
+} from "@/lib/education";
 import { bookHref } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
 
@@ -300,6 +304,23 @@ export default function AboutPage() {
                         : "View certificate (PDF)"}
                     </a>
                   ) : null}
+                  {(() => {
+                    const courseNotes = getEducationArticleByCredentialId(
+                      item.id,
+                    );
+                    if (!courseNotes) return null;
+                    return (
+                      <Link
+                        href={educationHref(
+                          courseNotes.track,
+                          courseNotes.slug,
+                        )}
+                        className="text-sm font-semibold text-teal hover:text-teal-dark"
+                      >
+                        Course notes →
+                      </Link>
+                    );
+                  })()}
                 </div>
               </li>
             ))}

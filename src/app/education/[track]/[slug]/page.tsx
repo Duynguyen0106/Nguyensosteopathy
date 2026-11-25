@@ -20,6 +20,13 @@ import {
 } from "@/lib/seo";
 import { getService, site } from "@/lib/site";
 
+function getRelatedCredential(credentialId: string | undefined) {
+  if (!credentialId) return undefined;
+  return site.practitioner.qualifications.find(
+    (item) => item.id === credentialId,
+  );
+}
+
 type Props = { params: Promise<{ track: string; slug: string }> };
 
 const articleTracks = new Set<EducationTrackId>(["acupuncture", "cpd"]);
@@ -78,6 +85,7 @@ export default async function EducationArticlePage({ params }: Props) {
   const service = article.relatedServiceSlug
     ? getService(article.relatedServiceSlug)
     : undefined;
+  const credential = getRelatedCredential(article.relatedCredentialId);
 
   const path = educationHref(track.id, article.slug);
 
@@ -174,18 +182,47 @@ export default async function EducationArticlePage({ params }: Props) {
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             {article.summary}
           </p>
+          {article.provider || article.hoursLabel || article.completedOn ? (
+            <p className="mt-4 text-sm font-medium text-slate-700">
+              {[
+                article.provider,
+                article.hoursLabel,
+                article.completedOn
+                  ? `Completed ${article.completedOn}`
+                  : null,
+              ]
+                .filter(Boolean)
+                .join(" · ")}
+            </p>
+          ) : null}
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={`/education/${track.slug}`}>
               All {track.shortTitle.toLowerCase()}
             </ButtonLink>
+            {credential?.certificateHref ? (
+              <ButtonLink
+                href={credential.certificateHref}
+                variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View certificate (PDF)
+              </ButtonLink>
+            ) : null}
             {service ? (
               <ButtonLink href={`/services/${service.slug}`} variant="secondary">
                 {service.title}
               </ButtonLink>
             ) : null}
-            <ButtonLink href="/book" variant="secondary">
-              Book online
-            </ButtonLink>
+            {track.id === "cpd" ? (
+              <ButtonLink href="/about" variant="secondary">
+                About &amp; credentials
+              </ButtonLink>
+            ) : (
+              <ButtonLink href="/book" variant="secondary">
+                Book online
+              </ButtonLink>
+            )}
           </div>
         </div>
       </section>
@@ -211,17 +248,50 @@ export default async function EducationArticlePage({ params }: Props) {
           ))}
         </div>
 
-        {article.pdfPath ? (
-          <p className="mt-10">
-            <a
-              href={article.pdfPath}
-              className="font-semibold text-teal hover:text-teal-dark"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download PDF →
-            </a>
-          </p>
+        {credential || article.pdfPath ? (
+          <div className="mt-10 rounded-2xl border border-slate-200 bg-white px-5 py-6 md:px-6">
+            <h2 className="font-display text-2xl text-navy">
+              {credential ? "Linked credential" : "Downloads"}
+            </h2>
+            {credential ? (
+              <p className="mt-3 text-base leading-relaxed text-slate-700">
+                {credential.title} — {credential.issuer}
+                {credential.dateLabel ? ` (${credential.dateLabel})` : ""}.
+                Certificate and course notes stay paired so colleagues can
+                verify completion and read the clinic summary.
+              </p>
+            ) : null}
+            <div className="mt-4 flex flex-wrap gap-4">
+              {credential?.certificateHref ? (
+                <a
+                  href={credential.certificateHref}
+                  className="font-semibold text-teal hover:text-teal-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View certificate (PDF) →
+                </a>
+              ) : null}
+              {article.pdfPath ? (
+                <a
+                  href={article.pdfPath}
+                  className="font-semibold text-teal hover:text-teal-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download course notes (PDF) →
+                </a>
+              ) : null}
+              {track.id === "cpd" ? (
+                <Link
+                  href={educationHref("cpd", "cpd-log-template")}
+                  className="font-semibold text-teal hover:text-teal-dark"
+                >
+                  CPD log template →
+                </Link>
+              ) : null}
+            </div>
+          </div>
         ) : null}
 
         {article.caveats && article.caveats.length > 0 ? (

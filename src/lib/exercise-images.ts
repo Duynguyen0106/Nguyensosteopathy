@@ -8,6 +8,11 @@ export type ExerciseImage = {
 };
 
 export const exerciseImages: Record<string, ExerciseImage> = {
+  "adductor-ball-squeeze": {
+    src: "/images/exercises/adductor-ball-squeeze.webp",
+    alt: "Educational illustration of a supine adductor ball squeeze between the knees",
+    credit: "Free educational illustration",
+  },
   "ankle-alphabet": {
     src: "/images/exercises/ankle-alphabet.webp",
     alt: "Instructional illustration of seated ankle rotation / alphabet mobility",
@@ -22,6 +27,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     src: "/images/exercises/bird-dog.webp",
     alt: "Person on hands and knees extending opposite arm and leg (bird-dog)",
     credit: "Photo via Wikimedia Commons (PTPioneer, CC BY 2.0)",
+  },
+  "bridge-march": {
+    src: "/images/exercises/bridge-march.webp",
+    alt: "Educational illustration of a glute bridge with an alternating march",
+    credit: "Free educational illustration",
   },
   "calf-wall-stretch": {
     src: "/images/exercises/calf-wall-stretch.webp",
@@ -58,6 +68,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of a doorway pec / chest stretch",
     credit: "Free educational illustration",
   },
+  "eccentric-heel-drop": {
+    src: "/images/exercises/eccentric-heel-drop.webp",
+    alt: "Educational illustration of an eccentric heel drop off a step",
+    credit: "Free educational illustration",
+  },
   "eccentric-wrist-extension": {
     src: "/images/exercises/eccentric-wrist-extension.webp",
     alt: "Educational illustration of eccentric wrist extension with a light weight",
@@ -86,6 +101,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "hip-hinge-practice": {
     src: "/images/exercises/hip-hinge-practice.webp",
     alt: "Educational illustration of a hip hinge: torso tips forward with a long spine",
+    credit: "Free educational illustration",
+  },
+  "ischial-unweight-sit": {
+    src: "/images/exercises/ischial-unweight-sit.webp",
+    alt: "Educational illustration of shifting sitting weight onto one sitting bone to unweight the coccyx",
     credit: "Free educational illustration",
   },
   "isometric-heel-raise": {
@@ -118,9 +138,19 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of a gentle median nerve glide for the arm and wrist",
     credit: "Free educational illustration",
   },
+  "open-book-pregnancy": {
+    src: "/images/exercises/open-book-pregnancy.webp",
+    alt: "Educational illustration of a supported side-lying open-book rotation with pillows",
+    credit: "Free educational illustration",
+  },
   "open-book-rotation": {
     src: "/images/exercises/open-book-rotation.webp",
     alt: "Educational illustration of a side-lying open-book thoracic rotation",
+    credit: "Free educational illustration",
+  },
+  "pelvic-clock": {
+    src: "/images/exercises/pelvic-clock.webp",
+    alt: "Educational illustration of a supine pelvic clock with tiny circular tilts",
     credit: "Free educational illustration",
   },
   "pelvic-tilts": {
@@ -178,9 +208,19 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Person lying on their side lifting the top leg for hip abduction strength",
     credit: "Photo via Wikimedia Commons (Acetabular Labrum Exercises, CC licensed)",
   },
+  "side-plank-short": {
+    src: "/images/exercises/side-plank-short.webp",
+    alt: "Educational illustration of a short knees-down side plank",
+    credit: "Free educational illustration",
+  },
   "single-leg-balance": {
     src: "/images/exercises/single-leg-balance.webp",
     alt: "Educational illustration of single-leg balance on a stable floor",
+    credit: "Free educational illustration",
+  },
+  "single-leg-rdl": {
+    src: "/images/exercises/single-leg-rdl.webp",
+    alt: "Educational illustration of a single-leg Romanian deadlift hinge pattern",
     credit: "Free educational illustration",
   },
   "sit-to-stand": {
@@ -206,6 +246,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "tandem-balance": {
     src: "/images/exercises/tandem-balance.webp",
     alt: "Educational illustration of heel-to-toe tandem balance near support",
+    credit: "Free educational illustration",
+  },
+  "terminal-knee-extension": {
+    src: "/images/exercises/terminal-knee-extension.webp",
+    alt: "Educational illustration of a seated terminal knee extension quad squeeze",
     credit: "Free educational illustration",
   },
   "thoracic-extension-roll": {
@@ -246,6 +291,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "wall-push-up-plus": {
     src: "/images/exercises/wall-push-up-plus.webp",
     alt: "Educational illustration of a wall push-up plus with scapular protraction",
+    credit: "Free educational illustration",
+  },
+  "wall-sit-isometric": {
+    src: "/images/exercises/wall-sit-isometric.webp",
+    alt: "Educational illustration of a wall-sit isometric thigh hold",
     credit: "Free educational illustration",
   },
   "wrist-extensor-stretch": {

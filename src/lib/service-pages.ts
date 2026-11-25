@@ -120,7 +120,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Our approach to headache and joint care",
         paragraphs: [
-          "Treatment focuses on restoring comfortable motion where it has become restricted, easing soft-tissue tone that feeds referral into the head, and giving you simple exercises or habit changes that reduce recurrence. Osteopathy here is gentle and explained step by step — suitable whether your main goal is fewer desk-day headaches or freer movement in a previously injured joint.",
+          "Treatment focuses on restoring comfortable motion where it has become restricted, easing soft-tissue tone that feeds referral into the head, and giving you simple exercises or habit changes that reduce recurrence. Between visits you can browse our public home exercise library for desk-neck, headache-friendly and joint programmes, then we tailor dosage in clinic. Osteopathy here is gentle and explained step by step — suitable whether your main goal is fewer desk-day headaches or freer movement in a previously injured joint.",
           "Austin Duy Nguyen combines case history with movement testing across the neck, thoracic spine and relevant peripheral joints. Where jaw tension, breathing pattern or workstation setup plays a role, that becomes part of the plan. You leave with a clear sense of what we treated and what to do before the next visit.",
           "We explain findings in plain English before treating. That might mean showing you how upper-neck rotation relates to your headache diary, or how limited ankle motion changes knee load. Education is part of care because recurrence drops when you understand the levers you can control between visits, not only while you are on the treatment couch.",
         ],
@@ -198,7 +198,7 @@ export const servicePages: ServicePageContent[] = [
         paragraphs: [
           "You may feel strong pulsing or local tenderness during treatment. Intensity is adjusted for tolerance. Residual ache for a day or two can occur as tissues respond. Most people continue day-to-day activity with sensible load management rather than complete rest — we give specific guidance for your sport or work.",
           "Progress is reviewed regularly. Many tendon pathways use a short course rather than a single visit; we only continue when it remains clinically useful. Combining shockwave with graded loading is usually more effective than either approach in isolation.",
-          "Between sessions we want tendons to see the right amount of load — enough to adapt, not so much that irritability snowballs. That balance is individual. Desk workers with plantar fasciitis need different advice from five-a-side players with patellar tendon pain, even when the device protocol looks similar on paper.",
+          "Between sessions we want tendons to see the right amount of load — enough to adapt, not so much that irritability snowballs. That balance is individual. Desk workers with plantar fasciitis need different advice from five-a-side players with patellar tendon pain, even when the device protocol looks similar on paper. Our public home exercise library includes plantar heel, tennis elbow and lateral hip programmes you can use as building blocks while we refine dosage in clinic.",
         ],
       },
       {
@@ -561,7 +561,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "What gentle pregnancy care looks like",
         paragraphs: [
-          "Expect careful positioning, soft mobilisation and soft-tissue approaches chosen for comfort. We avoid techniques or positions that feel unsafe for you. Practical advice covers sleep setup, standing work, lifting older children and pacing activity through the week.",
+          "Expect careful positioning, soft mobilisation and soft-tissue approaches chosen for comfort. We avoid techniques or positions that feel unsafe for you. Practical advice covers sleep setup, standing work, lifting older children and pacing activity through the week. Our public exercise library also includes a pregnancy pelvic ease programme with trimester-aware cautions — always follow your maternity team's advice first."
           "Ideal reasons to book include pelvic girdle discomfort, lower-back and rib strain in pregnancy, and postural change as your baby grows. Later-trimester visits focus on comfort and function; earlier visits may address desk or pre-existing spinal patterns that pregnancy has unsettled.",
           "We collaborate with your existing maternity advice. If you have been told to avoid certain positions or activities, tell us before treatment begins. Supportive strategies are discussed without pushing products you do not need, and partners are welcome to hear simple ways to help at home.",
         ],

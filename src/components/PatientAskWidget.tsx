@@ -139,7 +139,7 @@ export function PatientAskWidget() {
 
   return (
     <div
-      className="pointer-events-none fixed z-[60] flex flex-col items-end gap-3"
+      className="pointer-events-none fixed z-[70] flex flex-col items-end gap-3"
       style={{
         right: "1rem",
         bottom:
@@ -179,7 +179,7 @@ export function PatientAskWidget() {
             </div>
           </div>
 
-          <div className="flex max-h-[min(60vh,26rem)] flex-col gap-3 overflow-y-auto px-4 py-3">
+          <div className="flex max-h-[min(52vh,22rem)] flex-col gap-3 overflow-y-auto px-4 py-3">
             {turns.length === 0 ? (
               <div className="space-y-2">
                 <p className="text-sm text-muted">
@@ -226,49 +226,49 @@ export function PatientAskWidget() {
                 {error}
               </p>
             ) : null}
+          </div>
 
-            <div className="flex flex-wrap gap-2 border-t border-line pt-3">
+          <div className="flex flex-wrap gap-2 border-t border-line px-4 py-2.5">
+            <a
+              href={site.phoneHref}
+              className={`rounded-lg px-2.5 py-1.5 text-xs font-semibold ring-1 ${
+                handoff === "phone" || handoff === "urgent"
+                  ? "bg-navy text-white ring-navy"
+                  : "bg-white text-navy ring-line hover:ring-teal"
+              }`}
+            >
+              Call
+            </a>
+            <a
+              href={site.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`rounded-lg px-2.5 py-1.5 text-xs font-semibold ring-1 ${
+                handoff === "whatsapp"
+                  ? "bg-teal text-white ring-teal"
+                  : "bg-white text-navy ring-line hover:ring-teal"
+              }`}
+            >
+              WhatsApp
+            </a>
+            <Link
+              href={bookPath}
+              className={`rounded-lg px-2.5 py-1.5 text-xs font-semibold ring-1 ${
+                handoff === "book"
+                  ? "bg-teal text-white ring-teal"
+                  : "bg-white text-navy ring-line hover:ring-teal"
+              }`}
+            >
+              Book online
+            </Link>
+            {handoff === "urgent" ? (
               <a
-                href={site.phoneHref}
-                className={`rounded-lg px-2.5 py-1.5 text-xs font-semibold ring-1 ${
-                  handoff === "phone" || handoff === "urgent"
-                    ? "bg-navy text-white ring-navy"
-                    : "bg-white text-navy ring-line hover:ring-teal"
-                }`}
+                href="tel:999"
+                className="rounded-lg bg-red-700 px-2.5 py-1.5 text-xs font-semibold text-white ring-1 ring-red-700"
               >
-                Call
+                Emergency 999
               </a>
-              <a
-                href={site.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`rounded-lg px-2.5 py-1.5 text-xs font-semibold ring-1 ${
-                  handoff === "whatsapp"
-                    ? "bg-teal text-white ring-teal"
-                    : "bg-white text-navy ring-line hover:ring-teal"
-                }`}
-              >
-                WhatsApp
-              </a>
-              <Link
-                href={bookPath}
-                className={`rounded-lg px-2.5 py-1.5 text-xs font-semibold ring-1 ${
-                  handoff === "book"
-                    ? "bg-teal text-white ring-teal"
-                    : "bg-white text-navy ring-line hover:ring-teal"
-                }`}
-              >
-                Book online
-              </Link>
-              {handoff === "urgent" ? (
-                <a
-                  href="tel:999"
-                  className="rounded-lg bg-red-700 px-2.5 py-1.5 text-xs font-semibold text-white ring-1 ring-red-700"
-                >
-                  Emergency 999
-                </a>
-              ) : null}
-            </div>
+            ) : null}
           </div>
 
           <form

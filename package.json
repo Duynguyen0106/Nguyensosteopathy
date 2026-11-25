@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "opennextjs-cloudflare build",
-    "cf:build": "opennextjs-cloudflare build",
+    "build": "opennextjs-cloudflare build && node scripts/populate-static-assets-cache.mjs",
+    "cf:build": "opennextjs-cloudflare build && node scripts/populate-static-assets-cache.mjs",
     "build:next": "next build",
     "start": "next start",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "npm run cf:build && opennextjs-cloudflare preview",
+    "deploy": "npm run cf:build && opennextjs-cloudflare deploy",
 
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "lint": "eslint",

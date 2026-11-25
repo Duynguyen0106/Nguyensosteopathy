@@ -151,7 +151,10 @@ export default function ContactPage() {
             <h2 className="font-display text-3xl text-navy">Send a message</h2>
             <p className="mt-2 text-sm text-slate-600">
               Prefer to write first? Draft a note here — it opens WhatsApp (or
-              your email app) so you can send it straight to the clinic.
+              your email app) so you can send it straight to the clinic. For
+              quick fees, hours, or booking questions, use{" "}
+              <strong className="font-semibold text-navy">Ask the clinic</strong>{" "}
+              in the corner of any page.
             </p>
             <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
               <ContactForm />

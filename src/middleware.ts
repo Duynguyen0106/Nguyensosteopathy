@@ -5,6 +5,7 @@ import {
   classifyUserAgent,
   clientIp,
   forbiddenResponse,
+  isAskApiPath,
   isCorpusPath,
   takeRateToken,
   tooManyRequestsResponse,
@@ -28,7 +29,9 @@ export function middleware(request: NextRequest) {
   }
 
   // Rate-limit humans / unknown automation; never throttle allowlisted bots.
-  if (kind === "humanish") {
+  // /api/ask self-limits inside the route (tighter budget) so chat turns are
+  // not double-charged against the general page scrape bucket.
+  if (kind === "humanish" && !isAskApiPath(pathname)) {
     const ip = clientIp(request);
     const corpus = isCorpusPath(pathname);
     const conf = corpus ? RATE_LIMITS.corpus : RATE_LIMITS.general;

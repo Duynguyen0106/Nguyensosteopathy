@@ -188,6 +188,57 @@ export default function InsurancePage() {
         </div>
       </section>
 
+      <section className="border-b border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="font-display text-3xl text-navy md:text-4xl">
+            Receipt details for claims
+          </h2>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
+            These practitioner details are printed on itemised receipts so
+            insurers can verify GOsC registration.
+          </p>
+          <dl className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-xl border border-slate-200 bg-white p-5">
+              <dt className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                Practitioner
+              </dt>
+              <dd className="mt-2 text-lg font-semibold text-navy">
+                {site.practitioner.receiptName}
+              </dd>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white p-5">
+              <dt className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                GOsC register name
+              </dt>
+              <dd className="mt-2 text-lg font-semibold text-navy">
+                {site.practitioner.receiptLegalName}
+              </dd>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white p-5">
+              <dt className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                Registration number
+              </dt>
+              <dd className="mt-2 text-lg font-semibold text-navy">
+                {site.practitioner.regNo}
+              </dd>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white p-5">
+              <dt className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                Printable blank
+              </dt>
+              <dd className="mt-2">
+                <a
+                  href="/receipt/nguyens-osteopathy-receipt.pdf"
+                  className="text-lg font-semibold text-teal hover:text-teal-dark"
+                >
+                  Download receipt PDF
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
       <section className="border-b border-slate-200 bg-white px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-3xl">
           <h2 className="font-display text-3xl text-navy md:text-4xl">
@@ -210,10 +261,21 @@ export default function InsurancePage() {
                 What appears on the receipt?
               </dt>
               <dd className="mt-2 text-base leading-relaxed text-slate-600">
-                Practitioner name, GOsC registration, clinic address, date of
-                treatment, service type, and fee paid. Tell us before you leave
-                if your claim form needs a specific wording or diagnosis code
-                field.
+                Itemised receipts include:{" "}
+                <strong className="font-semibold text-navy">
+                  {site.practitioner.receiptName}
+                </strong>{" "}
+                (GOsC register name:{" "}
+                <strong className="font-semibold text-navy">
+                  {site.practitioner.receiptLegalName}
+                </strong>
+                ), GOsC Reg. No.{" "}
+                <strong className="font-semibold text-navy">
+                  {site.practitioner.regNo}
+                </strong>
+                , clinic name and address, date of treatment, service type, and
+                fee paid. Tell us before you leave if your claim form needs a
+                specific wording or diagnosis code field.
               </dd>
             </div>
             <div>

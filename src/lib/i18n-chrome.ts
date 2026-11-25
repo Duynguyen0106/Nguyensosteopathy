@@ -71,6 +71,7 @@ export function resolveViHref(href: string): string {
   else if (path === "/find-us") mapped = "/vi/find-us";
   else if (path === "/book") mapped = "/vi/book";
   else if (path === "/about") mapped = "/vi/about";
+  else if (path === "/reviews") mapped = "/vi/reviews";
   else if (path === "/services/back-neck-pain") {
     mapped = "/vi/services/back-neck-pain";
   } else if (path === "/services/home-visits") {

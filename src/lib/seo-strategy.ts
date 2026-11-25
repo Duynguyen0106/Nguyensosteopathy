@@ -210,6 +210,7 @@ export const topicClusters: TopicCluster[] = [
       { href: "/areas/abbey-wood", label: "Abbey Wood" },
       { href: "/areas/greenwich", label: "Greenwich" },
       { href: "/services/home-visits", label: "Home visits" },
+      { href: "/reviews", label: "Reviews" },
       { href: "/book", label: "Book online" },
     ],
   },
@@ -225,6 +226,7 @@ export const topicClusters: TopicCluster[] = [
       { href: "/vi/services/home-visits", label: "Khám tại nhà" },
       { href: "/vi/fees", label: "Bảng giá" },
       { href: "/vi/find-us", label: "Địa chỉ" },
+      { href: "/vi/reviews", label: "Đánh giá" },
     ],
   },
 ];

@@ -378,6 +378,11 @@ export const faqs = [
     answer:
       "Yes. Home-visit osteopathy is available when travel to the clinic is difficult. Initial home consultation and treatment is £120 for 60 minutes; follow-up home treatment is £100 for 30 minutes. Coverage is local to Charlton and nearby SE London — contact us to confirm your address before booking.",
   },
+  {
+    question: "Where can I read patient reviews?",
+    answer:
+      "Public Google reviews for the clinic are summarised on our reviews page, with a link to the full Google listing. Quotes are patient wording from Google; Austin is a GOsC-registered osteopath (not a UK medical doctor).",
+  },
 ] as const;
 
 export type ServiceIconName =

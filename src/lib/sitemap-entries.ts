@@ -116,6 +116,7 @@ export function buildCoreSitemap(): MetadataRoute.Sitemap {
     { path: "/vi/services/home-visits", priority: 0.8 },
     { path: "/vi/fees", priority: 0.85 },
     { path: "/vi/find-us", priority: 0.85 },
+    { path: "/vi/reviews", priority: 0.8 },
     { path: "/fees", priority: 0.9 },
     { path: "/contact", priority: 0.85 },
     { path: "/reviews", priority: 0.85 },

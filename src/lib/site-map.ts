@@ -68,6 +68,7 @@ export const siteMapGroups = [
       { href: "/vi/services/home-visits", label: "Khám tại nhà (VI)" },
       { href: "/vi/fees", label: "Bảng giá (VI)" },
       { href: "/vi/find-us", label: "Địa chỉ & gửi xe (VI)" },
+      { href: "/vi/reviews", label: "Đánh giá (VI)" },
       { href: "/blog", label: "Blog" },
       { href: "/privacy", label: "Privacy policy" },
       { href: "/cookies", label: "Cookie policy" },

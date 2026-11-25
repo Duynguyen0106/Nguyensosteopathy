@@ -4,6 +4,7 @@ export type GoogleReview = {
   text: string;
   relativeTime: string;
   profilePhotoUri?: string;
+  authorUri?: string;
   publishTime?: string;
 };
 
@@ -174,6 +175,7 @@ export async function getGooglePlaceReviews(): Promise<GoogleReviewsResult> {
         text: decodeHtmlEntities((review.text?.text || "").trim()),
         relativeTime: review.relativePublishTimeDescription || "",
         profilePhotoUri: review.authorAttribution?.photoUri,
+        authorUri: review.authorAttribution?.uri,
         publishTime: review.publishTime,
       }));
 

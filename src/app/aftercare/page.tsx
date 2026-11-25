@@ -260,7 +260,8 @@ export default function AftercarePage() {
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
             Book when symptoms settle into a pattern you want reviewed — or call
-            if you are unsure what is normal for your plan.
+            if you are unsure what is normal for your plan. If your visit helped,
+            a short Google review also helps neighbours in Charlton find care.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={bookUrl} variant="onDark">
@@ -268,6 +269,14 @@ export default function AftercarePage() {
             </ButtonLink>
             <ButtonLink href={site.whatsappUrl} variant="onDarkOutline">
               WhatsApp
+            </ButtonLink>
+            <ButtonLink
+              href={site.googleReviewsUrl}
+              variant="onDarkOutline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Leave a Google review
             </ButtonLink>
           </div>
         </div>

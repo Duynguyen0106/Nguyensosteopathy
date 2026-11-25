@@ -43,7 +43,7 @@ const links: NavLink[] = [
   { href: "/fees", label: "Fees", desktop: true },
   { href: "/nhs-discount", label: "NHS 10%", desktop: false },
   { href: "/insurance", label: "Insurance", desktop: false },
-  { href: "/reviews", label: "Reviews", desktop: false },
+  { href: "/reviews", label: "Reviews", desktop: true },
   { href: "/find-us", label: "Find us", desktop: true },
   { href: "/contact", label: "Contact", desktop: false },
   { href: "/vi", label: "Tiếng Việt", desktop: true },

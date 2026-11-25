@@ -8,9 +8,9 @@ import {
   GoogleReviewsFeedFallback,
 } from "@/components/GoogleReviewsFeed";
 import { TopicClusterNav } from "@/components/TopicClusterNav";
+import { reviewPageFaqs } from "@/lib/review-display";
 import {
   bookHref,
-  localPackFaqs,
   reviewAskWhatsAppHref,
 } from "@/lib/seo-strategy";
 import { site } from "@/lib/site";
@@ -19,7 +19,14 @@ export const metadata: Metadata = {
   title: "Patient Reviews",
   description:
     "Read Google reviews for Nguyen's Osteopathic Clinic in Charlton. Share your experience after treatment with Austin Duy Nguyen, GOsC-registered osteopath.",
-  alternates: { canonical: "/reviews" },
+  alternates: {
+    canonical: "/reviews",
+    languages: {
+      "en-GB": "/reviews",
+      "vi-VN": "/vi/reviews",
+      "x-default": "/reviews",
+    },
+  },
   keywords: [
     "osteopath Charlton reviews",
     "Nguyen's Osteopathic Clinic Google reviews",
@@ -45,12 +52,15 @@ export default function ReviewsPage() {
     name: `Patient reviews — ${site.name}`,
     url: `${site.websiteUrl}/reviews`,
     about: { "@id": `${site.websiteUrl}/#clinic` },
+    description:
+      "Google patient reviews for Nguyen's Osteopathic Clinic in Charlton. Quotes are from Google; Austin is a GOsC-registered osteopath.",
   };
 
+  // Review-specific FAQ only — full local pack lives on /find-us to avoid duplicate FAQPage.
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: localPackFaqs.map((item) => ({
+    mainEntity: reviewPageFaqs.map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {
@@ -81,7 +91,8 @@ export default function ReviewsPage() {
           </h1>
           <p className="opening-hero-copy opening-hero-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             Public Google feedback for the clinic — and a warm invitation to
-            leave your review after your visit.
+            leave your review after your visit. Austin is a GOsC-registered
+            osteopath; patient wording is their own.
           </p>
           <div className="opening-hero-copy opening-hero-delay-3 mt-8 flex flex-wrap gap-3">
             <ButtonLink href={mapsUrl} target="_blank" rel="noopener noreferrer">
@@ -89,6 +100,9 @@ export default function ReviewsPage() {
             </ButtonLink>
             <ButtonLink href={bookHref("reviews")} variant="secondary">
               Book online
+            </ButtonLink>
+            <ButtonLink href="/vi/reviews" variant="secondary">
+              Tiếng Việt
             </ButtonLink>
           </div>
         </div>
@@ -187,10 +201,10 @@ export default function ReviewsPage() {
       <section className="border-t border-slate-200 bg-slate-50 px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="font-display text-3xl text-navy md:text-4xl">
-            Questions locals ask before booking
+            About these reviews
           </h2>
           <ul className="mt-10 grid gap-8 md:grid-cols-2">
-            {localPackFaqs.slice(0, 6).map((item) => (
+            {reviewPageFaqs.map((item) => (
               <li key={item.question}>
                 <h3 className="text-lg font-semibold text-navy">
                   {item.question}
@@ -201,6 +215,14 @@ export default function ReviewsPage() {
               </li>
             ))}
           </ul>
+          <p className="mt-8 text-sm text-slate-600">
+            For parking, hours, and how to find the room inside Village Pharmacy,
+            see{" "}
+            <Link href="/find-us" className="font-semibold text-teal hover:text-teal-dark">
+              Find us
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

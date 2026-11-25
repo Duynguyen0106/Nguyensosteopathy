@@ -510,7 +510,7 @@ export const services: Service[] = [
       "Precise needling with or without gentle microcurrent",
       "Integration with your broader treatment plan",
     ],
-    relatedPricing: "Standalone or add-on +£20",
+    relatedPricing: "£75 (45 mins) · add-on +£20",
     icon: "needle",
   },
   {
@@ -674,13 +674,18 @@ export const pricing = [
   },
   {
     service: "Acupuncture / Electroacupuncture",
-    duration: "30 mins / add-on",
-    price: "+£20",
+    duration: "45 mins",
+    price: "£75",
   },
   {
     service: "Deep Tissue Massage Therapy",
     duration: "45 mins",
     price: "£60",
+  },
+  {
+    service: "Acupuncture Add-on",
+    duration: "Add-on",
+    price: "+£20",
   },
   {
     service: "Cupping Therapy Add-on",

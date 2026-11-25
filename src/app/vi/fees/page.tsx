@@ -68,8 +68,9 @@ const viLabels: Record<string, string> = {
   "Focused Shockwave Therapy (LI-ESWT)": "Shockwave tập trung (LI-ESWT)",
   "Specialist ED Treatment & Pelvic Protocol":
     "Điều trị ED / sàn chậu chuyên khoa",
-  "Acupuncture / Electroacupuncture": "Châm cứu / điện châm (add-on)",
+  "Acupuncture / Electroacupuncture": "Châm cứu / điện châm",
   "Deep Tissue Massage Therapy": "Massage mô sâu",
+  "Acupuncture Add-on": "Châm cứu (add-on)",
   "Cupping Therapy Add-on": "Giác hơi (add-on)",
   "Home Visit — Initial Consultation & Treatment":
     "Khám tại nhà — ban đầu & điều trị",

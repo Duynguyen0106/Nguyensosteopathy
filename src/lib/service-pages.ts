@@ -339,7 +339,7 @@ export const servicePages: ServicePageContent[] = [
     slug: "acupuncture-electro",
     h1: "Medical Acupuncture in Charlton",
     seoTitle: "Medical acupuncture Charlton",
-    metaDescription: "Western medical acupuncture and electroacupuncture in Charlton SE7 for muscle trigger points and localised pain. Available standalone or as a +£20 add-on…",
+    metaDescription: "Western medical acupuncture and electroacupuncture in Charlton SE7 for muscle trigger points and localised pain. Standalone £75 (45 mins) or +£20 add-on…",
     heroLine: "Targeted needling and gentle microcurrent to calm irritable muscles and support pain relief — integrated with osteopathic care when useful.",
     eyebrow: "Acupuncture · Charlton SE7",
     sections: [
@@ -355,7 +355,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "When acupuncture may help",
         paragraphs: [
           "People book for trigger-point irritability, persistent localised pain, and as adjunct support during rehab when muscles remain protective. Some prefer needling to deeper manual pressure; others use both in a combined plan. We screen for contraindications and adapt technique for first-time needle users.",
-          "Pricing is straightforward: acupuncture can be a focused standalone session or an add-on at +£20 within eligible treatments. Exact recommendations depend on your presentation after assessment — we will not add needling without consent and a clear rationale.",
+          "Pricing is straightforward: a focused standalone acupuncture / electroacupuncture session is £75 for 45 minutes, or +£20 as an add-on within eligible treatments. Exact recommendations depend on your presentation after assessment — we will not add needling without consent and a clear rationale.",
           "Electroacupuncture is introduced only when it adds something useful — for example when a muscle remains highly irritable after manual release. Settings stay comfortable; stronger is not automatically better. First-time patients often start with fewer needles to learn how their body responds before building a fuller plan.",
         ],
       },

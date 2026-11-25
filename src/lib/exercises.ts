@@ -12,6 +12,7 @@ export type ExerciseRegion =
   | "Knee"
   | "Ankle & Foot"
   | "Shoulder"
+  | "Elbow & Wrist"
   | "Whole body";
 
 export type ExerciseLevel = "early" | "build" | "return";
@@ -79,6 +80,7 @@ export const exerciseRegions: ExerciseRegion[] = [
   "Knee",
   "Ankle & Foot",
   "Shoulder",
+  "Elbow & Wrist",
   "Whole body",
 ];
 
@@ -808,6 +810,563 @@ export const exercises: Exercise[] = [
       "desk-neck-reset",
     ],
   },
+  {
+    slug: "cat-cow",
+    title: "Cat–cow",
+    summary:
+      "Slow spinal flexion and extension on all fours to ease stiffness after desk days or treatment.",
+    region: "Thoracic",
+    level: "early",
+    equipment: "Mat",
+    illustration: "quadruped",
+    steps: [
+      "Start on hands and knees with hands under shoulders and knees under hips.",
+      "Exhale and round the spine toward the ceiling (cat), letting the head drop gently.",
+      "Inhale and soften the belly toward the floor while lifting the chest slightly (cow).",
+      "Move slowly between the two shapes within a comfortable range.",
+    ],
+    cues: [
+      "Lead with the mid-back, not a big neck whip.",
+      "Keep wrists stacked under shoulders; soften the elbows if needed.",
+    ],
+    avoid: [
+      "Forcing end-range if it recreates sharp lumbar or neck pain.",
+      "Holding the breath.",
+    ],
+    dosage: "8–10 slow cycles, 1–2 sets, 1–2 times daily",
+    relatedConditionSlugs: [
+      "thoracic-joint-dysfunction",
+      "non-specific-low-back-pain",
+      "neck-pain",
+      "scheuermanns",
+    ],
+    relatedProgrammeSlugs: [
+      "post-visit-gentle-move",
+      "desk-neck-reset",
+      "acute-low-back-settle",
+    ],
+  },
+  {
+    slug: "dead-bug",
+    title: "Dead bug",
+    summary:
+      "Opposite arm and leg reach on your back for deep-core control without loading the spine upright.",
+    region: "Lumbar",
+    level: "build",
+    equipment: "Mat",
+    illustration: "supine-leg-slide",
+    steps: [
+      "Lie on your back with hips and knees bent to about 90° and arms reaching toward the ceiling.",
+      "Gently flatten the low back into the mat and keep that contact as you move.",
+      "Slowly reach one arm overhead and the opposite heel toward the floor without arching.",
+      "Return to the start, then switch sides.",
+    ],
+    cues: [
+      "If the low back lifts, shorten the reach.",
+      "Exhale on the reach; keep ribs quiet.",
+    ],
+    avoid: [
+      "Rushing or letting the pelvis rock side to side.",
+      "Pushing into pain or breath-holding.",
+    ],
+    dosage: "6–8 each side, 2 sets, most days",
+    relatedConditionSlugs: [
+      "non-specific-low-back-pain",
+      "deconditioning",
+      "si-joint-dysfunction",
+    ],
+    relatedProgrammeSlugs: [
+      "acute-low-back-settle",
+      "post-visit-gentle-move",
+    ],
+  },
+  {
+    slug: "prone-press-up",
+    title: "Prone press-up",
+    summary:
+      "Gentle face-down back extension to ease morning stiffness when extension feels helpful.",
+    region: "Lumbar",
+    level: "early",
+    equipment: "Mat or firm bed",
+    illustration: "prone-press",
+    steps: [
+      "Lie face down with hands under the shoulders, elbows tucked.",
+      "Press the chest a short distance off the surface while the hips stay down.",
+      "Pause briefly, then lower with control.",
+      "Keep the range small at first — think of a gentle press, not a full push-up.",
+    ],
+    cues: [
+      "Shoulders stay away from the ears.",
+      "Stop if leg symptoms increase and stay increased.",
+    ],
+    avoid: [
+      "Forcing into sharp lumbar pain or breath-holding.",
+      "Using this as a substitute for red-flag assessment.",
+    ],
+    dosage: "6–10 gentle reps, 1–2 sets, 1–2 times daily if helpful",
+    relatedConditionSlugs: [
+      "non-specific-low-back-pain",
+      "lumbar-disc-radiculopathy",
+      "facet-syndrome",
+    ],
+    relatedProgrammeSlugs: ["acute-low-back-settle"],
+  },
+  {
+    slug: "knee-to-chest",
+    title: "Single knee-to-chest",
+    summary:
+      "Gentle hip and lumbar flexion stretch to ease protective tightness after sitting or a flare.",
+    region: "Lumbar",
+    level: "early",
+    equipment: "Mat or firm bed",
+    illustration: "supine-knees-bent",
+    steps: [
+      "Lie on your back with both knees bent and feet flat.",
+      "Draw one knee toward the chest, holding behind the thigh or on the shin.",
+      "Keep the other foot on the surface or the opposite knee bent.",
+      "Hold a gentle stretch, then switch sides.",
+    ],
+    cues: [
+      "Shoulders stay relaxed on the surface.",
+      "A mild stretch is enough — do not yank.",
+    ],
+    avoid: [
+      "Pulling into sharp groin, hip, or radiating leg pain.",
+      "Lifting the head forcefully.",
+    ],
+    dosage: "20–30 second hold each side, 2–3 rounds, 1–2 times daily",
+    relatedConditionSlugs: [
+      "non-specific-low-back-pain",
+      "sciatica",
+      "si-joint-dysfunction",
+      "piriformis-syndrome",
+    ],
+    relatedProgrammeSlugs: [
+      "acute-low-back-settle",
+      "sciatica-nerve-calm",
+      "post-visit-gentle-move",
+    ],
+  },
+  {
+    slug: "clamshell",
+    title: "Clamshell",
+    summary:
+      "Side-lying hip rotation to wake the outer glute for stairs, walking, and lateral hip calm.",
+    region: "Hip",
+    level: "early",
+    equipment: "Mat",
+    illustration: "side-lying",
+    steps: [
+      "Lie on your side with knees bent and heels stacked, hips slightly flexed.",
+      "Keep the feet together and lift the top knee like a clam opening.",
+      "Pause, then lower with control without rolling the pelvis back.",
+      "Complete the set, then switch sides.",
+    ],
+    cues: [
+      "Imagine a wall behind you — do not lean the top hip backward.",
+      "Small range with control beats a big cheat.",
+    ],
+    avoid: [
+      "Rolling onto the back to gain height.",
+      "Pushing through outer-hip sharp pain.",
+    ],
+    dosage: "10–12 each side, 2 sets, most days",
+    relatedConditionSlugs: [
+      "greater-trochanteric-pain",
+      "hip-oa",
+      "patellofemoral-pain",
+      "itb-syndrome",
+    ],
+    relatedProgrammeSlugs: [
+      "lateral-hip-settle",
+      "patellofemoral-build",
+    ],
+  },
+  {
+    slug: "hip-flexor-stretch",
+    title: "Half-kneeling hip-flexor stretch",
+    summary:
+      "Front-of-hip stretch for desk sitters and people with anterior hip tightness after long sitting.",
+    region: "Hip",
+    level: "early",
+    equipment: "Mat or cushion for the knee",
+    illustration: "standing-hinge",
+    steps: [
+      "Kneel with one knee down and the other foot forward (lunge position).",
+      "Tuck the pelvis gently (think “zip the waistband”) so you feel a stretch in the front of the rear hip.",
+      "Shift a little forward if comfortable, keeping the torso upright.",
+      "Hold, then switch sides.",
+    ],
+    cues: [
+      "Avoid overarching the low back — the tuck is the key.",
+      "Use a cushion under the kneeling knee if needed.",
+    ],
+    avoid: [
+      "Forcing into sharp groin pinch.",
+      "Leaning the trunk heavily forward.",
+    ],
+    dosage: "20–30 second hold each side, 2 rounds, most days",
+    relatedConditionSlugs: [
+      "hip-oa",
+      "non-specific-low-back-pain",
+      "femoroacetabular-impingement",
+      "groin-pain",
+    ],
+    relatedProgrammeSlugs: [
+      "lateral-hip-settle",
+      "desk-neck-reset",
+    ],
+  },
+  {
+    slug: "hamstring-slider",
+    title: "Supine hamstring slider",
+    summary:
+      "Gentle posterior-thigh stretch with the hip flexed and knee easing straight on your back.",
+    region: "Hip",
+    level: "early",
+    equipment: "Mat, towel or belt optional",
+    illustration: "supine-leg-slide",
+    steps: [
+      "Lie on your back and hold behind one thigh so the hip is about 90° flexed.",
+      "Keeping the thigh still, slowly straighten the knee until you feel a gentle stretch.",
+      "Pause briefly, then bend the knee again.",
+      "Stay in a range that eases rather than sharp neural pull.",
+    ],
+    cues: [
+      "Ankle can stay relaxed; do not force toes toward you if that flares symptoms.",
+      "Compare sides — match the easier range first.",
+    ],
+    avoid: [
+      "Pushing into lasting buttock-to-leg nerve pain.",
+      "Lifting the head or rounding the neck hard.",
+    ],
+    dosage: "8–10 slow reps each side, 1–2 sets, 1–2 times daily",
+    relatedConditionSlugs: [
+      "hamstring-strain",
+      "sciatica",
+      "piriformis-syndrome",
+      "lumbar-disc-radiculopathy",
+    ],
+    relatedProgrammeSlugs: [
+      "sciatica-nerve-calm",
+      "patellofemoral-build",
+    ],
+  },
+  {
+    slug: "sit-to-stand",
+    title: "Sit-to-stand",
+    summary:
+      "Chair squat pattern to rebuild thigh and hip strength for daily life and stairs.",
+    region: "Knee",
+    level: "build",
+    equipment: "Sturdy chair",
+    illustration: "standing-hinge",
+    steps: [
+      "Sit near the front of a sturdy chair with feet flat and hip-width apart.",
+      "Lean slightly forward from the hips and stand up without using your hands if able.",
+      "Pause tall, then sit down with control — do not drop onto the seat.",
+      "Keep knees tracking over mid-foot.",
+    ],
+    cues: [
+      "Push the floor away; think “chest up” rather than diving forward.",
+      "Use the hands lightly on the chair only if needed for safety.",
+    ],
+    avoid: [
+      "Letting knees collapse inward hard.",
+      "Holding the breath on the stand.",
+    ],
+    dosage: "8–12 reps, 2 sets, most days",
+    relatedConditionSlugs: [
+      "patellofemoral-pain",
+      "knee-oa",
+      "deconditioning",
+      "hip-oa",
+    ],
+    relatedProgrammeSlugs: [
+      "patellofemoral-build",
+      "lateral-hip-settle",
+    ],
+  },
+  {
+    slug: "thoracic-extension-roll",
+    title: "Thoracic extension over towel",
+    summary:
+      "Supported mid-back extension to counter rounded desk posture without forcing the neck.",
+    region: "Thoracic",
+    level: "early",
+    equipment: "Rolled towel or foam roller",
+    illustration: "supine-knees-bent",
+    steps: [
+      "Lie on your back with knees bent and a rolled towel across the mid-back (not the neck).",
+      "Support the head with your hands or a small cushion if needed.",
+      "Relax over the towel for a few breaths, then roll slightly up or down to the next segment.",
+      "Keep the movement gentle and comfortable.",
+    ],
+    cues: [
+      "The stretch should feel like a welcome open through the chest.",
+      "If the neck complains, add more head support.",
+    ],
+    avoid: [
+      "Placing the roll under the low back or neck.",
+      "Forcing into sharp mid-back pain.",
+    ],
+    dosage: "3–5 positions, 3–5 breaths each, 1–2 times daily",
+    relatedConditionSlugs: [
+      "thoracic-joint-dysfunction",
+      "neck-pain",
+      "costochondritis",
+      "scheuermanns",
+    ],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "upper-limb-desk-calm",
+    ],
+  },
+  {
+    slug: "seated-thoracic-rotation",
+    title: "Seated thoracic rotation",
+    summary:
+      "Chair twist for mid-back mobility during work breaks — easy to do between meetings.",
+    region: "Thoracic",
+    level: "early",
+    equipment: "Chair with a back",
+    illustration: "seated-desk",
+    steps: [
+      "Sit tall with feet flat and arms crossed over the chest or hands on opposite shoulders.",
+      "Rotate the ribs and chest to one side as if looking over the shoulder.",
+      "Pause, return to centre, then rotate the other way.",
+      "Keep the pelvis facing forward so the turn comes from the mid-back.",
+    ],
+    cues: [
+      "Grow tall before you turn.",
+      "Small, smooth arcs beat aggressive twisting.",
+    ],
+    avoid: [
+      "Yank the neck to gain range.",
+      "Twisting into sharp rib or spine pain.",
+    ],
+    dosage: "8–10 each side, 1–2 sets, several times on desk days",
+    relatedConditionSlugs: [
+      "thoracic-joint-dysfunction",
+      "neck-pain",
+      "cervicogenic-headache",
+    ],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "upper-limb-desk-calm",
+    ],
+  },
+  {
+    slug: "upper-trap-stretch",
+    title: "Upper trapezius stretch",
+    summary:
+      "Gentle side-bend stretch for the top of the shoulder and neck after screen work.",
+    region: "Cervical",
+    level: "early",
+    equipment: "None",
+    illustration: "seated-desk",
+    steps: [
+      "Sit tall and gently tip one ear toward the same shoulder.",
+      "Optionally rest the same-side hand on the head for a light guide — do not pull hard.",
+      "Feel a stretch along the opposite side of the neck and top of the shoulder.",
+      "Hold, then switch sides.",
+    ],
+    cues: [
+      "Keep the opposite shoulder heavy and down.",
+      "Breathe slowly; ease out of the stretch if tingling into the arm increases.",
+    ],
+    avoid: [
+      "Yank the head forcefully.",
+      "Stretching through dizziness or arm numbness that lingers.",
+    ],
+    dosage: "20–30 second hold each side, 2 rounds, 1–2 times daily",
+    relatedConditionSlugs: [
+      "neck-pain",
+      "cervicogenic-headache",
+      "whiplash",
+      "cervical-radiculopathy",
+    ],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "upper-limb-desk-calm",
+      "post-visit-gentle-move",
+    ],
+  },
+  {
+    slug: "doorway-pec-stretch",
+    title: "Doorway pec stretch",
+    summary:
+      "Chest opener for rounded shoulders and desk posture — pairs well with scapular setting.",
+    region: "Shoulder",
+    level: "early",
+    equipment: "Doorway",
+    illustration: "wall-slide",
+    steps: [
+      "Stand in a doorway with one forearm on the frame, elbow roughly at shoulder height.",
+      "Step the same-side foot forward gently until you feel a stretch across the chest.",
+      "Keep the neck long and the shoulder blade gently set down the back.",
+      "Hold, then switch sides.",
+    ],
+    cues: [
+      "Less is more — a mild stretch is enough.",
+      "If the front of the shoulder pinches, lower the elbow slightly.",
+    ],
+    avoid: [
+      "Forcing into anterior shoulder pain or numbness.",
+      "Arching the low back to gain stretch.",
+    ],
+    dosage: "20–30 second hold each side, 2 rounds, most days",
+    relatedConditionSlugs: [
+      "subacromial-pain",
+      "neck-pain",
+      "thoracic-joint-dysfunction",
+      "frozen-shoulder",
+    ],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "shoulder-arc-calm",
+      "frozen-shoulder-early",
+    ],
+  },
+  {
+    slug: "table-slides",
+    title: "Table slides",
+    summary:
+      "Supported forward reach on a table to restore gentle shoulder elevation when the arm is irritable.",
+    region: "Shoulder",
+    level: "early",
+    equipment: "Table and cloth or towel",
+    illustration: "shoulder-pendulum",
+    steps: [
+      "Sit facing a table with a cloth under the hand of the affected side.",
+      "Keep the hand on the cloth and slide forward, letting the shoulder blade move freely.",
+      "Slide as far as comfortable, then return.",
+      "Stay below any sharp pinch; progress range as irritability drops.",
+    ],
+    cues: [
+      "Let the table take the weight of the arm.",
+      "Breathe out as you slide forward.",
+    ],
+    avoid: [
+      "Pushing into lasting sharp pain or catching that worsens afterward.",
+      "Shrugging the ear into the shoulder.",
+    ],
+    dosage: "8–12 slow slides, 2 sets, 1–2 times daily",
+    relatedConditionSlugs: [
+      "frozen-shoulder",
+      "subacromial-pain",
+      "rotator-cuff-tear",
+      "ac-joint-injury",
+    ],
+    relatedProgrammeSlugs: [
+      "shoulder-arc-calm",
+      "frozen-shoulder-early",
+    ],
+  },
+  {
+    slug: "wrist-extensor-stretch",
+    title: "Wrist extensor stretch",
+    summary:
+      "Forearm stretch for tennis-elbow style load from mouse, tools, or gripping.",
+    region: "Elbow & Wrist",
+    level: "early",
+    equipment: "None",
+    illustration: "seated-desk",
+    steps: [
+      "Straighten the elbow of the affected arm with the palm facing down.",
+      "Use the other hand to gently bend the wrist so the fingers point toward the floor.",
+      "Feel a stretch along the top of the forearm.",
+      "Hold, then relax and repeat.",
+    ],
+    cues: [
+      "Keep the elbow straight but soft — not locked hard.",
+      "Stretch should be mild; stop short of sharp outer-elbow pain.",
+    ],
+    avoid: [
+      "Yank the wrist into end-range.",
+      "Stretching through lasting nerve tingling into the hand.",
+    ],
+    dosage: "20–30 second hold, 3 rounds, 1–2 times daily",
+    relatedConditionSlugs: [
+      "tennis-elbow",
+      "medial-epicondylalgia",
+      "dequervains",
+      "carpal-tunnel",
+    ],
+    relatedProgrammeSlugs: [
+      "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+    ],
+  },
+  {
+    slug: "towel-grip-isometric",
+    title: "Towel grip isometric",
+    summary:
+      "Gentle grip hold to keep the forearm and hand working without aggressive loading.",
+    region: "Elbow & Wrist",
+    level: "early",
+    equipment: "Rolled towel or soft ball",
+    illustration: "seated-desk",
+    steps: [
+      "Hold a rolled towel lightly in the hand with the wrist in a comfortable mid-position.",
+      "Squeeze to about 30–40% effort — firm but not maximal.",
+      "Hold for several seconds, then relax fully.",
+      "Keep the shoulder and neck relaxed while you grip.",
+    ],
+    cues: [
+      "Pain during the hold should stay mild and settle quickly after.",
+      "Quality of relax between holds matters as much as the squeeze.",
+    ],
+    avoid: [
+      "Maximal gripping that flares elbow or wrist pain for hours.",
+      "Holding the breath or shrugging.",
+    ],
+    dosage: "5–8 second holds × 8–10, 1–2 sets, most days",
+    relatedConditionSlugs: [
+      "tennis-elbow",
+      "medial-epicondylalgia",
+      "cmc-oa",
+      "dequervains",
+    ],
+    relatedProgrammeSlugs: [
+      "tennis-elbow-settle",
+      "upper-limb-desk-calm",
+    ],
+  },
+  {
+    slug: "median-nerve-glide",
+    title: "Median nerve glide",
+    summary:
+      "Gentle nerve slider for wrist–hand symptoms when a clinician has suggested neural mobility work.",
+    region: "Elbow & Wrist",
+    level: "early",
+    equipment: "None",
+    illustration: "nerve-glide",
+    steps: [
+      "Stand or sit tall with the affected arm by your side, elbow bent, wrist neutral.",
+      "Slowly extend the elbow and wrist while looking slightly away, then reverse as you look toward the hand.",
+      "Move in a smooth “see-saw” so tension does not linger at either end.",
+      "Keep the range small enough that symptoms settle within seconds after each pass.",
+    ],
+    cues: [
+      "This should feel like a gentle glide, not a stretch hold.",
+      "If symptoms linger, shrink the range or pause and get assessed.",
+    ],
+    avoid: [
+      "Aggressive end-range holds that recreate lasting numbness.",
+      "Using this instead of medical review for progressive weakness or thenar wasting.",
+    ],
+    dosage: "8–10 slow passes, 1–2 sets, once or twice daily if helpful",
+    relatedConditionSlugs: [
+      "carpal-tunnel",
+      "cervical-radiculopathy",
+      "cubital-tunnel",
+    ],
+    relatedProgrammeSlugs: [
+      "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+    ],
+  },
 ];
 
 export const programmes: Programme[] = [
@@ -823,9 +1382,13 @@ export const programmes: Programme[] = [
       "diaphragmatic-breathing",
       "pelvic-tilts",
       "knee-rolls",
+      "knee-to-chest",
       "supine-marching",
+      "cat-cow",
+      "prone-press-up",
       "hip-hinge-practice",
       "glute-bridge",
+      "dead-bug",
       "bird-dog",
     ],
     relatedConditionSlugs: [
@@ -843,6 +1406,7 @@ export const programmes: Programme[] = [
       "If leg pain dominates over back pain, prefer the sciatica programme and get assessed.",
       "Keep sessions short; more frequency beats one long grind.",
       "Known spondylolysis or listhesis: avoid repeated end-range extension drills that recreate sharp lumbar pain.",
+      "Skip or shrink prone press-ups if extension increases leg symptoms that linger.",
     ],
   },
   {
@@ -855,8 +1419,12 @@ export const programmes: Programme[] = [
     phase: "rebuild",
     exerciseSlugs: [
       "chin-tuck",
+      "upper-trap-stretch",
       "seated-scapular-set",
+      "seated-thoracic-rotation",
       "open-book-rotation",
+      "thoracic-extension-roll",
+      "doorway-pec-stretch",
       "wall-angels",
       "hip-hinge-practice",
       "diaphragmatic-breathing",
@@ -889,7 +1457,9 @@ export const programmes: Programme[] = [
       "diaphragmatic-breathing",
       "knee-rolls",
       "pelvic-tilts",
+      "knee-to-chest",
       "sciatic-nerve-glide",
+      "hamstring-slider",
       "piriformis-figure-four",
       "glute-bridge",
     ],
@@ -915,9 +1485,12 @@ export const programmes: Programme[] = [
     exerciseSlugs: [
       "quad-set-short-arc",
       "side-lying-hip-abduction",
+      "clamshell",
       "glute-bridge",
+      "sit-to-stand",
       "step-down-control",
       "single-leg-balance",
+      "hamstring-slider",
     ],
     relatedConditionSlugs: [
       "patellofemoral-pain",
@@ -973,8 +1546,10 @@ export const programmes: Programme[] = [
     phase: "settle",
     exerciseSlugs: [
       "shoulder-pendulum",
+      "table-slides",
       "seated-scapular-set",
       "open-book-rotation",
+      "doorway-pec-stretch",
       "wall-angels",
       "band-external-rotation",
     ],
@@ -1025,7 +1600,10 @@ export const programmes: Programme[] = [
       "diaphragmatic-breathing",
       "pelvic-tilts",
       "knee-rolls",
+      "knee-to-chest",
+      "cat-cow",
       "chin-tuck",
+      "upper-trap-stretch",
       "shoulder-pendulum",
       "bird-dog",
     ],
@@ -1054,9 +1632,12 @@ export const programmes: Programme[] = [
     phase: "rebuild",
     exerciseSlugs: [
       "side-lying-hip-abduction",
+      "clamshell",
       "glute-bridge",
+      "hip-flexor-stretch",
       "piriformis-figure-four",
       "hip-hinge-practice",
+      "sit-to-stand",
       "single-leg-balance",
       "bird-dog",
     ],
@@ -1082,9 +1663,14 @@ export const programmes: Programme[] = [
     phase: "settle",
     exerciseSlugs: [
       "chin-tuck",
+      "upper-trap-stretch",
       "seated-scapular-set",
+      "seated-thoracic-rotation",
       "open-book-rotation",
       "wall-angels",
+      "wrist-extensor-stretch",
+      "towel-grip-isometric",
+      "median-nerve-glide",
       "band-external-rotation",
       "diaphragmatic-breathing",
     ],
@@ -1100,6 +1686,63 @@ export const programmes: Programme[] = [
     precautions: [
       "Constant numbness, thenar wasting, or progressive hand weakness needs medical or nerve-study pathways — not this programme alone.",
       "Keep wrists in mid-range; stop any drill that sparks lingering neural tingling.",
+    ],
+  },
+  {
+    slug: "tennis-elbow-settle",
+    title: "Tennis elbow settle",
+    summary:
+      "Forearm calm and gentle loading for outer-elbow irritability from mouse, tools, or gripping — desk and trade friendly.",
+    audience:
+      "Adults with lateral elbow pain that flares with gripping or wrist extension, without progressive hand weakness or constant night numbness.",
+    phase: "settle",
+    exerciseSlugs: [
+      "wrist-extensor-stretch",
+      "towel-grip-isometric",
+      "median-nerve-glide",
+      "seated-scapular-set",
+      "chin-tuck",
+      "diaphragmatic-breathing",
+    ],
+    relatedConditionSlugs: [
+      "tennis-elbow",
+      "medial-epicondylalgia",
+      "dequervains",
+      "carpal-tunnel",
+    ],
+    relatedServiceSlug: "focused-shockwave",
+    precautions: [
+      "Sudden trauma, marked swelling, or inability to extend the wrist/fingers needs medical review first.",
+      "Keep grip effort submaximal — lingering outer-elbow pain the next day means you did too much.",
+      "Constant numbness or hand wasting is not a stretch-and-load problem alone — seek assessment.",
+    ],
+  },
+  {
+    slug: "frozen-shoulder-early",
+    title: "Frozen shoulder early motion",
+    summary:
+      "Supported, low-irritability motion for a stiff, painful shoulder — pendulum and table slides first.",
+    audience:
+      "Adults with global shoulder stiffness and night pain suggestive of adhesive capsulitis who can tolerate gentle supported movement.",
+    phase: "settle",
+    exerciseSlugs: [
+      "shoulder-pendulum",
+      "table-slides",
+      "seated-scapular-set",
+      "doorway-pec-stretch",
+      "open-book-rotation",
+      "diaphragmatic-breathing",
+    ],
+    relatedConditionSlugs: [
+      "frozen-shoulder",
+      "subacromial-pain",
+      "rotator-cuff-tear",
+    ],
+    relatedServiceSlug: "headaches-joints",
+    precautions: [
+      "Unexplained fever with joint pain, recent dislocation, or suspected fracture needs medical review first.",
+      "Stay below the height that sharply pinches; irritability drops before range returns.",
+      "Diabetes or thyroid history is common with frozen shoulder — keep expectations realistic and get assessed for a plan.",
     ],
   },
 ];

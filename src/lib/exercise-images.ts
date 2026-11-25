@@ -28,9 +28,24 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Athlete stretching the calf with the forefoot against a brick wall",
     credit: "Photo via Pexels (#36429567)",
   },
+  "cat-cow": {
+    src: "/images/exercises/cat-cow.webp",
+    alt: "Educational illustration of cat–cow on hands and knees",
+    credit: "Free educational illustration",
+  },
   "chin-tuck": {
     src: "/images/exercises/chin-tuck.webp",
     alt: "Educational illustration of a seated chin tuck (gentle cervical retraction)",
+    credit: "Free educational illustration",
+  },
+  "clamshell": {
+    src: "/images/exercises/clamshell.webp",
+    alt: "Educational illustration of a side-lying clamshell hip exercise",
+    credit: "Free educational illustration",
+  },
+  "dead-bug": {
+    src: "/images/exercises/dead-bug.webp",
+    alt: "Educational illustration of a dead-bug: opposite arm and leg reaching on the back",
     credit: "Free educational illustration",
   },
   "diaphragmatic-breathing": {
@@ -38,10 +53,25 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Person lying calmly on a mat with eyes closed practising relaxed breathing",
     credit: "Photo via Pexels (#6958060)",
   },
+  "doorway-pec-stretch": {
+    src: "/images/exercises/doorway-pec-stretch.webp",
+    alt: "Educational illustration of a doorway pec / chest stretch",
+    credit: "Free educational illustration",
+  },
   "glute-bridge": {
     src: "/images/exercises/glute-bridge.webp",
     alt: "Person performing a glute bridge on a yoga mat with hips lifted",
     credit: "Photo via Pexels (#4534632)",
+  },
+  "hamstring-slider": {
+    src: "/images/exercises/hamstring-slider.webp",
+    alt: "Educational illustration of a supine hamstring slider with the knee easing straight",
+    credit: "Free educational illustration",
+  },
+  "hip-flexor-stretch": {
+    src: "/images/exercises/hip-flexor-stretch.webp",
+    alt: "Educational illustration of a half-kneeling hip-flexor stretch",
+    credit: "Free educational illustration",
   },
   "hip-hinge-practice": {
     src: "/images/exercises/hip-hinge-practice.webp",
@@ -57,6 +87,16 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     src: "/images/exercises/knee-rolls.webp",
     alt: "Person lying on their back with knees rolled to one side for gentle lumbar mobility",
     credit: "Photo via Pexels (#6111612)",
+  },
+  "knee-to-chest": {
+    src: "/images/exercises/knee-to-chest.webp",
+    alt: "Educational illustration of a single knee-to-chest stretch on the back",
+    credit: "Free educational illustration",
+  },
+  "median-nerve-glide": {
+    src: "/images/exercises/median-nerve-glide.webp",
+    alt: "Educational illustration of a gentle median nerve glide for the arm and wrist",
+    credit: "Free educational illustration",
   },
   "open-book-rotation": {
     src: "/images/exercises/open-book-rotation.webp",
@@ -78,6 +118,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Bare foot resting on a foam roller for plantar fascia / sole mobility",
     credit: "Photo via Pexels (#20890283)",
   },
+  "prone-press-up": {
+    src: "/images/exercises/prone-press-up.webp",
+    alt: "Educational illustration of a prone press-up: chest lifts while hips stay down",
+    credit: "Free educational illustration",
+  },
   "quad-set-short-arc": {
     src: "/images/exercises/quad-set-short-arc.webp",
     alt: "Instructional illustration of a quad set / short-arc knee extension",
@@ -91,6 +136,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "seated-scapular-set": {
     src: "/images/exercises/seated-scapular-set.webp",
     alt: "Educational illustration of a seated scapular set: upright posture, arms by sides, shoulder blades drawn back",
+    credit: "Free educational illustration",
+  },
+  "seated-thoracic-rotation": {
+    src: "/images/exercises/seated-thoracic-rotation.webp",
+    alt: "Educational illustration of seated thoracic rotation in a chair",
     credit: "Free educational illustration",
   },
   "shoulder-pendulum": {
@@ -108,6 +158,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of single-leg balance on a stable floor",
     credit: "Free educational illustration",
   },
+  "sit-to-stand": {
+    src: "/images/exercises/sit-to-stand.webp",
+    alt: "Educational illustration of a sit-to-stand from a chair",
+    credit: "Free educational illustration",
+  },
   "step-down-control": {
     src: "/images/exercises/step-down-control.webp",
     alt: "Person standing on a step box practicing controlled step-down knee control",
@@ -118,9 +173,34 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Person on their back with one leg raised — similar to a controlled supine march",
     credit: "Photo via Pexels (#5037400)",
   },
+  "table-slides": {
+    src: "/images/exercises/table-slides.webp",
+    alt: "Educational illustration of supported table slides for the shoulder",
+    credit: "Free educational illustration",
+  },
+  "thoracic-extension-roll": {
+    src: "/images/exercises/thoracic-extension-roll.webp",
+    alt: "Educational illustration of thoracic extension over a rolled towel",
+    credit: "Free educational illustration",
+  },
+  "towel-grip-isometric": {
+    src: "/images/exercises/towel-grip-isometric.webp",
+    alt: "Educational illustration of a gentle towel grip isometric hold",
+    credit: "Free educational illustration",
+  },
+  "upper-trap-stretch": {
+    src: "/images/exercises/upper-trap-stretch.webp",
+    alt: "Educational illustration of a seated upper trapezius side-bend stretch",
+    credit: "Free educational illustration",
+  },
   "wall-angels": {
     src: "/images/exercises/wall-angels.webp",
     alt: "Educational illustration of wall angels: back to wall, arms sliding overhead",
+    credit: "Free educational illustration",
+  },
+  "wrist-extensor-stretch": {
+    src: "/images/exercises/wrist-extensor-stretch.webp",
+    alt: "Educational illustration of a wrist extensor stretch with the elbow straight",
     credit: "Free educational illustration",
   },
 };

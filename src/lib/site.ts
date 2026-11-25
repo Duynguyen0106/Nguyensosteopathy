@@ -356,7 +356,7 @@ export const faqs = [
   {
     question: "Do you give home exercises?",
     answer:
-      "Yes. Most plans include a short home programme matched to your presentation. You can also browse our public exercise library for illustrated drills and programmes (low back, desk neck, sciatica, knee, heel, shoulder, ankle). Those pages are educational guides — not a personal prescription — so clinic advice for your case always comes first.",
+      "Yes. Most plans include a short home programme matched to your presentation. You can also browse our public exercise library for illustrated drills and programmes (low back, desk neck, sciatica, hip, knee, heel, shoulder, elbow & wrist, ankle). Those pages are educational guides — not a personal prescription — so clinic advice for your case always comes first.",
   },
   {
     question: "What is the cancellation policy?",

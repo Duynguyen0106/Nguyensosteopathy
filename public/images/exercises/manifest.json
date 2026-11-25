@@ -113,5 +113,290 @@
     "src": "/images/exercises/single-leg-balance.webp",
     "alt": "Educational illustration of single-leg balance on a stable floor",
     "credit": "Free educational illustration"
+  },
+  "cat-cow": {
+    "src": "/images/exercises/cat-cow.webp",
+    "alt": "Educational illustration of cat–cow on hands and knees",
+    "credit": "Free educational illustration"
+  },
+  "dead-bug": {
+    "src": "/images/exercises/dead-bug.webp",
+    "alt": "Educational illustration of a dead-bug: opposite arm and leg reaching on the back",
+    "credit": "Free educational illustration"
+  },
+  "prone-press-up": {
+    "src": "/images/exercises/prone-press-up.webp",
+    "alt": "Educational illustration of a prone press-up: chest lifts while hips stay down",
+    "credit": "Free educational illustration"
+  },
+  "knee-to-chest": {
+    "src": "/images/exercises/knee-to-chest.webp",
+    "alt": "Educational illustration of a single knee-to-chest stretch on the back",
+    "credit": "Free educational illustration"
+  },
+  "clamshell": {
+    "src": "/images/exercises/clamshell.webp",
+    "alt": "Educational illustration of a side-lying clamshell hip exercise",
+    "credit": "Free educational illustration"
+  },
+  "hip-flexor-stretch": {
+    "src": "/images/exercises/hip-flexor-stretch.webp",
+    "alt": "Educational illustration of a half-kneeling hip-flexor stretch",
+    "credit": "Free educational illustration"
+  },
+  "hamstring-slider": {
+    "src": "/images/exercises/hamstring-slider.webp",
+    "alt": "Educational illustration of a supine hamstring slider with the knee easing straight",
+    "credit": "Free educational illustration"
+  },
+  "sit-to-stand": {
+    "src": "/images/exercises/sit-to-stand.webp",
+    "alt": "Educational illustration of a sit-to-stand from a chair",
+    "credit": "Free educational illustration"
+  },
+  "thoracic-extension-roll": {
+    "src": "/images/exercises/thoracic-extension-roll.webp",
+    "alt": "Educational illustration of thoracic extension over a rolled towel",
+    "credit": "Free educational illustration"
+  },
+  "seated-thoracic-rotation": {
+    "src": "/images/exercises/seated-thoracic-rotation.webp",
+    "alt": "Educational illustration of seated thoracic rotation in a chair",
+    "credit": "Free educational illustration"
+  },
+  "upper-trap-stretch": {
+    "src": "/images/exercises/upper-trap-stretch.webp",
+    "alt": "Educational illustration of a seated upper trapezius side-bend stretch",
+    "credit": "Free educational illustration"
+  },
+  "doorway-pec-stretch": {
+    "src": "/images/exercises/doorway-pec-stretch.webp",
+    "alt": "Educational illustration of a doorway pec / chest stretch",
+    "credit": "Free educational illustration"
+  },
+  "table-slides": {
+    "src": "/images/exercises/table-slides.webp",
+    "alt": "Educational illustration of supported table slides for the shoulder",
+    "credit": "Free educational illustration"
+  },
+  "wrist-extensor-stretch": {
+    "src": "/images/exercises/wrist-extensor-stretch.webp",
+    "alt": "Educational illustration of a wrist extensor stretch with the elbow straight",
+    "credit": "Free educational illustration"
+  },
+  "towel-grip-isometric": {
+    "src": "/images/exercises/towel-grip-isometric.webp",
+    "alt": "Educational illustration of a gentle towel grip isometric hold",
+    "credit": "Free educational illustration"
+  },
+  "median-nerve-glide": {
+    "src": "/images/exercises/median-nerve-glide.webp",
+    "alt": "Educational illustration of a gentle median nerve glide for the arm and wrist",
+    "credit": "Free educational illustration"
+  },
+  "seated-flexion-fold": {
+    "src": "/images/exercises/seated-flexion-fold.webp",
+    "alt": "Educational illustration of a seated flexion fold in a chair",
+    "credit": "Free educational illustration"
+  },
+  "ulnar-nerve-glide": {
+    "src": "/images/exercises/ulnar-nerve-glide.webp",
+    "alt": "Educational illustration of a gentle ulnar nerve glide for the inner elbow and hand",
+    "credit": "Free educational illustration"
+  },
+  "wrist-flexor-stretch": {
+    "src": "/images/exercises/wrist-flexor-stretch.webp",
+    "alt": "Educational illustration of a wrist flexor stretch with palm facing up",
+    "credit": "Free educational illustration"
+  },
+  "eccentric-wrist-extension": {
+    "src": "/images/exercises/eccentric-wrist-extension.webp",
+    "alt": "Educational illustration of eccentric wrist extension with a light weight",
+    "credit": "Free educational illustration"
+  },
+  "thumb-cmc-isometric": {
+    "src": "/images/exercises/thumb-cmc-isometric.webp",
+    "alt": "Educational illustration of a gentle thumb CMC isometric OK-shape hold",
+    "credit": "Free educational illustration"
+  },
+  "levator-stretch": {
+    "src": "/images/exercises/levator-stretch.webp",
+    "alt": "Educational illustration of a levator scapulae diagonal neck stretch",
+    "credit": "Free educational illustration"
+  },
+  "isometric-neck-rotation": {
+    "src": "/images/exercises/isometric-neck-rotation.webp",
+    "alt": "Educational illustration of isometric neck rotation against a hand",
+    "credit": "Free educational illustration"
+  },
+  "great-toe-extension": {
+    "src": "/images/exercises/great-toe-extension.webp",
+    "alt": "Educational illustration of gentle great-toe extension mobility",
+    "credit": "Free educational illustration"
+  },
+  "towel-toe-curls": {
+    "src": "/images/exercises/towel-toe-curls.webp",
+    "alt": "Educational illustration of towel toe curls for intrinsic foot strength",
+    "credit": "Free educational illustration"
+  },
+  "tandem-balance": {
+    "src": "/images/exercises/tandem-balance.webp",
+    "alt": "Educational illustration of heel-to-toe tandem balance near support",
+    "credit": "Free educational illustration"
+  },
+  "wall-push-up-plus": {
+    "src": "/images/exercises/wall-push-up-plus.webp",
+    "alt": "Educational illustration of a wall push-up plus with scapular protraction",
+    "credit": "Free educational illustration"
+  },
+  "ischial-unweight-sit": {
+    "src": "/images/exercises/ischial-unweight-sit.webp",
+    "alt": "Educational illustration of shifting sitting weight onto one sitting bone to unweight the coccyx",
+    "credit": "Free educational illustration"
+  },
+  "pelvic-clock": {
+    "src": "/images/exercises/pelvic-clock.webp",
+    "alt": "Educational illustration of a supine pelvic clock with tiny circular tilts",
+    "credit": "Free educational illustration"
+  },
+  "adductor-ball-squeeze": {
+    "src": "/images/exercises/adductor-ball-squeeze.webp",
+    "alt": "Educational illustration of a supine adductor ball squeeze between the knees",
+    "credit": "Free educational illustration"
+  },
+  "terminal-knee-extension": {
+    "src": "/images/exercises/terminal-knee-extension.webp",
+    "alt": "Educational illustration of a seated terminal knee extension quad squeeze",
+    "credit": "Free educational illustration"
+  },
+  "wall-sit-isometric": {
+    "src": "/images/exercises/wall-sit-isometric.webp",
+    "alt": "Educational illustration of a wall-sit isometric thigh hold",
+    "credit": "Free educational illustration"
+  },
+  "eccentric-heel-drop": {
+    "src": "/images/exercises/eccentric-heel-drop.webp",
+    "alt": "Educational illustration of an eccentric heel drop off a step",
+    "credit": "Free educational illustration"
+  },
+  "single-leg-rdl": {
+    "src": "/images/exercises/single-leg-rdl.webp",
+    "alt": "Educational illustration of a single-leg Romanian deadlift hinge pattern",
+    "credit": "Free educational illustration"
+  },
+  "side-plank-short": {
+    "src": "/images/exercises/side-plank-short.webp",
+    "alt": "Educational illustration of a short knees-down side plank",
+    "credit": "Free educational illustration"
+  },
+  "bridge-march": {
+    "src": "/images/exercises/bridge-march.webp",
+    "alt": "Educational illustration of a glute bridge with an alternating march",
+    "credit": "Free educational illustration"
+  },
+  "open-book-pregnancy": {
+    "src": "/images/exercises/open-book-pregnancy.webp",
+    "alt": "Educational illustration of a supported side-lying open-book rotation with pillows",
+    "credit": "Free educational illustration"
+  },
+  "cervical-nod-retraction": {
+    "src": "/images/exercises/cervical-nod-retraction.webp",
+    "alt": "Educational illustration of a seated chin tuck with a gentle upper-neck nod",
+    "credit": "Free educational illustration"
+  },
+  "isometric-shoulder-er": {
+    "src": "/images/exercises/isometric-shoulder-er.webp",
+    "alt": "Educational illustration of isometric shoulder external rotation against a wall",
+    "credit": "Free educational illustration"
+  },
+  "prone-t-raise": {
+    "src": "/images/exercises/prone-t-raise.webp",
+    "alt": "Educational illustration of a prone T raise with arms lifted to the sides",
+    "credit": "Free educational illustration"
+  },
+  "thumb-opposition-slides": {
+    "src": "/images/exercises/thumb-opposition-slides.webp",
+    "alt": "Educational illustration of thumb tip opposition slides across the fingers",
+    "credit": "Free educational illustration"
+  },
+  "metatarsal-spread": {
+    "src": "/images/exercises/metatarsal-spread.webp",
+    "alt": "Educational illustration of a barefoot metatarsal / toe spread",
+    "credit": "Free educational illustration"
+  },
+  "seated-hallux-lift": {
+    "src": "/images/exercises/seated-hallux-lift.webp",
+    "alt": "Educational illustration of a seated big-toe lift with lesser toes down",
+    "credit": "Free educational illustration"
+  },
+  "hip-figure-four-flex": {
+    "src": "/images/exercises/hip-figure-four-flex.webp",
+    "alt": "Educational illustration of a supine figure-four hip stretch",
+    "credit": "Free educational illustration"
+  },
+  "prone-cobra-short": {
+    "src": "/images/exercises/prone-cobra-short.webp",
+    "alt": "Educational illustration of a short prone cobra chest lift",
+    "credit": "Free educational illustration"
+  },
+  "spanish-squat-hold": {
+    "src": "/images/exercises/spanish-squat-hold.webp",
+    "alt": "Educational illustration of a Spanish squat hold with a band behind the knees",
+    "credit": "Free educational illustration"
+  },
+  "farmer-carry-walk": {
+    "src": "/images/exercises/farmer-carry-walk.webp",
+    "alt": "Educational illustration of a farmer carry walk with even weights",
+    "credit": "Free educational illustration"
+  },
+  "tibialis-raise": {
+    "src": "/images/exercises/tibialis-raise.webp",
+    "alt": "Educational illustration of standing tibialis anterior raises",
+    "credit": "Free educational illustration"
+  },
+  "knee-to-wall-dorsiflexion": {
+    "src": "/images/exercises/knee-to-wall-dorsiflexion.webp",
+    "alt": "Educational illustration of knee-to-wall ankle dorsiflexion",
+    "credit": "Free educational illustration"
+  },
+  "nordic-hamstring-assist": {
+    "src": "/images/exercises/nordic-hamstring-assist.webp",
+    "alt": "Educational illustration of an assisted Nordic hamstring lower",
+    "credit": "Free educational illustration"
+  },
+  "reverse-lunge-control": {
+    "src": "/images/exercises/reverse-lunge-control.webp",
+    "alt": "Educational illustration of a reverse lunge",
+    "credit": "Free educational illustration"
+  },
+  "band-pull-apart": {
+    "src": "/images/exercises/band-pull-apart.webp",
+    "alt": "Educational illustration of a standing band pull-apart",
+    "credit": "Free educational illustration"
+  },
+  "prone-y-raise": {
+    "src": "/images/exercises/prone-y-raise.webp",
+    "alt": "Educational illustration of a prone Y raise",
+    "credit": "Free educational illustration"
+  },
+  "short-copenhagen": {
+    "src": "/images/exercises/short-copenhagen.webp",
+    "alt": "Educational illustration of a short Copenhagen adductor hold",
+    "credit": "Free educational illustration"
+  },
+  "standing-itb-open": {
+    "src": "/images/exercises/standing-itb-open.webp",
+    "alt": "Educational illustration of a standing ITB open / cross-leg side bend",
+    "credit": "Free educational illustration"
+  },
+  "midrange-quad-isometric": {
+    "src": "/images/exercises/midrange-quad-isometric.webp",
+    "alt": "Educational illustration of a mid-range quad isometric hold",
+    "credit": "Free educational illustration"
+  },
+  "wrist-rotation-isometric": {
+    "src": "/images/exercises/wrist-rotation-isometric.webp",
+    "alt": "Educational illustration of seated wrist rotation isometrics with a towel",
+    "credit": "Free educational illustration"
   }
 }

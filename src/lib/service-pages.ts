@@ -45,7 +45,7 @@ export const servicePages: ServicePageContent[] = [
         paragraphs: [
           "Osteopathy is a regulated, hands-on approach to musculoskeletal care. Your initial visit includes a detailed history, posture and movement testing, and a clear explanation of what we find. Treatment may include gentle joint mobilisation, soft-tissue techniques and advice tailored to your work and sleep setup. The aim is to calm irritated tissues, restore freer movement and give you practical ways to protect progress between appointments.",
           "People visit us for sciatica and referred leg pain, desk-related neck and shoulder strain, disc-related stiffness or flare-ups, and morning ache that improves only slowly as the day goes on. You do not need a GP referral. Care is private and one-to-one with Austin Duy Nguyen, a GOsC-registered osteopath.",
-          "Techniques are selected for your presentation and comfort. Some sessions emphasise soft-tissue release through the lumbar or cervical musculature; others prioritise joint mobility where segments have become restricted. Home advice might cover desk height, break patterns, sleep positions, or graded return to walking and lifting. The goal is freer movement that lasts beyond the treatment couch.",
+          "Techniques are selected for your presentation and comfort. Some sessions emphasise soft-tissue release through the lumbar or cervical musculature; others prioritise joint mobility where segments have become restricted. Home advice might cover desk height, break patterns, sleep positions, or graded return to walking and lifting. Between visits you can browse our public home exercise library for illustrated drills and programmes (low back settle, desk neck reset, sciatica calm, stenosis flexion), then we tailor dosage in clinic. The goal is freer movement that lasts beyond the treatment couch.",
         ],
       },
       {
@@ -120,7 +120,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "Our approach to headache and joint care",
         paragraphs: [
-          "Treatment focuses on restoring comfortable motion where it has become restricted, easing soft-tissue tone that feeds referral into the head, and giving you simple exercises or habit changes that reduce recurrence. Osteopathy here is gentle and explained step by step — suitable whether your main goal is fewer desk-day headaches or freer movement in a previously injured joint.",
+          "Treatment focuses on restoring comfortable motion where it has become restricted, easing soft-tissue tone that feeds referral into the head, and giving you simple exercises or habit changes that reduce recurrence. Between visits you can browse our public home exercise library for desk-neck, headache-friendly and joint programmes, then we tailor dosage in clinic. Osteopathy here is gentle and explained step by step — suitable whether your main goal is fewer desk-day headaches or freer movement in a previously injured joint.",
           "Austin Duy Nguyen combines case history with movement testing across the neck, thoracic spine and relevant peripheral joints. Where jaw tension, breathing pattern or workstation setup plays a role, that becomes part of the plan. You leave with a clear sense of what we treated and what to do before the next visit.",
           "We explain findings in plain English before treating. That might mean showing you how upper-neck rotation relates to your headache diary, or how limited ankle motion changes knee load. Education is part of care because recurrence drops when you understand the levers you can control between visits, not only while you are on the treatment couch.",
         ],
@@ -198,7 +198,7 @@ export const servicePages: ServicePageContent[] = [
         paragraphs: [
           "You may feel strong pulsing or local tenderness during treatment. Intensity is adjusted for tolerance. Residual ache for a day or two can occur as tissues respond. Most people continue day-to-day activity with sensible load management rather than complete rest — we give specific guidance for your sport or work.",
           "Progress is reviewed regularly. Many tendon pathways use a short course rather than a single visit; we only continue when it remains clinically useful. Combining shockwave with graded loading is usually more effective than either approach in isolation.",
-          "Between sessions we want tendons to see the right amount of load — enough to adapt, not so much that irritability snowballs. That balance is individual. Desk workers with plantar fasciitis need different advice from five-a-side players with patellar tendon pain, even when the device protocol looks similar on paper.",
+          "Between sessions we want tendons to see the right amount of load — enough to adapt, not so much that irritability snowballs. That balance is individual. Desk workers with plantar fasciitis need different advice from five-a-side players with patellar tendon pain, even when the device protocol looks similar on paper. Our public home exercise library includes plantar heel, tennis elbow and lateral hip programmes you can use as building blocks while we refine dosage in clinic.",
         ],
       },
       {
@@ -363,7 +363,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "What to expect",
         paragraphs: [
           "After discussing goals and comfort preferences, fine needles are placed precisely. With electroacupuncture, a mild pulsing sensation may be felt. Sessions are monitored closely; needles can be adjusted or removed if anything feels wrong. Afterwards we advise on activity, hydration and what short-lived post-treatment ache can feel like.",
-          "Acupuncture often pairs well with osteopathy for back and neck pain, sports rehab loading plans, or deep tissue massage on alternate visits when soft-tissue load is high. Your plan stays coherent rather than collecting unrelated add-ons.",
+          "Acupuncture often pairs well with osteopathy for back and neck pain, sports rehab loading plans, or deep tissue massage on alternate visits when soft-tissue load is high. Your plan stays coherent rather than collecting unrelated add-ons. Between visits you can also use our public home exercise library for desk-neck, shoulder and upper-limb drills while irritability settles.",
           "Hygiene and single-use needles are non-negotiable. Skin is prepared appropriately, and needle sites are monitored. If you feel faint, dizzy, or unusually anxious, tell us immediately — we will remove needles and help you settle before deciding whether to continue another day.",
         ],
       },
@@ -424,7 +424,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "Who it suits",
         paragraphs: [
           "Deep tissue work helps chronic muscular tightness, training-related muscle load, desk-related shoulder and back tension, and anyone who needs focused release in priority regions. Sessions last 45 minutes and are priced clearly on our fees page. Cupping can be added when appropriate for an additional fee.",
-          "We take a brief history even for massage-focused visits so we do not work aggressively into tissues that need a different approach. If assessment suggests osteopathy or shockwave would serve you better, we say so and help you switch pathway rather than selling the wrong session.",
+          "We take a brief history even for massage-focused visits so we do not work aggressively into tissues that need a different approach. If assessment suggests osteopathy or shockwave would serve you better, we say so and help you switch pathway rather than selling the wrong session. Between visits you can use our public home exercise library for desk-neck and upper-back mobility drills so soft tissue does not tighten straight back to baseline.",
           "Athletes sometimes book the day after heavy sessions; office workers often book mid-week when desk posture has peaked. We help you time sessions so soft tissue is receptive rather than so inflamed that deeper work is counterproductive. Communication during treatment keeps pressure in the productive zone.",
         ],
       },
@@ -561,7 +561,7 @@ export const servicePages: ServicePageContent[] = [
       {
         heading: "What gentle pregnancy care looks like",
         paragraphs: [
-          "Expect careful positioning, soft mobilisation and soft-tissue approaches chosen for comfort. We avoid techniques or positions that feel unsafe for you. Practical advice covers sleep setup, standing work, lifting older children and pacing activity through the week.",
+          "Expect careful positioning, soft mobilisation and soft-tissue approaches chosen for comfort. We avoid techniques or positions that feel unsafe for you. Practical advice covers sleep setup, standing work, lifting older children and pacing activity through the week. Our public exercise library also includes a pregnancy pelvic ease programme with trimester-aware cautions — always follow your maternity team's advice first.",
           "Ideal reasons to book include pelvic girdle discomfort, lower-back and rib strain in pregnancy, and postural change as your baby grows. Later-trimester visits focus on comfort and function; earlier visits may address desk or pre-existing spinal patterns that pregnancy has unsettled.",
           "We collaborate with your existing maternity advice. If you have been told to avoid certain positions or activities, tell us before treatment begins. Supportive strategies are discussed without pushing products you do not need, and partners are welcome to hear simple ways to help at home.",
         ],
@@ -651,7 +651,7 @@ export const servicePages: ServicePageContent[] = [
           "If you tried osteopathy elsewhere and found it too forceful, mention that when you book. We can prioritise a cranial-led first session and only introduce other techniques if and when you want them. Your consent stays central throughout every visit.",
           "Commuters and local residents alike use cranial-focused sessions as a reset when stress settles into the neck and jaw. It is still clinical osteopathy — just delivered at a dosage that respects a sensitive system and a busy Charlton week.",
           "You remain clothed for cranial-focused sessions, and draping or positioning is adjusted for warmth and modesty. The atmosphere is intentionally calm, yet you can ask clinical questions at any point — gentle does not mean unexplained.",
-          "For headache-dominant presentations we may still recommend a blended plan over several visits, mixing cranial dosage with conventional neck care as tolerance allows. The sequence is agreed with you rather than imposed.",
+          "For headache-dominant presentations we may still recommend a blended plan over several visits, mixing cranial dosage with conventional neck care as tolerance allows. The sequence is agreed with you rather than imposed. Our public exercise library also has gentle desk-neck and breathing drills you can use between quieter sessions — always stay inside what feels settled after cranial care.",
         ],
       },
     ],
@@ -779,7 +779,7 @@ export const servicePages: ServicePageContent[] = [
         heading: "How a home visit works",
         paragraphs: [
           "Before the day, we confirm your address, access notes, and any stairs, parking, or entry details that help arrival run smoothly. Please clear a flat space large enough for comfortable movement assessment and treatment — a firm bed, sturdy table arrangement we discuss in advance, or suitable floor space with padding as agreed. Wear comfortable clothing that allows easy movement.",
-          "The clinical process mirrors a clinic appointment: detailed history, posture and movement testing, treatment selected for your presentation, and practical guidance you can use between sessions. Some people continue with further home visits; others return to the Charlton clinic once travel becomes easier. We only recommend follow-up when it is clinically useful.",
+          "The clinical process mirrors a clinic appointment: detailed history, posture and movement testing, treatment selected for your presentation, and practical guidance you can use between sessions. We often leave a short home plan and point you to our public exercise library for illustrated drills when travel to follow-up is limited. Some people continue with further home visits; others return to the Charlton clinic once travel becomes easier. We only recommend follow-up when it is clinically useful.",
           "If symptoms include red-flag features such as progressive weakness, unexplained weight loss, fever, or bladder or bowel changes, seek urgent medical care before or instead of routine musculoskeletal treatment. Home visits are for appropriate mechanical problems after serious causes have been considered.",
         ],
       },

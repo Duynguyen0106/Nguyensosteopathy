@@ -23,7 +23,7 @@ const levelFilters: ExerciseLevel[] = ["early", "build", "return"];
 export const metadata: Metadata = {
   title: "Home exercises & rehab",
   description:
-    "Public rehab exercise library from Nguyen's Osteopathic Clinic in Charlton: programmes and step-by-step drills for low back, neck, knee, heel, shoulder and…",
+    "Public rehab exercise library from Nguyen's Osteopathic Clinic in Charlton: programmes and step-by-step drills for low back, neck, hip, knee, heel, shoulder, elbow, wrist and ankle.",
   alternates: { canonical: "/exercises" },
   keywords: [
     "osteopath exercises Charlton",
@@ -31,11 +31,15 @@ export const metadata: Metadata = {
     "sciatica exercises Charlton",
     "desk neck exercises London",
     "plantar fasciitis exercises Charlton",
+    "tennis elbow exercises Charlton",
+    "carpal tunnel exercises London",
+    "frozen shoulder exercises Charlton",
+    "osteoporosis safe exercises London",
   ],
   openGraph: {
     title: "Home Exercises & Rehab | Nguyen's Osteopathic Clinic",
     description:
-      "Browse programmes and step-by-step home exercises from our Charlton osteopathy clinic.",
+      "Browse programmes and step-by-step home exercises for back, neck, hip, knee, shoulder, elbow and ankle from our Charlton osteopathy clinic.",
     url: "/exercises",
     images: [defaultOgImage],
   },

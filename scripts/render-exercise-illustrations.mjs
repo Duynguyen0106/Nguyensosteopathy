@@ -159,6 +159,714 @@ const ILLUSTRATIONS = {
       <circle cx="160" cy="188" r="7" fill="${teal}" opacity="0.45"/>
     `),
   },
+  "cat-cow": {
+    alt: "Educational illustration of cat–cow on hands and knees",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="185" rx="100" ry="9" fill="#e2e8f0"/>
+      <circle cx="70" cy="95" r="12" fill="${navy}"/>
+      <path d="M82 100 L130 120 L200 115 L250 145 M130 120 L115 175 M200 115 L215 175"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M120 105 Q160 70 210 100" fill="none" stroke="${teal}" stroke-width="4" stroke-dasharray="5 4"/>
+    `),
+  },
+  "dead-bug": {
+    alt: "Educational illustration of a dead-bug: opposite arm and leg reaching on the back",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="175" rx="105" ry="10" fill="#e2e8f0"/>
+      <path d="M70 150 C100 110, 130 95, 170 95 C210 95, 240 115, 255 150"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="78" cy="125" r="12" fill="${navy}"/>
+      <path d="M165 110 L165 145 L125 165" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M165 145 L210 170" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M150 105 L115 70" fill="none" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M150 105 L185 95" fill="none" stroke="${navy}" stroke-width="6" stroke-linecap="round"/>
+    `),
+  },
+  "prone-press-up": {
+    alt: "Educational illustration of a prone press-up: chest lifts while hips stay down",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="185" rx="110" ry="9" fill="#e2e8f0"/>
+      <path d="M55 155 L250 155" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="70" cy="120" r="12" fill="${navy}"/>
+      <path d="M82 125 L150 130 L230 150 M150 130 L145 155"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M120 145 L120 125" fill="none" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M110 115 L120 125 L130 115" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "knee-to-chest": {
+    alt: "Educational illustration of a single knee-to-chest stretch on the back",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="105" ry="10" fill="#e2e8f0"/>
+      <path d="M65 155 C95 115, 125 100, 165 100 C205 100, 235 120, 255 155"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="72" cy="130" r="12" fill="${navy}"/>
+      <path d="M160 115 L160 150 L210 170" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M160 150 L130 110" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="130" cy="110" r="5" fill="${teal}"/>
+    `),
+  },
+  "clamshell": {
+    alt: "Educational illustration of a side-lying clamshell hip exercise",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="105" ry="10" fill="#e2e8f0"/>
+      <circle cx="70" cy="120" r="12" fill="${navy}"/>
+      <path d="M82 125 L150 135 L220 160" fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M150 135 L210 115" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M175 145 Q195 125 210 115" fill="none" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "hip-flexor-stretch": {
+    alt: "Educational illustration of a half-kneeling hip-flexor stretch",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="145" cy="48" r="12" fill="${navy}"/>
+      <path d="M145 60 L145 115 M145 80 L115 100 M145 80 L175 95 M145 115 L120 185 M145 115 L200 160 L210 185"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M130 150 L145 115" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "hamstring-slider": {
+    alt: "Educational illustration of a supine hamstring slider with the knee easing straight",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="105" ry="10" fill="#e2e8f0"/>
+      <path d="M60 155 C95 115, 130 100, 170 100" fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="68" cy="128" r="12" fill="${navy}"/>
+      <path d="M160 110 L160 140" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M160 140 L235 145" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M200 140 Q220 120 235 145" fill="none" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "sit-to-stand": {
+    alt: "Educational illustration of a sit-to-stand from a chair",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <rect x="70" y="120" width="70" height="12" rx="3" fill="#94a3b8"/>
+      <rect x="78" y="132" width="14" height="50" rx="3" fill="#94a3b8"/>
+      <circle cx="175" cy="55" r="12" fill="${navy}"/>
+      <path d="M175 67 L175 120 M175 85 L145 105 M175 85 L205 100 M175 120 L160 185 M175 120 L205 185"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M175 100 L155 80" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "thoracic-extension-roll": {
+    alt: "Educational illustration of thoracic extension over a rolled towel",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="105" ry="10" fill="#e2e8f0"/>
+      <ellipse cx="160" cy="145" rx="28" ry="12" fill="${teal}" opacity="0.35"/>
+      <path d="M70 150 C105 105, 140 85, 175 90 C210 95, 240 120, 255 150"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="78" cy="120" r="12" fill="${navy}"/>
+      <path d="M165 105 L165 145 L130 175 M165 145 L205 175"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+    `),
+  },
+  "seated-thoracic-rotation": {
+    alt: "Educational illustration of seated thoracic rotation in a chair",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="105" y="125" width="110" height="16" rx="4" fill="#cbd5e1"/>
+      <rect x="120" y="141" width="16" height="42" rx="3" fill="#94a3b8"/>
+      <rect x="185" y="141" width="16" height="42" rx="3" fill="#94a3b8"/>
+      <circle cx="160" cy="52" r="12" fill="${navy}"/>
+      <path d="M160 64 L160 125 M160 90 L130 115 M160 90 L200 100"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M150 70 Q185 55 210 70" fill="none" stroke="${teal}" stroke-width="3.5" stroke-dasharray="4 3"/>
+    `),
+  },
+  "upper-trap-stretch": {
+    alt: "Educational illustration of a seated upper trapezius side-bend stretch",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="105" y="130" width="110" height="16" rx="4" fill="#cbd5e1"/>
+      <rect x="120" y="146" width="16" height="40" rx="3" fill="#94a3b8"/>
+      <rect x="185" y="146" width="16" height="40" rx="3" fill="#94a3b8"/>
+      <circle cx="175" cy="55" r="12" fill="${navy}"/>
+      <path d="M168 66 L160 130 M160 90 L130 115 M160 90 L195 115"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M175 45 Q195 40 205 55" fill="none" stroke="${teal}" stroke-width="3.5"/>
+    `),
+  },
+  "doorway-pec-stretch": {
+    alt: "Educational illustration of a doorway pec / chest stretch",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="55" y="30" width="14" height="160" rx="3" fill="${teal}" opacity="0.35"/>
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="140" cy="55" r="12" fill="${navy}"/>
+      <path d="M140 67 L140 130 M140 90 L175 85 L175 55 M140 130 L120 185 M140 130 L165 185"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M175 55 L62 70" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "table-slides": {
+    alt: "Educational illustration of supported table slides for the shoulder",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="40" y="110" width="200" height="14" rx="3" fill="#94a3b8"/>
+      <circle cx="95" cy="60" r="12" fill="${navy}"/>
+      <path d="M95 72 L95 110 M95 90 L70 100 M95 90 L160 105"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M160 105 L230 105" fill="none" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M200 95 L230 105 L200 115" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "wrist-extensor-stretch": {
+    alt: "Educational illustration of a wrist extensor stretch with the elbow straight",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="120" cy="55" r="12" fill="${navy}"/>
+      <path d="M120 67 L120 120 M120 85 L95 105 M120 120 L105 180 M120 120 L145 180"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M120 95 L200 95 L230 130" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M215 110 L230 130 L210 135" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "towel-grip-isometric": {
+    alt: "Educational illustration of a gentle towel grip isometric hold",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="110" y="125" width="100" height="14" rx="3" fill="#cbd5e1"/>
+      <circle cx="155" cy="55" r="12" fill="${navy}"/>
+      <path d="M155 67 L155 125 M155 90 L125 110 M155 90 L200 105"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="215" cy="120" rx="18" ry="12" fill="${teal}" opacity="0.35"/>
+      <path d="M200 105 L215 120" fill="none" stroke="${navy}" stroke-width="6" stroke-linecap="round"/>
+    `),
+  },
+  "median-nerve-glide": {
+    alt: "Educational illustration of a gentle median nerve glide for the arm and wrist",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="130" cy="50" r="12" fill="${navy}"/>
+      <path d="M130 62 L130 120 M130 85 L105 105 M130 120 L115 180 M130 120 L150 180"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M130 95 L185 95 L220 130 L245 125"
+        fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M235 115 L245 125 L235 132" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "seated-flexion-fold": {
+    alt: "Educational illustration of a seated flexion fold in a chair",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="100" y="120" width="110" height="14" rx="3" fill="#cbd5e1"/>
+      <rect x="112" y="134" width="16" height="48" rx="3" fill="#94a3b8"/>
+      <rect x="180" y="134" width="16" height="48" rx="3" fill="#94a3b8"/>
+      <circle cx="130" cy="85" r="12" fill="${navy}"/>
+      <path d="M135 95 Q155 130 160 120 M160 120 L140 155 M160 120 L185 155"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M145 70 Q160 100 175 115" fill="none" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "ulnar-nerve-glide": {
+    alt: "Educational illustration of a gentle ulnar nerve glide for the inner elbow and hand",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="125" cy="50" r="12" fill="${navy}"/>
+      <path d="M125 62 L125 120 M125 85 L100 105 M125 120 L110 180 M125 120 L145 180"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M125 95 L170 95 L170 140 L210 160 L235 145"
+        fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="235" cy="145" r="5" fill="${teal}"/>
+    `),
+  },
+  "wrist-flexor-stretch": {
+    alt: "Educational illustration of a wrist flexor stretch with palm facing up",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="120" cy="55" r="12" fill="${navy}"/>
+      <path d="M120 67 L120 120 M120 85 L95 105 M120 120 L105 180 M120 120 L145 180"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M120 95 L205 95 L235 70" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M220 85 L235 70 L220 65" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "eccentric-wrist-extension": {
+    alt: "Educational illustration of eccentric wrist extension with a light weight",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="40" y="120" width="160" height="14" rx="3" fill="#94a3b8"/>
+      <circle cx="100" cy="55" r="12" fill="${navy}"/>
+      <path d="M100 67 L100 120 M100 90 L75 105" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M100 100 L175 100 L200 130" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <rect x="190" y="130" width="22" height="28" rx="4" fill="${teal}" opacity="0.45"/>
+      <path d="M200 115 L200 130" stroke="${teal}" stroke-width="3" stroke-dasharray="3 3"/>
+    `),
+  },
+  "thumb-cmc-isometric": {
+    alt: "Educational illustration of a gentle thumb CMC isometric OK-shape hold",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="70" y="140" width="160" height="14" rx="3" fill="#cbd5e1"/>
+      <circle cx="130" cy="70" r="12" fill="${navy}"/>
+      <path d="M130 82 L130 140 M130 100 L105 120" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M130 110 L175 105 L195 125" fill="none" stroke="${navy}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M175 105 L185 90 L200 100" fill="none" stroke="${teal}" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="200" cy="100" r="4" fill="${teal}"/>
+    `),
+  },
+  "levator-stretch": {
+    alt: "Educational illustration of a levator scapulae diagonal neck stretch",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="105" y="130" width="110" height="16" rx="4" fill="#cbd5e1"/>
+      <rect x="120" y="146" width="16" height="40" rx="3" fill="#94a3b8"/>
+      <rect x="185" y="146" width="16" height="40" rx="3" fill="#94a3b8"/>
+      <circle cx="175" cy="58" r="12" fill="${navy}"/>
+      <path d="M168 70 L160 130 M160 95 L130 115 M160 95 L195 115"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M175 48 Q200 55 205 75" fill="none" stroke="${teal}" stroke-width="3.5"/>
+    `),
+  },
+  "isometric-neck-rotation": {
+    alt: "Educational illustration of isometric neck rotation against a hand",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="105" y="130" width="110" height="16" rx="4" fill="#cbd5e1"/>
+      <rect x="120" y="146" width="16" height="40" rx="3" fill="#94a3b8"/>
+      <rect x="185" y="146" width="16" height="40" rx="3" fill="#94a3b8"/>
+      <circle cx="160" cy="55" r="12" fill="${navy}"/>
+      <path d="M160 67 L160 130 M160 95 L130 115 M160 95 L190 115"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M175 55 L205 55" stroke="${teal}" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="210" cy="55" r="8" fill="${teal}" opacity="0.35"/>
+    `),
+  },
+  "great-toe-extension": {
+    alt: "Educational illustration of gentle great-toe extension mobility",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="170" x2="280" y2="170" stroke="#cbd5e1" stroke-width="4"/>
+      <path d="M70 165 L160 165 L210 160 L250 145" fill="none" stroke="${navy}" stroke-width="10" stroke-linecap="round"/>
+      <path d="M250 145 L270 120" fill="none" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M255 130 L270 120 L258 118" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "towel-toe-curls": {
+    alt: "Educational illustration of towel toe curls for intrinsic foot strength",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="170" x2="280" y2="170" stroke="#cbd5e1" stroke-width="4"/>
+      <path d="M60 168 Q160 160 260 168" fill="none" stroke="#94a3b8" stroke-width="8"/>
+      <path d="M90 165 L170 165 L220 155" fill="none" stroke="${navy}" stroke-width="10" stroke-linecap="round"/>
+      <path d="M200 155 Q215 145 230 150" fill="none" stroke="${teal}" stroke-width="4"/>
+      <path d="M210 140 L230 150 L215 155" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "tandem-balance": {
+    alt: "Educational illustration of heel-to-toe tandem balance near support",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <rect x="250" y="40" width="12" height="150" rx="3" fill="${teal}" opacity="0.3"/>
+      <circle cx="150" cy="45" r="12" fill="${navy}"/>
+      <path d="M150 57 L150 115 M150 80 L125 100 M150 80 L175 100 M150 115 L135 185 M150 115 L165 150 L165 185"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="135" cy="188" r="6" fill="${teal}" opacity="0.4"/>
+      <circle cx="165" cy="188" r="6" fill="${teal}" opacity="0.4"/>
+    `),
+  },
+  "wall-push-up-plus": {
+    alt: "Educational illustration of a wall push-up plus with scapular protraction",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="48" y="28" width="16" height="165" rx="3" fill="${teal}" opacity="0.35"/>
+      <circle cx="130" cy="55" r="12" fill="${navy}"/>
+      <path d="M130 67 L145 125 M145 90 L100 95 M145 90 L175 70 M145 125 L130 180 M145 125 L170 180"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M100 95 L64 95" stroke="${teal}" stroke-width="4" stroke-linecap="round"/>
+      <path d="M78 85 L64 95 L78 105" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "ischial-unweight-sit": {
+    alt: "Educational illustration of shifting sitting weight onto one sitting bone to unweight the coccyx",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="100" y="125" width="120" height="16" rx="4" fill="#cbd5e1"/>
+      <rect x="115" y="141" width="16" height="42" rx="3" fill="#94a3b8"/>
+      <rect x="190" y="141" width="16" height="42" rx="3" fill="#94a3b8"/>
+      <circle cx="160" cy="55" r="12" fill="${navy}"/>
+      <path d="M160 67 L160 125 M160 90 L130 115 M160 90 L195 110"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M145 125 Q160 115 180 125" fill="none" stroke="${teal}" stroke-width="4"/>
+      <circle cx="145" cy="128" r="5" fill="${teal}"/>
+    `),
+  },
+  "pelvic-clock": {
+    alt: "Educational illustration of a supine pelvic clock with tiny circular tilts",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="175" rx="100" ry="10" fill="#e2e8f0"/>
+      <path d="M70 150 C100 110, 135 95, 170 95 C205 95, 235 115, 250 150"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="78" cy="125" r="12" fill="${navy}"/>
+      <path d="M165 110 L165 145 L130 170 M165 145 L205 170"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="165" cy="130" r="18" fill="none" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "adductor-ball-squeeze": {
+    alt: "Educational illustration of a supine adductor ball squeeze between the knees",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="175" rx="100" ry="10" fill="#e2e8f0"/>
+      <path d="M70 150 C100 110, 135 95, 170 95 C205 95, 235 115, 250 150"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="78" cy="125" r="12" fill="${navy}"/>
+      <path d="M150 115 L130 165 M180 115 L200 165"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="165" cy="145" r="14" fill="${teal}" opacity="0.4"/>
+      <path d="M150 145 L180 145" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "terminal-knee-extension": {
+    alt: "Educational illustration of a seated terminal knee extension quad squeeze",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="95" y="120" width="100" height="14" rx="3" fill="#cbd5e1"/>
+      <rect x="108" y="134" width="16" height="48" rx="3" fill="#94a3b8"/>
+      <circle cx="140" cy="55" r="12" fill="${navy}"/>
+      <path d="M140 67 L140 120 M140 90 L115 110 M140 120 L165 165"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M165 165 L230 165" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M210 155 L230 165 L210 170" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "wall-sit-isometric": {
+    alt: "Educational illustration of a wall-sit isometric thigh hold",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="48" y="28" width="16" height="165" rx="3" fill="${teal}" opacity="0.35"/>
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="130" cy="60" r="12" fill="${navy}"/>
+      <path d="M125 72 L120 115 M120 90 L95 100 M120 90 L150 100 M120 115 L110 185 M120 115 L155 185"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M64 100 L110 115" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "eccentric-heel-drop": {
+    alt: "Educational illustration of an eccentric heel drop off a step",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="60" y="155" width="120" height="30" fill="#cbd5e1"/>
+      <circle cx="150" cy="50" r="12" fill="${navy}"/>
+      <path d="M150 62 L150 115 M150 85 L125 100 M150 85 L175 100 M150 115 L150 155"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M150 155 L150 185" fill="none" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M140 175 L150 185 L160 175" fill="none" stroke="${teal}" stroke-width="3"/>
+    `),
+  },
+  "single-leg-rdl": {
+    alt: "Educational illustration of a single-leg Romanian deadlift hinge pattern",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="140" cy="70" r="12" fill="${navy}"/>
+      <path d="M145 82 L175 120 M160 100 L130 115 M175 120 L165 185 M175 120 L230 145"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M175 100 L200 80" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "side-plank-short": {
+    alt: "Educational illustration of a short knees-down side plank",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="185" rx="105" ry="9" fill="#e2e8f0"/>
+      <circle cx="85" cy="95" r="12" fill="${navy}"/>
+      <path d="M95 105 L130 140 L210 140 M130 140 L130 175 M210 140 L230 100"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M130 120 L210 120" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "bridge-march": {
+    alt: "Educational illustration of a glute bridge with an alternating march",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="105" ry="10" fill="#e2e8f0"/>
+      <path d="M70 155 C105 115, 140 95, 175 95 C210 95, 240 120, 255 155"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="78" cy="128" r="12" fill="${navy}"/>
+      <path d="M165 110 L165 140 L125 165" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M165 140 L200 115" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="200" cy="115" r="5" fill="${teal}"/>
+    `),
+  },
+  "open-book-pregnancy": {
+    alt: "Educational illustration of a supported side-lying open-book rotation with pillows",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="105" ry="10" fill="#e2e8f0"/>
+      <ellipse cx="150" cy="150" rx="35" ry="16" fill="${teal}" opacity="0.25"/>
+      <circle cx="75" cy="120" r="12" fill="${navy}"/>
+      <path d="M88 125 L155 130 L200 165 M155 130 L160 170"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M155 130 L245 80" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="245" cy="80" r="5" fill="${teal}"/>
+    `),
+  },
+  "cervical-nod-retraction": {
+    alt: "Educational illustration of a seated chin tuck with a gentle upper-neck nod",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="100" y="125" width="120" height="16" rx="4" fill="#cbd5e1"/>
+      <rect x="118" y="141" width="16" height="42" rx="3" fill="#94a3b8"/>
+      <rect x="186" y="141" width="16" height="42" rx="3" fill="#94a3b8"/>
+      <circle cx="168" cy="56" r="14" fill="${navy}"/>
+      <path d="M160 72 L160 125 M160 90 L130 115 M160 90 L190 115 M160 125 L140 125 M160 125 L180 125"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M188 48 H214" stroke="${teal}" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M204 41 L214 48 L204 55" fill="none" stroke="${teal}" stroke-width="3" stroke-linecap="round"/>
+      <path d="M168 72 Q175 82 168 90" fill="none" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "isometric-shoulder-er": {
+    alt: "Educational illustration of isometric shoulder external rotation against a wall",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="248" y="40" width="14" height="140" rx="2" fill="#94a3b8"/>
+      <circle cx="130" cy="48" r="13" fill="${navy}"/>
+      <path d="M130 61 L130 130 M130 85 L100 140 M130 85 L155 105 M130 130 L115 185 M130 130 L155 185"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M155 105 L210 105" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="218" cy="105" r="6" fill="${teal}"/>
+      <path d="M225 105 H245" stroke="${teal}" stroke-width="3.5" stroke-linecap="round"/>
+    `),
+  },
+  "prone-t-raise": {
+    alt: "Educational illustration of a prone T raise with arms lifted to the sides",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="175" rx="100" ry="10" fill="#e2e8f0"/>
+      <circle cx="160" cy="78" r="12" fill="${navy}"/>
+      <path d="M160 90 L160 155" fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M70 120 L160 115 L250 120" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M70 120 L70 108" stroke="${teal}" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M250 120 L250 108" stroke="${teal}" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="70" cy="108" r="4" fill="${teal}"/>
+      <circle cx="250" cy="108" r="4" fill="${teal}"/>
+    `),
+  },
+  "thumb-opposition-slides": {
+    alt: "Educational illustration of thumb tip opposition slides across the fingers",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="175" rx="90" ry="10" fill="#e2e8f0"/>
+      <path d="M110 150 C120 90, 200 90, 210 150" fill="none" stroke="${navy}" stroke-width="10" stroke-linecap="round"/>
+      <path d="M130 95 L125 55 M150 88 L150 45 M170 88 L175 45 M190 95 L200 58"
+        fill="none" stroke="${navy}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M118 140 L95 100" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="95" cy="100" r="5" fill="${teal}"/>
+      <path d="M100 95 Q140 70 170 55" fill="none" stroke="${teal}" stroke-width="2.5" stroke-dasharray="4 3"/>
+    `),
+  },
+  "metatarsal-spread": {
+    alt: "Educational illustration of a barefoot metatarsal / toe spread",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="175" rx="90" ry="10" fill="#e2e8f0"/>
+      <path d="M120 160 C130 100, 190 100, 200 160" fill="none" stroke="${navy}" stroke-width="10" stroke-linecap="round"/>
+      <path d="M125 105 L110 70 M145 95 L140 55 M165 95 L170 55 M185 105 L205 70"
+        fill="none" stroke="${navy}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M108 78 H210" stroke="${teal}" stroke-width="3" stroke-dasharray="5 4"/>
+      <path d="M115 70 L108 78 L115 86" fill="none" stroke="${teal}" stroke-width="3" stroke-linecap="round"/>
+      <path d="M203 70 L210 78 L203 86" fill="none" stroke="${teal}" stroke-width="3" stroke-linecap="round"/>
+    `),
+  },
+  "seated-hallux-lift": {
+    alt: "Educational illustration of a seated big-toe lift with lesser toes down",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="95" ry="10" fill="#e2e8f0"/>
+      <path d="M115 165 C125 115, 195 115, 205 165" fill="none" stroke="${navy}" stroke-width="10" stroke-linecap="round"/>
+      <path d="M140 120 L138 95 M158 118 L160 95 M178 120 L185 95"
+        fill="none" stroke="${navy}" stroke-width="5" stroke-linecap="round"/>
+      <path d="M125 125 L115 75" fill="none" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="115" cy="72" r="5" fill="${teal}"/>
+      <path d="M115 65 L115 52" stroke="${teal}" stroke-width="3" stroke-linecap="round"/>
+    `),
+  },
+  "hip-figure-four-flex": {
+    alt: "Educational illustration of a supine figure-four hip stretch",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="100" ry="10" fill="#e2e8f0"/>
+      <circle cx="95" cy="70" r="13" fill="${navy}"/>
+      <path d="M108 78 L170 95 L200 160 M170 95 L155 165"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M170 95 L230 125 L210 95" fill="none" stroke="${teal}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="210" cy="95" r="5" fill="${teal}"/>
+    `),
+  },
+  "prone-cobra-short": {
+    alt: "Educational illustration of a short prone cobra chest lift",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="180" rx="105" ry="10" fill="#e2e8f0"/>
+      <circle cx="75" cy="95" r="12" fill="${navy}"/>
+      <path d="M88 100 L160 115 L240 145" fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M130 120 L115 145 M190 130 L175 155" fill="none" stroke="${navy}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M100 90 Q160 70 220 110" fill="none" stroke="${teal}" stroke-width="3" stroke-dasharray="5 4"/>
+    `),
+  },
+  "spanish-squat-hold": {
+    alt: "Educational illustration of a Spanish squat hold with a band behind the knees",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="150" cy="48" r="13" fill="${navy}"/>
+      <path d="M150 61 L150 105 M150 80 L120 115 M150 80 L180 115 M150 105 L130 155 M150 105 L175 155 M130 155 L125 190 M175 155 L180 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M95 155 H210" stroke="${teal}" stroke-width="4" stroke-linecap="round"/>
+      <path d="M95 155 L70 130" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+      <path d="M210 155 L235 130" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "farmer-carry-walk": {
+    alt: "Educational illustration of a farmer carry walk with even weights",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="160" cy="45" r="13" fill="${navy}"/>
+      <path d="M160 58 L160 120 M160 80 L125 150 M160 80 L195 150 M160 120 L145 190 M160 120 L175 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="105" y="145" width="18" height="28" rx="3" fill="${teal}"/>
+      <rect x="197" y="145" width="18" height="28" rx="3" fill="${teal}"/>
+      <path d="M200 100 H240" stroke="${teal}" stroke-width="3" stroke-dasharray="5 4"/>
+      <path d="M230 93 L240 100 L230 107" fill="none" stroke="${teal}" stroke-width="3" stroke-linecap="round"/>
+    `),
+  },
+  "tibialis-raise": {
+    alt: "Educational illustration of standing tibialis anterior raises",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="160" cy="42" r="12" fill="${navy}"/>
+      <path d="M160 54 L160 115 M160 75 L130 145 M160 75 L190 145 M160 115 L145 190 M160 115 L175 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M145 190 L145 175 M175 190 L175 175" stroke="${teal}" stroke-width="4" stroke-linecap="round"/>
+      <path d="M145 175 L138 168 M175 175 L182 168" stroke="${teal}" stroke-width="3" stroke-linecap="round"/>
+    `),
+  },
+  "knee-to-wall-dorsiflexion": {
+    alt: "Educational illustration of knee-to-wall ankle dorsiflexion",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="250" y="40" width="14" height="150" rx="2" fill="#94a3b8"/>
+      <circle cx="130" cy="48" r="12" fill="${navy}"/>
+      <path d="M130 60 L150 110 M150 110 L125 190 M150 110 L195 190 M130 85 L105 130"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M195 190 L230 150" stroke="${teal}" stroke-width="3.5" stroke-dasharray="5 4"/>
+      <circle cx="230" cy="150" r="4" fill="${teal}"/>
+    `),
+  },
+  "nordic-hamstring-assist": {
+    alt: "Educational illustration of an assisted Nordic hamstring lower",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="185" rx="100" ry="10" fill="#e2e8f0"/>
+      <circle cx="95" cy="70" r="12" fill="${navy}"/>
+      <path d="M105 80 L150 120 L175 175 M150 120 L120 175"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M105 95 L145 130" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <rect x="155" y="175" width="50" height="10" rx="2" fill="#94a3b8"/>
+    `),
+  },
+  "reverse-lunge-control": {
+    alt: "Educational illustration of a reverse lunge",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="155" cy="45" r="12" fill="${navy}"/>
+      <path d="M155 57 L155 105 M155 80 L125 120 M155 80 L185 120 M155 105 L130 160 M155 105 L200 175 M130 160 L120 190 M200 175 L210 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M210 190 H235" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "band-pull-apart": {
+    alt: "Educational illustration of a standing band pull-apart",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <circle cx="160" cy="48" r="12" fill="${navy}"/>
+      <path d="M160 60 L160 130 M160 85 L130 160 M160 85 L190 160 M160 130 L145 190 M160 130 L175 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M80 90 H240" stroke="${teal}" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="80" cy="90" r="5" fill="${teal}"/>
+      <circle cx="240" cy="90" r="5" fill="${teal}"/>
+    `),
+  },
+  "prone-y-raise": {
+    alt: "Educational illustration of a prone Y raise",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <ellipse cx="160" cy="175" rx="100" ry="10" fill="#e2e8f0"/>
+      <circle cx="160" cy="95" r="11" fill="${navy}"/>
+      <path d="M160 106 L160 155" fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M95 70 L160 115 L225 70" fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M95 70 L90 58 M225 70 L230 58" stroke="${teal}" stroke-width="3.5" stroke-linecap="round"/>
+    `),
+  },
+  "short-copenhagen": {
+    alt: "Educational illustration of a short Copenhagen adductor hold",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="200" y="100" width="70" height="14" rx="3" fill="#94a3b8"/>
+      <circle cx="70" cy="80" r="12" fill="${navy}"/>
+      <path d="M82 88 L150 110 L230 107 M150 110 L145 160"
+        fill="none" stroke="${navy}" stroke-width="8" stroke-linecap="round"/>
+      <path d="M145 160 L145 130" stroke="${teal}" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="160" cy="180" rx="90" ry="10" fill="#e2e8f0"/>
+    `),
+  },
+  "standing-itb-open": {
+    alt: "Educational illustration of a standing ITB open / cross-leg side bend",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <circle cx="170" cy="42" r="12" fill="${navy}"/>
+      <path d="M170 54 L155 110 M155 80 L125 70 M155 80 L200 115 M155 110 L140 190 M155 110 L185 155 L200 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M125 70 L100 55" stroke="${teal}" stroke-width="3.5" stroke-linecap="round"/>
+    `),
+  },
+  "midrange-quad-isometric": {
+    alt: "Educational illustration of a mid-range quad isometric hold",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <line x1="40" y1="190" x2="280" y2="190" stroke="#cbd5e1" stroke-width="4"/>
+      <rect x="230" y="40" width="14" height="150" rx="2" fill="#94a3b8"/>
+      <circle cx="150" cy="48" r="12" fill="${navy}"/>
+      <path d="M150 60 L150 105 M150 80 L120 120 M150 80 L185 115 M150 105 L135 155 M150 105 L175 155 M135 155 L130 190 M175 155 L180 190"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M175 140 Q190 125 205 140" fill="none" stroke="${teal}" stroke-width="3" stroke-dasharray="4 3"/>
+    `),
+  },
+  "wrist-rotation-isometric": {
+    alt: "Educational illustration of seated wrist rotation isometrics with a towel",
+    credit: "Free educational illustration",
+    svg: frame(`
+      <rect x="100" y="130" width="120" height="14" rx="3" fill="#cbd5e1"/>
+      <circle cx="140" cy="55" r="12" fill="${navy}"/>
+      <path d="M140 67 L140 130 M140 90 L110 125 M140 90 L175 105"
+        fill="none" stroke="${navy}" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="200" cy="105" rx="22" ry="12" fill="${teal}" opacity="0.35"/>
+      <path d="M190 95 A18 18 0 0 1 210 115" fill="none" stroke="${teal}" stroke-width="3"/>
+      <path d="M205 118 L210 115 L208 108" fill="none" stroke="${teal}" stroke-width="2.5" stroke-linecap="round"/>
+    `),
+  },
 };
 
 mkdirSync(outDir, { recursive: true });

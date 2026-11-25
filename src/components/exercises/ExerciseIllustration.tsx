@@ -515,6 +515,41 @@ export function ExerciseIllustration({
       );
       break;
     case "prone-press":
+      body = (
+        <>
+          <ellipse cx="160" cy="185" rx="110" ry="9" fill="#e2e8f0" />
+          <path
+            d="M50 155 L270 155"
+            stroke="#cbd5e1"
+            strokeWidth="4"
+          />
+          <circle cx="72" cy="118" r="13" fill={navy} />
+          <path
+            d="M85 122 L155 128 L245 150 M155 128 L150 155"
+            fill="none"
+            stroke={navy}
+            strokeWidth="8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M125 148 L125 120"
+            fill="none"
+            stroke={teal}
+            strokeWidth="6"
+            strokeLinecap="round"
+          />
+          <path
+            d="M115 112 L125 120 L135 112"
+            fill="none"
+            stroke={teal}
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </>
+      );
+      break;
     default:
       body = figureSupineKnees();
   }

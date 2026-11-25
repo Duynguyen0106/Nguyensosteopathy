@@ -1,4 +1,5 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare";
+import staticAssetsIncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/static-assets-incremental-cache";
 
 /**
  * OpenNext → Cloudflare Workers adapter.
@@ -6,11 +7,15 @@ import { defineCloudflareConfig } from "@opennextjs/cloudflare";
  * can use `"build": "opennextjs-cloudflare build"` for Workers Builds without
  * infinite recursion.
  *
- * Enable R2 incremental cache in wrangler.jsonc + here when the bucket exists:
- *   import r2IncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/r2-incremental-cache";
- *   export default { ...defineCloudflareConfig({ incrementalCache: r2IncrementalCache }), buildCommand: "npx next build" };
+ * Use the static-assets incremental cache (read-only prerender store under
+ * `cdn-cgi/_next_cache`). The acupuncture corpus is fully SSG; R2 was
+ * populating correctly but runtime lookups still served poisoned 404 HIT
+ * entries after workerd SSR misses. Static assets cannot be overwritten by
+ * those misses.
  */
 export default {
-  ...defineCloudflareConfig(),
+  ...defineCloudflareConfig({
+    incrementalCache: staticAssetsIncrementalCache,
+  }),
   buildCommand: "npx next build",
 };

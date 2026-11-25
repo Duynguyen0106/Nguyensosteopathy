@@ -28,12 +28,10 @@
     { "pattern": "www.nguyensosteopathy.com", "custom_domain": true },
     { "pattern": "nguyensosteopathy.com", "custom_domain": true }
   ],
-  // Optional ISR / fetch cache. Create the bucket once:
-  //   npx wrangler r2 bucket create nguyensosteopathy-next-cache
-  // Then uncomment:
-  // "r2_buckets": [
-  //   { "binding": "NEXT_INC_CACHE_R2_BUCKET", "bucket_name": "nguyensosteopathy-next-cache" }
-  // ]
+  // SSG incremental cache is served from Workers static assets
+  // (`cdn-cgi/_next_cache` via static-assets-incremental-cache in open-next.config.ts).
+  // Optional R2 bucket `nguyensosteopathy-next-cache` remains available if we
+  // switch back to r2-incremental-cache later.
 
   // Dashboard (outer) layer for scrapers — enable in Cloudflare zone:
   //   Security → Bots → Bot Fight Mode (or Super Bot Fight Mode)

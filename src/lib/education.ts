@@ -143,13 +143,41 @@ export const educationArticles: EducationArticle[] = [
     title: "Electroacupuncture overview",
     summary:
       "When gentle electrical stimulation is added to acupuncture needles for stubborn muscle or nerve-related pain patterns.",
-    status: "coming-soon",
+    status: "published",
     relatedServiceSlug: "acupuncture-electro",
     sections: [
       {
-        heading: "Coming soon",
-        body: "A patient-facing overview of electroacupuncture — indications we commonly discuss, what the machine does, and aftercare — will be published here. Until then, see the medical acupuncture service page or ask in clinic.",
+        heading: "What it is",
+        body: "Electroacupuncture uses the same fine sterile needles as medical acupuncture, then connects a small clinic device that delivers a gentle pulsed current between selected needles. The sensation is usually a soft tapping, buzzing, or warm ache — intensity is kept comfortable and can be turned down or off at any time.",
       },
+      {
+        heading: "When we discuss it",
+        body: "It is most often considered for stubborn muscle irritability, some nerve-related pain patterns, or when manual needling alone has plateaued. It is not automatic for every acupuncture visit — suitability depends on your history, medications, and how tissues respond on the day.",
+      },
+      {
+        heading: "What to expect",
+        body: "After needles are placed and checked, clips are attached for a short timed period (often a few minutes). You remain able to talk and ask for adjustments. Afterwards the clips and needles are removed and we may still use soft-tissue or exercise advice as part of the same appointment.",
+      },
+      {
+        heading: "Who may not be suitable",
+        body: "Pacemakers or other implanted electrical devices, certain heart-rhythm problems, uncontrolled seizures, pregnancy in some regions, and marked needle phobia are common reasons we skip or modify electroacupuncture. Always tell us about devices, bleeding disorders, and medicines that affect clotting before needling.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does the machine hurt?",
+        answer:
+          "It should stay in a tolerable range — strong enough to notice, not strong enough to make you brace or hold your breath. Say if anything feels sharp or wrong; we adjust immediately.",
+      },
+      {
+        question: "Is it the same as TENS?",
+        answer:
+          "Both use electrical stimulation, but electroacupuncture runs through acupuncture needles at chosen points rather than surface pads alone. Your osteopath decides which approach fits the session.",
+      },
+    ],
+    caveats: [
+      "Screening happens before any needling or electrical stimulation.",
+      "Fees follow the acupuncture / electroacupuncture service page.",
     ],
   },
   {
@@ -158,13 +186,41 @@ export const educationArticles: EducationArticle[] = [
     title: "Aftercare after acupuncture",
     summary:
       "Simple same-day advice after needling: rest, hydration, expected soreness, and when to get in touch.",
-    status: "coming-soon",
+    status: "published",
     relatedServiceSlug: "acupuncture-electro",
     sections: [
       {
-        heading: "Coming soon",
-        body: "A short aftercare handout will live here. You can also follow the general clinic aftercare guide until this page is filled in.",
+        heading: "The rest of the day",
+        body: "Keep the next few hours ordinary rather than extreme: drink water, eat as usual, and avoid a maximal gym session, long hot bath, or heavy drinking right after needling. Gentle walking and desk work are usually fine unless we advised otherwise in clinic.",
       },
+      {
+        heading: "Normal sensations",
+        body: "Mild ache, heaviness, or tiredness at needle sites can linger for a day. Small bruises can appear, especially on limbs. These settle. Use your usual pain strategies if needed, and keep moving in comfortable ranges.",
+      },
+      {
+        heading: "When to contact us or urgent care",
+        body: "Get in touch or seek urgent care for spreading redness, fever, shortness of breath, chest pain, fainting, uncontrolled bleeding, or symptoms that feel clearly wrong rather than mild post-needling ache. For limb weakness, saddle numbness, or bladder/bowel change after any treatment, use urgent medical pathways — not wait for the next osteopathy slot.",
+      },
+      {
+        heading: "Before the next visit",
+        body: "Note what eased and what flared so we can refine points, dosage, or whether electroacupuncture stays useful. Continue any exercise or load advice you were given; needling supports tissue calm — it does not replace graded rehab.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I shower after acupuncture?",
+        answer:
+          "Yes. Keep the area clean as usual. Avoid scrubbing needle sites hard the same evening if they feel tender.",
+      },
+      {
+        question: "Can I drive home?",
+        answer:
+          "Most people can. If you feel light-headed or unusually drowsy after a session, wait in clinic until you feel steady, or arrange a lift.",
+      },
+    ],
+    caveats: [
+      "Personal advice from your clinician overrides this general page.",
+      "See also the clinic aftercare guide for broader post-visit tips.",
     ],
   },
   {

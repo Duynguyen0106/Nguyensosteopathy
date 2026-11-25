@@ -1,10 +1,15 @@
 import Link from "next/link";
-import type { AcupunctureCorpusEntry } from "@/lib/acupuncture-corpus";
+import type { AcupunctureCorpusBrowseEntry } from "@/lib/acupuncture-corpus";
 import { formatCorpusTitle, letterKey } from "@/lib/corpus-format";
 
 type Props = {
   type: string;
-  entries: AcupunctureCorpusEntry[];
+  entries: AcupunctureCorpusBrowseEntry[];
+  /**
+   * `full` — every entry under expandable letters (default).
+   * `closed` — same links, but no letter starts open (lighter first paint).
+   */
+  mode?: "full" | "closed";
 };
 
 const LETTERS = [
@@ -14,12 +19,16 @@ const LETTERS = [
 
 /**
  * Server-rendered A–Z link list so crawlers can discover corpus detail URLs
- * even when the interactive CorpusDirectory only shows one letter at a time.
+ * even when the interactive directory only shows one letter at a time.
  */
-export function CorpusCrawlIndex({ type, entries }: Props) {
+export function CorpusCrawlIndex({
+  type,
+  entries,
+  mode = "full",
+}: Props) {
   if (entries.length === 0) return null;
 
-  const byLetter = new Map<string, AcupunctureCorpusEntry[]>();
+  const byLetter = new Map<string, AcupunctureCorpusBrowseEntry[]>();
   for (const entry of entries) {
     const key = letterKey(entry.title || entry.label || entry.slug);
     const bucket = byLetter.get(key) ?? [];
@@ -36,7 +45,10 @@ export function CorpusCrawlIndex({ type, entries }: Props) {
     );
   }
 
-  const letters = LETTERS.filter((letter) => (byLetter.get(letter) || []).length);
+  const letters = LETTERS.filter(
+    (letter) => (byLetter.get(letter) || []).length,
+  );
+  const openFirst = mode === "full";
 
   return (
     <nav
@@ -47,17 +59,17 @@ export function CorpusCrawlIndex({ type, entries }: Props) {
         Full A–Z index
       </h2>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-        Every published entry in this category — use search above for a quick
-        filter, or browse by letter here.
+        Every published entry in this category — use the browser above for a
+        quick filter, or expand a letter here (also for search engines).
       </p>
       <div className="mt-6 space-y-3">
-        {letters.map((letter) => {
+        {letters.map((letter, index) => {
           const group = byLetter.get(letter) || [];
           return (
             <details
               key={letter}
               className="border border-slate-200 bg-white open:border-teal/40"
-              open={letter === letters[0]}
+              open={openFirst && index === 0}
             >
               <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-navy marker:content-none [&::-webkit-details-marker]:hidden">
                 <span className="inline-flex min-w-8 items-center justify-center bg-navy px-2 py-0.5 text-white">

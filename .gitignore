@@ -59,3 +59,4 @@ next-env.d.ts
 /public/poster/poster.html
 /public/business-card/business-card.html
 /public/facebook/opening-offer.html
+incremental-cache/

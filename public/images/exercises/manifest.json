@@ -193,5 +193,60 @@
     "src": "/images/exercises/median-nerve-glide.webp",
     "alt": "Educational illustration of a gentle median nerve glide for the arm and wrist",
     "credit": "Free educational illustration"
+  },
+  "seated-flexion-fold": {
+    "src": "/images/exercises/seated-flexion-fold.webp",
+    "alt": "Educational illustration of a seated flexion fold in a chair",
+    "credit": "Free educational illustration"
+  },
+  "ulnar-nerve-glide": {
+    "src": "/images/exercises/ulnar-nerve-glide.webp",
+    "alt": "Educational illustration of a gentle ulnar nerve glide for the inner elbow and hand",
+    "credit": "Free educational illustration"
+  },
+  "wrist-flexor-stretch": {
+    "src": "/images/exercises/wrist-flexor-stretch.webp",
+    "alt": "Educational illustration of a wrist flexor stretch with palm facing up",
+    "credit": "Free educational illustration"
+  },
+  "eccentric-wrist-extension": {
+    "src": "/images/exercises/eccentric-wrist-extension.webp",
+    "alt": "Educational illustration of eccentric wrist extension with a light weight",
+    "credit": "Free educational illustration"
+  },
+  "thumb-cmc-isometric": {
+    "src": "/images/exercises/thumb-cmc-isometric.webp",
+    "alt": "Educational illustration of a gentle thumb CMC isometric OK-shape hold",
+    "credit": "Free educational illustration"
+  },
+  "levator-stretch": {
+    "src": "/images/exercises/levator-stretch.webp",
+    "alt": "Educational illustration of a levator scapulae diagonal neck stretch",
+    "credit": "Free educational illustration"
+  },
+  "isometric-neck-rotation": {
+    "src": "/images/exercises/isometric-neck-rotation.webp",
+    "alt": "Educational illustration of isometric neck rotation against a hand",
+    "credit": "Free educational illustration"
+  },
+  "great-toe-extension": {
+    "src": "/images/exercises/great-toe-extension.webp",
+    "alt": "Educational illustration of gentle great-toe extension mobility",
+    "credit": "Free educational illustration"
+  },
+  "towel-toe-curls": {
+    "src": "/images/exercises/towel-toe-curls.webp",
+    "alt": "Educational illustration of towel toe curls for intrinsic foot strength",
+    "credit": "Free educational illustration"
+  },
+  "tandem-balance": {
+    "src": "/images/exercises/tandem-balance.webp",
+    "alt": "Educational illustration of heel-to-toe tandem balance near support",
+    "credit": "Free educational illustration"
+  },
+  "wall-push-up-plus": {
+    "src": "/images/exercises/wall-push-up-plus.webp",
+    "alt": "Educational illustration of a wall push-up plus with scapular protraction",
+    "credit": "Free educational illustration"
   }
 }

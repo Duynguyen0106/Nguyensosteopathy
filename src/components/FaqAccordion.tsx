@@ -1,11 +1,38 @@
 "use client";
 
-import { useId, useState } from "react";
+import Link from "next/link";
+import { Fragment, useId, useState, type ReactNode } from "react";
 
 type FaqItem = {
   question: string;
   answer: string;
 };
+
+/** Turn markdown-style [label](/path) into internal links. */
+function renderAnswer(answer: string): ReactNode {
+  const parts: ReactNode[] = [];
+  const re = /\[([^\]]+)\]\((\/[^)\s]+)\)/g;
+  let last = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = re.exec(answer)) !== null) {
+    if (match.index > last) {
+      parts.push(answer.slice(last, match.index));
+    }
+    parts.push(
+      <Link
+        key={`faq-link-${key++}`}
+        href={match[2]}
+        className="font-medium text-teal underline-offset-2 hover:underline"
+      >
+        {match[1]}
+      </Link>,
+    );
+    last = match.index + match[0].length;
+  }
+  if (last < answer.length) parts.push(answer.slice(last));
+  return parts.map((part, i) => <Fragment key={i}>{part}</Fragment>);
+}
 
 export function FaqAccordion({
   items,
@@ -67,7 +94,7 @@ export function FaqAccordion({
             >
               <div className="faq-panel-inner">
                 <p className="px-5 pb-5 text-sm leading-relaxed text-slate-600 md:px-6 md:pb-6 md:text-base">
-                  {item.answer}
+                  {renderAnswer(item.answer)}
                 </p>
               </div>
             </div>

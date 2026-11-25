@@ -58,10 +58,20 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of a doorway pec / chest stretch",
     credit: "Free educational illustration",
   },
+  "eccentric-wrist-extension": {
+    src: "/images/exercises/eccentric-wrist-extension.webp",
+    alt: "Educational illustration of eccentric wrist extension with a light weight",
+    credit: "Free educational illustration",
+  },
   "glute-bridge": {
     src: "/images/exercises/glute-bridge.webp",
     alt: "Person performing a glute bridge on a yoga mat with hips lifted",
     credit: "Photo via Pexels (#4534632)",
+  },
+  "great-toe-extension": {
+    src: "/images/exercises/great-toe-extension.webp",
+    alt: "Educational illustration of gentle great-toe extension mobility",
+    credit: "Free educational illustration",
   },
   "hamstring-slider": {
     src: "/images/exercises/hamstring-slider.webp",
@@ -83,6 +93,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Bare feet rising onto the balls of the feet in a heel-raise hold",
     credit: "Photo via Pexels (#8436714)",
   },
+  "isometric-neck-rotation": {
+    src: "/images/exercises/isometric-neck-rotation.webp",
+    alt: "Educational illustration of isometric neck rotation against a hand",
+    credit: "Free educational illustration",
+  },
   "knee-rolls": {
     src: "/images/exercises/knee-rolls.webp",
     alt: "Person lying on their back with knees rolled to one side for gentle lumbar mobility",
@@ -91,6 +106,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "knee-to-chest": {
     src: "/images/exercises/knee-to-chest.webp",
     alt: "Educational illustration of a single knee-to-chest stretch on the back",
+    credit: "Free educational illustration",
+  },
+  "levator-stretch": {
+    src: "/images/exercises/levator-stretch.webp",
+    alt: "Educational illustration of a levator scapulae diagonal neck stretch",
     credit: "Free educational illustration",
   },
   "median-nerve-glide": {
@@ -131,6 +151,11 @@ export const exerciseImages: Record<string, ExerciseImage> = {
   "sciatic-nerve-glide": {
     src: "/images/exercises/sciatic-nerve-glide.webp",
     alt: "Educational illustration of a seated sciatic nerve glide / slider",
+    credit: "Free educational illustration",
+  },
+  "seated-flexion-fold": {
+    src: "/images/exercises/seated-flexion-fold.webp",
+    alt: "Educational illustration of a seated flexion fold in a chair",
     credit: "Free educational illustration",
   },
   "seated-scapular-set": {
@@ -178,14 +203,34 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of supported table slides for the shoulder",
     credit: "Free educational illustration",
   },
+  "tandem-balance": {
+    src: "/images/exercises/tandem-balance.webp",
+    alt: "Educational illustration of heel-to-toe tandem balance near support",
+    credit: "Free educational illustration",
+  },
   "thoracic-extension-roll": {
     src: "/images/exercises/thoracic-extension-roll.webp",
     alt: "Educational illustration of thoracic extension over a rolled towel",
     credit: "Free educational illustration",
   },
+  "thumb-cmc-isometric": {
+    src: "/images/exercises/thumb-cmc-isometric.webp",
+    alt: "Educational illustration of a gentle thumb CMC isometric OK-shape hold",
+    credit: "Free educational illustration",
+  },
   "towel-grip-isometric": {
     src: "/images/exercises/towel-grip-isometric.webp",
     alt: "Educational illustration of a gentle towel grip isometric hold",
+    credit: "Free educational illustration",
+  },
+  "towel-toe-curls": {
+    src: "/images/exercises/towel-toe-curls.webp",
+    alt: "Educational illustration of towel toe curls for intrinsic foot strength",
+    credit: "Free educational illustration",
+  },
+  "ulnar-nerve-glide": {
+    src: "/images/exercises/ulnar-nerve-glide.webp",
+    alt: "Educational illustration of a gentle ulnar nerve glide for the inner elbow and hand",
     credit: "Free educational illustration",
   },
   "upper-trap-stretch": {
@@ -198,9 +243,19 @@ export const exerciseImages: Record<string, ExerciseImage> = {
     alt: "Educational illustration of wall angels: back to wall, arms sliding overhead",
     credit: "Free educational illustration",
   },
+  "wall-push-up-plus": {
+    src: "/images/exercises/wall-push-up-plus.webp",
+    alt: "Educational illustration of a wall push-up plus with scapular protraction",
+    credit: "Free educational illustration",
+  },
   "wrist-extensor-stretch": {
     src: "/images/exercises/wrist-extensor-stretch.webp",
     alt: "Educational illustration of a wrist extensor stretch with the elbow straight",
+    credit: "Free educational illustration",
+  },
+  "wrist-flexor-stretch": {
+    src: "/images/exercises/wrist-flexor-stretch.webp",
+    alt: "Educational illustration of a wrist flexor stretch with palm facing up",
     credit: "Free educational illustration",
   },
 };

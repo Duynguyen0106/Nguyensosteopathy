@@ -129,7 +129,9 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
+      "sciatica-nerve-calm",
       "post-visit-gentle-move",
+      "stenosis-flexion-calm",
     ],
   },
   {
@@ -196,7 +198,9 @@ export const exercises: Exercise[] = [
       "deconditioning",
       "post-surgical-general",
     ],
-    relatedProgrammeSlugs: ["acute-low-back-settle"],
+    relatedProgrammeSlugs: [
+      "acute-low-back-settle",
+    ],
   },
   {
     slug: "glute-bridge",
@@ -229,7 +233,10 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
+      "sciatica-nerve-calm",
       "patellofemoral-build",
+      "lateral-hip-settle",
+      "osteoporosis-safe-load",
     ],
   },
   {
@@ -260,7 +267,13 @@ export const exercises: Exercise[] = [
       "lumbar-disc-radiculopathy",
       "hamstring-strain",
     ],
-    relatedProgrammeSlugs: ["acute-low-back-settle", "desk-neck-reset"],
+    relatedProgrammeSlugs: [
+      "acute-low-back-settle",
+      "desk-neck-reset",
+      "lateral-hip-settle",
+      "stenosis-flexion-calm",
+      "osteoporosis-safe-load",
+    ],
   },
   {
     slug: "chin-tuck",
@@ -291,7 +304,12 @@ export const exercises: Exercise[] = [
       "cervical-radiculopathy",
       "whiplash",
     ],
-    relatedProgrammeSlugs: ["desk-neck-reset", "post-visit-gentle-move"],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "post-visit-gentle-move",
+      "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+    ],
   },
   {
     slug: "seated-scapular-set",
@@ -321,7 +339,14 @@ export const exercises: Exercise[] = [
       "thoracic-joint-dysfunction",
       "subacromial-pain",
     ],
-    relatedProgrammeSlugs: ["desk-neck-reset", "shoulder-arc-calm"],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "shoulder-arc-calm",
+      "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+      "tennis-elbow-build",
+      "frozen-shoulder-early",
+    ],
   },
   {
     slug: "open-book-rotation",
@@ -351,7 +376,12 @@ export const exercises: Exercise[] = [
       "neck-pain",
       "costochondritis",
     ],
-    relatedProgrammeSlugs: ["desk-neck-reset", "shoulder-arc-calm"],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "shoulder-arc-calm",
+      "upper-limb-desk-calm",
+      "frozen-shoulder-early",
+    ],
   },
   {
     slug: "sciatic-nerve-glide",
@@ -381,7 +411,9 @@ export const exercises: Exercise[] = [
       "lumbar-disc-radiculopathy",
       "piriformis-syndrome",
     ],
-    relatedProgrammeSlugs: ["sciatica-nerve-calm"],
+    relatedProgrammeSlugs: [
+      "sciatica-nerve-calm",
+    ],
   },
   {
     slug: "piriformis-figure-four",
@@ -411,7 +443,10 @@ export const exercises: Exercise[] = [
       "sciatica",
       "si-joint-dysfunction",
     ],
-    relatedProgrammeSlugs: ["sciatica-nerve-calm"],
+    relatedProgrammeSlugs: [
+      "sciatica-nerve-calm",
+      "lateral-hip-settle",
+    ],
   },
   {
     slug: "quad-set-short-arc",
@@ -442,7 +477,9 @@ export const exercises: Exercise[] = [
       "patellar-tendinopathy",
       "acl-rehab",
     ],
-    relatedProgrammeSlugs: ["patellofemoral-build"],
+    relatedProgrammeSlugs: [
+      "patellofemoral-build",
+    ],
   },
   {
     slug: "side-lying-hip-abduction",
@@ -472,7 +509,10 @@ export const exercises: Exercise[] = [
       "greater-trochanteric-pain",
       "itb-syndrome",
     ],
-    relatedProgrammeSlugs: ["patellofemoral-build"],
+    relatedProgrammeSlugs: [
+      "patellofemoral-build",
+      "lateral-hip-settle",
+    ],
   },
   {
     slug: "step-down-control",
@@ -502,7 +542,9 @@ export const exercises: Exercise[] = [
       "itb-syndrome",
       "acl-rehab",
     ],
-    relatedProgrammeSlugs: ["patellofemoral-build"],
+    relatedProgrammeSlugs: [
+      "patellofemoral-build",
+    ],
   },
   {
     slug: "plantar-fascia-roll",
@@ -528,7 +570,9 @@ export const exercises: Exercise[] = [
     ],
     dosage: "1–2 minutes, 1–2 times daily (especially after first steps)",
     relatedConditionSlugs: ["plantar-fasciitis", "achilles-tendinopathy"],
-    relatedProgrammeSlugs: ["plantar-heel-load"],
+    relatedProgrammeSlugs: [
+      "plantar-heel-load",
+    ],
   },
   {
     slug: "calf-wall-stretch",
@@ -558,7 +602,10 @@ export const exercises: Exercise[] = [
       "achilles-tendinopathy",
       "shin-splints",
     ],
-    relatedProgrammeSlugs: ["plantar-heel-load", "ankle-sprain-early"],
+    relatedProgrammeSlugs: [
+      "plantar-heel-load",
+      "ankle-sprain-early",
+    ],
   },
   {
     slug: "isometric-heel-raise",
@@ -588,7 +635,10 @@ export const exercises: Exercise[] = [
       "achilles-tendinopathy",
       "lateral-ankle-sprain",
     ],
-    relatedProgrammeSlugs: ["plantar-heel-load", "ankle-sprain-early"],
+    relatedProgrammeSlugs: [
+      "plantar-heel-load",
+      "ankle-sprain-early",
+    ],
   },
   {
     slug: "shoulder-pendulum",
@@ -618,7 +668,11 @@ export const exercises: Exercise[] = [
       "frozen-shoulder",
       "rotator-cuff-tear",
     ],
-    relatedProgrammeSlugs: ["shoulder-arc-calm", "post-visit-gentle-move"],
+    relatedProgrammeSlugs: [
+      "shoulder-arc-calm",
+      "post-visit-gentle-move",
+      "frozen-shoulder-early",
+    ],
   },
   {
     slug: "wall-angels",
@@ -648,7 +702,12 @@ export const exercises: Exercise[] = [
       "frozen-shoulder",
       "thoracic-joint-dysfunction",
     ],
-    relatedProgrammeSlugs: ["shoulder-arc-calm", "desk-neck-reset"],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "shoulder-arc-calm",
+      "upper-limb-desk-calm",
+      "osteoporosis-safe-load",
+    ],
   },
   {
     slug: "band-external-rotation",
@@ -678,7 +737,10 @@ export const exercises: Exercise[] = [
       "rotator-cuff-tear",
       "shoulder-instability",
     ],
-    relatedProgrammeSlugs: ["shoulder-arc-calm"],
+    relatedProgrammeSlugs: [
+      "shoulder-arc-calm",
+      "upper-limb-desk-calm",
+    ],
   },
   {
     slug: "ankle-alphabet",
@@ -707,7 +769,9 @@ export const exercises: Exercise[] = [
       "lateral-ankle-sprain",
       "achilles-tendinopathy",
     ],
-    relatedProgrammeSlugs: ["ankle-sprain-early"],
+    relatedProgrammeSlugs: [
+      "ankle-sprain-early",
+    ],
   },
   {
     slug: "single-leg-balance",
@@ -738,8 +802,11 @@ export const exercises: Exercise[] = [
       "deconditioning",
     ],
     relatedProgrammeSlugs: [
-      "ankle-sprain-early",
       "patellofemoral-build",
+      "plantar-heel-load",
+      "ankle-sprain-early",
+      "lateral-hip-settle",
+      "osteoporosis-safe-load",
     ],
   },
   {
@@ -771,8 +838,10 @@ export const exercises: Exercise[] = [
       "thoracic-joint-dysfunction",
     ],
     relatedProgrammeSlugs: [
-      "post-visit-gentle-move",
       "acute-low-back-settle",
+      "post-visit-gentle-move",
+      "lateral-hip-settle",
+      "osteoporosis-safe-load",
     ],
   },
   {
@@ -805,9 +874,15 @@ export const exercises: Exercise[] = [
       "costochondritis",
     ],
     relatedProgrammeSlugs: [
-      "post-visit-gentle-move",
       "acute-low-back-settle",
       "desk-neck-reset",
+      "sciatica-nerve-calm",
+      "post-visit-gentle-move",
+      "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+      "frozen-shoulder-early",
+      "stenosis-flexion-calm",
+      "osteoporosis-safe-load",
     ],
   },
   {
@@ -841,9 +916,9 @@ export const exercises: Exercise[] = [
       "scheuermanns",
     ],
     relatedProgrammeSlugs: [
-      "post-visit-gentle-move",
-      "desk-neck-reset",
       "acute-low-back-settle",
+      "post-visit-gentle-move",
+      "stenosis-flexion-calm",
     ],
   },
   {
@@ -877,7 +952,6 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "acute-low-back-settle",
-      "post-visit-gentle-move",
     ],
   },
   {
@@ -909,7 +983,42 @@ export const exercises: Exercise[] = [
       "lumbar-disc-radiculopathy",
       "facet-syndrome",
     ],
-    relatedProgrammeSlugs: ["acute-low-back-settle"],
+    relatedProgrammeSlugs: [
+      "acute-low-back-settle",
+    ],
+  },
+  {
+    slug: "seated-flexion-fold",
+    title: "Seated flexion fold",
+    summary:
+      "Gentle forward fold in a chair for people who prefer flexion when upright extension feels crowded.",
+    region: "Lumbar",
+    level: "early",
+    equipment: "Chair",
+    illustration: "seated-desk",
+    steps: [
+      "Sit toward the front of a sturdy chair with feet flat and hip-width apart.",
+      "Slide your hands down the thighs toward the floor, letting the spine round gently.",
+      "Pause in a comfortable fold, breathing easily.",
+      "Stack back up slowly, one vertebra at a time.",
+    ],
+    cues: [
+      "Think “ease forward,” not “force your head to your knees.”",
+      "Stop short of sharp leg symptoms that linger after you sit up.",
+    ],
+    avoid: [
+      "Bouncing or yanking into end-range.",
+      "Using this if you have red-flag neurological change — get assessed.",
+    ],
+    dosage: "5–8 slow folds, 1–2 sets, 1–2 times daily if helpful",
+    relatedConditionSlugs: [
+      "lumbar-stenosis",
+      "non-specific-low-back-pain",
+      "lumbar-disc-radiculopathy",
+    ],
+    relatedProgrammeSlugs: [
+      "stenosis-flexion-calm",
+    ],
   },
   {
     slug: "knee-to-chest",
@@ -945,6 +1054,7 @@ export const exercises: Exercise[] = [
       "acute-low-back-settle",
       "sciatica-nerve-calm",
       "post-visit-gentle-move",
+      "stenosis-flexion-calm",
     ],
   },
   {
@@ -978,8 +1088,8 @@ export const exercises: Exercise[] = [
       "itb-syndrome",
     ],
     relatedProgrammeSlugs: [
-      "lateral-hip-settle",
       "patellofemoral-build",
+      "lateral-hip-settle",
     ],
   },
   {
@@ -1014,7 +1124,6 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "lateral-hip-settle",
-      "desk-neck-reset",
     ],
   },
   {
@@ -1085,6 +1194,8 @@ export const exercises: Exercise[] = [
     relatedProgrammeSlugs: [
       "patellofemoral-build",
       "lateral-hip-settle",
+      "stenosis-flexion-calm",
+      "osteoporosis-safe-load",
     ],
   },
   {
@@ -1119,7 +1230,6 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "desk-neck-reset",
-      "upper-limb-desk-calm",
     ],
   },
   {
@@ -1188,8 +1298,8 @@ export const exercises: Exercise[] = [
     ],
     relatedProgrammeSlugs: [
       "desk-neck-reset",
-      "upper-limb-desk-calm",
       "post-visit-gentle-move",
+      "upper-limb-desk-calm",
     ],
   },
   {
@@ -1296,6 +1406,7 @@ export const exercises: Exercise[] = [
     relatedProgrammeSlugs: [
       "upper-limb-desk-calm",
       "tennis-elbow-settle",
+      "tennis-elbow-build",
     ],
   },
   {
@@ -1329,8 +1440,9 @@ export const exercises: Exercise[] = [
       "dequervains",
     ],
     relatedProgrammeSlugs: [
-      "tennis-elbow-settle",
       "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+      "tennis-elbow-build",
     ],
   },
   {
@@ -1360,11 +1472,344 @@ export const exercises: Exercise[] = [
     relatedConditionSlugs: [
       "carpal-tunnel",
       "cervical-radiculopathy",
-      "cubital-tunnel",
     ],
     relatedProgrammeSlugs: [
       "upper-limb-desk-calm",
       "tennis-elbow-settle",
+    ],
+  },
+  {
+    slug: "ulnar-nerve-glide",
+    title: "Ulnar nerve glide",
+    summary:
+      "Gentle nerve slider for inner-elbow to ring/little-finger irritability when a clinician has suggested ulnar neural mobility.",
+    region: "Elbow & Wrist",
+    level: "early",
+    equipment: "None",
+    illustration: "nerve-glide",
+    steps: [
+      "Stand or sit tall with the affected elbow bent and the wrist relaxed.",
+      "Slowly open the elbow and wrist while making an “OK” shape, then reverse toward the start.",
+      "Move in a smooth see-saw so tension does not linger at either end.",
+      "Keep the range small enough that symptoms settle within seconds after each pass.",
+    ],
+    cues: [
+      "This should feel like a gentle glide, not a stretch hold.",
+      "If tingling lingers into the ring or little finger, shrink the range.",
+    ],
+    avoid: [
+      "Aggressive end-range holds that recreate lasting numbness.",
+      "Using this instead of medical review for progressive hand weakness.",
+    ],
+    dosage: "8–10 slow passes, 1–2 sets, once or twice daily if helpful",
+    relatedConditionSlugs: ["cubital-tunnel", "cervical-radiculopathy"],
+    relatedProgrammeSlugs: [
+      "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+    ],
+  },
+  {
+    slug: "wrist-flexor-stretch",
+    title: "Wrist flexor stretch",
+    summary:
+      "Palm-up forearm stretch for inner-elbow and wrist flexor load from gripping or tools.",
+    region: "Elbow & Wrist",
+    level: "early",
+    equipment: "None",
+    illustration: "seated-desk",
+    steps: [
+      "Straighten the elbow with the palm facing up.",
+      "Use the other hand to gently extend the wrist so the fingers point toward the floor.",
+      "Feel a stretch along the inner forearm.",
+      "Hold, then relax and repeat.",
+    ],
+    cues: [
+      "Keep the elbow soft-straight, not locked hard.",
+      "A mild stretch is enough — stop short of sharp inner-elbow pain.",
+    ],
+    avoid: [
+      "Yank the wrist into end-range.",
+      "Stretching through lasting nerve tingling into the hand.",
+    ],
+    dosage: "20–30 second hold, 3 rounds, 1–2 times daily",
+    relatedConditionSlugs: [
+      "medial-epicondylalgia",
+      "tennis-elbow",
+      "carpal-tunnel",
+    ],
+    relatedProgrammeSlugs: [
+      "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+      "tennis-elbow-build",
+    ],
+  },
+  {
+    slug: "eccentric-wrist-extension",
+    title: "Eccentric wrist extension",
+    summary:
+      "Slow lowering of the wrist for tennis-elbow style loading once early irritability has settled.",
+    region: "Elbow & Wrist",
+    level: "build",
+    equipment: "Light dumbbell, water bottle, or resistance band",
+    illustration: "seated-desk",
+    steps: [
+      "Sit with the forearm supported on a table, hand over the edge, palm down, holding a light weight.",
+      "Use the other hand to help lift the wrist into extension.",
+      "Remove the help and slowly lower the wrist over 3–4 seconds.",
+      "Reset and repeat — keep the load light enough that next-day pain is not clearly worse.",
+    ],
+    cues: [
+      "The slow lower is the work — do not drop the weight.",
+      "Elbow stays quiet on the table; avoid shrugging.",
+    ],
+    avoid: [
+      "Heavy loading while the elbow is still hot and swollen.",
+      "Rushing the eccentric phase.",
+    ],
+    dosage: "8–12 slow lowers, 2 sets, most days once settle phase is easy",
+    relatedConditionSlugs: ["tennis-elbow", "medial-epicondylalgia"],
+    relatedProgrammeSlugs: [
+      "tennis-elbow-build",
+    ],
+  },
+  {
+    slug: "thumb-cmc-isometric",
+    title: "Thumb CMC isometric",
+    summary:
+      "Gentle thumb-base hold for CMC irritability — keep contact strong without painful pinching.",
+    region: "Elbow & Wrist",
+    level: "early",
+    equipment: "None",
+    illustration: "seated-desk",
+    steps: [
+      "Rest the hand on a table with the thumb lightly touching the index fingertip (OK shape).",
+      "Press the thumb tip gently into the index tip at about 30% effort.",
+      "Hold several seconds without collapsing the thumb web space, then relax.",
+      "Keep the wrist neutral and the shoulder relaxed.",
+    ],
+    cues: [
+      "Think “stable contact,” not a hard pinch.",
+      "Stop if base-of-thumb sharp pain lingers afterward.",
+    ],
+    avoid: [
+      "Maximal pinching or twisting through pain.",
+      "Holding the breath or tensing the neck.",
+    ],
+    dosage: "5–8 second holds × 8–10, 1–2 sets, most days",
+    relatedConditionSlugs: ["cmc-oa", "dequervains"],
+    relatedProgrammeSlugs: [
+      "upper-limb-desk-calm",
+      "tennis-elbow-settle",
+    ],
+  },
+  {
+    slug: "levator-stretch",
+    title: "Levator scapulae stretch",
+    summary:
+      "Diagonal neck stretch for the angle between neck and shoulder blade after desk or driving days.",
+    region: "Cervical",
+    level: "early",
+    equipment: "None",
+    illustration: "seated-desk",
+    steps: [
+      "Sit tall and gently turn the head about 45° toward one side.",
+      "Tip the nose toward the armpit on that same side until you feel a stretch along the opposite neck–shoulder angle.",
+      "Optionally rest a hand on the back of the head for a light guide — do not pull hard.",
+      "Hold, then switch sides.",
+    ],
+    cues: [
+      "Keep the opposite shoulder heavy and down.",
+      "Breathe slowly; ease out if arm tingling increases.",
+    ],
+    avoid: [
+      "Yank the head forcefully.",
+      "Stretching through dizziness or lingering arm numbness.",
+    ],
+    dosage: "20–30 second hold each side, 2 rounds, 1–2 times daily",
+    relatedConditionSlugs: [
+      "neck-pain",
+      "cervicogenic-headache",
+      "whiplash",
+      "thoracic-joint-dysfunction",
+    ],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "post-visit-gentle-move",
+      "upper-limb-desk-calm",
+    ],
+  },
+  {
+    slug: "isometric-neck-rotation",
+    title: "Isometric neck rotation",
+    summary:
+      "Gentle resisted head-turn holds to rebuild confidence after neck irritability without large range.",
+    region: "Cervical",
+    level: "early",
+    equipment: "None",
+    illustration: "seated-desk",
+    steps: [
+      "Sit tall looking straight ahead.",
+      "Place a hand on the cheek and gently turn the head into the hand without letting the head move.",
+      "Hold a light effort for several seconds, then relax.",
+      "Repeat to the other side.",
+    ],
+    cues: [
+      "About 20–30% effort is enough.",
+      "Keep the jaw soft and the shoulders down.",
+    ],
+    avoid: [
+      "Pushing into dizziness, visual change, or sharp neural arm pain.",
+      "Maximal effort early after a flare.",
+    ],
+    dosage: "5–8 second holds × 4–6 each side, 1–2 sets daily",
+    relatedConditionSlugs: [
+      "neck-pain",
+      "whiplash",
+      "cervicogenic-headache",
+      "cervical-radiculopathy",
+    ],
+    relatedProgrammeSlugs: [
+      "desk-neck-reset",
+      "post-visit-gentle-move",
+    ],
+  },
+  {
+    slug: "great-toe-extension",
+    title: "Great-toe extension mobilise",
+    summary:
+      "Gentle big-toe upward mobility for stiff first MTP joints that limit push-off.",
+    region: "Ankle & Foot",
+    level: "early",
+    equipment: "None",
+    illustration: "ankle-alphabet",
+    steps: [
+      "Sit with the foot relaxed or stand with the heel down.",
+      "Use your fingers to gently lift the big toe upward while the other toes stay quiet.",
+      "Hold a mild stretch, then lower.",
+      "Keep the ankle comfortable — do not force into sharp joint pain.",
+    ],
+    cues: [
+      "Small, frequent mobility beats one aggressive yank.",
+      "Pair with calm walking once the toe moves more freely.",
+    ],
+    avoid: [
+      "Forcing through inflamed, hot, or recently injured joints.",
+      "Twisting the toe sideways.",
+    ],
+    dosage: "8–10 gentle lifts, 2 sets, most days",
+    relatedConditionSlugs: [
+      "hallux-rigidus",
+      "plantar-fasciitis",
+      "morton-neuroma",
+    ],
+    relatedProgrammeSlugs: [
+      "plantar-heel-load",
+    ],
+  },
+  {
+    slug: "towel-toe-curls",
+    title: "Towel toe curls",
+    summary:
+      "Intrinsic foot activation by scrunching a towel — useful for foot fatigue and forefoot irritability.",
+    region: "Ankle & Foot",
+    level: "early",
+    equipment: "Towel on a smooth floor",
+    illustration: "ankle-alphabet",
+    steps: [
+      "Sit with the bare foot on a towel.",
+      "Keep the heel down and scrunch the towel toward you with the toes.",
+      "Relax and repeat, gathering more towel each time.",
+      "Switch feet after the set.",
+    ],
+    cues: [
+      "Think “short foot,” not clawing hard into cramp.",
+      "Stop and shake out if the foot cramps.",
+    ],
+    avoid: [
+      "Aggressive clawing through sharp forefoot neural pain.",
+      "Doing this on an acutely swollen foot after injury without advice.",
+    ],
+    dosage: "8–12 scruches each foot, 1–2 sets, most days",
+    relatedConditionSlugs: [
+      "morton-neuroma",
+      "plantar-fasciitis",
+      "hallux-rigidus",
+      "shin-splints",
+    ],
+    relatedProgrammeSlugs: [
+      "plantar-heel-load",
+      "ankle-sprain-early",
+    ],
+  },
+  {
+    slug: "tandem-balance",
+    title: "Tandem balance",
+    summary:
+      "Heel-to-toe standing balance for fall-confidence and bone-safe lower-limb control.",
+    region: "Whole body",
+    level: "return",
+    equipment: "Stable floor; wall or chair nearby",
+    illustration: "single-leg-balance",
+    steps: [
+      "Stand near support and place one foot directly in front of the other (heel to toe).",
+      "Stand tall with soft knees and quiet arms.",
+      "Hold the position, then switch which foot is in front.",
+      "Progress by reducing hand support only when steady.",
+    ],
+    cues: [
+      "Eyes on a fixed point ahead.",
+      "Quality stillness beats long wobbly holds.",
+    ],
+    avoid: [
+      "Practising far from support if you are unsteady.",
+      "Holding the breath or locking the knees hard.",
+    ],
+    dosage: "20–40 second holds each way, 2–3 rounds, most days",
+    relatedConditionSlugs: [
+      "osteoporosis",
+      "deconditioning",
+      "lateral-ankle-sprain",
+    ],
+    relatedProgrammeSlugs: [
+      "ankle-sprain-early",
+      "osteoporosis-safe-load",
+    ],
+  },
+  {
+    slug: "wall-push-up-plus",
+    title: "Wall push-up plus",
+    summary:
+      "Wall push-up with a final scapular protraction for shoulder blade control and return-to-load upper body work.",
+    region: "Shoulder",
+    level: "return",
+    equipment: "Wall",
+    illustration: "wall-slide",
+    steps: [
+      "Stand facing a wall with hands at shoulder height, a little wider than shoulders.",
+      "Bend the elbows to lower the chest toward the wall, then press away.",
+      "At the top, gently push the wall away further so the shoulder blades wrap around the ribs (the “plus”).",
+      "Keep the neck long and the low back quiet.",
+    ],
+    cues: [
+      "The plus is small — do not shrug into the ears.",
+      "Move the wall farther away to make it easier; step closer to progress.",
+    ],
+    avoid: [
+      "Pinching into the top of the shoulder — raise the hands or reduce depth.",
+      "Sagging through the mid-back.",
+    ],
+    dosage: "8–12 reps, 2 sets, most days once early shoulder drills are easy",
+    relatedConditionSlugs: [
+      "subacromial-pain",
+      "rotator-cuff-tear",
+      "deconditioning",
+      "shoulder-instability",
+    ],
+    relatedProgrammeSlugs: [
+      "shoulder-arc-calm",
+      "tennis-elbow-build",
+      "frozen-shoulder-early",
+      "osteoporosis-safe-load",
     ],
   },
 ];
@@ -1397,7 +1842,6 @@ export const programmes: Programme[] = [
       "lumbar-disc-radiculopathy",
       "coccydynia",
       "si-joint-dysfunction",
-      "lumbar-stenosis",
       "spondylolysis",
     ],
     relatedServiceSlug: "back-neck-pain",
@@ -1407,6 +1851,7 @@ export const programmes: Programme[] = [
       "Keep sessions short; more frequency beats one long grind.",
       "Known spondylolysis or listhesis: avoid repeated end-range extension drills that recreate sharp lumbar pain.",
       "Skip or shrink prone press-ups if extension increases leg symptoms that linger.",
+      "For walking-limited stenosis patterns, prefer the stenosis flexion programme instead of this extension-biased settle.",
     ],
   },
   {
@@ -1420,6 +1865,8 @@ export const programmes: Programme[] = [
     exerciseSlugs: [
       "chin-tuck",
       "upper-trap-stretch",
+      "levator-stretch",
+      "isometric-neck-rotation",
       "seated-scapular-set",
       "seated-thoracic-rotation",
       "open-book-rotation",
@@ -1520,6 +1967,8 @@ export const programmes: Programme[] = [
       "plantar-fascia-roll",
       "calf-wall-stretch",
       "isometric-heel-raise",
+      "great-toe-extension",
+      "towel-toe-curls",
       "single-leg-balance",
     ],
     relatedConditionSlugs: [
@@ -1552,6 +2001,7 @@ export const programmes: Programme[] = [
       "doorway-pec-stretch",
       "wall-angels",
       "band-external-rotation",
+      "wall-push-up-plus",
     ],
     relatedConditionSlugs: [
       "subacromial-pain",
@@ -1560,7 +2010,7 @@ export const programmes: Programme[] = [
       "ac-joint-injury",
       "shoulder-instability",
     ],
-    relatedServiceSlug: "headaches-joints",
+    relatedServiceSlug: "sports-injury-rehab",
     precautions: [
       "Post-dislocation, suspected fracture, or night pain with fever needs medical review first.",
       "Stay below the height that pinches; range returns faster when irritability drops.",
@@ -1579,7 +2029,9 @@ export const programmes: Programme[] = [
       "ankle-alphabet",
       "calf-wall-stretch",
       "isometric-heel-raise",
+      "towel-toe-curls",
       "single-leg-balance",
+      "tandem-balance",
     ],
     relatedConditionSlugs: ["lateral-ankle-sprain", "achilles-tendinopathy"],
     relatedServiceSlug: "sports-injury-rehab",
@@ -1604,6 +2056,8 @@ export const programmes: Programme[] = [
       "cat-cow",
       "chin-tuck",
       "upper-trap-stretch",
+      "levator-stretch",
+      "isometric-neck-rotation",
       "shoulder-pendulum",
       "bird-dog",
     ],
@@ -1612,14 +2066,13 @@ export const programmes: Programme[] = [
       "neck-pain",
       "deconditioning",
       "fibromyalgia",
-      "osteoporosis",
       "post-surgical-general",
     ],
     relatedServiceSlug: "back-neck-pain",
     precautions: [
       "Follow any personal plan given in clinic if it differs from this page.",
       "Worsening symptoms after 48 hours, or red-flag neurological change, means contact us or urgent care — not more exercise.",
-      "Osteoporosis or recent surgery: keep ranges gentle and honour fracture or wound precautions from your clinician.",
+      "Osteoporosis or recent surgery: keep ranges gentle and honour fracture or wound precautions from your clinician — prefer the osteoporosis-safe programme when bone density is the main concern.",
     ],
   },
   {
@@ -1664,13 +2117,17 @@ export const programmes: Programme[] = [
     exerciseSlugs: [
       "chin-tuck",
       "upper-trap-stretch",
+      "levator-stretch",
       "seated-scapular-set",
       "seated-thoracic-rotation",
       "open-book-rotation",
       "wall-angels",
       "wrist-extensor-stretch",
+      "wrist-flexor-stretch",
       "towel-grip-isometric",
+      "thumb-cmc-isometric",
       "median-nerve-glide",
+      "ulnar-nerve-glide",
       "band-external-rotation",
       "diaphragmatic-breathing",
     ],
@@ -1682,7 +2139,7 @@ export const programmes: Programme[] = [
       "medial-epicondylalgia",
       "tennis-elbow",
     ],
-    relatedServiceSlug: "focused-shockwave",
+    relatedServiceSlug: "sports-injury-rehab",
     precautions: [
       "Constant numbness, thenar wasting, or progressive hand weakness needs medical or nerve-study pathways — not this programme alone.",
       "Keep wrists in mid-range; stop any drill that sparks lingering neural tingling.",
@@ -1698,8 +2155,11 @@ export const programmes: Programme[] = [
     phase: "settle",
     exerciseSlugs: [
       "wrist-extensor-stretch",
+      "wrist-flexor-stretch",
       "towel-grip-isometric",
+      "thumb-cmc-isometric",
       "median-nerve-glide",
+      "ulnar-nerve-glide",
       "seated-scapular-set",
       "chin-tuck",
       "diaphragmatic-breathing",
@@ -1709,12 +2169,40 @@ export const programmes: Programme[] = [
       "medial-epicondylalgia",
       "dequervains",
       "carpal-tunnel",
+      "cubital-tunnel",
     ],
     relatedServiceSlug: "focused-shockwave",
     precautions: [
       "Sudden trauma, marked swelling, or inability to extend the wrist/fingers needs medical review first.",
       "Keep grip effort submaximal — lingering outer-elbow pain the next day means you did too much.",
       "Constant numbness or hand wasting is not a stretch-and-load problem alone — seek assessment.",
+    ],
+  },
+  {
+    slug: "tennis-elbow-build",
+    title: "Tennis elbow build",
+    summary:
+      "Progress from calm stretches into slow eccentric wrist work and grip control once early irritability has settled.",
+    audience:
+      "Adults whose outer-elbow pain no longer spikes for hours after light daily use and who are ready for graded loading.",
+    phase: "rebuild",
+    exerciseSlugs: [
+      "wrist-extensor-stretch",
+      "wrist-flexor-stretch",
+      "towel-grip-isometric",
+      "eccentric-wrist-extension",
+      "seated-scapular-set",
+      "wall-push-up-plus",
+    ],
+    relatedConditionSlugs: [
+      "tennis-elbow",
+      "medial-epicondylalgia",
+      "dequervains",
+    ],
+    relatedServiceSlug: "focused-shockwave",
+    precautions: [
+      "If next-day elbow pain is clearly worse, drop load or return to the settle programme for a few days.",
+      "Shockwave or hands-on care can sit alongside this — it does not replace assessment when progress stalls.",
     ],
   },
   {
@@ -1731,6 +2219,7 @@ export const programmes: Programme[] = [
       "seated-scapular-set",
       "doorway-pec-stretch",
       "open-book-rotation",
+      "wall-push-up-plus",
       "diaphragmatic-breathing",
     ],
     relatedConditionSlugs: [
@@ -1738,11 +2227,71 @@ export const programmes: Programme[] = [
       "subacromial-pain",
       "rotator-cuff-tear",
     ],
-    relatedServiceSlug: "headaches-joints",
+    relatedServiceSlug: "sports-injury-rehab",
     precautions: [
       "Unexplained fever with joint pain, recent dislocation, or suspected fracture needs medical review first.",
       "Stay below the height that sharply pinches; irritability drops before range returns.",
       "Diabetes or thyroid history is common with frozen shoulder — keep expectations realistic and get assessed for a plan.",
+    ],
+  },
+  {
+    slug: "stenosis-flexion-calm",
+    title: "Stenosis flexion calm",
+    summary:
+      "Flexion-biased, short-session mobility for walking-limited low-back patterns that prefer rounding over extending.",
+    audience:
+      "Adults with neurogenic claudication–type or extension-sensitive low-back/leg symptoms who feel easier when flexed, without cauda equina red flags.",
+    phase: "settle",
+    exerciseSlugs: [
+      "diaphragmatic-breathing",
+      "pelvic-tilts",
+      "knee-to-chest",
+      "seated-flexion-fold",
+      "hip-hinge-practice",
+      "sit-to-stand",
+      "cat-cow",
+    ],
+    relatedConditionSlugs: [
+      "lumbar-stenosis",
+      "lumbar-disc-radiculopathy",
+      "non-specific-low-back-pain",
+    ],
+    relatedServiceSlug: "back-neck-pain",
+    precautions: [
+      "Cauda equina red flags need emergency care — do not use this programme instead.",
+      "Skip prone press-ups and other end-range extension drills if they recreate leg heaviness.",
+      "If walking distance is collapsing quickly or weakness is progressive, get assessed promptly.",
+    ],
+  },
+  {
+    slug: "osteoporosis-safe-load",
+    title: "Osteoporosis-safe load",
+    summary:
+      "Bone-friendly strength and balance: sit-to-stand, hinge pattern, wall upper-body work, and tandem standing near support.",
+    audience:
+      "Adults with low bone density or fracture risk who have been cleared for gentle standing exercise, without acute vertebral fracture precautions that ban flexion or loading.",
+    phase: "rebuild",
+    exerciseSlugs: [
+      "diaphragmatic-breathing",
+      "sit-to-stand",
+      "hip-hinge-practice",
+      "glute-bridge",
+      "wall-angels",
+      "wall-push-up-plus",
+      "single-leg-balance",
+      "tandem-balance",
+      "bird-dog",
+    ],
+    relatedConditionSlugs: [
+      "osteoporosis",
+      "deconditioning",
+      "post-surgical-general",
+    ],
+    relatedServiceSlug: "back-neck-pain",
+    precautions: [
+      "Follow fracture, vertebroplasty, or surgeon rules if they differ — personal clearance beats this page.",
+      "Avoid loaded end-range flexion or twisting if your clinician has advised against it.",
+      "Practise balance near a wall or sturdy chair; stop if dizziness appears.",
     ],
   },
 ];
@@ -1780,18 +2329,11 @@ export function getExercisesForProgramme(programme: Programme): Exercise[] {
     .filter((item): item is Exercise => Boolean(item));
 }
 
+/** Programmes that actually include this drill (membership is source of truth). */
 export function getProgrammesForExercise(exercise: Exercise): Programme[] {
-  const byMembership = programmes.filter((programme) =>
+  return programmes.filter((programme) =>
     programme.exerciseSlugs.includes(exercise.slug),
   );
-  const byField = (exercise.relatedProgrammeSlugs ?? [])
-    .map((slug) => getProgramme(slug))
-    .filter((item): item is Programme => Boolean(item));
-  const merged = new Map<string, Programme>();
-  for (const programme of [...byMembership, ...byField]) {
-    merged.set(programme.slug, programme);
-  }
-  return [...merged.values()];
 }
 
 export function getExercisesByLevel(level?: ExerciseLevel): Exercise[] {
